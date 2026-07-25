@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ATLAS Lab — Inteligencia deportiva basada en evidencia (concepto)</title>
+<style>
+  :root {
+    --ink: #0e1512;
+    --surface: #161f1a;
+    --surface-2: #1c2620;
+    --border: #263229;
+    --text: #edefe9;
+    --text-dim: #a9b3ac;
+    --text-faint: #6f7a72;
+    --green: #5b9a63;
+    --green-soft: rgba(91, 154, 99, 0.14);
+    --clay: #c97a3d;
+    --clay-soft: rgba(201, 122, 61, 0.14);
+    --gold: #d9b25c;
+    --radius: 10px;
+    --serif: Georgia, "Iowan Old Style", "Noto Serif", "Source Serif Pro", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Roboto Mono", Consolas, "Courier New", monospace;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --ink: #f3f5ef;
+      --surface: #ffffff;
+      --surface-2: #eef1ea;
+      --border: #dde3d8;
+      --text: #171d19;
+      --text-dim: #4b564e;
+      --text-faint: #838f86;
+      --green: #3f7a49;
+      --green-soft: rgba(63, 122, 73, 0.1);
+      --clay: #a85d28;
+      --clay-soft: rgba(168, 93, 40, 0.1);
+      --gold: #8a6a1f;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--ink);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--green-soft); }
+
+  a { color: inherit; }
+
+  .concept-tag {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 50;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 5px 9px;
+    border-radius: 999px;
+  }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: color-mix(in srgb, var(--ink) 92%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 18px 0;
+  }
+  .topbar-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .wordmark {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+  }
+  .wordmark .dot { color: var(--green); }
+  .tagline {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.05em;
+    color: var(--text-faint);
+    text-transform: uppercase;
+  }
+  .tabs {
+    max-width: 720px;
+    margin: 12px auto 0;
+    display: flex;
+    gap: 22px;
+  }
+  .tab {
+    background: none;
+    border: none;
+    color: var(--text-faint);
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 0 12px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+  }
+  .tab.active { color: var(--text); border-bottom-color: var(--green); }
+
+  main { max-width: 720px; margin: 0 auto; padding: 0 18px 80px; }
+
+  .hero {
+    padding: 28px 0 22px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 22px;
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(24px, 6vw, 32px);
+    line-height: 1.15;
+    margin: 0 0 12px;
+    text-wrap: balance;
+    font-weight: 700;
+  }
+  .hero p.lede {
+    font-size: 15px;
+    color: var(--text-dim);
+    max-width: 54ch;
+    margin: 0 0 18px;
+  }
+  .pillars-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .pillar-chip {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+  .pillar-chip .mark { color: var(--green); }
+
+  .feed { display: flex; flex-direction: column; gap: 14px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 16px 14px;
+    cursor: pointer;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .card:hover { border-color: color-mix(in srgb, var(--green) 45%, var(--border)); }
+  .card:active { transform: scale(0.995); }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 9px;
+  }
+  .badge-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+
+  .pillar-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .pillar-label .ico { font-size: 11px; }
+
+  .entity-tag {
+    font-size: 11px;
+    color: var(--text-dim);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 2px 8px;
+  }
+
+  .seal {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.03em;
+    color: var(--green);
+    border: 1px solid color-mix(in srgb, var(--green) 55%, var(--border));
+    background: var(--green-soft);
+    border-radius: 999px;
+    padding: 2px 8px 2px 6px;
+  }
+  .correction-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.03em;
+    color: var(--clay);
+    border: 1px solid color-mix(in srgb, var(--clay) 55%, var(--border));
+    background: var(--clay-soft);
+    border-radius: 999px;
+    padding: 2px 8px;
+  }
+
+  .card h2 {
+    font-family: var(--serif);
+    font-size: 17.5px;
+    line-height: 1.32;
+    font-weight: 700;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+  .card p.excerpt {
+    font-size: 13.5px;
+    color: var(--text-dim);
+    margin: 0 0 10px;
+    line-height: 1.5;
+  }
+
+  .evidence-meter { display: flex; align-items: center; gap: 8px; }
+  .meter-bars { display: flex; gap: 2px; }
+  .meter-bars span {
+    width: 12px; height: 5px; border-radius: 2px;
+    background: var(--border);
+  }
+  .meter-bars span.filled { background: var(--green); }
+  .meter-label { font-family: var(--mono); font-size: 10.5px; color: var(--text-faint); }
+
+  .card-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .time-ago { font-family: var(--mono); font-size: 10.5px; color: var(--text-faint); }
+
+  /* Historial view */
+  .historial-intro {
+    padding: 26px 0 20px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 22px;
+  }
+  .historial-intro h1 {
+    font-family: var(--serif);
+    font-size: clamp(22px, 5.5vw, 28px);
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+  .historial-intro p { font-size: 14.5px; color: var(--text-dim); max-width: 56ch; margin: 0; }
+
+  .scorecard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0 28px;
+  }
+  .scorecard .cell {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 10px;
+    text-align: center;
+  }
+  .scorecard .num {
+    font-family: var(--mono);
+    font-size: 22px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .scorecard .num.g { color: var(--green); }
+  .scorecard .num.c { color: var(--clay); }
+  .scorecard .lbl { font-size: 10.5px; color: var(--text-faint); margin-top: 4px; letter-spacing: 0.02em; }
+
+  .ledger-section-title {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 26px 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .ledger-section-title.g::before { content: "●"; color: var(--green); }
+  .ledger-section-title.c::before { content: "●"; color: var(--clay); }
+
+  .ledger-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--green);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .ledger-item.corrected { border-left-color: var(--clay); }
+  .ledger-item h3 {
+    font-family: var(--serif);
+    font-size: 15.5px;
+    margin: 0 0 6px;
+    line-height: 1.35;
+  }
+  .ledger-item .meta { font-size: 12.5px; color: var(--text-dim); margin: 0; }
+  .correction-delta {
+    font-family: var(--mono);
+    font-size: 12px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .correction-delta .before { color: var(--text-faint); text-decoration: line-through; }
+  .correction-delta .after { color: var(--clay); font-weight: 600; }
+
+  /* Detail overlay */
+  #detail-overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--ink);
+    z-index: 100;
+    overflow-y: auto;
+    animation: slideup 0.18s ease;
+  }
+  @keyframes slideup { from { transform: translateY(14px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  #detail-overlay[hidden] { display: none; }
+
+  .detail-topbar {
+    position: sticky;
+    top: 0;
+    background: color-mix(in srgb, var(--ink) 94%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 5;
+  }
+  .back-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 999px;
+    width: 32px; height: 32px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .detail-topbar .wm { font-family: var(--serif); font-weight: 700; font-size: 15px; }
+
+  .detail-body { max-width: 640px; margin: 0 auto; padding: 22px 18px 70px; }
+  .detail-body h1 {
+    font-family: var(--serif);
+    font-size: clamp(22px, 6.5vw, 30px);
+    line-height: 1.2;
+    margin: 14px 0 16px;
+    text-wrap: balance;
+  }
+
+  .evidence-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    margin: 16px 0 22px;
+  }
+  .evidence-panel .row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; }
+  .evidence-panel .row + .row { border-top: 1px solid var(--border); }
+  .evidence-panel .k { font-size: 12.5px; color: var(--text-faint); }
+  .evidence-panel .v { font-family: var(--mono); font-size: 12.5px; color: var(--text); text-align: right; }
+
+  .story-section { margin-bottom: 18px; }
+  .story-section .label {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 6px;
+  }
+  .story-section p { font-size: 15.5px; color: var(--text); margin: 0; line-height: 1.6; }
+
+  .final-status {
+    background: var(--clay-soft);
+    border: 1px solid color-mix(in srgb, var(--clay) 40%, var(--border));
+    border-radius: var(--radius);
+    padding: 12px 14px;
+    font-size: 13.5px;
+    color: var(--text);
+    margin-top: 20px;
+  }
+  .final-status .label { color: var(--clay); }
+
+  .related-title {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 30px 0 12px;
+  }
+
+  .footer-note {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--text-faint);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<span class="concept-tag">Concepto · contenido real, interacción simulada</span>
+
+<header class="topbar">
+  <div class="topbar-row">
+    <div>
+      <div class="wordmark">ATLAS<span class="dot">·</span>LAB</div>
+      <div class="tagline">Inteligencia deportiva basada en evidencia</div>
+    </div>
+  </div>
+  <nav class="tabs">
+    <button class="tab active" data-view="feed">Feed</button>
+    <button class="tab" data-view="historial">Nuestro Historial</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ FEED VIEW ============ -->
+  <section id="view-feed">
+    <div class="hero">
+      <h1>No adivinamos. Medimos, verificamos, y mostramos el margen de error.</h1>
+      <p class="lede">Cada hallazgo declara su nivel de evidencia antes de que lo leas. Cuando nos equivocamos, lo corregimos en público — no lo escondemos.</p>
+      <div class="pillars-row">
+        <span class="pillar-chip"><span class="mark">✓</span> Metodología visible</span>
+        <span class="pillar-chip"><span class="mark">✓</span> Confianza explícita</span>
+        <span class="pillar-chip"><span class="mark">✓</span> Errores públicos</span>
+      </div>
+    </div>
+
+    <div class="feed" id="feed-list"><!-- rendered by JS --></div>
+  </section>
+
+  <!-- ============ HISTORIAL VIEW ============ -->
+  <section id="view-historial" hidden>
+    <div class="historial-intro">
+      <h1>Nuestro Historial</h1>
+      <p>Todo lo que declaramos como cierto, y todo lo que corregimos después de declararlo. Sin esto, "confiar en los datos" es solo una frase de marketing — acá se puede verificar.</p>
+    </div>
+
+    <div class="scorecard">
+      <div class="cell"><div class="num g">2</div><div class="lbl">Hallazgos<br/>confirmados</div></div>
+      <div class="cell"><div class="num c">2</div><div class="lbl">Corregidos<br/>públicamente</div></div>
+      <div class="cell"><div class="num">12/14</div><div class="lbl">Hipótesis<br/>refutadas</div></div>
+    </div>
+
+    <div class="ledger-section-title g">Confirmado</div>
+    <div id="ledger-confirmed"><!-- rendered by JS --></div>
+
+    <div class="ledger-section-title c">Corregido después de publicarse</div>
+    <div id="ledger-corrected"><!-- rendered by JS --></div>
+
+    <div class="footer-note">Todo el patrimonio de conocimiento certificado se audita contra su documento fuente antes de citarse. Ver Cuaderno de Laboratorio para el proceso completo.</div>
+  </section>
+
+</main>
+
+<!-- ============ DETAIL OVERLAY ============ -->
+<div id="detail-overlay" hidden>
+  <div class="detail-topbar">
+    <button class="back-btn" id="back-btn" aria-label="Volver">←</button>
+    <span class="wm">ATLAS·LAB</span>
+  </div>
+  <div class="detail-body" id="detail-body"><!-- rendered by JS --></div>
+</div>
+
+<script>
+const PILLAR_META = {
+  certificado: { icon: "◆", label: "Conocimiento Certificado" },
+  proceso: { icon: "◈", label: "Proceso Científico" },
+  patron: { icon: "▲", label: "Patrón Detectado" },
+  longitudinal: { icon: "↗", label: "Análisis Longitudinal" },
+  entidad: { icon: "▣", label: "Radiografía" },
+  metodologia: { icon: "◎", label: "Metodología" },
+};
+
+// Contenido real, extraído de ediciones ya generadas por el motor (ver
+// atlas_content_engine/content_engine.db, insights_used). Nada fue inventado
+// para este mockup -- headlines, cifras y estados finales son verbatim.
+const STORIES = [
+  {
+    id: "jensen-bias",
+    pillar: "proceso",
+    seal: true,
+    correction: true,
+    entity: null,
+    headline: "El sesgo que fabricaba ventaja donde no la había",
+    excerpt: "Dos estrategias mostraban edge positivo sostenido (+6.8pp y +6.3pp). Auditamos la fórmula que lo calculaba.",
+    time: "hace 3 días",
+    detail: {
+      sections: [
+        ["La pregunta", "Dos estrategias del catálogo (E002, E011) mostraban edge positivo sostenido (+6.8pp y +6.3pp) y estaban en seguimiento como candidatas."],
+        ["Lo que hicimos", "Al investigar un programa distinto, se auditó evaluate_combo() — la función que calcula el retorno financiero esperado de cualquier estrategia del repositorio — y se encontró que promediaba las cuotas como 1/mean(odds) en vez de mean(1/odds): un sesgo de Jensen que sobreestima sistemáticamente el edge en mercados con cuotas variables."],
+        ["Lo que encontramos", "Al corregir la fórmula y recalcular con datos reales, sin tocar ningún criterio ni reconstruir ningún perfil, el edge de ambas estrategias se invirtió: E002 pasó de +6.8pp a −1.1pp, E011 de +6.3pp a −2.5pp. Ninguna de las dos sobrevivió."],
+        ["Por qué importa", "Un edge positivo no es evidencia hasta que se audita la fórmula que lo calculó, no solo el criterio que seleccionó los partidos."],
+      ],
+      finalStatus: "Ambas estrategias reclasificadas a Refutada el 2026-07-20.",
+      evidence: [
+        ["Fuente", "CARRIL_B_ACTA_CIERRE_E00X_2026-07-20.md"],
+        ["Tipo", "Corrección de proceso, publicada"],
+        ["Impacto", "2 estrategias reclasificadas"],
+      ],
+    },
+  },
+  {
+    id: "h2h-depth",
+    pillar: "proceso",
+    seal: true,
+    correction: true,
+    entity: null,
+    headline: "Cuando un historial 'extremo' resultó tener solo 1 o 2 partidos reales detrás",
+    excerpt: "El 69.1% de los casos clasificados como 'extremos' estaban sustentados en apenas 1 o 2 encuentros reales.",
+    time: "hace 3 días",
+    detail: {
+      sections: [
+        ["La pregunta", "Un historial de enfrentamientos directos muy sesgado hacia un lado predice quién gana el próximo cruce (dominancia histórica)."],
+        ["Lo que hicimos", "El perfil inicial exigía un ratio de victorias H2H extremo, sin verificar cuántos encuentros reales sustentaban ese ratio. Un diagnóstico dedicado midió la profundidad real detrás de cada caso clasificado como 'extremo'."],
+        ["Lo que encontramos", "El 69.1% de los casos extremos estaban sustentados en apenas 1 o 2 encuentros reales, no en un historial profundo — la feature permitía valores triviales (0.0/1.0) con una sola observación."],
+        ["Por qué importa", "Verificar la profundidad real detrás de un promedio agregado es obligatorio antes de confiar en un umbral extremo."],
+      ],
+      finalStatus: "La versión corregida con profundidad real verificada mostró edge casi idéntico, pero fue posteriormente refutada por el sesgo de Jensen — la lección sobre profundidad de muestra sigue vigente.",
+      evidence: [
+        ["Fuente", "CARRIL_B_LAB_NOTEBOOK.md, Lecciones Aprendidas #2"],
+        ["Tipo", "Corrección de metodología, publicada"],
+        ["Casos auditados", "69.1% con muestra insuficiente"],
+      ],
+    },
+  },
+  {
+    id: "k0001",
+    pillar: "certificado",
+    seal: true,
+    correction: false,
+    entity: "4 grandes ligas",
+    headline: "FormCalculator supera al baseline naive en 1X2 de las 4 grandes ligas",
+    excerpt: "θ=−1.49pp, p<0.0001, I²=0% — meta-análisis DerSimonian-Laird sobre 4 ligas.",
+    time: "hace 1 día",
+    detail: {
+      sections: [
+        ["Hallazgo certificado", "FormCalculator, el modelo de forma reciente de ATLAS, supera de forma estadísticamente significativa al baseline ingenuo en la predicción de resultado 1X2, verificado de forma independiente en las 4 grandes ligas europeas."],
+        ["Evidencia", "θ=−1.49pp (mejora sobre el baseline), p<0.0001, heterogeneidad I²=0% entre ligas — el efecto es consistente, no depende de una liga particular."],
+      ],
+      finalStatus: null,
+      evidence: [
+        ["Fuente", "AtlasClient (AKI), verificado 2026-07-21"],
+        ["Estado", "CONFIRMADO"],
+        ["Ligas evaluadas", "4 (I²=0%)"],
+      ],
+    },
+  },
+  {
+    id: "referee",
+    pillar: "patron",
+    seal: false,
+    correction: false,
+    confidence: 3,
+    entity: "Árbitros",
+    headline: "El árbitro Esteban Ostojich promedia 6.65 tarjetas amarillas por partido",
+    excerpt: "2.6 desviaciones estándar sobre el promedio de 895 árbitros comparables (4.34).",
+    time: "hace 2 horas",
+    detail: {
+      sections: [
+        ["El dato", "Esteban Ostojich promedia 6.65 tarjetas amarillas por partido en su carrera."],
+        ["El contexto que lo hace significativo", "Comparado contra la población completa de 895 árbitros con carrera comparable (media 4.34), esto representa 2.6 desviaciones estándar sobre el promedio — no es un top-5 sin contexto, es una medida real de cuán atípico es."],
+      ],
+      finalStatus: null,
+      evidence: [
+        ["Muestra", "895 árbitros comparables"],
+        ["Desviación", "2.6σ sobre la media"],
+        ["Tipo", "Estadística editorial (Lane A)"],
+      ],
+    },
+  },
+  {
+    id: "ponte-preta",
+    pillar: "patron",
+    seal: false,
+    correction: false,
+    confidence: 2,
+    entity: "Ponte Preta · Brasileirão Série B",
+    headline: "Ponte Preta no gana hace 10 partidos (9 derrotas, 1 empate)",
+    excerpt: "Racha negativa sostenida en Brasileirão Série B.",
+    time: "hace 2 días",
+    detail: {
+      sections: [
+        ["El dato", "Ponte Preta acumula 10 partidos sin ganar en Brasileirão Série B: 9 derrotas y 1 empate."],
+      ],
+      finalStatus: null,
+      evidence: [
+        ["Muestra", "10 partidos consecutivos"],
+        ["Tipo", "Estadística editorial (Lane A)"],
+      ],
+    },
+  },
+  {
+    id: "14-refutadas",
+    pillar: "proceso",
+    seal: true,
+    correction: true,
+    entity: null,
+    headline: "14 hipótesis de apuesta puestas a prueba con rigor — y por qué casi ninguna sobrevivió",
+    excerpt: "12 Refutadas, 2 Archivadas por evidencia insuficiente, 0 Certificadas — con la disciplina completa documentada.",
+    time: "hace 1 día",
+    detail: {
+      sections: [
+        ["La pregunta", "¿Existen patrones estadísticos simples que el mercado de cuotas no esté incorporando ya en el precio?"],
+        ["El método", "Cada hipótesis se operacionalizó con un perfil de entrada y un mercado objetivo fijado por lógica futbolística ANTES de mirar el resultado del backtest — nunca elegido ni reemplazado por el número obtenido."],
+        ["Lo que encontramos", "De 14 estrategias investigadas con esta disciplina, el resultado final es 12 Refutadas, 2 Archivadas por evidencia insuficiente, 0 Certificadas."],
+        ["Por qué importa", "El patrimonio de datos actual sugiere que el mercado ya incorpora con precisión razonable la información contenida en perfiles simples — desconfiar de reglas simples de apuesta basadas en un solo ángulo estadístico."],
+      ],
+      finalStatus: "Programa cerrado definitivamente el 2026-07-20. Ninguna hipótesis sobrevivió a la disciplina completa de verificación.",
+      evidence: [
+        ["Hipótesis probadas", "14"],
+        ["Refutadas", "12"],
+        ["Certificadas", "0"],
+      ],
+    },
+  },
+  {
+    id: "lane-separation",
+    pillar: "metodologia",
+    seal: true,
+    correction: false,
+    entity: null,
+    headline: "Por qué separamos 'lo que medimos nosotros' de 'lo que certificó el laboratorio'",
+    excerpt: "Principio permanente del método científico de ATLAS, no depende de un incidente nuevo.",
+    time: "principio permanente",
+    detail: {
+      sections: [
+        ["El principio", "Todo el contenido se etiqueta con su fuente: estadística editorial (calculada directamente sobre datos históricos crudos) o conocimiento certificado (citado exclusivamente del proceso de validación del Laboratorio, nunca recalculado)."],
+        ["Por qué importa", "La mayoría del contenido deportivo mezcla ambos sin distinción — una racha reciente se presenta con el mismo peso que un hallazgo validado con meta-análisis. Esa distinción explícita es, en sí misma, parte del producto."],
+      ],
+      finalStatus: null,
+      evidence: [
+        ["Tipo", "Principio metodológico permanente"],
+        ["Fuente", "Enmienda II"],
+      ],
+    },
+  },
+];
+
+const CONFIRMED = STORIES.filter(s => s.seal && !s.correction);
+const CORRECTED = STORIES.filter(s => s.correction);
+
+function confidenceMeter(level) {
+  if (!level) return "";
+  const bars = [1,2,3].map(i => `<span class="${i <= level ? "filled" : ""}"></span>`).join("");
+  const labels = { 1: "Confianza emergente", 2: "Confianza media", 3: "Confianza alta" };
+  return `<div class="evidence-meter"><div class="meter-bars">${bars}</div><span class="meter-label">${labels[level]}</span></div>`;
+}
+
+function badgeRow(story) {
+  const pm = PILLAR_META[story.pillar];
+  let out = `<span class="pillar-label"><span class="ico">${pm.icon}</span>${pm.label}</span>`;
+  return out;
+}
+
+function cardHtml(story) {
+  const pm = PILLAR_META[story.pillar];
+  const rightBadge = story.seal
+    ? `<span class="seal">◆ Certificado</span>`
+    : (story.confidence ? confidenceMeter(story.confidence) : "");
+  return `
+  <article class="card" data-id="${story.id}">
+    <div class="card-top">
+      <span class="pillar-label"><span class="ico">${pm.icon}</span>${pm.label}</span>
+      ${story.correction ? '<span class="correction-tag">↺ Corrección pública</span>' : ""}
+    </div>
+    <h2>${story.headline}</h2>
+    <p class="excerpt">${story.excerpt}</p>
+    <div class="card-foot">
+      ${story.entity ? `<span class="entity-tag">${story.entity}</span>` : "<span></span>"}
+      ${rightBadge}
+    </div>
+  </article>`;
+}
+
+function renderFeed() {
+  document.getElementById("feed-list").innerHTML = STORIES.map(cardHtml).join("");
+}
+
+function ledgerItemHtml(story, corrected) {
+  return `
+  <div class="ledger-item ${corrected ? "corrected" : ""}" data-id="${story.id}">
+    <h3>${story.headline}</h3>
+    <p class="meta">${PILLAR_META[story.pillar].label}${story.entity ? " · " + story.entity : ""}</p>
+    ${story.id === "jensen-bias" ? '<div class="correction-delta"><span class="before">E002 +6.8pp</span> → <span class="after">−1.1pp</span> · <span class="before">E011 +6.3pp</span> → <span class="after">−2.5pp</span></div>' : ""}
+    ${story.id === "h2h-depth" ? '<div class="correction-delta"><span class="before">Historial "extremo"</span> → <span class="after">69.1% con 1-2 partidos reales</span></div>' : ""}
+  </div>`;
+}
+
+function renderHistorial() {
+  document.getElementById("ledger-confirmed").innerHTML = CONFIRMED.map(s => ledgerItemHtml(s, false)).join("");
+  document.getElementById("ledger-corrected").innerHTML = CORRECTED.map(s => ledgerItemHtml(s, true)).join("");
+}
+
+function openDetail(id) {
+  const story = STORIES.find(s => s.id === id);
+  if (!story) return;
+  const d = story.detail;
+  const badges = `
+    <div class="badge-row">
+      ${badgeRow(story)}
+      ${story.seal ? '<span class="seal">◆ Certificado</span>' : ""}
+      ${story.correction ? '<span class="correction-tag">↺ Corrección pública</span>' : ""}
+    </div>`;
+  const sections = d.sections.map(([label, text]) => `
+    <div class="story-section">
+      <div class="label">${label}</div>
+      <p>${text}</p>
+    </div>`).join("");
+  const evidenceRows = d.evidence.map(([k, v]) => `<div class="row"><span class="k">${k}</span><span class="v">${v}</span></div>`).join("");
+  const finalStatus = d.finalStatus
+    ? `<div class="final-status"><span class="label">Estado final — </span>${d.finalStatus}</div>`
+    : "";
+  const related = STORIES.filter(s => s.id !== id && s.pillar === story.pillar).slice(0, 2);
+  const relatedHtml = related.length ? `
+    <div class="related-title">También en ${PILLAR_META[story.pillar].label}</div>
+    <div class="feed">${related.map(cardHtml).join("")}</div>` : "";
+
+  document.getElementById("detail-body").innerHTML = `
+    ${badges}
+    <h1>${story.headline}</h1>
+    <div class="evidence-panel">${evidenceRows}</div>
+    ${sections}
+    ${finalStatus}
+    ${relatedHtml}
+    <div class="footer-note">ATLAS Lab — No adivinamos. Investigamos.</div>
+  `;
+  document.getElementById("detail-overlay").hidden = false;
+  document.getElementById("detail-overlay").scrollTop = 0;
+  document.querySelectorAll("#detail-body .card").forEach(el => {
+    el.addEventListener("click", () => openDetail(el.dataset.id));
+  });
+}
+
+document.querySelectorAll(".tab").forEach(tab => {
+  tab.addEventListener("click", () => {
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    tab.classList.add("active");
+    const view = tab.dataset.view;
+    document.getElementById("view-feed").hidden = view !== "feed";
+    document.getElementById("view-historial").hidden = view !== "historial";
+  });
+});
+
+document.getElementById("back-btn").addEventListener("click", () => {
+  document.getElementById("detail-overlay").hidden = true;
+});
+
+renderFeed();
+renderHistorial();
+document.querySelectorAll(".card").forEach(el => {
+  el.addEventListener("click", () => openDetail(el.dataset.id));
+});
+</script>
+</body>
+</html>
