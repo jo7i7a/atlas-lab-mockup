@@ -156,7 +156,57 @@
   }
   .pillar-chip .mark { color: var(--green); }
 
+  .legend {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px 14px;
+    margin: 18px 0 22px;
+  }
+  .legend-title {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-bottom: 2px;
+  }
+  .legend-row { display: flex; align-items: center; gap: 10px; font-size: 12.5px; color: var(--text-dim); }
+  .legend-row .sample { flex-shrink: 0; }
+
+  .filter-bar {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+  .filter-chip {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    border-radius: 999px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  .filter-chip.active {
+    background: var(--green-soft);
+    border-color: color-mix(in srgb, var(--green) 55%, var(--border));
+    color: var(--green);
+  }
+
   .feed { display: flex; flex-direction: column; gap: 14px; }
+  .feed-empty {
+    font-size: 13.5px;
+    color: var(--text-faint);
+    padding: 30px 0;
+    text-align: center;
+  }
 
   .card {
     background: var(--surface);
@@ -340,6 +390,52 @@
   .correction-delta .before { color: var(--text-faint); text-decoration: line-through; }
   .correction-delta .after { color: var(--clay); font-weight: 600; }
 
+  /* Como Funciona view */
+  .how-intro {
+    padding: 26px 0 20px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 22px;
+  }
+  .how-intro h1 {
+    font-family: var(--serif);
+    font-size: clamp(22px, 5.5vw, 28px);
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+  .how-intro p { font-size: 14.5px; color: var(--text-dim); max-width: 56ch; margin: 0; }
+
+  .principle-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 16px 14px;
+    margin-bottom: 12px;
+  }
+  .principle-card .num {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    color: var(--green);
+    letter-spacing: 0.05em;
+  }
+  .principle-card h3 {
+    font-family: var(--serif);
+    font-size: 16.5px;
+    margin: 6px 0 8px;
+    line-height: 1.35;
+  }
+  .principle-card p { font-size: 13.5px; color: var(--text-dim); margin: 0; line-height: 1.55; }
+
+  .how-badges-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    margin: 20px 0 28px;
+  }
+
   /* Detail overlay */
   #detail-overlay {
     position: fixed;
@@ -374,7 +470,15 @@
     cursor: pointer;
     font-size: 16px;
   }
-  .detail-topbar .wm { font-family: var(--serif); font-weight: 700; font-size: 15px; }
+  .detail-topbar .wm-group { display: flex; flex-direction: column; gap: 1px; }
+  .detail-topbar .wm { font-family: var(--serif); font-weight: 700; font-size: 15px; line-height: 1; }
+  .detail-topbar .wm-tag {
+    font-family: var(--mono);
+    font-size: 8.5px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
 
   .detail-body { max-width: 640px; margin: 0 auto; padding: 22px 18px 70px; }
   .detail-body h1 {
@@ -452,6 +556,7 @@
   <nav class="tabs">
     <button class="tab active" data-view="feed">Feed</button>
     <button class="tab" data-view="historial">Nuestro Historial</button>
+    <button class="tab" data-view="how">Cómo Funciona</button>
   </nav>
 </header>
 
@@ -468,6 +573,15 @@
         <span class="pillar-chip"><span class="mark">✓</span> Errores públicos</span>
       </div>
     </div>
+
+    <div class="legend">
+      <div class="legend-title">Cómo leer cada tarjeta</div>
+      <div class="legend-row"><span class="sample seal">◆ Certificado</span> verificado y citado directamente del Laboratorio de ATLAS, nunca recalculado</div>
+      <div class="legend-row"><span class="sample"><div class="evidence-meter"><div class="meter-bars"><span class="filled"></span><span class="filled"></span><span></span></div></div></span> confianza estadística de una estimación propia, según tamaño de muestra real</div>
+      <div class="legend-row"><span class="sample correction-tag">↺ Corrección pública</span> ya publicamos esto como cierto y después lo corregimos — se muestra igual, no se esconde</div>
+    </div>
+
+    <div class="filter-bar" id="filter-bar"><!-- rendered by JS --></div>
 
     <div class="feed" id="feed-list"><!-- rendered by JS --></div>
   </section>
@@ -494,13 +608,52 @@
     <div class="footer-note">Todo el patrimonio de conocimiento certificado se audita contra su documento fuente antes de citarse. Ver Cuaderno de Laboratorio para el proceso completo.</div>
   </section>
 
+  <!-- ============ COMO FUNCIONA VIEW ============ -->
+  <section id="view-how" hidden>
+    <div class="how-intro">
+      <h1>Cómo Funciona ATLAS Lab</h1>
+      <p>Tres principios permanentes, no una promesa de marketing — cada uno ya se aplicó en contenido real que podés verificar en el Feed y en Nuestro Historial.</p>
+    </div>
+
+    <div class="principle-card">
+      <div class="num">PRINCIPIO 1</div>
+      <h3>El mercado (o la afirmación) se fija antes de ver el resultado, nunca después</h3>
+      <p>Toda hipótesis se define por lógica futbolística ANTES de ejecutar cualquier verificación. Nunca se elige ni se reemplaza el criterio después de ver el número — eso es, literalmente, buscar hasta encontrar ruido que parezca señal.</p>
+    </div>
+
+    <div class="principle-card">
+      <div class="num">PRINCIPIO 2</div>
+      <h3>Nunca confiamos en un patrón sin verificar cuántas observaciones reales lo sostienen</h3>
+      <p>Un historial que permite valores extremos con una sola observación produce falsos patrones fuertes. Antes de aceptar un umbral extremo, se verifica la profundidad real de la muestra detrás del número — no basta con que el promedio exista.</p>
+    </div>
+
+    <div class="principle-card">
+      <div class="num">PRINCIPIO 3</div>
+      <h3>Separamos siempre lo que medimos nosotros de lo que certificó el Laboratorio</h3>
+      <p>Estadística editorial (calculada sobre datos crudos) y conocimiento certificado (validado con meta-análisis) nunca se presentan con el mismo peso. El lector siempre sabe cuál de los dos está leyendo.</p>
+    </div>
+
+    <div class="how-badges-demo">
+      <div class="legend-title">El sistema de confianza, explicado una vez, aplicado en todas partes</div>
+      <div class="legend-row"><span class="sample seal">◆ Certificado</span> Laboratorio de ATLAS — el nivel más alto</div>
+      <div class="legend-row"><span class="sample"><div class="evidence-meter"><div class="meter-bars"><span class="filled"></span><span class="filled"></span><span class="filled"></span></div></div></span> confianza alta, muestra grande</div>
+      <div class="legend-row"><span class="sample"><div class="evidence-meter"><div class="meter-bars"><span class="filled"></span><span></span><span></span></div></div></span> confianza emergente, muestra chica — se muestra igual, con la etiqueta correcta</div>
+      <div class="legend-row"><span class="sample correction-tag">↺ Corrección pública</span> ya nos equivocamos acá antes, y lo dejamos visible</div>
+    </div>
+
+    <div class="footer-note">Estos tres principios no son aspiracionales — cada uno tiene al menos un caso real documentado en Nuestro Historial.</div>
+  </section>
+
 </main>
 
 <!-- ============ DETAIL OVERLAY ============ -->
 <div id="detail-overlay" hidden>
   <div class="detail-topbar">
     <button class="back-btn" id="back-btn" aria-label="Volver">←</button>
-    <span class="wm">ATLAS·LAB</span>
+    <div class="wm-group">
+      <span class="wm">ATLAS·LAB</span>
+      <span class="wm-tag">Inteligencia deportiva basada en evidencia</span>
+    </div>
   </div>
   <div class="detail-body" id="detail-body"><!-- rendered by JS --></div>
 </div>
@@ -716,8 +869,30 @@ function cardHtml(story) {
   </article>`;
 }
 
+let activeFilter = "all";
+
+function renderFilterBar() {
+  const present = [...new Set(STORIES.map(s => s.pillar))];
+  const chips = [`<button class="filter-chip ${activeFilter === "all" ? "active" : ""}" data-pillar="all">Todos</button>`]
+    .concat(present.map(p => `<button class="filter-chip ${activeFilter === p ? "active" : ""}" data-pillar="${p}">${PILLAR_META[p].icon} ${PILLAR_META[p].label}</button>`));
+  document.getElementById("filter-bar").innerHTML = chips.join("");
+  document.querySelectorAll(".filter-chip").forEach(chip => {
+    chip.addEventListener("click", () => {
+      activeFilter = chip.dataset.pillar;
+      renderFilterBar();
+      renderFeed();
+    });
+  });
+}
+
 function renderFeed() {
-  document.getElementById("feed-list").innerHTML = STORIES.map(cardHtml).join("");
+  const list = activeFilter === "all" ? STORIES : STORIES.filter(s => s.pillar === activeFilter);
+  document.getElementById("feed-list").innerHTML = list.length
+    ? list.map(cardHtml).join("")
+    : `<div class="feed-empty">Nada en esta categoría todavía.</div>`;
+  document.querySelectorAll("#feed-list .card").forEach(el => {
+    el.addEventListener("click", () => openDetail(el.dataset.id));
+  });
 }
 
 function ledgerItemHtml(story, corrected) {
@@ -733,6 +908,9 @@ function ledgerItemHtml(story, corrected) {
 function renderHistorial() {
   document.getElementById("ledger-confirmed").innerHTML = CONFIRMED.map(s => ledgerItemHtml(s, false)).join("");
   document.getElementById("ledger-corrected").innerHTML = CORRECTED.map(s => ledgerItemHtml(s, true)).join("");
+  document.querySelectorAll(".ledger-item").forEach(el => {
+    el.addEventListener("click", () => openDetail(el.dataset.id));
+  });
 }
 
 function openDetail(id) {
@@ -782,6 +960,7 @@ document.querySelectorAll(".tab").forEach(tab => {
     const view = tab.dataset.view;
     document.getElementById("view-feed").hidden = view !== "feed";
     document.getElementById("view-historial").hidden = view !== "historial";
+    document.getElementById("view-how").hidden = view !== "how";
   });
 });
 
@@ -789,11 +968,9 @@ document.getElementById("back-btn").addEventListener("click", () => {
   document.getElementById("detail-overlay").hidden = true;
 });
 
+renderFilterBar();
 renderFeed();
 renderHistorial();
-document.querySelectorAll(".card").forEach(el => {
-  el.addEventListener("click", () => openDetail(el.dataset.id));
-});
 </script>
 </body>
 </html>
