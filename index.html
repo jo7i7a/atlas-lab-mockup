@@ -168,13 +168,32 @@
     align-items: center;
     gap: 8px;
   }
+  .featured-match {
+    font-family: var(--sans);
+    font-size: clamp(18px, 5.6vw, 22px);
+    font-weight: 800;
+    letter-spacing: 0.005em;
+    color: var(--text);
+    margin: 0 0 8px;
+    line-height: 1.25;
+  }
+  .featured-match .vs {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--green);
+    margin: 0 6px;
+    vertical-align: middle;
+  }
   .featured h2 {
     font-family: var(--serif);
-    font-size: clamp(21px, 6.5vw, 27px);
-    line-height: 1.2;
+    font-size: clamp(15.5px, 4.4vw, 18px);
+    line-height: 1.35;
     margin: 0 0 10px;
     text-wrap: balance;
-    font-weight: 700;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--text-dim);
   }
   .featured p.excerpt {
     font-size: 14.5px;
@@ -314,12 +333,28 @@
     padding: 2px 8px;
   }
 
+  .match-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px 7px;
+    font-family: var(--sans);
+    font-size: 13.5px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .match-line .ico { font-size: 12px; color: var(--text-faint); font-weight: 400; }
+  .match-line .league { font-weight: 400; color: var(--text-faint); font-size: 11.5px; }
+
   .card h2 {
     font-family: var(--serif);
-    font-size: 17.5px;
-    line-height: 1.32;
+    font-size: 16.5px;
+    line-height: 1.3;
     font-weight: 700;
     margin: 0 0 8px;
+    color: var(--text-dim);
     text-wrap: balance;
   }
   .card p.excerpt {
@@ -777,7 +812,6 @@ const STORIES = [
     seal: false,
     correction: false,
     confidence: 3,
-    featured: true,
     entity: "Esteban Ostojich · Brasileirão Série B",
     headline: "El árbitro Esteban Ostojich promedia 6.65 tarjetas amarillas por partido",
     excerpt: "2.6 desviaciones estándar sobre el promedio de 895 árbitros comparables (4.34).",
@@ -813,6 +847,54 @@ const STORIES = [
       evidence: [
         ["Muestra", "10 partidos consecutivos"],
         ["Tipo", "Estadística editorial (Lane A)"],
+      ],
+    },
+  },
+  {
+    id: "h2h-vila-clube",
+    pillar: "patron",
+    seal: false,
+    correction: false,
+    confidence: 3,
+    featured: true,
+    match: "Vila Nova FC vs Clube De Regatas Brasil",
+    entity: "Brasileirão Série B",
+    headline: "Clube De Regatas Brasil domina el historial ante Vila Nova FC",
+    excerpt: "5 victorias en 11 encuentros directos (4 de Vila Nova, 2 empates) — verificado con profundidad real, no un promedio agregado trivial.",
+    time: "hace 3 días",
+    detail: {
+      sections: [
+        ["El dato", "Entre los pares de equipos que se enfrentaron en la season activa, Vila Nova FC y Clube De Regatas Brasil tienen el historial más profundo: 11 encuentros directos registrados."],
+        ["El resultado", "Clube De Regatas Brasil ganó 5 de esos 11 cruces, Vila Nova FC 4, con 2 empates — una ventaja real pero no aplastante."],
+        ["Por qué se verificó así", "Antes de reportar cualquier historial de cruces como 'dominante', se exige un mínimo real de encuentros — la misma disciplina que reveló que el 69.1% de los historiales 'extremos' del catálogo estaban sostenidos en apenas 1 o 2 partidos."],
+      ],
+      finalStatus: null,
+      evidence: [
+        ["Encuentros directos", "11"],
+        ["Balance", "5-4-2"],
+        ["Tipo", "Estadística editorial (Lane A), profundidad verificada"],
+      ],
+    },
+  },
+  {
+    id: "goleada-londrina",
+    pillar: "patron",
+    seal: false,
+    correction: false,
+    confidence: false,
+    match: "Londrina 5-0 Clube De Regatas Brasil",
+    entity: "Brasileirão Série B",
+    headline: "La goleada más amplia de los últimos 200 partidos finalizados",
+    excerpt: "Diferencia de 5 goles — la mayor margen entre los partidos finalizados más recientes del patrimonio de datos.",
+    time: "hace 1 día",
+    detail: {
+      sections: [
+        ["El dato", "Londrina venció 5-0 a Clube De Regatas Brasil — la mayor diferencia de goles registrada entre los últimos 200 partidos finalizados en el patrimonio de datos."],
+      ],
+      finalStatus: null,
+      evidence: [
+        ["Muestra comparada", "200 partidos finalizados recientes"],
+        ["Tipo", "Estadística curiosa, sin pretensión de significancia"],
       ],
     },
   },
@@ -879,21 +961,32 @@ function badgeRow(story) {
   return out;
 }
 
-function cardHtml(story) {
+function matchLineHtml(story) {
   const pm = PILLAR_META[story.pillar];
+  if (story.match) {
+    const teams = story.match.split(" vs ");
+    const label = teams.length === 2
+      ? `${teams[0]}<span class="vs">vs</span>${teams[1]}`
+      : story.match;
+    return `<div class="match-line"><span class="ico">${pm.icon}</span>${label}${story.entity ? `<span class="league">· ${story.entity}</span>` : ""}</div>`;
+  }
+  if (story.entity) {
+    return `<div class="match-line"><span class="ico">${pm.icon}</span>${story.entity}</div>`;
+  }
+  return `<div class="match-line"><span class="ico">${pm.icon}</span>${pm.label}</div>`;
+}
+
+function cardHtml(story) {
   const rightBadge = story.seal
     ? `<span class="seal">◆ Certificado</span>`
     : (story.confidence ? confidenceMeter(story.confidence) : "");
   return `
   <article class="card" data-id="${story.id}">
-    <div class="card-top">
-      <span class="pillar-label"><span class="ico">${pm.icon}</span>${pm.label}</span>
-      ${story.correction ? '<span class="correction-tag">↺ Corrección pública</span>' : ""}
-    </div>
+    ${matchLineHtml(story)}
     <h2>${story.headline}</h2>
     <p class="excerpt">${story.excerpt}</p>
     <div class="card-foot">
-      ${story.entity ? `<span class="entity-tag">${story.entity}</span>` : "<span></span>"}
+      ${story.correction ? '<span class="correction-tag">↺ Corrección pública</span>' : "<span></span>"}
       ${rightBadge}
     </div>
   </article>`;
@@ -904,9 +997,13 @@ function featuredHtml(story) {
   const rightBadge = story.seal
     ? `<span class="seal">◆ Certificado</span>`
     : (story.confidence ? confidenceMeter(story.confidence) : "");
+  const titleLine = story.match
+    ? story.match.split(" vs ").map((t, i) => i === 0 ? t : `<span class="vs">vs</span>${t}`).join("")
+    : (story.entity || pm.label);
   return `
   <article class="featured" data-id="${story.id}">
-    <div class="kicker">${pm.icon} ${story.entity || pm.label} · ${story.time}</div>
+    <div class="kicker">${pm.icon} ${story.entity ? story.entity + " · " : ""}${story.time}</div>
+    <div class="featured-match">${titleLine}</div>
     <h2>${story.headline}</h2>
     <p class="excerpt">${story.excerpt}</p>
     <div class="card-foot">
@@ -994,6 +1091,7 @@ function openDetail(id) {
     <div class="feed">${related.map(cardHtml).join("")}</div>` : "";
 
   document.getElementById("detail-body").innerHTML = `
+    ${matchLineHtml(story)}
     ${badges}
     <h1>${story.headline}</h1>
     <div class="evidence-panel">${evidenceRows}</div>
