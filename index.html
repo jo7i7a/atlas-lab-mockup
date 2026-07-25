@@ -122,39 +122,77 @@
 
   main { max-width: 720px; margin: 0 auto; padding: 0 18px 80px; }
 
-  .hero {
-    padding: 28px 0 22px;
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 22px;
+  .day-strip {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 18px 0 14px;
+    margin-bottom: 16px;
   }
-  .hero h1 {
+  .day-strip .today-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+  .day-strip .today-count { font-size: 12px; color: var(--text-dim); }
+  .day-strip .today-count b { color: var(--green); font-variant-numeric: tabular-nums; }
+
+  .featured {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 20px 18px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .featured::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--green), color-mix(in srgb, var(--green) 20%, transparent));
+  }
+  .featured .kicker {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .featured h2 {
     font-family: var(--serif);
-    font-size: clamp(24px, 6vw, 32px);
-    line-height: 1.15;
-    margin: 0 0 12px;
+    font-size: clamp(21px, 6.5vw, 27px);
+    line-height: 1.2;
+    margin: 0 0 10px;
     text-wrap: balance;
     font-weight: 700;
   }
-  .hero p.lede {
-    font-size: 15px;
+  .featured p.excerpt {
+    font-size: 14.5px;
     color: var(--text-dim);
-    max-width: 54ch;
-    margin: 0 0 18px;
+    margin: 0 0 14px;
+    max-width: 56ch;
+    line-height: 1.55;
   }
-  .pillars-row {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  .pillar-chip {
-    display: flex;
-    align-items: center;
-    gap: 6px;
+  .featured .card-foot { margin-top: 14px; padding-top: 14px; }
+
+  .section-label {
     font-family: var(--mono);
     font-size: 11px;
-    color: var(--text-dim);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 4px 0 12px;
   }
-  .pillar-chip .mark { color: var(--green); }
 
   .legend {
     display: flex;
@@ -564,23 +602,14 @@
 
   <!-- ============ FEED VIEW ============ -->
   <section id="view-feed">
-    <div class="hero">
-      <h1>No adivinamos. Medimos, verificamos, y mostramos el margen de error.</h1>
-      <p class="lede">Cada hallazgo declara su nivel de evidencia antes de que lo leas. Cuando nos equivocamos, lo corregimos en público — no lo escondemos.</p>
-      <div class="pillars-row">
-        <span class="pillar-chip"><span class="mark">✓</span> Metodología visible</span>
-        <span class="pillar-chip"><span class="mark">✓</span> Confianza explícita</span>
-        <span class="pillar-chip"><span class="mark">✓</span> Errores públicos</span>
-      </div>
+    <div class="day-strip">
+      <span class="today-label" id="today-label">Hoy en el fútbol</span>
+      <span class="today-count"><b id="today-count">0</b> análisis nuevos</span>
     </div>
 
-    <div class="legend">
-      <div class="legend-title">Cómo leer cada tarjeta</div>
-      <div class="legend-row"><span class="sample seal">◆ Certificado</span> verificado y citado directamente del Laboratorio de ATLAS, nunca recalculado</div>
-      <div class="legend-row"><span class="sample"><div class="evidence-meter"><div class="meter-bars"><span class="filled"></span><span class="filled"></span><span></span></div></div></span> confianza estadística de una estimación propia, según tamaño de muestra real</div>
-      <div class="legend-row"><span class="sample correction-tag">↺ Corrección pública</span> ya publicamos esto como cierto y después lo corregimos — se muestra igual, no se esconde</div>
-    </div>
+    <div id="featured-slot"><!-- rendered by JS --></div>
 
+    <div class="section-label">Más análisis</div>
     <div class="filter-bar" id="filter-bar"><!-- rendered by JS --></div>
 
     <div class="feed" id="feed-list"><!-- rendered by JS --></div>
@@ -748,7 +777,8 @@ const STORIES = [
     seal: false,
     correction: false,
     confidence: 3,
-    entity: "Árbitros",
+    featured: true,
+    entity: "Esteban Ostojich · Brasileirão Série B",
     headline: "El árbitro Esteban Ostojich promedia 6.65 tarjetas amarillas por partido",
     excerpt: "2.6 desviaciones estándar sobre el promedio de 895 árbitros comparables (4.34).",
     time: "hace 2 horas",
@@ -869,6 +899,31 @@ function cardHtml(story) {
   </article>`;
 }
 
+function featuredHtml(story) {
+  const pm = PILLAR_META[story.pillar];
+  const rightBadge = story.seal
+    ? `<span class="seal">◆ Certificado</span>`
+    : (story.confidence ? confidenceMeter(story.confidence) : "");
+  return `
+  <article class="featured" data-id="${story.id}">
+    <div class="kicker">${pm.icon} ${story.entity || pm.label} · ${story.time}</div>
+    <h2>${story.headline}</h2>
+    <p class="excerpt">${story.excerpt}</p>
+    <div class="card-foot">
+      ${story.correction ? '<span class="correction-tag">↺ Corrección pública</span>' : `<span class="pillar-label">${pm.label}</span>`}
+      ${rightBadge}
+    </div>
+  </article>`;
+}
+
+function renderFeatured() {
+  const featured = STORIES.find(s => s.featured);
+  if (!featured) { document.getElementById("featured-slot").innerHTML = ""; return; }
+  document.getElementById("featured-slot").innerHTML = featuredHtml(featured);
+  document.querySelector(".featured").addEventListener("click", () => openDetail(featured.id));
+  document.getElementById("today-count").textContent = STORIES.length;
+}
+
 let activeFilter = "all";
 
 function renderFilterBar() {
@@ -886,7 +941,8 @@ function renderFilterBar() {
 }
 
 function renderFeed() {
-  const list = activeFilter === "all" ? STORIES : STORIES.filter(s => s.pillar === activeFilter);
+  const pool = STORIES.filter(s => !s.featured);
+  const list = activeFilter === "all" ? pool : pool.filter(s => s.pillar === activeFilter);
   document.getElementById("feed-list").innerHTML = list.length
     ? list.map(cardHtml).join("")
     : `<div class="feed-empty">Nada en esta categoría todavía.</div>`;
@@ -968,6 +1024,7 @@ document.getElementById("back-btn").addEventListener("click", () => {
   document.getElementById("detail-overlay").hidden = true;
 });
 
+renderFeatured();
 renderFilterBar();
 renderFeed();
 renderHistorial();
