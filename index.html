@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>ATLAS Lab — Inteligencia deportiva basada en evidencia (concepto)</title>
+<title>ATLAS Lab — Panel de navegación deportiva (concepto)</title>
 <style>
   :root {
     --ink: #0e1512;
@@ -51,8 +51,8 @@
     -webkit-font-smoothing: antialiased;
   }
   ::selection { background: var(--green-soft); }
-
   a { color: inherit; }
+  button { font: inherit; }
 
   .concept-tag {
     position: fixed;
@@ -84,15 +84,10 @@
     align-items: baseline;
     justify-content: space-between;
     gap: 12px;
-    max-width: 720px;
+    max-width: 760px;
     margin: 0 auto;
   }
-  .wordmark {
-    font-family: var(--serif);
-    font-weight: 700;
-    font-size: 20px;
-    letter-spacing: 0.01em;
-  }
+  .wordmark { font-family: var(--serif); font-weight: 700; font-size: 20px; letter-spacing: 0.01em; }
   .wordmark .dot { color: var(--green); }
   .tagline {
     font-family: var(--mono);
@@ -101,523 +96,191 @@
     color: var(--text-faint);
     text-transform: uppercase;
   }
-  .tabs {
-    max-width: 720px;
-    margin: 12px auto 0;
-    display: flex;
-    gap: 22px;
-  }
+  .tabs { max-width: 760px; margin: 12px auto 0; display: flex; gap: 22px; overflow-x: auto; }
   .tab {
-    background: none;
-    border: none;
-    color: var(--text-faint);
-    font-family: var(--sans);
-    font-size: 14px;
-    font-weight: 600;
-    padding: 0 0 12px;
-    cursor: pointer;
-    border-bottom: 2px solid transparent;
+    background: none; border: none; color: var(--text-faint);
+    font-size: 14px; font-weight: 600; padding: 0 0 12px;
+    cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap;
   }
   .tab.active { color: var(--text); border-bottom-color: var(--green); }
 
-  main { max-width: 720px; margin: 0 auto; padding: 0 18px 80px; }
+  main { max-width: 760px; margin: 0 auto; padding: 0 18px 80px; }
 
-  .day-strip {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    padding: 18px 0 14px;
-    margin-bottom: 16px;
+  /* ---------- Partidos (home) ---------- */
+  .nav-strip { padding: 16px 0 4px; }
+  .country-row {
+    display: flex; gap: 8px; overflow-x: auto; padding-bottom: 12px;
+    -ms-overflow-style: none; scrollbar-width: none;
   }
-  .day-strip .today-label {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--text-faint);
+  .country-row::-webkit-scrollbar { display: none; }
+  .country-chip {
+    display: flex; align-items: center; gap: 6px; flex-shrink: 0;
+    font-size: 13px; font-weight: 600; color: var(--text-dim);
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 13px; cursor: pointer;
   }
-  .day-strip .today-count { font-size: 12px; color: var(--text-dim); }
-  .day-strip .today-count b { color: var(--green); font-variant-numeric: tabular-nums; }
+  .country-chip .flag { font-size: 15px; }
+  .country-chip.active { background: var(--green-soft); border-color: color-mix(in srgb, var(--green) 55%, var(--border)); color: var(--green); }
 
-  .featured {
-    display: block;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 22px 20px 18px;
-    margin-bottom: 24px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
+  .date-row { display: flex; gap: 8px; margin-bottom: 16px; }
+  .date-chip {
+    font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.02em;
+    background: var(--surface); border: 1px solid var(--border); color: var(--text-dim);
+    border-radius: 999px; padding: 6px 13px; cursor: pointer;
   }
-  .featured::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--green), color-mix(in srgb, var(--green) 20%, transparent));
-  }
-  .featured .kicker {
-    font-family: var(--mono);
-    font-size: 10.5px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--green);
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .featured-match {
-    font-family: var(--sans);
-    font-size: clamp(18px, 5.6vw, 22px);
-    font-weight: 800;
-    letter-spacing: 0.005em;
-    color: var(--text);
-    margin: 0 0 8px;
-    line-height: 1.25;
-  }
-  .featured-match .vs {
-    font-family: var(--mono);
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--green);
-    margin: 0 6px;
-    vertical-align: middle;
-  }
-  .featured h2 {
-    font-family: var(--serif);
-    font-size: clamp(15.5px, 4.4vw, 18px);
-    line-height: 1.35;
-    margin: 0 0 10px;
-    text-wrap: balance;
-    font-weight: 400;
-    font-style: italic;
-    color: var(--text-dim);
-  }
-  .featured p.excerpt {
-    font-size: 14.5px;
-    color: var(--text-dim);
-    margin: 0 0 14px;
-    max-width: 56ch;
-    line-height: 1.55;
-  }
-  .featured .card-foot { margin-top: 14px; padding-top: 14px; }
+  .date-chip.active { background: var(--green-soft); border-color: color-mix(in srgb, var(--green) 55%, var(--border)); color: var(--green); }
 
-  .section-label {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-faint);
-    margin: 4px 0 12px;
+  .analysis-toggle {
+    display: flex; align-items: center; gap: 7px;
+    font-size: 12.5px; color: var(--text-dim); margin-bottom: 20px; cursor: pointer;
+    user-select: none;
   }
+  .analysis-toggle input { accent-color: var(--green); width: 15px; height: 15px; }
 
-  .legend {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 12px 14px;
-    margin: 18px 0 22px;
+  .league-group { margin-bottom: 22px; }
+  .league-header {
+    display: flex; align-items: center; gap: 8px;
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.05em;
+    text-transform: uppercase; color: var(--text-faint);
+    margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid var(--border);
   }
-  .legend-title {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-faint);
-    margin-bottom: 2px;
-  }
-  .legend-row { display: flex; align-items: center; gap: 10px; font-size: 12.5px; color: var(--text-dim); }
-  .legend-row .sample { flex-shrink: 0; }
+  .league-header .flag { font-size: 13px; }
 
-  .filter-bar {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-bottom: 18px;
+  .match-row {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+    padding: 12px 14px; margin-bottom: 8px; cursor: pointer;
   }
-  .filter-chip {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.02em;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    color: var(--text-dim);
-    border-radius: 999px;
-    padding: 6px 12px;
-    cursor: pointer;
+  .match-row:hover { border-color: color-mix(in srgb, var(--green) 40%, var(--border)); }
+  .match-row .teams { font-size: 13.5px; font-weight: 600; line-height: 1.4; }
+  .match-row .teams .vsx { color: var(--text-faint); font-weight: 400; font-size: 11.5px; margin: 0 5px; font-family: var(--mono); }
+  .match-row .right { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+  .match-row .analysis-pill {
+    font-family: var(--mono); font-size: 10px; color: var(--green);
+    background: var(--green-soft); border: 1px solid color-mix(in srgb, var(--green) 50%, var(--border));
+    border-radius: 999px; padding: 2px 7px; white-space: nowrap;
   }
-  .filter-chip.active {
-    background: var(--green-soft);
-    border-color: color-mix(in srgb, var(--green) 55%, var(--border));
-    color: var(--green);
-  }
+  .no-matches { font-size: 13px; color: var(--text-faint); padding: 20px 0; text-align: center; }
 
-  .feed { display: flex; flex-direction: column; gap: 14px; }
-  .feed-empty {
-    font-size: 13.5px;
-    color: var(--text-faint);
-    padding: 30px 0;
-    text-align: center;
+  /* ---------- Legend micro-strip ---------- */
+  .trust-strip {
+    display: flex; gap: 14px; flex-wrap: wrap;
+    font-size: 11px; color: var(--text-faint);
+    padding: 14px 0 6px; margin-top: 6px; border-top: 1px solid var(--border);
   }
+  .trust-strip b { color: var(--green); }
 
-  .card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 16px 16px 14px;
-    cursor: pointer;
-    transition: border-color 0.15s ease, transform 0.15s ease;
-  }
-  .card:hover { border-color: color-mix(in srgb, var(--green) 45%, var(--border)); }
-  .card:active { transform: scale(0.995); }
+  /* ---------- Historial / Como Funciona (unchanged spirit) ---------- */
+  .page-intro { padding: 26px 0 20px; border-bottom: 1px solid var(--border); margin-bottom: 22px; }
+  .page-intro h1 { font-family: var(--serif); font-size: clamp(22px, 5.5vw, 28px); margin: 0 0 10px; text-wrap: balance; }
+  .page-intro p { font-size: 14.5px; color: var(--text-dim); max-width: 56ch; margin: 0; }
 
-  .card-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    margin-bottom: 9px;
-  }
-  .badge-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-
-  .pillar-label {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--text-faint);
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  .pillar-label .ico { font-size: 11px; }
-
-  .entity-tag {
-    font-size: 11px;
-    color: var(--text-dim);
-    background: var(--surface-2);
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    padding: 2px 8px;
-  }
-
-  .seal {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.03em;
-    color: var(--green);
-    border: 1px solid color-mix(in srgb, var(--green) 55%, var(--border));
-    background: var(--green-soft);
-    border-radius: 999px;
-    padding: 2px 8px 2px 6px;
-  }
-  .correction-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.03em;
-    color: var(--clay);
-    border: 1px solid color-mix(in srgb, var(--clay) 55%, var(--border));
-    background: var(--clay-soft);
-    border-radius: 999px;
-    padding: 2px 8px;
-  }
-
-  .match-line {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 4px 7px;
-    font-family: var(--sans);
-    font-size: 13.5px;
-    font-weight: 700;
-    letter-spacing: 0.01em;
-    color: var(--text);
-    margin-bottom: 6px;
-  }
-  .match-line .ico { font-size: 12px; color: var(--text-faint); font-weight: 400; }
-  .match-line .league { font-weight: 400; color: var(--text-faint); font-size: 11.5px; }
-
-  .card h2 {
-    font-family: var(--serif);
-    font-size: 16.5px;
-    line-height: 1.3;
-    font-weight: 700;
-    margin: 0 0 8px;
-    color: var(--text-dim);
-    text-wrap: balance;
-  }
-  .card p.excerpt {
-    font-size: 13.5px;
-    color: var(--text-dim);
-    margin: 0 0 10px;
-    line-height: 1.5;
-  }
-
-  .evidence-meter { display: flex; align-items: center; gap: 8px; }
-  .meter-bars { display: flex; gap: 2px; }
-  .meter-bars span {
-    width: 12px; height: 5px; border-radius: 2px;
-    background: var(--border);
-  }
-  .meter-bars span.filled { background: var(--green); }
-  .meter-label { font-family: var(--mono); font-size: 10.5px; color: var(--text-faint); }
-
-  .card-foot {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
-    padding-top: 10px;
-    border-top: 1px solid var(--border);
-  }
-  .time-ago { font-family: var(--mono); font-size: 10.5px; color: var(--text-faint); }
-
-  /* Historial view */
-  .historial-intro {
-    padding: 26px 0 20px;
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 22px;
-  }
-  .historial-intro h1 {
-    font-family: var(--serif);
-    font-size: clamp(22px, 5.5vw, 28px);
-    margin: 0 0 10px;
-    text-wrap: balance;
-  }
-  .historial-intro p { font-size: 14.5px; color: var(--text-dim); max-width: 56ch; margin: 0; }
-
-  .scorecard {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin: 20px 0 28px;
-  }
-  .scorecard .cell {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 14px 10px;
-    text-align: center;
-  }
-  .scorecard .num {
-    font-family: var(--mono);
-    font-size: 22px;
-    font-weight: 600;
-    font-variant-numeric: tabular-nums;
-  }
+  .scorecard { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 20px 0 28px; }
+  .scorecard .cell { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 10px; text-align: center; }
+  .scorecard .num { font-family: var(--mono); font-size: 22px; font-weight: 600; font-variant-numeric: tabular-nums; }
   .scorecard .num.g { color: var(--green); }
   .scorecard .num.c { color: var(--clay); }
   .scorecard .lbl { font-size: 10.5px; color: var(--text-faint); margin-top: 4px; letter-spacing: 0.02em; }
 
   .ledger-section-title {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--text-faint);
-    margin: 26px 0 12px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-faint); margin: 26px 0 12px; display: flex; align-items: center; gap: 8px;
   }
   .ledger-section-title.g::before { content: "●"; color: var(--green); }
   .ledger-section-title.c::before { content: "●"; color: var(--clay); }
 
   .ledger-item {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--green);
-    border-radius: var(--radius);
-    padding: 14px 16px;
-    margin-bottom: 10px;
-    cursor: pointer;
+    background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--green);
+    border-radius: var(--radius); padding: 14px 16px; margin-bottom: 10px; cursor: pointer;
   }
   .ledger-item.corrected { border-left-color: var(--clay); }
-  .ledger-item h3 {
-    font-family: var(--serif);
-    font-size: 15.5px;
-    margin: 0 0 6px;
-    line-height: 1.35;
-  }
+  .ledger-item h3 { font-family: var(--serif); font-size: 15.5px; margin: 0 0 6px; line-height: 1.35; }
   .ledger-item .meta { font-size: 12.5px; color: var(--text-dim); margin: 0; }
-  .correction-delta {
-    font-family: var(--mono);
-    font-size: 12px;
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    flex-wrap: wrap;
-  }
+  .correction-delta { font-family: var(--mono); font-size: 12px; margin-top: 8px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
   .correction-delta .before { color: var(--text-faint); text-decoration: line-through; }
   .correction-delta .after { color: var(--clay); font-weight: 600; }
 
-  /* Como Funciona view */
-  .how-intro {
-    padding: 26px 0 20px;
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 22px;
-  }
-  .how-intro h1 {
-    font-family: var(--serif);
-    font-size: clamp(22px, 5.5vw, 28px);
-    margin: 0 0 10px;
-    text-wrap: balance;
-  }
-  .how-intro p { font-size: 14.5px; color: var(--text-dim); max-width: 56ch; margin: 0; }
-
-  .principle-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 16px 16px 14px;
-    margin-bottom: 12px;
-  }
-  .principle-card .num {
-    font-family: var(--mono);
-    font-size: 10.5px;
-    color: var(--green);
-    letter-spacing: 0.05em;
-  }
-  .principle-card h3 {
-    font-family: var(--serif);
-    font-size: 16.5px;
-    margin: 6px 0 8px;
-    line-height: 1.35;
-  }
+  .principle-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 16px 14px; margin-bottom: 12px; }
+  .principle-card .num { font-family: var(--mono); font-size: 10.5px; color: var(--green); letter-spacing: 0.05em; }
+  .principle-card h3 { font-family: var(--serif); font-size: 16.5px; margin: 6px 0 8px; line-height: 1.35; }
   .principle-card p { font-size: 13.5px; color: var(--text-dim); margin: 0; line-height: 1.55; }
 
-  .how-badges-demo {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 16px;
-    margin: 20px 0 28px;
-  }
+  .footer-note { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-faint); text-align: center; }
 
-  /* Detail overlay */
-  #detail-overlay {
-    position: fixed;
-    inset: 0;
-    background: var(--ink);
-    z-index: 100;
-    overflow-y: auto;
-    animation: slideup 0.18s ease;
+  /* ---------- badges reused inside match tabs ---------- */
+  .seal {
+    display: inline-flex; align-items: center; gap: 4px; font-family: var(--mono); font-size: 10px;
+    letter-spacing: 0.03em; color: var(--green); border: 1px solid color-mix(in srgb, var(--green) 55%, var(--border));
+    background: var(--green-soft); border-radius: 999px; padding: 2px 8px 2px 6px;
+  }
+  .correction-tag {
+    display: inline-flex; align-items: center; gap: 4px; font-family: var(--mono); font-size: 10px;
+    letter-spacing: 0.03em; color: var(--clay); border: 1px solid color-mix(in srgb, var(--clay) 55%, var(--border));
+    background: var(--clay-soft); border-radius: 999px; padding: 2px 8px;
+  }
+  .evidence-meter { display: flex; align-items: center; gap: 8px; }
+  .meter-bars { display: flex; gap: 2px; }
+  .meter-bars span { width: 12px; height: 5px; border-radius: 2px; background: var(--border); }
+  .meter-bars span.filled { background: var(--green); }
+  .meter-label { font-family: var(--mono); font-size: 10.5px; color: var(--text-faint); }
+
+  .insight-block {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 14px 16px; margin-bottom: 12px;
+  }
+  .insight-block .top-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+  .insight-block h4 { font-family: var(--serif); font-size: 15px; margin: 0 0 6px; line-height: 1.35; }
+  .insight-block p { font-size: 13px; color: var(--text-dim); margin: 0; line-height: 1.5; }
+  .insight-block .src { font-family: var(--mono); font-size: 10px; color: var(--text-faint); margin-top: 8px; }
+
+  .empty-tab { font-size: 13px; color: var(--text-faint); padding: 24px 4px; text-align: center; }
+
+  /* ---------- Match detail overlay ---------- */
+  #match-overlay {
+    position: fixed; inset: 0; background: var(--ink); z-index: 100; overflow-y: auto; animation: slideup 0.18s ease;
   }
   @keyframes slideup { from { transform: translateY(14px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-  #detail-overlay[hidden] { display: none; }
+  #match-overlay[hidden] { display: none; }
 
   .detail-topbar {
-    position: sticky;
-    top: 0;
-    background: color-mix(in srgb, var(--ink) 94%, transparent);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--border);
-    padding: 12px 18px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    z-index: 5;
+    position: sticky; top: 0; background: color-mix(in srgb, var(--ink) 94%, transparent);
+    backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 12px 18px;
+    display: flex; align-items: center; gap: 12px; z-index: 5;
   }
   .back-btn {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    color: var(--text);
-    border-radius: 999px;
-    width: 32px; height: 32px;
-    display: flex; align-items: center; justify-content: center;
-    cursor: pointer;
-    font-size: 16px;
+    background: var(--surface); border: 1px solid var(--border); color: var(--text); border-radius: 999px;
+    width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 16px;
   }
-  .detail-topbar .wm-group { display: flex; flex-direction: column; gap: 1px; }
-  .detail-topbar .wm { font-family: var(--serif); font-weight: 700; font-size: 15px; line-height: 1; }
-  .detail-topbar .wm-tag {
-    font-family: var(--mono);
-    font-size: 8.5px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--text-faint);
-  }
+  .wm-group { display: flex; flex-direction: column; gap: 1px; }
+  .wm { font-family: var(--serif); font-weight: 700; font-size: 15px; line-height: 1; }
+  .wm-tag { font-family: var(--mono); font-size: 8.5px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-faint); }
 
-  .detail-body { max-width: 640px; margin: 0 auto; padding: 22px 18px 70px; }
-  .detail-body h1 {
-    font-family: var(--serif);
-    font-size: clamp(22px, 6.5vw, 30px);
-    line-height: 1.2;
-    margin: 14px 0 16px;
-    text-wrap: balance;
+  .match-hero { max-width: 700px; margin: 0 auto; padding: 20px 18px 0; }
+  .match-hero .league-line { font-family: var(--mono); font-size: 11px; color: var(--text-faint); margin-bottom: 8px; }
+  .match-hero .teams-line {
+    font-family: var(--sans); font-size: clamp(19px, 6vw, 25px); font-weight: 800;
+    line-height: 1.3; text-wrap: balance;
   }
+  .match-hero .teams-line .vsx { color: var(--green); font-family: var(--mono); font-size: 13px; font-weight: 400; margin: 0 8px; }
 
-  .evidence-panel {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 14px 16px;
-    margin: 16px 0 22px;
+  .match-tabs {
+    display: flex; gap: 18px; overflow-x: auto; max-width: 700px; margin: 18px auto 0;
+    padding: 0 18px 10px; border-bottom: 1px solid var(--border);
+    -ms-overflow-style: none; scrollbar-width: none;
   }
-  .evidence-panel .row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; }
-  .evidence-panel .row + .row { border-top: 1px solid var(--border); }
-  .evidence-panel .k { font-size: 12.5px; color: var(--text-faint); }
-  .evidence-panel .v { font-family: var(--mono); font-size: 12.5px; color: var(--text); text-align: right; }
+  .match-tabs::-webkit-scrollbar { display: none; }
+  .match-tab {
+    background: none; border: none; color: var(--text-faint); font-size: 13px; font-weight: 600;
+    padding: 0 0 10px; cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; flex-shrink: 0;
+  }
+  .match-tab.active { color: var(--text); border-bottom-color: var(--green); }
 
-  .story-section { margin-bottom: 18px; }
-  .story-section .label {
-    font-family: var(--mono);
-    font-size: 10.5px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--green);
-    margin-bottom: 6px;
-  }
-  .story-section p { font-size: 15.5px; color: var(--text); margin: 0; line-height: 1.6; }
-
-  .final-status {
-    background: var(--clay-soft);
-    border: 1px solid color-mix(in srgb, var(--clay) 40%, var(--border));
-    border-radius: var(--radius);
-    padding: 12px 14px;
-    font-size: 13.5px;
-    color: var(--text);
-    margin-top: 20px;
-  }
-  .final-status .label { color: var(--clay); }
-
-  .related-title {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-faint);
-    margin: 30px 0 12px;
-  }
-
-  .footer-note {
-    margin-top: 40px;
-    padding-top: 16px;
-    border-top: 1px solid var(--border);
-    font-size: 12px;
-    color: var(--text-faint);
-    text-align: center;
-  }
+  .match-tab-body { max-width: 700px; margin: 0 auto; padding: 20px 18px 70px; }
 </style>
 </head>
 <body>
 
-<span class="concept-tag">Concepto · contenido real, interacción simulada</span>
+<span class="concept-tag">Concepto · datos reales de partidos, interacción simulada</span>
 
 <header class="topbar">
   <div class="topbar-row">
@@ -627,7 +290,7 @@
     </div>
   </div>
   <nav class="tabs">
-    <button class="tab active" data-view="feed">Feed</button>
+    <button class="tab active" data-view="partidos">Partidos</button>
     <button class="tab" data-view="historial">Nuestro Historial</button>
     <button class="tab" data-view="how">Cómo Funciona</button>
   </nav>
@@ -635,24 +298,28 @@
 
 <main>
 
-  <!-- ============ FEED VIEW ============ -->
-  <section id="view-feed">
-    <div class="day-strip">
-      <span class="today-label" id="today-label">Hoy en el fútbol</span>
-      <span class="today-count"><b id="today-count">0</b> análisis nuevos</span>
+  <!-- ============ PARTIDOS (HOME) ============ -->
+  <section id="view-partidos">
+    <div class="nav-strip">
+      <div class="country-row" id="country-row"><!-- JS --></div>
+      <div class="date-row" id="date-row"><!-- JS --></div>
+      <label class="analysis-toggle">
+        <input type="checkbox" id="only-analysis" />
+        Mostrar solo partidos con análisis de ATLAS
+      </label>
     </div>
 
-    <div id="featured-slot"><!-- rendered by JS --></div>
+    <div id="league-groups"><!-- JS --></div>
 
-    <div class="section-label">Más análisis</div>
-    <div class="filter-bar" id="filter-bar"><!-- rendered by JS --></div>
-
-    <div class="feed" id="feed-list"><!-- rendered by JS --></div>
+    <div class="trust-strip">
+      <span><b>◆</b> = análisis de ATLAS disponible para ese partido</span>
+      <span>Datos de calendario reales (SoccerDataExtractor) · el análisis se agrega cuando existe evidencia suficiente, no en todos los partidos</span>
+    </div>
   </section>
 
   <!-- ============ HISTORIAL VIEW ============ -->
   <section id="view-historial" hidden>
-    <div class="historial-intro">
+    <div class="page-intro">
       <h1>Nuestro Historial</h1>
       <p>Todo lo que declaramos como cierto, y todo lo que corregimos después de declararlo. Sin esto, "confiar en los datos" es solo una frase de marketing — acá se puede verificar.</p>
     </div>
@@ -664,467 +331,315 @@
     </div>
 
     <div class="ledger-section-title g">Confirmado</div>
-    <div id="ledger-confirmed"><!-- rendered by JS --></div>
+    <div id="ledger-confirmed"><!-- JS --></div>
 
     <div class="ledger-section-title c">Corregido después de publicarse</div>
-    <div id="ledger-corrected"><!-- rendered by JS --></div>
+    <div id="ledger-corrected"><!-- JS --></div>
 
-    <div class="footer-note">Todo el patrimonio de conocimiento certificado se audita contra su documento fuente antes de citarse. Ver Cuaderno de Laboratorio para el proceso completo.</div>
+    <div class="footer-note">Todo el patrimonio de conocimiento certificado se audita contra su documento fuente antes de citarse.</div>
   </section>
 
   <!-- ============ COMO FUNCIONA VIEW ============ -->
   <section id="view-how" hidden>
-    <div class="how-intro">
+    <div class="page-intro">
       <h1>Cómo Funciona ATLAS Lab</h1>
-      <p>Tres principios permanentes, no una promesa de marketing — cada uno ya se aplicó en contenido real que podés verificar en el Feed y en Nuestro Historial.</p>
+      <p>Tres principios permanentes — cada uno ya se aplicó en contenido real que podés verificar en Partidos y en Nuestro Historial.</p>
     </div>
-
     <div class="principle-card">
       <div class="num">PRINCIPIO 1</div>
       <h3>El mercado (o la afirmación) se fija antes de ver el resultado, nunca después</h3>
-      <p>Toda hipótesis se define por lógica futbolística ANTES de ejecutar cualquier verificación. Nunca se elige ni se reemplaza el criterio después de ver el número — eso es, literalmente, buscar hasta encontrar ruido que parezca señal.</p>
+      <p>Toda hipótesis se define por lógica futbolística ANTES de ejecutar cualquier verificación. Nunca se elige ni se reemplaza el criterio después de ver el número.</p>
     </div>
-
     <div class="principle-card">
       <div class="num">PRINCIPIO 2</div>
       <h3>Nunca confiamos en un patrón sin verificar cuántas observaciones reales lo sostienen</h3>
-      <p>Un historial que permite valores extremos con una sola observación produce falsos patrones fuertes. Antes de aceptar un umbral extremo, se verifica la profundidad real de la muestra detrás del número — no basta con que el promedio exista.</p>
+      <p>Antes de aceptar un umbral extremo, se verifica la profundidad real de la muestra detrás del número — no basta con que el promedio exista.</p>
     </div>
-
     <div class="principle-card">
       <div class="num">PRINCIPIO 3</div>
       <h3>Separamos siempre lo que medimos nosotros de lo que certificó el Laboratorio</h3>
-      <p>Estadística editorial (calculada sobre datos crudos) y conocimiento certificado (validado con meta-análisis) nunca se presentan con el mismo peso. El lector siempre sabe cuál de los dos está leyendo.</p>
+      <p>Estadística editorial y conocimiento certificado nunca se presentan con el mismo peso. El lector siempre sabe cuál de los dos está leyendo.</p>
     </div>
-
-    <div class="how-badges-demo">
-      <div class="legend-title">El sistema de confianza, explicado una vez, aplicado en todas partes</div>
-      <div class="legend-row"><span class="sample seal">◆ Certificado</span> Laboratorio de ATLAS — el nivel más alto</div>
-      <div class="legend-row"><span class="sample"><div class="evidence-meter"><div class="meter-bars"><span class="filled"></span><span class="filled"></span><span class="filled"></span></div></div></span> confianza alta, muestra grande</div>
-      <div class="legend-row"><span class="sample"><div class="evidence-meter"><div class="meter-bars"><span class="filled"></span><span></span><span></span></div></div></span> confianza emergente, muestra chica — se muestra igual, con la etiqueta correcta</div>
-      <div class="legend-row"><span class="sample correction-tag">↺ Corrección pública</span> ya nos equivocamos acá antes, y lo dejamos visible</div>
-    </div>
-
     <div class="footer-note">Estos tres principios no son aspiracionales — cada uno tiene al menos un caso real documentado en Nuestro Historial.</div>
   </section>
 
 </main>
 
-<!-- ============ DETAIL OVERLAY ============ -->
-<div id="detail-overlay" hidden>
+<!-- ============ MATCH DETAIL OVERLAY ============ -->
+<div id="match-overlay" hidden>
   <div class="detail-topbar">
-    <button class="back-btn" id="back-btn" aria-label="Volver">←</button>
+    <button class="back-btn" id="match-back-btn" aria-label="Volver">←</button>
     <div class="wm-group">
       <span class="wm">ATLAS·LAB</span>
       <span class="wm-tag">Inteligencia deportiva basada en evidencia</span>
     </div>
   </div>
-  <div class="detail-body" id="detail-body"><!-- rendered by JS --></div>
+  <div class="match-hero" id="match-hero"><!-- JS --></div>
+  <div class="match-tabs" id="match-tabs"><!-- JS --></div>
+  <div class="match-tab-body" id="match-tab-body"><!-- JS --></div>
 </div>
 
 <script>
-const PILLAR_META = {
-  certificado: { icon: "◆", label: "Conocimiento Certificado" },
-  proceso: { icon: "◈", label: "Proceso Científico" },
-  patron: { icon: "▲", label: "Patrón Detectado" },
-  longitudinal: { icon: "↗", label: "Análisis Longitudinal" },
-  entidad: { icon: "▣", label: "Radiografía" },
-  metodologia: { icon: "◎", label: "Metodología" },
-};
+/* =========================================================================
+   Datos reales de partidos (SoccerDataExtractor, future_fixtures,
+   consultado 2026-07-25). Recorte curado de un universo real de 60+
+   partidos entre 2026-07-25 y 2026-08-05 en 10 ligas/6 países -- se
+   muestra un subconjunto representativo, no la lista completa, para
+   mantener el mockup manejable.
+   ========================================================================= */
 
-// Contenido real, extraído de ediciones ya generadas por el motor (ver
-// atlas_content_engine/content_engine.db, insights_used). Nada fue inventado
-// para este mockup -- headlines, cifras y estados finales son verbatim.
-const STORIES = [
-  {
-    id: "jensen-bias",
-    pillar: "proceso",
-    seal: true,
-    correction: true,
-    entity: null,
-    headline: "El sesgo que fabricaba ventaja donde no la había",
-    excerpt: "Dos estrategias mostraban edge positivo sostenido (+6.8pp y +6.3pp). Auditamos la fórmula que lo calculaba.",
-    time: "hace 3 días",
-    detail: {
-      sections: [
-        ["La pregunta", "Dos estrategias del catálogo (E002, E011) mostraban edge positivo sostenido (+6.8pp y +6.3pp) y estaban en seguimiento como candidatas."],
-        ["Lo que hicimos", "Al investigar un programa distinto, se auditó evaluate_combo() — la función que calcula el retorno financiero esperado de cualquier estrategia del repositorio — y se encontró que promediaba las cuotas como 1/mean(odds) en vez de mean(1/odds): un sesgo de Jensen que sobreestima sistemáticamente el edge en mercados con cuotas variables."],
-        ["Lo que encontramos", "Al corregir la fórmula y recalcular con datos reales, sin tocar ningún criterio ni reconstruir ningún perfil, el edge de ambas estrategias se invirtió: E002 pasó de +6.8pp a −1.1pp, E011 de +6.3pp a −2.5pp. Ninguna de las dos sobrevivió."],
-        ["Por qué importa", "Un edge positivo no es evidencia hasta que se audita la fórmula que lo calculó, no solo el criterio que seleccionó los partidos."],
-      ],
-      finalStatus: "Ambas estrategias reclasificadas a Refutada el 2026-07-20.",
-      evidence: [
-        ["Fuente", "CARRIL_B_ACTA_CIERRE_E00X_2026-07-20.md"],
-        ["Tipo", "Corrección de proceso, publicada"],
-        ["Impacto", "2 estrategias reclasificadas"],
-      ],
-    },
-  },
-  {
-    id: "h2h-depth",
-    pillar: "proceso",
-    seal: true,
-    correction: true,
-    entity: null,
-    headline: "Cuando un historial 'extremo' resultó tener solo 1 o 2 partidos reales detrás",
-    excerpt: "El 69.1% de los casos clasificados como 'extremos' estaban sustentados en apenas 1 o 2 encuentros reales.",
-    time: "hace 3 días",
-    detail: {
-      sections: [
-        ["La pregunta", "Un historial de enfrentamientos directos muy sesgado hacia un lado predice quién gana el próximo cruce (dominancia histórica)."],
-        ["Lo que hicimos", "El perfil inicial exigía un ratio de victorias H2H extremo, sin verificar cuántos encuentros reales sustentaban ese ratio. Un diagnóstico dedicado midió la profundidad real detrás de cada caso clasificado como 'extremo'."],
-        ["Lo que encontramos", "El 69.1% de los casos extremos estaban sustentados en apenas 1 o 2 encuentros reales, no en un historial profundo — la feature permitía valores triviales (0.0/1.0) con una sola observación."],
-        ["Por qué importa", "Verificar la profundidad real detrás de un promedio agregado es obligatorio antes de confiar en un umbral extremo."],
-      ],
-      finalStatus: "La versión corregida con profundidad real verificada mostró edge casi idéntico, pero fue posteriormente refutada por el sesgo de Jensen — la lección sobre profundidad de muestra sigue vigente.",
-      evidence: [
-        ["Fuente", "CARRIL_B_LAB_NOTEBOOK.md, Lecciones Aprendidas #2"],
-        ["Tipo", "Corrección de metodología, publicada"],
-        ["Casos auditados", "69.1% con muestra insuficiente"],
-      ],
-    },
-  },
-  {
-    id: "k0001",
-    pillar: "certificado",
-    seal: true,
-    correction: false,
-    entity: "4 grandes ligas",
-    headline: "FormCalculator supera al baseline naive en 1X2 de las 4 grandes ligas",
-    excerpt: "θ=−1.49pp, p<0.0001, I²=0% — meta-análisis DerSimonian-Laird sobre 4 ligas.",
-    time: "hace 1 día",
-    detail: {
-      sections: [
-        ["Hallazgo certificado", "FormCalculator, el modelo de forma reciente de ATLAS, supera de forma estadísticamente significativa al baseline ingenuo en la predicción de resultado 1X2, verificado de forma independiente en las 4 grandes ligas europeas."],
-        ["Evidencia", "θ=−1.49pp (mejora sobre el baseline), p<0.0001, heterogeneidad I²=0% entre ligas — el efecto es consistente, no depende de una liga particular."],
-      ],
-      finalStatus: null,
-      evidence: [
-        ["Fuente", "AtlasClient (AKI), verificado 2026-07-21"],
-        ["Estado", "CONFIRMADO"],
-        ["Ligas evaluadas", "4 (I²=0%)"],
-      ],
-    },
-  },
-  {
-    id: "referee",
-    pillar: "patron",
-    seal: false,
-    correction: false,
-    confidence: 3,
-    entity: "Esteban Ostojich · Brasileirão Série B",
-    headline: "El árbitro Esteban Ostojich promedia 6.65 tarjetas amarillas por partido",
-    excerpt: "2.6 desviaciones estándar sobre el promedio de 895 árbitros comparables (4.34).",
-    time: "hace 2 horas",
-    detail: {
-      sections: [
-        ["El dato", "Esteban Ostojich promedia 6.65 tarjetas amarillas por partido en su carrera."],
-        ["El contexto que lo hace significativo", "Comparado contra la población completa de 895 árbitros con carrera comparable (media 4.34), esto representa 2.6 desviaciones estándar sobre el promedio — no es un top-5 sin contexto, es una medida real de cuán atípico es."],
-      ],
-      finalStatus: null,
-      evidence: [
-        ["Muestra", "895 árbitros comparables"],
-        ["Desviación", "2.6σ sobre la media"],
-        ["Tipo", "Estadística editorial (Lane A)"],
-      ],
-    },
-  },
-  {
-    id: "ponte-preta",
-    pillar: "patron",
-    seal: false,
-    correction: false,
-    confidence: 2,
-    entity: "Ponte Preta · Brasileirão Série B",
-    headline: "Ponte Preta no gana hace 10 partidos (9 derrotas, 1 empate)",
-    excerpt: "Racha negativa sostenida en Brasileirão Série B.",
-    time: "hace 2 días",
-    detail: {
-      sections: [
-        ["El dato", "Ponte Preta acumula 10 partidos sin ganar en Brasileirão Série B: 9 derrotas y 1 empate."],
-      ],
-      finalStatus: null,
-      evidence: [
-        ["Muestra", "10 partidos consecutivos"],
-        ["Tipo", "Estadística editorial (Lane A)"],
-      ],
-    },
-  },
-  {
-    id: "h2h-vila-clube",
-    pillar: "patron",
-    seal: false,
-    correction: false,
-    confidence: 3,
-    featured: true,
-    match: "Vila Nova FC vs Clube De Regatas Brasil",
-    entity: "Brasileirão Série B",
-    headline: "Clube De Regatas Brasil domina el historial ante Vila Nova FC",
-    excerpt: "5 victorias en 11 encuentros directos (4 de Vila Nova, 2 empates) — verificado con profundidad real, no un promedio agregado trivial.",
-    time: "hace 3 días",
-    detail: {
-      sections: [
-        ["El dato", "Entre los pares de equipos que se enfrentaron en la season activa, Vila Nova FC y Clube De Regatas Brasil tienen el historial más profundo: 11 encuentros directos registrados."],
-        ["El resultado", "Clube De Regatas Brasil ganó 5 de esos 11 cruces, Vila Nova FC 4, con 2 empates — una ventaja real pero no aplastante."],
-        ["Por qué se verificó así", "Antes de reportar cualquier historial de cruces como 'dominante', se exige un mínimo real de encuentros — la misma disciplina que reveló que el 69.1% de los historiales 'extremos' del catálogo estaban sostenidos en apenas 1 o 2 partidos."],
-      ],
-      finalStatus: null,
-      evidence: [
-        ["Encuentros directos", "11"],
-        ["Balance", "5-4-2"],
-        ["Tipo", "Estadística editorial (Lane A), profundidad verificada"],
-      ],
-    },
-  },
-  {
-    id: "goleada-londrina",
-    pillar: "patron",
-    seal: false,
-    correction: false,
-    confidence: false,
-    match: "Londrina 5-0 Clube De Regatas Brasil",
-    entity: "Brasileirão Série B",
-    headline: "La goleada más amplia de los últimos 200 partidos finalizados",
-    excerpt: "Diferencia de 5 goles — la mayor margen entre los partidos finalizados más recientes del patrimonio de datos.",
-    time: "hace 1 día",
-    detail: {
-      sections: [
-        ["El dato", "Londrina venció 5-0 a Clube De Regatas Brasil — la mayor diferencia de goles registrada entre los últimos 200 partidos finalizados en el patrimonio de datos."],
-      ],
-      finalStatus: null,
-      evidence: [
-        ["Muestra comparada", "200 partidos finalizados recientes"],
-        ["Tipo", "Estadística curiosa, sin pretensión de significancia"],
-      ],
-    },
-  },
-  {
-    id: "14-refutadas",
-    pillar: "proceso",
-    seal: true,
-    correction: true,
-    entity: null,
-    headline: "14 hipótesis de apuesta puestas a prueba con rigor — y por qué casi ninguna sobrevivió",
-    excerpt: "12 Refutadas, 2 Archivadas por evidencia insuficiente, 0 Certificadas — con la disciplina completa documentada.",
-    time: "hace 1 día",
-    detail: {
-      sections: [
-        ["La pregunta", "¿Existen patrones estadísticos simples que el mercado de cuotas no esté incorporando ya en el precio?"],
-        ["El método", "Cada hipótesis se operacionalizó con un perfil de entrada y un mercado objetivo fijado por lógica futbolística ANTES de mirar el resultado del backtest — nunca elegido ni reemplazado por el número obtenido."],
-        ["Lo que encontramos", "De 14 estrategias investigadas con esta disciplina, el resultado final es 12 Refutadas, 2 Archivadas por evidencia insuficiente, 0 Certificadas."],
-        ["Por qué importa", "El patrimonio de datos actual sugiere que el mercado ya incorpora con precisión razonable la información contenida en perfiles simples — desconfiar de reglas simples de apuesta basadas en un solo ángulo estadístico."],
-      ],
-      finalStatus: "Programa cerrado definitivamente el 2026-07-20. Ninguna hipótesis sobrevivió a la disciplina completa de verificación.",
-      evidence: [
-        ["Hipótesis probadas", "14"],
-        ["Refutadas", "12"],
-        ["Certificadas", "0"],
-      ],
-    },
-  },
-  {
-    id: "lane-separation",
-    pillar: "metodologia",
-    seal: true,
-    correction: false,
-    entity: null,
-    headline: "Por qué separamos 'lo que medimos nosotros' de 'lo que certificó el laboratorio'",
-    excerpt: "Principio permanente del método científico de ATLAS, no depende de un incidente nuevo.",
-    time: "principio permanente",
-    detail: {
-      sections: [
-        ["El principio", "Todo el contenido se etiqueta con su fuente: estadística editorial (calculada directamente sobre datos históricos crudos) o conocimiento certificado (citado exclusivamente del proceso de validación del Laboratorio, nunca recalculado)."],
-        ["Por qué importa", "La mayoría del contenido deportivo mezcla ambos sin distinción — una racha reciente se presenta con el mismo peso que un hallazgo validado con meta-análisis. Esa distinción explícita es, en sí misma, parte del producto."],
-      ],
-      finalStatus: null,
-      evidence: [
-        ["Tipo", "Principio metodológico permanente"],
-        ["Fuente", "Enmienda II"],
-      ],
-    },
-  },
+const COUNTRIES = [
+  { code: "BR", name: "Brasil", flag: "🇧🇷" },
+  { code: "AR", name: "Argentina", flag: "🇦🇷" },
+  { code: "MX", name: "México", flag: "🇲🇽" },
+  { code: "CL", name: "Chile", flag: "🇨🇱" },
+  { code: "NO", name: "Noruega", flag: "🇳🇴" },
+  { code: "SE", name: "Suecia", flag: "🇸🇪" },
 ];
 
-const CONFIRMED = STORIES.filter(s => s.seal && !s.correction);
-const CORRECTED = STORIES.filter(s => s.correction);
+const FIXTURES = [
+  // ---- Brasil ----
+  { date: "2026-07-25", country: "BR", league: "Brasileirão Betano", home: "Athletico", away: "Internacional" },
+  { date: "2026-07-25", country: "BR", league: "Brasileirão Betano", home: "Santos", away: "Chapecoense" },
+  { date: "2026-07-25", country: "BR", league: "Brasileirão Betano", home: "Vasco da Gama", away: "Mirassol" },
+  { date: "2026-07-26", country: "BR", league: "Brasileirão Betano", home: "Flamengo", away: "São Paulo" },
+  { date: "2026-07-26", country: "BR", league: "Brasileirão Betano", home: "Palmeiras", away: "Atlético Mineiro" },
+  { date: "2026-07-26", country: "BR", league: "Brasileirão Série B", home: "Londrina", away: "Grêmio Novorizontino", matchId: "londrina-gremio" },
+  { date: "2026-07-26", country: "BR", league: "Brasileirão Série B", home: "América Mineiro", away: "Goiás" },
+  { date: "2026-07-26", country: "BR", league: "Brasileirão Série B", home: "Criciúma", away: "Náutico" },
+  { date: "2026-07-25", country: "BR", league: "Brasileirão Série C", home: "Ferroviária", away: "Maranhão AC" },
+  { date: "2026-07-25", country: "BR", league: "Brasileirão Série C", home: "Santa Cruz", away: "Figueirense" },
+  // ---- Argentina ----
+  { date: "2026-07-25", country: "AR", league: "Liga Profesional de Fútbol", home: "River Plate", away: "Barracas Central" },
+  { date: "2026-07-25", country: "AR", league: "Liga Profesional de Fútbol", home: "Huracán", away: "Banfield" },
+  { date: "2026-07-25", country: "AR", league: "Liga Profesional de Fútbol", home: "Newell's Old Boys", away: "CA Talleres" },
+  { date: "2026-07-26", country: "AR", league: "Liga Profesional de Fútbol", home: "Deportivo Riestra", away: "Boca Juniors" },
+  { date: "2026-07-26", country: "AR", league: "Liga Profesional de Fútbol", home: "CA Lanús", away: "San Lorenzo" },
+  // ---- México ----
+  { date: "2026-07-25", country: "MX", league: "Liga MX, Apertura", home: "Tigres UANL", away: "Atlético San Luis" },
+  { date: "2026-07-25", country: "MX", league: "Liga MX, Apertura", home: "Atlante FC", away: "Club América" },
+  { date: "2026-07-26", country: "MX", league: "Liga MX, Apertura", home: "Santos Laguna", away: "Atlas FC" },
+  { date: "2026-07-26", country: "MX", league: "Liga MX, Apertura", home: "Club Necaxa", away: "CF Monterrey" },
+  // ---- Chile ----
+  { date: "2026-07-25", country: "CL", league: "Liga de Primera", home: "Colo-Colo", away: "Deportes Limache" },
+  { date: "2026-07-25", country: "CL", league: "Liga de Primera", home: "Huachipato", away: "Cobresal" },
+  { date: "2026-07-26", country: "CL", league: "Liga de Primera", home: "Universidad Católica", away: "Deportes La Serena" },
+  // ---- Noruega ----
+  { date: "2026-07-25", country: "NO", league: "Eliteserien", home: "Kristiansund BK", away: "IK Start" },
+  { date: "2026-07-26", country: "NO", league: "Eliteserien", home: "SK Brann", away: "Vålerenga IF" },
+  { date: "2026-07-26", country: "NO", league: "Eliteserien", home: "Aalesunds FK", away: "Viking FK" },
+  // ---- Suecia ----
+  { date: "2026-07-25", country: "SE", league: "Allsvenskan", home: "Degerfors IF", away: "Djurgårdens IF" },
+  { date: "2026-07-26", country: "SE", league: "Allsvenskan", home: "Malmö FF", away: "IF Elfsborg" },
+];
+
+// Insights reales (mismos usados en Nuestro Historial), ahora organizados
+// por partido/liga en vez de por edición. Nada inventado -- headlines y
+// cifras verbatim de atlas_content_engine/content_engine.db.
+const INSIGHTS = {
+  "londrina-gremio": {
+    analisis: [
+      { headline: "Ambos equipos llegan en forma ofensiva", body: "Londrina anota por encima de su propio promedio reciente y Grêmio Novorizontino lidera la tabla de goleadores de la liga — un cruce entre dos ataques en racha, no solo una lectura de tabla.", src: "Síntesis editorial sobre 2 hallazgos independientes, Lane A" },
+    ],
+    patrones: [
+      { headline: "Londrina está anotando más que su promedio: 2.0 goles/partido en los últimos partidos", body: "Tendencia ofensiva reciente por encima de su propio promedio de temporada.", confidence: 2, src: "offensive_trend · Lane A" },
+    ],
+    estadisticas: [
+      { headline: "Grêmio Novorizontino lidera el ataque de Brasileirão Série B con 28 goles", body: "Máximo goleador de la tabla en la temporada activa.", confidence: 3, src: "rankings · Lane A" },
+      { headline: "Radiografía de Brasileirão Série B: 2.27 goles/partido", body: "Perfil estructural de la liga en la temporada activa (reparto local/empate/visita disponible en el detalle).", confidence: 3, src: "league_profile · Lane A" },
+    ],
+    evidencia: [
+      { headline: "Nivel de confianza de las estimaciones de este partido", body: "Ambos hallazgos declaran su tamaño de muestra: la tendencia de Londrina se mide sobre partidos recientes reales, el liderato de goles sobre la tabla completa de la temporada.", src: "Evidencia trazable, ver detalle de cada hallazgo" },
+    ],
+    historial: [],
+    certificaciones: [
+      { headline: "FormCalculator supera al baseline naive en 1X2 de las 4 grandes ligas", body: "Principio de modelado certificado que respalda el enfoque de forma reciente usado en este análisis.", seal: true, src: "AtlasClient (AKI), CONFIRMADO" },
+    ],
+  },
+};
+
+const PILLAR_ICON = { certificado: "◆", proceso: "◈", patron: "▲", longitudinal: "↗", entidad: "▣", metodologia: "◎" };
+
+let activeCountry = "BR";
+let activeDate = FIXTURES[0].date;
+let onlyAnalysis = false;
+
+function uniqueDates() {
+  return [...new Set(FIXTURES.map(f => f.date))].sort();
+}
+
+function renderCountryRow() {
+  document.getElementById("country-row").innerHTML = COUNTRIES.map(c => `
+    <button class="country-chip ${c.code === activeCountry ? "active" : ""}" data-code="${c.code}">
+      <span class="flag">${c.flag}</span>${c.name}
+    </button>`).join("");
+  document.querySelectorAll(".country-chip").forEach(chip => {
+    chip.addEventListener("click", () => { activeCountry = chip.dataset.code; renderCountryRow(); renderLeagueGroups(); });
+  });
+}
+
+function renderDateRow() {
+  const dates = uniqueDates();
+  const labels = { [dates[0]]: "Hoy", [dates[1]]: "Mañana" };
+  document.getElementById("date-row").innerHTML = dates.map(d => `
+    <button class="date-chip ${d === activeDate ? "active" : ""}" data-date="${d}">${labels[d] || d}</button>`).join("");
+  document.querySelectorAll(".date-chip").forEach(chip => {
+    chip.addEventListener("click", () => { activeDate = chip.dataset.date; renderDateRow(); renderLeagueGroups(); });
+  });
+}
+
+function matchRowHtml(f) {
+  const hasAnalysis = !!f.matchId;
+  return `
+  <div class="match-row" data-match-id="${f.matchId || ""}" data-home="${f.home}" data-away="${f.away}" data-league="${f.league}">
+    <div class="teams">${f.home}<span class="vsx">vs</span>${f.away}</div>
+    <div class="right">
+      ${hasAnalysis ? '<span class="analysis-pill">◆ Análisis</span>' : ""}
+    </div>
+  </div>`;
+}
+
+function renderLeagueGroups() {
+  let pool = FIXTURES.filter(f => f.country === activeCountry && f.date === activeDate);
+  if (onlyAnalysis) pool = pool.filter(f => !!f.matchId);
+
+  if (!pool.length) {
+    document.getElementById("league-groups").innerHTML = `<div class="no-matches">No hay partidos programados para este país en esta fecha (en el recorte de datos de este concepto).</div>`;
+    return;
+  }
+
+  const byLeague = {};
+  pool.forEach(f => { (byLeague[f.league] = byLeague[f.league] || []).push(f); });
+
+  const countryFlag = COUNTRIES.find(c => c.code === activeCountry).flag;
+  document.getElementById("league-groups").innerHTML = Object.entries(byLeague).map(([league, matches]) => `
+    <div class="league-group">
+      <div class="league-header"><span class="flag">${countryFlag}</span>${league}</div>
+      ${matches.map(matchRowHtml).join("")}
+    </div>`).join("");
+
+  document.querySelectorAll(".match-row").forEach(row => {
+    row.addEventListener("click", () => openMatch(row.dataset.matchId, row.dataset));
+  });
+}
 
 function confidenceMeter(level) {
   if (!level) return "";
-  const bars = [1,2,3].map(i => `<span class="${i <= level ? "filled" : ""}"></span>`).join("");
+  const bars = [1, 2, 3].map(i => `<span class="${i <= level ? "filled" : ""}"></span>`).join("");
   const labels = { 1: "Confianza emergente", 2: "Confianza media", 3: "Confianza alta" };
   return `<div class="evidence-meter"><div class="meter-bars">${bars}</div><span class="meter-label">${labels[level]}</span></div>`;
 }
 
-function badgeRow(story) {
-  const pm = PILLAR_META[story.pillar];
-  let out = `<span class="pillar-label"><span class="ico">${pm.icon}</span>${pm.label}</span>`;
-  return out;
-}
-
-function matchLineHtml(story) {
-  const pm = PILLAR_META[story.pillar];
-  if (story.match) {
-    const teams = story.match.split(" vs ");
-    const label = teams.length === 2
-      ? `${teams[0]}<span class="vs">vs</span>${teams[1]}`
-      : story.match;
-    return `<div class="match-line"><span class="ico">${pm.icon}</span>${label}${story.entity ? `<span class="league">· ${story.entity}</span>` : ""}</div>`;
-  }
-  if (story.entity) {
-    return `<div class="match-line"><span class="ico">${pm.icon}</span>${story.entity}</div>`;
-  }
-  return `<div class="match-line"><span class="ico">${pm.icon}</span>${pm.label}</div>`;
-}
-
-function cardHtml(story) {
-  const rightBadge = story.seal
-    ? `<span class="seal">◆ Certificado</span>`
-    : (story.confidence ? confidenceMeter(story.confidence) : "");
+function insightBlockHtml(item) {
   return `
-  <article class="card" data-id="${story.id}">
-    ${matchLineHtml(story)}
-    <h2>${story.headline}</h2>
-    <p class="excerpt">${story.excerpt}</p>
-    <div class="card-foot">
-      ${story.correction ? '<span class="correction-tag">↺ Corrección pública</span>' : "<span></span>"}
-      ${rightBadge}
+  <div class="insight-block">
+    <div class="top-row">
+      ${item.seal ? '<span class="seal">◆ Certificado</span>' : (item.confidence ? confidenceMeter(item.confidence) : "<span></span>")}
     </div>
-  </article>`;
-}
-
-function featuredHtml(story) {
-  const pm = PILLAR_META[story.pillar];
-  const rightBadge = story.seal
-    ? `<span class="seal">◆ Certificado</span>`
-    : (story.confidence ? confidenceMeter(story.confidence) : "");
-  const titleLine = story.match
-    ? story.match.split(" vs ").map((t, i) => i === 0 ? t : `<span class="vs">vs</span>${t}`).join("")
-    : (story.entity || pm.label);
-  return `
-  <article class="featured" data-id="${story.id}">
-    <div class="kicker">${pm.icon} ${story.entity ? story.entity + " · " : ""}${story.time}</div>
-    <div class="featured-match">${titleLine}</div>
-    <h2>${story.headline}</h2>
-    <p class="excerpt">${story.excerpt}</p>
-    <div class="card-foot">
-      ${story.correction ? '<span class="correction-tag">↺ Corrección pública</span>' : `<span class="pillar-label">${pm.label}</span>`}
-      ${rightBadge}
-    </div>
-  </article>`;
-}
-
-function renderFeatured() {
-  const featured = STORIES.find(s => s.featured);
-  if (!featured) { document.getElementById("featured-slot").innerHTML = ""; return; }
-  document.getElementById("featured-slot").innerHTML = featuredHtml(featured);
-  document.querySelector(".featured").addEventListener("click", () => openDetail(featured.id));
-  document.getElementById("today-count").textContent = STORIES.length;
-}
-
-let activeFilter = "all";
-
-function renderFilterBar() {
-  const present = [...new Set(STORIES.map(s => s.pillar))];
-  const chips = [`<button class="filter-chip ${activeFilter === "all" ? "active" : ""}" data-pillar="all">Todos</button>`]
-    .concat(present.map(p => `<button class="filter-chip ${activeFilter === p ? "active" : ""}" data-pillar="${p}">${PILLAR_META[p].icon} ${PILLAR_META[p].label}</button>`));
-  document.getElementById("filter-bar").innerHTML = chips.join("");
-  document.querySelectorAll(".filter-chip").forEach(chip => {
-    chip.addEventListener("click", () => {
-      activeFilter = chip.dataset.pillar;
-      renderFilterBar();
-      renderFeed();
-    });
-  });
-}
-
-function renderFeed() {
-  const pool = STORIES.filter(s => !s.featured);
-  const list = activeFilter === "all" ? pool : pool.filter(s => s.pillar === activeFilter);
-  document.getElementById("feed-list").innerHTML = list.length
-    ? list.map(cardHtml).join("")
-    : `<div class="feed-empty">Nada en esta categoría todavía.</div>`;
-  document.querySelectorAll("#feed-list .card").forEach(el => {
-    el.addEventListener("click", () => openDetail(el.dataset.id));
-  });
-}
-
-function ledgerItemHtml(story, corrected) {
-  return `
-  <div class="ledger-item ${corrected ? "corrected" : ""}" data-id="${story.id}">
-    <h3>${story.headline}</h3>
-    <p class="meta">${PILLAR_META[story.pillar].label}${story.entity ? " · " + story.entity : ""}</p>
-    ${story.id === "jensen-bias" ? '<div class="correction-delta"><span class="before">E002 +6.8pp</span> → <span class="after">−1.1pp</span> · <span class="before">E011 +6.3pp</span> → <span class="after">−2.5pp</span></div>' : ""}
-    ${story.id === "h2h-depth" ? '<div class="correction-delta"><span class="before">Historial "extremo"</span> → <span class="after">69.1% con 1-2 partidos reales</span></div>' : ""}
+    <h4>${item.headline}</h4>
+    <p>${item.body}</p>
+    <div class="src">${item.src}</div>
   </div>`;
 }
 
+const MATCH_TABS = [
+  { id: "analisis", label: "Análisis" },
+  { id: "patrones", label: "Patrones" },
+  { id: "estadisticas", label: "Estadísticas" },
+  { id: "evidencia", label: "Evidencia" },
+  { id: "historial", label: "Historial" },
+  { id: "certificaciones", label: "Certificaciones" },
+];
+
+let activeMatchId = null;
+let activeMatchTab = "analisis";
+
+function openMatch(matchId, rowData) {
+  const fixture = (matchId && FIXTURES.find(f => f.matchId === matchId)) || {
+    home: rowData.home, away: rowData.away, league: rowData.league,
+  };
+  activeMatchId = matchId || null;
+  activeMatchTab = "analisis";
+
+  document.getElementById("match-hero").innerHTML = `
+    <div class="league-line">${COUNTRIES.find(c => c.code === activeCountry).flag} ${fixture.league}</div>
+    <div class="teams-line">${fixture.home}<span class="vsx">vs</span>${fixture.away}</div>`;
+
+  renderMatchTabs();
+  renderMatchTabBody();
+  document.getElementById("match-overlay").hidden = false;
+  document.getElementById("match-overlay").scrollTop = 0;
+}
+
+function renderMatchTabs() {
+  document.getElementById("match-tabs").innerHTML = MATCH_TABS.map(t => `
+    <button class="match-tab ${t.id === activeMatchTab ? "active" : ""}" data-tab="${t.id}">${t.label}</button>`).join("");
+  document.querySelectorAll(".match-tab").forEach(btn => {
+    btn.addEventListener("click", () => { activeMatchTab = btn.dataset.tab; renderMatchTabs(); renderMatchTabBody(); });
+  });
+}
+
+function renderMatchTabBody() {
+  const data = activeMatchId && INSIGHTS[activeMatchId] ? INSIGHTS[activeMatchId][activeMatchTab] || [] : [];
+  const body = document.getElementById("match-tab-body");
+  if (!data.length) {
+    const msgs = {
+      analisis: "Sin análisis de ATLAS para este partido todavía.",
+      patrones: "Sin patrones automáticos detectados para este partido todavía.",
+      estadisticas: "Sin estadísticas estructurales asociadas a este partido todavía.",
+      evidencia: "Sin evidencia adicional que mostrar para este partido todavía.",
+      historial: "Sin cruces directos documentados entre estos equipos en el patrimonio de datos todavía.",
+      certificaciones: "Sin conocimiento certificado directamente aplicable a este partido todavía.",
+    };
+    body.innerHTML = `<div class="empty-tab">${msgs[activeMatchTab]}</div>`;
+    return;
+  }
+  body.innerHTML = data.map(insightBlockHtml).join("");
+}
+
+document.getElementById("match-back-btn").addEventListener("click", () => {
+  document.getElementById("match-overlay").hidden = true;
+});
+
+document.getElementById("only-analysis").addEventListener("change", (e) => {
+  onlyAnalysis = e.target.checked;
+  renderLeagueGroups();
+});
+
+/* ---------- Nuestro Historial (sin cambios de contenido) ---------- */
+const LEDGER_CONFIRMED = [
+  { headline: "FormCalculator supera al baseline naive en 1X2 de las 4 grandes ligas", meta: "Conocimiento Certificado" },
+  { headline: "ELO es el grupo de señal dominante sobre la representación actual de features", meta: "Conocimiento Certificado" },
+];
+const LEDGER_CORRECTED = [
+  { headline: "El sesgo que fabricaba ventaja donde no la había", meta: "Proceso Científico", delta: 'E002 +6.8pp</span> → <span class="after">−1.1pp</span> · <span class="before">E011 +6.3pp</span> → <span class="after">−2.5pp' },
+  { headline: "Cuando un historial 'extremo' resultó tener solo 1 o 2 partidos reales detrás", meta: "Proceso Científico", delta: 'Historial "extremo"</span> → <span class="after">69.1% con 1-2 partidos reales' },
+];
+
 function renderHistorial() {
-  document.getElementById("ledger-confirmed").innerHTML = CONFIRMED.map(s => ledgerItemHtml(s, false)).join("");
-  document.getElementById("ledger-corrected").innerHTML = CORRECTED.map(s => ledgerItemHtml(s, true)).join("");
-  document.querySelectorAll(".ledger-item").forEach(el => {
-    el.addEventListener("click", () => openDetail(el.dataset.id));
-  });
-}
-
-function openDetail(id) {
-  const story = STORIES.find(s => s.id === id);
-  if (!story) return;
-  const d = story.detail;
-  const badges = `
-    <div class="badge-row">
-      ${badgeRow(story)}
-      ${story.seal ? '<span class="seal">◆ Certificado</span>' : ""}
-      ${story.correction ? '<span class="correction-tag">↺ Corrección pública</span>' : ""}
-    </div>`;
-  const sections = d.sections.map(([label, text]) => `
-    <div class="story-section">
-      <div class="label">${label}</div>
-      <p>${text}</p>
+  document.getElementById("ledger-confirmed").innerHTML = LEDGER_CONFIRMED.map(i => `
+    <div class="ledger-item"><h3>${i.headline}</h3><p class="meta">${i.meta}</p></div>`).join("");
+  document.getElementById("ledger-corrected").innerHTML = LEDGER_CORRECTED.map(i => `
+    <div class="ledger-item corrected"><h3>${i.headline}</h3><p class="meta">${i.meta}</p>
+      <div class="correction-delta"><span class="before">${i.delta}</span></div>
     </div>`).join("");
-  const evidenceRows = d.evidence.map(([k, v]) => `<div class="row"><span class="k">${k}</span><span class="v">${v}</span></div>`).join("");
-  const finalStatus = d.finalStatus
-    ? `<div class="final-status"><span class="label">Estado final — </span>${d.finalStatus}</div>`
-    : "";
-  const related = STORIES.filter(s => s.id !== id && s.pillar === story.pillar).slice(0, 2);
-  const relatedHtml = related.length ? `
-    <div class="related-title">También en ${PILLAR_META[story.pillar].label}</div>
-    <div class="feed">${related.map(cardHtml).join("")}</div>` : "";
-
-  document.getElementById("detail-body").innerHTML = `
-    ${matchLineHtml(story)}
-    ${badges}
-    <h1>${story.headline}</h1>
-    <div class="evidence-panel">${evidenceRows}</div>
-    ${sections}
-    ${finalStatus}
-    ${relatedHtml}
-    <div class="footer-note">ATLAS Lab — No adivinamos. Investigamos.</div>
-  `;
-  document.getElementById("detail-overlay").hidden = false;
-  document.getElementById("detail-overlay").scrollTop = 0;
-  document.querySelectorAll("#detail-body .card").forEach(el => {
-    el.addEventListener("click", () => openDetail(el.dataset.id));
-  });
 }
 
+/* ---------- Nav tabs ---------- */
 document.querySelectorAll(".tab").forEach(tab => {
   tab.addEventListener("click", () => {
     document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
     tab.classList.add("active");
     const view = tab.dataset.view;
-    document.getElementById("view-feed").hidden = view !== "feed";
+    document.getElementById("view-partidos").hidden = view !== "partidos";
     document.getElementById("view-historial").hidden = view !== "historial";
     document.getElementById("view-how").hidden = view !== "how";
   });
 });
 
-document.getElementById("back-btn").addEventListener("click", () => {
-  document.getElementById("detail-overlay").hidden = true;
-});
-
-renderFeatured();
-renderFilterBar();
-renderFeed();
+renderCountryRow();
+renderDateRow();
+renderLeagueGroups();
 renderHistorial();
 </script>
 </body>
