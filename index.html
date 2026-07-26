@@ -37,34 +37,102 @@
     padding: 3px 7px; border-radius: 999px;
   }
 
-  /* ---------- home: filas horizontales tipo Netflix (entrada) ---------- */
-  #view-list { max-width: 900px; margin: 0 auto; padding: 6px 0 60px; }
-  .list-topbar { display: flex; align-items: center; justify-content: space-between; padding: 10px 14px 12px; }
-  .list-topbar .wordmark { font-family: var(--serif); font-weight: 700; font-size: 17px; }
-  .list-topbar .wordmark .dot { color: var(--green); }
+  /* ---------- home: panel de descubrimiento (estructura tipo dashboard) ---------- */
+  #view-list { max-width: 900px; margin: 0 auto; padding: 0 0 40px; }
 
-  .row-block { margin-bottom: 20px; }
-  .row-head { display: flex; align-items: baseline; justify-content: space-between; padding: 0 14px 8px; }
-  .row-title { font-size: 13.5px; font-weight: 700; }
-  .row-count { font-family: var(--mono); font-size: 10px; color: var(--text-faint); }
-  .row-scroll { display: flex; gap: 10px; overflow-x: auto; padding: 0 14px; scroll-snap-type: x proximity; }
-
-  .tile {
-    flex-shrink: 0; width: 148px; height: 100px; border-radius: 10px; position: relative;
-    overflow: hidden; cursor: pointer; padding: 9px 10px; display: flex; flex-direction: column;
-    justify-content: space-between; scroll-snap-align: start; border: 1px solid var(--border);
+  .app-header {
+    position: sticky; top: 0; z-index: 40; display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px; background: color-mix(in srgb, var(--ink) 93%, transparent); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
   }
-  .tile.status-certified { background: linear-gradient(150deg, color-mix(in srgb, var(--green) 32%, var(--surface)), var(--surface) 75%); }
-  .tile.status-progress { background: linear-gradient(150deg, color-mix(in srgb, var(--amber) 32%, var(--surface)), var(--surface) 75%); }
-  .tile.status-none { background: var(--surface); }
-  .tile.status-correction { background: linear-gradient(150deg, color-mix(in srgb, var(--clay) 32%, var(--surface)), var(--surface) 75%); }
-  .tile-top { display: flex; align-items: flex-start; justify-content: space-between; }
-  .tile-league { font-family: var(--mono); font-size: 9px; letter-spacing: 0.03em; color: var(--text-faint); text-transform: uppercase; }
-  .tile-marker { font-size: 12px; }
-  .tile-marker.certified { color: var(--green); } .tile-marker.progress { color: var(--amber); } .tile-marker.correction { color: var(--clay); }
-  .tile-title { font-size: 13px; font-weight: 700; line-height: 1.28; color: var(--text); }
-  .tile-title .vsx { display: block; font-weight: 400; font-size: 9.5px; color: var(--text-faint); font-family: var(--mono); margin: 1px 0; }
-  .tile-foot { font-family: var(--mono); font-size: 9px; color: var(--text-faint); }
+  .hamburger-btn {
+    background: var(--surface); border: 1px solid var(--border); color: var(--text); border-radius: 8px;
+    width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 15px; flex-shrink: 0;
+  }
+  .app-header .wordmark { font-family: var(--serif); font-weight: 700; font-size: 16px; flex-shrink: 0; }
+  .app-header .wordmark .dot { color: var(--green); }
+  .search-pill {
+    flex: 1; display: flex; align-items: center; gap: 6px; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 12px; color: var(--text-faint); font-size: 11.5px;
+  }
+
+  /* drawer lateral */
+  .drawer-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 90; }
+  .drawer-overlay[hidden] { display: none; }
+  .drawer {
+    position: fixed; top: 0; left: 0; bottom: 0; width: 240px; background: var(--surface);
+    border-right: 1px solid var(--border); z-index: 91; padding: 16px 14px; overflow-y: auto;
+  }
+  .drawer h4 { font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-faint); margin: 16px 0 6px; }
+  .drawer h4:first-child { margin-top: 0; }
+  .drawer-item {
+    display: flex; align-items: center; gap: 10px; padding: 9px 8px; border-radius: 6px; cursor: pointer;
+    font-size: 13px; color: var(--text-dim);
+  }
+  .drawer-item.active { color: var(--green); background: var(--green-soft); font-weight: 600; }
+  .drawer-item .ic { width: 16px; text-align: center; opacity: 0.8; }
+
+  .home-body { padding: 14px 14px 0; }
+  .section-title {
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.07em; text-transform: uppercase;
+    color: var(--text-faint); margin: 22px 0 10px; display: flex; align-items: center; justify-content: space-between;
+  }
+
+  /* hero destacado */
+  .hero-wrap { position: relative; }
+  .hero-card {
+    border-radius: 14px; overflow: hidden; position: relative; padding: 20px 18px 16px; min-height: 150px;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--green) 22%, var(--surface)), var(--surface-2) 80%);
+    border: 1px solid var(--border); display: flex; flex-direction: column; justify-content: flex-end;
+  }
+  .hero-card .kicker { font-family: var(--mono); font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
+  .hero-card .teams { font-size: clamp(19px, 6vw, 24px); font-weight: 800; line-height: 1.25; margin-bottom: 6px; }
+  .hero-card .teams .vsx { color: var(--text-faint); font-family: var(--mono); font-size: 11px; font-weight: 400; margin: 0 6px; }
+  .hero-card .sub { font-size: 12px; color: var(--text-dim); margin-bottom: 14px; }
+  .hero-actions { display: flex; gap: 8px; }
+  .btn-primary { background: var(--green); color: #0a0f0c; border: none; border-radius: 8px; padding: 9px 14px; font-size: 12.5px; font-weight: 700; cursor: pointer; }
+  .btn-ghost { background: color-mix(in srgb, var(--ink) 40%, transparent); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 9px 14px; font-size: 12.5px; font-weight: 600; cursor: pointer; }
+  .hero-dots { display: flex; gap: 4px; justify-content: center; margin-top: 10px; }
+  .hero-dots span { width: 5px; height: 5px; border-radius: 999px; background: var(--border); }
+  .hero-dots span.active { background: var(--green); width: 14px; }
+
+  /* proximos partidos */
+  .upcoming-scroll { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 4px; scroll-snap-type: x proximity; }
+  .match-card {
+    flex-shrink: 0; width: 180px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 12px; scroll-snap-align: start;
+  }
+  .match-card .date-badge { font-family: var(--mono); font-size: 9.5px; color: var(--text-faint); margin-bottom: 8px; }
+  .crest-row { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; }
+  .crest {
+    width: 26px; height: 26px; border-radius: 999px; display: flex; align-items: center; justify-content: center;
+    font-family: var(--mono); font-size: 9.5px; font-weight: 700; color: var(--ink); flex-shrink: 0;
+  }
+  .crest.certified { background: var(--green); } .crest.progress { background: var(--amber); } .crest.none { background: var(--text-faint); }
+  .vsx-sm { font-family: var(--mono); font-size: 9.5px; color: var(--text-faint); }
+  .match-card .team-name { font-size: 12.5px; font-weight: 700; line-height: 1.3; margin-bottom: 2px; }
+  .match-card .league-tag { font-size: 10px; color: var(--text-faint); margin-bottom: 6px; }
+  .match-card .signal { font-size: 10.5px; color: var(--green); margin-bottom: 10px; line-height: 1.35; min-height: 14px; }
+  .match-card-actions { display: flex; gap: 6px; }
+  .btn-add { background: var(--surface-2); border: 1px solid var(--border); color: var(--text); border-radius: 7px; width: 30px; height: 30px; flex-shrink: 0; cursor: pointer; font-size: 14px; }
+  .btn-analysis { flex: 1; background: var(--green); color: #0a0f0c; border: none; border-radius: 7px; font-size: 11.5px; font-weight: 700; cursor: pointer; }
+
+  /* panel de estadisticas (rail) */
+  .stat-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; margin-bottom: 12px; }
+  .stat-panel-title { font-size: 12px; font-weight: 700; margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; }
+  .stat-entry { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--border); }
+  .stat-entry:last-child { border-bottom: none; }
+  .stat-entry .name { font-size: 12px; font-weight: 600; }
+  .stat-entry .sub { font-size: 10px; color: var(--text-faint); }
+  .stat-bar-wrap { width: 70px; height: 4px; background: var(--border); border-radius: 999px; overflow: hidden; margin-top: 4px; }
+  .stat-bar { height: 100%; background: var(--green); }
+
+  .category-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .category-card { border-radius: 10px; padding: 10px 11px; font-size: 11px; font-weight: 700; line-height: 1.35; border: 1px solid var(--border); }
+  .category-card .sub { display: block; font-weight: 400; font-size: 10px; margin-top: 3px; opacity: 0.85; }
+  .cat-productivo { background: var(--green-soft); color: var(--green); }
+  .cat-experimental { background: var(--amber-soft); color: var(--amber); }
+  .cat-cerrado { background: var(--surface-2); color: var(--text-faint); }
 
   /* ---------- Centro de Analisis ---------- */
   #view-center[hidden] { display: none; }
@@ -168,10 +236,45 @@
 
 <span class="concept-tag">Alta fidelidad · fuentes reales por módulo</span>
 
-<!-- ============ HOME: filas horizontales (entrada) ============ -->
+<!-- ============ HOME: panel de descubrimiento ============ -->
 <div id="view-list">
-  <div class="list-topbar"><div class="wordmark">ATLAS<span class="dot">·</span>LAB</div></div>
-  <div id="rows-container"></div>
+  <header class="app-header">
+    <button class="hamburger-btn" id="menu-btn">☰</button>
+    <div class="wordmark">ATLAS<span class="dot">·</span>LAB</div>
+    <div class="search-pill">🔍 Buscar equipo, liga...</div>
+  </header>
+  <div class="home-body">
+    <div class="hero-wrap" id="hero-wrap"></div>
+    <div class="section-title"><span>Próximos partidos (por fecha)</span></div>
+    <div class="upcoming-scroll" id="upcoming-scroll"></div>
+    <div class="section-title"><span>Radiografía de liga — Série B</span></div>
+    <div class="stat-panel" id="stat-league"></div>
+    <div class="section-title"><span>Cobertura de mercados (motor real)</span></div>
+    <div class="category-grid" id="category-grid"></div>
+    <div class="section-title"><span>Cuaderno de Laboratorio</span></div>
+    <div class="upcoming-scroll" id="lab-scroll"></div>
+  </div>
+</div>
+
+<div class="drawer-overlay" id="drawer-overlay" hidden></div>
+<nav class="drawer" id="drawer" hidden>
+  <h4>Menú</h4>
+  <div class="drawer-item active">🏠 Partidos</div>
+  <div class="drawer-item" data-view="historial">📓 Nuestro Historial</div>
+  <div class="drawer-item" data-view="how">◎ Cómo Funciona</div>
+  <h4>General</h4>
+  <div class="drawer-item" style="opacity:.5">⚙ Configuración (no disponible)</div>
+</nav>
+
+<!-- ============ HISTORIAL / COMO FUNCIONA (paginas simples del menu) ============ -->
+<div id="view-simple" hidden>
+  <div class="center-topbar">
+    <div class="row1">
+      <button class="back-btn" id="simple-back-btn">←</button>
+      <span class="wordmark" style="font-size:14px">ATLAS·LAB</span>
+    </div>
+  </div>
+  <div class="story-body" id="simple-body"></div>
 </div>
 
 <!-- ============ FICHA DE HISTORIA (Cuaderno/Certificado) ============ -->
@@ -210,12 +313,12 @@
    inventado. */
 
 const MATCHES = [
-  { id: "londrina-gremio", home: "Londrina", away: "Grêmio Novorizontino", league: "Brasileirão Série B", date: "26 jul", status: "certified", flagship: true },
-  { id: "regatas-vila", home: "Clube De Regatas Brasil", away: "Vila Nova FC", league: "Brasileirão Série B", date: "27 jul", status: "certified" },
-  { id: "ponte-athletic", home: "Ponte Preta", away: "Athletic Club", league: "Brasileirão Série B", date: "28 jul", status: "progress" },
-  { id: "sport-cuiaba", home: "Sport Recife", away: "Cuiabá", league: "Brasileirão Série B", date: "27 jul", status: "progress" },
-  { id: "fla-sao", home: "Flamengo", away: "São Paulo", league: "Brasileirão Betano", date: "26 jul", status: "none" },
-  { id: "riv-bar", home: "River Plate", away: "Barracas Central", league: "Liga Profesional de Fútbol", date: "25 jul", status: "none" },
+  { id: "londrina-gremio", home: "Londrina", away: "Grêmio Novorizontino", league: "Brasileirão Série B", date: "26 jul", status: "certified", flagship: true, signal: "Ambos en racha ofensiva" },
+  { id: "regatas-vila", home: "Clube De Regatas Brasil", away: "Vila Nova FC", league: "Brasileirão Série B", date: "27 jul", status: "certified", signal: "Domina el historial: 5-4-2 en 11 cruces" },
+  { id: "ponte-athletic", home: "Ponte Preta", away: "Athletic Club", league: "Brasileirão Série B", date: "28 jul", status: "progress", signal: "10 partidos sin ganar" },
+  { id: "sport-cuiaba", home: "Sport Recife", away: "Cuiabá", league: "Brasileirão Série B", date: "27 jul", status: "progress", signal: "Encajando +1.8 gpp vs. su media" },
+  { id: "fla-sao", home: "Flamengo", away: "São Paulo", league: "Brasileirão Betano", date: "26 jul", status: "none", signal: "" },
+  { id: "riv-bar", home: "River Plate", away: "Barracas Central", league: "Liga Profesional de Fútbol", date: "25 jul", status: "none", signal: "" },
 ];
 
 const MODULES = [
@@ -283,44 +386,117 @@ const ROWS = [
   { title: "Conocimiento Certificado", ids: ["k0001", "k0002"] },
 ];
 
-function getTileItem(id) {
-  const m = MATCHES.find(x => x.id === id);
-  if (m) return { kind: "match", ...m };
-  return { kind: "story", id, ...STORIES[id] };
+function initials(name) {
+  return name.split(" ").filter(w => w.length > 1 || /[A-Za-zÀ-ÿ]/.test(w)).slice(0, 2).map(w => w[0]).join("").toUpperCase();
 }
 
-function tileHtml(id) {
-  const it = getTileItem(id);
-  const statusClass = "status-" + it.status;
-  const markerMap = { certified: "◆", progress: "◐", correction: "↺", none: "" };
-  const marker = markerMap[it.status] || "";
-  if (it.kind === "match") {
-    return `
-    <div class="tile ${statusClass}" data-id="${id}">
-      <div class="tile-top"><span class="tile-league">${it.league}</span>${marker ? `<span class="tile-marker ${it.status}">${marker}</span>` : ""}</div>
-      <div class="tile-title">${it.home}<span class="vsx">vs</span>${it.away}</div>
-      <div class="tile-foot">${it.date}</div>
-    </div>`;
-  }
+function openTile(id) { if (MATCHES.find(m => m.id === id)) openCenter(id); else openStory(id); }
+
+function renderHero() {
+  const m = MATCHES.find(x => x.flagship);
+  document.getElementById("hero-wrap").innerHTML = `
+    <div class="hero-card" data-id="${m.id}">
+      <div class="kicker">◆ Partido destacado · ${m.league}</div>
+      <div class="teams">${m.home}<span class="vsx">vs</span>${m.away}</div>
+      <div class="sub">Racha ofensiva de ambos equipos · cobertura completa de análisis</div>
+      <div class="hero-actions">
+        <button class="btn-primary" data-id="${m.id}">Ver Análisis</button>
+        <button class="btn-ghost">+ Guardar</button>
+      </div>
+    </div>
+    <div class="hero-dots"><span class="active"></span><span></span><span></span></div>`;
+  document.querySelector(".hero-card").addEventListener("click", (e) => { if (!e.target.closest("button")) openTile(m.id); });
+  document.querySelector(".btn-primary").addEventListener("click", () => openTile(m.id));
+}
+
+function matchCardHtml(m) {
+  const c1 = initials(m.home), c2 = initials(m.away);
   return `
-  <div class="tile ${statusClass}" data-id="${id}">
-    <div class="tile-top"><span class="tile-league">${it.league}</span>${marker ? `<span class="tile-marker ${it.status}">${marker}</span>` : ""}</div>
-    <div class="tile-title">${it.headline}</div>
-    <div class="tile-foot"></div>
+  <div class="match-card" data-id="${m.id}">
+    <div class="date-badge">${m.date} · ${m.league}</div>
+    <div class="crest-row">
+      <span class="crest ${m.status}">${c1}</span><span class="vsx-sm">vs</span><span class="crest ${m.status}">${c2}</span>
+    </div>
+    <div class="team-name">${m.home} <span style="color:var(--text-faint);font-weight:400">vs</span> ${m.away}</div>
+    <div class="league-tag">${m.status === "certified" ? "◆ análisis certificado" : (m.status === "progress" ? "◐ en proceso" : "&nbsp;")}</div>
+    <div class="signal">${m.signal || ""}</div>
+    <div class="match-card-actions">
+      <button class="btn-add">+</button>
+      <button class="btn-analysis">Análisis</button>
+    </div>
   </div>`;
 }
 
-function renderRows() {
-  document.getElementById("rows-container").innerHTML = ROWS.map(row => `
-    <div class="row-block">
-      <div class="row-head"><span class="row-title">${row.title}</span><span class="row-count">${row.ids.length}</span></div>
-      <div class="row-scroll">${row.ids.map(tileHtml).join("")}</div>
-    </div>`).join("");
-  document.querySelectorAll(".tile").forEach(t => t.addEventListener("click", () => {
-    const id = t.dataset.id;
-    if (MATCHES.find(m => m.id === id)) openCenter(id); else openStory(id);
-  }));
+function renderUpcoming() {
+  document.getElementById("upcoming-scroll").innerHTML = MATCHES.filter(m => !m.flagship).map(matchCardHtml).join("");
+  document.querySelectorAll("#upcoming-scroll .match-card").forEach(c => c.addEventListener("click", () => openTile(c.dataset.id)));
 }
+
+function renderLeagueStat() {
+  document.getElementById("stat-league").innerHTML = `
+    <div class="stat-panel-title">Brasileirão Série B <span style="color:var(--text-faint);font-weight:400;font-size:10px">temporada activa</span></div>
+    <div class="stat-entry"><div><div class="name">Goles por partido</div><div class="sub">promedio de liga</div></div><div class="value" style="font-family:var(--mono);font-weight:700">2.27</div></div>
+    <div class="stat-entry"><div><div class="name">Grêmio Novorizontino</div><div class="sub">goleador de la liga</div></div><div class="value" style="font-family:var(--mono);font-weight:700;color:var(--green)">28 goles</div></div>
+    <div class="stat-entry"><div><div class="name">Londrina</div><div class="sub">tendencia ofensiva reciente</div></div><div class="value" style="font-family:var(--mono);font-weight:700;color:var(--amber)">2.0 gpp</div></div>`;
+}
+
+function renderCategoryGrid() {
+  const cats = [
+    { name: "Córners", sub: "Motor productivo", cls: "cat-productivo" },
+    { name: "Tarjetas Local/Visita", sub: "Certificado", cls: "cat-productivo" },
+    { name: "Tarjetas Total", sub: "Experimental (degradado)", cls: "cat-experimental" },
+    { name: "BTTS", sub: "Cerrado — sin señal", cls: "cat-cerrado" },
+  ];
+  document.getElementById("category-grid").innerHTML = cats.map(c => `<div class="category-card ${c.cls}">${c.name}<span class="sub">${c.sub}</span></div>`).join("");
+}
+
+function renderLabScroll() {
+  const ids = ["jensen-bias", "h2h-depth", "14-refutadas"];
+  document.getElementById("lab-scroll").innerHTML = ids.map(id => `
+    <div class="match-card" data-id="${id}" style="width:190px">
+      <div class="date-badge">Cuaderno de Laboratorio</div>
+      <div class="team-name" style="margin-top:4px">${STORIES[id].headline}</div>
+      <div class="league-tag" style="margin-top:8px">↺ corrección pública</div>
+    </div>`).join("");
+  document.querySelectorAll("#lab-scroll .match-card").forEach(c => c.addEventListener("click", () => openStory(c.dataset.id)));
+}
+
+function renderHome() {
+  renderHero(); renderUpcoming(); renderLeagueStat(); renderCategoryGrid(); renderLabScroll();
+}
+
+/* ---- drawer ---- */
+document.getElementById("menu-btn").addEventListener("click", () => {
+  document.getElementById("drawer").hidden = false;
+  document.getElementById("drawer-overlay").hidden = false;
+});
+document.getElementById("drawer-overlay").addEventListener("click", closeDrawer);
+function closeDrawer() { document.getElementById("drawer").hidden = true; document.getElementById("drawer-overlay").hidden = true; }
+document.querySelectorAll(".drawer-item[data-view]").forEach(item => {
+  item.addEventListener("click", () => { closeDrawer(); openSimple(item.dataset.view); });
+});
+
+function openSimple(view) {
+  const content = view === "historial" ? `
+    <h1>Nuestro Historial</h1>
+    <p style="color:var(--text-dim);font-size:13px;margin-bottom:16px">Todo lo que declaramos como cierto, y todo lo que corregimos después de declararlo.</p>
+    <div class="story-section"><div class="label">Confirmado</div><p>FormCalculator supera al baseline naive en 1X2 de las 4 grandes ligas · ELO es el grupo de señal dominante sobre la representación actual de features.</p></div>
+    <div class="story-section"><div class="label">Corregido después de publicarse</div><p>El sesgo que fabricaba ventaja donde no la había (E002 +6.8pp → −1.1pp) · Historial 'extremo' con solo 1-2 partidos reales detrás.</p></div>
+    <div class="final-status"><span class="label">Programa E00X — </span>12 Refutadas, 2 Archivadas, 0 Certificadas. Cerrado 2026-07-20.</div>`
+    : `
+    <h1>Cómo Funciona</h1>
+    <div class="story-section"><div class="label">Principio 1</div><p>El criterio se fija antes de ver el resultado, nunca después.</p></div>
+    <div class="story-section"><div class="label">Principio 2</div><p>Nunca confiamos en un patrón sin verificar profundidad de muestra real.</p></div>
+    <div class="story-section"><div class="label">Principio 3</div><p>Separamos siempre lo propio de lo certificado por el Laboratorio.</p></div>`;
+  document.getElementById("simple-body").innerHTML = content;
+  document.getElementById("view-list").hidden = true;
+  document.getElementById("view-simple").hidden = false;
+  window.scrollTo(0, 0);
+}
+document.getElementById("simple-back-btn").addEventListener("click", () => {
+  document.getElementById("view-simple").hidden = true;
+  document.getElementById("view-list").hidden = false;
+});
 
 function pendingBanner(text) {
   return `<div class="pending-banner"><span class="ic">⧗</span><span>${text}</span></div>`;
@@ -451,7 +627,7 @@ document.getElementById("story-back-btn").addEventListener("click", () => {
   document.getElementById("view-list").hidden = false;
 });
 
-renderRows();
+renderHome();
 </script>
 </body>
 </html>
