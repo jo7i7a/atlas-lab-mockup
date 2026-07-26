@@ -151,7 +151,21 @@
   .lb-row .name { font-size: 11.5px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .lb-row .lg { font-size: 9px; color: var(--text-faint); }
   .lb-row .val { font-family: var(--mono); font-size: 12px; font-weight: 800; flex-shrink: 0; }
+  .lb-row { cursor: pointer; }
+  .lb-row:active { background: var(--surface-2); }
   .lb-foot { font-size: 10px; color: var(--text-faint); padding: 6px 14px 10px; border-top: 1px solid var(--border); }
+
+  /* enlaces de equipo dentro de texto (tarjetas de partido, filas de tabla) */
+  .team-link { cursor: pointer; }
+  .team-link:hover, .team-link:active { text-decoration: underline; text-decoration-color: var(--green); text-underline-offset: 2px; }
+
+  /* ---------- ficha de equipo ---------- */
+  #view-team[hidden] { display: none; }
+  .team-profile-head { display: flex; align-items: center; gap: 14px; padding: 6px 0 18px; }
+  .team-profile-head .crest { width: 56px; height: 56px; font-size: 18px; border-width: 0; flex-shrink: 0; }
+  .team-profile-head .name { font-size: 18px; font-weight: 800; line-height: 1.2; }
+  .team-profile-head .league-link { font-size: 11.5px; color: var(--text-faint); cursor: pointer; display: inline-flex; align-items: center; gap: 5px; margin-top: 4px; }
+  .team-profile-head .league-link:hover { color: var(--green); }
 
   /* ---------- vistas secundarias (Radiografia / Ligas) reutilizan chrome de league-detail ---------- */
   #view-radiografia[hidden], #view-ligas[hidden] { display: none; }
@@ -304,9 +318,9 @@
 <div class="drawer-overlay" id="drawer-overlay" hidden></div>
 <nav class="drawer" id="drawer" hidden>
   <h4>Menú</h4>
-  <div class="drawer-item active" id="drawer-partidos">🏠 Partidos</div>
-  <div class="drawer-item" id="drawer-radiografia">📊 Radiografía</div>
-  <div class="drawer-item" id="drawer-ligas">🌐 Ligas</div>
+  <div class="drawer-item active" id="drawer-partidos" data-view="list">🏠 Partidos</div>
+  <div class="drawer-item" id="drawer-radiografia" data-view="radiografia">📊 Radiografía</div>
+  <div class="drawer-item" id="drawer-ligas" data-view="ligas">🌐 Ligas</div>
   <h4>General</h4>
   <div class="drawer-item" style="opacity:.5">⚙ Configuración (no disponible)</div>
 </nav>
@@ -323,8 +337,26 @@
     <div class="league-detail-head">
       <div class="title" id="league-detail-title"></div>
       <div class="count" id="league-detail-count"></div>
+      <div class="league-link" id="league-detail-rad-link" style="margin-top:6px;font-size:11.5px;color:var(--green);cursor:pointer">📊 Ver radiografía de esta liga →</div>
     </div>
     <div id="league-detail-list"></div>
+  </div>
+</div>
+
+<!-- ============ FICHA DE EQUIPO ============ -->
+<div id="view-team" hidden>
+  <div class="center-topbar">
+    <div class="row1">
+      <button class="back-btn" id="team-back-btn">←</button>
+      <span class="wordmark" style="font-size:14px">ATLAS·LAB</span>
+    </div>
+  </div>
+  <div class="secview-body">
+    <div class="team-profile-head" id="team-profile-head"></div>
+    <div class="section-title" style="margin-top:0"><span>Radiografía del equipo</span></div>
+    <div class="stat-panel" id="team-stat-panel"></div>
+    <div class="section-title"><span>Próximos partidos</span></div>
+    <div id="team-matches-list"></div>
   </div>
 </div>
 
@@ -570,7 +602,23 @@ function matchWhen(m) {
   return `${chileDateLabel(chileDate)} · ${chileTimeLabel(chileDate)}`;
 }
 
-function openTile(id) { openCenter(id); }
+function openTile(id) { goTo("center", { id }); }
+
+function teamLinkHtml(name, league) {
+  return `<span class="team-link" data-team="${name}" data-league="${league}">${name}</span>`;
+}
+
+/* delega el click de un contenedor: si cae en un .team-link abre la ficha
+   del equipo; si no, ejecuta la accion por defecto del contenedor (abrir
+   el partido). Asi cada tarjeta/fila de partido queda conectada tanto al
+   equipo como al analisis, sin listeners duplicados. */
+function bindTeamLinksOrDefault(el, defaultAction) {
+  el.addEventListener("click", (e) => {
+    const teamLink = e.target.closest(".team-link");
+    if (teamLink) { goTo("team", { team: teamLink.dataset.team, league: teamLink.dataset.league }); return; }
+    defaultAction(e);
+  });
+}
 
 function renderHero() {
   const m = MATCHES.find(x => x.flagship);
@@ -582,7 +630,7 @@ function renderHero() {
         <span class="vsx-sm">vs</span>
         <span class="crest certified" style="background:${teamColor(m.away)};width:34px;height:34px;font-size:12px">${initials(m.away)}</span>
       </div>
-      <div class="teams">${m.home}<span class="vsx">vs</span>${m.away}</div>
+      <div class="teams">${teamLinkHtml(m.home, m.league)}<span class="vsx">vs</span>${teamLinkHtml(m.away, m.league)}</div>
       <div class="sub">${matchWhen(m)} hora Chile · Racha ofensiva de ambos equipos</div>
       <div class="hero-actions">
         <button class="btn-primary" data-id="${m.id}">Ver Análisis</button>
@@ -590,7 +638,7 @@ function renderHero() {
       </div>
     </div>
     <div class="hero-dots"><span class="active"></span><span></span><span></span></div>`;
-  document.querySelector(".hero-card").addEventListener("click", (e) => { if (!e.target.closest("button")) openTile(m.id); });
+  bindTeamLinksOrDefault(document.querySelector(".hero-card"), (e) => { if (!e.target.closest("button")) openTile(m.id); });
   document.querySelector(".btn-primary").addEventListener("click", () => openTile(m.id));
 }
 
@@ -602,7 +650,7 @@ function matchCardHtml(m) {
     <div class="crest-row">
       <span class="crest ${m.status}" style="background:${teamColor(m.home)}">${c1}</span><span class="vsx-sm">vs</span><span class="crest ${m.status}" style="background:${teamColor(m.away)}">${c2}</span>
     </div>
-    <div class="team-name">${m.home} <span style="color:var(--text-faint);font-weight:400">vs</span> ${m.away}</div>
+    <div class="team-name">${teamLinkHtml(m.home, m.league)} <span style="color:var(--text-faint);font-weight:400">vs</span> ${teamLinkHtml(m.away, m.league)}</div>
     <div class="league-tag">${m.status === "certified" ? "◆ análisis certificado" : (m.status === "progress" ? "◐ en proceso" : "&nbsp;")}</div>
     <div class="signal">${m.signal || ""}</div>
     <div class="match-card-actions">
@@ -652,34 +700,32 @@ function renderLeagueSections() {
     <div class="league-section-title" data-league-header="${lg}" style="cursor:pointer">${flagIcon(lg)} ${lg} <span style="color:var(--text-faint);font-weight:400;font-size:10.5px">(${matches.length}) →</span></div>
     <div class="upcoming-scroll">${preview.map(matchCardHtml).join("")}${seeAll}</div>`;
   }).join("");
-  document.querySelectorAll(".match-card:not(.see-all-card)").forEach(c => c.addEventListener("click", () => openTile(c.dataset.id)));
-  document.querySelectorAll(".see-all-card").forEach(c => c.addEventListener("click", () => openLeagueDetail(c.dataset.league)));
-  document.querySelectorAll("[data-league-header]").forEach(h => h.addEventListener("click", () => openLeagueDetail(h.dataset.leagueHeader)));
+  document.querySelectorAll(".match-card:not(.see-all-card)").forEach(c => bindTeamLinksOrDefault(c, () => openTile(c.dataset.id)));
+  document.querySelectorAll(".see-all-card").forEach(c => c.addEventListener("click", () => goTo("league-detail", { league: c.dataset.league })));
+  document.querySelectorAll("[data-league-header]").forEach(h => h.addEventListener("click", () => goTo("league-detail", { league: h.dataset.leagueHeader })));
 }
 
-function openLeagueDetail(league) {
+/* ---- vista de detalle de liga: solo renderiza, la navegacion (goTo/goBack) decide cuando mostrarla ---- */
+function renderLeagueDetail(league) {
   const matches = sortByKickoff(MATCHES.filter(m => m.league === league));
   document.getElementById("league-detail-title").innerHTML = `${flagIcon(league)} ${league}`;
   document.getElementById("league-detail-count").textContent = `${matches.length} partidos programados`;
+  const radLink = document.getElementById("league-detail-rad-link");
+  radLink.style.display = RADIOGRAFIA_LEAGUES.includes(league) ? "" : "none";
+  radLink.onclick = () => goTo("radiografia", { league });
   document.getElementById("league-detail-list").innerHTML = matches.map(m => `
     <div class="mrow" data-id="${m.id}">
       <span class="marker ${m.status}">${m.status === "certified" ? "◆" : (m.status === "progress" ? "◐" : "—")}</span>
       <div class="body">
         <div class="meta">${matchWhen(m)} hora Chile</div>
-        <div class="teams">${m.home}<span class="vsx">vs</span>${m.away}</div>
+        <div class="teams">${teamLinkHtml(m.home, m.league)}<span class="vsx">vs</span>${teamLinkHtml(m.away, m.league)}</div>
         ${m.signal ? `<div style="font-size:10.5px;color:var(--green);margin-top:2px">${m.signal}</div>` : ""}
       </div>
       <span class="go">›</span>
     </div>`).join("");
-  document.querySelectorAll("#league-detail-list .mrow").forEach(r => r.addEventListener("click", () => openTile(r.dataset.id)));
-  document.getElementById("view-list").hidden = true;
-  document.getElementById("view-league-detail").hidden = false;
-  window.scrollTo(0, 0);
+  document.querySelectorAll("#league-detail-list .mrow").forEach(r => bindTeamLinksOrDefault(r, () => openTile(r.dataset.id)));
 }
-document.getElementById("league-detail-back-btn").addEventListener("click", () => {
-  document.getElementById("view-league-detail").hidden = true;
-  document.getElementById("view-list").hidden = false;
-});
+document.getElementById("league-detail-back-btn").addEventListener("click", goBack);
 
 function statEntry(name, sub, valueLabel, pct, color) {
   return `
@@ -695,7 +741,7 @@ function leaderboardCardHtml(key) {
   const lb = TEAM_LEADERBOARDS[key];
   const color = LB_COLOR[key];
   const rows = lb.rows.map((r, i) => `
-    <div class="lb-row">
+    <div class="lb-row" data-team="${r.team}" data-league="${r.league}">
       <span class="lb-rank">${i + 1}</span>
       <span class="crest" style="background:${teamColor(r.team)}">${initials(r.team)}</span>
       <div class="name-wrap"><div class="name">${r.team}</div><div class="lg">${flagIcon(r.league)} ${r.league}</div></div>
@@ -714,6 +760,9 @@ function leaderboardCardHtml(key) {
 function renderLeaderboards() {
   document.getElementById("leaderboards").innerHTML = Object.keys(TEAM_LEADERBOARDS).map(leaderboardCardHtml).join("")
     + `<div class="footer-note">Temporada 2026 en curso, calculado desde matches/match_stats reales. Copa Chile no tiene datos de corners/remates todavía; Eliteserien y Liga MX Apertura aún no tienen su temporada 2026 en el histórico.</div>`;
+  document.querySelectorAll("#leaderboards .lb-row").forEach(row => {
+    row.addEventListener("click", () => goTo("team", { team: row.dataset.team, league: row.dataset.league }));
+  });
 }
 
 function renderHome() {
@@ -748,7 +797,10 @@ function renderRadiografia() {
   const teams = TEAM_RADIOGRAPHY[radLeague] || [];
   document.getElementById("rad-team-table").innerHTML = `
     <tr><th>Equipo</th><th>PJ</th><th>BTTS%</th><th>Ov2.5%</th><th>Corners%</th><th>Remates</th><th>Tarjetas</th></tr>
-    ${teams.map(t => `<tr><td>${t.team}</td><td>${t.matches}</td><td>${t.btts}</td><td>${t.over25}</td><td>${t.corners != null ? t.corners : "—"}</td><td>${t.shots != null ? t.shots : "—"}</td><td>${t.cards}</td></tr>`).join("")}`;
+    ${teams.map(t => `<tr data-team="${t.team}" style="cursor:pointer"><td>${t.team}</td><td>${t.matches}</td><td>${t.btts}</td><td>${t.over25}</td><td>${t.corners != null ? t.corners : "—"}</td><td>${t.shots != null ? t.shots : "—"}</td><td>${t.cards}</td></tr>`).join("")}`;
+  document.querySelectorAll("#rad-team-table tr[data-team]").forEach(tr => {
+    tr.addEventListener("click", () => goTo("team", { team: tr.dataset.team, league: radLeague }));
+  });
 }
 
 /* ---- Ligas: total de partidos + top 5 ligas por categoria ---- */
@@ -787,13 +839,7 @@ function leagueLeaderboardHtml(cat) {
 function renderLeagueLeaderboards() {
   document.getElementById("league-leaderboards").innerHTML = LEAGUE_CATS.map(leagueLeaderboardHtml).join("");
   document.querySelectorAll("#league-leaderboards .lb-row").forEach(row => {
-    row.addEventListener("click", () => {
-      radLeague = row.dataset.league;
-      document.getElementById("view-ligas").hidden = true;
-      document.getElementById("view-radiografia").hidden = false;
-      renderRadiografia();
-      window.scrollTo(0, 0);
-    });
+    row.addEventListener("click", () => goTo("radiografia", { league: row.dataset.league }));
   });
 }
 
@@ -803,15 +849,52 @@ function renderLigas() {
     `<button class="league-chip" data-league="${lg}">${flagIcon(lg)} ${lg}</button>`
   ).join("");
   document.querySelectorAll("#ligas-league-filter-row .league-chip").forEach(chip => {
-    chip.addEventListener("click", () => {
-      radLeague = chip.dataset.league;
-      document.getElementById("view-ligas").hidden = true;
-      document.getElementById("view-radiografia").hidden = false;
-      renderRadiografia();
-      window.scrollTo(0, 0);
-    });
+    chip.addEventListener("click", () => goTo("radiografia", { league: chip.dataset.league }));
   });
   renderLeagueLeaderboards();
+}
+
+/* ---- Ficha de equipo: radiografia propia + proximos partidos, conectada a liga y a cada partido ---- */
+function findTeamRadRow(team, league) {
+  const rows = TEAM_RADIOGRAPHY[league];
+  return rows ? (rows.find(t => t.team === team) || null) : null;
+}
+
+function renderTeamProfile(team, league) {
+  document.getElementById("team-profile-head").innerHTML = `
+    <span class="crest certified" style="background:${teamColor(team)}">${initials(team)}</span>
+    <div>
+      <div class="name">${team}</div>
+      <div class="league-link" id="team-league-link">${flagIcon(league)} ${league} →</div>
+    </div>`;
+  document.getElementById("team-league-link").addEventListener("click", () => {
+    goTo(RADIOGRAFIA_LEAGUES.includes(league) ? "radiografia" : "league-detail", { league });
+  });
+
+  const row = findTeamRadRow(team, league);
+  document.getElementById("team-stat-panel").innerHTML = row ? `
+    <div class="stat-panel-title">${team} <span style="color:var(--text-faint);font-weight:400;font-size:10px">${row.matches} partidos · temporada 2026</span></div>
+    ${statEntry("BTTS", "ambos equipos anotan", row.btts + "%", row.btts, "var(--green)")}
+    ${statEntry("Over 2.5 goles", "más de 2 goles en el partido", row.over25 + "%", row.over25, "var(--amber)")}
+    ${statEntry("Under 2.5 goles", "2 goles o menos", row.under25 + "%", row.under25, "var(--text)")}
+    ${row.corners != null ? statEntry("Over 9.5 corners", "más de 9 corners en el partido", row.corners + "%", row.corners, "var(--clay)") : statEntry("Corners", "sin dato en el dataset", "—", 0, "var(--text-faint)")}
+    ${row.shots != null ? statEntry("Remates a puerta", "promedio por partido", row.shots, Math.min(row.shots * 4, 100), "var(--blue)") : statEntry("Remates a puerta", "sin dato en el dataset", "—", 0, "var(--text-faint)")}
+    ${statEntry("Tarjetas", "promedio por partido", row.cards, Math.min(row.cards * 22, 100), "var(--red)")}
+    <div class="footer-note" style="margin-top:8px">${row.gf} goles a favor · ${row.ga} en contra, en ${row.matches} partidos de la temporada 2026.</div>`
+    : pendingBanner(`Sin radiografía calculada para ${league} todavía — su temporada 2026 no está en las tablas históricas del dataset (solo en fixtures futuros).`);
+
+  const matches = sortByKickoff(MATCHES.filter(m => m.home === team || m.away === team));
+  document.getElementById("team-matches-list").innerHTML = matches.length ? matches.map(m => `
+    <div class="mrow" data-id="${m.id}">
+      <span class="marker ${m.status}">${m.status === "certified" ? "◆" : (m.status === "progress" ? "◐" : "—")}</span>
+      <div class="body">
+        <div class="meta">${matchWhen(m)} hora Chile</div>
+        <div class="teams">${m.home === team ? `<b>${m.home}</b>` : teamLinkHtml(m.home, m.league)}<span class="vsx">vs</span>${m.away === team ? `<b>${m.away}</b>` : teamLinkHtml(m.away, m.league)}</div>
+        ${m.signal ? `<div style="font-size:10.5px;color:var(--green);margin-top:2px">${m.signal}</div>` : ""}
+      </div>
+      <span class="go">›</span>
+    </div>`).join("") : `<div class="footer-note">Sin próximos partidos de ${team} en la muestra de partidos cargada.</div>`;
+  document.querySelectorAll("#team-matches-list .mrow").forEach(r => bindTeamLinksOrDefault(r, () => openTile(r.dataset.id)));
 }
 
 /* ---- drawer ---- */
@@ -822,38 +905,60 @@ document.getElementById("menu-btn").addEventListener("click", () => {
 document.getElementById("drawer-overlay").addEventListener("click", closeDrawer);
 function closeDrawer() { document.getElementById("drawer").hidden = true; document.getElementById("drawer-overlay").hidden = true; }
 
-function hideAllViews() {
-  document.getElementById("view-list").hidden = true;
-  document.getElementById("view-league-detail").hidden = true;
-  document.getElementById("view-radiografia").hidden = true;
-  document.getElementById("view-ligas").hidden = true;
-  document.getElementById("view-center").hidden = true;
+/* ---- Grafo de navegacion: pila de vistas real, no pantallas aisladas.
+   goTo() empuja de donde vinimos antes de mostrar la vista nueva; goBack()
+   desapila y vuelve exactamente ahi (al ranking, a la liga, al equipo, al
+   partido de origen -- lo que corresponda), en vez de un "volver al inicio"
+   fijo. Los accesos desde el menu (drawer) son la excepcion: representan un
+   salto de seccion, no un drill-down, asi que reinician la pila. ---- */
+const VIEW_IDS = {
+  list: "view-list", "league-detail": "view-league-detail", radiografia: "view-radiografia",
+  ligas: "view-ligas", team: "view-team", center: "view-center",
+};
+const navStack = [];
+let currentView = "list";
+let currentParams = {};
+
+function showOnly(viewKey) {
+  Object.values(VIEW_IDS).forEach(id => { document.getElementById(id).hidden = true; });
+  document.getElementById(VIEW_IDS[viewKey]).hidden = false;
+  window.scrollTo(0, 0);
 }
 
-document.getElementById("drawer-partidos").addEventListener("click", () => {
-  closeDrawer(); hideAllViews();
-  document.getElementById("view-list").hidden = false;
-});
-document.getElementById("drawer-radiografia").addEventListener("click", () => {
-  closeDrawer(); hideAllViews();
-  document.getElementById("view-radiografia").hidden = false;
-  renderRadiografia();
-  window.scrollTo(0, 0);
-});
-document.getElementById("drawer-ligas").addEventListener("click", () => {
-  closeDrawer(); hideAllViews();
-  document.getElementById("view-ligas").hidden = false;
-  renderLigas();
-  window.scrollTo(0, 0);
-});
-document.getElementById("radiografia-back-btn").addEventListener("click", () => {
-  document.getElementById("view-radiografia").hidden = true;
-  document.getElementById("view-list").hidden = false;
-});
-document.getElementById("ligas-back-btn").addEventListener("click", () => {
-  document.getElementById("view-ligas").hidden = true;
-  document.getElementById("view-list").hidden = false;
-});
+function setDrawerActive(viewKey) {
+  document.querySelectorAll(".drawer-item[data-view]").forEach(el => el.classList.toggle("active", el.dataset.view === viewKey));
+}
+
+function renderCurrentView() {
+  showOnly(currentView);
+  if (currentView === "league-detail") renderLeagueDetail(currentParams.league);
+  else if (currentView === "radiografia") { radLeague = currentParams.league || radLeague; renderRadiografia(); }
+  else if (currentView === "ligas") renderLigas();
+  else if (currentView === "team") renderTeamProfile(currentParams.team, currentParams.league);
+  else if (currentView === "center") renderCenter(currentParams.id);
+  setDrawerActive(["list", "radiografia", "ligas"].includes(currentView) ? currentView : null);
+}
+
+function goTo(view, params = {}, opts = {}) {
+  if (opts.reset) navStack.length = 0;
+  else navStack.push({ view: currentView, params: currentParams });
+  currentView = view; currentParams = params;
+  renderCurrentView();
+}
+
+function goBack() {
+  if (navStack.length === 0) { goTo("list", {}, { reset: true }); return; }
+  const prev = navStack.pop();
+  currentView = prev.view; currentParams = prev.params;
+  renderCurrentView();
+}
+
+document.getElementById("drawer-partidos").addEventListener("click", () => { closeDrawer(); goTo("list", {}, { reset: true }); });
+document.getElementById("drawer-radiografia").addEventListener("click", () => { closeDrawer(); goTo("radiografia", { league: radLeague }, { reset: true }); });
+document.getElementById("drawer-ligas").addEventListener("click", () => { closeDrawer(); goTo("ligas", {}, { reset: true }); });
+document.getElementById("radiografia-back-btn").addEventListener("click", goBack);
+document.getElementById("ligas-back-btn").addEventListener("click", goBack);
+document.getElementById("team-back-btn").addEventListener("click", goBack);
 
 function pendingBanner(text) {
   return `<div class="pending-banner"><span class="ic">⧗</span><span>${text}</span></div>`;
@@ -937,11 +1042,12 @@ const SOURCE = {
 };
 const SOURCE_LABEL = { ce: "Content Engine", pocket: "Atlas Pocket", lab: "Laboratorio", none: "No implementado" };
 
-function openCenter(id) {
+function renderCenter(id) {
   const m = MATCHES.find(x => x.id === id);
   const mods = buildModules(m);
   document.getElementById("c-league").textContent = `${m.league} · ${matchWhen(m)} hora Chile`;
-  document.getElementById("c-teams").innerHTML = `${m.home}<span class="vsx">vs</span>${m.away}`;
+  document.getElementById("c-teams").innerHTML = `${teamLinkHtml(m.home, m.league)}<span class="vsx">vs</span>${teamLinkHtml(m.away, m.league)}`;
+  bindTeamLinksOrDefault(document.getElementById("c-teams"), () => {});
   document.getElementById("quicknav").innerHTML = MODULES.map(mo => `<button class="qn-pill" data-jump="${mo.id}">${mo.label}</button>`).join("");
   document.getElementById("center-body").innerHTML = MODULES.map(mo => `
     <div class="module" id="mod-${mo.id}">
@@ -954,14 +1060,8 @@ function openCenter(id) {
   document.querySelectorAll(".qn-pill").forEach(p => p.addEventListener("click", () => {
     document.getElementById("mod-" + p.dataset.jump).scrollIntoView({ behavior: "smooth", block: "start" });
   }));
-  document.getElementById("view-list").hidden = true;
-  document.getElementById("view-center").hidden = false;
-  window.scrollTo(0, 0);
 }
-document.getElementById("back-btn").addEventListener("click", () => {
-  document.getElementById("view-center").hidden = true;
-  document.getElementById("view-list").hidden = false;
-});
+document.getElementById("back-btn").addEventListener("click", goBack);
 
 renderHome();
 </script>
