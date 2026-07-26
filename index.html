@@ -117,6 +117,7 @@
     border: 2px solid transparent; text-shadow: 0 1px 1px rgba(0,0,0,0.35);
   }
   .crest.certified { border-color: var(--green); } .crest.progress { border-color: var(--amber); } .crest.none { border-color: var(--border); }
+  img.crest { object-fit: cover; background: var(--surface-2); }
   .vsx-sm { font-family: var(--mono); font-size: 9.5px; color: var(--text-faint); }
   .match-card .team-name { font-size: 12.5px; font-weight: 700; line-height: 1.3; margin-bottom: 2px; }
   .match-card .league-tag { font-size: 10px; color: var(--text-faint); margin-bottom: 6px; }
@@ -539,6 +540,46 @@ function flagIcon(league) {
   return code ? `<span class="fi fi-${code}" style="border-radius:2px"></span>` : "";
 }
 
+/* Escudos de equipo y logos de liga reales, ya resueltos y verificados por HTTP
+   contra TheSportsDB (2026-07-27) -- ver media_assets.py::sync_thesportsdb_teams/leagues
+   en el extractor. Estas son URLs estaticas ya confirmadas (200 + image/*), horneadas
+   aqui en tiempo de build -- el mockup no llama a ninguna API en vivo. Donde un equipo/liga
+   no tiene entrada aqui, se usa la insignia generada de siempre (sin cambio de comportamiento). */
+const TSDB_CRESTS = {"Audax Italiano": "https://r2.thesportsdb.com/images/media/team/badge/xbowln1672950178.png", "Deportes La Serena": "https://r2.thesportsdb.com/images/media/team/badge/vs7mxv1677600646.png", "Coquimbo Unido": "https://r2.thesportsdb.com/images/media/team/badge/b2cnht1602186172.png", "Everton de Viña del Mar": "https://r2.thesportsdb.com/images/media/team/badge/3yo4ag1779074331.png", "Palestino": "https://r2.thesportsdb.com/images/media/team/badge/62site1756091114.png", "Cobresal": "https://r2.thesportsdb.com/images/media/team/badge/36tqoo1602187477.png", "Ñublense": "https://r2.thesportsdb.com/images/media/team/badge/0jpiwm1610649915.png", "Huachipato": "https://r2.thesportsdb.com/images/media/team/badge/uhzow91736214236.png", "Deportes Concepción": "https://r2.thesportsdb.com/images/media/team/badge/bn8l9d1719394347.png", "Deportes Limache": "https://r2.thesportsdb.com/images/media/team/badge/1bd0ws1706521384.png", "Unión La Calera": "https://r2.thesportsdb.com/images/media/team/badge/vadt5t1769834071.png", "Universidad de Chile": "https://r2.thesportsdb.com/images/media/team/badge/po0o3c1578347873.png", "Universidad Católica": "https://r2.thesportsdb.com/images/media/team/badge/h2pcuc1602188028.png", "Universidad de Concepción": "https://r2.thesportsdb.com/images/media/team/badge/fyj9u51602187758.png", "Deportes Puerto Montt": "https://r2.thesportsdb.com/images/media/team/badge/k1wdah1677471408.png", "Deportes Temuco": "https://r2.thesportsdb.com/images/media/team/badge/gzz5os1677471036.png", "Deportes Copiapó": "https://r2.thesportsdb.com/images/media/team/badge/lzii2a1611771823.png", "San Luis de Quillota": "https://r2.thesportsdb.com/images/media/team/badge/s9fnfi1610649930.png", "Deportes Santa Cruz": "https://r2.thesportsdb.com/images/media/team/badge/15m53x1610649871.png", "Deportes Iquique": "https://r2.thesportsdb.com/images/media/team/badge/noodnh1756084851.png", "San Marcos de Arica": "https://r2.thesportsdb.com/images/media/team/badge/r0f5fk1681108567.png", "Unión San Felipe": "https://r2.thesportsdb.com/images/media/team/badge/mj9p961734970963.png", "Santiago Wanderers": "https://r2.thesportsdb.com/images/media/team/badge/ablr721757220570.png", "Deportes Recoleta": "https://r2.thesportsdb.com/images/media/team/badge/q0tu3t1697646634.png", "Unión Española": "https://r2.thesportsdb.com/images/media/team/badge/3ixbl71756141900.png", "Curicó Unido": "https://r2.thesportsdb.com/images/media/team/badge/chf0p61756787786.png", "Rangers de Talca": "https://r2.thesportsdb.com/images/media/team/badge/ybf68r1610649923.png", "Santiago Morning": "https://r2.thesportsdb.com/images/media/team/badge/ve62qd1610649952.png", "Fluminense": "https://r2.thesportsdb.com/images/media/team/badge/stvvwp1473538082.png", "Grêmio": "https://r2.thesportsdb.com/images/media/team/badge/uvpwyt1473538089.png", "Botafogo": "https://r2.thesportsdb.com/images/media/team/badge/bs5mbw1733004596.png", "Cruzeiro": "https://r2.thesportsdb.com/images/media/team/badge/upsvvu1473538059.png", "São Paulo": "https://r2.thesportsdb.com/images/media/team/badge/sxpupx1473538135.png", "Flamengo": "https://r2.thesportsdb.com/images/media/team/badge/syptwx1473538074.png", "Corinthians": "https://r2.thesportsdb.com/images/media/team/badge/vvuvps1473538042.png", "Bahia": "https://r2.thesportsdb.com/images/media/team/badge/xuvtsv1473539308.png", "Mirassol": "https://r2.thesportsdb.com/images/media/team/badge/pw8uo11765900737.png", "Vasco da Gama": "https://r2.thesportsdb.com/images/media/team/badge/ynqlxo1630521109.png", "Atlético Mineiro": "https://r2.thesportsdb.com/images/media/team/badge/x5lixs1743742872.png", "Palmeiras": "https://r2.thesportsdb.com/images/media/team/badge/vsqwqp1473538105.png", "Internacional": "https://r2.thesportsdb.com/images/media/team/badge/yprvxx1473538097.png", "Coritiba": "https://r2.thesportsdb.com/images/media/team/badge/ywwsyu1473538050.png", "Vitória": "https://r2.thesportsdb.com/images/media/team/badge/tysrrx1473538156.png", "Remo": "https://r2.thesportsdb.com/images/media/team/badge/u36jfy1579341655.png", "Chapecoense": "https://r2.thesportsdb.com/images/media/team/badge/wy0e1i1765900601.png", "Santos": "https://r2.thesportsdb.com/images/media/team/badge/j8xk9g1679447486.png", "Fortaleza": "https://r2.thesportsdb.com/images/media/team/badge/tosmdr1532853458.png", "Londrina": "https://r2.thesportsdb.com/images/media/team/badge/xp2z9j1740846583.png", "Ponte Preta": "https://r2.thesportsdb.com/images/media/team/badge/wbss4d1644929547.png", "Atlético Goianiense": "https://r2.thesportsdb.com/images/media/team/badge/l7382k1766505911.png", "Ceará": "https://r2.thesportsdb.com/images/media/team/badge/rxxvyp1464886685.png", "São Bernardo": "https://r2.thesportsdb.com/images/media/team/badge/0kt1ah1688106304.png", "Goiás": "https://r2.thesportsdb.com/images/media/team/badge/qhfhdp1635869930.png", "América Mineiro": "https://r2.thesportsdb.com/images/media/team/badge/rtpp171752177342.png", "Avaí": "https://r2.thesportsdb.com/images/media/team/badge/bblkat1766506007.png", "Juventude": "https://r2.thesportsdb.com/images/media/team/badge/1ntter1766506778.png", "Náutico": "https://r2.thesportsdb.com/images/media/team/badge/wywuwv1464886832.png", "Criciúma": "https://r2.thesportsdb.com/images/media/team/badge/r11mld1766506200.png", "Cuiabá": "https://r2.thesportsdb.com/images/media/team/badge/ykbxfa1766506334.png", "Sport Recife": "https://r2.thesportsdb.com/images/media/team/badge/tyrbls1545421563.png", "Guarani": "https://r2.thesportsdb.com/images/media/team/badge/tpipb21766508536.png", "Ituano": "https://r2.thesportsdb.com/images/media/team/badge/7fg7n71596796444.png", "Brusque": "https://r2.thesportsdb.com/images/media/team/badge/o7p43b1766507803.png", "Volta Redonda": "https://r2.thesportsdb.com/images/media/team/badge/phc5fs1736379773.png", "Ferroviária": "https://r2.thesportsdb.com/images/media/team/badge/zfo1y81766506623.png", "River Plate": "https://r2.thesportsdb.com/images/media/team/badge/03dmi31645539717.png", "Racing Club": "https://r2.thesportsdb.com/images/media/team/badge/vi4mu41695734959.png", "Argentinos Juniors": "https://r2.thesportsdb.com/images/media/team/badge/uqfjuo1769234850.png", "Rosario Central": "https://r2.thesportsdb.com/images/media/team/badge/y6q1ds1769660256.png", "Tigre": "https://r2.thesportsdb.com/images/media/team/badge/krryg71765858882.png", "Estudiantes de La Plata": "https://r2.thesportsdb.com/images/media/team/badge/pf08dq1760634366.png", "Deportivo Riestra": "https://r2.thesportsdb.com/images/media/team/badge/332h0l1578824392.png", "San Lorenzo": "https://r2.thesportsdb.com/images/media/team/badge/jih7hv1582229717.png", "CA Lanús": "https://r2.thesportsdb.com/images/media/team/badge/pdd4ba1593945230.png", "Independiente Rivadavia": "https://r2.thesportsdb.com/images/media/team/badge/qgzi2b1769406125.png", "Godoy Cruz": "https://r2.thesportsdb.com/images/media/team/badge/d3c0ds1517768584.png", "Barracas Central": "https://r2.thesportsdb.com/images/media/team/badge/rbkjba1707458543.png", "Sarmiento": "https://r2.thesportsdb.com/images/media/team/badge/xxofu71677634191.png", "Instituto De Córdoba": "https://r2.thesportsdb.com/images/media/team/badge/2dbqpy1679133716.png", "Banfield": "https://r2.thesportsdb.com/images/media/team/badge/c2ea011775756104.png", "Huracán": "https://r2.thesportsdb.com/images/media/team/badge/kppi2b1775776550.png", "Defensa y Justicia": "https://r2.thesportsdb.com/images/media/team/badge/3guvlh1775778978.png", "Vélez Sarsfield": "https://r2.thesportsdb.com/images/media/team/badge/jo98m71517769587.png", "Newell's Old Boys": "https://r2.thesportsdb.com/images/media/team/badge/23aftf1580842633.png", "Atlético Tucumán": "https://r2.thesportsdb.com/images/media/team/badge/m5i2q21775755577.png", "Boca Juniors": "https://r2.thesportsdb.com/images/media/team/badge/bm7krb1775741582.png", "Aldosivi": "https://r2.thesportsdb.com/images/media/team/badge/nqrjqb1517767667.png", "San Martín de San Juan": "https://r2.thesportsdb.com/images/media/team/badge/l7j84h1517769215.png", "Estudiantes de Río Cuarto": "https://r2.thesportsdb.com/images/media/team/badge/391thp1775793121.png", "Pumas UNAM": "https://r2.thesportsdb.com/images/media/team/badge/o01nvl1695734937.png", "Tigres UANL": "https://r2.thesportsdb.com/images/media/team/badge/lh80fx1701423708.png", "Cruz Azul": "https://r2.thesportsdb.com/images/media/team/badge/wcd2yi1781543370.png", "Santos Laguna": "https://r2.thesportsdb.com/images/media/team/badge/kg9gzh1779771734.png", "CD Guadalajara": "https://r2.thesportsdb.com/images/media/team/badge/mp1box1593452087.png", "Santa Cruz": "https://r2.thesportsdb.com/images/media/team/badge/vvusuv1464886343.png", "Figueirense": "https://r2.thesportsdb.com/images/media/team/badge/yvvyps1473538067.png", "Caxias": "https://r2.thesportsdb.com/images/media/team/badge/o4jhxw1625417717.png", "Anápolis": "https://r2.thesportsdb.com/images/media/team/badge/ofh9od1733798605.png", "Inter de Limeira": "https://r2.thesportsdb.com/images/media/team/badge/26em5b1772177092.png", "Floresta": "https://r2.thesportsdb.com/images/media/team/badge/1ch7n01617198950.png", "Confiança": "https://r2.thesportsdb.com/images/media/team/badge/v9y3ye1579337829.png", "Tombense": "https://r2.thesportsdb.com/images/media/team/badge/1uj3n31579340660.png", "Ferroviário": "https://r2.thesportsdb.com/images/media/team/badge/c806qa1768450356.png", "CSA": "https://r2.thesportsdb.com/images/media/team/badge/ekzl671560365911.png", "ABC": "https://r2.thesportsdb.com/images/media/team/badge/m1ampq1766507477.png", "Sampaio Corrêa": "https://r2.thesportsdb.com/images/media/team/badge/2jjjlk1701366513.png", "Retrô": "https://r2.thesportsdb.com/images/media/team/badge/7mo4kh1688105552.png", "Sarpsborg 08": "https://r2.thesportsdb.com/images/media/team/badge/pxrf831534869388.png", "Strømsgodset": "https://r2.thesportsdb.com/images/media/team/badge/wow1ny1746032568.png", "Haugesund": "https://r2.thesportsdb.com/images/media/team/badge/vx4q8p1602448530.png", "AIK": "https://r2.thesportsdb.com/images/media/team/badge/rwsrxq1420769503.png", "GAIS": "https://r2.thesportsdb.com/images/media/team/badge/3pahks1639779139.png", "Djurgårdens IF": "https://r2.thesportsdb.com/images/media/team/badge/eoxtmh1644937914.png", "IFK Göteborg": "https://r2.thesportsdb.com/images/media/team/badge/ywyxtp1429470529.png", "Patronato": "https://r2.thesportsdb.com/images/media/team/badge/diz3me1678849584.png", "Arsenal de Sarandí": "https://r2.thesportsdb.com/images/media/team/badge/t5yzu71580842576.png", "Deportes Melipilla": "https://r2.thesportsdb.com/images/media/team/badge/p1ocj71682748156.png", "Manaus": "https://r2.thesportsdb.com/images/media/team/badge/pzlh1q1767023556.png", "Jacuipense": "https://r2.thesportsdb.com/images/media/team/badge/tpvm951579343879.png", "Campinense": "https://r2.thesportsdb.com/images/media/team/badge/wo1fah1769036541.png", "Atlético Cearense": "https://r2.thesportsdb.com/images/media/team/badge/mq0u591644930387.png", "Sandnes Ulf": "https://r2.thesportsdb.com/images/media/team/badge/9h5mao1690696588.png", "Kongsvinger": "https://r2.thesportsdb.com/images/media/team/badge/fuhvsc1639777438.png", "Egersund": "https://r2.thesportsdb.com/images/media/team/badge/ngm7rk1702980722.png", "Atlético Colina": "https://r2.thesportsdb.com/images/media/team/badge/csz5fl1740706076.png", "San Antonio Unido": "https://r2.thesportsdb.com/images/media/team/badge/55aynx1719394368.png", "Lautaro de Bui­n": "https://r2.thesportsdb.com/images/media/team/badge/du9gm41683327502.png", "General Velasquez": "https://r2.thesportsdb.com/images/media/team/badge/6v8uth1719394356.png", "Provincial Ovalle": "https://r2.thesportsdb.com/images/media/team/badge/cgpq1a1719530309.png", "Independiente de Cauquenes": "https://r2.thesportsdb.com/images/media/team/badge/4be3ej1764452562.png", "Real San Joaquín": "https://r2.thesportsdb.com/images/media/team/badge/i04oge1719394365.png", "Deportes Valdivia": "https://r2.thesportsdb.com/images/media/team/badge/y6bdpk1610649891.png", "Provincial Osorno": "https://r2.thesportsdb.com/images/media/team/badge/jo4rlk1719530237.png", "Deportes Linares": "https://r2.thesportsdb.com/images/media/team/badge/lej15k1719394358.png", "Comunal Cabrero": "https://r2.thesportsdb.com/images/media/team/badge/ufqdrx1772642648.png", "Deportes Rengo": "https://r2.thesportsdb.com/images/media/team/badge/ay1au91719394353.png", "Municipal Puente Alto": "https://r2.thesportsdb.com/images/media/team/badge/0ohhk61730653938.png", "Deportes Quillón": "https://r2.thesportsdb.com/images/media/team/badge/3e5oa81730653035.png", "Central Norte": "https://r2.thesportsdb.com/images/media/team/badge/b0uo2b1678853683.png", "Unión Glorias Navales": "https://r2.thesportsdb.com/images/media/team/badge/f1xntw1730655682.png", "Marcos Trincado": "https://r2.thesportsdb.com/images/media/team/badge/w4892c1730675612.png", "Juvenil Seminario": "https://r2.thesportsdb.com/images/media/team/badge/kbwf2q1730673761.png", "Brujas de Salamanca": "https://r2.thesportsdb.com/images/media/team/badge/1tbgs01730651833.png", "Presidente Ibáñez": "https://r2.thesportsdb.com/images/media/team/badge/6a68gd1730675856.png"};
+const TSDB_LOGOS = {"Liga de Primera": "https://r2.thesportsdb.com/images/media/league/badge/x9m78e1768232019.png", "Copa Chile": "https://r2.thesportsdb.com/images/media/league/badge/2fvo5n1714771524.png", "Liga de Ascenso": "https://r2.thesportsdb.com/images/media/league/badge/t1vndf1738858796.png", "Brasileirão Betano": "https://r2.thesportsdb.com/images/media/league/badge/lywv7t1766787179.png", "Brasileirão Série B": "https://r2.thesportsdb.com/images/media/league/badge/iiz0gf1778446845.png", "Liga Profesional de Fútbol": "https://r2.thesportsdb.com/images/media/league/badge/rk9xhx1768238251.png", "Liga MX, Apertura": "https://r2.thesportsdb.com/images/media/league/badge/mav5rx1686157960.png", "Brasileirão Série C": "https://r2.thesportsdb.com/images/media/league/badge/3hp64j1778447225.png", "Eliteserien": "https://r2.thesportsdb.com/images/media/league/badge/owo80l1512822583.png", "Allsvenskan": "https://r2.thesportsdb.com/images/media/league/badge/denok11707459183.png"};
+
+/* Renderiza el escudo real (TheSportsDB, ya verificado) cuando existe;
+   si no, cae a la insignia generada de siempre -- mismo fallback honesto
+   de siempre, sin fabricar nada donde no hay dato real. */
+function crestHtml(name, statusClass, styleOverride) {
+  const url = TSDB_CRESTS[name];
+  const style = styleOverride || "";
+  const safeName = name.replace(/"/g, "&quot;");
+  if (url) {
+    return `<img class="crest ${statusClass}" src="${url}" alt="${safeName}" style="${style}" loading="lazy" data-name="${safeName}" onerror="atlasCrestFallback(this)">`;
+  }
+  return `<span class="crest ${statusClass}" style="background:${teamColor(name)};${style}">${initials(name)}</span>`;
+}
+function atlasCrestFallback(imgEl) {
+  const name = imgEl.dataset.name;
+  const span = document.createElement("span");
+  span.className = imgEl.className;
+  span.setAttribute("style", (imgEl.getAttribute("style") || "") + `;background:${teamColor(name)}`);
+  span.textContent = initials(name);
+  imgEl.replaceWith(span);
+}
+
+/* Logo de liga real (TheSportsDB, ya verificado) cuando existe; si no, cae
+   a la bandera de pais de siempre (flag-icons, MIT). */
+function leagueLogoHtml(league, px) {
+  const url = TSDB_LOGOS[league];
+  const size = px || 18;
+  if (url) {
+    return `<img src="${url}" alt="${league}" loading="lazy" style="width:${size}px;height:${size}px;object-fit:contain;vertical-align:middle;border-radius:4px" onerror="this.style.display='none'">`;
+  }
+  return flagIcon(league);
+}
+
 /* Rankings reales (temporada 2026 en curso), calculados 2026-07-26 desde
    soccer_analytics.db (matches + match_stats, EAV real, no team_season_stats
    solo porque este ultimo carece de corners/remates en algunas ligas).
@@ -626,9 +667,9 @@ function renderHero() {
     <div class="hero-card" data-id="${m.id}">
       <div class="kicker">${flagIcon(m.league)} ◆ Partido destacado · ${m.league}</div>
       <div class="crest-row" style="margin-bottom:10px">
-        <span class="crest certified" style="background:${teamColor(m.home)};width:34px;height:34px;font-size:12px">${initials(m.home)}</span>
+        ${crestHtml(m.home, "certified", "width:34px;height:34px;font-size:12px")}
         <span class="vsx-sm">vs</span>
-        <span class="crest certified" style="background:${teamColor(m.away)};width:34px;height:34px;font-size:12px">${initials(m.away)}</span>
+        ${crestHtml(m.away, "certified", "width:34px;height:34px;font-size:12px")}
       </div>
       <div class="teams">${teamLinkHtml(m.home, m.league)}<span class="vsx">vs</span>${teamLinkHtml(m.away, m.league)}</div>
       <div class="sub">${matchWhen(m)} hora Chile · Racha ofensiva de ambos equipos</div>
@@ -643,12 +684,11 @@ function renderHero() {
 }
 
 function matchCardHtml(m) {
-  const c1 = initials(m.home), c2 = initials(m.away);
   return `
   <div class="match-card" data-id="${m.id}">
     <div class="date-badge">${flagIcon(m.league)} ${matchWhen(m)} hora Chile</div>
     <div class="crest-row">
-      <span class="crest ${m.status}" style="background:${teamColor(m.home)}">${c1}</span><span class="vsx-sm">vs</span><span class="crest ${m.status}" style="background:${teamColor(m.away)}">${c2}</span>
+      ${crestHtml(m.home, m.status)}<span class="vsx-sm">vs</span>${crestHtml(m.away, m.status)}
     </div>
     <div class="team-name">${teamLinkHtml(m.home, m.league)} <span style="color:var(--text-faint);font-weight:400">vs</span> ${teamLinkHtml(m.away, m.league)}</div>
     <div class="league-tag">${m.status === "certified" ? "◆ análisis certificado" : (m.status === "progress" ? "◐ en proceso" : "&nbsp;")}</div>
@@ -664,7 +704,7 @@ let activeLeague = "ALL";
 
 function renderLeagueFilterRow() {
   const chips = [`<button class="league-chip ${activeLeague === "ALL" ? "active" : ""}" data-league="ALL">Todas</button>`]
-    .concat(LEAGUES_ORDERED.map(lg => `<button class="league-chip ${activeLeague === lg ? "active" : ""}" data-league="${lg}">${flagIcon(lg)} ${lg}</button>`));
+    .concat(LEAGUES_ORDERED.map(lg => `<button class="league-chip ${activeLeague === lg ? "active" : ""}" data-league="${lg}">${leagueLogoHtml(lg, 15)} ${lg}</button>`));
   document.getElementById("league-filter-row").innerHTML = chips.join("");
   document.querySelectorAll(".league-chip").forEach(chip => {
     chip.addEventListener("click", () => { activeLeague = chip.dataset.league; renderLeagueFilterRow(); renderLeagueSections(); });
@@ -697,7 +737,7 @@ function renderLeagueSections() {
     const preview = matches.slice(0, PREVIEW_PER_LEAGUE);
     const seeAll = matches.length > PREVIEW_PER_LEAGUE ? seeAllTileHtml(lg, matches.length) : "";
     return `
-    <div class="league-section-title" data-league-header="${lg}" style="cursor:pointer">${flagIcon(lg)} ${lg} <span style="color:var(--text-faint);font-weight:400;font-size:10.5px">(${matches.length}) →</span></div>
+    <div class="league-section-title" data-league-header="${lg}" style="cursor:pointer">${leagueLogoHtml(lg)} ${lg} <span style="color:var(--text-faint);font-weight:400;font-size:10.5px">(${matches.length}) →</span></div>
     <div class="upcoming-scroll">${preview.map(matchCardHtml).join("")}${seeAll}</div>`;
   }).join("");
   document.querySelectorAll(".match-card:not(.see-all-card)").forEach(c => bindTeamLinksOrDefault(c, () => openTile(c.dataset.id)));
@@ -708,7 +748,7 @@ function renderLeagueSections() {
 /* ---- vista de detalle de liga: solo renderiza, la navegacion (goTo/goBack) decide cuando mostrarla ---- */
 function renderLeagueDetail(league) {
   const matches = sortByKickoff(MATCHES.filter(m => m.league === league));
-  document.getElementById("league-detail-title").innerHTML = `${flagIcon(league)} ${league}`;
+  document.getElementById("league-detail-title").innerHTML = `${leagueLogoHtml(league, 24)} ${league}`;
   document.getElementById("league-detail-count").textContent = `${matches.length} partidos programados`;
   const radLink = document.getElementById("league-detail-rad-link");
   radLink.style.display = RADIOGRAFIA_LEAGUES.includes(league) ? "" : "none";
@@ -743,7 +783,7 @@ function leaderboardCardHtml(key) {
   const rows = lb.rows.map((r, i) => `
     <div class="lb-row" data-team="${r.team}" data-league="${r.league}">
       <span class="lb-rank">${i + 1}</span>
-      <span class="crest" style="background:${teamColor(r.team)}">${initials(r.team)}</span>
+      ${crestHtml(r.team, "")}
       <div class="name-wrap"><div class="name">${r.team}</div><div class="lg">${flagIcon(r.league)} ${r.league}</div></div>
       <span class="val" style="color:var(--${color})">${r.value}${lb.unit}</span>
     </div>`).join("");
@@ -774,7 +814,7 @@ let radLeague = null;
 
 function renderRadLeagueFilterRow() {
   document.getElementById("rad-league-filter-row").innerHTML = RADIOGRAFIA_LEAGUES.map(lg =>
-    `<button class="league-chip ${radLeague === lg ? "active" : ""}" data-league="${lg}">${flagIcon(lg)} ${lg}</button>`
+    `<button class="league-chip ${radLeague === lg ? "active" : ""}" data-league="${lg}">${leagueLogoHtml(lg, 15)} ${lg}</button>`
   ).join("");
   document.querySelectorAll("#rad-league-filter-row .league-chip").forEach(chip => {
     chip.addEventListener("click", () => { radLeague = chip.dataset.league; renderRadiografia(); });
@@ -786,7 +826,7 @@ function renderRadiografia() {
   renderRadLeagueFilterRow();
   const s = LEAGUE_STATS[radLeague];
   document.getElementById("rad-league-panel").innerHTML = `
-    <div class="stat-panel-title">${flagIcon(radLeague)} ${radLeague} <span style="color:var(--text-faint);font-weight:400;font-size:10px">${s.matches} partidos jugados · temporada 2026</span></div>
+    <div class="stat-panel-title">${leagueLogoHtml(radLeague, 22)} ${radLeague} <span style="color:var(--text-faint);font-weight:400;font-size:10px">${s.matches} partidos jugados · temporada 2026</span></div>
     ${statEntry("BTTS", "ambos equipos anotan", s.btts + "%", s.btts, "var(--green)")}
     ${statEntry("Over 2.5 goles", "más de 2 goles en el partido", s.over25 + "%", s.over25, "var(--amber)")}
     ${statEntry("Under 2.5 goles", "2 goles o menos", s.under25 + "%", s.under25, "var(--text)")}
@@ -829,7 +869,7 @@ function leagueLeaderboardHtml(cat) {
     <div class="lb-rows">${rows.map(([lg, s], i) => `
       <div class="lb-row" data-league="${lg}" style="cursor:pointer">
         <span class="lb-rank">${i + 1}</span>
-        <span style="width:22px;text-align:center;flex-shrink:0">${flagIcon(lg)}</span>
+        <span style="width:22px;text-align:center;flex-shrink:0">${leagueLogoHtml(lg, 20)}</span>
         <div class="name-wrap"><div class="name">${lg}</div><div class="lg">${s.matches} partidos</div></div>
         <span class="val" style="color:var(--${color})">${s[cat.key]}${cat.unit}</span>
       </div>`).join("")}</div>
@@ -846,7 +886,7 @@ function renderLeagueLeaderboards() {
 function renderLigas() {
   document.getElementById("ligas-total-num").textContent = TOTAL_MATCHES_ATLAS.toLocaleString("es-CL");
   document.getElementById("ligas-league-filter-row").innerHTML = RADIOGRAFIA_LEAGUES.map(lg =>
-    `<button class="league-chip" data-league="${lg}">${flagIcon(lg)} ${lg}</button>`
+    `<button class="league-chip" data-league="${lg}">${leagueLogoHtml(lg, 15)} ${lg}</button>`
   ).join("");
   document.querySelectorAll("#ligas-league-filter-row .league-chip").forEach(chip => {
     chip.addEventListener("click", () => goTo("radiografia", { league: chip.dataset.league }));
@@ -862,10 +902,10 @@ function findTeamRadRow(team, league) {
 
 function renderTeamProfile(team, league) {
   document.getElementById("team-profile-head").innerHTML = `
-    <span class="crest certified" style="background:${teamColor(team)}">${initials(team)}</span>
+    ${crestHtml(team, "certified")}
     <div>
       <div class="name">${team}</div>
-      <div class="league-link" id="team-league-link">${flagIcon(league)} ${league} →</div>
+      <div class="league-link" id="team-league-link">${leagueLogoHtml(league, 15)} ${league} →</div>
     </div>`;
   document.getElementById("team-league-link").addEventListener("click", () => {
     goTo(RADIOGRAFIA_LEAGUES.includes(league) ? "radiografia" : "league-detail", { league });
