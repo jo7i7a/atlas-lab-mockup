@@ -3,23 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>ATLAS Lab — Herramienta de consulta (concepto)</title>
+<title>ATLAS Lab — Biblioteca de inteligencia deportiva (concepto)</title>
 <style>
   :root {
-    --ink: #0e1512;
-    --surface: #151d18;
-    --surface-2: #1b241f;
-    --border: #24312a;
-    --text: #edefe9;
-    --text-dim: #9fa9a3;
-    --text-faint: #647069;
-    --green: #5b9a63;
-    --green-soft: rgba(91, 154, 99, 0.16);
-    --amber: #d9a441;
-    --amber-soft: rgba(217, 164, 65, 0.14);
-    --clay: #c97a3d;
-    --clay-soft: rgba(201, 122, 61, 0.14);
-    --radius: 8px;
+    --ink: #0a0f0c; --surface: #131b16; --surface-2: #1a2420; --border: #223027;
+    --text: #edefe9; --text-dim: #9fa9a3; --text-faint: #647069;
+    --green: #5b9a63; --green-deep: #2e5236; --green-soft: rgba(91,154,99,0.16);
+    --amber: #d9a441; --amber-deep: #5c451c;
+    --clay: #c97a3d; --clay-deep: #5a3620; --clay-soft: rgba(201,122,61,0.14);
     --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --mono: ui-monospace, "SF Mono", "Roboto Mono", Consolas, "Courier New", monospace;
     --serif: Georgia, "Iowan Old Style", "Noto Serif", serif;
@@ -28,9 +19,9 @@
     :root {
       --ink: #f2f4ee; --surface: #ffffff; --surface-2: #eaeee4; --border: #d8ddd2;
       --text: #171d19; --text-dim: #4e5951; --text-faint: #838f86;
-      --green: #3f7a49; --green-soft: rgba(63,122,73,0.1);
-      --amber: #966d1c; --amber-soft: rgba(150,109,28,0.1);
-      --clay: #a85d28; --clay-soft: rgba(168,93,40,0.1);
+      --green: #3f7a49; --green-deep: #cfe6d3; --green-soft: rgba(63,122,73,0.1);
+      --amber: #966d1c; --amber-deep: #f2e2bd;
+      --clay: #a85d28; --clay-deep: #f0d8c4; --clay-soft: rgba(168,93,40,0.1);
     }
   }
   * { box-sizing: border-box; }
@@ -48,153 +39,120 @@
 
   .topbar {
     position: sticky; top: 0; z-index: 20;
-    background: color-mix(in srgb, var(--ink) 94%, transparent);
-    backdrop-filter: blur(6px); border-bottom: 1px solid var(--border);
-    padding: 8px 12px;
+    background: color-mix(in srgb, var(--ink) 92%, transparent);
+    backdrop-filter: blur(8px); border-bottom: 1px solid var(--border);
+    padding: 10px 14px;
   }
-  .topbar-row { display: flex; align-items: center; justify-content: space-between; max-width: 720px; margin: 0 auto; }
-  .wordmark { font-family: var(--serif); font-weight: 700; font-size: 16px; }
+  .topbar-row { display: flex; align-items: center; justify-content: space-between; max-width: 900px; margin: 0 auto; }
+  .wordmark { font-family: var(--serif); font-weight: 700; font-size: 17px; }
   .wordmark .dot { color: var(--green); }
   .tab-row { display: flex; gap: 4px; }
-  .toptab {
-    background: none; border: none; color: var(--text-faint); font-size: 11.5px; font-weight: 600;
-    padding: 5px 9px; cursor: pointer; border-radius: 999px;
-  }
+  .toptab { background: none; border: none; color: var(--text-faint); font-size: 11.5px; font-weight: 600; padding: 5px 10px; cursor: pointer; border-radius: 999px; }
   .toptab.active { color: var(--green); background: var(--green-soft); }
 
-  main { max-width: 720px; margin: 0 auto; padding: 0 10px 60px; }
+  main { max-width: 900px; margin: 0 auto; padding: 6px 0 60px; }
 
-  /* ---- summary line ---- */
-  .summary-line {
-    display: flex; align-items: center; justify-content: space-between;
-    font-family: var(--mono); font-size: 11px; color: var(--text-faint);
-    padding: 10px 4px 8px;
-  }
-  .summary-line b { color: var(--text-dim); font-weight: 600; }
+  /* ---------- Rows (Netflix-style horizontal collections) ---------- */
+  .row-block { margin-bottom: 22px; }
+  .row-head { display: flex; align-items: baseline; justify-content: space-between; padding: 0 14px 8px; }
+  .row-title { font-size: 14px; font-weight: 700; }
+  .row-count { font-family: var(--mono); font-size: 10px; color: var(--text-faint); }
+  .row-scroll { display: flex; gap: 10px; overflow-x: auto; padding: 0 14px; scroll-snap-type: x proximity; }
 
-  /* ---- filter rail (persistent) ---- */
-  .filter-rail { padding: 0 4px 8px; border-bottom: 1px solid var(--border); margin-bottom: 6px; }
-  .country-strip { display: flex; gap: 5px; overflow-x: auto; padding-bottom: 8px; }
-  .country-pill {
-    display: flex; align-items: center; gap: 4px; flex-shrink: 0;
-    font-size: 11.5px; font-weight: 600; color: var(--text-dim);
-    background: var(--surface); border: 1px solid var(--border); border-radius: 999px;
-    padding: 4px 9px 4px 7px; cursor: pointer;
+  .tile {
+    flex-shrink: 0; width: 148px; height: 100px; border-radius: 10px; position: relative;
+    overflow: hidden; cursor: pointer; padding: 9px 10px; display: flex; flex-direction: column;
+    justify-content: space-between; scroll-snap-align: start;
+    border: 1px solid var(--border);
   }
-  .country-pill .n { font-family: var(--mono); color: var(--text-faint); font-weight: 400; }
-  .country-pill.active { background: var(--green-soft); border-color: color-mix(in srgb, var(--green) 55%, var(--border)); color: var(--green); }
-  .country-pill.active .n { color: var(--green); }
+  .tile.status-certified { background: linear-gradient(150deg, var(--green-deep), var(--surface) 75%); }
+  .tile.status-progress { background: linear-gradient(150deg, var(--amber-deep), var(--surface) 75%); }
+  .tile.status-none { background: var(--surface); }
+  .tile.status-correction { background: linear-gradient(150deg, var(--clay-deep), var(--surface) 75%); }
 
-  .row2 { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-  .date-pill {
-    font-family: var(--mono); font-size: 10.5px; background: var(--surface); border: 1px solid var(--border);
-    color: var(--text-dim); border-radius: 6px; padding: 4px 9px; cursor: pointer;
-  }
-  .date-pill.active { background: var(--green-soft); border-color: color-mix(in srgb, var(--green) 55%, var(--border)); color: var(--green); }
-  .toggle-inline {
-    display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--text-dim);
-    margin-left: auto; cursor: pointer; user-select: none;
-  }
-  .toggle-inline input { accent-color: var(--green); width: 13px; height: 13px; }
+  .tile-top { display: flex; align-items: flex-start; justify-content: space-between; }
+  .tile-league { font-family: var(--mono); font-size: 9px; letter-spacing: 0.03em; color: var(--text-faint); text-transform: uppercase; }
+  .tile-marker { font-size: 12px; }
+  .tile-marker.certified { color: var(--green); } .tile-marker.progress { color: var(--amber); } .tile-marker.correction { color: var(--clay); }
 
-  /* ---- match list: dense rows ---- */
-  .match-list { display: flex; flex-direction: column; }
-  .mrow {
-    display: flex; align-items: center; gap: 8px;
-    padding: 7px 6px; border-bottom: 1px solid var(--border); cursor: pointer;
-  }
-  .mrow:active { background: var(--surface); }
-  .mrow .marker { flex-shrink: 0; width: 16px; text-align: center; font-size: 12px; }
-  .mrow .marker.certified { color: var(--green); }
-  .mrow .marker.progress { color: var(--amber); }
-  .mrow .marker.none { color: var(--text-faint); opacity: 0.35; }
-  .mrow .body { flex: 1; min-width: 0; }
-  .mrow .meta-line {
-    display: flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 10px; color: var(--text-faint);
-    margin-bottom: 2px;
-  }
-  .mrow .teams-line { font-size: 12.5px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .mrow .teams-line .vsx { color: var(--text-faint); font-weight: 400; font-size: 10.5px; margin: 0 4px; }
-  .mrow .signal-line { font-size: 10.5px; color: var(--green); margin-top: 2px; display: flex; gap: 8px; flex-wrap: wrap; }
-  .mrow .signal-line.multi { color: var(--text-dim); }
-  .mrow .signal-line b { color: var(--green); }
-  .mrow .time-col { flex-shrink: 0; font-family: var(--mono); font-size: 11px; color: var(--text-faint); text-align: right; min-width: 34px; }
-  .no-matches { font-size: 12.5px; color: var(--text-faint); padding: 24px 8px; text-align: center; }
+  .tile-title { font-size: 13px; font-weight: 700; line-height: 1.28; color: var(--text); }
+  .tile-title .vsx { display: block; font-weight: 400; font-size: 9.5px; color: var(--text-faint); font-family: var(--mono); margin: 1px 0; }
+  .tile-foot { font-family: var(--mono); font-size: 9px; color: var(--text-faint); }
 
-  /* ---- legend strip ---- */
-  .legend-strip {
-    display: flex; gap: 12px; flex-wrap: wrap; font-size: 10px; color: var(--text-faint);
-    padding: 10px 6px; margin-top: 4px;
+  .see-more-tile {
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; width: 74px; height: 100px; border-radius: 10px;
+    background: var(--surface-2); border: 1px solid var(--border); color: var(--text-dim);
+    font-size: 11px; font-weight: 600; cursor: pointer; text-align: center; padding: 8px;
   }
-  .legend-strip span { display: flex; align-items: center; gap: 3px; }
 
-  /* ---- Historial / Como Funciona (compact) ---- */
-  .page-intro { padding: 16px 4px 12px; border-bottom: 1px solid var(--border); margin-bottom: 12px; }
-  .page-intro h1 { font-family: var(--serif); font-size: 19px; margin: 0 0 6px; }
+  /* ---------- Historial / Como Funciona ---------- */
+  .page-intro { padding: 16px 14px 12px; border-bottom: 1px solid var(--border); margin-bottom: 14px; }
+  .page-intro h1 { font-family: var(--serif); font-size: 20px; margin: 0 0 6px; }
   .page-intro p { font-size: 12.5px; color: var(--text-dim); margin: 0; max-width: 58ch; }
-  .scorecard { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin: 10px 4px 20px; }
-  .scorecard .cell { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 10px 6px; text-align: center; }
-  .scorecard .num { font-family: var(--mono); font-size: 18px; font-weight: 600; }
+  .scorecard { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 0 14px 22px; }
+  .scorecard .cell { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 6px; text-align: center; }
+  .scorecard .num { font-family: var(--mono); font-size: 19px; font-weight: 600; }
   .scorecard .num.g { color: var(--green); } .scorecard .num.c { color: var(--clay); }
   .scorecard .lbl { font-size: 9.5px; color: var(--text-faint); margin-top: 2px; }
   .ledger-section-title {
     font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;
-    color: var(--text-faint); margin: 16px 4px 6px; display: flex; align-items: center; gap: 6px;
+    color: var(--text-faint); margin: 18px 14px 8px; display: flex; align-items: center; gap: 6px;
   }
   .ledger-section-title.g::before { content: "●"; color: var(--green); }
   .ledger-section-title.c::before { content: "●"; color: var(--clay); }
-  .ledger-item { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--green); border-radius: 6px; padding: 9px 12px; margin: 0 4px 6px; }
+  .ledger-item { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--green); border-radius: 8px; padding: 10px 14px; margin: 0 14px 8px; cursor: default; }
   .ledger-item.corrected { border-left-color: var(--clay); }
-  .ledger-item h3 { font-family: var(--serif); font-size: 13px; margin: 0 0 3px; font-weight: 700; }
-  .ledger-item .meta { font-size: 10.5px; color: var(--text-dim); margin: 0; }
-  .correction-delta { font-family: var(--mono); font-size: 10.5px; margin-top: 5px; }
+  .ledger-item h3 { font-family: var(--serif); font-size: 14px; margin: 0 0 4px; font-weight: 700; }
+  .ledger-item .meta { font-size: 11px; color: var(--text-dim); margin: 0; }
+  .correction-delta { font-family: var(--mono); font-size: 11px; margin-top: 6px; }
   .correction-delta .before { color: var(--text-faint); text-decoration: line-through; }
   .correction-delta .after { color: var(--clay); font-weight: 600; }
-  .principle-row { display: flex; gap: 10px; padding: 10px 6px; border-bottom: 1px solid var(--border); }
+  .principle-row { display: flex; gap: 12px; padding: 12px 14px; border-bottom: 1px solid var(--border); }
   .principle-row .num { font-family: var(--mono); font-size: 10px; color: var(--green); flex-shrink: 0; padding-top: 2px; }
-  .principle-row h3 { font-size: 13px; margin: 0 0 3px; font-family: var(--serif); }
-  .principle-row p { font-size: 12px; color: var(--text-dim); margin: 0; line-height: 1.45; }
-  .footer-note { margin: 20px 4px 0; padding-top: 10px; border-top: 1px solid var(--border); font-size: 10.5px; color: var(--text-faint); text-align: center; }
+  .principle-row h3 { font-size: 14px; margin: 0 0 4px; font-family: var(--serif); }
+  .principle-row p { font-size: 12.5px; color: var(--text-dim); margin: 0; line-height: 1.45; }
+  .footer-note { margin: 22px 14px 0; padding-top: 12px; border-top: 1px solid var(--border); font-size: 10.5px; color: var(--text-faint); text-align: center; }
 
-  /* ---- Match detail (dense data table) ---- */
-  #match-overlay { position: fixed; inset: 0; background: var(--ink); z-index: 100; overflow-y: auto; }
-  #match-overlay[hidden] { display: none; }
+  /* ---------- Detail overlays (shared) ---------- */
+  #overlay { position: fixed; inset: 0; background: var(--ink); z-index: 100; overflow-y: auto; }
+  #overlay[hidden] { display: none; }
   .detail-topbar {
     position: sticky; top: 0; background: color-mix(in srgb, var(--ink) 95%, transparent); backdrop-filter: blur(6px);
-    border-bottom: 1px solid var(--border); padding: 9px 12px; display: flex; align-items: center; gap: 10px; z-index: 5;
+    border-bottom: 1px solid var(--border); padding: 10px 14px; display: flex; align-items: center; gap: 10px; z-index: 5;
   }
-  .back-btn { background: var(--surface); border: 1px solid var(--border); color: var(--text); border-radius: 999px; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 14px; }
-  .detail-topbar .wm { font-family: var(--serif); font-weight: 700; font-size: 13.5px; }
+  .back-btn { background: var(--surface); border: 1px solid var(--border); color: var(--text); border-radius: 999px; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 15px; }
+  .detail-topbar .wm { font-family: var(--serif); font-weight: 700; font-size: 14px; }
 
-  .match-hero { max-width: 700px; margin: 0 auto; padding: 12px 12px 0; }
-  .match-hero .meta-line { font-family: var(--mono); font-size: 11px; color: var(--text-faint); margin-bottom: 4px; }
-  .match-hero .teams-line { font-family: var(--sans); font-size: 18px; font-weight: 800; line-height: 1.3; }
+  .match-hero { max-width: 760px; margin: 0 auto; padding: 14px 14px 0; }
+  .match-hero .meta-line { font-family: var(--mono); font-size: 11px; color: var(--text-faint); margin-bottom: 5px; }
+  .match-hero .teams-line { font-family: var(--sans); font-size: 19px; font-weight: 800; line-height: 1.3; }
   .match-hero .teams-line .vsx { color: var(--green); font-family: var(--mono); font-size: 11px; font-weight: 400; margin: 0 6px; }
 
-  .match-tabs {
-    display: flex; gap: 4px; overflow-x: auto; max-width: 700px; margin: 12px auto 0;
-    padding: 0 12px 8px; border-bottom: 1px solid var(--border);
-  }
-  .match-tab {
-    background: none; border: none; color: var(--text-faint); font-size: 11.5px; font-weight: 600;
-    padding: 5px 9px; cursor: pointer; border-radius: 999px; white-space: nowrap; flex-shrink: 0;
-  }
+  .match-tabs { display: flex; gap: 4px; overflow-x: auto; max-width: 760px; margin: 14px auto 0; padding: 0 14px 8px; border-bottom: 1px solid var(--border); }
+  .match-tab { background: none; border: none; color: var(--text-faint); font-size: 11.5px; font-weight: 600; padding: 5px 9px; cursor: pointer; border-radius: 999px; white-space: nowrap; flex-shrink: 0; }
   .match-tab.active { color: var(--green); background: var(--green-soft); }
+  .match-tab-body { max-width: 760px; margin: 0 auto; padding: 12px 14px 60px; }
 
-  .match-tab-body { max-width: 700px; margin: 0 auto; padding: 10px 12px 60px; }
-  .data-row {
-    display: flex; align-items: center; justify-content: space-between; gap: 8px;
-    padding: 8px 4px; border-bottom: 1px solid var(--border);
-  }
-  .data-row .left { min-width: 0; }
-  .data-row .metric { font-size: 12.5px; font-weight: 600; color: var(--text); }
+  .data-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 9px 4px; border-bottom: 1px solid var(--border); }
+  .data-row .left { min-width: 0; } .data-row .metric { font-size: 13px; font-weight: 600; }
   .data-row .context { font-size: 11px; color: var(--text-faint); margin-top: 1px; }
   .data-row .right { flex-shrink: 0; display: flex; align-items: center; gap: 6px; }
-  .data-row .value { font-family: var(--mono); font-size: 13px; font-weight: 600; color: var(--text); }
-  .marker-badge { font-size: 12px; }
-  .marker-badge.certified { color: var(--green); }
-  .marker-badge.progress { color: var(--amber); }
-  .empty-tab { font-size: 12px; color: var(--text-faint); padding: 18px 4px; text-align: center; }
+  .data-row .value { font-family: var(--mono); font-size: 13px; font-weight: 600; }
+  .marker-badge.certified { color: var(--green); } .marker-badge.progress { color: var(--amber); }
+  .empty-tab { font-size: 12.5px; color: var(--text-faint); padding: 20px 4px; text-align: center; }
+
+  /* story detail (Cuaderno de Laboratorio / Certificado) */
+  .story-body { max-width: 640px; margin: 0 auto; padding: 18px 16px 60px; }
+  .story-body .badges { display: flex; gap: 6px; margin-bottom: 12px; }
+  .seal { display: inline-flex; align-items: center; gap: 4px; font-family: var(--mono); font-size: 10px; color: var(--green); border: 1px solid color-mix(in srgb, var(--green) 55%, var(--border)); background: var(--green-soft); border-radius: 999px; padding: 2px 8px 2px 6px; }
+  .correction-tag { display: inline-flex; align-items: center; gap: 4px; font-family: var(--mono); font-size: 10px; color: var(--clay); border: 1px solid color-mix(in srgb, var(--clay) 55%, var(--border)); background: var(--clay-soft); border-radius: 999px; padding: 2px 8px; }
+  .story-body h1 { font-family: var(--serif); font-size: clamp(20px, 6vw, 25px); line-height: 1.25; margin: 0 0 16px; text-wrap: balance; }
+  .story-section { margin-bottom: 16px; }
+  .story-section .label { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--green); margin-bottom: 5px; }
+  .story-section p { font-size: 14.5px; margin: 0; line-height: 1.6; }
+  .final-status { background: var(--clay-soft); border: 1px solid color-mix(in srgb, var(--clay) 40%, var(--border)); border-radius: 8px; padding: 11px 13px; font-size: 13px; margin-top: 16px; }
+  .final-status .label { color: var(--clay); font-weight: 600; }
 </style>
 </head>
 <body>
@@ -205,7 +163,7 @@
   <div class="topbar-row">
     <div class="wordmark">ATLAS<span class="dot">·</span>LAB</div>
     <nav class="tab-row">
-      <button class="toptab active" data-view="partidos">Partidos</button>
+      <button class="toptab active" data-view="descubrir">Descubrir</button>
       <button class="toptab" data-view="historial">Historial</button>
       <button class="toptab" data-view="how">Método</button>
     </nav>
@@ -213,33 +171,12 @@
 </header>
 
 <main>
-
-  <!-- ============ PARTIDOS (HOME) ============ -->
-  <section id="view-partidos">
-    <div class="summary-line" id="summary-line"><!-- JS --></div>
-
-    <div class="filter-rail">
-      <div class="country-strip" id="country-strip"><!-- JS --></div>
-      <div class="row2">
-        <button class="date-pill active" data-date="2026-07-25">Hoy</button>
-        <button class="date-pill" data-date="2026-07-26">Mañana</button>
-        <button class="date-pill" data-date="all">Próximos</button>
-        <label class="toggle-inline">
-          <input type="checkbox" id="only-analysis" /> Solo con análisis
-        </label>
-      </div>
-    </div>
-
-    <div class="match-list" id="match-list"><!-- JS --></div>
-
-    <div class="legend-strip">
-      <span style="color:var(--green)">◆ patrón confirmado</span>
-      <span style="color:var(--amber)">◐ en proceso</span>
-      <span style="color:var(--text-faint)">— sin análisis</span>
-    </div>
+  <!-- ============ DESCUBRIR (HOME, filas horizontales) ============ -->
+  <section id="view-descubrir">
+    <div id="rows-container"><!-- JS --></div>
   </section>
 
-  <!-- ============ HISTORIAL VIEW ============ -->
+  <!-- ============ HISTORIAL ============ -->
   <section id="view-historial" hidden>
     <div class="page-intro">
       <h1>Nuestro Historial</h1>
@@ -257,153 +194,129 @@
     <div class="footer-note">Todo hallazgo certificado se audita contra su documento fuente antes de citarse.</div>
   </section>
 
-  <!-- ============ COMO FUNCIONA VIEW ============ -->
+  <!-- ============ COMO FUNCIONA ============ -->
   <section id="view-how" hidden>
     <div class="page-intro">
       <h1>Cómo Funciona</h1>
-      <p>Tres principios permanentes, verificables en Partidos y en Historial.</p>
+      <p>Tres principios permanentes, verificables en Descubrir y en Historial.</p>
     </div>
     <div class="principle-row"><div class="num">01</div><div><h3>El criterio se fija antes de ver el resultado</h3><p>Nunca se elige ni se reemplaza el criterio después de ver el número.</p></div></div>
     <div class="principle-row"><div class="num">02</div><div><h3>Nunca confiamos en un patrón sin verificar profundidad de muestra</h3><p>Un promedio agregado no alcanza sin saber cuántas observaciones reales lo sostienen.</p></div></div>
     <div class="principle-row"><div class="num">03</div><div><h3>Separamos siempre lo propio de lo certificado por el Laboratorio</h3><p>Nunca se presentan con el mismo peso.</p></div></div>
     <div class="footer-note">Cada principio tiene al menos un caso real documentado en Historial.</div>
   </section>
-
 </main>
 
-<!-- ============ MATCH DETAIL OVERLAY ============ -->
-<div id="match-overlay" hidden>
+<!-- ============ OVERLAY (match o story) ============ -->
+<div id="overlay" hidden>
   <div class="detail-topbar">
-    <button class="back-btn" id="match-back-btn" aria-label="Volver">←</button>
+    <button class="back-btn" id="back-btn" aria-label="Volver">←</button>
     <span class="wm">ATLAS·LAB</span>
   </div>
-  <div class="match-hero" id="match-hero"></div>
-  <div class="match-tabs" id="match-tabs"></div>
-  <div class="match-tab-body" id="match-tab-body"></div>
+  <div id="overlay-body"><!-- JS: match-hero+tabs o story-body --></div>
 </div>
 
 <script>
-/* Datos reales de partidos (SoccerDataExtractor, future_fixtures, consultado
-   2026-07-25). Las 4 senales de contenido (Londrina/Gremio, Regatas/Vila
-   Nova, Ponte Preta, Sport Recife) son analisis real ya generado por el
-   motor -- no se fabrico ningun dato para llenar la lista. */
+/* Datos reales (SoccerDataExtractor future_fixtures + contenido ya
+   generado por el motor, consultado 2026-07-25). Las 4 senales de
+   partido (Londrina/Gremio, Regatas/Vila Nova, Ponte Preta, Sport
+   Recife) y las 6 historias (Cuaderno de Laboratorio + Certificado)
+   son contenido real, no fabricado para esta maqueta. */
 
-const COUNTRIES = [
-  { code: "ALL", name: "Todos", flag: "🌐" },
-  { code: "BR", name: "Brasil", flag: "🇧🇷" },
-  { code: "AR", name: "Argentina", flag: "🇦🇷" },
-  { code: "MX", name: "México", flag: "🇲🇽" },
-  { code: "CL", name: "Chile", flag: "🇨🇱" },
-  { code: "NO", name: "Noruega", flag: "🇳🇴" },
-  { code: "SE", name: "Suecia", flag: "🇸🇪" },
-];
-
-const LEAGUE_ABBR = {
-  "Brasileirão Betano": "BRA-A", "Brasileirão Série B": "BRA-B", "Brasileirão Série C": "BRA-C",
-  "Liga Profesional de Fútbol": "ARG", "Liga MX, Apertura": "MEX",
-  "Liga de Primera": "CHI-1", "Liga de Ascenso": "CHI-2",
-  "Eliteserien": "NOR", "Allsvenskan": "SWE",
+const FIXTURES = {
+  "londrina-gremio": { home: "Londrina", away: "Grêmio Novorizontino", league: "Brasileirão Série B", date: "26 jul", status: "certified" },
+  "regatas-vila": { home: "Clube De Regatas Brasil", away: "Vila Nova FC", league: "Brasileirão Série B", date: "27 jul", status: "certified" },
+  "ponte-athletic": { home: "Ponte Preta", away: "Athletic Club", league: "Brasileirão Série B", date: "28 jul", status: "progress" },
+  "sport-cuiaba": { home: "Sport Recife", away: "Cuiabá", league: "Brasileirão Série B", date: "27 jul", status: "progress" },
+  "am-goias": { home: "América Mineiro", away: "Goiás", league: "Brasileirão Série B", date: "26 jul", status: "none" },
+  "cri-nau": { home: "Criciúma", away: "Náutico", league: "Brasileirão Série B", date: "26 jul", status: "none" },
+  "fla-sao": { home: "Flamengo", away: "São Paulo", league: "Brasileirão Betano", date: "26 jul", status: "none" },
+  "pal-cam": { home: "Palmeiras", away: "Atlético Mineiro", league: "Brasileirão Betano", date: "26 jul", status: "none" },
+  "ath-int": { home: "Athletico", away: "Internacional", league: "Brasileirão Betano", date: "25 jul", status: "none" },
+  "san-cha": { home: "Santos", away: "Chapecoense", league: "Brasileirão Betano", date: "25 jul", status: "none" },
+  "riv-bar": { home: "River Plate", away: "Barracas Central", league: "Liga Profesional de Fútbol", date: "25 jul", status: "none" },
+  "hur-ban": { home: "Huracán", away: "Banfield", league: "Liga Profesional de Fútbol", date: "25 jul", status: "none" },
+  "boc-rie": { home: "Deportivo Riestra", away: "Boca Juniors", league: "Liga Profesional de Fútbol", date: "26 jul", status: "none" },
+  "lan-san": { home: "CA Lanús", away: "San Lorenzo", league: "Liga Profesional de Fútbol", date: "26 jul", status: "none" },
 };
 
-// status: "certified" | "progress" | "none"
-const FIXTURES = [
-  { date: "2026-07-25", country: "BR", league: "Brasileirão Betano", home: "Athletico", away: "Internacional", status: "none" },
-  { date: "2026-07-25", country: "BR", league: "Brasileirão Betano", home: "Santos", away: "Chapecoense", status: "none" },
-  { date: "2026-07-25", country: "BR", league: "Brasileirão Betano", home: "Vasco da Gama", away: "Mirassol", status: "none" },
-  { date: "2026-07-27", country: "BR", league: "Brasileirão Série B", home: "Sport Recife", away: "Cuiabá", status: "progress",
-    matchId: "sport-cuiaba", signal: "Encajando +1.8 goles/partido vs. su media" },
-  { date: "2026-07-27", country: "BR", league: "Brasileirão Série B", home: "Clube De Regatas Brasil", away: "Vila Nova FC", status: "certified",
-    matchId: "regatas-vila", signal: "Regatas domina el historial: 5-4-2 en 11 cruces" },
-  { date: "2026-07-28", country: "BR", league: "Brasileirão Série B", home: "Ponte Preta", away: "Athletic Club", status: "progress",
-    matchId: "ponte-athletic", signal: "10 partidos sin ganar (9 derrotas, 1 empate)" },
-  { date: "2026-07-26", country: "BR", league: "Brasileirão Série B", home: "Londrina", away: "Grêmio Novorizontino", status: "certified",
-    matchId: "londrina-gremio", signal: "Ambos en racha ofensiva — Gremio lidera goles de la liga" },
-  { date: "2026-07-26", country: "BR", league: "Brasileirão Série B", home: "América Mineiro", away: "Goiás", status: "none" },
-  { date: "2026-07-26", country: "BR", league: "Brasileirão Série B", home: "Criciúma", away: "Náutico", status: "none" },
-  { date: "2026-07-26", country: "BR", league: "Brasileirão Betano", home: "Flamengo", away: "São Paulo", status: "none" },
-  { date: "2026-07-26", country: "BR", league: "Brasileirão Betano", home: "Palmeiras", away: "Atlético Mineiro", status: "none" },
-  { date: "2026-07-25", country: "BR", league: "Brasileirão Série C", home: "Ferroviária", away: "Maranhão AC", status: "none" },
-  { date: "2026-07-25", country: "BR", league: "Brasileirão Série C", home: "Santa Cruz", away: "Figueirense", status: "none" },
-  { date: "2026-07-25", country: "AR", league: "Liga Profesional de Fútbol", home: "River Plate", away: "Barracas Central", status: "none" },
-  { date: "2026-07-25", country: "AR", league: "Liga Profesional de Fútbol", home: "Huracán", away: "Banfield", status: "none" },
-  { date: "2026-07-26", country: "AR", league: "Liga Profesional de Fútbol", home: "Deportivo Riestra", away: "Boca Juniors", status: "none" },
-  { date: "2026-07-26", country: "AR", league: "Liga Profesional de Fútbol", home: "CA Lanús", away: "San Lorenzo", status: "none" },
-  { date: "2026-07-25", country: "MX", league: "Liga MX, Apertura", home: "Tigres UANL", away: "Atlético San Luis", status: "none" },
-  { date: "2026-07-25", country: "MX", league: "Liga MX, Apertura", home: "Atlante FC", away: "Club América", status: "none" },
-  { date: "2026-07-26", country: "MX", league: "Liga MX, Apertura", home: "Santos Laguna", away: "Atlas FC", status: "none" },
-  { date: "2026-07-25", country: "CL", league: "Liga de Primera", home: "Colo-Colo", away: "Deportes Limache", status: "none" },
-  { date: "2026-07-25", country: "CL", league: "Liga de Primera", home: "Huachipato", away: "Cobresal", status: "none" },
-  { date: "2026-07-26", country: "CL", league: "Liga de Primera", home: "Universidad Católica", away: "Deportes La Serena", status: "none" },
-  { date: "2026-07-25", country: "NO", league: "Eliteserien", home: "Kristiansund BK", away: "IK Start", status: "none" },
-  { date: "2026-07-26", country: "NO", league: "Eliteserien", home: "SK Brann", away: "Vålerenga IF", status: "none" },
-  { date: "2026-07-25", country: "SE", league: "Allsvenskan", home: "Degerfors IF", away: "Djurgårdens IF", status: "none" },
-  { date: "2026-07-26", country: "SE", league: "Allsvenskan", home: "Malmö FF", away: "IF Elfsborg", status: "none" },
-];
+const STORIES = {
+  "jensen-bias": {
+    kind: "story", status: "correction", league: "Cuaderno de Laboratorio",
+    headline: "El sesgo que fabricaba ventaja donde no la había",
+    sections: [
+      ["La pregunta", "Dos estrategias del catálogo (E002, E011) mostraban edge positivo sostenido (+6.8pp y +6.3pp) y estaban en seguimiento como candidatas."],
+      ["Lo que hicimos", "Se auditó evaluate_combo() — la función que calcula el retorno financiero esperado — y se encontró que promediaba las cuotas como 1/mean(odds) en vez de mean(1/odds): un sesgo de Jensen que sobreestima el edge en mercados con cuotas variables."],
+      ["Lo que encontramos", "Al corregir la fórmula, el edge de ambas estrategias se invirtió: E002 pasó de +6.8pp a −1.1pp, E011 de +6.3pp a −2.5pp. Ninguna sobrevivió."],
+    ],
+    finalStatus: "Ambas estrategias reclasificadas a Refutada el 2026-07-20.",
+  },
+  "h2h-depth": {
+    kind: "story", status: "correction", league: "Cuaderno de Laboratorio",
+    headline: "Cuando un historial 'extremo' resultó tener solo 1 o 2 partidos reales detrás",
+    sections: [
+      ["La pregunta", "Un historial de enfrentamientos directos muy sesgado predice quién gana el próximo cruce."],
+      ["Lo que encontramos", "El 69.1% de los casos extremos estaban sustentados en apenas 1 o 2 encuentros reales, no en un historial profundo."],
+    ],
+    finalStatus: "La lección sobre profundidad de muestra se aplica ahora a todo el catálogo de H2H.",
+  },
+  "14-refutadas": {
+    kind: "story", status: "correction", league: "Cuaderno de Laboratorio",
+    headline: "14 hipótesis de apuesta puestas a prueba con rigor — y por qué casi ninguna sobrevivió",
+    sections: [
+      ["El método", "Cada hipótesis se operacionalizó con un mercado objetivo fijado por lógica futbolística ANTES de ver el resultado."],
+      ["Lo que encontramos", "De 14 estrategias investigadas, el resultado final es 12 Refutadas, 2 Archivadas por evidencia insuficiente, 0 Certificadas."],
+    ],
+    finalStatus: "Programa cerrado definitivamente el 2026-07-20.",
+  },
+  "k0001": {
+    kind: "story", status: "certified", league: "Conocimiento Certificado",
+    headline: "FormCalculator supera al baseline naive en 1X2 de las 4 grandes ligas",
+    sections: [["Hallazgo certificado", "θ=−1.49pp, p<0.0001, I²=0% — meta-análisis DerSimonian-Laird sobre 4 ligas europeas."]],
+    finalStatus: null,
+  },
+  "k0002": {
+    kind: "story", status: "certified", league: "Conocimiento Certificado",
+    headline: "ELO es el grupo de señal dominante sobre la representación actual de features",
+    sections: [["Hallazgo certificado", "Shapley 79.9% para ELO, 20.4% para Forma — H2H y Goles son prescindibles en la representación actual."]],
+    finalStatus: null,
+  },
+  "lane-separation": {
+    kind: "story", status: "certified", league: "Conocimiento Certificado",
+    headline: "Por qué separamos lo que medimos nosotros de lo que certificó el Laboratorio",
+    sections: [["El principio", "Estadística editorial y conocimiento certificado nunca se presentan con el mismo peso — el lector siempre sabe cuál de los dos está leyendo."]],
+    finalStatus: null,
+  },
+};
 
 const INSIGHTS = {
   "londrina-gremio": {
-    analisis: [
-      { metric: "Contexto del cruce", value: "", context: "Ambos equipos llegan en forma ofensiva — Londrina por encima de su propio promedio, Grêmio Novorizontino líder de goles de la liga.", marker: "" },
-    ],
-    patrones: [
-      { metric: "Tendencia ofensiva — Londrina", value: "2.0 gpp", context: "Por encima de su propio promedio de temporada (últimos partidos).", marker: "progress" },
-    ],
+    analisis: [{ metric: "Contexto del cruce", value: "", context: "Ambos equipos llegan en forma ofensiva — Londrina por encima de su promedio, Grêmio Novorizontino líder de goles de la liga." }],
+    patrones: [{ metric: "Tendencia ofensiva — Londrina", value: "2.0 gpp", context: "Por encima de su propio promedio de temporada.", marker: "progress" }],
     estadisticas: [
-      { metric: "Goleador de la liga — Grêmio Novorizontino", value: "28 goles", context: "Máximo anotador de Brasileirão Série B en la temporada activa.", marker: "certified" },
-      { metric: "Radiografía Série B", value: "2.27 gpp", context: "Promedio de goles por partido de la liga en la temporada activa.", marker: "certified" },
+      { metric: "Goleador de la liga — Grêmio Novorizontino", value: "28 goles", context: "Máximo anotador de Brasileirão Série B.", marker: "certified" },
+      { metric: "Radiografía Série B", value: "2.27 gpp", context: "Promedio de goles por partido de la liga.", marker: "certified" },
     ],
-    evidencia: [
-      { metric: "Muestra — tendencia Londrina", value: "partidos recientes", context: "Confianza media: tendencia sobre ventana reciente, no temporada completa.", marker: "progress" },
-      { metric: "Muestra — goleador liga", value: "temporada completa", context: "Confianza alta: dato sobre la tabla completa de la temporada.", marker: "certified" },
-    ],
-    historial: [],
-    certificaciones: [
-      { metric: "FormCalculator vs. baseline naive", value: "θ=−1.49pp", context: "Principio de modelado certificado (AKI) que respalda el enfoque de forma reciente.", marker: "certified" },
-    ],
+    evidencia: [{ metric: "Muestra — goleador liga", value: "temporada completa", context: "Confianza alta.", marker: "certified" }],
+    historial: [], certificaciones: [{ metric: "FormCalculator vs. baseline", value: "θ=−1.49pp", context: "Principio certificado que respalda el enfoque.", marker: "certified" }],
   },
   "regatas-vila": {
-    analisis: [
-      { metric: "Contexto del cruce", value: "", context: "Revancha directa: mismo par de equipos con historial ya verificado por profundidad real (11 encuentros, no un promedio trivial).", marker: "" },
-    ],
-    patrones: [],
-    estadisticas: [
-      { metric: "Historial directo (11 encuentros)", value: "5-4-2", context: "Regatas 5 victorias, Vila Nova 4, 2 empates — ventaja real, no aplastante.", marker: "certified" },
-    ],
-    evidencia: [
-      { metric: "Profundidad de muestra", value: "11 encuentros", context: "Verificado con mínimo real antes de reportar dominancia — el 69.1% de historiales 'extremos' del catálogo no pasaban este filtro.", marker: "certified" },
-    ],
-    historial: [
-      { metric: "Cruce anterior analizado", value: "hace 3 días", context: "Mismo par de equipos, mismo hallazgo de profundidad de historial.", marker: "certified" },
-    ],
-    certificaciones: [],
+    analisis: [{ metric: "Contexto del cruce", value: "", context: "Revancha directa: historial ya verificado por profundidad real (11 encuentros)." }],
+    patrones: [], estadisticas: [{ metric: "Historial directo (11 encuentros)", value: "5-4-2", context: "Regatas 5, Vila Nova 4, 2 empates.", marker: "certified" }],
+    evidencia: [{ metric: "Profundidad de muestra", value: "11 encuentros", context: "Verificado con mínimo real antes de reportar dominancia.", marker: "certified" }],
+    historial: [{ metric: "Cruce anterior analizado", value: "hace 3 días", context: "Mismo hallazgo de profundidad de historial.", marker: "certified" }], certificaciones: [],
   },
   "ponte-athletic": {
-    analisis: [
-      { metric: "Contexto del cruce", value: "", context: "Ponte Preta llega en la peor racha registrada de la ventana de datos — atención relevante independientemente del rival.", marker: "" },
-    ],
-    patrones: [
-      { metric: "Racha negativa — Ponte Preta", value: "10 partidos", context: "9 derrotas, 1 empate, sin ganar en Brasileirão Série B.", marker: "progress" },
-    ],
-    estadisticas: [],
-    evidencia: [
-      { metric: "Muestra", value: "10 partidos consecutivos", context: "Racha completa y verificable, no un recorte parcial.", marker: "progress" },
-    ],
-    historial: [],
-    certificaciones: [],
+    analisis: [{ metric: "Contexto del cruce", value: "", context: "Ponte Preta llega en la peor racha registrada de la ventana de datos." }],
+    patrones: [{ metric: "Racha negativa — Ponte Preta", value: "10 partidos", context: "9 derrotas, 1 empate.", marker: "progress" }],
+    estadisticas: [], evidencia: [{ metric: "Muestra", value: "10 partidos", context: "Racha completa y verificable.", marker: "progress" }],
+    historial: [], certificaciones: [],
   },
   "sport-cuiaba": {
-    analisis: [
-      { metric: "Contexto del cruce", value: "", context: "Sport Recife encajando por encima de su media — ángulo defensivo relevante para este partido.", marker: "" },
-    ],
-    patrones: [
-      { metric: "Tendencia defensiva — Sport Recife", value: "1.8 gpp en contra", context: "Por encima de lo habitual del equipo en la ventana reciente.", marker: "progress" },
-    ],
-    estadisticas: [],
-    evidencia: [
-      { metric: "Muestra", value: "ventana reciente", context: "Confianza media — tendencia de corto plazo, no de temporada completa.", marker: "progress" },
-    ],
-    historial: [],
-    certificaciones: [],
+    analisis: [{ metric: "Contexto del cruce", value: "", context: "Sport Recife encajando por encima de su media." }],
+    patrones: [{ metric: "Tendencia defensiva — Sport Recife", value: "1.8 gpp en contra", context: "Por encima de lo habitual en la ventana reciente.", marker: "progress" }],
+    estadisticas: [], evidencia: [{ metric: "Muestra", value: "ventana reciente", context: "Confianza media.", marker: "progress" }],
+    historial: [], certificaciones: [],
   },
 };
 
@@ -413,133 +326,104 @@ const MATCH_TABS = [
   { id: "historial", label: "Historial" }, { id: "certificaciones", label: "Certificaciones" },
 ];
 
-let activeCountry = "ALL";
-let activeDate = "2026-07-25";
-let onlyAnalysis = false;
+const ROWS = [
+  { title: "Con análisis nuevo", ids: ["londrina-gremio", "regatas-vila", "ponte-athletic", "sport-cuiaba"] },
+  { title: "Cuaderno de Laboratorio", ids: ["jensen-bias", "h2h-depth", "14-refutadas"] },
+  { title: "Brasileirão Série B — hoy y mañana", ids: ["londrina-gremio", "regatas-vila", "ponte-athletic", "sport-cuiaba", "am-goias", "cri-nau"] },
+  { title: "Brasileirão Betano — hoy y mañana", ids: ["fla-sao", "pal-cam", "ath-int", "san-cha"] },
+  { title: "Liga Profesional de Fútbol (Argentina)", ids: ["riv-bar", "hur-ban", "boc-rie", "lan-san"] },
+  { title: "Conocimiento Certificado", ids: ["k0001", "k0002", "lane-separation"] },
+];
+
+function getItem(id) { return FIXTURES[id] ? { ...FIXTURES[id], id, kind: "match" } : { ...STORIES[id], id }; }
+
+function tileHtml(id) {
+  const it = getItem(id);
+  const statusClass = "status-" + it.status;
+  const markerMap = { certified: "◆", progress: "◐", correction: "↺", none: "" };
+  const marker = markerMap[it.status] || "";
+  if (it.kind === "match") {
+    return `
+    <div class="tile ${statusClass}" data-id="${id}">
+      <div class="tile-top"><span class="tile-league">${it.league}</span>${marker ? `<span class="tile-marker ${it.status}">${marker}</span>` : ""}</div>
+      <div class="tile-title">${it.home}<span class="vsx">vs</span>${it.away}</div>
+      <div class="tile-foot">${it.date}</div>
+    </div>`;
+  }
+  return `
+  <div class="tile ${statusClass}" data-id="${id}">
+    <div class="tile-top"><span class="tile-league">${it.league}</span>${marker ? `<span class="tile-marker ${it.status}">${marker}</span>` : ""}</div>
+    <div class="tile-title">${it.headline}</div>
+    <div class="tile-foot"></div>
+  </div>`;
+}
+
+function renderRows() {
+  const el = document.getElementById("rows-container");
+  el.innerHTML = ROWS.map(row => `
+    <div class="row-block">
+      <div class="row-head"><span class="row-title">${row.title}</span><span class="row-count">${row.ids.length}</span></div>
+      <div class="row-scroll">
+        ${row.ids.map(tileHtml).join("")}
+        <div class="see-more-tile">Ver todos →</div>
+      </div>
+    </div>`).join("");
+  document.querySelectorAll(".tile").forEach(t => t.addEventListener("click", () => openItem(t.dataset.id)));
+}
+
 let activeMatchId = null;
 let activeMatchTab = "analisis";
 
-function markerIcon(status) {
-  if (status === "certified") return `<span class="marker certified">◆</span>`;
-  if (status === "progress") return `<span class="marker progress">◐</span>`;
-  return `<span class="marker none">—</span>`;
-}
-
-function filteredFixtures() {
-  let pool = FIXTURES;
-  if (activeCountry !== "ALL") pool = pool.filter(f => f.country === activeCountry);
-  if (activeDate !== "all") pool = pool.filter(f => f.date === activeDate);
-  if (onlyAnalysis) pool = pool.filter(f => f.status !== "none");
-  return pool;
-}
-
-function renderSummary() {
-  const pool = filteredFixtures();
-  const leagues = new Set(pool.map(f => f.league)).size;
-  const countries = new Set(pool.map(f => f.country)).size;
-  document.getElementById("summary-line").innerHTML = `
-    <span>Mostrando <b>${pool.length}</b> partidos en <b>${leagues}</b> ligas, <b>${countries}</b> países</span>
-    <span>${FIXTURES.filter(f => f.status !== "none").length} con análisis en total</span>`;
-}
-
-function renderCountryStrip() {
-  document.getElementById("country-strip").innerHTML = COUNTRIES.map(c => {
-    const n = c.code === "ALL" ? FIXTURES.length : FIXTURES.filter(f => f.country === c.code).length;
-    return `<button class="country-pill ${c.code === activeCountry ? "active" : ""}" data-code="${c.code}">${c.flag} ${c.name} <span class="n">${n}</span></button>`;
-  }).join("");
-  document.querySelectorAll(".country-pill").forEach(p => {
-    p.addEventListener("click", () => { activeCountry = p.dataset.code; renderAll(); });
-  });
-}
-
-function matchRowHtml(f) {
-  const abbr = LEAGUE_ABBR[f.league] || f.league;
-  const countryFlag = COUNTRIES.find(c => c.code === f.country)?.flag || "";
-  return `
-  <div class="mrow" data-match-id="${f.matchId || ""}" data-home="${f.home}" data-away="${f.away}" data-league="${f.league}">
-    ${markerIcon(f.status)}
-    <div class="body">
-      <div class="meta-line">${countryFlag} ${abbr}</div>
-      <div class="teams-line">${f.home}<span class="vsx">vs</span>${f.away}</div>
-      ${f.signal ? `<div class="signal-line"><b>·</b> ${f.signal}</div>` : ""}
-    </div>
-    <div class="time-col">${f.date === "2026-07-25" ? "hoy" : (f.date === "2026-07-26" ? "mañ." : f.date.slice(5).replace("-", "/"))}</div>
-  </div>`;
-}
-
-function renderMatchList() {
-  const pool = filteredFixtures().slice().sort((a, b) => {
-    const rank = { certified: 0, progress: 1, none: 2 };
-    return rank[a.status] - rank[b.status];
-  });
-  document.getElementById("match-list").innerHTML = pool.length
-    ? pool.map(matchRowHtml).join("")
-    : `<div class="no-matches">Sin partidos para este filtro.</div>`;
-  document.querySelectorAll(".mrow").forEach(row => {
-    row.addEventListener("click", () => openMatch(row.dataset.matchId, row.dataset));
-  });
-}
-
-function renderAll() { renderSummary(); renderCountryStrip(); renderMatchList(); }
-
-document.querySelectorAll(".date-pill").forEach(p => {
-  p.addEventListener("click", () => {
-    document.querySelectorAll(".date-pill").forEach(x => x.classList.remove("active"));
-    p.classList.add("active");
-    activeDate = p.dataset.date;
-    renderAll();
-  });
-});
-document.getElementById("only-analysis").addEventListener("change", e => { onlyAnalysis = e.target.checked; renderAll(); });
-
 function dataRowHtml(item) {
   const marker = item.marker ? `<span class="marker-badge ${item.marker}">${item.marker === "certified" ? "◆" : "◐"}</span>` : "";
-  return `
-  <div class="data-row">
-    <div class="left"><div class="metric">${item.metric}</div><div class="context">${item.context}</div></div>
-    <div class="right">${item.value ? `<span class="value">${item.value}</span>` : ""}${marker}</div>
-  </div>`;
+  return `<div class="data-row"><div class="left"><div class="metric">${item.metric}</div><div class="context">${item.context}</div></div><div class="right">${item.value ? `<span class="value">${item.value}</span>` : ""}${marker}</div></div>`;
+}
+
+function renderMatchOverlay(id) {
+  const f = FIXTURES[id];
+  activeMatchId = id; activeMatchTab = "analisis";
+  document.getElementById("overlay-body").innerHTML = `
+    <div class="match-hero">
+      <div class="meta-line">${f.league} · ${f.date}</div>
+      <div class="teams-line">${f.home}<span class="vsx">vs</span>${f.away}</div>
+    </div>
+    <div class="match-tabs" id="match-tabs"></div>
+    <div class="match-tab-body" id="match-tab-body"></div>`;
+  renderMatchTabs();
+  renderMatchTabBody();
 }
 
 function renderMatchTabs() {
   document.getElementById("match-tabs").innerHTML = MATCH_TABS.map(t =>
     `<button class="match-tab ${t.id === activeMatchTab ? "active" : ""}" data-tab="${t.id}">${t.label}</button>`).join("");
-  document.querySelectorAll(".match-tab").forEach(btn => {
-    btn.addEventListener("click", () => { activeMatchTab = btn.dataset.tab; renderMatchTabs(); renderMatchTabBody(); });
-  });
+  document.querySelectorAll(".match-tab").forEach(btn => btn.addEventListener("click", () => { activeMatchTab = btn.dataset.tab; renderMatchTabs(); renderMatchTabBody(); }));
 }
 
 function renderMatchTabBody() {
-  const data = activeMatchId && INSIGHTS[activeMatchId] ? INSIGHTS[activeMatchId][activeMatchTab] || [] : [];
+  const data = (INSIGHTS[activeMatchId] && INSIGHTS[activeMatchId][activeMatchTab]) || [];
   const body = document.getElementById("match-tab-body");
   if (!data.length) {
-    const msgs = {
-      analisis: "Sin análisis de ATLAS para este partido todavía.",
-      patrones: "Sin patrones automáticos detectados todavía.",
-      estadisticas: "Sin estadísticas estructurales asociadas todavía.",
-      evidencia: "Sin evidencia adicional que mostrar todavía.",
-      historial: "Sin cruces directos documentados entre estos equipos todavía.",
-      certificaciones: "Sin conocimiento certificado directamente aplicable todavía.",
-    };
+    const msgs = { analisis: "Sin análisis de ATLAS para este partido todavía.", patrones: "Sin patrones automáticos detectados todavía.", estadisticas: "Sin estadísticas estructurales asociadas todavía.", evidencia: "Sin evidencia adicional que mostrar todavía.", historial: "Sin cruces directos documentados entre estos equipos todavía.", certificaciones: "Sin conocimiento certificado directamente aplicable todavía." };
     body.innerHTML = `<div class="empty-tab">${msgs[activeMatchTab]}</div>`;
     return;
   }
   body.innerHTML = data.map(dataRowHtml).join("");
 }
 
-function openMatch(matchId, rowData) {
-  const fixture = (matchId && FIXTURES.find(f => f.matchId === matchId)) || { home: rowData.home, away: rowData.away, league: rowData.league };
-  activeMatchId = matchId || null;
-  activeMatchTab = "analisis";
-  document.getElementById("match-hero").innerHTML = `
-    <div class="meta-line">${fixture.league}</div>
-    <div class="teams-line">${fixture.home}<span class="vsx">vs</span>${fixture.away}</div>`;
-  renderMatchTabs();
-  renderMatchTabBody();
-  document.getElementById("match-overlay").hidden = false;
-  document.getElementById("match-overlay").scrollTop = 0;
+function renderStoryOverlay(id) {
+  const s = STORIES[id];
+  const badges = `${s.status === "certified" ? '<span class="seal">◆ Certificado</span>' : ""}${s.status === "correction" ? '<span class="correction-tag">↺ Corrección pública</span>' : ""}`;
+  const sections = s.sections.map(([label, text]) => `<div class="story-section"><div class="label">${label}</div><p>${text}</p></div>`).join("");
+  const finalStatus = s.finalStatus ? `<div class="final-status"><span class="label">Estado final — </span>${s.finalStatus}</div>` : "";
+  document.getElementById("overlay-body").innerHTML = `<div class="story-body"><div class="badges">${badges}</div><h1>${s.headline}</h1>${sections}${finalStatus}</div>`;
 }
-document.getElementById("match-back-btn").addEventListener("click", () => { document.getElementById("match-overlay").hidden = true; });
+
+function openItem(id) {
+  if (FIXTURES[id]) renderMatchOverlay(id); else renderStoryOverlay(id);
+  document.getElementById("overlay").hidden = false;
+  document.getElementById("overlay").scrollTop = 0;
+}
+document.getElementById("back-btn").addEventListener("click", () => { document.getElementById("overlay").hidden = true; });
 
 /* ---------- Historial ---------- */
 const LEDGER_CONFIRMED = [
@@ -551,26 +435,22 @@ const LEDGER_CORRECTED = [
   { headline: "Historial 'extremo' con solo 1-2 partidos reales detrás", meta: "Proceso Científico", before: "Historial extremo", after: "69.1% con 1-2 partidos" },
 ];
 function renderHistorial() {
-  document.getElementById("ledger-confirmed").innerHTML = LEDGER_CONFIRMED.map(i =>
-    `<div class="ledger-item"><h3>${i.headline}</h3><p class="meta">${i.meta}</p></div>`).join("");
-  document.getElementById("ledger-corrected").innerHTML = LEDGER_CORRECTED.map(i =>
-    `<div class="ledger-item corrected"><h3>${i.headline}</h3><p class="meta">${i.meta}</p>
-     <div class="correction-delta"><span class="before">${i.before}</span> → <span class="after">${i.after}</span></div></div>`).join("");
+  document.getElementById("ledger-confirmed").innerHTML = LEDGER_CONFIRMED.map(i => `<div class="ledger-item"><h3>${i.headline}</h3><p class="meta">${i.meta}</p></div>`).join("");
+  document.getElementById("ledger-corrected").innerHTML = LEDGER_CORRECTED.map(i => `<div class="ledger-item corrected"><h3>${i.headline}</h3><p class="meta">${i.meta}</p><div class="correction-delta"><span class="before">${i.before}</span> → <span class="after">${i.after}</span></div></div>`).join("");
 }
 
-/* ---------- Nav ---------- */
 document.querySelectorAll(".toptab").forEach(tab => {
   tab.addEventListener("click", () => {
     document.querySelectorAll(".toptab").forEach(t => t.classList.remove("active"));
     tab.classList.add("active");
     const view = tab.dataset.view;
-    document.getElementById("view-partidos").hidden = view !== "partidos";
+    document.getElementById("view-descubrir").hidden = view !== "descubrir";
     document.getElementById("view-historial").hidden = view !== "historial";
     document.getElementById("view-how").hidden = view !== "how";
   });
 });
 
-renderAll();
+renderRows();
 renderHistorial();
 </script>
 </body>
