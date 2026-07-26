@@ -4,6 +4,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ATLAS Lab — Centro de Análisis del Partido (alta fidelidad)</title>
+<!-- flag-icons (MIT license) — banderas reales, dominio publico + libreria libre, sin descargar/redistribuir marcas de terceros -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/css/flag-icons.min.css">
 <style>
   :root {
     --ink: #0a0f0c; --surface: #131b16; --surface-2: #1a2420; --border: #223027;
@@ -105,10 +107,11 @@
   .match-card .date-badge { font-family: var(--mono); font-size: 9.5px; color: var(--text-faint); margin-bottom: 8px; }
   .crest-row { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; }
   .crest {
-    width: 26px; height: 26px; border-radius: 999px; display: flex; align-items: center; justify-content: center;
-    font-family: var(--mono); font-size: 9.5px; font-weight: 700; color: var(--ink); flex-shrink: 0;
+    width: 27px; height: 27px; border-radius: 999px; display: flex; align-items: center; justify-content: center;
+    font-family: var(--mono); font-size: 9.5px; font-weight: 800; color: #fff; flex-shrink: 0;
+    border: 2px solid transparent; text-shadow: 0 1px 1px rgba(0,0,0,0.35);
   }
-  .crest.certified { background: var(--green); } .crest.progress { background: var(--amber); } .crest.none { background: var(--text-faint); }
+  .crest.certified { border-color: var(--green); } .crest.progress { border-color: var(--amber); } .crest.none { border-color: var(--border); }
   .vsx-sm { font-family: var(--mono); font-size: 9.5px; color: var(--text-faint); }
   .match-card .team-name { font-size: 12.5px; font-weight: 700; line-height: 1.3; margin-bottom: 2px; }
   .match-card .league-tag { font-size: 10px; color: var(--text-faint); margin-bottom: 6px; }
@@ -390,13 +393,40 @@ function initials(name) {
   return name.split(" ").filter(w => w.length > 1 || /[A-Za-zÀ-ÿ]/.test(w)).slice(0, 2).map(w => w[0]).join("").toUpperCase();
 }
 
+/* Insignia generada por ATLAS -- color derivado deterministicamente del
+   nombre del equipo (hash simple -> tono HSL). Nunca reproduce un escudo
+   real; es un diseno propio, distinto para cada equipo, estable entre
+   renders (mismo equipo = mismo color siempre). */
+function teamColor(name) {
+  let hash = 0;
+  for (let i = 0; i < name.length; i++) hash = (hash * 31 + name.charCodeAt(i)) >>> 0;
+  const hue = hash % 360;
+  return `hsl(${hue}, 46%, 34%)`;
+}
+
+const LEAGUE_COUNTRY = {
+  "Brasileirão Série B": "br", "Brasileirão Betano": "br", "Brasileirão Série C": "br",
+  "Liga Profesional de Fútbol": "ar", "Liga MX, Apertura": "mx",
+  "Liga de Primera": "cl", "Liga de Ascenso": "cl",
+  "Eliteserien": "no", "Allsvenskan": "se",
+};
+function flagIcon(league) {
+  const code = LEAGUE_COUNTRY[league];
+  return code ? `<span class="fi fi-${code}" style="border-radius:2px"></span>` : "";
+}
+
 function openTile(id) { if (MATCHES.find(m => m.id === id)) openCenter(id); else openStory(id); }
 
 function renderHero() {
   const m = MATCHES.find(x => x.flagship);
   document.getElementById("hero-wrap").innerHTML = `
     <div class="hero-card" data-id="${m.id}">
-      <div class="kicker">◆ Partido destacado · ${m.league}</div>
+      <div class="kicker">${flagIcon(m.league)} ◆ Partido destacado · ${m.league}</div>
+      <div class="crest-row" style="margin-bottom:10px">
+        <span class="crest certified" style="background:${teamColor(m.home)};width:34px;height:34px;font-size:12px">${initials(m.home)}</span>
+        <span class="vsx-sm">vs</span>
+        <span class="crest certified" style="background:${teamColor(m.away)};width:34px;height:34px;font-size:12px">${initials(m.away)}</span>
+      </div>
       <div class="teams">${m.home}<span class="vsx">vs</span>${m.away}</div>
       <div class="sub">Racha ofensiva de ambos equipos · cobertura completa de análisis</div>
       <div class="hero-actions">
@@ -413,9 +443,9 @@ function matchCardHtml(m) {
   const c1 = initials(m.home), c2 = initials(m.away);
   return `
   <div class="match-card" data-id="${m.id}">
-    <div class="date-badge">${m.date} · ${m.league}</div>
+    <div class="date-badge">${flagIcon(m.league)} ${m.date} · ${m.league}</div>
     <div class="crest-row">
-      <span class="crest ${m.status}">${c1}</span><span class="vsx-sm">vs</span><span class="crest ${m.status}">${c2}</span>
+      <span class="crest ${m.status}" style="background:${teamColor(m.home)}">${c1}</span><span class="vsx-sm">vs</span><span class="crest ${m.status}" style="background:${teamColor(m.away)}">${c2}</span>
     </div>
     <div class="team-name">${m.home} <span style="color:var(--text-faint);font-weight:400">vs</span> ${m.away}</div>
     <div class="league-tag">${m.status === "certified" ? "◆ análisis certificado" : (m.status === "progress" ? "◐ en proceso" : "&nbsp;")}</div>
