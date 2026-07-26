@@ -224,16 +224,15 @@
 
   /* ---------- story overlay (Cuaderno de Laboratorio / Certificado) ---------- */
   #view-story[hidden] { display: none; }
-  .story-body { max-width: 640px; margin: 0 auto; padding: 18px 16px 60px; }
-  .story-body .badges { display: flex; gap: 6px; margin-bottom: 12px; }
-  .seal { display: inline-flex; align-items: center; gap: 4px; font-family: var(--mono); font-size: 10px; color: var(--green); border: 1px solid color-mix(in srgb, var(--green) 55%, var(--border)); background: var(--green-soft); border-radius: 999px; padding: 2px 8px 2px 6px; }
-  .correction-tag { display: inline-flex; align-items: center; gap: 4px; font-family: var(--mono); font-size: 10px; color: var(--clay); border: 1px solid color-mix(in srgb, var(--clay) 55%, var(--border)); background: var(--clay-soft); border-radius: 999px; padding: 2px 8px; }
-  .story-body h1 { font-family: var(--serif); font-size: clamp(20px, 6vw, 25px); line-height: 1.25; margin: 0 0 16px; text-wrap: balance; }
-  .story-section { margin-bottom: 16px; }
-  .story-section .label { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--green); margin-bottom: 5px; }
-  .story-section p { font-size: 14.5px; margin: 0; line-height: 1.6; }
-  .final-status { background: var(--clay-soft); border: 1px solid color-mix(in srgb, var(--clay) 40%, var(--border)); border-radius: 8px; padding: 11px 13px; font-size: 13px; margin-top: 16px; }
-  .final-status .label { color: var(--clay); font-weight: 600; }
+  .league-filter-row { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 10px; }
+  .league-chip {
+    flex-shrink: 0; font-size: 11px; font-weight: 600; color: var(--text-dim); background: var(--surface);
+    border: 1px solid var(--border); border-radius: 999px; padding: 6px 11px; cursor: pointer; display: flex; align-items: center; gap: 5px;
+  }
+  .league-chip.active { background: var(--green-soft); border-color: color-mix(in srgb, var(--green) 55%, var(--border)); color: var(--green); }
+  .league-section-title {
+    font-size: 12.5px; font-weight: 700; margin: 16px 0 8px; display: flex; align-items: center; gap: 6px;
+  }
 </style>
 </head>
 <body>
@@ -249,14 +248,13 @@
   </header>
   <div class="home-body">
     <div class="hero-wrap" id="hero-wrap"></div>
-    <div class="section-title"><span>Próximos partidos (por fecha)</span></div>
-    <div class="upcoming-scroll" id="upcoming-scroll"></div>
+    <div class="section-title"><span>Todas las ligas activas</span></div>
+    <div class="league-filter-row" id="league-filter-row"></div>
+    <div id="league-sections"></div>
     <div class="section-title"><span>Radiografía de liga — Série B</span></div>
     <div class="stat-panel" id="stat-league"></div>
     <div class="section-title"><span>Cobertura de mercados (motor real)</span></div>
     <div class="category-grid" id="category-grid"></div>
-    <div class="section-title"><span>Cuaderno de Laboratorio</span></div>
-    <div class="upcoming-scroll" id="lab-scroll"></div>
   </div>
 </div>
 
@@ -264,33 +262,9 @@
 <nav class="drawer" id="drawer" hidden>
   <h4>Menú</h4>
   <div class="drawer-item active">🏠 Partidos</div>
-  <div class="drawer-item" data-view="historial">📓 Nuestro Historial</div>
-  <div class="drawer-item" data-view="how">◎ Cómo Funciona</div>
   <h4>General</h4>
   <div class="drawer-item" style="opacity:.5">⚙ Configuración (no disponible)</div>
 </nav>
-
-<!-- ============ HISTORIAL / COMO FUNCIONA (paginas simples del menu) ============ -->
-<div id="view-simple" hidden>
-  <div class="center-topbar">
-    <div class="row1">
-      <button class="back-btn" id="simple-back-btn">←</button>
-      <span class="wordmark" style="font-size:14px">ATLAS·LAB</span>
-    </div>
-  </div>
-  <div class="story-body" id="simple-body"></div>
-</div>
-
-<!-- ============ FICHA DE HISTORIA (Cuaderno/Certificado) ============ -->
-<div id="view-story" hidden>
-  <div class="center-topbar">
-    <div class="row1">
-      <button class="back-btn" id="story-back-btn">←</button>
-      <span class="wordmark" style="font-size:14px">ATLAS·LAB</span>
-    </div>
-  </div>
-  <div class="story-body" id="story-body"></div>
-</div>
 
 <!-- ============ CENTRO DE ANALISIS ============ -->
 <div id="view-center" hidden>
@@ -316,13 +290,69 @@
    con su estado real: pendiente de integracion, nunca con un numero
    inventado. */
 
+/* 261 partidos reales verificados en future_fixtures (2026-07-26) en 9 ligas
+   activas. Se incluye una muestra amplia de cada una -- no las 261 completas,
+   por manejabilidad del mockup -- pero todas las ligas activas quedan
+   representadas y filtrables, tal como se pidio. */
 const MATCHES = [
+  // Brasileirao Serie B
   { id: "londrina-gremio", home: "Londrina", away: "Grêmio Novorizontino", league: "Brasileirão Série B", date: "26 jul", status: "certified", flagship: true, signal: "Ambos en racha ofensiva" },
   { id: "regatas-vila", home: "Clube De Regatas Brasil", away: "Vila Nova FC", league: "Brasileirão Série B", date: "27 jul", status: "certified", signal: "Domina el historial: 5-4-2 en 11 cruces" },
   { id: "ponte-athletic", home: "Ponte Preta", away: "Athletic Club", league: "Brasileirão Série B", date: "28 jul", status: "progress", signal: "10 partidos sin ganar" },
   { id: "sport-cuiaba", home: "Sport Recife", away: "Cuiabá", league: "Brasileirão Série B", date: "27 jul", status: "progress", signal: "Encajando +1.8 gpp vs. su media" },
-  { id: "fla-sao", home: "Flamengo", away: "São Paulo", league: "Brasileirão Betano", date: "26 jul", status: "none", signal: "" },
-  { id: "riv-bar", home: "River Plate", away: "Barracas Central", league: "Liga Profesional de Fútbol", date: "25 jul", status: "none", signal: "" },
+  { id: "sbe-cea", home: "São Bernardo", away: "Ceará", league: "Brasileirão Série B", date: "26 jul", status: "none" },
+  { id: "ame-goi", home: "América Mineiro", away: "Goiás", league: "Brasileirão Série B", date: "26 jul", status: "none" },
+  { id: "cri-nau", home: "Criciúma", away: "Náutico", league: "Brasileirão Série B", date: "26 jul", status: "none" },
+  // Brasileirao Betano (primera division)
+  { id: "fla-sao", home: "Flamengo", away: "São Paulo", league: "Brasileirão Betano", date: "26 jul", status: "none" },
+  { id: "gre-flu", home: "Grêmio", away: "Fluminense", league: "Brasileirão Betano", date: "26 jul", status: "none" },
+  { id: "pal-atm", home: "Palmeiras", away: "Atlético Mineiro", league: "Brasileirão Betano", date: "26 jul", status: "none" },
+  { id: "bah-cor", home: "Bahia", away: "Corinthians", league: "Brasileirão Betano", date: "26 jul", status: "none" },
+  { id: "rbb-cot", home: "Red Bull Bragantino", away: "Coritiba", league: "Brasileirão Betano", date: "26 jul", status: "none" },
+  { id: "cru-bot", home: "Cruzeiro", away: "Botafogo", league: "Brasileirão Betano", date: "26 jul", status: "none" },
+  // Brasileirao Serie C
+  { id: "bru-itu", home: "Brusque", away: "Ituano", league: "Brasileirão Série C", date: "26 jul", status: "none" },
+  { id: "cax-botpb", home: "Caxias", away: "Botafogo-PB", league: "Brasileirão Série C", date: "26 jul", status: "none" },
+  { id: "ama-pay", home: "Amazonas FC", away: "Paysandu SC", league: "Brasileirão Série C", date: "26 jul", status: "none" },
+  { id: "gua-int", home: "Guarani", away: "Inter de Limeira", league: "Brasileirão Série C", date: "27 jul", status: "none" },
+  // Liga Profesional de Futbol (Argentina)
+  { id: "riv-bar", home: "River Plate", away: "Barracas Central", league: "Liga Profesional de Fútbol", date: "25 jul", status: "none" },
+  { id: "lan-san", home: "CA Lanús", away: "San Lorenzo", league: "Liga Profesional de Fútbol", date: "26 jul", status: "none" },
+  { id: "edlp-ind", home: "Estudiantes de La Plata", away: "CA Independiente", league: "Liga Profesional de Fútbol", date: "26 jul", status: "none" },
+  { id: "rie-boc", home: "Deportivo Riestra", away: "Boca Juniors", league: "Liga Profesional de Fútbol", date: "26 jul", status: "none" },
+  { id: "atu-ind2", home: "Atlético Tucumán", away: "Independiente Rivadavia", league: "Liga Profesional de Fútbol", date: "26 jul", status: "none" },
+  { id: "ban-sar", home: "Banfield", away: "Sarmiento", league: "Liga Profesional de Fútbol", date: "28 jul", status: "none" },
+  // Liga MX Apertura (Mexico)
+  { id: "sla-atl", home: "Santos Laguna", away: "Atlas FC", league: "Liga MX, Apertura", date: "26 jul", status: "none" },
+  { id: "nec-mty", home: "Club Necaxa", away: "CF Monterrey", league: "Liga MX, Apertura", date: "26 jul", status: "none" },
+  { id: "pac-que", home: "CF Pachuca", away: "Querétaro FC", league: "Liga MX, Apertura", date: "27 jul", status: "none" },
+  // Liga de Primera (Chile)
+  { id: "uc-las", home: "Universidad Católica", away: "Deportes La Serena", league: "Liga de Primera", date: "26 jul", status: "none" },
+  { id: "aud-udc", home: "Audax Italiano", away: "Universidad de Chile", league: "Liga de Primera", date: "26 jul", status: "none" },
+  { id: "nub-pal", home: "Ñublense", away: "Palestino", league: "Liga de Primera", date: "26 jul", status: "none" },
+  { id: "dep-ohi", home: "Deportes Concepción", away: "O'Higgins", league: "Liga de Primera", date: "27 jul", status: "none" },
+  // Liga de Ascenso (Chile)
+  { id: "dpm-cda", home: "Deportes Puerto Montt", away: "Club Deportes Antofagasta", league: "Liga de Ascenso", date: "26 jul", status: "none" },
+  { id: "rat-dco", home: "Rangers de Talca", away: "Deportes Copiapó", league: "Liga de Ascenso", date: "26 jul", status: "none" },
+  { id: "sma-dma", home: "San Marcos de Arica", away: "Deportes Magallanes", league: "Liga de Ascenso", date: "26 jul", status: "none" },
+  { id: "une-dre", home: "Unión Española", away: "Deportes Recoleta", league: "Liga de Ascenso", date: "27 jul", status: "none" },
+  // Copa Chile
+  { id: "udc2-cur", home: "Universidad de Concepción", away: "Curicó Unido", league: "Copa Chile", date: "04 ago", status: "none" },
+  { id: "nub-rat", home: "Ñublense", away: "Rangers de Talca", league: "Copa Chile", date: "04 ago", status: "none" },
+  { id: "usf-udc3", home: "Unión San Felipe", away: "Universidad de Chile", league: "Copa Chile", date: "05 ago", status: "none" },
+  // Eliteserien (Noruega)
+  { id: "brann-val", home: "SK Brann", away: "Vålerenga IF", league: "Eliteserien", date: "26 jul", status: "none" },
+  { id: "kfum-mol", home: "KFUM Oslo", away: "Molde FK", league: "Eliteserien", date: "26 jul", status: "none" },
+  { id: "aal-vik", home: "Aalesunds FK", away: "Viking FK", league: "Eliteserien", date: "26 jul", status: "none" },
+  { id: "san-bod", home: "Sandefjord Fotball", away: "Bodø/Glimt", league: "Eliteserien", date: "26 jul", status: "none" },
+  { id: "sar-ham", home: "Sarpsborg 08", away: "HamKam", league: "Eliteserien", date: "26 jul", status: "none" },
+  { id: "ros-fre", home: "Rosenborg BK", away: "Fredrikstad FK", league: "Eliteserien", date: "27 jul", status: "none" },
+  // Allsvenskan (Suecia)
+  { id: "gais-hal", home: "GAIS", away: "Halmstads BK", league: "Allsvenskan", date: "26 jul", status: "none" },
+  { id: "mal-elf", home: "Malmö FF", away: "IF Elfsborg", league: "Allsvenskan", date: "26 jul", status: "none" },
+  { id: "brp-ham", home: "IF Brommapojkarna", away: "Hammarby IF", league: "Allsvenskan", date: "26 jul", status: "none" },
+  { id: "sir-gbg", home: "IK Sirius", away: "IFK Göteborg", league: "Allsvenskan", date: "26 jul", status: "none" },
+  { id: "hac-aik", home: "BK Häcken", away: "AIK", league: "Allsvenskan", date: "27 jul", status: "none" },
 ];
 
 const MODULES = [
@@ -339,56 +369,6 @@ const MODULES = [
   { id: "laboratorio", label: "Cuaderno" },
 ];
 
-const STORIES = {
-  "jensen-bias": {
-    status: "correction", league: "Cuaderno de Laboratorio",
-    headline: "El sesgo que fabricaba ventaja donde no la había",
-    sections: [
-      ["La pregunta", "Dos estrategias del catálogo (E002, E011) mostraban edge positivo sostenido (+6.8pp y +6.3pp) y estaban en seguimiento como candidatas."],
-      ["Lo que hicimos", "Se auditó evaluate_combo() — la función que calcula el retorno financiero esperado — y se encontró que promediaba las cuotas como 1/mean(odds) en vez de mean(1/odds): un sesgo de Jensen que sobreestima el edge en mercados con cuotas variables."],
-      ["Lo que encontramos", "Al corregir la fórmula, el edge de ambas estrategias se invirtió: E002 pasó de +6.8pp a −1.1pp, E011 de +6.3pp a −2.5pp. Ninguna sobrevivió."],
-    ],
-    finalStatus: "Ambas estrategias reclasificadas a Refutada el 2026-07-20.",
-  },
-  "h2h-depth": {
-    status: "correction", league: "Cuaderno de Laboratorio",
-    headline: "Cuando un historial 'extremo' resultó tener solo 1 o 2 partidos reales detrás",
-    sections: [
-      ["La pregunta", "Un historial de enfrentamientos directos muy sesgado predice quién gana el próximo cruce."],
-      ["Lo que encontramos", "El 69.1% de los casos extremos estaban sustentados en apenas 1 o 2 encuentros reales, no en un historial profundo."],
-    ],
-    finalStatus: "La lección sobre profundidad de muestra se aplica ahora a todo el catálogo de H2H.",
-  },
-  "14-refutadas": {
-    status: "correction", league: "Cuaderno de Laboratorio",
-    headline: "14 hipótesis de apuesta puestas a prueba con rigor — y por qué casi ninguna sobrevivió",
-    sections: [
-      ["El método", "Cada hipótesis se operacionalizó con un mercado objetivo fijado por lógica futbolística ANTES de ver el resultado."],
-      ["Lo que encontramos", "De 14 estrategias investigadas, el resultado final es 12 Refutadas, 2 Archivadas por evidencia insuficiente, 0 Certificadas."],
-    ],
-    finalStatus: "Programa cerrado definitivamente el 2026-07-20.",
-  },
-  "k0001": {
-    status: "certified", league: "Conocimiento Certificado",
-    headline: "FormCalculator supera al baseline naive en 1X2 de las 4 grandes ligas",
-    sections: [["Hallazgo certificado", "θ=−1.49pp, p<0.0001, I²=0% — meta-análisis DerSimonian-Laird sobre 4 ligas europeas."]],
-    finalStatus: null,
-  },
-  "k0002": {
-    status: "certified", league: "Conocimiento Certificado",
-    headline: "ELO es el grupo de señal dominante sobre la representación actual de features",
-    sections: [["Hallazgo certificado", "Shapley 79.9% para ELO, 20.4% para Forma — H2H y Goles son prescindibles en la representación actual."]],
-    finalStatus: null,
-  },
-};
-
-const ROWS = [
-  { title: "Con análisis nuevo", ids: ["londrina-gremio", "regatas-vila", "ponte-athletic", "sport-cuiaba"] },
-  { title: "Cuaderno de Laboratorio", ids: ["jensen-bias", "h2h-depth", "14-refutadas"] },
-  { title: "Brasileirão Série B — hoy y mañana", ids: ["londrina-gremio", "regatas-vila", "ponte-athletic", "sport-cuiaba"] },
-  { title: "Otras ligas — hoy y mañana", ids: ["fla-sao", "riv-bar"] },
-  { title: "Conocimiento Certificado", ids: ["k0001", "k0002"] },
-];
 
 function initials(name) {
   return name.split(" ").filter(w => w.length > 1 || /[A-Za-zÀ-ÿ]/.test(w)).slice(0, 2).map(w => w[0]).join("").toUpperCase();
@@ -408,15 +388,21 @@ function teamColor(name) {
 const LEAGUE_COUNTRY = {
   "Brasileirão Série B": "br", "Brasileirão Betano": "br", "Brasileirão Série C": "br",
   "Liga Profesional de Fútbol": "ar", "Liga MX, Apertura": "mx",
-  "Liga de Primera": "cl", "Liga de Ascenso": "cl",
+  "Liga de Primera": "cl", "Liga de Ascenso": "cl", "Copa Chile": "cl",
   "Eliteserien": "no", "Allsvenskan": "se",
 };
+const LEAGUES_ORDERED = [
+  "Brasileirão Série B", "Brasileirão Betano", "Brasileirão Série C",
+  "Liga Profesional de Fútbol", "Liga MX, Apertura",
+  "Liga de Primera", "Liga de Ascenso", "Copa Chile",
+  "Eliteserien", "Allsvenskan",
+];
 function flagIcon(league) {
   const code = LEAGUE_COUNTRY[league];
   return code ? `<span class="fi fi-${code}" style="border-radius:2px"></span>` : "";
 }
 
-function openTile(id) { if (MATCHES.find(m => m.id === id)) openCenter(id); else openStory(id); }
+function openTile(id) { openCenter(id); }
 
 function renderHero() {
   const m = MATCHES.find(x => x.flagship);
@@ -458,9 +444,28 @@ function matchCardHtml(m) {
   </div>`;
 }
 
-function renderUpcoming() {
-  document.getElementById("upcoming-scroll").innerHTML = MATCHES.filter(m => !m.flagship).map(matchCardHtml).join("");
-  document.querySelectorAll("#upcoming-scroll .match-card").forEach(c => c.addEventListener("click", () => openTile(c.dataset.id)));
+let activeLeague = "ALL";
+
+function renderLeagueFilterRow() {
+  const chips = [`<button class="league-chip ${activeLeague === "ALL" ? "active" : ""}" data-league="ALL">Todas</button>`]
+    .concat(LEAGUES_ORDERED.map(lg => `<button class="league-chip ${activeLeague === lg ? "active" : ""}" data-league="${lg}">${flagIcon(lg)} ${lg}</button>`));
+  document.getElementById("league-filter-row").innerHTML = chips.join("");
+  document.querySelectorAll(".league-chip").forEach(chip => {
+    chip.addEventListener("click", () => { activeLeague = chip.dataset.league; renderLeagueFilterRow(); renderLeagueSections(); });
+  });
+}
+
+function renderLeagueSections() {
+  const pool = MATCHES.filter(m => !m.flagship);
+  const leagues = activeLeague === "ALL" ? LEAGUES_ORDERED : [activeLeague];
+  document.getElementById("league-sections").innerHTML = leagues.map(lg => {
+    const matches = pool.filter(m => m.league === lg);
+    if (!matches.length) return "";
+    return `
+    <div class="league-section-title">${flagIcon(lg)} ${lg} <span style="color:var(--text-faint);font-weight:400;font-size:10.5px">(${matches.length})</span></div>
+    <div class="upcoming-scroll">${matches.map(matchCardHtml).join("")}</div>`;
+  }).join("");
+  document.querySelectorAll(".match-card").forEach(c => c.addEventListener("click", () => openTile(c.dataset.id)));
 }
 
 function statEntry(name, sub, valueLabel, pct, color) {
@@ -491,19 +496,8 @@ function renderCategoryGrid() {
   document.getElementById("category-grid").innerHTML = cats.map(c => `<div class="category-card ${c.cls}">${c.name}<span class="sub">${c.sub}</span></div>`).join("");
 }
 
-function renderLabScroll() {
-  const ids = ["jensen-bias", "h2h-depth", "14-refutadas"];
-  document.getElementById("lab-scroll").innerHTML = ids.map(id => `
-    <div class="match-card" data-id="${id}" style="width:190px">
-      <div class="date-badge">Cuaderno de Laboratorio</div>
-      <div class="team-name" style="margin-top:4px">${STORIES[id].headline}</div>
-      <div class="league-tag" style="margin-top:8px">↺ corrección pública</div>
-    </div>`).join("");
-  document.querySelectorAll("#lab-scroll .match-card").forEach(c => c.addEventListener("click", () => openStory(c.dataset.id)));
-}
-
 function renderHome() {
-  renderHero(); renderUpcoming(); renderLeagueStat(); renderCategoryGrid(); renderLabScroll();
+  renderHero(); renderLeagueFilterRow(); renderLeagueSections(); renderLeagueStat(); renderCategoryGrid();
 }
 
 /* ---- drawer ---- */
@@ -513,31 +507,6 @@ document.getElementById("menu-btn").addEventListener("click", () => {
 });
 document.getElementById("drawer-overlay").addEventListener("click", closeDrawer);
 function closeDrawer() { document.getElementById("drawer").hidden = true; document.getElementById("drawer-overlay").hidden = true; }
-document.querySelectorAll(".drawer-item[data-view]").forEach(item => {
-  item.addEventListener("click", () => { closeDrawer(); openSimple(item.dataset.view); });
-});
-
-function openSimple(view) {
-  const content = view === "historial" ? `
-    <h1>Nuestro Historial</h1>
-    <p style="color:var(--text-dim);font-size:13px;margin-bottom:16px">Todo lo que declaramos como cierto, y todo lo que corregimos después de declararlo.</p>
-    <div class="story-section"><div class="label">Confirmado</div><p>FormCalculator supera al baseline naive en 1X2 de las 4 grandes ligas · ELO es el grupo de señal dominante sobre la representación actual de features.</p></div>
-    <div class="story-section"><div class="label">Corregido después de publicarse</div><p>El sesgo que fabricaba ventaja donde no la había (E002 +6.8pp → −1.1pp) · Historial 'extremo' con solo 1-2 partidos reales detrás.</p></div>
-    <div class="final-status"><span class="label">Programa E00X — </span>12 Refutadas, 2 Archivadas, 0 Certificadas. Cerrado 2026-07-20.</div>`
-    : `
-    <h1>Cómo Funciona</h1>
-    <div class="story-section"><div class="label">Principio 1</div><p>El criterio se fija antes de ver el resultado, nunca después.</p></div>
-    <div class="story-section"><div class="label">Principio 2</div><p>Nunca confiamos en un patrón sin verificar profundidad de muestra real.</p></div>
-    <div class="story-section"><div class="label">Principio 3</div><p>Separamos siempre lo propio de lo certificado por el Laboratorio.</p></div>`;
-  document.getElementById("simple-body").innerHTML = content;
-  document.getElementById("view-list").hidden = true;
-  document.getElementById("view-simple").hidden = false;
-  window.scrollTo(0, 0);
-}
-document.getElementById("simple-back-btn").addEventListener("click", () => {
-  document.getElementById("view-simple").hidden = true;
-  document.getElementById("view-list").hidden = false;
-});
 
 function pendingBanner(text) {
   return `<div class="pending-banner"><span class="ic">⧗</span><span>${text}</span></div>`;
@@ -650,21 +619,6 @@ function openCenter(id) {
 }
 document.getElementById("back-btn").addEventListener("click", () => {
   document.getElementById("view-center").hidden = true;
-  document.getElementById("view-list").hidden = false;
-});
-
-function openStory(id) {
-  const s = STORIES[id];
-  const badges = `${s.status === "certified" ? '<span class="seal">◆ Certificado</span>' : ""}${s.status === "correction" ? '<span class="correction-tag">↺ Corrección pública</span>' : ""}`;
-  const sections = s.sections.map(([label, text]) => `<div class="story-section"><div class="label">${label}</div><p>${text}</p></div>`).join("");
-  const finalStatus = s.finalStatus ? `<div class="final-status"><span class="label">Estado final — </span>${s.finalStatus}</div>` : "";
-  document.getElementById("story-body").innerHTML = `<div class="badges">${badges}</div><h1>${s.headline}</h1>${sections}${finalStatus}`;
-  document.getElementById("view-list").hidden = true;
-  document.getElementById("view-story").hidden = false;
-  window.scrollTo(0, 0);
-}
-document.getElementById("story-back-btn").addEventListener("click", () => {
-  document.getElementById("view-story").hidden = true;
   document.getElementById("view-list").hidden = false;
 });
 
