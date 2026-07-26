@@ -8,9 +8,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/css/flag-icons.min.css">
 <style>
   :root {
-    --ink: #0a0f0c; --surface: #131b16; --surface-2: #1a2420; --border: #223027;
-    --text: #edefe9; --text-dim: #9fa9a3; --text-faint: #647069;
-    --green: #5b9a63; --green-soft: rgba(91,154,99,0.15);
+    --ink: #0c0d10; --surface: #17181c; --surface-2: #1e2025; --border: #2a2c32;
+    --text: #f0f0f2; --text-dim: #a3a5ac; --text-faint: #6b6d74;
+    --green: #4fae63; --green-soft: rgba(79,174,99,0.13);
     --amber: #d9a441; --amber-soft: rgba(217,164,65,0.13);
     --clay: #c97a3d; --clay-soft: rgba(201,122,61,0.13);
     --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -84,8 +84,9 @@
   .hero-wrap { position: relative; }
   .hero-card {
     border-radius: 14px; overflow: hidden; position: relative; padding: 20px 18px 16px; min-height: 150px;
-    background: linear-gradient(135deg, color-mix(in srgb, var(--green) 22%, var(--surface)), var(--surface-2) 80%);
+    background: radial-gradient(140% 100% at 100% 0%, color-mix(in srgb, var(--green) 12%, var(--surface-2)), var(--surface) 60%);
     border: 1px solid var(--border); display: flex; flex-direction: column; justify-content: flex-end;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
   }
   .hero-card .kicker { font-family: var(--mono); font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
   .hero-card .teams { font-size: clamp(19px, 6vw, 24px); font-weight: 800; line-height: 1.25; margin-bottom: 6px; }
@@ -102,7 +103,7 @@
   .upcoming-scroll { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 4px; scroll-snap-type: x proximity; }
   .match-card {
     flex-shrink: 0; width: 180px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
-    padding: 12px; scroll-snap-align: start;
+    padding: 12px; scroll-snap-align: start; box-shadow: 0 3px 10px rgba(0,0,0,0.25);
   }
   .match-card .date-badge { font-family: var(--mono); font-size: 9.5px; color: var(--text-faint); margin-bottom: 8px; }
   .crest-row { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; }
@@ -121,7 +122,7 @@
   .btn-analysis { flex: 1; background: var(--green); color: #0a0f0c; border: none; border-radius: 7px; font-size: 11.5px; font-weight: 700; cursor: pointer; }
 
   /* panel de estadisticas (rail) */
-  .stat-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; margin-bottom: 12px; }
+  .stat-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; margin-bottom: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.25); }
   .stat-panel-title { font-size: 12px; font-weight: 700; margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; }
   .stat-entry { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--border); }
   .stat-entry:last-child { border-bottom: none; }
@@ -462,12 +463,22 @@ function renderUpcoming() {
   document.querySelectorAll("#upcoming-scroll .match-card").forEach(c => c.addEventListener("click", () => openTile(c.dataset.id)));
 }
 
+function statEntry(name, sub, valueLabel, pct, color) {
+  return `
+  <div class="stat-entry">
+    <div><div class="name">${name}</div><div class="sub">${sub}</div>
+      <div class="stat-bar-wrap"><div class="stat-bar" style="width:${pct}%;background:${color}"></div></div>
+    </div>
+    <div class="value" style="font-family:var(--mono);font-weight:700;color:${color}">${valueLabel}</div>
+  </div>`;
+}
+
 function renderLeagueStat() {
   document.getElementById("stat-league").innerHTML = `
     <div class="stat-panel-title">Brasileirão Série B <span style="color:var(--text-faint);font-weight:400;font-size:10px">temporada activa</span></div>
-    <div class="stat-entry"><div><div class="name">Goles por partido</div><div class="sub">promedio de liga</div></div><div class="value" style="font-family:var(--mono);font-weight:700">2.27</div></div>
-    <div class="stat-entry"><div><div class="name">Grêmio Novorizontino</div><div class="sub">goleador de la liga</div></div><div class="value" style="font-family:var(--mono);font-weight:700;color:var(--green)">28 goles</div></div>
-    <div class="stat-entry"><div><div class="name">Londrina</div><div class="sub">tendencia ofensiva reciente</div></div><div class="value" style="font-family:var(--mono);font-weight:700;color:var(--amber)">2.0 gpp</div></div>`;
+    ${statEntry("Goles por partido", "promedio de liga", "2.27", 57, "var(--text)")}
+    ${statEntry("Grêmio Novorizontino", "goleador de la liga", "28 goles", 93, "var(--green)")}
+    ${statEntry("Londrina", "tendencia ofensiva reciente", "2.0 gpp", 66, "var(--amber)")}`;
 }
 
 function renderCategoryGrid() {
