@@ -233,6 +233,23 @@
   .league-section-title {
     font-size: 12.5px; font-weight: 700; margin: 16px 0 8px; display: flex; align-items: center; gap: 6px;
   }
+  .see-all-card { background: var(--surface-2); border: 1px dashed var(--border); color: var(--text-dim); }
+
+  /* ---------- vista de detalle de liga (lista completa) ---------- */
+  #view-league-detail[hidden] { display: none; }
+  .league-detail-body { max-width: 720px; margin: 0 auto; padding: 4px 14px 60px; }
+  .league-detail-head { padding: 10px 0 14px; }
+  .league-detail-head .title { font-size: 16px; font-weight: 700; display: flex; align-items: center; gap: 7px; }
+  .league-detail-head .count { font-family: var(--mono); font-size: 11px; color: var(--text-faint); margin-top: 3px; }
+  .mrow { display: flex; align-items: center; gap: 8px; padding: 9px 4px; border-bottom: 1px solid var(--border); cursor: pointer; }
+  .mrow:active { background: var(--surface); }
+  .mrow .marker { width: 16px; text-align: center; font-size: 12px; flex-shrink: 0; }
+  .mrow .marker.certified { color: var(--green); } .mrow .marker.progress { color: var(--amber); } .mrow .marker.none { color: var(--text-faint); opacity: .35; }
+  .mrow .body { flex: 1; min-width: 0; }
+  .mrow .meta { font-family: var(--mono); font-size: 10px; color: var(--text-faint); }
+  .mrow .teams { font-size: 12.5px; font-weight: 600; margin-top: 2px; }
+  .mrow .teams .vsx { color: var(--text-faint); font-weight: 400; font-size: 10.5px; margin: 0 4px; }
+  .mrow .go { color: var(--text-faint); font-size: 13px; }
 </style>
 </head>
 <body>
@@ -266,6 +283,23 @@
   <div class="drawer-item" style="opacity:.5">⚙ Configuración (no disponible)</div>
 </nav>
 
+<!-- ============ DETALLE DE LIGA (todos los partidos) ============ -->
+<div id="view-league-detail" hidden>
+  <div class="center-topbar">
+    <div class="row1">
+      <button class="back-btn" id="league-detail-back-btn">←</button>
+      <span class="wordmark" style="font-size:14px">ATLAS·LAB</span>
+    </div>
+  </div>
+  <div class="league-detail-body">
+    <div class="league-detail-head">
+      <div class="title" id="league-detail-title"></div>
+      <div class="count" id="league-detail-count"></div>
+    </div>
+    <div id="league-detail-list"></div>
+  </div>
+</div>
+
 <!-- ============ CENTRO DE ANALISIS ============ -->
 <div id="view-center" hidden>
   <div class="center-topbar">
@@ -290,69 +324,74 @@
    con su estado real: pendiente de integracion, nunca con un numero
    inventado. */
 
-/* 261 partidos reales verificados en future_fixtures (2026-07-26) en 9 ligas
-   activas. Se incluye una muestra amplia de cada una -- no las 261 completas,
-   por manejabilidad del mockup -- pero todas las ligas activas quedan
-   representadas y filtrables, tal como se pidio. */
+/* 261 partidos reales verificados en future_fixtures (consultado 2026-07-26)
+   en 9 ligas activas. kickoffUTC es la hora real de future_fixtures.kickoff_utc
+   (columna verificada, con variedad real de horarios, no un valor de relleno).
+   Se muestra convertida a hora de Chile continental (UTC-4 en invierno austral
+   -- Chile solo pasa a UTC-3 en horario de verano, septiembre-abril; en julio
+   corresponde UTC-4). Muestra amplia de cada liga, no las 261 completas, por
+   manejabilidad -- todas las ligas activas quedan representadas y filtrables. */
+const CHILE_UTC_OFFSET = -4; // horario estandar de Chile continental (invierno austral, vigente en julio)
+
 const MATCHES = [
   // Brasileirao Serie B
-  { id: "londrina-gremio", home: "Londrina", away: "Grêmio Novorizontino", league: "Brasileirão Série B", date: "26 jul", status: "certified", flagship: true, signal: "Ambos en racha ofensiva" },
-  { id: "regatas-vila", home: "Clube De Regatas Brasil", away: "Vila Nova FC", league: "Brasileirão Série B", date: "27 jul", status: "certified", signal: "Domina el historial: 5-4-2 en 11 cruces" },
-  { id: "ponte-athletic", home: "Ponte Preta", away: "Athletic Club", league: "Brasileirão Série B", date: "28 jul", status: "progress", signal: "10 partidos sin ganar" },
-  { id: "sport-cuiaba", home: "Sport Recife", away: "Cuiabá", league: "Brasileirão Série B", date: "27 jul", status: "progress", signal: "Encajando +1.8 gpp vs. su media" },
-  { id: "sbe-cea", home: "São Bernardo", away: "Ceará", league: "Brasileirão Série B", date: "26 jul", status: "none" },
-  { id: "ame-goi", home: "América Mineiro", away: "Goiás", league: "Brasileirão Série B", date: "26 jul", status: "none" },
-  { id: "cri-nau", home: "Criciúma", away: "Náutico", league: "Brasileirão Série B", date: "26 jul", status: "none" },
+  { id: "londrina-gremio", home: "Londrina", away: "Grêmio Novorizontino", league: "Brasileirão Série B", kickoffUTC: "2026-07-26T21:30:00Z", status: "certified", flagship: true, signal: "Ambos en racha ofensiva" },
+  { id: "regatas-vila", home: "Clube De Regatas Brasil", away: "Vila Nova FC", league: "Brasileirão Série B", kickoffUTC: "2026-07-27T22:30:00Z", status: "certified", signal: "Domina el historial: 5-4-2 en 11 cruces" },
+  { id: "ponte-athletic", home: "Ponte Preta", away: "Athletic Club", league: "Brasileirão Série B", kickoffUTC: "2026-07-28T22:30:00Z", status: "progress", signal: "10 partidos sin ganar" },
+  { id: "sport-cuiaba", home: "Sport Recife", away: "Cuiabá", league: "Brasileirão Série B", kickoffUTC: "2026-07-27T22:30:00Z", status: "progress", signal: "Encajando +1.8 gpp vs. su media" },
+  { id: "sbe-cea", home: "São Bernardo", away: "Ceará", league: "Brasileirão Série B", kickoffUTC: "2026-07-26T19:00:00Z", status: "none" },
+  { id: "ame-goi", home: "América Mineiro", away: "Goiás", league: "Brasileirão Série B", kickoffUTC: "2026-07-26T21:30:00Z", status: "none" },
+  { id: "cri-nau", home: "Criciúma", away: "Náutico", league: "Brasileirão Série B", kickoffUTC: "2026-07-26T19:00:00Z", status: "none" },
   // Brasileirao Betano (primera division)
-  { id: "fla-sao", home: "Flamengo", away: "São Paulo", league: "Brasileirão Betano", date: "26 jul", status: "none" },
-  { id: "gre-flu", home: "Grêmio", away: "Fluminense", league: "Brasileirão Betano", date: "26 jul", status: "none" },
-  { id: "pal-atm", home: "Palmeiras", away: "Atlético Mineiro", league: "Brasileirão Betano", date: "26 jul", status: "none" },
-  { id: "bah-cor", home: "Bahia", away: "Corinthians", league: "Brasileirão Betano", date: "26 jul", status: "none" },
-  { id: "rbb-cot", home: "Red Bull Bragantino", away: "Coritiba", league: "Brasileirão Betano", date: "26 jul", status: "none" },
-  { id: "cru-bot", home: "Cruzeiro", away: "Botafogo", league: "Brasileirão Betano", date: "26 jul", status: "none" },
+  { id: "fla-sao", home: "Flamengo", away: "São Paulo", league: "Brasileirão Betano", kickoffUTC: "2026-07-26T21:30:00Z", status: "none" },
+  { id: "gre-flu", home: "Grêmio", away: "Fluminense", league: "Brasileirão Betano", kickoffUTC: "2026-07-26T21:30:00Z", status: "none" },
+  { id: "pal-atm", home: "Palmeiras", away: "Atlético Mineiro", league: "Brasileirão Betano", kickoffUTC: "2026-07-26T22:30:00Z", status: "none" },
+  { id: "bah-cor", home: "Bahia", away: "Corinthians", league: "Brasileirão Betano", kickoffUTC: "2026-07-26T19:00:00Z", status: "none" },
+  { id: "rbb-cot", home: "Red Bull Bragantino", away: "Coritiba", league: "Brasileirão Betano", kickoffUTC: "2026-07-26T21:30:00Z", status: "none" },
+  { id: "cru-bot", home: "Cruzeiro", away: "Botafogo", league: "Brasileirão Betano", kickoffUTC: "2026-07-26T19:00:00Z", status: "none" },
   // Brasileirao Serie C
-  { id: "bru-itu", home: "Brusque", away: "Ituano", league: "Brasileirão Série C", date: "26 jul", status: "none" },
-  { id: "cax-botpb", home: "Caxias", away: "Botafogo-PB", league: "Brasileirão Série C", date: "26 jul", status: "none" },
-  { id: "ama-pay", home: "Amazonas FC", away: "Paysandu SC", league: "Brasileirão Série C", date: "26 jul", status: "none" },
-  { id: "gua-int", home: "Guarani", away: "Inter de Limeira", league: "Brasileirão Série C", date: "27 jul", status: "none" },
+  { id: "bru-itu", home: "Brusque", away: "Ituano", league: "Brasileirão Série C", kickoffUTC: "2026-07-26T19:00:00Z", status: "none" },
+  { id: "cax-botpb", home: "Caxias", away: "Botafogo-PB", league: "Brasileirão Série C", kickoffUTC: "2026-07-26T21:30:00Z", status: "none" },
+  { id: "ama-pay", home: "Amazonas FC", away: "Paysandu SC", league: "Brasileirão Série C", kickoffUTC: "2026-07-26T23:30:00Z", status: "none" },
+  { id: "gua-int", home: "Guarani", away: "Inter de Limeira", league: "Brasileirão Série C", kickoffUTC: "2026-07-27T23:00:00Z", status: "none" },
   // Liga Profesional de Futbol (Argentina)
-  { id: "riv-bar", home: "River Plate", away: "Barracas Central", league: "Liga Profesional de Fútbol", date: "25 jul", status: "none" },
-  { id: "lan-san", home: "CA Lanús", away: "San Lorenzo", league: "Liga Profesional de Fútbol", date: "26 jul", status: "none" },
-  { id: "edlp-ind", home: "Estudiantes de La Plata", away: "CA Independiente", league: "Liga Profesional de Fútbol", date: "26 jul", status: "none" },
-  { id: "rie-boc", home: "Deportivo Riestra", away: "Boca Juniors", league: "Liga Profesional de Fútbol", date: "26 jul", status: "none" },
-  { id: "atu-ind2", home: "Atlético Tucumán", away: "Independiente Rivadavia", league: "Liga Profesional de Fútbol", date: "26 jul", status: "none" },
-  { id: "ban-sar", home: "Banfield", away: "Sarmiento", league: "Liga Profesional de Fútbol", date: "28 jul", status: "none" },
+  { id: "riv-bar", home: "River Plate", away: "Barracas Central", league: "Liga Profesional de Fútbol", kickoffUTC: "2026-07-25T22:15:00Z", status: "none" },
+  { id: "lan-san", home: "CA Lanús", away: "San Lorenzo", league: "Liga Profesional de Fútbol", kickoffUTC: "2026-07-26T00:30:00Z", status: "none" },
+  { id: "edlp-ind", home: "Estudiantes de La Plata", away: "CA Independiente", league: "Liga Profesional de Fútbol", kickoffUTC: "2026-07-26T20:15:00Z", status: "none" },
+  { id: "rie-boc", home: "Deportivo Riestra", away: "Boca Juniors", league: "Liga Profesional de Fútbol", kickoffUTC: "2026-07-26T22:30:00Z", status: "none" },
+  { id: "atu-ind2", home: "Atlético Tucumán", away: "Independiente Rivadavia", league: "Liga Profesional de Fútbol", kickoffUTC: "2026-07-26T18:00:00Z", status: "none" },
+  { id: "ban-sar", home: "Banfield", away: "Sarmiento", league: "Liga Profesional de Fútbol", kickoffUTC: "2026-07-28T22:00:00Z", status: "none" },
   // Liga MX Apertura (Mexico)
-  { id: "sla-atl", home: "Santos Laguna", away: "Atlas FC", league: "Liga MX, Apertura", date: "26 jul", status: "none" },
-  { id: "nec-mty", home: "Club Necaxa", away: "CF Monterrey", league: "Liga MX, Apertura", date: "26 jul", status: "none" },
-  { id: "pac-que", home: "CF Pachuca", away: "Querétaro FC", league: "Liga MX, Apertura", date: "27 jul", status: "none" },
+  { id: "sla-atl", home: "Santos Laguna", away: "Atlas FC", league: "Liga MX, Apertura", kickoffUTC: "2026-07-26T02:00:00Z", status: "none" },
+  { id: "nec-mty", home: "Club Necaxa", away: "CF Monterrey", league: "Liga MX, Apertura", kickoffUTC: "2026-07-26T23:00:00Z", status: "none" },
+  { id: "pac-que", home: "CF Pachuca", away: "Querétaro FC", league: "Liga MX, Apertura", kickoffUTC: "2026-07-27T00:00:00Z", status: "none" },
   // Liga de Primera (Chile)
-  { id: "uc-las", home: "Universidad Católica", away: "Deportes La Serena", league: "Liga de Primera", date: "26 jul", status: "none" },
-  { id: "aud-udc", home: "Audax Italiano", away: "Universidad de Chile", league: "Liga de Primera", date: "26 jul", status: "none" },
-  { id: "nub-pal", home: "Ñublense", away: "Palestino", league: "Liga de Primera", date: "26 jul", status: "none" },
-  { id: "dep-ohi", home: "Deportes Concepción", away: "O'Higgins", league: "Liga de Primera", date: "27 jul", status: "none" },
+  { id: "uc-las", home: "Universidad Católica", away: "Deportes La Serena", league: "Liga de Primera", kickoffUTC: "2026-07-26T00:00:00Z", status: "none" },
+  { id: "aud-udc", home: "Audax Italiano", away: "Universidad de Chile", league: "Liga de Primera", kickoffUTC: "2026-07-26T21:30:00Z", status: "none" },
+  { id: "nub-pal", home: "Ñublense", away: "Palestino", league: "Liga de Primera", kickoffUTC: "2026-07-26T19:00:00Z", status: "none" },
+  { id: "dep-ohi", home: "Deportes Concepción", away: "O'Higgins", league: "Liga de Primera", kickoffUTC: "2026-07-27T00:30:00Z", status: "none" },
   // Liga de Ascenso (Chile)
-  { id: "dpm-cda", home: "Deportes Puerto Montt", away: "Club Deportes Antofagasta", league: "Liga de Ascenso", date: "26 jul", status: "none" },
-  { id: "rat-dco", home: "Rangers de Talca", away: "Deportes Copiapó", league: "Liga de Ascenso", date: "26 jul", status: "none" },
-  { id: "sma-dma", home: "San Marcos de Arica", away: "Deportes Magallanes", league: "Liga de Ascenso", date: "26 jul", status: "none" },
-  { id: "une-dre", home: "Unión Española", away: "Deportes Recoleta", league: "Liga de Ascenso", date: "27 jul", status: "none" },
+  { id: "dpm-cda", home: "Deportes Puerto Montt", away: "Club Deportes Antofagasta", league: "Liga de Ascenso", kickoffUTC: "2026-07-26T16:30:00Z", status: "none" },
+  { id: "rat-dco", home: "Rangers de Talca", away: "Deportes Copiapó", league: "Liga de Ascenso", kickoffUTC: "2026-07-26T16:30:00Z", status: "none" },
+  { id: "sma-dma", home: "San Marcos de Arica", away: "Deportes Magallanes", league: "Liga de Ascenso", kickoffUTC: "2026-07-26T21:30:00Z", status: "none" },
+  { id: "une-dre", home: "Unión Española", away: "Deportes Recoleta", league: "Liga de Ascenso", kickoffUTC: "2026-07-27T23:00:00Z", status: "none" },
   // Copa Chile
-  { id: "udc2-cur", home: "Universidad de Concepción", away: "Curicó Unido", league: "Copa Chile", date: "04 ago", status: "none" },
-  { id: "nub-rat", home: "Ñublense", away: "Rangers de Talca", league: "Copa Chile", date: "04 ago", status: "none" },
-  { id: "usf-udc3", home: "Unión San Felipe", away: "Universidad de Chile", league: "Copa Chile", date: "05 ago", status: "none" },
+  { id: "udc2-cur", home: "Universidad de Concepción", away: "Curicó Unido", league: "Copa Chile", kickoffUTC: "2026-08-04T23:30:00Z", status: "none" },
+  { id: "nub-rat", home: "Ñublense", away: "Rangers de Talca", league: "Copa Chile", kickoffUTC: "2026-08-04T23:30:00Z", status: "none" },
+  { id: "usf-udc3", home: "Unión San Felipe", away: "Universidad de Chile", league: "Copa Chile", kickoffUTC: "2026-08-05T22:00:00Z", status: "none" },
   // Eliteserien (Noruega)
-  { id: "brann-val", home: "SK Brann", away: "Vålerenga IF", league: "Eliteserien", date: "26 jul", status: "none" },
-  { id: "kfum-mol", home: "KFUM Oslo", away: "Molde FK", league: "Eliteserien", date: "26 jul", status: "none" },
-  { id: "aal-vik", home: "Aalesunds FK", away: "Viking FK", league: "Eliteserien", date: "26 jul", status: "none" },
-  { id: "san-bod", home: "Sandefjord Fotball", away: "Bodø/Glimt", league: "Eliteserien", date: "26 jul", status: "none" },
-  { id: "sar-ham", home: "Sarpsborg 08", away: "HamKam", league: "Eliteserien", date: "26 jul", status: "none" },
-  { id: "ros-fre", home: "Rosenborg BK", away: "Fredrikstad FK", league: "Eliteserien", date: "27 jul", status: "none" },
+  { id: "brann-val", home: "SK Brann", away: "Vålerenga IF", league: "Eliteserien", kickoffUTC: "2026-07-26T12:30:00Z", status: "none" },
+  { id: "kfum-mol", home: "KFUM Oslo", away: "Molde FK", league: "Eliteserien", kickoffUTC: "2026-07-26T15:00:00Z", status: "none" },
+  { id: "aal-vik", home: "Aalesunds FK", away: "Viking FK", league: "Eliteserien", kickoffUTC: "2026-07-26T17:15:00Z", status: "none" },
+  { id: "san-bod", home: "Sandefjord Fotball", away: "Bodø/Glimt", league: "Eliteserien", kickoffUTC: "2026-07-26T15:00:00Z", status: "none" },
+  { id: "sar-ham", home: "Sarpsborg 08", away: "HamKam", league: "Eliteserien", kickoffUTC: "2026-07-26T15:00:00Z", status: "none" },
+  { id: "ros-fre", home: "Rosenborg BK", away: "Fredrikstad FK", league: "Eliteserien", kickoffUTC: "2026-07-27T17:00:00Z", status: "none" },
   // Allsvenskan (Suecia)
-  { id: "gais-hal", home: "GAIS", away: "Halmstads BK", league: "Allsvenskan", date: "26 jul", status: "none" },
-  { id: "mal-elf", home: "Malmö FF", away: "IF Elfsborg", league: "Allsvenskan", date: "26 jul", status: "none" },
-  { id: "brp-ham", home: "IF Brommapojkarna", away: "Hammarby IF", league: "Allsvenskan", date: "26 jul", status: "none" },
-  { id: "sir-gbg", home: "IK Sirius", away: "IFK Göteborg", league: "Allsvenskan", date: "26 jul", status: "none" },
-  { id: "hac-aik", home: "BK Häcken", away: "AIK", league: "Allsvenskan", date: "27 jul", status: "none" },
+  { id: "gais-hal", home: "GAIS", away: "Halmstads BK", league: "Allsvenskan", kickoffUTC: "2026-07-26T14:30:00Z", status: "none" },
+  { id: "mal-elf", home: "Malmö FF", away: "IF Elfsborg", league: "Allsvenskan", kickoffUTC: "2026-07-26T14:30:00Z", status: "none" },
+  { id: "brp-ham", home: "IF Brommapojkarna", away: "Hammarby IF", league: "Allsvenskan", kickoffUTC: "2026-07-26T12:00:00Z", status: "none" },
+  { id: "sir-gbg", home: "IK Sirius", away: "IFK Göteborg", league: "Allsvenskan", kickoffUTC: "2026-07-26T12:00:00Z", status: "none" },
+  { id: "hac-aik", home: "BK Häcken", away: "AIK", league: "Allsvenskan", kickoffUTC: "2026-07-27T17:00:00Z", status: "none" },
 ];
 
 const MODULES = [
@@ -401,6 +440,31 @@ function flagIcon(league) {
   return code ? `<span class="fi fi-${code}" style="border-radius:2px"></span>` : "";
 }
 
+/* Conversion de kickoffUTC (real, columna future_fixtures.kickoff_utc) a
+   hora de Chile continental. TODAY_CHILE es la fecha real de hoy que
+   confirmo el Director (2026-07-26). */
+const TODAY_CHILE = new Date(2026, 6, 26); // mes 0-indexado: 6 = julio
+const MONTHS_ES = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+
+function toChileDate(kickoffUTC) {
+  const utcMs = new Date(kickoffUTC).getTime();
+  return new Date(utcMs + CHILE_UTC_OFFSET * 3600 * 1000);
+}
+function chileDateLabel(d) {
+  const d0 = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+  const diffDays = Math.round((d0 - TODAY_CHILE) / 86400000);
+  if (diffDays === 0) return "Hoy";
+  if (diffDays === 1) return "Mañana";
+  return `${String(d.getDate()).padStart(2, "0")} ${MONTHS_ES[d.getMonth()]}`;
+}
+function chileTimeLabel(d) {
+  return `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+}
+function matchWhen(m) {
+  const chileDate = toChileDate(m.kickoffUTC);
+  return `${chileDateLabel(chileDate)} · ${chileTimeLabel(chileDate)}`;
+}
+
 function openTile(id) { openCenter(id); }
 
 function renderHero() {
@@ -414,7 +478,7 @@ function renderHero() {
         <span class="crest certified" style="background:${teamColor(m.away)};width:34px;height:34px;font-size:12px">${initials(m.away)}</span>
       </div>
       <div class="teams">${m.home}<span class="vsx">vs</span>${m.away}</div>
-      <div class="sub">Racha ofensiva de ambos equipos · cobertura completa de análisis</div>
+      <div class="sub">${matchWhen(m)} hora Chile · Racha ofensiva de ambos equipos</div>
       <div class="hero-actions">
         <button class="btn-primary" data-id="${m.id}">Ver Análisis</button>
         <button class="btn-ghost">+ Guardar</button>
@@ -429,7 +493,7 @@ function matchCardHtml(m) {
   const c1 = initials(m.home), c2 = initials(m.away);
   return `
   <div class="match-card" data-id="${m.id}">
-    <div class="date-badge">${flagIcon(m.league)} ${m.date} · ${m.league}</div>
+    <div class="date-badge">${flagIcon(m.league)} ${matchWhen(m)} hora Chile</div>
     <div class="crest-row">
       <span class="crest ${m.status}" style="background:${teamColor(m.home)}">${c1}</span><span class="vsx-sm">vs</span><span class="crest ${m.status}" style="background:${teamColor(m.away)}">${c2}</span>
     </div>
@@ -454,18 +518,63 @@ function renderLeagueFilterRow() {
   });
 }
 
+const PREVIEW_PER_LEAGUE = 3;
+
+function sortByKickoff(matches) {
+  return matches.slice().sort((a, b) => new Date(a.kickoffUTC) - new Date(b.kickoffUTC));
+}
+
+function seeAllTileHtml(league, total) {
+  return `
+  <div class="match-card see-all-card" data-league="${league}" style="display:flex;align-items:center;justify-content:center;text-align:center;">
+    <div>
+      <div style="font-size:20px;margin-bottom:4px">→</div>
+      <div style="font-size:12px;font-weight:700">Ver todos</div>
+      <div style="font-size:10.5px;color:var(--text-faint)">${total} partidos</div>
+    </div>
+  </div>`;
+}
+
 function renderLeagueSections() {
   const pool = MATCHES.filter(m => !m.flagship);
   const leagues = activeLeague === "ALL" ? LEAGUES_ORDERED : [activeLeague];
   document.getElementById("league-sections").innerHTML = leagues.map(lg => {
-    const matches = pool.filter(m => m.league === lg);
+    const matches = sortByKickoff(pool.filter(m => m.league === lg));
     if (!matches.length) return "";
+    const preview = matches.slice(0, PREVIEW_PER_LEAGUE);
+    const seeAll = matches.length > PREVIEW_PER_LEAGUE ? seeAllTileHtml(lg, matches.length) : "";
     return `
-    <div class="league-section-title">${flagIcon(lg)} ${lg} <span style="color:var(--text-faint);font-weight:400;font-size:10.5px">(${matches.length})</span></div>
-    <div class="upcoming-scroll">${matches.map(matchCardHtml).join("")}</div>`;
+    <div class="league-section-title" data-league-header="${lg}" style="cursor:pointer">${flagIcon(lg)} ${lg} <span style="color:var(--text-faint);font-weight:400;font-size:10.5px">(${matches.length}) →</span></div>
+    <div class="upcoming-scroll">${preview.map(matchCardHtml).join("")}${seeAll}</div>`;
   }).join("");
-  document.querySelectorAll(".match-card").forEach(c => c.addEventListener("click", () => openTile(c.dataset.id)));
+  document.querySelectorAll(".match-card:not(.see-all-card)").forEach(c => c.addEventListener("click", () => openTile(c.dataset.id)));
+  document.querySelectorAll(".see-all-card").forEach(c => c.addEventListener("click", () => openLeagueDetail(c.dataset.league)));
+  document.querySelectorAll("[data-league-header]").forEach(h => h.addEventListener("click", () => openLeagueDetail(h.dataset.leagueHeader)));
 }
+
+function openLeagueDetail(league) {
+  const matches = sortByKickoff(MATCHES.filter(m => m.league === league));
+  document.getElementById("league-detail-title").innerHTML = `${flagIcon(league)} ${league}`;
+  document.getElementById("league-detail-count").textContent = `${matches.length} partidos programados`;
+  document.getElementById("league-detail-list").innerHTML = matches.map(m => `
+    <div class="mrow" data-id="${m.id}">
+      <span class="marker ${m.status}">${m.status === "certified" ? "◆" : (m.status === "progress" ? "◐" : "—")}</span>
+      <div class="body">
+        <div class="meta">${matchWhen(m)} hora Chile</div>
+        <div class="teams">${m.home}<span class="vsx">vs</span>${m.away}</div>
+        ${m.signal ? `<div style="font-size:10.5px;color:var(--green);margin-top:2px">${m.signal}</div>` : ""}
+      </div>
+      <span class="go">›</span>
+    </div>`).join("");
+  document.querySelectorAll("#league-detail-list .mrow").forEach(r => r.addEventListener("click", () => openTile(r.dataset.id)));
+  document.getElementById("view-list").hidden = true;
+  document.getElementById("view-league-detail").hidden = false;
+  window.scrollTo(0, 0);
+}
+document.getElementById("league-detail-back-btn").addEventListener("click", () => {
+  document.getElementById("view-league-detail").hidden = true;
+  document.getElementById("view-list").hidden = false;
+});
 
 function statEntry(name, sub, valueLabel, pct, color) {
   return `
@@ -592,7 +701,7 @@ const SOURCE_LABEL = { ce: "Content Engine", pocket: "Atlas Pocket", lab: "Labor
 function openCenter(id) {
   const m = MATCHES.find(x => x.id === id);
   const mods = buildModules(m);
-  document.getElementById("c-league").textContent = `${m.league} · ${m.date}`;
+  document.getElementById("c-league").textContent = `${m.league} · ${matchWhen(m)} hora Chile`;
   document.getElementById("c-teams").innerHTML = `${m.home}<span class="vsx">vs</span>${m.away}`;
   document.getElementById("quicknav").innerHTML = MODULES.map(mo => `<button class="qn-pill" data-jump="${mo.id}">${mo.label}</button>`).join("");
   document.getElementById("center-body").innerHTML = MODULES.map(mo => `
