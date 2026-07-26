@@ -222,7 +222,7 @@
 
   .footer-note { margin-top: 20px; padding-top: 12px; border-top: 1px solid var(--border); font-size: 10.5px; color: var(--text-faint); text-align: center; }
 
-  /* ---------- story overlay (Cuaderno de Laboratorio / Certificado) ---------- */
+  /* ---------- estilos de filtros y secciones de liga ---------- */
   #view-story[hidden] { display: none; }
   .league-filter-row { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 10px; }
   .league-chip {
@@ -366,7 +366,6 @@ const MODULES = [
   { id: "estrategias", label: "Estrategias" },
   { id: "trackrecord", label: "Track Record" },
   { id: "recomendacion", label: "Recomendación" },
-  { id: "laboratorio", label: "Cuaderno" },
 ];
 
 
@@ -562,9 +561,7 @@ function buildModules(m) {
 
   const simulacion = pendingBanner("No existe un motor de simulación de eventos de partido (goles, tarjetas, córners) en ningún edificio del ecosistema hoy. El único Monte Carlo real existente simula riesgo de ruina de bankroll sobre un historial de apuestas (Laboratorio) — un propósito distinto. Este módulo requeriría desarrollo nuevo desde cero.");
 
-  const estrategias = `
-    ${pendingBanner("Ninguna estrategia certificada por el Laboratorio aplica a este partido hoy.")}
-    <div class="data-row"><div class="left"><div class="metric">Programa E00X — Carril B</div><div class="context">14 hipótesis evaluadas con disciplina pre-registrada, cerrado el 2026-07-20.</div></div><div class="right"><span class="value">0/14</span></div></div>`;
+  const estrategias = pendingBanner("Ninguna estrategia certificada por el Laboratorio aplica a este partido hoy.");
 
   const trackrecord = `
     <div class="data-row"><div class="left"><div class="metric">ROI</div></div><div class="right"><span class="value">—</span></div></div>
@@ -583,16 +580,12 @@ function buildModules(m) {
     <div class="rec-result">Sin recomendación: no hay ninguna estrategia certificada con valor positivo y alta confianza aplicable a este partido hoy.</div>
     <div class="footer-note" style="margin-top:8px">Esta sección solo ilustra dónde encajaría una recomendación en la experiencia — activarla requiere la Enmienda III, todavía no ratificada.</div>`;
 
-  const laboratorio = `
-    <div class="lab-entry"><div class="h">El sesgo que fabricaba ventaja donde no la había</div><div class="d">Cuaderno de Laboratorio · corrección pública, 2026-07-20</div></div>
-    <div class="lab-entry"><div class="h">Historial 'extremo' con solo 1-2 partidos reales detrás</div><div class="d">Cuaderno de Laboratorio · corrección pública</div></div>`;
-
-  return { tactico, escenarios, mercados, valor, confianza, evidencia, simulacion, estrategias, trackrecord, recomendacion, laboratorio };
+  return { tactico, escenarios, mercados, valor, confianza, evidencia, simulacion, estrategias, trackrecord, recomendacion };
 }
 
 const SOURCE = {
   tactico: "ce", escenarios: "pocket", mercados: "pocket", valor: "pocket", confianza: "pocket",
-  evidencia: "ce", simulacion: "none", estrategias: "lab", trackrecord: "lab", recomendacion: "none", laboratorio: "lab",
+  evidencia: "ce", simulacion: "none", estrategias: "lab", trackrecord: "lab", recomendacion: "none",
 };
 const SOURCE_LABEL = { ce: "Content Engine", pocket: "Atlas Pocket", lab: "Laboratorio", none: "No implementado" };
 
