@@ -255,10 +255,8 @@
   .bookie-input:focus { outline: none; border-color: var(--fam-color, var(--green)); }
   .mkt-ev { font-family: var(--mono); font-size: 11px; font-weight: 700; text-align: right; color: var(--text-faint); }
   .mkt-ev.ev-pos { color: var(--green); } .mkt-ev.ev-neg { color: var(--red); }
-  .line-pills { display: flex; gap: 4px; margin-top: 5px; flex-wrap: wrap; }
-  .line-pill { font-family: var(--mono); font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 20px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text-dim); cursor: pointer; }
-  .line-pill.active { background: var(--fam-color, var(--green)); border-color: var(--fam-color, var(--green)); color: #06110b; }
-  .line-pill.cert-pill:not(.active) { border-color: var(--fam-color, var(--green)); color: var(--text); }
+  .line-select { width: 100%; margin-top: 3px; background: var(--surface-2); border: 1px solid var(--border); color: var(--text-dim); border-radius: 6px; padding: 4px 5px; font-size: 10.5px; font-weight: 600; font-family: inherit; }
+  .line-select:focus { outline: none; border-color: var(--fam-color, var(--green)); }
 
   /* graficos animados (sin dependencias externas) */
   .anim-compare { margin: 10px 0 4px; }
@@ -1198,11 +1196,9 @@ function candidateLinesForLambda(lambda) {
   for (let d = -1; d <= 2; d++) { const x = base + d; if (x >= 1) lines.push(x - 0.5); }
   return [...new Set(lines)].sort((a, b) => a - b);
 }
-function atlasPillSelect(btn) {
-  const row = btn.closest(".mkt-row");
-  row.querySelectorAll(".line-pill").forEach(p => p.classList.remove("active"));
-  btn.classList.add("active");
-  const prob = parseFloat(btn.dataset.prob);
+function atlasLineSelect(sel) {
+  const row = sel.closest(".mkt-row");
+  const prob = parseFloat(sel.value);
   const pct = prob * 100;
   row.querySelector(".mkt-prob-val").textContent = pct.toFixed(1) + "%";
   const bar = row.querySelector(".prob-bar");
@@ -1215,14 +1211,16 @@ function atlasPillSelect(btn) {
   const evEl = row.querySelector(".mkt-ev");
   evEl.textContent = "—"; evEl.className = "mkt-ev";
 }
-/* pillMarketRowHtml: fila unica de mercado con pills de linea seleccionables,
-   USA SIEMPRE que existan datos -- certificada o no. Si certCode resuelve en
-   POCKET_DATA, esa linea/probabilidad exacta del motor real se incluye como
-   un pill mas (marcado con "✓", motor certificado de Atlas Pocket) y queda
-   seleccionada por defecto; los pills vecinos (otras lineas) se calculan con
-   el estimador validado de Linea B (recencia+shrinkage a liga, Poisson) --
-   nunca se inventa una probabilidad certificada para una linea que el motor
-   no calculo. Sin certCode (o sin cobertura), todos los pills son estimados. */
+/* pillMarketRowHtml: fila unica de mercado con un <select> compacto (un solo
+   renglon, no ocupa espacio extra sea cual sea el numero de opciones) para
+   elegir la linea. USA SIEMPRE que existan datos -- certificada o no. Si
+   certCode resuelve en POCKET_DATA, esa linea/probabilidad exacta del motor
+   real se incluye como una opcion mas (marcada con "✓", motor certificado de
+   Atlas Pocket) y queda seleccionada por defecto; las opciones vecinas
+   (otras lineas) se calculan con el estimador validado de Linea B
+   (recencia+shrinkage a liga, Poisson) -- nunca se inventa una probabilidad
+   certificada para una linea que el motor no calculo. Sin certCode (o sin
+   cobertura), todas las opciones son estimadas. */
 function pillMarketRowHtml(pocket, hist, certCode, scope, stat, baseLabel, ht) {
   let certProb = null, certLine = null;
   if (certCode) {
@@ -1245,8 +1243,8 @@ function pillMarketRowHtml(pocket, hist, certCode, scope, stat, baseLabel, ht) {
     entries.forEach((e, i) => { const d = Math.abs(e.prob - 0.5); if (d < bestDist) { bestDist = d; defaultIdx = i; } });
   }
   const label = scopeLabel(baseLabel, scope) + (ht ? " (1T)" : "");
-  const pillsHtml = entries.map((e, i) =>
-    `<button type="button" class="line-pill${i === defaultIdx ? " active" : ""}${e.cert ? " cert-pill" : ""}" data-prob="${e.prob.toFixed(4)}" onclick="atlasPillSelect(this)" title="${e.cert ? "Motor certificado de Atlas Pocket" : "Estimación (Poisson + shrinkage a liga)"}">${e.cert ? "✓ " : ""}${e.line}+</button>`
+  const optsHtml = entries.map((e, i) =>
+    `<option value="${e.prob.toFixed(4)}"${i === defaultIdx ? " selected" : ""}>${e.cert ? "✓ " : ""}Over ${e.line}</option>`
   ).join("");
   const def = entries[defaultIdx];
   const pct = (def.prob * 100).toFixed(1);
@@ -1254,7 +1252,7 @@ function pillMarketRowHtml(pocket, hist, certCode, scope, stat, baseLabel, ht) {
   <div class="mkt-row">
     <div>
       <div class="mkt-label">${label}</div>
-      <div class="line-pills">${pillsHtml}</div>
+      <select class="line-select" onchange="atlasLineSelect(this)">${optsHtml}</select>
     </div>
     <div>
       <div class="mkt-prob-val">${pct}%</div>
