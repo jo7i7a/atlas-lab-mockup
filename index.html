@@ -1190,11 +1190,21 @@ function nonCertLambda(hist, scope, stat, ht) {
   return (hhsL[stat] != null && aasL[stat] != null) ? hhsL[stat] + aasL[stat] : null;
 }
 function candidateLinesForLambda(lambda) {
+  // Rango COMPLETO, no una banda angosta: arranca en Over 0.5 y sigue mientras
+  // la probabilidad real (Poisson) siga siendo minimamente relevante (>=1%).
+  // El corte lo define la propia distribucion de cada mercado, no un numero
+  // fijo de opciones -- un mercado de mucho volumen (Tiros Total) naturalmente
+  // genera mas lineas que uno de poco volumen (Tarjetas Local).
   if (lambda == null) return [];
-  const base = Math.max(1, Math.round(lambda));
   const lines = [];
-  for (let d = -1; d <= 2; d++) { const x = base + d; if (x >= 1) lines.push(x - 0.5); }
-  return [...new Set(lines)].sort((a, b) => a - b);
+  let line = 0.5;
+  while (lines.length < 60) {
+    const p = poissonOverProb(lambda, line);
+    lines.push(line);
+    if (p < 0.01) break;
+    line += 1;
+  }
+  return lines;
 }
 function atlasLineSelect(sel) {
   const row = sel.closest(".mkt-row");
