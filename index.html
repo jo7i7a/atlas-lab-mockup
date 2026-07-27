@@ -255,9 +255,6 @@
   .bookie-input:focus { outline: none; border-color: var(--fam-color, var(--green)); }
   .mkt-ev { font-family: var(--mono); font-size: 11px; font-weight: 700; text-align: right; color: var(--text-faint); }
   .mkt-ev.ev-pos { color: var(--green); } .mkt-ev.ev-neg { color: var(--red); }
-  .explorer-hint { font-size: 10px; color: var(--text-faint); line-height: 1.4; margin: 0 0 6px; }
-  .explorer-select { width: 100%; background: var(--surface-2); border: 1px solid var(--border); color: var(--text); border-radius: 6px; padding: 6px; font-size: 11.5px; font-weight: 600; font-family: inherit; }
-  .explorer-select:focus { outline: none; border-color: var(--fam-color, var(--green)); }
 
   /* graficos animados (sin dependencias externas) */
   .anim-compare { margin: 10px 0 4px; }
@@ -1160,14 +1157,12 @@ function marketTableHtml(title, rows, famColor) {
     ${rows.join("")}
   </div>`;
 }
-/* ---- Explorador de Lineas (2026-07-27): dropdown de mercado/linea para
-   Corners/Tiros y Arbitro/Friccion, Local/Visita/Total x FT/HT. La probabilidad
-   de cada linea NO viene de un motor certificado de Atlas Pocket (esos solo
-   tienen una linea fija cada uno) -- se deriva de lambda = promedio historico
-   REAL de match_stats (mismo HIST_DATA que el resto del Centro de Analisis,
-   incluye period='1ST' real para HT) via una distribucion de Poisson, tecnica
-   estandar para mercados Over/Under de conteos. Se etiqueta explicitamente
-   como estimacion, distinto de "CERT"/"BASE" de los motores. ---- */
+/* ---- Mercados sin motor certificado (2026-07-27, simplificado): en vez de
+   un selector aparte, se agrega una fila mas a la MISMA tabla existente
+   (Local/Visita/Total), igual que cualquier fila certificada. La linea usada
+   es la mas cercana al 50/50 real (round(lambda)-0.5); lambda = estimador
+   validado (recencia + shrinkage a promedio de liga, ver market_lambda() en
+   compute_historical_stats.py), FT o HT (period='1ST' real). ---- */
 function poissonPmf(lambda, k) {
   let p = Math.exp(-lambda);
   for (let i = 1; i <= k; i++) p *= lambda / i;
@@ -1180,89 +1175,26 @@ function poissonOverProb(lambda, line) {
   for (let k = 0; k <= kMax; k++) cdf += poissonPmf(lambda, k);
   return Math.max(0.001, Math.min(0.999, 1 - cdf));
 }
-function explorerLinesFor(lambda) {
-  if (lambda == null) return [];
-  const base = Math.max(1, Math.round(lambda));
-  const lines = [];
-  for (let d = -2; d <= 3; d++) { const x = base + d; if (x >= 1) lines.push(x - 0.5); }
-  return [...new Set(lines)].sort((a, b) => a - b);
+function scopeLabel(base, scope) {
+  if (scope === "local") return base + " Local";
+  if (scope === "visita") return base + " Visita";
+  return base;
 }
-function explorerLambdas(hist, scope, stat) {
-  // hhsLmb/aasLmb (y variantes HT) son la lambda de mercado real: media
-  // ponderada por recencia del propio equipo fusionada (shrinkage) con el
-  // promedio real de su liga -- ver market_lambda() en el pipeline Python.
-  // Local siempre usa la serie del LOCAL, Visita siempre la del VISITANTE.
-  const hhsL = hist.hhsLmb, aasL = hist.aasLmb, hhsLHT = hist.hhsLmbHT, aasLHT = hist.aasLmbHT;
-  const sum = (a, b) => (a != null && b != null) ? a + b : null;
-  if (scope === "local") return { ft: hhsL[stat], ht: hhsLHT[stat] };
-  if (scope === "visita") return { ft: aasL[stat], ht: aasLHT[stat] };
-  return { ft: sum(hhsL[stat], aasL[stat]), ht: sum(hhsLHT[stat], aasLHT[stat]) };
+function nonCertLambda(hist, scope, stat, ht) {
+  const hhsL = ht ? hist.hhsLmbHT : hist.hhsLmb;
+  const aasL = ht ? hist.aasLmbHT : hist.aasLmb;
+  if (scope === "local") return hhsL[stat];
+  if (scope === "visita") return aasL[stat];
+  return (hhsL[stat] != null && aasL[stat] != null) ? hhsL[stat] + aasL[stat] : null;
 }
-function explorerBuild(hist, scope, metrics) {
-  const flat = [];
-  metrics.forEach(({ label, stat }) => {
-    const { ft, ht } = explorerLambdas(hist, scope, stat);
-    [["FT", "Partido completo", ft], ["HT", "Primer tiempo", ht]].forEach(([tag, tagLabel, lambda]) => {
-      if (lambda == null) return;
-      explorerLinesFor(lambda).forEach(line => {
-        const p = poissonOverProb(lambda, line);
-        if (p != null) flat.push({ label, tag, tagLabel, lambda, line, p });
-      });
-    });
-  });
-  return flat;
-}
-function atlasExplorerChange(sel) {
-  const row = sel.closest(".mkt-row");
-  const prob = parseFloat(sel.value);
-  const pct = prob * 100;
-  row.querySelector(".mkt-prob-val").textContent = pct.toFixed(1) + "%";
-  const bar = row.querySelector(".prob-bar");
-  bar.dataset.w = pct.toFixed(1);
-  bar.style.width = pct.toFixed(1) + "%";
-  row.querySelector(".mkt-fair").textContent = (1 / prob).toFixed(2);
-  const input = row.querySelector(".bookie-input");
-  input.dataset.prob = prob;
-  input.value = "";
-  const evEl = row.querySelector(".mkt-ev");
-  evEl.textContent = "—"; evEl.className = "mkt-ev";
-}
-function explorerWidgetHtml(title, famColor, hist, scope, metrics) {
-  const flat = explorerBuild(hist, scope, metrics);
-  if (!flat.length) return "";
-  let defaultIdx = 0, bestDist = 1;
-  flat.forEach((o, i) => { const d = Math.abs(o.p - 0.5); if (d < bestDist) { bestDist = d; defaultIdx = i; } });
-  const groupMap = new Map();
-  flat.forEach((o, i) => {
-    const key = o.label + "__" + o.tag;
-    if (!groupMap.has(key)) groupMap.set(key, { label: o.label, tagLabel: o.tagLabel, lambda: o.lambda, opts: [] });
-    groupMap.get(key).opts.push({ ...o, idx: i });
-  });
-  const optsHtml = [...groupMap.values()].map(g => {
-    const inner = g.opts.map(o =>
-      `<option value="${o.p.toFixed(4)}"${o.idx === defaultIdx ? " selected" : ""}>Over ${o.line} ${o.label}${o.tag === "HT" ? " (1T)" : ""}</option>`
-    ).join("");
-    return `<optgroup label="${g.label} — ${g.tagLabel} (λ≈${g.lambda.toFixed(1)})">${inner}</optgroup>`;
-  }).join("");
-  const def = flat[defaultIdx];
-  const defPct = (def.p * 100).toFixed(1);
-  const defFair = (1 / def.p).toFixed(2);
-  return `
-  <div class="mkt-table-title" style="--fam-color:${famColor}">${title}</div>
-  <div class="explorer-hint">Estimación por distribución de Poisson sobre el promedio real de los últimos partidos de cada equipo (incluye Primer Tiempo real) — no es un motor certificado de Atlas Pocket. Elegí cualquier línea para comparar probabilidad y buscar el mejor EV%.</div>
-  <div class="mkt-table" style="--fam-color:${famColor}">
-    <div class="mkt-row mkt-head"><div>Mercado</div><div>Prob %</div><div>Fair</div><div>Bookie</div><div>EV%</div></div>
-    <div class="mkt-row">
-      <select class="explorer-select" onchange="atlasExplorerChange(this)">${optsHtml}</select>
-      <div>
-        <div class="mkt-prob-val">${defPct}%</div>
-        <div class="prob-bar-wrap"><div class="prob-bar" data-w="${defPct}"></div></div>
-      </div>
-      <div class="mkt-fair">${defFair}</div>
-      <input class="bookie-input" type="text" inputmode="decimal" placeholder="—" data-prob="${def.p.toFixed(4)}" oninput="atlasUpdateEV(this)">
-      <div class="mkt-ev">—</div>
-    </div>
-  </div>`;
+function nonCertRowHtml(hist, scope, stat, baseLabel, ht) {
+  const lambda = nonCertLambda(hist, scope, stat, ht);
+  if (lambda == null) return "";
+  const line = Math.max(0.5, Math.round(lambda) - 0.5);
+  const prob = poissonOverProb(lambda, line);
+  if (prob == null) return "";
+  const label = scopeLabel(baseLabel, scope) + (ht ? " (1T)" : "");
+  return marketRowHtml(`Over ${line} ${label}`, prob);
 }
 function animateProbBars(container) {
   requestAnimationFrame(() => requestAnimationFrame(() => {
@@ -1487,25 +1419,25 @@ function tabGoles(m, pocket, hist) {
   `;
 }
 
-const CORNERS_EXPLORER_METRICS = [
-  { label: "Corners", stat: "cornerKicks" },
-  { label: "Tiros", stat: "totalShotsOnGoal" },
-  { label: "Tiros a Puerta", stat: "shotsOnGoal" },
-];
 function tabCorners(m, pocket, hist) {
   const fam = "var(--purple)";
   const localRows = [], visitaRows = [], totalRows = [];
   const add = (arr, code) => { const p = mkt(pocket, code); if (p && p.over != null) arr.push(marketRowHtml(`Over ${MARKET_DEFS[code].line} ${MARKET_DEFS[code].label}`, p.over)); };
+  const addHT = (arr, scope, stat, label) => { const r = nonCertRowHtml(hist, scope, stat, label, true); if (r) arr.push(r); };
+
   add(localRows, "OU_CORNERS_HOME_FT"); add(localRows, "OU_SHOTS_HOME_FT"); add(localRows, "OU_SOT_HOME_FT");
+  addHT(localRows, "local", "cornerKicks", "Corners"); addHT(localRows, "local", "totalShotsOnGoal", "Tiros"); addHT(localRows, "local", "shotsOnGoal", "Tiros a Puerta");
+
   add(visitaRows, "OU_CORNERS_AWAY_FT"); add(visitaRows, "OU_SHOTS_AWAY_FT"); add(visitaRows, "OU_SOT_AWAY_FT");
+  addHT(visitaRows, "visita", "cornerKicks", "Corners"); addHT(visitaRows, "visita", "totalShotsOnGoal", "Tiros"); addHT(visitaRows, "visita", "shotsOnGoal", "Tiros a Puerta");
+
   add(totalRows, "OU9.5_CORNERS_FT"); add(totalRows, "OU24.5_SHOTS_FT"); add(totalRows, "OU8.5_SOT_FT");
+  addHT(totalRows, "total", "cornerKicks", "Corners"); addHT(totalRows, "total", "totalShotsOnGoal", "Tiros"); addHT(totalRows, "total", "shotsOnGoal", "Tiros a Puerta");
+
   return `
     ${marketTableHtml(`Mercados Local — ${m.home}`, localRows, fam)}
-    ${explorerWidgetHtml("Explorador de Líneas — Local", fam, hist, "local", CORNERS_EXPLORER_METRICS)}
     ${marketTableHtml(`Mercados Visita — ${m.away}`, visitaRows, fam)}
-    ${explorerWidgetHtml("Explorador de Líneas — Visita", fam, hist, "visita", CORNERS_EXPLORER_METRICS)}
     ${marketTableHtml("Mercados Totales del Partido", totalRows, fam)}
-    ${explorerWidgetHtml("Explorador de Líneas — Total", fam, hist, "total", CORNERS_EXPLORER_METRICS)}
   `;
 }
 
@@ -1557,19 +1489,27 @@ function atlasSelectReferee(sel, league) {
 
 let currentCenterHist = null;
 
-const ARBITRO_EXPLORER_METRICS = [
-  { label: "Tarjetas", stat: "yellowCards" },
-  { label: "Faltas", stat: "fouls" },
-];
 function tabArbitro(m, pocket, hist) {
   const fam = "var(--purple)";
   const n = (hist.hh.n || 0) + (hist.aa.n || 0);
 
   const localRows = [], visitaRows = [], totalRows = [];
   const add = (arr, code) => { const p = mkt(pocket, code); if (p && p.over != null) arr.push(marketRowHtml(`Over ${MARKET_DEFS[code].line} ${MARKET_DEFS[code].label}`, p.over)); };
+  const addNC = (arr, scope, stat, label, ht) => { const r = nonCertRowHtml(hist, scope, stat, label, ht); if (r) arr.push(r); };
+
   add(localRows, "OU_CARDS_HOME_FT");
+  addNC(localRows, "local", "fouls", "Faltas", false);
+  addNC(localRows, "local", "yellowCards", "Tarjetas", true);
+  addNC(localRows, "local", "fouls", "Faltas", true);
+
   add(visitaRows, "OU_CARDS_AWAY_FT");
+  addNC(visitaRows, "visita", "fouls", "Faltas", false);
+  addNC(visitaRows, "visita", "yellowCards", "Tarjetas", true);
+  addNC(visitaRows, "visita", "fouls", "Faltas", true);
+
   add(totalRows, "OU4.5_CARDS_FT"); add(totalRows, "FOULS_FT");
+  addNC(totalRows, "total", "yellowCards", "Tarjetas", true);
+  addNC(totalRows, "total", "fouls", "Faltas", true);
 
   return `
     <div class="insight-card" style="--fam-color:${fam}">
@@ -1580,11 +1520,8 @@ function tabArbitro(m, pocket, hist) {
       </div>
     </div>
     ${marketTableHtml(`Mercados Local — ${m.home}`, localRows, fam)}
-    ${explorerWidgetHtml("Explorador de Líneas — Local", fam, hist, "local", ARBITRO_EXPLORER_METRICS)}
     ${marketTableHtml(`Mercados Visita — ${m.away}`, visitaRows, fam)}
-    ${explorerWidgetHtml("Explorador de Líneas — Visita", fam, hist, "visita", ARBITRO_EXPLORER_METRICS)}
     ${marketTableHtml("Mercados Totales del Partido", totalRows, fam)}
-    ${explorerWidgetHtml("Explorador de Líneas — Total", fam, hist, "total", ARBITRO_EXPLORER_METRICS)}
   `;
 }
 
