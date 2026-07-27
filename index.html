@@ -258,6 +258,7 @@
   .line-pills { display: flex; gap: 4px; margin-top: 5px; flex-wrap: wrap; }
   .line-pill { font-family: var(--mono); font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 20px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text-dim); cursor: pointer; }
   .line-pill.active { background: var(--fam-color, var(--green)); border-color: var(--fam-color, var(--green)); color: #06110b; }
+  .line-pill.cert-pill:not(.active) { border-color: var(--fam-color, var(--green)); color: var(--text); }
 
   /* graficos animados (sin dependencias externas) */
   .anim-compare { margin: 10px 0 4px; }
@@ -1214,20 +1215,41 @@ function atlasPillSelect(btn) {
   const evEl = row.querySelector(".mkt-ev");
   evEl.textContent = "—"; evEl.className = "mkt-ev";
 }
-function nonCertRowHtml(hist, scope, stat, baseLabel, ht) {
+/* pillMarketRowHtml: fila unica de mercado con pills de linea seleccionables,
+   USA SIEMPRE que existan datos -- certificada o no. Si certCode resuelve en
+   POCKET_DATA, esa linea/probabilidad exacta del motor real se incluye como
+   un pill mas (marcado con "✓", motor certificado de Atlas Pocket) y queda
+   seleccionada por defecto; los pills vecinos (otras lineas) se calculan con
+   el estimador validado de Linea B (recencia+shrinkage a liga, Poisson) --
+   nunca se inventa una probabilidad certificada para una linea que el motor
+   no calculo. Sin certCode (o sin cobertura), todos los pills son estimados. */
+function pillMarketRowHtml(pocket, hist, certCode, scope, stat, baseLabel, ht) {
+  let certProb = null, certLine = null;
+  if (certCode) {
+    const p = mkt(pocket, certCode);
+    if (p && p.over != null) { certProb = p.over; certLine = MARKET_DEFS[certCode].line; }
+  }
   const lambda = nonCertLambda(hist, scope, stat, ht);
-  if (lambda == null) return "";
-  const lines = candidateLinesForLambda(lambda);
-  if (!lines.length) return "";
-  const probs = lines.map(line => poissonOverProb(lambda, line));
-  let defaultIdx = 0, bestDist = 1;
-  probs.forEach((p, i) => { const d = Math.abs(p - 0.5); if (d < bestDist) { bestDist = d; defaultIdx = i; } });
+  let lines = candidateLinesForLambda(lambda != null ? lambda : certLine);
+  if (certLine != null && !lines.includes(certLine)) lines = [...lines, certLine].sort((a, b) => a - b);
+  const entries = [];
+  lines.forEach(line => {
+    if (certLine != null && line === certLine) { entries.push({ line, prob: certProb, cert: true }); return; }
+    const p = lambda != null ? poissonOverProb(lambda, line) : null;
+    if (p != null) entries.push({ line, prob: p, cert: false });
+  });
+  if (!entries.length) return "";
+  let defaultIdx = entries.findIndex(e => e.cert);
+  if (defaultIdx === -1) {
+    let bestDist = 1;
+    entries.forEach((e, i) => { const d = Math.abs(e.prob - 0.5); if (d < bestDist) { bestDist = d; defaultIdx = i; } });
+  }
   const label = scopeLabel(baseLabel, scope) + (ht ? " (1T)" : "");
-  const pillsHtml = lines.map((line, i) =>
-    `<button type="button" class="line-pill${i === defaultIdx ? " active" : ""}" data-prob="${probs[i].toFixed(4)}" onclick="atlasPillSelect(this)">${line}+</button>`
+  const pillsHtml = entries.map((e, i) =>
+    `<button type="button" class="line-pill${i === defaultIdx ? " active" : ""}${e.cert ? " cert-pill" : ""}" data-prob="${e.prob.toFixed(4)}" onclick="atlasPillSelect(this)" title="${e.cert ? "Motor certificado de Atlas Pocket" : "Estimación (Poisson + shrinkage a liga)"}">${e.cert ? "✓ " : ""}${e.line}+</button>`
   ).join("");
-  const defProb = probs[defaultIdx];
-  const pct = (defProb * 100).toFixed(1);
+  const def = entries[defaultIdx];
+  const pct = (def.prob * 100).toFixed(1);
   return `
   <div class="mkt-row">
     <div>
@@ -1238,8 +1260,8 @@ function nonCertRowHtml(hist, scope, stat, baseLabel, ht) {
       <div class="mkt-prob-val">${pct}%</div>
       <div class="prob-bar-wrap"><div class="prob-bar" data-w="${pct}"></div></div>
     </div>
-    <div class="mkt-fair">${(1 / defProb).toFixed(2)}</div>
-    <input class="bookie-input" type="text" inputmode="decimal" placeholder="—" data-prob="${defProb.toFixed(4)}" oninput="atlasUpdateEV(this)">
+    <div class="mkt-fair">${(1 / def.prob).toFixed(2)}</div>
+    <input class="bookie-input" type="text" inputmode="decimal" placeholder="—" data-prob="${def.prob.toFixed(4)}" oninput="atlasUpdateEV(this)">
     <div class="mkt-ev">—</div>
   </div>`;
 }
@@ -1443,14 +1465,17 @@ function tabGoles(m, pocket, hist) {
     rows.push(marketRowHtml("Doble Oportunidad 12", pdc["12"]));
     rows.push(marketRowHtml("Doble Oportunidad X2", pdc["X2"]));
   }
-  const pou = mkt(pocket, "OU25_GOALS_FT");
-  if (pou) rows.push(marketRowHtml("Over 2.5 Goles", pou.over));
-
   const localRows = [], visitaRows = [], totalRows = [];
-  const addNC = (arr, scope, ht) => { const r = nonCertRowHtml(hist, scope, "goals", "Goles", ht); if (r) arr.push(r); };
-  addNC(localRows, "local", false); addNC(localRows, "local", true);
-  addNC(visitaRows, "visita", false); addNC(visitaRows, "visita", true);
-  addNC(totalRows, "total", true); // FT total ya cubierto arriba por el motor certificado (OU25_GOALS_FT)
+  const addRow = (arr, certCode, scope, ht) => {
+    const r = pillMarketRowHtml(pocket, hist, certCode, scope, "goals", "Goles", ht);
+    if (r) arr.push(r);
+  };
+  addRow(localRows, null, "local", false);
+  addRow(localRows, null, "local", true);
+  addRow(visitaRows, null, "visita", false);
+  addRow(visitaRows, null, "visita", true);
+  addRow(totalRows, "OU25_GOALS_FT", "total", false);
+  addRow(totalRows, null, "total", true);
 
   return `
     <div class="insight-card" style="--fam-color:${fam}">
@@ -1478,17 +1503,31 @@ function tabGoles(m, pocket, hist) {
 function tabCorners(m, pocket, hist) {
   const fam = "var(--purple)";
   const localRows = [], visitaRows = [], totalRows = [];
-  const add = (arr, code) => { const p = mkt(pocket, code); if (p && p.over != null) arr.push(marketRowHtml(`Over ${MARKET_DEFS[code].line} ${MARKET_DEFS[code].label}`, p.over)); };
-  const addHT = (arr, scope, stat, label) => { const r = nonCertRowHtml(hist, scope, stat, label, true); if (r) arr.push(r); };
+  const addRow = (arr, certCode, scope, stat, baseLabel, ht) => {
+    const r = pillMarketRowHtml(pocket, hist, certCode, scope, stat, baseLabel, ht);
+    if (r) arr.push(r);
+  };
 
-  add(localRows, "OU_CORNERS_HOME_FT"); add(localRows, "OU_SHOTS_HOME_FT"); add(localRows, "OU_SOT_HOME_FT");
-  addHT(localRows, "local", "cornerKicks", "Corners"); addHT(localRows, "local", "totalShotsOnGoal", "Tiros"); addHT(localRows, "local", "shotsOnGoal", "Tiros a Puerta");
+  addRow(localRows, "OU_CORNERS_HOME_FT", "local", "cornerKicks", "Corners", false);
+  addRow(localRows, "OU_SHOTS_HOME_FT", "local", "totalShotsOnGoal", "Tiros", false);
+  addRow(localRows, "OU_SOT_HOME_FT", "local", "shotsOnGoal", "Tiros a Puerta", false);
+  addRow(localRows, null, "local", "cornerKicks", "Corners", true);
+  addRow(localRows, null, "local", "totalShotsOnGoal", "Tiros", true);
+  addRow(localRows, null, "local", "shotsOnGoal", "Tiros a Puerta", true);
 
-  add(visitaRows, "OU_CORNERS_AWAY_FT"); add(visitaRows, "OU_SHOTS_AWAY_FT"); add(visitaRows, "OU_SOT_AWAY_FT");
-  addHT(visitaRows, "visita", "cornerKicks", "Corners"); addHT(visitaRows, "visita", "totalShotsOnGoal", "Tiros"); addHT(visitaRows, "visita", "shotsOnGoal", "Tiros a Puerta");
+  addRow(visitaRows, "OU_CORNERS_AWAY_FT", "visita", "cornerKicks", "Corners", false);
+  addRow(visitaRows, "OU_SHOTS_AWAY_FT", "visita", "totalShotsOnGoal", "Tiros", false);
+  addRow(visitaRows, "OU_SOT_AWAY_FT", "visita", "shotsOnGoal", "Tiros a Puerta", false);
+  addRow(visitaRows, null, "visita", "cornerKicks", "Corners", true);
+  addRow(visitaRows, null, "visita", "totalShotsOnGoal", "Tiros", true);
+  addRow(visitaRows, null, "visita", "shotsOnGoal", "Tiros a Puerta", true);
 
-  add(totalRows, "OU9.5_CORNERS_FT"); add(totalRows, "OU24.5_SHOTS_FT"); add(totalRows, "OU8.5_SOT_FT");
-  addHT(totalRows, "total", "cornerKicks", "Corners"); addHT(totalRows, "total", "totalShotsOnGoal", "Tiros"); addHT(totalRows, "total", "shotsOnGoal", "Tiros a Puerta");
+  addRow(totalRows, "OU9.5_CORNERS_FT", "total", "cornerKicks", "Corners", false);
+  addRow(totalRows, "OU24.5_SHOTS_FT", "total", "totalShotsOnGoal", "Tiros", false);
+  addRow(totalRows, "OU8.5_SOT_FT", "total", "shotsOnGoal", "Tiros a Puerta", false);
+  addRow(totalRows, null, "total", "cornerKicks", "Corners", true);
+  addRow(totalRows, null, "total", "totalShotsOnGoal", "Tiros", true);
+  addRow(totalRows, null, "total", "shotsOnGoal", "Tiros a Puerta", true);
 
   return `
     ${marketTableHtml(`Mercados Local — ${m.home}`, localRows, fam)}
@@ -1550,22 +1589,25 @@ function tabArbitro(m, pocket, hist) {
   const n = (hist.hh.n || 0) + (hist.aa.n || 0);
 
   const localRows = [], visitaRows = [], totalRows = [];
-  const add = (arr, code) => { const p = mkt(pocket, code); if (p && p.over != null) arr.push(marketRowHtml(`Over ${MARKET_DEFS[code].line} ${MARKET_DEFS[code].label}`, p.over)); };
-  const addNC = (arr, scope, stat, label, ht) => { const r = nonCertRowHtml(hist, scope, stat, label, ht); if (r) arr.push(r); };
+  const addRow = (arr, certCode, scope, stat, baseLabel, ht) => {
+    const r = pillMarketRowHtml(pocket, hist, certCode, scope, stat, baseLabel, ht);
+    if (r) arr.push(r);
+  };
 
-  add(localRows, "OU_CARDS_HOME_FT");
-  addNC(localRows, "local", "fouls", "Faltas", false);
-  addNC(localRows, "local", "yellowCards", "Tarjetas", true);
-  addNC(localRows, "local", "fouls", "Faltas", true);
+  addRow(localRows, "OU_CARDS_HOME_FT", "local", "yellowCards", "Tarjetas", false);
+  addRow(localRows, null, "local", "fouls", "Faltas", false);
+  addRow(localRows, null, "local", "yellowCards", "Tarjetas", true);
+  addRow(localRows, null, "local", "fouls", "Faltas", true);
 
-  add(visitaRows, "OU_CARDS_AWAY_FT");
-  addNC(visitaRows, "visita", "fouls", "Faltas", false);
-  addNC(visitaRows, "visita", "yellowCards", "Tarjetas", true);
-  addNC(visitaRows, "visita", "fouls", "Faltas", true);
+  addRow(visitaRows, "OU_CARDS_AWAY_FT", "visita", "yellowCards", "Tarjetas", false);
+  addRow(visitaRows, null, "visita", "fouls", "Faltas", false);
+  addRow(visitaRows, null, "visita", "yellowCards", "Tarjetas", true);
+  addRow(visitaRows, null, "visita", "fouls", "Faltas", true);
 
-  add(totalRows, "OU4.5_CARDS_FT"); add(totalRows, "FOULS_FT");
-  addNC(totalRows, "total", "yellowCards", "Tarjetas", true);
-  addNC(totalRows, "total", "fouls", "Faltas", true);
+  addRow(totalRows, "OU4.5_CARDS_FT", "total", "yellowCards", "Tarjetas", false);
+  addRow(totalRows, "FOULS_FT", "total", "fouls", "Faltas", false);
+  addRow(totalRows, null, "total", "yellowCards", "Tarjetas", true);
+  addRow(totalRows, null, "total", "fouls", "Faltas", true);
 
   return `
     <div class="insight-card" style="--fam-color:${fam}">
