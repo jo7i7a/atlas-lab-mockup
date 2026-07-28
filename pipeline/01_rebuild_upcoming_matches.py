@@ -29,8 +29,16 @@ LEAGUES = [
 ]
 PER_LEAGUE = 5
 
-conn = sqlite3.connect(r"C:\SoccerAnalyticsExtractor\soccer_analytics.db")
+DB_PATH = r"C:\SoccerAnalyticsExtractor\soccer_analytics.db"
+# Patron de conexion de solo-lectura replicado de future_robot/export_future_fixtures.py
+# y atlas_content_engine/data/extractor_client.py -- este pipeline corre desatendido
+# (Task Scheduler diario) y jamas debe poder escribir en la base frozen-baseline.
+import os as _os
+if not _os.path.exists(DB_PATH):
+    raise FileNotFoundError(f"soccer_analytics.db no encontrado en {DB_PATH}")
+conn = sqlite3.connect(DB_PATH, timeout=10)
 conn.row_factory = sqlite3.Row
+conn.execute("PRAGMA query_only=ON")
 
 now_epoch = int(datetime.datetime.now(datetime.timezone.utc).timestamp())
 

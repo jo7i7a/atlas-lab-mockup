@@ -14,8 +14,15 @@ sys.path.insert(0, r"C:\SoccerAnalyticsExtractor")
 
 WORK = r"C:\SoccerAnalyticsExtractor\atlas_lab_mockup\pipeline\_work"
 
-conn = sqlite3.connect(r"C:\SoccerAnalyticsExtractor\soccer_analytics.db")
+DB_PATH = r"C:\SoccerAnalyticsExtractor\soccer_analytics.db"
+# Mismo patron de solo-lectura que 01_rebuild_upcoming_matches.py (ver ahi el
+# porque) -- replicado de future_robot/export_future_fixtures.py.
+import os as _os
+if not _os.path.exists(DB_PATH):
+    raise FileNotFoundError(f"soccer_analytics.db no encontrado en {DB_PATH}")
+conn = sqlite3.connect(DB_PATH, timeout=10)
 conn.row_factory = sqlite3.Row
+conn.execute("PRAGMA query_only=ON")
 
 with open(WORK + r"\pocket_engine_results.json", encoding="utf-8") as f:
     pocket = json.load(f)
