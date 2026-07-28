@@ -1437,7 +1437,7 @@ function tabGoles(m, pocket, hist) {
   const homeTags = adnTags(pocket, "home"), awayTags = adnTags(pocket, "away");
   const diag = diagnostico(m, pocket);
   const hhs = hist.hhs, aas = hist.aas, hh = hist.hh, aa = hist.aa;
-  const totalShots = v => (v.totalShotsInsideBox || 0) + (v.totalShotsOutsideBox || 0);
+  const hhsA = hist.hhsA, aasA = hist.aasA;
   const row3 = (label, hv, av, digits) => {
     const total = (hv == null ? 0 : hv) + (av == null ? 0 : av);
     return `<tr><td>${label}</td><td>${hv != null ? hv.toFixed(digits) : "—"}</td><td>${av != null ? av.toFixed(digits) : "—"}</td><td class="total-col">${total.toFixed(digits)}</td></tr>`;
@@ -1445,11 +1445,15 @@ function tabGoles(m, pocket, hist) {
   const compareTable = `
     <div style="overflow-x:auto"><table class="compare-table" style="--fam-color:${fam}">
       <tr><th>Métrica</th><th>Local</th><th>Visita</th><th class="total-col">Total</th></tr>
-      ${row3("Goles anotados (prom.)", hh.n ? hh.gf / hh.n : null, aa.n ? aa.gf / aa.n : null, 2)}
-      ${row3("xG generado", hhs.expectedGoals, aas.expectedGoals, 2)}
-      ${row3("Corners", hhs.cornerKicks, aas.cornerKicks, 1)}
-      ${row3("Tiros totales", totalShots(hhs), totalShots(aas), 1)}
-      ${row3("Tiros a puerta", hhs.shotsOnGoal, aas.shotsOnGoal, 1)}
+      ${row3("Goles a Favor", hh.n ? hh.gf / hh.n : null, aa.n ? aa.gf / aa.n : null, 2)}
+      ${row3("Goles en Contra", hh.n ? hh.ga / hh.n : null, aa.n ? aa.ga / aa.n : null, 2)}
+      ${row3("xG Generado", hhs.expectedGoals, aas.expectedGoals, 2)}
+      ${row3("Tiros a Favor", hhs.totalShotsOnGoal, aas.totalShotsOnGoal, 1)}
+      ${row3("Tiros Permitidos", hhsA.totalShotsOnGoal, aasA.totalShotsOnGoal, 1)}
+      ${row3("SoT a Favor", hhs.shotsOnGoal, aas.shotsOnGoal, 1)}
+      ${row3("SoT Permitidos", hhsA.shotsOnGoal, aasA.shotsOnGoal, 1)}
+      ${row3("Corners a Favor", hhs.cornerKicks, aas.cornerKicks, 1)}
+      ${row3("Corners Concedidos", hhsA.cornerKicks, aasA.cornerKicks, 1)}
     </table></div>`;
   const homeXg = hhs.expectedGoals || 0, awayXg = aas.expectedGoals || 0;
   const maxXg = Math.max(homeXg, awayXg, 1);
