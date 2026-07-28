@@ -677,9 +677,14 @@ function categoryIcon(key) {
 }
 
 /* Conversion de kickoffUTC (real, columna future_fixtures.kickoff_utc) a
-   hora de Chile continental. TODAY_CHILE es la fecha real de hoy que
-   confirmo el Director (2026-07-26). */
-const TODAY_CHILE = new Date(2026, 6, 26); // mes 0-indexado: 6 = julio
+   hora de Chile continental. FIX 2026-07-28: "hoy" ya NO se hornea como
+   constante fija (quedaba obsoleta apenas pasaba un dia real) -- se calcula
+   en cada carga de pagina a partir de Date.now() real. Ademas, toda la
+   aritmetica de fecha/hora usa getters UTC (getUTCHours, etc.) en vez de
+   locales -- los locales aplican la zona horaria del propio dispositivo
+   ENCIMA del corrimiento manual ya aplicado, duplicando el offset cuando el
+   dispositivo tambien esta en UTC-4 (causaba el bug real: 15:00 Chile real
+   se mostraba como 11:00). */
 const MONTHS_ES = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
 
 /* Datos reales de los 18 motores certificados/BASELINE de Atlas Pocket,
@@ -715,15 +720,25 @@ function toChileDate(kickoffUTC) {
   const utcMs = new Date(kickoffUTC).getTime();
   return new Date(utcMs + CHILE_UTC_OFFSET * 3600 * 1000);
 }
+function todayChileMidnightUTC() {
+  // "hoy" real, recalculado en cada carga -- nunca horneado como constante.
+  const nowChile = new Date(Date.now() + CHILE_UTC_OFFSET * 3600 * 1000);
+  return Date.UTC(nowChile.getUTCFullYear(), nowChile.getUTCMonth(), nowChile.getUTCDate());
+}
 function chileDateLabel(d) {
-  const d0 = new Date(d.getFullYear(), d.getMonth(), d.getDate());
-  const diffDays = Math.round((d0 - TODAY_CHILE) / 86400000);
+  // getters UTC en todo -- d ya viene pre-corrido a hora de Chile por
+  // toChileDate(); leerlo con getters LOCALES aplicaria la zona horaria
+  // del dispositivo/navegador ENCIMA de ese corrimiento (bug real: duplicaba
+  // el offset cuando el dispositivo tambien esta en UTC-4).
+  const d0 = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+  const diffDays = Math.round((d0 - todayChileMidnightUTC()) / 86400000);
   if (diffDays === 0) return "Hoy";
   if (diffDays === 1) return "Mañana";
-  return `${String(d.getDate()).padStart(2, "0")} ${MONTHS_ES[d.getMonth()]}`;
+  if (diffDays === -1) return "Ayer";
+  return `${String(d.getUTCDate()).padStart(2, "0")} ${MONTHS_ES[d.getUTCMonth()]}`;
 }
 function chileTimeLabel(d) {
-  return `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+  return `${String(d.getUTCHours()).padStart(2, "0")}:${String(d.getUTCMinutes()).padStart(2, "0")}`;
 }
 function matchWhen(m) {
   const chileDate = toChileDate(m.kickoffUTC);
