@@ -34,7 +34,17 @@ TOURNAMENTS_ROBOT_CONFIG = r"C:\SoccerAnalyticsExtractor\future_robot\tournament
 with open(TOURNAMENTS_ROBOT_CONFIG, encoding="utf-8") as f:
     _robot_cfg = json.load(f)
 LEAGUES = [t["league_name"] for t in _robot_cfg["tournaments"] if t.get("active")]
-PER_LEAGUE = 5
+# Hallazgo real 2026-07-29 (reportado por el Director con capturas de una
+# casa de apuestas real): con PER_LEAGUE=5, una fecha completa de una liga
+# grande (ej. Brasileirao Betano, hasta 8 partidos el mismo dia real
+# verificado contra future_fixtures) se truncaba -- ya para media tarde solo
+# quedaba 1 partido visible, porque los otros 4 del tope de 5 ya habian
+# arrancado y el filtro isUpcoming() del cliente los ocultaba. Verificado
+# contra la base real: el maximo de partidos el mismo dia entre las 10 ligas
+# activas hoy es 7-8 (Brasileirao Betano). 15 cubre eso con margen para
+# fechas mas grandes sin inflar demasiado el tiempo de corrida (~18
+# mercados reales invocados por partido).
+PER_LEAGUE = 15
 
 DB_PATH = r"C:\SoccerAnalyticsExtractor\soccer_analytics.db"
 # Patron de conexion de solo-lectura replicado de future_robot/export_future_fixtures.py
