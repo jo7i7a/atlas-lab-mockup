@@ -177,10 +177,21 @@ for key, entries in leaderboard_flat.items():
     team_leaderboards[key] = {**LB_META[key], "rows": entries}
     print(f"leaderboard {key}: {len(entries)} equipos (min {MIN_MATCHES_LEADERBOARD} partidos)")
 
+# Total real de partidos en toda la base (vista "Ligas": "partidos totales
+# en la base de datos de ATLAS -- historico completo, todos los torneos") --
+# sin filtro de status ni de temporada, coherente con esa etiqueta. Antes
+# quedaba fijo desde que se horneo a mano (2026-07-26); ahora se recalcula
+# en cada corrida semanal (hallazgo de la auditoria 2026-07-29: estaba
+# desactualizado en 1 partido).
+total_matches_atlas = conn.execute("SELECT COUNT(*) c FROM matches").fetchone()["c"]
+print(f"TOTAL_MATCHES_ATLAS real: {total_matches_atlas}")
+
 with open(WORK + r"\team_radiography.json", "w", encoding="utf-8") as f:
     json.dump(team_radiography, f, ensure_ascii=False, indent=1)
 with open(WORK + r"\team_leaderboards.json", "w", encoding="utf-8") as f:
     json.dump(team_leaderboards, f, ensure_ascii=False, indent=1)
+with open(WORK + r"\total_matches_atlas.json", "w", encoding="utf-8") as f:
+    json.dump({"total": total_matches_atlas}, f)
 
 n_leagues_ok = sum(1 for v in team_radiography.values() if v)
 print(f"\nLigas con datos: {n_leagues_ok}/{len(LEAGUES)}")
