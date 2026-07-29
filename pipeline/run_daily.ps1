@@ -53,6 +53,8 @@ $steps = @(
     "02_compute_historical_stats.py",
     "03_export_lean_js.py",
     "04_resplice_index_html.py",
+    "08_compute_standings.py",
+    "09_resplice_standings.py",
     "05_extract_script.py"
 )
 foreach ($step in $steps) {
