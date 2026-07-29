@@ -5,9 +5,13 @@ Type:         Implementation (pipeline diario, paso 4/5)
 Status:       Produccion
 
 Reemplaza en index.html: (a) el bloque `const MATCHES = [...]` con los
-partidos reales seleccionados hoy, y (b) el fragmento POCKET_DATA/HIST_DATA/
-REFEREES_BY_LEAGUE. Aborta (exit 1) sin escribir nada si algo no calza --
-nunca deja index.html a medio actualizar.
+partidos reales seleccionados hoy, (b) el fragmento POCKET_DATA/HIST_DATA/
+REFEREES_BY_LEAGUE, y (c) `const LEAGUES_ORDERED = [...]` con las ligas
+activas reales leidas de future_robot/tournaments_robot.json en el paso 01
+(single source of verdad -- evita que la lista de ligas del mockup se
+desalinee del Robot, causa raiz del hallazgo de auditoria 2026-07-29).
+Aborta (exit 1) sin escribir nada si algo no calza -- nunca deja index.html
+a medio actualizar.
 """
 import json, re, sys
 
@@ -20,6 +24,8 @@ with open(WORK + r"\pocket_engine_results.json", encoding="utf-8") as f:
     pocket = json.load(f)
 with open(WORK + r"\match_data_fragment.js", encoding="utf-8") as f:
     frag = f.read()
+with open(WORK + r"\leagues_used.json", encoding="utf-8") as f:
+    leagues_used = json.load(f)
 
 if len(match_list) < 10:
     print("ABORTA: match_list.json tiene muy pocos partidos"); sys.exit(1)
@@ -53,6 +59,11 @@ html, n1 = matches_pattern.subn(new_matches_block, html, count=1)
 if n1 != 1:
     print(f"ABORTA: esperaba reemplazar 1 bloque MATCHES, encontro {n1}"); sys.exit(1)
 
+leagues_block = "const LEAGUES_ORDERED = [\n  " + ",\n  ".join(json.dumps(lg, ensure_ascii=False) for lg in leagues_used) + ",\n];"
+html, n_lg = re.subn(r"const LEAGUES_ORDERED = \[.*?\];", lambda m: leagues_block, html, count=1, flags=re.S)
+if n_lg != 1:
+    print("ABORTA: esperaba reemplazar 1 bloque LEAGUES_ORDERED, encontro", n_lg); sys.exit(1)
+
 start_marker = "/* Datos reales de los 18 motores certificados/BASELINE de Atlas Pocket,"
 end_marker = "function toChileDate(kickoffUTC) {"
 if start_marker not in html or end_marker not in html:
@@ -64,4 +75,4 @@ html = html[:start_idx] + frag + "\n\n" + html[end_idx:]
 with open(HTML_PATH, "w", encoding="utf-8") as f:
     f.write(html)
 
-print("index.html actualizado:", len(match_list), "partidos, flagship =", match_list[0]["home"], "vs", match_list[0]["away"])
+print("index.html actualizado:", len(match_list), "partidos,", len(leagues_used), "ligas activas, flagship =", match_list[0]["home"], "vs", match_list[0]["away"])

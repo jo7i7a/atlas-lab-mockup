@@ -22,11 +22,18 @@ from atlas_pocket.engines.setup import init_registry
 
 WORK = r"C:\SoccerAnalyticsExtractor\atlas_lab_mockup\pipeline\_work"
 
-LEAGUES = [
-    "Brasileirão Série B", "Brasileirão Betano", "Brasileirão Série C",
-    "Liga Profesional de Fútbol", "Liga MX, Apertura", "Liga de Primera",
-    "Liga de Ascenso", "Copa Chile", "Eliteserien", "Allsvenskan",
-]
+# Ligas: leidas en vivo de future_robot/tournaments_robot.json (la config
+# real del Robot de Partidos Futuros -- fuente de verdad de que torneos estan
+# activos), no una lista propia hardcodeada. Hallazgo de auditoria 2026-07-29:
+# la lista propia (10 ligas) habia quedado desalineada del Robot (15 torneos
+# activos reales) -- Premier League/Bundesliga/LaLiga/Serie A/FIFA World Cup
+# 2026 nunca se buscaban aqui, aunque el Robot ya los tenia configurados.
+# Leyendo directo del mismo archivo se evita que esta desalineacion se
+# repita si el Robot vuelve a cambiar su config.
+TOURNAMENTS_ROBOT_CONFIG = r"C:\SoccerAnalyticsExtractor\future_robot\tournaments_robot.json"
+with open(TOURNAMENTS_ROBOT_CONFIG, encoding="utf-8") as f:
+    _robot_cfg = json.load(f)
+LEAGUES = [t["league_name"] for t in _robot_cfg["tournaments"] if t.get("active")]
 PER_LEAGUE = 5
 
 DB_PATH = r"C:\SoccerAnalyticsExtractor\soccer_analytics.db"
@@ -123,6 +130,8 @@ with open(WORK + r"\pocket_engine_results.json", "w", encoding="utf-8") as f:
     json.dump(results, f, ensure_ascii=False, indent=1)
 with open(WORK + r"\match_list.json", "w", encoding="utf-8") as f:
     json.dump(match_list, f, ensure_ascii=False, indent=1)
+with open(WORK + r"\leagues_used.json", "w", encoding="utf-8") as f:
+    json.dump(LEAGUES, f, ensure_ascii=False, indent=1)
 
 n_resolved = sum(1 for v in results.values() if v.get("resolved"))
 print(f"\nTotal resuelto: {n_resolved}/{len(selected)}")
