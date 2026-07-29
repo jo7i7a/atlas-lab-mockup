@@ -84,6 +84,33 @@ def match_stat_series(match_ids_ordered, team_id, period="ALL"):
                 series[stat].append(vals[stat])
     return series
 
+def match_stat_series_against(match_ids_ordered, team_id, period="ALL"):
+    """Serie real de valores EN CONTRA de team_id (del rival, distinto cada
+    partido), en el mismo orden cronologico que match_ids_ordered -- misma
+    logica de match_stat_agg_against pero devolviendo la serie completa en
+    vez del promedio, para poder aplicar recency_weighted_mean."""
+    if not match_ids_ordered:
+        return {stat: [] for stat in STAT_FIELDS}
+    placeholders = ",".join("?" * len(match_ids_ordered))
+    rows = conn.execute(f"""
+        SELECT ms.match_id, ms.stat_name, ms.stat_value
+        FROM match_stats ms
+        JOIN matches m ON m.id = ms.match_id
+        WHERE ms.period=? AND ms.match_id IN ({placeholders})
+          AND ms.team_id = (CASE WHEN m.home_team_id = ? THEN m.away_team_id ELSE m.home_team_id END)
+          AND ms.stat_name IN ({",".join("?"*len(STAT_FIELDS))})
+    """, [period] + match_ids_ordered + [team_id] + STAT_FIELDS).fetchall()
+    by_match = {}
+    for r in rows:
+        by_match.setdefault(r["match_id"], {})[r["stat_name"]] = r["stat_value"]
+    series = {stat: [] for stat in STAT_FIELDS}
+    for mid in match_ids_ordered:
+        vals = by_match.get(mid, {})
+        for stat in STAT_FIELDS:
+            if stat in vals:
+                series[stat].append(vals[stat])
+    return series
+
 def recency_weighted_mean(values, decay=0.85):
     if not values:
         return None
@@ -186,6 +213,32 @@ def market_lambda(match_ids_ordered, team_id, tournament_id, scope, period="ALL"
         vals = series[stat]
         team_mean = recency_weighted_mean(vals)
         league_mean = league_scope_mean(tournament_id, stat, scope, period)
+        if team_mean is None and league_mean is None:
+            continue
+        if league_mean is None:
+            out[stat] = round(team_mean, 2)
+        elif team_mean is None:
+            out[stat] = round(league_mean, 2)
+        else:
+            n = len(vals)
+            w = n / (n + SHRINK_K)
+            out[stat] = round(w * team_mean + (1 - w) * league_mean, 2)
+    return out
+
+def market_lambda_against(match_ids_ordered, team_id, tournament_id, scope, period="ALL"):
+    """Igual que market_lambda() pero para lo que el equipo CONCEDE (en
+    contra). El prior de liga usa el lado OPUESTO del scope: por
+    construccion del propio partido, "lo que el local concede en promedio"
+    en una liga es la misma poblacion de datos que "lo que el visitante
+    produce en promedio" (misma liga, mismo periodo, mismos partidos) --
+    permite reutilizar league_scope_mean() sin una consulta nueva."""
+    series = match_stat_series_against(match_ids_ordered, team_id, period)
+    opposite_scope = "away" if scope == "home" else "home"
+    out = {}
+    for stat in STAT_FIELDS:
+        vals = series[stat]
+        team_mean = recency_weighted_mean(vals)
+        league_mean = league_scope_mean(tournament_id, stat, opposite_scope, period)
         if team_mean is None and league_mean is None:
             continue
         if league_mean is None:
@@ -303,6 +356,18 @@ for match_id, entry in pocket.items():
     home_home_lambda_ht["goals"] = market_lambda_goals(home_ids, True, league_id, "1ST")
     away_away_lambda_ht["goals"] = market_lambda_goals(away_ids, False, league_id, "1ST")
 
+    # Lambda "en contra" (Corners/Tarjetas -- tablas de referencia "en contra"),
+    # FT y HT reales, misma metodologia recencia+shrinkage.
+    home_home_lambda_against = market_lambda_against(home_ids, home_id, league_id, "home", "ALL")
+    away_away_lambda_against = market_lambda_against(away_ids, away_id, league_id, "away", "ALL")
+    home_home_lambda_against_ht = market_lambda_against(home_ids, home_id, league_id, "home", "1ST")
+    away_away_lambda_against_ht = market_lambda_against(away_ids, away_id, league_id, "away", "1ST")
+
+    # Lambda segundo tiempo real (period='2ND', mismo volumen de datos que 1ST) --
+    # tabla de referencia "1T/2T Tarjetas".
+    home_home_lambda_2nd = market_lambda(home_ids, home_id, league_id, "home", "2ND")
+    away_away_lambda_2nd = market_lambda(away_ids, away_id, league_id, "away", "2ND")
+
     h2h = h2h_stats(home_id, away_id)
 
     results[match_id] = {
@@ -315,6 +380,9 @@ for match_id, entry in pocket.items():
         "home_home_stats_against_ht": home_home_stats_against_ht, "away_away_stats_against_ht": away_away_stats_against_ht,
         "home_home_lambda": home_home_lambda, "away_away_lambda": away_away_lambda,
         "home_home_lambda_ht": home_home_lambda_ht, "away_away_lambda_ht": away_away_lambda_ht,
+        "home_home_lambda_against": home_home_lambda_against, "away_away_lambda_against": away_away_lambda_against,
+        "home_home_lambda_against_ht": home_home_lambda_against_ht, "away_away_lambda_against_ht": away_away_lambda_against_ht,
+        "home_home_lambda_2nd": home_home_lambda_2nd, "away_away_lambda_2nd": away_away_lambda_2nd,
         "h2h": h2h,
     }
 

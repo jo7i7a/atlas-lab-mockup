@@ -55,6 +55,9 @@ for match_id, entry in hist.items():
         "hhsAHT": trim_stats(entry["home_home_stats_against_ht"]), "aasAHT": trim_stats(entry["away_away_stats_against_ht"]),
         "hhsLmb": entry["home_home_lambda"], "aasLmb": entry["away_away_lambda"],
         "hhsLmbHT": entry["home_home_lambda_ht"], "aasLmbHT": entry["away_away_lambda_ht"],
+        "hhsLmbA": entry["home_home_lambda_against"], "aasLmbA": entry["away_away_lambda_against"],
+        "hhsLmbAHT": entry["home_home_lambda_against_ht"], "aasLmbAHT": entry["away_away_lambda_against_ht"],
+        "hhsLmb2ND": entry["home_home_lambda_2nd"], "aasLmb2ND": entry["away_away_lambda_2nd"],
         "h2h": entry["h2h"],
     }
 
