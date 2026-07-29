@@ -17,9 +17,13 @@ Filtro de temporada: seasons.year = 2026 (confirmado via PRAGMA table_info,
 no existe columna de "temporada actual" separada -- year=2026 es la unica
 fuente de verdad real).
 
-Piso minimo de muestra para el ranking cruzado (TEAM_LEADERBOARDS): 5
-partidos -- mismo piso implicito ya observado en el ranking anterior, ahora
-aplicado de forma UNIFORME a las 10 ligas (sin excepciones por liga).
+Piso minimo de muestra para el ranking cruzado (TEAM_LEADERBOARDS), regla
+2026-08-04 (hallazgo real del Director con capturas: Copa Chile dominaba
+casi todos los rankings con 100%/83.3% porque son solo 5-6 partidos de copa,
+muestra demasiado chica y ademas desbalanceada Local/Visita): un equipo
+entra al ranking cruzado SOLO si tiene al menos MIN_HOME_AWAY partidos de
+LOCAL *y* al menos MIN_HOME_AWAY de VISITA (no solo un total combinado) --
+aplicado de forma UNIFORME a todas las ligas, sin excepciones.
 
 Nota de continuidad (2026-08-04): el campo "shots"/"Remates a Puerta" usa
 totalShotsOnGoal (que en el esquema real de SofaScore es el TOTAL de tiros,
@@ -45,14 +49,16 @@ conn.row_factory = sqlite3.Row
 conn.execute("PRAGMA query_only=ON")
 
 SEASON_YEAR = 2026
-MIN_MATCHES_LEADERBOARD = 5
+MIN_HOME_AWAY = 5
 
-# Mismas 10 ligas de LEAGUES_ORDERED (index.html) / LEAGUES (01_rebuild_upcoming_matches.py).
-LEAGUES = [
-    "Brasileirão Série B", "Brasileirão Betano", "Brasileirão Série C",
-    "Liga Profesional de Fútbol", "Liga MX, Apertura", "Liga de Primera",
-    "Liga de Ascenso", "Copa Chile", "Eliteserien", "Allsvenskan",
-]
+# Ligas: leidas en vivo de future_robot/tournaments_robot.json, igual que
+# 01_rebuild_upcoming_matches.py (mismo hallazgo de auditoria 2026-07-29:
+# una lista propia hardcodeada aqui se habia quedado en 10 ligas, desalineada
+# de las 18 reales que ya usa el resto del pipeline).
+TOURNAMENTS_ROBOT_CONFIG = r"C:\SoccerAnalyticsExtractor\future_robot\tournaments_robot.json"
+with open(TOURNAMENTS_ROBOT_CONFIG, encoding="utf-8") as f:
+    _robot_cfg = json.load(f)
+LEAGUES = [t["league_name"] for t in _robot_cfg["tournaments"] if t.get("active")]
 
 league_tournament = {}
 for league_name in LEAGUES:
@@ -156,7 +162,9 @@ for league_name, tid in league_tournament.items():
         away = compute_metrics(team_matches(team_id, tid, "away"), team_id)
         row = {"team": name, **total, "home": home, "away": away}
         rows.append(row)
-        if total["matches"] >= MIN_MATCHES_LEADERBOARD:
+        home_n = home["matches"] if home else 0
+        away_n = away["matches"] if away else 0
+        if home_n >= MIN_HOME_AWAY and away_n >= MIN_HOME_AWAY:
             for key in leaderboard_flat:
                 if total[key] is not None:
                     leaderboard_flat[key].append({"team": name, "league": league_name, "value": total[key]})
@@ -175,7 +183,7 @@ team_leaderboards = {}
 for key, entries in leaderboard_flat.items():
     entries.sort(key=lambda r: -r["value"])
     team_leaderboards[key] = {**LB_META[key], "rows": entries}
-    print(f"leaderboard {key}: {len(entries)} equipos (min {MIN_MATCHES_LEADERBOARD} partidos)")
+    print(f"leaderboard {key}: {len(entries)} equipos (min {MIN_HOME_AWAY} local y {MIN_HOME_AWAY} visita)")
 
 # Total real de partidos en toda la base (vista "Ligas": "partidos totales
 # en la base de datos de ATLAS -- historico completo, todos los torneos") --
