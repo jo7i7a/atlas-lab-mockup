@@ -278,27 +278,44 @@
   .line-select { width: 100%; margin-top: 3px; background: var(--surface-2); border: 1px solid var(--border); color: var(--text-dim); border-radius: 6px; padding: 4px 5px; font-size: 10.5px; font-weight: 600; font-family: inherit; }
   .line-select:focus { outline: none; border-color: var(--fam-color, var(--green)); }
 
-  /* ---- ficha de calidad del dato (2026-08-01): origen/motor/cobertura/
-     confiabilidad por cada probabilidad mostrada -- gobernanza real, no
-     texto plano ("ultimos 10 partidos") sin contexto de confianza. ---- */
-  .mkt-quality { grid-column: 1 / -1; margin-top: 6px; border-top: 1px dashed var(--border); padding-top: 6px; }
-  .mkt-quality summary { list-style: none; cursor: pointer; }
-  .mkt-quality summary::-webkit-details-marker { display: none; }
-  .dq-summary {
-    display: flex; align-items: center; gap: 6px; font-size: 10.5px; color: var(--text-dim);
-    font-family: var(--mono);
+  /* ---- ficha de origen de probabilidad (2026-08-02, estandar aprobado por
+     el Director): reemplaza la ficha de calidad del dato anterior
+     (origen/motor/cobertura/confiabilidad + mezcla de temporadas), que
+     generaba mas confusion que informacion -- "Cobertura: 10 local + 10
+     visita" describia un calculo propio del mockup totalmente desconectado
+     de la metodologia real de los motores certificados (Regresion Logistica
+     sobre ELO+Forma entrenada una sola vez sobre todo el historico, sin un
+     "N de este partido"). Estandar nuevo: SOLO 2 preguntas, origen (que
+     motor) y confiabilidad (que tan confiable) -- nada de detalle tecnico
+     interno (features, cobertura, limitaciones), eso queda para auditoria/
+     data_coverage, no para esta ficha. Unico componente reutilizable en
+     TODA la plataforma (mandato explicito: "reutilizar exactamente este
+     mismo componente en cualquier pantalla futura"). ---- */
+  .origin-row { grid-column: 1 / -1; display: flex; align-items: center; gap: 9px; padding: 7px 10px 10px; margin-top: -2px; position: relative; }
+  .origin-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 4px 10px; border-radius: 999px; font-weight: 800; letter-spacing: 0.01em;
+    font-family: var(--mono); font-size: 11.5px;
+    border: 1px solid currentColor; background: color-mix(in srgb, currentColor 14%, transparent);
+    cursor: pointer; -webkit-tap-highlight-color: transparent;
   }
-  .dq-sep { color: var(--text-faint); }
-  .dq-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
-  .dq-rel-alta { color: var(--green); }
-  .dq-rel-media { color: var(--amber); }
-  .dq-rel-baja { color: var(--red); }
-  .dq-dot.dq-rel-alta, .dq-dot.dq-rel-media, .dq-dot.dq-rel-baja { background: currentColor; }
-  .dq-detail { margin-top: 6px; display: flex; flex-direction: column; gap: 4px; }
-  .dq-row { display: flex; justify-content: space-between; gap: 10px; font-size: 11px; }
-  .dq-k { color: var(--text-faint); }
-  .dq-v { color: var(--text-dim); text-align: right; }
-  .dq-mix .dq-v { color: var(--amber); }
+  .origin-badge.core { color: var(--cyan); }
+  .origin-badge.poisson { color: var(--purple); }
+  .origin-badge .dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; flex-shrink: 0; }
+  .conf-sep { color: var(--text-faint); font-size: 10px; }
+  .conf { display: inline-flex; align-items: center; gap: 4px; font-family: var(--mono); font-size: 9.5px; color: var(--text-faint); font-weight: 500; }
+  .conf .dot { width: 5px; height: 5px; border-radius: 50%; }
+  .conf b { font-weight: 600; }
+  .conf.alta .dot { background: var(--green); } .conf.alta b { color: var(--green); }
+  .conf.media .dot { background: var(--amber); } .conf.media b { color: var(--amber); }
+  .conf.baja .dot { background: var(--red); } .conf.baja b { color: var(--red); }
+  .origin-tip {
+    position: absolute; left: 10px; top: 100%; margin-top: 4px; z-index: 5;
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 6px;
+    padding: 5px 9px; font-size: 10.5px; color: var(--text-dim); white-space: nowrap;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+  }
+  .origin-tip[hidden] { display: none; }
 
   /* ---- tarjetas En Vivo / Finalizados Hoy (2026-08-01) ---- */
   .match-card-live { border-color: var(--red); }
@@ -1583,31 +1600,26 @@ function mktMeta(pocket, code) {
   return d ? { g: d.g, e: d.e } : null;
 }
 
-/* ---- Ficha de calidad del dato (2026-08-01, mandato del Director) ----
-   governance_status/engine_id/data_coverage/limitations YA existian en
-   atlas_pocket/engines/contract.py y viajaban embebidos en cada carga de
-   pagina (POCKET_DATA.*.g/.e) -- esto NUNCA se pintaba. Se agrega la
-   superficie visual, sin inventar ningun dato nuevo.
-   Confiabilidad de motores CERTIFICADOS: mapeo de governance_status real
-   (a confirmar con el criterio de gobernanza ya establecido para
-   BASELINE/CHALLENGER en Carril B antes de considerarlo definitivo).
-   Para lineas SIN motor certificado (extrapolacion Poisson sobre el lambda
-   historico -- ver nonCertLambda/poissonOverProb mas abajo, mecanismo ya
-   existente desde 2026-07-27): la confiabilidad NUNCA es "Alta" aunque la
-   muestra sea grande -- es una aproximacion estadistica, no un motor
-   validado; se limita a Media/Baja segun el tamaño real de muestra. */
+/* ---- Ficha de origen de probabilidad (2026-08-02, estandar aprobado por
+   el Director, reemplaza la ficha de calidad del dato anterior) ----
+   Solo 2 preguntas, sin detalle tecnico interno: que motor generó esta
+   probabilidad, y que tan confiable es. "Atlas Core" cubre TODOS los
+   motores certificados de Atlas Pocket (1X2, Goles, Corners, Tiros, Tiros a
+   Puerta, Tarjetas, Faltas, Handicap, las 8 variantes Local/Visita, y
+   Doble Oportunidad/DNB derivados) -- son, verificado en el codigo real
+   (atlas_engine/models/*.py), la misma arquitectura (Regresion Logistica
+   sobre ELO+Forma reciente) con matices menores por mercado; darle un
+   nombre distinto a cada uno sugeriria una modularidad que no existe.
+   "Atlas Poisson" cubre las lineas adicionales que el mockup extrapola por
+   su cuenta cuando el motor certificado no cubre esa linea especifica.
+   Nunca un tercer nombre. Confiabilidad: gobernanza real para Atlas Core,
+   tamaño de muestra para Atlas Poisson (nunca "Alta" para una aproximacion
+   estadistica, por grande que sea la muestra). */
 const GOV_RELIABILITY = { CERT: "Alta", PROM: "Alta", BASE: "Media", EXP: "Media", ND: "Baja" };
-const ENGINE_LABELS = {
-  form_calculator: "Calculadora de Forma", elo_expected_result: "ELO Lens",
-  goals_predictor: "Predictor de Goles", corner_predictor: "Predictor de Corners",
-  handicap_predictor: "Predictor de Hándicap", derived_from_1x2_ft: "Derivado de 1X2",
-  corner_home_predictor: "Predictor de Corners (Local)", corner_away_predictor: "Predictor de Corners (Visita)",
-  shots_home_predictor: "Predictor de Tiros (Local)", shots_away_predictor: "Predictor de Tiros (Visita)",
-  sot_home_predictor: "Predictor de Tiros a Puerta (Local)", sot_away_predictor: "Predictor de Tiros a Puerta (Visita)",
-  cards_home_predictor: "Predictor de Tarjetas (Local)", cards_away_predictor: "Predictor de Tarjetas (Visita)",
-  fouls_predictor: "Predictor de Faltas", shots_predictor: "Predictor de Tiros",
-  sot_predictor: "Predictor de Tiros a Puerta", cards_predictor: "Predictor de Tarjetas",
-  form_calculator_lineup_challenger: "Calculadora de Forma (challenger)",
+const ORIGIN_LABELS = { core: "Atlas Core", poisson: "Atlas Poisson" };
+const ORIGIN_TOOLTIPS = {
+  core: "Motor probabilístico certificado de Atlas Pocket.",
+  poisson: "Estimación estadística para líneas sin motor certificado.",
 };
 function reliabilityFromSample(n, max) {
   if (!max) return "Baja";
@@ -1616,84 +1628,54 @@ function reliabilityFromSample(n, max) {
   if (ratio >= 0.4) return "Media";
   return "Baja";
 }
-/* N real de partidos detras de un scope local/visita/total -- mismo dato ya
-   usado hoy en el header "N=X local / Y visita" de Metricas Local vs
-   Visita, reutilizado aqui para toda ficha de calidad en vez de vivir en un
-   solo lugar de la UI. */
+/* N real de partidos detras de un scope local/visita/total -- alimenta
+   unicamente la confiabilidad de las lineas Atlas Poisson (reliabilityFromSample).
+   Atlas Core no usa este numero: un motor entrenado una sola vez sobre todo
+   el historico no tiene un "N de este partido" que mostrar. */
 function coverageForScope(hist, scope) {
   const hh = hist.hh, aa = hist.aa;
-  const unionYears = (a, b) => Array.from(new Set([...(a || []), ...(b || [])])).sort();
-  if (scope === "local") return { texto: `${hh.n}/10 partidos`, n: hh.n, max: 10, years: hh.years, mixed: hh.mixed_seasons };
-  if (scope === "visita") return { texto: `${aa.n}/10 partidos`, n: aa.n, max: 10, years: aa.years, mixed: aa.mixed_seasons };
-  return {
-    texto: `${hh.n} local + ${aa.n} visita`, n: hh.n + aa.n, max: 20,
-    years: unionYears(hh.years, aa.years), mixed: hh.mixed_seasons || aa.mixed_seasons,
-  };
+  if (scope === "local") return { n: hh.n, max: 10 };
+  if (scope === "visita") return { n: aa.n, max: 10 };
+  return { n: hh.n + aa.n, max: 20 };
 }
-function dataQualityHtml({ origen, motor, cobertura, confiabilidad, years }) {
+/* Componente unico de "origen de probabilidad" -- mismo HTML en cualquier
+   pantalla futura donde Atlas muestre de donde salio un numero. Orden fijo:
+   1) motor (badge, con tooltip de 1 linea al tocar), 2) confiabilidad. */
+function originRowHtml(kind, confiabilidad) {
   const relClass = { "Alta": "alta", "Media": "media", "Baja": "baja" }[confiabilidad] || "baja";
-  // .source-tag ya existia en el CSS (ce/pocket/lab) pero nunca se usaba en
-  // ningun lado -- se reutiliza aqui en vez de inventar un tag de origen nuevo.
-  const srcClass = origen === "Atlas Pocket" ? "pocket" : (origen === "Content Engine" ? "ce" : "lab");
-  const mezcla = years && years.length > 1
-    ? `<div class="dq-row dq-mix"><span class="dq-k">Mezcla temporadas</span><span class="dq-v">${years.join(" + ")}</span></div>` : "";
   return `
-  <div class="dq-detail">
-    <div class="dq-row"><span class="dq-k">Origen</span><span class="dq-v"><span class="source-tag ${srcClass}">${origen}</span></span></div>
-    <div class="dq-row"><span class="dq-k">Motor</span><span class="dq-v">${motor}</span></div>
-    <div class="dq-row"><span class="dq-k">Cobertura</span><span class="dq-v">${cobertura}</span></div>
-    <div class="dq-row"><span class="dq-k">Confiabilidad</span><span class="dq-v dq-rel-${relClass}">${confiabilidad}</span></div>
-    ${mezcla}
+  <div class="origin-row">
+    <span class="origin-badge ${kind}" onclick="toggleOriginTip(this)"><span class="dot"></span>${ORIGIN_LABELS[kind]}</span>
+    <span class="origin-tip" hidden>${ORIGIN_TOOLTIPS[kind]}</span>
+    <span class="conf-sep">·</span>
+    <span class="conf ${relClass}"><span class="dot"></span>Confiabilidad: <b>${confiabilidad}</b></span>
   </div>`;
 }
-function dqSummaryHtml(confiabilidad, cobertura) {
-  const relClass = { "Alta": "alta", "Media": "media", "Baja": "baja" }[confiabilidad] || "baja";
-  return `<span class="dq-dot dq-rel-${relClass}"></span><span class="dq-rel-${relClass}">${confiabilidad}</span><span class="dq-sep">·</span><span>${cobertura}</span>`;
+function toggleOriginTip(badge) {
+  const tip = badge.nextElementSibling;
+  document.querySelectorAll(".origin-tip").forEach(t => { if (t !== tip) t.hidden = true; });
+  tip.hidden = !tip.hidden;
 }
 /* ---- Bloque de ficha para una fila con motor certificado (marketRowHtml,
    1X2/Doble Oportunidad) -- confiabilidad = governance_status real. ---- */
-function qualityBlockHtml(pocket, code, coverage) {
+function originBlockHtml(pocket, code) {
   const meta = mktMeta(pocket, code);
   if (!meta) return "";
   const confiabilidad = GOV_RELIABILITY[meta.g] || "Baja";
-  const detail = dataQualityHtml({
-    origen: "Atlas Pocket", motor: ENGINE_LABELS[meta.e] || meta.e,
-    cobertura: coverage.texto, confiabilidad, years: coverage.years,
-  });
-  return `
-  <details class="mkt-quality">
-    <summary class="dq-summary">${dqSummaryHtml(confiabilidad, coverage.texto)}</summary>
-    ${detail}
-  </details>`;
+  return originRowHtml("core", confiabilidad);
 }
 /* ---- Bloque de ficha para pillMarketRowHtml: puede alternar entre linea
    certificada y linea Poisson-extrapolada segun lo que el usuario elija en
    el selector -- se pre-renderizan ambas variantes y atlasLineSelect solo
    alterna cual se muestra (sin re-generar HTML en cada cambio). ---- */
-function qualityToggleHtml(certMeta, coverage) {
+function originToggleHtml(certMeta, coverage) {
   const poissonConf = reliabilityFromSample(coverage.n, coverage.max);
-  const poissonDetail = dataQualityHtml({
-    origen: "Estimación estadística", motor: "Distribución de Poisson (λ histórico, con recencia y shrinkage a liga)",
-    cobertura: coverage.texto, confiabilidad: poissonConf, years: coverage.years,
-  });
   let certBlock = "";
   if (certMeta) {
     const confiabilidad = GOV_RELIABILITY[certMeta.g] || "Baja";
-    const certDetail = dataQualityHtml({
-      origen: "Atlas Pocket", motor: ENGINE_LABELS[certMeta.e] || certMeta.e,
-      cobertura: coverage.texto, confiabilidad, years: coverage.years,
-    });
-    certBlock = `
-    <details class="mkt-quality dq-variant-cert" data-variant="cert">
-      <summary class="dq-summary">${dqSummaryHtml(confiabilidad, coverage.texto)}</summary>
-      ${certDetail}
-    </details>`;
+    certBlock = `<div class="origin-variant-cert">${originRowHtml("core", confiabilidad)}</div>`;
   }
-  const poissonBlock = `
-  <details class="mkt-quality dq-variant-poisson" data-variant="poisson"${certMeta ? ' style="display:none"' : ""}>
-    <summary class="dq-summary">${dqSummaryHtml(poissonConf, coverage.texto)}</summary>
-    ${poissonDetail}
-  </details>`;
+  const poissonBlock = `<div class="origin-variant-poisson"${certMeta ? ' style="display:none"' : ""}>${originRowHtml("poisson", poissonConf)}</div>`;
   return certBlock + poissonBlock;
 }
 
@@ -1793,12 +1775,12 @@ function atlasLineSelect(sel) {
   input.value = "";
   const evEl = row.querySelector(".mkt-ev");
   evEl.textContent = "Sin cuota"; evEl.className = "mkt-ev";
-  // La linea elegida puede ser certificada (motor real) o Poisson-extrapolada
-  // -- la ficha de calidad ya trae ambas variantes pre-renderizadas
-  // (qualityToggleHtml), solo se alterna cual se muestra.
+  // La linea elegida puede ser certificada (Atlas Core) o Poisson-extrapolada
+  // (Atlas Poisson) -- la ficha de origen ya trae ambas variantes
+  // pre-renderizadas (originToggleHtml), solo se alterna cual se muestra.
   const isCert = sel.selectedOptions[0] && sel.selectedOptions[0].dataset.cert === "true";
-  const certQ = row.querySelector(".dq-variant-cert");
-  const poissonQ = row.querySelector(".dq-variant-poisson");
+  const certQ = row.querySelector(".origin-variant-cert");
+  const poissonQ = row.querySelector(".origin-variant-poisson");
   if (certQ) certQ.style.display = isCert ? "" : "none";
   if (poissonQ) poissonQ.style.display = isCert ? "none" : "";
 }
@@ -1840,7 +1822,7 @@ function pillMarketRowHtml(pocket, hist, certCode, scope, stat, baseLabel, ht) {
   const def = entries[defaultIdx];
   const pct = (def.prob * 100).toFixed(1);
   const coverage = coverageForScope(hist, scope);
-  const quality = qualityToggleHtml(certMeta, coverage);
+  const quality = originToggleHtml(certMeta, coverage);
   return `
   <div class="mkt-row">
     <div>
@@ -2100,8 +2082,7 @@ function tabReporte(m, pocket, hist) {
   const conclusion = conclusionTipster(m, pocket);
 
   const p1x2 = mkt(pocket, "1X2_FT");
-  const totalCoverage = coverageForScope(hist, "total");
-  const q1x2 = qualityBlockHtml(pocket, "1X2_FT", totalCoverage);
+  const q1x2 = originBlockHtml(pocket, "1X2_FT");
   const totalRows = [];
   if (p1x2) {
     totalRows.push(marketRowHtml(`1X2: Gana ${m.home}`, p1x2.home, q1x2));
@@ -2110,7 +2091,7 @@ function tabReporte(m, pocket, hist) {
   }
   ["OU25_GOALS_FT", "OU9.5_CORNERS_FT", "OU4.5_CARDS_FT", "FOULS_FT"].forEach(code => {
     const p = mkt(pocket, code);
-    if (p && p.over != null) totalRows.push(marketRowHtml(`Over ${MARKET_DEFS[code].line} ${MARKET_DEFS[code].label}`, p.over, qualityBlockHtml(pocket, code, totalCoverage)));
+    if (p && p.over != null) totalRows.push(marketRowHtml(`Over ${MARKET_DEFS[code].line} ${MARKET_DEFS[code].label}`, p.over, originBlockHtml(pocket, code)));
   });
 
   return `
@@ -2158,17 +2139,16 @@ function tabGoles(m, pocket, hist) {
     <div class="footer-note" style="margin-top:6px;text-align:left;padding-top:8px">xG generado (promedio real, temporada 2026) — comparación animada.</div>`;
 
   const rows = [];
-  const rowsCoverage = coverageForScope(hist, "total");
   const p1x2 = mkt(pocket, "1X2_FT");
   if (p1x2) {
-    const q = qualityBlockHtml(pocket, "1X2_FT", rowsCoverage);
+    const q = originBlockHtml(pocket, "1X2_FT");
     rows.push(marketRowHtml(`Gana ${m.home}`, p1x2.home, q));
     rows.push(marketRowHtml("Empate", p1x2.draw, q));
     rows.push(marketRowHtml(`Gana ${m.away}`, p1x2.away, q));
   }
   const pdc = mkt(pocket, "DC_FT");
   if (pdc) {
-    const qdc = qualityBlockHtml(pocket, "DC_FT", rowsCoverage);
+    const qdc = originBlockHtml(pocket, "DC_FT");
     rows.push(marketRowHtml("Doble Oportunidad 1X", pdc["1X"], qdc));
     rows.push(marketRowHtml("Doble Oportunidad 12", pdc["12"], qdc));
     rows.push(marketRowHtml("Doble Oportunidad X2", pdc["X2"], qdc));
@@ -2480,6 +2460,11 @@ function renderCenter(id) {
   });
 }
 document.getElementById("back-btn").addEventListener("click", goBack);
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".origin-badge")) {
+    document.querySelectorAll(".origin-tip").forEach(t => t.hidden = true);
+  }
+});
 
 renderHome();
 </script>
