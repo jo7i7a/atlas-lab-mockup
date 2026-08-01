@@ -261,28 +261,42 @@ def last_n_matches(team_id, n=5, home_only=False, away_only=False):
         params = (team_id, team_id, team_id)
     else:
         params = (team_id, team_id)
+    # Nota real (2026-08-01, ficha de calidad del dato): esta consulta NUNCA
+    # filtro por temporada -- si un equipo no tiene suficientes partidos de
+    # local/visita en la temporada actual, "ultimos N" completa con partidos
+    # de temporadas anteriores sin avisar. Se trae s.year de cada partido
+    # para que el llamador pueda detectar y declarar la mezcla explicitamente
+    # (ver form_wdl: campo "years"/"mixed_seasons"), en vez de mostrar el
+    # numero como si fuera todo de la temporada actual.
     rows = conn.execute(f"""
-        SELECT id, home_team_id, away_team_id, score_home, score_away, played_at
-        FROM matches
-        WHERE status='finished' AND (home_team_id=? OR away_team_id=?) {cond}
-        ORDER BY played_at DESC LIMIT ?
+        SELECT m.id, m.home_team_id, m.away_team_id, m.score_home, m.score_away, m.played_at, s.year
+        FROM matches m JOIN seasons s ON s.id = m.season_id
+        WHERE m.status='finished' AND (m.home_team_id=? OR m.away_team_id=?) {cond}
+        ORDER BY m.played_at DESC LIMIT ?
     """, params + (n,)).fetchall()
     return list(reversed(rows))
 
 def form_wdl(team_id, matches):
     w = d = l = 0
     gf = ga = 0
+    years = set()
     for m in matches:
         is_home = m["home_team_id"] == team_id
         my_score = m["score_home"] if is_home else m["score_away"]
         opp_score = m["score_away"] if is_home else m["score_home"]
+        if m["year"] is not None:
+            years.add(m["year"])
         if my_score is None or opp_score is None:
             continue
         gf += my_score; ga += opp_score
         if my_score > opp_score: w += 1
         elif my_score == opp_score: d += 1
         else: l += 1
-    return {"w": w, "d": d, "l": l, "gf": gf, "ga": ga, "n": len(matches)}
+    years_sorted = sorted(years)
+    return {
+        "w": w, "d": d, "l": l, "gf": gf, "ga": ga, "n": len(matches),
+        "years": years_sorted, "mixed_seasons": len(years_sorted) > 1,
+    }
 
 def h2h_stats(home_id, away_id, n=60):
     rows = conn.execute("""

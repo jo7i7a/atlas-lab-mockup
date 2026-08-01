@@ -32,6 +32,16 @@ if len(match_list) < 10:
 
 match_list.sort(key=lambda m: m["kickoffUTC"])
 
+# El candidato a "Partido Destacado" SOLO puede salir de partidos realmente
+# por jugarse -- 2026-08-01: antes de agregar En Vivo/Finalizados a esta
+# misma lista, match_list[0] tras ordenar por kickoffUTC SIEMPRE era el
+# proximo partido real (unico contenido de la lista). Ahora que la lista
+# tambien trae partidos ya arrancados/terminados (kickoffUTC en el pasado),
+# ordenar toda la lista junta pondria un partido viejo primero -- se filtra
+# explicitamente a solo los "upcoming" (sin matchState) antes de elegir.
+upcoming_for_flagship = [m for m in match_list if "matchState" not in m]
+flagship_id = upcoming_for_flagship[0]["id"] if upcoming_for_flagship else None
+
 lines = ["const MATCHES = ["]
 by_league = {}
 for m in match_list:
@@ -41,12 +51,16 @@ for league, ms in by_league.items():
     for m in ms:
         gov = pocket.get(m["id"], {}).get("markets", {}).get("1X2_FT", {}).get("governance_status")
         status = "certified" if gov == "CERTIFICADO" else "none"
-        flagship = " flagship: true," if m is match_list[0] else ""
+        flagship = " flagship: true," if m["id"] == flagship_id else ""
+        match_state = m.get("matchState")
+        state_field = f' matchState: "{match_state}",' if match_state else ""
+        score = m.get("finalScore")
+        score_field = f' finalScore: {{ home: {score["home"]}, away: {score["away"]} }},' if score else ""
         home = m["home"].replace("'", "\\'")
         away = m["away"].replace("'", "\\'")
         lines.append(
             f'  {{ id: "{m["id"]}", home: "{home}", away: "{away}", league: "{league}", '
-            f'kickoffUTC: "{m["kickoffUTC"]}", status: "{status}",{flagship} }},'
+            f'kickoffUTC: "{m["kickoffUTC"]}", status: "{status}",{flagship}{state_field}{score_field} }},'
         )
 lines.append("];")
 new_matches_block = "\n".join(lines)
@@ -75,4 +89,6 @@ html = html[:start_idx] + frag + "\n\n" + html[end_idx:]
 with open(HTML_PATH, "w", encoding="utf-8") as f:
     f.write(html)
 
-print("index.html actualizado:", len(match_list), "partidos,", len(leagues_used), "ligas activas, flagship =", match_list[0]["home"], "vs", match_list[0]["away"])
+flagship_match = next((m for m in match_list if m["id"] == flagship_id), None)
+flagship_desc = f'{flagship_match["home"]} vs {flagship_match["away"]}' if flagship_match else "ninguno"
+print("index.html actualizado:", len(match_list), "partidos,", len(leagues_used), "ligas activas, flagship =", flagship_desc)

@@ -88,6 +88,60 @@ if len(selected) < 10:
     print("ABORTA: muy pocos partidos resolubles, algo esta mal (futuro sync roto?)")
     sys.exit(1)
 
+# ---------------------------------------------------------------------------
+# En Vivo / Finalizados Hoy (2026-08-01, mandato del Director: "el usuario
+# nunca debe perder un partido durante el dia"). Se buscan SIN tope de
+# PER_LEAGUE -- a diferencia de "proximos", la cantidad de partidos en vivo o
+# ya jugados en un dia es intrinsecamente acotada, no hace falta capar.
+#
+# El resultado final (score) sale de matches.score_home/away via join por
+# sofascore_event_id -- YA es la fuente de verdad real para el marcador
+# (soccer_analytics.db), no se duplica en future_fixtures. Cobertura
+# verificada: 256/262 finished de future_fixtures (97.7%) resuelven score
+# real via este join.
+#
+# Ventana amplia (36h) intencional: el bucket preciso "es de HOY en hora de
+# Chile" ya lo hace el propio frontend (chileDayOffset sobre kickoffUTC,
+# funcion ya validada) -- Python solo trae candidatos, JS decide el dia,
+# evitando dos calculos de zona horaria distintos que puedan desalinearse.
+#
+# Sin invocar los motores de Atlas Pocket aqui: una probabilidad pre-partido
+# no aplica a un partido en curso o ya jugado. Se marcan resolved=False
+# (mismo patron de fallback que ya usa el resto del pipeline) -- la tarjeta
+# de Inicio sigue mostrando el partido con su estado real; el detalle cae
+# naturalmente en los mismos estados "sin datos" ya existentes.
+live_finished = []
+window_start = now_epoch - 36 * 3600
+for league_name in LEAGUES:
+    rows = conn.execute("""
+        SELECT event_id, start_timestamp, home_team_id, away_team_id, home_team_name, away_team_name, status
+        FROM future_fixtures
+        WHERE league_name=? AND start_timestamp >= ? AND start_timestamp < ?
+          AND status IN ('inprogress', 'finished')
+        ORDER BY start_timestamp ASC
+    """, (league_name, window_start, now_epoch + 3600)).fetchall()
+    for r in rows:
+        home = resolve_team(r["home_team_id"])
+        away = resolve_team(r["away_team_id"])
+        if not home or not away:
+            continue
+        final_score = None
+        if r["status"] == "finished":
+            score_row = conn.execute(
+                "SELECT score_home, score_away FROM matches WHERE sofascore_event_id=?", (r["event_id"],)
+            ).fetchone()
+            if score_row and score_row["score_home"] is not None and score_row["score_away"] is not None:
+                final_score = {"home": score_row["score_home"], "away": score_row["score_away"]}
+        live_finished.append({
+            "league": league_name, "event_id": r["event_id"], "start_timestamp": r["start_timestamp"],
+            "home_id": home["id"], "home_name": home["name"],
+            "away_id": away["id"], "away_name": away["name"],
+            "match_state": "live" if r["status"] == "inprogress" else "finished",
+            "final_score": final_score,
+        })
+
+print(f"En vivo / finalizados recientes encontrados: {len(live_finished)}")
+
 league_tournament = {}
 for league_name in LEAGUES:
     row = conn.execute("SELECT tournament_id FROM future_fixtures WHERE league_name=? LIMIT 1", (league_name,)).fetchone()
@@ -135,6 +189,23 @@ for i, sel in enumerate(selected):
                                 "league": sel["league"], "kickoffUTC": kickoff_iso})
     results[mid] = entry
     print(f"[{i+1}/{len(selected)}] {sel['home_name']} vs {sel['away_name']} ({sel['league']}) -> resolved={entry['resolved']} ({time.time()-t0:.1f}s)")
+
+# En vivo / finalizados: se agregan a match_list (aparecen en Inicio con su
+# estado real) pero NUNCA a "selected" ni a registry.estimate() -- ver
+# comentario mas arriba. results[mid] queda resolved=False, mismo fallback
+# que ya maneja el resto del pipeline para "sin datos de motores".
+for lf in live_finished:
+    kickoff_iso = datetime.datetime.fromtimestamp(lf["start_timestamp"], datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    mid = slugify(lf["home_name"], lf["away_name"], lf["event_id"])
+    results.setdefault(mid, {"resolved": False})
+    entry_lf = {"id": mid, "home": lf["home_name"], "away": lf["away_name"],
+                "league": lf["league"], "kickoffUTC": kickoff_iso,
+                "matchState": lf["match_state"]}
+    if lf["final_score"] is not None:
+        entry_lf["finalScore"] = lf["final_score"]
+    match_list.append(entry_lf)
+    score_txt = f"{lf['final_score']['home']}-{lf['final_score']['away']}" if lf["final_score"] else "sin score"
+    print(f"[{lf['match_state']}] {lf['home_name']} vs {lf['away_name']} ({lf['league']}) -> {score_txt}")
 
 with open(WORK + r"\pocket_engine_results.json", "w", encoding="utf-8") as f:
     json.dump(results, f, ensure_ascii=False, indent=1)
