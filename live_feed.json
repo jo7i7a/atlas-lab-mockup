@@ -1,7 +1,41 @@
 {
- "generated_at_utc": "2026-08-02T23:02:54Z",
- "n_live_target": 3,
+ "generated_at_utc": "2026-08-02T23:05:54Z",
+ "n_live_target": 4,
  "matches": {
+  "16317947": {
+   "event_id": 16317947,
+   "league": "Liga MX, Apertura",
+   "home": "Club América",
+   "away": "Santos Laguna",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 74,
+     "away": 26
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 13,
+     "away": 5
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "updated_at_utc": "2026-08-02T23:05:54Z"
+  },
   "15353076": {
    "event_id": 15353076,
    "league": "Liga de Primera",
@@ -11,12 +45,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 72,
+   "minute": 75,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 76,
-     "away": 24
+     "home": 75,
+     "away": 25
     },
     "shots": {
      "label": "Remates totales",
@@ -30,8 +64,13 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 552,
-     "away": 180
+     "home": 562,
+     "away": 185
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 1,
+     "away": 0
     },
     "red_cards": {
      "label": "Tarjetas rojas",
@@ -44,7 +83,7 @@
      "away": 1
     }
    },
-   "updated_at_utc": "2026-08-02T23:02:54Z"
+   "updated_at_utc": "2026-08-02T23:05:54Z"
   },
   "16431128": {
    "event_id": 16431128,
@@ -55,7 +94,7 @@
    "away_score": 1,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 44,
+   "minute": 47,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -64,7 +103,7 @@
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.48,
+     "home": 0.55,
      "away": 0.26
     },
     "big_chances": {
@@ -74,7 +113,7 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 9,
+     "home": 11,
      "away": 6
     },
     "corners": {
@@ -84,8 +123,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 174,
-     "away": 111
+     "home": 201,
+     "away": 128
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -98,7 +137,7 @@
      "away": 0
     }
    },
-   "updated_at_utc": "2026-08-02T23:02:54Z"
+   "updated_at_utc": "2026-08-02T23:05:54Z"
   },
   "15416264": {
    "event_id": 15416264,
@@ -109,9 +148,9 @@
    "away_score": 2,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 74,
+   "minute": 77,
    "stats": {},
-   "updated_at_utc": "2026-08-02T23:02:54Z"
+   "updated_at_utc": "2026-08-02T23:05:54Z"
   }
  }
 }
