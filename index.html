@@ -329,6 +329,44 @@
   .chip-live.chip-dim { opacity: 0.5; }
   .chip-live:not(.chip-dim) { border-color: color-mix(in srgb, var(--red) 55%, var(--border)); color: var(--red); }
 
+  /* ---- stats en vivo reales (live_feed.json, 2026-08-02): boton dentro de
+     la tarjeta En Vivo + modal con marcador y tabla de barras home-vs-away.
+     Reutiliza las variables de color/superficie ya definidas arriba, sin
+     paleta nueva. Solo aparece cuando live_feed.json trae stats reales para
+     ese partido -- nunca se inventa un boton para un partido sin datos. ---- */
+  .live-stats-btn {
+    margin-top: 8px; width: 100%; background: var(--surface-2); border: 1px solid var(--border);
+    color: var(--text-dim); border-radius: 7px; padding: 6px 8px; font-size: 10.5px; font-weight: 700;
+    cursor: pointer; letter-spacing: 0.02em;
+  }
+  .live-stats-btn:hover { color: var(--text); border-color: var(--text-faint); }
+  .atlas-modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 120; }
+  .atlas-modal-overlay[hidden] { display: none; }
+  .atlas-modal {
+    position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: min(92vw, 420px); max-height: 82vh; overflow-y: auto;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    z-index: 121; box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  }
+  .atlas-modal[hidden] { display: none; }
+  .atlas-modal-head {
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 10px;
+    padding: 14px 16px; border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; background: var(--surface); border-radius: 14px 14px 0 0;
+  }
+  .atlas-modal-score .teams { font-size: 12.5px; font-weight: 700; color: var(--text); }
+  .atlas-modal-score .score { font-family: var(--mono); font-size: 21px; font-weight: 800; color: var(--text); margin-top: 3px; }
+  .atlas-modal-score .meta { font-size: 10.5px; color: var(--text-faint); margin-top: 3px; }
+  .atlas-modal-body { padding: 6px 16px 16px; }
+  .live-stat-row { padding: 9px 0; border-bottom: 1px solid var(--border); }
+  .live-stat-row:last-child { border-bottom: none; }
+  .live-stat-row .lsr-labels { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-family: var(--mono); font-size: 12px; font-weight: 700; color: var(--text); margin-bottom: 5px; }
+  .live-stat-row .lsr-name { font-size: 10px; color: var(--text-faint); text-align: center; flex: 1; font-family: var(--sans); font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; }
+  .live-stat-row .lsr-bar { display: flex; align-items: center; height: 6px; border-radius: 999px; overflow: hidden; background: var(--border); }
+  .live-stat-row .lsr-bar-home { height: 100%; background: var(--green); }
+  .live-stat-row .lsr-bar-away { height: 100%; background: var(--cyan); margin-left: auto; }
+  .live-stats-empty { font-size: 12px; color: var(--text-faint); text-align: center; padding: 22px 4px; }
+
   /* graficos animados (sin dependencias externas) */
   .anim-compare { margin: 10px 0 4px; }
   .anim-row { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
@@ -434,6 +472,32 @@
   .mrow .teams { font-size: 12.5px; font-weight: 600; margin-top: 2px; }
   .mrow .teams .vsx { color: var(--text-faint); font-weight: 400; font-size: 10.5px; margin: 0 4px; }
   .mrow .go { color: var(--text-faint); font-size: 13px; }
+  /* ---- Laboratorio de Estrategias (2026-08-02) ---- */
+  .lab-intro { font-size: 12.5px; color: var(--text-dim); margin: 4px 0 18px; line-height: 1.5; }
+  .lab-strategy-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px; margin-bottom: 14px; }
+  .lab-strategy-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
+  .lab-strategy-name { font-size: 14px; font-weight: 700; }
+  .lab-strategy-meta { font-family: var(--mono); font-size: 10px; color: var(--text-faint); margin-top: 2px; }
+  .lab-state-badge { font-family: var(--mono); font-size: 9.5px; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+  .lab-state-idea, .lab-state-hipotesis { background: var(--surface-2); color: var(--text-faint); border: 1px solid var(--border); }
+  .lab-state-observacion { background: var(--amber-soft); color: var(--amber); }
+  .lab-state-validacion_cuota_real { background: var(--blue-soft); color: var(--blue); }
+  .lab-state-certificada, .lab-state-produccion { background: var(--green-soft); color: var(--green); }
+  .lab-state-refutada { background: var(--red-soft); color: var(--red); }
+  .lab-strategy-hip { font-size: 12px; color: var(--text-dim); margin: 8px 0; line-height: 1.45; }
+  .lab-strategy-stats { display: flex; flex-wrap: wrap; gap: 14px; margin: 10px 0; }
+  .lab-stat { font-family: var(--mono); }
+  .lab-stat .n { font-size: 15px; font-weight: 700; }
+  .lab-stat .l { font-size: 9.5px; color: var(--text-faint); text-transform: uppercase; letter-spacing: 0.03em; }
+  .lab-strategy-hito { font-size: 11.5px; color: var(--text-dim); background: var(--surface-2); border-radius: 10px; padding: 8px 10px; margin-top: 8px; }
+  .lab-strategy-hito b { color: var(--text); }
+  .lab-section-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-faint); margin: 18px 0 8px; }
+  .lab-alert-card { background: var(--red-soft); border: 1px solid var(--red); border-radius: 14px; padding: 14px 16px; margin-bottom: 12px; }
+  .lab-alert-title { font-size: 12.5px; font-weight: 700; color: var(--red); display: flex; align-items: center; gap: 6px; margin-bottom: 8px; }
+  .lab-alert-row { font-size: 12px; color: var(--text); padding: 2px 0; }
+  .lab-alert-row b { color: var(--text-dim); font-weight: 600; }
+  .lab-alert-action { margin-top: 10px; font-size: 12px; font-weight: 700; color: var(--red); }
+  .lab-alerts-empty { font-size: 12px; color: var(--text-faint); padding: 10px 2px; }
 </style>
 </head>
 <body>
@@ -466,9 +530,20 @@
   <div class="drawer-item active" id="drawer-partidos" data-view="list">🏠 Partidos</div>
   <div class="drawer-item" id="drawer-radiografia" data-view="radiografia">📊 Radiografía</div>
   <div class="drawer-item" id="drawer-ligas" data-view="ligas">🌐 Ligas</div>
+  <div class="drawer-item" id="drawer-lab-estrategias" data-view="lab-estrategias">🧪 Laboratorio de Estrategias</div>
   <h4>General</h4>
   <div class="drawer-item" style="opacity:.5">⚙ Configuración (no disponible)</div>
 </nav>
+
+<!-- ============ STATS EN VIVO (live_feed.json real, 2026-08-02) ============ -->
+<div class="atlas-modal-overlay" id="live-stats-overlay" hidden></div>
+<div class="atlas-modal" id="live-stats-modal" hidden>
+  <div class="atlas-modal-head">
+    <div class="atlas-modal-score" id="live-stats-score"></div>
+    <button class="back-btn" id="live-stats-close-btn" type="button">✕</button>
+  </div>
+  <div class="atlas-modal-body" id="live-stats-body"></div>
+</div>
 
 <!-- ============ DETALLE DE LIGA (todos los partidos) ============ -->
 <div id="view-league-detail" hidden>
@@ -543,6 +618,21 @@
     <div class="league-filter-row" id="ligas-league-filter-row"></div>
     <div class="section-title"><span>Top 5 ligas por categoría — temporada actual</span></div>
     <div id="league-leaderboards"></div>
+  </div>
+</div>
+
+<!-- ============ LABORATORIO DE ESTRATEGIAS (2026-08-02) ============ -->
+<div id="view-lab-estrategias" hidden>
+  <div class="center-topbar">
+    <div class="row1">
+      <button class="back-btn" id="lab-estrategias-back-btn">←</button>
+      <span class="wordmark" style="font-size:14px">ATLAS·LAB</span>
+    </div>
+  </div>
+  <div class="secview-body">
+    <div class="section-title" style="margin-top:0"><span>Laboratorio de Estrategias</span></div>
+    <div class="lab-intro">Pipeline completo de investigación de ATLAS: cada estrategia vive acá desde IDEA hasta CERTIFICADA o REFUTADA. Ninguna desaparece — solo cambia de estado conforme acumula evidencia.</div>
+    <div id="lab-strategies-list"></div>
   </div>
 </div>
 
@@ -1100,15 +1190,199 @@ function matchCardHtml(m) {
    usuario nunca debe perder un partido durante el dia"). Independiente del
    dayFilter (Hoy/Mañana/Próximos) -- siempre visible mientras el partido
    siga siendo de HOY en hora de Chile, sin impotar que filtro este activo. ---- */
+/* ---- Marcador y stats reales en vivo (live_feed.json, 2026-08-02) ----
+   Feed independiente escrito por atlas_engine/data/atlas_lab_live_feed.py
+   (NO forma parte del build diario horneado en MATCHES -- se hace fetch()
+   aparte, mismo origen, y se combina en el cliente). LIVE_FEED llega vacio
+   hasta que el primer fetch resuelve; todo el codigo de abajo esta escrito
+   para degradar con gracia ante esa ausencia (y ante cualquier partido en
+   vivo que el feed todavia no cubra) -- nunca se reemplaza el fallback
+   "En curso" por un dato a medias ni se inventa un valor de stat. */
+let LIVE_FEED = {};
+
+/* El id de partido horneado en MATCHES es
+   `${homeSlug}-${awaySlug}-${event_id}` (ver 01_rebuild_upcoming_matches.py
+   ::slugify) -- event_id es siempre el ultimo segmento (numerico, sin
+   guiones), la misma clave que usa live_feed.json. Sin tabla de mapeo
+   nueva. */
+function liveFeedEntryForMatch(m) {
+  const parts = String(m.id).split("-");
+  const eventId = parts[parts.length - 1];
+  return LIVE_FEED[eventId] || null;
+}
+
+async function fetchLiveFeed() {
+  try {
+    const res = await fetch("live_feed.json", { cache: "no-store" });
+    if (!res.ok) return;
+    const data = await res.json();
+    LIVE_FEED = (data && data.matches) || {};
+    renderLiveFinishedSections();
+  } catch (e) {
+    // Sin red / archivo no disponible todavia: se deja LIVE_FEED como estaba
+    // (vacio o la ultima version buena conocida) -- el fallback "En curso"
+    // ya maneja este caso, no hace falta mostrar un error al usuario.
+  }
+}
+
+/* ---- Laboratorio de Estrategias (2026-08-02): registro de fichas
+   (strategies_registry.json) + oportunidades activas (strategy_alerts.json,
+   escrito por atlas_engine/data/strategy_lab_detector.py cada ~3 min).
+   Mismo patron de fetch/degradacion elegante que fetchLiveFeed() -- si el
+   archivo no esta disponible todavia, no se rompe nada, solo no hay datos
+   que mostrar. Regla principal del laboratorio: ninguna estrategia
+   desaparece de la lista, solo cambia de estado. ---- */
+let STRATEGIES_REGISTRY = { strategies: [] };
+let STRATEGY_ALERTS = { alerts: [] };
+
+async function fetchStrategiesRegistry() {
+  try {
+    const res = await fetch("strategies_registry.json", { cache: "no-store" });
+    if (!res.ok) return;
+    STRATEGIES_REGISTRY = await res.json();
+    if (currentView === "lab-estrategias") renderLabEstrategias();
+  } catch (e) { /* archivo no disponible todavia -- se deja el ultimo dato bueno conocido */ }
+}
+
+async function fetchStrategyAlerts() {
+  try {
+    const res = await fetch("strategy_alerts.json", { cache: "no-store" });
+    if (!res.ok) return;
+    STRATEGY_ALERTS = await res.json();
+    if (currentView === "lab-estrategias") renderLabEstrategias();
+  } catch (e) { /* archivo no disponible todavia -- se deja el ultimo dato bueno conocido */ }
+}
+
+const LAB_ESTADO_LABELS = {
+  IDEA: "Idea", HIPOTESIS: "Hipótesis", OBSERVACION: "Observación",
+  VALIDACION_CUOTA_REAL: "Validación en cuota real", CERTIFICADA: "Certificada",
+  PRODUCCION: "Producción", REFUTADA: "Refutada",
+};
+
+function fmtSecondsAgo(s) {
+  if (s === null || s === undefined) return "—";
+  const m = Math.floor(s / 60), r = Math.round(s % 60);
+  return m > 0 ? `${m}m ${r}s` : `${r}s`;
+}
+
+function labAlertCardHtml(a) {
+  const marketLbl = a.market_key === "corners" ? "Corners" : "Cards";
+  return `
+  <div class="lab-alert-card">
+    <div class="lab-alert-title">🔴 OPORTUNIDAD LIVE DETECTADA</div>
+    <div class="lab-alert-row"><b>Partido:</b> ${a.home || "?"} vs ${a.away || "?"}${a.league ? " · " + a.league : ""}</div>
+    <div class="lab-alert-row"><b>Mercado:</b> ${marketLbl} Over ${a.line}</div>
+    <div class="lab-alert-row"><b>Cuota detectada:</b> ${a.price_detectado ?? "—"}</div>
+    <div class="lab-alert-row"><b>Evento:</b> ${a.evento || "—"}</div>
+    <div class="lab-alert-row"><b>Tiempo desde el evento:</b> ${fmtSecondsAgo(a.segundos_desde_evento)}</div>
+    <div class="lab-alert-row"><b>Estado:</b> ${a.estado_mercado || "—"}</div>
+    <div class="lab-alert-row"><b>Confianza:</b> ${a.confianza || "—"}</div>
+    <div class="lab-alert-action">Acción: Verificar cuota en Betano.</div>
+  </div>`;
+}
+
+function labStrategyCardHtml(s) {
+  const estadoKey = (s.estado_actual || "").toLowerCase();
+  const estadoLbl = LAB_ESTADO_LABELS[s.estado_actual] || s.estado_actual;
+  const alertsForThis = (STRATEGY_ALERTS.alerts || []).filter(a => a.strategy_id === s.id);
+  const showAlerts = ["OBSERVACION", "VALIDACION_CUOTA_REAL"].includes(s.estado_actual);
+  const alertsHtml = !showAlerts ? "" : `
+    <div class="lab-section-label">Oportunidades activas ahora</div>
+    ${alertsForThis.length ? alertsForThis.map(labAlertCardHtml).join("") : `<div class="lab-alerts-empty">Sin oportunidades detectadas en este momento — el detector corre cada ~3 min mientras hay partidos en vivo.</div>`}`;
+  const roiTxt = (s.roi === null || s.roi === undefined) ? "—" : `${s.roi}%`;
+  const clvTxt = (s.clv === null || s.clv === undefined) ? "—" : `${s.clv}%`;
+  return `
+  <div class="lab-strategy-card">
+    <div class="lab-strategy-head">
+      <div>
+        <div class="lab-strategy-name">${s.nombre}</div>
+        <div class="lab-strategy-meta">${s.id} · ${s.tipo} · ${s.mercado}</div>
+      </div>
+      <span class="lab-state-badge lab-state-${estadoKey}">${estadoLbl}</span>
+    </div>
+    <div class="lab-strategy-hip">${s.hipotesis}</div>
+    <div class="lab-strategy-stats">
+      <div class="lab-stat"><div class="n">${s.casos_observados ?? 0}</div><div class="l">Casos observados</div></div>
+      <div class="lab-stat"><div class="n">${s.casos_verificados ?? 0}</div><div class="l">Verificados</div></div>
+      <div class="lab-stat"><div class="n">${s.aciertos ?? 0}</div><div class="l">Aciertos</div></div>
+      <div class="lab-stat"><div class="n">${s.fallos ?? 0}</div><div class="l">Fallos</div></div>
+      <div class="lab-stat"><div class="n">${roiTxt}</div><div class="l">ROI</div></div>
+      <div class="lab-stat"><div class="n">${clvTxt}</div><div class="l">CLV</div></div>
+    </div>
+    <div class="lab-strategy-meta">Nivel de evidencia: ${s.nivel_evidencia || "—"}</div>
+    <div class="lab-strategy-meta">Creada ${s.fecha_creacion_utc || "—"} · Última actualización ${s.ultima_actualizacion_utc || "—"}</div>
+    ${s.proximo_hito ? `<div class="lab-strategy-hito"><b>Próximo hito:</b> ${s.proximo_hito}</div>` : ""}
+    ${alertsHtml}
+  </div>`;
+}
+
+function renderLabEstrategias() {
+  const list = STRATEGIES_REGISTRY.strategies || [];
+  const el = document.getElementById("lab-strategies-list");
+  el.innerHTML = list.length
+    ? list.map(labStrategyCardHtml).join("")
+    : `<div class="lab-alerts-empty">Cargando registro de estrategias…</div>`;
+}
+
+function liveStatRowHtml(stat) {
+  const home = stat.home, away = stat.away;
+  const bothMissing = home === null || home === undefined || away === null || away === undefined;
+  if (bothMissing) return "";
+  const total = (Number(home) || 0) + (Number(away) || 0);
+  const homePct = total > 0 ? (Number(home) / total) * 100 : 50;
+  const awayPct = total > 0 ? (Number(away) / total) * 100 : 50;
+  const fmt = (v) => (Number.isInteger(v) ? String(v) : String(Math.round(v * 100) / 100));
+  return `
+  <div class="live-stat-row">
+    <div class="lsr-labels"><span>${fmt(home)}</span><span class="lsr-name">${stat.label}</span><span>${fmt(away)}</span></div>
+    <div class="lsr-bar"><div class="lsr-bar-home" style="width:${homePct}%"></div><div class="lsr-bar-away" style="width:${awayPct}%"></div></div>
+  </div>`;
+}
+
+function openLiveStatsModal(matchId) {
+  const m = MATCHES.find(x => x.id === matchId);
+  if (!m) return;
+  const feed = liveFeedEntryForMatch(m);
+  if (!feed) return; // sin datos reales del feed todavia -- no hay nada honesto que mostrar
+  const scoreTxt = (feed.home_score !== null && feed.home_score !== undefined && feed.away_score !== null && feed.away_score !== undefined)
+    ? `${feed.home_score} - ${feed.away_score}` : "—";
+  const metaTxt = [feed.status_description, feed.minute !== null && feed.minute !== undefined ? `min ${feed.minute}` : null]
+    .filter(Boolean).join(" · ");
+  document.getElementById("live-stats-score").innerHTML = `
+    <div class="teams">${feed.home || m.home} vs ${feed.away || m.away}</div>
+    <div class="score">${scoreTxt}</div>
+    <div class="meta">${flagIcon(m.league)} ${m.league}${metaTxt ? " · " + metaTxt : ""}</div>`;
+  const statKeys = Object.keys(feed.stats || {});
+  const rowsHtml = statKeys.map(k => liveStatRowHtml(feed.stats[k])).join("");
+  document.getElementById("live-stats-body").innerHTML = rowsHtml
+    ? rowsHtml
+    : `<div class="live-stats-empty">Sin estadísticas detalladas disponibles todavía para este partido.</div>`;
+  document.getElementById("live-stats-overlay").hidden = false;
+  document.getElementById("live-stats-modal").hidden = false;
+}
+function closeLiveStatsModal() {
+  document.getElementById("live-stats-overlay").hidden = true;
+  document.getElementById("live-stats-modal").hidden = true;
+}
+document.getElementById("live-stats-overlay").addEventListener("click", closeLiveStatsModal);
+document.getElementById("live-stats-close-btn").addEventListener("click", closeLiveStatsModal);
+
 function liveFinishedCardHtml(m) {
   const isLive = computeMatchState(m) === "live";
-  const scoreTxt = m.finalScore ? `${m.finalScore.home} - ${m.finalScore.away}` : (isLive ? "En curso" : "Resultado no disponible");
+  const feed = isLive ? liveFeedEntryForMatch(m) : null;
+  const hasFeedScore = feed && feed.home_score !== null && feed.home_score !== undefined && feed.away_score !== null && feed.away_score !== undefined;
+  const hasFeedStats = feed && feed.stats && Object.keys(feed.stats).length > 0;
+  const scoreTxt = m.finalScore ? `${m.finalScore.home} - ${m.finalScore.away}`
+    : (hasFeedScore ? `${feed.home_score} - ${feed.away_score}` : (isLive ? "En curso" : "Resultado no disponible"));
+  const statsBtn = hasFeedStats
+    ? `<button class="live-stats-btn" type="button" data-live-stats-id="${m.id}">📊 Ver stats en vivo</button>` : "";
   return `
   <div class="match-card ${isLive ? "match-card-live" : "match-card-finished"}" data-id="${m.id}">
     <div class="date-badge">${flagIcon(m.league)} ${isLive ? '<span class="live-badge"><span class="live-dot"></span>EN VIVO</span>' : "Finalizado"}</div>
     <div class="crest-row">${crestHtml(m.home, m.status)}<span class="vsx-sm">vs</span>${crestHtml(m.away, m.status)}</div>
     <div class="team-name">${teamLinkHtml(m.home, m.league)} <span style="color:var(--text-faint);font-weight:400">vs</span> ${teamLinkHtml(m.away, m.league)}</div>
     <div class="final-score">${scoreTxt}</div>
+    ${statsBtn}
   </div>`;
 }
 function renderLiveFinishedSections() {
@@ -1132,6 +1406,10 @@ function renderLiveFinishedSections() {
   }
   document.getElementById("live-finished-wrap").innerHTML = blocks.join("");
   document.querySelectorAll("#live-finished-wrap .match-card").forEach(c => bindTeamLinksOrDefault(c, () => openTile(c.dataset.id)));
+  document.querySelectorAll("#live-finished-wrap .live-stats-btn").forEach(b => b.addEventListener("click", (e) => {
+    e.stopPropagation();
+    openLiveStatsModal(b.dataset.liveStatsId);
+  }));
 }
 
 let activeLeague = "ALL";
@@ -1509,6 +1787,7 @@ function closeDrawer() { document.getElementById("drawer").hidden = true; docume
 const VIEW_IDS = {
   list: "view-list", "league-detail": "view-league-detail", radiografia: "view-radiografia",
   ligas: "view-ligas", team: "view-team", center: "view-center",
+  "lab-estrategias": "view-lab-estrategias",
 };
 const navStack = [];
 let currentView = "list";
@@ -1531,7 +1810,8 @@ function renderCurrentView() {
   else if (currentView === "ligas") renderLigas();
   else if (currentView === "team") renderTeamProfile(currentParams.team, currentParams.league);
   else if (currentView === "center") renderCenter(currentParams.id);
-  setDrawerActive(["list", "radiografia", "ligas"].includes(currentView) ? currentView : null);
+  else if (currentView === "lab-estrategias") renderLabEstrategias();
+  setDrawerActive(["list", "radiografia", "ligas", "lab-estrategias"].includes(currentView) ? currentView : null);
 }
 
 function goTo(view, params = {}, opts = {}) {
@@ -1551,8 +1831,10 @@ function goBack() {
 document.getElementById("drawer-partidos").addEventListener("click", () => { closeDrawer(); goTo("list", {}, { reset: true }); });
 document.getElementById("drawer-radiografia").addEventListener("click", () => { closeDrawer(); goTo("radiografia", { league: radLeague }, { reset: true }); });
 document.getElementById("drawer-ligas").addEventListener("click", () => { closeDrawer(); goTo("ligas", {}, { reset: true }); });
+document.getElementById("drawer-lab-estrategias").addEventListener("click", () => { closeDrawer(); goTo("lab-estrategias", {}, { reset: true }); });
 document.getElementById("radiografia-back-btn").addEventListener("click", goBack);
 document.getElementById("ligas-back-btn").addEventListener("click", goBack);
+document.getElementById("lab-estrategias-back-btn").addEventListener("click", goBack);
 document.getElementById("team-back-btn").addEventListener("click", goBack);
 
 function pendingBanner(text) {
@@ -1679,6 +1961,7 @@ function originToggleHtml(certMeta, coverage) {
 function marketRowHtml(label, prob, quality) {
   const pct = prob * 100;
   const fair = 1 / prob;
+  const mktKey = "m:" + label;
   return `
   <div class="mkt-row">
     <div class="mkt-label">${label}</div>
@@ -1687,15 +1970,51 @@ function marketRowHtml(label, prob, quality) {
       <div class="prob-bar-wrap"><div class="prob-bar" data-w="${pct.toFixed(1)}"></div></div>
     </div>
     <div class="mkt-fair">${fair.toFixed(2)}</div>
-    <input class="bookie-input" type="text" inputmode="decimal" placeholder="Pendiente de cuota" data-prob="${prob}" oninput="atlasUpdateEV(this)">
+    <input class="bookie-input" type="text" inputmode="decimal" placeholder="Pendiente de cuota" data-prob="${prob}" data-mkt-key="${escAttr(mktKey)}" oninput="atlasUpdateEV(this)">
     <div class="mkt-ev">Sin cuota</div>
     ${quality || ""}
   </div>`;
+}
+/* ---- Persistencia de cuotas del bookie (localStorage, 2026-08-02): el
+   Director tipea a mano la cuota real que ve en su casa de apuestas para
+   cada fila de mercado -- antes se perdia al recargar la pagina o volver a
+   Home, porque renderCenter() reconstruye #center-body desde cero cada vez
+   que se abre un partido. Namespace propio (atlas_lab_odds:) para no chocar
+   con nada mas. Solo local/por dispositivo -- sitio estatico sin backend,
+   esperado. Sin mecanismo de expiracion: la cuota de un partido viejo puede
+   quedar "stale" en localStorage indefinidamente, tradeoff aceptado por
+   ahora (no se resuelve en esta iteracion). ---- */
+const ATLAS_ODDS_LS_PREFIX = "atlas_lab_odds:";
+function escAttr(s) { return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;"); }
+function atlasOddsKey(matchId, mktKey) { return ATLAS_ODDS_LS_PREFIX + matchId + ":" + mktKey; }
+function atlasSaveOdds(input) {
+  if (!currentCenterMatchId || !input.dataset.mktKey) return;
+  const key = atlasOddsKey(currentCenterMatchId, input.dataset.mktKey);
+  const val = (input.value || "").trim();
+  try {
+    if (val) localStorage.setItem(key, val); else localStorage.removeItem(key);
+  } catch (e) {
+    // localStorage no disponible (modo privado, cuota llena, etc.) -- se ignora, no rompe la UI
+  }
+}
+/* Restaura, para el partido recien renderizado, cualquier cuota guardada en
+   localStorage dentro de #center-body y recalcula el EV% de cada una (no
+   solo el numero tipeado) para que se vea igual que si el Director la
+   hubiera tipeado recien. Se llama una sola vez justo despues de que
+   renderCenter() arma las 5 pestañas -- todos los .bookie-input ya existen
+   en el DOM en ese momento (incluso los de pestañas ocultas). */
+function restoreSavedOdds(matchId) {
+  document.querySelectorAll("#center-body .bookie-input[data-mkt-key]").forEach(input => {
+    let saved = null;
+    try { saved = localStorage.getItem(atlasOddsKey(matchId, input.dataset.mktKey)); } catch (e) { /* idem arriba */ }
+    if (saved) { input.value = saved; atlasUpdateEV(input); }
+  });
 }
 function atlasUpdateEV(input) {
   const row = input.closest(".mkt-row");
   const evEl = row.querySelector(".mkt-ev");
   const prob = parseFloat(input.dataset.prob);
+  atlasSaveOdds(input);
   const val = parseFloat((input.value || "").replace(",", "."));
   if (!val || val <= 1) { evEl.textContent = "Sin cuota"; evEl.className = "mkt-ev"; return; }
   const ev = (prob * val - 1) * 100;
@@ -1770,6 +2089,11 @@ function atlasLineSelect(sel) {
   const input = row.querySelector(".bookie-input");
   input.dataset.prob = prob;
   input.value = "";
+  // La linea elegida no es estable entre recargas (defaultIdx se recalcula
+  // cada vez con datos que pueden cambiar) -- por eso, igual que el input
+  // visual, un cambio de linea tambien limpia la cuota guardada en
+  // localStorage para esta fila, en vez de guardarla por-linea.
+  atlasSaveOdds(input);
   const evEl = row.querySelector(".mkt-ev");
   evEl.textContent = "Sin cuota"; evEl.className = "mkt-ev";
   // La linea elegida puede ser certificada (Atlas Core) o Poisson-extrapolada
@@ -1820,6 +2144,10 @@ function pillMarketRowHtml(pocket, hist, certCode, scope, stat, baseLabel, ht) {
   const pct = (def.prob * 100).toFixed(1);
   const coverage = coverageForScope(hist, scope);
   const quality = originToggleHtml(certMeta, coverage);
+  // Clave estable para persistencia de cuotas: scope+stat+ht+baseLabel
+  // identifica la FILA (no la linea elegida, que puede cambiar entre
+  // renders) de forma unica dentro de un mismo partido -- ver atlasLineSelect.
+  const mktKey = "p:" + scope + "|" + stat + "|" + (ht ? "1" : "0") + "|" + baseLabel;
   return `
   <div class="mkt-row">
     <div>
@@ -1831,7 +2159,7 @@ function pillMarketRowHtml(pocket, hist, certCode, scope, stat, baseLabel, ht) {
       <div class="prob-bar-wrap"><div class="prob-bar" data-w="${pct}"></div></div>
     </div>
     <div class="mkt-fair">${(1 / def.prob).toFixed(2)}</div>
-    <input class="bookie-input" type="text" inputmode="decimal" placeholder="Pendiente de cuota" data-prob="${def.prob.toFixed(4)}" oninput="atlasUpdateEV(this)">
+    <input class="bookie-input" type="text" inputmode="decimal" placeholder="Pendiente de cuota" data-prob="${def.prob.toFixed(4)}" data-mkt-key="${escAttr(mktKey)}" oninput="atlasUpdateEV(this)">
     <div class="mkt-ev">Sin cuota</div>
     ${quality}
   </div>`;
@@ -2269,6 +2597,7 @@ function atlasSelectReferee(sel, league) {
 }
 
 let currentCenterHist = null;
+let currentCenterMatchId = null; // id del partido actualmente abierto en #center-body (persistencia de cuotas)
 
 function tabArbitro(m, pocket, hist) {
   const fam = "var(--purple)";
@@ -2418,6 +2747,7 @@ function renderCenter(id) {
   standingsSubTab = "general";
   standingsFormWindow = 5;
   currentCenterHist = hist;
+  currentCenterMatchId = id;
   document.getElementById("c-league").textContent = `${m.league} · ${matchWhen(m)} hora Chile`;
   document.getElementById("c-teams").innerHTML = `${teamLinkHtml(m.home, m.league)}<span class="vsx">vs</span>${teamLinkHtml(m.away, m.league)}`;
   bindTeamLinksOrDefault(document.getElementById("c-teams"), () => {});
@@ -2442,6 +2772,7 @@ function renderCenter(id) {
     `<div class="match-tab-body" data-tab-body="${t.id}" ${i === 0 ? "" : "hidden"}>${t.fn(m, pocket, hist)}</div>`
   ).join("");
 
+  restoreSavedOdds(id);
   animateProbBars(document.getElementById("center-body"));
   renderStandingsSubBody(m);
   wireClasificacionTab(m);
@@ -2464,6 +2795,21 @@ document.addEventListener("click", (e) => {
 });
 
 renderHome();
+
+/* ---- live_feed.json: primer fetch al cargar + poll cada 50s mientras la
+   pagina siga abierta (rango pedido 45-60s). fetchLiveFeed() re-renderiza
+   #live-finished-wrap por si mismo cuando llegan datos nuevos -- no hace
+   falta que renderHome() dependa de la red. ---- */
+fetchLiveFeed();
+setInterval(fetchLiveFeed, 50000);
+
+/* ---- Laboratorio de Estrategias: registro de fichas (cambia poco, poll
+   cada 60s) + alertas activas (el detector corre cada ~3 min, poll cada
+   30s para no perderse una ventana corta mientras la pagina esta abierta). ---- */
+fetchStrategiesRegistry();
+fetchStrategyAlerts();
+setInterval(fetchStrategiesRegistry, 60000);
+setInterval(fetchStrategyAlerts, 30000);
 </script>
 </body>
 </html>
