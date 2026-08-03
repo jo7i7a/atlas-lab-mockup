@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-03T21:39:08Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-03T21:44:09Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "E-LAB-001",
@@ -15,16 +15,16 @@
    "priority": "ALTA",
    "estado_validacion": "VALIDACION",
    "extra": {
-    "count_now": 9,
+    "count_now": 10,
     "line": 8.5,
     "estado_mercado": "Mercado sigue abierto",
     "suspended": false,
-    "segundos_desde_evento_al_detectar": 674.0
+    "segundos_desde_evento_al_detectar": 916.0
    },
    "t_evento_real_utc": "2026-08-03T21:27:48Z",
    "t_captura_utc": "2026-08-03T21:27:48Z",
-   "t_evaluacion_utc": "2026-08-03T21:39:08Z",
-   "t_generacion_utc": "2026-08-03T21:39:08Z",
+   "t_evaluacion_utc": "2026-08-03T21:44:08Z",
+   "t_generacion_utc": "2026-08-03T21:44:08Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -52,16 +52,16 @@
    "priority": "ALTA",
    "estado_validacion": "VALIDACION",
    "extra": {
-    "count_now": 9,
+    "count_now": 10,
     "line": 7.5,
     "estado_mercado": "Mercado sigue abierto",
     "suspended": false,
-    "segundos_desde_evento_al_detectar": 958.0
+    "segundos_desde_evento_al_detectar": 1200.0
    },
    "t_evento_real_utc": "2026-08-03T21:23:04Z",
    "t_captura_utc": "2026-08-03T21:23:04Z",
-   "t_evaluacion_utc": "2026-08-03T21:39:08Z",
-   "t_generacion_utc": "2026-08-03T21:39:08Z",
+   "t_evaluacion_utc": "2026-08-03T21:44:08Z",
+   "t_generacion_utc": "2026-08-03T21:44:08Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -75,6 +75,80 @@
    "estado_temporal": "EXPIRADA",
    "evidencia": null,
    "alert_id": "6f0a55368beb7e68"
+  },
+  {
+   "strategy_id": "E-LAB-001",
+   "match_label": "Sarmiento vs Independiente Rivadavia (Liga Profesional de Fútbol)",
+   "match_id": "16431132",
+   "market": "Corners Over 9.5",
+   "cuota_detectada": 2.1,
+   "minuto": null,
+   "condicion": "Corner N°10 — precio sin moverse desde el cruce (Mercado sigue abierto)",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "VALIDACION",
+   "extra": {
+    "count_now": 10,
+    "line": 9.5,
+    "estado_mercado": "Mercado sigue abierto",
+    "suspended": false,
+    "segundos_desde_evento_al_detectar": 222.0
+   },
+   "t_evento_real_utc": "2026-08-03T21:39:22Z",
+   "t_captura_utc": "2026-08-03T21:39:22Z",
+   "t_evaluacion_utc": "2026-08-03T21:44:08Z",
+   "t_generacion_utc": "2026-08-03T21:44:08Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_EXPIRADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "expirada al generar (mas vieja que el TTL) -- no se notifica"
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "EXPIRADA",
+   "evidencia": null,
+   "alert_id": "1e265c7986c5687f"
+  },
+  {
+   "strategy_id": "E-LAB-001",
+   "match_label": "Sarmiento vs Independiente Rivadavia (Liga Profesional de Fútbol)",
+   "match_id": "16431132",
+   "market": "Cards Over 1.5",
+   "cuota_detectada": 2.75,
+   "minuto": null,
+   "condicion": "Tarjeta N°2 — precio sin moverse desde el cruce (Mercado sigue abierto)",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "VALIDACION",
+   "extra": {
+    "count_now": 2,
+    "line": 1.5,
+    "estado_mercado": "Mercado sigue abierto",
+    "suspended": false,
+    "segundos_desde_evento_al_detectar": 101.0
+   },
+   "t_evento_real_utc": "2026-08-03T21:41:23Z",
+   "t_captura_utc": "2026-08-03T21:41:23Z",
+   "t_evaluacion_utc": "2026-08-03T21:44:08Z",
+   "t_generacion_utc": "2026-08-03T21:44:08Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-03T21:44:08Z",
+     "latencia_envio_ms": 883.8675022125244,
+     "error": null
+    }
+   },
+   "latencia_total_seg": 165.0,
+   "estado_temporal": "ACTIVA",
+   "evidencia": null,
+   "alert_id": "6bebdeae2790cd89"
   }
  ]
 }
