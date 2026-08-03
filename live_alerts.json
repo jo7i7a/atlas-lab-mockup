@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-03T18:39:09Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-08-03T18:44:09Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "E-LAB-001",
@@ -15,16 +15,16 @@
    "priority": "ALTA",
    "estado_validacion": "VALIDACION",
    "extra": {
-    "count_now": 10,
+    "count_now": 12,
     "line": 9.5,
     "estado_mercado": "Mercado suspendido",
     "suspended": true,
-    "segundos_desde_evento_al_detectar": 672.0
+    "segundos_desde_evento_al_detectar": 959.0
    },
    "t_evento_real_utc": "2026-08-03T18:27:50Z",
    "t_captura_utc": "2026-08-03T18:27:50Z",
-   "t_evaluacion_utc": "2026-08-03T18:39:09Z",
-   "t_generacion_utc": "2026-08-03T18:39:09Z",
+   "t_evaluacion_utc": "2026-08-03T18:44:09Z",
+   "t_generacion_utc": "2026-08-03T18:44:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -38,6 +38,80 @@
    "estado_temporal": "EXPIRADA",
    "evidencia": null,
    "alert_id": "e8e4649345f61b80"
+  },
+  {
+   "strategy_id": "E-LAB-001",
+   "match_label": "Halmstads BK vs IK Sirius (Allsvenskan)",
+   "match_id": "15272478",
+   "market": "Corners Over 10.5",
+   "cuota_detectada": 2.2,
+   "minuto": null,
+   "condicion": "Corner N°11 — precio sin moverse desde el cruce (Mercado sigue abierto)",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "VALIDACION",
+   "extra": {
+    "count_now": 12,
+    "line": 10.5,
+    "estado_mercado": "Mercado sigue abierto",
+    "suspended": false,
+    "segundos_desde_evento_al_detectar": 266.0
+   },
+   "t_evento_real_utc": "2026-08-03T18:39:23Z",
+   "t_captura_utc": "2026-08-03T18:39:23Z",
+   "t_evaluacion_utc": "2026-08-03T18:44:09Z",
+   "t_generacion_utc": "2026-08-03T18:44:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_EXPIRADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "expirada al generar (mas vieja que el TTL) -- no se notifica"
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "EXPIRADA",
+   "evidencia": null,
+   "alert_id": "10b70bf24b6a427f"
+  },
+  {
+   "strategy_id": "E-LAB-001",
+   "match_label": "Halmstads BK vs IK Sirius (Allsvenskan)",
+   "match_id": "15272478",
+   "market": "Corners Over 11.5",
+   "cuota_detectada": 1.667,
+   "minuto": null,
+   "condicion": "Corner N°12 — precio sin moverse desde el cruce (Mercado suspendido)",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "VALIDACION",
+   "extra": {
+    "count_now": 12,
+    "line": 11.5,
+    "estado_mercado": "Mercado suspendido",
+    "suspended": true,
+    "segundos_desde_evento_al_detectar": 164.0
+   },
+   "t_evento_real_utc": "2026-08-03T18:41:05Z",
+   "t_captura_utc": "2026-08-03T18:41:05Z",
+   "t_evaluacion_utc": "2026-08-03T18:44:09Z",
+   "t_generacion_utc": "2026-08-03T18:44:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_EXPIRADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "expirada al generar (mas vieja que el TTL) -- no se notifica"
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "EXPIRADA",
+   "evidencia": null,
+   "alert_id": "9b941122eaff503d"
   }
  ]
 }
