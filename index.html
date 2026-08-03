@@ -498,6 +498,8 @@
   .lab-alert-row b { color: var(--text-dim); font-weight: 600; }
   .lab-alert-action { margin-top: 10px; font-size: 12px; font-weight: 700; color: var(--red); }
   .lab-alerts-empty { font-size: 12px; color: var(--text-faint); padding: 10px 2px; }
+  .lab-alert-expired { background: var(--surface-2); border-color: var(--border); opacity: 0.6; }
+  .lab-alert-expired .lab-alert-title, .lab-alert-expired .lab-alert-action { color: var(--text-faint); }
 
   /* ---- Pestaña Live del Centro de Análisis (2026-08-02) ---- */
   .live-pick-card { background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; padding: 10px 12px; margin-bottom: 10px; }
@@ -1233,12 +1235,16 @@ async function fetchLiveFeed() {
 }
 
 /* ---- Laboratorio de Estrategias (2026-08-02): registro de fichas
-   (strategies_registry.json) + oportunidades activas (strategy_alerts.json,
-   escrito por atlas_engine/data/strategy_lab_detector.py cada ~3 min).
-   Mismo patron de fetch/degradacion elegante que fetchLiveFeed() -- si el
-   archivo no esta disponible todavia, no se rompe nada, solo no hay datos
-   que mostrar. Regla principal del laboratorio: ninguna estrategia
-   desaparece de la lista, solo cambia de estado. ---- */
+   (strategies_registry.json) + oportunidades activas (live_alerts.json,
+   registro COMPARTIDO de todo el laboratorio -- cualquier estrategia, no
+   solo E-LAB-001 -- escrito por atlas_engine/notify/engine.py via
+   emit_alert(), refrescado cada ~1 min por Task Scheduler. Mismo patron de
+   fetch/degradacion elegante que fetchLiveFeed() -- si el archivo no esta
+   disponible todavia, no se rompe nada, solo no hay datos que mostrar.
+   Regla principal del laboratorio: ninguna estrategia desaparece de la
+   lista, solo cambia de estado. La notificacion en tiempo real ahora es
+   Telegram (ver ATLAS Notify) -- esta pestaña es el registro historico,
+   no el canal primario de aviso. ---- */
 let STRATEGIES_REGISTRY = { strategies: [] };
 let STRATEGY_ALERTS = { alerts: [] };
 
@@ -1253,7 +1259,7 @@ async function fetchStrategiesRegistry() {
 
 async function fetchStrategyAlerts() {
   try {
-    const res = await fetch("strategy_alerts.json", { cache: "no-store" });
+    const res = await fetch("live_alerts.json", { cache: "no-store" });
     if (!res.ok) return;
     STRATEGY_ALERTS = await res.json();
     if (currentView === "lab-estrategias") renderLabEstrategias();
@@ -1272,19 +1278,31 @@ function fmtSecondsAgo(s) {
   return m > 0 ? `${m}m ${r}s` : `${r}s`;
 }
 
+function secondsSinceIso(iso) {
+  if (!iso) return null;
+  const t = Date.parse(iso);
+  if (Number.isNaN(t)) return null;
+  return (Date.now() - t) / 1000;
+}
+
+const PRIORITY_EMOJI = { CRITICA: "🆘", ALTA: "🔴", MEDIA: "🟠", BAJA: "🔵" };
+
 function labAlertCardHtml(a) {
-  const marketLbl = a.market_key === "corners" ? "Corners" : "Cards";
+  const expirada = a.estado_temporal === "EXPIRADA";
+  const secs = secondsSinceIso(a.t_evento_real_utc || a.t_captura_utc);
+  const envioTelegram = a.envios && a.envios.telegram;
+  const envioTxt = envioTelegram ? `${envioTelegram.estado}${envioTelegram.latencia_envio_ms != null ? ` (${(envioTelegram.latencia_envio_ms / 1000).toFixed(1)}s)` : ""}` : "—";
   return `
-  <div class="lab-alert-card">
-    <div class="lab-alert-title">🔴 OPORTUNIDAD LIVE DETECTADA</div>
-    <div class="lab-alert-row"><b>Partido:</b> ${a.home || "?"} vs ${a.away || "?"}${a.league ? " · " + a.league : ""}</div>
-    <div class="lab-alert-row"><b>Mercado:</b> ${marketLbl} Over ${a.line}</div>
-    <div class="lab-alert-row"><b>Cuota detectada:</b> ${a.price_detectado ?? "—"}</div>
-    <div class="lab-alert-row"><b>Evento:</b> ${a.evento || "—"}</div>
-    <div class="lab-alert-row"><b>Tiempo desde el evento:</b> ${fmtSecondsAgo(a.segundos_desde_evento)}</div>
-    <div class="lab-alert-row"><b>Estado:</b> ${a.estado_mercado || "—"}</div>
-    <div class="lab-alert-row"><b>Confianza:</b> ${a.confianza || "—"}</div>
-    <div class="lab-alert-action">Acción: Verificar cuota en Betano.</div>
+  <div class="lab-alert-card${expirada ? " lab-alert-expired" : ""}">
+    <div class="lab-alert-title">${PRIORITY_EMOJI[a.priority] || "🔔"} ${expirada ? "OPORTUNIDAD EXPIRADA" : "OPORTUNIDAD LIVE DETECTADA"} <span class="lab-state-badge lab-state-${(a.estado_validacion || "").toLowerCase()}" style="margin-left:6px">${a.estado_validacion || "—"}</span></div>
+    <div class="lab-alert-row"><b>Partido:</b> ${a.match_label || "?"}</div>
+    <div class="lab-alert-row"><b>Mercado:</b> ${a.market || "—"}</div>
+    <div class="lab-alert-row"><b>Cuota detectada:</b> ${a.cuota_detectada ?? "—"}</div>
+    <div class="lab-alert-row"><b>Condición:</b> ${a.condicion || "—"}</div>
+    <div class="lab-alert-row"><b>Tiempo desde el evento:</b> ${fmtSecondsAgo(secs)}${expirada ? " (venció el TTL)" : ""}</div>
+    <div class="lab-alert-row"><b>Confianza:</b> ${a.confianza || "—"} · <b>Prioridad:</b> ${a.priority || "—"}</div>
+    <div class="lab-alert-row"><b>Telegram:</b> ${envioTxt}</div>
+    <div class="lab-alert-action">${expirada ? "Ventana vencida — no se recomienda actuar." : "Acción: Verificar cuota en Betano."}</div>
   </div>`;
 }
 
@@ -1295,7 +1313,7 @@ function labStrategyCardHtml(s) {
   const showAlerts = ["OBSERVACION", "VALIDACION_CUOTA_REAL"].includes(s.estado_actual);
   const alertsHtml = !showAlerts ? "" : `
     <div class="lab-section-label">Oportunidades activas ahora</div>
-    ${alertsForThis.length ? alertsForThis.map(labAlertCardHtml).join("") : `<div class="lab-alerts-empty">Sin oportunidades detectadas en este momento — el detector corre cada ~3 min mientras hay partidos en vivo.</div>`}`;
+    ${alertsForThis.length ? alertsForThis.map(labAlertCardHtml).join("") : `<div class="lab-alerts-empty">Sin oportunidades detectadas en este momento — el detector corre cada ~1 min mientras hay partidos en vivo. Se notifica por Telegram apenas se detecta una nueva.</div>`}`;
   const roiTxt = (s.roi === null || s.roi === undefined) ? "—" : `${s.roi}%`;
   const clvTxt = (s.clv === null || s.clv === undefined) ? "—" : `${s.clv}%`;
   return `

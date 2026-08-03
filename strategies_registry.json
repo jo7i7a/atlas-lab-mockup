@@ -46,6 +46,11 @@
      "estado": "VALIDACION_CUOTA_REAL",
      "fecha_utc": "2026-08-02",
      "nota": "Pendiente verificación humana contra casa de apuestas real (Betano) -- la cuota de ATLAS proviene de SofaScore /odds/1/all, que no se muestra en el producto público de SofaScore (solo 1X2 es visible ahí); falta confirmar que 1) el mercado de Corners/Cards exista en Betano para el mismo partido, y 2) el precio coincida o esté igual de congelado."
+    },
+    {
+     "estado": "VALIDACION_CUOTA_REAL",
+     "fecha_utc": "2026-08-02",
+     "nota": "Primera validación humana: no encontró problema de hipótesis, encontró problema de LATENCIA (detector corría cada 3 min, sin notificación push). Migrado a ATLAS Notify (atlas_engine/notify/), motor genérico multi-canal para todo el laboratorio: detector ahora corre cada 1 min (mínimo real de Windows Task Scheduler), notificación push por Telegram inmediata al detectar (no espera al ciclo de publicación web), cada alerta trae 6 timestamps de latencia (evento real/captura/evaluación/generación/envío/recepción), TTL con estado EXPIRADA automático, prioridad y estado_validación (autocompletado desde este registro) en el contrato. Pendiente: token de Telegram del Director para activar el envío real."
     }
    ],
    "casos_observados": 391,
