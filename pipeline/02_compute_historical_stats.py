@@ -331,6 +331,31 @@ def h2h_stats(home_id, away_id, n=60):
         "home_wins": home_wins, "draws": draws, "away_wins": away_wins,
     }
 
+def btts_pct_over(matches):
+    """% BTTS (ambos equipos marcaron) sobre una lista de partidos ya
+    resueltos (status='finished'), ya obtenida por el llamador via
+    last_n_matches(). Reutiliza EXACTAMENTE la misma definicion de BTTS que
+    h2h_stats (linea ~316: sh > 0 and sa > 0) -- no se inventa una definicion
+    nueva. Puramente descriptivo: % real historico, no es modelo/estrategia
+    certificada. Si el equipo tiene menos de 10 partidos de local/visita en
+    el patrimonio, se calcula igual sobre los que existan de verdad (nunca
+    se rellena/estima) -- el "n" real usado ya queda expuesto en el mismo
+    resultado via home_home_form["n"]/away_away_form["n"] (misma lista de
+    partidos que recibe esta funcion), asi que no se duplica aqui."""
+    if not matches:
+        return None
+    btts, valid = 0, 0
+    for m in matches:
+        sh, sa = m["score_home"], m["score_away"]
+        if sh is None or sa is None:
+            continue
+        valid += 1
+        if sh > 0 and sa > 0:
+            btts += 1
+    if valid == 0:
+        return None
+    return round(btts / valid * 100, 1)
+
 results = {}
 for match_id, entry in pocket.items():
     if not entry.get("resolved"):
@@ -384,6 +409,41 @@ for match_id, entry in pocket.items():
 
     h2h = h2h_stats(home_id, away_id)
 
+    # BTTS% descriptivo (no certificado): sobre los mismos ultimos-10
+    # local/visita ya obtenidos arriba (home_home_matches/away_away_matches)
+    # -- ver btts_pct_over(). btts_general_pct es el promedio simple de los
+    # dos, sin ponderar ni inventar formula, tal como pidio el Director.
+    home_btts_pct = btts_pct_over(home_home_matches)
+    away_btts_pct = btts_pct_over(away_away_matches)
+    if home_btts_pct is not None and away_btts_pct is not None:
+        btts_general_pct = round((home_btts_pct + away_btts_pct) / 2, 1)
+    else:
+        btts_general_pct = None
+
+    # Transparencia de muestra/procedencia para BTTS (2026-08-02, pedido del
+    # Director): reutiliza EXACTAMENTE lo que ya calcula form_wdl() sobre las
+    # mismas listas de partidos (home_home_matches/away_away_matches) -- no
+    # se inventa un mecanismo nuevo ni se vuelve a consultar la BD. n real,
+    # temporadas (years) y mezcla (mixed_seasons) quedan expuestos con
+    # nombres propios de BTTS para que un consumidor no tenga que saber
+    # cruzar con los campos de "form" para entender de donde sale el %.
+    home_btts_n = home_home_form["n"]
+    away_btts_n = away_away_form["n"]
+    home_btts_years = home_home_form["years"]
+    away_btts_years = away_away_form["years"]
+    home_btts_mixed_seasons = home_home_form["mixed_seasons"]
+    away_btts_mixed_seasons = away_away_form["mixed_seasons"]
+    # Regla de validez minima (2026-08-02): cada lado necesita >=5 partidos
+    # reales Y el total combinado >=10. No es "invalido si <10 por lado" --
+    # 6+8 (14) es valido; 6+4 (10... pero away=4<5) NO por el minimo
+    # individual; 5+4=9 tampoco por el minimo combinado. Nunca se oculta el
+    # porcentaje ya calculado arriba -- este flag es solo para que una UI
+    # futura decida si mostrarlo con o sin aviso de muestra insuficiente.
+    btts_sample_valid = (
+        home_btts_n >= 5 and away_btts_n >= 5
+        and (home_btts_n + away_btts_n) >= 10
+    )
+
     results[match_id] = {
         "resolved": True,
         "home_form_last5": home_form, "away_form_last5": away_form,
@@ -398,6 +458,13 @@ for match_id, entry in pocket.items():
         "home_home_lambda_against_ht": home_home_lambda_against_ht, "away_away_lambda_against_ht": away_away_lambda_against_ht,
         "home_home_lambda_2nd": home_home_lambda_2nd, "away_away_lambda_2nd": away_away_lambda_2nd,
         "h2h": h2h,
+        "home_btts_pct": home_btts_pct, "away_btts_pct": away_btts_pct,
+        "btts_general_pct": btts_general_pct,
+        "home_btts_n": home_btts_n, "away_btts_n": away_btts_n,
+        "home_btts_years": home_btts_years, "away_btts_years": away_btts_years,
+        "home_btts_mixed_seasons": home_btts_mixed_seasons,
+        "away_btts_mixed_seasons": away_btts_mixed_seasons,
+        "btts_sample_valid": btts_sample_valid,
     }
 
 with open(WORK + r"\historical_stats_results.json", "w", encoding="utf-8") as f:

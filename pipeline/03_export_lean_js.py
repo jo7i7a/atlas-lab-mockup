@@ -59,6 +59,21 @@ for match_id, entry in hist.items():
         "hhsLmbAHT": entry["home_home_lambda_against_ht"], "aasLmbAHT": entry["away_away_lambda_against_ht"],
         "hhsLmb2ND": entry["home_home_lambda_2nd"], "aasLmb2ND": entry["away_away_lambda_2nd"],
         "h2h": entry["h2h"],
+        # BTTS% descriptivo (no certificado) sobre ultimos-10 local/visita --
+        # ver 02_compute_historical_stats.py::btts_pct_over(). Se preservan
+        # los mismos nombres de campo del JSON fuente (sin abreviar) para
+        # trazabilidad/auditoria directa. n real ya viene implicito en
+        # hh["n"]/aa["n"] (misma lista de partidos), pero tambien se expone
+        # aqui bajo nombre propio de BTTS (2026-08-02, pedido del Director)
+        # junto con procedencia (years/mixed_seasons) y el flag de validez
+        # de muestra minima -- nunca se oculta el % aunque la muestra sea chica.
+        "home_btts_pct": entry["home_btts_pct"], "away_btts_pct": entry["away_btts_pct"],
+        "btts_general_pct": entry["btts_general_pct"],
+        "home_btts_n": entry["home_btts_n"], "away_btts_n": entry["away_btts_n"],
+        "home_btts_years": entry["home_btts_years"], "away_btts_years": entry["away_btts_years"],
+        "home_btts_mixed_seasons": entry["home_btts_mixed_seasons"],
+        "away_btts_mixed_seasons": entry["away_btts_mixed_seasons"],
+        "btts_sample_valid": entry["btts_sample_valid"],
     }
 
 out = []
