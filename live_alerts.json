@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-03T03:26:08Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-03T03:27:08Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "E-LAB-001",
@@ -23,8 +23,8 @@
    },
    "t_evento_real_utc": "2026-08-03T03:04:24Z",
    "t_captura_utc": "2026-08-03T03:04:24Z",
-   "t_evaluacion_utc": "2026-08-03T03:26:08Z",
-   "t_generacion_utc": "2026-08-03T03:26:08Z",
+   "t_evaluacion_utc": "2026-08-03T03:27:08Z",
+   "t_generacion_utc": "2026-08-03T03:27:08Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -60,8 +60,8 @@
    },
    "t_evento_real_utc": "2026-08-03T03:12:09Z",
    "t_captura_utc": "2026-08-03T03:12:09Z",
-   "t_evaluacion_utc": "2026-08-03T03:26:08Z",
-   "t_generacion_utc": "2026-08-03T03:26:08Z",
+   "t_evaluacion_utc": "2026-08-03T03:27:08Z",
+   "t_generacion_utc": "2026-08-03T03:27:08Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -75,80 +75,6 @@
    "estado_temporal": "EXPIRADA",
    "evidencia": null,
    "alert_id": "ba9bce7071164ee2"
-  },
-  {
-   "strategy_id": "E-LAB-001",
-   "match_label": "CD Toluca vs Club Necaxa (Liga MX, Apertura)",
-   "match_id": "16317949",
-   "market": "Cards Over 4.5",
-   "cuota_detectada": 1.615,
-   "minuto": null,
-   "condicion": "Tarjeta N°5 — precio sin moverse desde el cruce (Mercado suspendido)",
-   "confianza": "Media",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "VALIDACION",
-   "extra": {
-    "count_now": 7,
-    "line": 4.5,
-    "estado_mercado": "Mercado suspendido",
-    "suspended": true,
-    "segundos_desde_evento_al_detectar": 976.0
-   },
-   "t_evento_real_utc": "2026-08-03T02:56:13Z",
-   "t_captura_utc": "2026-08-03T02:56:13Z",
-   "t_evaluacion_utc": "2026-08-03T03:26:08Z",
-   "t_generacion_utc": "2026-08-03T03:26:08Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "SIN_CANAL_CONFIGURADO",
-     "t_envio_utc": null,
-     "latencia_envio_ms": null,
-     "error": "telegram_config.json ausente o incompleto (bot_token/chat_id)"
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "EXPIRADA",
-   "evidencia": null,
-   "alert_id": "6edae9514508be2d"
-  },
-  {
-   "strategy_id": "E-LAB-001",
-   "match_label": "CD Toluca vs Club Necaxa (Liga MX, Apertura)",
-   "match_id": "16317949",
-   "market": "Cards Over 3.5",
-   "cuota_detectada": 1.727,
-   "minuto": null,
-   "condicion": "Tarjeta N°4 — precio sin moverse desde el cruce (Mercado sigue abierto)",
-   "confianza": "Alta",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "VALIDACION",
-   "extra": {
-    "count_now": 7,
-    "line": 3.5,
-    "estado_mercado": "Mercado sigue abierto",
-    "suspended": false,
-    "segundos_desde_evento_al_detectar": 976.0
-   },
-   "t_evento_real_utc": "2026-08-03T02:56:13Z",
-   "t_captura_utc": "2026-08-03T02:56:13Z",
-   "t_evaluacion_utc": "2026-08-03T03:26:08Z",
-   "t_generacion_utc": "2026-08-03T03:26:08Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "SUPRIMIDA_COOLDOWN",
-     "t_envio_utc": null,
-     "latencia_envio_ms": null,
-     "error": null
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "EXPIRADA",
-   "evidencia": null,
-   "alert_id": "6df37b589a41a06e"
   },
   {
    "strategy_id": "E-LAB-001",
@@ -171,8 +97,8 @@
    },
    "t_evento_real_utc": "2026-08-03T03:12:09Z",
    "t_captura_utc": "2026-08-03T03:12:09Z",
-   "t_evaluacion_utc": "2026-08-03T03:26:08Z",
-   "t_generacion_utc": "2026-08-03T03:26:08Z",
+   "t_evaluacion_utc": "2026-08-03T03:27:08Z",
+   "t_generacion_utc": "2026-08-03T03:27:08Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
