@@ -1,44 +1,7 @@
 {
- "generated_at_utc": "2026-08-03T18:54:09Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-03T18:59:09Z",
+ "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "E-LAB-001",
-   "match_label": "Halmstads BK vs IK Sirius (Allsvenskan)",
-   "match_id": "15272478",
-   "market": "Corners Over 9.5",
-   "cuota_detectada": 1.833,
-   "minuto": null,
-   "condicion": "Corner N°10 — precio sin moverse desde el cruce (Mercado suspendido)",
-   "confianza": "Media",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "VALIDACION",
-   "extra": {
-    "count_now": 12,
-    "line": 9.5,
-    "estado_mercado": "Mercado suspendido",
-    "suspended": true,
-    "segundos_desde_evento_al_detectar": 1408.0
-   },
-   "t_evento_real_utc": "2026-08-03T18:27:50Z",
-   "t_captura_utc": "2026-08-03T18:27:50Z",
-   "t_evaluacion_utc": "2026-08-03T18:54:09Z",
-   "t_generacion_utc": "2026-08-03T18:54:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-03T18:28:09Z",
-     "latencia_envio_ms": 898.444414138794,
-     "error": null
-    }
-   },
-   "latencia_total_seg": 19.0,
-   "estado_temporal": "EXPIRADA",
-   "evidencia": null,
-   "alert_id": "e8e4649345f61b80"
-  },
   {
    "strategy_id": "E-LAB-001",
    "match_label": "Halmstads BK vs IK Sirius (Allsvenskan)",
@@ -60,8 +23,8 @@
    },
    "t_evento_real_utc": "2026-08-03T18:39:23Z",
    "t_captura_utc": "2026-08-03T18:39:23Z",
-   "t_evaluacion_utc": "2026-08-03T18:54:09Z",
-   "t_generacion_utc": "2026-08-03T18:54:09Z",
+   "t_evaluacion_utc": "2026-08-03T18:59:09Z",
+   "t_generacion_utc": "2026-08-03T18:59:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -97,8 +60,8 @@
    },
    "t_evento_real_utc": "2026-08-03T18:41:05Z",
    "t_captura_utc": "2026-08-03T18:41:05Z",
-   "t_evaluacion_utc": "2026-08-03T18:54:09Z",
-   "t_generacion_utc": "2026-08-03T18:54:09Z",
+   "t_evaluacion_utc": "2026-08-03T18:59:09Z",
+   "t_generacion_utc": "2026-08-03T18:59:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
