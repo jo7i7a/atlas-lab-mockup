@@ -1,8 +1,27 @@
 {
- "generated_at_utc": "2026-08-03T00:21:27Z",
+ "generated_at_utc": "2026-08-03T00:24:26Z",
  "strategy_id": "E-LAB-001",
- "n_alerts": 7,
+ "n_alerts": 8,
  "alerts": [
+  {
+   "strategy_id": "E-LAB-001",
+   "event_id": 16317947,
+   "market_key": "corners",
+   "line": 8.5,
+   "count_now": 9,
+   "price_detectado": 1.667,
+   "evento": "Corner N°9",
+   "cruce_timestamp_utc": "2026-08-03T00:21:43Z",
+   "ultima_captura_utc": "2026-08-03T00:24:24Z",
+   "segundos_desde_evento": 161.0,
+   "estado_mercado": "Mercado sigue abierto",
+   "suspended": false,
+   "confianza": "Media",
+   "home": "Club América",
+   "away": "Santos Laguna",
+   "league": "Liga MX, Apertura",
+   "status_description": "2nd half"
+  },
   {
    "strategy_id": "E-LAB-001",
    "event_id": 16431128,
