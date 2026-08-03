@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-03T02:40:08Z",
+ "generated_at_utc": "2026-08-03T02:40:33Z",
  "n_alerts": 2,
  "alerts": [
   {
@@ -23,12 +23,12 @@
    },
    "t_evento_real_utc": "2026-08-03T02:19:22Z",
    "t_captura_utc": "2026-08-03T02:19:22Z",
-   "t_evaluacion_utc": "2026-08-03T02:40:08Z",
-   "t_generacion_utc": "2026-08-03T02:40:08Z",
+   "t_evaluacion_utc": "2026-08-03T02:40:33Z",
+   "t_generacion_utc": "2026-08-03T02:40:33Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
-     "estado": "SUPRIMIDA_COOLDOWN",
+     "estado": "SUPRIMIDA_EXPIRADA",
      "t_envio_utc": null,
      "latencia_envio_ms": null,
      "error": "expirada al generar (mas vieja que el TTL) -- no se notifica"
@@ -60,12 +60,12 @@
    },
    "t_evento_real_utc": "2026-08-03T02:13:17Z",
    "t_captura_utc": "2026-08-03T02:13:17Z",
-   "t_evaluacion_utc": "2026-08-03T02:40:08Z",
-   "t_generacion_utc": "2026-08-03T02:40:08Z",
+   "t_evaluacion_utc": "2026-08-03T02:40:33Z",
+   "t_generacion_utc": "2026-08-03T02:40:33Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
-     "estado": "SUPRIMIDA_COOLDOWN",
+     "estado": "SUPRIMIDA_EXPIRADA",
      "t_envio_utc": null,
      "latencia_envio_ms": null,
      "error": "expirada al generar (mas vieja que el TTL) -- no se notifica"
