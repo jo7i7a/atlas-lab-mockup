@@ -1,6 +1,26 @@
 {
- "generated_at_utc": "2026-08-03T01:48:27Z",
+ "generated_at_utc": "2026-08-03T01:51:27Z",
  "strategy_id": "E-LAB-001",
- "n_alerts": 0,
- "alerts": []
+ "n_alerts": 1,
+ "alerts": [
+  {
+   "strategy_id": "E-LAB-001",
+   "event_id": 16431130,
+   "market_key": "corners",
+   "line": 7.5,
+   "count_now": 8,
+   "price_detectado": 1.615,
+   "evento": "Corner N°8",
+   "cruce_timestamp_utc": "2026-08-03T01:51:14Z",
+   "ultima_captura_utc": "2026-08-03T01:51:14Z",
+   "segundos_desde_evento": 0.0,
+   "estado_mercado": "Mercado sigue abierto",
+   "suspended": false,
+   "confianza": "Media",
+   "home": "CA Lanús",
+   "away": "Instituto De Córdoba",
+   "league": "Liga Profesional de Fútbol",
+   "status_description": "2nd half"
+  }
+ ]
 }
