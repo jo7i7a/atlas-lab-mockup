@@ -1,7 +1,44 @@
 {
- "generated_at_utc": "2026-08-03T21:23:09Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-08-03T21:28:09Z",
+ "n_alerts": 2,
  "alerts": [
+  {
+   "strategy_id": "E-LAB-001",
+   "match_label": "Sarmiento vs Independiente Rivadavia (Liga Profesional de Fútbol)",
+   "match_id": "16431132",
+   "market": "Corners Over 8.5",
+   "cuota_detectada": 1.8,
+   "minuto": null,
+   "condicion": "Corner N°9 — precio sin moverse desde el cruce (Mercado sigue abierto)",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "VALIDACION",
+   "extra": {
+    "count_now": 9,
+    "line": 8.5,
+    "estado_mercado": "Mercado sigue abierto",
+    "suspended": false,
+    "segundos_desde_evento_al_detectar": 20.0
+   },
+   "t_evento_real_utc": "2026-08-03T21:27:48Z",
+   "t_captura_utc": "2026-08-03T21:27:48Z",
+   "t_evaluacion_utc": "2026-08-03T21:28:08Z",
+   "t_generacion_utc": "2026-08-03T21:28:08Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-03T21:28:09Z",
+     "latencia_envio_ms": 841.9582843780518,
+     "error": null
+    }
+   },
+   "latencia_total_seg": 21.0,
+   "estado_temporal": "ACTIVA",
+   "evidencia": null,
+   "alert_id": "2a2d88c7f2da6b62"
+  },
   {
    "strategy_id": "E-LAB-001",
    "match_label": "Sarmiento vs Independiente Rivadavia (Liga Profesional de Fútbol)",
@@ -10,21 +47,21 @@
    "cuota_detectada": 1.667,
    "minuto": null,
    "condicion": "Corner N°8 — precio sin moverse desde el cruce (Mercado sigue abierto)",
-   "confianza": "Media",
+   "confianza": "Alta",
    "link": "",
    "priority": "ALTA",
    "estado_validacion": "VALIDACION",
    "extra": {
-    "count_now": 8,
+    "count_now": 9,
     "line": 7.5,
     "estado_mercado": "Mercado sigue abierto",
     "suspended": false,
-    "segundos_desde_evento_al_detectar": 0.0
+    "segundos_desde_evento_al_detectar": 304.0
    },
    "t_evento_real_utc": "2026-08-03T21:23:04Z",
    "t_captura_utc": "2026-08-03T21:23:04Z",
-   "t_evaluacion_utc": "2026-08-03T21:23:08Z",
-   "t_generacion_utc": "2026-08-03T21:23:08Z",
+   "t_evaluacion_utc": "2026-08-03T21:28:09Z",
+   "t_generacion_utc": "2026-08-03T21:28:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -35,7 +72,7 @@
     }
    },
    "latencia_total_seg": 5.0,
-   "estado_temporal": "ACTIVA",
+   "estado_temporal": "EXPIRADA",
    "evidencia": null,
    "alert_id": "6f0a55368beb7e68"
   }
