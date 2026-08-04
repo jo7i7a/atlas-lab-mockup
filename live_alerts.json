@@ -1,7 +1,44 @@
 {
- "generated_at_utc": "2026-08-04T01:54:09Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-04T01:59:09Z",
+ "n_alerts": 3,
  "alerts": [
+  {
+   "strategy_id": "E-LAB-001",
+   "match_label": "Central Córdoba vs San Lorenzo (Liga Profesional de Fútbol)",
+   "match_id": "16431133",
+   "market": "Cards Over 5.5",
+   "cuota_detectada": 1.727,
+   "minuto": null,
+   "condicion": "Tarjeta N°6 — precio sin moverse desde el cruce (Mercado sigue abierto)",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "VALIDACION",
+   "extra": {
+    "count_now": 6,
+    "line": 5.5,
+    "estado_mercado": "Mercado sigue abierto",
+    "suspended": false,
+    "segundos_desde_evento_al_detectar": 263.0
+   },
+   "t_evento_real_utc": "2026-08-04T01:54:39Z",
+   "t_captura_utc": "2026-08-04T01:54:39Z",
+   "t_evaluacion_utc": "2026-08-04T01:59:09Z",
+   "t_generacion_utc": "2026-08-04T01:59:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_EXPIRADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "expirada al generar (mas vieja que el TTL) -- no se notifica"
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "EXPIRADA",
+   "evidencia": null,
+   "alert_id": "e8675e14140cb074"
+  },
   {
    "strategy_id": "E-LAB-001",
    "match_label": "Central Córdoba vs San Lorenzo (Liga Profesional de Fútbol)",
@@ -15,16 +52,16 @@
    "priority": "ALTA",
    "estado_validacion": "VALIDACION",
    "extra": {
-    "count_now": 5,
+    "count_now": 6,
     "line": 4.5,
     "estado_mercado": "Mercado sigue abierto",
     "suspended": false,
-    "segundos_desde_evento_al_detectar": 814.0
+    "segundos_desde_evento_al_detectar": 1118.0
    },
    "t_evento_real_utc": "2026-08-04T01:40:24Z",
    "t_captura_utc": "2026-08-04T01:40:24Z",
-   "t_evaluacion_utc": "2026-08-04T01:54:09Z",
-   "t_generacion_utc": "2026-08-04T01:54:09Z",
+   "t_evaluacion_utc": "2026-08-04T01:59:09Z",
+   "t_generacion_utc": "2026-08-04T01:59:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -56,12 +93,12 @@
     "line": 6.5,
     "estado_mercado": "Mercado sigue abierto",
     "suspended": false,
-    "segundos_desde_evento_al_detectar": 936.0
+    "segundos_desde_evento_al_detectar": 1240.0
    },
    "t_evento_real_utc": "2026-08-04T01:38:22Z",
    "t_captura_utc": "2026-08-04T01:38:22Z",
-   "t_evaluacion_utc": "2026-08-04T01:54:09Z",
-   "t_generacion_utc": "2026-08-04T01:54:09Z",
+   "t_evaluacion_utc": "2026-08-04T01:59:09Z",
+   "t_generacion_utc": "2026-08-04T01:59:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
