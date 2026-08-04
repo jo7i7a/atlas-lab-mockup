@@ -1,30 +1,33 @@
 # run_strategy_detector.ps1 -- entry point invocado por Windows Task Scheduler.
 #
 # Building:     ATLAS_LAB_MOCKUP (Edificio 5) / Laboratorio de Estrategias
-# Type:         Implementation (orquestador del Detector E-LAB-001, que ahora
-#               emite via ATLAS Notify -- atlas_engine/notify/)
-# Status:       Validacion en cuota real (estrategia E-LAB-001)
-# Dependencies: atlas_engine\data\strategy_lab_detector.py, atlas_engine\notify\,
+# Type:         Implementation (orquestador generico -- llama a
+#               run_live_strategies.py, que corre TODAS las estrategias LIVE
+#               activas, no una sola. Emite via ATLAS Notify -- atlas_engine/notify/)
+# Status:       Produccion (estrategia activa actual: L1; E-LAB-001 REFUTADA
+#               2026-08-04, ver strategies_registry.json, no corre mas)
+# Dependencies: atlas_engine\data\run_live_strategies.py, atlas_engine\notify\,
 #               signal_platform_capture.db (solo lectura)
 #
 # Publica (git commit+push) SOLO live_alerts.json y live_alerts_history.jsonl
-# -- registro COMPARTIDO de todo el laboratorio (no solo E-LAB-001), escrito
-# por atlas_engine/notify/engine.py. Mismo patron de barreras que
+# -- registro COMPARTIDO de todo el laboratorio (cualquier estrategia activa),
+# escrito por atlas_engine/notify/engine.py. Mismo patron de barreras que
 # run_live_feed.ps1 (verificar pre-staged, git add nombrando archivos,
 # verificar staged == esperado, revert si falla algo).
 #
-# CADENCIA (2026-08-02, ajuste de latencia pedido por el Director tras la
-# primera validacion humana -- el problema no era la hipotesis, era que esto
-# corria cada 3 minutos): ahora cada ~20-25s, alineado con el piso real de
-# signal_platform_capture.db (se actualiza cada ~20s) -- correr mas seguido
-# no encuentra nada nuevo. Task Scheduler: ATLAS_Lab_StrategyDetector.
+# CADENCIA: cada 1 minuto (minimo real que acepta Windows Task Scheduler --
+# se probo 30s, lo rechazo con error de rango). Task Scheduler: ATLAS_Lab_StrategyDetector.
+#
+# Agregar una estrategia nueva = escribir su modulo en atlas_engine/data/ +
+# una linea en ACTIVE_STRATEGIES de run_live_strategies.py -- NUNCA hace
+# falta tocar este .ps1 ni crear una tarea de Task Scheduler nueva.
 
 $ErrorActionPreference = "Continue"
 $root = "C:\SoccerAnalyticsExtractor"
 $mockupRoot = "C:\SoccerAnalyticsExtractor\atlas_lab_mockup"
 $pipeline = "$mockupRoot\pipeline"
 $python = "C:\SoccerAnalyticsExtractor\.venv\Scripts\python.exe"
-$detectorScript = "$root\atlas_engine\data\strategy_lab_detector.py"
+$detectorScript = "$root\atlas_engine\data\run_live_strategies.py"
 $logDir = "$pipeline\logs"
 New-Item -ItemType Directory -Force -Path $logDir | Out-Null
 $logFile = Join-Path $logDir ("run_strategy_detector_{0}.log" -f (Get-Date -Format "yyyyMMdd_HHmmss"))

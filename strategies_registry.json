@@ -1,82 +1,99 @@
 {
- "_meta": {
-  "descripcion": "Registro de fichas del Laboratorio de Estrategias de ATLAS Lab. Regla principal: ninguna estrategia se elimina de este archivo, solo cambia de estado conforme acumula evidencia (ver 'estado_actual' y 'historial_estados' de cada ficha).",
-  "estados_posibles": [
-   "IDEA",
-   "HIPOTESIS",
-   "OBSERVACION",
-   "VALIDACION_CUOTA_REAL",
-   "CERTIFICADA",
-   "PRODUCCION",
-   "REFUTADA"
-  ],
-  "ultima_actualizacion_utc": "2026-08-02T00:00:00Z"
- },
- "strategies": [
-  {
-   "id": "E-LAB-001",
-   "nombre": "Desfase estructural Corners/Cards en mercados de baja liquidez",
-   "mercado": "Corners 2-Way (over/under por línea) y Total Cards (over/under por línea), mercados LIVE",
-   "tipo": "LIVE",
-   "hipotesis": "Los mercados LIVE de Corners y Cards, al tener baja liquidez/interés comercial frente al 1X2, no reprecian cuando el conteo real del partido ya cruzó una línea publicada -- el precio queda 'congelado' en su nivel pre-cruce durante minutos u horas mientras el mercado sigue mayoritariamente abierto (suspended=False). Certificado estadísticamente en esta sesión: 0 de 383 cruces observados se corrigieron dentro de la ventana de captura (mediana de 10-14 min sin reflejo, casos de hasta 76 min).",
-   "reglas_entrada": [
-    "El conteo real acumulado (corners totales, o amarillas+rojas totales) del partido ya superó una línea X.5 publicada en el mercado correspondiente.",
-    "El precio Over de esa línea específica no se movió más de 0.05 (cuota decimal) desde el valor inmediatamente anterior al cruce.",
-    "El mercado tiene suspended=False en la última captura.",
-    "Confianza 'Alta' si han pasado ≥5 minutos desde el cruce sin reacción y el mercado sigue abierto; 'Media' en otro caso."
-   ],
-   "reglas_salida": [
-    "El precio se mueve ≥0.05 respecto al valor pre-cruce (el mercado reaccionó -- deja de ser una oportunidad de esta estrategia).",
-    "El mercado pasa a suspended=True (ya no operable).",
-    "Termina el partido sin que el precio se haya movido (se registra como caso de ventana máxima, no como pérdida de oportunidad)."
-   ],
-   "estado_actual": "REFUTADA",
-   "historial_estados": [
+  "_meta": {
+    "descripcion": "Registro de fichas del Laboratorio de Estrategias de ATLAS Lab. Regla principal: ninguna estrategia se elimina de este archivo, solo cambia de estado conforme acumula evidencia (ver 'estado_actual' y 'historial_estados' de cada ficha).",
+    "estados_posibles": ["IDEA", "HIPOTESIS", "OBSERVACION", "VALIDACION_CUOTA_REAL", "CERTIFICADA", "PRODUCCION", "REFUTADA"],
+    "ultima_actualizacion_utc": "2026-08-04T02:30:00Z"
+  },
+  "strategies": [
     {
-     "estado": "HIPOTESIS",
-     "fecha_utc": "2026-08-02",
-     "nota": "Certificado que la baja liveliness de Corners/Cards es fenómeno real de mercado, no artefacto de captura/redondeo/bug."
+      "id": "E-LAB-001",
+      "nombre": "Desfase estructural Corners/Cards en mercados de baja liquidez",
+      "mercado": "Corners 2-Way (over/under por línea) y Total Cards (over/under por línea), mercados LIVE",
+      "tipo": "LIVE",
+      "hipotesis": "Los mercados LIVE de Corners y Cards, al tener baja liquidez/interés comercial frente al 1X2, no reprecian cuando el conteo real del partido ya cruzó una línea publicada -- el precio queda 'congelado' en su nivel pre-cruce durante minutos u horas mientras el mercado sigue mayoritariamente abierto (suspended=False). Certificado estadísticamente en esta sesión: 0 de 383 cruces observados se corrigieron dentro de la ventana de captura (mediana de 10-14 min sin reflejo, casos de hasta 76 min).",
+      "reglas_entrada": [
+        "El conteo real acumulado (corners totales, o amarillas+rojas totales) del partido ya superó una línea X.5 publicada en el mercado correspondiente.",
+        "El precio Over de esa línea específica no se movió más de 0.05 (cuota decimal) desde el valor inmediatamente anterior al cruce.",
+        "El mercado tiene suspended=False en la última captura.",
+        "Confianza 'Alta' si han pasado ≥5 minutos desde el cruce sin reacción y el mercado sigue abierto; 'Media' en otro caso."
+      ],
+      "reglas_salida": [
+        "El precio se mueve ≥0.05 respecto al valor pre-cruce (el mercado reaccionó -- deja de ser una oportunidad de esta estrategia).",
+        "El mercado pasa a suspended=True (ya no operable).",
+        "Termina el partido sin que el precio se haya movido (se registra como caso de ventana máxima, no como pérdida de oportunidad)."
+      ],
+      "estado_actual": "REFUTADA",
+      "historial_estados": [
+        {"estado": "HIPOTESIS", "fecha_utc": "2026-08-02", "nota": "Certificado que la baja liveliness de Corners/Cards es fenómeno real de mercado, no artefacto de captura/redondeo/bug."},
+        {"estado": "OBSERVACION", "fecha_utc": "2026-08-02", "nota": "Medida la ventana operativa: 283 cruces en Corners (84% de partidos), 100 en Cards (63% de partidos), 0/383 correcciones, mercado abierto 89.3%/64.1% del tiempo de ventana."},
+        {"estado": "VALIDACION_CUOTA_REAL", "fecha_utc": "2026-08-02", "nota": "Pendiente verificación humana contra casa de apuestas real (Betano) -- la cuota de ATLAS proviene de SofaScore /odds/1/all, que no se muestra en el producto público de SofaScore (solo 1X2 es visible ahí); falta confirmar que 1) el mercado de Corners/Cards exista en Betano para el mismo partido, y 2) el precio coincida o esté igual de congelado."},
+        {"estado": "VALIDACION_CUOTA_REAL", "fecha_utc": "2026-08-02", "nota": "Primera validación humana: no encontró problema de hipótesis, encontró problema de LATENCIA (detector corría cada 3 min, sin notificación push). Migrado a ATLAS Notify (atlas_engine/notify/), motor genérico multi-canal para todo el laboratorio: detector ahora corre cada 1 min (mínimo real de Windows Task Scheduler), notificación push por Telegram inmediata al detectar (no espera al ciclo de publicación web), cada alerta trae 6 timestamps de latencia (evento real/captura/evaluación/generación/envío/recepción), TTL con estado EXPIRADA automático, prioridad y estado_validación (autocompletado desde este registro) en el contrato. Pendiente: token de Telegram del Director para activar el envío real."},
+        {"estado": "REFUTADA", "fecha_utc": "2026-08-04", "nota": "Cierre definitivo con evidencia real, no estadística. Tras corregir un bug real del detector (generaba alertas para partidos ya terminados -- caso Vélez Sarsfield vs Independiente, segundos_desde_evento negativo por captura censurada al fin del partido), llegó una alerta limpia y rápida (Central Córdoba vs San Lorenzo, Cards Over 4.5, latencia real medida 45s evento→Telegram, verificada con timestamps exactos, no estimada). El Director entró a Betano con cuenta real de inmediato: el mercado de Tarjetas se pone en gris y recalcula apenas ocurre el evento que decide la línea -- exactamente lo opuesto al supuesto central de la estrategia (precio congelado mientras el mercado sigue abierto). El fenómeno de baja reactividad SÍ es real en los datos de SofaScore (certificado, no se retracta esa parte), pero NO existe de la misma forma en una casa de apuestas real -- no es explotable. Aplicando la regla pre-registrada: 'si no puede aprovecharse en condiciones reales, se descarta aunque el fenómeno estadístico sea real'. Se pausa la tarea programada del detector (ATLAS_Lab_StrategyDetector) y se agrega supresión automática y permanente de envío a canales para cualquier estrategia en estado REFUTADA (atlas_engine/notify/engine.py) -- protección genérica para todo el laboratorio, no solo esta línea."}
+      ],
+      "casos_observados": 391,
+      "casos_verificados": 0,
+      "aciertos": 0,
+      "fallos": 0,
+      "roi": null,
+      "clv": null,
+      "nivel_evidencia": "Estadístico certificado en datos SofaScore (backtest histórico, N=391 cruces, 123 partidos) + verificación humana real en Betano (2026-08-04): mercado se suspende/recalcula de inmediato en la casa real, la ventana no existe ahí. Fenómeno de origen real, no explotable.",
+      "fecha_creacion_utc": "2026-08-02",
+      "ultima_actualizacion_utc": "2026-08-04T02:10:00Z",
+      "proximo_hito": "Cerrada. No reabrir sin evidencia extraordinaria (ej. otra casa de apuestas real con comportamiento distinto a Betano) -- mismo criterio que las demás líneas refutadas del laboratorio.",
+      "metricas_fase4": {
+        "pct_coincide": null,
+        "pct_mejor": null,
+        "pct_suspendido": null,
+        "pct_inexistente": null,
+        "pct_operable": null,
+        "tiempo_medio_disponible_seg": null,
+        "n_muestra": 0
+      }
     },
     {
-     "estado": "OBSERVACION",
-     "fecha_utc": "2026-08-02",
-     "nota": "Medida la ventana operativa: 283 cruces en Corners (84% de partidos), 100 en Cards (63% de partidos), 0/383 correcciones, mercado abierto 89.3%/64.1% del tiempo de ventana."
-    },
-    {
-     "estado": "VALIDACION_CUOTA_REAL",
-     "fecha_utc": "2026-08-02",
-     "nota": "Pendiente verificación humana contra casa de apuestas real (Betano) -- la cuota de ATLAS proviene de SofaScore /odds/1/all, que no se muestra en el producto público de SofaScore (solo 1X2 es visible ahí); falta confirmar que 1) el mercado de Corners/Cards exista en Betano para el mismo partido, y 2) el precio coincida o esté igual de congelado."
-    },
-    {
-     "estado": "VALIDACION_CUOTA_REAL",
-     "fecha_utc": "2026-08-02",
-     "nota": "Primera validación humana: no encontró problema de hipótesis, encontró problema de LATENCIA (detector corría cada 3 min, sin notificación push). Migrado a ATLAS Notify (atlas_engine/notify/), motor genérico multi-canal para todo el laboratorio: detector ahora corre cada 1 min (mínimo real de Windows Task Scheduler), notificación push por Telegram inmediata al detectar (no espera al ciclo de publicación web), cada alerta trae 6 timestamps de latencia (evento real/captura/evaluación/generación/envío/recepción), TTL con estado EXPIRADA automático, prioridad y estado_validación (autocompletado desde este registro) en el contrato. Pendiente: token de Telegram del Director para activar el envío real."
-    },
-    {
-     "estado": "REFUTADA",
-     "fecha_utc": "2026-08-04",
-     "nota": "Cierre definitivo con evidencia real, no estadística. Tras corregir un bug real del detector (generaba alertas para partidos ya terminados -- caso Vélez Sarsfield vs Independiente, segundos_desde_evento negativo por captura censurada al fin del partido), llegó una alerta limpia y rápida (Central Córdoba vs San Lorenzo, Cards Over 4.5, latencia real medida 45s evento→Telegram, verificada con timestamps exactos, no estimada). El Director entró a Betano con cuenta real de inmediato: el mercado de Tarjetas se pone en gris y recalcula apenas ocurre el evento que decide la línea -- exactamente lo opuesto al supuesto central de la estrategia (precio congelado mientras el mercado sigue abierto). El fenómeno de baja reactividad SÍ es real en los datos de SofaScore (certificado, no se retracta esa parte), pero NO existe de la misma forma en una casa de apuestas real -- no es explotable. Aplicando la regla pre-registrada: 'si no puede aprovecharse en condiciones reales, se descarta aunque el fenómeno estadístico sea real'. Se pausa la tarea programada del detector (ATLAS_Lab_StrategyDetector) y se agrega supresión automática y permanente de envío a canales para cualquier estrategia en estado REFUTADA (atlas_engine/notify/engine.py) -- protección genérica para todo el laboratorio, no solo esta línea."
+      "id": "L1",
+      "nombre": "Córners Over — Presión Tardía LIVE",
+      "mercado": "Corners Totales (Over/Under, línea a verificar manualmente en la casa de apuestas al momento de la alerta -- el detector no fija ni evalúa una línea específica)",
+      "tipo": "LIVE",
+      "hipotesis": "Cuando un equipo presiona alto en ligas de alta densidad de córners y ya acumula ≥4 córners totales (con ≥3 de un mismo equipo, local o visitante) antes del minuto 30, la tasa de córners por minuto restante sube considerablemente -- se apuesta Over en córners totales del partido completo.",
+      "reglas_entrada": [
+        "Liga de alta densidad de córners (referencia del Director: Premier League, Bundesliga, Championship, K-League, Liga Portugal, Eredivisie, otras) -- el detector no restringe por liga todavía, aplica sobre las 27 ligas que ATLAS ya captura en vivo (el propio umbral de córners ya filtra partidos genuinamente densos).",
+        "≥4 córners totales del partido, con ≥3 de ese total pertenecientes a UN MISMO equipo (local o visitante, el que sea -- corregido explícitamente por el Director: no se asume que el que presiona es siempre el local).",
+        "Minuto de partido ≤30 en el momento en que se cumple lo anterior.",
+        "Sin tarjetas rojas activas en el partido (redCards home+away = 0)."
+      ],
+      "reglas_salida": [
+        "Alerta única por partido (deduplicada por ATLAS Notify) -- no se re-emite si ya se avisó para ese mismo partido.",
+        "No aplica si el umbral se alcanza después del minuto 30 (la ventana de observación del criterio es exclusivamente antes de esa marca)."
+      ],
+      "criterios_no_automatizables": [
+        "Criterio original 'saques de banda frecuentes por las bandas, no por el centro' -- descartado explícitamente por el Director (2026-08-04), no se evalúa.",
+        "Criterio original 'el equipo que no presiona no está en bloque bajo' -- queda a criterio del Director al revisar el partido en vivo en el momento de la alerta, ATLAS no lo evalúa (no hay dato de bloque táctico en la captura)."
+      ],
+      "estado_actual": "HIPOTESIS",
+      "historial_estados": [
+        {"estado": "IDEA", "fecha_utc": "2026-08-04", "nota": "Presentada por el Director como estrategia propia ya en uso, sin seguimiento sistemático hasta ahora. Se reemplaza E-LAB-001 (REFUTADA) como primera estrategia activa del detector."},
+        {"estado": "HIPOTESIS", "fecha_utc": "2026-08-04", "nota": "Regla operativa acotada a lo verificable con datos ya capturados (platform_statistics: cornerKicks, redCards, minuto estimado vía API). Criterio de bandas descartado, criterio de bloque bajo delegado al Director en el momento de la verificación manual. Sin backtest histórico todavía -- entra directo en observación en vivo, no se retrasa con certificación estadística previa (lección explícita de E-LAB-001)."}
+      ],
+      "casos_observados": 0,
+      "casos_verificados": 0,
+      "aciertos": 0,
+      "fallos": 0,
+      "roi": null,
+      "clv": null,
+      "nivel_evidencia": "Ninguna todavía -- estrategia propia del Director, sin certificación estadística previa por decisión explícita (priorizar verificación real temprano, lección de E-LAB-001).",
+      "fecha_creacion_utc": "2026-08-04",
+      "ultima_actualizacion_utc": "2026-08-04T02:30:00Z",
+      "proximo_hito": "Primeras verificaciones humanas reales contra Betano vía Telegram. Sin umbral de N fijado todavía -- a definir con el Director según los primeros resultados.",
+      "metricas_fase4": {
+        "pct_coincide": null,
+        "pct_mejor": null,
+        "pct_suspendido": null,
+        "pct_inexistente": null,
+        "pct_operable": null,
+        "tiempo_medio_disponible_seg": null,
+        "n_muestra": 0
+      }
     }
-   ],
-   "casos_observados": 391,
-   "casos_verificados": 0,
-   "aciertos": 0,
-   "fallos": 0,
-   "roi": null,
-   "clv": null,
-   "nivel_evidencia": "Estadístico certificado en datos SofaScore (backtest histórico, N=391 cruces, 123 partidos) + verificación humana real en Betano (2026-08-04): mercado se suspende/recalcula de inmediato en la casa real, la ventana no existe ahí. Fenómeno de origen real, no explotable.",
-   "fecha_creacion_utc": "2026-08-02",
-   "ultima_actualizacion_utc": "2026-08-04T02:10:00Z",
-   "proximo_hito": "Cerrada. No reabrir sin evidencia extraordinaria (ej. otra casa de apuestas real con comportamiento distinto a Betano) -- mismo criterio que las demás líneas refutadas del laboratorio.",
-   "metricas_fase4": {
-    "pct_coincide": null,
-    "pct_mejor": null,
-    "pct_suspendido": null,
-    "pct_inexistente": null,
-    "pct_operable": null,
-    "tiempo_medio_disponible_seg": null,
-    "n_muestra": 0
-   }
-  }
- ]
+  ]
 }
