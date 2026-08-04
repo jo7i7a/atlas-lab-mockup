@@ -138,6 +138,49 @@
         "tiempo_medio_disponible_seg": null,
         "n_muestra": 0
       }
+    },
+    {
+      "id": "L3",
+      "nombre": "Over Post-Expulsión LIVE",
+      "mercado": "Over Goles (línea a verificar manualmente en la casa de apuestas al momento de la alerta -- el detector no fija ni evalúa una línea específica)",
+      "tipo": "LIVE",
+      "hipotesis": "Tras una expulsión entre los minutos 30-75, las casas de apuestas tardan en ajustar las cuotas del mercado Over Goles -- el partido táctico cambia (el equipo con más hombres presiona más, el juego se abre), generando value real en esa ventana de ajuste.",
+      "reglas_entrada": [
+        "Expulsión (tarjeta roja) detectada, con el minuto actual entre 30 y 75.",
+        "Cuota de Over Goles disponible antes de que la casa la ajuste -- delegado EXPLÍCITAMENTE al Director ('yo lo confirmo', 2026-08-04), el detector no evalúa ninguna cuota, solo avisa lo más rápido posible.",
+        "Ligas de mercado lento (referencia del Director: Brasileirão, Série B, Liga Argentina, K-League, otras) -- el detector no restringe por liga todavía, aplica sobre las 27 ligas que ATLAS ya captura en vivo, igual criterio que L1."
+      ],
+      "reglas_salida": [
+        "Alerta única por partido (deduplicada por ATLAS Notify) -- si hay una segunda expulsión en el mismo partido, no se genera una alerta nueva (limitación aceptada, caso raro).",
+        "No aplica si la expulsión ocurre antes del min 30 o después del min 75."
+      ],
+      "criterios_no_automatizables": [
+        "Criterio 'cuota disponible antes de que la casa ajuste' -- delegado explícitamente al Director, no se automatiza."
+      ],
+      "estado_actual": "HIPOTESIS",
+      "historial_estados": [
+        {"estado": "IDEA", "fecha_utc": "2026-08-04", "nota": "Presentada por el Director como tercera estrategia propia ya en uso, sin seguimiento sistemático hasta ahora."},
+        {"estado": "HIPOTESIS", "fecha_utc": "2026-08-04", "nota": "Detección vía transición del conteo de tarjetas rojas (0→≥1) en platform_statistics, mismo patrón de ancla estable ya usado en L1/L2. Prioridad ALTA y TTL más corto (900s) que L1/L2 -- la ventana de esta estrategia depende explícitamente de que la casa NO haya ajustado todavía, más sensible a la velocidad de aviso que las otras dos."}
+      ],
+      "casos_observados": 0,
+      "casos_verificados": 0,
+      "aciertos": 0,
+      "fallos": 0,
+      "roi": null,
+      "clv": null,
+      "nivel_evidencia": "Ninguna todavía -- estrategia propia del Director, sin certificación estadística previa por decisión explícita (priorizar verificación real temprano, lección de E-LAB-001).",
+      "fecha_creacion_utc": "2026-08-04",
+      "ultima_actualizacion_utc": "2026-08-04T03:00:00Z",
+      "proximo_hito": "Primeras verificaciones humanas reales contra Betano vía Telegram. Sin umbral de N fijado todavía.",
+      "metricas_fase4": {
+        "pct_coincide": null,
+        "pct_mejor": null,
+        "pct_suspendido": null,
+        "pct_inexistente": null,
+        "pct_operable": null,
+        "tiempo_medio_disponible_seg": null,
+        "n_muestra": 0
+      }
     }
   ]
 }
