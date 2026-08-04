@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-04T18:38:54Z",
+ "generated_at_utc": "2026-08-04T18:41:54Z",
  "n_live_target": 6,
  "matches": {
   "16578162": {
@@ -11,32 +11,32 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 48,
+   "minute": 51,
    "stats": {},
    "odds": {
     "btts": {
-     "yes": 1.286,
-     "no": 3.5,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
+     "yes": 1.333,
+     "no": 3.25,
+     "captured_at_utc": "2026-08-04T18:41:49Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
+     "captured_at_utc": "2026-08-04T18:41:49Z"
     },
     "1x2": {
-     "home": 2.25,
-     "draw": 3.2,
-     "away": 3.25,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
+     "home": 2.2,
+     "draw": 3.1,
+     "away": 3.4,
+     "captured_at_utc": "2026-08-04T18:41:49Z"
     },
     "goals_over_25": {
-     "over": 1.667,
-     "under": 2.1,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
+     "over": 1.8,
+     "under": 1.909,
+     "captured_at_utc": "2026-08-04T18:41:49Z"
     }
    },
-   "updated_at_utc": "2026-08-04T18:38:54Z"
+   "updated_at_utc": "2026-08-04T18:41:54Z"
   },
   "16578164": {
    "event_id": 16578164,
@@ -47,32 +47,32 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 46,
+   "minute": 49,
    "stats": {},
    "odds": {
     "btts": {
-     "yes": 6.0,
-     "no": 1.111,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
+     "yes": 6.5,
+     "no": 1.1,
+     "captured_at_utc": "2026-08-04T18:41:49Z"
     },
     "1x2": {
-     "home": 1.833,
-     "draw": 2.375,
+     "home": 2.0,
+     "draw": 2.25,
      "away": 8.0,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
+     "captured_at_utc": "2026-08-04T18:41:49Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.5,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
+     "captured_at_utc": "2026-08-04T18:41:49Z"
     },
     "corners_over_95": {
      "over": 1.615,
      "under": 2.2,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
+     "captured_at_utc": "2026-08-04T18:41:49Z"
     }
    },
-   "updated_at_utc": "2026-08-04T18:38:54Z"
+   "updated_at_utc": "2026-08-04T18:41:54Z"
   },
   "16578085": {
    "event_id": 16578085,
@@ -83,12 +83,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 38,
+   "minute": 41,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 63,
-     "away": 37
+     "home": 62,
+     "away": 38
     },
     "big_chances": {
      "label": "Ocasiones claras",
@@ -98,7 +98,7 @@
     "shots": {
      "label": "Remates totales",
      "home": 3,
-     "away": 1
+     "away": 2
     },
     "corners": {
      "label": "Corners",
@@ -107,13 +107,121 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 258,
-     "away": 154
+     "home": 278,
+     "away": 168
     },
     "shots_on_target": {
      "label": "Remates al arco",
      "home": 0,
+     "away": 2
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 3.25,
+     "no": 1.333,
+     "captured_at_utc": "2026-08-04T18:41:49Z"
+    },
+    "corners_over_95": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-08-04T18:41:49Z"
+    },
+    "1x2": {
+     "home": 2.6,
+     "draw": 2.6,
+     "away": 3.4,
+     "captured_at_utc": "2026-08-04T18:41:49Z"
+    },
+    "goals_over_25": {
+     "over": 2.5,
+     "under": 1.5,
+     "captured_at_utc": "2026-08-04T18:41:49Z"
+    }
+   },
+   "updated_at_utc": "2026-08-04T18:41:54Z"
+  },
+  "16578163": {
+   "event_id": 16578163,
+   "league": "UEFA Champions League",
+   "home": "GNK Dinamo Zagreb",
+   "away": "FK Kauno Žalgiris",
+   "home_score": 2,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 41,
+   "stats": {},
+   "odds": {
+    "btts": {
+     "yes": 3.5,
+     "no": 1.286,
+     "captured_at_utc": "2026-08-04T18:41:49Z"
+    },
+    "corners_over_95": {
+     "over": 2.1,
+     "under": 1.667,
+     "captured_at_utc": "2026-08-04T18:41:49Z"
+    },
+    "1x2": {
+     "home": 1.005,
+     "draw": 34.0,
+     "away": 41.0,
+     "captured_at_utc": "2026-08-04T18:41:49Z"
+    },
+    "goals_over_25": {
+     "over": 1.571,
+     "under": 2.25,
+     "captured_at_utc": "2026-08-04T18:41:49Z"
+    }
+   },
+   "updated_at_utc": "2026-08-04T18:41:54Z"
+  },
+  "16578084": {
+   "event_id": 16578084,
+   "league": "UEFA Champions League",
+   "home": "Olympiacos FC",
+   "away": "NEC Nijmegen",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 41,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 60,
+     "away": 40
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 6,
+     "away": 3
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 4,
      "away": 1
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 181,
+     "away": 129
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 1,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 3,
+     "away": 0
     },
     "xg": {
      "label": "Expected Goals (xG)",
@@ -125,134 +233,26 @@
     "btts": {
      "yes": 3.0,
      "no": 1.364,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
-    },
-    "corners_over_95": {
-     "over": 1.833,
-     "under": 1.833,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
-    },
-    "1x2": {
-     "home": 2.5,
-     "draw": 2.625,
-     "away": 3.4,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
-    },
-    "goals_over_25": {
-     "over": 2.5,
-     "under": 1.5,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
-    }
-   },
-   "updated_at_utc": "2026-08-04T18:38:54Z"
-  },
-  "16578163": {
-   "event_id": 16578163,
-   "league": "UEFA Champions League",
-   "home": "GNK Dinamo Zagreb",
-   "away": "FK Kauno Žalgiris",
-   "home_score": 2,
-   "away_score": 0,
-   "status_type": "inprogress",
-   "status_description": "1st half",
-   "minute": 38,
-   "stats": {},
-   "odds": {
-    "btts": {
-     "yes": 3.5,
-     "no": 1.286,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
-    },
-    "corners_over_95": {
-     "over": 1.909,
-     "under": 1.8,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
-    },
-    "1x2": {
-     "home": 1.007,
-     "draw": 29.0,
-     "away": 67.0,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
-    },
-    "goals_over_25": {
-     "over": 1.571,
-     "under": 2.25,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
-    }
-   },
-   "updated_at_utc": "2026-08-04T18:38:54Z"
-  },
-  "16578084": {
-   "event_id": 16578084,
-   "league": "UEFA Champions League",
-   "home": "Olympiacos FC",
-   "away": "NEC Nijmegen",
-   "home_score": 0,
-   "away_score": 0,
-   "status_type": "inprogress",
-   "status_description": "1st half",
-   "minute": 38,
-   "stats": {
-    "possession": {
-     "label": "Posesión",
-     "home": 60,
-     "away": 40
-    },
-    "shots": {
-     "label": "Remates totales",
-     "home": 5,
-     "away": 3
-    },
-    "corners": {
-     "label": "Corners",
-     "home": 3,
-     "away": 1
-    },
-    "passes": {
-     "label": "Pases",
-     "home": 178,
-     "away": 124
-    },
-    "yellow_cards": {
-     "label": "Tarjetas amarillas",
-     "home": 1,
-     "away": 0
-    },
-    "shots_on_target": {
-     "label": "Remates al arco",
-     "home": 2,
-     "away": 0
-    },
-    "xg": {
-     "label": "Expected Goals (xG)",
-     "home": 0,
-     "away": 0
-    }
-   },
-   "odds": {
-    "btts": {
-     "yes": 2.75,
-     "no": 1.4,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
+     "captured_at_utc": "2026-08-04T18:41:49Z"
     },
     "corners_over_95": {
      "over": 1.615,
      "under": 2.2,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
+     "captured_at_utc": "2026-08-04T18:41:49Z"
     },
     "1x2": {
-     "home": 1.667,
-     "draw": 3.25,
+     "home": 1.727,
+     "draw": 3.2,
      "away": 5.5,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
+     "captured_at_utc": "2026-08-04T18:41:49Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.5,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
+     "captured_at_utc": "2026-08-04T18:41:49Z"
     }
    },
-   "updated_at_utc": "2026-08-04T18:38:54Z"
+   "updated_at_utc": "2026-08-04T18:41:54Z"
   },
   "16578083": {
    "event_id": 16578083,
@@ -263,7 +263,7 @@
    "away_score": 2,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 38,
+   "minute": 41,
    "stats": {},
    "odds": {
     "btts": {
@@ -274,21 +274,21 @@
     "corners_over_95": {
      "over": 1.833,
      "under": 1.833,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
+     "captured_at_utc": "2026-08-04T18:41:49Z"
     },
     "1x2": {
-     "home": 5.0,
+     "home": 6.0,
      "draw": 3.75,
-     "away": 1.667,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
+     "away": 1.571,
+     "captured_at_utc": "2026-08-04T18:41:49Z"
     },
     "goals_over_25": {
      "over": 2.2,
      "under": 1.615,
-     "captured_at_utc": "2026-08-04T18:38:42Z"
+     "captured_at_utc": "2026-08-04T18:41:49Z"
     }
    },
-   "updated_at_utc": "2026-08-04T18:38:54Z"
+   "updated_at_utc": "2026-08-04T18:41:54Z"
   }
  }
 }
