@@ -30,7 +30,7 @@
     "El mercado pasa a suspended=True (ya no operable).",
     "Termina el partido sin que el precio se haya movido (se registra como caso de ventana máxima, no como pérdida de oportunidad)."
    ],
-   "estado_actual": "VALIDACION_CUOTA_REAL",
+   "estado_actual": "REFUTADA",
    "historial_estados": [
     {
      "estado": "HIPOTESIS",
@@ -51,6 +51,11 @@
      "estado": "VALIDACION_CUOTA_REAL",
      "fecha_utc": "2026-08-02",
      "nota": "Primera validación humana: no encontró problema de hipótesis, encontró problema de LATENCIA (detector corría cada 3 min, sin notificación push). Migrado a ATLAS Notify (atlas_engine/notify/), motor genérico multi-canal para todo el laboratorio: detector ahora corre cada 1 min (mínimo real de Windows Task Scheduler), notificación push por Telegram inmediata al detectar (no espera al ciclo de publicación web), cada alerta trae 6 timestamps de latencia (evento real/captura/evaluación/generación/envío/recepción), TTL con estado EXPIRADA automático, prioridad y estado_validación (autocompletado desde este registro) en el contrato. Pendiente: token de Telegram del Director para activar el envío real."
+    },
+    {
+     "estado": "REFUTADA",
+     "fecha_utc": "2026-08-04",
+     "nota": "Cierre definitivo con evidencia real, no estadística. Tras corregir un bug real del detector (generaba alertas para partidos ya terminados -- caso Vélez Sarsfield vs Independiente, segundos_desde_evento negativo por captura censurada al fin del partido), llegó una alerta limpia y rápida (Central Córdoba vs San Lorenzo, Cards Over 4.5, latencia real medida 45s evento→Telegram, verificada con timestamps exactos, no estimada). El Director entró a Betano con cuenta real de inmediato: el mercado de Tarjetas se pone en gris y recalcula apenas ocurre el evento que decide la línea -- exactamente lo opuesto al supuesto central de la estrategia (precio congelado mientras el mercado sigue abierto). El fenómeno de baja reactividad SÍ es real en los datos de SofaScore (certificado, no se retracta esa parte), pero NO existe de la misma forma en una casa de apuestas real -- no es explotable. Aplicando la regla pre-registrada: 'si no puede aprovecharse en condiciones reales, se descarta aunque el fenómeno estadístico sea real'. Se pausa la tarea programada del detector (ATLAS_Lab_StrategyDetector) y se agrega supresión automática y permanente de envío a canales para cualquier estrategia en estado REFUTADA (atlas_engine/notify/engine.py) -- protección genérica para todo el laboratorio, no solo esta línea."
     }
    ],
    "casos_observados": 391,
@@ -59,10 +64,10 @@
    "fallos": 0,
    "roi": null,
    "clv": null,
-   "nivel_evidencia": "Estadístico certificado (backtest histórico, N=391 cruces, 123 partidos) -- SIN verificación humana en cuota real todavía",
+   "nivel_evidencia": "Estadístico certificado en datos SofaScore (backtest histórico, N=391 cruces, 123 partidos) + verificación humana real en Betano (2026-08-04): mercado se suspende/recalcula de inmediato en la casa real, la ventana no existe ahí. Fenómeno de origen real, no explotable.",
    "fecha_creacion_utc": "2026-08-02",
-   "ultima_actualizacion_utc": "2026-08-02T22:29:57Z",
-   "proximo_hito": "30-50 verificaciones humanas registradas contra Betano (Fase 3). Umbral de decisión definido por el Director: tasa de coincidencia/mejora ≥80-90% para avanzar a diseño de estrategia de stake y gestión de riesgo; por debajo, se descarta la línea aunque el fenómeno estadístico sea real.",
+   "ultima_actualizacion_utc": "2026-08-04T02:10:00Z",
+   "proximo_hito": "Cerrada. No reabrir sin evidencia extraordinaria (ej. otra casa de apuestas real con comportamiento distinto a Betano) -- mismo criterio que las demás líneas refutadas del laboratorio.",
    "metricas_fase4": {
     "pct_coincide": null,
     "pct_mejor": null,
