@@ -94,6 +94,50 @@
         "tiempo_medio_disponible_seg": null,
         "n_muestra": 0
       }
+    },
+    {
+      "id": "L2",
+      "nombre": "Hándicap Asiático xG vs Marcador LIVE",
+      "mercado": "Hándicap Asiático (línea a verificar manualmente en la casa de apuestas al momento de la alerta -- el detector no fija ni evalúa una línea específica)",
+      "tipo": "LIVE",
+      "hipotesis": "Cuando el xG de un equipo dominante supera claramente el marcador actual (empate o resultado adverso pese al dominio), existe una ineficiencia temporal en el mercado de hándicap asiático -- se apuesta al equipo que 'merece más' según xG y remates a puerta reales.",
+      "reglas_entrada": [
+        "xG del equipo dominante (el de xG más alto entre los dos) ≥1.5.",
+        "≥5 remates a puerta (shotsOnGoal) de ese mismo equipo dominante.",
+        "El equipo dominante NO va ganando en el marcador actual (empate o va perdiendo) -- si ya va ganando, el marcador sí refleja el dominio, no hay ineficiencia que apostar.",
+        "Minuto actual entre 46 y 70 (ventana óptima, chequeada en vivo en el momento de la alerta).",
+        "Sin tarjeta roja del equipo dominante (ni en el momento en que se cumplieron los primeros 2 criterios, ni ahora)."
+      ],
+      "reglas_salida": [
+        "Alerta única por partido (deduplicada por ATLAS Notify).",
+        "No aplica fuera de la ventana de minuto 46-70.",
+        "Si el equipo dominante recibe una roja después de cumplirse los criterios, se descarta igual (re-chequeado en cada corrida)."
+      ],
+      "criterios_no_automatizables": [],
+      "estado_actual": "HIPOTESIS",
+      "historial_estados": [
+        {"estado": "IDEA", "fecha_utc": "2026-08-04", "nota": "Presentada por el Director como segunda estrategia propia ya en uso, sin seguimiento sistemático hasta ahora."},
+        {"estado": "HIPOTESIS", "fecha_utc": "2026-08-04", "nota": "Los 5 criterios del Director son 100% verificables con datos ya capturados (expectedGoals, shotsOnGoal, redCards de platform_statistics + marcador/minuto en vivo vía API) -- a diferencia de L1, no hizo falta descartar ni delegar ningún criterio a juicio manual. Sin backtest histórico previo, misma decisión que L1 (verificación real temprano, no certificación estadística primero)."}
+      ],
+      "casos_observados": 0,
+      "casos_verificados": 0,
+      "aciertos": 0,
+      "fallos": 0,
+      "roi": null,
+      "clv": null,
+      "nivel_evidencia": "Ninguna todavía -- estrategia propia del Director, sin certificación estadística previa por decisión explícita (priorizar verificación real temprano, lección de E-LAB-001).",
+      "fecha_creacion_utc": "2026-08-04",
+      "ultima_actualizacion_utc": "2026-08-04T02:45:00Z",
+      "proximo_hito": "Primeras verificaciones humanas reales contra Betano vía Telegram. Sin umbral de N fijado todavía.",
+      "metricas_fase4": {
+        "pct_coincide": null,
+        "pct_mejor": null,
+        "pct_suspendido": null,
+        "pct_inexistente": null,
+        "pct_operable": null,
+        "tiempo_medio_disponible_seg": null,
+        "n_muestra": 0
+      }
     }
   ]
 }
