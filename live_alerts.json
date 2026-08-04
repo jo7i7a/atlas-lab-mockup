@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-04T01:23:10Z",
+ "generated_at_utc": "2026-08-04T01:28:09Z",
  "n_alerts": 1,
  "alerts": [
   {
@@ -10,7 +10,7 @@
    "cuota_detectada": 1.667,
    "minuto": null,
    "condicion": "Corner N°6 — precio sin moverse desde el cruce (Mercado sigue abierto)",
-   "confianza": "Media",
+   "confianza": "Alta",
    "link": "",
    "priority": "ALTA",
    "estado_validacion": "VALIDACION",
@@ -19,12 +19,12 @@
     "line": 5.5,
     "estado_mercado": "Mercado sigue abierto",
     "suspended": false,
-    "segundos_desde_evento_al_detectar": 41.0
+    "segundos_desde_evento_al_detectar": 327.0
    },
    "t_evento_real_utc": "2026-08-04T01:22:26Z",
    "t_captura_utc": "2026-08-04T01:22:26Z",
-   "t_evaluacion_utc": "2026-08-04T01:23:09Z",
-   "t_generacion_utc": "2026-08-04T01:23:09Z",
+   "t_evaluacion_utc": "2026-08-04T01:28:09Z",
+   "t_generacion_utc": "2026-08-04T01:28:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -35,7 +35,7 @@
     }
    },
    "latencia_total_seg": 44.0,
-   "estado_temporal": "ACTIVA",
+   "estado_temporal": "EXPIRADA",
    "evidencia": null,
    "alert_id": "333220fa5ad252fd"
   }
