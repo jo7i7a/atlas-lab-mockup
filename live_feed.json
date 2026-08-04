@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-04T00:41:54Z",
+ "generated_at_utc": "2026-08-04T00:47:54Z",
  "n_live_target": 3,
  "matches": {
   "16431133": {
@@ -7,57 +7,72 @@
    "league": "Liga Profesional de Fútbol",
    "home": "Central Córdoba",
    "away": "San Lorenzo",
-   "home_score": 0,
+   "home_score": 1,
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 26,
+   "minute": 32,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 48,
-     "away": 52
+     "home": 50,
+     "away": 50
     },
     "xg": {
      "label": "Expected Goals (xG)",
      "home": 0.15,
-     "away": 0.12
+     "away": 0.21
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 1,
+     "away": 0
     },
     "shots": {
      "label": "Remates totales",
-     "home": 5,
-     "away": 3
+     "home": 6,
+     "away": 4
     },
     "corners": {
      "label": "Corners",
      "home": 2,
-     "away": 1
+     "away": 2
     },
     "passes": {
      "label": "Pases",
-     "home": 125,
-     "away": 135
+     "home": 154,
+     "away": 153
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 2,
+     "home": 3,
      "away": 0
     }
    },
    "odds": {
     "btts": {
-     "yes": 2.75,
-     "no": 1.4,
-     "captured_at_utc": "2026-08-04T00:41:45Z"
+     "yes": 1.571,
+     "no": 2.25,
+     "captured_at_utc": "2026-08-04T00:47:52Z"
     },
     "1x2": {
-     "home": 2.875,
-     "draw": 2.625,
-     "away": 2.875,
-     "captured_at_utc": "2026-08-04T00:41:45Z"
+     "home": 1.571,
+     "draw": 3.6,
+     "away": 6.5,
+     "captured_at_utc": "2026-08-04T00:47:52Z"
+    },
+    "corners_over_95": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-08-04T00:47:52Z"
+    },
+    "goals_over_25": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-08-04T00:47:52Z"
     }
    },
-   "updated_at_utc": "2026-08-04T00:41:54Z"
+   "updated_at_utc": "2026-08-04T00:47:54Z"
   },
   "16431135": {
    "event_id": 16431135,
@@ -68,16 +83,16 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 26,
+   "minute": 32,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 74,
-     "away": 26
+     "home": 71,
+     "away": 29
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.52,
+     "home": 0.59,
      "away": 0.24
     },
     "big_chances": {
@@ -87,7 +102,7 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 4,
+     "home": 5,
      "away": 3
     },
     "corners": {
@@ -97,8 +112,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 212,
-     "away": 75
+     "home": 259,
+     "away": 108
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -115,21 +130,21 @@
     "btts": {
      "yes": 3.4,
      "no": 1.3,
-     "captured_at_utc": "2026-08-04T00:41:45Z"
+     "captured_at_utc": "2026-08-04T00:47:52Z"
     },
     "1x2": {
-     "home": 2.3,
+     "home": 2.375,
      "draw": 2.5,
-     "away": 4.333,
-     "captured_at_utc": "2026-08-04T00:41:45Z"
+     "away": 4.0,
+     "captured_at_utc": "2026-08-04T00:47:52Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-08-04T00:41:45Z"
+     "captured_at_utc": "2026-08-04T00:47:52Z"
     }
    },
-   "updated_at_utc": "2026-08-04T00:41:54Z"
+   "updated_at_utc": "2026-08-04T00:47:54Z"
   },
   "15416266": {
    "event_id": 15416266,
@@ -140,17 +155,17 @@
    "away_score": 1,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 40,
+   "minute": 46,
    "stats": {},
    "odds": {
     "1x2": {
-     "home": 2.2,
+     "home": 2.25,
      "draw": 2.75,
      "away": 3.6,
-     "captured_at_utc": "2026-08-04T00:41:45Z"
+     "captured_at_utc": "2026-08-04T00:47:52Z"
     }
    },
-   "updated_at_utc": "2026-08-04T00:41:54Z"
+   "updated_at_utc": "2026-08-04T00:47:54Z"
   }
  }
 }
