@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-06T23:32:54Z",
+ "generated_at_utc": "2026-08-06T23:38:54Z",
  "n_live_target": 1,
  "matches": {
   "16431120": {
@@ -7,25 +7,30 @@
    "league": "Liga Profesional de Fútbol",
    "home": "Club Atlético Unión de Santa Fe",
    "away": "CA Lanús",
-   "home_score": 1,
+   "home_score": 2,
    "away_score": 1,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 73,
+   "minute": 79,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 45,
-     "away": 55
+     "home": 44,
+     "away": 56
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.44,
-     "away": 0.41
+     "home": 0.45,
+     "away": 0.76
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 0,
+     "away": 1
     },
     "shots": {
      "label": "Remates totales",
-     "home": 10,
+     "home": 11,
      "away": 7
     },
     "corners": {
@@ -35,8 +40,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 278,
-     "away": 345
+     "home": 288,
+     "away": 373
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -45,7 +50,7 @@
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 2,
+     "home": 3,
      "away": 2
     }
    },
@@ -56,23 +61,23 @@
      "captured_at_utc": "2026-08-06T23:32:09Z"
     },
     "1x2": {
-     "home": 4.333,
-     "draw": 1.533,
-     "away": 5.5,
-     "captured_at_utc": "2026-08-06T23:32:50Z"
+     "home": 1.143,
+     "draw": 6.0,
+     "away": 51.0,
+     "captured_at_utc": "2026-08-06T23:38:42Z"
     },
     "corners_over_95": {
      "over": 2.2,
      "under": 1.615,
-     "captured_at_utc": "2026-08-06T23:32:50Z"
+     "captured_at_utc": "2026-08-06T23:38:42Z"
     },
     "goals_over_25": {
-     "over": 2.1,
-     "under": 1.667,
-     "captured_at_utc": "2026-08-06T23:32:50Z"
+     "over": 2.5,
+     "under": 1.5,
+     "captured_at_utc": "2026-08-06T23:38:42Z"
     }
    },
-   "updated_at_utc": "2026-08-06T23:32:54Z"
+   "updated_at_utc": "2026-08-06T23:38:54Z"
   }
  }
 }
