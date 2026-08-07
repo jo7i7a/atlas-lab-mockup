@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-07T02:38:53Z",
- "n_live_target": 2,
+ "generated_at_utc": "2026-08-07T02:44:54Z",
+ "n_live_target": 3,
  "matches": {
   "15679395": {
    "event_id": 15679395,
@@ -8,15 +8,15 @@
    "home": "Austin FC",
    "away": "Club Tijuana",
    "home_score": 2,
-   "away_score": 1,
+   "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 67,
+   "minute": 73,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 53,
-     "away": 47
+     "home": 54,
+     "away": 46
     },
     "big_chances": {
      "label": "Ocasiones claras",
@@ -26,7 +26,7 @@
     "shots": {
      "label": "Remates totales",
      "home": 11,
-     "away": 17
+     "away": 16
     },
     "corners": {
      "label": "Corners",
@@ -35,7 +35,7 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 278,
+     "home": 284,
      "away": 234
     },
     "yellow_cards": {
@@ -43,10 +43,15 @@
      "home": 3,
      "away": 1
     },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 1
+    },
     "shots_on_target": {
      "label": "Remates al arco",
      "home": 4,
-     "away": 3
+     "away": 2
     },
     "xg": {
      "label": "Expected Goals (xG)",
@@ -58,10 +63,10 @@
     "corners_over_95": {
      "over": 1.667,
      "under": 2.1,
-     "captured_at_utc": "2026-08-07T02:38:44Z"
+     "captured_at_utc": "2026-08-07T02:39:06Z"
     }
    },
-   "updated_at_utc": "2026-08-07T02:38:53Z"
+   "updated_at_utc": "2026-08-07T02:44:54Z"
   },
   "15683245": {
    "event_id": 15683245,
@@ -72,7 +77,7 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 25,
+   "minute": 31,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -86,23 +91,28 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 6,
-     "away": 2
+     "home": 8,
+     "away": 4
     },
     "corners": {
      "label": "Corners",
-     "home": 0,
-     "away": 1
+     "home": 1,
+     "away": 2
     },
     "passes": {
      "label": "Pases",
-     "home": 113,
-     "away": 193
+     "home": 130,
+     "away": 221
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 0,
+     "away": 1
     },
     "shots_on_target": {
      "label": "Remates al arco",
      "home": 2,
-     "away": 1
+     "away": 2
     },
     "xg": {
      "label": "Expected Goals (xG)",
@@ -114,21 +124,61 @@
     "btts": {
      "yes": 1.727,
      "no": 2.0,
-     "captured_at_utc": "2026-08-07T02:38:44Z"
+     "captured_at_utc": "2026-08-07T02:39:06Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-08-07T02:38:44Z"
+     "captured_at_utc": "2026-08-07T02:39:06Z"
     },
     "1x2": {
      "home": 1.182,
      "draw": 6.0,
      "away": 19.0,
-     "captured_at_utc": "2026-08-07T02:38:44Z"
+     "captured_at_utc": "2026-08-07T02:39:06Z"
     }
    },
-   "updated_at_utc": "2026-08-07T02:38:53Z"
+   "updated_at_utc": "2026-08-07T02:44:54Z"
+  },
+  "15679394": {
+   "event_id": 15679394,
+   "league": "Leagues Cup",
+   "home": "Portland Timbers",
+   "away": "Club Puebla",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 3,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 17,
+     "away": 83
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 5,
+     "away": 24
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-08-07T02:44:54Z"
   }
  }
 }
