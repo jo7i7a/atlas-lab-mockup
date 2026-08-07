@@ -1,7 +1,74 @@
 {
- "generated_at_utc": "2026-08-07T17:59:54Z",
- "n_live_target": 4,
+ "generated_at_utc": "2026-08-07T18:05:54Z",
+ "n_live_target": 5,
  "matches": {
+  "16316793": {
+   "event_id": 16316793,
+   "league": "VriendenLoterij Eredivisie",
+   "home": "SC Cambuur",
+   "away": "Excelsior",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 5,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 23,
+     "away": 77
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.03,
+     "away": 0.02
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 1
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 1
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 12,
+     "away": 38
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.615,
+     "no": 2.2,
+     "captured_at_utc": "2026-08-07T18:05:52Z"
+    },
+    "corners_over_95": {
+     "over": 1.909,
+     "under": 1.8,
+     "captured_at_utc": "2026-08-07T18:05:52Z"
+    },
+    "1x2": {
+     "home": 2.875,
+     "draw": 3.25,
+     "away": 2.4,
+     "captured_at_utc": "2026-08-07T18:05:52Z"
+    },
+    "goals_over_25": {
+     "over": 1.727,
+     "under": 2.0,
+     "captured_at_utc": "2026-08-07T18:05:52Z"
+    }
+   },
+   "updated_at_utc": "2026-08-07T18:05:54Z"
+  },
   "15260874": {
    "event_id": 15260874,
    "league": "Eliteserien",
@@ -41,7 +108,7 @@
     "passes": {
      "label": "Pases",
      "home": 215,
-     "away": 183
+     "away": 182
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -61,28 +128,28 @@
    },
    "odds": {
     "btts": {
-     "yes": 1.95,
-     "no": 1.8,
-     "captured_at_utc": "2026-08-07T17:59:45Z"
+     "yes": 1.909,
+     "no": 1.909,
+     "captured_at_utc": "2026-08-07T18:05:52Z"
     },
     "1x2": {
-     "home": 15.0,
+     "home": 13.0,
      "draw": 5.5,
      "away": 1.25,
-     "captured_at_utc": "2026-08-07T17:59:45Z"
+     "captured_at_utc": "2026-08-07T18:05:52Z"
     },
     "goals_over_25": {
      "over": 1.833,
      "under": 1.833,
-     "captured_at_utc": "2026-08-07T17:59:45Z"
+     "captured_at_utc": "2026-08-07T18:05:52Z"
     },
     "corners_over_95": {
      "over": 1.833,
      "under": 1.833,
-     "captured_at_utc": "2026-08-07T17:59:45Z"
+     "captured_at_utc": "2026-08-07T18:05:52Z"
     }
    },
-   "updated_at_utc": "2026-08-07T17:59:54Z"
+   "updated_at_utc": "2026-08-07T18:05:54Z"
   },
   "16356979": {
    "event_id": 16356979,
@@ -93,27 +160,27 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 28,
+   "minute": 34,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 47,
-     "away": 53
+     "home": 49,
+     "away": 51
     },
     "shots": {
      "label": "Remates totales",
-     "home": 4,
+     "home": 6,
      "away": 4
     },
     "corners": {
      "label": "Corners",
-     "home": 1,
+     "home": 2,
      "away": 0
     },
     "passes": {
      "label": "Pases",
-     "home": 132,
-     "away": 143
+     "home": 163,
+     "away": 171
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -128,13 +195,13 @@
    },
    "odds": {
     "1x2": {
-     "home": 1.286,
+     "home": 1.25,
      "draw": 5.5,
-     "away": 9.0,
-     "captured_at_utc": "2026-08-07T17:59:45Z"
+     "away": 9.5,
+     "captured_at_utc": "2026-08-07T18:05:52Z"
     }
    },
-   "updated_at_utc": "2026-08-07T17:59:54Z"
+   "updated_at_utc": "2026-08-07T18:05:54Z"
   },
   "16357013": {
    "event_id": 16357013,
@@ -145,12 +212,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 29,
+   "minute": 35,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 54,
-     "away": 46
+     "home": 55,
+     "away": 45
     },
     "big_chances": {
      "label": "Ocasiones claras",
@@ -159,7 +226,7 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 4,
+     "home": 7,
      "away": 6
     },
     "corners": {
@@ -169,8 +236,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 140,
-     "away": 119
+     "home": 165,
+     "away": 137
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -179,7 +246,7 @@
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 2,
+     "home": 3,
      "away": 2
     },
     "xg": {
@@ -190,13 +257,13 @@
    },
    "odds": {
     "1x2": {
-     "home": 1.025,
-     "draw": 17.0,
-     "away": 26.0,
-     "captured_at_utc": "2026-08-07T17:59:45Z"
+     "home": 1.02,
+     "draw": 19.0,
+     "away": 29.0,
+     "captured_at_utc": "2026-08-07T18:05:52Z"
     }
    },
-   "updated_at_utc": "2026-08-07T17:59:54Z"
+   "updated_at_utc": "2026-08-07T18:05:54Z"
   },
   "16356978": {
    "event_id": 16356978,
@@ -207,12 +274,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 27,
+   "minute": 33,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 36,
-     "away": 64
+     "home": 33,
+     "away": 67
     },
     "shots": {
      "label": "Remates totales",
@@ -222,12 +289,12 @@
     "corners": {
      "label": "Corners",
      "home": 0,
-     "away": 2
+     "away": 3
     },
     "passes": {
      "label": "Pases",
-     "home": 90,
-     "away": 160
+     "home": 107,
+     "away": 219
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -247,13 +314,13 @@
    },
    "odds": {
     "1x2": {
-     "home": 3.2,
-     "draw": 3.25,
-     "away": 2.2,
-     "captured_at_utc": "2026-08-07T17:59:45Z"
+     "home": 3.5,
+     "draw": 3.2,
+     "away": 2.1,
+     "captured_at_utc": "2026-08-07T18:05:52Z"
     }
    },
-   "updated_at_utc": "2026-08-07T17:59:54Z"
+   "updated_at_utc": "2026-08-07T18:05:54Z"
   }
  }
 }
