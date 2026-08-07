@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-07T10:32:54Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-08-07T10:38:54Z",
+ "n_live_target": 2,
  "matches": {
   "16331683": {
    "event_id": 16331683,
@@ -8,30 +8,35 @@
    "home": "Yokohama F. Marinos",
    "away": "Kashima Antlers",
    "home_score": 1,
-   "away_score": 0,
+   "away_score": 1,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 6,
+   "minute": 12,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 42,
-     "away": 58
+     "home": 35,
+     "away": 65
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 1,
+     "away": 1
     },
     "shots": {
      "label": "Remates totales",
-     "home": 0,
-     "away": 1
+     "home": 2,
+     "away": 2
     },
     "passes": {
      "label": "Pases",
-     "home": 14,
-     "away": 21
+     "home": 36,
+     "away": 71
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 0,
-     "away": 0
+     "home": 1,
+     "away": 1
     },
     "xg": {
      "label": "Expected Goals (xG)",
@@ -41,28 +46,95 @@
    },
    "odds": {
     "btts": {
-     "yes": 2.05,
-     "no": 1.7,
-     "captured_at_utc": "2026-08-07T10:32:34Z"
+     "yes": 1.286,
+     "no": 3.5,
+     "captured_at_utc": "2026-08-07T10:36:07Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-08-07T10:32:34Z"
+     "captured_at_utc": "2026-08-07T10:38:42Z"
     },
     "1x2": {
-     "home": 3.6,
-     "draw": 3.0,
-     "away": 2.25,
-     "captured_at_utc": "2026-08-07T10:32:34Z"
+     "home": 1.8,
+     "draw": 3.5,
+     "away": 4.5,
+     "captured_at_utc": "2026-08-07T10:36:07Z"
     },
     "goals_over_25": {
-     "over": 2.5,
-     "under": 1.5,
-     "captured_at_utc": "2026-08-07T10:32:34Z"
+     "over": 1.5,
+     "under": 2.5,
+     "captured_at_utc": "2026-08-07T10:38:42Z"
     }
    },
-   "updated_at_utc": "2026-08-07T10:32:54Z"
+   "updated_at_utc": "2026-08-07T10:38:54Z"
+  },
+  "16331688": {
+   "event_id": 16331688,
+   "league": "J1 League",
+   "home": "Gamba Osaka",
+   "away": "Urawa Red Diamonds",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 5,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 47,
+     "away": 53
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 2
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 2,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 11,
+     "away": 15
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 1
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.8,
+     "no": 1.95,
+     "captured_at_utc": "2026-08-07T10:38:42Z"
+    },
+    "corners_over_95": {
+     "over": 2.1,
+     "under": 1.667,
+     "captured_at_utc": "2026-08-07T10:38:42Z"
+    },
+    "1x2": {
+     "home": 2.375,
+     "draw": 3.1,
+     "away": 3.1,
+     "captured_at_utc": "2026-08-07T10:38:42Z"
+    },
+    "goals_over_25": {
+     "over": 2.1,
+     "under": 1.667,
+     "captured_at_utc": "2026-08-07T10:38:42Z"
+    }
+   },
+   "updated_at_utc": "2026-08-07T10:38:54Z"
   }
  }
 }
