@@ -1,40 +1,40 @@
 {
- "generated_at_utc": "2026-08-07T18:59:20Z",
+ "generated_at_utc": "2026-08-08T00:01:20Z",
  "n_alerts": 1,
  "alerts": [
   {
    "strategy_id": "L3",
-   "match_label": "FC Winterthur vs FC Wil 1900 (Challenge League)",
-   "match_id": "16357013",
+   "match_label": "Ceará vs Ponte Preta (Brasileirão Série B)",
+   "match_id": "15526212",
    "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
    "cuota_detectada": null,
-   "minuto": 71,
-   "condicion": "Expulsión de FC Wil 1900 (marcador 4-0) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "minuto": 30,
+   "condicion": "Expulsión de Ponte Preta (marcador 1-0) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
    "confianza": "Media",
    "link": "",
    "priority": "ALTA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "equipo_expulsado": "FC Wil 1900",
-    "marcador": "4-0"
+    "equipo_expulsado": "Ponte Preta",
+    "marcador": "1-0"
    },
-   "t_evento_real_utc": "2026-08-07T18:48:49Z",
-   "t_captura_utc": "2026-08-07T18:59:05Z",
-   "t_evaluacion_utc": "2026-08-07T18:59:20Z",
-   "t_generacion_utc": "2026-08-07T18:59:20Z",
+   "t_evento_real_utc": "2026-08-07T23:51:21Z",
+   "t_captura_utc": "2026-08-08T00:01:06Z",
+   "t_evaluacion_utc": "2026-08-08T00:01:19Z",
+   "t_generacion_utc": "2026-08-08T00:01:19Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
      "estado": "OK",
-     "t_envio_utc": "2026-08-07T18:49:11Z",
-     "latencia_envio_ms": 976.7074584960938,
+     "t_envio_utc": "2026-08-08T00:01:20Z",
+     "latencia_envio_ms": 1012.2857093811035,
      "error": null
     }
    },
-   "latencia_total_seg": 22.0,
+   "latencia_total_seg": 599.0,
    "estado_temporal": "ACTIVA",
    "evidencia": null,
-   "alert_id": "982f8968e92548ad"
+   "alert_id": "3657bdbc50b80b32"
   }
  ]
 }
