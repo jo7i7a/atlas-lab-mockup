@@ -1,5 +1,40 @@
 {
- "generated_at_utc": "2026-08-08T01:04:22Z",
- "n_alerts": 0,
- "alerts": []
+ "generated_at_utc": "2026-08-08T10:45:09Z",
+ "n_alerts": 1,
+ "alerts": [
+  {
+   "strategy_id": "L3",
+   "match_label": "FC Tokyo vs Machida Zelvia (J1 League)",
+   "match_id": "16331685",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
+   "cuota_detectada": null,
+   "minuto": 39,
+   "condicion": "Expulsión de FC Tokyo (marcador 1-1) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_expulsado": "FC Tokyo",
+    "marcador": "1-1"
+   },
+   "t_evento_real_utc": "2026-08-08T10:44:26Z",
+   "t_captura_utc": "2026-08-08T10:44:48Z",
+   "t_evaluacion_utc": "2026-08-08T10:45:08Z",
+   "t_generacion_utc": "2026-08-08T10:45:08Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-08T10:45:09Z",
+     "latencia_envio_ms": 953.7084102630615,
+     "error": null
+    }
+   },
+   "latencia_total_seg": 43.0,
+   "estado_temporal": "ACTIVA",
+   "evidencia": null,
+   "alert_id": "d6805be39ef371f7"
+  }
+ ]
 }
