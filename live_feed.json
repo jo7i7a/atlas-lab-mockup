@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-08T15:29:54Z",
- "n_live_target": 5,
+ "generated_at_utc": "2026-08-08T15:32:54Z",
+ "n_live_target": 6,
  "matches": {
   "16450738": {
    "event_id": 16450738,
@@ -56,23 +56,23 @@
    },
    "odds": {
     "btts": {
-     "yes": 4.333,
-     "no": 1.2,
-     "captured_at_utc": "2026-08-08T15:29:53Z"
+     "yes": 4.5,
+     "no": 1.182,
+     "captured_at_utc": "2026-08-08T15:32:41Z"
     },
     "1x2": {
      "home": 2.5,
      "draw": 2.25,
      "away": 4.5,
-     "captured_at_utc": "2026-08-08T15:29:53Z"
+     "captured_at_utc": "2026-08-08T15:32:41Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.5,
-     "captured_at_utc": "2026-08-08T15:29:53Z"
+     "captured_at_utc": "2026-08-08T15:32:41Z"
     }
    },
-   "updated_at_utc": "2026-08-08T15:29:54Z"
+   "updated_at_utc": "2026-08-08T15:32:54Z"
   },
   "16316776": {
    "event_id": 16316776,
@@ -125,16 +125,16 @@
     "btts": {
      "yes": 1.167,
      "no": 5.0,
-     "captured_at_utc": "2026-08-08T15:29:53Z"
+     "captured_at_utc": "2026-08-08T15:32:41Z"
     },
     "1x2": {
      "home": 5.0,
      "draw": 4.5,
      "away": 1.533,
-     "captured_at_utc": "2026-08-08T15:29:53Z"
+     "captured_at_utc": "2026-08-08T15:32:41Z"
     }
    },
-   "updated_at_utc": "2026-08-08T15:29:54Z"
+   "updated_at_utc": "2026-08-08T15:32:54Z"
   },
   "16361995": {
    "event_id": 16361995,
@@ -145,37 +145,191 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 71,
+   "minute": 74,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 51,
-     "away": 49
+     "home": 50,
+     "away": 50
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 1.88,
-     "away": 0.16
+     "home": 2.04,
+     "away": 0.43
     },
     "big_chances": {
      "label": "Ocasiones claras",
      "home": 5,
-     "away": 0
+     "away": 1
     },
     "shots": {
      "label": "Remates totales",
-     "home": 16,
-     "away": 4
+     "home": 17,
+     "away": 6
     },
     "corners": {
      "label": "Corners",
      "home": 5,
-     "away": 2
+     "away": 3
     },
     "passes": {
      "label": "Pases",
-     "home": 305,
-     "away": 289
+     "home": 309,
+     "away": 308
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 1,
+     "away": 2
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 6,
+     "away": 2
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 3.25,
+     "no": 1.333,
+     "captured_at_utc": "2026-08-08T15:32:41Z"
+    },
+    "corners_over_95": {
+     "over": 1.909,
+     "under": 1.8,
+     "captured_at_utc": "2026-08-08T15:31:16Z"
+    },
+    "1x2": {
+     "home": 1.02,
+     "draw": 19.0,
+     "away": 67.0,
+     "captured_at_utc": "2026-08-08T15:32:41Z"
+    },
+    "goals_over_25": {
+     "over": 1.909,
+     "under": 1.909,
+     "captured_at_utc": "2026-08-08T15:32:41Z"
+    }
+   },
+   "updated_at_utc": "2026-08-08T15:32:54Z"
+  },
+  "16362162": {
+   "event_id": 16362162,
+   "league": "Scottish Premiership",
+   "home": "St. Mirren",
+   "away": "St. Johnstone",
+   "home_score": 1,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "2nd half",
+   "minute": 73,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 58,
+     "away": 42
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.36,
+     "away": 0.91
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 3,
+     "away": 1
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 8,
+     "away": 5
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 4,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 402,
+     "away": 285
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 2,
+     "away": 1
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 2,
+     "away": 1
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 4.0,
+     "no": 1.222,
+     "captured_at_utc": "2026-08-08T15:32:41Z"
+    },
+    "1x2": {
+     "home": 1.2,
+     "draw": 4.75,
+     "away": 34.0,
+     "captured_at_utc": "2026-08-08T15:32:41Z"
+    },
+    "goals_over_25": {
+     "over": 2.5,
+     "under": 1.533,
+     "captured_at_utc": "2026-08-08T15:32:41Z"
+    },
+    "corners_over_95": {
+     "over": 2.1,
+     "under": 1.667,
+     "captured_at_utc": "2026-08-08T15:32:41Z"
+    }
+   },
+   "updated_at_utc": "2026-08-08T15:32:54Z"
+  },
+  "15260871": {
+   "event_id": 15260871,
+   "league": "Eliteserien",
+   "home": "Viking FK",
+   "away": "Sarpsborg 08",
+   "home_score": 1,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "2nd half",
+   "minute": 74,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 47,
+     "away": 53
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 2.16,
+     "away": 1.09
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 4,
+     "away": 1
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 15,
+     "away": 13
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 9,
+     "away": 4
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 293,
+     "away": 337
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -190,177 +344,75 @@
    },
    "odds": {
     "btts": {
-     "yes": 2.75,
-     "no": 1.4,
-     "captured_at_utc": "2026-08-08T15:29:53Z"
-    },
-    "corners_over_95": {
-     "over": 1.727,
-     "under": 2.0,
-     "captured_at_utc": "2026-08-08T15:29:53Z"
-    },
-    "1x2": {
-     "home": 1.025,
-     "draw": 19.0,
-     "away": 51.0,
-     "captured_at_utc": "2026-08-08T15:29:53Z"
-    },
-    "goals_over_25": {
-     "over": 1.8,
-     "under": 2.0,
-     "captured_at_utc": "2026-08-08T15:29:53Z"
-    }
-   },
-   "updated_at_utc": "2026-08-08T15:29:54Z"
-  },
-  "16362162": {
-   "event_id": 16362162,
-   "league": "Scottish Premiership",
-   "home": "St. Mirren",
-   "away": "St. Johnstone",
-   "home_score": 0,
-   "away_score": 0,
-   "status_type": "inprogress",
-   "status_description": "2nd half",
-   "minute": 70,
-   "stats": {
-    "possession": {
-     "label": "Posesión",
-     "home": 57,
-     "away": 43
-    },
-    "xg": {
-     "label": "Expected Goals (xG)",
-     "home": 0.36,
-     "away": 0.89
-    },
-    "big_chances": {
-     "label": "Ocasiones claras",
-     "home": 2,
-     "away": 1
-    },
-    "shots": {
-     "label": "Remates totales",
-     "home": 7,
-     "away": 5
-    },
-    "corners": {
-     "label": "Corners",
-     "home": 4,
-     "away": 0
-    },
-    "passes": {
-     "label": "Pases",
-     "home": 374,
-     "away": 275
-    },
-    "yellow_cards": {
-     "label": "Tarjetas amarillas",
-     "home": 2,
-     "away": 1
-    },
-    "shots_on_target": {
-     "label": "Remates al arco",
-     "home": 1,
-     "away": 1
-    }
-   },
-   "odds": {
-    "btts": {
-     "yes": 11.0,
-     "no": 1.05,
-     "captured_at_utc": "2026-08-08T15:29:53Z"
-    },
-    "1x2": {
-     "home": 3.6,
-     "draw": 1.727,
-     "away": 5.0,
-     "captured_at_utc": "2026-08-08T15:29:53Z"
-    },
-    "goals_over_25": {
-     "over": 2.5,
-     "under": 1.533,
-     "captured_at_utc": "2026-08-08T15:29:53Z"
-    },
-    "corners_over_95": {
-     "over": 2.1,
-     "under": 1.667,
-     "captured_at_utc": "2026-08-08T15:29:53Z"
-    }
-   },
-   "updated_at_utc": "2026-08-08T15:29:54Z"
-  },
-  "15260871": {
-   "event_id": 15260871,
-   "league": "Eliteserien",
-   "home": "Viking FK",
-   "away": "Sarpsborg 08",
-   "home_score": 1,
-   "away_score": 0,
-   "status_type": "inprogress",
-   "status_description": "2nd half",
-   "minute": 71,
-   "stats": {
-    "possession": {
-     "label": "Posesión",
-     "home": 48,
-     "away": 52
-    },
-    "xg": {
-     "label": "Expected Goals (xG)",
-     "home": 1.94,
-     "away": 1.09
-    },
-    "big_chances": {
-     "label": "Ocasiones claras",
-     "home": 3,
-     "away": 1
-    },
-    "shots": {
-     "label": "Remates totales",
-     "home": 13,
-     "away": 13
-    },
-    "corners": {
-     "label": "Corners",
-     "home": 8,
-     "away": 4
-    },
-    "passes": {
-     "label": "Pases",
-     "home": 293,
-     "away": 325
-    },
-    "yellow_cards": {
-     "label": "Tarjetas amarillas",
-     "home": 1,
-     "away": 2
-    },
-    "shots_on_target": {
-     "label": "Remates al arco",
-     "home": 5,
-     "away": 1
-    }
-   },
-   "odds": {
-    "btts": {
-     "yes": 3.0,
-     "no": 1.364,
-     "captured_at_utc": "2026-08-08T15:29:53Z"
+     "yes": 3.25,
+     "no": 1.333,
+     "captured_at_utc": "2026-08-08T15:32:41Z"
     },
     "1x2": {
      "home": 1.143,
-     "draw": 6.5,
+     "draw": 6.0,
      "away": 29.0,
-     "captured_at_utc": "2026-08-08T15:29:53Z"
+     "captured_at_utc": "2026-08-08T15:32:41Z"
     },
     "goals_over_25": {
      "over": 2.75,
      "under": 1.4,
-     "captured_at_utc": "2026-08-08T15:29:53Z"
+     "captured_at_utc": "2026-08-08T15:32:41Z"
     }
    },
-   "updated_at_utc": "2026-08-08T15:29:54Z"
+   "updated_at_utc": "2026-08-08T15:32:54Z"
+  },
+  "15272480": {
+   "event_id": 15272480,
+   "league": "Allsvenskan",
+   "home": "Mjällby AIF",
+   "away": "IF Elfsborg",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.95,
+     "no": 1.8,
+     "captured_at_utc": "2026-08-08T15:32:41Z"
+    },
+    "corners_over_95": {
+     "over": 1.727,
+     "under": 2.0,
+     "captured_at_utc": "2026-08-08T15:32:41Z"
+    },
+    "1x2": {
+     "home": 2.875,
+     "draw": 3.1,
+     "away": 2.5,
+     "captured_at_utc": "2026-08-08T15:32:41Z"
+    },
+    "goals_over_25": {
+     "over": 2.25,
+     "under": 1.571,
+     "captured_at_utc": "2026-08-08T15:32:41Z"
+    }
+   },
+   "updated_at_utc": "2026-08-08T15:32:54Z"
   }
  }
 }
