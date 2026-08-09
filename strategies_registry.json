@@ -249,24 +249,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 1,
+   "casos_verificados": 2,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "Ninguna todavía -- estrategia propia del Director, sin certificación estadística previa por decisión explícita (priorizar verificación real temprano, lección de E-LAB-001).",
    "fecha_creacion_utc": "2026-08-04",
-   "ultima_actualizacion_utc": "2026-08-09T19:33:03Z",
+   "ultima_actualizacion_utc": "2026-08-09T21:34:03Z",
    "proximo_hito": "Primeras verificaciones humanas reales contra Betano vía Telegram. Sin umbral de N fijado todavía.",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 1,
+    "n_operable": 2,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 1
+    "n_muestra": 2
    },
-   "alertas_live_historial": 17,
+   "alertas_live_historial": 23,
    "defecto_historico": {
     "tipo": "FALLO DE DEDUPLICACIÓN -- marcador variable dentro de la condición generaba alert_id nuevo por gol",
     "detectado_utc": "2026-08-08",
