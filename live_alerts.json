@@ -1,331 +1,7 @@
 {
- "generated_at_utc": "2026-08-09T20:37:22Z",
- "n_alerts": 14,
+ "generated_at_utc": "2026-08-09T20:40:09Z",
+ "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "L1",
-   "match_label": "[CERT-E2E] Test Routing A vs Test Routing B (L1)",
-   "match_id": "cert-e2e-routing-L1-20260809200722",
-   "market": "[CERT-E2E] verificacion de routing -- NO ES UNA ALERTA REAL (L1)",
-   "cuota_detectada": null,
-   "minuto": 1,
-   "condicion": "CERTIFICACION E2E de routing Telegram -- L1 -- 20260809200722",
-   "confianza": "N/A (prueba)",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "certificacion": true
-   },
-   "t_evento_real_utc": "2026-08-09T20:07:22Z",
-   "t_captura_utc": "2026-08-09T20:07:22Z",
-   "t_evaluacion_utc": "2026-08-09T20:07:22Z",
-   "t_generacion_utc": "2026-08-09T20:07:22Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "ERROR",
-     "t_envio_utc": "2026-08-09T20:07:23Z",
-     "latencia_envio_ms": 854.975700378418,
-     "error": "HTTP Error 400: Bad Request",
-     "message_id": null,
-     "chat_id": null
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🧪 [TEST/CERT] Verificacion de routing -- L1 deberia llegar a este chat.",
-   "evidencia": null,
-   "alert_id": "d66bc5b52a37f5d1"
-  },
-  {
-   "strategy_id": "L2",
-   "match_label": "[CERT-E2E] Test Routing A vs Test Routing B (L2)",
-   "match_id": "cert-e2e-routing-L2-20260809200722",
-   "market": "[CERT-E2E] verificacion de routing -- NO ES UNA ALERTA REAL (L2)",
-   "cuota_detectada": null,
-   "minuto": 1,
-   "condicion": "CERTIFICACION E2E de routing Telegram -- L2 -- 20260809200722",
-   "confianza": "N/A (prueba)",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "certificacion": true
-   },
-   "t_evento_real_utc": "2026-08-09T20:07:22Z",
-   "t_captura_utc": "2026-08-09T20:07:22Z",
-   "t_evaluacion_utc": "2026-08-09T20:07:23Z",
-   "t_generacion_utc": "2026-08-09T20:07:23Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "ERROR",
-     "t_envio_utc": "2026-08-09T20:07:24Z",
-     "latencia_envio_ms": 771.2385654449463,
-     "error": "HTTP Error 400: Bad Request",
-     "message_id": null,
-     "chat_id": null
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🧪 [TEST/CERT] Verificacion de routing -- L2 deberia llegar a este chat.",
-   "evidencia": null,
-   "alert_id": "2ce3bd711ede8edb"
-  },
-  {
-   "strategy_id": "L3",
-   "match_label": "[CERT-E2E] Test Routing A vs Test Routing B (L3)",
-   "match_id": "cert-e2e-routing-L3-20260809200722",
-   "market": "[CERT-E2E] verificacion de routing -- NO ES UNA ALERTA REAL (L3)",
-   "cuota_detectada": null,
-   "minuto": 1,
-   "condicion": "CERTIFICACION E2E de routing Telegram -- L3 -- 20260809200722",
-   "confianza": "N/A (prueba)",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "certificacion": true
-   },
-   "t_evento_real_utc": "2026-08-09T20:07:22Z",
-   "t_captura_utc": "2026-08-09T20:07:22Z",
-   "t_evaluacion_utc": "2026-08-09T20:07:24Z",
-   "t_generacion_utc": "2026-08-09T20:07:24Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "ERROR",
-     "t_envio_utc": "2026-08-09T20:07:25Z",
-     "latencia_envio_ms": 806.4134120941162,
-     "error": "HTTP Error 400: Bad Request",
-     "message_id": null,
-     "chat_id": null
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🧪 [TEST/CERT] Verificacion de routing -- L3 deberia llegar a este chat.",
-   "evidencia": null,
-   "alert_id": "db4fe5ba1bd5a6b3"
-  },
-  {
-   "strategy_id": "L4",
-   "match_label": "[CERT-E2E] Test Routing A vs Test Routing B (L4)",
-   "match_id": "cert-e2e-routing-L4-20260809200722",
-   "market": "[CERT-E2E] verificacion de routing -- NO ES UNA ALERTA REAL (L4)",
-   "cuota_detectada": null,
-   "minuto": 1,
-   "condicion": "CERTIFICACION E2E de routing Telegram -- L4 -- 20260809200722",
-   "confianza": "N/A (prueba)",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "certificacion": true
-   },
-   "t_evento_real_utc": "2026-08-09T20:07:22Z",
-   "t_captura_utc": "2026-08-09T20:07:22Z",
-   "t_evaluacion_utc": "2026-08-09T20:07:25Z",
-   "t_generacion_utc": "2026-08-09T20:07:25Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-09T20:07:26Z",
-     "latencia_envio_ms": 807.1744441986084,
-     "error": null,
-     "message_id": 147,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 4.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🧪 [TEST/CERT] Verificacion de routing -- L4 deberia llegar a este chat.",
-   "evidencia": null,
-   "alert_id": "0f0749354e32a46e"
-  },
-  {
-   "strategy_id": "L1",
-   "match_label": "[CERT-E2E] Test Routing A vs Test Routing B (L1)",
-   "match_id": "cert-e2e-routing-L1-20260809200738b",
-   "market": "[CERT-E2E] verificacion de routing -- NO ES UNA ALERTA REAL (L1)",
-   "cuota_detectada": null,
-   "minuto": 1,
-   "condicion": "CERTIFICACION E2E de routing Telegram -- L1 -- 20260809200738b",
-   "confianza": "N/A (prueba)",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "certificacion": true
-   },
-   "t_evento_real_utc": "2026-08-09T20:07:38Z",
-   "t_captura_utc": "2026-08-09T20:07:38Z",
-   "t_evaluacion_utc": "2026-08-09T20:07:38Z",
-   "t_generacion_utc": "2026-08-09T20:07:38Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "ERROR",
-     "t_envio_utc": "2026-08-09T20:07:39Z",
-     "latencia_envio_ms": 836.190938949585,
-     "error": "HTTP Error 400: Bad Request",
-     "message_id": null,
-     "chat_id": null
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "[TEST/CERT] Verificacion de routing -- L1.",
-   "evidencia": null,
-   "alert_id": "8005a736864b3ef0"
-  },
-  {
-   "strategy_id": "L1",
-   "match_label": "[CERT-E2E] Test Routing A vs Test Routing B (L1)",
-   "match_id": "cert-e2e-routing-L1-20260809200956",
-   "market": "[CERT-E2E] verificacion de routing -- NO ES UNA ALERTA REAL (L1)",
-   "cuota_detectada": null,
-   "minuto": 1,
-   "condicion": "CERTIFICACION E2E de routing Telegram -- L1 -- 20260809200956",
-   "confianza": "N/A (prueba)",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "certificacion": true
-   },
-   "t_evento_real_utc": "2026-08-09T20:09:56Z",
-   "t_captura_utc": "2026-08-09T20:09:56Z",
-   "t_evaluacion_utc": "2026-08-09T20:09:56Z",
-   "t_generacion_utc": "2026-08-09T20:09:56Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-09T20:09:56Z",
-     "latencia_envio_ms": 850.6457805633545,
-     "error": null,
-     "message_id": 149,
-     "chat_id": 5530307309
-    }
-   },
-   "latencia_total_seg": 0.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🧪 [TEST/CERT] Verificacion de routing -- L1 deberia llegar a este chat.",
-   "evidencia": null,
-   "alert_id": "4a60a263aaab9809"
-  },
-  {
-   "strategy_id": "L2",
-   "match_label": "[CERT-E2E] Test Routing A vs Test Routing B (L2)",
-   "match_id": "cert-e2e-routing-L2-20260809200956",
-   "market": "[CERT-E2E] verificacion de routing -- NO ES UNA ALERTA REAL (L2)",
-   "cuota_detectada": null,
-   "minuto": 1,
-   "condicion": "CERTIFICACION E2E de routing Telegram -- L2 -- 20260809200956",
-   "confianza": "N/A (prueba)",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "certificacion": true
-   },
-   "t_evento_real_utc": "2026-08-09T20:09:56Z",
-   "t_captura_utc": "2026-08-09T20:09:56Z",
-   "t_evaluacion_utc": "2026-08-09T20:09:56Z",
-   "t_generacion_utc": "2026-08-09T20:09:56Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-09T20:09:57Z",
-     "latencia_envio_ms": 795.3085899353027,
-     "error": null,
-     "message_id": 150,
-     "chat_id": 5530307309
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🧪 [TEST/CERT] Verificacion de routing -- L2 deberia llegar a este chat.",
-   "evidencia": null,
-   "alert_id": "f0ec9bba0d607073"
-  },
-  {
-   "strategy_id": "L3",
-   "match_label": "[CERT-E2E] Test Routing A vs Test Routing B (L3)",
-   "match_id": "cert-e2e-routing-L3-20260809200956",
-   "market": "[CERT-E2E] verificacion de routing -- NO ES UNA ALERTA REAL (L3)",
-   "cuota_detectada": null,
-   "minuto": 1,
-   "condicion": "CERTIFICACION E2E de routing Telegram -- L3 -- 20260809200956",
-   "confianza": "N/A (prueba)",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "certificacion": true
-   },
-   "t_evento_real_utc": "2026-08-09T20:09:56Z",
-   "t_captura_utc": "2026-08-09T20:09:56Z",
-   "t_evaluacion_utc": "2026-08-09T20:09:57Z",
-   "t_generacion_utc": "2026-08-09T20:09:57Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-09T20:09:58Z",
-     "latencia_envio_ms": 791.426420211792,
-     "error": null,
-     "message_id": 151,
-     "chat_id": 5530307309
-    }
-   },
-   "latencia_total_seg": 2.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🧪 [TEST/CERT] Verificacion de routing -- L3 deberia llegar a este chat.",
-   "evidencia": null,
-   "alert_id": "29bd7705e895fa98"
-  },
-  {
-   "strategy_id": "L4",
-   "match_label": "[CERT-E2E] Test Routing A vs Test Routing B (L4)",
-   "match_id": "cert-e2e-routing-L4-20260809200956",
-   "market": "[CERT-E2E] verificacion de routing -- NO ES UNA ALERTA REAL (L4)",
-   "cuota_detectada": null,
-   "minuto": 1,
-   "condicion": "CERTIFICACION E2E de routing Telegram -- L4 -- 20260809200956",
-   "confianza": "N/A (prueba)",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "certificacion": true
-   },
-   "t_evento_real_utc": "2026-08-09T20:09:56Z",
-   "t_captura_utc": "2026-08-09T20:09:56Z",
-   "t_evaluacion_utc": "2026-08-09T20:09:58Z",
-   "t_generacion_utc": "2026-08-09T20:09:58Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-09T20:09:59Z",
-     "latencia_envio_ms": 762.6402378082275,
-     "error": null,
-     "message_id": 152,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 3.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🧪 [TEST/CERT] Verificacion de routing -- L4 deberia llegar a este chat.",
-   "evidencia": null,
-   "alert_id": "770051798c296ff8"
-  },
   {
    "strategy_id": "L1",
    "match_label": "[CERT-E2E] Test Routing A vs Test Routing B (L1)",
@@ -476,7 +152,7 @@
    "match_id": "15526215",
    "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
    "cuota_detectada": null,
-   "minuto": 72,
+   "minuto": 75,
    "condicion": "Expulsión de Náutico (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
    "confianza": "Media",
    "link": "",
@@ -488,9 +164,9 @@
     "total_rojas_partido": 1
    },
    "t_evento_real_utc": "2026-08-09T20:14:32Z",
-   "t_captura_utc": "2026-08-09T20:36:15Z",
-   "t_evaluacion_utc": "2026-08-09T20:37:22Z",
-   "t_generacion_utc": "2026-08-09T20:37:22Z",
+   "t_captura_utc": "2026-08-09T20:39:45Z",
+   "t_evaluacion_utc": "2026-08-09T20:40:07Z",
+   "t_generacion_utc": "2026-08-09T20:40:07Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -504,9 +180,47 @@
    },
    "latencia_total_seg": 45.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Náutico vs Atlético Goianiense\n⏱ Minuto: 72'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n🟥 Expulsado: Náutico\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
+   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Náutico vs Atlético Goianiense\n⏱ Minuto: 75'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n🟥 Expulsado: Náutico\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
    "evidencia": null,
    "alert_id": "27399586e858f012"
+  },
+  {
+   "strategy_id": "L3",
+   "match_label": "Gil Vicente vs Rio Ave (Liga Portugal Betclic)",
+   "match_id": "16450737",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
+   "cuota_detectada": null,
+   "minuto": 48,
+   "condicion": "Expulsión de Rio Ave (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_expulsado": "Rio Ave",
+    "marcador_al_detectar": "0-0",
+    "total_rojas_partido": 1
+   },
+   "t_evento_real_utc": "2026-08-09T20:39:45Z",
+   "t_captura_utc": "2026-08-09T20:39:45Z",
+   "t_evaluacion_utc": "2026-08-09T20:40:08Z",
+   "t_generacion_utc": "2026-08-09T20:40:08Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-09T20:40:09Z",
+     "latencia_envio_ms": 883.1384181976318,
+     "error": null,
+     "message_id": 158,
+     "chat_id": -5219979824
+    }
+   },
+   "latencia_total_seg": 24.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Gil Vicente vs Rio Ave\n⏱ Minuto: 48'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n🟥 Expulsado: Rio Ave\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
+   "evidencia": null,
+   "alert_id": "a0b53a272d92fccb"
   }
  ]
 }
