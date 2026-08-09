@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-09T16:33:12Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-09T16:34:12Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "L2-SHADOW",
@@ -130,6 +130,49 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Rangers vs Hibernian\n⏱ Minuto: 73'\n📊 Marcador: 0-1\n🏆 Liga: Scottish Premiership\n\n📈 Domina: Rangers\nxG: 1.78 vs 1.67\nTiros a puerta: 7 vs 1\n\nReferencia PROXY: AH +0.50 @ 1.975 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Rangers — ¿línea y cuota reales?",
    "evidencia": null,
    "alert_id": "e15408c93294521c"
+  },
+  {
+   "strategy_id": "L2-SHADOW",
+   "match_label": "Rangers vs Hibernian (Scottish Premiership)",
+   "match_id": "16362002",
+   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH +0.50 @ 2.0 [PROXY SofaScore, NO Betano]",
+   "cuota_detectada": 2.0,
+   "minuto": 74,
+   "condicion": "Rangers domina por xG (1.78) y remates a puerta (7), pero el marcador va 0-1 (Rangers vs Hibernian) — sin roja del dominante. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Rangers",
+    "xg_dominante": 1.78,
+    "sot_dominante": 7,
+    "marcador": "0-1",
+    "variante": "shadow_ventana_80",
+    "ah_proxy_linea": 0.5,
+    "ah_proxy_cuota": 2.0,
+    "ah_proxy_suspendida": false,
+    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
+   },
+   "t_evento_real_utc": "2026-08-09T16:30:44Z",
+   "t_captura_utc": "2026-08-09T16:34:09Z",
+   "t_evaluacion_utc": "2026-08-09T16:34:11Z",
+   "t_generacion_utc": "2026-08-09T16:34:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-09T16:34:12Z",
+     "latencia_envio_ms": 840.796709060669,
+     "error": null,
+     "message_id": 90
+    }
+   },
+   "latencia_total_seg": 208.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Rangers vs Hibernian\n⏱ Minuto: 74'\n📊 Marcador: 0-1\n🏆 Liga: Scottish Premiership\n\n📈 Domina: Rangers\nxG: 1.78 vs 1.67\nTiros a puerta: 7 vs 1\n\nReferencia PROXY: AH +0.50 @ 2.0 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Rangers — ¿línea y cuota reales?",
+   "evidencia": null,
+   "alert_id": "ed14ba92c8a0df72"
   }
  ]
 }
