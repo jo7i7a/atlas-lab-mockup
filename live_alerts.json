@@ -1,44 +1,7 @@
 {
- "generated_at_utc": "2026-08-09T19:37:11Z",
+ "generated_at_utc": "2026-08-09T19:39:33Z",
  "n_alerts": 5,
  "alerts": [
-  {
-   "strategy_id": "L1",
-   "match_label": "Grêmio Novorizontino vs Juventude (Brasileirão Série B)",
-   "match_id": "15526209",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "4 córners totales antes del min 30 (0-4), Juventude presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Grêmio Novorizontino NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "Juventude"
-   },
-   "t_evento_real_utc": "2026-08-09T19:07:49Z",
-   "t_captura_utc": "2026-08-09T19:07:49Z",
-   "t_evaluacion_utc": "2026-08-09T19:30:09Z",
-   "t_generacion_utc": "2026-08-09T19:30:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-09T19:08:10Z",
-     "latencia_envio_ms": 836.1189365386963,
-     "error": null,
-     "message_id": 122
-    }
-   },
-   "latencia_total_seg": 21.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Grêmio Novorizontino vs Juventude\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Juventude presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Grêmio Novorizontino no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "60c12056f94b681b"
-  },
   {
    "strategy_id": "L1",
    "match_label": "O'Higgins vs Deportes Limache (Liga de Primera)",
@@ -114,12 +77,49 @@
    "alert_id": "c5af737c38513bd3"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "Benfica vs Académico Viseu FC (Liga Portugal Betclic)",
+   "match_id": "16450742",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 8,
+   "condicion": "4 córners totales antes del min 30 (3-1), Benfica presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Académico Viseu FC NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Benfica"
+   },
+   "t_evento_real_utc": "2026-08-09T19:39:05Z",
+   "t_captura_utc": "2026-08-09T19:39:05Z",
+   "t_evaluacion_utc": "2026-08-09T19:39:25Z",
+   "t_generacion_utc": "2026-08-09T19:39:25Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-09T19:39:25Z",
+     "latencia_envio_ms": 842.7412509918213,
+     "error": null,
+     "message_id": 133
+    }
+   },
+   "latencia_total_seg": 20.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Benfica vs Académico Viseu FC\n⏱ Minuto: 8'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Benfica presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Académico Viseu FC no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "0a142b8df47bd269"
+  },
+  {
    "strategy_id": "L1-SHADOW",
    "match_label": "O'Higgins vs Deportes Limache (Liga de Primera)",
    "match_id": "15353087",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 36,
+   "minuto": 39,
    "condicion": "4 córners totales antes del min 45 (1-3), Deportes Limache presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿O'Higgins NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -133,8 +133,8 @@
    },
    "t_evento_real_utc": "2026-08-09T19:10:40Z",
    "t_captura_utc": "2026-08-09T19:10:40Z",
-   "t_evaluacion_utc": "2026-08-09T19:37:10Z",
-   "t_generacion_utc": "2026-08-09T19:37:10Z",
+   "t_evaluacion_utc": "2026-08-09T19:39:30Z",
+   "t_generacion_utc": "2026-08-09T19:39:30Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -147,47 +147,47 @@
    },
    "latencia_total_seg": 33.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ O'Higgins vs Deportes Limache\n⏱ Minuto: 36'\n📊 Marcador: 0-2\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Deportes Limache presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿O'Higgins no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ O'Higgins vs Deportes Limache\n⏱ Minuto: 39'\n📊 Marcador: 0-2\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Deportes Limache presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿O'Higgins no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "6ba4aab1ad5f1439"
   },
   {
    "strategy_id": "L1-SHADOW",
-   "match_label": "Grêmio Novorizontino vs Juventude (Brasileirão Série B)",
-   "match_id": "15526209",
+   "match_label": "Benfica vs Académico Viseu FC (Liga Portugal Betclic)",
+   "match_id": "16450742",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 37,
-   "condicion": "4 córners totales antes del min 45 (0-4), Juventude presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Grêmio Novorizontino NO está en bloque bajo?",
+   "minuto": 8,
+   "condicion": "4 córners totales antes del min 45 (3-1), Benfica presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Académico Viseu FC NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
    "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "Juventude",
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Benfica",
     "variante": "shadow_ventana_45"
    },
-   "t_evento_real_utc": "2026-08-09T19:07:49Z",
-   "t_captura_utc": "2026-08-09T19:07:49Z",
-   "t_evaluacion_utc": "2026-08-09T19:37:11Z",
-   "t_generacion_utc": "2026-08-09T19:37:11Z",
+   "t_evento_real_utc": "2026-08-09T19:39:05Z",
+   "t_captura_utc": "2026-08-09T19:39:05Z",
+   "t_evaluacion_utc": "2026-08-09T19:39:32Z",
+   "t_generacion_utc": "2026-08-09T19:39:32Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
      "estado": "OK",
-     "t_envio_utc": "2026-08-09T19:08:13Z",
-     "latencia_envio_ms": 800.2281188964844,
+     "t_envio_utc": "2026-08-09T19:39:33Z",
+     "latencia_envio_ms": 780.4057598114014,
      "error": null,
-     "message_id": 123
+     "message_id": 134
     }
    },
-   "latencia_total_seg": 24.0,
+   "latencia_total_seg": 28.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Grêmio Novorizontino vs Juventude\n⏱ Minuto: 37'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Juventude presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Grêmio Novorizontino no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Benfica vs Académico Viseu FC\n⏱ Minuto: 8'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Benfica presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Académico Viseu FC no está en bloque bajo?",
    "evidencia": null,
-   "alert_id": "9b46951a30a0df2e"
+   "alert_id": "efd4b1163e1d0126"
   }
  ]
 }
