@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-09T10:08:54Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-08-09T10:11:54Z",
+ "n_live_target": 2,
  "matches": {
   "16331686": {
    "event_id": 16331686,
@@ -11,12 +11,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 47,
+   "minute": 50,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 33,
-     "away": 67
+     "home": 32,
+     "away": 68
     },
     "big_chances": {
      "label": "Ocasiones claras",
@@ -35,8 +35,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 166,
-     "away": 345
+     "home": 169,
+     "away": 357
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -51,28 +51,95 @@
    },
    "odds": {
     "btts": {
-     "yes": 3.75,
-     "no": 1.25,
-     "captured_at_utc": "2026-08-09T10:08:10Z"
+     "yes": 1.7,
+     "no": 2.05,
+     "captured_at_utc": "2026-08-09T10:11:36Z"
     },
     "corners_over_95": {
      "over": 2.2,
      "under": 1.615,
-     "captured_at_utc": "2026-08-09T10:08:51Z"
+     "captured_at_utc": "2026-08-09T10:11:36Z"
     },
     "1x2": {
      "home": 1.615,
      "draw": 3.4,
-     "away": 7.0,
-     "captured_at_utc": "2026-08-09T10:08:10Z"
+     "away": 6.5,
+     "captured_at_utc": "2026-08-09T10:11:36Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.5,
-     "captured_at_utc": "2026-08-09T10:08:10Z"
+     "captured_at_utc": "2026-08-09T10:11:36Z"
     }
    },
-   "updated_at_utc": "2026-08-09T10:08:54Z"
+   "updated_at_utc": "2026-08-09T10:11:54Z"
+  },
+  "16331692": {
+   "event_id": 16331692,
+   "league": "J1 League",
+   "home": "V-Varen Nagasaki",
+   "away": "Kyoto Sanga FC",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 63,
+     "away": 37
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 2,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 1,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 3,
+     "away": 3
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 1,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.95,
+     "no": 1.8,
+     "captured_at_utc": "2026-08-09T10:11:36Z"
+    },
+    "corners_over_95": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-08-09T10:11:36Z"
+    },
+    "1x2": {
+     "home": 3.4,
+     "draw": 3.2,
+     "away": 2.2,
+     "captured_at_utc": "2026-08-09T10:11:36Z"
+    },
+    "goals_over_25": {
+     "over": 2.2,
+     "under": 1.615,
+     "captured_at_utc": "2026-08-09T10:11:36Z"
+    }
+   },
+   "updated_at_utc": "2026-08-09T10:11:54Z"
   }
  }
 }
