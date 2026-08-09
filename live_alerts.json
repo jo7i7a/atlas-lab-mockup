@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-09T20:07:12Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-09T20:08:10Z",
+ "n_alerts": 7,
  "alerts": [
   {
    "strategy_id": "L1",
@@ -40,12 +40,192 @@
    "alert_id": "0a142b8df47bd269"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "[CERT-E2E] Test Routing A vs Test Routing B (L1)",
+   "match_id": "cert-e2e-routing-L1-20260809200722",
+   "market": "[CERT-E2E] verificacion de routing -- NO ES UNA ALERTA REAL (L1)",
+   "cuota_detectada": null,
+   "minuto": 1,
+   "condicion": "CERTIFICACION E2E de routing Telegram -- L1 -- 20260809200722",
+   "confianza": "N/A (prueba)",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "certificacion": true
+   },
+   "t_evento_real_utc": "2026-08-09T20:07:22Z",
+   "t_captura_utc": "2026-08-09T20:07:22Z",
+   "t_evaluacion_utc": "2026-08-09T20:07:22Z",
+   "t_generacion_utc": "2026-08-09T20:07:22Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "ERROR",
+     "t_envio_utc": "2026-08-09T20:07:23Z",
+     "latencia_envio_ms": 854.975700378418,
+     "error": "HTTP Error 400: Bad Request",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🧪 [TEST/CERT] Verificacion de routing -- L1 deberia llegar a este chat.",
+   "evidencia": null,
+   "alert_id": "d66bc5b52a37f5d1"
+  },
+  {
+   "strategy_id": "L2",
+   "match_label": "[CERT-E2E] Test Routing A vs Test Routing B (L2)",
+   "match_id": "cert-e2e-routing-L2-20260809200722",
+   "market": "[CERT-E2E] verificacion de routing -- NO ES UNA ALERTA REAL (L2)",
+   "cuota_detectada": null,
+   "minuto": 1,
+   "condicion": "CERTIFICACION E2E de routing Telegram -- L2 -- 20260809200722",
+   "confianza": "N/A (prueba)",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "certificacion": true
+   },
+   "t_evento_real_utc": "2026-08-09T20:07:22Z",
+   "t_captura_utc": "2026-08-09T20:07:22Z",
+   "t_evaluacion_utc": "2026-08-09T20:07:23Z",
+   "t_generacion_utc": "2026-08-09T20:07:23Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "ERROR",
+     "t_envio_utc": "2026-08-09T20:07:24Z",
+     "latencia_envio_ms": 771.2385654449463,
+     "error": "HTTP Error 400: Bad Request",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🧪 [TEST/CERT] Verificacion de routing -- L2 deberia llegar a este chat.",
+   "evidencia": null,
+   "alert_id": "2ce3bd711ede8edb"
+  },
+  {
+   "strategy_id": "L3",
+   "match_label": "[CERT-E2E] Test Routing A vs Test Routing B (L3)",
+   "match_id": "cert-e2e-routing-L3-20260809200722",
+   "market": "[CERT-E2E] verificacion de routing -- NO ES UNA ALERTA REAL (L3)",
+   "cuota_detectada": null,
+   "minuto": 1,
+   "condicion": "CERTIFICACION E2E de routing Telegram -- L3 -- 20260809200722",
+   "confianza": "N/A (prueba)",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "certificacion": true
+   },
+   "t_evento_real_utc": "2026-08-09T20:07:22Z",
+   "t_captura_utc": "2026-08-09T20:07:22Z",
+   "t_evaluacion_utc": "2026-08-09T20:07:24Z",
+   "t_generacion_utc": "2026-08-09T20:07:24Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "ERROR",
+     "t_envio_utc": "2026-08-09T20:07:25Z",
+     "latencia_envio_ms": 806.4134120941162,
+     "error": "HTTP Error 400: Bad Request",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🧪 [TEST/CERT] Verificacion de routing -- L3 deberia llegar a este chat.",
+   "evidencia": null,
+   "alert_id": "db4fe5ba1bd5a6b3"
+  },
+  {
+   "strategy_id": "L4",
+   "match_label": "[CERT-E2E] Test Routing A vs Test Routing B (L4)",
+   "match_id": "cert-e2e-routing-L4-20260809200722",
+   "market": "[CERT-E2E] verificacion de routing -- NO ES UNA ALERTA REAL (L4)",
+   "cuota_detectada": null,
+   "minuto": 1,
+   "condicion": "CERTIFICACION E2E de routing Telegram -- L4 -- 20260809200722",
+   "confianza": "N/A (prueba)",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "certificacion": true
+   },
+   "t_evento_real_utc": "2026-08-09T20:07:22Z",
+   "t_captura_utc": "2026-08-09T20:07:22Z",
+   "t_evaluacion_utc": "2026-08-09T20:07:25Z",
+   "t_generacion_utc": "2026-08-09T20:07:25Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-09T20:07:26Z",
+     "latencia_envio_ms": 807.1744441986084,
+     "error": null,
+     "message_id": 147,
+     "chat_id": -5415726375
+    }
+   },
+   "latencia_total_seg": 4.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🧪 [TEST/CERT] Verificacion de routing -- L4 deberia llegar a este chat.",
+   "evidencia": null,
+   "alert_id": "0f0749354e32a46e"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "[CERT-E2E] Test Routing A vs Test Routing B (L1)",
+   "match_id": "cert-e2e-routing-L1-20260809200738b",
+   "market": "[CERT-E2E] verificacion de routing -- NO ES UNA ALERTA REAL (L1)",
+   "cuota_detectada": null,
+   "minuto": 1,
+   "condicion": "CERTIFICACION E2E de routing Telegram -- L1 -- 20260809200738b",
+   "confianza": "N/A (prueba)",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "certificacion": true
+   },
+   "t_evento_real_utc": "2026-08-09T20:07:38Z",
+   "t_captura_utc": "2026-08-09T20:07:38Z",
+   "t_evaluacion_utc": "2026-08-09T20:07:38Z",
+   "t_generacion_utc": "2026-08-09T20:07:38Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "ERROR",
+     "t_envio_utc": "2026-08-09T20:07:39Z",
+     "latencia_envio_ms": 836.190938949585,
+     "error": "HTTP Error 400: Bad Request",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "[TEST/CERT] Verificacion de routing -- L1.",
+   "evidencia": null,
+   "alert_id": "8005a736864b3ef0"
+  },
+  {
    "strategy_id": "L1-SHADOW",
    "match_label": "Benfica vs Académico Viseu FC (Liga Portugal Betclic)",
    "match_id": "16450742",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 36,
+   "minuto": 37,
    "condicion": "4 córners totales antes del min 45 (3-1), Benfica presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Académico Viseu FC NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -59,8 +239,8 @@
    },
    "t_evento_real_utc": "2026-08-09T19:39:05Z",
    "t_captura_utc": "2026-08-09T19:39:05Z",
-   "t_evaluacion_utc": "2026-08-09T20:07:12Z",
-   "t_generacion_utc": "2026-08-09T20:07:12Z",
+   "t_evaluacion_utc": "2026-08-09T20:08:10Z",
+   "t_generacion_utc": "2026-08-09T20:08:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -74,7 +254,7 @@
    },
    "latencia_total_seg": 28.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Benfica vs Académico Viseu FC\n⏱ Minuto: 36'\n📊 Marcador: 1-0\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Benfica presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Académico Viseu FC no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Benfica vs Académico Viseu FC\n⏱ Minuto: 37'\n📊 Marcador: 1-0\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Benfica presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Académico Viseu FC no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "efd4b1163e1d0126"
   }
