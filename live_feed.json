@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-09T10:17:54Z",
+ "generated_at_utc": "2026-08-09T10:20:54Z",
  "n_live_target": 3,
  "matches": {
   "16316764": {
@@ -8,20 +8,25 @@
    "home": "Sparta Rotterdam",
    "away": "Feyenoord",
    "home_score": 0,
-   "away_score": 0,
+   "away_score": 1,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 1,
+   "minute": 4,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 67,
-     "away": 33
+     "home": 60,
+     "away": 40
     },
     "xg": {
      "label": "Expected Goals (xG)",
      "home": 0,
-     "away": 0.6
+     "away": 0.62
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 0,
+     "away": 1
     },
     "shots": {
      "label": "Remates totales",
@@ -30,8 +35,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 10,
-     "away": 4
+     "home": 32,
+     "away": 21
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -39,8 +44,30 @@
      "away": 0
     }
    },
-   "odds": {},
-   "updated_at_utc": "2026-08-09T10:17:54Z"
+   "odds": {
+    "btts": {
+     "yes": 1.615,
+     "no": 2.2,
+     "captured_at_utc": "2026-08-09T10:20:48Z"
+    },
+    "1x2": {
+     "home": 12.0,
+     "draw": 6.5,
+     "away": 1.222,
+     "captured_at_utc": "2026-08-09T10:20:48Z"
+    },
+    "goals_over_25": {
+     "over": 1.571,
+     "under": 2.25,
+     "captured_at_utc": "2026-08-09T10:20:48Z"
+    },
+    "corners_over_95": {
+     "over": 1.727,
+     "under": 2.0,
+     "captured_at_utc": "2026-08-09T10:20:48Z"
+    }
+   },
+   "updated_at_utc": "2026-08-09T10:20:54Z"
   },
   "16331686": {
    "event_id": 16331686,
@@ -51,12 +78,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 56,
+   "minute": 59,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 32,
-     "away": 68
+     "home": 31,
+     "away": 69
     },
     "big_chances": {
      "label": "Ocasiones claras",
@@ -66,94 +93,22 @@
     "shots": {
      "label": "Remates totales",
      "home": 10,
-     "away": 7
+     "away": 8
     },
     "corners": {
      "label": "Corners",
      "home": 2,
-     "away": 2
+     "away": 3
     },
     "passes": {
      "label": "Pases",
-     "home": 194,
-     "away": 406
+     "home": 196,
+     "away": 434
     },
     "shots_on_target": {
      "label": "Remates al arco",
      "home": 4,
-     "away": 1
-    },
-    "xg": {
-     "label": "Expected Goals (xG)",
-     "home": 0,
-     "away": 0
-    }
-   },
-   "odds": {
-    "btts": {
-     "yes": 1.8,
-     "no": 1.95,
-     "captured_at_utc": "2026-08-09T10:16:04Z"
-    },
-    "corners_over_95": {
-     "over": 2.2,
-     "under": 1.615,
-     "captured_at_utc": "2026-08-09T10:16:04Z"
-    },
-    "1x2": {
-     "home": 1.571,
-     "draw": 3.4,
-     "away": 7.5,
-     "captured_at_utc": "2026-08-09T10:16:04Z"
-    },
-    "goals_over_25": {
-     "over": 2.75,
-     "under": 1.4,
-     "captured_at_utc": "2026-08-09T10:16:04Z"
-    }
-   },
-   "updated_at_utc": "2026-08-09T10:17:54Z"
-  },
-  "16331692": {
-   "event_id": 16331692,
-   "league": "J1 League",
-   "home": "V-Varen Nagasaki",
-   "away": "Kyoto Sanga FC",
-   "home_score": 0,
-   "away_score": 0,
-   "status_type": "inprogress",
-   "status_description": "1st half",
-   "minute": 8,
-   "stats": {
-    "possession": {
-     "label": "Posesión",
-     "home": 59,
-     "away": 41
-    },
-    "big_chances": {
-     "label": "Ocasiones claras",
-     "home": 1,
-     "away": 0
-    },
-    "shots": {
-     "label": "Remates totales",
-     "home": 3,
-     "away": 0
-    },
-    "corners": {
-     "label": "Corners",
-     "home": 2,
-     "away": 0
-    },
-    "passes": {
-     "label": "Pases",
-     "home": 24,
-     "away": 21
-    },
-    "shots_on_target": {
-     "label": "Remates al arco",
-     "home": 1,
-     "away": 0
+     "away": 2
     },
     "xg": {
      "label": "Expected Goals (xG)",
@@ -165,26 +120,98 @@
     "btts": {
      "yes": 1.909,
      "no": 1.909,
-     "captured_at_utc": "2026-08-09T10:16:04Z"
+     "captured_at_utc": "2026-08-09T10:20:48Z"
+    },
+    "corners_over_95": {
+     "over": 2.2,
+     "under": 1.615,
+     "captured_at_utc": "2026-08-09T10:20:48Z"
+    },
+    "1x2": {
+     "home": 1.533,
+     "draw": 3.4,
+     "away": 8.5,
+     "captured_at_utc": "2026-08-09T10:20:48Z"
+    },
+    "goals_over_25": {
+     "over": 2.75,
+     "under": 1.4,
+     "captured_at_utc": "2026-08-09T10:20:48Z"
+    }
+   },
+   "updated_at_utc": "2026-08-09T10:20:54Z"
+  },
+  "16331692": {
+   "event_id": 16331692,
+   "league": "J1 League",
+   "home": "V-Varen Nagasaki",
+   "away": "Kyoto Sanga FC",
+   "home_score": 1,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 11,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 51,
+     "away": 49
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 2,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 4,
+     "away": 1
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 2,
+     "away": 1
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 32,
+     "away": 35
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 2,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.286,
+     "no": 3.5,
+     "captured_at_utc": "2026-08-09T10:20:48Z"
     },
     "corners_over_95": {
      "over": 1.667,
      "under": 2.1,
-     "captured_at_utc": "2026-08-09T10:16:04Z"
+     "captured_at_utc": "2026-08-09T10:20:48Z"
     },
     "1x2": {
-     "home": 3.2,
-     "draw": 3.2,
-     "away": 2.3,
-     "captured_at_utc": "2026-08-09T10:16:04Z"
+     "home": 1.909,
+     "draw": 3.6,
+     "away": 4.0,
+     "captured_at_utc": "2026-08-09T10:20:48Z"
     },
     "goals_over_25": {
-     "over": 2.1,
-     "under": 1.667,
-     "captured_at_utc": "2026-08-09T10:16:04Z"
+     "over": 2.2,
+     "under": 1.615,
+     "captured_at_utc": "2026-08-09T10:20:48Z"
     }
    },
-   "updated_at_utc": "2026-08-09T10:17:54Z"
+   "updated_at_utc": "2026-08-09T10:20:54Z"
   }
  }
 }
