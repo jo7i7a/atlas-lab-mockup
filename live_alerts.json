@@ -1,5 +1,83 @@
 {
- "generated_at_utc": "2026-08-09T21:10:13Z",
- "n_alerts": 0,
- "alerts": []
+ "generated_at_utc": "2026-08-09T21:13:16Z",
+ "n_alerts": 2,
+ "alerts": [
+  {
+   "strategy_id": "L1",
+   "match_label": "Defensa y Justicia vs Newell's Old Boys (Liga Profesional de Fútbol)",
+   "match_id": "16667377",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 27,
+   "condicion": "4 córners totales antes del min 30 (0-4), Newell's Old Boys presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Defensa y Justicia NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Newell's Old Boys"
+   },
+   "t_evento_real_utc": "2026-08-09T21:12:49Z",
+   "t_captura_utc": "2026-08-09T21:12:49Z",
+   "t_evaluacion_utc": "2026-08-09T21:13:13Z",
+   "t_generacion_utc": "2026-08-09T21:13:13Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-09T21:13:14Z",
+     "latencia_envio_ms": 913.083553314209,
+     "error": null,
+     "message_id": 163,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 25.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Defensa y Justicia vs Newell's Old Boys\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Newell's Old Boys presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Defensa y Justicia no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "2db30626ece037c3"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Defensa y Justicia vs Newell's Old Boys (Liga Profesional de Fútbol)",
+   "match_id": "16667377",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 27,
+   "condicion": "4 córners totales antes del min 45 (0-4), Newell's Old Boys presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Defensa y Justicia NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Newell's Old Boys",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-09T21:12:49Z",
+   "t_captura_utc": "2026-08-09T21:12:49Z",
+   "t_evaluacion_utc": "2026-08-09T21:13:15Z",
+   "t_generacion_utc": "2026-08-09T21:13:15Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-09T21:13:16Z",
+     "latencia_envio_ms": 805.3340911865234,
+     "error": null,
+     "message_id": 164,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 27.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Defensa y Justicia vs Newell's Old Boys\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Newell's Old Boys presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Defensa y Justicia no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "d12e6451b7005cea"
+  }
+ ]
 }
