@@ -1,186 +1,613 @@
 {
-  "_meta": {
-    "descripcion": "Registro de fichas del Laboratorio de Estrategias de ATLAS Lab. Regla principal: ninguna estrategia se elimina de este archivo, solo cambia de estado conforme acumula evidencia (ver 'estado_actual' y 'historial_estados' de cada ficha).",
-    "estados_posibles": ["IDEA", "HIPOTESIS", "OBSERVACION", "VALIDACION_CUOTA_REAL", "CERTIFICADA", "PRODUCCION", "REFUTADA"],
-    "ultima_actualizacion_utc": "2026-08-04T02:30:00Z"
-  },
-  "strategies": [
+ "_meta": {
+  "descripcion": "Registro de fichas del Laboratorio de Estrategias de ATLAS Lab. Regla principal: ninguna estrategia se elimina de este archivo, solo cambia de estado conforme acumula evidencia (ver 'estado_actual' y 'historial_estados' de cada ficha).",
+  "estados_posibles": [
+   "IDEA",
+   "HIPOTESIS",
+   "OBSERVACION",
+   "VALIDACION_CUOTA_REAL",
+   "CERTIFICADA",
+   "PRODUCCION",
+   "REFUTADA"
+  ],
+  "ultima_actualizacion_utc": "2026-08-08T23:42:56Z"
+ },
+ "strategies": [
+  {
+   "id": "E-LAB-001",
+   "nombre": "Desfase estructural Corners/Cards en mercados de baja liquidez",
+   "mercado": "Corners 2-Way (over/under por línea) y Total Cards (over/under por línea), mercados LIVE",
+   "tipo": "LIVE",
+   "hipotesis": "Los mercados LIVE de Corners y Cards, al tener baja liquidez/interés comercial frente al 1X2, no reprecian cuando el conteo real del partido ya cruzó una línea publicada -- el precio queda 'congelado' en su nivel pre-cruce durante minutos u horas mientras el mercado sigue mayoritariamente abierto (suspended=False). Certificado estadísticamente en esta sesión: 0 de 383 cruces observados se corrigieron dentro de la ventana de captura (mediana de 10-14 min sin reflejo, casos de hasta 76 min).",
+   "reglas_entrada": [
+    "El conteo real acumulado (corners totales, o amarillas+rojas totales) del partido ya superó una línea X.5 publicada en el mercado correspondiente.",
+    "El precio Over de esa línea específica no se movió más de 0.05 (cuota decimal) desde el valor inmediatamente anterior al cruce.",
+    "El mercado tiene suspended=False en la última captura.",
+    "Confianza 'Alta' si han pasado ≥5 minutos desde el cruce sin reacción y el mercado sigue abierto; 'Media' en otro caso."
+   ],
+   "reglas_salida": [
+    "El precio se mueve ≥0.05 respecto al valor pre-cruce (el mercado reaccionó -- deja de ser una oportunidad de esta estrategia).",
+    "El mercado pasa a suspended=True (ya no operable).",
+    "Termina el partido sin que el precio se haya movido (se registra como caso de ventana máxima, no como pérdida de oportunidad)."
+   ],
+   "estado_actual": "REFUTADA",
+   "historial_estados": [
     {
-      "id": "E-LAB-001",
-      "nombre": "Desfase estructural Corners/Cards en mercados de baja liquidez",
-      "mercado": "Corners 2-Way (over/under por línea) y Total Cards (over/under por línea), mercados LIVE",
-      "tipo": "LIVE",
-      "hipotesis": "Los mercados LIVE de Corners y Cards, al tener baja liquidez/interés comercial frente al 1X2, no reprecian cuando el conteo real del partido ya cruzó una línea publicada -- el precio queda 'congelado' en su nivel pre-cruce durante minutos u horas mientras el mercado sigue mayoritariamente abierto (suspended=False). Certificado estadísticamente en esta sesión: 0 de 383 cruces observados se corrigieron dentro de la ventana de captura (mediana de 10-14 min sin reflejo, casos de hasta 76 min).",
-      "reglas_entrada": [
-        "El conteo real acumulado (corners totales, o amarillas+rojas totales) del partido ya superó una línea X.5 publicada en el mercado correspondiente.",
-        "El precio Over de esa línea específica no se movió más de 0.05 (cuota decimal) desde el valor inmediatamente anterior al cruce.",
-        "El mercado tiene suspended=False en la última captura.",
-        "Confianza 'Alta' si han pasado ≥5 minutos desde el cruce sin reacción y el mercado sigue abierto; 'Media' en otro caso."
-      ],
-      "reglas_salida": [
-        "El precio se mueve ≥0.05 respecto al valor pre-cruce (el mercado reaccionó -- deja de ser una oportunidad de esta estrategia).",
-        "El mercado pasa a suspended=True (ya no operable).",
-        "Termina el partido sin que el precio se haya movido (se registra como caso de ventana máxima, no como pérdida de oportunidad)."
-      ],
-      "estado_actual": "REFUTADA",
-      "historial_estados": [
-        {"estado": "HIPOTESIS", "fecha_utc": "2026-08-02", "nota": "Certificado que la baja liveliness de Corners/Cards es fenómeno real de mercado, no artefacto de captura/redondeo/bug."},
-        {"estado": "OBSERVACION", "fecha_utc": "2026-08-02", "nota": "Medida la ventana operativa: 283 cruces en Corners (84% de partidos), 100 en Cards (63% de partidos), 0/383 correcciones, mercado abierto 89.3%/64.1% del tiempo de ventana."},
-        {"estado": "VALIDACION_CUOTA_REAL", "fecha_utc": "2026-08-02", "nota": "Pendiente verificación humana contra casa de apuestas real (Betano) -- la cuota de ATLAS proviene de SofaScore /odds/1/all, que no se muestra en el producto público de SofaScore (solo 1X2 es visible ahí); falta confirmar que 1) el mercado de Corners/Cards exista en Betano para el mismo partido, y 2) el precio coincida o esté igual de congelado."},
-        {"estado": "VALIDACION_CUOTA_REAL", "fecha_utc": "2026-08-02", "nota": "Primera validación humana: no encontró problema de hipótesis, encontró problema de LATENCIA (detector corría cada 3 min, sin notificación push). Migrado a ATLAS Notify (atlas_engine/notify/), motor genérico multi-canal para todo el laboratorio: detector ahora corre cada 1 min (mínimo real de Windows Task Scheduler), notificación push por Telegram inmediata al detectar (no espera al ciclo de publicación web), cada alerta trae 6 timestamps de latencia (evento real/captura/evaluación/generación/envío/recepción), TTL con estado EXPIRADA automático, prioridad y estado_validación (autocompletado desde este registro) en el contrato. Pendiente: token de Telegram del Director para activar el envío real."},
-        {"estado": "REFUTADA", "fecha_utc": "2026-08-04", "nota": "Cierre definitivo con evidencia real, no estadística. Tras corregir un bug real del detector (generaba alertas para partidos ya terminados -- caso Vélez Sarsfield vs Independiente, segundos_desde_evento negativo por captura censurada al fin del partido), llegó una alerta limpia y rápida (Central Córdoba vs San Lorenzo, Cards Over 4.5, latencia real medida 45s evento→Telegram, verificada con timestamps exactos, no estimada). El Director entró a Betano con cuenta real de inmediato: el mercado de Tarjetas se pone en gris y recalcula apenas ocurre el evento que decide la línea -- exactamente lo opuesto al supuesto central de la estrategia (precio congelado mientras el mercado sigue abierto). El fenómeno de baja reactividad SÍ es real en los datos de SofaScore (certificado, no se retracta esa parte), pero NO existe de la misma forma en una casa de apuestas real -- no es explotable. Aplicando la regla pre-registrada: 'si no puede aprovecharse en condiciones reales, se descarta aunque el fenómeno estadístico sea real'. Se pausa la tarea programada del detector (ATLAS_Lab_StrategyDetector) y se agrega supresión automática y permanente de envío a canales para cualquier estrategia en estado REFUTADA (atlas_engine/notify/engine.py) -- protección genérica para todo el laboratorio, no solo esta línea."}
-      ],
-      "casos_observados": 391,
-      "casos_verificados": 0,
-      "aciertos": 0,
-      "fallos": 0,
-      "roi": null,
-      "clv": null,
-      "nivel_evidencia": "Estadístico certificado en datos SofaScore (backtest histórico, N=391 cruces, 123 partidos) + verificación humana real en Betano (2026-08-04): mercado se suspende/recalcula de inmediato en la casa real, la ventana no existe ahí. Fenómeno de origen real, no explotable.",
-      "fecha_creacion_utc": "2026-08-02",
-      "ultima_actualizacion_utc": "2026-08-04T02:10:00Z",
-      "proximo_hito": "Cerrada. No reabrir sin evidencia extraordinaria (ej. otra casa de apuestas real con comportamiento distinto a Betano) -- mismo criterio que las demás líneas refutadas del laboratorio.",
-      "metricas_fase4": {
-        "pct_coincide": null,
-        "pct_mejor": null,
-        "pct_suspendido": null,
-        "pct_inexistente": null,
-        "pct_operable": null,
-        "tiempo_medio_disponible_seg": null,
-        "n_muestra": 0
-      }
+     "estado": "HIPOTESIS",
+     "fecha_utc": "2026-08-02",
+     "nota": "Certificado que la baja liveliness de Corners/Cards es fenómeno real de mercado, no artefacto de captura/redondeo/bug."
     },
     {
-      "id": "L1",
-      "nombre": "Córners Over — Presión Tardía LIVE",
-      "mercado": "Corners Totales (Over/Under, línea a verificar manualmente en la casa de apuestas al momento de la alerta -- el detector no fija ni evalúa una línea específica)",
-      "tipo": "LIVE",
-      "hipotesis": "Cuando un equipo presiona alto en ligas de alta densidad de córners y ya acumula ≥4 córners totales (con ≥3 de un mismo equipo, local o visitante) antes del minuto 30, la tasa de córners por minuto restante sube considerablemente -- se apuesta Over en córners totales del partido completo.",
-      "reglas_entrada": [
-        "Liga de alta densidad de córners (referencia del Director: Premier League, Bundesliga, Championship, K-League, Liga Portugal, Eredivisie, otras) -- el detector no restringe por liga todavía, aplica sobre las 27 ligas que ATLAS ya captura en vivo (el propio umbral de córners ya filtra partidos genuinamente densos).",
-        "≥4 córners totales del partido, con ≥3 de ese total pertenecientes a UN MISMO equipo (local o visitante, el que sea -- corregido explícitamente por el Director: no se asume que el que presiona es siempre el local).",
-        "Minuto de partido ≤30 en el momento en que se cumple lo anterior.",
-        "Sin tarjetas rojas activas en el partido (redCards home+away = 0)."
-      ],
-      "reglas_salida": [
-        "Alerta única por partido (deduplicada por ATLAS Notify) -- no se re-emite si ya se avisó para ese mismo partido.",
-        "No aplica si el umbral se alcanza después del minuto 30 (la ventana de observación del criterio es exclusivamente antes de esa marca)."
-      ],
-      "criterios_no_automatizables": [
-        "Criterio original 'saques de banda frecuentes por las bandas, no por el centro' -- descartado explícitamente por el Director (2026-08-04), no se evalúa.",
-        "Criterio original 'el equipo que no presiona no está en bloque bajo' -- queda a criterio del Director al revisar el partido en vivo en el momento de la alerta, ATLAS no lo evalúa (no hay dato de bloque táctico en la captura)."
-      ],
-      "estado_actual": "HIPOTESIS",
-      "historial_estados": [
-        {"estado": "IDEA", "fecha_utc": "2026-08-04", "nota": "Presentada por el Director como estrategia propia ya en uso, sin seguimiento sistemático hasta ahora. Se reemplaza E-LAB-001 (REFUTADA) como primera estrategia activa del detector."},
-        {"estado": "HIPOTESIS", "fecha_utc": "2026-08-04", "nota": "Regla operativa acotada a lo verificable con datos ya capturados (platform_statistics: cornerKicks, redCards, minuto estimado vía API). Criterio de bandas descartado, criterio de bloque bajo delegado al Director en el momento de la verificación manual. Sin backtest histórico todavía -- entra directo en observación en vivo, no se retrasa con certificación estadística previa (lección explícita de E-LAB-001)."}
-      ],
-      "casos_observados": 0,
-      "casos_verificados": 0,
-      "aciertos": 0,
-      "fallos": 0,
-      "roi": null,
-      "clv": null,
-      "nivel_evidencia": "Ninguna todavía -- estrategia propia del Director, sin certificación estadística previa por decisión explícita (priorizar verificación real temprano, lección de E-LAB-001).",
-      "fecha_creacion_utc": "2026-08-04",
-      "ultima_actualizacion_utc": "2026-08-04T02:30:00Z",
-      "proximo_hito": "Primeras verificaciones humanas reales contra Betano vía Telegram. Sin umbral de N fijado todavía -- a definir con el Director según los primeros resultados.",
-      "metricas_fase4": {
-        "pct_coincide": null,
-        "pct_mejor": null,
-        "pct_suspendido": null,
-        "pct_inexistente": null,
-        "pct_operable": null,
-        "tiempo_medio_disponible_seg": null,
-        "n_muestra": 0
-      }
+     "estado": "OBSERVACION",
+     "fecha_utc": "2026-08-02",
+     "nota": "Medida la ventana operativa: 283 cruces en Corners (84% de partidos), 100 en Cards (63% de partidos), 0/383 correcciones, mercado abierto 89.3%/64.1% del tiempo de ventana."
     },
     {
-      "id": "L2",
-      "nombre": "Hándicap Asiático xG vs Marcador LIVE",
-      "mercado": "Hándicap Asiático (línea a verificar manualmente en la casa de apuestas al momento de la alerta -- el detector no fija ni evalúa una línea específica)",
-      "tipo": "LIVE",
-      "hipotesis": "Cuando el xG de un equipo dominante supera claramente el marcador actual (empate o resultado adverso pese al dominio), existe una ineficiencia temporal en el mercado de hándicap asiático -- se apuesta al equipo que 'merece más' según xG y remates a puerta reales.",
-      "reglas_entrada": [
-        "xG del equipo dominante (el de xG más alto entre los dos) ≥1.5.",
-        "≥5 remates a puerta (shotsOnGoal) de ese mismo equipo dominante.",
-        "El equipo dominante NO va ganando en el marcador actual (empate o va perdiendo) -- si ya va ganando, el marcador sí refleja el dominio, no hay ineficiencia que apostar.",
-        "Minuto actual entre 46 y 70 (ventana óptima, chequeada en vivo en el momento de la alerta).",
-        "Sin tarjeta roja del equipo dominante (ni en el momento en que se cumplieron los primeros 2 criterios, ni ahora)."
-      ],
-      "reglas_salida": [
-        "Alerta única por partido (deduplicada por ATLAS Notify).",
-        "No aplica fuera de la ventana de minuto 46-70.",
-        "Si el equipo dominante recibe una roja después de cumplirse los criterios, se descarta igual (re-chequeado en cada corrida)."
-      ],
-      "criterios_no_automatizables": [],
-      "estado_actual": "HIPOTESIS",
-      "historial_estados": [
-        {"estado": "IDEA", "fecha_utc": "2026-08-04", "nota": "Presentada por el Director como segunda estrategia propia ya en uso, sin seguimiento sistemático hasta ahora."},
-        {"estado": "HIPOTESIS", "fecha_utc": "2026-08-04", "nota": "Los 5 criterios del Director son 100% verificables con datos ya capturados (expectedGoals, shotsOnGoal, redCards de platform_statistics + marcador/minuto en vivo vía API) -- a diferencia de L1, no hizo falta descartar ni delegar ningún criterio a juicio manual. Sin backtest histórico previo, misma decisión que L1 (verificación real temprano, no certificación estadística primero)."}
-      ],
-      "casos_observados": 0,
-      "casos_verificados": 0,
-      "aciertos": 0,
-      "fallos": 0,
-      "roi": null,
-      "clv": null,
-      "nivel_evidencia": "Ninguna todavía -- estrategia propia del Director, sin certificación estadística previa por decisión explícita (priorizar verificación real temprano, lección de E-LAB-001).",
-      "fecha_creacion_utc": "2026-08-04",
-      "ultima_actualizacion_utc": "2026-08-04T02:45:00Z",
-      "proximo_hito": "Primeras verificaciones humanas reales contra Betano vía Telegram. Sin umbral de N fijado todavía.",
-      "metricas_fase4": {
-        "pct_coincide": null,
-        "pct_mejor": null,
-        "pct_suspendido": null,
-        "pct_inexistente": null,
-        "pct_operable": null,
-        "tiempo_medio_disponible_seg": null,
-        "n_muestra": 0
-      }
+     "estado": "VALIDACION_CUOTA_REAL",
+     "fecha_utc": "2026-08-02",
+     "nota": "Pendiente verificación humana contra casa de apuestas real (Betano) -- la cuota de ATLAS proviene de SofaScore /odds/1/all, que no se muestra en el producto público de SofaScore (solo 1X2 es visible ahí); falta confirmar que 1) el mercado de Corners/Cards exista en Betano para el mismo partido, y 2) el precio coincida o esté igual de congelado."
     },
     {
-      "id": "L3",
-      "nombre": "Over Post-Expulsión LIVE",
-      "mercado": "Over Goles (línea a verificar manualmente en la casa de apuestas al momento de la alerta -- el detector no fija ni evalúa una línea específica)",
-      "tipo": "LIVE",
-      "hipotesis": "Tras una expulsión entre los minutos 30-75, las casas de apuestas tardan en ajustar las cuotas del mercado Over Goles -- el partido táctico cambia (el equipo con más hombres presiona más, el juego se abre), generando value real en esa ventana de ajuste.",
-      "reglas_entrada": [
-        "Expulsión (tarjeta roja) detectada, con el minuto actual entre 30 y 75.",
-        "Cuota de Over Goles disponible antes de que la casa la ajuste -- delegado EXPLÍCITAMENTE al Director ('yo lo confirmo', 2026-08-04), el detector no evalúa ninguna cuota, solo avisa lo más rápido posible.",
-        "Ligas de mercado lento (referencia del Director: Brasileirão, Série B, Liga Argentina, K-League, otras) -- el detector no restringe por liga todavía, aplica sobre las 27 ligas que ATLAS ya captura en vivo, igual criterio que L1."
-      ],
-      "reglas_salida": [
-        "Alerta única por partido (deduplicada por ATLAS Notify) -- si hay una segunda expulsión en el mismo partido, no se genera una alerta nueva (limitación aceptada, caso raro).",
-        "No aplica si la expulsión ocurre antes del min 30 o después del min 75."
-      ],
-      "criterios_no_automatizables": [
-        "Criterio 'cuota disponible antes de que la casa ajuste' -- delegado explícitamente al Director, no se automatiza."
-      ],
-      "estado_actual": "HIPOTESIS",
-      "historial_estados": [
-        {"estado": "IDEA", "fecha_utc": "2026-08-04", "nota": "Presentada por el Director como tercera estrategia propia ya en uso, sin seguimiento sistemático hasta ahora."},
-        {"estado": "HIPOTESIS", "fecha_utc": "2026-08-04", "nota": "Detección vía transición del conteo de tarjetas rojas (0→≥1) en platform_statistics, mismo patrón de ancla estable ya usado en L1/L2. Prioridad ALTA y TTL más corto (900s) que L1/L2 -- la ventana de esta estrategia depende explícitamente de que la casa NO haya ajustado todavía, más sensible a la velocidad de aviso que las otras dos."}
-      ],
-      "casos_observados": 0,
-      "casos_verificados": 0,
-      "aciertos": 0,
-      "fallos": 0,
-      "roi": null,
-      "clv": null,
-      "nivel_evidencia": "Ninguna todavía -- estrategia propia del Director, sin certificación estadística previa por decisión explícita (priorizar verificación real temprano, lección de E-LAB-001).",
-      "fecha_creacion_utc": "2026-08-04",
-      "ultima_actualizacion_utc": "2026-08-04T03:00:00Z",
-      "proximo_hito": "Primeras verificaciones humanas reales contra Betano vía Telegram. Sin umbral de N fijado todavía.",
-      "metricas_fase4": {
-        "pct_coincide": null,
-        "pct_mejor": null,
-        "pct_suspendido": null,
-        "pct_inexistente": null,
-        "pct_operable": null,
-        "tiempo_medio_disponible_seg": null,
-        "n_muestra": 0
-      }
+     "estado": "VALIDACION_CUOTA_REAL",
+     "fecha_utc": "2026-08-02",
+     "nota": "Primera validación humana: no encontró problema de hipótesis, encontró problema de LATENCIA (detector corría cada 3 min, sin notificación push). Migrado a ATLAS Notify (atlas_engine/notify/), motor genérico multi-canal para todo el laboratorio: detector ahora corre cada 1 min (mínimo real de Windows Task Scheduler), notificación push por Telegram inmediata al detectar (no espera al ciclo de publicación web), cada alerta trae 6 timestamps de latencia (evento real/captura/evaluación/generación/envío/recepción), TTL con estado EXPIRADA automático, prioridad y estado_validación (autocompletado desde este registro) en el contrato. Pendiente: token de Telegram del Director para activar el envío real."
+    },
+    {
+     "estado": "REFUTADA",
+     "fecha_utc": "2026-08-04",
+     "nota": "Cierre definitivo con evidencia real, no estadística. Tras corregir un bug real del detector (generaba alertas para partidos ya terminados -- caso Vélez Sarsfield vs Independiente, segundos_desde_evento negativo por captura censurada al fin del partido), llegó una alerta limpia y rápida (Central Córdoba vs San Lorenzo, Cards Over 4.5, latencia real medida 45s evento→Telegram, verificada con timestamps exactos, no estimada). El Director entró a Betano con cuenta real de inmediato: el mercado de Tarjetas se pone en gris y recalcula apenas ocurre el evento que decide la línea -- exactamente lo opuesto al supuesto central de la estrategia (precio congelado mientras el mercado sigue abierto). El fenómeno de baja reactividad SÍ es real en los datos de SofaScore (certificado, no se retracta esa parte), pero NO existe de la misma forma en una casa de apuestas real -- no es explotable. Aplicando la regla pre-registrada: 'si no puede aprovecharse en condiciones reales, se descarta aunque el fenómeno estadístico sea real'. Se pausa la tarea programada del detector (ATLAS_Lab_StrategyDetector) y se agrega supresión automática y permanente de envío a canales para cualquier estrategia en estado REFUTADA (atlas_engine/notify/engine.py) -- protección genérica para todo el laboratorio, no solo esta línea."
     }
-  ]
+   ],
+   "casos_observados": 391,
+   "casos_verificados": 0,
+   "aciertos": 0,
+   "fallos": 0,
+   "roi": null,
+   "clv": null,
+   "nivel_evidencia": "Estadístico certificado en datos SofaScore (backtest histórico, N=391 cruces, 123 partidos) + verificación humana real en Betano (2026-08-04): mercado se suspende/recalcula de inmediato en la casa real, la ventana no existe ahí. Fenómeno de origen real, no explotable.",
+   "fecha_creacion_utc": "2026-08-02",
+   "ultima_actualizacion_utc": "2026-08-04T02:10:00Z",
+   "proximo_hito": "Cerrada. No reabrir sin evidencia extraordinaria (ej. otra casa de apuestas real con comportamiento distinto a Betano) -- mismo criterio que las demás líneas refutadas del laboratorio.",
+   "metricas_fase4": {
+    "pct_coincide": null,
+    "pct_mejor": null,
+    "pct_suspendido": null,
+    "pct_inexistente": null,
+    "pct_operable": null,
+    "tiempo_medio_disponible_seg": null,
+    "n_muestra": 0
+   },
+   "alertas_live_historial": 32
+  },
+  {
+   "id": "L1",
+   "nombre": "Córners Over — Presión Tardía LIVE",
+   "mercado": "Corners Totales (Over/Under, línea a verificar manualmente en la casa de apuestas al momento de la alerta -- el detector no fija ni evalúa una línea específica)",
+   "tipo": "LIVE",
+   "hipotesis": "Cuando un equipo presiona alto en ligas de alta densidad de córners y ya acumula ≥4 córners totales (con ≥3 de un mismo equipo, local o visitante) antes del minuto 30, la tasa de córners por minuto restante sube considerablemente -- se apuesta Over en córners totales del partido completo.",
+   "reglas_entrada": [
+    "Liga de alta densidad de córners (referencia del Director: Premier League, Bundesliga, Championship, K-League, Liga Portugal, Eredivisie, otras) -- el detector no restringe por liga todavía, aplica sobre las 27 ligas que ATLAS ya captura en vivo (el propio umbral de córners ya filtra partidos genuinamente densos).",
+    "≥4 córners totales del partido, con ≥3 de ese total pertenecientes a UN MISMO equipo (local o visitante, el que sea -- corregido explícitamente por el Director: no se asume que el que presiona es siempre el local).",
+    "Minuto de partido ≤30 en el momento en que se cumple lo anterior.",
+    "Sin tarjetas rojas activas en el partido (redCards home+away = 0)."
+   ],
+   "reglas_salida": [
+    "Alerta única por partido (deduplicada por ATLAS Notify) -- no se re-emite si ya se avisó para ese mismo partido.",
+    "No aplica si el umbral se alcanza después del minuto 30 (la ventana de observación del criterio es exclusivamente antes de esa marca)."
+   ],
+   "criterios_no_automatizables": [
+    "Criterio original 'saques de banda frecuentes por las bandas, no por el centro' -- descartado explícitamente por el Director (2026-08-04), no se evalúa.",
+    "Criterio original 'el equipo que no presiona no está en bloque bajo' -- queda a criterio del Director al revisar el partido en vivo en el momento de la alerta, ATLAS no lo evalúa (no hay dato de bloque táctico en la captura)."
+   ],
+   "estado_actual": "HIPOTESIS",
+   "historial_estados": [
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-04",
+     "nota": "Presentada por el Director como estrategia propia ya en uso, sin seguimiento sistemático hasta ahora. Se reemplaza E-LAB-001 (REFUTADA) como primera estrategia activa del detector."
+    },
+    {
+     "estado": "HIPOTESIS",
+     "fecha_utc": "2026-08-04",
+     "nota": "Regla operativa acotada a lo verificable con datos ya capturados (platform_statistics: cornerKicks, redCards, minuto estimado vía API). Criterio de bandas descartado, criterio de bloque bajo delegado al Director en el momento de la verificación manual. Sin backtest histórico todavía -- entra directo en observación en vivo, no se retrasa con certificación estadística previa (lección explícita de E-LAB-001)."
+    },
+    {
+     "estado": "HIPOTESIS",
+     "fecha_utc": "2026-08-08",
+     "nota": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes. SofaScore omite la clave 'redCards' cuando el partido no tiene expulsiones (90,1% de las capturas medidas). El detector hacía `if red_cards is None: continue` y descartaba el partido, cuando la ausencia significa CERO expulsiones -- exactamente lo que la condición exige. Consecuencia: esta estrategia NUNCA pudo emitir una alerta desde su creación. Corregido y certificado el 2026-08-08 23:42:56 UTC (solo semántica del parser; ningún umbral, ventana ni condición experimental fue modificado). GOBERNANZA: la evidencia acumulada ANTES de esa hora NO es válida -- el período efectivo de observación prospectiva de esta estrategia comienza en esa fecha/hora."
+    }
+   ],
+   "casos_observados": 0,
+   "casos_verificados": 0,
+   "aciertos": 0,
+   "fallos": 0,
+   "roi": null,
+   "clv": null,
+   "nivel_evidencia": "Ninguna todavía -- estrategia propia del Director, sin certificación estadística previa por decisión explícita (priorizar verificación real temprano, lección de E-LAB-001).",
+   "fecha_creacion_utc": "2026-08-04",
+   "ultima_actualizacion_utc": "2026-08-04T02:30:00Z",
+   "proximo_hito": "Primeras verificaciones humanas reales contra Betano vía Telegram. Sin umbral de N fijado todavía -- a definir con el Director según los primeros resultados.",
+   "metricas_fase4": {
+    "pct_coincide": null,
+    "pct_mejor": null,
+    "pct_suspendido": null,
+    "pct_inexistente": null,
+    "pct_operable": null,
+    "tiempo_medio_disponible_seg": null,
+    "n_muestra": 0
+   },
+   "alertas_live_historial": 0,
+   "defecto_historico": {
+    "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
+    "detectado_utc": "2026-08-08",
+    "corregido_y_certificado_utc": "2026-08-08T23:42:56Z",
+    "impacto": "0 alertas emitidas desde la creación de la estrategia hasta la corrección",
+    "evidencia_previa_valida": false
+   },
+   "observacion_prospectiva_valida_desde_utc": "2026-08-08T23:42:56Z"
+  },
+  {
+   "id": "L2",
+   "nombre": "Hándicap Asiático xG vs Marcador LIVE",
+   "mercado": "Hándicap Asiático (línea a verificar manualmente en la casa de apuestas al momento de la alerta -- el detector no fija ni evalúa una línea específica)",
+   "tipo": "LIVE",
+   "hipotesis": "Cuando el xG de un equipo dominante supera claramente el marcador actual (empate o resultado adverso pese al dominio), existe una ineficiencia temporal en el mercado de hándicap asiático -- se apuesta al equipo que 'merece más' según xG y remates a puerta reales.",
+   "reglas_entrada": [
+    "xG del equipo dominante (el de xG más alto entre los dos) ≥1.5.",
+    "≥5 remates a puerta (shotsOnGoal) de ese mismo equipo dominante.",
+    "El equipo dominante NO va ganando en el marcador actual (empate o va perdiendo) -- si ya va ganando, el marcador sí refleja el dominio, no hay ineficiencia que apostar.",
+    "Minuto actual entre 46 y 70 (ventana óptima, chequeada en vivo en el momento de la alerta).",
+    "Sin tarjeta roja del equipo dominante (ni en el momento en que se cumplieron los primeros 2 criterios, ni ahora)."
+   ],
+   "reglas_salida": [
+    "Alerta única por partido (deduplicada por ATLAS Notify).",
+    "No aplica fuera de la ventana de minuto 46-70.",
+    "Si el equipo dominante recibe una roja después de cumplirse los criterios, se descarta igual (re-chequeado en cada corrida)."
+   ],
+   "criterios_no_automatizables": [],
+   "estado_actual": "HIPOTESIS",
+   "historial_estados": [
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-04",
+     "nota": "Presentada por el Director como segunda estrategia propia ya en uso, sin seguimiento sistemático hasta ahora."
+    },
+    {
+     "estado": "HIPOTESIS",
+     "fecha_utc": "2026-08-04",
+     "nota": "Los 5 criterios del Director son 100% verificables con datos ya capturados (expectedGoals, shotsOnGoal, redCards de platform_statistics + marcador/minuto en vivo vía API) -- a diferencia de L1, no hizo falta descartar ni delegar ningún criterio a juicio manual. Sin backtest histórico previo, misma decisión que L1 (verificación real temprano, no certificación estadística primero)."
+    },
+    {
+     "estado": "HIPOTESIS",
+     "fecha_utc": "2026-08-08",
+     "nota": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes. SofaScore omite la clave 'redCards' cuando el partido no tiene expulsiones (90,1% de las capturas medidas). El detector hacía `if red_cards is None: continue` y descartaba el partido, cuando la ausencia significa CERO expulsiones -- exactamente lo que la condición exige. Consecuencia: esta estrategia NUNCA pudo emitir una alerta desde su creación. Corregido y certificado el 2026-08-08 23:42:56 UTC (solo semántica del parser; ningún umbral, ventana ni condición experimental fue modificado). GOBERNANZA: la evidencia acumulada ANTES de esa hora NO es válida -- el período efectivo de observación prospectiva de esta estrategia comienza en esa fecha/hora."
+    }
+   ],
+   "casos_observados": 0,
+   "casos_verificados": 0,
+   "aciertos": 0,
+   "fallos": 0,
+   "roi": null,
+   "clv": null,
+   "nivel_evidencia": "Ninguna todavía -- estrategia propia del Director, sin certificación estadística previa por decisión explícita (priorizar verificación real temprano, lección de E-LAB-001).",
+   "fecha_creacion_utc": "2026-08-04",
+   "ultima_actualizacion_utc": "2026-08-04T02:45:00Z",
+   "proximo_hito": "Primeras verificaciones humanas reales contra Betano vía Telegram. Sin umbral de N fijado todavía.",
+   "metricas_fase4": {
+    "pct_coincide": null,
+    "pct_mejor": null,
+    "pct_suspendido": null,
+    "pct_inexistente": null,
+    "pct_operable": null,
+    "tiempo_medio_disponible_seg": null,
+    "n_muestra": 0
+   },
+   "alertas_live_historial": 0,
+   "defecto_historico": {
+    "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
+    "detectado_utc": "2026-08-08",
+    "corregido_y_certificado_utc": "2026-08-08T23:42:56Z",
+    "impacto": "0 alertas emitidas desde la creación de la estrategia hasta la corrección",
+    "evidencia_previa_valida": false
+   },
+   "observacion_prospectiva_valida_desde_utc": "2026-08-08T23:42:56Z"
+  },
+  {
+   "id": "L3",
+   "nombre": "Over Post-Expulsión LIVE",
+   "mercado": "Over Goles (línea a verificar manualmente en la casa de apuestas al momento de la alerta -- el detector no fija ni evalúa una línea específica)",
+   "tipo": "LIVE",
+   "hipotesis": "Tras una expulsión entre los minutos 30-75, las casas de apuestas tardan en ajustar las cuotas del mercado Over Goles -- el partido táctico cambia (el equipo con más hombres presiona más, el juego se abre), generando value real en esa ventana de ajuste.",
+   "reglas_entrada": [
+    "Expulsión (tarjeta roja) detectada, con el minuto actual entre 30 y 75.",
+    "Cuota de Over Goles disponible antes de que la casa la ajuste -- delegado EXPLÍCITAMENTE al Director ('yo lo confirmo', 2026-08-04), el detector no evalúa ninguna cuota, solo avisa lo más rápido posible.",
+    "Ligas de mercado lento (referencia del Director: Brasileirão, Série B, Liga Argentina, K-League, otras) -- el detector no restringe por liga todavía, aplica sobre las 27 ligas que ATLAS ya captura en vivo, igual criterio que L1."
+   ],
+   "reglas_salida": [
+    "Alerta única por partido (deduplicada por ATLAS Notify) -- si hay una segunda expulsión en el mismo partido, no se genera una alerta nueva (limitación aceptada, caso raro).",
+    "No aplica si la expulsión ocurre antes del min 30 o después del min 75."
+   ],
+   "criterios_no_automatizables": [
+    "Criterio 'cuota disponible antes de que la casa ajuste' -- delegado explícitamente al Director, no se automatiza."
+   ],
+   "estado_actual": "HIPOTESIS",
+   "historial_estados": [
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-04",
+     "nota": "Presentada por el Director como tercera estrategia propia ya en uso, sin seguimiento sistemático hasta ahora."
+    },
+    {
+     "estado": "HIPOTESIS",
+     "fecha_utc": "2026-08-04",
+     "nota": "Detección vía transición del conteo de tarjetas rojas (0→≥1) en platform_statistics, mismo patrón de ancla estable ya usado en L1/L2. Prioridad ALTA y TTL más corto (900s) que L1/L2 -- la ventana de esta estrategia depende explícitamente de que la casa NO haya ajustado todavía, más sensible a la velocidad de aviso que las otras dos."
+    },
+    {
+     "estado": "HIPOTESIS",
+     "fecha_utc": "2026-08-08",
+     "nota": "FALLO DE DEDUPLICACIÓN -- el texto de 'condicion' incluía el marcador, que cambia con cada gol, generando un alert_id nuevo por cada gol posterior a la expulsión (caso real: FC Tokyo vs Machida Zelvia, 4 alertas por una sola expulsión: 2 entregadas + 2 suprimidas por TTL). Corregido el 2026-08-08 23:42:56 UTC: la identidad del evento ahora es estable por expulsión (ancla = última transición en que aumentó el conteo de rojas, + total de rojas en la condición, sin marcador). UNA EXPULSIÓN = UNA ALERTA, aunque cambien marcador/xG/córners. Dos expulsiones independientes sí pueden generar dos alertas. Ningún umbral ni la ventana 30-75 fueron modificados. L3 no estaba afectada por el fallo de parser de redCards, así que su evidencia previa SÍ es válida."
+    }
+   ],
+   "casos_observados": 0,
+   "casos_verificados": 0,
+   "aciertos": 0,
+   "fallos": 0,
+   "roi": null,
+   "clv": null,
+   "nivel_evidencia": "Ninguna todavía -- estrategia propia del Director, sin certificación estadística previa por decisión explícita (priorizar verificación real temprano, lección de E-LAB-001).",
+   "fecha_creacion_utc": "2026-08-04",
+   "ultima_actualizacion_utc": "2026-08-04T03:00:00Z",
+   "proximo_hito": "Primeras verificaciones humanas reales contra Betano vía Telegram. Sin umbral de N fijado todavía.",
+   "metricas_fase4": {
+    "pct_coincide": null,
+    "pct_mejor": null,
+    "pct_suspendido": null,
+    "pct_inexistente": null,
+    "pct_operable": null,
+    "tiempo_medio_disponible_seg": null,
+    "n_muestra": 0
+   },
+   "alertas_live_historial": 8,
+   "defecto_historico": {
+    "tipo": "FALLO DE DEDUPLICACIÓN -- marcador variable dentro de la condición generaba alert_id nuevo por gol",
+    "detectado_utc": "2026-08-08",
+    "corregido_y_certificado_utc": "2026-08-08T23:42:56Z",
+    "impacto": "alertas duplicadas para una misma expulsión (no pérdida de alertas)",
+    "evidencia_previa_valida": true
+   }
+  },
+  {
+   "id": "L1-SHADOW",
+   "nombre": "Córners Over — Presión Tardía LIVE (ventana extendida 45', prueba Shadow)",
+   "mercado": "Corners Totales (Over/Under, línea a verificar manualmente en la casa de apuestas al momento de la alerta -- igual que L1)",
+   "tipo": "LIVE",
+   "hipotesis": "Prueba controlada, NO una hipótesis nueva: ¿la ventana de minuto ≤30 de L1 está descartando oportunidades explotables que sí se generan un poco más tarde, o al ampliarla solo se gana volumen sin conservar la calidad de la señal? Diagnóstico previo (2026-08-08, 14/20 partidos capturados cruzaron el umbral de corners en algún momento, pero NINGUNO antes del minuto 30 -- el más rápido llegó justo al límite) motivó esta prueba.",
+   "reglas_entrada": [
+    "IDÉNTICAS a L1: ≥4 córners totales del partido, con ≥3 de ese total de UN MISMO equipo (local o visitante). Sin tarjetas rojas activas.",
+    "ÚNICO cambio respecto a L1: minuto de partido ≤45 (en vez de ≤30) en el momento en que se cumple el umbral de córners -- pre-registrado 2026-08-08, justificación estructural (cierre natural de la primera mitad), NO ajustado a los datos ya observados. El Director descartó explícitamente 35' (demasiado conservador) y 60' (se aleja de la hipótesis original de presión temprana)."
+   ],
+   "reglas_salida": [
+    "Alerta única por partido (deduplicada por ATLAS Notify), igual que L1.",
+    "No aplica si el umbral se alcanza después del minuto 45."
+   ],
+   "criterios_no_automatizables": [
+    "Mismos 2 criterios delegados que L1 (bandas descartado por el Director; bloque bajo del rival queda a su juicio en el momento de la alerta)."
+   ],
+   "diseno_experimental": {
+    "control": "L1 original (MAX_MINUTE=30), NO se modifica, sigue acumulando evidencia en paralelo con su propio registro separado.",
+    "variante": "L1-SHADOW (MAX_MINUTE=45), único parámetro distinto -- mismo umbral de córners, misma lógica de detección, mismo esquema de evidencia de 16 campos.",
+    "criterio_de_exito": "L1-SHADOW solo podría reemplazar a L1 si demuestra una mejora financiera/operativa real frente a L1 original -- nunca por generar más alertas.",
+    "criterio_de_abandono": "Si aumenta significativamente el número de alertas pero NO mejora operabilidad, CLV o ROI frente a L1 original, se descarta la ventana extendida y L1 original permanece intacta.",
+    "metricas_de_comparacion": [
+     "tasa de alertas válidas",
+     "tasa de cuota disponible en Betano",
+     "tasa de operabilidad real",
+     "CLV",
+     "ROI",
+     "calidad/consistencia de la señal"
+    ],
+    "regla_explicita": "Más alertas NO significa automáticamente más valor -- prohibido declarar L1-SHADOW mejor solo por volumen."
+   },
+   "estado_actual": "HIPOTESIS",
+   "historial_estados": [
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-08",
+     "nota": "Propuesta por Claude tras el diagnóstico de L1 (0 alertas en 3+ días, causa raíz: ventana de 30' demasiado estricta según muestra de 14/20 partidos)."
+    },
+    {
+     "estado": "HIPOTESIS",
+     "fecha_utc": "2026-08-08",
+     "nota": "Aprobada por el Director como prueba Shadow controlada -- NO modifica L1 original. Ventana de 45' pre-registrada y aprobada explícitamente por el Director sobre las alternativas de 35' y 60'. Diseño experimental completo (control/variante/criterios de éxito y abandono/métricas de comparación) documentado arriba en 'diseno_experimental'."
+    },
+    {
+     "estado": "HIPOTESIS",
+     "fecha_utc": "2026-08-08",
+     "nota": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes. SofaScore omite la clave 'redCards' cuando el partido no tiene expulsiones (90,1% de las capturas medidas). El detector hacía `if red_cards is None: continue` y descartaba el partido, cuando la ausencia significa CERO expulsiones -- exactamente lo que la condición exige. Consecuencia: esta estrategia NUNCA pudo emitir una alerta desde su creación. Corregido y certificado el 2026-08-08 23:42:56 UTC (solo semántica del parser; ningún umbral, ventana ni condición experimental fue modificado). GOBERNANZA: la evidencia acumulada ANTES de esa hora NO es válida -- el período efectivo de observación prospectiva de esta estrategia comienza en esa fecha/hora."
+    }
+   ],
+   "casos_observados": 0,
+   "casos_verificados": 0,
+   "aciertos": 0,
+   "fallos": 0,
+   "roi": null,
+   "clv": null,
+   "nivel_evidencia": "Ninguna todavía -- prueba Shadow recién activada 2026-08-08, sin alertas propias aún.",
+   "fecha_creacion_utc": "2026-08-08",
+   "ultima_actualizacion_utc": "2026-08-08T00:00:00Z",
+   "proximo_hito": "Acumular evidencia en paralelo con L1 original. Comparar tasa de operabilidad/CLV/ROI entre ambas cuando haya muestra suficiente -- sin umbral de N fijado todavía.",
+   "metricas_fase4": {
+    "pct_coincide": null,
+    "pct_mejor": null,
+    "pct_suspendido": null,
+    "pct_inexistente": null,
+    "pct_operable": null,
+    "tiempo_medio_disponible_seg": null,
+    "n_muestra": 0
+   },
+   "alertas_live_historial": 0,
+   "defecto_historico": {
+    "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
+    "detectado_utc": "2026-08-08",
+    "corregido_y_certificado_utc": "2026-08-08T23:42:56Z",
+    "impacto": "0 alertas emitidas desde la creación de la estrategia hasta la corrección",
+    "evidencia_previa_valida": false
+   },
+   "observacion_prospectiva_valida_desde_utc": "2026-08-08T23:42:56Z"
+  },
+  {
+   "id": "L2-SHADOW",
+   "nombre": "Hándicap Asiático xG vs Marcador LIVE (ventana extendida 80', prueba Shadow)",
+   "mercado": "Hándicap Asiático, línea objetivo +0.25 a favor del equipo dominante (o la más cercana disponible) -- con cuota PROXY de SofaScore/IP001 adjunta automáticamente cuando existe; SIEMPRE a re-verificar contra Betano, nunca se asume la proxy como cuota apostable.",
+   "tipo": "LIVE",
+   "hipotesis": "Prueba controlada, NO una hipótesis nueva: la misma pregunta que L1-SHADOW pero para L2 -- ¿el límite superior de 70' descarta oportunidades que igual son explotables, o al ampliarlo solo se gana volumen? Precedida por una cadena completa de auditoría (no solo el diagnóstico de ventana):",
+   "cadena_de_auditoria_previa": [
+    "1) Diagnóstico de cuello de botella sobre 197 partidos (2026-08-08): xG≥1.5=33,0%, ≥5 SOT=56,3%, ambos mismo equipo=23,9%, + ventana 46-70'=0,5%. Cuello de botella = ventana temporal, NO los umbrales de xG/SOT.",
+    "2) Auditoría de operabilidad sobre esos 49 (2026-08-08): corrección crítica -- solo 19/49 (38,8%) también cumplen 'el dominante NO va ganando' (criterio real de L2 que el embudo original no filtraba). Mercado Asian handicap SÍ existe y se captura (SofaScore/IP001, 155.655 filas) -- pero Betano histórico: 0/49, nunca capturado, no reconstruible.",
+    "3) Medición final sobre los 19 (2026-08-08): línea +0.25 a favor del dominante es la MÁS FRECUENTE (15/19=78,9%), elegida por frecuencia objetiva ANTES de calcular ningún resultado. Resultado hipotético PROXY (SofaScore, NUNCA Betano) sobre esos 15: P&L +0,525u, 'ROI' +3,5% -- explícitamente enmarcado como ruido sobre N=15, NO evidencia de edge.",
+    "4) Ventana temporal: 3 opciones estructurales presentadas (80'/85'/90'), cada una con justificación independiente de dónde cayeron los 19 casos. El Director eligió 80' (extensión mínima, límite estructural = inicio del último tramo del partido)."
+   ],
+   "reglas_entrada": [
+    "IDÉNTICAS a L2: xG del equipo dominante ≥1.5, ≥5 remates a puerta de ese mismo equipo, el dominante NO va ganando ahora mismo, sin tarjeta roja del dominante.",
+    "ÚNICO cambio respecto a L2: minuto actual entre 46 y 80 (en vez de 46-70) -- pre-registrado 2026-08-08, justificación estructural (inicio del último tramo del partido), NO ajustada a los 19 casos ya vistos."
+   ],
+   "reglas_salida": [
+    "Alerta única por partido (deduplicada por ATLAS Notify), igual que L2.",
+    "No aplica fuera de la ventana 46-80'."
+   ],
+   "criterios_no_automatizables": [
+    "Cuota Betano real -- SIEMPRE verificación manual del Director. La cuota PROXY (SofaScore) se adjunta automáticamente cuando existe, pero nunca reemplaza la verificación real."
+   ],
+   "plan_a_d_evidencia_futura": {
+    "A_mercado_linea_experimental": "Hándicap Asiático, línea +0.25 a favor del equipo dominante (o la más cercana disponible si +0.25 no existe para ese partido).",
+    "B_justificacion_reproducible": "Línea elegida por frecuencia objetiva (78,9% de los 19 casos reales la tenían disponible) ANTES de calcular ningún resultado -- no por mejor ROI retrospectivo.",
+    "C_registro_manual_por_alerta": [
+     "línea de Hándicap Asiático realmente disponible en Betano",
+     "cuota real de Betano para esa línea, lado del equipo dominante",
+     "si el mercado está suspendido o abierto en Betano en ese instante",
+     "línea más cercana si +0.25 no existe en Betano",
+     "cuota proxy ATLAS/SofaScore (ya capturada automáticamente por el detector cuando existe)",
+     "diferencia entre cuota proxy y cuota Betano real",
+     "resultado final del partido",
+     "liquidación de la apuesta hipotética"
+    ],
+    "D_gate_abandono": "N=30 verificaciones reales contra Betano. Abandono si operabilidad real <80% O ROI real acumulado <0% -- mismo patrón ya usado en el registro del laboratorio (umbral_hito=30, barra 80%)."
+   },
+   "diseno_experimental": {
+    "control": "L2 original (MAX_MINUTE=70, cuota_detectada=None), NO se modifica, sigue acumulando evidencia en paralelo con su propio registro separado.",
+    "variante": "L2-SHADOW (MAX_MINUTE=80, cuota_detectada=proxy SofaScore cuando existe), único parámetro temporal distinto -- misma lógica de detección en las otras 4 condiciones.",
+    "criterio_de_exito": "L2-SHADOW solo podría reemplazar a L2 si demuestra una mejora financiera/operativa real frente a L2 original -- nunca por generar más alertas.",
+    "criterio_de_abandono": "Ver plan_a_d_evidencia_futura.D_gate_abandono.",
+    "metricas_de_comparacion": [
+     "número de oportunidades",
+     "tasa de operabilidad real en Betano",
+     "cuota disponible",
+     "CLV",
+     "ROI",
+     "evidencia de edge financiero",
+     "tiempo necesario para acumular muestra"
+    ],
+    "regla_explicita": "Más alertas NO significa automáticamente más valor -- prohibido declarar L2-SHADOW mejor solo por volumen. El +3,5% histórico sobre N=15 (medición previa a la activación) NO constituye evidencia de edge, es solo una comprobación descriptiva con cuota PROXY."
+   },
+   "estado_actual": "HIPOTESIS",
+   "historial_estados": [
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-08",
+     "nota": "Propuesta tras la cadena completa de auditoría de L2 (diagnóstico de cuello de botella → operabilidad histórica → medición de línea por frecuencia) -- ver 'cadena_de_auditoria_previa'."
+    },
+    {
+     "estado": "HIPOTESIS",
+     "fecha_utc": "2026-08-08",
+     "nota": "Aprobada por el Director: plan A-D de evidencia futura aceptado íntegro, ventana 80' elegida explícitamente sobre las alternativas de 85'/90'. Diseño experimental completo (control/variante/criterios de éxito y abandono/métricas de comparación) documentado en 'diseno_experimental' y 'plan_a_d_evidencia_futura'."
+    },
+    {
+     "estado": "HIPOTESIS",
+     "fecha_utc": "2026-08-08",
+     "nota": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes. SofaScore omite la clave 'redCards' cuando el partido no tiene expulsiones (90,1% de las capturas medidas). El detector hacía `if red_cards is None: continue` y descartaba el partido, cuando la ausencia significa CERO expulsiones -- exactamente lo que la condición exige. Consecuencia: esta estrategia NUNCA pudo emitir una alerta desde su creación. Corregido y certificado el 2026-08-08 23:42:56 UTC (solo semántica del parser; ningún umbral, ventana ni condición experimental fue modificado). GOBERNANZA: la evidencia acumulada ANTES de esa hora NO es válida -- el período efectivo de observación prospectiva de esta estrategia comienza en esa fecha/hora."
+    }
+   ],
+   "casos_observados": 0,
+   "casos_verificados": 0,
+   "aciertos": 0,
+   "fallos": 0,
+   "roi": null,
+   "clv": null,
+   "nivel_evidencia": "Estadística previa: auditoría de 197→49→19 casos históricos con medición descriptiva (+3,5% sobre N=15, PROXY, no es edge). Cero alertas propias en producción todavía -- prueba Shadow recién activada 2026-08-08.",
+   "fecha_creacion_utc": "2026-08-08",
+   "ultima_actualizacion_utc": "2026-08-08T00:00:00Z",
+   "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate D). Comparar tasa de operabilidad/CLV/ROI entre L2-SHADOW y L2 original cuando haya muestra suficiente.",
+   "metricas_fase4": {
+    "pct_coincide": null,
+    "pct_mejor": null,
+    "pct_suspendido": null,
+    "pct_inexistente": null,
+    "pct_operable": null,
+    "tiempo_medio_disponible_seg": null,
+    "n_muestra": 0
+   },
+   "alertas_live_historial": 0,
+   "defecto_historico": {
+    "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
+    "detectado_utc": "2026-08-08",
+    "corregido_y_certificado_utc": "2026-08-08T23:42:56Z",
+    "impacto": "0 alertas emitidas desde la creación de la estrategia hasta la corrección",
+    "evidencia_previa_valida": false
+   },
+   "observacion_prospectiva_valida_desde_utc": "2026-08-08T23:42:56Z"
+  },
+  {
+   "id": "L4",
+   "nombre": "Presión sostenida sobre 0-0 en Liga Over Goles (registro prospectivo LIVE)",
+   "mercado": "Over 0.5 y Over 1.5 goles -- ambos a verificar manualmente en Betano en el momento de la alerta. ATLAS no fija cuota ni recomienda entrada.",
+   "tipo": "LIVE",
+   "hipotesis": "Prospectiva, sin evidencia previa: cuando un partido de liga históricamente goleadora llega al minuto 55+ con 0-0 pese a presión ofensiva sostenida y medible del local (xG, tiros a puerta y córners por encima de umbrales fijos), podría existir una oportunidad en Over 0.5 / Over 1.5 que Betano no esté descontando. NO se afirma que exista edge -- eso es exactamente lo que esta línea va a medir desde cero.",
+   "naturaleza": "REGISTRO PROSPECTIVO EN VIVO. Decisión explícita del Director (2026-08-09) tras confirmarse que el patrimonio histórico NO tiene estadísticas minuto a minuto (solo períodos '1ST'/'2ND'/'ALL'), por lo que esta hipótesis no es validable retrospectivamente. Se acepta la limitación y se genera muestra propia desde cero.",
+   "reglas_entrada": [
+    "1. Marcador 0-0.",
+    "2. Minuto de partido >= 55.",
+    "3. xG del equipo local >= 1.30.",
+    "4. xG del equipo visitante >= 0.70.",
+    "5. Tiros a puerta del local >= 4.",
+    "6. Tiros a puerta totales del partido >= 5.",
+    "7. Córners del local >= 4.",
+    "8. Córners totales del partido >= 5.",
+    "9. La liga está clasificada como 'Liga Over Goles'.",
+    "Las 9 condiciones deben cumplirse SIMULTÁNEAMENTE. Umbrales dictados por el Director y NO optimizados."
+   ],
+   "definicion_liga_over_goles": {
+    "criterio": "Goles por partido >= 2.90 en el patrimonio histórico completo (44.487 partidos con marcador consistente), sobre ligas con N >= 100 partidos. Mismo corte estructural ya usado y documentado en el ranking de ligas del informe de Carril B 2026-08-08 -- no se re-eligió ni se ajustó para esta estrategia.",
+    "ligas": {
+     "CONCACAF Nations League": 3.18,
+     "Bundesliga": 3.17,
+     "World Cup Qual. UEFA": 3.17,
+     "Eliteserien": 3.08,
+     "UEFA Champions League": 3.08,
+     "VriendenLoterij Eredivisie": 3.07,
+     "MLS": 2.97,
+     "Premier League": 2.93,
+     "Copa Chile": 2.91
+    },
+    "nota_cobertura": "CONCACAF Nations League y World Cup Qual. UEFA no están hoy en la cobertura LIVE de ATLAS, así que en la práctica aplican las otras 7."
+   },
+   "reglas_salida": [
+    "Alerta ÚNICA por partido, garantizada por ancla estable de deduplicación (ver 'nota_deduplicacion').",
+    "No aplica antes del minuto 55 ni con marcador distinto de 0-0."
+   ],
+   "nota_deduplicacion": "El motor deduplica por alert_id, cuyo hash incluye 'condicion' y el timestamp del evento. Para evitar una alerta por ciclo (~cada 21s), 'condicion' es un texto FIJO sin valores variables, y el timestamp es un ancla estable = primer instante en que se cumplieron TODAS las condiciones a la vez (incluido minuto>=55). Se ancla al momento completo y no solo a las estadísticas para que el ancla sea reciente: si se anclara al primer instante en que solo las stats califican (posiblemente minuto 30), el motor suprimiría la alerta como EXPIRADA por TTL e inflaría la latencia registrada.",
+   "criterios_no_automatizables": [
+    "Cuota real de Betano (Over 0.5 y Over 1.5): verificación 100% manual del Director. La cuota PROXY de SofaScore/IP001 se adjunta cuando existe, SIEMPRE etiquetada como PROXY, y nunca la sustituye.",
+    "Decisión de entrada: la alerta NO es una recomendación de apuesta. Solo detecta el patrón y avisa a tiempo."
+   ],
+   "verificacion_de_datos_previa": {
+    "fecha": "2026-08-09",
+    "campos_requeridos": [
+     "expectedGoals",
+     "shotsOnGoal",
+     "cornerKicks"
+    ],
+    "cobertura_observada": "presentes en 19/20 eventos (95%) de la captura LIVE reciente",
+    "excepcion": "el único evento sin xG observado fue de Brasileirão Série C (división menor, SofaScore no publica xG). Esos partidos simplemente NO califican -- no se aproxima ni se asume ningún valor.",
+    "cadencia_captura": "mediana 21s entre lecturas, máximo 140s, 1.8% de huecos > 2 min. El detector corre cada 1 min, así que la alerta se emite con datos de ~21s de antigüedad.",
+    "control_frescura": "STALENESS_MAX_SECONDS=90 -- una captura más vieja que eso se descarta y no genera alerta."
+   },
+   "registro_por_alerta": [
+    "timestamp exacto (t_evento_real / t_captura / t_generación / t_envío)",
+    "minuto",
+    "marcador",
+    "xG local",
+    "xG visita",
+    "SoT local",
+    "SoT visita",
+    "SoT total",
+    "córners local",
+    "córners visita",
+    "córners total",
+    "liga",
+    "flag liga_over_goles",
+    "cuota PROXY Over 0.5 y Over 1.5 (SofaScore/IP001, separada de Betano)"
+   ],
+   "verificacion_manual_pendiente_del_director": [
+    "si la oportunidad era operable en Betano",
+    "Over 0.5 disponible y cuota real",
+    "Over 1.5 disponible y cuota real",
+    "qué mercado toma o registra",
+    "resultado final",
+    "ROI posterior, cuando exista muestra suficiente"
+   ],
+   "estado_actual": "OBSERVACION",
+   "estado_declarado": "OBSERVACIÓN PROSPECTIVA / EVIDENCIA FINANCIERA: NINGUNA / LÓGICA: CONGELADA",
+   "historial_estados": [
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-09",
+     "nota": "Formulada por el Director como hipótesis prospectiva, tras aceptar explícitamente que el histórico no permite validarla (sin stats minuto a minuto)."
+    },
+    {
+     "estado": "OBSERVACION",
+     "fecha_utc": "2026-08-09",
+     "nota": "Implementada como registro prospectivo LIVE. Verificación de datos previa completada (los 3 campos existen con 95% de cobertura; cadencia de captura 21s de mediana). Prohibido declarar rentable, no rentable, edge o certificada hasta acumular evidencia prospectiva real suficiente."
+    },
+    {
+     "estado": "OBSERVACION",
+     "fecha_utc": "2026-08-09",
+     "nota": "LÓGICA CONGELADA por instrucción del Director. Implementación aceptada. Queda prohibido modificar: las 9 condiciones, los umbrales, la definición de Liga Over Goles, la frecuencia de evaluación, la lógica de deduplicación y el mensaje de alerta. Tampoco se permite crear L4-SHADOW ni optimizar sobre las primeras observaciones. Entra en MODO ACUMULACIÓN SILENCIOSA: el objetivo exclusivo es acumular registros LIVE reales."
+    }
+   ],
+   "logica_congelada": {
+    "desde_utc": "2026-08-09",
+    "elementos_congelados": [
+     "las 9 condiciones de entrada",
+     "los umbrales (minuto 55, xG 1.30/0.70, SoT 4/5, córners 4/5)",
+     "la definición de Liga Over Goles",
+     "la frecuencia de evaluación (cada 1 min)",
+     "la lógica de deduplicación (condición fija + ancla estable)",
+     "el formato del mensaje de alerta"
+    ],
+    "prohibido": "crear L4-SHADOW, crear variantes, u optimizar umbrales sobre las primeras observaciones."
+   },
+   "modo_acumulacion_silenciosa": {
+    "activo": true,
+    "solo_interrumpir_por": [
+     "A) defecto técnico real",
+     "B) alerta duplicada o perdida",
+     "C) problema de latencia",
+     "D) dato LIVE inconsistente",
+     "E) cruce del gate de evaluación definido"
+    ],
+    "nota_gate": "El disparador (E) referencia un gate que TODAVÍA NO está definido para L4 (no hay umbral de N fijado). Queda pendiente de definición del Director; hasta entonces (E) no puede dispararse.",
+    "metricas_a_comparar_cuando_haya_evidencia": [
+     "frecuencia real de L4",
+     "% de alertas operables en Betano",
+     "cuotas reales disponibles",
+     "% de Over 0.5 ganador",
+     "% de Over 1.5 ganador",
+     "ROI real por mercado",
+     "diferencia entre cuota PROXY y Betano, cuando exista",
+     "latencia alerta -> verificación manual",
+     "casos perdidos por llegada tardía o cambio de cuota"
+    ]
+   },
+   "casos_observados": 0,
+   "casos_verificados": 0,
+   "aciertos": 0,
+   "fallos": 0,
+   "roi": null,
+   "clv": null,
+   "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest, no hay evidencia histórica y no se admite ninguna sustitución de minuto real por estadísticas del descanso. La muestra se construye desde cero.",
+   "fecha_creacion_utc": "2026-08-09",
+   "ultima_actualizacion_utc": "2026-08-09T00:00:00Z",
+   "proximo_hito": "Acumular observaciones reales con verificación manual en Betano. Sin umbral de N fijado todavía -- se definirá cuando exista una primera muestra.",
+   "metricas_fase4": {
+    "pct_coincide": null,
+    "pct_mejor": null,
+    "pct_suspendido": null,
+    "pct_inexistente": null,
+    "pct_operable": null,
+    "tiempo_medio_disponible_seg": null,
+    "n_muestra": 0
+   },
+   "alertas_live_historial": 0
+  }
+ ]
 }
