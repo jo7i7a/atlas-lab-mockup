@@ -16,6 +16,24 @@
    "segundos_transcurridos": 373,
    "origen": "BETANO_MANUAL_TEST",
    "texto_respuesta_original": "10.5 @ 1.88",
+   "activo": false
+  },
+  {
+   "alert_id": "786cfd2a4cadb2ee",
+   "strategy_id": "L1",
+   "match_label": "[CERT-E2E] Equipo Test A vs Equipo Test B (Liga de Certificacion)",
+   "liga": "Liga de Certificacion",
+   "minuto_alerta": 20,
+   "condicion": "CERTIFICACION E2E del flujo Betano/Telegram -- 20260809140930 -- no representa presion real",
+   "t_evento_real_utc": "2026-08-09T14:09:30Z",
+   "t_captura_utc": "2026-08-09T14:09:30Z",
+   "linea_real_betano": 11.5,
+   "cuota_real_betano": 1.72,
+   "operable": true,
+   "t_respuesta_utc": "2026-08-09T14:16:38Z",
+   "segundos_transcurridos": 427,
+   "origen": "BETANO_MANUAL_TEST",
+   "texto_respuesta_original": "11.5 @ 1.72",
    "activo": true
   }
  ]
