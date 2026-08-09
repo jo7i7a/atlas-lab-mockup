@@ -433,5 +433,45 @@
    "cuota_real_betano": 1.44,
    "activo": true
   }
+ ],
+ "4d0894ecd77f6ddb": [
+  {
+   "alert_id": "4d0894ecd77f6ddb",
+   "strategy_id": "L3",
+   "match_label": "Argentinos Juniors vs Racing Club (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16667383",
+   "minuto_alerta": 30,
+   "condicion": "Expulsión de Racing Club (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "t_evento_real_utc": "2026-08-09T23:38:21Z",
+   "t_captura_utc": "2026-08-09T23:46:54Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-09T23:49:01Z",
+   "segundos_transcurridos": 107,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "-1.0 @ 1.82\n-0.5 @ 1.45",
+   "linea_real_betano": 1.0,
+   "cuota_real_betano": 1.82,
+   "activo": true
+  },
+  {
+   "alert_id": "4d0894ecd77f6ddb",
+   "strategy_id": "L3",
+   "match_label": "Argentinos Juniors vs Racing Club (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16667383",
+   "minuto_alerta": 30,
+   "condicion": "Expulsión de Racing Club (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "t_evento_real_utc": "2026-08-09T23:38:21Z",
+   "t_captura_utc": "2026-08-09T23:46:54Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-09T23:49:01Z",
+   "segundos_transcurridos": 107,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "-1.0 @ 1.82\n-0.5 @ 1.45",
+   "linea_real_betano": 0.5,
+   "cuota_real_betano": 1.45,
+   "activo": true
+  }
  ]
 }
