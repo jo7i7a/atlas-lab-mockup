@@ -427,24 +427,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 3,
+   "casos_verificados": 4,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "Estadística previa: auditoría de 197→49→19 casos históricos con medición descriptiva (+3,5% sobre N=15, PROXY, no es edge). Cero alertas propias en producción todavía -- prueba Shadow recién activada 2026-08-08.",
    "fecha_creacion_utc": "2026-08-08",
-   "ultima_actualizacion_utc": "2026-08-09T16:37:03Z",
+   "ultima_actualizacion_utc": "2026-08-09T18:46:03Z",
    "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate D). Comparar tasa de operabilidad/CLV/ROI entre L2-SHADOW y L2 original cuando haya muestra suficiente.",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 3,
+    "n_operable": 4,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 3
+    "n_muestra": 4
    },
-   "alertas_live_historial": 9,
+   "alertas_live_historial": 19,
    "defecto_historico": {
     "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
     "detectado_utc": "2026-08-08",
