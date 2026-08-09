@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-09T14:11:14Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-09T14:12:13Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "L2",
@@ -196,6 +196,49 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ FC Groningen vs FC Utrecht\n⏱ Minuto: 79'\n📊 Marcador: 1-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📈 Domina: FC Utrecht\nxG: 1.50 vs 1.27\nTiros a puerta: 5 vs 5\n\nReferencia PROXY: AH +0.25 @ 1.75 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de FC Utrecht — ¿línea y cuota reales?",
    "evidencia": null,
    "alert_id": "31c318bb33080a53"
+  },
+  {
+   "strategy_id": "L2-SHADOW",
+   "match_label": "FC Groningen vs FC Utrecht (VriendenLoterij Eredivisie)",
+   "match_id": "16316779",
+   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH +0.25 @ 1.75 [PROXY SofaScore, NO Betano -- SUSPENDIDA]",
+   "cuota_detectada": 1.75,
+   "minuto": 80,
+   "condicion": "FC Utrecht domina por xG (1.50) y remates a puerta (5), pero el marcador va 1-2 (FC Utrecht vs FC Groningen) — sin roja del dominante. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "FC Utrecht",
+    "xg_dominante": 1.5,
+    "sot_dominante": 5,
+    "marcador": "1-2",
+    "variante": "shadow_ventana_80",
+    "ah_proxy_linea": 0.25,
+    "ah_proxy_cuota": 1.75,
+    "ah_proxy_suspendida": true,
+    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
+   },
+   "t_evento_real_utc": "2026-08-09T13:55:33Z",
+   "t_captura_utc": "2026-08-09T14:11:51Z",
+   "t_evaluacion_utc": "2026-08-09T14:12:13Z",
+   "t_generacion_utc": "2026-08-09T14:12:13Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-09T14:12:13Z",
+     "latencia_envio_ms": 816.5414333343506,
+     "error": null,
+     "message_id": 58
+    }
+   },
+   "latencia_total_seg": 1000.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ FC Groningen vs FC Utrecht\n⏱ Minuto: 80'\n📊 Marcador: 1-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📈 Domina: FC Utrecht\nxG: 1.50 vs 1.27\nTiros a puerta: 5 vs 5\n\nReferencia PROXY: AH +0.25 @ 1.75 [suspendida] (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de FC Utrecht — ¿línea y cuota reales?",
+   "evidencia": null,
+   "alert_id": "6c765c356f8d1a6c"
   }
  ]
 }
