@@ -1,40 +1,239 @@
 {
- "generated_at_utc": "2026-08-08T11:45:10Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-08-09T03:54:22Z",
+ "n_alerts": 6,
  "alerts": [
   {
-   "strategy_id": "L3",
-   "match_label": "Nagoya Grampus vs Shimizu S-Pulse (J1 League)",
-   "match_id": "16331687",
-   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
+   "strategy_id": "L1",
+   "match_label": "[CERT-E2E] Local L1 vs Visita L1 (Bundesliga)",
+   "match_id": "999901",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 75,
-   "condicion": "Expulsión de Shimizu S-Pulse (marcador 0-1) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "minuto": 28,
+   "condicion": "5 córners totales antes del min 30 (4-1), [CERT-E2E] Local L1 presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Visita L1 NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
-   "priority": "ALTA",
+   "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "equipo_expulsado": "Shimizu S-Pulse",
-    "marcador": "0-1"
+    "corners_home": 4,
+    "corners_away": 1,
+    "equipo_presiona": "[CERT-E2E] Local L1"
    },
-   "t_evento_real_utc": "2026-08-08T11:24:28Z",
-   "t_captura_utc": "2026-08-08T11:36:08Z",
-   "t_evaluacion_utc": "2026-08-08T11:37:11Z",
-   "t_generacion_utc": "2026-08-08T11:37:11Z",
+   "t_evento_real_utc": "2026-08-09T03:53:35Z",
+   "t_captura_utc": "2026-08-09T03:53:35Z",
+   "t_evaluacion_utc": "2026-08-09T03:54:16Z",
+   "t_generacion_utc": "2026-08-09T03:54:16Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
      "estado": "OK",
-     "t_envio_utc": "2026-08-08T11:25:12Z",
-     "latencia_envio_ms": 922.9233264923096,
+     "t_envio_utc": "2026-08-09T03:54:18Z",
+     "latencia_envio_ms": 2248.3508586883545,
+     "error": null
+    }
+   },
+   "latencia_total_seg": 43.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": null,
+   "evidencia": null,
+   "alert_id": "078620509643466e"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "[CERT-E2E] Local L1S vs Visita L1S (Premier League)",
+   "match_id": "999902",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 42,
+   "condicion": "5 córners totales antes del min 45 (5-0), [CERT-E2E] Local L1S presiona (5 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Visita L1S NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 5,
+    "corners_away": 0,
+    "equipo_presiona": "[CERT-E2E] Local L1S",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-09T03:53:35Z",
+   "t_captura_utc": "2026-08-09T03:53:35Z",
+   "t_evaluacion_utc": "2026-08-09T03:54:18Z",
+   "t_generacion_utc": "2026-08-09T03:54:18Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-09T03:54:19Z",
+     "latencia_envio_ms": 783.2558155059814,
      "error": null
     }
    },
    "latencia_total_seg": 44.0,
    "estado_temporal": "ACTIVA",
+   "mensaje_custom": null,
    "evidencia": null,
-   "alert_id": "73bd03ee124dfeda"
+   "alert_id": "0727ba6a8d885622"
+  },
+  {
+   "strategy_id": "L2",
+   "match_label": "[CERT-E2E] Local L2 vs Visita L2 (Eredivisie)",
+   "match_id": "999903",
+   "market": "Hándicap Asiático -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 60,
+   "condicion": "[CERT-E2E] Local L2 domina por xG (1.80) y remates a puerta (6), pero el marcador va 0-0 ([CERT-E2E] Local L2 vs Visita L2) — sin roja del dominante.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "[CERT-E2E] Local L2",
+    "xg_dominante": 1.8,
+    "sot_dominante": 6,
+    "marcador": "0-0"
+   },
+   "t_evento_real_utc": "2026-08-09T03:53:35Z",
+   "t_captura_utc": "2026-08-09T03:53:35Z",
+   "t_evaluacion_utc": "2026-08-09T03:54:19Z",
+   "t_generacion_utc": "2026-08-09T03:54:19Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-09T03:54:20Z",
+     "latencia_envio_ms": 785.132646560669,
+     "error": null
+    }
+   },
+   "latencia_total_seg": 45.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": null,
+   "evidencia": null,
+   "alert_id": "a42276898d541c5f"
+  },
+  {
+   "strategy_id": "L2-SHADOW",
+   "match_label": "[CERT-E2E] Local L2S vs Visita L2S (MLS)",
+   "match_id": "999904",
+   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- sin línea de Hándicap Asiático capturada para este partido -- verificar Betano directamente",
+   "cuota_detectada": null,
+   "minuto": 75,
+   "condicion": "[CERT-E2E] Local L2S domina por xG (2.10) y remates a puerta (7), pero el marcador va 0-1 ([CERT-E2E] Local L2S vs Visita L2S) — sin roja del dominante. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "[CERT-E2E] Local L2S",
+    "xg_dominante": 2.1,
+    "sot_dominante": 7,
+    "marcador": "0-1",
+    "variante": "shadow_ventana_80",
+    "ah_proxy_linea": null,
+    "ah_proxy_cuota": null,
+    "ah_proxy_suspendida": null,
+    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
+   },
+   "t_evento_real_utc": "2026-08-09T03:53:35Z",
+   "t_captura_utc": "2026-08-09T03:53:35Z",
+   "t_evaluacion_utc": "2026-08-09T03:54:20Z",
+   "t_generacion_utc": "2026-08-09T03:54:20Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-09T03:54:21Z",
+     "latencia_envio_ms": 781.5952301025391,
+     "error": null
+    }
+   },
+   "latencia_total_seg": 46.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": null,
+   "evidencia": null,
+   "alert_id": "d9e5a9026632dad6"
+  },
+  {
+   "strategy_id": "L3",
+   "match_label": "[CERT-E2E] Local L3 vs Visita L3 (Eliteserien)",
+   "match_id": "999905",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
+   "cuota_detectada": null,
+   "minuto": 55,
+   "condicion": "Expulsión de [CERT-E2E] Local L3 (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_expulsado": "[CERT-E2E] Local L3",
+    "marcador_al_detectar": "0-0",
+    "total_rojas_partido": 1
+   },
+   "t_evento_real_utc": "2026-08-09T03:53:35Z",
+   "t_captura_utc": "2026-08-09T03:53:35Z",
+   "t_evaluacion_utc": "2026-08-09T03:54:21Z",
+   "t_generacion_utc": "2026-08-09T03:54:21Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-09T03:54:21Z",
+     "latencia_envio_ms": 790.1849746704102,
+     "error": null
+    }
+   },
+   "latencia_total_seg": 46.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": null,
+   "evidencia": null,
+   "alert_id": "1a1961625f2cb2f1"
+  },
+  {
+   "strategy_id": "L4",
+   "match_label": "[CERT-E2E] Local L4 vs Visita L4 (Bundesliga)",
+   "match_id": "999906",
+   "market": "Over 0.5 / Over 1.5 -- verificar ambos en Betano AHORA (la alerta NO es recomendación de apuesta)",
+   "cuota_detectada": null,
+   "minuto": 62,
+   "condicion": "0-0 con presión sostenida del local en Liga Over Goles (xG≥1.30/0.70, tiros a puerta ≥4 local y ≥5 total, córners ≥4 local y ≥5 total, min≥55). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "xg_local": 1.5,
+    "xg_visita": 0.9,
+    "sot_local": 5,
+    "sot_visita": 2,
+    "sot_total": 7,
+    "cor_local": 5,
+    "cor_visita": 1,
+    "cor_total": 6,
+    "liga": "Bundesliga",
+    "liga_over_goles": true,
+    "marcador": "0-0",
+    "proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
+   },
+   "t_evento_real_utc": "2026-08-09T03:53:35Z",
+   "t_captura_utc": "2026-08-09T03:53:35Z",
+   "t_evaluacion_utc": "2026-08-09T03:54:21Z",
+   "t_generacion_utc": "2026-08-09T03:54:21Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-09T03:54:22Z",
+     "latencia_envio_ms": 841.7935371398926,
+     "error": null
+    }
+   },
+   "latencia_total_seg": 47.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — L4\n\n⚽ [CERT-E2E] Local L4 vs Visita L4\n⏱ Minuto: 62'\n📊 Marcador: 0-0\n\n📈 xG:\nLocal: 1.50\nVisita: 0.90\n\n🎯 Tiros a puerta:\nLocal: 5\nVisita: 2\nTotal: 7\n\n🚩 Córners:\nLocal: 5\nVisita: 1\nTotal: 6\n\n🏆 Liga: Bundesliga\n🔥 Perfil: LIGA OVER GOLES\n\n👉 REVISAR AHORA EN BETANO:\nOver 0.5 / Over 1.5",
+   "evidencia": null,
+   "alert_id": "bc21065046915312"
   }
  ]
 }
