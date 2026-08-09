@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-09T14:47:10Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-09T14:48:11Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "L1",
@@ -76,6 +76,81 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Heart of Midlothian vs Dundee United\n⏱ Minuto: 45'\n📊 Marcador: 2-0\n🏆 Liga: Scottish Premiership\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Heart of Midlothian presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Dundee United no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "6776051444f82896"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "Halmstads BK vs GAIS (Allsvenskan)",
+   "match_id": "15272491",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "5 córners totales antes del min 30 (3-2), Halmstads BK presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿GAIS NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "Halmstads BK"
+   },
+   "t_evento_real_utc": "2026-08-09T14:47:57Z",
+   "t_captura_utc": "2026-08-09T14:47:57Z",
+   "t_evaluacion_utc": "2026-08-09T14:48:08Z",
+   "t_generacion_utc": "2026-08-09T14:48:08Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-09T14:48:09Z",
+     "latencia_envio_ms": 820.523738861084,
+     "error": null,
+     "message_id": 74
+    }
+   },
+   "latencia_total_seg": 12.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Halmstads BK vs GAIS\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Halmstads BK presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿GAIS no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "c4bac71829bf658b"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Halmstads BK vs GAIS (Allsvenskan)",
+   "match_id": "15272491",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "5 córners totales antes del min 45 (3-2), Halmstads BK presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿GAIS NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "Halmstads BK",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-09T14:47:57Z",
+   "t_captura_utc": "2026-08-09T14:47:57Z",
+   "t_evaluacion_utc": "2026-08-09T14:48:10Z",
+   "t_generacion_utc": "2026-08-09T14:48:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-09T14:48:11Z",
+     "latencia_envio_ms": 805.7477474212646,
+     "error": null,
+     "message_id": 75
+    }
+   },
+   "latencia_total_seg": 14.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Halmstads BK vs GAIS\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Halmstads BK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿GAIS no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "aa8ef0cc0e164aa0"
   }
  ]
 }
