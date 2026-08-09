@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-09T11:59:55Z",
- "n_live_target": 2,
+ "generated_at_utc": "2026-08-09T12:02:56Z",
+ "n_live_target": 4,
  "matches": {
   "16316764": {
    "event_id": 16316764,
@@ -11,16 +11,16 @@
    "away_score": 1,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 84,
+   "minute": 87,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 37,
-     "away": 63
+     "home": 39,
+     "away": 61
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.4,
+     "home": 0.44,
      "away": 3.47
     },
     "big_chances": {
@@ -30,7 +30,7 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 6,
+     "home": 8,
      "away": 21
     },
     "corners": {
@@ -40,8 +40,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 280,
-     "away": 471
+     "home": 297,
+     "away": 479
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -56,15 +56,15 @@
    },
    "odds": {
     "btts": {
-     "yes": 5.5,
-     "no": 1.143,
-     "captured_at_utc": "2026-08-09T11:59:44Z"
+     "yes": 5.0,
+     "no": 1.167,
+     "captured_at_utc": "2026-08-09T12:02:52Z"
     },
     "1x2": {
      "home": 51.0,
-     "draw": 7.5,
-     "away": 1.083,
-     "captured_at_utc": "2026-08-09T11:59:44Z"
+     "draw": 6.5,
+     "away": 1.111,
+     "captured_at_utc": "2026-08-09T12:02:10Z"
     },
     "goals_over_25": {
      "over": 2.625,
@@ -74,10 +74,10 @@
     "corners_over_95": {
      "over": 2.0,
      "under": 1.727,
-     "captured_at_utc": "2026-08-09T11:59:44Z"
+     "captured_at_utc": "2026-08-09T12:02:52Z"
     }
    },
-   "updated_at_utc": "2026-08-09T11:59:55Z"
+   "updated_at_utc": "2026-08-09T12:02:56Z"
   },
   "16331692": {
    "event_id": 16331692,
@@ -88,7 +88,7 @@
    "away_score": 1,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 92,
+   "minute": 95,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -112,12 +112,12 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 319,
-     "away": 446
+     "home": 328,
+     "away": 460
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
-     "home": 0,
+     "home": 1,
      "away": 3
     },
     "shots_on_target": {
@@ -140,21 +140,130 @@
     "corners_over_95": {
      "over": 1.667,
      "under": 2.1,
-     "captured_at_utc": "2026-08-09T11:59:44Z"
+     "captured_at_utc": "2026-08-09T12:02:52Z"
     },
     "1x2": {
-     "home": 1.04,
-     "draw": 13.0,
-     "away": 301.0,
-     "captured_at_utc": "2026-08-09T11:59:44Z"
+     "home": 1.012,
+     "draw": 23.0,
+     "away": 501.0,
+     "captured_at_utc": "2026-08-09T12:02:52Z"
     },
     "goals_over_25": {
      "over": 1.667,
      "under": 2.1,
-     "captured_at_utc": "2026-08-09T11:59:44Z"
+     "captured_at_utc": "2026-08-09T12:02:52Z"
     }
    },
-   "updated_at_utc": "2026-08-09T11:59:55Z"
+   "updated_at_utc": "2026-08-09T12:02:56Z"
+  },
+  "15272477": {
+   "event_id": 15272477,
+   "league": "Allsvenskan",
+   "home": "Hammarby IF",
+   "away": "BK Häcken",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 50,
+     "away": 50
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 4,
+     "away": 4
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.444,
+     "no": 2.625,
+     "captured_at_utc": "2026-08-09T12:02:52Z"
+    },
+    "1x2": {
+     "home": 1.571,
+     "draw": 4.333,
+     "away": 5.0,
+     "captured_at_utc": "2026-08-09T12:02:52Z"
+    }
+   },
+   "updated_at_utc": "2026-08-09T12:02:56Z"
+  },
+  "15272479": {
+   "event_id": 15272479,
+   "league": "Allsvenskan",
+   "home": "Malmö FF",
+   "away": "Degerfors IF",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 100,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 1,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.909,
+     "no": 1.909,
+     "captured_at_utc": "2026-08-09T12:02:52Z"
+    },
+    "1x2": {
+     "home": 1.5,
+     "draw": 4.333,
+     "away": 6.5,
+     "captured_at_utc": "2026-08-09T12:02:52Z"
+    },
+    "goals_over_25": {
+     "over": 1.667,
+     "under": 2.1,
+     "captured_at_utc": "2026-08-09T12:02:52Z"
+    }
+   },
+   "updated_at_utc": "2026-08-09T12:02:56Z"
   }
  }
 }
