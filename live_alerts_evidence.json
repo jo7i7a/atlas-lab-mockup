@@ -633,5 +633,45 @@
    "cuota_real_betano": 1.5,
    "activo": true
   }
+ ],
+ "fbd1f303f9c593dd": [
+  {
+   "alert_id": "fbd1f303f9c593dd",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Goiás vs Londrina (Brasileirão Série B)",
+   "liga": "Brasileirão Série B",
+   "event_id": "15526213",
+   "minuto_alerta": 15,
+   "condicion": "Goiás domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-10T22:46:08Z",
+   "t_captura_utc": "2026-08-10T22:46:08Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-10T22:47:28Z",
+   "segundos_transcurridos": 74,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "12.5 @ 1.65\n13.5 @ 2.12",
+   "linea_real_betano": 12.5,
+   "cuota_real_betano": 1.65,
+   "activo": true
+  },
+  {
+   "alert_id": "fbd1f303f9c593dd",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Goiás vs Londrina (Brasileirão Série B)",
+   "liga": "Brasileirão Série B",
+   "event_id": "15526213",
+   "minuto_alerta": 15,
+   "condicion": "Goiás domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-10T22:46:08Z",
+   "t_captura_utc": "2026-08-10T22:46:08Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-10T22:47:28Z",
+   "segundos_transcurridos": 74,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "12.5 @ 1.65\n13.5 @ 2.12",
+   "linea_real_betano": 13.5,
+   "cuota_real_betano": 2.12,
+   "activo": true
+  }
  ]
 }

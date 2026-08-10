@@ -829,24 +829,215 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 2,
+   "casos_verificados": 4,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
    "fecha_creacion_utc": "2026-08-09",
-   "ultima_actualizacion_utc": "2026-08-10T17:22:03Z",
+   "ultima_actualizacion_utc": "2026-08-10T22:48:03Z",
    "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate de abandono ya definido).",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 2,
+    "n_operable": 4,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 2
+    "n_muestra": 4
    },
-   "alertas_live_historial": 1
+   "alertas_live_historial": 4
+  },
+  {
+   "id": "A3_V1_DOMINANTE_NO_GANA",
+   "nombre": "Córners Asiáticos por Asedio Constante -- reinterpretación DOMINANTE NO GANA (registro prospectivo LIVE)",
+   "mercado": "Total de Córners (Over/Under) -- a verificar manualmente en Betano en el momento de la alerta. ATLAS no fija línea ni cuota.",
+   "tipo": "LIVE",
+   "hipotesis": "Prospectiva, sin evidencia previa: si un equipo domina en córners y entradas al tercio final entre los minutos 80-84 sin ir ganando el partido, podría existir una oportunidad en Over de córners (el equipo arriesga más buscando el resultado) que el mercado no esté descontando del todo. NO se afirma que exista edge -- eso es lo que esta línea va a medir desde cero.",
+   "origen": "Hipótesis 2 de estrategias_live_betting.pdf ('Córners Asiáticos por Asedio Constante'), identificada en ANALISIS_BIBLIOTECAS_LIVE_2026-08-09.md (familia A -- Córners LIVE), auditada en AUDITORIA_A3_2026-08-10.md y diseñada en DISENO_A3_V1_DOMINANTE_NO_GANA_2026-08-10.md. APROBADA e IMPLEMENTADA por el Director (2026-08-10) tras cerrar 2 decisiones de diseño.",
+   "hipotesis_original_pdf": {
+    "condiciones": "Prematch: favorito >6.5 córners a favor, underdog >5.0 córners en contra, perfil táctico (extremos/laterales), ligas ideales (Premier League, La Liga, Serie A brasileña), cuota favorito <1.50. Live: minuto 80'-84'; favorito perdiendo o empatando; equipo dominante con >=2 córners y >15 entradas al tercio final en los últimos 10 min; partido continuo sin pausas. Mercado original: 'Córners Asiáticos (Over de la línea actual +0.5 o +1.0)'.",
+    "condicion_original": "favorito perdiendo o empatando (basada en cuota prematch) + filtros prematch de córners por equipo + perfil táctico + ligas ideales + 'partido sin pausas'",
+    "estado": "NO_EVALUABLE_CON_DATOS_ACTUALES",
+    "motivo": "sin identificación prematch universal del favorito (D001 en fase de acumulación congelada, no garantizado por partido); ningún detector de ATLAS aplica filtros prematch hoy; 'perfil táctico'/'sin pausas' son cualitativos, sin campo automatizable.",
+    "aplicada_en_version_prospectiva": false
+   },
+   "decision_mercado": {
+    "decidido_utc": "2026-08-10",
+    "resultado": "Total de Córners Over/Under (misma familia que L1/L1-SHADOW/A1_V1/A2)",
+    "evidencia": "Auditoría empírica sobre platform_odds_markets: el ÚNICO mercado de córners que existe en los datos capturados es 'Corners 2-Way' (312.544 filas) -- sin ningún hándicap equipo-vs-equipo en toda la base (13 market_name distintos revisados exhaustivamente). No es interpretación textual del PDF, es lo único que la fuente de datos ofrece. Auditoría adicional de 20.000 filas reales de 'Corners 2-Way' confirmó además que el 100% son líneas de media (X.5) -- 0% enteras, 0% de cuarto -- liquidar_totales() no necesita ninguna extensión."
+   },
+   "decision_marcador": {
+    "decidido_utc": "2026-08-10",
+    "resultado": "REINTERPRETACIÓN EXPLÍCITA (Opción B elegida por el Director, no la Opción A de eliminar la condición): 'el equipo que domina las variables LIVE del trigger no está ganando el partido', formalizada como marcador[lado_dominante] <= marcador[rival]. Mismo patrón ya usado en L2 (dominante no va ganando), aplicado aquí a córners.",
+    "aclaracion": "Esta reinterpretación NO es la condición 'favorito perdiendo o empatando' del PDF original (que dependía de cuota prematch). Es una hipótesis prospectiva independiente -- sus resultados NUNCA deben mezclarse ni presentarse como evidencia de la hipótesis completa original."
+   },
+   "reglas_entrada": [
+    "1. Minuto de partido entre 80 y 84 (inclusive).",
+    "2. Para el mismo lado (local o visita): córners en los últimos 10 min >= 2 Y entradas al tercio final en los últimos 10 min > 15 (ambas simultáneas -- el PDF las lista sin 'o' entre ellas, a diferencia de A1_V1).",
+    "3. Marcador de ese lado <= marcador del rival (empate o perdiendo califica; ganando no).",
+    "4. Si ambos lados califican simultáneamente, se toma HOME primero (criterio determinista, garantiza 1 sola alerta).",
+    "5. Ventana de deltas calculada exclusivamente con live_snapshot_deltas.py -- nunca reimplementada a mano.",
+    "6. Ancla CONSCIENTE del bloque '2ND' (reconstrucción de minuto anclada al inicio real del 2T) -- NUNCA la reconstrucción ingenua por tiempo simple, porque la ventana 80'-84' está en el 2º tiempo.",
+    "7. El marcador se RE-CHEQUEA EN VIVO inmediatamente antes de emitir -- si el lado inicialmente dominante ya pasó a ganar entre el ancla histórico y el momento de emisión, la alerta NO se envía.",
+    "NO incluye los filtros prematch de la hipótesis original (ver 'hipotesis_original_pdf')."
+   ],
+   "reglas_salida": [
+    "Alerta ÚNICA por partido, garantizada por ancla estable de deduplicación (primera captura dentro de 80'-84' en que algún lado cumple la fórmula completa).",
+    "No aplica antes del minuto 80, después del minuto 84, ni si el lado dominante ya va ganando en el momento de emitir."
+   ],
+   "criterios_no_automatizables": [
+    "Cuota real de Betano (Total de Córners): verificación 100% manual del Director.",
+    "Decisión de entrada: la alerta NO es una recomendación de apuesta.",
+    "Filtros prematch y perfil táctico de la hipótesis original: NO_EVALUABLE_CON_DATOS_ACTUALES (ver 'hipotesis_original_pdf')."
+   ],
+   "gate_evaluacion_abandono": {
+    "definido_utc": "2026-08-10",
+    "criterio": "N=30 verificaciones reales contra Betano. Abandono si operabilidad real <80% O ROI real acumulado <0% -- mismo patrón ya usado en L1-SHADOW/L2-SHADOW/A2/B1_V1/A1_V1."
+   },
+   "estado_liquidacion": "IMPLEMENTADA",
+   "nota_liquidacion": "Mercado = córners TOTALES del partido, idéntico a L1/L1-SHADOW/A1_V1 -- reutiliza _fetch_corners_final() + liquidar_totales() sin ninguna función nueva. Agregado a la misma rama de _calcular_resultado() que L1/L1-SHADOW/A1_V1 en betano_liquidacion.py.",
+   "estado_actual": "OBSERVACION",
+   "estado_declarado": "OBSERVACIÓN PROSPECTIVA / EVIDENCIA FINANCIERA: NINGUNA / RENTABILIDAD: DESCONOCIDA / CERTIFICACIÓN: NINGUNA / LÓGICA: A3_V1_DOMINANTE_NO_GANA",
+   "historial_estados": [
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-09",
+     "nota": "Extraída de estrategias_live_betting.pdf durante el análisis de las 2 bibliotecas LIVE, clasificada como NUEVA (familia A -- Córners LIVE, asedio tardío condicionado a marcador)."
+    },
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-10",
+     "nota": "Auditoría completa (AUDITORIA_A3_2026-08-10.md): 2 ambigüedades estructurales identificadas (tipo de mercado, identificación de favorito) -- decisión propuesta POSPONER hasta resolverlas, el Director estuvo de acuerdo."
+    },
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-10",
+     "nota": "Decisión 1 (mercado) cerrada con evidencia empírica: único mercado de córners real es Total Over/Under. Decisión 2 (marcador) cerrada por el Director: reinterpretación 'dominante no gana' (Opción B). Diseño completo entregado y aprobado (DISENO_A3_V1_DOMINANTE_NO_GANA_2026-08-10.md) -- VIABLE PARA IMPLEMENTAR."
+    },
+    {
+     "estado": "OBSERVACION",
+     "fecha_utc": "2026-08-10",
+     "nota": "Implementada exactamente según el diseño aprobado (a3_v1_dominante_no_gana.py), sin rediseñar nada durante la implementación. Ancla consciente del bloque '2ND', re-chequeo de marcador en vivo antes de emitir, liquidación en la misma rama que L1/A1_V1. Gate de evaluación/abandono aplicado (N=30, operabilidad<80% u ROI<0%). No modifica L1, L1-SHADOW, L2, L2-SHADOW, L3, L4, A1_V1_SOLO_TRIGGER_LIVE, A2, B1_V1_SIN_ATAQUES_PELIGROSOS, ni live_snapshot_deltas.py."
+    }
+   ],
+   "casos_observados": 0,
+   "casos_verificados": 0,
+   "aciertos": 0,
+   "fallos": 0,
+   "roi": null,
+   "clv": null,
+   "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
+   "fecha_creacion_utc": "2026-08-09",
+   "ultima_actualizacion_utc": "2026-08-10T00:00:00Z",
+   "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate de abandono ya definido).",
+   "metricas_fase4": {
+    "pct_coincide": null,
+    "pct_mejor": null,
+    "pct_suspendido": null,
+    "pct_inexistente": null,
+    "pct_operable": null,
+    "tiempo_medio_disponible_seg": null,
+    "n_muestra": 0
+   },
+   "alertas_live_historial": 0
+  },
+  {
+   "id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "nombre": "Ataque por Bandas vs. Bloque Bajo -- proxy de PRESIÓN TERRITORIAL ACUMULADA (registro prospectivo LIVE)",
+   "mercado": "Hándicap Asiático de Córners, equipo vs equipo -- a verificar manualmente en Betano en el momento de la alerta. ATLAS no fija línea ni cuota, y no existe cuota PROXY automática para este mercado (no capturado por IP001/SofaScore).",
+   "tipo": "LIVE",
+   "hipotesis": "Prospectiva, sin evidencia previa: si un equipo acumula más del 60% de los toques en el área rival desde el minuto 20, podría existir una oportunidad en el hándicap de córners a su favor que el mercado no esté descontando del todo. NO se afirma que exista edge -- eso es lo que esta línea va a medir desde cero.",
+   "origen": "Hipótesis 3 de manual_estrategias_avanzadas_live.pdf ('Ataque por Bandas vs. Bloque Bajo'), identificada en ANALISIS_BIBLIOTECAS_LIVE_2026-08-09.md (familia A -- Córners LIVE), auditada en AUDITORIA_A4_2026-08-10.md y diseñada en DISENO_A4_V1_PRESION_TERRITORIAL_2026-08-10.md. APROBADA e IMPLEMENTADA por el Director (2026-08-10) tras cerrar 3 decisiones de diseño.",
+   "hipotesis_original_pdf": {
+    "condiciones": "Prematch: choque de estilos (equipo ancho vs equipo en bloque bajo). Live: minuto 20' en adelante (sin techo definido); posesión en tercio ofensivo >60%; acelerador (tarjeta o cambio táctico que intensifique el asedio). Mercado: Hándicap Asiático de Córners equipo vs equipo (ej. -1.5/-2.0).",
+    "condicion_original": "posesión en tercio ofensivo >60% (como condición central) + choque de estilos (prematch) + cambio táctico (como condición del acelerador, no como proxy opcional)",
+    "estado": "NO_EVALUABLE_CON_DATOS_ACTUALES",
+    "motivo": "ningún campo mide 'posesión por zona' (ballPossession es posesión GENERAL del partido, no por tercio); 'choque de estilos' y 'cambio táctico' son cualitativos, sin campo automatizable.",
+    "aplicada_en_version_prospectiva": false
+   },
+   "decision_variable_territorial": {
+    "decidido_utc": "2026-08-10",
+    "resultado": "Ratio ACUMULADO (Opción A elegida por el Director, no una ventana reciente, no ballPossession): ratio_presion_territorial[lado] = touchesInOppBox[lado] / (touchesInOppBox[home]+touchesInOppBox[away]), calculado sobre valores acumulados del bloque 'ALL', SIN ninguna ventana de minutos.",
+    "propiedad_matematica": "ratio[home]+ratio[away]==1.0 siempre -- es estructuralmente imposible que ambos lados superen 0.60 a la vez, no hace falta regla de desempate.",
+    "aclaracion": "Esta es una APROXIMACIÓN de 'posesión en tercio ofensivo', NUNCA la condición literal del PDF. Sus resultados NUNCA deben mezclarse ni presentarse como evidencia de la hipótesis completa original."
+   },
+   "decision_acelerador": {
+    "decidido_utc": "2026-08-10",
+    "resultado": "OPCIONAL e informativo (decisión del Director): tarjeta o sustitución real del equipo dominante, consultada en vivo vía /incidents. NUNCA bloquea la emisión de la alerta, NUNCA se presenta como 'cambio táctico' (es un proxy distinto, una sustitución no es necesariamente un cambio táctico)."
+   },
+   "decision_ventana": {
+    "decidido_utc": "2026-08-10",
+    "resultado": "Minuto 20 a 85 (inclusive). El techo (85) es una decisión de IMPLEMENTACIÓN justificada por operabilidad real del mercado de córners cerca del final del partido -- NO es un dato del PDF original, que no define techo. No se creó ninguna franja adicional. El solapamiento con A3_V1 (80-84) u otras estrategias de córners NO fue el criterio -- son señales independientes, coexistir es el diseño esperado del laboratorio."
+   },
+   "reglas_entrada": [
+    "1. Minuto de partido entre 20 y 85 (inclusive).",
+    "2. Para el mismo lado (local o visita): ratio_presion_territorial > 0.60 (estrictamente mayor).",
+    "3. Ancla reconstruye el minuto histórico combinando elapsed-desde-kickoff (1er tiempo) y anclaje al bloque '2ND' (2º tiempo) -- la ventana cruza el entretiempo.",
+    "4. NO usa live_snapshot_deltas.py -- el ratio es un valor acumulado directo, sin ninguna ventana de minutos ni cálculo de delta.",
+    "5. El acelerador (tarjeta/sustitución) se registra si existe, pero NUNCA condiciona la emisión.",
+    "NO incluye 'choque de estilos' (prematch) de la hipótesis original (ver 'hipotesis_original_pdf')."
+   ],
+   "reglas_salida": [
+    "Alerta ÚNICA por partido, garantizada por ancla estable de deduplicación (primera captura dentro de 20'-85' en que algún lado supera el umbral).",
+    "Estructuralmente imposible que ambos lados califiquen a la vez (ver 'decision_variable_territorial').",
+    "No aplica antes del minuto 20 ni después del minuto 85."
+   ],
+   "criterios_no_automatizables": [
+    "Cuota real de Betano (Hándicap Asiático de Córners): verificación 100% manual del Director, SIN cuota proxy de referencia (mercado no capturado por IP001/SofaScore).",
+    "Decisión de entrada: la alerta NO es una recomendación de apuesta.",
+    "'Choque de estilos' (perfil táctico prematch) de la hipótesis original: NO_EVALUABLE_CON_DATOS_ACTUALES."
+   ],
+   "gate_evaluacion_abandono": {
+    "definido_utc": "2026-08-10",
+    "criterio": "N=30 verificaciones reales contra Betano. Abandono si operabilidad real <80% O ROI real acumulado <0% -- mismo patrón ya usado en L1-SHADOW/L2-SHADOW/A2/B1_V1/A1_V1/A3_V1. Adicional: si el ratio no correlaciona de forma sensata con córners reales ganados, se declara NO_MEDIBLE_CON_DATOS_ACTUALES y se cierra la línea, independientemente del gate financiero."
+   },
+   "estado_liquidacion": "IMPLEMENTADA",
+   "nota_liquidacion": "Mercado = Hándicap Asiático de Córners equipo vs equipo -- reutiliza EXACTAMENTE la misma infraestructura que L2/L2-SHADOW (hándicap de goles): _fetch_corners_final() (ya devuelve home/away por separado) + liquidar_handicap_asiatico() (ya soporta líneas de cuarto, WIN/HALF_WIN/PUSH/HALF_LOSS/LOSS). Ninguna función nueva -- solo una rama nueva en _calcular_resultado() de betano_liquidacion.py.",
+   "estado_actual": "OBSERVACION",
+   "estado_declarado": "OBSERVACIÓN PROSPECTIVA / EVIDENCIA FINANCIERA: NINGUNA / RENTABILIDAD: DESCONOCIDA / CERTIFICACIÓN: NINGUNA / LÓGICA: A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "historial_estados": [
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-09",
+     "nota": "Extraída de manual_estrategias_avanzadas_live.pdf durante el análisis de las 2 bibliotecas LIVE, clasificada como NUEVA (familia A -- Córners LIVE, único mercado de hándicap y única señal de dominio territorial)."
+    },
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-10",
+     "nota": "Auditoría completa (AUDITORIA_A4_2026-08-10.md): gap central en 'posesión en tercio ofensivo' (no medible literalmente) -- decisión propuesta VIABLE SOLO CON APROXIMACIÓN EXPLÍCITA."
+    },
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-10",
+     "nota": "3 decisiones cerradas por el Director: variable territorial = ratio acumulado touchesInOppBox (Opción A); acelerador = opcional/informativo; techo de ventana = minuto 85 (justificado por operabilidad, propuesto en revisión conceptual y confirmado). Diseño completo entregado y aprobado (DISENO_A4_V1_PRESION_TERRITORIAL_2026-08-10.md) -- VIABLE PARA IMPLEMENTAR."
+    },
+    {
+     "estado": "OBSERVACION",
+     "fecha_utc": "2026-08-10",
+     "nota": "Implementada exactamente según el diseño aprobado (a4_v1_presion_territorial_acumulada.py), sin rediseñar nada durante la implementación. No usa live_snapshot_deltas.py (no lo necesita). Liquidación reutiliza 100% la infraestructura de L2. Gate de evaluación/abandono aplicado. No modifica L1, L1-SHADOW, L2, L2-SHADOW, L3, L4, A1_V1_SOLO_TRIGGER_LIVE, A2, A3_V1_DOMINANTE_NO_GANA, B1_V1_SIN_ATAQUES_PELIGROSOS, ni live_snapshot_deltas.py."
+    }
+   ],
+   "casos_observados": 0,
+   "casos_verificados": 0,
+   "aciertos": 0,
+   "fallos": 0,
+   "roi": null,
+   "clv": null,
+   "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
+   "fecha_creacion_utc": "2026-08-09",
+   "ultima_actualizacion_utc": "2026-08-10T00:00:00Z",
+   "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate de abandono ya definido).",
+   "metricas_fase4": {
+    "pct_coincide": null,
+    "pct_mejor": null,
+    "pct_suspendido": null,
+    "pct_inexistente": null,
+    "pct_operable": null,
+    "tiempo_medio_disponible_seg": null,
+    "n_muestra": 0
+   },
+   "alertas_live_historial": 0
   }
  ]
 }
