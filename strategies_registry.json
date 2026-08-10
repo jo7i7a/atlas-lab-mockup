@@ -1037,6 +1037,95 @@
     "n_muestra": 1
    },
    "alertas_live_historial": 5
+  },
+  {
+   "id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "nombre": "Over Tardío por Presión Persistente -- versión SIN ataques peligrosos (registro prospectivo LIVE)",
+   "mercado": "Over 1.5 Goles FT -- a verificar manualmente en Betano en el momento de la alerta. ATLAS no fija línea ni cuota.",
+   "tipo": "LIVE",
+   "hipotesis": "Prospectiva, sin evidencia previa: si un partido con marcador ajustado (≤2 goles) sigue mostrando presión combinada sostenida (xG, tiros, tiros a puerta, tiros recientes) entre los minutos 55-70, podría existir una oportunidad en Over de goles que el mercado no esté descontando del todo. NO se afirma que exista edge -- eso es lo que esta línea va a medir desde cero.",
+   "origen": "Hipótesis 4 de manual_estrategias_avanzadas_live.pdf ('Over Tardío por Presión Persistente (Over 1.5)'), identificada en ANALISIS_BIBLIOTECAS_LIVE_2026-08-09.md (familia B -- Goles LIVE), auditada en AUDITORIA_B2_2026-08-10.md y diseñada en DISENO_B2_V1_2026-08-10.md. APROBADA e IMPLEMENTADA por el Director (2026-08-10).",
+   "hipotesis_original_pdf": {
+    "condiciones": "Prematch: xG Combinado ≥2.60; probabilidad histórica Over1.5 >75%; cuota prematch ≥1.45. Live: minuto 55'-70' con 0, 1 o 2 goles en el marcador; xG Live ≥1.20; ≥8 tiros totales (≥3 a puerta); Presión Reciente = (≥12 ataques peligrosos combinados últimos 20min) O (≥3 tiros combinados últimos 10min). Mercado: Over 1.5 goles asiático.",
+    "condicion_original": "filtros prematch (xG combinado histórico, probabilidad Over1.5, cuota prematch) + rama de ataques peligrosos de Presión Reciente",
+    "estado": "NO_EVALUABLE_CON_DATOS_ACTUALES",
+    "motivo": "ningún detector de ATLAS aplica filtros prematch hoy; dangerousAttacks no existe en ningún grupo de /event/{id}/statistics -- confirmado repetidamente en cada auditoría del laboratorio.",
+    "aplicada_en_version_prospectiva": false
+   },
+   "version_prospectiva_observada": "B2_V1_SIN_ATAQUES_PELIGROSOS -- minuto 55-70, goles combinados (home+away) <=2, xG_combinado>=1.20, tiros_combinados(totalShotsOnGoal)>=8, SOT_combinado(shotsOnGoal)>=3, presión reciente = delta de tiros_combinados en los últimos 10 min >=3 (única rama medible de 'Presión Reciente', la rama de ataques peligrosos queda EXCLUIDA por completo). Todo es AND -- la exclusión de la rama de ataques peligrosos elimina el único 'O' de la hipótesis original. Sin concepto de equipo dominante -- todas las condiciones son de partido, no de un lado específico. Ningún resultado futuro debe mezclarse ni presentarse como si fuera la hipótesis completa original del PDF.",
+   "reglas_entrada": [
+    "1. Minuto de partido entre 55 y 70 (inclusive).",
+    "2. Goles combinados (home+away) <= 2.",
+    "3. xG combinado >= 1.20, tiros combinados (totalShotsOnGoal) >= 8, tiros a puerta combinados (shotsOnGoal) >= 3.",
+    "4. Presión reciente: delta de tiros combinados en los últimos 10 min >= 3, calculado exclusivamente con live_snapshot_deltas.py.",
+    "5. REGLA DE SEGURIDAD: si la ventana de 10 min cruzaría el entretiempo, o falta cualquier estadística necesaria, el ciclo se salta por completo -- NUNCA se interpreta como condición falsa, el episodio persistido no se toca.",
+    "NO incluye los filtros prematch de la hipótesis original ni la rama de ataques peligrosos (ver 'hipotesis_original_pdf')."
+   ],
+   "reglas_salida": [
+    "Alerta ÚNICA por partido mientras dure el mismo episodio, garantizada por ancla estable (t_primera_observacion_atlas, ver 'semantica_temporal').",
+    "Un episodio se cierra únicamente ante una evaluación COMPLETA y definitiva que resulte falsa -- un ciclo no evaluable nunca lo cierra.",
+    "Un re-cruce posterior al cierre genera un episodio nuevo e independiente.",
+    "El marcador combinado es monótono: una vez >2 goles, el partido nunca vuelve a calificar."
+   ],
+   "semantica_temporal": {
+    "definido_utc": "2026-08-10",
+    "principio": "t_primera_observacion_atlas (estado persistido, EXCLUSIVO de B2_V1, archivo b2_v1_episodios_estado.json) gobierna TTL y deduplicación -- NUNCA una reconstrucción histórica retrospectiva. Mismo patrón certificado y corregido en A4_V1 (ver DISENO_ANCLA_A4_V1_2026-08-10.md), aplicado aquí DESDE EL DISEÑO INICIAL, sin necesidad de descubrir el mismo defecto dos veces. t_inicio_estimado_condicion se conserva solo como dato informativo en 'extra', nunca gobierna nada.",
+    "archivo_estado": "atlas_lab_mockup/b2_v1_episodios_estado.json -- exclusivo de B2_V1, nunca compartido con A4_V1 ni con ninguna otra estrategia, nunca mezclado con evidencia histórica."
+   },
+   "criterios_no_automatizables": [
+    "Cuota real de Betano (Over 1.5 Goles FT): verificación 100% manual del Director.",
+    "Decisión de entrada: la alerta NO es una recomendación de apuesta.",
+    "Filtros prematch y rama de ataques peligrosos de la hipótesis original: NO_EVALUABLE_CON_DATOS_ACTUALES (ver 'hipotesis_original_pdf')."
+   ],
+   "gate_evaluacion_abandono": {
+    "definido_utc": "2026-08-10",
+    "criterio": "N=30 verificaciones reales contra Betano. Abandono si operabilidad real <80% O ROI real acumulado <0%. Adicional: si la fracción de ciclos no evaluables por cruce de entretiempo resulta desproporcionadamente alta frente a L4/B1_V1, se documenta como limitación estructural de la ventana, no como fallo de la hipótesis."
+   },
+   "estado_liquidacion": "IMPLEMENTADA",
+   "nota_liquidacion": "Mercado = Over 1.5 Goles FT, idéntico a L3/L4 -- reutiliza la misma rama de _calcular_resultado() (home_score+away_score al final + liquidar_totales()) sin ninguna función nueva. Agregado a la misma rama que L3/L4 en betano_liquidacion.py.",
+   "estado_actual": "OBSERVACION",
+   "estado_declarado": "OBSERVACIÓN PROSPECTIVA / EVIDENCIA FINANCIERA: NINGUNA / RENTABILIDAD: DESCONOCIDA / CERTIFICACIÓN: NINGUNA / LÓGICA: B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "historial_estados": [
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-09",
+     "nota": "Extraída de manual_estrategias_avanzadas_live.pdf durante el análisis de las 2 bibliotecas LIVE, clasificada como VARIANTE de L4/B1_V1 (familia B -- Goles LIVE, marcador flexible ≤2 goles y xG combinado)."
+    },
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-10",
+     "nota": "Auditoría completa (AUDITORIA_B2_2026-08-10.md): sin ambigüedad de mercado (a diferencia de A3/A4); confirma empíricamente el riesgo de cruce de entretiempo ya predicho en la auditoría original de la capa de deltas. Decisión propuesta VIABLE COMO V1 REDUCIDA."
+    },
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-10",
+     "nota": "3 interpretaciones confirmadas por el Director (tiros=totalShotsOnGoal, métricas combinadas, '0/1/2 goles'=combinado≤2). Diseño final entregado y aprobado (DISENO_B2_V1_2026-08-10.md) -- LISTO PARA IMPLEMENTAR."
+    },
+    {
+     "estado": "OBSERVACION",
+     "fecha_utc": "2026-08-10",
+     "nota": "Implementada exactamente según el diseño aprobado (b2_v1_sin_ataques_peligrosos.py). Semántica temporal t_primera_observacion_atlas aplicada DESDE EL INICIO (lección de A4_V1). Regla 'dato no evaluable ≠ dato negativo' implementada explícitamente. Liquidación en la misma rama que L3/L4. No modifica ninguna otra estrategia ni live_snapshot_deltas.py."
+    }
+   ],
+   "casos_observados": 0,
+   "casos_verificados": 1,
+   "aciertos": 0,
+   "fallos": 0,
+   "roi": null,
+   "clv": null,
+   "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
+   "fecha_creacion_utc": "2026-08-09",
+   "ultima_actualizacion_utc": "2026-08-10T23:59:07Z",
+   "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate de abandono ya definido).",
+   "metricas_fase4": {
+    "pct_operable": 100.0,
+    "n_operable": 1,
+    "n_no_operable": 0,
+    "clv_promedio": null,
+    "tiempo_medio_disponible_seg": null,
+    "n_muestra": 1
+   },
+   "alertas_live_historial": 1
   }
  ]
 }

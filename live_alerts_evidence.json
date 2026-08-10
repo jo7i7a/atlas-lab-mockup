@@ -694,5 +694,26 @@
    "cuota_real_betano": 2.05,
    "activo": true
   }
+ ],
+ "a236a38745d9a976": [
+  {
+   "alert_id": "a236a38745d9a976",
+   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "Goiás vs Londrina (Brasileirão Série B)",
+   "liga": "Brasileirão Série B",
+   "event_id": "15526213",
+   "minuto_alerta": 60,
+   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-10T23:56:14Z",
+   "t_captura_utc": "2026-08-10T23:56:14Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-10T23:58:16Z",
+   "segundos_transcurridos": 120,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "1.5 @ 1.57",
+   "linea_real_betano": 1.5,
+   "cuota_real_betano": 1.57,
+   "activo": true
+  }
  ]
 }
