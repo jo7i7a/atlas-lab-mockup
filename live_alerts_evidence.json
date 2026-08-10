@@ -553,5 +553,45 @@
    "cuota_real_betano": 1.47,
    "activo": true
   }
+ ],
+ "3b862565edcd0a66": [
+  {
+   "alert_id": "3b862565edcd0a66",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "IK Sirius vs IF Brommapojkarna (Allsvenskan)",
+   "liga": "Allsvenskan",
+   "event_id": "15272488",
+   "minuto_alerta": 19,
+   "condicion": "IK Sirius domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-10T17:19:23Z",
+   "t_captura_utc": "2026-08-10T17:19:23Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-10T17:21:29Z",
+   "segundos_transcurridos": 83,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.5 @ 1.91\n8.5 @ 1.53",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 1.91,
+   "activo": true
+  },
+  {
+   "alert_id": "3b862565edcd0a66",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "IK Sirius vs IF Brommapojkarna (Allsvenskan)",
+   "liga": "Allsvenskan",
+   "event_id": "15272488",
+   "minuto_alerta": 19,
+   "condicion": "IK Sirius domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-10T17:19:23Z",
+   "t_captura_utc": "2026-08-10T17:19:23Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-10T17:21:29Z",
+   "segundos_transcurridos": 83,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.5 @ 1.91\n8.5 @ 1.53",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 1.53,
+   "activo": true
+  }
  ]
 }

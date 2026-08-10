@@ -777,6 +777,77 @@
     "n_muestra": 0
    },
    "alertas_live_historial": 0
+  },
+  {
+   "id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "nombre": "Momentum de Córners 15'-25' -- versión SOLO TRIGGER LIVE (registro prospectivo LIVE)",
+   "mercado": "Total de Córners (Over) -- a verificar manualmente en Betano en el momento de la alerta. ATLAS no fija línea ni cuota.",
+   "tipo": "LIVE",
+   "hipotesis": "Prospectiva, sin evidencia previa: si un equipo empieza a dominar territorialmente entre los minutos 15-25 (centros al área o remates recientes), podría existir una oportunidad en Over de córners que el mercado aún no haya ajustado. NO se afirma que exista edge -- eso es lo que esta línea va a medir desde cero.",
+   "origen": "Hipótesis 1 de manual_estrategias_avanzadas_live.pdf ('Momentum de Córners 15''-25'''), identificada en ANALISIS_BIBLIOTECAS_LIVE_2026-08-09.md (familia A -- Córners LIVE) y APROBADA CON AJUSTE por el Director (2026-08-09/10).",
+   "hipotesis_original_pdf": {
+    "condiciones": "Prematch: equipos con >5.5 córners a favor y >4.5 en contra; favorito en casa vs rival defensivo; ligas ideales (Premier League, Bundesliga, Eredivisie, Sudamericanas); línea inicial 9.5/10.5. Live: minuto 15'-25'; equipo dominante con >=3 centros al área O >=2 remates, en los últimos 5 min.",
+    "condicion_original": "filtros prematch (perfil de córners por equipo >5.5/>4.5, favorito-en-casa-vs-rival-defensivo, ligas ideales, línea inicial 9.5/10.5)",
+    "estado": "NO_EVALUABLE_CON_DATOS_ACTUALES",
+    "motivo": "ningún detector de ATLAS aplica filtros prematch hoy -- construir esa capa (consultar CSV Maestro/Edificio 1 antes de la evaluación live) es un proyecto aparte, no incluido en esta implementación. No se aproxima con ningún proxy.",
+    "aplicada_en_version_prospectiva": false
+   },
+   "version_prospectiva_observada": "A1_V1_SOLO_TRIGGER_LIVE -- únicamente el trigger LIVE (minuto 15'-25', equipo dominante con >=3 centros al área O >=2 remates en los últimos 5 min). remates_metric=totalShotsOnGoal (decisión explícita del Director: el PDF dice 'remates' sin 'a puerta', NUNCA se sustituye por shotsOnGoal). Ningún resultado futuro debe mezclarse ni presentarse como si fuera la hipótesis completa original del PDF.",
+   "reglas_entrada": [
+    "1. Minuto de partido entre 15 y 25.",
+    "2. Equipo dominante (local o visita) con centros al área (accurateCross) >=3 en los últimos 5 min, O remates (totalShotsOnGoal) >=2 en los últimos 5 min.",
+    "3. Ventana de deltas calculada exclusivamente con live_snapshot_deltas.py (capa certificada 2026-08-09) -- nunca reimplementada a mano. Ventana 15'-25' cae enteramente en el 1er tiempo, cero riesgo de cruce de entretiempo.",
+    "NO incluye los filtros prematch de la hipótesis original (ver 'hipotesis_original_pdf')."
+   ],
+   "reglas_salida": [
+    "Alerta ÚNICA por partido, garantizada por ancla estable de deduplicación (primera captura dentro de 15'-25' en que algún equipo cumple algún trigger).",
+    "Si varios triggers califican simultáneamente (mismo o distinto equipo), se reporta uno solo de forma determinista -- NUNCA se generan 2 alertas para el mismo evento.",
+    "No aplica antes del minuto 15 ni después del minuto 25."
+   ],
+   "criterios_no_automatizables": [
+    "Cuota real de Betano (Total de Córners): verificación 100% manual del Director.",
+    "Decisión de entrada: la alerta NO es una recomendación de apuesta.",
+    "Filtros prematch de la hipótesis original: NO_EVALUABLE_CON_DATOS_ACTUALES (ver 'hipotesis_original_pdf')."
+   ],
+   "gate_evaluacion_abandono": {
+    "definido_utc": "2026-08-09",
+    "criterio": "N=30 verificaciones reales contra Betano. Abandono si operabilidad real <80% O ROI real acumulado <0% -- mismo patrón ya usado en L1-SHADOW/L2-SHADOW/A2/B1_V1, definido explícitamente ANTES de implementar por instrucción del Director (Regla #3)."
+   },
+   "estado_liquidacion": "IMPLEMENTADA",
+   "nota_liquidacion": "Mercado = córners TOTALES del partido, idéntico a L1/L1-SHADOW -- reutiliza _fetch_corners_final() + liquidar_totales() sin ninguna función nueva (a diferencia de A2, que sí necesitó una función específica de córners del 2T). Agregado a la misma rama de _calcular_resultado() que L1/L1-SHADOW en betano_liquidacion.py.",
+   "estado_actual": "OBSERVACION",
+   "estado_declarado": "OBSERVACIÓN PROSPECTIVA / EVIDENCIA FINANCIERA: NINGUNA / LÓGICA: A1_V1_SOLO_TRIGGER_LIVE",
+   "historial_estados": [
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-09",
+     "nota": "Extraída de manual_estrategias_avanzadas_live.pdf durante el análisis de las 2 bibliotecas LIVE, clasificada como VARIANTE de L1 (familia A -- Córners LIVE, trigger de velocidad reciente en vez de volumen acumulado)."
+    },
+    {
+     "estado": "OBSERVACION",
+     "fecha_utc": "2026-08-10",
+     "nota": "Aprobada CON AJUSTE por el Director: los filtros prematch quedan excluidos por no ser evaluables hoy, la versión prospectiva se identifica explícitamente como A1_V1_SOLO_TRIGGER_LIVE para nunca mezclarse con la hipótesis completa original. remates_metric=totalShotsOnGoal fijado explícitamente (no shotsOnGoal). Implementada como registro prospectivo LIVE (a1_v1_solo_trigger_live.py) sobre la capa de deltas certificada (live_snapshot_deltas.py). Liquidación automática implementada (misma rama que L1/L1-SHADOW). Gate de evaluación/abandono definido antes de implementar. No modifica L1, L1-SHADOW, L2, L2-SHADOW, L3, L4, A2, B1_V1_SIN_ATAQUES_PELIGROSOS, ni live_snapshot_deltas.py."
+    }
+   ],
+   "casos_observados": 0,
+   "casos_verificados": 2,
+   "aciertos": 0,
+   "fallos": 0,
+   "roi": null,
+   "clv": null,
+   "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
+   "fecha_creacion_utc": "2026-08-09",
+   "ultima_actualizacion_utc": "2026-08-10T17:22:03Z",
+   "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate de abandono ya definido).",
+   "metricas_fase4": {
+    "pct_operable": 100.0,
+    "n_operable": 2,
+    "n_no_operable": 0,
+    "clv_promedio": null,
+    "tiempo_medio_disponible_seg": null,
+    "n_muestra": 2
+   },
+   "alertas_live_historial": 1
   }
  ]
 }
