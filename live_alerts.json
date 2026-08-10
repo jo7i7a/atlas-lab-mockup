@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-10T19:41:11Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-08-10T19:51:09Z",
+ "n_alerts": 2,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -46,6 +46,45 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Santa Clara vs CD Nacional\n⏱ Minuto: 25'\n📊 Marcador: 2-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Santa Clara — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "1d91ed99e6df5b24"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Santa Clara vs CD Nacional (Liga Portugal Betclic)",
+   "match_id": "16450741",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 35,
+   "condicion": "4 córners totales antes del min 45 (3-1), Santa Clara presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿CD Nacional NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Santa Clara",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-10T19:50:51Z",
+   "t_captura_utc": "2026-08-10T19:50:51Z",
+   "t_evaluacion_utc": "2026-08-10T19:51:09Z",
+   "t_generacion_utc": "2026-08-10T19:51:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-10T19:51:09Z",
+     "latencia_envio_ms": 833.7125778198242,
+     "error": null,
+     "message_id": 210,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 18.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Santa Clara vs CD Nacional\n⏱ Minuto: 35'\n📊 Marcador: 2-0\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Santa Clara presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CD Nacional no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "c54b3f6f2afce7b0"
   }
  ]
 }
