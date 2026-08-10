@@ -673,5 +673,26 @@
    "cuota_real_betano": 2.12,
    "activo": true
   }
+ ],
+ "0813400b8f443e4f": [
+  {
+   "alert_id": "0813400b8f443e4f",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Goiás vs Londrina (Brasileirão Série B)",
+   "liga": "Brasileirão Série B",
+   "event_id": "15526213",
+   "minuto_alerta": 45,
+   "condicion": "Goiás acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-10T23:41:14Z",
+   "t_captura_utc": "2026-08-10T23:41:14Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-10T23:44:54Z",
+   "segundos_transcurridos": 219,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "12.0 @ 2.05",
+   "linea_real_betano": 12.0,
+   "cuota_real_betano": 2.05,
+   "activo": true
+  }
  ]
 }

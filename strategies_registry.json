@@ -1019,25 +1019,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 0,
+   "casos_verificados": 1,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
    "fecha_creacion_utc": "2026-08-09",
-   "ultima_actualizacion_utc": "2026-08-10T00:00:00Z",
+   "ultima_actualizacion_utc": "2026-08-10T23:45:03Z",
    "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate de abandono ya definido).",
    "metricas_fase4": {
-    "pct_coincide": null,
-    "pct_mejor": null,
-    "pct_suspendido": null,
-    "pct_inexistente": null,
-    "pct_operable": null,
+    "pct_operable": 100.0,
+    "n_operable": 1,
+    "n_no_operable": 0,
+    "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 0
+    "n_muestra": 1
    },
-   "alertas_live_historial": 0
+   "alertas_live_historial": 5
   }
  ]
 }
