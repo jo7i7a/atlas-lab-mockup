@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-10T17:23:54Z",
+ "generated_at_utc": "2026-08-10T17:26:54Z",
  "n_live_target": 2,
  "matches": {
   "15272488": {
@@ -8,20 +8,25 @@
    "home": "IK Sirius",
    "away": "IF Brommapojkarna",
    "home_score": 2,
-   "away_score": 0,
+   "away_score": 1,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 23,
+   "minute": 26,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 55,
-     "away": 45
+     "home": 53,
+     "away": 47
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 0,
+     "away": 1
     },
     "shots": {
      "label": "Remates totales",
-     "home": 3,
-     "away": 2
+     "home": 4,
+     "away": 3
     },
     "corners": {
      "label": "Corners",
@@ -30,13 +35,13 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 141,
-     "away": 111
+     "home": 144,
+     "away": 124
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 2,
-     "away": 2
+     "home": 3,
+     "away": 3
     },
     "xg": {
      "label": "Expected Goals (xG)",
@@ -46,48 +51,53 @@
    },
    "odds": {
     "btts": {
-     "yes": 1.571,
-     "no": 2.25,
-     "captured_at_utc": "2026-08-10T17:23:53Z"
+     "yes": 1.615,
+     "no": 2.2,
+     "captured_at_utc": "2026-08-10T17:25:14Z"
     },
     "1x2": {
-     "home": 1.045,
-     "draw": 13.0,
-     "away": 34.0,
-     "captured_at_utc": "2026-08-10T17:23:53Z"
+     "home": 1.25,
+     "draw": 5.5,
+     "away": 13.0,
+     "captured_at_utc": "2026-08-10T17:26:36Z"
     },
     "goals_over_25": {
      "over": 1.8,
      "under": 1.909,
-     "captured_at_utc": "2026-08-10T17:23:53Z"
+     "captured_at_utc": "2026-08-10T17:26:36Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-08-10T17:23:53Z"
+     "captured_at_utc": "2026-08-10T17:26:36Z"
     }
    },
-   "updated_at_utc": "2026-08-10T17:23:54Z"
+   "updated_at_utc": "2026-08-10T17:26:54Z"
   },
   "15272486": {
    "event_id": 15272486,
    "league": "Allsvenskan",
    "home": "Västerås SK",
    "away": "Djurgårdens IF",
-   "home_score": 0,
+   "home_score": 1,
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 22,
+   "minute": 25,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 50,
-     "away": 50
+     "home": 47,
+     "away": 53
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 1,
+     "away": 0
     },
     "shots": {
      "label": "Remates totales",
-     "home": 1,
+     "home": 2,
      "away": 3
     },
     "corners": {
@@ -97,12 +107,17 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 92,
-     "away": 92
+     "home": 98,
+     "away": 113
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 0,
+     "away": 1
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 1,
+     "home": 2,
      "away": 2
     },
     "xg": {
@@ -113,23 +128,23 @@
    },
    "odds": {
     "btts": {
-     "yes": 1.909,
-     "no": 1.909,
-     "captured_at_utc": "2026-08-10T17:23:53Z"
+     "yes": 1.167,
+     "no": 5.0,
+     "captured_at_utc": "2026-08-10T17:26:36Z"
     },
     "1x2": {
-     "home": 5.0,
-     "draw": 3.75,
-     "away": 1.667,
-     "captured_at_utc": "2026-08-10T17:23:53Z"
+     "home": 2.4,
+     "draw": 3.5,
+     "away": 2.75,
+     "captured_at_utc": "2026-08-10T17:26:36Z"
     },
     "goals_over_25": {
      "over": 1.833,
      "under": 1.833,
-     "captured_at_utc": "2026-08-10T17:23:53Z"
+     "captured_at_utc": "2026-08-10T17:26:36Z"
     }
    },
-   "updated_at_utc": "2026-08-10T17:23:54Z"
+   "updated_at_utc": "2026-08-10T17:26:54Z"
   }
  }
 }
