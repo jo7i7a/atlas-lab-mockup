@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-10T22:48:14Z",
+ "generated_at_utc": "2026-08-10T22:50:10Z",
  "n_alerts": 3,
  "alerts": [
   {
@@ -48,51 +48,6 @@
    "alert_id": "a6a53cfe5752dfdd"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Goiás vs Londrina (Brasileirão Série B)",
-   "match_id": "15526213",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 17,
-   "condicion": "Goiás domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Goiás",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 2,
-    "remates_home": 2,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-10T22:46:08Z",
-   "t_captura_utc": "2026-08-10T22:46:08Z",
-   "t_evaluacion_utc": "2026-08-10T22:48:13Z",
-   "t_generacion_utc": "2026-08-10T22:48:13Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-10T22:46:14Z",
-     "latencia_envio_ms": 843.4441089630127,
-     "error": null,
-     "message_id": 212,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 6.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Goiás vs Londrina\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Goiás — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "fbd1f303f9c593dd"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Banfield vs Club Atlético Belgrano (Liga Profesional de Fútbol)",
    "match_id": "16667381",
@@ -137,6 +92,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Banfield vs Club Atlético Belgrano\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Belgrano acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Club Atlético Belgrano, min 41\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "e9c5f6016137e5cd"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Goiás vs Londrina (Brasileirão Série B)",
+   "match_id": "15526213",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 19,
+   "condicion": "Goiás domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Goiás",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 2,
+    "remates_home": 2,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-10T22:46:08Z",
+   "t_captura_utc": "2026-08-10T22:46:08Z",
+   "t_evaluacion_utc": "2026-08-10T22:50:10Z",
+   "t_generacion_utc": "2026-08-10T22:50:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-10T22:46:14Z",
+     "latencia_envio_ms": 843.4441089630127,
+     "error": null,
+     "message_id": 212,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 6.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Goiás vs Londrina\n⏱ Minuto: 19'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Goiás — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "fbd1f303f9c593dd"
   }
  ]
 }
