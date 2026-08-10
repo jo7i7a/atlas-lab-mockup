@@ -203,14 +203,26 @@
     "n_muestra": 0
    },
    "alertas_live_historial": 0,
-   "defecto_historico": {
-    "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
-    "detectado_utc": "2026-08-08",
-    "corregido_y_certificado_utc": "2026-08-08T23:42:56Z",
-    "impacto": "0 alertas emitidas desde la creación de la estrategia hasta la corrección",
-    "evidencia_previa_valida": false
-   },
-   "observacion_prospectiva_valida_desde_utc": "2026-08-08T23:42:56Z"
+   "defectos_historicos": [
+    {
+     "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
+     "detectado_utc": "2026-08-08",
+     "corregido_y_certificado_utc": "2026-08-08T23:42:56Z",
+     "impacto": "0 alertas emitidas desde la creación de la estrategia hasta la corrección",
+     "evidencia_previa_valida": false
+    },
+    {
+     "tipo": "DEFECTO CRÍTICO -- ancla de deduplicación (_find_first_qualifying_capture) solo consideraba xG+SOT+sin-roja, ignorando minuto y \"dominante no gana\". Si esas dos condiciones tardaban en alinearse con un ancla de xG/SOT ya vieja, el TTL (contado desde ese ancla) podía vencer ANTES de que la alerta naciera.",
+     "detectado_utc": "2026-08-09",
+     "evidencia_del_defecto": "Partido Benfica vs Académico Viseu FC (event_id=16450742): 2 candidatos completos reales generados por L2, ambos suprimidos por SUPRIMIDA_EXPIRADA (TTL) -- alert_id 31023564b9056968 (min 56) y 8e9ebc0b9b617e45 (min 67). Ninguno llegó a Telegram.",
+     "corregido_y_certificado_utc": "2026-08-10T00:09:04Z",
+     "cambio_realizado": "Nueva función _find_stable_anchor(): reconstruye las 5 condiciones completas (incluidos minuto real -- corregido por bloque '2ND', no back-proyección lineal -- y marcador vía ip001_incidents) por captura histórica, y ancla a la transición más reciente de no-elegible a elegible vigente. Además, 'condicion' ya no incluye el marcador (mismo patrón de fix ya aplicado a L3 el 2026-08-08), indispensable para que la identidad de la señal sea estable. Ningún umbral, ventana ni condición deportiva fue modificado.",
+     "evidencia_previa_valida": true,
+     "justificacion_no_reinicio": "La evidencia Betano ya registrada (verificaciones reales que SÍ llegaron a Telegram, ej. FC Groningen vs FC Utrecht) nunca fue afectada por este defecto -- el bug solo suprimía candidatos ANTES de que llegaran a Telegram, nunca corrompió una alerta ya entregada ni una verificación ya registrada. No hay contaminación de datos, solo oportunidades perdidas (cobertura incompleta, no calidad de dato incorrecta). Por eso NO se reinician los contadores prospectivos."
+    }
+   ],
+   "observacion_prospectiva_valida_desde_utc": "2026-08-08T23:42:56Z",
+   "observacion_con_ancla_corregida_desde_utc": "2026-08-10T00:09:04Z"
   },
   {
    "id": "L3",
@@ -326,24 +338,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 10,
+   "casos_verificados": 11,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "Ninguna todavía -- prueba Shadow recién activada 2026-08-08, sin alertas propias aún.",
    "fecha_creacion_utc": "2026-08-08",
-   "ultima_actualizacion_utc": "2026-08-09T23:02:03Z",
+   "ultima_actualizacion_utc": "2026-08-10T01:48:05Z",
    "proximo_hito": "Acumular evidencia en paralelo con L1 original. Comparar tasa de operabilidad/CLV/ROI entre ambas cuando haya muestra suficiente -- sin umbral de N fijado todavía.",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 10,
+    "n_operable": 11,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 10
+    "n_muestra": 11
    },
-   "alertas_live_historial": 23,
+   "alertas_live_historial": 25,
    "defecto_historico": {
     "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
     "detectado_utc": "2026-08-08",
@@ -444,14 +456,26 @@
     "n_muestra": 4
    },
    "alertas_live_historial": 19,
-   "defecto_historico": {
-    "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
-    "detectado_utc": "2026-08-08",
-    "corregido_y_certificado_utc": "2026-08-08T23:42:56Z",
-    "impacto": "0 alertas emitidas desde la creación de la estrategia hasta la corrección",
-    "evidencia_previa_valida": false
-   },
-   "observacion_prospectiva_valida_desde_utc": "2026-08-08T23:42:56Z"
+   "defectos_historicos": [
+    {
+     "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
+     "detectado_utc": "2026-08-08",
+     "corregido_y_certificado_utc": "2026-08-08T23:42:56Z",
+     "impacto": "0 alertas emitidas desde la creación de la estrategia hasta la corrección",
+     "evidencia_previa_valida": false
+    },
+    {
+     "tipo": "DEFECTO CRÍTICO -- ancla de deduplicación (_find_first_qualifying_capture) solo consideraba xG+SOT+sin-roja, ignorando minuto y \"dominante no gana\". Si esas dos condiciones tardaban en alinearse con un ancla de xG/SOT ya vieja, el TTL (contado desde ese ancla) podía vencer ANTES de que la alerta naciera. Mismo defecto que L2, código estructuralmente idéntico (única diferencia MAX_MINUTE=80).",
+     "detectado_utc": "2026-08-09",
+     "evidencia_del_defecto": "Partido Benfica vs Académico Viseu FC (event_id=16450742): 9 candidatos completos reales generados por L2-SHADOW, TODOS suprimidos por SUPRIMIDA_EXPIRADA (TTL), ninguno llegó a Telegram -- alert_id/minuto/t_generacion_utc: aaf7c0a958f7a633 (min 56, 2026-08-09T20:46:22Z), d659287aa0d2a372 (min 67, 2026-08-09T20:57:14Z), 0dd1a4b1f3da0799 (min 69, 2026-08-09T20:59:15Z), 679222e650356893 (min 70, 2026-08-09T21:00:14Z), 1915c59bab3192b0 (min 71, 2026-08-09T21:01:15Z), 68dd1dcdce4392f9 (min 73, 2026-08-09T21:03:13Z), d6849bf6c663355f (min 75, 2026-08-09T21:05:13Z), 9b39b0840c61f806 (min 78, 2026-08-09T21:08:14Z), b4ce0e3d2f5a915c (min 79, 2026-08-09T21:09:13Z). Verificado directamente contra live_alerts_history.jsonl (no contra memoria de auditoría previa, que había estimado 8 por error).",
+     "corregido_y_certificado_utc": "2026-08-10T00:09:04Z",
+     "cambio_realizado": "Nueva función _find_stable_anchor() (idéntica en diseño a la de L2): reconstruye las 5 condiciones completas (incluidos minuto real -- corregido por bloque '2ND', no back-proyección lineal -- y marcador vía ip001_incidents) por captura histórica, y ancla a la transición más reciente de no-elegible a elegible vigente. Además, 'condicion' ya no incluye el marcador, indispensable para que la identidad de la señal sea estable. Ningún umbral, ventana (MAX_MINUTE sigue en 80), ni condición deportiva fue modificado -- L2 y L2-SHADOW conservan exactamente la misma lógica congelada salvo ese único parámetro.",
+     "evidencia_previa_valida": true,
+     "justificacion_no_reinicio": "La evidencia Betano ya registrada (verificaciones reales que SÍ llegaron a Telegram) nunca fue afectada por este defecto -- el bug solo suprimía candidatos ANTES de que llegaran a Telegram, nunca corrompió una alerta ya entregada ni una verificación ya registrada. No hay contaminación de datos, solo oportunidades perdidas (cobertura incompleta, no calidad de dato incorrecta). Por eso NO se reinician los contadores prospectivos."
+    }
+   ],
+   "observacion_prospectiva_valida_desde_utc": "2026-08-08T23:42:56Z",
+   "observacion_con_ancla_corregida_desde_utc": "2026-08-10T00:09:04Z"
   },
   {
    "id": "L4",
