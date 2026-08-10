@@ -1,5 +1,51 @@
 {
- "generated_at_utc": "2026-08-10T20:22:09Z",
- "n_alerts": 0,
- "alerts": []
+ "generated_at_utc": "2026-08-10T22:24:17Z",
+ "n_alerts": 1,
+ "alerts": [
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Banfield vs Club Atlético Belgrano (Liga Profesional de Fútbol)",
+   "match_id": "16667381",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 21,
+   "condicion": "Banfield domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Banfield",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 1,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-10T22:23:24Z",
+   "t_captura_utc": "2026-08-10T22:23:24Z",
+   "t_evaluacion_utc": "2026-08-10T22:24:16Z",
+   "t_generacion_utc": "2026-08-10T22:24:16Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-10T22:24:17Z",
+     "latencia_envio_ms": 853.5587787628174,
+     "error": null,
+     "message_id": 211,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 53.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Banfield vs Club Atlético Belgrano\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Banfield — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "a6a53cfe5752dfdd"
+  }
+ ]
 }
