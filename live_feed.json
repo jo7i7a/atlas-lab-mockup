@@ -1,7 +1,64 @@
 {
- "generated_at_utc": "2026-08-10T22:29:54Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-08-10T22:32:53Z",
+ "n_live_target": 2,
  "matches": {
+  "15526213": {
+   "event_id": 15526213,
+   "league": "Brasileirão Série B",
+   "home": "Goiás",
+   "away": "Londrina",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 91,
+     "away": 9
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0.01
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 1
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 21,
+     "away": 2
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.2,
+     "no": 1.615,
+     "captured_at_utc": "2026-08-10T22:32:51Z"
+    },
+    "1x2": {
+     "home": 1.667,
+     "draw": 3.4,
+     "away": 6.0,
+     "captured_at_utc": "2026-08-10T22:32:51Z"
+    },
+    "goals_over_25": {
+     "over": 2.25,
+     "under": 1.571,
+     "captured_at_utc": "2026-08-10T22:32:51Z"
+    }
+   },
+   "updated_at_utc": "2026-08-10T22:32:53Z"
+  },
   "16667381": {
    "event_id": 16667381,
    "league": "Liga Profesional de Fútbol",
@@ -11,12 +68,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 27,
+   "minute": 30,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 44,
-     "away": 56
+     "home": 45,
+     "away": 55
     },
     "xg": {
      "label": "Expected Goals (xG)",
@@ -40,8 +97,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 98,
-     "away": 131
+     "home": 107,
+     "away": 134
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -56,23 +113,23 @@
    },
    "odds": {
     "btts": {
-     "yes": 2.625,
-     "no": 1.444,
-     "captured_at_utc": "2026-08-10T22:29:48Z"
+     "yes": 2.75,
+     "no": 1.4,
+     "captured_at_utc": "2026-08-10T22:32:51Z"
     },
     "1x2": {
-     "home": 3.2,
+     "home": 3.1,
      "draw": 2.625,
      "away": 2.75,
-     "captured_at_utc": "2026-08-10T22:29:48Z"
+     "captured_at_utc": "2026-08-10T22:32:51Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.5,
-     "captured_at_utc": "2026-08-10T22:29:48Z"
+     "captured_at_utc": "2026-08-10T22:32:51Z"
     }
    },
-   "updated_at_utc": "2026-08-10T22:29:54Z"
+   "updated_at_utc": "2026-08-10T22:32:53Z"
   }
  }
 }
