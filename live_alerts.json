@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-08-10T23:36:15Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-08-10T23:37:15Z",
+ "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Banfield vs Club Atlético Belgrano (Liga Profesional de Fútbol)",
-   "match_id": "16667381",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 0,
-    "corners_1t_total": 1
-   },
-   "t_evento_real_utc": "2026-08-10T23:06:34Z",
-   "t_captura_utc": "2026-08-10T23:06:34Z",
-   "t_evaluacion_utc": "2026-08-10T23:14:16Z",
-   "t_generacion_utc": "2026-08-10T23:14:16Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-10T23:08:14Z",
-     "latencia_envio_ms": 792.9825782775879,
-     "error": null,
-     "message_id": 216,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 100.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Banfield vs Club Atlético Belgrano\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "759b2710510ac058"
-  },
   {
    "strategy_id": "L1-SHADOW",
    "match_label": "Goiás vs Londrina (Brasileirão Série B)",
@@ -133,7 +95,7 @@
    "match_id": "16667381",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 74,
+   "minuto": 75,
    "condicion": "Club Atlético Belgrano acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -146,7 +108,7 @@
     "touches_home": 13,
     "touches_away": 25,
     "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 41,
+    "minuto_ultima_sustitucion": 74,
     "equipo_que_realizo_sustitucion": "Club Atlético Belgrano",
     "marcador_en_el_momento": "0-2",
     "t_primera_observacion_atlas": "2026-08-10T23:08:18Z",
@@ -155,9 +117,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-10T23:08:18Z",
-   "t_captura_utc": "2026-08-10T23:36:15Z",
-   "t_evaluacion_utc": "2026-08-10T23:36:15Z",
-   "t_generacion_utc": "2026-08-10T23:36:15Z",
+   "t_captura_utc": "2026-08-10T23:37:15Z",
+   "t_evaluacion_utc": "2026-08-10T23:37:15Z",
+   "t_generacion_utc": "2026-08-10T23:37:15Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -171,7 +133,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Banfield vs Club Atlético Belgrano\n⏱ Minuto: 74'\n📊 Marcador: 0-2\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Belgrano acumula 66% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Club Atlético Belgrano, min 41\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Banfield vs Club Atlético Belgrano\n⏱ Minuto: 75'\n📊 Marcador: 0-2\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Belgrano acumula 66% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Club Atlético Belgrano, min 74\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "582305c8be706b0e"
   }
