@@ -338,24 +338,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 12,
+   "casos_verificados": 14,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "Ninguna todavía -- prueba Shadow recién activada 2026-08-08, sin alertas propias aún.",
    "fecha_creacion_utc": "2026-08-08",
-   "ultima_actualizacion_utc": "2026-08-10T01:49:05Z",
+   "ultima_actualizacion_utc": "2026-08-10T17:12:03Z",
    "proximo_hito": "Acumular evidencia en paralelo con L1 original. Comparar tasa de operabilidad/CLV/ROI entre ambas cuando haya muestra suficiente -- sin umbral de N fijado todavía.",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 12,
+    "n_operable": 14,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 12
+    "n_muestra": 14
    },
-   "alertas_live_historial": 25,
+   "alertas_live_historial": 27,
    "defecto_historico": {
     "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
     "detectado_utc": "2026-08-08",
@@ -619,6 +619,154 @@
    "fecha_creacion_utc": "2026-08-09",
    "ultima_actualizacion_utc": "2026-08-09T00:00:00Z",
    "proximo_hito": "Acumular observaciones reales con verificación manual en Betano. Sin umbral de N fijado todavía -- se definirá cuando exista una primera muestra.",
+   "metricas_fase4": {
+    "pct_coincide": null,
+    "pct_mejor": null,
+    "pct_suspendido": null,
+    "pct_inexistente": null,
+    "pct_operable": null,
+    "tiempo_medio_disponible_seg": null,
+    "n_muestra": 0
+   },
+   "alertas_live_historial": 0
+  },
+  {
+   "id": "A2",
+   "nombre": "Clúster de Córners en el Segundo Tiempo (registro prospectivo LIVE)",
+   "mercado": "Total de Córners en la 2ª Mitad (Over) -- a verificar manualmente en Betano en el momento de la alerta. ATLAS no fija línea ni cuota.",
+   "tipo": "LIVE",
+   "hipotesis": "Prospectiva, sin evidencia previa: si un partido llega al inicio del 2º tiempo con pocos córners en el 1T (<4), podría haber una reversión hacia más actividad ofensiva/córners en la 2ª mitad que el mercado de córners de 2T no esté descontando del todo. NO se afirma que exista edge -- eso es lo que esta línea va a medir desde cero.",
+   "origen": "Hipótesis 2 de manual_estrategias_avanzadas_live.pdf ('Clúster de Córners en el Segundo Tiempo'), identificada en ANALISIS_BIBLIOTECAS_LIVE_2026-08-09.md (familia A -- Córners LIVE) y APROBADA TAL CUAL por el Director (2026-08-09), sin ajustes respecto a la hipótesis original del PDF.",
+   "reglas_entrada": [
+    "1. Inicio exacto del 2º tiempo (ancla = primera captura histórica con datos del bloque '2ND').",
+    "2. Menos de 4 córners totales en el 1er tiempo, en esa misma captura ancla.",
+    "Tolerancia de implementación (no es parte de la hipótesis): el detector evalúa dentro de una ventana de gracia de minuto 46-52 para no perder el disparo por desfase de sondeo (~1 min de cadencia)."
+   ],
+   "reglas_salida": [
+    "Alerta ÚNICA por partido, garantizada por ancla estable (primera captura con datos '2ND').",
+    "No aplica si el 1er tiempo tuvo 4 o más córners totales."
+   ],
+   "criterios_no_automatizables": [
+    "Cuota real de Betano para Total de Córners 2ª Mitad: verificación 100% manual del Director.",
+    "Decisión de entrada: la alerta NO es una recomendación de apuesta."
+   ],
+   "gate_evaluacion_abandono": {
+    "definido_utc": "2026-08-09",
+    "criterio": "N=30 verificaciones reales contra Betano. Abandono si operabilidad real <80% O ROI real acumulado <0% -- mismo patrón ya usado en L1-SHADOW/L2-SHADOW, definido explícitamente ANTES de implementar por instrucción del Director (Regla #3)."
+   },
+   "estado_liquidacion": "IMPLEMENTADA",
+   "nota_liquidacion": "Auditoría empírica confirmó fuente fiable para córners del 2T (27/28 partidos terminados con datos completos, 27/27 consistentes 1ST+2ND==ALL) vía /event/{id}/statistics, período '2ND'. Implementado 2026-08-09: _fetch_corners_2t_final() + rama en _calcular_resultado(), SIN reutilizar el liquidador de córners totales de L1 (verificado con test dedicado). Ciclo completo DETECCIÓN→ALERTA→REGISTRO→RESULTADO→LIQUIDACIÓN→MÉTRICAS operativo. 8 tests dedicados + regresión completa 1220/1220.",
+   "estado_actual": "OBSERVACION",
+   "estado_declarado": "OBSERVACIÓN PROSPECTIVA / EVIDENCIA FINANCIERA: NINGUNA / LÓGICA: PROPUESTA APROBADA",
+   "historial_estados": [
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-09",
+     "nota": "Extraída de manual_estrategias_avanzadas_live.pdf durante el análisis de las 2 bibliotecas LIVE, clasificada como hipótesis NUEVA (familia A -- Córners LIVE, sin duplicar L1/L1-SHADOW)."
+    },
+    {
+     "estado": "OBSERVACION",
+     "fecha_utc": "2026-08-09",
+     "nota": "Aprobada TAL CUAL por el Director, sin ajustes. Implementada como registro prospectivo LIVE (a2_cluster_corners_2t.py). Gate de evaluación/abandono definido antes de implementar (N=30, operabilidad<80% u ROI<0%). No modifica L1, L1-SHADOW, L2, L2-SHADOW, L3 ni L4."
+    },
+    {
+     "estado": "OBSERVACION",
+     "fecha_utc": "2026-08-09",
+     "nota": "Auditoría de liquidación completada por instrucción del Director: fuente fiable confirmada para córners del 2T. Diseño propuesto, NO implementado -- pendiente de aprobación explícita (ver AUDITORIA_LIQUIDACION_A2_B1_2026-08-09.md)."
+    },
+    {
+     "estado": "OBSERVACION",
+     "fecha_utc": "2026-08-09",
+     "nota": "Liquidación automática IMPLEMENTADA y certificada (autorización explícita del Director): _fetch_corners_2t_final() + rama dedicada en betano_liquidacion._calcular_resultado(), ciclo completo DETECCIÓN→ALERTA→REGISTRO→RESULTADO→LIQUIDACIÓN→MÉTRICAS cerrado. No modifica L1-L4."
+    }
+   ],
+   "casos_observados": 0,
+   "casos_verificados": 0,
+   "aciertos": 0,
+   "fallos": 0,
+   "roi": null,
+   "clv": null,
+   "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
+   "fecha_creacion_utc": "2026-08-09",
+   "ultima_actualizacion_utc": "2026-08-09T00:00:00Z",
+   "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate de abandono ya definido).",
+   "metricas_fase4": {
+    "pct_coincide": null,
+    "pct_mejor": null,
+    "pct_suspendido": null,
+    "pct_inexistente": null,
+    "pct_operable": null,
+    "tiempo_medio_disponible_seg": null,
+    "n_muestra": 0
+   },
+   "alertas_live_historial": 0
+  },
+  {
+   "id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
+   "nombre": "Perfil Goleador Multi-Stat Temprano en 0-0 -- versión SIN ataques peligrosos (registro prospectivo LIVE)",
+   "mercado": "Over 1.5 Goles FT (o Over 0.5 2ª Mitad) -- a verificar manualmente en Betano en el momento de la alerta. ATLAS no fija línea ni cuota.",
+   "tipo": "LIVE",
+   "hipotesis": "Prospectiva, sin evidencia previa: si un partido sigue 0-0 entre los minutos 32-42 pese a una dominancia ofensiva combinada medible (remates, tiros a puerta, córners), podría existir una oportunidad en Over de goles que el mercado no esté descontando del todo. NO se afirma que exista edge -- eso es lo que esta línea va a medir desde cero.",
+   "origen": "Hipótesis 6 de manual_estrategias_avanzadas_live.pdf ('Over 1.5 FT tras 0-0 con Dominancia Sostenida'), identificada en ANALISIS_BIBLIOTECAS_LIVE_2026-08-09.md (familia B -- Goles LIVE) y APROBADA CON AJUSTE por el Director (2026-08-09).",
+   "hipotesis_original_pdf": {
+    "condiciones": "0-0 entre min 32-42 AND >=9 remates totales AND >=4 a puerta AND >=5 córners totales AND +8 ataques peligrosos a favor del dominante => Over 1.5 goles FT (o Over 0.5 2ª mitad).",
+    "condicion_original": "ataques peligrosos a favor del dominante",
+    "estado": "NO_EVALUABLE",
+    "motivo": "el campo 'dangerousAttacks' (o equivalente) no existe en ningún grupo de /event/{id}/statistics -- confirmado por inspección directa del esquema real capturado en signal_platform_capture.db (ver Parte D de ANALISIS_BIBLIOTECAS_LIVE_2026-08-09.md).",
+    "aplicada_en_version_prospectiva": false
+   },
+   "version_prospectiva_observada": "B1_V1_SIN_ATAQUES_PELIGROSOS -- únicamente las 4 condiciones evaluables (marcador 0-0, minuto 32-42, remates≥9, SOT≥4, córners≥5, todos combinados). Ningún resultado futuro debe mezclarse ni presentarse como si fuera la hipótesis completa original del PDF.",
+   "estado_liquidacion": "IMPLEMENTADA_CON_TAG_EXPLICITO",
+   "nota_liquidacion": "Resuelto 2026-08-09 (opción TAG EXPLÍCITO elegida por el Director, no default ambiguo): el registro manual ahora acepta 'FT LÍNEA @ CUOTA' / '2T LÍNEA @ CUOTA' en el mismo mensaje, cada una como observación independiente con identidad propia (linea, mercado_variante) -- nunca se pisan entre sí aunque compartan línea numérica. Liquidación: FT usa goles totales FT (mismo patrón que L3/L4); 2T usa _fetch_goles_2t_final() (nuevo, auditado empíricamente: 20/20 partidos terminados con la suma de incidentes 'goal' coincidiendo exacto con el marcador final -- ver AUDITORIA_LIQUIDACION_A2_B1_2026-08-09.md, addendum). REGLA DE SEGURIDAD implementada: una línea sin tag NUNCA se asume FT ni 2T -- se registra igual (no se pierde evidencia) marcada 'PENDIENTE_CLASIFICACION_MERCADO', queda fuera de la liquidación automática, y el bot responde pidiendo el tag explícito. 19 tests dedicados + regresión completa 1220/1220, retrocompatibilidad de las 6 estrategias existentes verificada sin cambios (52/52 tests previos sin tocar).",
+   "reglas_entrada": [
+    "1. Marcador 0-0.",
+    "2. Minuto de partido entre 32 y 42.",
+    "3. Remates totales combinados (local+visita) >= 9.",
+    "4. Tiros a puerta combinados (local+visita) >= 4.",
+    "5. Córners totales combinados (local+visita) >= 5.",
+    "Las 5 condiciones deben cumplirse SIMULTÁNEAMENTE. NO incluye la condición original de ataques peligrosos (ver 'hipotesis_original_pdf')."
+   ],
+   "reglas_salida": [
+    "Alerta ÚNICA por partido, garantizada por ancla estable de deduplicación (primer instante dentro de la ventana 32-42 en que se cumplieron las 5 condiciones a la vez).",
+    "No aplica antes del minuto 32, después del minuto 42, ni con marcador distinto de 0-0."
+   ],
+   "criterios_no_automatizables": [
+    "Cuota real de Betano (Over 1.5 FT u Over 0.5 2ª mitad): verificación 100% manual del Director.",
+    "Decisión de entrada: la alerta NO es una recomendación de apuesta."
+   ],
+   "gate_evaluacion_abandono": {
+    "definido_utc": "2026-08-09",
+    "criterio": "N=30 verificaciones reales contra Betano. Abandono si operabilidad real <80% O ROI real acumulado <0% -- mismo patrón ya usado en L1-SHADOW/L2-SHADOW, definido explícitamente ANTES de implementar por instrucción del Director (Regla #3)."
+   },
+   "estado_actual": "OBSERVACION",
+   "estado_declarado": "OBSERVACIÓN PROSPECTIVA / EVIDENCIA FINANCIERA: NINGUNA / LÓGICA: PROPUESTA APROBADA CON AJUSTE",
+   "historial_estados": [
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-09",
+     "nota": "Extraída de manual_estrategias_avanzadas_live.pdf durante el análisis de las 2 bibliotecas LIVE, clasificada como VARIANTE de L4 (familia B -- Goles LIVE, 'L4 temprano' multi-métrica)."
+    },
+    {
+     "estado": "OBSERVACION",
+     "fecha_utc": "2026-08-09",
+     "nota": "Aprobada CON AJUSTE por el Director: la condición de ataques peligrosos queda excluida por no ser medible, la versión prospectiva se identifica explícitamente como B1_V1_SIN_ATAQUES_PELIGROSOS para nunca mezclarse con la hipótesis completa original. Implementada como registro prospectivo LIVE (b1_perfil_goleador_00_temprano.py). Gate de evaluación/abandono definido antes de implementar (N=30, operabilidad<80% u ROI<0%). No modifica L1, L1-SHADOW, L2, L2-SHADOW, L3 ni L4."
+    },
+    {
+     "estado": "OBSERVACION",
+     "fecha_utc": "2026-08-09",
+     "nota": "Ambigüedad de mercado (FT vs 2T) resuelta con TAG EXPLÍCITO (decisión del Director, no default ambiguo). Liquidación automática IMPLEMENTADA y certificada para ambos mercados, con separación total de identidad/registro/liquidación entre FT y 2T. Líneas sin tag quedan PENDIENTE_CLASIFICACION_MERCADO, nunca se asumen -- el bot pide clasificación explícita. Ciclo completo DETECCIÓN→ALERTA→REGISTRO→RESULTADO→LIQUIDACIÓN→MÉTRICAS cerrado."
+    }
+   ],
+   "casos_observados": 0,
+   "casos_verificados": 0,
+   "aciertos": 0,
+   "fallos": 0,
+   "roi": null,
+   "clv": null,
+   "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
+   "fecha_creacion_utc": "2026-08-09",
+   "ultima_actualizacion_utc": "2026-08-09T00:00:00Z",
+   "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate de abandono ya definido).",
    "metricas_fase4": {
     "pct_coincide": null,
     "pct_mejor": null,
