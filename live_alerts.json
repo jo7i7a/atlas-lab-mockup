@@ -1,54 +1,44 @@
 {
- "generated_at_utc": "2026-08-11T23:29:33Z",
+ "generated_at_utc": "2026-08-11T23:30:18Z",
  "n_alerts": 2,
  "alerts": [
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Avaí vs Clube De Regatas Brasil (Brasileirão Série B)",
-   "match_id": "15526214",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "strategy_id": "L3",
+   "match_label": "Boca Juniors vs Recoleta FC (CONMEBOL Sudamericana)",
+   "match_id": "16253370",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
    "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "Clube De Regatas Brasil acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "minuto": 70,
+   "condicion": "Expulsión de Recoleta FC (roja #2 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
    "confianza": "Media",
    "link": "",
-   "priority": "MEDIA",
+   "priority": "ALTA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "equipo_dominante": "Clube De Regatas Brasil",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.625,
-    "touches_home": 3,
-    "touches_away": 5,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 13,
-    "equipo_que_realizo_sustitucion": "Clube De Regatas Brasil",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-11T22:59:34Z",
-    "t_inicio_estimado_condicion": "2026-08-11T22:53:10Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+    "equipo_expulsado": "Recoleta FC",
+    "marcador_al_detectar": "3-1",
+    "total_rojas_partido": 2
    },
-   "t_evento_real_utc": "2026-08-11T22:59:34Z",
-   "t_captura_utc": "2026-08-11T23:03:13Z",
-   "t_evaluacion_utc": "2026-08-11T23:03:13Z",
-   "t_generacion_utc": "2026-08-11T23:03:13Z",
+   "t_evento_real_utc": "2026-08-11T23:30:06Z",
+   "t_captura_utc": "2026-08-11T23:30:06Z",
+   "t_evaluacion_utc": "2026-08-11T23:30:12Z",
+   "t_generacion_utc": "2026-08-11T23:30:12Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
      "estado": "OK",
-     "t_envio_utc": "2026-08-11T22:59:36Z",
-     "latencia_envio_ms": 1433.0220222473145,
+     "t_envio_utc": "2026-08-11T23:30:13Z",
+     "latencia_envio_ms": 889.1963958740234,
      "error": null,
-     "message_id": 283,
-     "chat_id": -5314130598
+     "message_id": 286,
+     "chat_id": -5219979824
     }
    },
-   "latencia_total_seg": 2.0,
+   "latencia_total_seg": 7.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Avaí vs Clube De Regatas Brasil\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Clube De Regatas Brasil acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Clube De Regatas Brasil, min 13\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Boca Juniors vs Recoleta FC\n⏱ Minuto: 70'\n📊 Marcador: 3-1\n🏆 Liga: CONMEBOL Sudamericana\n\n🟥 Expulsado: Recoleta FC\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
    "evidencia": null,
-   "alert_id": "b027b71a725cb5b5"
+   "alert_id": "b83affe8574dd38c"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -56,7 +46,7 @@
    "match_id": "16253162",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 70,
+   "minuto": 71,
    "condicion": "Fluminense acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -69,7 +59,7 @@
     "touches_home": 19,
     "touches_away": 10,
     "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 61,
+    "minuto_ultima_sustitucion": 70,
     "equipo_que_realizo_sustitucion": "Fluminense",
     "marcador_en_el_momento": "0-0",
     "t_primera_observacion_atlas": "2026-08-11T23:11:39Z",
@@ -78,9 +68,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-11T23:11:39Z",
-   "t_captura_utc": "2026-08-11T23:29:32Z",
-   "t_evaluacion_utc": "2026-08-11T23:29:32Z",
-   "t_generacion_utc": "2026-08-11T23:29:32Z",
+   "t_captura_utc": "2026-08-11T23:30:16Z",
+   "t_evaluacion_utc": "2026-08-11T23:30:17Z",
+   "t_generacion_utc": "2026-08-11T23:30:17Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -94,7 +84,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Fluminense vs Independiente Rivadavia\n⏱ Minuto: 70'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Fluminense acumula 66% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Fluminense, min 61\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Fluminense vs Independiente Rivadavia\n⏱ Minuto: 71'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Fluminense acumula 66% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Fluminense, min 70\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "91d589dc7db40763"
   }
