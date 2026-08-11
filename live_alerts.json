@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-11T23:03:13Z",
+ "generated_at_utc": "2026-08-11T23:04:09Z",
  "n_alerts": 6,
  "alerts": [
   {
@@ -172,45 +172,6 @@
    "alert_id": "4abac2a104eb22a7"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Avaí vs Clube De Regatas Brasil (Brasileirão Série B)",
-   "match_id": "15526214",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "5 córners totales antes del min 45 (4-1), Avaí presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Clube De Regatas Brasil NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 1,
-    "equipo_presiona": "Avaí",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-11T22:56:14Z",
-   "t_captura_utc": "2026-08-11T22:56:14Z",
-   "t_evaluacion_utc": "2026-08-11T23:03:09Z",
-   "t_generacion_utc": "2026-08-11T23:03:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-11T22:57:10Z",
-     "latencia_envio_ms": 783.1306457519531,
-     "error": null,
-     "message_id": 281,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 56.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Avaí vs Clube De Regatas Brasil\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 4\nVisita: 1\nTotal: 5\n\n📝 Motivo: Avaí presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Clube De Regatas Brasil no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "6ea79eb0ec00fd2d"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Avaí vs Clube De Regatas Brasil (Brasileirão Série B)",
    "match_id": "15526214",
@@ -257,6 +218,45 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Avaí vs Clube De Regatas Brasil\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Clube De Regatas Brasil acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Clube De Regatas Brasil, min 13\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "b027b71a725cb5b5"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Avaí vs Clube De Regatas Brasil (Brasileirão Série B)",
+   "match_id": "15526214",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 31,
+   "condicion": "5 córners totales antes del min 45 (4-1), Avaí presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Clube De Regatas Brasil NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 1,
+    "equipo_presiona": "Avaí",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-11T22:56:14Z",
+   "t_captura_utc": "2026-08-11T22:56:14Z",
+   "t_evaluacion_utc": "2026-08-11T23:04:09Z",
+   "t_generacion_utc": "2026-08-11T23:04:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-11T22:57:10Z",
+     "latencia_envio_ms": 783.1306457519531,
+     "error": null,
+     "message_id": 281,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 56.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Avaí vs Clube De Regatas Brasil\n⏱ Minuto: 31'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 4\nVisita: 1\nTotal: 5\n\n📝 Motivo: Avaí presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Clube De Regatas Brasil no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "6ea79eb0ec00fd2d"
   }
  ]
 }
