@@ -715,5 +715,45 @@
    "cuota_real_betano": 1.57,
    "activo": true
   }
+ ],
+ "39dcc1983785bab1": [
+  {
+   "alert_id": "39dcc1983785bab1",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Club Atlético Unión de Santa Fe vs Central Córdoba (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16667375",
+   "minuto_alerta": 18,
+   "condicion": "Club Atlético Unión de Santa Fe domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-11T00:33:13Z",
+   "t_captura_utc": "2026-08-11T00:33:13Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-11T00:36:28Z",
+   "segundos_transcurridos": 131,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "8.5 @ 1.52\n9.5 @ 2.0",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 1.52,
+   "activo": true
+  },
+  {
+   "alert_id": "39dcc1983785bab1",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Club Atlético Unión de Santa Fe vs Central Córdoba (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16667375",
+   "minuto_alerta": 18,
+   "condicion": "Club Atlético Unión de Santa Fe domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-11T00:33:13Z",
+   "t_captura_utc": "2026-08-11T00:33:13Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-11T00:36:28Z",
+   "segundos_transcurridos": 131,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "8.5 @ 1.52\n9.5 @ 2.0",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 2.0,
+   "activo": true
+  }
  ]
 }
