@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-11T19:25:17Z",
+ "generated_at_utc": "2026-08-11T19:33:29Z",
  "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "NEC Nijmegen vs Olympiacos FC (UEFA Champions League)",
-   "match_id": "16578110",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 85,
-   "condicion": "NEC Nijmegen acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "NEC Nijmegen",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6774,
-    "touches_home": 21,
-    "touches_away": 10,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 34,
-    "equipo_que_realizo_sustitucion": "NEC Nijmegen",
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-08-11T18:56:17Z",
-    "t_inicio_estimado_condicion": "2026-08-11T17:52:01Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-11T18:56:17Z",
-   "t_captura_utc": "2026-08-11T19:14:01Z",
-   "t_evaluacion_utc": "2026-08-11T19:14:01Z",
-   "t_generacion_utc": "2026-08-11T19:14:01Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-11T18:56:18Z",
-     "latencia_envio_ms": 895.0140476226807,
-     "error": null,
-     "message_id": 262,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ NEC Nijmegen vs Olympiacos FC\n⏱ Minuto: 85'\n📊 Marcador: 1-1\n🏆 Liga: UEFA Champions League\n\n📝 Motivo: NEC Nijmegen acumula 68% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: NEC Nijmegen, min 34\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "4a624659ca4153d9"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Olympique Lyonnais vs AC Sparta Praha (UEFA Champions League)",
@@ -142,6 +94,45 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Olympique Lyonnais vs AC Sparta Praha\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: UEFA Champions League\n\n📝 Motivo: AC Sparta Praha — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "a0ba2d0a5fc09e38"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "SK Sturm Graz vs Fenerbahçe (UEFA Champions League)",
+   "match_id": "16613793",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "5 córners totales antes del min 45 (2-3), Fenerbahçe presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿SK Sturm Graz NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 2,
+    "corners_away": 3,
+    "equipo_presiona": "Fenerbahçe",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-11T19:15:48Z",
+   "t_captura_utc": "2026-08-11T19:15:48Z",
+   "t_evaluacion_utc": "2026-08-11T19:33:09Z",
+   "t_generacion_utc": "2026-08-11T19:33:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-11T19:33:10Z",
+     "latencia_envio_ms": 888.8418674468994,
+     "error": null,
+     "message_id": 266,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1042.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ SK Sturm Graz vs Fenerbahçe\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Fenerbahçe presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿SK Sturm Graz no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "20d8c08caa517cc2"
   }
  ]
 }
