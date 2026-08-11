@@ -755,5 +755,26 @@
    "cuota_real_betano": 2.0,
    "activo": true
   }
+ ],
+ "5e2bf6797b011fe1": [
+  {
+   "alert_id": "5e2bf6797b011fe1",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Audax Italiano vs Ñublense (Liga de Primera)",
+   "liga": "Liga de Primera",
+   "event_id": "15353089",
+   "minuto_alerta": 34,
+   "condicion": "Audax Italiano acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-11T00:35:16Z",
+   "t_captura_utc": "2026-08-11T00:35:16Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-11T00:37:27Z",
+   "segundos_transcurridos": 130,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.0 @ 1.93",
+   "linea_real_betano": 7.0,
+   "cuota_real_betano": 1.93,
+   "activo": true
+  }
  ]
 }
