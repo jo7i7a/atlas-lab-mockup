@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-11T17:59:54Z",
- "n_live_target": 3,
+ "generated_at_utc": "2026-08-11T18:02:54Z",
+ "n_live_target": 4,
  "matches": {
   "16578112": {
    "event_id": 16578112,
@@ -10,7 +10,7 @@
    "home_score": 2,
    "away_score": 2,
    "status_type": "inprogress",
-   "status_description": "Awaiting extra time",
+   "status_description": "1st extra",
    "minute": null,
    "stats": {
     "possession": {
@@ -35,7 +35,7 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 673,
+     "home": 674,
      "away": 371
     },
     "yellow_cards": {
@@ -82,7 +82,7 @@
      "captured_at_utc": "2026-08-11T17:56:07Z"
     }
    },
-   "updated_at_utc": "2026-08-11T17:59:54Z"
+   "updated_at_utc": "2026-08-11T18:02:54Z"
   },
   "16578185": {
    "event_id": 16578185,
@@ -125,18 +125,18 @@
     "btts": {
      "yes": 1.667,
      "no": 2.1,
-     "captured_at_utc": "2026-08-11T17:59:48Z"
+     "captured_at_utc": "2026-08-11T18:02:52Z"
     },
     "corners_over_95": {
      "over": 1.667,
      "under": 2.1,
-     "captured_at_utc": "2026-08-11T17:59:48Z"
+     "captured_at_utc": "2026-08-11T18:02:52Z"
     },
     "1x2": {
      "home": 15.0,
      "draw": 7.5,
-     "away": 1.111,
-     "captured_at_utc": "2026-08-11T17:59:48Z"
+     "away": 1.125,
+     "captured_at_utc": "2026-08-11T18:02:52Z"
     },
     "goals_over_25": {
      "over": 1.667,
@@ -144,7 +144,7 @@
      "captured_at_utc": "2026-08-11T17:29:47Z"
     }
    },
-   "updated_at_utc": "2026-08-11T17:59:54Z"
+   "updated_at_utc": "2026-08-11T18:02:54Z"
   },
   "16578110": {
    "event_id": 16578110,
@@ -155,12 +155,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 29,
+   "minute": 32,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 53,
-     "away": 47
+     "home": 52,
+     "away": 48
     },
     "shots": {
      "label": "Remates totales",
@@ -174,8 +174,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 107,
-     "away": 96
+     "home": 118,
+     "away": 107
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -197,26 +197,78 @@
     "btts": {
      "yes": 2.5,
      "no": 1.5,
-     "captured_at_utc": "2026-08-11T17:59:48Z"
+     "captured_at_utc": "2026-08-11T18:02:52Z"
     },
     "corners_over_95": {
      "over": 2.0,
      "under": 1.727,
-     "captured_at_utc": "2026-08-11T17:59:48Z"
+     "captured_at_utc": "2026-08-11T18:02:52Z"
     },
     "1x2": {
-     "home": 2.4,
+     "home": 2.375,
      "draw": 2.75,
-     "away": 3.4,
-     "captured_at_utc": "2026-08-11T17:59:48Z"
+     "away": 3.5,
+     "captured_at_utc": "2026-08-11T18:02:52Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.5,
-     "captured_at_utc": "2026-08-11T17:59:48Z"
+     "captured_at_utc": "2026-08-11T18:02:52Z"
     }
    },
-   "updated_at_utc": "2026-08-11T17:59:54Z"
+   "updated_at_utc": "2026-08-11T18:02:54Z"
+  },
+  "16578187": {
+   "event_id": 16578187,
+   "league": "UEFA Champions League",
+   "home": "FK Crvena Zvezda",
+   "away": "Hapoel Be'er Sheva",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 0,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.833,
+     "no": 1.833,
+     "captured_at_utc": "2026-08-11T18:02:52Z"
+    },
+    "corners_over_95": {
+     "over": 1.727,
+     "under": 2.0,
+     "captured_at_utc": "2026-08-11T18:02:12Z"
+    },
+    "1x2": {
+     "home": 1.25,
+     "draw": 6.0,
+     "away": 9.5,
+     "captured_at_utc": "2026-08-11T18:02:12Z"
+    }
+   },
+   "updated_at_utc": "2026-08-11T18:02:54Z"
   }
  }
 }
