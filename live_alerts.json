@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-11T16:27:24Z",
+ "generated_at_utc": "2026-08-11T16:28:27Z",
  "n_alerts": 6,
  "alerts": [
   {
@@ -39,83 +39,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Kairat Almaty vs Levski Sofia\n⏱ Minuto: 48'\n📊 Marcador: 0-1\n🏆 Liga: UEFA Champions League\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "6818106e9f50b273"
-  },
-  {
-   "strategy_id": "L1",
-   "match_label": "Sabah FK vs AGF (UEFA Champions League)",
-   "match_id": "16578167",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "4 córners totales antes del min 30 (3-1), Sabah FK presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿AGF NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Sabah FK"
-   },
-   "t_evento_real_utc": "2026-08-11T16:18:21Z",
-   "t_captura_utc": "2026-08-11T16:18:21Z",
-   "t_evaluacion_utc": "2026-08-11T16:27:09Z",
-   "t_generacion_utc": "2026-08-11T16:27:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-11T16:19:30Z",
-     "latencia_envio_ms": 849.2205142974854,
-     "error": null,
-     "message_id": 246,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 69.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Sabah FK vs AGF\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Sabah FK presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿AGF no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "5f5d033dac672570"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Sabah FK vs AGF (UEFA Champions League)",
-   "match_id": "16578167",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "4 córners totales antes del min 45 (3-1), Sabah FK presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿AGF NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Sabah FK",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-11T16:18:21Z",
-   "t_captura_utc": "2026-08-11T16:18:21Z",
-   "t_evaluacion_utc": "2026-08-11T16:27:10Z",
-   "t_generacion_utc": "2026-08-11T16:27:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-11T16:19:31Z",
-     "latencia_envio_ms": 751.6274452209473,
-     "error": null,
-     "message_id": 247,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 70.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Sabah FK vs AGF\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Sabah FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿AGF no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "84874683feee3686"
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -163,12 +86,89 @@
    "alert_id": "65e3796704feb7f8"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "Sabah FK vs AGF (UEFA Champions League)",
+   "match_id": "16578167",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 26,
+   "condicion": "4 córners totales antes del min 30 (3-1), Sabah FK presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿AGF NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Sabah FK"
+   },
+   "t_evento_real_utc": "2026-08-11T16:18:21Z",
+   "t_captura_utc": "2026-08-11T16:18:21Z",
+   "t_evaluacion_utc": "2026-08-11T16:28:09Z",
+   "t_generacion_utc": "2026-08-11T16:28:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-11T16:19:30Z",
+     "latencia_envio_ms": 849.2205142974854,
+     "error": null,
+     "message_id": 246,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 69.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Sabah FK vs AGF\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Sabah FK presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿AGF no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "5f5d033dac672570"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Sabah FK vs AGF (UEFA Champions League)",
+   "match_id": "16578167",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 26,
+   "condicion": "4 córners totales antes del min 45 (3-1), Sabah FK presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿AGF NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Sabah FK",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-11T16:18:21Z",
+   "t_captura_utc": "2026-08-11T16:18:21Z",
+   "t_evaluacion_utc": "2026-08-11T16:28:10Z",
+   "t_generacion_utc": "2026-08-11T16:28:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-11T16:19:31Z",
+     "latencia_envio_ms": 751.6274452209473,
+     "error": null,
+     "message_id": 247,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 70.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Sabah FK vs AGF\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Sabah FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿AGF no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "84874683feee3686"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Bodø/Glimt vs Royale Union Saint-Gilloise (UEFA Champions League)",
    "match_id": "16578112",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 24,
+   "minuto": 25,
    "condicion": "Bodø/Glimt acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -177,9 +177,9 @@
    "extra": {
     "equipo_dominante": "Bodø/Glimt",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6923,
+    "ratio_presion_territorial": 0.6429,
     "touches_home": 9,
-    "touches_away": 4,
+    "touches_away": 5,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 16,
     "equipo_que_realizo_sustitucion": "Bodø/Glimt",
@@ -190,9 +190,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-11T16:23:09Z",
-   "t_captura_utc": "2026-08-11T16:27:24Z",
-   "t_evaluacion_utc": "2026-08-11T16:27:24Z",
-   "t_generacion_utc": "2026-08-11T16:27:24Z",
+   "t_captura_utc": "2026-08-11T16:28:27Z",
+   "t_evaluacion_utc": "2026-08-11T16:28:27Z",
+   "t_generacion_utc": "2026-08-11T16:28:27Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -206,7 +206,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Bodø/Glimt vs Royale Union Saint-Gilloise\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n📝 Motivo: Bodø/Glimt acumula 69% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Bodø/Glimt, min 16\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Bodø/Glimt vs Royale Union Saint-Gilloise\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n📝 Motivo: Bodø/Glimt acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Bodø/Glimt, min 16\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "8eed9dc553c2e077"
   },
@@ -216,7 +216,7 @@
    "match_id": "16578167",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 25,
+   "minuto": 26,
    "condicion": "Sabah FK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -238,9 +238,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-11T16:23:10Z",
-   "t_captura_utc": "2026-08-11T16:27:24Z",
-   "t_evaluacion_utc": "2026-08-11T16:27:24Z",
-   "t_generacion_utc": "2026-08-11T16:27:24Z",
+   "t_captura_utc": "2026-08-11T16:28:27Z",
+   "t_evaluacion_utc": "2026-08-11T16:28:27Z",
+   "t_generacion_utc": "2026-08-11T16:28:27Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -254,7 +254,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sabah FK vs AGF\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n📝 Motivo: Sabah FK acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sabah FK vs AGF\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n📝 Motivo: Sabah FK acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "41195900aaf40986"
   }
