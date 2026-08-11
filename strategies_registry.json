@@ -8,7 +8,8 @@
    "VALIDACION_CUOTA_REAL",
    "CERTIFICADA",
    "PRODUCCION",
-   "REFUTADA"
+   "REFUTADA",
+   "BLOQUEADA_POSPUESTA"
   ],
   "ultima_actualizacion_utc": "2026-08-08T23:42:56Z"
  },
@@ -681,24 +682,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 2,
+   "casos_verificados": 4,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
    "fecha_creacion_utc": "2026-08-09",
-   "ultima_actualizacion_utc": "2026-08-10T18:07:02Z",
+   "ultima_actualizacion_utc": "2026-08-11T01:11:03Z",
    "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate de abandono ya definido).",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 2,
+    "n_operable": 4,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 2
+    "n_muestra": 4
    },
-   "alertas_live_historial": 2
+   "alertas_live_historial": 4
   },
   {
    "id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
@@ -1126,6 +1127,80 @@
     "n_muestra": 1
    },
    "alertas_live_historial": 1
+  },
+  {
+   "id": "B3_V1_PRESION_TARDIA_ESCENARIOS_NECESIDAD",
+   "nombre": "Presión Tardía (Late Goal) en Escenarios de Necesidad -- BLOQUEADA/POSPUESTA, nunca implementada",
+   "mercado": "Over 0.5 u Over 1.5 Goles en la 2ª mitad -- no aplica, la estrategia nunca fue implementada.",
+   "tipo": "LIVE (NO IMPLEMENTADA)",
+   "hipotesis": "Última hipótesis de la cola A1-B3 extraída de estrategias_live_betting.pdf. Auditada (AUDITORIA_B3_2026-08-10.md), 2 de 3 decisiones cerradas por el Director sin bloqueo (posesión reciente, tiros a puerta), pero la 3ª condición -- 'el favorito está empatando o perdiendo por exactamente 1' -- resultó un BLOQUEO TÉCNICO REAL: ATLAS no tiene hoy una fuente confiable y garantizada por partido para identificar al favorito prematch (ver 'bloqueo_favorito').",
+   "hipotesis_original_pdf": {
+    "condicion_original": "El favorito (identificado por cuota prematch) debe estar empatando o perdiendo por exactamente 1 gol, con presión reciente del defensor y volumen de tiros en la ventana 72'-78'.",
+    "estado": "NO_EVALUABLE_CON_DATOS_ACTUALES",
+    "motivo": "identificar 'el favorito' requiere una fuente prematch confiable y garantizada por partido que ATLAS no tiene disponible hoy (ver 'bloqueo_favorito').",
+    "aplicada_en_version_prospectiva": false
+   },
+   "bloqueo_favorito": {
+    "definido_utc": "2026-08-10",
+    "fuentes_auditadas": "D001 (prekickoff_capture.py): fase de acumulación congelada, cobertura NO garantizada por partido. ELO/CSV Maestro (Edificio 1): ningún detector LIVE de ATLAS lo consulta hoy, sería capacidad nueva. Cuotas 1X2 LIVE (platform_odds_markets): descartadas explícitamente por circulares -- ya influenciadas por el marcador y minuto actuales, no representan el favorito prematch del PDF.",
+    "conclusion": "ATLAS no tiene hoy una fuente confiable y garantizada por partido para identificar al favorito prematch.",
+    "decision_director": "OPCIÓN III -- POSPONER B3. Rechazadas explícitamente: reinterpretación LIVE nueva, sustitución por 'equipo dominante', eliminación completa de la condición de favorito/marcador, cuotas 1X2 LIVE como proxy, uso parcial/inconsistente de D001, construcción de capacidad prematch nueva solo para forzar B3.",
+    "motivo_decision": "La condición de favorito es suficientemente central en la hipótesis original como para que sustituirla o eliminarla cambie materialmente la estrategia; B3 ya tenía DAPM como NO_EVALUABLE, seguir reduciendo condiciones produciría una V1 demasiado alejada del diseño original del PDF.",
+    "regla_3_aplicada": "No está demostrado que una reinterpretación adicional aumente la probabilidad de encontrar una estrategia rentable frente a las hipótesis ya en observación; no existe evidencia objetiva suficiente para preferir una nueva reinterpretación LIVE sobre conservar la hipótesis original bloqueada.",
+    "criterio_reapertura": "B3 podrá reabrirse únicamente si ATLAS obtiene una fuente confiable y prospectiva para identificar el favorito PREMATCH de forma consistente para los partidos evaluados, o ante evidencia técnica nueva que elimine el bloqueo, o autorización explícita del Director.",
+    "documentos": "AUDITORIA_B3_2026-08-10.md, BLOQUEO_B3_FAVORITO_2026-08-10.md"
+   },
+   "decisiones_cerradas_sin_bloqueo": [
+    "Posesión reciente: proxy aproximado ratio_reciente[lado] = delta_touchesInOppBox[lado] / total, vía live_snapshot_deltas.py, ventana propuesta 15min (no confirmada porque la estrategia nunca avanzó a diseño final).",
+    "Tiros: shotsOnGoal confirmado, sin extender la whitelist certificada de live_snapshot_deltas.py."
+   ],
+   "criterios_no_automatizables": [
+    "Identificación del favorito prematch: NO_EVALUABLE_CON_DATOS_ACTUALES -- bloqueo estructural, ver 'bloqueo_favorito'.",
+    "DAPM (dangerousAttacks): NO_EVALUABLE_CON_DATOS_ACTUALES, mismo motivo que en B2/A4."
+   ],
+   "estado_actual": "BLOQUEADA_POSPUESTA",
+   "estado_declarado": "BLOQUEADA / POSPUESTA -- NO_IMPLEMENTADA / SIN ALERTAS / SIN OBSERVACIÓN / SIN CERTIFICACIÓN. Ningún código de detección existe para B3.",
+   "historial_estados": [
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-09",
+     "nota": "Extraída de estrategias_live_betting.pdf durante el análisis de las 2 bibliotecas LIVE (familia -- Presión Tardía en Escenarios de Necesidad)."
+    },
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-10",
+     "nota": "Auditoría completa (AUDITORIA_B3_2026-08-10.md): mercado 2T reutiliza liquidación ya auditada de B1_V1, hallazgo técnico shotsOnGoal vs totalShotsInsideBox, DAPM confirmado excluido, 3 decisiones pendientes del Director."
+    },
+    {
+     "estado": "IDEA",
+     "fecha_utc": "2026-08-10",
+     "nota": "Director cierra 2 de 3 decisiones (posesión reciente, tiros); condición de favorito reportada como BLOQUEO TÉCNICO REAL (BLOQUEO_B3_FAVORITO_2026-08-10.md) -- ninguna fuente confiable y garantizada por partido disponible en ATLAS hoy."
+    },
+    {
+     "estado": "BLOQUEADA_POSPUESTA",
+     "fecha_utc": "2026-08-10",
+     "nota": "Director elige OPCIÓN III: posponer B3 en lugar de reinterpretar, sustituir o eliminar la condición de favorito. Regla #3 aplicada explícitamente. Criterio de reapertura fijado: solo ante fuente confiable de favorito prematch, evidencia técnica nueva, o autorización explícita. Cambio puramente documental -- ningún código de detección fue creado ni modificado."
+    }
+   ],
+   "casos_observados": 0,
+   "casos_verificados": 0,
+   "aciertos": 0,
+   "fallos": 0,
+   "roi": null,
+   "clv": null,
+   "nivel_evidencia": "NINGUNA -- estrategia nunca implementada.",
+   "fecha_creacion_utc": "2026-08-09",
+   "ultima_actualizacion_utc": "2026-08-10T23:59:07Z",
+   "proximo_hito": "Ninguno hasta que se cumpla el criterio de reapertura documentado en 'bloqueo_favorito'.",
+   "metricas_fase4": {
+    "pct_operable": null,
+    "n_operable": 0,
+    "n_no_operable": 0,
+    "clv_promedio": null,
+    "tiempo_medio_disponible_seg": null,
+    "n_muestra": 0
+   },
+   "alertas_live_historial": 0
   }
  ]
 }
