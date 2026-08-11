@@ -1,46 +1,7 @@
 {
- "generated_at_utc": "2026-08-11T17:04:46Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-11T17:09:26Z",
+ "n_alerts": 1,
  "alerts": [
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Bodø/Glimt vs Royale Union Saint-Gilloise (UEFA Champions League)",
-   "match_id": "16578112",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (4-0), Bodø/Glimt presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Royale Union Saint-Gilloise NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Bodø/Glimt",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-11T16:35:58Z",
-   "t_captura_utc": "2026-08-11T16:35:58Z",
-   "t_evaluacion_utc": "2026-08-11T16:48:03Z",
-   "t_generacion_utc": "2026-08-11T16:48:03Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-11T16:44:26Z",
-     "latencia_envio_ms": 850.8033752441406,
-     "error": null,
-     "message_id": 251,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 508.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Bodø/Glimt vs Royale Union Saint-Gilloise\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Bodø/Glimt presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Royale Union Saint-Gilloise no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "46223c6f19ee2a6c"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Kairat Almaty vs Levski Sofia (UEFA Champions League)",
