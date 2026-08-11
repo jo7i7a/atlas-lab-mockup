@@ -1,5 +1,44 @@
 {
- "generated_at_utc": "2026-08-11T17:31:58Z",
- "n_alerts": 0,
- "alerts": []
+ "generated_at_utc": "2026-08-11T17:35:39Z",
+ "n_alerts": 1,
+ "alerts": [
+  {
+   "strategy_id": "L3",
+   "match_label": "FK Kauno Žalgiris vs GNK Dinamo Zagreb (UEFA Champions League)",
+   "match_id": "16578185",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
+   "cuota_detectada": null,
+   "minuto": 33,
+   "condicion": "Expulsión de GNK Dinamo Zagreb (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_expulsado": "GNK Dinamo Zagreb",
+    "marcador_al_detectar": "0-2",
+    "total_rojas_partido": 1
+   },
+   "t_evento_real_utc": "2026-08-11T17:32:57Z",
+   "t_captura_utc": "2026-08-11T17:34:30Z",
+   "t_evaluacion_utc": "2026-08-11T17:34:58Z",
+   "t_generacion_utc": "2026-08-11T17:34:58Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-11T17:34:59Z",
+     "latencia_envio_ms": 852.5295257568359,
+     "error": null,
+     "message_id": 253,
+     "chat_id": -5219979824
+    }
+   },
+   "latencia_total_seg": 122.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ FK Kauno Žalgiris vs GNK Dinamo Zagreb\n⏱ Minuto: 33'\n📊 Marcador: 0-2\n🏆 Liga: UEFA Champions League\n\n🟥 Expulsado: GNK Dinamo Zagreb\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
+   "evidencia": null,
+   "alert_id": "c51fca3371f0078b"
+  }
+ ]
 }
