@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-11T19:43:22Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-11T19:46:18Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -97,45 +97,6 @@
   },
   {
    "strategy_id": "L1-SHADOW",
-   "match_label": "SK Sturm Graz vs Fenerbahçe (UEFA Champions League)",
-   "match_id": "16613793",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "5 córners totales antes del min 45 (2-3), Fenerbahçe presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿SK Sturm Graz NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 2,
-    "corners_away": 3,
-    "equipo_presiona": "Fenerbahçe",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-11T19:15:48Z",
-   "t_captura_utc": "2026-08-11T19:15:48Z",
-   "t_evaluacion_utc": "2026-08-11T19:33:09Z",
-   "t_generacion_utc": "2026-08-11T19:33:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-11T19:33:10Z",
-     "latencia_envio_ms": 888.8418674468994,
-     "error": null,
-     "message_id": 266,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1042.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ SK Sturm Graz vs Fenerbahçe\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Fenerbahçe presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿SK Sturm Graz no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "20d8c08caa517cc2"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
    "match_label": "Olympique Lyonnais vs AC Sparta Praha (UEFA Champions League)",
    "match_id": "16578111",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
@@ -179,7 +140,7 @@
    "match_id": "16578111",
    "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 46,
    "condicion": "Expulsión de AC Sparta Praha (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
    "confianza": "Media",
    "link": "",
@@ -191,9 +152,9 @@
     "total_rojas_partido": 1
    },
    "t_evento_real_utc": "2026-08-11T19:34:46Z",
-   "t_captura_utc": "2026-08-11T19:42:51Z",
-   "t_evaluacion_utc": "2026-08-11T19:43:17Z",
-   "t_generacion_utc": "2026-08-11T19:43:17Z",
+   "t_captura_utc": "2026-08-11T19:45:21Z",
+   "t_evaluacion_utc": "2026-08-11T19:46:12Z",
+   "t_generacion_utc": "2026-08-11T19:46:12Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -207,7 +168,7 @@
    },
    "latencia_total_seg": 29.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Olympique Lyonnais vs AC Sparta Praha\n⏱ Minuto: 43'\n📊 Marcador: 1-0\n🏆 Liga: UEFA Champions League\n\n🟥 Expulsado: AC Sparta Praha\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
+   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Olympique Lyonnais vs AC Sparta Praha\n⏱ Minuto: 46'\n📊 Marcador: 1-0\n🏆 Liga: UEFA Champions League\n\n🟥 Expulsado: AC Sparta Praha\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
    "evidencia": null,
    "alert_id": "e50cf5a81602d107"
   }
