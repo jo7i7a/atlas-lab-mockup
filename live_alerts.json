@@ -1,84 +1,7 @@
 {
- "generated_at_utc": "2026-08-11T22:59:36Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-11T23:00:13Z",
+ "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "L1",
-   "match_label": "Fluminense vs Independiente Rivadavia (CONMEBOL Libertadores)",
-   "match_id": "16253162",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "4 córners totales antes del min 30 (1-3), Independiente Rivadavia presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Fluminense NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Independiente Rivadavia"
-   },
-   "t_evento_real_utc": "2026-08-11T22:29:45Z",
-   "t_captura_utc": "2026-08-11T22:29:45Z",
-   "t_evaluacion_utc": "2026-08-11T22:31:09Z",
-   "t_generacion_utc": "2026-08-11T22:31:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-11T22:30:10Z",
-     "latencia_envio_ms": 950.7324695587158,
-     "error": null,
-     "message_id": 276,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 25.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Fluminense vs Independiente Rivadavia\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Independiente Rivadavia presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Fluminense no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "45844b9879e73f36"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Fluminense vs Independiente Rivadavia (CONMEBOL Libertadores)",
-   "match_id": "16253162",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (1-3), Independiente Rivadavia presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Fluminense NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Independiente Rivadavia",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-11T22:29:45Z",
-   "t_captura_utc": "2026-08-11T22:29:45Z",
-   "t_evaluacion_utc": "2026-08-11T22:46:10Z",
-   "t_generacion_utc": "2026-08-11T22:46:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-11T22:30:12Z",
-     "latencia_envio_ms": 750.5185604095459,
-     "error": null,
-     "message_id": 277,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 27.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Fluminense vs Independiente Rivadavia\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Independiente Rivadavia presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Fluminense no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "866d5004388ef736"
-  },
   {
    "strategy_id": "L3",
    "match_label": "Boca Juniors vs Recoleta FC (CONMEBOL Sudamericana)",
@@ -216,7 +139,7 @@
    "match_id": "15526214",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 26,
+   "minuto": 27,
    "condicion": "5 córners totales antes del min 30 (4-1), Avaí presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Clube De Regatas Brasil NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -229,8 +152,8 @@
    },
    "t_evento_real_utc": "2026-08-11T22:56:14Z",
    "t_captura_utc": "2026-08-11T22:56:14Z",
-   "t_evaluacion_utc": "2026-08-11T22:59:29Z",
-   "t_generacion_utc": "2026-08-11T22:59:29Z",
+   "t_evaluacion_utc": "2026-08-11T23:00:08Z",
+   "t_generacion_utc": "2026-08-11T23:00:08Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -244,7 +167,7 @@
    },
    "latencia_total_seg": 55.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Avaí vs Clube De Regatas Brasil\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 4\nVisita: 1\nTotal: 5\n\n📝 Motivo: Avaí presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Clube De Regatas Brasil no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Avaí vs Clube De Regatas Brasil\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 4\nVisita: 1\nTotal: 5\n\n📝 Motivo: Avaí presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Clube De Regatas Brasil no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "4abac2a104eb22a7"
   },
@@ -254,7 +177,7 @@
    "match_id": "15526214",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 26,
+   "minuto": 27,
    "condicion": "5 córners totales antes del min 45 (4-1), Avaí presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Clube De Regatas Brasil NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -268,8 +191,8 @@
    },
    "t_evento_real_utc": "2026-08-11T22:56:14Z",
    "t_captura_utc": "2026-08-11T22:56:14Z",
-   "t_evaluacion_utc": "2026-08-11T22:59:30Z",
-   "t_generacion_utc": "2026-08-11T22:59:30Z",
+   "t_evaluacion_utc": "2026-08-11T23:00:09Z",
+   "t_generacion_utc": "2026-08-11T23:00:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -283,7 +206,7 @@
    },
    "latencia_total_seg": 56.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Avaí vs Clube De Regatas Brasil\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 4\nVisita: 1\nTotal: 5\n\n📝 Motivo: Avaí presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Clube De Regatas Brasil no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Avaí vs Clube De Regatas Brasil\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 4\nVisita: 1\nTotal: 5\n\n📝 Motivo: Avaí presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Clube De Regatas Brasil no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "6ea79eb0ec00fd2d"
   },
@@ -293,7 +216,7 @@
    "match_id": "15526214",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 26,
+   "minuto": 27,
    "condicion": "Clube De Regatas Brasil acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -315,9 +238,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-11T22:59:34Z",
-   "t_captura_utc": "2026-08-11T22:59:34Z",
-   "t_evaluacion_utc": "2026-08-11T22:59:35Z",
-   "t_generacion_utc": "2026-08-11T22:59:35Z",
+   "t_captura_utc": "2026-08-11T23:00:13Z",
+   "t_evaluacion_utc": "2026-08-11T23:00:13Z",
+   "t_generacion_utc": "2026-08-11T23:00:13Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -331,7 +254,7 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Avaí vs Clube De Regatas Brasil\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Clube De Regatas Brasil acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Clube De Regatas Brasil, min 13\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Avaí vs Clube De Regatas Brasil\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Clube De Regatas Brasil acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Clube De Regatas Brasil, min 13\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "b027b71a725cb5b5"
   }
