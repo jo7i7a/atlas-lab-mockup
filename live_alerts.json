@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-11T00:37:18Z",
+ "generated_at_utc": "2026-08-11T00:38:15Z",
  "n_alerts": 4,
  "alerts": [
   {
@@ -46,51 +46,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Audax Italiano vs Ñublense\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Audax Italiano — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "3e89976d072073f6"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Club Atlético Unión de Santa Fe vs Central Córdoba (Liga Profesional de Fútbol)",
-   "match_id": "16667375",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 21,
-   "condicion": "Club Atlético Unión de Santa Fe domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Club Atlético Unión de Santa Fe",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-11T00:33:13Z",
-   "t_captura_utc": "2026-08-11T00:33:13Z",
-   "t_evaluacion_utc": "2026-08-11T00:37:16Z",
-   "t_generacion_utc": "2026-08-11T00:37:17Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-11T00:34:17Z",
-     "latencia_envio_ms": 861.9852066040039,
-     "error": null,
-     "message_id": 227,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 64.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Club Atlético Unión de Santa Fe vs Central Córdoba\n⏱ Minuto: 21'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Unión de Santa Fe — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "39dcc1983785bab1"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -187,6 +142,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Atlético Unión de Santa Fe vs Central Córdoba\n⏱ Minuto: 21'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Unión de Santa Fe acumula 75% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "20126c5154e183c8"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Club Atlético Unión de Santa Fe vs Central Córdoba (Liga Profesional de Fútbol)",
+   "match_id": "16667375",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 22,
+   "condicion": "Club Atlético Unión de Santa Fe domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Club Atlético Unión de Santa Fe",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-11T00:33:13Z",
+   "t_captura_utc": "2026-08-11T00:33:13Z",
+   "t_evaluacion_utc": "2026-08-11T00:38:15Z",
+   "t_generacion_utc": "2026-08-11T00:38:15Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-11T00:34:17Z",
+     "latencia_envio_ms": 861.9852066040039,
+     "error": null,
+     "message_id": 227,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 64.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Club Atlético Unión de Santa Fe vs Central Córdoba\n⏱ Minuto: 22'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Unión de Santa Fe — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "39dcc1983785bab1"
   }
  ]
 }
