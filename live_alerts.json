@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-11T18:42:58Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-11T18:48:39Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -46,7 +46,7 @@
    "match_id": "16578160",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 27,
+   "minuto": 29,
    "condicion": "4 córners totales antes del min 30 (1-3), FC Ararat-Armenia presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿NK Celje NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -59,8 +59,8 @@
    },
    "t_evento_real_utc": "2026-08-11T18:32:27Z",
    "t_captura_utc": "2026-08-11T18:32:27Z",
-   "t_evaluacion_utc": "2026-08-11T18:42:57Z",
-   "t_generacion_utc": "2026-08-11T18:42:57Z",
+   "t_evaluacion_utc": "2026-08-11T18:45:29Z",
+   "t_generacion_utc": "2026-08-11T18:45:29Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -74,7 +74,7 @@
    },
    "latencia_total_seg": 103.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ NK Celje vs FC Ararat-Armenia\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: FC Ararat-Armenia presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿NK Celje no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ NK Celje vs FC Ararat-Armenia\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: FC Ararat-Armenia presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿NK Celje no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "9f7190dbe152759c"
   },
@@ -84,7 +84,7 @@
    "match_id": "16578160",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 27,
+   "minuto": 29,
    "condicion": "4 córners totales antes del min 45 (1-3), FC Ararat-Armenia presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿NK Celje NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -98,8 +98,8 @@
    },
    "t_evento_real_utc": "2026-08-11T18:32:27Z",
    "t_captura_utc": "2026-08-11T18:32:27Z",
-   "t_evaluacion_utc": "2026-08-11T18:42:58Z",
-   "t_generacion_utc": "2026-08-11T18:42:58Z",
+   "t_evaluacion_utc": "2026-08-11T18:45:30Z",
+   "t_generacion_utc": "2026-08-11T18:45:30Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -113,9 +113,54 @@
    },
    "latencia_total_seg": 106.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ NK Celje vs FC Ararat-Armenia\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: FC Ararat-Armenia presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿NK Celje no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ NK Celje vs FC Ararat-Armenia\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: FC Ararat-Armenia presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿NK Celje no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "99a9b74f097fef22"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "SK Sturm Graz vs Fenerbahçe (UEFA Champions League)",
+   "match_id": "16613793",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Fenerbahçe domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Fenerbahçe",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 1,
+    "remates_home": 1,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-11T18:46:44Z",
+   "t_captura_utc": "2026-08-11T18:46:44Z",
+   "t_evaluacion_utc": "2026-08-11T18:48:37Z",
+   "t_generacion_utc": "2026-08-11T18:48:37Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-11T18:48:38Z",
+     "latencia_envio_ms": 845.8385467529297,
+     "error": null,
+     "message_id": 260,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 114.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ SK Sturm Graz vs Fenerbahçe\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n📝 Motivo: Fenerbahçe — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "580597352cd77918"
   }
  ]
 }
