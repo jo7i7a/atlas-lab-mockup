@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-11T18:16:08Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-11T18:19:39Z",
+ "n_alerts": 1,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "NEC Nijmegen vs Olympiacos FC (UEFA Champions League)",
-   "match_id": "16578110",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "NEC Nijmegen domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "NEC Nijmegen",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-11T17:47:16Z",
-   "t_captura_utc": "2026-08-11T17:47:16Z",
-   "t_evaluacion_utc": "2026-08-11T17:56:13Z",
-   "t_generacion_utc": "2026-08-11T17:56:13Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-11T17:49:17Z",
-     "latencia_envio_ms": 1020.6408500671387,
-     "error": null,
-     "message_id": 255,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 121.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ NEC Nijmegen vs Olympiacos FC\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n📝 Motivo: NEC Nijmegen — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "c6c2f255478a18ff"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "NEC Nijmegen vs Olympiacos FC (UEFA Champions League)",
