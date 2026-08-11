@@ -837,5 +837,26 @@
    "cuota_real_betano": 1.5,
    "activo": true
   }
+ ],
+ "261d33a4bd4ff7e0": [
+  {
+   "alert_id": "261d33a4bd4ff7e0",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Club Atlético Unión de Santa Fe vs Central Córdoba (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16667375",
+   "minuto_alerta": 48,
+   "condicion": "Club Atlético Unión de Santa Fe acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-11T01:22:16Z",
+   "t_captura_utc": "2026-08-11T01:22:16Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-11T01:23:47Z",
+   "segundos_transcurridos": 89,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.5 @ 1.78",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 1.78,
+   "activo": true
+  }
  ]
 }
