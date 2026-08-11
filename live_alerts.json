@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-11T19:33:29Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-11T19:34:20Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -133,6 +133,45 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ SK Sturm Graz vs Fenerbahçe\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Fenerbahçe presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿SK Sturm Graz no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "20d8c08caa517cc2"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Olympique Lyonnais vs AC Sparta Praha (UEFA Champions League)",
+   "match_id": "16578111",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 34,
+   "condicion": "4 córners totales antes del min 45 (3-1), Olympique Lyonnais presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿AC Sparta Praha NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Olympique Lyonnais",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-11T19:33:24Z",
+   "t_captura_utc": "2026-08-11T19:33:24Z",
+   "t_evaluacion_utc": "2026-08-11T19:34:09Z",
+   "t_generacion_utc": "2026-08-11T19:34:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-11T19:34:09Z",
+     "latencia_envio_ms": 805.6154251098633,
+     "error": null,
+     "message_id": 267,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 45.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Olympique Lyonnais vs AC Sparta Praha\n⏱ Minuto: 34'\n📊 Marcador: 1-0\n🏆 Liga: UEFA Champions League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Olympique Lyonnais presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿AC Sparta Praha no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "d124ed516771b174"
   }
  ]
 }
