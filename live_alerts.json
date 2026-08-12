@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-12T00:29:20Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-12T00:31:08Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -95,7 +95,7 @@
    "match_id": "15679424",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 16,
+   "minuto": 19,
    "condicion": "4 córners totales antes del min 30 (4-0), FC Cincinnati presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Atlas FC NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -108,8 +108,8 @@
    },
    "t_evento_real_utc": "2026-08-12T00:24:25Z",
    "t_captura_utc": "2026-08-12T00:24:25Z",
-   "t_evaluacion_utc": "2026-08-12T00:27:08Z",
-   "t_generacion_utc": "2026-08-12T00:27:08Z",
+   "t_evaluacion_utc": "2026-08-12T00:30:09Z",
+   "t_generacion_utc": "2026-08-12T00:30:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -123,7 +123,7 @@
    },
    "latencia_total_seg": 44.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ FC Cincinnati vs Atlas FC\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: FC Cincinnati presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlas FC no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ FC Cincinnati vs Atlas FC\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: FC Cincinnati presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlas FC no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "51d49e2af19717ba"
   },
@@ -133,7 +133,7 @@
    "match_id": "15679424",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 16,
+   "minuto": 19,
    "condicion": "4 córners totales antes del min 45 (4-0), FC Cincinnati presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Atlas FC NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -147,8 +147,8 @@
    },
    "t_evento_real_utc": "2026-08-12T00:24:25Z",
    "t_captura_utc": "2026-08-12T00:24:25Z",
-   "t_evaluacion_utc": "2026-08-12T00:27:10Z",
-   "t_generacion_utc": "2026-08-12T00:27:10Z",
+   "t_evaluacion_utc": "2026-08-12T00:30:10Z",
+   "t_generacion_utc": "2026-08-12T00:30:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -162,9 +162,57 @@
    },
    "latencia_total_seg": 47.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ FC Cincinnati vs Atlas FC\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: FC Cincinnati presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlas FC no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ FC Cincinnati vs Atlas FC\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: FC Cincinnati presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlas FC no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "9fb6dc8e6e53662d"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "FC Cincinnati vs Atlas FC (Leagues Cup)",
+   "match_id": "15679424",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 20,
+   "condicion": "FC Cincinnati acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "FC Cincinnati",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 1.0,
+    "touches_home": 5,
+    "touches_away": 0,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-12T00:31:06Z",
+    "t_inicio_estimado_condicion": null,
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-12T00:31:06Z",
+   "t_captura_utc": "2026-08-12T00:31:06Z",
+   "t_evaluacion_utc": "2026-08-12T00:31:07Z",
+   "t_generacion_utc": "2026-08-12T00:31:07Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-12T00:31:07Z",
+     "latencia_envio_ms": 890.0284767150879,
+     "error": null,
+     "message_id": 295,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Cincinnati vs Atlas FC\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: FC Cincinnati acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "2ede7d85570ff332"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -172,7 +220,7 @@
    "match_id": "16667376",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 28,
+   "minuto": 29,
    "condicion": "CA Lanús acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -181,9 +229,9 @@
    "extra": {
     "equipo_dominante": "CA Lanús",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6667,
+    "ratio_presion_territorial": 0.7273,
     "touches_home": 3,
-    "touches_away": 6,
+    "touches_away": 8,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -194,9 +242,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-12T00:21:19Z",
-   "t_captura_utc": "2026-08-12T00:29:20Z",
-   "t_evaluacion_utc": "2026-08-12T00:29:20Z",
-   "t_generacion_utc": "2026-08-12T00:29:20Z",
+   "t_captura_utc": "2026-08-12T00:31:08Z",
+   "t_evaluacion_utc": "2026-08-12T00:31:08Z",
+   "t_generacion_utc": "2026-08-12T00:31:08Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -210,7 +258,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CA Talleres vs CA Lanús\n⏱ Minuto: 28'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: CA Lanús acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CA Talleres vs CA Lanús\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: CA Lanús acumula 73% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "849f373f67366699"
   }
