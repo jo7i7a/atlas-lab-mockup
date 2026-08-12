@@ -1,7 +1,121 @@
 {
- "generated_at_utc": "2026-08-12T00:29:54Z",
- "n_live_target": 4,
+ "generated_at_utc": "2026-08-12T00:32:54Z",
+ "n_live_target": 6,
  "matches": {
+  "16253158": {
+   "event_id": 16253158,
+   "league": "CONMEBOL Libertadores",
+   "home": "Estudiantes de La Plata",
+   "away": "Universidad Católica",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 14,
+     "away": 86
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 3,
+     "away": 16
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.375,
+     "no": 1.533,
+     "captured_at_utc": "2026-08-12T00:32:42Z"
+    },
+    "corners_over_95": {
+     "over": 2.1,
+     "under": 1.667,
+     "captured_at_utc": "2026-08-12T00:32:42Z"
+    },
+    "1x2": {
+     "home": 1.727,
+     "draw": 3.2,
+     "away": 5.5,
+     "captured_at_utc": "2026-08-12T00:32:42Z"
+    }
+   },
+   "updated_at_utc": "2026-08-12T00:32:54Z"
+  },
+  "16253375": {
+   "event_id": 16253375,
+   "league": "CONMEBOL Sudamericana",
+   "home": "Bolívar",
+   "away": "São Paulo",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 0,
+     "away": 100
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0.03
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 1
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 0,
+     "away": 6
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.0,
+     "no": 1.727,
+     "captured_at_utc": "2026-08-12T00:32:42Z"
+    },
+    "1x2": {
+     "home": 1.8,
+     "draw": 3.5,
+     "away": 4.75,
+     "captured_at_utc": "2026-08-12T00:32:42Z"
+    },
+    "goals_over_25": {
+     "over": 2.1,
+     "under": 1.667,
+     "captured_at_utc": "2026-08-12T00:32:42Z"
+    }
+   },
+   "updated_at_utc": "2026-08-12T00:32:54Z"
+  },
   "15679423": {
    "event_id": 15679423,
    "league": "Leagues Cup",
@@ -10,13 +124,13 @@
    "home_score": 1,
    "away_score": 1,
    "status_type": "inprogress",
-   "status_description": "1st half",
-   "minute": 49,
+   "status_description": "Halftime",
+   "minute": null,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 58,
-     "away": 42
+     "home": 59,
+     "away": 41
     },
     "big_chances": {
      "label": "Ocasiones claras",
@@ -25,17 +139,17 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 3,
+     "home": 4,
      "away": 3
     },
     "corners": {
      "label": "Corners",
-     "home": 3,
+     "home": 5,
      "away": 2
     },
     "passes": {
      "label": "Pases",
-     "home": 312,
+     "home": 314,
      "away": 230
     },
     "yellow_cards": {
@@ -61,10 +175,10 @@
      "captured_at_utc": "2026-08-12T00:25:27Z"
     },
     "1x2": {
-     "home": 1.909,
-     "draw": 2.6,
-     "away": 6.0,
-     "captured_at_utc": "2026-08-12T00:29:34Z"
+     "home": 1.833,
+     "draw": 2.625,
+     "away": 6.5,
+     "captured_at_utc": "2026-08-12T00:32:42Z"
     },
     "goals_over_25": {
      "over": 1.833,
@@ -74,10 +188,10 @@
     "corners_over_95": {
      "over": 1.833,
      "under": 1.833,
-     "captured_at_utc": "2026-08-12T00:29:34Z"
+     "captured_at_utc": "2026-08-12T00:32:42Z"
     }
    },
-   "updated_at_utc": "2026-08-12T00:29:54Z"
+   "updated_at_utc": "2026-08-12T00:32:54Z"
   },
   "15679424": {
    "event_id": 15679424,
@@ -88,12 +202,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 19,
+   "minute": 22,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 61,
-     "away": 39
+     "home": 63,
+     "away": 37
     },
     "shots": {
      "label": "Remates totales",
@@ -107,8 +221,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 92,
-     "away": 61
+     "home": 161,
+     "away": 97
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -125,26 +239,26 @@
     "btts": {
      "yes": 2.1,
      "no": 1.667,
-     "captured_at_utc": "2026-08-12T00:29:34Z"
+     "captured_at_utc": "2026-08-12T00:32:42Z"
     },
     "corners_over_95": {
      "over": 2.0,
      "under": 1.727,
-     "captured_at_utc": "2026-08-12T00:29:34Z"
+     "captured_at_utc": "2026-08-12T00:32:42Z"
     },
     "1x2": {
-     "home": 1.4,
+     "home": 1.444,
      "draw": 4.333,
-     "away": 8.0,
-     "captured_at_utc": "2026-08-12T00:29:34Z"
+     "away": 7.5,
+     "captured_at_utc": "2026-08-12T00:32:42Z"
     },
     "goals_over_25": {
      "over": 1.8,
      "under": 1.909,
-     "captured_at_utc": "2026-08-12T00:29:34Z"
+     "captured_at_utc": "2026-08-12T00:32:42Z"
     }
    },
-   "updated_at_utc": "2026-08-12T00:29:54Z"
+   "updated_at_utc": "2026-08-12T00:32:54Z"
   },
   "16667376": {
    "event_id": 16667376,
@@ -155,22 +269,22 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 28,
+   "minute": 31,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 65,
-     "away": 35
+     "home": 67,
+     "away": 33
     },
     "xg": {
      "label": "Expected Goals (xG)",
      "home": 0.12,
-     "away": 0.35
+     "away": 0.93
     },
     "shots": {
      "label": "Remates totales",
      "home": 1,
-     "away": 6
+     "away": 7
     },
     "corners": {
      "label": "Corners",
@@ -179,8 +293,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 226,
-     "away": 116
+     "home": 256,
+     "away": 121
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -192,16 +306,16 @@
     "btts": {
      "yes": 3.4,
      "no": 1.3,
-     "captured_at_utc": "2026-08-12T00:29:34Z"
+     "captured_at_utc": "2026-08-12T00:32:42Z"
     },
     "1x2": {
-     "home": 2.875,
-     "draw": 2.4,
+     "home": 3.0,
+     "draw": 2.375,
      "away": 3.25,
-     "captured_at_utc": "2026-08-12T00:29:34Z"
+     "captured_at_utc": "2026-08-12T00:32:42Z"
     }
    },
-   "updated_at_utc": "2026-08-12T00:29:54Z"
+   "updated_at_utc": "2026-08-12T00:32:54Z"
   },
   "15416281": {
    "event_id": 15416281,
@@ -212,17 +326,17 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 69,
+   "minute": 72,
    "stats": {},
    "odds": {
     "1x2": {
      "home": 5.0,
      "draw": 1.667,
      "away": 3.4,
-     "captured_at_utc": "2026-08-12T00:29:34Z"
+     "captured_at_utc": "2026-08-12T00:32:42Z"
     }
    },
-   "updated_at_utc": "2026-08-12T00:29:54Z"
+   "updated_at_utc": "2026-08-12T00:32:54Z"
   }
  }
 }
