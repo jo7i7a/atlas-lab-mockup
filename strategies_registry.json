@@ -262,24 +262,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 4,
+   "casos_verificados": 6,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "Ninguna todavía -- estrategia propia del Director, sin certificación estadística previa por decisión explícita (priorizar verificación real temprano, lección de E-LAB-001).",
    "fecha_creacion_utc": "2026-08-04",
-   "ultima_actualizacion_utc": "2026-08-09T23:50:03Z",
+   "ultima_actualizacion_utc": "2026-08-12T02:31:25Z",
    "proximo_hito": "Primeras verificaciones humanas reales contra Betano vía Telegram. Sin umbral de N fijado todavía.",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 4,
+    "n_operable": 6,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 4
+    "n_muestra": 6
    },
-   "alertas_live_historial": 25,
+   "alertas_live_historial": 29,
    "defecto_historico": {
     "tipo": "FALLO DE DEDUPLICACIÓN -- marcador variable dentro de la condición generaba alert_id nuevo por gol",
     "detectado_utc": "2026-08-08",
@@ -339,24 +339,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 14,
+   "casos_verificados": 16,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "Ninguna todavía -- prueba Shadow recién activada 2026-08-08, sin alertas propias aún.",
    "fecha_creacion_utc": "2026-08-08",
-   "ultima_actualizacion_utc": "2026-08-10T17:12:03Z",
+   "ultima_actualizacion_utc": "2026-08-12T02:31:31Z",
    "proximo_hito": "Acumular evidencia en paralelo con L1 original. Comparar tasa de operabilidad/CLV/ROI entre ambas cuando haya muestra suficiente -- sin umbral de N fijado todavía.",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 14,
+    "n_operable": 16,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 14
+    "n_muestra": 16
    },
-   "alertas_live_historial": 27,
+   "alertas_live_historial": 41,
    "defecto_historico": {
     "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
     "detectado_utc": "2026-08-08",
@@ -682,24 +682,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 4,
+   "casos_verificados": 6,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
    "fecha_creacion_utc": "2026-08-09",
-   "ultima_actualizacion_utc": "2026-08-11T01:11:03Z",
+   "ultima_actualizacion_utc": "2026-08-12T02:31:29Z",
    "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate de abandono ya definido).",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 4,
+    "n_operable": 6,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 4
+    "n_muestra": 6
    },
-   "alertas_live_historial": 4
+   "alertas_live_historial": 8
   },
   {
    "id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
@@ -1020,24 +1020,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 4,
+   "casos_verificados": 11,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
    "fecha_creacion_utc": "2026-08-09",
-   "ultima_actualizacion_utc": "2026-08-11T01:24:03Z",
+   "ultima_actualizacion_utc": "2026-08-12T02:31:33Z",
    "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate de abandono ya definido).",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 4,
+    "n_operable": 11,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 4
+    "n_muestra": 11
    },
-   "alertas_live_historial": 8
+   "alertas_live_historial": 35
   },
   {
    "id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -1109,24 +1109,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 1,
+   "casos_verificados": 4,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
    "fecha_creacion_utc": "2026-08-09",
-   "ultima_actualizacion_utc": "2026-08-10T23:59:07Z",
+   "ultima_actualizacion_utc": "2026-08-12T02:31:32Z",
    "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate de abandono ya definido).",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 1,
+    "n_operable": 4,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 1
+    "n_muestra": 4
    },
-   "alertas_live_historial": 1
+   "alertas_live_historial": 5
   },
   {
    "id": "B3_V1_PRESION_TARDIA_ESCENARIOS_NECESIDAD",
