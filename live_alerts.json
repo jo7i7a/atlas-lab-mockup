@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-12T02:03:26Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-12T02:04:27Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -127,6 +127,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Estudiantes de La Plata vs Universidad Católica\n⏱ Minuto: 70'\n📊 Marcador: 1-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: presión combinada sostenida — xG 1.21, 16 tiros totales (4 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "2c4defe2c66e3ea4"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Real Salt Lake vs FC Juárez (Leagues Cup)",
+   "match_id": "15679426",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 23,
+   "condicion": "Real Salt Lake domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Real Salt Lake",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 1,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-12T02:03:52Z",
+   "t_captura_utc": "2026-08-12T02:03:52Z",
+   "t_evaluacion_utc": "2026-08-12T02:04:24Z",
+   "t_generacion_utc": "2026-08-12T02:04:24Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-12T02:04:25Z",
+     "latencia_envio_ms": 847.7678298950195,
+     "error": null,
+     "message_id": 318,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 33.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Real Salt Lake vs FC Juárez\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: Real Salt Lake — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "1c588cfc5450217a"
   }
  ]
 }
