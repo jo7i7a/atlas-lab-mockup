@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-08-11T23:57:16Z",
+ "generated_at_utc": "2026-08-12T00:01:55Z",
  "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "L3",
-   "match_label": "Boca Juniors vs Recoleta FC (CONMEBOL Sudamericana)",
-   "match_id": "16253370",
-   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
-   "cuota_detectada": null,
-   "minuto": 73,
-   "condicion": "Expulsión de Recoleta FC (roja #2 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_expulsado": "Recoleta FC",
-    "marcador_al_detectar": "3-1",
-    "total_rojas_partido": 2
-   },
-   "t_evento_real_utc": "2026-08-11T23:30:06Z",
-   "t_captura_utc": "2026-08-11T23:32:18Z",
-   "t_evaluacion_utc": "2026-08-11T23:32:48Z",
-   "t_generacion_utc": "2026-08-11T23:32:48Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-11T23:30:13Z",
-     "latencia_envio_ms": 889.1963958740234,
-     "error": null,
-     "message_id": 286,
-     "chat_id": -5219979824
-    }
-   },
-   "latencia_total_seg": 7.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Boca Juniors vs Recoleta FC\n⏱ Minuto: 73'\n📊 Marcador: 3-1\n🏆 Liga: CONMEBOL Sudamericana\n\n🟥 Expulsado: Recoleta FC\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
-   "evidencia": null,
-   "alert_id": "b83affe8574dd38c"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Avaí vs Clube De Regatas Brasil (Brasileirão Série B)",
@@ -83,6 +45,54 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Avaí vs Clube De Regatas Brasil\n⏱ Minuto: 66'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 1.86, 31 tiros totales (9 a puerta), 7 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "01fe33ab5947a1f7"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Columbus Crew vs Pumas UNAM (Leagues Cup)",
+   "match_id": "15679423",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 21,
+   "condicion": "Columbus Crew acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Columbus Crew",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.75,
+    "touches_home": 3,
+    "touches_away": 1,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "1-0",
+    "t_primera_observacion_atlas": "2026-08-12T00:01:54Z",
+    "t_inicio_estimado_condicion": "2026-08-12T00:01:18Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-12T00:01:54Z",
+   "t_captura_utc": "2026-08-12T00:01:54Z",
+   "t_evaluacion_utc": "2026-08-12T00:01:54Z",
+   "t_generacion_utc": "2026-08-12T00:01:54Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-12T00:01:55Z",
+     "latencia_envio_ms": 867.9845333099365,
+     "error": null,
+     "message_id": 290,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Columbus Crew vs Pumas UNAM\n⏱ Minuto: 21'\n📊 Marcador: 1-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: Columbus Crew acumula 75% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "f3306d28ac83d585"
   }
  ]
 }
