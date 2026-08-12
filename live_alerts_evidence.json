@@ -1190,5 +1190,26 @@
    "cuota_real_betano": 1.88,
    "activo": true
   }
+ ],
+ "c4736575c82e6601": [
+  {
+   "alert_id": "c4736575c82e6601",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Club Atlético Platense vs Coquimbo Unido (CONMEBOL Libertadores)",
+   "liga": "CONMEBOL Libertadores",
+   "event_id": "16253168",
+   "minuto_alerta": 36,
+   "condicion": "Club Atlético Platense acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-12T22:37:16Z",
+   "t_captura_utc": "2026-08-12T22:37:16Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-12T22:38:44Z",
+   "segundos_transcurridos": 87,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "13.5 @ 1.88",
+   "linea_real_betano": 13.5,
+   "cuota_real_betano": 1.88,
+   "activo": true
+  }
  ]
 }
