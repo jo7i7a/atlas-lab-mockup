@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-12T23:44:31Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-12T23:59:15Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "L3",
@@ -87,6 +87,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Red Bull Bragantino vs Atlético Mineiro\n⏱ Minuto: 85'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Red Bull Bragantino acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Red Bull Bragantino, min 84\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "4bdab03c8a37fd6b"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Inter Miami CF vs Club León (Leagues Cup)",
+   "match_id": "15679425",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Inter Miami CF domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Inter Miami CF",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 2,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-12T23:58:22Z",
+   "t_captura_utc": "2026-08-12T23:58:22Z",
+   "t_evaluacion_utc": "2026-08-12T23:59:14Z",
+   "t_generacion_utc": "2026-08-12T23:59:14Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-12T23:59:15Z",
+     "latencia_envio_ms": 877.2766590118408,
+     "error": null,
+     "message_id": 365,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 53.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Inter Miami CF vs Club León\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: Inter Miami CF — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "f36be71ef4d26b22"
   }
  ]
 }
