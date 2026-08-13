@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-13T04:03:49Z",
+ "generated_at_utc": "2026-08-13T04:06:59Z",
  "n_alerts": 2,
  "alerts": [
   {
@@ -8,7 +8,7 @@
    "match_id": "15679433",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 52,
+   "minuto": 82,
    "condicion": "San Diego FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -17,70 +17,22 @@
    "extra": {
     "equipo_dominante": "San Diego FC",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6111,
-    "touches_home": 11,
-    "touches_away": 7,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 46,
-    "equipo_que_realizo_sustitucion": "San Diego FC",
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-08-13T03:35:17Z",
-    "t_inicio_estimado_condicion": "2026-08-13T02:46:52Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-13T03:35:17Z",
-   "t_captura_utc": "2026-08-13T03:37:17Z",
-   "t_evaluacion_utc": "2026-08-13T03:37:17Z",
-   "t_generacion_utc": "2026-08-13T03:37:17Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-13T03:35:18Z",
-     "latencia_envio_ms": 830.822229385376,
-     "error": null,
-     "message_id": 397,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ San Diego FC vs Club Puebla\n⏱ Minuto: 52'\n📊 Marcador: 1-1\n🏆 Liga: Leagues Cup\n\n📝 Motivo: San Diego FC acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: San Diego FC, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "6be25f2c31c14876"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "San Diego FC vs Club Puebla (Leagues Cup)",
-   "match_id": "15679433",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 79,
-   "condicion": "San Diego FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "San Diego FC",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 20,
-    "touches_away": 10,
+    "ratio_presion_territorial": 0.6765,
+    "touches_home": 23,
+    "touches_away": 11,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 75,
     "equipo_que_realizo_sustitucion": "San Diego FC",
-    "marcador_en_el_momento": "2-1",
+    "marcador_en_el_momento": "3-1",
     "t_primera_observacion_atlas": "2026-08-13T03:40:16Z",
     "t_inicio_estimado_condicion": "2026-08-13T02:46:52Z",
     "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-13T03:40:16Z",
-   "t_captura_utc": "2026-08-13T04:03:48Z",
-   "t_evaluacion_utc": "2026-08-13T04:03:49Z",
-   "t_generacion_utc": "2026-08-13T04:03:49Z",
+   "t_captura_utc": "2026-08-13T04:06:56Z",
+   "t_evaluacion_utc": "2026-08-13T04:06:57Z",
+   "t_generacion_utc": "2026-08-13T04:06:57Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -94,9 +46,57 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ San Diego FC vs Club Puebla\n⏱ Minuto: 79'\n📊 Marcador: 2-1\n🏆 Liga: Leagues Cup\n\n📝 Motivo: San Diego FC acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: San Diego FC, min 75\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ San Diego FC vs Club Puebla\n⏱ Minuto: 82'\n📊 Marcador: 3-1\n🏆 Liga: Leagues Cup\n\n📝 Motivo: San Diego FC acumula 68% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: San Diego FC, min 75\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "5b85e1b97df597eb"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Seattle Sounders FC vs CD Guadalajara (Leagues Cup)",
+   "match_id": "15679435",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 61,
+   "condicion": "CD Guadalajara acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "CD Guadalajara",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.6176,
+    "touches_home": 13,
+    "touches_away": 21,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 45,
+    "equipo_que_realizo_sustitucion": "CD Guadalajara",
+    "marcador_en_el_momento": "1-1",
+    "t_primera_observacion_atlas": "2026-08-13T04:06:57Z",
+    "t_inicio_estimado_condicion": "2026-08-13T04:05:59Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-13T04:06:57Z",
+   "t_captura_utc": "2026-08-13T04:06:57Z",
+   "t_evaluacion_utc": "2026-08-13T04:06:58Z",
+   "t_generacion_utc": "2026-08-13T04:06:58Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-13T04:06:59Z",
+     "latencia_envio_ms": 874.335527420044,
+     "error": null,
+     "message_id": 399,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 2.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Seattle Sounders FC vs CD Guadalajara\n⏱ Minuto: 61'\n📊 Marcador: 1-1\n🏆 Liga: Leagues Cup\n\n📝 Motivo: CD Guadalajara acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CD Guadalajara, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "057ac3f022f15481"
   }
  ]
 }
