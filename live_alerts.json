@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-13T22:48:21Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-13T22:49:20Z",
+ "n_alerts": 7,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Santos vs Macará (CONMEBOL Sudamericana)",
-   "match_id": "16253377",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Santos domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Santos",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-13T22:18:21Z",
-   "t_captura_utc": "2026-08-13T22:18:21Z",
-   "t_evaluacion_utc": "2026-08-13T22:27:15Z",
-   "t_generacion_utc": "2026-08-13T22:27:15Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-13T22:19:18Z",
-     "latencia_envio_ms": 826.225757598877,
-     "error": null,
-     "message_id": 403,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 57.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Santos vs Macará\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Santos — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "52dd3ce40c79fabf"
-  },
   {
    "strategy_id": "L1",
    "match_label": "Vasco da Gama vs Olimpia (CONMEBOL Sudamericana)",
@@ -208,7 +163,7 @@
    "match_id": "16253160",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 48,
+   "minuto": 49,
    "condicion": "LDU acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -217,8 +172,8 @@
    "extra": {
     "equipo_dominante": "LDU",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.7826,
-    "touches_home": 5,
+    "ratio_presion_territorial": 0.75,
+    "touches_home": 6,
     "touches_away": 18,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 35,
@@ -230,9 +185,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-13T22:25:26Z",
-   "t_captura_utc": "2026-08-13T22:48:20Z",
-   "t_evaluacion_utc": "2026-08-13T22:48:20Z",
-   "t_generacion_utc": "2026-08-13T22:48:20Z",
+   "t_captura_utc": "2026-08-13T22:49:19Z",
+   "t_evaluacion_utc": "2026-08-13T22:49:19Z",
+   "t_generacion_utc": "2026-08-13T22:49:19Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -246,7 +201,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Mirassol vs LDU\n⏱ Minuto: 48'\n📊 Marcador: 1-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: LDU acumula 78% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: LDU, min 35\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Mirassol vs LDU\n⏱ Minuto: 49'\n📊 Marcador: 1-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: LDU acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: LDU, min 35\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "8cbecbd90b3e96c2"
   },
@@ -256,7 +211,7 @@
    "match_id": "16253373",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 48,
+   "minuto": 49,
    "condicion": "Vasco da Gama acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -278,9 +233,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-13T22:20:20Z",
-   "t_captura_utc": "2026-08-13T22:48:20Z",
-   "t_evaluacion_utc": "2026-08-13T22:48:21Z",
-   "t_generacion_utc": "2026-08-13T22:48:21Z",
+   "t_captura_utc": "2026-08-13T22:49:19Z",
+   "t_evaluacion_utc": "2026-08-13T22:49:20Z",
+   "t_generacion_utc": "2026-08-13T22:49:20Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -294,7 +249,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Vasco da Gama vs Olimpia\n⏱ Minuto: 48'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Vasco da Gama acumula 90% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Vasco da Gama, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Vasco da Gama vs Olimpia\n⏱ Minuto: 49'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Vasco da Gama acumula 90% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Vasco da Gama, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "edf99cfcac60177f"
   },
@@ -304,7 +259,7 @@
    "match_id": "16253377",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 46,
+   "minuto": 47,
    "condicion": "Santos acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -326,9 +281,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-13T22:42:17Z",
-   "t_captura_utc": "2026-08-13T22:48:21Z",
-   "t_evaluacion_utc": "2026-08-13T22:48:21Z",
-   "t_generacion_utc": "2026-08-13T22:48:21Z",
+   "t_captura_utc": "2026-08-13T22:49:20Z",
+   "t_evaluacion_utc": "2026-08-13T22:49:20Z",
+   "t_generacion_utc": "2026-08-13T22:49:20Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -342,7 +297,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Santos vs Macará\n⏱ Minuto: 46'\n📊 Marcador: 1-1\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Santos acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Santos, min 43\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Santos vs Macará\n⏱ Minuto: 47'\n📊 Marcador: 1-1\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Santos acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Santos, min 43\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "aae5c78e924e11d9"
   }
