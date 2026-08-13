@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-13T02:29:54Z",
- "n_live_target": 3,
+ "generated_at_utc": "2026-08-13T02:32:54Z",
+ "n_live_target": 2,
  "matches": {
   "15679430": {
    "event_id": 15679430,
@@ -11,12 +11,12 @@
    "away_score": 1,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 16,
+   "minute": 19,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 86,
-     "away": 14
+     "home": 85,
+     "away": 15
     },
     "big_chances": {
      "label": "Ocasiones claras",
@@ -35,8 +35,13 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 94,
-     "away": 17
+     "home": 97,
+     "away": 18
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 0,
+     "away": 1
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -58,16 +63,16 @@
     "corners_over_95": {
      "over": 1.909,
      "under": 1.8,
-     "captured_at_utc": "2026-08-13T02:29:37Z"
+     "captured_at_utc": "2026-08-13T02:32:41Z"
     },
     "1x2": {
-     "home": 1.444,
+     "home": 1.5,
      "draw": 4.0,
      "away": 6.5,
-     "captured_at_utc": "2026-08-13T02:29:37Z"
+     "captured_at_utc": "2026-08-13T02:32:41Z"
     }
    },
-   "updated_at_utc": "2026-08-13T02:29:54Z"
+   "updated_at_utc": "2026-08-13T02:32:54Z"
   },
   "15679433": {
    "event_id": 15679433,
@@ -78,26 +83,31 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 3,
+   "minute": 6,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 81,
-     "away": 19
+     "home": 82,
+     "away": 18
     },
     "shots": {
      "label": "Remates totales",
+     "home": 4,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
      "home": 1,
      "away": 0
     },
     "passes": {
      "label": "Pases",
-     "home": 33,
-     "away": 8
+     "home": 43,
+     "away": 10
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 0,
+     "home": 1,
      "away": 0
     },
     "xg": {
@@ -108,49 +118,28 @@
    },
    "odds": {
     "btts": {
-     "yes": 1.615,
-     "no": 2.2,
-     "captured_at_utc": "2026-08-13T02:29:37Z"
+     "yes": 1.364,
+     "no": 3.0,
+     "captured_at_utc": "2026-08-13T02:32:41Z"
     },
     "corners_over_95": {
      "over": 1.8,
      "under": 1.909,
-     "captured_at_utc": "2026-08-13T02:29:37Z"
+     "captured_at_utc": "2026-08-13T02:32:41Z"
     },
     "1x2": {
-     "home": 1.727,
-     "draw": 4.0,
-     "away": 4.0,
-     "captured_at_utc": "2026-08-13T02:29:37Z"
+     "home": 1.333,
+     "draw": 4.75,
+     "away": 8.5,
+     "captured_at_utc": "2026-08-13T02:32:41Z"
     },
     "goals_over_25": {
      "over": 1.571,
      "under": 2.25,
-     "captured_at_utc": "2026-08-13T02:29:37Z"
+     "captured_at_utc": "2026-08-13T02:32:41Z"
     }
    },
-   "updated_at_utc": "2026-08-13T02:29:54Z"
-  },
-  "15416286": {
-   "event_id": 15416286,
-   "league": "Liga de Ascenso",
-   "home": "San Marcos de Arica",
-   "away": "Unión San Felipe",
-   "home_score": 0,
-   "away_score": 1,
-   "status_type": "inprogress",
-   "status_description": "2nd half",
-   "minute": 98,
-   "stats": {},
-   "odds": {
-    "1x2": {
-     "home": 34.0,
-     "draw": 1.2,
-     "away": 4.333,
-     "captured_at_utc": "2026-08-13T02:29:37Z"
-    }
-   },
-   "updated_at_utc": "2026-08-13T02:29:54Z"
+   "updated_at_utc": "2026-08-13T02:32:54Z"
   }
  }
 }
