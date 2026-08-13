@@ -119,25 +119,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 0,
+   "casos_verificados": 2,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "Ninguna todavía -- estrategia propia del Director, sin certificación estadística previa por decisión explícita (priorizar verificación real temprano, lección de E-LAB-001).",
    "fecha_creacion_utc": "2026-08-04",
-   "ultima_actualizacion_utc": "2026-08-04T02:30:00Z",
+   "ultima_actualizacion_utc": "2026-08-13T22:25:03Z",
    "proximo_hito": "Primeras verificaciones humanas reales contra Betano vía Telegram. Sin umbral de N fijado todavía -- a definir con el Director según los primeros resultados.",
    "metricas_fase4": {
-    "pct_coincide": null,
-    "pct_mejor": null,
-    "pct_suspendido": null,
-    "pct_inexistente": null,
-    "pct_operable": null,
+    "pct_operable": 100.0,
+    "n_operable": 2,
+    "n_no_operable": 0,
+    "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 0
+    "n_muestra": 2
    },
-   "alertas_live_historial": 0,
+   "alertas_live_historial": 36,
    "defecto_historico": {
     "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
     "detectado_utc": "2026-08-08",
@@ -339,24 +338,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 20,
+   "casos_verificados": 22,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "Ninguna todavía -- prueba Shadow recién activada 2026-08-08, sin alertas propias aún.",
    "fecha_creacion_utc": "2026-08-08",
-   "ultima_actualizacion_utc": "2026-08-13T00:48:04Z",
+   "ultima_actualizacion_utc": "2026-08-13T22:25:03Z",
    "proximo_hito": "Acumular evidencia en paralelo con L1 original. Comparar tasa de operabilidad/CLV/ROI entre ambas cuando haya muestra suficiente -- sin umbral de N fijado todavía.",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 20,
+    "n_operable": 22,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 20
+    "n_muestra": 22
    },
-   "alertas_live_historial": 46,
+   "alertas_live_historial": 50,
    "defecto_historico": {
     "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
     "detectado_utc": "2026-08-08",
