@@ -1272,5 +1272,26 @@
    "cuota_real_betano": 2.12,
    "activo": true
   }
+ ],
+ "49cd7da5a1833872": [
+  {
+   "alert_id": "49cd7da5a1833872",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "CF Monterrey vs Nashville SC (Leagues Cup)",
+   "liga": "Leagues Cup",
+   "event_id": "15679428",
+   "minuto_alerta": 20,
+   "condicion": "CF Monterrey acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-13T00:31:18Z",
+   "t_captura_utc": "2026-08-13T00:31:18Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-13T00:33:13Z",
+   "segundos_transcurridos": 114,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.5 @ 2.00",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 2.0,
+   "activo": true
+  }
  ]
 }
