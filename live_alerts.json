@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-13T23:32:20Z",
+ "generated_at_utc": "2026-08-13T23:33:21Z",
  "n_alerts": 12,
  "alerts": [
   {
@@ -443,7 +443,7 @@
    "match_id": "16253373",
    "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH +0.25 @ 1.65 [PROXY SofaScore, NO Betano]",
    "cuota_detectada": 1.65,
-   "minuto": 69,
+   "minuto": 70,
    "condicion": "Vasco da Gama domina por xG (1.60) y remates a puerta (5) sin ir ganando y sin roja del dominante — Vasco da Gama vs Olimpia. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
    "confianza": "Media",
    "link": "",
@@ -461,9 +461,9 @@
     "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
    },
    "t_evento_real_utc": "2026-08-13T23:20:05Z",
-   "t_captura_utc": "2026-08-13T23:32:08Z",
-   "t_evaluacion_utc": "2026-08-13T23:32:13Z",
-   "t_generacion_utc": "2026-08-13T23:32:13Z",
+   "t_captura_utc": "2026-08-13T23:33:10Z",
+   "t_evaluacion_utc": "2026-08-13T23:33:13Z",
+   "t_generacion_utc": "2026-08-13T23:33:13Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -477,7 +477,7 @@
    },
    "latencia_total_seg": 701.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Vasco da Gama vs Olimpia\n⏱ Minuto: 69'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📈 Domina: Vasco da Gama\nxG: 1.60 vs 0.04\nTiros a puerta: 5 vs 0\n\nReferencia PROXY: AH +0.25 @ 1.65 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Vasco da Gama — ¿línea y cuota reales?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Vasco da Gama vs Olimpia\n⏱ Minuto: 70'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📈 Domina: Vasco da Gama\nxG: 1.60 vs 0.04\nTiros a puerta: 5 vs 0\n\nReferencia PROXY: AH +0.25 @ 1.65 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Vasco da Gama — ¿línea y cuota reales?",
    "evidencia": null,
    "alert_id": "799b3debf72e7a35"
   },
@@ -487,7 +487,7 @@
    "match_id": "15679432",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 21,
+   "minuto": 22,
    "condicion": "Santos Laguna domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -507,8 +507,8 @@
    },
    "t_evento_real_utc": "2026-08-13T23:26:15Z",
    "t_captura_utc": "2026-08-13T23:26:15Z",
-   "t_evaluacion_utc": "2026-08-13T23:32:18Z",
-   "t_generacion_utc": "2026-08-13T23:32:18Z",
+   "t_evaluacion_utc": "2026-08-13T23:33:18Z",
+   "t_generacion_utc": "2026-08-13T23:33:18Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -522,7 +522,7 @@
    },
    "latencia_total_seg": 5.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Philadelphia Union vs Santos Laguna\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: Santos Laguna — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Philadelphia Union vs Santos Laguna\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: Santos Laguna — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "f75f361a7e9ec3c9"
   }
