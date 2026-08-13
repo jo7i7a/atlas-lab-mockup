@@ -1,45 +1,5 @@
 {
- "generated_at_utc": "2026-08-13T23:12:22Z",
- "n_alerts": 1,
- "alerts": [
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Mirassol vs LDU (CONMEBOL Libertadores)",
-   "match_id": "16253160",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (0-4), LDU presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Mirassol NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "LDU",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-13T22:43:08Z",
-   "t_captura_utc": "2026-08-13T22:43:08Z",
-   "t_evaluacion_utc": "2026-08-13T23:06:09Z",
-   "t_generacion_utc": "2026-08-13T23:06:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-13T22:43:10Z",
-     "latencia_envio_ms": 874.3512630462646,
-     "error": null,
-     "message_id": 420,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 2.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Mirassol vs LDU\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: LDU presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Mirassol no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "218fa3df51827603"
-  }
- ]
+ "generated_at_utc": "2026-08-13T23:13:21Z",
+ "n_alerts": 0,
+ "alerts": []
 }
