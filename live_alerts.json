@@ -1,14 +1,53 @@
 {
- "generated_at_utc": "2026-08-13T00:43:54Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-08-13T00:45:59Z",
+ "n_alerts": 2,
  "alerts": [
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Orlando City SC vs Atlético San Luis (Leagues Cup)",
+   "match_id": "15679427",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "5 córners totales antes del min 45 (3-2), Orlando City SC presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Atlético San Luis NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "Orlando City SC",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-13T00:27:04Z",
+   "t_captura_utc": "2026-08-13T00:27:04Z",
+   "t_evaluacion_utc": "2026-08-13T00:45:50Z",
+   "t_generacion_utc": "2026-08-13T00:45:50Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-13T00:45:51Z",
+     "latencia_envio_ms": 802.3819923400879,
+     "error": null,
+     "message_id": 372,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1127.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Orlando City SC vs Atlético San Luis\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Orlando City SC presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlético San Luis no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "36d709cc43a7d026"
+  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "CF Monterrey vs Nashville SC (Leagues Cup)",
    "match_id": "15679428",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 33,
+   "minuto": 35,
    "condicion": "CF Monterrey acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -30,9 +69,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-13T00:31:18Z",
-   "t_captura_utc": "2026-08-13T00:43:54Z",
-   "t_evaluacion_utc": "2026-08-13T00:43:54Z",
-   "t_generacion_utc": "2026-08-13T00:43:54Z",
+   "t_captura_utc": "2026-08-13T00:45:59Z",
+   "t_evaluacion_utc": "2026-08-13T00:45:59Z",
+   "t_generacion_utc": "2026-08-13T00:45:59Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -46,7 +85,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CF Monterrey vs Nashville SC\n⏱ Minuto: 33'\n📊 Marcador: 0-1\n🏆 Liga: Leagues Cup\n\n📝 Motivo: CF Monterrey acumula 73% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CF Monterrey, min 23\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CF Monterrey vs Nashville SC\n⏱ Minuto: 35'\n📊 Marcador: 0-1\n🏆 Liga: Leagues Cup\n\n📝 Motivo: CF Monterrey acumula 73% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CF Monterrey, min 23\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "49cd7da5a1833872"
   }
