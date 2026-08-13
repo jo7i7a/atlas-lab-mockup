@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-08-13T03:31:24Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-08-13T03:33:41Z",
+ "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "L1",
-   "match_label": "Seattle Sounders FC vs CD Guadalajara (Leagues Cup)",
-   "match_id": "15679435",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "5 córners totales antes del min 30 (3-2), Seattle Sounders FC presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿CD Guadalajara NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 2,
-    "equipo_presiona": "Seattle Sounders FC"
-   },
-   "t_evento_real_utc": "2026-08-13T03:02:43Z",
-   "t_captura_utc": "2026-08-13T03:02:43Z",
-   "t_evaluacion_utc": "2026-08-13T03:15:08Z",
-   "t_generacion_utc": "2026-08-13T03:15:08Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-13T03:03:09Z",
-     "latencia_envio_ms": 851.8052101135254,
-     "error": null,
-     "message_id": 393,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 26.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Seattle Sounders FC vs CD Guadalajara\n⏱ Minuto: 30'\n📊 Marcador: 1-0\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Seattle Sounders FC presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CD Guadalajara no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "1beaa9d7ceec5787"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Seattle Sounders FC vs CD Guadalajara (Leagues Cup)",
@@ -126,45 +88,6 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Los Angeles FC vs Querétaro FC\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 5\nVisita: 0\nTotal: 5\n\n📝 Motivo: Los Angeles FC presiona con 5 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Querétaro FC no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "5d9eb7523840e657"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Seattle Sounders FC vs CD Guadalajara (Leagues Cup)",
-   "match_id": "15679435",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "5 córners totales antes del min 45 (3-2), Seattle Sounders FC presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿CD Guadalajara NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 2,
-    "equipo_presiona": "Seattle Sounders FC",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-13T03:02:43Z",
-   "t_captura_utc": "2026-08-13T03:02:43Z",
-   "t_evaluacion_utc": "2026-08-13T03:30:09Z",
-   "t_generacion_utc": "2026-08-13T03:30:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-13T03:03:12Z",
-     "latencia_envio_ms": 813.2588863372803,
-     "error": null,
-     "message_id": 394,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 29.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Seattle Sounders FC vs CD Guadalajara\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Seattle Sounders FC presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CD Guadalajara no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "08610b72c2804168"
   }
  ]
 }
