@@ -1,46 +1,7 @@
 {
- "generated_at_utc": "2026-08-13T03:45:30Z",
+ "generated_at_utc": "2026-08-13T03:46:18Z",
  "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Los Angeles FC vs Querétaro FC (Leagues Cup)",
-   "match_id": "15679431",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "5 córners totales antes del min 45 (5-0), Los Angeles FC presiona (5 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Querétaro FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 5,
-    "corners_away": 0,
-    "equipo_presiona": "Los Angeles FC",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-13T03:25:28Z",
-   "t_captura_utc": "2026-08-13T03:25:28Z",
-   "t_evaluacion_utc": "2026-08-13T03:26:09Z",
-   "t_generacion_utc": "2026-08-13T03:26:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-13T03:26:09Z",
-     "latencia_envio_ms": 792.2158241271973,
-     "error": null,
-     "message_id": 396,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 41.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Los Angeles FC vs Querétaro FC\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 5\nVisita: 0\nTotal: 5\n\n📝 Motivo: Los Angeles FC presiona con 5 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Querétaro FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "5d9eb7523840e657"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "San Diego FC vs Club Puebla (Leagues Cup)",
@@ -90,6 +51,45 @@
    "alert_id": "6be25f2c31c14876"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Los Angeles FC vs Querétaro FC (Leagues Cup)",
+   "match_id": "15679431",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "5 córners totales antes del min 45 (5-0), Los Angeles FC presiona (5 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Querétaro FC NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 5,
+    "corners_away": 0,
+    "equipo_presiona": "Los Angeles FC",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-13T03:25:28Z",
+   "t_captura_utc": "2026-08-13T03:25:28Z",
+   "t_evaluacion_utc": "2026-08-13T03:46:09Z",
+   "t_generacion_utc": "2026-08-13T03:46:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-13T03:26:09Z",
+     "latencia_envio_ms": 792.2158241271973,
+     "error": null,
+     "message_id": 396,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 41.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Los Angeles FC vs Querétaro FC\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 5\nVisita: 0\nTotal: 5\n\n📝 Motivo: Los Angeles FC presiona con 5 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Querétaro FC no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "5d9eb7523840e657"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "San Diego FC vs Club Puebla (Leagues Cup)",
    "match_id": "15679433",
@@ -117,9 +117,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-13T03:40:16Z",
-   "t_captura_utc": "2026-08-13T03:45:29Z",
-   "t_evaluacion_utc": "2026-08-13T03:45:30Z",
-   "t_generacion_utc": "2026-08-13T03:45:30Z",
+   "t_captura_utc": "2026-08-13T03:46:18Z",
+   "t_evaluacion_utc": "2026-08-13T03:46:18Z",
+   "t_generacion_utc": "2026-08-13T03:46:18Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
