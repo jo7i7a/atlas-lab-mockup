@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-13T02:35:16Z",
+ "generated_at_utc": "2026-08-13T02:36:14Z",
  "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "CD Toluca vs FC Dallas (Leagues Cup)",
-   "match_id": "15679430",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 22,
-   "condicion": "FC Dallas domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "FC Dallas",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 0,
-    "remates_home": 1,
-    "remates_away": 3,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-13T02:28:15Z",
-   "t_captura_utc": "2026-08-13T02:28:15Z",
-   "t_evaluacion_utc": "2026-08-13T02:35:15Z",
-   "t_generacion_utc": "2026-08-13T02:35:15Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-13T02:29:15Z",
-     "latencia_envio_ms": 799.7140884399414,
-     "error": null,
-     "message_id": 384,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 60.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CD Toluca vs FC Dallas\n⏱ Minuto: 22'\n📊 Marcador: 1-1\n🏆 Liga: Leagues Cup\n\n📝 Motivo: FC Dallas — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "3d92d73685e8f923"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "CD Toluca vs FC Dallas (Leagues Cup)",
@@ -94,6 +49,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CD Toluca vs FC Dallas\n⏱ Minuto: 22'\n📊 Marcador: 1-1\n🏆 Liga: Leagues Cup\n\n📝 Motivo: CD Toluca acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "dc3fb61aef0e1ebf"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "CD Toluca vs FC Dallas (Leagues Cup)",
+   "match_id": "15679430",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 23,
+   "condicion": "FC Dallas domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "FC Dallas",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 1,
+    "remates_away": 3,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-13T02:28:15Z",
+   "t_captura_utc": "2026-08-13T02:28:15Z",
+   "t_evaluacion_utc": "2026-08-13T02:36:14Z",
+   "t_generacion_utc": "2026-08-13T02:36:14Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-13T02:29:15Z",
+     "latencia_envio_ms": 799.7140884399414,
+     "error": null,
+     "message_id": 384,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 60.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CD Toluca vs FC Dallas\n⏱ Minuto: 23'\n📊 Marcador: 1-1\n🏆 Liga: Leagues Cup\n\n📝 Motivo: FC Dallas — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "3d92d73685e8f923"
   }
  ]
 }
