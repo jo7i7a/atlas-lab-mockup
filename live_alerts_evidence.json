@@ -1903,5 +1903,26 @@
    "cuota_real_betano": 1.9,
    "activo": true
   }
+ ],
+ "e29d5181fbe5a4db": [
+  {
+   "alert_id": "e29d5181fbe5a4db",
+   "strategy_id": "A3_V1_DOMINANTE_NO_GANA",
+   "match_label": "Vasco da Gama vs Olimpia (CONMEBOL Sudamericana)",
+   "liga": "CONMEBOL Sudamericana",
+   "event_id": "16253373",
+   "minuto_alerta": 82,
+   "condicion": "Vasco da Gama domina en córners y entradas al tercio final en los últimos 10 min (≥2 córners Y >15 entradas) sin ir ganando, ventana 80'-84'. Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-13T23:44:35Z",
+   "t_captura_utc": "2026-08-13T23:44:35Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-13T23:46:18Z",
+   "segundos_transcurridos": 55,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "12.5 @ 1.90",
+   "linea_real_betano": 12.5,
+   "cuota_real_betano": 1.9,
+   "activo": true
+  }
  ]
 }
