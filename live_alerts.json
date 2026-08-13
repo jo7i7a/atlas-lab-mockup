@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-08-13T03:23:17Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-13T03:24:16Z",
+ "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "L1",
-   "match_label": "San Diego FC vs Club Puebla (Leagues Cup)",
-   "match_id": "15679433",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "5 córners totales antes del min 30 (2-3), Club Puebla presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿San Diego FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 2,
-    "corners_away": 3,
-    "equipo_presiona": "Club Puebla"
-   },
-   "t_evento_real_utc": "2026-08-13T02:53:20Z",
-   "t_captura_utc": "2026-08-13T02:53:20Z",
-   "t_evaluacion_utc": "2026-08-13T02:56:08Z",
-   "t_generacion_utc": "2026-08-13T02:56:08Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-13T02:54:09Z",
-     "latencia_envio_ms": 799.325704574585,
-     "error": null,
-     "message_id": 388,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 49.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ San Diego FC vs Club Puebla\n⏱ Minuto: 30'\n📊 Marcador: 1-1\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Club Puebla presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿San Diego FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "9eed470b679e3ae3"
-  },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Los Angeles FC vs Querétaro FC (Leagues Cup)",
@@ -129,45 +91,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Seattle Sounders FC vs CD Guadalajara\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: Seattle Sounders FC — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "db46a5d3487f407e"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "San Diego FC vs Club Puebla (Leagues Cup)",
-   "match_id": "15679433",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "5 córners totales antes del min 45 (2-3), Club Puebla presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿San Diego FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 2,
-    "corners_away": 3,
-    "equipo_presiona": "Club Puebla",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-13T02:53:20Z",
-   "t_captura_utc": "2026-08-13T02:53:20Z",
-   "t_evaluacion_utc": "2026-08-13T03:11:10Z",
-   "t_generacion_utc": "2026-08-13T03:11:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-13T02:54:12Z",
-     "latencia_envio_ms": 767.8921222686768,
-     "error": null,
-     "message_id": 389,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 52.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ San Diego FC vs Club Puebla\n⏱ Minuto: 45'\n📊 Marcador: 1-1\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Club Puebla presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿San Diego FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "ea8f3858321a36f7"
   },
   {
    "strategy_id": "L1",
@@ -261,7 +184,7 @@
    "match_id": "15679435",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 38,
+   "minuto": 39,
    "condicion": "5 córners totales antes del min 45 (3-2), Seattle Sounders FC presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿CD Guadalajara NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -275,8 +198,8 @@
    },
    "t_evento_real_utc": "2026-08-13T03:02:43Z",
    "t_captura_utc": "2026-08-13T03:02:43Z",
-   "t_evaluacion_utc": "2026-08-13T03:23:09Z",
-   "t_generacion_utc": "2026-08-13T03:23:09Z",
+   "t_evaluacion_utc": "2026-08-13T03:24:09Z",
+   "t_generacion_utc": "2026-08-13T03:24:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -290,7 +213,7 @@
    },
    "latencia_total_seg": 29.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Seattle Sounders FC vs CD Guadalajara\n⏱ Minuto: 38'\n📊 Marcador: 1-0\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Seattle Sounders FC presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CD Guadalajara no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Seattle Sounders FC vs CD Guadalajara\n⏱ Minuto: 39'\n📊 Marcador: 1-0\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Seattle Sounders FC presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CD Guadalajara no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "08610b72c2804168"
   },
@@ -300,7 +223,7 @@
    "match_id": "15679431",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 42,
+   "minuto": 43,
    "condicion": "Los Angeles FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -322,9 +245,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-13T03:01:15Z",
-   "t_captura_utc": "2026-08-13T03:23:17Z",
-   "t_evaluacion_utc": "2026-08-13T03:23:17Z",
-   "t_generacion_utc": "2026-08-13T03:23:17Z",
+   "t_captura_utc": "2026-08-13T03:24:16Z",
+   "t_evaluacion_utc": "2026-08-13T03:24:16Z",
+   "t_generacion_utc": "2026-08-13T03:24:16Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -338,7 +261,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Los Angeles FC vs Querétaro FC\n⏱ Minuto: 42'\n📊 Marcador: 0-1\n🏆 Liga: Leagues Cup\n\n📝 Motivo: Los Angeles FC acumula 76% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Los Angeles FC vs Querétaro FC\n⏱ Minuto: 43'\n📊 Marcador: 0-1\n🏆 Liga: Leagues Cup\n\n📝 Motivo: Los Angeles FC acumula 76% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "ffd0286186aa833d"
   }
