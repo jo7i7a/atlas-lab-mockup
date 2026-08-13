@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-13T23:44:27Z",
- "n_alerts": 21,
+ "generated_at_utc": "2026-08-13T23:45:28Z",
+ "n_alerts": 22,
  "alerts": [
   {
    "strategy_id": "L2-SHADOW",
@@ -884,7 +884,7 @@
    "match_id": "15679432",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 33,
+   "minuto": 34,
    "condicion": "4 córners totales antes del min 45 (1-3), Santos Laguna presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Philadelphia Union NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -898,8 +898,8 @@
    },
    "t_evento_real_utc": "2026-08-13T23:43:33Z",
    "t_captura_utc": "2026-08-13T23:43:33Z",
-   "t_evaluacion_utc": "2026-08-13T23:44:10Z",
-   "t_generacion_utc": "2026-08-13T23:44:10Z",
+   "t_evaluacion_utc": "2026-08-13T23:45:09Z",
+   "t_generacion_utc": "2026-08-13T23:45:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -913,9 +913,53 @@
    },
    "latencia_total_seg": 38.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Philadelphia Union vs Santos Laguna\n⏱ Minuto: 33'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Santos Laguna presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Philadelphia Union no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Philadelphia Union vs Santos Laguna\n⏱ Minuto: 34'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Santos Laguna presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Philadelphia Union no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "38754d04cde1d865"
+  },
+  {
+   "strategy_id": "A3_V1_DOMINANTE_NO_GANA",
+   "match_label": "Vasco da Gama vs Olimpia (CONMEBOL Sudamericana)",
+   "match_id": "16253373",
+   "market": "Total de Córners (Over/Under) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 82,
+   "condicion": "Vasco da Gama domina en córners y entradas al tercio final en los últimos 10 min (≥2 córners Y >15 entradas) sin ir ganando, ventana 80'-84'. Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Vasco da Gama",
+    "lado_dominante": "home",
+    "corners_10min_home": 2,
+    "corners_10min_away": 0,
+    "entradas_10min_home": 16,
+    "entradas_10min_away": 2,
+    "marcador_en_el_momento": "0-0",
+    "reinterpretacion": "dominante_no_gana -- NO es la condición 'favorito perdiendo o empatando' del PDF original, ver ficha A3_V1_DOMINANTE_NO_GANA",
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >6.5/>5.0, perfil táctico, ligas ideales, cuota favorito) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-13T23:44:35Z",
+   "t_captura_utc": "2026-08-13T23:44:35Z",
+   "t_evaluacion_utc": "2026-08-13T23:45:22Z",
+   "t_generacion_utc": "2026-08-13T23:45:22Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-13T23:45:23Z",
+     "latencia_envio_ms": 829.5023441314697,
+     "error": null,
+     "message_id": 461,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 48.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A3_V1_DOMINANTE_NO_GANA\n\n⚽ Vasco da Gama vs Olimpia\n⏱ Minuto: 82'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Vasco da Gama — 2 córners y 16 entradas al tercio final en los últimos 10 min, sin ir ganando (marcador 0-0)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over/Under",
+   "evidencia": null,
+   "alert_id": "e29d5181fbe5a4db"
   }
  ]
 }
