@@ -1455,5 +1455,45 @@
    "cuota_real_betano": 1.95,
    "activo": true
   }
+ ],
+ "edf99cfcac60177f": [
+  {
+   "alert_id": "edf99cfcac60177f",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Vasco da Gama vs Olimpia (CONMEBOL Sudamericana)",
+   "liga": "CONMEBOL Sudamericana",
+   "event_id": "16253373",
+   "minuto_alerta": 20,
+   "condicion": "Vasco da Gama acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-13T22:20:20Z",
+   "t_captura_utc": "2026-08-13T22:20:20Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-13T22:20:28Z",
+   "segundos_transcurridos": 7,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "11.5 @ 1.60\n12.5 @ 2.02",
+   "linea_real_betano": 11.5,
+   "cuota_real_betano": 1.6,
+   "activo": true
+  },
+  {
+   "alert_id": "edf99cfcac60177f",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Vasco da Gama vs Olimpia (CONMEBOL Sudamericana)",
+   "liga": "CONMEBOL Sudamericana",
+   "event_id": "16253373",
+   "minuto_alerta": 20,
+   "condicion": "Vasco da Gama acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-13T22:20:20Z",
+   "t_captura_utc": "2026-08-13T22:20:20Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-13T22:20:28Z",
+   "segundos_transcurridos": 7,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "11.5 @ 1.60\n12.5 @ 2.02",
+   "linea_real_betano": 12.5,
+   "cuota_real_betano": 2.02,
+   "activo": true
+  }
  ]
 }
