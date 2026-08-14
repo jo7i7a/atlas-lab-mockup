@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-14T00:25:15Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-14T00:26:15Z",
+ "n_alerts": 2,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -49,59 +49,11 @@
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Philadelphia Union vs Santos Laguna (Leagues Cup)",
-   "match_id": "15679432",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "Philadelphia Union acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Philadelphia Union",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6923,
-    "touches_home": 9,
-    "touches_away": 4,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-13T23:55:15Z",
-    "t_inicio_estimado_condicion": "2026-08-13T23:54:19Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-13T23:55:15Z",
-   "t_captura_utc": "2026-08-14T00:14:15Z",
-   "t_evaluacion_utc": "2026-08-14T00:14:15Z",
-   "t_generacion_utc": "2026-08-14T00:14:15Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-13T23:55:16Z",
-     "latencia_envio_ms": 797.2218990325928,
-     "error": null,
-     "message_id": 465,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Philadelphia Union vs Santos Laguna\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: Philadelphia Union acumula 69% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "8c2e1c0b277b8b91"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "New York City FC vs Club Necaxa (Leagues Cup)",
    "match_id": "15679443",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 45,
    "condicion": "New York City FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -123,9 +75,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-14T00:03:19Z",
-   "t_captura_utc": "2026-08-14T00:25:15Z",
-   "t_evaluacion_utc": "2026-08-14T00:25:15Z",
-   "t_generacion_utc": "2026-08-14T00:25:15Z",
+   "t_captura_utc": "2026-08-14T00:26:15Z",
+   "t_evaluacion_utc": "2026-08-14T00:26:15Z",
+   "t_generacion_utc": "2026-08-14T00:26:15Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -139,7 +91,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ New York City FC vs Club Necaxa\n⏱ Minuto: 44'\n📊 Marcador: 1-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: New York City FC acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ New York City FC vs Club Necaxa\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: New York City FC acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "09db7021bda47af5"
   }
