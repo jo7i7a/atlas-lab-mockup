@@ -2006,5 +2006,66 @@
    "cuota_real_betano": 1.88,
    "activo": true
   }
+ ],
+ "0df3266eb68d55ba": [
+  {
+   "alert_id": "0df3266eb68d55ba",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Rosario Central vs Corinthians (CONMEBOL Libertadores)",
+   "liga": "CONMEBOL Libertadores",
+   "event_id": "16253172",
+   "minuto_alerta": 22,
+   "condicion": "Corinthians domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-14T00:54:02Z",
+   "t_captura_utc": "2026-08-14T00:54:02Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-14T00:56:30Z",
+   "segundos_transcurridos": 57,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "6.5 @ 1.37\n7.5 @ 1.72",
+   "linea_real_betano": 6.5,
+   "cuota_real_betano": 1.37,
+   "activo": true
+  },
+  {
+   "alert_id": "0df3266eb68d55ba",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Rosario Central vs Corinthians (CONMEBOL Libertadores)",
+   "liga": "CONMEBOL Libertadores",
+   "event_id": "16253172",
+   "minuto_alerta": 22,
+   "condicion": "Corinthians domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-14T00:54:02Z",
+   "t_captura_utc": "2026-08-14T00:54:02Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-14T00:56:30Z",
+   "segundos_transcurridos": 57,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "6.5 @ 1.37\n7.5 @ 1.72",
+   "linea_real_betano": 7.5,
+   "cuota_real_betano": 1.72,
+   "activo": true
+  }
+ ],
+ "d010cc9c0dc667a1": [
+  {
+   "alert_id": "d010cc9c0dc667a1",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Club América vs Austin FC (Leagues Cup)",
+   "liga": "Leagues Cup",
+   "event_id": "15679444",
+   "minuto_alerta": 20,
+   "condicion": "Club América acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-14T01:01:17Z",
+   "t_captura_utc": "2026-08-14T01:01:17Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-14T01:01:47Z",
+   "segundos_transcurridos": 29,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.5 @ 1.80",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 1.8,
+   "activo": true
+  }
  ]
 }
