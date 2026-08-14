@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-14T19:45:26Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-14T19:46:16Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -96,50 +96,6 @@
    "alert_id": "74c4cab260f964ca"
   },
   {
-   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "SC Telstar vs Sparta Rotterdam (VriendenLoterij Eredivisie)",
-   "match_id": "16316787",
-   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 69,
-   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_combinado": 2.57,
-    "tiros_combinados": 20,
-    "sot_combinado": 8,
-    "presion_reciente_10min": 5,
-    "marcador_en_el_momento": "0-2",
-    "t_primera_observacion_atlas": "2026-08-14T19:16:02Z",
-    "t_inicio_estimado_condicion": "2026-08-14T19:14:52Z",
-    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-14T19:16:02Z",
-   "t_captura_utc": "2026-08-14T19:28:48Z",
-   "t_evaluacion_utc": "2026-08-14T19:28:48Z",
-   "t_generacion_utc": "2026-08-14T19:28:48Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T19:16:03Z",
-     "latencia_envio_ms": 788.3012294769287,
-     "error": null,
-     "message_id": 522,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 69'\n📊 Marcador: 0-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: presión combinada sostenida — xG 2.57, 20 tiros totales (8 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
-   "evidencia": null,
-   "alert_id": "e6b5febe1beb21cb"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "SC Telstar vs Sparta Rotterdam (VriendenLoterij Eredivisie)",
    "match_id": "16316787",
@@ -186,45 +142,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 85'\n📊 Marcador: 0-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Sparta Rotterdam acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Sparta Rotterdam, min 76\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "a3b591669b2ff1eb"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Wolverhampton vs Blackburn Rovers (Championship)",
-   "match_id": "16391133",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 44,
-   "condicion": "5 córners totales antes del min 45 (3-2), Wolverhampton presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Blackburn Rovers NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 2,
-    "equipo_presiona": "Wolverhampton",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-14T19:41:06Z",
-   "t_captura_utc": "2026-08-14T19:41:06Z",
-   "t_evaluacion_utc": "2026-08-14T19:45:09Z",
-   "t_generacion_utc": "2026-08-14T19:45:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T19:41:09Z",
-     "latencia_envio_ms": 795.0170040130615,
-     "error": null,
-     "message_id": 527,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 3.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Wolverhampton vs Blackburn Rovers\n⏱ Minuto: 44'\n📊 Marcador: 1-1\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Wolverhampton presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Blackburn Rovers no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "27a1cb7a9d996ebe"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -275,6 +192,45 @@
    "alert_id": "e68e36ed6ac34c54"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Wolverhampton vs Blackburn Rovers (Championship)",
+   "match_id": "16391133",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "5 córners totales antes del min 45 (3-2), Wolverhampton presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Blackburn Rovers NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "Wolverhampton",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-14T19:41:06Z",
+   "t_captura_utc": "2026-08-14T19:41:06Z",
+   "t_evaluacion_utc": "2026-08-14T19:46:09Z",
+   "t_generacion_utc": "2026-08-14T19:46:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-14T19:41:09Z",
+     "latencia_envio_ms": 795.0170040130615,
+     "error": null,
+     "message_id": 527,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 3.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Wolverhampton vs Blackburn Rovers\n⏱ Minuto: 45'\n📊 Marcador: 1-1\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Wolverhampton presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Blackburn Rovers no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "27a1cb7a9d996ebe"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Sporting CP vs Vitória SC (Liga Portugal Betclic)",
    "match_id": "16450754",
@@ -302,9 +258,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-14T19:39:22Z",
-   "t_captura_utc": "2026-08-14T19:45:25Z",
-   "t_evaluacion_utc": "2026-08-14T19:45:25Z",
-   "t_generacion_utc": "2026-08-14T19:45:25Z",
+   "t_captura_utc": "2026-08-14T19:46:16Z",
+   "t_evaluacion_utc": "2026-08-14T19:46:16Z",
+   "t_generacion_utc": "2026-08-14T19:46:16Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
