@@ -1,51 +1,7 @@
 {
- "generated_at_utc": "2026-08-14T00:14:16Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-08-14T00:15:32Z",
+ "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "A3_V1_DOMINANTE_NO_GANA",
-   "match_label": "Vasco da Gama vs Olimpia (CONMEBOL Sudamericana)",
-   "match_id": "16253373",
-   "market": "Total de Córners (Over/Under) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 84,
-   "condicion": "Vasco da Gama domina en córners y entradas al tercio final en los últimos 10 min (≥2 córners Y >15 entradas) sin ir ganando, ventana 80'-84'. Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Vasco da Gama",
-    "lado_dominante": "home",
-    "corners_10min_home": 2,
-    "corners_10min_away": 0,
-    "entradas_10min_home": 16,
-    "entradas_10min_away": 2,
-    "marcador_en_el_momento": "0-0",
-    "reinterpretacion": "dominante_no_gana -- NO es la condición 'favorito perdiendo o empatando' del PDF original, ver ficha A3_V1_DOMINANTE_NO_GANA",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >6.5/>5.0, perfil táctico, ligas ideales, cuota favorito) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-13T23:44:35Z",
-   "t_captura_utc": "2026-08-13T23:44:35Z",
-   "t_evaluacion_utc": "2026-08-13T23:47:17Z",
-   "t_generacion_utc": "2026-08-13T23:47:17Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-13T23:45:23Z",
-     "latencia_envio_ms": 829.5023441314697,
-     "error": null,
-     "message_id": 461,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 48.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A3_V1_DOMINANTE_NO_GANA\n\n⚽ Vasco da Gama vs Olimpia\n⏱ Minuto: 84'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Vasco da Gama — 2 córners y 16 entradas al tercio final en los últimos 10 min, sin ir ganando (marcador 0-0)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over/Under",
-   "evidencia": null,
-   "alert_id": "e29d5181fbe5a4db"
-  },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "New York City FC vs Club Necaxa (Leagues Cup)",
@@ -145,7 +101,7 @@
    "match_id": "15679443",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 33,
+   "minuto": 34,
    "condicion": "New York City FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -154,8 +110,8 @@
    "extra": {
     "equipo_dominante": "New York City FC",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 8,
+    "ratio_presion_territorial": 0.6923,
+    "touches_home": 9,
     "touches_away": 4,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
@@ -167,9 +123,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-14T00:03:19Z",
-   "t_captura_utc": "2026-08-14T00:14:15Z",
-   "t_evaluacion_utc": "2026-08-14T00:14:16Z",
-   "t_generacion_utc": "2026-08-14T00:14:16Z",
+   "t_captura_utc": "2026-08-14T00:15:32Z",
+   "t_evaluacion_utc": "2026-08-14T00:15:32Z",
+   "t_generacion_utc": "2026-08-14T00:15:32Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -183,7 +139,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ New York City FC vs Club Necaxa\n⏱ Minuto: 33'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: New York City FC acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ New York City FC vs Club Necaxa\n⏱ Minuto: 34'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: New York City FC acumula 69% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "09db7021bda47af5"
   }
