@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-14T02:41:55Z",
+ "generated_at_utc": "2026-08-14T02:44:54Z",
  "n_live_target": 3,
  "matches": {
   "15679444": {
@@ -7,8 +7,8 @@
    "league": "Leagues Cup",
    "home": "Club América",
    "away": "Austin FC",
-   "home_score": 2,
-   "away_score": 3,
+   "home_score": 4,
+   "away_score": 5,
    "status_type": "inprogress",
    "status_description": "Penalties",
    "minute": null,
@@ -77,7 +77,7 @@
      "captured_at_utc": "2026-08-14T02:33:41Z"
     }
    },
-   "updated_at_utc": "2026-08-14T02:41:55Z"
+   "updated_at_utc": "2026-08-14T02:44:54Z"
   },
   "15679441": {
    "event_id": 15679441,
@@ -88,12 +88,12 @@
    "away_score": 1,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 71,
+   "minute": 74,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 49,
-     "away": 51
+     "home": 52,
+     "away": 48
     },
     "big_chances": {
      "label": "Ocasiones claras",
@@ -102,7 +102,7 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 11,
+     "home": 12,
      "away": 7
     },
     "corners": {
@@ -112,8 +112,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 315,
-     "away": 326
+     "home": 354,
+     "away": 332
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -133,20 +133,20 @@
    },
    "odds": {
     "btts": {
-     "yes": 2.25,
-     "no": 1.571,
-     "captured_at_utc": "2026-08-14T02:41:45Z"
+     "yes": 2.375,
+     "no": 1.533,
+     "captured_at_utc": "2026-08-14T02:44:49Z"
     },
     "corners_over_95": {
-     "over": 1.909,
-     "under": 1.8,
-     "captured_at_utc": "2026-08-14T02:41:45Z"
+     "over": 2.0,
+     "under": 1.727,
+     "captured_at_utc": "2026-08-14T02:44:49Z"
     },
     "1x2": {
-     "home": 15.0,
-     "draw": 3.5,
+     "home": 19.0,
+     "draw": 3.25,
      "away": 1.4,
-     "captured_at_utc": "2026-08-14T02:41:45Z"
+     "captured_at_utc": "2026-08-14T02:44:49Z"
     },
     "goals_over_25": {
      "over": 2.5,
@@ -154,7 +154,7 @@
      "captured_at_utc": "2026-08-14T01:30:22Z"
     }
    },
-   "updated_at_utc": "2026-08-14T02:41:55Z"
+   "updated_at_utc": "2026-08-14T02:44:54Z"
   },
   "15679440": {
    "event_id": 15679440,
@@ -165,8 +165,18 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 1,
+   "minute": 4,
    "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 79,
+     "away": 21
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 22,
+     "away": 5
+    },
     "shots": {
      "label": "Remates totales",
      "home": 0,
@@ -185,18 +195,23 @@
    },
    "odds": {
     "btts": {
-     "yes": 1.5,
-     "no": 2.5,
-     "captured_at_utc": "2026-08-14T02:41:45Z"
+     "yes": 1.571,
+     "no": 2.25,
+     "captured_at_utc": "2026-08-14T02:44:49Z"
     },
     "1x2": {
      "home": 1.667,
-     "draw": 4.5,
+     "draw": 4.333,
      "away": 4.333,
-     "captured_at_utc": "2026-08-14T02:41:45Z"
+     "captured_at_utc": "2026-08-14T02:44:49Z"
+    },
+    "corners_over_95": {
+     "over": 1.727,
+     "under": 2.0,
+     "captured_at_utc": "2026-08-14T02:44:49Z"
     }
    },
-   "updated_at_utc": "2026-08-14T02:41:55Z"
+   "updated_at_utc": "2026-08-14T02:44:54Z"
   }
  }
 }
