@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-14T23:49:27Z",
+ "generated_at_utc": "2026-08-14T23:50:27Z",
  "n_alerts": 6,
  "alerts": [
   {
@@ -138,51 +138,6 @@
    "alert_id": "2ae84a960a338663"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Sport Recife vs Londrina (Brasileirão Série B)",
-   "match_id": "15526225",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 17,
-   "condicion": "Sport Recife domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sport Recife",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-14T23:48:19Z",
-   "t_captura_utc": "2026-08-14T23:48:19Z",
-   "t_evaluacion_utc": "2026-08-14T23:49:20Z",
-   "t_generacion_utc": "2026-08-14T23:49:20Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T23:49:21Z",
-     "latencia_envio_ms": 837.8806114196777,
-     "error": null,
-     "message_id": 558,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 62.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Sport Recife vs Londrina\n⏱ Minuto: 17'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Sport Recife — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "88323a7973340388"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Universidad de Concepción vs Deportes La Serena (Liga de Primera)",
    "match_id": "15353095",
@@ -231,21 +186,66 @@
    "alert_id": "aa89c227a23424c5"
   },
   {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Sport Recife vs Londrina (Brasileirão Série B)",
+   "match_id": "15526225",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Sport Recife domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Sport Recife",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-14T23:48:19Z",
+   "t_captura_utc": "2026-08-14T23:48:19Z",
+   "t_evaluacion_utc": "2026-08-14T23:50:20Z",
+   "t_generacion_utc": "2026-08-14T23:50:20Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-14T23:49:21Z",
+     "latencia_envio_ms": 837.8806114196777,
+     "error": null,
+     "message_id": 558,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 62.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Sport Recife vs Londrina\n⏱ Minuto: 18'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Sport Recife — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "88323a7973340388"
+  },
+  {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Ponte Preta vs Náutico (Brasileirão Série B)",
    "match_id": "15526218",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 59,
+   "minuto": 60,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
    "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "xg_combinado": 1.59,
-    "tiros_combinados": 18,
-    "sot_combinado": 6,
+    "xg_combinado": 1.87,
+    "tiros_combinados": 20,
+    "sot_combinado": 7,
     "presion_reciente_10min": 6,
     "marcador_en_el_momento": "1-0",
     "t_primera_observacion_atlas": "2026-08-14T23:45:21Z",
@@ -254,9 +254,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-14T23:45:21Z",
-   "t_captura_utc": "2026-08-14T23:49:27Z",
-   "t_evaluacion_utc": "2026-08-14T23:49:27Z",
-   "t_generacion_utc": "2026-08-14T23:49:27Z",
+   "t_captura_utc": "2026-08-14T23:50:26Z",
+   "t_evaluacion_utc": "2026-08-14T23:50:27Z",
+   "t_generacion_utc": "2026-08-14T23:50:27Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -270,7 +270,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Ponte Preta vs Náutico\n⏱ Minuto: 59'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 1.59, 18 tiros totales (6 a puerta), 6 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Ponte Preta vs Náutico\n⏱ Minuto: 60'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 1.87, 20 tiros totales (7 a puerta), 6 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "8e9db6c005f2396e"
   }
