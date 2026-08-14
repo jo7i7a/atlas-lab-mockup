@@ -338,24 +338,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 29,
+   "casos_verificados": 31,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "Ninguna todavía -- prueba Shadow recién activada 2026-08-08, sin alertas propias aún.",
    "fecha_creacion_utc": "2026-08-08",
-   "ultima_actualizacion_utc": "2026-08-14T01:54:03Z",
-   "proximo_hito": "Acumular evidencia en paralelo con L1 original. Comparar tasa de operabilidad/CLV/ROI entre ambas cuando haya muestra suficiente -- sin umbral de N fijado todavía.",
+   "ultima_actualizacion_utc": "2026-08-14T17:34:03Z",
+   "proximo_hito": "Umbral de 30 verificaciones alcanzado (N=31, 100.0% operable) -- cumple el criterio del Director (>=80-90%). Pasar a diseño de estrategia de stake y gestión de riesgo antes de avanzar a CERTIFICADA.",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 29,
+    "n_operable": 31,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 29
+    "n_muestra": 31
    },
-   "alertas_live_historial": 55,
+   "alertas_live_historial": 57,
    "defecto_historico": {
     "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
     "detectado_utc": "2026-08-08",
