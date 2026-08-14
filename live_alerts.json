@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-14T23:50:27Z",
+ "generated_at_utc": "2026-08-14T23:51:28Z",
  "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Universidad de Concepción vs Deportes La Serena (Liga de Primera)",
-   "match_id": "15353095",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 24,
-   "condicion": "Universidad de Concepción acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Universidad de Concepción",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 2,
-    "touches_away": 1,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-14T23:21:16Z",
-    "t_inicio_estimado_condicion": "2026-08-14T23:21:04Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-14T23:21:16Z",
-   "t_captura_utc": "2026-08-14T23:24:16Z",
-   "t_evaluacion_utc": "2026-08-14T23:24:16Z",
-   "t_generacion_utc": "2026-08-14T23:24:16Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T23:21:17Z",
-     "latencia_envio_ms": 819.6442127227783,
-     "error": null,
-     "message_id": 553,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Universidad de Concepción vs Deportes La Serena\n⏱ Minuto: 24'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Universidad de Concepción acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "59b7e33e03e1474a"
-  },
   {
    "strategy_id": "L1-SHADOW",
    "match_label": "Universidad de Concepción vs Deportes La Serena (Liga de Primera)",
@@ -191,7 +143,7 @@
    "match_id": "15526225",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 18,
+   "minuto": 19,
    "condicion": "Sport Recife domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -211,8 +163,8 @@
    },
    "t_evento_real_utc": "2026-08-14T23:48:19Z",
    "t_captura_utc": "2026-08-14T23:48:19Z",
-   "t_evaluacion_utc": "2026-08-14T23:50:20Z",
-   "t_generacion_utc": "2026-08-14T23:50:20Z",
+   "t_evaluacion_utc": "2026-08-14T23:51:19Z",
+   "t_generacion_utc": "2026-08-14T23:51:19Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -226,9 +178,57 @@
    },
    "latencia_total_seg": 62.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Sport Recife vs Londrina\n⏱ Minuto: 18'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Sport Recife — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Sport Recife vs Londrina\n⏱ Minuto: 19'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Sport Recife — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "88323a7973340388"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Racing Club vs Banfield (Liga Profesional de Fútbol)",
+   "match_id": "16667393",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 20,
+   "condicion": "Racing Club acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Racing Club",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 1.0,
+    "touches_home": 1,
+    "touches_away": 0,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 13,
+    "equipo_que_realizo_sustitucion": "Racing Club",
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-14T23:51:25Z",
+    "t_inicio_estimado_condicion": null,
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-14T23:51:25Z",
+   "t_captura_utc": "2026-08-14T23:51:25Z",
+   "t_evaluacion_utc": "2026-08-14T23:51:26Z",
+   "t_generacion_utc": "2026-08-14T23:51:26Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-14T23:51:26Z",
+     "latencia_envio_ms": 824.9430656433105,
+     "error": null,
+     "message_id": 559,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Racing Club vs Banfield\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Racing Club acumula 100% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Racing Club, min 13\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "ac2dc58d02e1b5fd"
   },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -236,14 +236,14 @@
    "match_id": "15526218",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 60,
+   "minuto": 61,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
    "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "xg_combinado": 1.87,
+    "xg_combinado": 1.9,
     "tiros_combinados": 20,
     "sot_combinado": 7,
     "presion_reciente_10min": 6,
@@ -254,9 +254,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-14T23:45:21Z",
-   "t_captura_utc": "2026-08-14T23:50:26Z",
-   "t_evaluacion_utc": "2026-08-14T23:50:27Z",
-   "t_generacion_utc": "2026-08-14T23:50:27Z",
+   "t_captura_utc": "2026-08-14T23:51:27Z",
+   "t_evaluacion_utc": "2026-08-14T23:51:28Z",
+   "t_generacion_utc": "2026-08-14T23:51:28Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -270,7 +270,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Ponte Preta vs Náutico\n⏱ Minuto: 60'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 1.87, 20 tiros totales (7 a puerta), 6 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Ponte Preta vs Náutico\n⏱ Minuto: 61'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 1.90, 20 tiros totales (7 a puerta), 6 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "8e9db6c005f2396e"
   }
