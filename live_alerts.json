@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-14T18:18:18Z",
+ "generated_at_utc": "2026-08-14T18:19:28Z",
  "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Rosenborg BK vs Viking FK (Eliteserien)",
-   "match_id": "15260882",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 58,
-   "condicion": "Rosenborg BK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Rosenborg BK",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6429,
-    "touches_home": 18,
-    "touches_away": 10,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-08-14T18:13:53Z",
-    "t_inicio_estimado_condicion": "2026-08-14T17:24:49Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-14T18:13:53Z",
-   "t_captura_utc": "2026-08-14T18:16:48Z",
-   "t_evaluacion_utc": "2026-08-14T18:16:48Z",
-   "t_generacion_utc": "2026-08-14T18:16:48Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T18:13:54Z",
-     "latencia_envio_ms": 906.0008525848389,
-     "error": null,
-     "message_id": 513,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rosenborg BK vs Viking FK\n⏱ Minuto: 58'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: Rosenborg BK acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "8a958abea3f8498d"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Rosenborg BK vs Viking FK (Eliteserien)",
@@ -100,7 +52,7 @@
    "match_id": "16316787",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 17,
+   "minuto": 18,
    "condicion": "Sparta Rotterdam domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -120,8 +72,8 @@
    },
    "t_evento_real_utc": "2026-08-14T18:16:00Z",
    "t_captura_utc": "2026-08-14T18:16:00Z",
-   "t_evaluacion_utc": "2026-08-14T18:18:18Z",
-   "t_generacion_utc": "2026-08-14T18:18:18Z",
+   "t_evaluacion_utc": "2026-08-14T18:19:26Z",
+   "t_generacion_utc": "2026-08-14T18:19:26Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -135,9 +87,57 @@
    },
    "latencia_total_seg": 47.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 17'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Sparta Rotterdam — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 18'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Sparta Rotterdam — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "0697bbff03a2a9e4"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Rosenborg BK vs Viking FK (Eliteserien)",
+   "match_id": "15260882",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 61,
+   "condicion": "Rosenborg BK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Rosenborg BK",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6452,
+    "touches_home": 20,
+    "touches_away": 11,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 59,
+    "equipo_que_realizo_sustitucion": "Rosenborg BK",
+    "marcador_en_el_momento": "1-0",
+    "t_primera_observacion_atlas": "2026-08-14T18:13:53Z",
+    "t_inicio_estimado_condicion": "2026-08-14T17:24:49Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-14T18:13:53Z",
+   "t_captura_utc": "2026-08-14T18:19:27Z",
+   "t_evaluacion_utc": "2026-08-14T18:19:27Z",
+   "t_generacion_utc": "2026-08-14T18:19:27Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-14T18:13:54Z",
+     "latencia_envio_ms": 906.0008525848389,
+     "error": null,
+     "message_id": 513,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rosenborg BK vs Viking FK\n⏱ Minuto: 61'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: Rosenborg BK acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Rosenborg BK, min 59\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "8a958abea3f8498d"
   }
  ]
 }
