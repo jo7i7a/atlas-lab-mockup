@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-14T18:16:50Z",
+ "generated_at_utc": "2026-08-14T18:18:18Z",
  "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "SC Telstar vs Sparta Rotterdam (VriendenLoterij Eredivisie)",
-   "match_id": "16316787",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 16,
-   "condicion": "Sparta Rotterdam domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sparta Rotterdam",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 1,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-14T18:16:00Z",
-   "t_captura_utc": "2026-08-14T18:16:00Z",
-   "t_evaluacion_utc": "2026-08-14T18:16:46Z",
-   "t_generacion_utc": "2026-08-14T18:16:46Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T18:16:47Z",
-     "latencia_envio_ms": 908.8399410247803,
-     "error": null,
-     "message_id": 515,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 47.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 16'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Sparta Rotterdam — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "0697bbff03a2a9e4"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Rosenborg BK vs Viking FK (Eliteserien)",
@@ -138,6 +93,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Rosenborg BK vs Viking FK\n⏱ Minuto: 58'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: presión combinada sostenida — xG 1.78, 13 tiros totales (5 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "b4c2328fd93eedf6"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "SC Telstar vs Sparta Rotterdam (VriendenLoterij Eredivisie)",
+   "match_id": "16316787",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "Sparta Rotterdam domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Sparta Rotterdam",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 1,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-14T18:16:00Z",
+   "t_captura_utc": "2026-08-14T18:16:00Z",
+   "t_evaluacion_utc": "2026-08-14T18:18:18Z",
+   "t_generacion_utc": "2026-08-14T18:18:18Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-14T18:16:47Z",
+     "latencia_envio_ms": 908.8399410247803,
+     "error": null,
+     "message_id": 515,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 47.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 17'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Sparta Rotterdam — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "0697bbff03a2a9e4"
   }
  ]
 }
