@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-14T19:28:48Z",
+ "generated_at_utc": "2026-08-14T19:30:11Z",
  "n_alerts": 6,
  "alerts": [
   {
@@ -183,54 +183,6 @@
    "alert_id": "74c4cab260f964ca"
   },
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "SC Telstar vs Sparta Rotterdam (VriendenLoterij Eredivisie)",
-   "match_id": "16316787",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 69,
-   "condicion": "Sparta Rotterdam acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sparta Rotterdam",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6042,
-    "touches_home": 19,
-    "touches_away": 29,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 62,
-    "equipo_que_realizo_sustitucion": "Sparta Rotterdam",
-    "marcador_en_el_momento": "0-2",
-    "t_primera_observacion_atlas": "2026-08-14T19:19:44Z",
-    "t_inicio_estimado_condicion": "2026-08-14T18:20:46Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-14T19:19:44Z",
-   "t_captura_utc": "2026-08-14T19:28:46Z",
-   "t_evaluacion_utc": "2026-08-14T19:28:46Z",
-   "t_generacion_utc": "2026-08-14T19:28:46Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T19:19:45Z",
-     "latencia_envio_ms": 830.0302028656006,
-     "error": null,
-     "message_id": 523,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 69'\n📊 Marcador: 0-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Sparta Rotterdam acumula 60% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Sparta Rotterdam, min 62\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "a3b591669b2ff1eb"
-  },
-  {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "SC Telstar vs Sparta Rotterdam (VriendenLoterij Eredivisie)",
    "match_id": "16316787",
@@ -273,6 +225,54 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 69'\n📊 Marcador: 0-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: presión combinada sostenida — xG 2.57, 20 tiros totales (8 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "e6b5febe1beb21cb"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "SC Telstar vs Sparta Rotterdam (VriendenLoterij Eredivisie)",
+   "match_id": "16316787",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 71,
+   "condicion": "Sparta Rotterdam acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Sparta Rotterdam",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.6042,
+    "touches_home": 19,
+    "touches_away": 29,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 62,
+    "equipo_que_realizo_sustitucion": "Sparta Rotterdam",
+    "marcador_en_el_momento": "0-2",
+    "t_primera_observacion_atlas": "2026-08-14T19:19:44Z",
+    "t_inicio_estimado_condicion": "2026-08-14T18:20:46Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-14T19:19:44Z",
+   "t_captura_utc": "2026-08-14T19:30:11Z",
+   "t_evaluacion_utc": "2026-08-14T19:30:11Z",
+   "t_generacion_utc": "2026-08-14T19:30:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-14T19:19:45Z",
+     "latencia_envio_ms": 830.0302028656006,
+     "error": null,
+     "message_id": 523,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 71'\n📊 Marcador: 0-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Sparta Rotterdam acumula 60% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Sparta Rotterdam, min 62\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "a3b591669b2ff1eb"
   }
  ]
 }
