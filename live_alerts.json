@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-14T18:24:22Z",
+ "generated_at_utc": "2026-08-14T18:25:19Z",
  "n_alerts": 5,
  "alerts": [
   {
@@ -96,7 +96,7 @@
    "match_id": "16316787",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "Sparta Rotterdam domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -116,8 +116,8 @@
    },
    "t_evento_real_utc": "2026-08-14T18:16:00Z",
    "t_captura_utc": "2026-08-14T18:16:00Z",
-   "t_evaluacion_utc": "2026-08-14T18:24:20Z",
-   "t_generacion_utc": "2026-08-14T18:24:20Z",
+   "t_evaluacion_utc": "2026-08-14T18:25:17Z",
+   "t_generacion_utc": "2026-08-14T18:25:17Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -131,7 +131,7 @@
    },
    "latencia_total_seg": 47.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 23'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Sparta Rotterdam — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 24'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Sparta Rotterdam — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "0697bbff03a2a9e4"
   },
@@ -141,7 +141,7 @@
    "match_id": "15260882",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 66,
+   "minuto": 67,
    "condicion": "Rosenborg BK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -163,9 +163,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-14T18:13:53Z",
-   "t_captura_utc": "2026-08-14T18:24:21Z",
-   "t_evaluacion_utc": "2026-08-14T18:24:21Z",
-   "t_generacion_utc": "2026-08-14T18:24:21Z",
+   "t_captura_utc": "2026-08-14T18:25:18Z",
+   "t_evaluacion_utc": "2026-08-14T18:25:18Z",
+   "t_generacion_utc": "2026-08-14T18:25:18Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -179,7 +179,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rosenborg BK vs Viking FK\n⏱ Minuto: 66'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: Rosenborg BK acumula 66% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Rosenborg BK, min 59\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rosenborg BK vs Viking FK\n⏱ Minuto: 67'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: Rosenborg BK acumula 66% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Rosenborg BK, min 59\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "8a958abea3f8498d"
   },
@@ -189,7 +189,7 @@
    "match_id": "16316787",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "Sparta Rotterdam acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -198,9 +198,9 @@
    "extra": {
     "equipo_dominante": "Sparta Rotterdam",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.625,
+    "ratio_presion_territorial": 0.6842,
     "touches_home": 6,
-    "touches_away": 10,
+    "touches_away": 13,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -211,9 +211,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-14T18:21:17Z",
-   "t_captura_utc": "2026-08-14T18:24:22Z",
-   "t_evaluacion_utc": "2026-08-14T18:24:22Z",
-   "t_generacion_utc": "2026-08-14T18:24:22Z",
+   "t_captura_utc": "2026-08-14T18:25:18Z",
+   "t_evaluacion_utc": "2026-08-14T18:25:19Z",
+   "t_generacion_utc": "2026-08-14T18:25:19Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -227,7 +227,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 23'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Sparta Rotterdam acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 24'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Sparta Rotterdam acumula 68% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "850ba939cec861db"
   }
