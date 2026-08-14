@@ -1,7 +1,64 @@
 {
- "generated_at_utc": "2026-08-14T22:29:54Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-08-14T22:32:54Z",
+ "n_live_target": 2,
  "matches": {
+  "15526218": {
+   "event_id": 15526218,
+   "league": "Brasileirão Série B",
+   "home": "Ponte Preta",
+   "away": "Náutico",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 37,
+     "away": 63
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 7,
+     "away": 12
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.0,
+     "no": 1.727,
+     "captured_at_utc": "2026-08-14T22:32:47Z"
+    },
+    "1x2": {
+     "home": 4.0,
+     "draw": 3.4,
+     "away": 1.952,
+     "captured_at_utc": "2026-08-14T22:32:47Z"
+    },
+    "goals_over_25": {
+     "over": 2.2,
+     "under": 1.615,
+     "captured_at_utc": "2026-08-14T22:32:47Z"
+    }
+   },
+   "updated_at_utc": "2026-08-14T22:32:54Z"
+  },
   "15526219": {
    "event_id": 15526219,
    "league": "Brasileirão Série B",
@@ -11,10 +68,53 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 0,
-   "stats": {},
-   "odds": {},
-   "updated_at_utc": "2026-08-14T22:29:54Z"
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 100,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 6,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.1,
+     "no": 1.667,
+     "captured_at_utc": "2026-08-14T22:32:47Z"
+    },
+    "1x2": {
+     "home": 2.5,
+     "draw": 2.875,
+     "away": 3.0,
+     "captured_at_utc": "2026-08-14T22:32:47Z"
+    },
+    "goals_over_25": {
+     "over": 2.5,
+     "under": 1.5,
+     "captured_at_utc": "2026-08-14T22:32:47Z"
+    }
+   },
+   "updated_at_utc": "2026-08-14T22:32:54Z"
   }
  }
 }
