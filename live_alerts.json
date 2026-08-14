@@ -1,97 +1,7 @@
 {
- "generated_at_utc": "2026-08-14T23:16:16Z",
- "n_alerts": 6,
+ "generated_at_utc": "2026-08-14T23:20:16Z",
+ "n_alerts": 5,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Ponte Preta vs Náutico (Brasileirão Série B)",
-   "match_id": "15526218",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Náutico domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Náutico",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-14T22:47:50Z",
-   "t_captura_utc": "2026-08-14T22:47:50Z",
-   "t_evaluacion_utc": "2026-08-14T22:56:15Z",
-   "t_generacion_utc": "2026-08-14T22:56:15Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T22:48:16Z",
-     "latencia_envio_ms": 814.9609565734863,
-     "error": null,
-     "message_id": 546,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 26.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Ponte Preta vs Náutico\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Náutico — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "fc8b1af3cd08a568"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "São Bernardo vs Botafogo-SP (Brasileirão Série B)",
-   "match_id": "15526219",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Botafogo-SP domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Botafogo-SP",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 1,
-    "remates_home": 1,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-14T22:47:30Z",
-   "t_captura_utc": "2026-08-14T22:47:30Z",
-   "t_evaluacion_utc": "2026-08-14T22:56:18Z",
-   "t_generacion_utc": "2026-08-14T22:56:18Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T22:48:19Z",
-     "latencia_envio_ms": 786.0076427459717,
-     "error": null,
-     "message_id": 547,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 49.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ São Bernardo vs Botafogo-SP\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Botafogo-SP — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "ff31595f7213f3c7"
-  },
   {
    "strategy_id": "L1",
    "match_label": "São Bernardo vs Botafogo-SP (Brasileirão Série B)",
@@ -255,6 +165,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ São Bernardo vs Botafogo-SP\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Botafogo-SP acumula 75% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "c5f35a89c3f02410"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Universidad de Concepción vs Deportes La Serena (Liga de Primera)",
+   "match_id": "15353095",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 20,
+   "condicion": "Universidad de Concepción domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Universidad de Concepción",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-14T23:19:22Z",
+   "t_captura_utc": "2026-08-14T23:19:22Z",
+   "t_evaluacion_utc": "2026-08-14T23:20:15Z",
+   "t_generacion_utc": "2026-08-14T23:20:15Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-14T23:20:16Z",
+     "latencia_envio_ms": 856.8778038024902,
+     "error": null,
+     "message_id": 552,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 54.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Universidad de Concepción vs Deportes La Serena\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Universidad de Concepción — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "8052a29546fa950b"
   }
  ]
 }
