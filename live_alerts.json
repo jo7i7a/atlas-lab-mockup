@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-14T23:36:19Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-14T23:37:20Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -101,7 +101,7 @@
    "match_id": "15353095",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 36,
+   "minuto": 37,
    "condicion": "4 córners totales antes del min 45 (4-0), Universidad de Concepción presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Deportes La Serena NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -115,8 +115,8 @@
    },
    "t_evento_real_utc": "2026-08-14T23:34:01Z",
    "t_captura_utc": "2026-08-14T23:34:01Z",
-   "t_evaluacion_utc": "2026-08-14T23:36:10Z",
-   "t_generacion_utc": "2026-08-14T23:36:10Z",
+   "t_evaluacion_utc": "2026-08-14T23:37:10Z",
+   "t_generacion_utc": "2026-08-14T23:37:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -130,48 +130,9 @@
    },
    "latencia_total_seg": 10.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Universidad de Concepción vs Deportes La Serena\n⏱ Minuto: 36'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Universidad de Concepción presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Deportes La Serena no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Universidad de Concepción vs Deportes La Serena\n⏱ Minuto: 37'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Universidad de Concepción presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Deportes La Serena no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "43c91ed01809b762"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Ponte Preta vs Náutico (Brasileirão Série B)",
-   "match_id": "15526218",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (4-0), Ponte Preta presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Náutico NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Ponte Preta",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-14T23:06:30Z",
-   "t_captura_utc": "2026-08-14T23:06:30Z",
-   "t_evaluacion_utc": "2026-08-14T23:36:10Z",
-   "t_generacion_utc": "2026-08-14T23:36:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T23:07:10Z",
-     "latencia_envio_ms": 834.1550827026367,
-     "error": null,
-     "message_id": 551,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 40.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Ponte Preta vs Náutico\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Ponte Preta presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Náutico no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "c37412bbc30772c8"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -179,7 +140,7 @@
    "match_id": "15353095",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 36,
+   "minuto": 37,
    "condicion": "Universidad de Concepción acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -201,9 +162,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-14T23:34:17Z",
-   "t_captura_utc": "2026-08-14T23:36:18Z",
-   "t_evaluacion_utc": "2026-08-14T23:36:19Z",
-   "t_generacion_utc": "2026-08-14T23:36:19Z",
+   "t_captura_utc": "2026-08-14T23:37:19Z",
+   "t_evaluacion_utc": "2026-08-14T23:37:19Z",
+   "t_generacion_utc": "2026-08-14T23:37:19Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -217,7 +178,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Universidad de Concepción vs Deportes La Serena\n⏱ Minuto: 36'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Universidad de Concepción acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Universidad de Concepción, min 31\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Universidad de Concepción vs Deportes La Serena\n⏱ Minuto: 37'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Universidad de Concepción acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Universidad de Concepción, min 31\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "aa89c227a23424c5"
   }
