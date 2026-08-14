@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-14T19:43:31Z",
+ "generated_at_utc": "2026-08-14T19:44:29Z",
  "n_alerts": 7,
  "alerts": [
   {
@@ -141,50 +141,11 @@
   },
   {
    "strategy_id": "L1-SHADOW",
-   "match_label": "Galatasaray vs Çorum FK (Trendyol Süper Lig)",
-   "match_id": "16483638",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (4-0), Galatasaray presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Çorum FK NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Galatasaray",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-14T19:14:00Z",
-   "t_captura_utc": "2026-08-14T19:14:00Z",
-   "t_evaluacion_utc": "2026-08-14T19:37:11Z",
-   "t_generacion_utc": "2026-08-14T19:37:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T19:15:11Z",
-     "latencia_envio_ms": 848.9277362823486,
-     "error": null,
-     "message_id": 521,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 71.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Galatasaray vs Çorum FK\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Galatasaray presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Çorum FK no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "ca2aae9c5e2a0650"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
    "match_label": "Wolverhampton vs Blackburn Rovers (Championship)",
    "match_id": "16391133",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 42,
+   "minuto": 43,
    "condicion": "5 córners totales antes del min 45 (3-2), Wolverhampton presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Blackburn Rovers NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -198,8 +159,8 @@
    },
    "t_evento_real_utc": "2026-08-14T19:41:06Z",
    "t_captura_utc": "2026-08-14T19:41:06Z",
-   "t_evaluacion_utc": "2026-08-14T19:43:09Z",
-   "t_generacion_utc": "2026-08-14T19:43:09Z",
+   "t_evaluacion_utc": "2026-08-14T19:44:09Z",
+   "t_generacion_utc": "2026-08-14T19:44:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -213,7 +174,7 @@
    },
    "latencia_total_seg": 3.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Wolverhampton vs Blackburn Rovers\n⏱ Minuto: 42'\n📊 Marcador: 1-1\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Wolverhampton presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Blackburn Rovers no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Wolverhampton vs Blackburn Rovers\n⏱ Minuto: 43'\n📊 Marcador: 1-1\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Wolverhampton presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Blackburn Rovers no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "27a1cb7a9d996ebe"
   },
@@ -223,7 +184,7 @@
    "match_id": "16316787",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 84,
+   "minuto": 85,
    "condicion": "Sparta Rotterdam acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -245,9 +206,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-14T19:19:44Z",
-   "t_captura_utc": "2026-08-14T19:43:29Z",
-   "t_evaluacion_utc": "2026-08-14T19:43:30Z",
-   "t_generacion_utc": "2026-08-14T19:43:30Z",
+   "t_captura_utc": "2026-08-14T19:44:26Z",
+   "t_evaluacion_utc": "2026-08-14T19:44:26Z",
+   "t_generacion_utc": "2026-08-14T19:44:26Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -261,9 +222,57 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 84'\n📊 Marcador: 0-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Sparta Rotterdam acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Sparta Rotterdam, min 76\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 85'\n📊 Marcador: 0-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Sparta Rotterdam acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Sparta Rotterdam, min 76\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "a3b591669b2ff1eb"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Wolverhampton vs Blackburn Rovers (Championship)",
+   "match_id": "16391133",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 43,
+   "condicion": "Wolverhampton acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Wolverhampton",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6429,
+    "touches_home": 9,
+    "touches_away": 5,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "1-1",
+    "t_primera_observacion_atlas": "2026-08-14T19:44:27Z",
+    "t_inicio_estimado_condicion": "2026-08-14T19:43:54Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-14T19:44:27Z",
+   "t_captura_utc": "2026-08-14T19:44:27Z",
+   "t_evaluacion_utc": "2026-08-14T19:44:27Z",
+   "t_generacion_utc": "2026-08-14T19:44:27Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-14T19:44:28Z",
+     "latencia_envio_ms": 863.8310432434082,
+     "error": null,
+     "message_id": 528,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Wolverhampton vs Blackburn Rovers\n⏱ Minuto: 43'\n📊 Marcador: 1-1\n🏆 Liga: Championship\n\n📝 Motivo: Wolverhampton acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "e68e36ed6ac34c54"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -271,7 +280,7 @@
    "match_id": "16450754",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 25,
+   "minuto": 26,
    "condicion": "Sporting CP acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -293,9 +302,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-14T19:39:22Z",
-   "t_captura_utc": "2026-08-14T19:43:30Z",
-   "t_evaluacion_utc": "2026-08-14T19:43:30Z",
-   "t_generacion_utc": "2026-08-14T19:43:30Z",
+   "t_captura_utc": "2026-08-14T19:44:28Z",
+   "t_evaluacion_utc": "2026-08-14T19:44:28Z",
+   "t_generacion_utc": "2026-08-14T19:44:28Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -309,7 +318,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sporting CP vs Vitória SC\n⏱ Minuto: 25'\n📊 Marcador: 2-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Sporting CP acumula 85% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Sporting CP, min 24\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sporting CP vs Vitória SC\n⏱ Minuto: 26'\n📊 Marcador: 2-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Sporting CP acumula 85% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Sporting CP, min 24\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "f1c6d66d3e049ad0"
   }
