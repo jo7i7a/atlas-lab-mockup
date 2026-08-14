@@ -1924,5 +1924,66 @@
    "cuota_real_betano": 1.9,
    "activo": true
   }
+ ],
+ "54036c254aa5f0d0": [
+  {
+   "alert_id": "54036c254aa5f0d0",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Cienciano vs Botafogo (CONMEBOL Sudamericana)",
+   "liga": "CONMEBOL Sudamericana",
+   "event_id": "16253374",
+   "minuto_alerta": 17,
+   "condicion": "Cienciano domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-14T00:47:26Z",
+   "t_captura_utc": "2026-08-14T00:47:26Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-14T00:51:16Z",
+   "segundos_transcurridos": 159,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.5 @ 1.70\n9.5 @ 1.35",
+   "linea_real_betano": 10.5,
+   "cuota_real_betano": 1.7,
+   "activo": true
+  },
+  {
+   "alert_id": "54036c254aa5f0d0",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Cienciano vs Botafogo (CONMEBOL Sudamericana)",
+   "liga": "CONMEBOL Sudamericana",
+   "event_id": "16253374",
+   "minuto_alerta": 17,
+   "condicion": "Cienciano domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-14T00:47:26Z",
+   "t_captura_utc": "2026-08-14T00:47:26Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-14T00:51:16Z",
+   "segundos_transcurridos": 159,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.5 @ 1.70\n9.5 @ 1.35",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 1.35,
+   "activo": true
+  }
+ ],
+ "2865d796a25cb6dc": [
+  {
+   "alert_id": "2865d796a25cb6dc",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Cienciano vs Botafogo (CONMEBOL Sudamericana)",
+   "liga": "CONMEBOL Sudamericana",
+   "event_id": "16253374",
+   "minuto_alerta": 20,
+   "condicion": "Cienciano acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-14T00:51:28Z",
+   "t_captura_utc": "2026-08-14T00:51:28Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-14T00:51:44Z",
+   "segundos_transcurridos": 15,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "11.0 @ 2.00",
+   "linea_real_betano": 11.0,
+   "cuota_real_betano": 2.0,
+   "activo": true
+  }
  ]
 }
