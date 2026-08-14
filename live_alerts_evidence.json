@@ -2309,5 +2309,26 @@
    "cuota_real_betano": 5.1,
    "activo": true
   }
+ ],
+ "43b71dd9c4f40edc": [
+  {
+   "alert_id": "43b71dd9c4f40edc",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Racing Club vs Banfield (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16667393",
+   "minuto_alerta": 25,
+   "condicion": "Banfield acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-14T23:56:28Z",
+   "t_captura_utc": "2026-08-14T23:56:28Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-14T23:58:37Z",
+   "segundos_transcurridos": 128,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "6.5 @ 1.85",
+   "linea_real_betano": 6.5,
+   "cuota_real_betano": 1.85,
+   "activo": true
+  }
  ]
 }
