@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-14T23:55:32Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-14T23:56:32Z",
+ "n_alerts": 9,
  "alerts": [
   {
    "strategy_id": "L1-SHADOW",
@@ -191,7 +191,7 @@
    "match_id": "15526225",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "Sport Recife domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -211,8 +211,8 @@
    },
    "t_evento_real_utc": "2026-08-14T23:48:19Z",
    "t_captura_utc": "2026-08-14T23:48:19Z",
-   "t_evaluacion_utc": "2026-08-14T23:55:19Z",
-   "t_generacion_utc": "2026-08-14T23:55:19Z",
+   "t_evaluacion_utc": "2026-08-14T23:56:19Z",
+   "t_generacion_utc": "2026-08-14T23:56:19Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -226,7 +226,7 @@
    },
    "latencia_total_seg": 62.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Sport Recife vs Londrina\n⏱ Minuto: 23'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Sport Recife — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Sport Recife vs Londrina\n⏱ Minuto: 24'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Sport Recife — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "88323a7973340388"
   },
@@ -236,7 +236,7 @@
    "match_id": "16667393",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 24,
+   "minuto": 25,
    "condicion": "Racing Club domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -256,8 +256,8 @@
    },
    "t_evento_real_utc": "2026-08-14T23:53:09Z",
    "t_captura_utc": "2026-08-14T23:53:09Z",
-   "t_evaluacion_utc": "2026-08-14T23:55:25Z",
-   "t_generacion_utc": "2026-08-14T23:55:25Z",
+   "t_evaluacion_utc": "2026-08-14T23:56:26Z",
+   "t_generacion_utc": "2026-08-14T23:56:26Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -271,9 +271,57 @@
    },
    "latencia_total_seg": 17.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Racing Club vs Banfield\n⏱ Minuto: 24'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Racing Club — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Racing Club vs Banfield\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Racing Club — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "abfa2f6cfdcdccc0"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Racing Club vs Banfield (Liga Profesional de Fútbol)",
+   "match_id": "16667393",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "Banfield acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Banfield",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.6667,
+    "touches_home": 2,
+    "touches_away": 4,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 4,
+    "equipo_que_realizo_sustitucion": "Banfield",
+    "marcador_en_el_momento": "0-1",
+    "t_primera_observacion_atlas": "2026-08-14T23:56:28Z",
+    "t_inicio_estimado_condicion": "2026-08-14T23:56:15Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-14T23:56:28Z",
+   "t_captura_utc": "2026-08-14T23:56:28Z",
+   "t_evaluacion_utc": "2026-08-14T23:56:28Z",
+   "t_generacion_utc": "2026-08-14T23:56:28Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-14T23:56:29Z",
+     "latencia_envio_ms": 860.9030246734619,
+     "error": null,
+     "message_id": 562,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Racing Club vs Banfield\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Banfield acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Banfield, min 4\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "43b71dd9c4f40edc"
   },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -281,7 +329,7 @@
    "match_id": "15526218",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 65,
+   "minuto": 66,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -289,9 +337,9 @@
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
     "xg_combinado": 1.98,
-    "tiros_combinados": 21,
-    "sot_combinado": 7,
-    "presion_reciente_10min": 6,
+    "tiros_combinados": 23,
+    "sot_combinado": 8,
+    "presion_reciente_10min": 8,
     "marcador_en_el_momento": "1-1",
     "t_primera_observacion_atlas": "2026-08-14T23:45:21Z",
     "t_inicio_estimado_condicion": "2026-08-14T23:45:13Z",
@@ -299,9 +347,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-14T23:45:21Z",
-   "t_captura_utc": "2026-08-14T23:55:28Z",
-   "t_evaluacion_utc": "2026-08-14T23:55:29Z",
-   "t_generacion_utc": "2026-08-14T23:55:29Z",
+   "t_captura_utc": "2026-08-14T23:56:29Z",
+   "t_evaluacion_utc": "2026-08-14T23:56:30Z",
+   "t_generacion_utc": "2026-08-14T23:56:30Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -315,7 +363,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Ponte Preta vs Náutico\n⏱ Minuto: 65'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 1.98, 21 tiros totales (7 a puerta), 6 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Ponte Preta vs Náutico\n⏱ Minuto: 66'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 1.98, 23 tiros totales (8 a puerta), 8 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "8e9db6c005f2396e"
   },
@@ -325,14 +373,14 @@
    "match_id": "15526219",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 66,
+   "minuto": 67,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
    "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "xg_combinado": 1.95,
+    "xg_combinado": 1.99,
     "tiros_combinados": 24,
     "sot_combinado": 3,
     "presion_reciente_10min": 3,
@@ -343,9 +391,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-14T23:55:29Z",
-   "t_captura_utc": "2026-08-14T23:55:29Z",
-   "t_evaluacion_utc": "2026-08-14T23:55:31Z",
-   "t_generacion_utc": "2026-08-14T23:55:31Z",
+   "t_captura_utc": "2026-08-14T23:56:30Z",
+   "t_evaluacion_utc": "2026-08-14T23:56:32Z",
+   "t_generacion_utc": "2026-08-14T23:56:32Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -359,7 +407,7 @@
    },
    "latencia_total_seg": 3.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ São Bernardo vs Botafogo-SP\n⏱ Minuto: 66'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 1.95, 24 tiros totales (3 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ São Bernardo vs Botafogo-SP\n⏱ Minuto: 67'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 1.99, 24 tiros totales (3 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "7d034d76bcaca440"
   }
