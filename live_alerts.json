@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-13T23:57:19Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-14T00:03:20Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "A3_V1_DOMINANTE_NO_GANA",
@@ -132,6 +132,99 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Philadelphia Union vs Santos Laguna\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: Philadelphia Union acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "8c2e1c0b277b8b91"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "New York City FC vs Club Necaxa (Leagues Cup)",
+   "match_id": "15679443",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 22,
+   "condicion": "New York City FC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "New York City FC",
+    "lado_dominante": "home",
+    "trigger_disparado": "centros",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 3,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-14T00:02:47Z",
+   "t_captura_utc": "2026-08-14T00:02:47Z",
+   "t_evaluacion_utc": "2026-08-14T00:03:17Z",
+   "t_generacion_utc": "2026-08-14T00:03:17Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-14T00:03:18Z",
+     "latencia_envio_ms": 839.5757675170898,
+     "error": null,
+     "message_id": 466,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 31.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ New York City FC vs Club Necaxa\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: New York City FC — ≥3 centros al área en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "0ea65adb63fff4bd"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "New York City FC vs Club Necaxa (Leagues Cup)",
+   "match_id": "15679443",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 22,
+   "condicion": "New York City FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "New York City FC",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.625,
+    "touches_home": 5,
+    "touches_away": 3,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-14T00:03:19Z",
+    "t_inicio_estimado_condicion": "2026-08-14T00:02:47Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-14T00:03:19Z",
+   "t_captura_utc": "2026-08-14T00:03:19Z",
+   "t_evaluacion_utc": "2026-08-14T00:03:19Z",
+   "t_generacion_utc": "2026-08-14T00:03:19Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-14T00:03:20Z",
+     "latencia_envio_ms": 794.5947647094727,
+     "error": null,
+     "message_id": 467,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ New York City FC vs Club Necaxa\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: New York City FC acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "09db7021bda47af5"
   }
  ]
 }
