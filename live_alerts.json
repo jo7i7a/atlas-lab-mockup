@@ -1,51 +1,7 @@
 {
- "generated_at_utc": "2026-08-14T18:44:15Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-14T18:45:15Z",
+ "n_alerts": 4,
  "alerts": [
-  {
-   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Rosenborg BK vs Viking FK (Eliteserien)",
-   "match_id": "15260882",
-   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 58,
-   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_combinado": 1.78,
-    "tiros_combinados": 13,
-    "sot_combinado": 5,
-    "presion_reciente_10min": 3,
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-08-14T18:14:57Z",
-    "t_inicio_estimado_condicion": "2026-08-14T18:13:59Z",
-    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-14T18:14:57Z",
-   "t_captura_utc": "2026-08-14T18:16:50Z",
-   "t_evaluacion_utc": "2026-08-14T18:16:50Z",
-   "t_generacion_utc": "2026-08-14T18:16:50Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T18:14:58Z",
-     "latencia_envio_ms": 953.4649848937988,
-     "error": null,
-     "message_id": 514,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Rosenborg BK vs Viking FK\n⏱ Minuto: 58'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: presión combinada sostenida — xG 1.78, 13 tiros totales (5 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
-   "evidencia": null,
-   "alert_id": "b4c2328fd93eedf6"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Rosenborg BK vs Viking FK (Eliteserien)",
@@ -141,7 +97,7 @@
    "match_id": "16316787",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "4 córners totales antes del min 45 (1-3), Sparta Rotterdam presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿SC Telstar NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -155,8 +111,8 @@
    },
    "t_evento_real_utc": "2026-08-14T18:33:20Z",
    "t_captura_utc": "2026-08-14T18:33:20Z",
-   "t_evaluacion_utc": "2026-08-14T18:44:09Z",
-   "t_generacion_utc": "2026-08-14T18:44:09Z",
+   "t_evaluacion_utc": "2026-08-14T18:45:09Z",
+   "t_generacion_utc": "2026-08-14T18:45:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -170,7 +126,7 @@
    },
    "latencia_total_seg": 50.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 43'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Sparta Rotterdam presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿SC Telstar no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 44'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Sparta Rotterdam presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿SC Telstar no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "17494904c04dff23"
   },
@@ -180,7 +136,7 @@
    "match_id": "16316787",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "Sparta Rotterdam acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -202,9 +158,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-14T18:21:17Z",
-   "t_captura_utc": "2026-08-14T18:44:15Z",
-   "t_evaluacion_utc": "2026-08-14T18:44:15Z",
-   "t_generacion_utc": "2026-08-14T18:44:15Z",
+   "t_captura_utc": "2026-08-14T18:45:14Z",
+   "t_evaluacion_utc": "2026-08-14T18:45:15Z",
+   "t_generacion_utc": "2026-08-14T18:45:15Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -218,7 +174,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 43'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Sparta Rotterdam acumula 75% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Telstar vs Sparta Rotterdam\n⏱ Minuto: 44'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Sparta Rotterdam acumula 75% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "850ba939cec861db"
   }
