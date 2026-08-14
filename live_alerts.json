@@ -1,5 +1,51 @@
 {
- "generated_at_utc": "2026-08-14T04:25:13Z",
- "n_alerts": 0,
- "alerts": []
+ "generated_at_utc": "2026-08-14T10:20:14Z",
+ "n_alerts": 1,
+ "alerts": [
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Tokyo Verdy vs Kashiwa Reysol (J1 League)",
+   "match_id": "16348551",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 16,
+   "condicion": "Tokyo Verdy domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Tokyo Verdy",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 1,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-14T10:19:23Z",
+   "t_captura_utc": "2026-08-14T10:19:23Z",
+   "t_evaluacion_utc": "2026-08-14T10:20:13Z",
+   "t_generacion_utc": "2026-08-14T10:20:13Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-14T10:20:14Z",
+     "latencia_envio_ms": 862.0107173919678,
+     "error": null,
+     "message_id": 496,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 51.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Tokyo Verdy vs Kashiwa Reysol\n⏱ Minuto: 16'\n📊 Marcador: 1-1\n🏆 Liga: J1 League\n\n📝 Motivo: Tokyo Verdy — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "1a83c9d4bd63de20"
+  }
+ ]
 }
