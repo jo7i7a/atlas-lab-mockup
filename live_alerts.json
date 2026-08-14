@@ -1,129 +1,7 @@
 {
- "generated_at_utc": "2026-08-14T00:55:36Z",
+ "generated_at_utc": "2026-08-14T00:57:45Z",
  "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "L1",
-   "match_label": "Cienciano vs Botafogo (CONMEBOL Sudamericana)",
-   "match_id": "16253374",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 23,
-   "condicion": "4 córners totales antes del min 30 (4-0), Cienciano presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Botafogo NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Cienciano"
-   },
-   "t_evento_real_utc": "2026-08-14T00:44:13Z",
-   "t_captura_utc": "2026-08-14T00:44:13Z",
-   "t_evaluacion_utc": "2026-08-14T00:54:29Z",
-   "t_generacion_utc": "2026-08-14T00:54:29Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T00:45:10Z",
-     "latencia_envio_ms": 816.9412612915039,
-     "error": null,
-     "message_id": 468,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 57.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Cienciano vs Botafogo\n⏱ Minuto: 23'\n📊 Marcador: 2-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Cienciano presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Botafogo no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "b3ae72460d1f2bc9"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Cienciano vs Botafogo (CONMEBOL Sudamericana)",
-   "match_id": "16253374",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 23,
-   "condicion": "4 córners totales antes del min 45 (4-0), Cienciano presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Botafogo NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Cienciano",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-14T00:44:13Z",
-   "t_captura_utc": "2026-08-14T00:44:13Z",
-   "t_evaluacion_utc": "2026-08-14T00:54:40Z",
-   "t_generacion_utc": "2026-08-14T00:54:40Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T00:45:13Z",
-     "latencia_envio_ms": 817.8293704986572,
-     "error": null,
-     "message_id": 469,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 60.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Cienciano vs Botafogo\n⏱ Minuto: 23'\n📊 Marcador: 2-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Cienciano presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Botafogo no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "a2de01c30e212284"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Rosario Central vs Corinthians (CONMEBOL Libertadores)",
-   "match_id": "16253172",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 22,
-   "condicion": "Corinthians domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Corinthians",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 1,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-14T00:54:02Z",
-   "t_captura_utc": "2026-08-14T00:54:02Z",
-   "t_evaluacion_utc": "2026-08-14T00:55:32Z",
-   "t_generacion_utc": "2026-08-14T00:55:32Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T00:55:33Z",
-     "latencia_envio_ms": 883.7974071502686,
-     "error": null,
-     "message_id": 479,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 91.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Rosario Central vs Corinthians\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Corinthians — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "0df3266eb68d55ba"
-  },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Cienciano vs Botafogo (CONMEBOL Sudamericana)",
@@ -264,6 +142,128 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Cienciano vs Botafogo\n⏱ Minuto: 24'\n📊 Marcador: 1-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Cienciano acumula 83% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "2865d796a25cb6dc"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "Cienciano vs Botafogo (CONMEBOL Sudamericana)",
+   "match_id": "16253374",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "4 córners totales antes del min 30 (4-0), Cienciano presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Botafogo NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Cienciano"
+   },
+   "t_evento_real_utc": "2026-08-14T00:44:13Z",
+   "t_captura_utc": "2026-08-14T00:44:13Z",
+   "t_evaluacion_utc": "2026-08-14T00:56:10Z",
+   "t_generacion_utc": "2026-08-14T00:56:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-14T00:45:10Z",
+     "latencia_envio_ms": 816.9412612915039,
+     "error": null,
+     "message_id": 468,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 57.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Cienciano vs Botafogo\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Cienciano presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Botafogo no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "b3ae72460d1f2bc9"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Cienciano vs Botafogo (CONMEBOL Sudamericana)",
+   "match_id": "16253374",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "4 córners totales antes del min 45 (4-0), Cienciano presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Botafogo NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Cienciano",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-14T00:44:13Z",
+   "t_captura_utc": "2026-08-14T00:44:13Z",
+   "t_evaluacion_utc": "2026-08-14T00:56:12Z",
+   "t_generacion_utc": "2026-08-14T00:56:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-14T00:45:13Z",
+     "latencia_envio_ms": 817.8293704986572,
+     "error": null,
+     "message_id": 469,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 60.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Cienciano vs Botafogo\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Cienciano presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Botafogo no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "a2de01c30e212284"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Rosario Central vs Corinthians (CONMEBOL Libertadores)",
+   "match_id": "16253172",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 24,
+   "condicion": "Corinthians domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Corinthians",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 1,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-14T00:54:02Z",
+   "t_captura_utc": "2026-08-14T00:54:02Z",
+   "t_evaluacion_utc": "2026-08-14T00:57:45Z",
+   "t_generacion_utc": "2026-08-14T00:57:45Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-14T00:55:33Z",
+     "latencia_envio_ms": 883.7974071502686,
+     "error": null,
+     "message_id": 479,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 91.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Rosario Central vs Corinthians\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Corinthians — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "0df3266eb68d55ba"
   }
  ]
 }
