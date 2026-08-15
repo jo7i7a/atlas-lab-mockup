@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-15T14:51:16Z",
- "n_alerts": 13,
+ "generated_at_utc": "2026-08-15T14:52:16Z",
+ "n_alerts": 11,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Portsmouth vs Queens Park Rangers (Championship)",
-   "match_id": "16391140",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 22,
-   "condicion": "Queens Park Rangers acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Queens Park Rangers",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 2,
-    "touches_away": 4,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 20,
-    "equipo_que_realizo_sustitucion": "Queens Park Rangers",
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-08-15T14:21:46Z",
-    "t_inicio_estimado_condicion": "2026-08-15T14:21:34Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T14:21:46Z",
-   "t_captura_utc": "2026-08-15T14:23:56Z",
-   "t_evaluacion_utc": "2026-08-15T14:23:56Z",
-   "t_generacion_utc": "2026-08-15T14:23:56Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T14:21:47Z",
-     "latencia_envio_ms": 756.1819553375244,
-     "error": null,
-     "message_id": 615,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Portsmouth vs Queens Park Rangers\n⏱ Minuto: 22'\n📊 Marcador: 1-0\n🏆 Liga: Championship\n\n📝 Motivo: Queens Park Rangers acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Queens Park Rangers, min 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "32ac3ed33c9274b1"
-  },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Stoke City vs Swansea City (Championship)",
@@ -310,54 +262,6 @@
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "KFUM Oslo vs Lillestrøm SK (Eliteserien)",
-   "match_id": "15260879",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "Lillestrøm SK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Lillestrøm SK",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.9231,
-    "touches_home": 1,
-    "touches_away": 12,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 22,
-    "equipo_que_realizo_sustitucion": "Lillestrøm SK",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-15T14:21:43Z",
-    "t_inicio_estimado_condicion": "2026-08-15T14:21:12Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T14:21:43Z",
-   "t_captura_utc": "2026-08-15T14:46:27Z",
-   "t_evaluacion_utc": "2026-08-15T14:46:27Z",
-   "t_generacion_utc": "2026-08-15T14:46:27Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T14:21:44Z",
-     "latencia_envio_ms": 773.2746601104736,
-     "error": null,
-     "message_id": 614,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ KFUM Oslo vs Lillestrøm SK\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: Lillestrøm SK acumula 92% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Lillestrøm SK, min 22\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "64f3e9582f6f79be"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Bristol City vs Millwall (Championship)",
    "match_id": "16391136",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
@@ -544,7 +448,7 @@
    "match_id": "16450745",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 19,
+   "minuto": 20,
    "condicion": "FC Alverca domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -564,8 +468,8 @@
    },
    "t_evento_real_utc": "2026-08-15T14:47:38Z",
    "t_captura_utc": "2026-08-15T14:47:38Z",
-   "t_evaluacion_utc": "2026-08-15T14:51:16Z",
-   "t_generacion_utc": "2026-08-15T14:51:16Z",
+   "t_evaluacion_utc": "2026-08-15T14:52:16Z",
+   "t_generacion_utc": "2026-08-15T14:52:16Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -579,7 +483,7 @@
    },
    "latencia_total_seg": 119.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ FC Alverca vs CF Estrela Amadora\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Alverca — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ FC Alverca vs CF Estrela Amadora\n⏱ Minuto: 20'\n📊 Marcador: 1-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Alverca — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "dbdbf4848b47fda6"
   }
