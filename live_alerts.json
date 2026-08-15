@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T17:51:32Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-08-15T17:52:37Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -52,7 +52,7 @@
    "match_id": "16671562",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 21,
+   "minuto": 22,
    "condicion": "San Lorenzo domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -72,8 +72,8 @@
    },
    "t_evento_real_utc": "2026-08-15T17:45:20Z",
    "t_captura_utc": "2026-08-15T17:45:20Z",
-   "t_evaluacion_utc": "2026-08-15T17:51:29Z",
-   "t_generacion_utc": "2026-08-15T17:51:29Z",
+   "t_evaluacion_utc": "2026-08-15T17:52:32Z",
+   "t_generacion_utc": "2026-08-15T17:52:32Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -87,7 +87,7 @@
    },
    "latencia_total_seg": 62.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ San Lorenzo vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: San Lorenzo — ≥2 remates en los últimos 5 min (home=5)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ San Lorenzo vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: San Lorenzo — ≥2 remates en los últimos 5 min (home=5)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "66b80e15ed2ba148"
   },
@@ -97,7 +97,7 @@
    "match_id": "16391142",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 65,
+   "minuto": 66,
    "condicion": "Birmingham City acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -119,9 +119,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T17:39:24Z",
-   "t_captura_utc": "2026-08-15T17:51:31Z",
-   "t_evaluacion_utc": "2026-08-15T17:51:31Z",
-   "t_generacion_utc": "2026-08-15T17:51:31Z",
+   "t_captura_utc": "2026-08-15T17:52:34Z",
+   "t_evaluacion_utc": "2026-08-15T17:52:34Z",
+   "t_generacion_utc": "2026-08-15T17:52:34Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -135,9 +135,57 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sheffield United vs Birmingham City\n⏱ Minuto: 65'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Birmingham City acumula 74% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sheffield United vs Birmingham City\n⏱ Minuto: 66'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Birmingham City acumula 74% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "275890b297d79448"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Deportivo Alavés vs Getafe (LaLiga)",
+   "match_id": "16421047",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 20,
+   "condicion": "Deportivo Alavés acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Deportivo Alavés",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.7143,
+    "touches_home": 5,
+    "touches_away": 2,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-15T17:52:35Z",
+    "t_inicio_estimado_condicion": null,
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-15T17:52:35Z",
+   "t_captura_utc": "2026-08-15T17:52:35Z",
+   "t_evaluacion_utc": "2026-08-15T17:52:35Z",
+   "t_generacion_utc": "2026-08-15T17:52:35Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T17:52:36Z",
+     "latencia_envio_ms": 815.678596496582,
+     "error": null,
+     "message_id": 776,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportivo Alavés vs Getafe\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Deportivo Alavés acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "90c79bc6ee455c18"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -145,7 +193,7 @@
    "match_id": "16671562",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 21,
+   "minuto": 22,
    "condicion": "San Lorenzo acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -167,9 +215,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T17:50:30Z",
-   "t_captura_utc": "2026-08-15T17:51:32Z",
-   "t_evaluacion_utc": "2026-08-15T17:51:32Z",
-   "t_generacion_utc": "2026-08-15T17:51:32Z",
+   "t_captura_utc": "2026-08-15T17:52:37Z",
+   "t_evaluacion_utc": "2026-08-15T17:52:37Z",
+   "t_generacion_utc": "2026-08-15T17:52:37Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -183,7 +231,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ San Lorenzo vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: San Lorenzo acumula 82% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ San Lorenzo vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: San Lorenzo acumula 82% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "5c05d5ef4f809fe7"
   }
