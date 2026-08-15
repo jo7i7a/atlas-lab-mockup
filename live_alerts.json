@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-08-15T01:11:17Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-08-15T01:12:16Z",
+ "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Sport Recife vs Londrina (Brasileirão Série B)",
-   "match_id": "15526225",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 1,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-08-15T00:41:45Z",
-   "t_captura_utc": "2026-08-15T00:41:45Z",
-   "t_evaluacion_utc": "2026-08-15T00:49:14Z",
-   "t_generacion_utc": "2026-08-15T00:49:14Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T00:43:15Z",
-     "latencia_envio_ms": 790.930986404419,
-     "error": null,
-     "message_id": 570,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 90.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Sport Recife vs Londrina\n⏱ Minuto: 52'\n📊 Marcador: 2-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "4ecfc48759d5d705"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Racing Club vs Banfield (Liga Profesional de Fútbol)",
