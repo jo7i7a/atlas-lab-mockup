@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T19:40:38Z",
- "n_alerts": 21,
+ "generated_at_utc": "2026-08-15T19:41:39Z",
+ "n_alerts": 20,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -405,45 +405,6 @@
    "alert_id": "250341483695b22b"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
-   "match_id": "16483632",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (0-4), Fenerbahçe presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Gençlerbirliği NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "Fenerbahçe",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-15T19:10:57Z",
-   "t_captura_utc": "2026-08-15T19:10:57Z",
-   "t_evaluacion_utc": "2026-08-15T19:35:14Z",
-   "t_generacion_utc": "2026-08-15T19:35:14Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:11:14Z",
-     "latencia_envio_ms": 765.059232711792,
-     "error": null,
-     "message_id": 817,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 17.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 45'\n📊 Marcador: 1-1\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Fenerbahçe presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Gençlerbirliği no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "e342aecc767f18e2"
-  },
-  {
    "strategy_id": "L3",
    "match_label": "Al-Ittihad vs Al-Kholood (Saudi Pro League)",
    "match_id": "16629418",
@@ -480,167 +441,6 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Al-Ittihad vs Al-Kholood\n⏱ Minuto: 75'\n📊 Marcador: 1-1\n🏆 Liga: Saudi Pro League\n\n🟥 Expulsado: Al-Ittihad\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
    "evidencia": null,
    "alert_id": "c6bbe220a7817136"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Atlético Goianiense vs Vila Nova FC (Brasileirão Série B)",
-   "match_id": "15526223",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 40,
-   "condicion": "5 córners totales antes del min 45 (5-0), Atlético Goianiense presiona (5 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Vila Nova FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 5,
-    "corners_away": 0,
-    "equipo_presiona": "Atlético Goianiense",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-15T19:38:44Z",
-   "t_captura_utc": "2026-08-15T19:38:44Z",
-   "t_evaluacion_utc": "2026-08-15T19:40:12Z",
-   "t_generacion_utc": "2026-08-15T19:40:12Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:39:13Z",
-     "latencia_envio_ms": 795.8245277404785,
-     "error": null,
-     "message_id": 843,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 29.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Atlético Goianiense vs Vila Nova FC\n⏱ Minuto: 40'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 5\nVisita: 0\nTotal: 5\n\n📝 Motivo: Atlético Goianiense presiona con 5 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Vila Nova FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "8750eea8ae3d75ad"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Criciúma vs Goiás (Brasileirão Série B)",
-   "match_id": "15526224",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 37,
-   "condicion": "4 córners totales antes del min 45 (4-0), Criciúma presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Goiás NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Criciúma",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-15T19:12:24Z",
-   "t_captura_utc": "2026-08-15T19:12:24Z",
-   "t_evaluacion_utc": "2026-08-15T19:40:12Z",
-   "t_generacion_utc": "2026-08-15T19:40:12Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:13:14Z",
-     "latencia_envio_ms": 757.4808597564697,
-     "error": null,
-     "message_id": 819,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 50.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Criciúma vs Goiás\n⏱ Minuto: 37'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Criciúma presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Goiás no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "3e2a901a53adfa97"
-  },
-  {
-   "strategy_id": "L2",
-   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
-   "match_id": "16483632",
-   "market": "Hándicap Asiático -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 50,
-   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Fenerbahçe",
-    "xg_dominante": 2.12,
-    "sot_dominante": 5,
-    "marcador": "1-1"
-   },
-   "t_evento_real_utc": "2026-08-15T19:39:28Z",
-   "t_captura_utc": "2026-08-15T19:39:52Z",
-   "t_evaluacion_utc": "2026-08-15T19:40:15Z",
-   "t_generacion_utc": "2026-08-15T19:40:15Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:40:16Z",
-     "latencia_envio_ms": 812.0906352996826,
-     "error": null,
-     "message_id": 844,
-     "chat_id": -5124383393
-    }
-   },
-   "latencia_total_seg": 48.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 50'\n📊 Marcador: 1-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota disponibles?",
-   "evidencia": null,
-   "alert_id": "f4c0ca44561e96a0"
-  },
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
-   "match_id": "16483632",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH -0.75 @ 1.875 [PROXY SofaScore, NO Betano]",
-   "cuota_detectada": 1.875,
-   "minuto": 50,
-   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Fenerbahçe",
-    "xg_dominante": 2.12,
-    "sot_dominante": 5,
-    "marcador": "1-1",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": -0.75,
-    "ah_proxy_cuota": 1.875,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-15T19:39:28Z",
-   "t_captura_utc": "2026-08-15T19:40:13Z",
-   "t_evaluacion_utc": "2026-08-15T19:40:18Z",
-   "t_generacion_utc": "2026-08-15T19:40:18Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:40:19Z",
-     "latencia_envio_ms": 797.767162322998,
-     "error": null,
-     "message_id": 845,
-     "chat_id": -5124383393
-    }
-   },
-   "latencia_total_seg": 51.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 50'\n📊 Marcador: 1-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\nReferencia PROXY: AH -0.75 @ 1.875 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "c3f1f63dfaff82b1"
   },
   {
    "strategy_id": "A2",
@@ -681,12 +481,173 @@
    "alert_id": "bcd0482a995dfcf8"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Atlético Goianiense vs Vila Nova FC (Brasileirão Série B)",
+   "match_id": "15526223",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 41,
+   "condicion": "5 córners totales antes del min 45 (5-0), Atlético Goianiense presiona (5 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Vila Nova FC NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 5,
+    "corners_away": 0,
+    "equipo_presiona": "Atlético Goianiense",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-15T19:38:44Z",
+   "t_captura_utc": "2026-08-15T19:38:44Z",
+   "t_evaluacion_utc": "2026-08-15T19:41:12Z",
+   "t_generacion_utc": "2026-08-15T19:41:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T19:39:13Z",
+     "latencia_envio_ms": 795.8245277404785,
+     "error": null,
+     "message_id": 843,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 29.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Atlético Goianiense vs Vila Nova FC\n⏱ Minuto: 41'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 5\nVisita: 0\nTotal: 5\n\n📝 Motivo: Atlético Goianiense presiona con 5 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Vila Nova FC no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "8750eea8ae3d75ad"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Criciúma vs Goiás (Brasileirão Série B)",
+   "match_id": "15526224",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 38,
+   "condicion": "4 córners totales antes del min 45 (4-0), Criciúma presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Goiás NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Criciúma",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-15T19:12:24Z",
+   "t_captura_utc": "2026-08-15T19:12:24Z",
+   "t_evaluacion_utc": "2026-08-15T19:41:12Z",
+   "t_generacion_utc": "2026-08-15T19:41:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T19:13:14Z",
+     "latencia_envio_ms": 757.4808597564697,
+     "error": null,
+     "message_id": 819,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 50.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Criciúma vs Goiás\n⏱ Minuto: 38'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Criciúma presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Goiás no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "3e2a901a53adfa97"
+  },
+  {
+   "strategy_id": "L2",
+   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
+   "match_id": "16483632",
+   "market": "Hándicap Asiático -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 51,
+   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Fenerbahçe",
+    "xg_dominante": 2.12,
+    "sot_dominante": 5,
+    "marcador": "1-1"
+   },
+   "t_evento_real_utc": "2026-08-15T19:39:28Z",
+   "t_captura_utc": "2026-08-15T19:40:57Z",
+   "t_evaluacion_utc": "2026-08-15T19:41:15Z",
+   "t_generacion_utc": "2026-08-15T19:41:15Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T19:40:16Z",
+     "latencia_envio_ms": 812.0906352996826,
+     "error": null,
+     "message_id": 844,
+     "chat_id": -5124383393
+    }
+   },
+   "latencia_total_seg": 48.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 51'\n📊 Marcador: 1-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota disponibles?",
+   "evidencia": null,
+   "alert_id": "f4c0ca44561e96a0"
+  },
+  {
+   "strategy_id": "L2-SHADOW",
+   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
+   "match_id": "16483632",
+   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH -0.75 @ 1.875 [PROXY SofaScore, NO Betano]",
+   "cuota_detectada": 1.875,
+   "minuto": 51,
+   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Fenerbahçe",
+    "xg_dominante": 2.12,
+    "sot_dominante": 5,
+    "marcador": "1-1",
+    "variante": "shadow_ventana_80",
+    "ah_proxy_linea": -0.75,
+    "ah_proxy_cuota": 1.875,
+    "ah_proxy_suspendida": false,
+    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
+   },
+   "t_evento_real_utc": "2026-08-15T19:39:28Z",
+   "t_captura_utc": "2026-08-15T19:40:57Z",
+   "t_evaluacion_utc": "2026-08-15T19:41:17Z",
+   "t_generacion_utc": "2026-08-15T19:41:17Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T19:40:19Z",
+     "latencia_envio_ms": 797.767162322998,
+     "error": null,
+     "message_id": 845,
+     "chat_id": -5124383393
+    }
+   },
+   "latencia_total_seg": 51.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 51'\n📊 Marcador: 1-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\nReferencia PROXY: AH -0.75 @ 1.875 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota reales?",
+   "evidencia": null,
+   "alert_id": "c3f1f63dfaff82b1"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Ceará vs Cuiabá (Brasileirão Série B)",
    "match_id": "15526222",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 40,
+   "minuto": 41,
    "condicion": "Cuiabá acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -701,16 +662,16 @@
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 6,
     "equipo_que_realizo_sustitucion": "Cuiabá",
-    "marcador_en_el_momento": "0-0",
+    "marcador_en_el_momento": "0-1",
     "t_primera_observacion_atlas": "2026-08-15T19:20:28Z",
     "t_inicio_estimado_condicion": "2026-08-15T19:20:55Z",
     "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T19:20:28Z",
-   "t_captura_utc": "2026-08-15T19:40:34Z",
-   "t_evaluacion_utc": "2026-08-15T19:40:34Z",
-   "t_generacion_utc": "2026-08-15T19:40:34Z",
+   "t_captura_utc": "2026-08-15T19:41:36Z",
+   "t_evaluacion_utc": "2026-08-15T19:41:36Z",
+   "t_generacion_utc": "2026-08-15T19:41:36Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -724,7 +685,7 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ceará vs Cuiabá\n⏱ Minuto: 40'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Cuiabá acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Cuiabá, min 6\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ceará vs Cuiabá\n⏱ Minuto: 41'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Cuiabá acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Cuiabá, min 6\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "20871e8782f367a1"
   },
@@ -734,7 +695,7 @@
    "match_id": "15526223",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 40,
+   "minuto": 41,
    "condicion": "Atlético Goianiense acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -756,9 +717,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T19:20:30Z",
-   "t_captura_utc": "2026-08-15T19:40:35Z",
-   "t_evaluacion_utc": "2026-08-15T19:40:35Z",
-   "t_generacion_utc": "2026-08-15T19:40:35Z",
+   "t_captura_utc": "2026-08-15T19:41:36Z",
+   "t_evaluacion_utc": "2026-08-15T19:41:36Z",
+   "t_generacion_utc": "2026-08-15T19:41:36Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -772,7 +733,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlético Goianiense vs Vila Nova FC\n⏱ Minuto: 40'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Atlético Goianiense acumula 88% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Atlético Goianiense, min 39\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlético Goianiense vs Vila Nova FC\n⏱ Minuto: 41'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Atlético Goianiense acumula 88% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Atlético Goianiense, min 39\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "624eda7d0f653ba1"
   },
@@ -782,7 +743,7 @@
    "match_id": "15526224",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 37,
+   "minuto": 38,
    "condicion": "Criciúma acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -804,9 +765,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T19:23:29Z",
-   "t_captura_utc": "2026-08-15T19:40:35Z",
-   "t_evaluacion_utc": "2026-08-15T19:40:35Z",
-   "t_generacion_utc": "2026-08-15T19:40:35Z",
+   "t_captura_utc": "2026-08-15T19:41:37Z",
+   "t_evaluacion_utc": "2026-08-15T19:41:37Z",
+   "t_generacion_utc": "2026-08-15T19:41:37Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -820,7 +781,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Criciúma vs Goiás\n⏱ Minuto: 37'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Criciúma acumula 78% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Criciúma, min 14\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Criciúma vs Goiás\n⏱ Minuto: 38'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Criciúma acumula 78% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Criciúma, min 14\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "019a277e6d0f5d41"
   },
@@ -830,7 +791,7 @@
    "match_id": "16316790",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 82,
+   "minuto": 83,
    "condicion": "PSV Eindhoven acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -852,9 +813,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T19:21:29Z",
-   "t_captura_utc": "2026-08-15T19:40:36Z",
-   "t_evaluacion_utc": "2026-08-15T19:40:36Z",
-   "t_generacion_utc": "2026-08-15T19:40:36Z",
+   "t_captura_utc": "2026-08-15T19:41:38Z",
+   "t_evaluacion_utc": "2026-08-15T19:41:38Z",
+   "t_generacion_utc": "2026-08-15T19:41:38Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -868,7 +829,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Excelsior vs PSV Eindhoven\n⏱ Minuto: 82'\n📊 Marcador: 1-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: PSV Eindhoven acumula 70% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: PSV Eindhoven, min 72\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Excelsior vs PSV Eindhoven\n⏱ Minuto: 83'\n📊 Marcador: 1-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: PSV Eindhoven acumula 70% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: PSV Eindhoven, min 72\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "3ee60a08a971382c"
   },
@@ -878,7 +839,7 @@
    "match_id": "16629419",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 79,
+   "minuto": 80,
    "condicion": "Al-Nassr acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -887,9 +848,9 @@
    "extra": {
     "equipo_dominante": "Al-Nassr",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7317,
+    "ratio_presion_territorial": 0.6977,
     "touches_home": 30,
-    "touches_away": 11,
+    "touches_away": 13,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 77,
     "equipo_que_realizo_sustitucion": "Al-Nassr",
@@ -900,9 +861,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T19:19:31Z",
-   "t_captura_utc": "2026-08-15T19:40:37Z",
-   "t_evaluacion_utc": "2026-08-15T19:40:38Z",
-   "t_generacion_utc": "2026-08-15T19:40:38Z",
+   "t_captura_utc": "2026-08-15T19:41:39Z",
+   "t_evaluacion_utc": "2026-08-15T19:41:39Z",
+   "t_generacion_utc": "2026-08-15T19:41:39Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -916,7 +877,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Nassr vs Al-Fateh\n⏱ Minuto: 79'\n📊 Marcador: 3-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Nassr acumula 73% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Al-Nassr, min 77\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Nassr vs Al-Fateh\n⏱ Minuto: 80'\n📊 Marcador: 3-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Nassr acumula 70% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Al-Nassr, min 77\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "4f452820fd53584d"
   }
