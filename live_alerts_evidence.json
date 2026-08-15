@@ -3707,5 +3707,26 @@
    "mercado_variante": "FT",
    "activo": true
   }
+ ],
+ "918179e614763185": [
+  {
+   "alert_id": "918179e614763185",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
+   "liga": "Trendyol Süper Lig",
+   "event_id": "16483632",
+   "minuto_alerta": 20,
+   "condicion": "Fenerbahçe acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T18:50:26Z",
+   "t_captura_utc": "2026-08-15T18:50:26Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T18:51:35Z",
+   "segundos_transcurridos": 68,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.5 @ 2.02",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 2.02,
+   "activo": true
+  }
  ]
 }
