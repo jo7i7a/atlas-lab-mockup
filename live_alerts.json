@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T16:09:18Z",
- "n_alerts": 9,
+ "generated_at_utc": "2026-08-15T16:10:18Z",
+ "n_alerts": 7,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -49,102 +49,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Charlton Athletic vs Derby County\n⏱ Minuto: 85'\n📊 Marcador: 2-1\n🏆 Liga: Championship\n\n📝 Motivo: Charlton Athletic acumula 60% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Charlton Athletic, min 85\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "522acbd2627f43e8"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Stoke City vs Swansea City (Championship)",
-   "match_id": "16391141",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 85,
-   "condicion": "Swansea City acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Swansea City",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.64,
-    "touches_home": 9,
-    "touches_away": 16,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 84,
-    "equipo_que_realizo_sustitucion": "Swansea City",
-    "marcador_en_el_momento": "1-2",
-    "t_primera_observacion_atlas": "2026-08-15T15:39:35Z",
-    "t_inicio_estimado_condicion": "2026-08-15T15:39:28Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T15:39:35Z",
-   "t_captura_utc": "2026-08-15T15:46:26Z",
-   "t_evaluacion_utc": "2026-08-15T15:46:27Z",
-   "t_generacion_utc": "2026-08-15T15:46:27Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T15:39:36Z",
-     "latencia_envio_ms": 779.7930240631104,
-     "error": null,
-     "message_id": 683,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Stoke City vs Swansea City\n⏱ Minuto: 85'\n📊 Marcador: 1-2\n🏆 Liga: Championship\n\n📝 Motivo: Swansea City acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Swansea City, min 84\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "9605aa7af819a5e5"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Portsmouth vs Queens Park Rangers (Championship)",
-   "match_id": "16391140",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 85,
-   "condicion": "Queens Park Rangers acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Queens Park Rangers",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 13,
-    "touches_away": 26,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 74,
-    "equipo_que_realizo_sustitucion": "Queens Park Rangers",
-    "marcador_en_el_momento": "1-3",
-    "t_primera_observacion_atlas": "2026-08-15T15:39:30Z",
-    "t_inicio_estimado_condicion": "2026-08-15T14:21:34Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T15:39:30Z",
-   "t_captura_utc": "2026-08-15T15:50:18Z",
-   "t_evaluacion_utc": "2026-08-15T15:50:18Z",
-   "t_generacion_utc": "2026-08-15T15:50:18Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T15:39:35Z",
-     "latencia_envio_ms": 4294.934034347534,
-     "error": null,
-     "message_id": 682,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 5.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Portsmouth vs Queens Park Rangers\n⏱ Minuto: 85'\n📊 Marcador: 1-3\n🏆 Liga: Championship\n\n📝 Motivo: Queens Park Rangers acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Queens Park Rangers, min 74\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "cf4bc4fba8cde7c3"
   },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -326,7 +230,7 @@
    "match_id": "16483635",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 9,
+   "minuto": 10,
    "condicion": "4 córners totales antes del min 30 (0-4), Trabzonspor presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Kasımpaşa NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -339,8 +243,8 @@
    },
    "t_evento_real_utc": "2026-08-15T16:04:16Z",
    "t_captura_utc": "2026-08-15T16:04:16Z",
-   "t_evaluacion_utc": "2026-08-15T16:09:09Z",
-   "t_generacion_utc": "2026-08-15T16:09:09Z",
+   "t_evaluacion_utc": "2026-08-15T16:10:09Z",
+   "t_generacion_utc": "2026-08-15T16:10:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -354,7 +258,7 @@
    },
    "latencia_total_seg": 53.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Kasımpaşa vs Trabzonspor\n⏱ Minuto: 9'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Trabzonspor presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kasımpaşa no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Kasımpaşa vs Trabzonspor\n⏱ Minuto: 10'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Trabzonspor presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kasımpaşa no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "aceb8cc988b87b51"
   },
@@ -364,7 +268,7 @@
    "match_id": "16483635",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 9,
+   "minuto": 10,
    "condicion": "4 córners totales antes del min 45 (0-4), Trabzonspor presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Kasımpaşa NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -378,8 +282,8 @@
    },
    "t_evento_real_utc": "2026-08-15T16:04:16Z",
    "t_captura_utc": "2026-08-15T16:04:16Z",
-   "t_evaluacion_utc": "2026-08-15T16:09:10Z",
-   "t_generacion_utc": "2026-08-15T16:09:10Z",
+   "t_evaluacion_utc": "2026-08-15T16:10:10Z",
+   "t_generacion_utc": "2026-08-15T16:10:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -393,7 +297,7 @@
    },
    "latencia_total_seg": 55.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Kasımpaşa vs Trabzonspor\n⏱ Minuto: 9'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Trabzonspor presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kasımpaşa no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Kasımpaşa vs Trabzonspor\n⏱ Minuto: 10'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Trabzonspor presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kasımpaşa no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "2f562ae5ba207de4"
   }
