@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-15T13:34:13Z",
+ "generated_at_utc": "2026-08-15T13:35:16Z",
  "n_alerts": 4,
  "alerts": [
   {
@@ -91,7 +91,7 @@
    "match_id": "15272495",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 33,
+   "minuto": 34,
    "condicion": "5 córners totales antes del min 45 (0-5), IK Sirius presiona (5 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Mjällby AIF NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -105,8 +105,8 @@
    },
    "t_evento_real_utc": "2026-08-15T13:18:21Z",
    "t_captura_utc": "2026-08-15T13:18:21Z",
-   "t_evaluacion_utc": "2026-08-15T13:34:08Z",
-   "t_generacion_utc": "2026-08-15T13:34:08Z",
+   "t_evaluacion_utc": "2026-08-15T13:35:11Z",
+   "t_generacion_utc": "2026-08-15T13:35:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -120,7 +120,7 @@
    },
    "latencia_total_seg": 53.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Mjällby AIF vs IK Sirius\n⏱ Minuto: 33'\n📊 Marcador: 0-2\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 0\nVisita: 5\nTotal: 5\n\n📝 Motivo: IK Sirius presiona con 5 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Mjällby AIF no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Mjällby AIF vs IK Sirius\n⏱ Minuto: 34'\n📊 Marcador: 0-3\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 0\nVisita: 5\nTotal: 5\n\n📝 Motivo: IK Sirius presiona con 5 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Mjällby AIF no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "cd396a9ec8909765"
   },
@@ -130,7 +130,7 @@
    "match_id": "15272495",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 33,
+   "minuto": 34,
    "condicion": "IK Sirius acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -145,16 +145,16 @@
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 26,
     "equipo_que_realizo_sustitucion": "IK Sirius",
-    "marcador_en_el_momento": "0-2",
+    "marcador_en_el_momento": "0-3",
     "t_primera_observacion_atlas": "2026-08-15T13:21:14Z",
     "t_inicio_estimado_condicion": "2026-08-15T13:21:45Z",
     "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T13:21:14Z",
-   "t_captura_utc": "2026-08-15T13:34:13Z",
-   "t_evaluacion_utc": "2026-08-15T13:34:13Z",
-   "t_generacion_utc": "2026-08-15T13:34:13Z",
+   "t_captura_utc": "2026-08-15T13:35:16Z",
+   "t_evaluacion_utc": "2026-08-15T13:35:16Z",
+   "t_generacion_utc": "2026-08-15T13:35:16Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -168,7 +168,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Mjällby AIF vs IK Sirius\n⏱ Minuto: 33'\n📊 Marcador: 0-2\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IK Sirius acumula 70% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: IK Sirius, min 26\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Mjällby AIF vs IK Sirius\n⏱ Minuto: 34'\n📊 Marcador: 0-3\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IK Sirius acumula 70% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: IK Sirius, min 26\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "0c8d579fe23d9244"
   }
