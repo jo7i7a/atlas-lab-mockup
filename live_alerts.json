@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-15T19:37:32Z",
+ "generated_at_utc": "2026-08-15T19:38:18Z",
  "n_alerts": 19,
  "alerts": [
   {
@@ -569,44 +569,6 @@
    "alert_id": "3e2a901a53adfa97"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "Gaziantep FK vs Alanyaspor (Trendyol Süper Lig)",
-   "match_id": "16483633",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 49,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 1,
-    "corners_1t_total": 1
-   },
-   "t_evento_real_utc": "2026-08-15T19:33:59Z",
-   "t_captura_utc": "2026-08-15T19:33:59Z",
-   "t_evaluacion_utc": "2026-08-15T19:37:25Z",
-   "t_generacion_utc": "2026-08-15T19:37:25Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:34:23Z",
-     "latencia_envio_ms": 811.8658065795898,
-     "error": null,
-     "message_id": 842,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 24.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Gaziantep FK vs Alanyaspor\n⏱ Minuto: 49'\n📊 Marcador: 0-1\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "bcd0482a995dfcf8"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Ceará vs Cuiabá (Brasileirão Série B)",
    "match_id": "15526222",
@@ -845,6 +807,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Nassr vs Al-Fateh\n⏱ Minuto: 76'\n📊 Marcador: 3-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Nassr acumula 74% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Al-Nassr, min 66\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "4f452820fd53584d"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Gaziantep FK vs Alanyaspor (Trendyol Süper Lig)",
+   "match_id": "16483633",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 49,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 0,
+    "corners_1t_away": 1,
+    "corners_1t_total": 1
+   },
+   "t_evento_real_utc": "2026-08-15T19:33:59Z",
+   "t_captura_utc": "2026-08-15T19:33:59Z",
+   "t_evaluacion_utc": "2026-08-15T19:38:18Z",
+   "t_generacion_utc": "2026-08-15T19:38:18Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T19:34:23Z",
+     "latencia_envio_ms": 811.8658065795898,
+     "error": null,
+     "message_id": 842,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 24.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Gaziantep FK vs Alanyaspor\n⏱ Minuto: 49'\n📊 Marcador: 0-1\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "bcd0482a995dfcf8"
   }
  ]
 }
