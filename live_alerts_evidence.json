@@ -3811,5 +3811,26 @@
    "cuota_real_betano": 1.8,
    "activo": true
   }
+ ],
+ "0db79fb77baba425": [
+  {
+   "alert_id": "0db79fb77baba425",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Fortuna Sittard vs SC Cambuur (VriendenLoterij Eredivisie)",
+   "liga": "VriendenLoterij Eredivisie",
+   "event_id": "16316778",
+   "minuto_alerta": 20,
+   "condicion": "Fortuna Sittard acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T19:22:33Z",
+   "t_captura_utc": "2026-08-15T19:22:33Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T19:24:08Z",
+   "segundos_transcurridos": 94,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.5 @ 1.75",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 1.75,
+   "activo": true
+  }
  ]
 }
