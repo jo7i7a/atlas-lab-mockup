@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T20:05:32Z",
- "n_alerts": 19,
+ "generated_at_utc": "2026-08-15T20:06:26Z",
+ "n_alerts": 20,
  "alerts": [
   {
    "strategy_id": "L1-SHADOW",
@@ -615,12 +615,56 @@
    "alert_id": "a3a2c9cce6298c8b"
   },
   {
+   "strategy_id": "L2-SHADOW",
+   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
+   "match_id": "16483632",
+   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH -0.50 @ 1.75 [PROXY SofaScore, NO Betano]",
+   "cuota_detectada": 1.75,
+   "minuto": 76,
+   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Fenerbahçe",
+    "xg_dominante": 2.12,
+    "sot_dominante": 5,
+    "marcador": "1-2",
+    "variante": "shadow_ventana_80",
+    "ah_proxy_linea": -0.5,
+    "ah_proxy_cuota": 1.75,
+    "ah_proxy_suspendida": false,
+    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
+   },
+   "t_evento_real_utc": "2026-08-15T19:39:28Z",
+   "t_captura_utc": "2026-08-15T20:05:59Z",
+   "t_evaluacion_utc": "2026-08-15T20:06:15Z",
+   "t_generacion_utc": "2026-08-15T20:06:15Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_EXPIRADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "expirada al generar (mas vieja que el TTL) -- no se notifica",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "EXPIRADA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 76'\n📊 Marcador: 2-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\nReferencia PROXY: AH -0.50 @ 1.75 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota reales?",
+   "evidencia": null,
+   "alert_id": "99b79253ba93d713"
+  },
+  {
    "strategy_id": "A2",
    "match_label": "Fortuna Sittard vs SC Cambuur (VriendenLoterij Eredivisie)",
    "match_id": "16316778",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 46,
+   "minuto": 47,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -633,8 +677,8 @@
    },
    "t_evento_real_utc": "2026-08-15T20:03:25Z",
    "t_captura_utc": "2026-08-15T20:03:25Z",
-   "t_evaluacion_utc": "2026-08-15T20:05:25Z",
-   "t_generacion_utc": "2026-08-15T20:05:25Z",
+   "t_evaluacion_utc": "2026-08-15T20:06:20Z",
+   "t_generacion_utc": "2026-08-15T20:06:20Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -648,7 +692,7 @@
    },
    "latencia_total_seg": 121.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Fortuna Sittard vs SC Cambuur\n⏱ Minuto: 46'\n📊 Marcador: 2-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Fortuna Sittard vs SC Cambuur\n⏱ Minuto: 47'\n📊 Marcador: 2-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "a97f6a6e8611cbcb"
   },
@@ -658,7 +702,7 @@
    "match_id": "16671559",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 21,
+   "minuto": 22,
    "condicion": "Estudiantes de La Plata domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -678,8 +722,8 @@
    },
    "t_evento_real_utc": "2026-08-15T19:59:26Z",
    "t_captura_utc": "2026-08-15T19:59:26Z",
-   "t_evaluacion_utc": "2026-08-15T20:05:28Z",
-   "t_generacion_utc": "2026-08-15T20:05:28Z",
+   "t_evaluacion_utc": "2026-08-15T20:06:22Z",
+   "t_generacion_utc": "2026-08-15T20:06:22Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -693,7 +737,7 @@
    },
    "latencia_total_seg": 61.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Estudiantes de La Plata vs Gimnasia y Esgrima\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de La Plata — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Estudiantes de La Plata vs Gimnasia y Esgrima\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de La Plata — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "42eba63aa512397f"
   },
@@ -703,7 +747,7 @@
    "match_id": "15235422",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 35,
+   "minuto": 36,
    "condicion": "Fluminense acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -712,8 +756,8 @@
    "extra": {
     "equipo_dominante": "Fluminense",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6154,
-    "touches_home": 8,
+    "ratio_presion_territorial": 0.6667,
+    "touches_home": 10,
     "touches_away": 5,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
@@ -725,9 +769,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T19:50:30Z",
-   "t_captura_utc": "2026-08-15T20:05:30Z",
-   "t_evaluacion_utc": "2026-08-15T20:05:30Z",
-   "t_generacion_utc": "2026-08-15T20:05:30Z",
+   "t_captura_utc": "2026-08-15T20:06:23Z",
+   "t_evaluacion_utc": "2026-08-15T20:06:23Z",
+   "t_generacion_utc": "2026-08-15T20:06:23Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -740,8 +784,8 @@
     }
    },
    "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Fluminense vs Palmeiras\n⏱ Minuto: 35'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Fluminense acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "estado_temporal": "EXPIRADA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Fluminense vs Palmeiras\n⏱ Minuto: 36'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Fluminense acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "14434f8ba166c976"
   },
@@ -751,7 +795,7 @@
    "match_id": "16450753",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 33,
+   "minuto": 34,
    "condicion": "FC Porto acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -760,9 +804,9 @@
    "extra": {
     "equipo_dominante": "FC Porto",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.8667,
+    "ratio_presion_territorial": 0.8824,
     "touches_home": 2,
-    "touches_away": 13,
+    "touches_away": 15,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -773,9 +817,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T19:52:34Z",
-   "t_captura_utc": "2026-08-15T20:05:31Z",
-   "t_evaluacion_utc": "2026-08-15T20:05:31Z",
-   "t_generacion_utc": "2026-08-15T20:05:31Z",
+   "t_captura_utc": "2026-08-15T20:06:24Z",
+   "t_evaluacion_utc": "2026-08-15T20:06:24Z",
+   "t_generacion_utc": "2026-08-15T20:06:24Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -789,7 +833,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rio Ave vs FC Porto\n⏱ Minuto: 33'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Porto acumula 87% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rio Ave vs FC Porto\n⏱ Minuto: 34'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Porto acumula 88% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "57c29dac315c12c6"
   },
@@ -799,7 +843,7 @@
    "match_id": "16671559",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 21,
+   "minuto": 22,
    "condicion": "Estudiantes de La Plata acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -821,9 +865,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T20:04:27Z",
-   "t_captura_utc": "2026-08-15T20:05:32Z",
-   "t_evaluacion_utc": "2026-08-15T20:05:32Z",
-   "t_generacion_utc": "2026-08-15T20:05:32Z",
+   "t_captura_utc": "2026-08-15T20:06:26Z",
+   "t_evaluacion_utc": "2026-08-15T20:06:26Z",
+   "t_generacion_utc": "2026-08-15T20:06:26Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -837,7 +881,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Estudiantes de La Plata vs Gimnasia y Esgrima\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de La Plata acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Estudiantes de La Plata vs Gimnasia y Esgrima\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de La Plata acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "3498d863f51d46f1"
   }
