@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T17:07:24Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-15T17:08:25Z",
+ "n_alerts": 9,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -286,7 +286,7 @@
    "match_id": "16391142",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 37,
+   "minuto": 38,
    "condicion": "4 córners totales antes del min 45 (1-3), Birmingham City presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Sheffield United NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -300,8 +300,8 @@
    },
    "t_evento_real_utc": "2026-08-15T16:43:52Z",
    "t_captura_utc": "2026-08-15T16:43:52Z",
-   "t_evaluacion_utc": "2026-08-15T17:07:10Z",
-   "t_generacion_utc": "2026-08-15T17:07:10Z",
+   "t_evaluacion_utc": "2026-08-15T17:08:10Z",
+   "t_generacion_utc": "2026-08-15T17:08:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -315,9 +315,47 @@
    },
    "latencia_total_seg": 19.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Sheffield United vs Birmingham City\n⏱ Minuto: 37'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Birmingham City presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Sheffield United no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Sheffield United vs Birmingham City\n⏱ Minuto: 38'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Birmingham City presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Sheffield United no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "61f2c5b69c17b4f3"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Konyaspor vs Çaykur Rizespor (Trendyol Süper Lig)",
+   "match_id": "16483708",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 2,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-08-15T17:07:23Z",
+   "t_captura_utc": "2026-08-15T17:07:23Z",
+   "t_evaluacion_utc": "2026-08-15T17:08:18Z",
+   "t_generacion_utc": "2026-08-15T17:08:18Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T17:08:19Z",
+     "latencia_envio_ms": 938.525915145874,
+     "error": null,
+     "message_id": 737,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 56.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Konyaspor vs Çaykur Rizespor\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "a957d195a6655a97"
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -325,7 +363,7 @@
    "match_id": "16316791",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 18,
+   "minuto": 19,
    "condicion": "AZ Alkmaar domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -345,8 +383,8 @@
    },
    "t_evento_real_utc": "2026-08-15T17:07:02Z",
    "t_captura_utc": "2026-08-15T17:07:02Z",
-   "t_evaluacion_utc": "2026-08-15T17:07:21Z",
-   "t_generacion_utc": "2026-08-15T17:07:21Z",
+   "t_evaluacion_utc": "2026-08-15T17:08:23Z",
+   "t_generacion_utc": "2026-08-15T17:08:23Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -360,7 +398,7 @@
    },
    "latencia_total_seg": 20.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ FC Utrecht vs AZ Alkmaar\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: AZ Alkmaar — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ FC Utrecht vs AZ Alkmaar\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: AZ Alkmaar — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "13da23d7ca39fbdb"
   }
