@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-15T00:00:20Z",
+ "generated_at_utc": "2026-08-15T00:01:19Z",
  "n_alerts": 9,
  "alerts": [
   {
@@ -320,54 +320,6 @@
    "alert_id": "7d034d76bcaca440"
   },
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Racing Club vs Banfield (Liga Profesional de Fútbol)",
-   "match_id": "16667393",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 29,
-   "condicion": "Banfield acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Banfield",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 2,
-    "touches_away": 4,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 4,
-    "equipo_que_realizo_sustitucion": "Banfield",
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-14T23:56:28Z",
-    "t_inicio_estimado_condicion": "2026-08-14T23:56:15Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-14T23:56:28Z",
-   "t_captura_utc": "2026-08-15T00:00:18Z",
-   "t_evaluacion_utc": "2026-08-15T00:00:19Z",
-   "t_generacion_utc": "2026-08-15T00:00:19Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T23:56:29Z",
-     "latencia_envio_ms": 860.9030246734619,
-     "error": null,
-     "message_id": 562,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Racing Club vs Banfield\n⏱ Minuto: 29'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Banfield acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Banfield, min 4\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "43b71dd9c4f40edc"
-  },
-  {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Ponte Preta vs Náutico (Brasileirão Série B)",
    "match_id": "15526218",
@@ -410,6 +362,54 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Ponte Preta vs Náutico\n⏱ Minuto: 70'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 3.18, 24 tiros totales (9 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "8e9db6c005f2396e"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Racing Club vs Banfield (Liga Profesional de Fútbol)",
+   "match_id": "16667393",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 30,
+   "condicion": "Banfield acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Banfield",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.6667,
+    "touches_home": 2,
+    "touches_away": 4,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 4,
+    "equipo_que_realizo_sustitucion": "Banfield",
+    "marcador_en_el_momento": "0-1",
+    "t_primera_observacion_atlas": "2026-08-14T23:56:28Z",
+    "t_inicio_estimado_condicion": "2026-08-14T23:56:15Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-14T23:56:28Z",
+   "t_captura_utc": "2026-08-15T00:01:19Z",
+   "t_evaluacion_utc": "2026-08-15T00:01:19Z",
+   "t_generacion_utc": "2026-08-15T00:01:19Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-14T23:56:29Z",
+     "latencia_envio_ms": 860.9030246734619,
+     "error": null,
+     "message_id": 562,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Racing Club vs Banfield\n⏱ Minuto: 30'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Banfield acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Banfield, min 4\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "43b71dd9c4f40edc"
   }
  ]
 }
