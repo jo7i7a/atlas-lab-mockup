@@ -3893,5 +3893,45 @@
    "cuota_real_betano": 1.62,
    "activo": true
   }
+ ],
+ "b6f939e1c476843b": [
+  {
+   "alert_id": "b6f939e1c476843b",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Fluminense vs Palmeiras (Brasileirão Betano)",
+   "liga": "Brasileirão Betano",
+   "event_id": "15235422",
+   "minuto_alerta": 16,
+   "condicion": "Palmeiras domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T19:45:46Z",
+   "t_captura_utc": "2026-08-15T19:45:46Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T19:47:54Z",
+   "segundos_transcurridos": 85,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.5 @ 1.50\n10.5 @ 1.85",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 1.5,
+   "activo": true
+  },
+  {
+   "alert_id": "b6f939e1c476843b",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Fluminense vs Palmeiras (Brasileirão Betano)",
+   "liga": "Brasileirão Betano",
+   "event_id": "15235422",
+   "minuto_alerta": 16,
+   "condicion": "Palmeiras domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T19:45:46Z",
+   "t_captura_utc": "2026-08-15T19:45:46Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T19:47:54Z",
+   "segundos_transcurridos": 85,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.5 @ 1.50\n10.5 @ 1.85",
+   "linea_real_betano": 10.5,
+   "cuota_real_betano": 1.85,
+   "activo": true
+  }
  ]
 }
