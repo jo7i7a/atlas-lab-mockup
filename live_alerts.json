@@ -1,51 +1,7 @@
 {
- "generated_at_utc": "2026-08-15T17:44:26Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-15T17:45:26Z",
+ "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Kasımpaşa vs Trabzonspor (Trendyol Süper Lig)",
-   "match_id": "16483635",
-   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 60,
-   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_combinado": 1.35,
-    "tiros_combinados": 11,
-    "sot_combinado": 7,
-    "presion_reciente_10min": 3,
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-08-15T17:15:22Z",
-    "t_inicio_estimado_condicion": "2026-08-15T17:15:06Z",
-    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T17:15:22Z",
-   "t_captura_utc": "2026-08-15T17:19:22Z",
-   "t_evaluacion_utc": "2026-08-15T17:19:22Z",
-   "t_generacion_utc": "2026-08-15T17:19:22Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T17:15:23Z",
-     "latencia_envio_ms": 838.1106853485107,
-     "error": null,
-     "message_id": 746,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Kasımpaşa vs Trabzonspor\n⏱ Minuto: 60'\n📊 Marcador: 1-1\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: presión combinada sostenida — xG 1.35, 11 tiros totales (7 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
-   "evidencia": null,
-   "alert_id": "2425c829741303a0"
-  },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Académico Viseu FC vs Santa Clara (Liga Portugal Betclic)",
@@ -227,7 +183,7 @@
    "match_id": "16391142",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 57,
+   "minuto": 58,
    "condicion": "Birmingham City acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -236,9 +192,9 @@
    "extra": {
     "equipo_dominante": "Birmingham City",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6471,
+    "ratio_presion_territorial": 0.6667,
     "touches_home": 6,
-    "touches_away": 11,
+    "touches_away": 12,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -249,9 +205,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T17:39:24Z",
-   "t_captura_utc": "2026-08-15T17:44:24Z",
-   "t_evaluacion_utc": "2026-08-15T17:44:24Z",
-   "t_generacion_utc": "2026-08-15T17:44:24Z",
+   "t_captura_utc": "2026-08-15T17:45:25Z",
+   "t_evaluacion_utc": "2026-08-15T17:45:25Z",
+   "t_generacion_utc": "2026-08-15T17:45:25Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -265,7 +221,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sheffield United vs Birmingham City\n⏱ Minuto: 57'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Birmingham City acumula 65% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sheffield United vs Birmingham City\n⏱ Minuto: 58'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Birmingham City acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "275890b297d79448"
   },
@@ -275,7 +231,7 @@
    "match_id": "16450744",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 45,
    "condicion": "Santa Clara acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -297,9 +253,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T17:21:23Z",
-   "t_captura_utc": "2026-08-15T17:44:24Z",
-   "t_evaluacion_utc": "2026-08-15T17:44:25Z",
-   "t_generacion_utc": "2026-08-15T17:44:25Z",
+   "t_captura_utc": "2026-08-15T17:45:26Z",
+   "t_evaluacion_utc": "2026-08-15T17:45:26Z",
+   "t_generacion_utc": "2026-08-15T17:45:26Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -313,7 +269,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Académico Viseu FC vs Santa Clara\n⏱ Minuto: 44'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Santa Clara acumula 80% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Santa Clara, min 36\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Académico Viseu FC vs Santa Clara\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Santa Clara acumula 80% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Santa Clara, min 36\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "646baac3193121b3"
   }
