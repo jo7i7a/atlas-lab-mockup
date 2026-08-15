@@ -3175,5 +3175,47 @@
    "cuota_real_betano": 1.78,
    "activo": true
   }
+ ],
+ "88535639212c1d78": [
+  {
+   "alert_id": "88535639212c1d78",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Sheffield United vs Birmingham City (Championship)",
+   "liga": "Championship",
+   "event_id": "16391142",
+   "minuto_alerta": 22,
+   "condicion": "Sheffield United acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T16:52:24Z",
+   "t_captura_utc": "2026-08-15T16:52:24Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T16:53:00Z",
+   "segundos_transcurridos": 35,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "15.0 @ 1.91",
+   "linea_real_betano": 15.0,
+   "cuota_real_betano": 1.91,
+   "activo": true
+  }
+ ],
+ "2dd52d44113bb594": [
+  {
+   "alert_id": "2dd52d44113bb594",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Sheffield United vs Birmingham City (Championship)",
+   "liga": "Championship",
+   "event_id": "16391142",
+   "minuto_alerta": 23,
+   "condicion": "Birmingham City acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T16:53:24Z",
+   "t_captura_utc": "2026-08-15T16:53:24Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T16:53:48Z",
+   "segundos_transcurridos": 23,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "15.0 @ 1.98",
+   "linea_real_betano": 15.0,
+   "cuota_real_betano": 1.98,
+   "activo": true
+  }
  ]
 }
