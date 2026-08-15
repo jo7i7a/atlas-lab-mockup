@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-15T20:09:30Z",
+ "generated_at_utc": "2026-08-15T20:10:33Z",
  "n_alerts": 9,
  "alerts": [
   {
@@ -281,44 +281,6 @@
    "alert_id": "14434f8ba166c976"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "Fortuna Sittard vs SC Cambuur (VriendenLoterij Eredivisie)",
-   "match_id": "16316778",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 50,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 1,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-15T20:03:25Z",
-   "t_captura_utc": "2026-08-15T20:03:25Z",
-   "t_evaluacion_utc": "2026-08-15T20:09:22Z",
-   "t_generacion_utc": "2026-08-15T20:09:22Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T20:05:26Z",
-     "latencia_envio_ms": 812.824010848999,
-     "error": null,
-     "message_id": 870,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 121.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Fortuna Sittard vs SC Cambuur\n⏱ Minuto: 50'\n📊 Marcador: 2-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "a97f6a6e8611cbcb"
-  },
-  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Estudiantes de La Plata vs Gimnasia y Esgrima (Liga Profesional de Fútbol)",
    "match_id": "16671559",
@@ -364,12 +326,50 @@
    "alert_id": "42eba63aa512397f"
   },
   {
+   "strategy_id": "A2",
+   "match_label": "Fortuna Sittard vs SC Cambuur (VriendenLoterij Eredivisie)",
+   "match_id": "16316778",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 51,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 1,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-08-15T20:03:25Z",
+   "t_captura_utc": "2026-08-15T20:03:25Z",
+   "t_evaluacion_utc": "2026-08-15T20:10:24Z",
+   "t_generacion_utc": "2026-08-15T20:10:24Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T20:05:26Z",
+     "latencia_envio_ms": 812.824010848999,
+     "error": null,
+     "message_id": 870,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 121.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Fortuna Sittard vs SC Cambuur\n⏱ Minuto: 51'\n📊 Marcador: 2-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "a97f6a6e8611cbcb"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Rio Ave vs FC Porto (Liga Portugal Betclic)",
    "match_id": "16450753",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 37,
+   "minuto": 38,
    "condicion": "FC Porto acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -378,22 +378,22 @@
    "extra": {
     "equipo_dominante": "FC Porto",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.9048,
+    "ratio_presion_territorial": 0.8947,
     "touches_home": 2,
-    "touches_away": 19,
+    "touches_away": 17,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-2",
+    "marcador_en_el_momento": "0-1",
     "t_primera_observacion_atlas": "2026-08-15T19:52:34Z",
     "t_inicio_estimado_condicion": "2026-08-15T19:53:05Z",
     "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T19:52:34Z",
-   "t_captura_utc": "2026-08-15T20:09:30Z",
-   "t_evaluacion_utc": "2026-08-15T20:09:30Z",
-   "t_generacion_utc": "2026-08-15T20:09:30Z",
+   "t_captura_utc": "2026-08-15T20:10:32Z",
+   "t_evaluacion_utc": "2026-08-15T20:10:32Z",
+   "t_generacion_utc": "2026-08-15T20:10:32Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -407,7 +407,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rio Ave vs FC Porto\n⏱ Minuto: 37'\n📊 Marcador: 0-2\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Porto acumula 90% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rio Ave vs FC Porto\n⏱ Minuto: 38'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Porto acumula 89% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "57c29dac315c12c6"
   }
