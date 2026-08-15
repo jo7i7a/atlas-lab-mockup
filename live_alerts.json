@@ -1,130 +1,7 @@
 {
- "generated_at_utc": "2026-08-15T10:48:29Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-15T10:49:13Z",
+ "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Kawasaki Frontale vs Kyoto Sanga FC (J1 League)",
-   "match_id": "16348540",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Kawasaki Frontale domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Kawasaki Frontale",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 1,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T10:19:08Z",
-   "t_captura_utc": "2026-08-15T10:19:08Z",
-   "t_evaluacion_utc": "2026-08-15T10:28:35Z",
-   "t_generacion_utc": "2026-08-15T10:28:35Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T10:28:36Z",
-     "latencia_envio_ms": 891.798734664917,
-     "error": null,
-     "message_id": 584,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 568.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Kawasaki Frontale vs Kyoto Sanga FC\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n📝 Motivo: Kawasaki Frontale — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "3de3fd34b7c58708"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Vissel Kobe vs FC Tokyo (J1 League)",
-   "match_id": "16348542",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 40,
-   "condicion": "7 córners totales antes del min 45 (4-3), Vissel Kobe presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿FC Tokyo NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 3,
-    "equipo_presiona": "Vissel Kobe",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-15T10:38:22Z",
-   "t_captura_utc": "2026-08-15T10:38:22Z",
-   "t_evaluacion_utc": "2026-08-15T10:44:20Z",
-   "t_generacion_utc": "2026-08-15T10:44:20Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T10:40:54Z",
-     "latencia_envio_ms": 958.5394859313965,
-     "error": null,
-     "message_id": 585,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 152.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Vissel Kobe vs FC Tokyo\n⏱ Minuto: 40'\n📊 Marcador: 1-1\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 4\nVisita: 3\nTotal: 7\n\n📝 Motivo: Vissel Kobe presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Tokyo no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "35774aedd154cc61"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Urawa Red Diamonds vs Sanfrecce Hiroshima (J1 League)",
-   "match_id": "16348558",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 40,
-   "condicion": "4 córners totales antes del min 45 (1-3), Sanfrecce Hiroshima presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Urawa Red Diamonds NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Sanfrecce Hiroshima",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-15T10:38:22Z",
-   "t_captura_utc": "2026-08-15T10:38:22Z",
-   "t_evaluacion_utc": "2026-08-15T10:44:22Z",
-   "t_generacion_utc": "2026-08-15T10:44:22Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T10:40:57Z",
-     "latencia_envio_ms": 811.2852573394775,
-     "error": null,
-     "message_id": 586,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 155.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Urawa Red Diamonds vs Sanfrecce Hiroshima\n⏱ Minuto: 40'\n📊 Marcador: 1-1\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Sanfrecce Hiroshima presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Urawa Red Diamonds no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "c12f87e3ef76fb41"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Kawasaki Frontale vs Kyoto Sanga FC (J1 League)",
@@ -316,6 +193,84 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Urawa Red Diamonds vs Sanfrecce Hiroshima\n⏱ Minuto: 44'\n📊 Marcador: 1-1\n🏆 Liga: J1 League\n\n📝 Motivo: Sanfrecce Hiroshima acumula 89% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Sanfrecce Hiroshima, min 22\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "e26110012ed26468"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Vissel Kobe vs FC Tokyo (J1 League)",
+   "match_id": "16348542",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "7 córners totales antes del min 45 (4-3), Vissel Kobe presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿FC Tokyo NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 3,
+    "equipo_presiona": "Vissel Kobe",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-15T10:38:22Z",
+   "t_captura_utc": "2026-08-15T10:38:22Z",
+   "t_evaluacion_utc": "2026-08-15T10:49:12Z",
+   "t_generacion_utc": "2026-08-15T10:49:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T10:40:54Z",
+     "latencia_envio_ms": 958.5394859313965,
+     "error": null,
+     "message_id": 585,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 152.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Vissel Kobe vs FC Tokyo\n⏱ Minuto: 45'\n📊 Marcador: 1-1\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 4\nVisita: 3\nTotal: 7\n\n📝 Motivo: Vissel Kobe presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Tokyo no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "35774aedd154cc61"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Urawa Red Diamonds vs Sanfrecce Hiroshima (J1 League)",
+   "match_id": "16348558",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "4 córners totales antes del min 45 (1-3), Sanfrecce Hiroshima presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Urawa Red Diamonds NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 1,
+    "corners_away": 3,
+    "equipo_presiona": "Sanfrecce Hiroshima",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-15T10:38:22Z",
+   "t_captura_utc": "2026-08-15T10:38:22Z",
+   "t_evaluacion_utc": "2026-08-15T10:49:13Z",
+   "t_generacion_utc": "2026-08-15T10:49:13Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T10:40:57Z",
+     "latencia_envio_ms": 811.2852573394775,
+     "error": null,
+     "message_id": 586,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 155.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Urawa Red Diamonds vs Sanfrecce Hiroshima\n⏱ Minuto: 45'\n📊 Marcador: 1-1\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Sanfrecce Hiroshima presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Urawa Red Diamonds no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "c12f87e3ef76fb41"
   }
  ]
 }
