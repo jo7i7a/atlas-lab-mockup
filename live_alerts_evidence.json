@@ -2742,5 +2742,47 @@
    "cuota_real_betano": 2.67,
    "activo": true
   }
+ ],
+ "4eb80b6562ce775f": [
+  {
+   "alert_id": "4eb80b6562ce775f",
+   "strategy_id": "L2-SHADOW",
+   "match_label": "Middlesbrough vs Lincoln City (Championship)",
+   "liga": "Championship",
+   "event_id": "16391138",
+   "minuto_alerta": 76,
+   "condicion": "Middlesbrough domina por xG (1.55) y remates a puerta (6) sin ir ganando y sin roja del dominante — Middlesbrough vs Lincoln City. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
+   "t_evento_real_utc": "2026-08-15T15:36:03Z",
+   "t_captura_utc": "2026-08-15T15:36:03Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T15:37:13Z",
+   "segundos_transcurridos": 56,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "-0.5 @ 2.52",
+   "linea_real_betano": 0.5,
+   "cuota_real_betano": 2.52,
+   "activo": true
+  }
+ ],
+ "fdf3800335988aa8": [
+  {
+   "alert_id": "fdf3800335988aa8",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Middlesbrough vs Lincoln City (Championship)",
+   "liga": "Championship",
+   "event_id": "16391138",
+   "minuto_alerta": 71,
+   "condicion": "Middlesbrough acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T15:30:29Z",
+   "t_captura_utc": "2026-08-15T15:30:29Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T15:37:47Z",
+   "segundos_transcurridos": 437,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "11.0 @ 1.88",
+   "linea_real_betano": 11.0,
+   "cuota_real_betano": 1.88,
+   "activo": true
+  }
  ]
 }

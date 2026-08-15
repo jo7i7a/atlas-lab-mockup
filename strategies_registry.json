@@ -438,24 +438,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 13,
+   "casos_verificados": 14,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "Estadística previa: auditoría de 197→49→19 casos históricos con medición descriptiva (+3,5% sobre N=15, PROXY, no es edge). Cero alertas propias en producción todavía -- prueba Shadow recién activada 2026-08-08.",
    "fecha_creacion_utc": "2026-08-08",
-   "ultima_actualizacion_utc": "2026-08-15T15:36:03Z",
+   "ultima_actualizacion_utc": "2026-08-15T15:38:03Z",
    "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate D). Comparar tasa de operabilidad/CLV/ROI entre L2-SHADOW y L2 original cuando haya muestra suficiente.",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 13,
+    "n_operable": 14,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 13
+    "n_muestra": 14
    },
-   "alertas_live_historial": 70,
+   "alertas_live_historial": 71,
    "defectos_historicos": [
     {
      "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
@@ -1018,24 +1018,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 35,
+   "casos_verificados": 36,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
    "fecha_creacion_utc": "2026-08-09",
-   "ultima_actualizacion_utc": "2026-08-15T15:21:03Z",
-   "proximo_hito": "Umbral de 30 verificaciones alcanzado (N=35, 100.0% operable) -- cumple el criterio del Director (>=80-90%). Pasar a diseño de estrategia de stake y gestión de riesgo antes de avanzar a CERTIFICADA.",
+   "ultima_actualizacion_utc": "2026-08-15T15:38:04Z",
+   "proximo_hito": "Umbral de 30 verificaciones alcanzado (N=36, 100.0% operable) -- cumple el criterio del Director (>=80-90%). Pasar a diseño de estrategia de stake y gestión de riesgo antes de avanzar a CERTIFICADA.",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 35,
+    "n_operable": 36,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 35
+    "n_muestra": 36
    },
-   "alertas_live_historial": 116
+   "alertas_live_historial": 117
   },
   {
    "id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
