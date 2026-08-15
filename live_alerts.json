@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-15T16:07:20Z",
+ "generated_at_utc": "2026-08-15T16:08:18Z",
  "n_alerts": 10,
  "alerts": [
   {
@@ -321,83 +321,6 @@
    "alert_id": "696472b74ed3d22f"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "Kasımpaşa vs Trabzonspor (Trendyol Süper Lig)",
-   "match_id": "16483635",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 7,
-   "condicion": "4 córners totales antes del min 30 (0-4), Trabzonspor presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Kasımpaşa NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "Trabzonspor"
-   },
-   "t_evento_real_utc": "2026-08-15T16:04:16Z",
-   "t_captura_utc": "2026-08-15T16:04:16Z",
-   "t_evaluacion_utc": "2026-08-15T16:07:08Z",
-   "t_generacion_utc": "2026-08-15T16:07:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T16:05:09Z",
-     "latencia_envio_ms": 793.7180995941162,
-     "error": null,
-     "message_id": 703,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 53.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Kasımpaşa vs Trabzonspor\n⏱ Minuto: 7'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Trabzonspor presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kasımpaşa no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "aceb8cc988b87b51"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Kasımpaşa vs Trabzonspor (Trendyol Süper Lig)",
-   "match_id": "16483635",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 7,
-   "condicion": "4 córners totales antes del min 45 (0-4), Trabzonspor presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Kasımpaşa NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "Trabzonspor",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-15T16:04:16Z",
-   "t_captura_utc": "2026-08-15T16:04:16Z",
-   "t_evaluacion_utc": "2026-08-15T16:07:10Z",
-   "t_generacion_utc": "2026-08-15T16:07:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T16:05:11Z",
-     "latencia_envio_ms": 770.3721523284912,
-     "error": null,
-     "message_id": 704,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 55.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Kasımpaşa vs Trabzonspor\n⏱ Minuto: 7'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Trabzonspor presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kasımpaşa no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "2f562ae5ba207de4"
-  },
-  {
    "strategy_id": "L3",
    "match_label": "FC Alverca vs CF Estrela Amadora (Liga Portugal Betclic)",
    "match_id": "16450745",
@@ -434,6 +357,83 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ FC Alverca vs CF Estrela Amadora\n⏱ Minuto: 75'\n📊 Marcador: 2-2\n🏆 Liga: Liga Portugal Betclic\n\n🟥 Expulsado: FC Alverca\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
    "evidencia": null,
    "alert_id": "e7a6cfc44f533028"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "Kasımpaşa vs Trabzonspor (Trendyol Süper Lig)",
+   "match_id": "16483635",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 8,
+   "condicion": "4 córners totales antes del min 30 (0-4), Trabzonspor presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Kasımpaşa NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Trabzonspor"
+   },
+   "t_evento_real_utc": "2026-08-15T16:04:16Z",
+   "t_captura_utc": "2026-08-15T16:04:16Z",
+   "t_evaluacion_utc": "2026-08-15T16:08:08Z",
+   "t_generacion_utc": "2026-08-15T16:08:08Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T16:05:09Z",
+     "latencia_envio_ms": 793.7180995941162,
+     "error": null,
+     "message_id": 703,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 53.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Kasımpaşa vs Trabzonspor\n⏱ Minuto: 8'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Trabzonspor presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kasımpaşa no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "aceb8cc988b87b51"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Kasımpaşa vs Trabzonspor (Trendyol Süper Lig)",
+   "match_id": "16483635",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 8,
+   "condicion": "4 córners totales antes del min 45 (0-4), Trabzonspor presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Kasımpaşa NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Trabzonspor",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-15T16:04:16Z",
+   "t_captura_utc": "2026-08-15T16:04:16Z",
+   "t_evaluacion_utc": "2026-08-15T16:08:10Z",
+   "t_generacion_utc": "2026-08-15T16:08:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T16:05:11Z",
+     "latencia_envio_ms": 770.3721523284912,
+     "error": null,
+     "message_id": 704,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 55.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Kasımpaşa vs Trabzonspor\n⏱ Minuto: 8'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Trabzonspor presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kasımpaşa no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "2f562ae5ba207de4"
   }
  ]
 }
