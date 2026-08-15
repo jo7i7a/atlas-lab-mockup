@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T20:27:31Z",
- "n_alerts": 11,
+ "generated_at_utc": "2026-08-15T20:28:33Z",
+ "n_alerts": 13,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -360,7 +360,7 @@
    "match_id": "16671559",
    "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "Expulsión de Gimnasia y Esgrima (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
    "confianza": "Media",
    "link": "",
@@ -372,9 +372,9 @@
     "total_rojas_partido": 1
    },
    "t_evento_real_utc": "2026-08-15T20:19:31Z",
-   "t_captura_utc": "2026-08-15T20:27:16Z",
-   "t_evaluacion_utc": "2026-08-15T20:27:22Z",
-   "t_generacion_utc": "2026-08-15T20:27:22Z",
+   "t_captura_utc": "2026-08-15T20:27:59Z",
+   "t_evaluacion_utc": "2026-08-15T20:28:21Z",
+   "t_generacion_utc": "2026-08-15T20:28:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -388,9 +388,105 @@
    },
    "latencia_total_seg": 78.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Estudiantes de La Plata vs Gimnasia y Esgrima\n⏱ Minuto: 43'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🟥 Expulsado: Gimnasia y Esgrima\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
+   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Estudiantes de La Plata vs Gimnasia y Esgrima\n⏱ Minuto: 44'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🟥 Expulsado: Gimnasia y Esgrima\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
    "evidencia": null,
    "alert_id": "c8264814f697273b"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Fortuna Sittard vs SC Cambuur (VriendenLoterij Eredivisie)",
+   "match_id": "16316778",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 69,
+   "condicion": "SC Cambuur acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "SC Cambuur",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.6087,
+    "touches_home": 18,
+    "touches_away": 28,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 64,
+    "equipo_que_realizo_sustitucion": "SC Cambuur",
+    "marcador_en_el_momento": "2-1",
+    "t_primera_observacion_atlas": "2026-08-15T20:28:28Z",
+    "t_inicio_estimado_condicion": "2026-08-15T20:28:20Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-15T20:28:28Z",
+   "t_captura_utc": "2026-08-15T20:28:28Z",
+   "t_evaluacion_utc": "2026-08-15T20:28:28Z",
+   "t_generacion_utc": "2026-08-15T20:28:28Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T20:28:29Z",
+     "latencia_envio_ms": 824.2383003234863,
+     "error": null,
+     "message_id": 878,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Fortuna Sittard vs SC Cambuur\n⏱ Minuto: 69'\n📊 Marcador: 2-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: SC Cambuur acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: SC Cambuur, min 64\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "e2763c8c499a497e"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Estudiantes de La Plata vs Gimnasia y Esgrima (Liga Profesional de Fútbol)",
+   "match_id": "16671559",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 44,
+   "condicion": "Estudiantes de La Plata acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Estudiantes de La Plata",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6154,
+    "touches_home": 8,
+    "touches_away": 5,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 31,
+    "equipo_que_realizo_sustitucion": "Estudiantes de La Plata",
+    "marcador_en_el_momento": "1-0",
+    "t_primera_observacion_atlas": "2026-08-15T20:28:30Z",
+    "t_inicio_estimado_condicion": "2026-08-15T20:04:32Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-15T20:28:30Z",
+   "t_captura_utc": "2026-08-15T20:28:30Z",
+   "t_evaluacion_utc": "2026-08-15T20:28:30Z",
+   "t_generacion_utc": "2026-08-15T20:28:30Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T20:28:31Z",
+     "latencia_envio_ms": 799.9997138977051,
+     "error": null,
+     "message_id": 879,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Estudiantes de La Plata vs Gimnasia y Esgrima\n⏱ Minuto: 44'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de La Plata acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Estudiantes de La Plata, min 31\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "6bb63c9050517fc7"
   },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -398,7 +494,7 @@
    "match_id": "15526222",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 60,
+   "minuto": 61,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -416,9 +512,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T20:22:34Z",
-   "t_captura_utc": "2026-08-15T20:27:29Z",
-   "t_evaluacion_utc": "2026-08-15T20:27:29Z",
-   "t_generacion_utc": "2026-08-15T20:27:29Z",
+   "t_captura_utc": "2026-08-15T20:28:32Z",
+   "t_evaluacion_utc": "2026-08-15T20:28:32Z",
+   "t_generacion_utc": "2026-08-15T20:28:32Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -432,7 +528,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Ceará vs Cuiabá\n⏱ Minuto: 60'\n📊 Marcador: 0-2\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 1.73, 13 tiros totales (4 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Ceará vs Cuiabá\n⏱ Minuto: 61'\n📊 Marcador: 0-2\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 1.73, 13 tiros totales (4 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "12b30356aafeaedb"
   },
@@ -442,7 +538,7 @@
    "match_id": "15526224",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 63,
+   "minuto": 64,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -460,9 +556,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T20:21:00Z",
-   "t_captura_utc": "2026-08-15T20:27:30Z",
-   "t_evaluacion_utc": "2026-08-15T20:27:31Z",
-   "t_generacion_utc": "2026-08-15T20:27:31Z",
+   "t_captura_utc": "2026-08-15T20:28:33Z",
+   "t_evaluacion_utc": "2026-08-15T20:28:33Z",
+   "t_generacion_utc": "2026-08-15T20:28:33Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -476,7 +572,7 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Criciúma vs Goiás\n⏱ Minuto: 63'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 1.51, 21 tiros totales (5 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Criciúma vs Goiás\n⏱ Minuto: 64'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 1.51, 21 tiros totales (5 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "68d5f28d395e662a"
   }
