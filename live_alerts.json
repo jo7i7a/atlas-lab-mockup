@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T17:36:25Z",
- "n_alerts": 12,
+ "generated_at_utc": "2026-08-15T17:37:24Z",
+ "n_alerts": 10,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -97,89 +97,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Konyaspor vs Çaykur Rizespor\n⏱ Minuto: 50'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Konyaspor acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "2813f3fb350891bf"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Konyaspor vs Çaykur Rizespor (Trendyol Süper Lig)",
-   "match_id": "16483708",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-15T17:07:23Z",
-   "t_captura_utc": "2026-08-15T17:07:23Z",
-   "t_evaluacion_utc": "2026-08-15T17:14:19Z",
-   "t_generacion_utc": "2026-08-15T17:14:19Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T17:08:19Z",
-     "latencia_envio_ms": 938.525915145874,
-     "error": null,
-     "message_id": 737,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 56.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Konyaspor vs Çaykur Rizespor\n⏱ Minuto: 52'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "a957d195a6655a97"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "FC Utrecht vs AZ Alkmaar (VriendenLoterij Eredivisie)",
-   "match_id": "16316791",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "AZ Alkmaar domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "AZ Alkmaar",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T17:07:02Z",
-   "t_captura_utc": "2026-08-15T17:07:02Z",
-   "t_evaluacion_utc": "2026-08-15T17:14:23Z",
-   "t_generacion_utc": "2026-08-15T17:14:23Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T17:07:22Z",
-     "latencia_envio_ms": 793.5864925384521,
-     "error": null,
-     "message_id": 736,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 20.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ FC Utrecht vs AZ Alkmaar\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: AZ Alkmaar — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "13da23d7ca39fbdb"
   },
   {
    "strategy_id": "L1",
@@ -483,7 +400,7 @@
    "match_id": "16450744",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 35,
+   "minuto": 36,
    "condicion": "Santa Clara acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -495,9 +412,9 @@
     "ratio_presion_territorial": 0.75,
     "touches_home": 2,
     "touches_away": 6,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 36,
+    "equipo_que_realizo_sustitucion": "Santa Clara",
     "marcador_en_el_momento": "0-1",
     "t_primera_observacion_atlas": "2026-08-15T17:21:23Z",
     "t_inicio_estimado_condicion": "2026-08-15T17:21:09Z",
@@ -505,9 +422,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T17:21:23Z",
-   "t_captura_utc": "2026-08-15T17:36:23Z",
-   "t_evaluacion_utc": "2026-08-15T17:36:23Z",
-   "t_generacion_utc": "2026-08-15T17:36:23Z",
+   "t_captura_utc": "2026-08-15T17:37:23Z",
+   "t_evaluacion_utc": "2026-08-15T17:37:23Z",
+   "t_generacion_utc": "2026-08-15T17:37:23Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -520,8 +437,8 @@
     }
    },
    "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Académico Viseu FC vs Santa Clara\n⏱ Minuto: 35'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Santa Clara acumula 75% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "estado_temporal": "EXPIRADA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Académico Viseu FC vs Santa Clara\n⏱ Minuto: 36'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Santa Clara acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Santa Clara, min 36\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "646baac3193121b3"
   }
