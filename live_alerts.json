@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T20:40:29Z",
- "n_alerts": 10,
+ "generated_at_utc": "2026-08-15T20:41:30Z",
+ "n_alerts": 9,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -49,44 +49,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sevilla vs Rayo Vallecano\n⏱ Minuto: 39'\n📊 Marcador: 0-1\n🏆 Liga: LaLiga\n\n📝 Motivo: Rayo Vallecano acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "2377a702205676f1"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Ceará vs Cuiabá (Brasileirão Série B)",
-   "match_id": "15526222",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-15T20:11:07Z",
-   "t_captura_utc": "2026-08-15T20:11:07Z",
-   "t_evaluacion_utc": "2026-08-15T20:19:24Z",
-   "t_generacion_utc": "2026-08-15T20:19:24Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T20:13:31Z",
-     "latencia_envio_ms": 810.6541633605957,
-     "error": null,
-     "message_id": 873,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 144.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Ceará vs Cuiabá\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "08c58baa6c2a9a89"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
