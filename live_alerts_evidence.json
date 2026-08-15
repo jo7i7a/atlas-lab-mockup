@@ -3154,5 +3154,26 @@
    "cuota_real_betano": 1.7,
    "activo": true
   }
+ ],
+ "c6a380d379945226": [
+  {
+   "alert_id": "c6a380d379945226",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Sheffield United vs Birmingham City (Championship)",
+   "liga": "Championship",
+   "event_id": "16391142",
+   "minuto_alerta": 20,
+   "condicion": "Sheffield United acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T16:50:21Z",
+   "t_captura_utc": "2026-08-15T16:50:21Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T16:50:56Z",
+   "segundos_transcurridos": 34,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "14.0 @ 1.78",
+   "linea_real_betano": 14.0,
+   "cuota_real_betano": 1.78,
+   "activo": true
+  }
  ]
 }
