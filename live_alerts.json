@@ -1,51 +1,7 @@
 {
- "generated_at_utc": "2026-08-15T15:43:37Z",
- "n_alerts": 24,
+ "generated_at_utc": "2026-08-15T15:44:34Z",
+ "n_alerts": 23,
  "alerts": [
-  {
-   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "KFUM Oslo vs Lillestrøm SK (Eliteserien)",
-   "match_id": "15260879",
-   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 62,
-   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_combinado": 1.81,
-    "tiros_combinados": 14,
-    "sot_combinado": 3,
-    "presion_reciente_10min": 3,
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-15T15:14:33Z",
-    "t_inicio_estimado_condicion": "2026-08-15T15:14:02Z",
-    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T15:14:33Z",
-   "t_captura_utc": "2026-08-15T15:20:41Z",
-   "t_evaluacion_utc": "2026-08-15T15:20:41Z",
-   "t_generacion_utc": "2026-08-15T15:20:41Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T15:14:34Z",
-     "latencia_envio_ms": 984.3316078186035,
-     "error": null,
-     "message_id": 646,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ KFUM Oslo vs Lillestrøm SK\n⏱ Minuto: 62'\n📊 Marcador: 0-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: presión combinada sostenida — xG 1.81, 14 tiros totales (3 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
-   "evidencia": null,
-   "alert_id": "97fd7a4a80099f99"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Bristol City vs Millwall (Championship)",
@@ -800,7 +756,7 @@
    "match_id": "16450745",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 51,
+   "minuto": 52,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -813,8 +769,8 @@
    },
    "t_evento_real_utc": "2026-08-15T15:38:21Z",
    "t_captura_utc": "2026-08-15T15:38:21Z",
-   "t_evaluacion_utc": "2026-08-15T15:43:16Z",
-   "t_generacion_utc": "2026-08-15T15:43:16Z",
+   "t_evaluacion_utc": "2026-08-15T15:44:16Z",
+   "t_generacion_utc": "2026-08-15T15:44:16Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -828,7 +784,7 @@
    },
    "latencia_total_seg": 60.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ FC Alverca vs CF Estrela Amadora\n⏱ Minuto: 51'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ FC Alverca vs CF Estrela Amadora\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "1081b089a0959f49"
   },
@@ -838,7 +794,7 @@
    "match_id": "16316769",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 51,
+   "minuto": 52,
    "condicion": "NEC Nijmegen acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -847,9 +803,9 @@
    "extra": {
     "equipo_dominante": "NEC Nijmegen",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.75,
+    "ratio_presion_territorial": 0.7647,
     "touches_home": 8,
-    "touches_away": 24,
+    "touches_away": 26,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -860,9 +816,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T15:19:30Z",
-   "t_captura_utc": "2026-08-15T15:43:33Z",
-   "t_evaluacion_utc": "2026-08-15T15:43:34Z",
-   "t_generacion_utc": "2026-08-15T15:43:34Z",
+   "t_captura_utc": "2026-08-15T15:44:31Z",
+   "t_evaluacion_utc": "2026-08-15T15:44:31Z",
+   "t_generacion_utc": "2026-08-15T15:44:31Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -876,7 +832,7 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Willem II Tilburg vs NEC Nijmegen\n⏱ Minuto: 51'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: NEC Nijmegen acumula 75% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Willem II Tilburg vs NEC Nijmegen\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: NEC Nijmegen acumula 76% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "7d61ab3b6031d6fd"
   },
@@ -886,7 +842,7 @@
    "match_id": "16391137",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 82,
+   "minuto": 83,
    "condicion": "Charlton Athletic acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -908,9 +864,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T15:41:34Z",
-   "t_captura_utc": "2026-08-15T15:43:34Z",
-   "t_evaluacion_utc": "2026-08-15T15:43:35Z",
-   "t_generacion_utc": "2026-08-15T15:43:35Z",
+   "t_captura_utc": "2026-08-15T15:44:32Z",
+   "t_evaluacion_utc": "2026-08-15T15:44:32Z",
+   "t_generacion_utc": "2026-08-15T15:44:32Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -924,7 +880,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Charlton Athletic vs Derby County\n⏱ Minuto: 82'\n📊 Marcador: 2-1\n🏆 Liga: Championship\n\n📝 Motivo: Charlton Athletic acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Charlton Athletic, min 73\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Charlton Athletic vs Derby County\n⏱ Minuto: 83'\n📊 Marcador: 2-1\n🏆 Liga: Championship\n\n📝 Motivo: Charlton Athletic acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Charlton Athletic, min 73\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "522acbd2627f43e8"
   },
@@ -934,7 +890,7 @@
    "match_id": "16391138",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 84,
+   "minuto": 85,
    "condicion": "Middlesbrough acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -956,9 +912,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T15:30:29Z",
-   "t_captura_utc": "2026-08-15T15:43:35Z",
-   "t_evaluacion_utc": "2026-08-15T15:43:35Z",
-   "t_generacion_utc": "2026-08-15T15:43:35Z",
+   "t_captura_utc": "2026-08-15T15:44:32Z",
+   "t_evaluacion_utc": "2026-08-15T15:44:33Z",
+   "t_generacion_utc": "2026-08-15T15:44:33Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -972,7 +928,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Middlesbrough vs Lincoln City\n⏱ Minuto: 84'\n📊 Marcador: 1-1\n🏆 Liga: Championship\n\n📝 Motivo: Middlesbrough acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Middlesbrough, min 71\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Middlesbrough vs Lincoln City\n⏱ Minuto: 85'\n📊 Marcador: 1-1\n🏆 Liga: Championship\n\n📝 Motivo: Middlesbrough acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Middlesbrough, min 71\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "fdf3800335988aa8"
   },
@@ -982,7 +938,7 @@
    "match_id": "16391140",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 78,
+   "minuto": 79,
    "condicion": "Queens Park Rangers acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -991,9 +947,9 @@
    "extra": {
     "equipo_dominante": "Queens Park Rangers",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6571,
+    "ratio_presion_territorial": 0.6667,
     "touches_home": 12,
-    "touches_away": 23,
+    "touches_away": 24,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 74,
     "equipo_que_realizo_sustitucion": "Queens Park Rangers",
@@ -1004,9 +960,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T15:39:30Z",
-   "t_captura_utc": "2026-08-15T15:43:36Z",
-   "t_evaluacion_utc": "2026-08-15T15:43:36Z",
-   "t_generacion_utc": "2026-08-15T15:43:36Z",
+   "t_captura_utc": "2026-08-15T15:44:33Z",
+   "t_evaluacion_utc": "2026-08-15T15:44:33Z",
+   "t_generacion_utc": "2026-08-15T15:44:33Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -1020,7 +976,7 @@
    },
    "latencia_total_seg": 5.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Portsmouth vs Queens Park Rangers\n⏱ Minuto: 78'\n📊 Marcador: 1-3\n🏆 Liga: Championship\n\n📝 Motivo: Queens Park Rangers acumula 66% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Queens Park Rangers, min 74\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Portsmouth vs Queens Park Rangers\n⏱ Minuto: 79'\n📊 Marcador: 1-3\n🏆 Liga: Championship\n\n📝 Motivo: Queens Park Rangers acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Queens Park Rangers, min 74\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "cf4bc4fba8cde7c3"
   },
@@ -1030,7 +986,7 @@
    "match_id": "16391141",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 82,
+   "minuto": 83,
    "condicion": "Swansea City acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -1052,9 +1008,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T15:39:35Z",
-   "t_captura_utc": "2026-08-15T15:43:36Z",
-   "t_evaluacion_utc": "2026-08-15T15:43:37Z",
-   "t_generacion_utc": "2026-08-15T15:43:37Z",
+   "t_captura_utc": "2026-08-15T15:44:33Z",
+   "t_evaluacion_utc": "2026-08-15T15:44:34Z",
+   "t_generacion_utc": "2026-08-15T15:44:34Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -1068,7 +1024,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Stoke City vs Swansea City\n⏱ Minuto: 82'\n📊 Marcador: 1-2\n🏆 Liga: Championship\n\n📝 Motivo: Swansea City acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Swansea City, min 65\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Stoke City vs Swansea City\n⏱ Minuto: 83'\n📊 Marcador: 1-2\n🏆 Liga: Championship\n\n📝 Motivo: Swansea City acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Swansea City, min 65\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "9605aa7af819a5e5"
   }
