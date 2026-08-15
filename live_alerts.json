@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T15:09:31Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-15T15:10:33Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -144,51 +144,12 @@
    "alert_id": "313bc281f744395b"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Charlton Athletic vs Derby County (Championship)",
-   "match_id": "16391137",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (3-1), Charlton Athletic presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Derby County NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Charlton Athletic",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-15T14:40:10Z",
-   "t_captura_utc": "2026-08-15T14:40:10Z",
-   "t_evaluacion_utc": "2026-08-15T15:06:10Z",
-   "t_generacion_utc": "2026-08-15T15:06:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T14:41:12Z",
-     "latencia_envio_ms": 889.0025615692139,
-     "error": null,
-     "message_id": 629,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 62.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Charlton Athletic vs Derby County\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Charlton Athletic presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Derby County no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "fad65792ab68e82c"
-  },
-  {
    "strategy_id": "A2",
    "match_label": "KFUM Oslo vs Lillestrøm SK (Eliteserien)",
    "match_id": "15260879",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 51,
+   "minuto": 52,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -201,8 +162,8 @@
    },
    "t_evento_real_utc": "2026-08-15T15:03:47Z",
    "t_captura_utc": "2026-08-15T15:03:47Z",
-   "t_evaluacion_utc": "2026-08-15T15:09:24Z",
-   "t_generacion_utc": "2026-08-15T15:09:24Z",
+   "t_evaluacion_utc": "2026-08-15T15:10:26Z",
+   "t_generacion_utc": "2026-08-15T15:10:26Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -216,57 +177,9 @@
    },
    "latencia_total_seg": 30.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ KFUM Oslo vs Lillestrøm SK\n⏱ Minuto: 51'\n📊 Marcador: 0-1\n🏆 Liga: Eliteserien\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ KFUM Oslo vs Lillestrøm SK\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: Eliteserien\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "80ad6aeb48bd9b5d"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Charlton Athletic vs Derby County (Championship)",
-   "match_id": "16391137",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 48,
-   "condicion": "Charlton Athletic acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Charlton Athletic",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.68,
-    "touches_home": 17,
-    "touches_away": 8,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-15T14:40:24Z",
-    "t_inicio_estimado_condicion": "2026-08-15T14:21:12Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T14:40:24Z",
-   "t_captura_utc": "2026-08-15T15:09:29Z",
-   "t_evaluacion_utc": "2026-08-15T15:09:30Z",
-   "t_generacion_utc": "2026-08-15T15:09:30Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T14:40:25Z",
-     "latencia_envio_ms": 843.5077667236328,
-     "error": null,
-     "message_id": 628,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Charlton Athletic vs Derby County\n⏱ Minuto: 48'\n📊 Marcador: 0-1\n🏆 Liga: Championship\n\n📝 Motivo: Charlton Athletic acumula 68% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "e81be97ff1527fe9"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -274,7 +187,7 @@
    "match_id": "16450745",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 37,
+   "minuto": 38,
    "condicion": "FC Alverca acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -283,8 +196,8 @@
    "extra": {
     "equipo_dominante": "FC Alverca",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6364,
-    "touches_home": 7,
+    "ratio_presion_territorial": 0.7143,
+    "touches_home": 10,
     "touches_away": 4,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 14,
@@ -296,9 +209,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T14:59:18Z",
-   "t_captura_utc": "2026-08-15T15:09:31Z",
-   "t_evaluacion_utc": "2026-08-15T15:09:31Z",
-   "t_generacion_utc": "2026-08-15T15:09:31Z",
+   "t_captura_utc": "2026-08-15T15:10:33Z",
+   "t_evaluacion_utc": "2026-08-15T15:10:33Z",
+   "t_generacion_utc": "2026-08-15T15:10:33Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -312,7 +225,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Alverca vs CF Estrela Amadora\n⏱ Minuto: 37'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Alverca acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: FC Alverca, min 14\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Alverca vs CF Estrela Amadora\n⏱ Minuto: 38'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Alverca acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: FC Alverca, min 14\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "769f1257f7c7221e"
   }
