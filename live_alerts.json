@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T15:35:27Z",
- "n_alerts": 18,
+ "generated_at_utc": "2026-08-15T15:36:30Z",
+ "n_alerts": 19,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -706,11 +706,55 @@
   },
   {
    "strategy_id": "L2-SHADOW",
+   "match_label": "Middlesbrough vs Lincoln City (Championship)",
+   "match_id": "16391138",
+   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH +0.25 @ 1.825 [PROXY SofaScore, NO Betano]",
+   "cuota_detectada": 1.825,
+   "minuto": 76,
+   "condicion": "Middlesbrough domina por xG (1.55) y remates a puerta (6) sin ir ganando y sin roja del dominante — Middlesbrough vs Lincoln City. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Middlesbrough",
+    "xg_dominante": 1.55,
+    "sot_dominante": 6,
+    "marcador": "1-1",
+    "variante": "shadow_ventana_80",
+    "ah_proxy_linea": 0.25,
+    "ah_proxy_cuota": 1.825,
+    "ah_proxy_suspendida": false,
+    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
+   },
+   "t_evento_real_utc": "2026-08-15T15:36:03Z",
+   "t_captura_utc": "2026-08-15T15:36:03Z",
+   "t_evaluacion_utc": "2026-08-15T15:36:15Z",
+   "t_generacion_utc": "2026-08-15T15:36:15Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T15:36:17Z",
+     "latencia_envio_ms": 1258.6085796356201,
+     "error": null,
+     "message_id": 675,
+     "chat_id": -5124383393
+    }
+   },
+   "latencia_total_seg": 14.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Middlesbrough vs Lincoln City\n⏱ Minuto: 76'\n📊 Marcador: 1-1\n🏆 Liga: Championship\n\n📈 Domina: Middlesbrough\nxG: 1.55 vs 0.62\nTiros a puerta: 6 vs 2\n\nReferencia PROXY: AH +0.25 @ 1.825 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Middlesbrough — ¿línea y cuota reales?",
+   "evidencia": null,
+   "alert_id": "4eb80b6562ce775f"
+  },
+  {
+   "strategy_id": "L2-SHADOW",
    "match_label": "Norwich City vs West Bromwich Albion (Championship)",
    "match_id": "16391139",
    "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH +0.25 @ 2.0 [PROXY SofaScore, NO Betano]",
    "cuota_detectada": 2.0,
-   "minuto": 77,
+   "minuto": 78,
    "condicion": "Norwich City domina por xG (1.83) y remates a puerta (5) sin ir ganando y sin roja del dominante — Norwich City vs West Bromwich Albion. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
    "confianza": "Media",
    "link": "",
@@ -728,9 +772,9 @@
     "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
    },
    "t_evento_real_utc": "2026-08-15T15:28:55Z",
-   "t_captura_utc": "2026-08-15T15:35:00Z",
-   "t_evaluacion_utc": "2026-08-15T15:35:17Z",
-   "t_generacion_utc": "2026-08-15T15:35:17Z",
+   "t_captura_utc": "2026-08-15T15:36:03Z",
+   "t_evaluacion_utc": "2026-08-15T15:36:18Z",
+   "t_generacion_utc": "2026-08-15T15:36:18Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -744,7 +788,7 @@
    },
    "latencia_total_seg": 263.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Norwich City vs West Bromwich Albion\n⏱ Minuto: 77'\n📊 Marcador: 0-1\n🏆 Liga: Championship\n\n📈 Domina: Norwich City\nxG: 1.83 vs 0.11\nTiros a puerta: 5 vs 0\n\nReferencia PROXY: AH +0.25 @ 2.0 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Norwich City — ¿línea y cuota reales?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Norwich City vs West Bromwich Albion\n⏱ Minuto: 78'\n📊 Marcador: 0-1\n🏆 Liga: Championship\n\n📈 Domina: Norwich City\nxG: 1.83 vs 0.11\nTiros a puerta: 5 vs 0\n\nReferencia PROXY: AH +0.25 @ 2.0 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Norwich City — ¿línea y cuota reales?",
    "evidencia": null,
    "alert_id": "69af429416dd560a"
   },
@@ -754,7 +798,7 @@
    "match_id": "16391138",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 75,
+   "minuto": 77,
    "condicion": "Middlesbrough acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -763,8 +807,8 @@
    "extra": {
     "equipo_dominante": "Middlesbrough",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.641,
-    "touches_home": 25,
+    "ratio_presion_territorial": 0.65,
+    "touches_home": 26,
     "touches_away": 14,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 71,
@@ -776,9 +820,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T15:30:29Z",
-   "t_captura_utc": "2026-08-15T15:35:27Z",
-   "t_evaluacion_utc": "2026-08-15T15:35:27Z",
-   "t_generacion_utc": "2026-08-15T15:35:27Z",
+   "t_captura_utc": "2026-08-15T15:36:29Z",
+   "t_evaluacion_utc": "2026-08-15T15:36:29Z",
+   "t_generacion_utc": "2026-08-15T15:36:29Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -792,7 +836,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Middlesbrough vs Lincoln City\n⏱ Minuto: 75'\n📊 Marcador: 1-1\n🏆 Liga: Championship\n\n📝 Motivo: Middlesbrough acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Middlesbrough, min 71\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Middlesbrough vs Lincoln City\n⏱ Minuto: 77'\n📊 Marcador: 1-1\n🏆 Liga: Championship\n\n📝 Motivo: Middlesbrough acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Middlesbrough, min 71\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "fdf3800335988aa8"
   }
