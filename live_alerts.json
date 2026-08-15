@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-15T09:56:18Z",
+ "generated_at_utc": "2026-08-15T09:57:17Z",
  "n_alerts": 4,
  "alerts": [
   {
@@ -51,83 +51,6 @@
    "alert_id": "6339083ff610c52a"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "Shimizu S-Pulse vs Yokohama F. Marinos (J1 League)",
-   "match_id": "16348556",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 21,
-   "condicion": "4 córners totales antes del min 30 (0-4), Yokohama F. Marinos presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Shimizu S-Pulse NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "Yokohama F. Marinos"
-   },
-   "t_evento_real_utc": "2026-08-15T09:47:08Z",
-   "t_captura_utc": "2026-08-15T09:47:08Z",
-   "t_evaluacion_utc": "2026-08-15T09:56:08Z",
-   "t_generacion_utc": "2026-08-15T09:56:08Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T09:48:54Z",
-     "latencia_envio_ms": 958.6594104766846,
-     "error": null,
-     "message_id": 580,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 106.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Shimizu S-Pulse vs Yokohama F. Marinos\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Yokohama F. Marinos presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Shimizu S-Pulse no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "4bbe945c72bddb41"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Shimizu S-Pulse vs Yokohama F. Marinos (J1 League)",
-   "match_id": "16348556",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 21,
-   "condicion": "4 córners totales antes del min 45 (0-4), Yokohama F. Marinos presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Shimizu S-Pulse NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "Yokohama F. Marinos",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-15T09:47:08Z",
-   "t_captura_utc": "2026-08-15T09:47:08Z",
-   "t_evaluacion_utc": "2026-08-15T09:56:09Z",
-   "t_generacion_utc": "2026-08-15T09:56:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T09:50:11Z",
-     "latencia_envio_ms": 807.4753284454346,
-     "error": null,
-     "message_id": 581,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 183.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Shimizu S-Pulse vs Yokohama F. Marinos\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Yokohama F. Marinos presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Shimizu S-Pulse no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "6f1dbdaee2a869a6"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Shimizu S-Pulse vs Yokohama F. Marinos (J1 League)",
    "match_id": "16348556",
@@ -174,6 +97,83 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Shimizu S-Pulse vs Yokohama F. Marinos\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n📝 Motivo: Yokohama F. Marinos acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "d9f8161d480e72f0"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "Shimizu S-Pulse vs Yokohama F. Marinos (J1 League)",
+   "match_id": "16348556",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 23,
+   "condicion": "4 córners totales antes del min 30 (0-4), Yokohama F. Marinos presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Shimizu S-Pulse NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Yokohama F. Marinos"
+   },
+   "t_evento_real_utc": "2026-08-15T09:47:08Z",
+   "t_captura_utc": "2026-08-15T09:47:08Z",
+   "t_evaluacion_utc": "2026-08-15T09:57:16Z",
+   "t_generacion_utc": "2026-08-15T09:57:16Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T09:48:54Z",
+     "latencia_envio_ms": 958.6594104766846,
+     "error": null,
+     "message_id": 580,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 106.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Shimizu S-Pulse vs Yokohama F. Marinos\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Yokohama F. Marinos presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Shimizu S-Pulse no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "4bbe945c72bddb41"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Shimizu S-Pulse vs Yokohama F. Marinos (J1 League)",
+   "match_id": "16348556",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 23,
+   "condicion": "4 córners totales antes del min 45 (0-4), Yokohama F. Marinos presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Shimizu S-Pulse NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Yokohama F. Marinos",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-15T09:47:08Z",
+   "t_captura_utc": "2026-08-15T09:47:08Z",
+   "t_evaluacion_utc": "2026-08-15T09:57:17Z",
+   "t_generacion_utc": "2026-08-15T09:57:17Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T09:50:11Z",
+     "latencia_envio_ms": 807.4753284454346,
+     "error": null,
+     "message_id": 581,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 183.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Shimizu S-Pulse vs Yokohama F. Marinos\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Yokohama F. Marinos presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Shimizu S-Pulse no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "6f1dbdaee2a869a6"
   }
  ]
 }
