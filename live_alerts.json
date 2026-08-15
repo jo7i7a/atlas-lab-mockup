@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-08-15T00:43:21Z",
+ "generated_at_utc": "2026-08-15T00:44:21Z",
  "n_alerts": 4,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Sport Recife vs Londrina (Brasileirão Série B)",
-   "match_id": "15526225",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 46,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 1,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-08-15T00:41:45Z",
-   "t_captura_utc": "2026-08-15T00:41:45Z",
-   "t_evaluacion_utc": "2026-08-15T00:43:14Z",
-   "t_generacion_utc": "2026-08-15T00:43:14Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T00:43:15Z",
-     "latencia_envio_ms": 790.930986404419,
-     "error": null,
-     "message_id": 570,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 90.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Sport Recife vs Londrina\n⏱ Minuto: 46'\n📊 Marcador: 2-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "4ecfc48759d5d705"
-  },
   {
    "strategy_id": "A2",
    "match_label": "Racing Club vs Banfield (Liga Profesional de Fútbol)",
@@ -127,12 +89,50 @@
    "alert_id": "20e50f843b7d9d31"
   },
   {
+   "strategy_id": "A2",
+   "match_label": "Sport Recife vs Londrina (Brasileirão Série B)",
+   "match_id": "15526225",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 47,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 1,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-08-15T00:41:45Z",
+   "t_captura_utc": "2026-08-15T00:41:45Z",
+   "t_evaluacion_utc": "2026-08-15T00:44:14Z",
+   "t_generacion_utc": "2026-08-15T00:44:14Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T00:43:15Z",
+     "latencia_envio_ms": 790.930986404419,
+     "error": null,
+     "message_id": 570,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 90.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Sport Recife vs Londrina\n⏱ Minuto: 47'\n📊 Marcador: 2-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "4ecfc48759d5d705"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Racing Club vs Banfield (Liga Profesional de Fútbol)",
    "match_id": "16667393",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 52,
+   "minuto": 53,
    "condicion": "Racing Club acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -141,8 +141,8 @@
    "extra": {
     "equipo_dominante": "Racing Club",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7692,
-    "touches_home": 20,
+    "ratio_presion_territorial": 0.7857,
+    "touches_home": 22,
     "touches_away": 6,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 33,
@@ -154,9 +154,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T00:36:15Z",
-   "t_captura_utc": "2026-08-15T00:43:21Z",
-   "t_evaluacion_utc": "2026-08-15T00:43:21Z",
-   "t_generacion_utc": "2026-08-15T00:43:21Z",
+   "t_captura_utc": "2026-08-15T00:44:21Z",
+   "t_evaluacion_utc": "2026-08-15T00:44:21Z",
+   "t_generacion_utc": "2026-08-15T00:44:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -170,7 +170,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Racing Club vs Banfield\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Racing Club acumula 77% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Racing Club, min 33\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Racing Club vs Banfield\n⏱ Minuto: 53'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Racing Club acumula 79% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Racing Club, min 33\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "96a9051e2305e795"
   }
