@@ -4404,5 +4404,45 @@
    "cuota_real_betano": 1.8,
    "activo": true
   }
+ ],
+ "1508f314642e2d93": [
+  {
+   "alert_id": "1508f314642e2d93",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Orlando City SC vs FC Cincinnati (MLS)",
+   "liga": "MLS",
+   "event_id": "15171639",
+   "minuto_alerta": 15,
+   "condicion": "Orlando City SC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T23:56:07Z",
+   "t_captura_utc": "2026-08-15T23:56:07Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T23:57:12Z",
+   "segundos_transcurridos": 52,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.5 @ 1.57\n11.5 @ 1.95",
+   "linea_real_betano": 10.5,
+   "cuota_real_betano": 1.57,
+   "activo": true
+  },
+  {
+   "alert_id": "1508f314642e2d93",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Orlando City SC vs FC Cincinnati (MLS)",
+   "liga": "MLS",
+   "event_id": "15171639",
+   "minuto_alerta": 15,
+   "condicion": "Orlando City SC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T23:56:07Z",
+   "t_captura_utc": "2026-08-15T23:56:07Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T23:57:12Z",
+   "segundos_transcurridos": 52,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.5 @ 1.57\n11.5 @ 1.95",
+   "linea_real_betano": 11.5,
+   "cuota_real_betano": 1.95,
+   "activo": true
+  }
  ]
 }
