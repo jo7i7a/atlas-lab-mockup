@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T20:18:18Z",
- "n_alerts": 9,
+ "generated_at_utc": "2026-08-15T20:19:31Z",
+ "n_alerts": 10,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -317,60 +317,12 @@
    "alert_id": "2377a702205676f1"
   },
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Rio Ave vs FC Porto (Liga Portugal Betclic)",
-   "match_id": "16450753",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "FC Porto acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "FC Porto",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.85,
-    "touches_home": 3,
-    "touches_away": 17,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-15T19:52:34Z",
-    "t_inicio_estimado_condicion": "2026-08-15T19:53:05Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T19:52:34Z",
-   "t_captura_utc": "2026-08-15T20:17:31Z",
-   "t_evaluacion_utc": "2026-08-15T20:17:31Z",
-   "t_generacion_utc": "2026-08-15T20:17:31Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:52:35Z",
-     "latencia_envio_ms": 949.2542743682861,
-     "error": null,
-     "message_id": 864,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rio Ave vs FC Porto\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Porto acumula 85% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "57c29dac315c12c6"
-  },
-  {
    "strategy_id": "A2",
    "match_label": "Ceará vs Cuiabá (Brasileirão Série B)",
    "match_id": "15526222",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 51,
+   "minuto": 52,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -383,8 +335,8 @@
    },
    "t_evento_real_utc": "2026-08-15T20:11:07Z",
    "t_captura_utc": "2026-08-15T20:11:07Z",
-   "t_evaluacion_utc": "2026-08-15T20:18:18Z",
-   "t_generacion_utc": "2026-08-15T20:18:18Z",
+   "t_evaluacion_utc": "2026-08-15T20:19:24Z",
+   "t_generacion_utc": "2026-08-15T20:19:24Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -398,9 +350,105 @@
    },
    "latencia_total_seg": 144.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Ceará vs Cuiabá\n⏱ Minuto: 51'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Ceará vs Cuiabá\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "08c58baa6c2a9a89"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Rio Ave vs FC Porto (Liga Portugal Betclic)",
+   "match_id": "16450753",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 47,
+   "condicion": "FC Porto acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "FC Porto",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.7826,
+    "touches_home": 5,
+    "touches_away": 18,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "0-1",
+    "t_primera_observacion_atlas": "2026-08-15T19:52:34Z",
+    "t_inicio_estimado_condicion": "2026-08-15T19:53:05Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-15T19:52:34Z",
+   "t_captura_utc": "2026-08-15T20:19:29Z",
+   "t_evaluacion_utc": "2026-08-15T20:19:29Z",
+   "t_generacion_utc": "2026-08-15T20:19:29Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T19:52:35Z",
+     "latencia_envio_ms": 949.2542743682861,
+     "error": null,
+     "message_id": 864,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "EXPIRADA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rio Ave vs FC Porto\n⏱ Minuto: 47'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Porto acumula 78% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "57c29dac315c12c6"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Estudiantes de La Plata vs Gimnasia y Esgrima (Liga Profesional de Fútbol)",
+   "match_id": "16671559",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 35,
+   "condicion": "Gimnasia y Esgrima acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Gimnasia y Esgrima",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.625,
+    "touches_home": 3,
+    "touches_away": 5,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 35,
+    "equipo_que_realizo_sustitucion": "Gimnasia y Esgrima",
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-15T20:19:30Z",
+    "t_inicio_estimado_condicion": "2026-08-15T20:18:22Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-15T20:19:30Z",
+   "t_captura_utc": "2026-08-15T20:19:30Z",
+   "t_evaluacion_utc": "2026-08-15T20:19:30Z",
+   "t_generacion_utc": "2026-08-15T20:19:30Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T20:19:31Z",
+     "latencia_envio_ms": 767.5166130065918,
+     "error": null,
+     "message_id": 874,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Estudiantes de La Plata vs Gimnasia y Esgrima\n⏱ Minuto: 35'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Gimnasia y Esgrima acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Gimnasia y Esgrima, min 35\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "b45de41a4e3656b8"
   }
  ]
 }
