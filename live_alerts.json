@@ -1,46 +1,7 @@
 {
- "generated_at_utc": "2026-08-15T00:03:17Z",
- "n_alerts": 9,
+ "generated_at_utc": "2026-08-15T00:04:17Z",
+ "n_alerts": 8,
  "alerts": [
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Universidad de Concepción vs Deportes La Serena (Liga de Primera)",
-   "match_id": "15353095",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (4-0), Universidad de Concepción presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Deportes La Serena NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Universidad de Concepción",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-14T23:34:01Z",
-   "t_captura_utc": "2026-08-14T23:34:01Z",
-   "t_evaluacion_utc": "2026-08-14T23:45:10Z",
-   "t_generacion_utc": "2026-08-14T23:45:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T23:34:11Z",
-     "latencia_envio_ms": 827.4502754211426,
-     "error": null,
-     "message_id": 554,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 10.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Universidad de Concepción vs Deportes La Serena\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Universidad de Concepción presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Deportes La Serena no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "43c91ed01809b762"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Ponte Preta vs Náutico (Brasileirão Série B)",
