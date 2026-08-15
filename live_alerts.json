@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-15T23:11:25Z",
+ "generated_at_utc": "2026-08-15T23:12:25Z",
  "n_alerts": 17,
  "alerts": [
   {
@@ -355,45 +355,6 @@
    "alert_id": "b4b34eabc390d684"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Club Atlético Belgrano vs Independiente Rivadavia (Liga Profesional de Fútbol)",
-   "match_id": "16667396",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (3-1), Club Atlético Belgrano presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Independiente Rivadavia NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Club Atlético Belgrano",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-15T22:41:31Z",
-   "t_captura_utc": "2026-08-15T22:41:31Z",
-   "t_evaluacion_utc": "2026-08-15T23:03:11Z",
-   "t_generacion_utc": "2026-08-15T23:03:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T22:42:11Z",
-     "latencia_envio_ms": 825.7334232330322,
-     "error": null,
-     "message_id": 922,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 40.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Club Atlético Belgrano vs Independiente Rivadavia\n⏱ Minuto: 45'\n📊 Marcador: 2-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Club Atlético Belgrano presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Independiente Rivadavia no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "7ee21bfdce6825f0"
-  },
-  {
    "strategy_id": "L2",
    "match_label": "Athletico vs Red Bull Bragantino (Brasileirão Betano)",
    "match_id": "15235428",
@@ -739,6 +700,50 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Athletico vs Red Bull Bragantino\n⏱ Minuto: 78'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Betano\n\n📈 Domina: Athletico\nxG: 1.63 vs 0.37\nTiros a puerta: 5 vs 3\n\nReferencia PROXY: AH +0.25 @ 2.45 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Athletico — ¿línea y cuota reales?",
    "evidencia": null,
    "alert_id": "6d96d14e795e5c3b"
+  },
+  {
+   "strategy_id": "L2-SHADOW",
+   "match_label": "Athletico vs Red Bull Bragantino (Brasileirão Betano)",
+   "match_id": "15235428",
+   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH +0.25 @ 2.5 [PROXY SofaScore, NO Betano]",
+   "cuota_detectada": 2.5,
+   "minuto": 79,
+   "condicion": "Athletico domina por xG (1.63) y remates a puerta (5) sin ir ganando y sin roja del dominante — Athletico vs Red Bull Bragantino. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Athletico",
+    "xg_dominante": 1.63,
+    "sot_dominante": 5,
+    "marcador": "1-1",
+    "variante": "shadow_ventana_80",
+    "ah_proxy_linea": 0.25,
+    "ah_proxy_cuota": 2.5,
+    "ah_proxy_suspendida": false,
+    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
+   },
+   "t_evento_real_utc": "2026-08-15T22:43:37Z",
+   "t_captura_utc": "2026-08-15T23:12:05Z",
+   "t_evaluacion_utc": "2026-08-15T23:12:13Z",
+   "t_generacion_utc": "2026-08-15T23:12:13Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_EXPIRADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "expirada al generar (mas vieja que el TTL) -- no se notifica",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "EXPIRADA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Athletico vs Red Bull Bragantino\n⏱ Minuto: 79'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Betano\n\n📈 Domina: Athletico\nxG: 1.63 vs 0.37\nTiros a puerta: 5 vs 3\n\nReferencia PROXY: AH +0.25 @ 2.5 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Athletico — ¿línea y cuota reales?",
+   "evidencia": null,
+   "alert_id": "26b25654ef5adf96"
   }
  ]
 }
