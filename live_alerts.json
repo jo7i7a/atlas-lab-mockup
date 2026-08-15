@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T23:17:24Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-15T23:19:25Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -133,6 +133,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Athletico vs Red Bull Bragantino\n⏱ Minuto: 70'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: presión combinada sostenida — xG 3.08, 28 tiros totales (9 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "b4b34eabc390d684"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Atlante FC vs CD Toluca (Liga MX, Apertura)",
+   "match_id": "16317954",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 19,
+   "condicion": "CD Toluca domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "CD Toluca",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 1,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-15T23:18:22Z",
+   "t_captura_utc": "2026-08-15T23:18:22Z",
+   "t_evaluacion_utc": "2026-08-15T23:19:22Z",
+   "t_generacion_utc": "2026-08-15T23:19:22Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T23:19:22Z",
+     "latencia_envio_ms": 757.4255466461182,
+     "error": null,
+     "message_id": 940,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 60.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Atlante FC vs CD Toluca\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CD Toluca — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "fc0a0221b7827db6"
   }
  ]
 }
