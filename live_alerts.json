@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T22:01:19Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-08-15T22:02:22Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -48,12 +48,89 @@
    "alert_id": "4876ae00c5a19133"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "Athletico vs Red Bull Bragantino (Brasileirão Betano)",
+   "match_id": "15235428",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 29,
+   "condicion": "5 córners totales antes del min 30 (5-0), Athletico presiona (5 córners) — sin expulsiones. Verificar en vivo: ¿Red Bull Bragantino NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 5,
+    "corners_away": 0,
+    "equipo_presiona": "Athletico"
+   },
+   "t_evento_real_utc": "2026-08-15T22:01:47Z",
+   "t_captura_utc": "2026-08-15T22:01:47Z",
+   "t_evaluacion_utc": "2026-08-15T22:02:08Z",
+   "t_generacion_utc": "2026-08-15T22:02:08Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T22:02:09Z",
+     "latencia_envio_ms": 849.2081165313721,
+     "error": null,
+     "message_id": 903,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 22.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Athletico vs Red Bull Bragantino\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners:\nLocal: 5\nVisita: 0\nTotal: 5\n\n📝 Motivo: Athletico presiona con 5 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Red Bull Bragantino no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "f210ae6b7e1679d6"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Athletico vs Red Bull Bragantino (Brasileirão Betano)",
+   "match_id": "15235428",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 30,
+   "condicion": "5 córners totales antes del min 45 (5-0), Athletico presiona (5 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Red Bull Bragantino NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 5,
+    "corners_away": 0,
+    "equipo_presiona": "Athletico",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-15T22:01:47Z",
+   "t_captura_utc": "2026-08-15T22:01:47Z",
+   "t_evaluacion_utc": "2026-08-15T22:02:11Z",
+   "t_generacion_utc": "2026-08-15T22:02:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T22:02:12Z",
+     "latencia_envio_ms": 753.960371017456,
+     "error": null,
+     "message_id": 904,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 25.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Athletico vs Red Bull Bragantino\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners:\nLocal: 5\nVisita: 0\nTotal: 5\n\n📝 Motivo: Athletico presiona con 5 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Red Bull Bragantino no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "1d0871de864e96c9"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Athletico vs Red Bull Bragantino (Brasileirão Betano)",
    "match_id": "15235428",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 29,
+   "minuto": 30,
    "condicion": "Athletico acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -75,9 +152,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T21:52:17Z",
-   "t_captura_utc": "2026-08-15T22:01:17Z",
-   "t_evaluacion_utc": "2026-08-15T22:01:18Z",
-   "t_generacion_utc": "2026-08-15T22:01:18Z",
+   "t_captura_utc": "2026-08-15T22:02:20Z",
+   "t_evaluacion_utc": "2026-08-15T22:02:21Z",
+   "t_generacion_utc": "2026-08-15T22:02:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -91,7 +168,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Athletico vs Red Bull Bragantino\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Athletico acumula 82% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Athletico vs Red Bull Bragantino\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Athletico acumula 82% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "f8399e10b9c9a33b"
   },
@@ -101,7 +178,7 @@
    "match_id": "15353100",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 30,
+   "minuto": 31,
    "condicion": "Universidad de Chile acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -123,9 +200,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T21:51:18Z",
-   "t_captura_utc": "2026-08-15T22:01:18Z",
-   "t_evaluacion_utc": "2026-08-15T22:01:18Z",
-   "t_generacion_utc": "2026-08-15T22:01:18Z",
+   "t_captura_utc": "2026-08-15T22:02:21Z",
+   "t_evaluacion_utc": "2026-08-15T22:02:21Z",
+   "t_generacion_utc": "2026-08-15T22:02:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -139,7 +216,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportes Limache vs Universidad de Chile\n⏱ Minuto: 30'\n📊 Marcador: 1-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Universidad de Chile acumula 73% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportes Limache vs Universidad de Chile\n⏱ Minuto: 31'\n📊 Marcador: 1-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Universidad de Chile acumula 73% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "e27054f8ab33193b"
   },
@@ -149,7 +226,7 @@
    "match_id": "15526227",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 29,
+   "minuto": 30,
    "condicion": "Juventude acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -161,9 +238,9 @@
     "ratio_presion_territorial": 0.875,
     "touches_home": 7,
     "touches_away": 1,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 29,
+    "equipo_que_realizo_sustitucion": "Juventude",
     "marcador_en_el_momento": "0-0",
     "t_primera_observacion_atlas": "2026-08-15T21:52:19Z",
     "t_inicio_estimado_condicion": "2026-08-15T21:58:22Z",
@@ -171,9 +248,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T21:52:19Z",
-   "t_captura_utc": "2026-08-15T22:01:18Z",
-   "t_evaluacion_utc": "2026-08-15T22:01:19Z",
-   "t_generacion_utc": "2026-08-15T22:01:19Z",
+   "t_captura_utc": "2026-08-15T22:02:21Z",
+   "t_evaluacion_utc": "2026-08-15T22:02:22Z",
+   "t_generacion_utc": "2026-08-15T22:02:22Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -187,7 +264,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Juventude vs Fortaleza\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Juventude acumula 88% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Juventude vs Fortaleza\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Juventude acumula 88% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Juventude, min 29\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "94a242fcbef7acc6"
   }
