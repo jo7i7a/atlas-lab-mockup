@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-15T18:14:26Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-15T18:15:28Z",
+ "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "San Lorenzo vs Club Atlético Unión de Santa Fe (Liga Profesional de Fútbol)",
-   "match_id": "16671562",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "San Lorenzo domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "San Lorenzo",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 2,
-    "centros_away": 0,
-    "remates_home": 5,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T17:45:20Z",
-   "t_captura_utc": "2026-08-15T17:45:20Z",
-   "t_evaluacion_utc": "2026-08-15T17:55:40Z",
-   "t_generacion_utc": "2026-08-15T17:55:40Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T17:46:22Z",
-     "latencia_envio_ms": 823.1160640716553,
-     "error": null,
-     "message_id": 770,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 62.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ San Lorenzo vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: San Lorenzo — ≥2 remates en los últimos 5 min (home=5)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "66b80e15ed2ba148"
-  },
   {
    "strategy_id": "L1",
    "match_label": "Aldosivi vs Tigre (Liga Profesional de Fútbol)",
@@ -139,7 +94,7 @@
    "match_id": "16667389",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 45,
    "condicion": "4 córners totales antes del min 45 (1-3), Tigre presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Aldosivi NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -153,8 +108,8 @@
    },
    "t_evento_real_utc": "2026-08-15T17:55:18Z",
    "t_captura_utc": "2026-08-15T17:55:18Z",
-   "t_evaluacion_utc": "2026-08-15T18:14:12Z",
-   "t_generacion_utc": "2026-08-15T18:14:12Z",
+   "t_evaluacion_utc": "2026-08-15T18:15:13Z",
+   "t_generacion_utc": "2026-08-15T18:15:13Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -168,7 +123,7 @@
    },
    "latencia_total_seg": 54.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Aldosivi vs Tigre\n⏱ Minuto: 44'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Tigre presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Aldosivi no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Aldosivi vs Tigre\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Tigre presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Aldosivi no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "7a0cfee463e167c3"
   },
@@ -178,7 +133,7 @@
    "match_id": "16450744",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 51,
+   "minuto": 52,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -191,8 +146,8 @@
    },
    "t_evento_real_utc": "2026-08-15T18:07:36Z",
    "t_captura_utc": "2026-08-15T18:07:36Z",
-   "t_evaluacion_utc": "2026-08-15T18:14:20Z",
-   "t_generacion_utc": "2026-08-15T18:14:20Z",
+   "t_evaluacion_utc": "2026-08-15T18:15:23Z",
+   "t_generacion_utc": "2026-08-15T18:15:23Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -206,7 +161,7 @@
    },
    "latencia_total_seg": 105.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Académico Viseu FC vs Santa Clara\n⏱ Minuto: 51'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Académico Viseu FC vs Santa Clara\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "bc7037ae926eb7eb"
   },
@@ -216,7 +171,7 @@
    "match_id": "16667389",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 45,
    "condicion": "Tigre acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -225,9 +180,9 @@
    "extra": {
     "equipo_dominante": "Tigre",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6923,
+    "ratio_presion_territorial": 0.7143,
     "touches_home": 4,
-    "touches_away": 9,
+    "touches_away": 10,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 44,
     "equipo_que_realizo_sustitucion": "Tigre",
@@ -238,9 +193,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T18:04:23Z",
-   "t_captura_utc": "2026-08-15T18:14:25Z",
-   "t_evaluacion_utc": "2026-08-15T18:14:25Z",
-   "t_generacion_utc": "2026-08-15T18:14:25Z",
+   "t_captura_utc": "2026-08-15T18:15:27Z",
+   "t_evaluacion_utc": "2026-08-15T18:15:28Z",
+   "t_generacion_utc": "2026-08-15T18:15:28Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -254,7 +209,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Aldosivi vs Tigre\n⏱ Minuto: 44'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Tigre acumula 69% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Tigre, min 44\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Aldosivi vs Tigre\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Tigre acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Tigre, min 44\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "75db7c735e3e1765"
   },
@@ -264,7 +219,7 @@
    "match_id": "16671562",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 45,
    "condicion": "San Lorenzo acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -286,9 +241,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T17:50:30Z",
-   "t_captura_utc": "2026-08-15T18:14:25Z",
-   "t_evaluacion_utc": "2026-08-15T18:14:26Z",
-   "t_generacion_utc": "2026-08-15T18:14:26Z",
+   "t_captura_utc": "2026-08-15T18:15:28Z",
+   "t_evaluacion_utc": "2026-08-15T18:15:28Z",
+   "t_generacion_utc": "2026-08-15T18:15:28Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -302,7 +257,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ San Lorenzo vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 44'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: San Lorenzo acumula 82% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ San Lorenzo vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: San Lorenzo acumula 82% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "5c05d5ef4f809fe7"
   }
