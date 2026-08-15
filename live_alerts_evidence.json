@@ -3790,5 +3790,26 @@
    "cuota_real_betano": 2.85,
    "activo": true
   }
+ ],
+ "3ee60a08a971382c": [
+  {
+   "alert_id": "3ee60a08a971382c",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Excelsior vs PSV Eindhoven (VriendenLoterij Eredivisie)",
+   "liga": "VriendenLoterij Eredivisie",
+   "event_id": "16316790",
+   "minuto_alerta": 63,
+   "condicion": "PSV Eindhoven acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T19:21:29Z",
+   "t_captura_utc": "2026-08-15T19:21:29Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T19:22:39Z",
+   "segundos_transcurridos": 69,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.0 @ 1.80",
+   "linea_real_betano": 7.0,
+   "cuota_real_betano": 1.8,
+   "activo": true
+  }
  ]
 }
