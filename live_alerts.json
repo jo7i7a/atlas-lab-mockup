@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T20:10:33Z",
- "n_alerts": 9,
+ "generated_at_utc": "2026-08-15T20:11:35Z",
+ "n_alerts": 10,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -326,12 +326,51 @@
    "alert_id": "42eba63aa512397f"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Fluminense vs Palmeiras (Brasileirão Betano)",
+   "match_id": "15235422",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 40,
+   "condicion": "4 córners totales antes del min 45 (1-3), Palmeiras presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Fluminense NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 1,
+    "corners_away": 3,
+    "equipo_presiona": "Palmeiras",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-15T20:10:23Z",
+   "t_captura_utc": "2026-08-15T20:10:23Z",
+   "t_evaluacion_utc": "2026-08-15T20:11:10Z",
+   "t_generacion_utc": "2026-08-15T20:11:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T20:11:11Z",
+     "latencia_envio_ms": 848.5584259033203,
+     "error": null,
+     "message_id": 871,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 48.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Fluminense vs Palmeiras\n⏱ Minuto: 40'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Palmeiras presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Fluminense no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "2cc96ea57a7b5c6f"
+  },
+  {
    "strategy_id": "A2",
    "match_label": "Fortuna Sittard vs SC Cambuur (VriendenLoterij Eredivisie)",
    "match_id": "16316778",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 51,
+   "minuto": 52,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -344,8 +383,8 @@
    },
    "t_evento_real_utc": "2026-08-15T20:03:25Z",
    "t_captura_utc": "2026-08-15T20:03:25Z",
-   "t_evaluacion_utc": "2026-08-15T20:10:24Z",
-   "t_generacion_utc": "2026-08-15T20:10:24Z",
+   "t_evaluacion_utc": "2026-08-15T20:11:24Z",
+   "t_generacion_utc": "2026-08-15T20:11:24Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -359,7 +398,7 @@
    },
    "latencia_total_seg": 121.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Fortuna Sittard vs SC Cambuur\n⏱ Minuto: 51'\n📊 Marcador: 2-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Fortuna Sittard vs SC Cambuur\n⏱ Minuto: 52'\n📊 Marcador: 2-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "a97f6a6e8611cbcb"
   },
@@ -369,7 +408,7 @@
    "match_id": "16450753",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 38,
+   "minuto": 39,
    "condicion": "FC Porto acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -391,9 +430,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T19:52:34Z",
-   "t_captura_utc": "2026-08-15T20:10:32Z",
-   "t_evaluacion_utc": "2026-08-15T20:10:32Z",
-   "t_generacion_utc": "2026-08-15T20:10:32Z",
+   "t_captura_utc": "2026-08-15T20:11:34Z",
+   "t_evaluacion_utc": "2026-08-15T20:11:34Z",
+   "t_generacion_utc": "2026-08-15T20:11:34Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -407,7 +446,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rio Ave vs FC Porto\n⏱ Minuto: 38'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Porto acumula 89% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rio Ave vs FC Porto\n⏱ Minuto: 39'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Porto acumula 89% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "57c29dac315c12c6"
   }
