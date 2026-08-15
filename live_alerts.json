@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-15T17:23:24Z",
- "n_alerts": 13,
+ "generated_at_utc": "2026-08-15T17:24:24Z",
+ "n_alerts": 12,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Sheffield United vs Birmingham City (Championship)",
-   "match_id": "16391142",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Birmingham City acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Birmingham City",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 2,
-    "touches_away": 4,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-15T16:53:24Z",
-    "t_inicio_estimado_condicion": "2026-08-15T16:53:08Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T16:53:24Z",
-   "t_captura_utc": "2026-08-15T16:55:27Z",
-   "t_evaluacion_utc": "2026-08-15T16:55:27Z",
-   "t_generacion_utc": "2026-08-15T16:55:27Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T16:53:25Z",
-     "latencia_envio_ms": 799.138069152832,
-     "error": null,
-     "message_id": 731,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sheffield United vs Birmingham City\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Birmingham City acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "2dd52d44113bb594"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "FC Utrecht vs AZ Alkmaar (VriendenLoterij Eredivisie)",
@@ -317,7 +269,7 @@
    "match_id": "16316791",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 34,
+   "minuto": 35,
    "condicion": "4 córners totales antes del min 45 (1-3), AZ Alkmaar presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿FC Utrecht NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -331,8 +283,8 @@
    },
    "t_evento_real_utc": "2026-08-15T17:13:20Z",
    "t_captura_utc": "2026-08-15T17:13:20Z",
-   "t_evaluacion_utc": "2026-08-15T17:23:10Z",
-   "t_generacion_utc": "2026-08-15T17:23:10Z",
+   "t_evaluacion_utc": "2026-08-15T17:24:10Z",
+   "t_generacion_utc": "2026-08-15T17:24:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -346,7 +298,7 @@
    },
    "latencia_total_seg": 52.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ FC Utrecht vs AZ Alkmaar\n⏱ Minuto: 34'\n📊 Marcador: 0-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: AZ Alkmaar presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Utrecht no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ FC Utrecht vs AZ Alkmaar\n⏱ Minuto: 35'\n📊 Marcador: 0-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: AZ Alkmaar presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Utrecht no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "31eef354e1119c9f"
   },
@@ -356,7 +308,7 @@
    "match_id": "16629417",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 48,
+   "minuto": 49,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -369,8 +321,8 @@
    },
    "t_evento_real_utc": "2026-08-15T17:20:26Z",
    "t_captura_utc": "2026-08-15T17:20:26Z",
-   "t_evaluacion_utc": "2026-08-15T17:23:19Z",
-   "t_generacion_utc": "2026-08-15T17:23:19Z",
+   "t_evaluacion_utc": "2026-08-15T17:24:19Z",
+   "t_generacion_utc": "2026-08-15T17:24:19Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -384,7 +336,7 @@
    },
    "latencia_total_seg": 54.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Al-Taawoun vs Al-Khaleej\n⏱ Minuto: 48'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Al-Taawoun vs Al-Khaleej\n⏱ Minuto: 49'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "a0eaeed6f0d95ace"
   },
@@ -394,7 +346,7 @@
    "match_id": "16450744",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 22,
+   "minuto": 23,
    "condicion": "Santa Clara domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -414,8 +366,8 @@
    },
    "t_evento_real_utc": "2026-08-15T17:16:09Z",
    "t_captura_utc": "2026-08-15T17:16:09Z",
-   "t_evaluacion_utc": "2026-08-15T17:23:21Z",
-   "t_generacion_utc": "2026-08-15T17:23:21Z",
+   "t_evaluacion_utc": "2026-08-15T17:24:21Z",
+   "t_generacion_utc": "2026-08-15T17:24:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -429,7 +381,7 @@
    },
    "latencia_total_seg": 12.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Académico Viseu FC vs Santa Clara\n⏱ Minuto: 22'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Santa Clara — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Académico Viseu FC vs Santa Clara\n⏱ Minuto: 23'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Santa Clara — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "02d57b32882f53c4"
   },
@@ -439,7 +391,7 @@
    "match_id": "16316791",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 34,
+   "minuto": 35,
    "condicion": "AZ Alkmaar acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -461,9 +413,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T17:20:20Z",
-   "t_captura_utc": "2026-08-15T17:23:22Z",
-   "t_evaluacion_utc": "2026-08-15T17:23:22Z",
-   "t_generacion_utc": "2026-08-15T17:23:22Z",
+   "t_captura_utc": "2026-08-15T17:24:22Z",
+   "t_evaluacion_utc": "2026-08-15T17:24:23Z",
+   "t_generacion_utc": "2026-08-15T17:24:23Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -477,7 +429,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Utrecht vs AZ Alkmaar\n⏱ Minuto: 34'\n📊 Marcador: 0-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: AZ Alkmaar acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Utrecht vs AZ Alkmaar\n⏱ Minuto: 35'\n📊 Marcador: 0-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: AZ Alkmaar acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "1a72021df4b02c0d"
   },
@@ -487,7 +439,7 @@
    "match_id": "16450744",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 22,
+   "minuto": 23,
    "condicion": "Santa Clara acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -509,9 +461,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T17:21:23Z",
-   "t_captura_utc": "2026-08-15T17:23:22Z",
-   "t_evaluacion_utc": "2026-08-15T17:23:23Z",
-   "t_generacion_utc": "2026-08-15T17:23:23Z",
+   "t_captura_utc": "2026-08-15T17:24:23Z",
+   "t_evaluacion_utc": "2026-08-15T17:24:23Z",
+   "t_generacion_utc": "2026-08-15T17:24:23Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -525,7 +477,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Académico Viseu FC vs Santa Clara\n⏱ Minuto: 22'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Santa Clara acumula 80% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Académico Viseu FC vs Santa Clara\n⏱ Minuto: 23'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Santa Clara acumula 80% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "646baac3193121b3"
   },
@@ -535,7 +487,7 @@
    "match_id": "16629417",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 48,
+   "minuto": 49,
    "condicion": "Al-Taawoun acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -544,8 +496,8 @@
    "extra": {
     "equipo_dominante": "Al-Taawoun",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6364,
-    "touches_home": 14,
+    "ratio_presion_territorial": 0.6522,
+    "touches_home": 15,
     "touches_away": 8,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 45,
@@ -557,9 +509,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T16:59:16Z",
-   "t_captura_utc": "2026-08-15T17:23:24Z",
-   "t_evaluacion_utc": "2026-08-15T17:23:24Z",
-   "t_generacion_utc": "2026-08-15T17:23:24Z",
+   "t_captura_utc": "2026-08-15T17:24:24Z",
+   "t_evaluacion_utc": "2026-08-15T17:24:24Z",
+   "t_generacion_utc": "2026-08-15T17:24:24Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -573,7 +525,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Taawoun vs Al-Khaleej\n⏱ Minuto: 48'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Taawoun acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Al-Taawoun, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Taawoun vs Al-Khaleej\n⏱ Minuto: 49'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Taawoun acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Al-Taawoun, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "23281c1c0dc2a278"
   }
