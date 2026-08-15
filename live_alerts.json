@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-15T20:42:33Z",
- "n_alerts": 9,
+ "generated_at_utc": "2026-08-15T20:43:34Z",
+ "n_alerts": 8,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Sevilla vs Rayo Vallecano (LaLiga)",
-   "match_id": "16421052",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 39,
-   "condicion": "Rayo Vallecano acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Rayo Vallecano",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6154,
-    "touches_home": 5,
-    "touches_away": 8,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-15T20:12:38Z",
-    "t_inicio_estimado_condicion": "2026-08-15T20:02:41Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T20:12:38Z",
-   "t_captura_utc": "2026-08-15T20:17:31Z",
-   "t_evaluacion_utc": "2026-08-15T20:17:31Z",
-   "t_generacion_utc": "2026-08-15T20:17:31Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T20:12:39Z",
-     "latencia_envio_ms": 918.5492992401123,
-     "error": null,
-     "message_id": 872,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sevilla vs Rayo Vallecano\n⏱ Minuto: 39'\n📊 Marcador: 0-1\n🏆 Liga: LaLiga\n\n📝 Motivo: Rayo Vallecano acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "2377a702205676f1"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Estudiantes de La Plata vs Gimnasia y Esgrima (Liga Profesional de Fútbol)",
