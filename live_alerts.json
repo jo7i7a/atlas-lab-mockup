@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-15T16:37:19Z",
+ "generated_at_utc": "2026-08-15T16:38:15Z",
  "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Al-Taawoun vs Al-Khaleej (Saudi Pro League)",
-   "match_id": "16629417",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 20,
-   "condicion": "Al-Taawoun domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Al-Taawoun",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 0,
-    "remates_home": 3,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T16:33:38Z",
-   "t_captura_utc": "2026-08-15T16:33:38Z",
-   "t_evaluacion_utc": "2026-08-15T16:37:17Z",
-   "t_generacion_utc": "2026-08-15T16:37:17Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T16:34:18Z",
-     "latencia_envio_ms": 814.1138553619385,
-     "error": null,
-     "message_id": 716,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 40.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Al-Taawoun vs Al-Khaleej\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Taawoun — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "4a6eae578271dbc6"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Kasımpaşa vs Trabzonspor (Trendyol Süper Lig)",
@@ -142,6 +97,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Konyaspor vs Çaykur Rizespor\n⏱ Minuto: 36'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Konyaspor acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "1213bc2c6600ea6c"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Al-Taawoun vs Al-Khaleej (Saudi Pro League)",
+   "match_id": "16629417",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 21,
+   "condicion": "Al-Taawoun domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Al-Taawoun",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 3,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-15T16:33:38Z",
+   "t_captura_utc": "2026-08-15T16:33:38Z",
+   "t_evaluacion_utc": "2026-08-15T16:38:15Z",
+   "t_generacion_utc": "2026-08-15T16:38:15Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T16:34:18Z",
+     "latencia_envio_ms": 814.1138553619385,
+     "error": null,
+     "message_id": 716,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 40.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Al-Taawoun vs Al-Khaleej\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Taawoun — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "4a6eae578271dbc6"
   }
  ]
 }
