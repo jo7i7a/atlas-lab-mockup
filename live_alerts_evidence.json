@@ -3217,5 +3217,45 @@
    "cuota_real_betano": 1.98,
    "activo": true
   }
+ ],
+ "13da23d7ca39fbdb": [
+  {
+   "alert_id": "13da23d7ca39fbdb",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "FC Utrecht vs AZ Alkmaar (VriendenLoterij Eredivisie)",
+   "liga": "VriendenLoterij Eredivisie",
+   "event_id": "16316791",
+   "minuto_alerta": 18,
+   "condicion": "AZ Alkmaar domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T17:07:02Z",
+   "t_captura_utc": "2026-08-15T17:07:02Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T17:08:15Z",
+   "segundos_transcurridos": 53,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.40\n8.5 @ 1.75",
+   "linea_real_betano": 7.5,
+   "cuota_real_betano": 1.4,
+   "activo": true
+  },
+  {
+   "alert_id": "13da23d7ca39fbdb",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "FC Utrecht vs AZ Alkmaar (VriendenLoterij Eredivisie)",
+   "liga": "VriendenLoterij Eredivisie",
+   "event_id": "16316791",
+   "minuto_alerta": 18,
+   "condicion": "AZ Alkmaar domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T17:07:02Z",
+   "t_captura_utc": "2026-08-15T17:07:02Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T17:08:15Z",
+   "segundos_transcurridos": 53,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.40\n8.5 @ 1.75",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 1.75,
+   "activo": true
+  }
  ]
 }
