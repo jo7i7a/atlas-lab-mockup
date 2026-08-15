@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T14:16:12Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-15T14:17:24Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -56,7 +56,7 @@
    "match_id": "16391136",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 16,
+   "minuto": 17,
    "condicion": "5 córners totales antes del min 30 (3-2), Bristol City presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Millwall NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -69,8 +69,8 @@
    },
    "t_evento_real_utc": "2026-08-15T14:14:53Z",
    "t_captura_utc": "2026-08-15T14:14:53Z",
-   "t_evaluacion_utc": "2026-08-15T14:16:09Z",
-   "t_generacion_utc": "2026-08-15T14:16:09Z",
+   "t_evaluacion_utc": "2026-08-15T14:17:09Z",
+   "t_generacion_utc": "2026-08-15T14:17:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -84,7 +84,7 @@
    },
    "latencia_total_seg": 17.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Bristol City vs Millwall\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Bristol City presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Millwall no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Bristol City vs Millwall\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Bristol City presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Millwall no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "38bb0434b5995751"
   },
@@ -94,7 +94,7 @@
    "match_id": "16391136",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 16,
+   "minuto": 17,
    "condicion": "5 córners totales antes del min 45 (3-2), Bristol City presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Millwall NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -108,8 +108,8 @@
    },
    "t_evento_real_utc": "2026-08-15T14:14:53Z",
    "t_captura_utc": "2026-08-15T14:14:53Z",
-   "t_evaluacion_utc": "2026-08-15T14:16:12Z",
-   "t_generacion_utc": "2026-08-15T14:16:12Z",
+   "t_evaluacion_utc": "2026-08-15T14:17:13Z",
+   "t_generacion_utc": "2026-08-15T14:17:13Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -123,9 +123,54 @@
    },
    "latencia_total_seg": 21.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Bristol City vs Millwall\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Bristol City presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Millwall no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Bristol City vs Millwall\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Bristol City presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Millwall no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "13e6f24970befb32"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Charlton Athletic vs Derby County (Championship)",
+   "match_id": "16391137",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 16,
+   "condicion": "Charlton Athletic domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Charlton Athletic",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-15T14:16:20Z",
+   "t_captura_utc": "2026-08-15T14:16:20Z",
+   "t_evaluacion_utc": "2026-08-15T14:17:24Z",
+   "t_generacion_utc": "2026-08-15T14:17:24Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T14:17:24Z",
+     "latencia_envio_ms": 838.0541801452637,
+     "error": null,
+     "message_id": 603,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 64.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Charlton Athletic vs Derby County\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Charlton Athletic — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "03952509c38088ee"
   }
  ]
 }
