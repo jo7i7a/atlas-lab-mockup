@@ -1,122 +1,7 @@
 {
- "generated_at_utc": "2026-08-15T23:07:27Z",
- "n_alerts": 17,
+ "generated_at_utc": "2026-08-15T23:08:26Z",
+ "n_alerts": 14,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Juventude vs Fortaleza (Brasileirão Série B)",
-   "match_id": "15526227",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-15T22:38:22Z",
-   "t_captura_utc": "2026-08-15T22:38:22Z",
-   "t_evaluacion_utc": "2026-08-15T22:41:20Z",
-   "t_generacion_utc": "2026-08-15T22:41:20Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T22:39:23Z",
-     "latencia_envio_ms": 779.1767120361328,
-     "error": null,
-     "message_id": 917,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 61.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Juventude vs Fortaleza\n⏱ Minuto: 52'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "909445076e1975f6"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Newell's Old Boys vs Deportivo Riestra (Liga Profesional de Fútbol)",
-   "match_id": "16671565",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 42,
-   "condicion": "5 córners totales antes del min 45 (3-2), Newell's Old Boys presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Deportivo Riestra NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 2,
-    "equipo_presiona": "Newell's Old Boys",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-15T22:38:22Z",
-   "t_captura_utc": "2026-08-15T22:38:22Z",
-   "t_evaluacion_utc": "2026-08-15T22:43:10Z",
-   "t_generacion_utc": "2026-08-15T22:43:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T22:39:11Z",
-     "latencia_envio_ms": 850.3046035766602,
-     "error": null,
-     "message_id": 915,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 49.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Newell's Old Boys vs Deportivo Riestra\n⏱ Minuto: 42'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Newell's Old Boys presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Deportivo Riestra no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "7f2263622d026ee3"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Deportes Limache vs Universidad de Chile (Liga de Primera)",
-   "match_id": "15353100",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 51,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 1,
-    "corners_1t_total": 1
-   },
-   "t_evento_real_utc": "2026-08-15T22:38:22Z",
-   "t_captura_utc": "2026-08-15T22:38:22Z",
-   "t_evaluacion_utc": "2026-08-15T22:43:20Z",
-   "t_generacion_utc": "2026-08-15T22:43:20Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T22:39:22Z",
-     "latencia_envio_ms": 809.9868297576904,
-     "error": null,
-     "message_id": 916,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 60.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Deportes Limache vs Universidad de Chile\n⏱ Minuto: 51'\n📊 Marcador: 1-1\n🏆 Liga: Liga de Primera\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "b29b823ef639825b"
-  },
   {
    "strategy_id": "L2-SHADOW",
    "match_label": "Athletico vs Red Bull Bragantino (Brasileirão Betano)",
@@ -685,7 +570,7 @@
    "match_id": "15235428",
    "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH +0.25 @ 2.15 [PROXY SofaScore, NO Betano]",
    "cuota_detectada": 2.15,
-   "minuto": 74,
+   "minuto": 75,
    "condicion": "Athletico domina por xG (1.63) y remates a puerta (5) sin ir ganando y sin roja del dominante — Athletico vs Red Bull Bragantino. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
    "confianza": "Media",
    "link": "",
@@ -703,9 +588,9 @@
     "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
    },
    "t_evento_real_utc": "2026-08-15T22:43:37Z",
-   "t_captura_utc": "2026-08-15T23:07:07Z",
-   "t_evaluacion_utc": "2026-08-15T23:07:13Z",
-   "t_generacion_utc": "2026-08-15T23:07:13Z",
+   "t_captura_utc": "2026-08-15T23:08:10Z",
+   "t_evaluacion_utc": "2026-08-15T23:08:13Z",
+   "t_generacion_utc": "2026-08-15T23:08:13Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -719,7 +604,7 @@
    },
    "latencia_total_seg": 1417.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Athletico vs Red Bull Bragantino\n⏱ Minuto: 74'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Betano\n\n📈 Domina: Athletico\nxG: 1.63 vs 0.37\nTiros a puerta: 5 vs 3\n\nReferencia PROXY: AH +0.25 @ 2.15 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Athletico — ¿línea y cuota reales?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Athletico vs Red Bull Bragantino\n⏱ Minuto: 75'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Betano\n\n📈 Domina: Athletico\nxG: 1.63 vs 0.37\nTiros a puerta: 5 vs 3\n\nReferencia PROXY: AH +0.25 @ 2.15 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Athletico — ¿línea y cuota reales?",
    "evidencia": null,
    "alert_id": "a459fb74fd75c27a"
   }
