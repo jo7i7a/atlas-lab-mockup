@@ -3542,5 +3542,26 @@
    "cuota_real_betano": 2.0,
    "activo": true
   }
+ ],
+ "5c05d5ef4f809fe7": [
+  {
+   "alert_id": "5c05d5ef4f809fe7",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "San Lorenzo vs Club Atlético Unión de Santa Fe (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16671562",
+   "minuto_alerta": 20,
+   "condicion": "San Lorenzo acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T17:50:30Z",
+   "t_captura_utc": "2026-08-15T17:50:30Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T17:50:47Z",
+   "segundos_transcurridos": 16,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.0 @ 1.93",
+   "linea_real_betano": 9.0,
+   "cuota_real_betano": 1.93,
+   "activo": true
+  }
  ]
 }
