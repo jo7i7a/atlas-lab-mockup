@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-15T20:17:31Z",
- "n_alerts": 10,
+ "generated_at_utc": "2026-08-15T20:18:18Z",
+ "n_alerts": 9,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Rio Ave vs FC Porto (Liga Portugal Betclic)",
-   "match_id": "16450753",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "FC Porto domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "FC Porto",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 1,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T19:47:56Z",
-   "t_captura_utc": "2026-08-15T19:47:56Z",
-   "t_evaluacion_utc": "2026-08-15T19:57:26Z",
-   "t_generacion_utc": "2026-08-15T19:57:26Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:48:29Z",
-     "latencia_envio_ms": 868.1840896606445,
-     "error": null,
-     "message_id": 855,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 33.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Rio Ave vs FC Porto\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Porto — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "7039248f86bd3f2d"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Sevilla vs Rayo Vallecano (LaLiga)",
@@ -314,44 +269,6 @@
    "alert_id": "2cc96ea57a7b5c6f"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "Ceará vs Cuiabá (Brasileirão Série B)",
-   "match_id": "15526222",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 50,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-15T20:11:07Z",
-   "t_captura_utc": "2026-08-15T20:11:07Z",
-   "t_evaluacion_utc": "2026-08-15T20:17:25Z",
-   "t_generacion_utc": "2026-08-15T20:17:25Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T20:13:31Z",
-     "latencia_envio_ms": 810.6541633605957,
-     "error": null,
-     "message_id": 873,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 144.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Ceará vs Cuiabá\n⏱ Minuto: 50'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "08c58baa6c2a9a89"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Sevilla vs Rayo Vallecano (LaLiga)",
    "match_id": "16421052",
@@ -446,6 +363,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rio Ave vs FC Porto\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Porto acumula 85% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "57c29dac315c12c6"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Ceará vs Cuiabá (Brasileirão Série B)",
+   "match_id": "15526222",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 51,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 2,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-08-15T20:11:07Z",
+   "t_captura_utc": "2026-08-15T20:11:07Z",
+   "t_evaluacion_utc": "2026-08-15T20:18:18Z",
+   "t_generacion_utc": "2026-08-15T20:18:18Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T20:13:31Z",
+     "latencia_envio_ms": 810.6541633605957,
+     "error": null,
+     "message_id": 873,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 144.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Ceará vs Cuiabá\n⏱ Minuto: 51'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "08c58baa6c2a9a89"
   }
  ]
 }
