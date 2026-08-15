@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-15T14:53:16Z",
- "n_alerts": 11,
+ "generated_at_utc": "2026-08-15T14:54:16Z",
+ "n_alerts": 10,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Stoke City vs Swansea City (Championship)",
-   "match_id": "16391141",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Swansea City domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Swansea City",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 1,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T14:23:21Z",
-   "t_captura_utc": "2026-08-15T14:23:21Z",
-   "t_evaluacion_utc": "2026-08-15T14:26:00Z",
-   "t_generacion_utc": "2026-08-15T14:26:00Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T14:23:53Z",
-     "latencia_envio_ms": 817.0349597930908,
-     "error": null,
-     "message_id": 616,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 32.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Stoke City vs Swansea City\n⏱ Minuto: 25'\n📊 Marcador: 1-1\n🏆 Liga: Championship\n\n📝 Motivo: Swansea City — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "656c0dd2020c0d47"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Charlton Athletic vs Derby County (Championship)",
@@ -448,7 +403,7 @@
    "match_id": "16450745",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 21,
+   "minuto": 22,
    "condicion": "FC Alverca domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -468,8 +423,8 @@
    },
    "t_evento_real_utc": "2026-08-15T14:47:38Z",
    "t_captura_utc": "2026-08-15T14:47:38Z",
-   "t_evaluacion_utc": "2026-08-15T14:53:16Z",
-   "t_generacion_utc": "2026-08-15T14:53:16Z",
+   "t_evaluacion_utc": "2026-08-15T14:54:16Z",
+   "t_generacion_utc": "2026-08-15T14:54:16Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -483,7 +438,7 @@
    },
    "latencia_total_seg": 119.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ FC Alverca vs CF Estrela Amadora\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Alverca — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ FC Alverca vs CF Estrela Amadora\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Alverca — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "dbdbf4848b47fda6"
   }
