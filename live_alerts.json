@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-15T19:17:32Z",
+ "generated_at_utc": "2026-08-15T19:18:20Z",
  "n_alerts": 10,
  "alerts": [
   {
@@ -249,51 +249,6 @@
    "alert_id": "3e2a901a53adfa97"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Atlético Goianiense vs Vila Nova FC (Brasileirão Série B)",
-   "match_id": "15526223",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 17,
-   "condicion": "Atlético Goianiense domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Atlético Goianiense",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T19:15:45Z",
-   "t_captura_utc": "2026-08-15T19:15:45Z",
-   "t_evaluacion_utc": "2026-08-15T19:17:27Z",
-   "t_generacion_utc": "2026-08-15T19:17:27Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:16:28Z",
-     "latencia_envio_ms": 812.445878982544,
-     "error": null,
-     "message_id": 821,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 43.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Atlético Goianiense vs Vila Nova FC\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Atlético Goianiense — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "e393f0c63b449960"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
    "match_id": "16483632",
@@ -432,6 +387,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Al-Ittihad vs Al-Kholood\n⏱ Minuto: 56'\n📊 Marcador: 1-1\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: presión combinada sostenida — xG 2.85, 16 tiros totales (6 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "fd489927c7b5f1a1"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Atlético Goianiense vs Vila Nova FC (Brasileirão Série B)",
+   "match_id": "15526223",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Atlético Goianiense domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Atlético Goianiense",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-15T19:15:45Z",
+   "t_captura_utc": "2026-08-15T19:15:45Z",
+   "t_evaluacion_utc": "2026-08-15T19:18:20Z",
+   "t_generacion_utc": "2026-08-15T19:18:20Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T19:16:28Z",
+     "latencia_envio_ms": 812.445878982544,
+     "error": null,
+     "message_id": 821,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 43.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Atlético Goianiense vs Vila Nova FC\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Atlético Goianiense — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "e393f0c63b449960"
   }
  ]
 }
