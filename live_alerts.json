@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-15T22:20:23Z",
+ "generated_at_utc": "2026-08-15T22:21:23Z",
  "n_alerts": 11,
  "alerts": [
   {
@@ -130,54 +130,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B1_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Athletico vs Red Bull Bragantino\n⏱ Minuto: 32'\n📊 Marcador: 0-0\n\n🎯 Remates totales:\nLocal: 7\nVisita: 3\nTotal: 10\n\n🎯 Tiros a puerta:\nLocal: 3\nVisita: 1\nTotal: 4\n\n🚩 Córners:\nLocal: 5\nVisita: 0\nTotal: 5\n\n🏆 Liga: Brasileirão Betano\n\n⚠️ Versión SIN la condición de ataques peligrosos (dato no disponible)\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 goles FT (o Over 0.5 2ª mitad)",
    "evidencia": null,
    "alert_id": "0a9ed0703fc1aac5"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Deportes Limache vs Universidad de Chile (Liga de Primera)",
-   "match_id": "15353100",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 40,
-   "condicion": "Universidad de Chile acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Universidad de Chile",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6923,
-    "touches_home": 4,
-    "touches_away": 9,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "2-0",
-    "t_primera_observacion_atlas": "2026-08-15T21:51:18Z",
-    "t_inicio_estimado_condicion": "2026-08-15T21:58:22Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T21:51:18Z",
-   "t_captura_utc": "2026-08-15T22:11:19Z",
-   "t_evaluacion_utc": "2026-08-15T22:11:19Z",
-   "t_generacion_utc": "2026-08-15T22:11:19Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T21:51:19Z",
-     "latencia_envio_ms": 826.4303207397461,
-     "error": null,
-     "message_id": 891,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportes Limache vs Universidad de Chile\n⏱ Minuto: 40'\n📊 Marcador: 2-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Universidad de Chile acumula 69% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "e27054f8ab33193b"
   },
   {
    "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
@@ -361,51 +313,6 @@
    "alert_id": "f8399e10b9c9a33b"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Club Atlético Belgrano vs Independiente Rivadavia (Liga Profesional de Fútbol)",
-   "match_id": "16667396",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 20,
-   "condicion": "Club Atlético Belgrano domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Club Atlético Belgrano",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T22:18:21Z",
-   "t_captura_utc": "2026-08-15T22:18:21Z",
-   "t_evaluacion_utc": "2026-08-15T22:20:18Z",
-   "t_generacion_utc": "2026-08-15T22:20:18Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T22:19:23Z",
-     "latencia_envio_ms": 806.1668872833252,
-     "error": null,
-     "message_id": 912,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 62.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Club Atlético Belgrano vs Independiente Rivadavia\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Belgrano — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "3efd26aaf9eb6abd"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Deportes Limache vs Universidad de Chile (Liga de Primera)",
    "match_id": "15353100",
@@ -454,12 +361,57 @@
    "alert_id": "ff68dd8cbaf51fb6"
   },
   {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Club Atlético Belgrano vs Independiente Rivadavia (Liga Profesional de Fútbol)",
+   "match_id": "16667396",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 21,
+   "condicion": "Club Atlético Belgrano domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Club Atlético Belgrano",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-15T22:18:21Z",
+   "t_captura_utc": "2026-08-15T22:18:21Z",
+   "t_evaluacion_utc": "2026-08-15T22:21:16Z",
+   "t_generacion_utc": "2026-08-15T22:21:16Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T22:19:23Z",
+     "latencia_envio_ms": 806.1668872833252,
+     "error": null,
+     "message_id": 912,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 62.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Club Atlético Belgrano vs Independiente Rivadavia\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Belgrano — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "3efd26aaf9eb6abd"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Club Atlético Belgrano vs Independiente Rivadavia (Liga Profesional de Fútbol)",
    "match_id": "16667396",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 20,
+   "minuto": 21,
    "condicion": "Club Atlético Belgrano acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -481,9 +433,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T22:20:22Z",
-   "t_captura_utc": "2026-08-15T22:20:22Z",
-   "t_evaluacion_utc": "2026-08-15T22:20:23Z",
-   "t_generacion_utc": "2026-08-15T22:20:23Z",
+   "t_captura_utc": "2026-08-15T22:21:21Z",
+   "t_evaluacion_utc": "2026-08-15T22:21:21Z",
+   "t_generacion_utc": "2026-08-15T22:21:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -497,9 +449,57 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Atlético Belgrano vs Independiente Rivadavia\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Belgrano acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Atlético Belgrano vs Independiente Rivadavia\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Belgrano acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "20f1e4933b498141"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Newell's Old Boys vs Deportivo Riestra (Liga Profesional de Fútbol)",
+   "match_id": "16671565",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 20,
+   "condicion": "Deportivo Riestra acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Deportivo Riestra",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.8571,
+    "touches_home": 1,
+    "touches_away": 6,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 18,
+    "equipo_que_realizo_sustitucion": "Deportivo Riestra",
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-15T22:21:22Z",
+    "t_inicio_estimado_condicion": null,
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-15T22:21:22Z",
+   "t_captura_utc": "2026-08-15T22:21:22Z",
+   "t_evaluacion_utc": "2026-08-15T22:21:22Z",
+   "t_generacion_utc": "2026-08-15T22:21:22Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T22:21:23Z",
+     "latencia_envio_ms": 835.8967304229736,
+     "error": null,
+     "message_id": 914,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Newell's Old Boys vs Deportivo Riestra\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Deportivo Riestra acumula 86% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Deportivo Riestra, min 18\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "1b9439d287e5a680"
   }
  ]
 }
