@@ -3664,5 +3664,26 @@
    "cuota_real_betano": 1.95,
    "activo": true
   }
+ ],
+ "75db7c735e3e1765": [
+  {
+   "alert_id": "75db7c735e3e1765",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Aldosivi vs Tigre (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16667389",
+   "minuto_alerta": 34,
+   "condicion": "Tigre acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T18:04:23Z",
+   "t_captura_utc": "2026-08-15T18:04:23Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T18:06:06Z",
+   "segundos_transcurridos": 102,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.5 @ 1.78",
+   "linea_real_betano": 10.5,
+   "cuota_real_betano": 1.78,
+   "activo": true
+  }
  ]
 }
