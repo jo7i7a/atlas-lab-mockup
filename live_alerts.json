@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T00:04:17Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-15T00:05:16Z",
+ "n_alerts": 7,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -49,54 +49,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ponte Preta vs Náutico\n⏱ Minuto: 58'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Ponte Preta acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Ponte Preta, min 54\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "2ae84a960a338663"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Universidad de Concepción vs Deportes La Serena (Liga de Primera)",
-   "match_id": "15353095",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 49,
-   "condicion": "Universidad de Concepción acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Universidad de Concepción",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7692,
-    "touches_home": 10,
-    "touches_away": 3,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 31,
-    "equipo_que_realizo_sustitucion": "Universidad de Concepción",
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-14T23:34:17Z",
-    "t_inicio_estimado_condicion": "2026-08-14T23:21:04Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-14T23:34:17Z",
-   "t_captura_utc": "2026-08-14T23:49:25Z",
-   "t_evaluacion_utc": "2026-08-14T23:49:25Z",
-   "t_generacion_utc": "2026-08-14T23:49:25Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T23:34:18Z",
-     "latencia_envio_ms": 753.1492710113525,
-     "error": null,
-     "message_id": 555,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Universidad de Concepción vs Deportes La Serena\n⏱ Minuto: 49'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Universidad de Concepción acumula 77% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Universidad de Concepción, min 31\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "aa89c227a23424c5"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
