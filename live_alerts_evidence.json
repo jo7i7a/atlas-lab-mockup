@@ -4137,5 +4137,26 @@
    "cuota_real_betano": 1.93,
    "activo": true
   }
+ ],
+ "ff68dd8cbaf51fb6": [
+  {
+   "alert_id": "ff68dd8cbaf51fb6",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Deportes Limache vs Universidad de Chile (Liga de Primera)",
+   "liga": "Liga de Primera",
+   "event_id": "15353100",
+   "minuto_alerta": 43,
+   "condicion": "Universidad de Chile acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T22:14:19Z",
+   "t_captura_utc": "2026-08-15T22:14:19Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T22:14:59Z",
+   "segundos_transcurridos": 39,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "6.75 @ 1.75",
+   "linea_real_betano": 6.75,
+   "cuota_real_betano": 1.75,
+   "activo": true
+  }
  ]
 }
