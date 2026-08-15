@@ -4383,5 +4383,26 @@
    "cuota_real_betano": 1.87,
    "activo": true
   }
+ ],
+ "50929bf608333641": [
+  {
+   "alert_id": "50929bf608333641",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Atlante FC vs CD Toluca (Liga MX, Apertura)",
+   "liga": "Liga MX, Apertura",
+   "event_id": "16317954",
+   "minuto_alerta": 39,
+   "condicion": "Atlante FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T23:39:18Z",
+   "t_captura_utc": "2026-08-15T23:39:18Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T23:40:06Z",
+   "segundos_transcurridos": 47,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "13.0 @ 1.80",
+   "linea_real_betano": 13.0,
+   "cuota_real_betano": 1.8,
+   "activo": true
+  }
  ]
 }
