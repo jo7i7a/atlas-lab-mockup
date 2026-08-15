@@ -3034,5 +3034,45 @@
    "cuota_real_betano": 1.88,
    "activo": true
   }
+ ],
+ "4a6eae578271dbc6": [
+  {
+   "alert_id": "4a6eae578271dbc6",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Al-Taawoun vs Al-Khaleej (Saudi Pro League)",
+   "liga": "Saudi Pro League",
+   "event_id": "16629417",
+   "minuto_alerta": 17,
+   "condicion": "Al-Taawoun domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T16:33:38Z",
+   "t_captura_utc": "2026-08-15T16:33:38Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T16:36:16Z",
+   "segundos_transcurridos": 118,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.53\n8.5 @ 1.95",
+   "linea_real_betano": 7.5,
+   "cuota_real_betano": 1.53,
+   "activo": true
+  },
+  {
+   "alert_id": "4a6eae578271dbc6",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Al-Taawoun vs Al-Khaleej (Saudi Pro League)",
+   "liga": "Saudi Pro League",
+   "event_id": "16629417",
+   "minuto_alerta": 17,
+   "condicion": "Al-Taawoun domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T16:33:38Z",
+   "t_captura_utc": "2026-08-15T16:33:38Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T16:36:16Z",
+   "segundos_transcurridos": 118,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.53\n8.5 @ 1.95",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 1.95,
+   "activo": true
+  }
  ]
 }
