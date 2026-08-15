@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-15T18:17:29Z",
+ "generated_at_utc": "2026-08-15T18:18:20Z",
  "n_alerts": 9,
  "alerts": [
   {
@@ -204,51 +204,6 @@
    "alert_id": "a6be367245282f7a"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Al-Nassr vs Al-Fateh (Saudi Pro League)",
-   "match_id": "16629419",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 17,
-   "condicion": "Al-Nassr domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Al-Nassr",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 1,
-    "remates_home": 3,
-    "remates_away": 1,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T18:16:07Z",
-   "t_captura_utc": "2026-08-15T18:16:07Z",
-   "t_evaluacion_utc": "2026-08-15T18:17:25Z",
-   "t_generacion_utc": "2026-08-15T18:17:25Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T18:16:27Z",
-     "latencia_envio_ms": 836.9555473327637,
-     "error": null,
-     "message_id": 790,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 20.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Al-Nassr vs Al-Fateh\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Nassr — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "dbecb36403a0f2b6"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Deportivo Alavés vs Getafe (LaLiga)",
    "match_id": "16421047",
@@ -391,6 +346,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ San Lorenzo vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 47'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: San Lorenzo acumula 82% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: San Lorenzo, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "5c05d5ef4f809fe7"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Al-Nassr vs Al-Fateh (Saudi Pro League)",
+   "match_id": "16629419",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Al-Nassr domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Al-Nassr",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 1,
+    "remates_home": 3,
+    "remates_away": 1,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-15T18:16:07Z",
+   "t_captura_utc": "2026-08-15T18:16:07Z",
+   "t_evaluacion_utc": "2026-08-15T18:18:20Z",
+   "t_generacion_utc": "2026-08-15T18:18:20Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T18:16:27Z",
+     "latencia_envio_ms": 836.9555473327637,
+     "error": null,
+     "message_id": 790,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 20.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Al-Nassr vs Al-Fateh\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Nassr — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "dbecb36403a0f2b6"
   }
  ]
 }
