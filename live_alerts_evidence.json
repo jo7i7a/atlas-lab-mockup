@@ -3728,5 +3728,27 @@
    "cuota_real_betano": 2.02,
    "activo": true
   }
+ ],
+ "fd489927c7b5f1a1": [
+  {
+   "alert_id": "fd489927c7b5f1a1",
+   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "Al-Ittihad vs Al-Kholood (Saudi Pro League)",
+   "liga": "Saudi Pro League",
+   "event_id": "16629418",
+   "minuto_alerta": 55,
+   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T19:16:33Z",
+   "t_captura_utc": "2026-08-15T19:16:33Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T19:18:52Z",
+   "segundos_transcurridos": 138,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "FT 1.5 @ 1.31",
+   "linea_real_betano": 1.5,
+   "cuota_real_betano": 1.31,
+   "mercado_variante": "FT",
+   "activo": true
+  }
  ]
 }
