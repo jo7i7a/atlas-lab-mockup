@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T15:08:33Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-15T15:09:31Z",
+ "n_alerts": 7,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -188,7 +188,7 @@
    "match_id": "15260879",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 50,
+   "minuto": 51,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -201,8 +201,8 @@
    },
    "t_evento_real_utc": "2026-08-15T15:03:47Z",
    "t_captura_utc": "2026-08-15T15:03:47Z",
-   "t_evaluacion_utc": "2026-08-15T15:08:26Z",
-   "t_generacion_utc": "2026-08-15T15:08:26Z",
+   "t_evaluacion_utc": "2026-08-15T15:09:24Z",
+   "t_generacion_utc": "2026-08-15T15:09:24Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -216,57 +216,9 @@
    },
    "latencia_total_seg": 30.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ KFUM Oslo vs Lillestrøm SK\n⏱ Minuto: 50'\n📊 Marcador: 0-1\n🏆 Liga: Eliteserien\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ KFUM Oslo vs Lillestrøm SK\n⏱ Minuto: 51'\n📊 Marcador: 0-1\n🏆 Liga: Eliteserien\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "80ad6aeb48bd9b5d"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Bristol City vs Millwall (Championship)",
-   "match_id": "16391136",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 49,
-   "condicion": "Millwall acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Millwall",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.8077,
-    "touches_home": 5,
-    "touches_away": 21,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 45,
-    "equipo_que_realizo_sustitucion": "Millwall",
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-15T14:39:26Z",
-    "t_inicio_estimado_condicion": "2026-08-15T14:38:22Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T14:39:26Z",
-   "t_captura_utc": "2026-08-15T15:08:31Z",
-   "t_evaluacion_utc": "2026-08-15T15:08:31Z",
-   "t_generacion_utc": "2026-08-15T15:08:31Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T14:39:27Z",
-     "latencia_envio_ms": 808.1791400909424,
-     "error": null,
-     "message_id": 627,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Bristol City vs Millwall\n⏱ Minuto: 49'\n📊 Marcador: 0-1\n🏆 Liga: Championship\n\n📝 Motivo: Millwall acumula 81% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Millwall, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "50c6edb6f92e5f91"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -274,7 +226,7 @@
    "match_id": "16391137",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 47,
+   "minuto": 48,
    "condicion": "Charlton Athletic acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -296,9 +248,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T14:40:24Z",
-   "t_captura_utc": "2026-08-15T15:08:31Z",
-   "t_evaluacion_utc": "2026-08-15T15:08:31Z",
-   "t_generacion_utc": "2026-08-15T15:08:31Z",
+   "t_captura_utc": "2026-08-15T15:09:29Z",
+   "t_evaluacion_utc": "2026-08-15T15:09:30Z",
+   "t_generacion_utc": "2026-08-15T15:09:30Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -312,7 +264,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Charlton Athletic vs Derby County\n⏱ Minuto: 47'\n📊 Marcador: 0-1\n🏆 Liga: Championship\n\n📝 Motivo: Charlton Athletic acumula 68% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Charlton Athletic vs Derby County\n⏱ Minuto: 48'\n📊 Marcador: 0-1\n🏆 Liga: Championship\n\n📝 Motivo: Charlton Athletic acumula 68% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "e81be97ff1527fe9"
   },
@@ -322,7 +274,7 @@
    "match_id": "16450745",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 36,
+   "minuto": 37,
    "condicion": "FC Alverca acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -344,9 +296,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T14:59:18Z",
-   "t_captura_utc": "2026-08-15T15:08:33Z",
-   "t_evaluacion_utc": "2026-08-15T15:08:33Z",
-   "t_generacion_utc": "2026-08-15T15:08:33Z",
+   "t_captura_utc": "2026-08-15T15:09:31Z",
+   "t_evaluacion_utc": "2026-08-15T15:09:31Z",
+   "t_generacion_utc": "2026-08-15T15:09:31Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -360,7 +312,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Alverca vs CF Estrela Amadora\n⏱ Minuto: 36'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Alverca acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: FC Alverca, min 14\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Alverca vs CF Estrela Amadora\n⏱ Minuto: 37'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Alverca acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: FC Alverca, min 14\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "769f1257f7c7221e"
   }
