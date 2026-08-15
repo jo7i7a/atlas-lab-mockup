@@ -3563,5 +3563,26 @@
    "cuota_real_betano": 1.93,
    "activo": true
   }
+ ],
+ "90c79bc6ee455c18": [
+  {
+   "alert_id": "90c79bc6ee455c18",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Deportivo Alavés vs Getafe (LaLiga)",
+   "liga": "LaLiga",
+   "event_id": "16421047",
+   "minuto_alerta": 20,
+   "condicion": "Deportivo Alavés acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T17:52:35Z",
+   "t_captura_utc": "2026-08-15T17:52:35Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T17:53:10Z",
+   "segundos_transcurridos": 34,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.80",
+   "linea_real_betano": 7.5,
+   "cuota_real_betano": 1.8,
+   "activo": true
+  }
  ]
 }
