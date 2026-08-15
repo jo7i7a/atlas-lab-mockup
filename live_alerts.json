@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-15T19:02:24Z",
+ "generated_at_utc": "2026-08-15T19:03:30Z",
  "n_alerts": 11,
  "alerts": [
   {
@@ -219,45 +219,6 @@
    "alert_id": "5390628811202686"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Excelsior vs PSV Eindhoven (VriendenLoterij Eredivisie)",
-   "match_id": "16316790",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (1-3), PSV Eindhoven presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Excelsior NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "PSV Eindhoven",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-15T18:38:21Z",
-   "t_captura_utc": "2026-08-15T18:38:21Z",
-   "t_evaluacion_utc": "2026-08-15T18:46:10Z",
-   "t_generacion_utc": "2026-08-15T18:46:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T18:39:12Z",
-     "latencia_envio_ms": 799.238920211792,
-     "error": null,
-     "message_id": 806,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 51.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Excelsior vs PSV Eindhoven\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: PSV Eindhoven presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Excelsior no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "f56a462146e7bc26"
-  },
-  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
    "match_id": "16483632",
@@ -392,12 +353,51 @@
    "alert_id": "9c04b13fcfa1745d"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Excelsior vs PSV Eindhoven (VriendenLoterij Eredivisie)",
+   "match_id": "16316790",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "4 córners totales antes del min 45 (1-3), PSV Eindhoven presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Excelsior NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 1,
+    "corners_away": 3,
+    "equipo_presiona": "PSV Eindhoven",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-15T18:38:21Z",
+   "t_captura_utc": "2026-08-15T18:38:21Z",
+   "t_evaluacion_utc": "2026-08-15T19:03:14Z",
+   "t_generacion_utc": "2026-08-15T19:03:14Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T18:39:12Z",
+     "latencia_envio_ms": 799.238920211792,
+     "error": null,
+     "message_id": 806,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 51.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Excelsior vs PSV Eindhoven\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: PSV Eindhoven presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Excelsior no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "f56a462146e7bc26"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Deportivo Alavés vs Getafe (LaLiga)",
    "match_id": "16421047",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 71,
+   "minuto": 72,
    "condicion": "Deportivo Alavés acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -419,9 +419,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T18:46:35Z",
-   "t_captura_utc": "2026-08-15T19:02:22Z",
-   "t_evaluacion_utc": "2026-08-15T19:02:23Z",
-   "t_generacion_utc": "2026-08-15T19:02:23Z",
+   "t_captura_utc": "2026-08-15T19:03:28Z",
+   "t_evaluacion_utc": "2026-08-15T19:03:28Z",
+   "t_generacion_utc": "2026-08-15T19:03:28Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -435,7 +435,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportivo Alavés vs Getafe\n⏱ Minuto: 71'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Deportivo Alavés acumula 68% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Deportivo Alavés, min 66\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportivo Alavés vs Getafe\n⏱ Minuto: 72'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Deportivo Alavés acumula 68% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Deportivo Alavés, min 66\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "9771a21f47a342cf"
   },
@@ -445,7 +445,7 @@
    "match_id": "16483632",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 32,
+   "minuto": 33,
    "condicion": "Fenerbahçe acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -467,9 +467,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T18:50:26Z",
-   "t_captura_utc": "2026-08-15T19:02:23Z",
-   "t_evaluacion_utc": "2026-08-15T19:02:23Z",
-   "t_generacion_utc": "2026-08-15T19:02:23Z",
+   "t_captura_utc": "2026-08-15T19:03:28Z",
+   "t_evaluacion_utc": "2026-08-15T19:03:29Z",
+   "t_generacion_utc": "2026-08-15T19:03:29Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -483,7 +483,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 32'\n📊 Marcador: 0-1\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Fenerbahçe acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 33'\n📊 Marcador: 0-1\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Fenerbahçe acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "918179e614763185"
   }
