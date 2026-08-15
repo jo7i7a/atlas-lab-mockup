@@ -2889,5 +2889,26 @@
    "cuota_real_betano": 1.3,
    "activo": true
   }
+ ],
+ "59c5631264d7e51a": [
+  {
+   "alert_id": "59c5631264d7e51a",
+   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "Willem II Tilburg vs NEC Nijmegen (VriendenLoterij Eredivisie)",
+   "liga": "VriendenLoterij Eredivisie",
+   "event_id": "16316769",
+   "minuto_alerta": 57,
+   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T15:49:25Z",
+   "t_captura_utc": "2026-08-15T15:49:25Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T15:51:33Z",
+   "segundos_transcurridos": 127,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "2.5 @ 1.57",
+   "linea_real_betano": 2.5,
+   "cuota_real_betano": 1.57,
+   "activo": true
+  }
  ]
 }
