@@ -2454,5 +2454,45 @@
    "cuota_real_betano": 1.8,
    "activo": true
   }
+ ],
+ "dbdbf4848b47fda6": [
+  {
+   "alert_id": "dbdbf4848b47fda6",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "FC Alverca vs CF Estrela Amadora (Liga Portugal Betclic)",
+   "liga": "Liga Portugal Betclic",
+   "event_id": "16450745",
+   "minuto_alerta": 17,
+   "condicion": "FC Alverca domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T14:47:38Z",
+   "t_captura_utc": "2026-08-15T14:47:38Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T14:50:23Z",
+   "segundos_transcurridos": 46,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.42\n8.5 @ 1.75",
+   "linea_real_betano": 7.5,
+   "cuota_real_betano": 1.42,
+   "activo": true
+  },
+  {
+   "alert_id": "dbdbf4848b47fda6",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "FC Alverca vs CF Estrela Amadora (Liga Portugal Betclic)",
+   "liga": "Liga Portugal Betclic",
+   "event_id": "16450745",
+   "minuto_alerta": 17,
+   "condicion": "FC Alverca domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T14:47:38Z",
+   "t_captura_utc": "2026-08-15T14:47:38Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T14:50:23Z",
+   "segundos_transcurridos": 46,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.42\n8.5 @ 1.75",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 1.75,
+   "activo": true
+  }
  ]
 }
