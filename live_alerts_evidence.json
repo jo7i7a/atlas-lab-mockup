@@ -2412,5 +2412,26 @@
    "cuota_real_betano": 1.71,
    "activo": true
   }
+ ],
+ "4c71bfafbcb65fee": [
+  {
+   "alert_id": "4c71bfafbcb65fee",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Stoke City vs Swansea City (Championship)",
+   "liga": "Championship",
+   "event_id": "16391141",
+   "minuto_alerta": 31,
+   "condicion": "Stoke City acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T14:32:24Z",
+   "t_captura_utc": "2026-08-15T14:32:24Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T14:33:14Z",
+   "segundos_transcurridos": 49,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "8.5 @ 1.90",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 1.9,
+   "activo": true
+  }
  ]
 }
