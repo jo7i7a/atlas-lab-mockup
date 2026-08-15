@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-15T00:11:24Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-15T00:12:26Z",
+ "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Ponte Preta vs Náutico (Brasileirão Série B)",
-   "match_id": "15526218",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 58,
-   "condicion": "Ponte Preta acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Ponte Preta",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6087,
-    "touches_home": 14,
-    "touches_away": 9,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 54,
-    "equipo_que_realizo_sustitucion": "Ponte Preta",
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-08-14T23:42:19Z",
-    "t_inicio_estimado_condicion": "2026-08-14T23:42:08Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-14T23:42:19Z",
-   "t_captura_utc": "2026-08-14T23:48:23Z",
-   "t_evaluacion_utc": "2026-08-14T23:48:23Z",
-   "t_generacion_utc": "2026-08-14T23:48:23Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-14T23:42:20Z",
-     "latencia_envio_ms": 799.0169525146484,
-     "error": null,
-     "message_id": 556,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ponte Preta vs Náutico\n⏱ Minuto: 58'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Ponte Preta acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Ponte Preta, min 54\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "2ae84a960a338663"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Racing Club vs Banfield (Liga Profesional de Fútbol)",
