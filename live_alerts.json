@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T15:18:27Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-15T15:19:39Z",
+ "n_alerts": 10,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -223,19 +223,67 @@
    "alert_id": "a0622a8bc6bb616c"
   },
   {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Willem II Tilburg vs NEC Nijmegen (VriendenLoterij Eredivisie)",
+   "match_id": "16316769",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 47,
+   "condicion": "NEC Nijmegen acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "NEC Nijmegen",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.6923,
+    "touches_home": 8,
+    "touches_away": 18,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "0-1",
+    "t_primera_observacion_atlas": "2026-08-15T15:19:30Z",
+    "t_inicio_estimado_condicion": "2026-08-15T14:58:21Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-15T15:19:30Z",
+   "t_captura_utc": "2026-08-15T15:19:30Z",
+   "t_evaluacion_utc": "2026-08-15T15:19:30Z",
+   "t_generacion_utc": "2026-08-15T15:19:30Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T15:19:32Z",
+     "latencia_envio_ms": 1312.1271133422852,
+     "error": null,
+     "message_id": 649,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 2.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Willem II Tilburg vs NEC Nijmegen\n⏱ Minuto: 47'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: NEC Nijmegen acumula 69% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "7d61ab3b6031d6fd"
+  },
+  {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "KFUM Oslo vs Lillestrøm SK (Eliteserien)",
    "match_id": "15260879",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 60,
+   "minuto": 61,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
    "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "xg_combinado": 1.8,
+    "xg_combinado": 1.81,
     "tiros_combinados": 14,
     "sot_combinado": 3,
     "presion_reciente_10min": 3,
@@ -246,9 +294,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T15:14:33Z",
-   "t_captura_utc": "2026-08-15T15:18:24Z",
-   "t_evaluacion_utc": "2026-08-15T15:18:25Z",
-   "t_generacion_utc": "2026-08-15T15:18:25Z",
+   "t_captura_utc": "2026-08-15T15:19:35Z",
+   "t_evaluacion_utc": "2026-08-15T15:19:35Z",
+   "t_generacion_utc": "2026-08-15T15:19:35Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -262,7 +310,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ KFUM Oslo vs Lillestrøm SK\n⏱ Minuto: 60'\n📊 Marcador: 0-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: presión combinada sostenida — xG 1.80, 14 tiros totales (3 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ KFUM Oslo vs Lillestrøm SK\n⏱ Minuto: 61'\n📊 Marcador: 0-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: presión combinada sostenida — xG 1.81, 14 tiros totales (3 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "97fd7a4a80099f99"
   },
@@ -272,7 +320,7 @@
    "match_id": "16391136",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 59,
+   "minuto": 60,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -282,7 +330,7 @@
     "xg_combinado": 3.05,
     "tiros_combinados": 22,
     "sot_combinado": 3,
-    "presion_reciente_10min": 8,
+    "presion_reciente_10min": 7,
     "marcador_en_el_momento": "0-2",
     "t_primera_observacion_atlas": "2026-08-15T15:15:34Z",
     "t_inicio_estimado_condicion": "2026-08-15T15:14:46Z",
@@ -290,9 +338,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T15:15:34Z",
-   "t_captura_utc": "2026-08-15T15:18:25Z",
-   "t_evaluacion_utc": "2026-08-15T15:18:26Z",
-   "t_generacion_utc": "2026-08-15T15:18:26Z",
+   "t_captura_utc": "2026-08-15T15:19:36Z",
+   "t_evaluacion_utc": "2026-08-15T15:19:36Z",
+   "t_generacion_utc": "2026-08-15T15:19:36Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -306,14 +354,14 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Bristol City vs Millwall\n⏱ Minuto: 59'\n📊 Marcador: 0-2\n🏆 Liga: Championship\n\n📝 Motivo: presión combinada sostenida — xG 3.05, 22 tiros totales (3 a puerta), 8 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Bristol City vs Millwall\n⏱ Minuto: 60'\n📊 Marcador: 0-2\n🏆 Liga: Championship\n\n📝 Motivo: presión combinada sostenida — xG 3.05, 22 tiros totales (3 a puerta), 7 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "e09dec3285ff9df7"
   },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Middlesbrough vs Lincoln City (Championship)",
-   "match_id": "16391138",
+   "match_label": "Charlton Athletic vs Derby County (Championship)",
+   "match_id": "16391137",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
    "minuto": 58,
@@ -323,10 +371,54 @@
    "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
+    "xg_combinado": 1.23,
+    "tiros_combinados": 18,
+    "sot_combinado": 4,
+    "presion_reciente_10min": 4,
+    "marcador_en_el_momento": "0-1",
+    "t_primera_observacion_atlas": "2026-08-15T15:19:37Z",
+    "t_inicio_estimado_condicion": "2026-08-15T15:19:04Z",
+    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-15T15:19:37Z",
+   "t_captura_utc": "2026-08-15T15:19:37Z",
+   "t_evaluacion_utc": "2026-08-15T15:19:37Z",
+   "t_generacion_utc": "2026-08-15T15:19:37Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T15:19:38Z",
+     "latencia_envio_ms": 758.4354877471924,
+     "error": null,
+     "message_id": 650,
+     "chat_id": -5415726375
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Charlton Athletic vs Derby County\n⏱ Minuto: 58'\n📊 Marcador: 0-1\n🏆 Liga: Championship\n\n📝 Motivo: presión combinada sostenida — xG 1.23, 18 tiros totales (4 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "evidencia": null,
+   "alert_id": "d5b8a7fca7d88041"
+  },
+  {
+   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "Middlesbrough vs Lincoln City (Championship)",
+   "match_id": "16391138",
+   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 60,
+   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
     "xg_combinado": 1.21,
     "tiros_combinados": 20,
     "sot_combinado": 5,
-    "presion_reciente_10min": 5,
+    "presion_reciente_10min": 3,
     "marcador_en_el_momento": "0-1",
     "t_primera_observacion_atlas": "2026-08-15T15:15:36Z",
     "t_inicio_estimado_condicion": "2026-08-15T15:15:29Z",
@@ -334,9 +426,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T15:15:36Z",
-   "t_captura_utc": "2026-08-15T15:18:26Z",
-   "t_evaluacion_utc": "2026-08-15T15:18:27Z",
-   "t_generacion_utc": "2026-08-15T15:18:27Z",
+   "t_captura_utc": "2026-08-15T15:19:38Z",
+   "t_evaluacion_utc": "2026-08-15T15:19:39Z",
+   "t_generacion_utc": "2026-08-15T15:19:39Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -350,7 +442,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Middlesbrough vs Lincoln City\n⏱ Minuto: 58'\n📊 Marcador: 0-1\n🏆 Liga: Championship\n\n📝 Motivo: presión combinada sostenida — xG 1.21, 20 tiros totales (5 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Middlesbrough vs Lincoln City\n⏱ Minuto: 60'\n📊 Marcador: 0-1\n🏆 Liga: Championship\n\n📝 Motivo: presión combinada sostenida — xG 1.21, 20 tiros totales (5 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "bbfdd0b2f6b77e96"
   }
