@@ -3358,5 +3358,45 @@
    "cuota_real_betano": 1.72,
    "activo": true
   }
+ ],
+ "02d57b32882f53c4": [
+  {
+   "alert_id": "02d57b32882f53c4",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Académico Viseu FC vs Santa Clara (Liga Portugal Betclic)",
+   "liga": "Liga Portugal Betclic",
+   "event_id": "16450744",
+   "minuto_alerta": 15,
+   "condicion": "Santa Clara domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T17:16:09Z",
+   "t_captura_utc": "2026-08-15T17:16:09Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T17:18:58Z",
+   "segundos_transcurridos": 157,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.52\n8.5 @ 75",
+   "linea_real_betano": 7.5,
+   "cuota_real_betano": 1.52,
+   "activo": true
+  },
+  {
+   "alert_id": "02d57b32882f53c4",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Académico Viseu FC vs Santa Clara (Liga Portugal Betclic)",
+   "liga": "Liga Portugal Betclic",
+   "event_id": "16450744",
+   "minuto_alerta": 15,
+   "condicion": "Santa Clara domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T17:16:09Z",
+   "t_captura_utc": "2026-08-15T17:16:09Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T17:18:58Z",
+   "segundos_transcurridos": 157,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.52\n8.5 @ 75",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 75.0,
+   "activo": true
+  }
  ]
 }
