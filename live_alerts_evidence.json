@@ -2826,5 +2826,47 @@
    "cuota_real_betano": 1.7,
    "activo": true
   }
+ ],
+ "522acbd2627f43e8": [
+  {
+   "alert_id": "522acbd2627f43e8",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Charlton Athletic vs Derby County (Championship)",
+   "liga": "Championship",
+   "event_id": "16391137",
+   "minuto_alerta": 80,
+   "condicion": "Charlton Athletic acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T15:41:34Z",
+   "t_captura_utc": "2026-08-15T15:41:34Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T15:42:14Z",
+   "segundos_transcurridos": 39,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.5 @ 1.83",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 1.83,
+   "activo": true
+  }
+ ],
+ "9605aa7af819a5e5": [
+  {
+   "alert_id": "9605aa7af819a5e5",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Stoke City vs Swansea City (Championship)",
+   "liga": "Championship",
+   "event_id": "16391141",
+   "minuto_alerta": 78,
+   "condicion": "Swansea City acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T15:39:35Z",
+   "t_captura_utc": "2026-08-15T15:39:35Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T15:42:49Z",
+   "segundos_transcurridos": 193,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.5 @ 1.78",
+   "linea_real_betano": 10.5,
+   "cuota_real_betano": 1.78,
+   "activo": true
+  }
  ]
 }
