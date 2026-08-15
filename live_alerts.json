@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-15T18:34:23Z",
- "n_alerts": 12,
+ "generated_at_utc": "2026-08-15T18:35:26Z",
+ "n_alerts": 13,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -39,54 +39,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Académico Viseu FC vs Santa Clara\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "bc7037ae926eb7eb"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Aldosivi vs Tigre (Liga Profesional de Fútbol)",
-   "match_id": "16667389",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 47,
-   "condicion": "Tigre acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Tigre",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.7143,
-    "touches_home": 4,
-    "touches_away": 10,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 44,
-    "equipo_que_realizo_sustitucion": "Tigre",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-15T18:04:23Z",
-    "t_inicio_estimado_condicion": "2026-08-15T18:04:03Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T18:04:23Z",
-   "t_captura_utc": "2026-08-15T18:17:28Z",
-   "t_evaluacion_utc": "2026-08-15T18:17:28Z",
-   "t_generacion_utc": "2026-08-15T18:17:28Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T18:04:24Z",
-     "latencia_envio_ms": 821.5944766998291,
-     "error": null,
-     "message_id": 785,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Aldosivi vs Tigre\n⏱ Minuto: 47'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Tigre acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Tigre, min 44\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "75db7c735e3e1765"
   },
   {
    "strategy_id": "L3",
@@ -303,45 +255,6 @@
    "alert_id": "eca132529170a2b6"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Al-Ittihad vs Al-Kholood (Saudi Pro League)",
-   "match_id": "16629418",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 32,
-   "condicion": "4 córners totales antes del min 45 (4-0), Al-Ittihad presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Al-Kholood NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Al-Ittihad",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-15T18:22:16Z",
-   "t_captura_utc": "2026-08-15T18:22:16Z",
-   "t_evaluacion_utc": "2026-08-15T18:34:11Z",
-   "t_generacion_utc": "2026-08-15T18:34:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T18:23:13Z",
-     "latencia_envio_ms": 788.2325649261475,
-     "error": null,
-     "message_id": 797,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 57.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Al-Ittihad vs Al-Kholood\n⏱ Minuto: 32'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Al-Ittihad presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Al-Kholood no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "a25cdc3a4aa0d538"
-  },
-  {
    "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Al-Ittihad vs Al-Kholood (Saudi Pro League)",
    "match_id": "16629418",
@@ -388,12 +301,135 @@
    "alert_id": "748d4d997c8f8995"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Al-Ittihad vs Al-Kholood (Saudi Pro League)",
+   "match_id": "16629418",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 33,
+   "condicion": "4 córners totales antes del min 45 (4-0), Al-Ittihad presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Al-Kholood NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Al-Ittihad",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-15T18:22:16Z",
+   "t_captura_utc": "2026-08-15T18:22:16Z",
+   "t_evaluacion_utc": "2026-08-15T18:35:11Z",
+   "t_generacion_utc": "2026-08-15T18:35:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T18:23:13Z",
+     "latencia_envio_ms": 788.2325649261475,
+     "error": null,
+     "message_id": 797,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 57.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Al-Ittihad vs Al-Kholood\n⏱ Minuto: 33'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Al-Ittihad presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Al-Kholood no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "a25cdc3a4aa0d538"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "San Lorenzo vs Club Atlético Unión de Santa Fe (Liga Profesional de Fútbol)",
+   "match_id": "16671562",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 0,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-08-15T18:34:40Z",
+   "t_captura_utc": "2026-08-15T18:34:40Z",
+   "t_evaluacion_utc": "2026-08-15T18:35:19Z",
+   "t_generacion_utc": "2026-08-15T18:35:19Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T18:35:20Z",
+     "latencia_envio_ms": 794.3053245544434,
+     "error": null,
+     "message_id": 799,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 40.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ San Lorenzo vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "fbd70835e7d421dc"
+  },
+  {
+   "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "Al-Ittihad vs Al-Kholood (Saudi Pro League)",
+   "match_id": "16629418",
+   "market": "Over 1.5 Goles FT (o Over 0.5 2ª Mitad) -- verificar en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 34,
+   "condicion": "0-0 con dominancia sostenida entre los minutos 32-42 (remates totales≥9, tiros a puerta≥4, córners≥5, todos combinados). Condición original de 'ataques peligrosos' NO evaluada -- dato no disponible en la fuente actual. Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "remates_local": 5,
+    "remates_visita": 5,
+    "remates_total": 10,
+    "sot_local": 2,
+    "sot_visita": 2,
+    "sot_total": 4,
+    "cor_local": 4,
+    "cor_visita": 1,
+    "cor_total": 5,
+    "marcador": "0-0",
+    "condicion_original_no_evaluada": "ataques peligrosos a favor del dominante (dato no disponible)"
+   },
+   "t_evento_real_utc": "2026-08-15T18:33:36Z",
+   "t_captura_utc": "2026-08-15T18:35:01Z",
+   "t_evaluacion_utc": "2026-08-15T18:35:21Z",
+   "t_generacion_utc": "2026-08-15T18:35:21Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T18:35:22Z",
+     "latencia_envio_ms": 794.0285205841064,
+     "error": null,
+     "message_id": 800,
+     "chat_id": -5415726375
+    }
+   },
+   "latencia_total_seg": 106.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B1_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Al-Ittihad vs Al-Kholood\n⏱ Minuto: 34'\n📊 Marcador: 0-0\n\n🎯 Remates totales:\nLocal: 5\nVisita: 5\nTotal: 10\n\n🎯 Tiros a puerta:\nLocal: 2\nVisita: 2\nTotal: 4\n\n🚩 Córners:\nLocal: 4\nVisita: 1\nTotal: 5\n\n🏆 Liga: Saudi Pro League\n\n⚠️ Versión SIN la condición de ataques peligrosos (dato no disponible)\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 goles FT (o Over 0.5 2ª mitad)",
+   "evidencia": null,
+   "alert_id": "5390628811202686"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Excelsior vs PSV Eindhoven (VriendenLoterij Eredivisie)",
    "match_id": "16316790",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 34,
+   "minuto": 35,
    "condicion": "Excelsior acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -402,9 +438,9 @@
    "extra": {
     "equipo_dominante": "Excelsior",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7143,
+    "ratio_presion_territorial": 0.625,
     "touches_home": 5,
-    "touches_away": 2,
+    "touches_away": 3,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -415,9 +451,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T18:20:28Z",
-   "t_captura_utc": "2026-08-15T18:34:21Z",
-   "t_evaluacion_utc": "2026-08-15T18:34:21Z",
-   "t_generacion_utc": "2026-08-15T18:34:21Z",
+   "t_captura_utc": "2026-08-15T18:35:24Z",
+   "t_evaluacion_utc": "2026-08-15T18:35:24Z",
+   "t_generacion_utc": "2026-08-15T18:35:24Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -431,7 +467,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Excelsior vs PSV Eindhoven\n⏱ Minuto: 34'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Excelsior acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Excelsior vs PSV Eindhoven\n⏱ Minuto: 35'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Excelsior acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "bbdf5b5debf2bddc"
   },
@@ -441,7 +477,7 @@
    "match_id": "16629418",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 33,
+   "minuto": 34,
    "condicion": "Al-Kholood acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -463,9 +499,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T18:21:29Z",
-   "t_captura_utc": "2026-08-15T18:34:22Z",
-   "t_evaluacion_utc": "2026-08-15T18:34:22Z",
-   "t_generacion_utc": "2026-08-15T18:34:22Z",
+   "t_captura_utc": "2026-08-15T18:35:25Z",
+   "t_evaluacion_utc": "2026-08-15T18:35:25Z",
+   "t_generacion_utc": "2026-08-15T18:35:25Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -479,7 +515,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Ittihad vs Al-Kholood\n⏱ Minuto: 33'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Kholood acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Al-Kholood, min 21\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Ittihad vs Al-Kholood\n⏱ Minuto: 34'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Kholood acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Al-Kholood, min 21\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "a9ee2572b3a76787"
   },
@@ -489,7 +525,7 @@
    "match_id": "16629419",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 34,
+   "minuto": 35,
    "condicion": "Al-Nassr acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -511,9 +547,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T18:20:31Z",
-   "t_captura_utc": "2026-08-15T18:34:23Z",
-   "t_evaluacion_utc": "2026-08-15T18:34:23Z",
-   "t_generacion_utc": "2026-08-15T18:34:23Z",
+   "t_captura_utc": "2026-08-15T18:35:25Z",
+   "t_evaluacion_utc": "2026-08-15T18:35:26Z",
+   "t_generacion_utc": "2026-08-15T18:35:26Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -527,7 +563,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Nassr vs Al-Fateh\n⏱ Minuto: 34'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Nassr acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Al-Nassr, min 18\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Nassr vs Al-Fateh\n⏱ Minuto: 35'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Nassr acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Al-Nassr, min 18\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "2478cc293e93cd8b"
   }
