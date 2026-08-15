@@ -3933,5 +3933,45 @@
    "cuota_real_betano": 1.85,
    "activo": true
   }
+ ],
+ "7039248f86bd3f2d": [
+  {
+   "alert_id": "7039248f86bd3f2d",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Rio Ave vs FC Porto (Liga Portugal Betclic)",
+   "liga": "Liga Portugal Betclic",
+   "event_id": "16450753",
+   "minuto_alerta": 16,
+   "condicion": "FC Porto domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T19:47:56Z",
+   "t_captura_utc": "2026-08-15T19:47:56Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T19:49:15Z",
+   "segundos_transcurridos": 46,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.45\n8.5 @ 1.83",
+   "linea_real_betano": 7.5,
+   "cuota_real_betano": 1.45,
+   "activo": true
+  },
+  {
+   "alert_id": "7039248f86bd3f2d",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Rio Ave vs FC Porto (Liga Portugal Betclic)",
+   "liga": "Liga Portugal Betclic",
+   "event_id": "16450753",
+   "minuto_alerta": 16,
+   "condicion": "FC Porto domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T19:47:56Z",
+   "t_captura_utc": "2026-08-15T19:47:56Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T19:49:15Z",
+   "segundos_transcurridos": 46,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.45\n8.5 @ 1.83",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 1.83,
+   "activo": true
+  }
  ]
 }
