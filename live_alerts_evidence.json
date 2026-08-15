@@ -2910,5 +2910,26 @@
    "cuota_real_betano": 1.57,
    "activo": true
   }
+ ],
+ "696472b74ed3d22f": [
+  {
+   "alert_id": "696472b74ed3d22f",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "FC Alverca vs CF Estrela Amadora (Liga Portugal Betclic)",
+   "liga": "Liga Portugal Betclic",
+   "event_id": "16450745",
+   "minuto_alerta": 63,
+   "condicion": "FC Alverca acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T15:55:19Z",
+   "t_captura_utc": "2026-08-15T15:55:19Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T15:55:55Z",
+   "segundos_transcurridos": 35,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "5.0 @ 1.85",
+   "linea_real_betano": 5.0,
+   "cuota_real_betano": 1.85,
+   "activo": true
+  }
  ]
 }
