@@ -1,139 +1,7 @@
 {
- "generated_at_utc": "2026-08-15T20:08:35Z",
- "n_alerts": 22,
+ "generated_at_utc": "2026-08-15T20:09:30Z",
+ "n_alerts": 9,
  "alerts": [
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
-   "match_id": "16483632",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH -0.75 @ 1.925 [PROXY SofaScore, NO Betano -- SUSPENDIDA]",
-   "cuota_detectada": 1.925,
-   "minuto": 58,
-   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Fenerbahçe",
-    "xg_dominante": 2.12,
-    "sot_dominante": 5,
-    "marcador": "1-2",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": -0.75,
-    "ah_proxy_cuota": 1.925,
-    "ah_proxy_suspendida": true,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-15T19:39:28Z",
-   "t_captura_utc": "2026-08-15T19:47:56Z",
-   "t_evaluacion_utc": "2026-08-15T19:48:20Z",
-   "t_generacion_utc": "2026-08-15T19:48:20Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:46:20Z",
-     "latencia_envio_ms": 846.1885452270508,
-     "error": null,
-     "message_id": 852,
-     "chat_id": -5124383393
-    }
-   },
-   "latencia_total_seg": 412.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 58'\n📊 Marcador: 2-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\nReferencia PROXY: AH -0.75 @ 1.925 [suspendida] (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "21c3668602005031"
-  },
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
-   "match_id": "16483632",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH -0.75 @ 1.9 [PROXY SofaScore, NO Betano]",
-   "cuota_detectada": 1.9,
-   "minuto": 63,
-   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Fenerbahçe",
-    "xg_dominante": 2.12,
-    "sot_dominante": 5,
-    "marcador": "1-2",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": -0.75,
-    "ah_proxy_cuota": 1.9,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-15T19:39:28Z",
-   "t_captura_utc": "2026-08-15T19:53:05Z",
-   "t_evaluacion_utc": "2026-08-15T19:53:15Z",
-   "t_generacion_utc": "2026-08-15T19:53:15Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:51:20Z",
-     "latencia_envio_ms": 843.9278602600098,
-     "error": null,
-     "message_id": 862,
-     "chat_id": -5124383393
-    }
-   },
-   "latencia_total_seg": 712.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 63'\n📊 Marcador: 2-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\nReferencia PROXY: AH -0.75 @ 1.9 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "4fb54a81dbd90ff4"
-  },
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
-   "match_id": "16483632",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH -0.75 @ 1.875 [PROXY SofaScore, NO Betano]",
-   "cuota_detectada": 1.875,
-   "minuto": 64,
-   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Fenerbahçe",
-    "xg_dominante": 2.12,
-    "sot_dominante": 5,
-    "marcador": "1-2",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": -0.75,
-    "ah_proxy_cuota": 1.875,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-15T19:39:28Z",
-   "t_captura_utc": "2026-08-15T19:54:11Z",
-   "t_evaluacion_utc": "2026-08-15T19:54:16Z",
-   "t_generacion_utc": "2026-08-15T19:54:16Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:40:19Z",
-     "latencia_envio_ms": 797.767162322998,
-     "error": null,
-     "message_id": 845,
-     "chat_id": -5124383393
-    }
-   },
-   "latencia_total_seg": 51.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 64'\n📊 Marcador: 2-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\nReferencia PROXY: AH -0.75 @ 1.875 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "c3f1f63dfaff82b1"
-  },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Fluminense vs Palmeiras (Brasileirão Betano)",
@@ -178,94 +46,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Fluminense vs Palmeiras\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Palmeiras — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "b6f939e1c476843b"
-  },
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
-   "match_id": "16483632",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH -0.75 @ 1.925 [PROXY SofaScore, NO Betano]",
-   "cuota_detectada": 1.925,
-   "minuto": 66,
-   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Fenerbahçe",
-    "xg_dominante": 2.12,
-    "sot_dominante": 5,
-    "marcador": "1-2",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": -0.75,
-    "ah_proxy_cuota": 1.925,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-15T19:39:28Z",
-   "t_captura_utc": "2026-08-15T19:55:59Z",
-   "t_evaluacion_utc": "2026-08-15T19:56:16Z",
-   "t_generacion_utc": "2026-08-15T19:56:16Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:44:18Z",
-     "latencia_envio_ms": 829.1599750518799,
-     "error": null,
-     "message_id": 850,
-     "chat_id": -5124383393
-    }
-   },
-   "latencia_total_seg": 290.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 66'\n📊 Marcador: 2-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\nReferencia PROXY: AH -0.75 @ 1.925 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "fa45912626950e8f"
-  },
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
-   "match_id": "16483632",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH -0.75 @ 1.95 [PROXY SofaScore, NO Betano]",
-   "cuota_detectada": 1.95,
-   "minuto": 67,
-   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Fenerbahçe",
-    "xg_dominante": 2.12,
-    "sot_dominante": 5,
-    "marcador": "1-2",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": -0.75,
-    "ah_proxy_cuota": 1.95,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-15T19:39:28Z",
-   "t_captura_utc": "2026-08-15T19:56:21Z",
-   "t_evaluacion_utc": "2026-08-15T19:57:16Z",
-   "t_generacion_utc": "2026-08-15T19:57:16Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:49:20Z",
-     "latencia_envio_ms": 815.6280517578125,
-     "error": null,
-     "message_id": 857,
-     "chat_id": -5124383393
-    }
-   },
-   "latencia_total_seg": 592.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 67'\n📊 Marcador: 2-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\nReferencia PROXY: AH -0.75 @ 1.95 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "dc9515be94f34b4a"
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -357,89 +137,6 @@
    "alert_id": "fdd22e71cf92e765"
   },
   {
-   "strategy_id": "L2",
-   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
-   "match_id": "16483632",
-   "market": "Hándicap Asiático -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 69,
-   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Fenerbahçe",
-    "xg_dominante": 2.12,
-    "sot_dominante": 5,
-    "marcador": "1-2"
-   },
-   "t_evento_real_utc": "2026-08-15T19:39:28Z",
-   "t_captura_utc": "2026-08-15T19:59:05Z",
-   "t_evaluacion_utc": "2026-08-15T19:59:13Z",
-   "t_generacion_utc": "2026-08-15T19:59:13Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:40:16Z",
-     "latencia_envio_ms": 812.0906352996826,
-     "error": null,
-     "message_id": 844,
-     "chat_id": -5124383393
-    }
-   },
-   "latencia_total_seg": 48.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 69'\n📊 Marcador: 2-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota disponibles?",
-   "evidencia": null,
-   "alert_id": "f4c0ca44561e96a0"
-  },
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
-   "match_id": "16483632",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH -0.75 @ 2.025 [PROXY SofaScore, NO Betano]",
-   "cuota_detectada": 2.025,
-   "minuto": 73,
-   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Fenerbahçe",
-    "xg_dominante": 2.12,
-    "sot_dominante": 5,
-    "marcador": "1-2",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": -0.75,
-    "ah_proxy_cuota": 2.025,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-15T19:39:28Z",
-   "t_captura_utc": "2026-08-15T20:03:03Z",
-   "t_evaluacion_utc": "2026-08-15T20:03:14Z",
-   "t_generacion_utc": "2026-08-15T20:03:14Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:59:16Z",
-     "latencia_envio_ms": 816.4863586425781,
-     "error": null,
-     "message_id": 865,
-     "chat_id": -5124383393
-    }
-   },
-   "latencia_total_seg": 1188.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 73'\n📊 Marcador: 2-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\nReferencia PROXY: AH -0.75 @ 2.025 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "971c6c9547cdadf2"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Sevilla vs Rayo Vallecano (LaLiga)",
    "match_id": "16421052",
@@ -486,138 +183,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sevilla vs Rayo Vallecano\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: LaLiga\n\n📝 Motivo: Rayo Vallecano acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "f8df8e811dc057f4"
-  },
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
-   "match_id": "16483632",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH -0.50 @ 1.725 [PROXY SofaScore, NO Betano]",
-   "cuota_detectada": 1.725,
-   "minuto": 74,
-   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Fenerbahçe",
-    "xg_dominante": 2.12,
-    "sot_dominante": 5,
-    "marcador": "1-2",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": -0.5,
-    "ah_proxy_cuota": 1.725,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-15T19:39:28Z",
-   "t_captura_utc": "2026-08-15T20:04:09Z",
-   "t_evaluacion_utc": "2026-08-15T20:04:15Z",
-   "t_generacion_utc": "2026-08-15T20:04:15Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T20:04:15Z",
-     "latencia_envio_ms": 866.3575649261475,
-     "error": null,
-     "message_id": 868,
-     "chat_id": -5124383393
-    }
-   },
-   "latencia_total_seg": 1487.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 74'\n📊 Marcador: 2-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\nReferencia PROXY: AH -0.50 @ 1.725 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "7a185b864936c1c6"
-  },
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
-   "match_id": "16483632",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH -0.50 @ 1.7 [PROXY SofaScore, NO Betano]",
-   "cuota_detectada": 1.7,
-   "minuto": 75,
-   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Fenerbahçe",
-    "xg_dominante": 2.12,
-    "sot_dominante": 5,
-    "marcador": "1-2",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": -0.5,
-    "ah_proxy_cuota": 1.7,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-15T19:39:28Z",
-   "t_captura_utc": "2026-08-15T20:05:15Z",
-   "t_evaluacion_utc": "2026-08-15T20:05:20Z",
-   "t_generacion_utc": "2026-08-15T20:05:20Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "SUPRIMIDA_EXPIRADA",
-     "t_envio_utc": null,
-     "latencia_envio_ms": null,
-     "error": "expirada al generar (mas vieja que el TTL) -- no se notifica",
-     "message_id": null,
-     "chat_id": null
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 75'\n📊 Marcador: 2-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\nReferencia PROXY: AH -0.50 @ 1.7 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "a3a2c9cce6298c8b"
-  },
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
-   "match_id": "16483632",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH -0.50 @ 1.75 [PROXY SofaScore, NO Betano]",
-   "cuota_detectada": 1.75,
-   "minuto": 76,
-   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Fenerbahçe",
-    "xg_dominante": 2.12,
-    "sot_dominante": 5,
-    "marcador": "1-2",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": -0.5,
-    "ah_proxy_cuota": 1.75,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-15T19:39:28Z",
-   "t_captura_utc": "2026-08-15T20:05:59Z",
-   "t_evaluacion_utc": "2026-08-15T20:06:15Z",
-   "t_generacion_utc": "2026-08-15T20:06:15Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "SUPRIMIDA_EXPIRADA",
-     "t_envio_utc": null,
-     "latencia_envio_ms": null,
-     "error": "expirada al generar (mas vieja que el TTL) -- no se notifica",
-     "message_id": null,
-     "chat_id": null
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 76'\n📊 Marcador: 2-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\nReferencia PROXY: AH -0.50 @ 1.75 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "99b79253ba93d713"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -668,216 +233,6 @@
    "alert_id": "3498d863f51d46f1"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Atlético Goianiense vs Vila Nova FC (Brasileirão Série B)",
-   "match_id": "15526223",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "5 córners totales antes del min 45 (5-0), Atlético Goianiense presiona (5 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Vila Nova FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 5,
-    "corners_away": 0,
-    "equipo_presiona": "Atlético Goianiense",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-15T19:38:44Z",
-   "t_captura_utc": "2026-08-15T19:38:44Z",
-   "t_evaluacion_utc": "2026-08-15T20:07:12Z",
-   "t_generacion_utc": "2026-08-15T20:07:12Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T19:39:13Z",
-     "latencia_envio_ms": 795.8245277404785,
-     "error": null,
-     "message_id": 843,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 29.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Atlético Goianiense vs Vila Nova FC\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 5\nVisita: 0\nTotal: 5\n\n📝 Motivo: Atlético Goianiense presiona con 5 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Vila Nova FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "8750eea8ae3d75ad"
-  },
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
-   "match_id": "16483632",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH -0.50 @ 1.775 [PROXY SofaScore, NO Betano]",
-   "cuota_detectada": 1.775,
-   "minuto": 77,
-   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Fenerbahçe",
-    "xg_dominante": 2.12,
-    "sot_dominante": 5,
-    "marcador": "1-2",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": -0.5,
-    "ah_proxy_cuota": 1.775,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-15T19:39:28Z",
-   "t_captura_utc": "2026-08-15T20:07:04Z",
-   "t_evaluacion_utc": "2026-08-15T20:07:20Z",
-   "t_generacion_utc": "2026-08-15T20:07:20Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "SUPRIMIDA_EXPIRADA",
-     "t_envio_utc": null,
-     "latencia_envio_ms": null,
-     "error": "expirada al generar (mas vieja que el TTL) -- no se notifica",
-     "message_id": null,
-     "chat_id": null
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 77'\n📊 Marcador: 2-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\nReferencia PROXY: AH -0.50 @ 1.775 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "0ddca2ae164ff408"
-  },
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Gençlerbirliği vs Fenerbahçe (Trendyol Süper Lig)",
-   "match_id": "16483632",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH -0.50 @ 1.825 [PROXY SofaScore, NO Betano]",
-   "cuota_detectada": 1.825,
-   "minuto": 78,
-   "condicion": "Fenerbahçe domina por xG (2.12) y remates a puerta (5) sin ir ganando y sin roja del dominante — Fenerbahçe vs Gençlerbirliği. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Fenerbahçe",
-    "xg_dominante": 2.12,
-    "sot_dominante": 5,
-    "marcador": "1-2",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": -0.5,
-    "ah_proxy_cuota": 1.825,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-15T19:39:28Z",
-   "t_captura_utc": "2026-08-15T20:08:11Z",
-   "t_evaluacion_utc": "2026-08-15T20:08:22Z",
-   "t_generacion_utc": "2026-08-15T20:08:22Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "SUPRIMIDA_EXPIRADA",
-     "t_envio_utc": null,
-     "latencia_envio_ms": null,
-     "error": "expirada al generar (mas vieja que el TTL) -- no se notifica",
-     "message_id": null,
-     "chat_id": null
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Gençlerbirliği vs Fenerbahçe\n⏱ Minuto: 78'\n📊 Marcador: 2-1\n🏆 Liga: Trendyol Süper Lig\n\n📈 Domina: Fenerbahçe\nxG: 2.12 vs 0.57\nTiros a puerta: 5 vs 1\n\nReferencia PROXY: AH -0.50 @ 1.825 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Fenerbahçe — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "913f1c7c58589426"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Fortuna Sittard vs SC Cambuur (VriendenLoterij Eredivisie)",
-   "match_id": "16316778",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 49,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 1,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-15T20:03:25Z",
-   "t_captura_utc": "2026-08-15T20:03:25Z",
-   "t_evaluacion_utc": "2026-08-15T20:08:28Z",
-   "t_generacion_utc": "2026-08-15T20:08:28Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T20:05:26Z",
-     "latencia_envio_ms": 812.824010848999,
-     "error": null,
-     "message_id": 870,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 121.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Fortuna Sittard vs SC Cambuur\n⏱ Minuto: 49'\n📊 Marcador: 2-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "a97f6a6e8611cbcb"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Estudiantes de La Plata vs Gimnasia y Esgrima (Liga Profesional de Fútbol)",
-   "match_id": "16671559",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 24,
-   "condicion": "Estudiantes de La Plata domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Estudiantes de La Plata",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T19:59:26Z",
-   "t_captura_utc": "2026-08-15T19:59:26Z",
-   "t_evaluacion_utc": "2026-08-15T20:08:31Z",
-   "t_generacion_utc": "2026-08-15T20:08:31Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T20:00:27Z",
-     "latencia_envio_ms": 859.3809604644775,
-     "error": null,
-     "message_id": 866,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 61.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Estudiantes de La Plata vs Gimnasia y Esgrima\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de La Plata — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "42eba63aa512397f"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Fluminense vs Palmeiras (Brasileirão Betano)",
    "match_id": "15235422",
@@ -926,12 +281,95 @@
    "alert_id": "14434f8ba166c976"
   },
   {
+   "strategy_id": "A2",
+   "match_label": "Fortuna Sittard vs SC Cambuur (VriendenLoterij Eredivisie)",
+   "match_id": "16316778",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 50,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 1,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-08-15T20:03:25Z",
+   "t_captura_utc": "2026-08-15T20:03:25Z",
+   "t_evaluacion_utc": "2026-08-15T20:09:22Z",
+   "t_generacion_utc": "2026-08-15T20:09:22Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T20:05:26Z",
+     "latencia_envio_ms": 812.824010848999,
+     "error": null,
+     "message_id": 870,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 121.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Fortuna Sittard vs SC Cambuur\n⏱ Minuto: 50'\n📊 Marcador: 2-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "a97f6a6e8611cbcb"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Estudiantes de La Plata vs Gimnasia y Esgrima (Liga Profesional de Fútbol)",
+   "match_id": "16671559",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "Estudiantes de La Plata domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Estudiantes de La Plata",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-15T19:59:26Z",
+   "t_captura_utc": "2026-08-15T19:59:26Z",
+   "t_evaluacion_utc": "2026-08-15T20:09:24Z",
+   "t_generacion_utc": "2026-08-15T20:09:24Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-15T20:00:27Z",
+     "latencia_envio_ms": 859.3809604644775,
+     "error": null,
+     "message_id": 866,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 61.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Estudiantes de La Plata vs Gimnasia y Esgrima\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de La Plata — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "42eba63aa512397f"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Rio Ave vs FC Porto (Liga Portugal Betclic)",
    "match_id": "16450753",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 36,
+   "minuto": 37,
    "condicion": "FC Porto acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -940,9 +378,9 @@
    "extra": {
     "equipo_dominante": "FC Porto",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.9,
+    "ratio_presion_territorial": 0.9048,
     "touches_home": 2,
-    "touches_away": 18,
+    "touches_away": 19,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -953,9 +391,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-15T19:52:34Z",
-   "t_captura_utc": "2026-08-15T20:08:34Z",
-   "t_evaluacion_utc": "2026-08-15T20:08:34Z",
-   "t_generacion_utc": "2026-08-15T20:08:34Z",
+   "t_captura_utc": "2026-08-15T20:09:30Z",
+   "t_evaluacion_utc": "2026-08-15T20:09:30Z",
+   "t_generacion_utc": "2026-08-15T20:09:30Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -969,7 +407,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rio Ave vs FC Porto\n⏱ Minuto: 36'\n📊 Marcador: 0-2\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Porto acumula 90% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rio Ave vs FC Porto\n⏱ Minuto: 37'\n📊 Marcador: 0-2\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Porto acumula 90% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "57c29dac315c12c6"
   }
