@@ -4198,5 +4198,47 @@
    "cuota_real_betano": 1.98,
    "activo": true
   }
+ ],
+ "b29b823ef639825b": [
+  {
+   "alert_id": "b29b823ef639825b",
+   "strategy_id": "A2",
+   "match_label": "Deportes Limache vs Universidad de Chile (Liga de Primera)",
+   "liga": "Liga de Primera",
+   "event_id": "15353100",
+   "minuto_alerta": 47,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T22:38:22Z",
+   "t_captura_utc": "2026-08-15T22:38:22Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T22:41:33Z",
+   "segundos_transcurridos": 131,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "Ft 6.5 @ 1.62\nFt 7.5 @ 2.22",
+   "linea_real_betano": 6.5,
+   "cuota_real_betano": 1.62,
+   "mercado_variante": "FT",
+   "activo": true
+  },
+  {
+   "alert_id": "b29b823ef639825b",
+   "strategy_id": "A2",
+   "match_label": "Deportes Limache vs Universidad de Chile (Liga de Primera)",
+   "liga": "Liga de Primera",
+   "event_id": "15353100",
+   "minuto_alerta": 47,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-15T22:38:22Z",
+   "t_captura_utc": "2026-08-15T22:38:22Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-15T22:41:33Z",
+   "segundos_transcurridos": 131,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "Ft 6.5 @ 1.62\nFt 7.5 @ 2.22",
+   "linea_real_betano": 7.5,
+   "cuota_real_betano": 2.22,
+   "mercado_variante": "FT",
+   "activo": true
+  }
  ]
 }
