@@ -5987,5 +5987,45 @@
    "cuota_real_betano": 1.78,
    "activo": true
   }
+ ],
+ "bca4a7c11f1d6003": [
+  {
+   "alert_id": "bca4a7c11f1d6003",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Central Córdoba vs Instituto De Córdoba (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16671567",
+   "minuto_alerta": 15,
+   "condicion": "Instituto De Córdoba domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T23:31:20Z",
+   "t_captura_utc": "2026-08-16T23:31:20Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T23:32:27Z",
+   "segundos_transcurridos": 64,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "8.5 @ 1.53\n9.5 @ 1.98",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 1.53,
+   "activo": true
+  },
+  {
+   "alert_id": "bca4a7c11f1d6003",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Central Córdoba vs Instituto De Córdoba (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16671567",
+   "minuto_alerta": 15,
+   "condicion": "Instituto De Córdoba domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T23:31:20Z",
+   "t_captura_utc": "2026-08-16T23:31:20Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T23:32:27Z",
+   "segundos_transcurridos": 64,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "8.5 @ 1.53\n9.5 @ 1.98",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 1.98,
+   "activo": true
+  }
  ]
 }
