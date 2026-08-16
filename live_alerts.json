@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-16T03:46:21Z",
+ "generated_at_utc": "2026-08-16T03:47:20Z",
  "n_alerts": 4,
  "alerts": [
   {
@@ -40,83 +40,6 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Los Angeles FC vs San Diego FC\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: San Diego FC presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Los Angeles FC no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "f42ea279b3b334d4"
-  },
-  {
-   "strategy_id": "L1",
-   "match_label": "Atlas FC vs Tigres UANL (Liga MX, Apertura)",
-   "match_id": "16317952",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 28,
-   "condicion": "4 córners totales antes del min 30 (0-4), Tigres UANL presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Atlas FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "Tigres UANL"
-   },
-   "t_evento_real_utc": "2026-08-16T03:27:41Z",
-   "t_captura_utc": "2026-08-16T03:27:41Z",
-   "t_evaluacion_utc": "2026-08-16T03:46:09Z",
-   "t_generacion_utc": "2026-08-16T03:46:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T03:28:10Z",
-     "latencia_envio_ms": 837.8915786743164,
-     "error": null,
-     "message_id": 1063,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 29.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Atlas FC vs Tigres UANL\n⏱ Minuto: 28'\n📊 Marcador: 1-1\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Tigres UANL presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlas FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "8d770ded1948f41b"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Atlas FC vs Tigres UANL (Liga MX, Apertura)",
-   "match_id": "16317952",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 28,
-   "condicion": "4 córners totales antes del min 45 (0-4), Tigres UANL presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Atlas FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "Tigres UANL",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-16T03:27:41Z",
-   "t_captura_utc": "2026-08-16T03:27:41Z",
-   "t_evaluacion_utc": "2026-08-16T03:46:10Z",
-   "t_generacion_utc": "2026-08-16T03:46:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T03:28:11Z",
-     "latencia_envio_ms": 780.7343006134033,
-     "error": null,
-     "message_id": 1064,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 30.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Atlas FC vs Tigres UANL\n⏱ Minuto: 28'\n📊 Marcador: 1-1\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Tigres UANL presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlas FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "570c700f466f1954"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -165,6 +88,83 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlas FC vs Tigres UANL\n⏱ Minuto: 29'\n📊 Marcador: 1-1\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Tigres UANL acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "fe7526fe7312c7e8"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "Atlas FC vs Tigres UANL (Liga MX, Apertura)",
+   "match_id": "16317952",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 29,
+   "condicion": "4 córners totales antes del min 30 (0-4), Tigres UANL presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Atlas FC NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Tigres UANL"
+   },
+   "t_evento_real_utc": "2026-08-16T03:27:41Z",
+   "t_captura_utc": "2026-08-16T03:27:41Z",
+   "t_evaluacion_utc": "2026-08-16T03:47:09Z",
+   "t_generacion_utc": "2026-08-16T03:47:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T03:28:10Z",
+     "latencia_envio_ms": 837.8915786743164,
+     "error": null,
+     "message_id": 1063,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 29.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Atlas FC vs Tigres UANL\n⏱ Minuto: 29'\n📊 Marcador: 1-1\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Tigres UANL presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlas FC no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "8d770ded1948f41b"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Atlas FC vs Tigres UANL (Liga MX, Apertura)",
+   "match_id": "16317952",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 29,
+   "condicion": "4 córners totales antes del min 45 (0-4), Tigres UANL presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Atlas FC NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Tigres UANL",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-16T03:27:41Z",
+   "t_captura_utc": "2026-08-16T03:27:41Z",
+   "t_evaluacion_utc": "2026-08-16T03:47:10Z",
+   "t_generacion_utc": "2026-08-16T03:47:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T03:28:11Z",
+     "latencia_envio_ms": 780.7343006134033,
+     "error": null,
+     "message_id": 1064,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 30.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Atlas FC vs Tigres UANL\n⏱ Minuto: 29'\n📊 Marcador: 1-1\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Tigres UANL presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlas FC no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "570c700f466f1954"
   }
  ]
 }
