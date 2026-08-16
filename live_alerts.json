@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T10:44:16Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-16T10:48:20Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -94,6 +94,54 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ ADO Den Haag vs FC Groningen\n⏱ Minuto: 28'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: FC Groningen acumula 70% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "3876fc2d56d4d825"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "ADO Den Haag vs FC Groningen (VriendenLoterij Eredivisie)",
+   "match_id": "16316788",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 32,
+   "condicion": "FC Groningen acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "FC Groningen",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.6471,
+    "touches_home": 6,
+    "touches_away": 11,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "0-2",
+    "t_primera_observacion_atlas": "2026-08-16T10:48:17Z",
+    "t_inicio_estimado_condicion": "2026-08-16T10:38:22Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T10:48:17Z",
+   "t_captura_utc": "2026-08-16T10:48:17Z",
+   "t_evaluacion_utc": "2026-08-16T10:48:17Z",
+   "t_generacion_utc": "2026-08-16T10:48:17Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T10:48:18Z",
+     "latencia_envio_ms": 870.0692653656006,
+     "error": null,
+     "message_id": 1081,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ ADO Den Haag vs FC Groningen\n⏱ Minuto: 32'\n📊 Marcador: 0-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: FC Groningen acumula 65% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "0211245d129d6d21"
   }
  ]
 }
