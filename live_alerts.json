@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T13:22:25Z",
- "n_alerts": 13,
+ "generated_at_utc": "2026-08-16T13:23:21Z",
+ "n_alerts": 11,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Watford vs Southampton (Championship)",
-   "match_id": "16391143",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 21,
-   "condicion": "Southampton acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Southampton",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 2,
-    "touches_away": 4,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 18,
-    "equipo_que_realizo_sustitucion": "Southampton",
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-08-16T12:52:33Z",
-    "t_inicio_estimado_condicion": "2026-08-16T12:52:57Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T12:52:33Z",
-   "t_captura_utc": "2026-08-16T12:53:31Z",
-   "t_evaluacion_utc": "2026-08-16T12:53:32Z",
-   "t_generacion_utc": "2026-08-16T12:53:32Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T12:52:34Z",
-     "latencia_envio_ms": 772.815465927124,
-     "error": null,
-     "message_id": 1111,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Watford vs Southampton\n⏱ Minuto: 21'\n📊 Marcador: 1-0\n🏆 Liga: Championship\n\n📝 Motivo: Southampton acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Southampton, min 18\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "8e74674ac3b443b4"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Aalesunds FK vs Vålerenga IF (Eliteserien)",
@@ -301,54 +253,6 @@
    "alert_id": "4448497f79477af2"
   },
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "FC Twente vs PEC Zwolle (VriendenLoterij Eredivisie)",
-   "match_id": "16316786",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "FC Twente acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "FC Twente",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.8889,
-    "touches_home": 24,
-    "touches_away": 3,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-08-16T12:52:32Z",
-    "t_inicio_estimado_condicion": "2026-08-16T12:52:36Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T12:52:32Z",
-   "t_captura_utc": "2026-08-16T13:17:29Z",
-   "t_evaluacion_utc": "2026-08-16T13:17:29Z",
-   "t_generacion_utc": "2026-08-16T13:17:29Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T12:52:33Z",
-     "latencia_envio_ms": 797.2025871276855,
-     "error": null,
-     "message_id": 1110,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Twente vs PEC Zwolle\n⏱ Minuto: 45'\n📊 Marcador: 1-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: FC Twente acumula 89% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "fa980cd42c2f0451"
-  },
-  {
    "strategy_id": "L2",
    "match_label": "Aalesunds FK vs Vålerenga IF (Eliteserien)",
    "match_id": "15260880",
@@ -481,54 +385,6 @@
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "IF Brommapojkarna vs Örgryte IS (Allsvenskan)",
-   "match_id": "15272494",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 64,
-   "condicion": "IF Brommapojkarna acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "IF Brommapojkarna",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6279,
-    "touches_home": 27,
-    "touches_away": 16,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "2-1",
-    "t_primera_observacion_atlas": "2026-08-16T13:08:27Z",
-    "t_inicio_estimado_condicion": "2026-08-16T13:08:21Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T13:08:27Z",
-   "t_captura_utc": "2026-08-16T13:22:23Z",
-   "t_evaluacion_utc": "2026-08-16T13:22:24Z",
-   "t_generacion_utc": "2026-08-16T13:22:24Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T13:08:28Z",
-     "latencia_envio_ms": 793.6320304870605,
-     "error": null,
-     "message_id": 1132,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ IF Brommapojkarna vs Örgryte IS\n⏱ Minuto: 64'\n📊 Marcador: 2-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IF Brommapojkarna acumula 63% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "42b6d808d7a6c062"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Watford vs Southampton (Championship)",
    "match_id": "16391143",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
@@ -574,6 +430,54 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Watford vs Southampton\n⏱ Minuto: 50'\n📊 Marcador: 2-0\n🏆 Liga: Championship\n\n📝 Motivo: Watford acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Watford, min 43\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "622cad4440098fde"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "IF Brommapojkarna vs Örgryte IS (Allsvenskan)",
+   "match_id": "15272494",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 65,
+   "condicion": "IF Brommapojkarna acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "IF Brommapojkarna",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6279,
+    "touches_home": 27,
+    "touches_away": 16,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "2-1",
+    "t_primera_observacion_atlas": "2026-08-16T13:08:27Z",
+    "t_inicio_estimado_condicion": "2026-08-16T13:08:21Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T13:08:27Z",
+   "t_captura_utc": "2026-08-16T13:23:21Z",
+   "t_evaluacion_utc": "2026-08-16T13:23:21Z",
+   "t_generacion_utc": "2026-08-16T13:23:21Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T13:08:28Z",
+     "latencia_envio_ms": 793.6320304870605,
+     "error": null,
+     "message_id": 1132,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ IF Brommapojkarna vs Örgryte IS\n⏱ Minuto: 65'\n📊 Marcador: 2-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IF Brommapojkarna acumula 63% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "42b6d808d7a6c062"
   }
  ]
 }
