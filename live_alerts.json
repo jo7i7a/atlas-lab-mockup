@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-16T01:06:54Z",
+ "generated_at_utc": "2026-08-16T01:07:49Z",
  "n_alerts": 18,
  "alerts": [
   {
@@ -338,166 +338,6 @@
    "alert_id": "1984e7534a45fc11"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "Nashville SC vs Inter Miami CF (MLS)",
-   "match_id": "15171641",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 24,
-   "condicion": "4 córners totales antes del min 30 (4-0), Nashville SC presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Inter Miami CF NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Nashville SC"
-   },
-   "t_evento_real_utc": "2026-08-16T01:01:36Z",
-   "t_captura_utc": "2026-08-16T01:01:36Z",
-   "t_evaluacion_utc": "2026-08-16T01:06:09Z",
-   "t_generacion_utc": "2026-08-16T01:06:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T01:02:09Z",
-     "latencia_envio_ms": 806.0903549194336,
-     "error": null,
-     "message_id": 1019,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 33.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Nashville SC vs Inter Miami CF\n⏱ Minuto: 24'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Nashville SC presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Inter Miami CF no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "ef1d0277ebcd9b8e"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Nashville SC vs Inter Miami CF (MLS)",
-   "match_id": "15171641",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 24,
-   "condicion": "4 córners totales antes del min 45 (4-0), Nashville SC presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Inter Miami CF NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Nashville SC",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-16T01:01:36Z",
-   "t_captura_utc": "2026-08-16T01:01:36Z",
-   "t_evaluacion_utc": "2026-08-16T01:06:10Z",
-   "t_generacion_utc": "2026-08-16T01:06:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T01:02:12Z",
-     "latencia_envio_ms": 775.2575874328613,
-     "error": null,
-     "message_id": 1020,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 36.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Nashville SC vs Inter Miami CF\n⏱ Minuto: 24'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Nashville SC presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Inter Miami CF no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "47d05f54efbb5f80"
-  },
-  {
-   "strategy_id": "L2",
-   "match_label": "Orlando City SC vs FC Cincinnati (MLS)",
-   "match_id": "15171639",
-   "market": "Hándicap Asiático -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 62,
-   "condicion": "Orlando City SC domina por xG (1.54) y remates a puerta (5) sin ir ganando y sin roja del dominante — Orlando City SC vs FC Cincinnati.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Orlando City SC",
-    "xg_dominante": 1.54,
-    "sot_dominante": 5,
-    "marcador": "1-1"
-   },
-   "t_evento_real_utc": "2026-08-16T00:58:22Z",
-   "t_captura_utc": "2026-08-16T01:05:53Z",
-   "t_evaluacion_utc": "2026-08-16T01:06:15Z",
-   "t_generacion_utc": "2026-08-16T01:06:15Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T00:59:15Z",
-     "latencia_envio_ms": 802.0575046539307,
-     "error": null,
-     "message_id": 1008,
-     "chat_id": -5124383393
-    }
-   },
-   "latencia_total_seg": 53.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2\n\n⚽ Orlando City SC vs FC Cincinnati\n⏱ Minuto: 62'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📈 Domina: Orlando City SC\nxG: 1.54 vs 0.78\nTiros a puerta: 5 vs 1\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Orlando City SC — ¿línea y cuota disponibles?",
-   "evidencia": null,
-   "alert_id": "f1633b20fb75e881"
-  },
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Orlando City SC vs FC Cincinnati (MLS)",
-   "match_id": "15171639",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH +0.25 @ 2.05 [PROXY SofaScore, NO Betano]",
-   "cuota_detectada": 2.05,
-   "minuto": 62,
-   "condicion": "Orlando City SC domina por xG (1.54) y remates a puerta (5) sin ir ganando y sin roja del dominante — Orlando City SC vs FC Cincinnati. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Orlando City SC",
-    "xg_dominante": 1.54,
-    "sot_dominante": 5,
-    "marcador": "1-1",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": 0.25,
-    "ah_proxy_cuota": 2.05,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-16T00:58:22Z",
-   "t_captura_utc": "2026-08-16T01:06:14Z",
-   "t_evaluacion_utc": "2026-08-16T01:06:20Z",
-   "t_generacion_utc": "2026-08-16T01:06:20Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T00:59:21Z",
-     "latencia_envio_ms": 790.3625965118408,
-     "error": null,
-     "message_id": 1009,
-     "chat_id": -5124383393
-    }
-   },
-   "latencia_total_seg": 59.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Orlando City SC vs FC Cincinnati\n⏱ Minuto: 62'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📈 Domina: Orlando City SC\nxG: 1.54 vs 0.78\nTiros a puerta: 5 vs 1\n\nReferencia PROXY: AH +0.25 @ 2.05 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Orlando City SC — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "9898d89864b22656"
-  },
-  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Nashville SC vs Inter Miami CF (MLS)",
    "match_id": "15171641",
@@ -543,12 +383,172 @@
    "alert_id": "e5fe382b99c7e601"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "Nashville SC vs Inter Miami CF (MLS)",
+   "match_id": "15171641",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "4 córners totales antes del min 30 (4-0), Nashville SC presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Inter Miami CF NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Nashville SC"
+   },
+   "t_evento_real_utc": "2026-08-16T01:01:36Z",
+   "t_captura_utc": "2026-08-16T01:01:36Z",
+   "t_evaluacion_utc": "2026-08-16T01:07:09Z",
+   "t_generacion_utc": "2026-08-16T01:07:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T01:02:09Z",
+     "latencia_envio_ms": 806.0903549194336,
+     "error": null,
+     "message_id": 1019,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 33.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Nashville SC vs Inter Miami CF\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Nashville SC presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Inter Miami CF no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "ef1d0277ebcd9b8e"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Nashville SC vs Inter Miami CF (MLS)",
+   "match_id": "15171641",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "4 córners totales antes del min 45 (4-0), Nashville SC presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Inter Miami CF NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Nashville SC",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-16T01:01:36Z",
+   "t_captura_utc": "2026-08-16T01:01:36Z",
+   "t_evaluacion_utc": "2026-08-16T01:07:12Z",
+   "t_generacion_utc": "2026-08-16T01:07:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T01:02:12Z",
+     "latencia_envio_ms": 775.2575874328613,
+     "error": null,
+     "message_id": 1020,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 36.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Nashville SC vs Inter Miami CF\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Nashville SC presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Inter Miami CF no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "47d05f54efbb5f80"
+  },
+  {
+   "strategy_id": "L2",
+   "match_label": "Orlando City SC vs FC Cincinnati (MLS)",
+   "match_id": "15171639",
+   "market": "Hándicap Asiático -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 63,
+   "condicion": "Orlando City SC domina por xG (1.54) y remates a puerta (5) sin ir ganando y sin roja del dominante — Orlando City SC vs FC Cincinnati.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Orlando City SC",
+    "xg_dominante": 1.54,
+    "sot_dominante": 5,
+    "marcador": "1-1"
+   },
+   "t_evento_real_utc": "2026-08-16T00:58:22Z",
+   "t_captura_utc": "2026-08-16T01:06:35Z",
+   "t_evaluacion_utc": "2026-08-16T01:07:17Z",
+   "t_generacion_utc": "2026-08-16T01:07:17Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T00:59:15Z",
+     "latencia_envio_ms": 802.0575046539307,
+     "error": null,
+     "message_id": 1008,
+     "chat_id": -5124383393
+    }
+   },
+   "latencia_total_seg": 53.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2\n\n⚽ Orlando City SC vs FC Cincinnati\n⏱ Minuto: 63'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📈 Domina: Orlando City SC\nxG: 1.54 vs 0.78\nTiros a puerta: 5 vs 1\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Orlando City SC — ¿línea y cuota disponibles?",
+   "evidencia": null,
+   "alert_id": "f1633b20fb75e881"
+  },
+  {
+   "strategy_id": "L2-SHADOW",
+   "match_label": "Orlando City SC vs FC Cincinnati (MLS)",
+   "match_id": "15171639",
+   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH +0.25 @ 2.05 [PROXY SofaScore, NO Betano]",
+   "cuota_detectada": 2.05,
+   "minuto": 63,
+   "condicion": "Orlando City SC domina por xG (1.54) y remates a puerta (5) sin ir ganando y sin roja del dominante — Orlando City SC vs FC Cincinnati. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Orlando City SC",
+    "xg_dominante": 1.54,
+    "sot_dominante": 5,
+    "marcador": "1-1",
+    "variante": "shadow_ventana_80",
+    "ah_proxy_linea": 0.25,
+    "ah_proxy_cuota": 2.05,
+    "ah_proxy_suspendida": false,
+    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
+   },
+   "t_evento_real_utc": "2026-08-16T00:58:22Z",
+   "t_captura_utc": "2026-08-16T01:07:12Z",
+   "t_evaluacion_utc": "2026-08-16T01:07:23Z",
+   "t_generacion_utc": "2026-08-16T01:07:23Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T00:59:21Z",
+     "latencia_envio_ms": 790.3625965118408,
+     "error": null,
+     "message_id": 1009,
+     "chat_id": -5124383393
+    }
+   },
+   "latencia_total_seg": 59.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Orlando City SC vs FC Cincinnati\n⏱ Minuto: 63'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📈 Domina: Orlando City SC\nxG: 1.54 vs 0.78\nTiros a puerta: 5 vs 1\n\nReferencia PROXY: AH +0.25 @ 2.05 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Orlando City SC — ¿línea y cuota reales?",
+   "evidencia": null,
+   "alert_id": "9898d89864b22656"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Charlotte FC vs Columbus Crew (MLS)",
    "match_id": "15171638",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 62,
+   "minuto": 63,
    "condicion": "Columbus Crew acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -557,9 +557,9 @@
    "extra": {
     "equipo_dominante": "Columbus Crew",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6739,
+    "ratio_presion_territorial": 0.6809,
     "touches_home": 15,
-    "touches_away": 31,
+    "touches_away": 32,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 46,
     "equipo_que_realizo_sustitucion": "Columbus Crew",
@@ -570,9 +570,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T00:56:31Z",
-   "t_captura_utc": "2026-08-16T01:06:45Z",
-   "t_evaluacion_utc": "2026-08-16T01:06:46Z",
-   "t_generacion_utc": "2026-08-16T01:06:46Z",
+   "t_captura_utc": "2026-08-16T01:07:35Z",
+   "t_evaluacion_utc": "2026-08-16T01:07:36Z",
+   "t_generacion_utc": "2026-08-16T01:07:36Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -586,7 +586,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Charlotte FC vs Columbus Crew\n⏱ Minuto: 62'\n📊 Marcador: 2-1\n🏆 Liga: MLS\n\n📝 Motivo: Columbus Crew acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Columbus Crew, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Charlotte FC vs Columbus Crew\n⏱ Minuto: 63'\n📊 Marcador: 2-1\n🏆 Liga: MLS\n\n📝 Motivo: Columbus Crew acumula 68% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Columbus Crew, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "acdf6c43a954b211"
   },
@@ -596,7 +596,7 @@
    "match_id": "15171641",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 25,
+   "minuto": 26,
    "condicion": "Nashville SC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -618,9 +618,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T01:01:37Z",
-   "t_captura_utc": "2026-08-16T01:06:47Z",
-   "t_evaluacion_utc": "2026-08-16T01:06:47Z",
-   "t_generacion_utc": "2026-08-16T01:06:47Z",
+   "t_captura_utc": "2026-08-16T01:07:37Z",
+   "t_evaluacion_utc": "2026-08-16T01:07:37Z",
+   "t_generacion_utc": "2026-08-16T01:07:37Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -634,7 +634,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Nashville SC vs Inter Miami CF\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: Nashville SC acumula 88% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Nashville SC vs Inter Miami CF\n⏱ Minuto: 26'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: Nashville SC acumula 88% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "358fdf1f3576e8f9"
   },
@@ -644,7 +644,7 @@
    "match_id": "15171644",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 25,
+   "minuto": 26,
    "condicion": "LA Galaxy acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -653,9 +653,9 @@
    "extra": {
     "equipo_dominante": "LA Galaxy",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6923,
+    "ratio_presion_territorial": 0.7333,
     "touches_home": 4,
-    "touches_away": 9,
+    "touches_away": 11,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -666,9 +666,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T01:01:38Z",
-   "t_captura_utc": "2026-08-16T01:06:47Z",
-   "t_evaluacion_utc": "2026-08-16T01:06:48Z",
-   "t_generacion_utc": "2026-08-16T01:06:48Z",
+   "t_captura_utc": "2026-08-16T01:07:38Z",
+   "t_evaluacion_utc": "2026-08-16T01:07:38Z",
+   "t_generacion_utc": "2026-08-16T01:07:38Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -682,7 +682,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Houston Dynamo vs LA Galaxy\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: LA Galaxy acumula 69% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Houston Dynamo vs LA Galaxy\n⏱ Minuto: 26'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: LA Galaxy acumula 73% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "3fae25c4a41d7759"
   },
@@ -692,7 +692,7 @@
    "match_id": "15171639",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 63,
+   "minuto": 64,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -710,9 +710,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T00:59:40Z",
-   "t_captura_utc": "2026-08-16T01:06:52Z",
-   "t_evaluacion_utc": "2026-08-16T01:06:53Z",
-   "t_generacion_utc": "2026-08-16T01:06:53Z",
+   "t_captura_utc": "2026-08-16T01:07:45Z",
+   "t_evaluacion_utc": "2026-08-16T01:07:47Z",
+   "t_generacion_utc": "2026-08-16T01:07:47Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -726,7 +726,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Orlando City SC vs FC Cincinnati\n⏱ Minuto: 63'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📝 Motivo: presión combinada sostenida — xG 2.68, 18 tiros totales (6 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Orlando City SC vs FC Cincinnati\n⏱ Minuto: 64'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📝 Motivo: presión combinada sostenida — xG 2.68, 18 tiros totales (6 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "8ae6f6bd4c015f7e"
   },
@@ -736,7 +736,7 @@
    "match_id": "15171640",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 63,
+   "minuto": 64,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -754,9 +754,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T01:05:43Z",
-   "t_captura_utc": "2026-08-16T01:06:53Z",
-   "t_evaluacion_utc": "2026-08-16T01:06:54Z",
-   "t_generacion_utc": "2026-08-16T01:06:54Z",
+   "t_captura_utc": "2026-08-16T01:07:48Z",
+   "t_evaluacion_utc": "2026-08-16T01:07:49Z",
+   "t_generacion_utc": "2026-08-16T01:07:49Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -770,7 +770,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Toronto FC vs New England Revolution\n⏱ Minuto: 63'\n📊 Marcador: 2-0\n🏆 Liga: MLS\n\n📝 Motivo: presión combinada sostenida — xG 1.51, 17 tiros totales (4 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Toronto FC vs New England Revolution\n⏱ Minuto: 64'\n📊 Marcador: 2-0\n🏆 Liga: MLS\n\n📝 Motivo: presión combinada sostenida — xG 1.51, 17 tiros totales (4 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "7825d0fa1f1981a0"
   }
