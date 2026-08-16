@@ -5267,5 +5267,66 @@
    "cuota_real_betano": 1.8,
    "activo": true
   }
+ ],
+ "fa980cd42c2f0451": [
+  {
+   "alert_id": "fa980cd42c2f0451",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "FC Twente vs PEC Zwolle (VriendenLoterij Eredivisie)",
+   "liga": "VriendenLoterij Eredivisie",
+   "event_id": "16316786",
+   "minuto_alerta": 20,
+   "condicion": "FC Twente acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T12:52:32Z",
+   "t_captura_utc": "2026-08-16T12:52:32Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T12:53:52Z",
+   "segundos_transcurridos": 79,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "8.5 @ 1.82",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 1.82,
+   "activo": true
+  }
+ ],
+ "0aa6ad81732eca21": [
+  {
+   "alert_id": "0aa6ad81732eca21",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Watford vs Southampton (Championship)",
+   "liga": "Championship",
+   "event_id": "16391143",
+   "minuto_alerta": 20,
+   "condicion": "Watford domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T12:51:53Z",
+   "t_captura_utc": "2026-08-16T12:51:53Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T12:54:35Z",
+   "segundos_transcurridos": 125,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.37\n8.5 @ 1.70",
+   "linea_real_betano": 7.5,
+   "cuota_real_betano": 1.37,
+   "activo": true
+  },
+  {
+   "alert_id": "0aa6ad81732eca21",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Watford vs Southampton (Championship)",
+   "liga": "Championship",
+   "event_id": "16391143",
+   "minuto_alerta": 20,
+   "condicion": "Watford domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T12:51:53Z",
+   "t_captura_utc": "2026-08-16T12:51:53Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T12:54:35Z",
+   "segundos_transcurridos": 125,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.37\n8.5 @ 1.70",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 1.7,
+   "activo": true
+  }
  ]
 }
