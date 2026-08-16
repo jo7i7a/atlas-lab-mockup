@@ -5863,5 +5863,26 @@
    "cuota_real_betano": 1.57,
    "activo": true
   }
+ ],
+ "49ca9b8450318368": [
+  {
+   "alert_id": "49ca9b8450318368",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Pumas UNAM vs Querétaro FC (Liga MX, Apertura)",
+   "liga": "Liga MX, Apertura",
+   "event_id": "16317883",
+   "minuto_alerta": 66,
+   "condicion": "Pumas UNAM acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T19:24:29Z",
+   "t_captura_utc": "2026-08-16T19:24:29Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T19:28:23Z",
+   "segundos_transcurridos": 233,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.83",
+   "linea_real_betano": 7.5,
+   "cuota_real_betano": 1.83,
+   "activo": true
+  }
  ]
 }
