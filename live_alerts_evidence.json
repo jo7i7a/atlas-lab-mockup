@@ -5615,5 +5615,45 @@
    "cuota_real_betano": 3.15,
    "activo": true
   }
+ ],
+ "bcc8f6e5d9cf9f5b": [
+  {
+   "alert_id": "bcc8f6e5d9cf9f5b",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "FC Arouca vs Moreirense (Liga Portugal Betclic)",
+   "liga": "Liga Portugal Betclic",
+   "event_id": "16450747",
+   "minuto_alerta": 17,
+   "condicion": "FC Arouca domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T17:19:46Z",
+   "t_captura_utc": "2026-08-16T17:19:46Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T17:21:46Z",
+   "segundos_transcurridos": 84,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "8.5 @ 1.50\n9. 5 @ 1.90",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 1.5,
+   "activo": true
+  },
+  {
+   "alert_id": "bcc8f6e5d9cf9f5b",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "FC Arouca vs Moreirense (Liga Portugal Betclic)",
+   "liga": "Liga Portugal Betclic",
+   "event_id": "16450747",
+   "minuto_alerta": 17,
+   "condicion": "FC Arouca domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T17:19:46Z",
+   "t_captura_utc": "2026-08-16T17:19:46Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T17:21:46Z",
+   "segundos_transcurridos": 84,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "8.5 @ 1.50\n9. 5 @ 1.90",
+   "linea_real_betano": 5.0,
+   "cuota_real_betano": 1.9,
+   "activo": true
+  }
  ]
 }
