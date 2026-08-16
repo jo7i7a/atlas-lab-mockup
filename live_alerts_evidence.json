@@ -4813,5 +4813,47 @@
    "cuota_real_betano": 1.85,
    "activo": true
   }
+ ],
+ "e5fe382b99c7e601": [
+  {
+   "alert_id": "e5fe382b99c7e601",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Nashville SC vs Inter Miami CF (MLS)",
+   "liga": "MLS",
+   "event_id": "15171641",
+   "minuto_alerta": 18,
+   "condicion": "Nashville SC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T00:58:22Z",
+   "t_captura_utc": "2026-08-16T00:58:22Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T01:00:13Z",
+   "segundos_transcurridos": 43,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.5 @ 1.72",
+   "linea_real_betano": 10.5,
+   "cuota_real_betano": 1.72,
+   "activo": true
+  }
+ ],
+ "2b399d886cfe8128": [
+  {
+   "alert_id": "2b399d886cfe8128",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "CF Montréal vs DC United (MLS)",
+   "liga": "MLS",
+   "event_id": "15171637",
+   "minuto_alerta": 61,
+   "condicion": "CF Montréal acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T00:59:33Z",
+   "t_captura_utc": "2026-08-16T00:59:33Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T01:00:49Z",
+   "segundos_transcurridos": 75,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.91",
+   "linea_real_betano": 7.5,
+   "cuota_real_betano": 1.91,
+   "activo": true
+  }
  ]
 }
