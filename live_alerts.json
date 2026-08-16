@@ -1,62 +1,14 @@
 {
- "generated_at_utc": "2026-08-16T17:16:23Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-16T17:17:23Z",
+ "n_alerts": 1,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Sarpsborg 08 vs Sandefjord Fotball (Eliteserien)",
-   "match_id": "15260881",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 85,
-   "condicion": "Sarpsborg 08 acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sarpsborg 08",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6034,
-    "touches_home": 35,
-    "touches_away": 23,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 86,
-    "equipo_que_realizo_sustitucion": "Sarpsborg 08",
-    "marcador_en_el_momento": "1-2",
-    "t_primera_observacion_atlas": "2026-08-16T16:46:35Z",
-    "t_inicio_estimado_condicion": "2026-08-16T15:22:00Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T16:46:35Z",
-   "t_captura_utc": "2026-08-16T16:46:35Z",
-   "t_evaluacion_utc": "2026-08-16T16:46:36Z",
-   "t_generacion_utc": "2026-08-16T16:46:36Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T16:46:37Z",
-     "latencia_envio_ms": 756.829023361206,
-     "error": null,
-     "message_id": 1222,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 2.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sarpsborg 08 vs Sandefjord Fotball\n⏱ Minuto: 85'\n📊 Marcador: 1-2\n🏆 Liga: Eliteserien\n\n📝 Motivo: Sarpsborg 08 acumula 60% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Sarpsborg 08, min 86\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "c7e115dec6146e2a"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Ñublense vs Unión La Calera (Liga de Primera)",
    "match_id": "15353097",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 46,
    "condicion": "Ñublense acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -78,9 +30,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T16:51:18Z",
-   "t_captura_utc": "2026-08-16T17:16:22Z",
-   "t_evaluacion_utc": "2026-08-16T17:16:23Z",
-   "t_generacion_utc": "2026-08-16T17:16:23Z",
+   "t_captura_utc": "2026-08-16T17:17:23Z",
+   "t_evaluacion_utc": "2026-08-16T17:17:23Z",
+   "t_generacion_utc": "2026-08-16T17:17:23Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -94,7 +46,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 45'\n📊 Marcador: 2-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Ñublense acumula 77% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 46'\n📊 Marcador: 2-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Ñublense acumula 77% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "31b230d77d8301bb"
   }
