@@ -1,51 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T03:26:18Z",
- "n_alerts": 10,
+ "generated_at_utc": "2026-08-16T03:27:21Z",
+ "n_alerts": 9,
  "alerts": [
-  {
-   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Colorado Rapids vs Sporting Kansas City (MLS)",
-   "match_id": "15171643",
-   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 60,
-   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_combinado": 1.91,
-    "tiros_combinados": 24,
-    "sot_combinado": 4,
-    "presion_reciente_10min": 5,
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-16T02:56:29Z",
-    "t_inicio_estimado_condicion": "2026-08-16T02:56:13Z",
-    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T02:56:29Z",
-   "t_captura_utc": "2026-08-16T03:00:36Z",
-   "t_evaluacion_utc": "2026-08-16T03:00:37Z",
-   "t_generacion_utc": "2026-08-16T03:00:37Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T02:56:30Z",
-     "latencia_envio_ms": 908.942461013794,
-     "error": null,
-     "message_id": 1047,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Colorado Rapids vs Sporting Kansas City\n⏱ Minuto: 60'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: presión combinada sostenida — xG 1.91, 24 tiros totales (4 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
-   "evidencia": null,
-   "alert_id": "16852ca09bfa6737"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Los Angeles FC vs San Diego FC (MLS)",
@@ -367,7 +323,7 @@
    "match_id": "15171645",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 47,
    "condicion": "St.Louis City acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -376,9 +332,9 @@
    "extra": {
     "equipo_dominante": "St.Louis City",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6364,
+    "ratio_presion_territorial": 0.6522,
     "touches_home": 8,
-    "touches_away": 14,
+    "touches_away": 15,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -389,9 +345,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T03:00:32Z",
-   "t_captura_utc": "2026-08-16T03:26:17Z",
-   "t_evaluacion_utc": "2026-08-16T03:26:18Z",
-   "t_generacion_utc": "2026-08-16T03:26:18Z",
+   "t_captura_utc": "2026-08-16T03:27:20Z",
+   "t_evaluacion_utc": "2026-08-16T03:27:21Z",
+   "t_generacion_utc": "2026-08-16T03:27:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -405,7 +361,7 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ San Jose Earthquakes vs St.Louis City\n⏱ Minuto: 45'\n📊 Marcador: 0-2\n🏆 Liga: MLS\n\n📝 Motivo: St.Louis City acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ San Jose Earthquakes vs St.Louis City\n⏱ Minuto: 47'\n📊 Marcador: 0-2\n🏆 Liga: MLS\n\n📝 Motivo: St.Louis City acumula 65% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "fee82b25e3ef1a7b"
   },
@@ -415,7 +371,7 @@
    "match_id": "15171646",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 46,
    "condicion": "San Diego FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -424,9 +380,9 @@
    "extra": {
     "equipo_dominante": "San Diego FC",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.7692,
+    "ratio_presion_territorial": 0.7857,
     "touches_home": 3,
-    "touches_away": 10,
+    "touches_away": 11,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 29,
     "equipo_que_realizo_sustitucion": "San Diego FC",
@@ -437,9 +393,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T03:08:24Z",
-   "t_captura_utc": "2026-08-16T03:26:18Z",
-   "t_evaluacion_utc": "2026-08-16T03:26:18Z",
-   "t_generacion_utc": "2026-08-16T03:26:18Z",
+   "t_captura_utc": "2026-08-16T03:27:21Z",
+   "t_evaluacion_utc": "2026-08-16T03:27:21Z",
+   "t_generacion_utc": "2026-08-16T03:27:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -453,7 +409,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Los Angeles FC vs San Diego FC\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: San Diego FC acumula 77% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: San Diego FC, min 29\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Los Angeles FC vs San Diego FC\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: San Diego FC acumula 79% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: San Diego FC, min 29\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "0e44a91ac32cf33c"
   }
