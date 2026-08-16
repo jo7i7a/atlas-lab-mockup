@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T16:14:36Z",
- "n_alerts": 11,
+ "generated_at_utc": "2026-08-16T16:15:43Z",
+ "n_alerts": 10,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -172,131 +172,6 @@
    "alert_id": "5b9dc8d74923dd91"
   },
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "GAIS vs Malmö FF (Allsvenskan)",
-   "match_id": "15272490",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 85,
-   "condicion": "GAIS acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "GAIS",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6977,
-    "touches_home": 30,
-    "touches_away": 13,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 81,
-    "equipo_que_realizo_sustitucion": "GAIS",
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-16T15:44:37Z",
-    "t_inicio_estimado_condicion": "2026-08-16T15:44:32Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T15:44:37Z",
-   "t_captura_utc": "2026-08-16T16:13:37Z",
-   "t_evaluacion_utc": "2026-08-16T16:13:38Z",
-   "t_generacion_utc": "2026-08-16T16:13:38Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T15:44:38Z",
-     "latencia_envio_ms": 827.9354572296143,
-     "error": null,
-     "message_id": 1193,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ GAIS vs Malmö FF\n⏱ Minuto: 85'\n📊 Marcador: 0-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: GAIS acumula 70% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: GAIS, min 81\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "c13a0fcd303ce416"
-  },
-  {
-   "strategy_id": "L1",
-   "match_label": "Başakşehir FK vs Kocaelispor (Trendyol Süper Lig)",
-   "match_id": "16483707",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 14,
-   "condicion": "4 córners totales antes del min 30 (3-1), Başakşehir FK presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Kocaelispor NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Başakşehir FK"
-   },
-   "t_evento_real_utc": "2026-08-16T16:12:02Z",
-   "t_captura_utc": "2026-08-16T16:12:02Z",
-   "t_evaluacion_utc": "2026-08-16T16:14:09Z",
-   "t_generacion_utc": "2026-08-16T16:14:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T16:12:15Z",
-     "latencia_envio_ms": 878.6969184875488,
-     "error": null,
-     "message_id": 1203,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 13.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 14'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Başakşehir FK presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kocaelispor no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "dcea6ade7c3a0f62"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Başakşehir FK vs Kocaelispor (Trendyol Süper Lig)",
-   "match_id": "16483707",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 14,
-   "condicion": "4 córners totales antes del min 45 (3-1), Başakşehir FK presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Kocaelispor NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Başakşehir FK",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-16T16:12:02Z",
-   "t_captura_utc": "2026-08-16T16:12:02Z",
-   "t_evaluacion_utc": "2026-08-16T16:14:10Z",
-   "t_generacion_utc": "2026-08-16T16:14:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T16:12:18Z",
-     "latencia_envio_ms": 756.493330001831,
-     "error": null,
-     "message_id": 1204,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 16.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 14'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Başakşehir FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kocaelispor no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "3511605aa1cdd253"
-  },
-  {
    "strategy_id": "A2",
    "match_label": "Molde FK vs Tromsø IL (Eliteserien)",
    "match_id": "15260878",
@@ -333,54 +208,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Molde FK vs Tromsø IL\n⏱ Minuto: 52'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "c2572be8b963dd86"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Sarpsborg 08 vs Sandefjord Fotball (Eliteserien)",
-   "match_id": "15260881",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 53,
-   "condicion": "Sarpsborg 08 acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sarpsborg 08",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6136,
-    "touches_home": 27,
-    "touches_away": 17,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-08-16T16:14:32Z",
-    "t_inicio_estimado_condicion": "2026-08-16T15:22:00Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T16:14:32Z",
-   "t_captura_utc": "2026-08-16T16:14:32Z",
-   "t_evaluacion_utc": "2026-08-16T16:14:32Z",
-   "t_generacion_utc": "2026-08-16T16:14:32Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T16:14:33Z",
-     "latencia_envio_ms": 802.5286197662354,
-     "error": null,
-     "message_id": 1205,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sarpsborg 08 vs Sandefjord Fotball\n⏱ Minuto: 53'\n📊 Marcador: 1-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Sarpsborg 08 acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "26d068ed83ec3d91"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -431,12 +258,137 @@
    "alert_id": "22cca508b880e4b0"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "Başakşehir FK vs Kocaelispor (Trendyol Süper Lig)",
+   "match_id": "16483707",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "4 córners totales antes del min 30 (3-1), Başakşehir FK presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Kocaelispor NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Başakşehir FK"
+   },
+   "t_evento_real_utc": "2026-08-16T16:12:02Z",
+   "t_captura_utc": "2026-08-16T16:12:02Z",
+   "t_evaluacion_utc": "2026-08-16T16:15:10Z",
+   "t_generacion_utc": "2026-08-16T16:15:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T16:12:15Z",
+     "latencia_envio_ms": 878.6969184875488,
+     "error": null,
+     "message_id": 1203,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 13.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 15'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Başakşehir FK presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kocaelispor no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "dcea6ade7c3a0f62"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Başakşehir FK vs Kocaelispor (Trendyol Süper Lig)",
+   "match_id": "16483707",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "4 córners totales antes del min 45 (3-1), Başakşehir FK presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Kocaelispor NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Başakşehir FK",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-16T16:12:02Z",
+   "t_captura_utc": "2026-08-16T16:12:02Z",
+   "t_evaluacion_utc": "2026-08-16T16:15:12Z",
+   "t_generacion_utc": "2026-08-16T16:15:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T16:12:18Z",
+     "latencia_envio_ms": 756.493330001831,
+     "error": null,
+     "message_id": 1204,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 16.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 15'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Başakşehir FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kocaelispor no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "3511605aa1cdd253"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Sarpsborg 08 vs Sandefjord Fotball (Eliteserien)",
+   "match_id": "15260881",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 55,
+   "condicion": "Sarpsborg 08 acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Sarpsborg 08",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6136,
+    "touches_home": 27,
+    "touches_away": 17,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "1-1",
+    "t_primera_observacion_atlas": "2026-08-16T16:14:32Z",
+    "t_inicio_estimado_condicion": "2026-08-16T15:22:00Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T16:14:32Z",
+   "t_captura_utc": "2026-08-16T16:15:41Z",
+   "t_evaluacion_utc": "2026-08-16T16:15:41Z",
+   "t_generacion_utc": "2026-08-16T16:15:41Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T16:14:33Z",
+     "latencia_envio_ms": 802.5286197662354,
+     "error": null,
+     "message_id": 1205,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sarpsborg 08 vs Sandefjord Fotball\n⏱ Minuto: 55'\n📊 Marcador: 1-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Sarpsborg 08 acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "26d068ed83ec3d91"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "CD Nacional vs Estoril Praia (Liga Portugal Betclic)",
    "match_id": "16450752",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 82,
+   "minuto": 83,
    "condicion": "CD Nacional acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -445,8 +397,8 @@
    "extra": {
     "equipo_dominante": "CD Nacional",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.72,
-    "touches_home": 18,
+    "ratio_presion_territorial": 0.7407,
+    "touches_home": 20,
     "touches_away": 7,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 81,
@@ -458,9 +410,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T15:59:25Z",
-   "t_captura_utc": "2026-08-16T16:14:35Z",
-   "t_evaluacion_utc": "2026-08-16T16:14:36Z",
-   "t_generacion_utc": "2026-08-16T16:14:36Z",
+   "t_captura_utc": "2026-08-16T16:15:43Z",
+   "t_evaluacion_utc": "2026-08-16T16:15:43Z",
+   "t_generacion_utc": "2026-08-16T16:15:43Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -474,7 +426,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CD Nacional vs Estoril Praia\n⏱ Minuto: 82'\n📊 Marcador: 2-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: CD Nacional acumula 72% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CD Nacional, min 81\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CD Nacional vs Estoril Praia\n⏱ Minuto: 83'\n📊 Marcador: 2-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: CD Nacional acumula 74% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CD Nacional, min 81\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "aced6b61ee51e909"
   }
