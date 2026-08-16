@@ -5429,5 +5429,26 @@
    "cuota_real_betano": 1.65,
    "activo": true
   }
+ ],
+ "622cad4440098fde": [
+  {
+   "alert_id": "622cad4440098fde",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Watford vs Southampton (Championship)",
+   "liga": "Championship",
+   "event_id": "16391143",
+   "minuto_alerta": 27,
+   "condicion": "Watford acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T12:59:21Z",
+   "t_captura_utc": "2026-08-16T12:59:21Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T13:01:08Z",
+   "segundos_transcurridos": 106,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.0 @ 1.87",
+   "linea_real_betano": 9.0,
+   "cuota_real_betano": 1.87,
+   "activo": true
+  }
  ]
 }
