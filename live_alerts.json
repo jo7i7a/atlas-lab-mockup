@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T13:15:28Z",
- "n_alerts": 14,
+ "generated_at_utc": "2026-08-16T13:16:30Z",
+ "n_alerts": 13,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -49,96 +49,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Watford vs Southampton\n⏱ Minuto: 21'\n📊 Marcador: 1-0\n🏆 Liga: Championship\n\n📝 Motivo: Southampton acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Southampton, min 18\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "8e74674ac3b443b4"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Aalesunds FK vs Vålerenga IF (Eliteserien)",
-   "match_id": "15260880",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Vålerenga IF domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Vålerenga IF",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 0,
-    "remates_away": 3,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T12:45:52Z",
-   "t_captura_utc": "2026-08-16T12:45:52Z",
-   "t_evaluacion_utc": "2026-08-16T12:56:17Z",
-   "t_generacion_utc": "2026-08-16T12:56:17Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T12:46:22Z",
-     "latencia_envio_ms": 938.4491443634033,
-     "error": null,
-     "message_id": 1101,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 30.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Aalesunds FK vs Vålerenga IF\n⏱ Minuto: 25'\n📊 Marcador: 2-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Vålerenga IF — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "76a45eb61b93e35a"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Feyenoord vs Go Ahead Eagles (VriendenLoterij Eredivisie)",
-   "match_id": "16316768",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Feyenoord domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Feyenoord",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 3,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T12:45:52Z",
-   "t_captura_utc": "2026-08-16T12:45:52Z",
-   "t_evaluacion_utc": "2026-08-16T12:56:18Z",
-   "t_generacion_utc": "2026-08-16T12:56:18Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T12:46:23Z",
-     "latencia_envio_ms": 936.2049102783203,
-     "error": null,
-     "message_id": 1102,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 31.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Feyenoord vs Go Ahead Eagles\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Feyenoord — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "89189c286c56a822"
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -360,7 +270,7 @@
    "match_id": "15260880",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 45,
    "condicion": "4 córners totales antes del min 45 (1-3), Vålerenga IF presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Aalesunds FK NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -374,8 +284,8 @@
    },
    "t_evento_real_utc": "2026-08-16T12:58:21Z",
    "t_captura_utc": "2026-08-16T12:58:21Z",
-   "t_evaluacion_utc": "2026-08-16T13:15:09Z",
-   "t_generacion_utc": "2026-08-16T13:15:09Z",
+   "t_evaluacion_utc": "2026-08-16T13:16:09Z",
+   "t_generacion_utc": "2026-08-16T13:16:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -389,9 +299,48 @@
    },
    "latencia_total_seg": 51.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Aalesunds FK vs Vålerenga IF\n⏱ Minuto: 44'\n📊 Marcador: 4-2\n🏆 Liga: Eliteserien\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Vålerenga IF presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Aalesunds FK no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Aalesunds FK vs Vålerenga IF\n⏱ Minuto: 45'\n📊 Marcador: 4-2\n🏆 Liga: Eliteserien\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Vålerenga IF presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Aalesunds FK no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "be1c5fa735264ddc"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Feyenoord vs Go Ahead Eagles (VriendenLoterij Eredivisie)",
+   "match_id": "16316768",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "4 córners totales antes del min 45 (3-1), Feyenoord presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Go Ahead Eagles NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Feyenoord",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-16T13:15:53Z",
+   "t_captura_utc": "2026-08-16T13:15:53Z",
+   "t_evaluacion_utc": "2026-08-16T13:16:10Z",
+   "t_generacion_utc": "2026-08-16T13:16:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T13:16:11Z",
+     "latencia_envio_ms": 812.1933937072754,
+     "error": null,
+     "message_id": 1137,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 18.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Feyenoord vs Go Ahead Eagles\n⏱ Minuto: 45'\n📊 Marcador: 2-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Feyenoord presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Go Ahead Eagles no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "5a78201186f8f7c8"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -399,7 +348,7 @@
    "match_id": "15260880",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 45,
    "condicion": "Aalesunds FK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -408,9 +357,9 @@
    "extra": {
     "equipo_dominante": "Aalesunds FK",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6176,
-    "touches_home": 21,
-    "touches_away": 13,
+    "ratio_presion_territorial": 0.6111,
+    "touches_home": 22,
+    "touches_away": 14,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -421,9 +370,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T13:08:25Z",
-   "t_captura_utc": "2026-08-16T13:15:24Z",
-   "t_evaluacion_utc": "2026-08-16T13:15:25Z",
-   "t_generacion_utc": "2026-08-16T13:15:25Z",
+   "t_captura_utc": "2026-08-16T13:16:26Z",
+   "t_evaluacion_utc": "2026-08-16T13:16:27Z",
+   "t_generacion_utc": "2026-08-16T13:16:27Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -437,7 +386,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Aalesunds FK vs Vålerenga IF\n⏱ Minuto: 44'\n📊 Marcador: 4-2\n🏆 Liga: Eliteserien\n\n📝 Motivo: Aalesunds FK acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Aalesunds FK vs Vålerenga IF\n⏱ Minuto: 45'\n📊 Marcador: 4-2\n🏆 Liga: Eliteserien\n\n📝 Motivo: Aalesunds FK acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "4448497f79477af2"
   },
@@ -447,7 +396,7 @@
    "match_id": "15272494",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 57,
+   "minuto": 58,
    "condicion": "IF Brommapojkarna acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -456,9 +405,9 @@
    "extra": {
     "equipo_dominante": "IF Brommapojkarna",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6286,
-    "touches_home": 22,
-    "touches_away": 13,
+    "ratio_presion_territorial": 0.641,
+    "touches_home": 25,
+    "touches_away": 14,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -469,9 +418,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T13:08:27Z",
-   "t_captura_utc": "2026-08-16T13:15:26Z",
-   "t_evaluacion_utc": "2026-08-16T13:15:26Z",
-   "t_generacion_utc": "2026-08-16T13:15:26Z",
+   "t_captura_utc": "2026-08-16T13:16:28Z",
+   "t_evaluacion_utc": "2026-08-16T13:16:28Z",
+   "t_generacion_utc": "2026-08-16T13:16:28Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -485,7 +434,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ IF Brommapojkarna vs Örgryte IS\n⏱ Minuto: 57'\n📊 Marcador: 1-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IF Brommapojkarna acumula 63% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ IF Brommapojkarna vs Örgryte IS\n⏱ Minuto: 58'\n📊 Marcador: 1-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IF Brommapojkarna acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "42b6d808d7a6c062"
   },
@@ -495,7 +444,7 @@
    "match_id": "16316768",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 46,
    "condicion": "Feyenoord acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -517,9 +466,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T12:50:27Z",
-   "t_captura_utc": "2026-08-16T13:15:26Z",
-   "t_evaluacion_utc": "2026-08-16T13:15:27Z",
-   "t_generacion_utc": "2026-08-16T13:15:27Z",
+   "t_captura_utc": "2026-08-16T13:16:29Z",
+   "t_evaluacion_utc": "2026-08-16T13:16:29Z",
+   "t_generacion_utc": "2026-08-16T13:16:29Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -533,7 +482,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Feyenoord vs Go Ahead Eagles\n⏱ Minuto: 45'\n📊 Marcador: 2-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Feyenoord acumula 90% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Feyenoord vs Go Ahead Eagles\n⏱ Minuto: 46'\n📊 Marcador: 2-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Feyenoord acumula 90% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "8c458dc2fa7bbae5"
   },
@@ -543,7 +492,7 @@
    "match_id": "16316786",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "FC Twente acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -565,9 +514,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T12:52:32Z",
-   "t_captura_utc": "2026-08-16T13:15:27Z",
-   "t_evaluacion_utc": "2026-08-16T13:15:27Z",
-   "t_generacion_utc": "2026-08-16T13:15:27Z",
+   "t_captura_utc": "2026-08-16T13:16:29Z",
+   "t_evaluacion_utc": "2026-08-16T13:16:29Z",
+   "t_generacion_utc": "2026-08-16T13:16:29Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -581,7 +530,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Twente vs PEC Zwolle\n⏱ Minuto: 43'\n📊 Marcador: 1-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: FC Twente acumula 89% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Twente vs PEC Zwolle\n⏱ Minuto: 44'\n📊 Marcador: 1-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: FC Twente acumula 89% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "fa980cd42c2f0451"
   },
@@ -591,7 +540,7 @@
    "match_id": "16391143",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "Watford acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -600,11 +549,11 @@
    "extra": {
     "equipo_dominante": "Watford",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.65,
-    "touches_home": 13,
+    "ratio_presion_territorial": 0.6667,
+    "touches_home": 14,
     "touches_away": 7,
     "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 24,
+    "minuto_ultima_sustitucion": 43,
     "equipo_que_realizo_sustitucion": "Watford",
     "marcador_en_el_momento": "2-0",
     "t_primera_observacion_atlas": "2026-08-16T12:59:21Z",
@@ -613,9 +562,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T12:59:21Z",
-   "t_captura_utc": "2026-08-16T13:15:27Z",
-   "t_evaluacion_utc": "2026-08-16T13:15:28Z",
-   "t_generacion_utc": "2026-08-16T13:15:28Z",
+   "t_captura_utc": "2026-08-16T13:16:30Z",
+   "t_evaluacion_utc": "2026-08-16T13:16:30Z",
+   "t_generacion_utc": "2026-08-16T13:16:30Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -629,7 +578,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Watford vs Southampton\n⏱ Minuto: 43'\n📊 Marcador: 2-0\n🏆 Liga: Championship\n\n📝 Motivo: Watford acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Watford, min 24\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Watford vs Southampton\n⏱ Minuto: 44'\n📊 Marcador: 2-0\n🏆 Liga: Championship\n\n📝 Motivo: Watford acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Watford, min 43\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "622cad4440098fde"
   }
