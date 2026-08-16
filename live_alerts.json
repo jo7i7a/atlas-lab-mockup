@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T12:01:17Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-08-16T12:17:19Z",
+ "n_alerts": 2,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -49,6 +49,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ ADO Den Haag vs FC Groningen\n⏱ Minuto: 85'\n📊 Marcador: 1-4\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: FC Groningen acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: FC Groningen, min 83\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "b0573812923556f6"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "IF Brommapojkarna vs Örgryte IS (Allsvenskan)",
+   "match_id": "15272494",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 16,
+   "condicion": "Örgryte IS domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Örgryte IS",
+    "lado_dominante": "away",
+    "trigger_disparado": "centros",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 3,
+    "remates_home": 0,
+    "remates_away": 4,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T12:16:17Z",
+   "t_captura_utc": "2026-08-16T12:16:17Z",
+   "t_evaluacion_utc": "2026-08-16T12:17:17Z",
+   "t_generacion_utc": "2026-08-16T12:17:17Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T12:17:18Z",
+     "latencia_envio_ms": 821.1064338684082,
+     "error": null,
+     "message_id": 1084,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 61.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ IF Brommapojkarna vs Örgryte IS\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: Örgryte IS — ≥3 centros al área en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "de24d2bdb6c320c0"
   }
  ]
 }
