@@ -5328,5 +5328,26 @@
    "cuota_real_betano": 1.7,
    "activo": true
   }
+ ],
+ "6c42689ce07d3853": [
+  {
+   "alert_id": "6c42689ce07d3853",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Aalesunds FK vs Vålerenga IF (Eliteserien)",
+   "liga": "Eliteserien",
+   "event_id": "15260880",
+   "minuto_alerta": 24,
+   "condicion": "Aalesunds FK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T12:54:30Z",
+   "t_captura_utc": "2026-08-16T12:54:30Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T12:55:20Z",
+   "segundos_transcurridos": 49,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.5 @ 1.80",
+   "linea_real_betano": 10.5,
+   "cuota_real_betano": 1.8,
+   "activo": true
+  }
  ]
 }
