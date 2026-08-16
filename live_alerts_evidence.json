@@ -5718,5 +5718,47 @@
    "cuota_real_betano": 1.65,
    "activo": true
   }
+ ],
+ "6f88c90517303390": [
+  {
+   "alert_id": "6f88c90517303390",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Fredrikstad FK vs Kristiansund BK (Eliteserien)",
+   "liga": "Eliteserien",
+   "event_id": "15260870",
+   "minuto_alerta": 76,
+   "condicion": "Kristiansund BK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T18:49:33Z",
+   "t_captura_utc": "2026-08-16T18:49:33Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T18:50:51Z",
+   "segundos_transcurridos": 77,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "11.0 @ 2.07",
+   "linea_real_betano": 11.0,
+   "cuota_real_betano": 2.07,
+   "activo": true
+  }
+ ],
+ "3cc746c969b21e16": [
+  {
+   "alert_id": "3cc746c969b21e16",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Amed Sportif Faaliyetler vs Erzurumspor FK (Trendyol Süper Lig)",
+   "liga": "Trendyol Süper Lig",
+   "event_id": "16483634",
+   "minuto_alerta": 20,
+   "condicion": "Erzurumspor FK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T18:50:38Z",
+   "t_captura_utc": "2026-08-16T18:50:38Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T18:51:31Z",
+   "segundos_transcurridos": 51,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "8.5 @ 1.75",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 1.75,
+   "activo": true
+  }
  ]
 }
