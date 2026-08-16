@@ -261,7 +261,15 @@ def run() -> dict:
                 continue
 
             fixture = match_result["fixture"]
-            bk_markets = ((fixture.get("bookmakerOdds") or {}).get(BOOKMAKER_API_SLUG) or {}).get("markets") or {}
+            bk_block = (fixture.get("bookmakerOdds") or {}).get(BOOKMAKER_API_SLUG) or {}
+            bk_markets = bk_block.get("markets") or {}
+            # 2026-08-16, auditoria EV extremo en Picks ATLAS: bookmakerIsActive
+            # viene UNA vez por fixture/bookmaker (no por mercado/seleccion) --
+            # se propaga igual a cada registro para que tipster/picks.py y
+            # tipster/rankings.py puedan decidir sin una segunda lectura.
+            # Ausente en el payload => None, nunca False (ver Estados en
+            # tipster/picks.py::_selection_is_valid).
+            bookmaker_is_active = bk_block.get("bookmakerIsActive")
 
             resultados_mercado: dict[str, dict] = {}
             registros_evidencia = []
@@ -293,6 +301,13 @@ def run() -> dict:
                         "matching_status": match_result["estado"],
                         "resultado": RESULTADO_RESUELTO,
                         "origen": ORIGEN_EVIDENCIA,
+                        # 2026-08-16, auditoria EV extremo: campos reales del
+                        # proveedor, antes descartados -- ver
+                        # tipster/picks.py y tipster/rankings.py para como se
+                        # interpretan (ausente=None nunca se trata como False).
+                        "active": datos.get("active"),
+                        "market_active": datos.get("market_active"),
+                        "bookmaker_is_active": bookmaker_is_active,
                     })
 
             _registrar("1X2_FT", "Full Time Result", r_1x2)
@@ -307,8 +322,9 @@ def run() -> dict:
                                     "mercados_resueltos": list(resultados_mercado.keys()),
                                     "ultima_actualizacion_utc": _now_utc_iso()}
                 lean_out[mid] = {
-                    code: {"bk": BOOKMAKER_PRIMARIO_ODDSPAPI,
-                           "sel": {sel: {"p": d.get("price"), "t": d.get("changed_at"), "l": d.get("line")}
+                    code: {"bk": BOOKMAKER_PRIMARIO_ODDSPAPI, "bookmakerIsActive": bookmaker_is_active,
+                           "sel": {sel: {"p": d.get("price"), "t": d.get("changed_at"), "l": d.get("line"),
+                                         "active": d.get("active"), "marketActive": d.get("market_active")}
                                    for sel, d in sels.items()}}
                     for code, sels in resultados_mercado.items()
                 }

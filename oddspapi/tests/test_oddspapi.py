@@ -321,6 +321,68 @@ def test_extract_1x2_mercado_ausente():
     assert res["resultado"] == line_extraction.RESULTADO_MARKET_UNAVAILABLE
 
 
+# ---------------------------------------------------------------------------
+# 6b) Auditoria EV extremo 2026-08-16: active/marketActive/bookmakerIsActive
+# se capturan y se propagan, sin romper el esquema existente (campos
+# ausentes en los fixtures sinteticos de arriba deben seguir devolviendo
+# active=None, nunca False -- compatibilidad con datos antiguos).
+# ---------------------------------------------------------------------------
+
+def test_extract_1x2_propaga_active_y_market_active():
+    markets = _fixture_markets_sinteticos()
+    markets["101"]["marketActive"] = True
+    markets["101"]["outcomes"]["101"]["players"]["0"]["active"] = True
+    markets["101"]["outcomes"]["103"]["players"]["0"]["active"] = False  # away inactivo
+    res = line_extraction.extract_1x2(markets)
+    assert res["selecciones"]["home"]["active"] is True
+    assert res["selecciones"]["home"]["market_active"] is True
+    assert res["selecciones"]["away"]["active"] is False
+    assert res["selecciones"]["away"]["price"] == 4.20  # el precio se sigue extrayendo -- decidir "valido" es de tipster/
+
+
+def test_extract_btts_propaga_active():
+    markets = _fixture_markets_sinteticos()
+    markets["104"]["outcomes"]["104"]["players"]["0"]["active"] = False
+    res = line_extraction.extract_btts(markets)
+    assert res["selecciones"]["yes"]["active"] is False
+    assert res["selecciones"]["no"]["active"] is None  # ausente en el synthetic -- nunca False
+
+
+def test_extract_over_under_25_propaga_market_active_false():
+    markets = _fixture_markets_sinteticos()
+    markets["1010"]["marketActive"] = False
+    res = line_extraction.extract_over_under_25(markets)
+    assert res["selecciones"]["over"]["market_active"] is False
+    assert res["selecciones"]["under"]["market_active"] is False
+
+
+def test_campos_ausentes_nunca_se_tratan_como_false():
+    # Fixtures sinteticos originales (sin active/marketActive) -- mismo
+    # payload que se usaba antes de esta auditoria.
+    res = line_extraction.extract_1x2(_fixture_markets_sinteticos())
+    assert res["selecciones"]["home"]["active"] is None
+    assert res["selecciones"]["home"]["market_active"] is None
+    res_ou = line_extraction.extract_over_under_25(_fixture_markets_sinteticos())
+    assert res_ou["selecciones"]["over"]["active"] is None
+    res_btts = line_extraction.extract_btts(_fixture_markets_sinteticos())
+    assert res_btts["selecciones"]["yes"]["active"] is None
+
+
+def test_asian_handicap_propaga_active_por_lado(tmp_path, monkeypatch):
+    monkeypatch.setattr(line_extraction, "MARKETS_CATALOG_PATH", tmp_path / "markets_test.json")
+    line_extraction._save_catalog([
+        {"marketId": 1070, "marketName": "Asian Handicap", "marketType": "spreads", "handicap": -0.25, "period": "fulltime", "sportId": 10},
+        {"marketId": 1074, "marketName": "Asian Handicap", "marketType": "spreads", "handicap": 0.25, "period": "fulltime", "sportId": 10},
+    ])
+    fixture_markets = {
+        "1070": {"marketActive": True, "outcomes": {"1": {"players": {"0": {"bookmakerOutcomeId": "-0.25/home", "price": 1.90, "changedAt": "t", "active": True}}}}},
+        "1074": {"marketActive": False, "outcomes": {"1": {"players": {"0": {"bookmakerOutcomeId": "0.25/away", "price": 1.95, "changedAt": "t", "active": True}}}}},
+    }
+    res = line_extraction.extract_asian_handicap(fixture_markets, home_line=-0.25, away_line=0.25)
+    assert res["selecciones"]["home"]["active"] is True and res["selecciones"]["home"]["market_active"] is True
+    assert res["selecciones"]["away"]["active"] is True and res["selecciones"]["away"]["market_active"] is False
+
+
 def test_asian_handicap_linea_exacta_disponible(tmp_path, monkeypatch):
     monkeypatch.setattr(line_extraction, "MARKETS_CATALOG_PATH", tmp_path / "markets_test.json")
     line_extraction._save_catalog([

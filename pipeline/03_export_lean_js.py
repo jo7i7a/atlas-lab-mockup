@@ -13,6 +13,7 @@ inyecta en index.html.
 import json
 
 WORK = r"C:\SoccerAnalyticsExtractor\atlas_lab_mockup\pipeline\_work"
+ROOT = r"C:\SoccerAnalyticsExtractor\atlas_lab_mockup"
 
 with open(WORK + r"\pocket_engine_results.json", encoding="utf-8") as f:
     pocket = json.load(f)
@@ -28,6 +29,36 @@ try:
         oddspapi = json.load(f)
 except FileNotFoundError:
     oddspapi = {}
+# 2026-08-16, Tipster ATLAS (Rankings, Objetivo 1): rankings_daily/weekly_
+# estado.json son opcionales por el mismo motivo -- si 11_build_rankings.py
+# fallo o no corrio todavia, esto NUNCA debe abortar el resto del pipeline.
+try:
+    with open(ROOT + r"\tipster_rankings_daily_estado.json", encoding="utf-8") as f:
+        rankings_daily = json.load(f)
+except FileNotFoundError:
+    rankings_daily = None
+try:
+    with open(ROOT + r"\tipster_rankings_weekly_estado.json", encoding="utf-8") as f:
+        rankings_weekly = json.load(f)
+except FileNotFoundError:
+    rankings_weekly = None
+# 2026-08-16, Tipster ATLAS (Picks ATLAS, Objetivo 3/5/6): picks_estado.json
+# es opcional por el mismo motivo -- si 12_build_picks_atlas.py no corrio
+# todavia, esto NUNCA debe abortar el resto del pipeline. La rentabilidad
+# historica se recalcula aqui mismo sobre tipster_picks_history.jsonl (ya
+# liquidado por 13_settle_tipster.py si corrio antes que este paso).
+try:
+    with open(ROOT + r"\tipster_picks_estado.json", encoding="utf-8") as f:
+        picks_estado = json.load(f)
+except FileNotFoundError:
+    picks_estado = None
+try:
+    import sys as _sys
+    _sys.path.insert(0, r"C:\SoccerAnalyticsExtractor")
+    from atlas_lab_mockup.tipster import settlement as _settlement
+    picks_performance = _settlement.performance_summary()
+except Exception:
+    picks_performance = None
 
 GOV_SHORT = {"CERTIFICADO": "CERT", "PROMOVIDO": "PROM", "BASELINE": "BASE", "EXPERIMENTAL": "EXP", "NO_DISPONIBLE": "ND"}
 
@@ -118,6 +149,20 @@ out.append("   sel={seleccion: {p:cuota decimal, t:timestamp del proveedor, l:li
 out.append("   Vacio o con huecos por partido/mercado es esperado y normal -- ver")
 out.append("   oddspapi_estado.json para el motivo exacto de cada hueco. */")
 out.append("const ODDSPAPI_DATA = " + json.dumps(oddspapi, ensure_ascii=False) + ";")
+out.append("")
+out.append("/* Rankings Tipster ATLAS (2026-08-16, ATLAS LAB Edificio 5 exclusivamente) --")
+out.append("   4 mercados (OVER25/UNDER25/BTTS/CORNERS_OVER105) x (daily/weekly), TOP 10")
+out.append("   real sin relleno artificial. daily se regenera a diario; weekly permanece")
+out.append("   congelado hasta que termine el ultimo partido de su ventana vigente -- ver")
+out.append("   atlas_lab_mockup/tipster/rankings.py. null si el paso 11 no corrio todavia. */")
+out.append("const RANKINGS_DATA = " + json.dumps({"daily": rankings_daily, "weekly": rankings_weekly}, ensure_ascii=False) + ";")
+out.append("")
+out.append("/* Picks ATLAS (2026-08-16, ATLAS LAB Edificio 5 exclusivamente) -- picks")
+out.append("   activos (candidato con Value que paso el filtro de gobernanza, ver")
+out.append("   atlas_lab_mockup/tipster/picks.py) + rentabilidad historica agregada sobre")
+out.append("   TODO el registro inmutable (tipster_picks_history.jsonl). null si el paso")
+out.append("   12 no corrio todavia. */")
+out.append("const PICKS_ATLAS_DATA = " + json.dumps({"estado": picks_estado, "performance": picks_performance}, ensure_ascii=False) + ";")
 
 frag = "\n".join(out)
 with open(WORK + r"\match_data_fragment.js", "w", encoding="utf-8") as f:

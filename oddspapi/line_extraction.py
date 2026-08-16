@@ -117,10 +117,19 @@ def _outcome_price(fixture_markets: dict, market_id: int, outcome_suffix: str | 
     """Busca el marketId dado dentro de markets{} de un bookmaker de un
     fixture. Si outcome_suffix se indica (ej. 'home'), retorna la primera
     outcome cuyo bookmakerOutcomeId TERMINA en '/<suffix>'; si no, retorna
-    (price, outcome_name) segun el orden real de outcomes del payload."""
+    (price, outcome_name) segun el orden real de outcomes del payload.
+
+    2026-08-16, auditoria EV extremo en Picks ATLAS: ademas de price/
+    changed_at, se propaga `active` (por outcome) y `market_active`
+    (block["marketActive"]) -- campos reales que el payload de OddsPapi YA
+    trae y que antes se descartaban. Un precio con active=False sigue
+    devolviendose aqui (esta funcion solo EXTRAE, nunca decide "valido o
+    no" -- esa decision es de tipster/picks.py y tipster/rankings.py, ver
+    su docstring) -- campo ausente en el payload => None, nunca False."""
     block = fixture_markets.get(str(market_id)) or fixture_markets.get(market_id)
     if not block:
         return None
+    market_active = block.get("marketActive")
     outcomes = block.get("outcomes") or {}
     for outcome_id, outcome_data in outcomes.items():
         players = outcome_data.get("players") or {}
@@ -133,16 +142,17 @@ def _outcome_price(fixture_markets: dict, market_id: int, outcome_suffix: str | 
         return {
             "outcome_id": outcome_id, "bookmaker_outcome_id": bmk_outcome_id,
             "price": p0.get("price"), "changed_at": p0.get("changedAt"),
+            "active": p0.get("active"), "market_active": market_active,
         }
     return None
 
 
 def extract_1x2(bookmaker_markets: dict) -> dict:
     """1X2 -- marketId fijo, 3 selecciones (home/draw/away, outcomeId 101/102/103)."""
-    home = _outcome_price(bookmaker_markets, MARKET_ID_1X2, None)
     block = bookmaker_markets.get(str(MARKET_ID_1X2))
     if not block:
         return {"resultado": RESULTADO_MARKET_UNAVAILABLE, "selecciones": {}}
+    market_active = block.get("marketActive")
     selecciones = {}
     outcomes = block.get("outcomes") or {}
     for outcome_id, outcome_data in outcomes.items():
@@ -151,7 +161,8 @@ def extract_1x2(bookmaker_markets: dict) -> dict:
             continue
         bmk = str(p0.get("bookmakerOutcomeId") or "")
         if bmk in ("home", "draw", "away"):
-            selecciones[bmk] = {"price": p0.get("price"), "changed_at": p0.get("changedAt")}
+            selecciones[bmk] = {"price": p0.get("price"), "changed_at": p0.get("changedAt"),
+                                 "active": p0.get("active"), "market_active": market_active}
     if not selecciones:
         return {"resultado": RESULTADO_MARKET_UNAVAILABLE, "selecciones": {}}
     return {"resultado": RESULTADO_RESUELTO, "selecciones": selecciones}
@@ -162,6 +173,7 @@ def extract_btts(bookmaker_markets: dict) -> dict:
     block = bookmaker_markets.get(str(MARKET_ID_BTTS))
     if not block:
         return {"resultado": RESULTADO_MARKET_UNAVAILABLE, "selecciones": {}}
+    market_active = block.get("marketActive")
     selecciones = {}
     outcomes = block.get("outcomes") or {}
     ids = sorted(outcomes.keys(), key=lambda k: int(k))
@@ -169,7 +181,8 @@ def extract_btts(bookmaker_markets: dict) -> dict:
     for label, outcome_id in zip(labels, ids):
         p0 = (outcomes[outcome_id].get("players") or {}).get("0")
         if p0:
-            selecciones[label] = {"price": p0.get("price"), "changed_at": p0.get("changedAt")}
+            selecciones[label] = {"price": p0.get("price"), "changed_at": p0.get("changedAt"),
+                                   "active": p0.get("active"), "market_active": market_active}
     if not selecciones:
         return {"resultado": RESULTADO_MARKET_UNAVAILABLE, "selecciones": {}}
     return {"resultado": RESULTADO_RESUELTO, "selecciones": selecciones}
@@ -177,10 +190,10 @@ def extract_btts(bookmaker_markets: dict) -> dict:
 
 def extract_over_under_25(bookmaker_markets: dict) -> dict:
     """Over/Under 2.5 goles -- marketId fijo (linea siempre 2.5 en ATLAS)."""
-    over = _outcome_price(bookmaker_markets, MARKET_ID_OU25_GOALS_FT, None)
     block = bookmaker_markets.get(str(MARKET_ID_OU25_GOALS_FT))
     if not block:
         return {"resultado": RESULTADO_MARKET_UNAVAILABLE, "selecciones": {}}
+    market_active = block.get("marketActive")
     selecciones = {}
     outcomes = block.get("outcomes") or {}
     for outcome_data in outcomes.values():
@@ -189,9 +202,11 @@ def extract_over_under_25(bookmaker_markets: dict) -> dict:
             continue
         name = str(p0.get("bookmakerOutcomeId") or "").lower()
         if "over" in name:
-            selecciones["over"] = {"price": p0.get("price"), "changed_at": p0.get("changedAt")}
+            selecciones["over"] = {"price": p0.get("price"), "changed_at": p0.get("changedAt"),
+                                    "active": p0.get("active"), "market_active": market_active}
         elif "under" in name:
-            selecciones["under"] = {"price": p0.get("price"), "changed_at": p0.get("changedAt")}
+            selecciones["under"] = {"price": p0.get("price"), "changed_at": p0.get("changedAt"),
+                                     "active": p0.get("active"), "market_active": market_active}
     if not selecciones:
         return {"resultado": RESULTADO_MARKET_UNAVAILABLE, "selecciones": {}}
     return {"resultado": RESULTADO_RESUELTO, "selecciones": selecciones}
@@ -229,7 +244,8 @@ def extract_asian_handicap(bookmaker_markets: dict, home_line: float, away_line:
             resultado["detalle"][lado] = {"resultado": RESULTADO_LINE_UNAVAILABLE,
                                            "motivo": f"marketId={market_id} (linea {line}) no publicado para este fixture/bookmaker"}
             continue
-        resultado["selecciones"][lado] = {"price": found["price"], "changed_at": found["changed_at"], "line": line}
+        resultado["selecciones"][lado] = {"price": found["price"], "changed_at": found["changed_at"], "line": line,
+                                           "active": found["active"], "market_active": found["market_active"]}
         resultado["detalle"][lado] = {"resultado": RESULTADO_RESUELTO}
         tuvo_alguna = True
 
