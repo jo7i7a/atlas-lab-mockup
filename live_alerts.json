@@ -1,50 +1,54 @@
 {
- "generated_at_utc": "2026-08-16T20:48:18Z",
+ "generated_at_utc": "2026-08-16T20:55:20Z",
  "n_alerts": 1,
  "alerts": [
   {
-   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Vasco da Gama vs Santos (Brasileirão Betano)",
-   "match_id": "15235421",
-   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Famalicão vs CS Marítimo (Liga Portugal Betclic)",
+   "match_id": "16450751",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 57,
-   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
+   "minuto": 66,
+   "condicion": "Famalicão acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
    "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "xg_combinado": 1.5,
-    "tiros_combinados": 19,
-    "sot_combinado": 4,
-    "presion_reciente_10min": 3,
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-16T20:19:35Z",
-    "t_inicio_estimado_condicion": "2026-08-16T20:18:45Z",
-    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
+    "equipo_dominante": "Famalicão",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.619,
+    "touches_home": 13,
+    "touches_away": 8,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 50,
+    "equipo_que_realizo_sustitucion": "Famalicão",
+    "marcador_en_el_momento": "1-1",
+    "t_primera_observacion_atlas": "2026-08-16T20:55:18Z",
+    "t_inicio_estimado_condicion": "2026-08-16T20:54:53Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
-   "t_evento_real_utc": "2026-08-16T20:19:35Z",
-   "t_captura_utc": "2026-08-16T20:19:35Z",
-   "t_evaluacion_utc": "2026-08-16T20:19:36Z",
-   "t_generacion_utc": "2026-08-16T20:19:36Z",
+   "t_evento_real_utc": "2026-08-16T20:55:18Z",
+   "t_captura_utc": "2026-08-16T20:55:18Z",
+   "t_evaluacion_utc": "2026-08-16T20:55:18Z",
+   "t_generacion_utc": "2026-08-16T20:55:18Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
      "estado": "OK",
-     "t_envio_utc": "2026-08-16T20:19:37Z",
-     "latencia_envio_ms": 1663.1722450256348,
+     "t_envio_utc": "2026-08-16T20:55:19Z",
+     "latencia_envio_ms": 864.9582862854004,
      "error": null,
-     "message_id": 1297,
-     "chat_id": -5415726375
+     "message_id": 1299,
+     "chat_id": -5314130598
     }
    },
-   "latencia_total_seg": 2.0,
+   "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Vasco da Gama vs Santos\n⏱ Minuto: 57'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: presión combinada sostenida — xG 1.50, 19 tiros totales (4 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Famalicão vs CS Marítimo\n⏱ Minuto: 66'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Famalicão acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Famalicão, min 50\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
-   "alert_id": "f70eaea66189a274"
+   "alert_id": "392cb8a4ce508a78"
   }
  ]
 }
