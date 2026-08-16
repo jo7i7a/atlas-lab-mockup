@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T01:36:29Z",
- "n_alerts": 10,
+ "generated_at_utc": "2026-08-16T01:37:36Z",
+ "n_alerts": 9,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -45,44 +45,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Atlanta United vs New York Red Bulls\n⏱ Minuto: 70'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📝 Motivo: presión combinada sostenida — xG 3.81, 17 tiros totales (4 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "64a1eb0b3e1723b0"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Everton de Viña del Mar vs Audax Italiano (Liga de Primera)",
-   "match_id": "15353091",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 0,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-08-16T01:06:35Z",
-   "t_captura_utc": "2026-08-16T01:06:35Z",
-   "t_evaluacion_utc": "2026-08-16T01:14:47Z",
-   "t_generacion_utc": "2026-08-16T01:14:47Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T01:08:34Z",
-     "latencia_envio_ms": 859.0407371520996,
-     "error": null,
-     "message_id": 1022,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 119.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Everton de Viña del Mar vs Audax Italiano\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "eaf8d3e7cbcb11f3"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -216,83 +178,6 @@
    "alert_id": "cb7bca93df6b03b1"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "CF Monterrey vs FC Juárez (Liga MX, Apertura)",
-   "match_id": "16317953",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "4 córners totales antes del min 30 (4-0), CF Monterrey presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿FC Juárez NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "CF Monterrey"
-   },
-   "t_evento_real_utc": "2026-08-16T01:25:26Z",
-   "t_captura_utc": "2026-08-16T01:25:26Z",
-   "t_evaluacion_utc": "2026-08-16T01:36:09Z",
-   "t_generacion_utc": "2026-08-16T01:36:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T01:26:10Z",
-     "latencia_envio_ms": 811.7492198944092,
-     "error": null,
-     "message_id": 1030,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 44.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 25'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: CF Monterrey presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Juárez no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "48841f7e5f396355"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "CF Monterrey vs FC Juárez (Liga MX, Apertura)",
-   "match_id": "16317953",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "4 córners totales antes del min 45 (4-0), CF Monterrey presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿FC Juárez NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "CF Monterrey",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-16T01:25:26Z",
-   "t_captura_utc": "2026-08-16T01:25:26Z",
-   "t_evaluacion_utc": "2026-08-16T01:36:11Z",
-   "t_generacion_utc": "2026-08-16T01:36:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T01:26:14Z",
-     "latencia_envio_ms": 793.9693927764893,
-     "error": null,
-     "message_id": 1031,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 48.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 25'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: CF Monterrey presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Juárez no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "49f2a617a9841892"
-  },
-  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "CF Monterrey vs FC Juárez (Liga MX, Apertura)",
    "match_id": "16317953",
@@ -338,12 +223,89 @@
    "alert_id": "b78c9fd2f95ba6fc"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "CF Monterrey vs FC Juárez (Liga MX, Apertura)",
+   "match_id": "16317953",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 26,
+   "condicion": "4 córners totales antes del min 30 (4-0), CF Monterrey presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿FC Juárez NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "CF Monterrey"
+   },
+   "t_evento_real_utc": "2026-08-16T01:25:26Z",
+   "t_captura_utc": "2026-08-16T01:25:26Z",
+   "t_evaluacion_utc": "2026-08-16T01:37:09Z",
+   "t_generacion_utc": "2026-08-16T01:37:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T01:26:10Z",
+     "latencia_envio_ms": 811.7492198944092,
+     "error": null,
+     "message_id": 1030,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 44.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 26'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: CF Monterrey presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Juárez no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "48841f7e5f396355"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "CF Monterrey vs FC Juárez (Liga MX, Apertura)",
+   "match_id": "16317953",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 26,
+   "condicion": "4 córners totales antes del min 45 (4-0), CF Monterrey presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿FC Juárez NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "CF Monterrey",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-16T01:25:26Z",
+   "t_captura_utc": "2026-08-16T01:25:26Z",
+   "t_evaluacion_utc": "2026-08-16T01:37:10Z",
+   "t_generacion_utc": "2026-08-16T01:37:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T01:26:14Z",
+     "latencia_envio_ms": 793.9693927764893,
+     "error": null,
+     "message_id": 1031,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 48.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 26'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: CF Monterrey presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Juárez no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "49f2a617a9841892"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "CF Monterrey vs FC Juárez (Liga MX, Apertura)",
    "match_id": "16317953",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 25,
+   "minuto": 27,
    "condicion": "CF Monterrey acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -365,9 +327,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T01:30:30Z",
-   "t_captura_utc": "2026-08-16T01:36:28Z",
-   "t_evaluacion_utc": "2026-08-16T01:36:28Z",
-   "t_generacion_utc": "2026-08-16T01:36:28Z",
+   "t_captura_utc": "2026-08-16T01:37:35Z",
+   "t_evaluacion_utc": "2026-08-16T01:37:35Z",
+   "t_generacion_utc": "2026-08-16T01:37:35Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -381,7 +343,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 25'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CF Monterrey acumula 88% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 27'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CF Monterrey acumula 88% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "f23a44727a83bbf0"
   },
@@ -391,7 +353,7 @@
    "match_id": "16671563",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 64,
+   "minuto": 65,
    "condicion": "Boca Juniors acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -413,9 +375,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T01:36:28Z",
-   "t_captura_utc": "2026-08-16T01:36:28Z",
-   "t_evaluacion_utc": "2026-08-16T01:36:28Z",
-   "t_generacion_utc": "2026-08-16T01:36:28Z",
+   "t_captura_utc": "2026-08-16T01:37:35Z",
+   "t_evaluacion_utc": "2026-08-16T01:37:36Z",
+   "t_generacion_utc": "2026-08-16T01:37:36Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -429,7 +391,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Atlético Platense vs Boca Juniors\n⏱ Minuto: 64'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Boca Juniors acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Boca Juniors, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Atlético Platense vs Boca Juniors\n⏱ Minuto: 65'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Boca Juniors acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Boca Juniors, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "eb2a1256e77e6304"
   }
