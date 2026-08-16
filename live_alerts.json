@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T22:21:26Z",
- "n_alerts": 15,
+ "generated_at_utc": "2026-08-16T22:22:21Z",
+ "n_alerts": 13,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -49,54 +49,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Colo-Colo vs O'Higgins\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: O'Higgins acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "6efec170893e62a3"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Clube De Regatas Brasil vs Grêmio Novorizontino (Brasileirão Série B)",
-   "match_id": "15526226",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Clube De Regatas Brasil acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Clube De Regatas Brasil",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 4,
-    "touches_away": 2,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 12,
-    "equipo_que_realizo_sustitucion": "Clube De Regatas Brasil",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-16T21:51:37Z",
-    "t_inicio_estimado_condicion": "2026-08-16T21:51:48Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T21:51:37Z",
-   "t_captura_utc": "2026-08-16T21:56:42Z",
-   "t_evaluacion_utc": "2026-08-16T21:56:42Z",
-   "t_generacion_utc": "2026-08-16T21:56:42Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T21:51:38Z",
-     "latencia_envio_ms": 758.3451271057129,
-     "error": null,
-     "message_id": 1314,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Clube De Regatas Brasil vs Grêmio Novorizontino\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Clube De Regatas Brasil acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Clube De Regatas Brasil, min 12\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "0d51e6451203f5f9"
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -547,54 +499,6 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ América Mineiro vs Athletic Club\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: América Mineiro presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Athletic Club no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "a244077692569a35"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Mirassol vs Flamengo (Brasileirão Betano)",
-   "match_id": "15235426",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 49,
-   "condicion": "Flamengo acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Flamengo",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.8077,
-    "touches_home": 5,
-    "touches_away": 21,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-16T21:51:35Z",
-    "t_inicio_estimado_condicion": "2026-08-16T21:51:27Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T21:51:35Z",
-   "t_captura_utc": "2026-08-16T22:19:33Z",
-   "t_evaluacion_utc": "2026-08-16T22:19:34Z",
-   "t_generacion_utc": "2026-08-16T22:19:34Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T21:51:36Z",
-     "latencia_envio_ms": 855.1766872406006,
-     "error": null,
-     "message_id": 1313,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Mirassol vs Flamengo\n⏱ Minuto: 49'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Flamengo acumula 81% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "822f83ecef7f52c3"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
