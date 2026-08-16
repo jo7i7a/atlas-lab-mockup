@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-16T23:21:35Z",
+ "generated_at_utc": "2026-08-16T23:22:27Z",
  "n_alerts": 11,
  "alerts": [
   {
@@ -232,44 +232,6 @@
    "alert_id": "795708d7e89ccdab"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "Club América vs Atlético San Luis (Liga MX, Apertura)",
-   "match_id": "16317884",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 19,
-   "condicion": "4 córners totales antes del min 30 (3-1), Club América presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Atlético San Luis NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Club América"
-   },
-   "t_evento_real_utc": "2026-08-16T23:19:48Z",
-   "t_captura_utc": "2026-08-16T23:19:48Z",
-   "t_evaluacion_utc": "2026-08-16T23:21:10Z",
-   "t_generacion_utc": "2026-08-16T23:21:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T23:20:11Z",
-     "latencia_envio_ms": 786.0887050628662,
-     "error": null,
-     "message_id": 1344,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 23.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Club América vs Atlético San Luis\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Club América presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlético San Luis no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "53fea824ca257078"
-  },
-  {
    "strategy_id": "L1-SHADOW",
    "match_label": "New York City FC vs Philadelphia Union (MLS)",
    "match_id": "15171647",
@@ -309,12 +271,50 @@
    "alert_id": "15346e82efceda72"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "Club América vs Atlético San Luis (Liga MX, Apertura)",
+   "match_id": "16317884",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 20,
+   "condicion": "4 córners totales antes del min 30 (3-1), Club América presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Atlético San Luis NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Club América"
+   },
+   "t_evento_real_utc": "2026-08-16T23:19:48Z",
+   "t_captura_utc": "2026-08-16T23:19:48Z",
+   "t_evaluacion_utc": "2026-08-16T23:22:09Z",
+   "t_generacion_utc": "2026-08-16T23:22:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T23:20:11Z",
+     "latencia_envio_ms": 786.0887050628662,
+     "error": null,
+     "message_id": 1344,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 23.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Club América vs Atlético San Luis\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Club América presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlético San Luis no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "53fea824ca257078"
+  },
+  {
    "strategy_id": "L1-SHADOW",
    "match_label": "Club América vs Atlético San Luis (Liga MX, Apertura)",
    "match_id": "16317884",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 19,
+   "minuto": 20,
    "condicion": "4 córners totales antes del min 45 (3-1), Club América presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Atlético San Luis NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -328,8 +328,8 @@
    },
    "t_evento_real_utc": "2026-08-16T23:19:48Z",
    "t_captura_utc": "2026-08-16T23:19:48Z",
-   "t_evaluacion_utc": "2026-08-16T23:21:12Z",
-   "t_generacion_utc": "2026-08-16T23:21:12Z",
+   "t_evaluacion_utc": "2026-08-16T23:22:11Z",
+   "t_generacion_utc": "2026-08-16T23:22:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -343,7 +343,7 @@
    },
    "latencia_total_seg": 25.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Club América vs Atlético San Luis\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Club América presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlético San Luis no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Club América vs Atlético San Luis\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Club América presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlético San Luis no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "bff0b81fcd97041b"
   },
@@ -353,7 +353,7 @@
    "match_id": "15171649",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 50,
+   "minuto": 51,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -366,8 +366,8 @@
    },
    "t_evento_real_utc": "2026-08-16T23:15:58Z",
    "t_captura_utc": "2026-08-16T23:15:58Z",
-   "t_evaluacion_utc": "2026-08-16T23:21:25Z",
-   "t_generacion_utc": "2026-08-16T23:21:25Z",
+   "t_evaluacion_utc": "2026-08-16T23:22:21Z",
+   "t_generacion_utc": "2026-08-16T23:22:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -381,7 +381,7 @@
    },
    "latencia_total_seg": 82.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Chicago Fire vs Portland Timbers\n⏱ Minuto: 50'\n📊 Marcador: 2-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Chicago Fire vs Portland Timbers\n⏱ Minuto: 51'\n📊 Marcador: 2-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "bb989fc0edd69e6d"
   },
@@ -391,7 +391,7 @@
    "match_id": "16317884",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 19,
+   "minuto": 20,
    "condicion": "Club América domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -411,8 +411,8 @@
    },
    "t_evento_real_utc": "2026-08-16T23:18:43Z",
    "t_captura_utc": "2026-08-16T23:18:43Z",
-   "t_evaluacion_utc": "2026-08-16T23:21:29Z",
-   "t_generacion_utc": "2026-08-16T23:21:29Z",
+   "t_evaluacion_utc": "2026-08-16T23:22:24Z",
+   "t_generacion_utc": "2026-08-16T23:22:24Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -426,7 +426,7 @@
    },
    "latencia_total_seg": 41.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Club América vs Atlético San Luis\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Club América — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Club América vs Atlético San Luis\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Club América — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "d0580e506cc294a3"
   },
@@ -453,14 +453,14 @@
     "equipo_que_realizo_sustitucion": "Club América",
     "marcador_en_el_momento": "0-0",
     "t_primera_observacion_atlas": "2026-08-16T23:21:34Z",
-    "t_inicio_estimado_condicion": null,
+    "t_inicio_estimado_condicion": "2026-08-16T23:22:22Z",
     "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T23:21:34Z",
-   "t_captura_utc": "2026-08-16T23:21:34Z",
-   "t_evaluacion_utc": "2026-08-16T23:21:35Z",
-   "t_generacion_utc": "2026-08-16T23:21:35Z",
+   "t_captura_utc": "2026-08-16T23:22:26Z",
+   "t_evaluacion_utc": "2026-08-16T23:22:27Z",
+   "t_generacion_utc": "2026-08-16T23:22:27Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
