@@ -1,46 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T20:14:35Z",
- "n_alerts": 6,
+ "generated_at_utc": "2026-08-16T20:15:28Z",
+ "n_alerts": 5,
  "alerts": [
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Atlético Mineiro vs Grêmio (Brasileirão Betano)",
-   "match_id": "15235431",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (3-1), Atlético Mineiro presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Grêmio NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Atlético Mineiro",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-16T19:45:01Z",
-   "t_captura_utc": "2026-08-16T19:45:01Z",
-   "t_evaluacion_utc": "2026-08-16T19:46:10Z",
-   "t_generacion_utc": "2026-08-16T19:46:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T19:45:14Z",
-     "latencia_envio_ms": 866.5359020233154,
-     "error": null,
-     "message_id": 1291,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 13.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Atlético Mineiro vs Grêmio\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Atlético Mineiro presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Grêmio no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "ee5b1d7045576ea7"
-  },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Famalicão vs CS Marítimo (Liga Portugal Betclic)",
@@ -178,7 +139,7 @@
    "match_id": "16450751",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "4 córners totales antes del min 45 (3-1), Famalicão presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿CS Marítimo NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -192,8 +153,8 @@
    },
    "t_evento_real_utc": "2026-08-16T20:07:12Z",
    "t_captura_utc": "2026-08-16T20:07:12Z",
-   "t_evaluacion_utc": "2026-08-16T20:14:09Z",
-   "t_generacion_utc": "2026-08-16T20:14:09Z",
+   "t_evaluacion_utc": "2026-08-16T20:15:09Z",
+   "t_generacion_utc": "2026-08-16T20:15:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -207,7 +168,7 @@
    },
    "latencia_total_seg": 59.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Famalicão vs CS Marítimo\n⏱ Minuto: 43'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Famalicão presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CS Marítimo no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Famalicão vs CS Marítimo\n⏱ Minuto: 44'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Famalicão presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CS Marítimo no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "44bfc7e76fc04bbd"
   },
@@ -217,7 +178,7 @@
    "match_id": "15235421",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 51,
+   "minuto": 52,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -230,8 +191,8 @@
    },
    "t_evento_real_utc": "2026-08-16T20:08:17Z",
    "t_captura_utc": "2026-08-16T20:08:17Z",
-   "t_evaluacion_utc": "2026-08-16T20:14:22Z",
-   "t_generacion_utc": "2026-08-16T20:14:22Z",
+   "t_evaluacion_utc": "2026-08-16T20:15:23Z",
+   "t_generacion_utc": "2026-08-16T20:15:23Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -245,7 +206,7 @@
    },
    "latencia_total_seg": 65.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Vasco da Gama vs Santos\n⏱ Minuto: 51'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Vasco da Gama vs Santos\n⏱ Minuto: 52'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "c208d0ffad038660"
   }
