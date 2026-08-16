@@ -5535,5 +5535,45 @@
    "cuota_real_betano": 1.83,
    "activo": true
   }
+ ],
+ "36bd3dac7a14c9f6": [
+  {
+   "alert_id": "36bd3dac7a14c9f6",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Ñublense vs Unión La Calera (Liga de Primera)",
+   "liga": "Liga de Primera",
+   "event_id": "15353097",
+   "minuto_alerta": 15,
+   "condicion": "Ñublense domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T16:46:09Z",
+   "t_captura_utc": "2026-08-16T16:46:09Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T16:47:22Z",
+   "segundos_transcurridos": 63,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "11.5 @ 1.55\n12.5 @ 1.93",
+   "linea_real_betano": 11.5,
+   "cuota_real_betano": 1.55,
+   "activo": true
+  },
+  {
+   "alert_id": "36bd3dac7a14c9f6",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Ñublense vs Unión La Calera (Liga de Primera)",
+   "liga": "Liga de Primera",
+   "event_id": "15353097",
+   "minuto_alerta": 15,
+   "condicion": "Ñublense domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T16:46:09Z",
+   "t_captura_utc": "2026-08-16T16:46:09Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T16:47:22Z",
+   "segundos_transcurridos": 63,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "11.5 @ 1.55\n12.5 @ 1.93",
+   "linea_real_betano": 12.5,
+   "cuota_real_betano": 1.93,
+   "activo": true
+  }
  ]
 }
