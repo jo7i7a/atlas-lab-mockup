@@ -5227,5 +5227,45 @@
    "cuota_real_betano": 1.98,
    "activo": true
   }
+ ],
+ "de63b003d5d68a16": [
+  {
+   "alert_id": "de63b003d5d68a16",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "FC Twente vs PEC Zwolle (VriendenLoterij Eredivisie)",
+   "liga": "VriendenLoterij Eredivisie",
+   "event_id": "16316786",
+   "minuto_alerta": 19,
+   "condicion": "FC Twente domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T12:51:12Z",
+   "t_captura_utc": "2026-08-16T12:51:12Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T12:52:59Z",
+   "segundos_transcurridos": 95,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.44\n8.5 @ 1.80",
+   "linea_real_betano": 7.5,
+   "cuota_real_betano": 1.44,
+   "activo": true
+  },
+  {
+   "alert_id": "de63b003d5d68a16",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "FC Twente vs PEC Zwolle (VriendenLoterij Eredivisie)",
+   "liga": "VriendenLoterij Eredivisie",
+   "event_id": "16316786",
+   "minuto_alerta": 19,
+   "condicion": "FC Twente domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T12:51:12Z",
+   "t_captura_utc": "2026-08-16T12:51:12Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T12:52:59Z",
+   "segundos_transcurridos": 95,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.44\n8.5 @ 1.80",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 1.8,
+   "activo": true
+  }
  ]
 }
