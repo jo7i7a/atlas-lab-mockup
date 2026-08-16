@@ -1,183 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T17:05:20Z",
- "n_alerts": 10,
+ "generated_at_utc": "2026-08-16T17:06:23Z",
+ "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Sarpsborg 08 vs Sandefjord Fotball (Eliteserien)",
-   "match_id": "15260881",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH +0.25 @ 2.0 [PROXY SofaScore, NO Betano]",
-   "cuota_detectada": 2.0,
-   "minuto": 76,
-   "condicion": "Sarpsborg 08 domina por xG (1.79) y remates a puerta (5) sin ir ganando y sin roja del dominante — Sarpsborg 08 vs Sandefjord Fotball. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sarpsborg 08",
-    "xg_dominante": 1.79,
-    "sot_dominante": 5,
-    "marcador": "1-2",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": 0.25,
-    "ah_proxy_cuota": 2.0,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-16T16:36:14Z",
-   "t_captura_utc": "2026-08-16T16:36:14Z",
-   "t_evaluacion_utc": "2026-08-16T16:37:17Z",
-   "t_generacion_utc": "2026-08-16T16:37:17Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T16:36:22Z",
-     "latencia_envio_ms": 870.903730392456,
-     "error": null,
-     "message_id": 1214,
-     "chat_id": -5124383393
-    }
-   },
-   "latencia_total_seg": 8.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Sarpsborg 08 vs Sandefjord Fotball\n⏱ Minuto: 76'\n📊 Marcador: 1-2\n🏆 Liga: Eliteserien\n\n📈 Domina: Sarpsborg 08\nxG: 1.79 vs 1.35\nTiros a puerta: 5 vs 6\n\nReferencia PROXY: AH +0.25 @ 2.0 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Sarpsborg 08 — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "ce5aeae602250a87"
-  },
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Sarpsborg 08 vs Sandefjord Fotball (Eliteserien)",
-   "match_id": "15260881",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH +0.25 @ 2.075 [PROXY SofaScore, NO Betano]",
-   "cuota_detectada": 2.075,
-   "minuto": 78,
-   "condicion": "Sarpsborg 08 domina por xG (1.79) y remates a puerta (5) sin ir ganando y sin roja del dominante — Sarpsborg 08 vs Sandefjord Fotball. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sarpsborg 08",
-    "xg_dominante": 1.79,
-    "sot_dominante": 5,
-    "marcador": "1-2",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": 0.25,
-    "ah_proxy_cuota": 2.075,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-16T16:36:14Z",
-   "t_captura_utc": "2026-08-16T16:39:03Z",
-   "t_evaluacion_utc": "2026-08-16T16:39:17Z",
-   "t_generacion_utc": "2026-08-16T16:39:17Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T16:39:18Z",
-     "latencia_envio_ms": 787.8062725067139,
-     "error": null,
-     "message_id": 1215,
-     "chat_id": -5124383393
-    }
-   },
-   "latencia_total_seg": 184.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Sarpsborg 08 vs Sandefjord Fotball\n⏱ Minuto: 78'\n📊 Marcador: 1-2\n🏆 Liga: Eliteserien\n\n📈 Domina: Sarpsborg 08\nxG: 1.79 vs 1.35\nTiros a puerta: 5 vs 6\n\nReferencia PROXY: AH +0.25 @ 2.075 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Sarpsborg 08 — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "99540f2ffa73dd8f"
-  },
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Sarpsborg 08 vs Sandefjord Fotball (Eliteserien)",
-   "match_id": "15260881",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH +0.25 @ 2.1 [PROXY SofaScore, NO Betano]",
-   "cuota_detectada": 2.1,
-   "minuto": 79,
-   "condicion": "Sarpsborg 08 domina por xG (1.79) y remates a puerta (5) sin ir ganando y sin roja del dominante — Sarpsborg 08 vs Sandefjord Fotball. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sarpsborg 08",
-    "xg_dominante": 1.79,
-    "sot_dominante": 5,
-    "marcador": "1-2",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": 0.25,
-    "ah_proxy_cuota": 2.1,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-16T16:36:14Z",
-   "t_captura_utc": "2026-08-16T16:40:08Z",
-   "t_evaluacion_utc": "2026-08-16T16:40:16Z",
-   "t_generacion_utc": "2026-08-16T16:40:16Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T16:40:17Z",
-     "latencia_envio_ms": 849.2984771728516,
-     "error": null,
-     "message_id": 1216,
-     "chat_id": -5124383393
-    }
-   },
-   "latencia_total_seg": 243.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Sarpsborg 08 vs Sandefjord Fotball\n⏱ Minuto: 79'\n📊 Marcador: 1-2\n🏆 Liga: Eliteserien\n\n📈 Domina: Sarpsborg 08\nxG: 1.79 vs 1.35\nTiros a puerta: 5 vs 6\n\nReferencia PROXY: AH +0.25 @ 2.1 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Sarpsborg 08 — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "237544a82c23c975"
-  },
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Sarpsborg 08 vs Sandefjord Fotball (Eliteserien)",
-   "match_id": "15260881",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH +0.25 @ 2.15 [PROXY SofaScore, NO Betano]",
-   "cuota_detectada": 2.15,
-   "minuto": 80,
-   "condicion": "Sarpsborg 08 domina por xG (1.79) y remates a puerta (5) sin ir ganando y sin roja del dominante — Sarpsborg 08 vs Sandefjord Fotball. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sarpsborg 08",
-    "xg_dominante": 1.79,
-    "sot_dominante": 5,
-    "marcador": "1-2",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": 0.25,
-    "ah_proxy_cuota": 2.15,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-16T16:36:14Z",
-   "t_captura_utc": "2026-08-16T16:41:12Z",
-   "t_evaluacion_utc": "2026-08-16T16:41:15Z",
-   "t_generacion_utc": "2026-08-16T16:41:15Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T16:41:16Z",
-     "latencia_envio_ms": 885.1284980773926,
-     "error": null,
-     "message_id": 1217,
-     "chat_id": -5124383393
-    }
-   },
-   "latencia_total_seg": 302.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Sarpsborg 08 vs Sandefjord Fotball\n⏱ Minuto: 80'\n📊 Marcador: 1-2\n🏆 Liga: Eliteserien\n\n📈 Domina: Sarpsborg 08\nxG: 1.79 vs 1.35\nTiros a puerta: 5 vs 6\n\nReferencia PROXY: AH +0.25 @ 2.15 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Sarpsborg 08 — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "db2503d46602c698"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Sarpsborg 08 vs Sandefjord Fotball (Eliteserien)",
@@ -363,7 +187,7 @@
    "match_id": "15353097",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 34,
+   "minuto": 35,
    "condicion": "4 córners totales antes del min 45 (4-0), Ñublense presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Unión La Calera NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -377,8 +201,8 @@
    },
    "t_evento_real_utc": "2026-08-16T16:44:45Z",
    "t_captura_utc": "2026-08-16T16:44:45Z",
-   "t_evaluacion_utc": "2026-08-16T17:05:11Z",
-   "t_generacion_utc": "2026-08-16T17:05:11Z",
+   "t_evaluacion_utc": "2026-08-16T17:06:11Z",
+   "t_generacion_utc": "2026-08-16T17:06:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -392,7 +216,7 @@
    },
    "latencia_total_seg": 27.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 34'\n📊 Marcador: 1-0\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Ñublense presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Unión La Calera no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 35'\n📊 Marcador: 1-0\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Ñublense presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Unión La Calera no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "04a9d9a9baa77d95"
   },
@@ -402,7 +226,7 @@
    "match_id": "15353097",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 34,
+   "minuto": 35,
    "condicion": "Ñublense acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -411,9 +235,9 @@
    "extra": {
     "equipo_dominante": "Ñublense",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.8889,
-    "touches_home": 8,
-    "touches_away": 1,
+    "ratio_presion_territorial": 0.8182,
+    "touches_home": 9,
+    "touches_away": 2,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -424,9 +248,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T16:51:18Z",
-   "t_captura_utc": "2026-08-16T17:05:20Z",
-   "t_evaluacion_utc": "2026-08-16T17:05:20Z",
-   "t_generacion_utc": "2026-08-16T17:05:20Z",
+   "t_captura_utc": "2026-08-16T17:06:23Z",
+   "t_evaluacion_utc": "2026-08-16T17:06:23Z",
+   "t_generacion_utc": "2026-08-16T17:06:23Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -439,8 +263,8 @@
     }
    },
    "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 34'\n📊 Marcador: 1-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Ñublense acumula 89% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "estado_temporal": "EXPIRADA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 35'\n📊 Marcador: 1-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Ñublense acumula 82% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "31b230d77d8301bb"
   }
