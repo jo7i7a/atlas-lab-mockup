@@ -530,6 +530,8 @@
   .perf-lbl { font-size: 9.5px; color: var(--text-faint); margin-top: 2px; }
   .perf-mini-title { font-size: 10.5px; color: var(--text-faint); margin: 10px 0 4px; text-transform: uppercase; letter-spacing: .03em; }
   .perf-mini-row { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 10.5px; padding: 3px 0; color: var(--text-dim); }
+  .picks-filter-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 12px; }
+  .picks-filter-select { background: var(--surface-2); border: 1px solid var(--border); color: var(--text); border-radius: 6px; padding: 6px 8px; font-size: 11.5px; font-family: inherit; }
 </style>
 </head>
 <body>
@@ -689,6 +691,7 @@
     <div class="lab-intro">Partidos futuros → motores ATLAS → probabilidad → cuota real (OddsPapi) → Value (EV%) → filtro de gobernanza → PICK ATLAS. Registro inmutable e independiente de si el Director decide apostar o no.</div>
     <div id="picks-atlas-performance"></div>
     <div class="section-title"><span>Picks activos</span></div>
+    <div class="picks-filter-row" id="picks-atlas-filters"></div>
     <div id="picks-atlas-list"></div>
   </div>
 </div>
@@ -1833,6 +1836,64 @@ function renderTipsterRankings() {
 const PICKS_MARKET_LABELS = { "1X2_FT": "1X2", "OU25_GOALS_FT": "Goles O/U", "HANDICAP_FT": "Hándicap Asiático", "BTTS": "BTTS" };
 const PICKS_LIST_MAX_ROWS = 30; // "no dashboard gigante" -- el registro completo vive en tipster_picks_history.jsonl
 
+/* ---- Filtros de "Picks activos" (2026-08-16, mejora UI puramente visual)
+   -- SOLO ocultan/muestran tarjetas ya renderizadas desde PICKS_ATLAS_DATA,
+   nunca tocan tipster_picks_estado.json/history.jsonl ni recalculan nada.
+   La tarjeta "Rentabilidad histórica" (picksPerformanceHtml) NUNCA lee
+   estas variables -- sigue mostrando perf.total sobre TODOS los picks
+   acumulados, sin importar el filtro. Fecha = p.kickoff_utc, mismo campo
+   que ya existe en el registro (nunca se inventa una fecha nueva), mismo
+   criterio de "Hoy/Mañana" que ya usa el resto de ATLAS LAB
+   (toChileDate()/chileDayOffset(), ver index.html arriba). ---- */
+let picksAtlasMarketFilter = "ALL";
+let picksAtlasDateFilter = "ALL"; // "ALL" | "HOY" | "MANANA" | "PROX7" | "FECHA"
+let picksAtlasSpecificDate = null; // "YYYY-MM-DD", solo cuando picksAtlasDateFilter === "FECHA"
+
+function picksAtlasMatchesFilters(p) {
+  if (picksAtlasMarketFilter !== "ALL" && p.market !== picksAtlasMarketFilter) return false;
+  if (picksAtlasDateFilter === "ALL") return true;
+  const offset = chileDayOffset(p.kickoff_utc);
+  if (picksAtlasDateFilter === "HOY") return offset === 0;
+  if (picksAtlasDateFilter === "MANANA") return offset === 1;
+  if (picksAtlasDateFilter === "PROX7") return offset >= 0 && offset <= 6;
+  if (picksAtlasDateFilter === "FECHA") {
+    if (!picksAtlasSpecificDate) return true; // sin fecha elegida todavia -- no filtra
+    const d = toChileDate(p.kickoff_utc);
+    const iso = `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}-${String(d.getUTCDate()).padStart(2, "0")}`;
+    return iso === picksAtlasSpecificDate;
+  }
+  return true;
+}
+function renderPicksAtlasFilters() {
+  const marketOpts = [["ALL", "Todos"], ...Object.entries(PICKS_MARKET_LABELS)];
+  const dateOpts = [["ALL", "Todas"], ["HOY", "Hoy"], ["MANANA", "Mañana"], ["PROX7", "Próximos 7 días"], ["FECHA", "Fecha específica"]];
+  document.getElementById("picks-atlas-filters").innerHTML = `
+    <select class="picks-filter-select" id="picks-atlas-market-filter">
+      ${marketOpts.map(([v, l]) => `<option value="${v}"${v === picksAtlasMarketFilter ? " selected" : ""}>${v === "ALL" ? "Mercado: " : ""}${l}</option>`).join("")}
+    </select>
+    <select class="picks-filter-select" id="picks-atlas-date-filter">
+      ${dateOpts.map(([v, l]) => `<option value="${v}"${v === picksAtlasDateFilter ? " selected" : ""}>${v === "ALL" ? "Fecha: " : ""}${l}</option>`).join("")}
+    </select>
+    ${picksAtlasDateFilter === "FECHA" ? `<input type="date" class="picks-filter-select" id="picks-atlas-specific-date" value="${picksAtlasSpecificDate || ""}">` : ""}
+  `;
+  document.getElementById("picks-atlas-market-filter").addEventListener("change", e => {
+    picksAtlasMarketFilter = e.target.value;
+    renderPicksAtlasList();
+  });
+  document.getElementById("picks-atlas-date-filter").addEventListener("change", e => {
+    picksAtlasDateFilter = e.target.value;
+    renderPicksAtlasFilters(); // re-pinta para mostrar/ocultar el selector de fecha especifica
+    renderPicksAtlasList();
+  });
+  const dateInput = document.getElementById("picks-atlas-specific-date");
+  if (dateInput) {
+    dateInput.addEventListener("change", e => {
+      picksAtlasSpecificDate = e.target.value || null;
+      renderPicksAtlasList();
+    });
+  }
+}
+
 function pickSelectionLabel(p) {
   if (p.market === "1X2_FT") return p.selection === "home" ? "Gana Local" : p.selection === "away" ? "Gana Visita" : "Empate";
   if (p.market === "OU25_GOALS_FT") return p.selection === "over" ? "Over 2.5" : "Under 2.5";
@@ -1884,21 +1945,37 @@ function picksPerformanceHtml(perf) {
     </div>
   </div>`;
 }
-function renderPicksAtlas() {
+function renderPicksAtlasList() {
+  // Filtros puramente client-side: solo deciden que tarjetas de
+  // PICKS_ATLAS_DATA.estado.picks (ya cargado) se muestran -- nunca tocan
+  // el JSON/JSONL ni la tarjeta de rentabilidad (ver renderPicksAtlas).
   const data = (typeof PICKS_ATLAS_DATA !== "undefined") ? PICKS_ATLAS_DATA : null;
-  document.getElementById("picks-atlas-performance").innerHTML = picksPerformanceHtml(data && data.performance);
   const listEl = document.getElementById("picks-atlas-list");
-  const picks = (data && data.estado && data.estado.picks) || [];
-  if (!picks.length) {
+  const allPicks = (data && data.estado && data.estado.picks) || [];
+  if (!allPicks.length) {
     listEl.innerHTML = `<p class="footer-note" style="text-align:left">Sin picks activos ahora mismo -- ninguna cuota automática con Value y gobernanza suficiente todavía.</p>`;
     return;
   }
-  const shown = picks.slice(0, PICKS_LIST_MAX_ROWS);
+  const filtered = allPicks.filter(picksAtlasMatchesFilters);
+  if (!filtered.length) {
+    listEl.innerHTML = `<p class="footer-note" style="text-align:left">No hay picks para este filtro.</p>`;
+    return;
+  }
+  const shown = filtered.slice(0, PICKS_LIST_MAX_ROWS);
   listEl.innerHTML = shown.map(pickRowHtml).join("")
-    + (picks.length > shown.length ? `<p class="footer-note" style="text-align:left">+${picks.length - shown.length} picks más en el registro completo (tipster_picks_history.jsonl).</p>` : "");
+    + (filtered.length > shown.length ? `<p class="footer-note" style="text-align:left">+${filtered.length - shown.length} picks más en el registro completo (tipster_picks_history.jsonl).</p>` : "");
   listEl.querySelectorAll("[data-match-id]").forEach(row => {
     if (row.dataset.matchId) row.addEventListener("click", () => goTo("center", { id: row.dataset.matchId }));
   });
+}
+function renderPicksAtlas() {
+  const data = (typeof PICKS_ATLAS_DATA !== "undefined") ? PICKS_ATLAS_DATA : null;
+  // La tarjeta de rentabilidad SIEMPRE representa TODOS los picks
+  // acumulados (perf viene de settlement.performance_summary() sobre el
+  // historico completo) -- nunca se filtra, sin importar los desplegables.
+  document.getElementById("picks-atlas-performance").innerHTML = picksPerformanceHtml(data && data.performance);
+  renderPicksAtlasFilters();
+  renderPicksAtlasList();
 }
 
 function renderHome() {
