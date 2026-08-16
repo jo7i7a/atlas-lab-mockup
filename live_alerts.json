@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-16T01:26:51Z",
+ "generated_at_utc": "2026-08-16T01:27:59Z",
  "n_alerts": 17,
  "alerts": [
   {
@@ -435,83 +435,6 @@
    "alert_id": "fd19c0b0ea76aed7"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "CF Monterrey vs FC Juárez (Liga MX, Apertura)",
-   "match_id": "16317953",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 15,
-   "condicion": "4 córners totales antes del min 30 (4-0), CF Monterrey presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿FC Juárez NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "CF Monterrey"
-   },
-   "t_evento_real_utc": "2026-08-16T01:25:26Z",
-   "t_captura_utc": "2026-08-16T01:25:26Z",
-   "t_evaluacion_utc": "2026-08-16T01:26:09Z",
-   "t_generacion_utc": "2026-08-16T01:26:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T01:26:10Z",
-     "latencia_envio_ms": 811.7492198944092,
-     "error": null,
-     "message_id": 1030,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 44.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 15'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: CF Monterrey presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Juárez no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "48841f7e5f396355"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Nashville SC vs Inter Miami CF (MLS)",
-   "match_id": "15171641",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 44,
-   "condicion": "4 córners totales antes del min 45 (4-0), Nashville SC presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Inter Miami CF NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Nashville SC",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-16T01:01:36Z",
-   "t_captura_utc": "2026-08-16T01:01:36Z",
-   "t_evaluacion_utc": "2026-08-16T01:26:11Z",
-   "t_generacion_utc": "2026-08-16T01:26:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T01:02:12Z",
-     "latencia_envio_ms": 775.2575874328613,
-     "error": null,
-     "message_id": 1020,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 36.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Nashville SC vs Inter Miami CF\n⏱ Minuto: 44'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Nashville SC presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Inter Miami CF no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "47d05f54efbb5f80"
-  },
-  {
    "strategy_id": "L1-SHADOW",
    "match_label": "Houston Dynamo vs LA Galaxy (MLS)",
    "match_id": "15171644",
@@ -551,12 +474,89 @@
    "alert_id": "fbb7fcde665a7c7c"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "CF Monterrey vs FC Juárez (Liga MX, Apertura)",
+   "match_id": "16317953",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 16,
+   "condicion": "4 córners totales antes del min 30 (4-0), CF Monterrey presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿FC Juárez NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "CF Monterrey"
+   },
+   "t_evento_real_utc": "2026-08-16T01:25:26Z",
+   "t_captura_utc": "2026-08-16T01:25:26Z",
+   "t_evaluacion_utc": "2026-08-16T01:27:09Z",
+   "t_generacion_utc": "2026-08-16T01:27:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T01:26:10Z",
+     "latencia_envio_ms": 811.7492198944092,
+     "error": null,
+     "message_id": 1030,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 44.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 16'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: CF Monterrey presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Juárez no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "48841f7e5f396355"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Nashville SC vs Inter Miami CF (MLS)",
+   "match_id": "15171641",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "4 córners totales antes del min 45 (4-0), Nashville SC presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Inter Miami CF NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Nashville SC",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-16T01:01:36Z",
+   "t_captura_utc": "2026-08-16T01:01:36Z",
+   "t_evaluacion_utc": "2026-08-16T01:27:10Z",
+   "t_generacion_utc": "2026-08-16T01:27:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T01:02:12Z",
+     "latencia_envio_ms": 775.2575874328613,
+     "error": null,
+     "message_id": 1020,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 36.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Nashville SC vs Inter Miami CF\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Nashville SC presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Inter Miami CF no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "47d05f54efbb5f80"
+  },
+  {
    "strategy_id": "L1-SHADOW",
    "match_label": "CF Monterrey vs FC Juárez (Liga MX, Apertura)",
    "match_id": "16317953",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 15,
+   "minuto": 16,
    "condicion": "4 córners totales antes del min 45 (4-0), CF Monterrey presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿FC Juárez NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -570,8 +570,8 @@
    },
    "t_evento_real_utc": "2026-08-16T01:25:26Z",
    "t_captura_utc": "2026-08-16T01:25:26Z",
-   "t_evaluacion_utc": "2026-08-16T01:26:13Z",
-   "t_generacion_utc": "2026-08-16T01:26:13Z",
+   "t_evaluacion_utc": "2026-08-16T01:27:11Z",
+   "t_generacion_utc": "2026-08-16T01:27:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -585,7 +585,7 @@
    },
    "latencia_total_seg": 48.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 15'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: CF Monterrey presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Juárez no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 16'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: CF Monterrey presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Juárez no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "49f2a617a9841892"
   },
@@ -595,7 +595,7 @@
    "match_id": "16317953",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 16,
+   "minuto": 17,
    "condicion": "CF Monterrey domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -615,8 +615,8 @@
    },
    "t_evento_real_utc": "2026-08-16T01:26:10Z",
    "t_captura_utc": "2026-08-16T01:26:10Z",
-   "t_evaluacion_utc": "2026-08-16T01:26:29Z",
-   "t_generacion_utc": "2026-08-16T01:26:29Z",
+   "t_evaluacion_utc": "2026-08-16T01:27:34Z",
+   "t_generacion_utc": "2026-08-16T01:27:34Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -630,7 +630,7 @@
    },
    "latencia_total_seg": 20.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 16'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CF Monterrey — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 17'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CF Monterrey — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "b78c9fd2f95ba6fc"
   },
@@ -640,7 +640,7 @@
    "match_id": "15171641",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 46,
    "condicion": "Nashville SC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -662,9 +662,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T01:01:37Z",
-   "t_captura_utc": "2026-08-16T01:26:49Z",
-   "t_evaluacion_utc": "2026-08-16T01:26:49Z",
-   "t_generacion_utc": "2026-08-16T01:26:49Z",
+   "t_captura_utc": "2026-08-16T01:27:57Z",
+   "t_evaluacion_utc": "2026-08-16T01:27:57Z",
+   "t_generacion_utc": "2026-08-16T01:27:57Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -678,7 +678,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Nashville SC vs Inter Miami CF\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: Nashville SC acumula 92% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Nashville SC vs Inter Miami CF\n⏱ Minuto: 46'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: Nashville SC acumula 92% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "358fdf1f3576e8f9"
   },
@@ -688,7 +688,7 @@
    "match_id": "15171644",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 46,
    "condicion": "LA Galaxy acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -710,9 +710,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T01:01:38Z",
-   "t_captura_utc": "2026-08-16T01:26:49Z",
-   "t_evaluacion_utc": "2026-08-16T01:26:50Z",
-   "t_generacion_utc": "2026-08-16T01:26:50Z",
+   "t_captura_utc": "2026-08-16T01:27:58Z",
+   "t_evaluacion_utc": "2026-08-16T01:27:58Z",
+   "t_generacion_utc": "2026-08-16T01:27:58Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -726,7 +726,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Houston Dynamo vs LA Galaxy\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: LA Galaxy acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Houston Dynamo vs LA Galaxy\n⏱ Minuto: 46'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: LA Galaxy acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "3fae25c4a41d7759"
   }
