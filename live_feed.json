@@ -1,18 +1,28 @@
 {
- "generated_at_utc": "2026-08-16T17:02:53Z",
- "n_live_target": 3,
+ "generated_at_utc": "2026-08-16T17:05:53Z",
+ "n_live_target": 4,
  "matches": {
-  "16450747": {
-   "event_id": 16450747,
-   "league": "Liga Portugal Betclic",
-   "home": "FC Arouca",
-   "away": "Moreirense",
+  "16421053": {
+   "event_id": 16421053,
+   "league": "LaLiga",
+   "home": "Espanyol",
+   "away": "Levante UD",
    "home_score": 0,
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 0,
+   "minute": 1,
    "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 0,
+     "away": 100
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 0,
+     "away": 2
+    },
     "shots": {
      "label": "Remates totales",
      "home": 0,
@@ -33,26 +43,88 @@
     "btts": {
      "yes": 1.95,
      "no": 1.8,
-     "captured_at_utc": "2026-08-16T17:02:51Z"
+     "captured_at_utc": "2026-08-16T17:05:36Z"
     },
     "corners_over_95": {
-     "over": 2.0,
-     "under": 1.727,
-     "captured_at_utc": "2026-08-16T17:02:51Z"
+     "over": 1.909,
+     "under": 1.8,
+     "captured_at_utc": "2026-08-16T17:05:36Z"
     },
     "1x2": {
-     "home": 1.71,
-     "draw": 3.6,
-     "away": 4.75,
-     "captured_at_utc": "2026-08-16T17:02:51Z"
+     "home": 2.05,
+     "draw": 3.25,
+     "away": 3.75,
+     "captured_at_utc": "2026-08-16T17:05:36Z"
     },
     "goals_over_25": {
-     "over": 2.0,
-     "under": 1.727,
-     "captured_at_utc": "2026-08-16T17:02:51Z"
+     "over": 2.2,
+     "under": 1.667,
+     "captured_at_utc": "2026-08-16T17:05:36Z"
     }
    },
-   "updated_at_utc": "2026-08-16T17:02:53Z"
+   "updated_at_utc": "2026-08-16T17:05:53Z"
+  },
+  "16450747": {
+   "event_id": 16450747,
+   "league": "Liga Portugal Betclic",
+   "home": "FC Arouca",
+   "away": "Moreirense",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 3,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 58,
+     "away": 42
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 15,
+     "away": 11
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.95,
+     "no": 1.8,
+     "captured_at_utc": "2026-08-16T17:05:36Z"
+    },
+    "corners_over_95": {
+     "over": 1.727,
+     "under": 2.0,
+     "captured_at_utc": "2026-08-16T17:05:36Z"
+    },
+    "1x2": {
+     "home": 1.833,
+     "draw": 3.4,
+     "away": 4.5,
+     "captured_at_utc": "2026-08-16T17:05:36Z"
+    },
+    "goals_over_25": {
+     "over": 2.1,
+     "under": 1.667,
+     "captured_at_utc": "2026-08-16T17:05:36Z"
+    }
+   },
+   "updated_at_utc": "2026-08-16T17:05:53Z"
   },
   "15353097": {
    "event_id": 15353097,
@@ -63,7 +135,7 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 32,
+   "minute": 35,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -72,7 +144,7 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 8,
+     "home": 9,
      "away": 1
     },
     "corners": {
@@ -82,8 +154,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 180,
-     "away": 121
+     "home": 199,
+     "away": 133
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -98,49 +170,49 @@
    },
    "odds": {
     "btts": {
-     "yes": 1.727,
-     "no": 2.0,
-     "captured_at_utc": "2026-08-16T17:02:51Z"
+     "yes": 1.8,
+     "no": 1.909,
+     "captured_at_utc": "2026-08-16T17:05:36Z"
     },
     "corners_over_95": {
      "over": 1.909,
      "under": 1.8,
-     "captured_at_utc": "2026-08-16T17:02:51Z"
+     "captured_at_utc": "2026-08-16T17:05:36Z"
     },
     "1x2": {
-     "home": 1.222,
+     "home": 1.25,
      "draw": 5.5,
      "away": 13.0,
-     "captured_at_utc": "2026-08-16T17:02:51Z"
+     "captured_at_utc": "2026-08-16T17:05:36Z"
     },
     "goals_over_25": {
-     "over": 1.571,
-     "under": 2.25,
-     "captured_at_utc": "2026-08-16T17:02:51Z"
+     "over": 1.667,
+     "under": 2.1,
+     "captured_at_utc": "2026-08-16T17:05:36Z"
     }
    },
-   "updated_at_utc": "2026-08-16T17:02:53Z"
+   "updated_at_utc": "2026-08-16T17:05:53Z"
   },
   "15416292": {
    "event_id": 15416292,
    "league": "Liga de Ascenso",
    "home": "Santiago Wanderers",
    "away": "Deportes Puerto Montt",
-   "home_score": 0,
+   "home_score": 1,
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 31,
+   "minute": 34,
    "stats": {},
    "odds": {
     "1x2": {
-     "home": 2.2,
-     "draw": 3.0,
-     "away": 3.4,
-     "captured_at_utc": "2026-08-16T17:02:51Z"
+     "home": 1.333,
+     "draw": 4.5,
+     "away": 8.0,
+     "captured_at_utc": "2026-08-16T17:05:36Z"
     }
    },
-   "updated_at_utc": "2026-08-16T17:02:53Z"
+   "updated_at_utc": "2026-08-16T17:05:53Z"
   }
  }
 }
