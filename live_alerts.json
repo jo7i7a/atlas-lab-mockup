@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T16:15:43Z",
- "n_alerts": 10,
+ "generated_at_utc": "2026-08-16T16:16:38Z",
+ "n_alerts": 11,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -263,7 +263,7 @@
    "match_id": "16483707",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 15,
+   "minuto": 16,
    "condicion": "4 córners totales antes del min 30 (3-1), Başakşehir FK presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Kocaelispor NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -276,8 +276,8 @@
    },
    "t_evento_real_utc": "2026-08-16T16:12:02Z",
    "t_captura_utc": "2026-08-16T16:12:02Z",
-   "t_evaluacion_utc": "2026-08-16T16:15:10Z",
-   "t_generacion_utc": "2026-08-16T16:15:10Z",
+   "t_evaluacion_utc": "2026-08-16T16:16:09Z",
+   "t_generacion_utc": "2026-08-16T16:16:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -291,7 +291,7 @@
    },
    "latencia_total_seg": 13.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 15'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Başakşehir FK presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kocaelispor no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 16'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Başakşehir FK presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kocaelispor no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "dcea6ade7c3a0f62"
   },
@@ -301,7 +301,7 @@
    "match_id": "16483707",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 15,
+   "minuto": 16,
    "condicion": "4 córners totales antes del min 45 (3-1), Başakşehir FK presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Kocaelispor NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -315,8 +315,8 @@
    },
    "t_evento_real_utc": "2026-08-16T16:12:02Z",
    "t_captura_utc": "2026-08-16T16:12:02Z",
-   "t_evaluacion_utc": "2026-08-16T16:15:12Z",
-   "t_generacion_utc": "2026-08-16T16:15:12Z",
+   "t_evaluacion_utc": "2026-08-16T16:16:10Z",
+   "t_generacion_utc": "2026-08-16T16:16:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -330,9 +330,54 @@
    },
    "latencia_total_seg": 16.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 15'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Başakşehir FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kocaelispor no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 16'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Başakşehir FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kocaelispor no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "3511605aa1cdd253"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Başakşehir FK vs Kocaelispor (Trendyol Süper Lig)",
+   "match_id": "16483707",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 16,
+   "condicion": "Başakşehir FK domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Başakşehir FK",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 3,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T16:15:40Z",
+   "t_captura_utc": "2026-08-16T16:15:40Z",
+   "t_evaluacion_utc": "2026-08-16T16:16:28Z",
+   "t_generacion_utc": "2026-08-16T16:16:28Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T16:16:29Z",
+     "latencia_envio_ms": 833.2657814025879,
+     "error": null,
+     "message_id": 1206,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 49.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 16'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Başakşehir FK — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "49cf004b0f9931bd"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -362,9 +407,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T16:14:32Z",
-   "t_captura_utc": "2026-08-16T16:15:41Z",
-   "t_evaluacion_utc": "2026-08-16T16:15:41Z",
-   "t_generacion_utc": "2026-08-16T16:15:41Z",
+   "t_captura_utc": "2026-08-16T16:16:36Z",
+   "t_evaluacion_utc": "2026-08-16T16:16:37Z",
+   "t_generacion_utc": "2026-08-16T16:16:37Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -388,7 +433,7 @@
    "match_id": "16450752",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 83,
+   "minuto": 84,
    "condicion": "CD Nacional acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -410,9 +455,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T15:59:25Z",
-   "t_captura_utc": "2026-08-16T16:15:43Z",
-   "t_evaluacion_utc": "2026-08-16T16:15:43Z",
-   "t_generacion_utc": "2026-08-16T16:15:43Z",
+   "t_captura_utc": "2026-08-16T16:16:38Z",
+   "t_evaluacion_utc": "2026-08-16T16:16:38Z",
+   "t_generacion_utc": "2026-08-16T16:16:38Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -426,7 +471,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CD Nacional vs Estoril Praia\n⏱ Minuto: 83'\n📊 Marcador: 2-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: CD Nacional acumula 74% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CD Nacional, min 81\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CD Nacional vs Estoril Praia\n⏱ Minuto: 84'\n📊 Marcador: 2-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: CD Nacional acumula 74% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CD Nacional, min 81\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "aced6b61ee51e909"
   }
