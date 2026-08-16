@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T13:24:21Z",
- "n_alerts": 11,
+ "generated_at_utc": "2026-08-16T13:25:21Z",
+ "n_alerts": 10,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Aalesunds FK vs Vålerenga IF (Eliteserien)",
-   "match_id": "15260880",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 27,
-   "condicion": "Aalesunds FK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Aalesunds FK",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6316,
-    "touches_home": 12,
-    "touches_away": 7,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "2-1",
-    "t_primera_observacion_atlas": "2026-08-16T12:54:30Z",
-    "t_inicio_estimado_condicion": "2026-08-16T12:53:40Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T12:54:30Z",
-   "t_captura_utc": "2026-08-16T12:57:28Z",
-   "t_evaluacion_utc": "2026-08-16T12:57:29Z",
-   "t_generacion_utc": "2026-08-16T12:57:29Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T12:54:31Z",
-     "latencia_envio_ms": 805.1581382751465,
-     "error": null,
-     "message_id": 1115,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Aalesunds FK vs Vålerenga IF\n⏱ Minuto: 27'\n📊 Marcador: 2-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Aalesunds FK acumula 63% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "6c42689ce07d3853"
-  },
   {
    "strategy_id": "L1",
    "match_label": "Aalesunds FK vs Vålerenga IF (Eliteserien)",
@@ -437,7 +389,7 @@
    "match_id": "15272494",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 66,
+   "minuto": 67,
    "condicion": "IF Brommapojkarna acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -459,9 +411,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T13:08:27Z",
-   "t_captura_utc": "2026-08-16T13:24:21Z",
-   "t_evaluacion_utc": "2026-08-16T13:24:21Z",
-   "t_generacion_utc": "2026-08-16T13:24:21Z",
+   "t_captura_utc": "2026-08-16T13:25:21Z",
+   "t_evaluacion_utc": "2026-08-16T13:25:21Z",
+   "t_generacion_utc": "2026-08-16T13:25:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -475,7 +427,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ IF Brommapojkarna vs Örgryte IS\n⏱ Minuto: 66'\n📊 Marcador: 2-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IF Brommapojkarna acumula 65% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ IF Brommapojkarna vs Örgryte IS\n⏱ Minuto: 67'\n📊 Marcador: 2-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IF Brommapojkarna acumula 65% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "42b6d808d7a6c062"
   }
