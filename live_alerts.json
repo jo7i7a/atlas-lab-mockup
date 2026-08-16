@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T16:45:40Z",
- "n_alerts": 15,
+ "generated_at_utc": "2026-08-16T16:46:38Z",
+ "n_alerts": 16,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -45,51 +45,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Burnley vs West Ham United\n⏱ Minuto: 64'\n📊 Marcador: 0-1\n🏆 Liga: Championship\n\n📝 Motivo: presión combinada sostenida — xG 1.50, 18 tiros totales (3 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "c2769eebab320a21"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Başakşehir FK vs Kocaelispor (Trendyol Süper Lig)",
-   "match_id": "16483707",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Başakşehir FK domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Başakşehir FK",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 0,
-    "remates_home": 3,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T16:15:40Z",
-   "t_captura_utc": "2026-08-16T16:15:40Z",
-   "t_evaluacion_utc": "2026-08-16T16:25:27Z",
-   "t_generacion_utc": "2026-08-16T16:25:27Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T16:16:29Z",
-     "latencia_envio_ms": 833.2657814025879,
-     "error": null,
-     "message_id": 1206,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 49.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Başakşehir FK — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "49cf004b0f9931bd"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -505,7 +460,7 @@
    "match_id": "15353097",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 14,
+   "minuto": 15,
    "condicion": "4 córners totales antes del min 30 (4-0), Ñublense presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Unión La Calera NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -518,8 +473,8 @@
    },
    "t_evento_real_utc": "2026-08-16T16:44:45Z",
    "t_captura_utc": "2026-08-16T16:44:45Z",
-   "t_evaluacion_utc": "2026-08-16T16:45:09Z",
-   "t_generacion_utc": "2026-08-16T16:45:09Z",
+   "t_evaluacion_utc": "2026-08-16T16:46:09Z",
+   "t_generacion_utc": "2026-08-16T16:46:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -533,7 +488,7 @@
    },
    "latencia_total_seg": 25.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 14'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Ñublense presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Unión La Calera no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 15'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Ñublense presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Unión La Calera no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "01a7c6512d8fd7ed"
   },
@@ -543,7 +498,7 @@
    "match_id": "15353097",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 14,
+   "minuto": 15,
    "condicion": "4 córners totales antes del min 45 (4-0), Ñublense presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Unión La Calera NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -557,8 +512,8 @@
    },
    "t_evento_real_utc": "2026-08-16T16:44:45Z",
    "t_captura_utc": "2026-08-16T16:44:45Z",
-   "t_evaluacion_utc": "2026-08-16T16:45:11Z",
-   "t_generacion_utc": "2026-08-16T16:45:11Z",
+   "t_evaluacion_utc": "2026-08-16T16:46:10Z",
+   "t_generacion_utc": "2026-08-16T16:46:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -572,9 +527,54 @@
    },
    "latencia_total_seg": 27.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 14'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Ñublense presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Unión La Calera no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 15'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Ñublense presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Unión La Calera no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "04a9d9a9baa77d95"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Ñublense vs Unión La Calera (Liga de Primera)",
+   "match_id": "15353097",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "Ñublense domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Ñublense",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T16:46:09Z",
+   "t_captura_utc": "2026-08-16T16:46:09Z",
+   "t_evaluacion_utc": "2026-08-16T16:46:19Z",
+   "t_generacion_utc": "2026-08-16T16:46:19Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T16:46:19Z",
+     "latencia_envio_ms": 814.2590522766113,
+     "error": null,
+     "message_id": 1221,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 10.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 15'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Ñublense — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "36bd3dac7a14c9f6"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -582,7 +582,7 @@
    "match_id": "15260878",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 83,
+   "minuto": 84,
    "condicion": "Molde FK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -604,9 +604,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T16:20:29Z",
-   "t_captura_utc": "2026-08-16T16:45:38Z",
-   "t_evaluacion_utc": "2026-08-16T16:45:38Z",
-   "t_generacion_utc": "2026-08-16T16:45:38Z",
+   "t_captura_utc": "2026-08-16T16:46:35Z",
+   "t_evaluacion_utc": "2026-08-16T16:46:35Z",
+   "t_generacion_utc": "2026-08-16T16:46:35Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -620,9 +620,57 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Molde FK vs Tromsø IL\n⏱ Minuto: 83'\n📊 Marcador: 2-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Molde FK acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Molde FK, min 75\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Molde FK vs Tromsø IL\n⏱ Minuto: 84'\n📊 Marcador: 2-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Molde FK acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Molde FK, min 75\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "f2bd419fd3cc8940"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Sarpsborg 08 vs Sandefjord Fotball (Eliteserien)",
+   "match_id": "15260881",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 85,
+   "condicion": "Sarpsborg 08 acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Sarpsborg 08",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6034,
+    "touches_home": 35,
+    "touches_away": 23,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 86,
+    "equipo_que_realizo_sustitucion": "Sarpsborg 08",
+    "marcador_en_el_momento": "1-2",
+    "t_primera_observacion_atlas": "2026-08-16T16:46:35Z",
+    "t_inicio_estimado_condicion": "2026-08-16T15:22:00Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T16:46:35Z",
+   "t_captura_utc": "2026-08-16T16:46:35Z",
+   "t_evaluacion_utc": "2026-08-16T16:46:36Z",
+   "t_generacion_utc": "2026-08-16T16:46:36Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T16:46:37Z",
+     "latencia_envio_ms": 756.829023361206,
+     "error": null,
+     "message_id": 1222,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 2.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sarpsborg 08 vs Sandefjord Fotball\n⏱ Minuto: 85'\n📊 Marcador: 1-2\n🏆 Liga: Eliteserien\n\n📝 Motivo: Sarpsborg 08 acumula 60% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Sarpsborg 08, min 86\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "c7e115dec6146e2a"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -630,7 +678,7 @@
    "match_id": "16483707",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 46,
    "condicion": "Başakşehir FK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -652,9 +700,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T16:41:29Z",
-   "t_captura_utc": "2026-08-16T16:45:39Z",
-   "t_evaluacion_utc": "2026-08-16T16:45:40Z",
-   "t_generacion_utc": "2026-08-16T16:45:40Z",
+   "t_captura_utc": "2026-08-16T16:46:38Z",
+   "t_evaluacion_utc": "2026-08-16T16:46:38Z",
+   "t_generacion_utc": "2026-08-16T16:46:38Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -668,7 +716,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Başakşehir FK acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 46'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Başakşehir FK acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "bf0444878aa88351"
   }
