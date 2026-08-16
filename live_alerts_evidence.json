@@ -5575,5 +5575,45 @@
    "cuota_real_betano": 1.93,
    "activo": true
   }
+ ],
+ "55607e1771adb455": [
+  {
+   "alert_id": "55607e1771adb455",
+   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "Başakşehir FK vs Kocaelispor (Trendyol Süper Lig)",
+   "liga": "Trendyol Süper Lig",
+   "event_id": "16483707",
+   "minuto_alerta": 59,
+   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T17:19:28Z",
+   "t_captura_utc": "2026-08-16T17:19:28Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T17:20:35Z",
+   "segundos_transcurridos": 65,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "1.5 @ 1.44\n2.5 @ 3.15",
+   "linea_real_betano": 1.5,
+   "cuota_real_betano": 1.44,
+   "activo": true
+  },
+  {
+   "alert_id": "55607e1771adb455",
+   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "Başakşehir FK vs Kocaelispor (Trendyol Süper Lig)",
+   "liga": "Trendyol Süper Lig",
+   "event_id": "16483707",
+   "minuto_alerta": 59,
+   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T17:19:28Z",
+   "t_captura_utc": "2026-08-16T17:19:28Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T17:20:35Z",
+   "segundos_transcurridos": 65,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "1.5 @ 1.44\n2.5 @ 3.15",
+   "linea_real_betano": 2.5,
+   "cuota_real_betano": 3.15,
+   "activo": true
+  }
  ]
 }
