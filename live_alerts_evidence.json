@@ -5021,5 +5021,26 @@
    "cuota_real_betano": 1.83,
    "activo": true
   }
+ ],
+ "fe7526fe7312c7e8": [
+  {
+   "alert_id": "fe7526fe7312c7e8",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Atlas FC vs Tigres UANL (Liga MX, Apertura)",
+   "liga": "Liga MX, Apertura",
+   "event_id": "16317952",
+   "minuto_alerta": 20,
+   "condicion": "Tigres UANL acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T03:37:19Z",
+   "t_captura_utc": "2026-08-16T03:37:19Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T03:38:15Z",
+   "segundos_transcurridos": 55,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "14.0 @ 1.88",
+   "linea_real_betano": 14.0,
+   "cuota_real_betano": 1.88,
+   "activo": true
+  }
  ]
 }
