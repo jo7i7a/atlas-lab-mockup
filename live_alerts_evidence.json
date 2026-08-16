@@ -5187,5 +5187,45 @@
    "cuota_real_betano": 1.83,
    "activo": true
   }
+ ],
+ "89189c286c56a822": [
+  {
+   "alert_id": "89189c286c56a822",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Feyenoord vs Go Ahead Eagles (VriendenLoterij Eredivisie)",
+   "liga": "VriendenLoterij Eredivisie",
+   "event_id": "16316768",
+   "minuto_alerta": 16,
+   "condicion": "Feyenoord domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T12:45:52Z",
+   "t_captura_utc": "2026-08-16T12:45:52Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T12:48:00Z",
+   "segundos_transcurridos": 97,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.5 @ 1.57\n11.5 @ 1.98",
+   "linea_real_betano": 10.5,
+   "cuota_real_betano": 1.57,
+   "activo": true
+  },
+  {
+   "alert_id": "89189c286c56a822",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Feyenoord vs Go Ahead Eagles (VriendenLoterij Eredivisie)",
+   "liga": "VriendenLoterij Eredivisie",
+   "event_id": "16316768",
+   "minuto_alerta": 16,
+   "condicion": "Feyenoord domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T12:45:52Z",
+   "t_captura_utc": "2026-08-16T12:45:52Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T12:48:00Z",
+   "segundos_transcurridos": 97,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.5 @ 1.57\n11.5 @ 1.98",
+   "linea_real_betano": 11.5,
+   "cuota_real_betano": 1.98,
+   "activo": true
+  }
  ]
 }
