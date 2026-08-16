@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T03:35:10Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-16T03:36:10Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "L2-SHADOW",
@@ -89,58 +89,6 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Real Salt Lake vs Minnesota United\n⏱ Minuto: 78'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📈 Domina: Real Salt Lake\nxG: 1.64 vs 1.43\nTiros a puerta: 5 vs 2\n\nReferencia PROXY: AH +0.25 @ 2.2 [suspendida] (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Real Salt Lake — ¿línea y cuota reales?",
    "evidencia": null,
    "alert_id": "329731b537d489e7"
-  },
-  {
-   "strategy_id": "L4",
-   "match_label": "Real Salt Lake vs Minnesota United (MLS)",
-   "match_id": "15171650",
-   "market": "Over 0.5 / Over 1.5 -- verificar ambos en Betano AHORA (la alerta NO es recomendación de apuesta)",
-   "cuota_detectada": null,
-   "minuto": 82,
-   "condicion": "0-0 con presión sostenida del local en Liga Over Goles (xG≥1.30/0.70, tiros a puerta ≥4 local y ≥5 total, córners ≥4 local y ≥5 total, min≥55). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_local": 1.64,
-    "xg_visita": 1.43,
-    "sot_local": 5,
-    "sot_visita": 2,
-    "sot_total": 7,
-    "cor_local": 6,
-    "cor_visita": 9,
-    "cor_total": 15,
-    "liga": "MLS",
-    "liga_over_goles": true,
-    "marcador": "0-0",
-    "proxy_over05": 1.8333,
-    "proxy_over05_suspendida": true,
-    "proxy_over15": 2.75,
-    "proxy_over15_suspendida": false,
-    "proxy_timestamp": "2026-08-16T03:21:08Z",
-    "proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-08-16T03:05:34Z",
-   "t_captura_utc": "2026-08-16T03:21:08Z",
-   "t_evaluacion_utc": "2026-08-16T03:21:15Z",
-   "t_generacion_utc": "2026-08-16T03:21:15Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T03:06:19Z",
-     "latencia_envio_ms": 830.0161361694336,
-     "error": null,
-     "message_id": 1052,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 45.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — L4\n\n⚽ Real Salt Lake vs Minnesota United\n⏱ Minuto: 82'\n📊 Marcador: 0-0\n\n📈 xG:\nLocal: 1.64\nVisita: 1.43\n\n🎯 Tiros a puerta:\nLocal: 5\nVisita: 2\nTotal: 7\n\n🚩 Córners:\nLocal: 6\nVisita: 9\nTotal: 15\n\n🏆 Liga: MLS\n🔥 Perfil: LIGA OVER GOLES\n\n👉 REVISAR AHORA EN BETANO:\nOver 0.5 / Over 1.5\n\n— referencia PROXY SofaScore (NO Betano) —\nOver 0.5 proxy: 1.8333 [SUSPENDIDA]\nOver 1.5 proxy: 2.75",
-   "evidencia": null,
-   "alert_id": "e6657c06caef38bf"
   },
   {
    "strategy_id": "L1-SHADOW",
@@ -235,7 +183,7 @@
    "match_id": "16317952",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 17,
+   "minuto": 18,
    "condicion": "4 córners totales antes del min 30 (0-4), Tigres UANL presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Atlas FC NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -248,8 +196,8 @@
    },
    "t_evento_real_utc": "2026-08-16T03:27:41Z",
    "t_captura_utc": "2026-08-16T03:27:41Z",
-   "t_evaluacion_utc": "2026-08-16T03:35:09Z",
-   "t_generacion_utc": "2026-08-16T03:35:09Z",
+   "t_evaluacion_utc": "2026-08-16T03:36:09Z",
+   "t_generacion_utc": "2026-08-16T03:36:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -263,7 +211,7 @@
    },
    "latencia_total_seg": 29.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Atlas FC vs Tigres UANL\n⏱ Minuto: 17'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Tigres UANL presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlas FC no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Atlas FC vs Tigres UANL\n⏱ Minuto: 18'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Tigres UANL presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlas FC no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "8d770ded1948f41b"
   },
@@ -273,7 +221,7 @@
    "match_id": "16317952",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 17,
+   "minuto": 18,
    "condicion": "4 córners totales antes del min 45 (0-4), Tigres UANL presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Atlas FC NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -287,8 +235,8 @@
    },
    "t_evento_real_utc": "2026-08-16T03:27:41Z",
    "t_captura_utc": "2026-08-16T03:27:41Z",
-   "t_evaluacion_utc": "2026-08-16T03:35:10Z",
-   "t_generacion_utc": "2026-08-16T03:35:10Z",
+   "t_evaluacion_utc": "2026-08-16T03:36:10Z",
+   "t_generacion_utc": "2026-08-16T03:36:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -302,7 +250,7 @@
    },
    "latencia_total_seg": 30.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Atlas FC vs Tigres UANL\n⏱ Minuto: 17'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Tigres UANL presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlas FC no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Atlas FC vs Tigres UANL\n⏱ Minuto: 18'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Tigres UANL presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlas FC no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "570c700f466f1954"
   }
