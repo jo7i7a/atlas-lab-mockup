@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T16:56:19Z",
- "n_alerts": 13,
+ "generated_at_utc": "2026-08-16T16:57:17Z",
+ "n_alerts": 12,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Burnley vs West Ham United (Championship)",
-   "match_id": "16391144",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 67,
-   "condicion": "Burnley acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Burnley",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6111,
-    "touches_home": 22,
-    "touches_away": 14,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 57,
-    "equipo_que_realizo_sustitucion": "Burnley",
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-16T16:26:36Z",
-    "t_inicio_estimado_condicion": "2026-08-16T16:25:56Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T16:26:36Z",
-   "t_captura_utc": "2026-08-16T16:26:36Z",
-   "t_evaluacion_utc": "2026-08-16T16:26:36Z",
-   "t_generacion_utc": "2026-08-16T16:26:36Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T16:26:37Z",
-     "latencia_envio_ms": 809.1657161712646,
-     "error": null,
-     "message_id": 1211,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Burnley vs West Ham United\n⏱ Minuto: 67'\n📊 Marcador: 0-1\n🏆 Liga: Championship\n\n📝 Motivo: Burnley acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Burnley, min 57\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "40473de81e9b73c7"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Burnley vs West Ham United (Championship)",
@@ -415,83 +367,6 @@
    "alert_id": "bf0444878aa88351"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "Ñublense vs Unión La Calera (Liga de Primera)",
-   "match_id": "15353097",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "4 córners totales antes del min 30 (4-0), Ñublense presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Unión La Calera NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Ñublense"
-   },
-   "t_evento_real_utc": "2026-08-16T16:44:45Z",
-   "t_captura_utc": "2026-08-16T16:44:45Z",
-   "t_evaluacion_utc": "2026-08-16T16:56:09Z",
-   "t_generacion_utc": "2026-08-16T16:56:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T16:45:10Z",
-     "latencia_envio_ms": 943.732738494873,
-     "error": null,
-     "message_id": 1219,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 25.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Ñublense presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Unión La Calera no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "01a7c6512d8fd7ed"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Ñublense vs Unión La Calera (Liga de Primera)",
-   "match_id": "15353097",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "4 córners totales antes del min 45 (4-0), Ñublense presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Unión La Calera NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Ñublense",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-16T16:44:45Z",
-   "t_captura_utc": "2026-08-16T16:44:45Z",
-   "t_evaluacion_utc": "2026-08-16T16:56:10Z",
-   "t_generacion_utc": "2026-08-16T16:56:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T16:45:12Z",
-     "latencia_envio_ms": 794.6858406066895,
-     "error": null,
-     "message_id": 1220,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 27.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Ñublense presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Unión La Calera no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "04a9d9a9baa77d95"
-  },
-  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Ñublense vs Unión La Calera (Liga de Primera)",
    "match_id": "15353097",
@@ -537,12 +412,89 @@
    "alert_id": "36bd3dac7a14c9f6"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "Ñublense vs Unión La Calera (Liga de Primera)",
+   "match_id": "15353097",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 26,
+   "condicion": "4 córners totales antes del min 30 (4-0), Ñublense presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Unión La Calera NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Ñublense"
+   },
+   "t_evento_real_utc": "2026-08-16T16:44:45Z",
+   "t_captura_utc": "2026-08-16T16:44:45Z",
+   "t_evaluacion_utc": "2026-08-16T16:57:09Z",
+   "t_generacion_utc": "2026-08-16T16:57:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T16:45:10Z",
+     "latencia_envio_ms": 943.732738494873,
+     "error": null,
+     "message_id": 1219,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 25.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 26'\n📊 Marcador: 1-0\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Ñublense presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Unión La Calera no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "01a7c6512d8fd7ed"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Ñublense vs Unión La Calera (Liga de Primera)",
+   "match_id": "15353097",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 26,
+   "condicion": "4 córners totales antes del min 45 (4-0), Ñublense presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Unión La Calera NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Ñublense",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-16T16:44:45Z",
+   "t_captura_utc": "2026-08-16T16:44:45Z",
+   "t_evaluacion_utc": "2026-08-16T16:57:10Z",
+   "t_generacion_utc": "2026-08-16T16:57:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T16:45:12Z",
+     "latencia_envio_ms": 794.6858406066895,
+     "error": null,
+     "message_id": 1220,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 27.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 26'\n📊 Marcador: 1-0\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Ñublense presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Unión La Calera no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "04a9d9a9baa77d95"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Ñublense vs Unión La Calera (Liga de Primera)",
    "match_id": "15353097",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 25,
+   "minuto": 26,
    "condicion": "Ñublense acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -564,9 +516,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T16:51:18Z",
-   "t_captura_utc": "2026-08-16T16:56:18Z",
-   "t_evaluacion_utc": "2026-08-16T16:56:19Z",
-   "t_generacion_utc": "2026-08-16T16:56:19Z",
+   "t_captura_utc": "2026-08-16T16:57:17Z",
+   "t_evaluacion_utc": "2026-08-16T16:57:17Z",
+   "t_generacion_utc": "2026-08-16T16:57:17Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -580,7 +532,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Ñublense acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 26'\n📊 Marcador: 1-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Ñublense acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "31b230d77d8301bb"
   }
