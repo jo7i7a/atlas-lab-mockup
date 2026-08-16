@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T23:50:24Z",
- "n_alerts": 10,
+ "generated_at_utc": "2026-08-16T23:51:28Z",
+ "n_alerts": 11,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -359,7 +359,7 @@
    "match_id": "16671567",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 34,
+   "minuto": 35,
    "condicion": "4 córners totales antes del min 45 (1-3), Instituto De Córdoba presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Central Córdoba NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -373,8 +373,8 @@
    },
    "t_evento_real_utc": "2026-08-16T23:45:56Z",
    "t_captura_utc": "2026-08-16T23:45:56Z",
-   "t_evaluacion_utc": "2026-08-16T23:50:09Z",
-   "t_generacion_utc": "2026-08-16T23:50:09Z",
+   "t_evaluacion_utc": "2026-08-16T23:51:10Z",
+   "t_generacion_utc": "2026-08-16T23:51:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -388,9 +388,57 @@
    },
    "latencia_total_seg": 16.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Central Córdoba vs Instituto De Córdoba\n⏱ Minuto: 34'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Instituto De Córdoba presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Central Córdoba no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Central Córdoba vs Instituto De Córdoba\n⏱ Minuto: 35'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Instituto De Córdoba presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Central Córdoba no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "e6d19783028a3b63"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Central Córdoba vs Instituto De Córdoba (Liga Profesional de Fútbol)",
+   "match_id": "16671567",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 35,
+   "condicion": "Instituto De Córdoba acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Instituto De Córdoba",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.6667,
+    "touches_home": 4,
+    "touches_away": 8,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 30,
+    "equipo_que_realizo_sustitucion": "Instituto De Córdoba",
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-16T23:51:25Z",
+    "t_inicio_estimado_condicion": "2026-08-16T23:44:33Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T23:51:25Z",
+   "t_captura_utc": "2026-08-16T23:51:25Z",
+   "t_evaluacion_utc": "2026-08-16T23:51:25Z",
+   "t_generacion_utc": "2026-08-16T23:51:25Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T23:51:26Z",
+     "latencia_envio_ms": 838.5016918182373,
+     "error": null,
+     "message_id": 1360,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Central Córdoba vs Instituto De Córdoba\n⏱ Minuto: 35'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Instituto De Córdoba acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Instituto De Córdoba, min 30\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "960b75f5c4cf9474"
   },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -398,7 +446,7 @@
    "match_id": "15235425",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 58,
+   "minuto": 59,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -406,9 +454,9 @@
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
     "xg_combinado": 1.77,
-    "tiros_combinados": 19,
-    "sot_combinado": 9,
-    "presion_reciente_10min": 5,
+    "tiros_combinados": 20,
+    "sot_combinado": 10,
+    "presion_reciente_10min": 6,
     "marcador_en_el_momento": "1-1",
     "t_primera_observacion_atlas": "2026-08-16T23:49:26Z",
     "t_inicio_estimado_condicion": "2026-08-16T23:48:42Z",
@@ -416,9 +464,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T23:49:26Z",
-   "t_captura_utc": "2026-08-16T23:50:23Z",
-   "t_evaluacion_utc": "2026-08-16T23:50:24Z",
-   "t_generacion_utc": "2026-08-16T23:50:24Z",
+   "t_captura_utc": "2026-08-16T23:51:27Z",
+   "t_evaluacion_utc": "2026-08-16T23:51:28Z",
+   "t_generacion_utc": "2026-08-16T23:51:28Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -432,7 +480,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Corinthians vs Cruzeiro\n⏱ Minuto: 58'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: presión combinada sostenida — xG 1.77, 19 tiros totales (9 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Corinthians vs Cruzeiro\n⏱ Minuto: 59'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: presión combinada sostenida — xG 1.77, 20 tiros totales (10 a puerta), 6 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "8d16eef832d80ae4"
   }
