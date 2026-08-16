@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-16T00:05:55Z",
+ "generated_at_utc": "2026-08-16T00:06:42Z",
  "n_alerts": 8,
  "alerts": [
   {
@@ -49,96 +49,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlante FC vs CD Toluca\n⏱ Minuto: 39'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Atlante FC acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Atlante FC, min 29\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "50929bf608333641"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Atlanta United vs New York Red Bulls (MLS)",
-   "match_id": "15171629",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 24,
-   "condicion": "New York Red Bulls domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "New York Red Bulls",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 1,
-    "remates_home": 1,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T00:04:44Z",
-   "t_captura_utc": "2026-08-16T00:04:44Z",
-   "t_evaluacion_utc": "2026-08-16T00:05:31Z",
-   "t_generacion_utc": "2026-08-16T00:05:31Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T00:05:32Z",
-     "latencia_envio_ms": 824.9459266662598,
-     "error": null,
-     "message_id": 963,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 48.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Atlanta United vs New York Red Bulls\n⏱ Minuto: 24'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: New York Red Bulls — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "0f8a90f8c1095950"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "CF Montréal vs DC United (MLS)",
-   "match_id": "15171637",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 24,
-   "condicion": "CF Montréal domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "CF Montréal",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T00:02:57Z",
-   "t_captura_utc": "2026-08-16T00:02:57Z",
-   "t_evaluacion_utc": "2026-08-16T00:05:38Z",
-   "t_generacion_utc": "2026-08-16T00:05:38Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T00:03:39Z",
-     "latencia_envio_ms": 829.7746181488037,
-     "error": null,
-     "message_id": 960,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 42.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CF Montréal vs DC United\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: CF Montréal — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "1e0fb5c9ef50a4f6"
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -276,12 +186,102 @@
    "alert_id": "10409a59c9dc0a55"
   },
   {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Atlanta United vs New York Red Bulls (MLS)",
+   "match_id": "15171629",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "New York Red Bulls domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "New York Red Bulls",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 1,
+    "remates_home": 1,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T00:04:44Z",
+   "t_captura_utc": "2026-08-16T00:04:44Z",
+   "t_evaluacion_utc": "2026-08-16T00:06:33Z",
+   "t_generacion_utc": "2026-08-16T00:06:33Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T00:05:32Z",
+     "latencia_envio_ms": 824.9459266662598,
+     "error": null,
+     "message_id": 963,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 48.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Atlanta United vs New York Red Bulls\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: New York Red Bulls — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "0f8a90f8c1095950"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "CF Montréal vs DC United (MLS)",
+   "match_id": "15171637",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "CF Montréal domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "CF Montréal",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T00:02:57Z",
+   "t_captura_utc": "2026-08-16T00:02:57Z",
+   "t_evaluacion_utc": "2026-08-16T00:06:39Z",
+   "t_generacion_utc": "2026-08-16T00:06:39Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T00:03:39Z",
+     "latencia_envio_ms": 829.7746181488037,
+     "error": null,
+     "message_id": 960,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 42.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CF Montréal vs DC United\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: CF Montréal — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "1e0fb5c9ef50a4f6"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Atlanta United vs New York Red Bulls (MLS)",
    "match_id": "15171629",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 25,
+   "minuto": 26,
    "condicion": "New York Red Bulls acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -303,9 +303,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T00:01:38Z",
-   "t_captura_utc": "2026-08-16T00:05:54Z",
-   "t_evaluacion_utc": "2026-08-16T00:05:54Z",
-   "t_generacion_utc": "2026-08-16T00:05:54Z",
+   "t_captura_utc": "2026-08-16T00:06:40Z",
+   "t_evaluacion_utc": "2026-08-16T00:06:41Z",
+   "t_generacion_utc": "2026-08-16T00:06:41Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -319,7 +319,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlanta United vs New York Red Bulls\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: New York Red Bulls acumula 73% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlanta United vs New York Red Bulls\n⏱ Minuto: 26'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: New York Red Bulls acumula 73% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "bb759a102b347d9a"
   },
@@ -329,7 +329,7 @@
    "match_id": "15171639",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 25,
+   "minuto": 26,
    "condicion": "Orlando City SC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -351,9 +351,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T00:00:33Z",
-   "t_captura_utc": "2026-08-16T00:05:55Z",
-   "t_evaluacion_utc": "2026-08-16T00:05:55Z",
-   "t_generacion_utc": "2026-08-16T00:05:55Z",
+   "t_captura_utc": "2026-08-16T00:06:41Z",
+   "t_evaluacion_utc": "2026-08-16T00:06:42Z",
+   "t_generacion_utc": "2026-08-16T00:06:42Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -367,7 +367,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Orlando City SC vs FC Cincinnati\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: Orlando City SC acumula 74% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Orlando City SC vs FC Cincinnati\n⏱ Minuto: 26'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: Orlando City SC acumula 74% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "d9198186b23a6de6"
   }
