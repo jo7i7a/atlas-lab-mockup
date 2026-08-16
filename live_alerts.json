@@ -1,51 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T19:02:13Z",
- "n_alerts": 10,
+ "generated_at_utc": "2026-08-16T19:03:25Z",
+ "n_alerts": 9,
  "alerts": [
-  {
-   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Fredrikstad FK vs Kristiansund BK (Eliteserien)",
-   "match_id": "15260870",
-   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 68,
-   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_combinado": 1.83,
-    "tiros_combinados": 20,
-    "sot_combinado": 5,
-    "presion_reciente_10min": 3,
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-08-16T18:32:31Z",
-    "t_inicio_estimado_condicion": "2026-08-16T18:32:12Z",
-    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T18:32:31Z",
-   "t_captura_utc": "2026-08-16T18:41:27Z",
-   "t_evaluacion_utc": "2026-08-16T18:41:30Z",
-   "t_generacion_utc": "2026-08-16T18:41:30Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T18:32:34Z",
-     "latencia_envio_ms": 782.1555137634277,
-     "error": null,
-     "message_id": 1250,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 3.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Fredrikstad FK vs Kristiansund BK\n⏱ Minuto: 68'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: presión combinada sostenida — xG 1.83, 20 tiros totales (5 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
-   "evidencia": null,
-   "alert_id": "c5141c428884a5cc"
-  },
   {
    "strategy_id": "L1-SHADOW",
    "match_label": "Sarmiento vs Huracán (Liga Profesional de Fútbol)",
@@ -84,54 +40,6 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Sarmiento vs Huracán\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Huracán presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Sarmiento no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "165e8a7d04f96324"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Sarmiento vs Huracán (Liga Profesional de Fútbol)",
-   "match_id": "16667391",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 48,
-   "condicion": "Sarmiento acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sarmiento",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6875,
-    "touches_home": 11,
-    "touches_away": 5,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 45,
-    "equipo_que_realizo_sustitucion": "Sarmiento",
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-08-16T18:32:28Z",
-    "t_inicio_estimado_condicion": "2026-08-16T18:31:28Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T18:32:28Z",
-   "t_captura_utc": "2026-08-16T18:48:34Z",
-   "t_evaluacion_utc": "2026-08-16T18:48:34Z",
-   "t_generacion_utc": "2026-08-16T18:48:34Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T18:32:29Z",
-     "latencia_envio_ms": 855.884313583374,
-     "error": null,
-     "message_id": 1249,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sarmiento vs Huracán\n⏱ Minuto: 48'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Sarmiento acumula 69% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Sarmiento, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "e5207d06e66ad8e7"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -414,7 +322,7 @@
    "match_id": "16483634",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 32,
+   "minuto": 33,
    "condicion": "4 córners totales antes del min 45 (1-3), Erzurumspor FK presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Amed Sportif Faaliyetler NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -428,8 +336,8 @@
    },
    "t_evento_real_utc": "2026-08-16T18:59:03Z",
    "t_captura_utc": "2026-08-16T18:59:03Z",
-   "t_evaluacion_utc": "2026-08-16T19:02:13Z",
-   "t_generacion_utc": "2026-08-16T19:02:13Z",
+   "t_evaluacion_utc": "2026-08-16T19:03:14Z",
+   "t_generacion_utc": "2026-08-16T19:03:14Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -443,9 +351,57 @@
    },
    "latencia_total_seg": 9.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Amed Sportif Faaliyetler vs Erzurumspor FK\n⏱ Minuto: 32'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Erzurumspor FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Amed Sportif Faaliyetler no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Amed Sportif Faaliyetler vs Erzurumspor FK\n⏱ Minuto: 33'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Erzurumspor FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Amed Sportif Faaliyetler no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "7d6e0bee5271bf95"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Beşiktaş JK vs Eyüpspor (Trendyol Süper Lig)",
+   "match_id": "16483640",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 32,
+   "condicion": "Beşiktaş JK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Beşiktaş JK",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.75,
+    "touches_home": 3,
+    "touches_away": 1,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "1-0",
+    "t_primera_observacion_atlas": "2026-08-16T19:03:24Z",
+    "t_inicio_estimado_condicion": "2026-08-16T18:52:05Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T19:03:24Z",
+   "t_captura_utc": "2026-08-16T19:03:24Z",
+   "t_evaluacion_utc": "2026-08-16T19:03:24Z",
+   "t_generacion_utc": "2026-08-16T19:03:24Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T19:03:25Z",
+     "latencia_envio_ms": 840.5687808990479,
+     "error": null,
+     "message_id": 1271,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Beşiktaş JK vs Eyüpspor\n⏱ Minuto: 32'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Beşiktaş JK acumula 75% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "dbd95ee19492678d"
   }
  ]
 }
