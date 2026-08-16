@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T15:12:34Z",
- "n_alerts": 17,
+ "generated_at_utc": "2026-08-16T15:13:33Z",
+ "n_alerts": 18,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -365,160 +365,6 @@
    "alert_id": "ba9ac76739bfd741"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Kalmar FF vs Hammarby IF (Allsvenskan)",
-   "match_id": "15271350",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 41,
-   "condicion": "4 córners totales antes del min 45 (1-3), Hammarby IF presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Kalmar FF NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Hammarby IF",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-16T15:02:59Z",
-   "t_captura_utc": "2026-08-16T15:02:59Z",
-   "t_evaluacion_utc": "2026-08-16T15:12:14Z",
-   "t_generacion_utc": "2026-08-16T15:12:14Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T15:03:14Z",
-     "latencia_envio_ms": 808.2118034362793,
-     "error": null,
-     "message_id": 1165,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 15.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Kalmar FF vs Hammarby IF\n⏱ Minuto: 41'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Hammarby IF presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kalmar FF no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "6bfba3dfcb7bfcbf"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "GAIS vs Malmö FF (Allsvenskan)",
-   "match_id": "15272490",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 40,
-   "condicion": "5 córners totales antes del min 45 (3-2), GAIS presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Malmö FF NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 2,
-    "equipo_presiona": "GAIS",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-16T14:47:27Z",
-   "t_captura_utc": "2026-08-16T14:47:27Z",
-   "t_evaluacion_utc": "2026-08-16T15:12:15Z",
-   "t_generacion_utc": "2026-08-16T15:12:15Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T14:48:13Z",
-     "latencia_envio_ms": 780.2157402038574,
-     "error": null,
-     "message_id": 1159,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 46.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ GAIS vs Malmö FF\n⏱ Minuto: 40'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: GAIS presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Malmö FF no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "3f61a0f4c3df25e0"
-  },
-  {
-   "strategy_id": "L3",
-   "match_label": "CD Nacional vs Estoril Praia (Liga Portugal Betclic)",
-   "match_id": "16450752",
-   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
-   "cuota_detectada": null,
-   "minuto": 39,
-   "condicion": "Expulsión de Estoril Praia (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_expulsado": "Estoril Praia",
-    "marcador_al_detectar": "0-0",
-    "total_rojas_partido": 1
-   },
-   "t_evento_real_utc": "2026-08-16T15:06:39Z",
-   "t_captura_utc": "2026-08-16T15:12:08Z",
-   "t_evaluacion_utc": "2026-08-16T15:12:25Z",
-   "t_generacion_utc": "2026-08-16T15:12:25Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T15:07:22Z",
-     "latencia_envio_ms": 810.5616569519043,
-     "error": null,
-     "message_id": 1171,
-     "chat_id": -5219979824
-    }
-   },
-   "latencia_total_seg": 43.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ CD Nacional vs Estoril Praia\n⏱ Minuto: 39'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n🟥 Expulsado: Estoril Praia\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
-   "evidencia": null,
-   "alert_id": "fd4c672502606d22"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Chapecoense vs Bahia (Brasileirão Betano)",
-   "match_id": "15235427",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 49,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 1,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-16T15:07:46Z",
-   "t_captura_utc": "2026-08-16T15:07:46Z",
-   "t_evaluacion_utc": "2026-08-16T15:12:27Z",
-   "t_generacion_utc": "2026-08-16T15:12:27Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T15:09:26Z",
-     "latencia_envio_ms": 845.6943035125732,
-     "error": null,
-     "message_id": 1172,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 100.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Chapecoense vs Bahia\n⏱ Minuto: 49'\n📊 Marcador: 2-2\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "abcd8bcff4b1fc97"
-  },
-  {
    "strategy_id": "A2",
    "match_label": "Operário-PR vs Avaí (Brasileirão Série B)",
    "match_id": "15526221",
@@ -603,12 +449,212 @@
    "alert_id": "00dc2c608a4599df"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Kalmar FF vs Hammarby IF (Allsvenskan)",
+   "match_id": "15271350",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 42,
+   "condicion": "4 córners totales antes del min 45 (1-3), Hammarby IF presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Kalmar FF NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 1,
+    "corners_away": 3,
+    "equipo_presiona": "Hammarby IF",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-16T15:02:59Z",
+   "t_captura_utc": "2026-08-16T15:02:59Z",
+   "t_evaluacion_utc": "2026-08-16T15:13:14Z",
+   "t_generacion_utc": "2026-08-16T15:13:14Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T15:03:14Z",
+     "latencia_envio_ms": 808.2118034362793,
+     "error": null,
+     "message_id": 1165,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 15.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Kalmar FF vs Hammarby IF\n⏱ Minuto: 42'\n📊 Marcador: 0-1\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Hammarby IF presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kalmar FF no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "6bfba3dfcb7bfcbf"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "GAIS vs Malmö FF (Allsvenskan)",
+   "match_id": "15272490",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 41,
+   "condicion": "5 córners totales antes del min 45 (3-2), GAIS presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Malmö FF NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "GAIS",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-16T14:47:27Z",
+   "t_captura_utc": "2026-08-16T14:47:27Z",
+   "t_evaluacion_utc": "2026-08-16T15:13:15Z",
+   "t_generacion_utc": "2026-08-16T15:13:15Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T14:48:13Z",
+     "latencia_envio_ms": 780.2157402038574,
+     "error": null,
+     "message_id": 1159,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 46.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ GAIS vs Malmö FF\n⏱ Minuto: 41'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: GAIS presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Malmö FF no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "3f61a0f4c3df25e0"
+  },
+  {
+   "strategy_id": "L3",
+   "match_label": "CD Nacional vs Estoril Praia (Liga Portugal Betclic)",
+   "match_id": "16450752",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
+   "cuota_detectada": null,
+   "minuto": 40,
+   "condicion": "Expulsión de Estoril Praia (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_expulsado": "Estoril Praia",
+    "marcador_al_detectar": "0-0",
+    "total_rojas_partido": 1
+   },
+   "t_evento_real_utc": "2026-08-16T15:06:39Z",
+   "t_captura_utc": "2026-08-16T15:13:14Z",
+   "t_evaluacion_utc": "2026-08-16T15:13:25Z",
+   "t_generacion_utc": "2026-08-16T15:13:25Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T15:07:22Z",
+     "latencia_envio_ms": 810.5616569519043,
+     "error": null,
+     "message_id": 1171,
+     "chat_id": -5219979824
+    }
+   },
+   "latencia_total_seg": 43.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ CD Nacional vs Estoril Praia\n⏱ Minuto: 40'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n🟥 Expulsado: Estoril Praia\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
+   "evidencia": null,
+   "alert_id": "fd4c672502606d22"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Chapecoense vs Bahia (Brasileirão Betano)",
+   "match_id": "15235427",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 50,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 1,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-08-16T15:07:46Z",
+   "t_captura_utc": "2026-08-16T15:07:46Z",
+   "t_evaluacion_utc": "2026-08-16T15:13:27Z",
+   "t_generacion_utc": "2026-08-16T15:13:27Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T15:09:26Z",
+     "latencia_envio_ms": 845.6943035125732,
+     "error": null,
+     "message_id": 1172,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 100.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Chapecoense vs Bahia\n⏱ Minuto: 50'\n📊 Marcador: 2-2\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "abcd8bcff4b1fc97"
+  },
+  {
+   "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "CD Nacional vs Estoril Praia (Liga Portugal Betclic)",
+   "match_id": "16450752",
+   "market": "Over 1.5 Goles FT (o Over 0.5 2ª Mitad) -- verificar en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 40,
+   "condicion": "0-0 con dominancia sostenida entre los minutos 32-42 (remates totales≥9, tiros a puerta≥4, córners≥5, todos combinados). Condición original de 'ataques peligrosos' NO evaluada -- dato no disponible en la fuente actual. Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "remates_local": 5,
+    "remates_visita": 6,
+    "remates_total": 11,
+    "sot_local": 0,
+    "sot_visita": 5,
+    "sot_total": 5,
+    "cor_local": 2,
+    "cor_visita": 3,
+    "cor_total": 5,
+    "marcador": "0-0",
+    "condicion_original_no_evaluada": "ataques peligrosos a favor del dominante (dato no disponible)"
+   },
+   "t_evento_real_utc": "2026-08-16T15:13:14Z",
+   "t_captura_utc": "2026-08-16T15:13:14Z",
+   "t_evaluacion_utc": "2026-08-16T15:13:28Z",
+   "t_generacion_utc": "2026-08-16T15:13:28Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T15:13:29Z",
+     "latencia_envio_ms": 794.2728996276855,
+     "error": null,
+     "message_id": 1174,
+     "chat_id": -5415726375
+    }
+   },
+   "latencia_total_seg": 15.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B1_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ CD Nacional vs Estoril Praia\n⏱ Minuto: 40'\n📊 Marcador: 0-0\n\n🎯 Remates totales:\nLocal: 5\nVisita: 6\nTotal: 11\n\n🎯 Tiros a puerta:\nLocal: 0\nVisita: 5\nTotal: 5\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n🏆 Liga: Liga Portugal Betclic\n\n⚠️ Versión SIN la condición de ataques peligrosos (dato no disponible)\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 goles FT (o Over 0.5 2ª mitad)",
+   "evidencia": null,
+   "alert_id": "5fe17ef36d91559a"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Chapecoense vs Bahia (Brasileirão Betano)",
    "match_id": "15235427",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 49,
+   "minuto": 50,
    "condicion": "Chapecoense acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -630,9 +676,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T15:12:31Z",
-   "t_captura_utc": "2026-08-16T15:12:31Z",
-   "t_evaluacion_utc": "2026-08-16T15:12:31Z",
-   "t_generacion_utc": "2026-08-16T15:12:31Z",
+   "t_captura_utc": "2026-08-16T15:13:31Z",
+   "t_evaluacion_utc": "2026-08-16T15:13:32Z",
+   "t_generacion_utc": "2026-08-16T15:13:32Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -646,7 +692,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Chapecoense vs Bahia\n⏱ Minuto: 49'\n📊 Marcador: 2-2\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Chapecoense acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Chapecoense, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Chapecoense vs Bahia\n⏱ Minuto: 50'\n📊 Marcador: 2-2\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Chapecoense acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Chapecoense, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "144ed2bf77063eda"
   },
@@ -656,7 +702,7 @@
    "match_id": "15271350",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 42,
+   "minuto": 43,
    "condicion": "Hammarby IF acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -671,16 +717,16 @@
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 23,
     "equipo_que_realizo_sustitucion": "Hammarby IF",
-    "marcador_en_el_momento": "0-0",
+    "marcador_en_el_momento": "0-1",
     "t_primera_observacion_atlas": "2026-08-16T14:51:25Z",
     "t_inicio_estimado_condicion": "2026-08-16T14:50:55Z",
     "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T14:51:25Z",
-   "t_captura_utc": "2026-08-16T15:12:32Z",
-   "t_evaluacion_utc": "2026-08-16T15:12:33Z",
-   "t_generacion_utc": "2026-08-16T15:12:33Z",
+   "t_captura_utc": "2026-08-16T15:13:32Z",
+   "t_evaluacion_utc": "2026-08-16T15:13:32Z",
+   "t_generacion_utc": "2026-08-16T15:13:32Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -694,7 +740,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Kalmar FF vs Hammarby IF\n⏱ Minuto: 42'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: Hammarby IF acumula 91% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Hammarby IF, min 23\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Kalmar FF vs Hammarby IF\n⏱ Minuto: 43'\n📊 Marcador: 0-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: Hammarby IF acumula 91% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Hammarby IF, min 23\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "51583129c6caeb20"
   },
@@ -704,7 +750,7 @@
    "match_id": "16316781",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 26,
+   "minuto": 27,
    "condicion": "AFC Ajax acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -713,8 +759,8 @@
    "extra": {
     "equipo_dominante": "AFC Ajax",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 14,
+    "ratio_presion_territorial": 0.6957,
+    "touches_home": 16,
     "touches_away": 7,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
@@ -726,9 +772,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T15:06:44Z",
-   "t_captura_utc": "2026-08-16T15:12:34Z",
-   "t_evaluacion_utc": "2026-08-16T15:12:34Z",
-   "t_generacion_utc": "2026-08-16T15:12:34Z",
+   "t_captura_utc": "2026-08-16T15:13:33Z",
+   "t_evaluacion_utc": "2026-08-16T15:13:33Z",
+   "t_generacion_utc": "2026-08-16T15:13:33Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -742,7 +788,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ AFC Ajax vs SC Heerenveen\n⏱ Minuto: 26'\n📊 Marcador: 1-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: AFC Ajax acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ AFC Ajax vs SC Heerenveen\n⏱ Minuto: 27'\n📊 Marcador: 1-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: AFC Ajax acumula 70% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "d14e98af505a738b"
   }
