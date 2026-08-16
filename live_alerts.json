@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T14:02:22Z",
- "n_alerts": 12,
+ "generated_at_utc": "2026-08-16T14:03:24Z",
+ "n_alerts": 13,
  "alerts": [
   {
    "strategy_id": "L2-SHADOW",
@@ -526,6 +526,50 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Aalesunds FK vs Vålerenga IF\n⏱ Minuto: 72'\n📊 Marcador: 5-4\n🏆 Liga: Eliteserien\n\n📈 Domina: Vålerenga IF\nxG: 2.03 vs 1.45\nTiros a puerta: 5 vs 7\n\nReferencia PROXY: AH +0.00 @ 1.675 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Vålerenga IF — ¿línea y cuota reales?",
    "evidencia": null,
    "alert_id": "611fea7cfa6c67c8"
+  },
+  {
+   "strategy_id": "L2-SHADOW",
+   "match_label": "Aalesunds FK vs Vålerenga IF (Eliteserien)",
+   "match_id": "15260880",
+   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH +0.00 @ 1.65 [PROXY SofaScore, NO Betano]",
+   "cuota_detectada": 1.65,
+   "minuto": 73,
+   "condicion": "Vålerenga IF domina por xG (2.03) y remates a puerta (5) sin ir ganando y sin roja del dominante — Vålerenga IF vs Aalesunds FK. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Vålerenga IF",
+    "xg_dominante": 2.03,
+    "sot_dominante": 5,
+    "marcador": "4-5",
+    "variante": "shadow_ventana_80",
+    "ah_proxy_linea": 0.0,
+    "ah_proxy_cuota": 1.65,
+    "ah_proxy_suspendida": false,
+    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
+   },
+   "t_evento_real_utc": "2026-08-16T13:36:11Z",
+   "t_captura_utc": "2026-08-16T14:02:53Z",
+   "t_evaluacion_utc": "2026-08-16T14:03:14Z",
+   "t_generacion_utc": "2026-08-16T14:03:14Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_EXPIRADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "expirada al generar (mas vieja que el TTL) -- no se notifica",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "EXPIRADA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Aalesunds FK vs Vålerenga IF\n⏱ Minuto: 73'\n📊 Marcador: 5-4\n🏆 Liga: Eliteserien\n\n📈 Domina: Vålerenga IF\nxG: 2.03 vs 1.45\nTiros a puerta: 5 vs 7\n\nReferencia PROXY: AH +0.00 @ 1.65 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Vålerenga IF — ¿línea y cuota reales?",
+   "evidencia": null,
+   "alert_id": "5762a677a7215f43"
   }
  ]
 }
