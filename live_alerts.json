@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-16T22:54:52Z",
+ "generated_at_utc": "2026-08-16T22:55:50Z",
  "n_alerts": 12,
  "alerts": [
   {
@@ -193,7 +193,7 @@
    "match_id": "15171647",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 42,
+   "minuto": 43,
    "condicion": "5 córners totales antes del min 45 (3-2), New York City FC presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Philadelphia Union NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -207,8 +207,8 @@
    },
    "t_evento_real_utc": "2026-08-16T22:53:20Z",
    "t_captura_utc": "2026-08-16T22:53:20Z",
-   "t_evaluacion_utc": "2026-08-16T22:54:10Z",
-   "t_generacion_utc": "2026-08-16T22:54:10Z",
+   "t_evaluacion_utc": "2026-08-16T22:55:10Z",
+   "t_generacion_utc": "2026-08-16T22:55:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -222,7 +222,7 @@
    },
    "latencia_total_seg": 51.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ New York City FC vs Philadelphia Union\n⏱ Minuto: 42'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: New York City FC presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Philadelphia Union no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ New York City FC vs Philadelphia Union\n⏱ Minuto: 43'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: New York City FC presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Philadelphia Union no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "15346e82efceda72"
   },
@@ -232,7 +232,7 @@
    "match_id": "15235425",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 22,
+   "minuto": 23,
    "condicion": "Corinthians domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -252,8 +252,8 @@
    },
    "t_evento_real_utc": "2026-08-16T22:54:26Z",
    "t_captura_utc": "2026-08-16T22:54:26Z",
-   "t_evaluacion_utc": "2026-08-16T22:54:40Z",
-   "t_generacion_utc": "2026-08-16T22:54:40Z",
+   "t_evaluacion_utc": "2026-08-16T22:55:40Z",
+   "t_generacion_utc": "2026-08-16T22:55:40Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -267,7 +267,7 @@
    },
    "latencia_total_seg": 15.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Corinthians vs Cruzeiro\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Corinthians — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Corinthians vs Cruzeiro\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Corinthians — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "8308a3059937c97f"
   },
@@ -277,7 +277,7 @@
    "match_id": "15171647",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "New York City FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -289,9 +289,9 @@
     "ratio_presion_territorial": 0.6471,
     "touches_home": 11,
     "touches_away": 6,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 43,
+    "equipo_que_realizo_sustitucion": "New York City FC",
     "marcador_en_el_momento": "1-0",
     "t_primera_observacion_atlas": "2026-08-16T22:50:35Z",
     "t_inicio_estimado_condicion": "2026-08-16T22:31:52Z",
@@ -299,9 +299,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T22:50:35Z",
-   "t_captura_utc": "2026-08-16T22:54:43Z",
-   "t_evaluacion_utc": "2026-08-16T22:54:43Z",
-   "t_generacion_utc": "2026-08-16T22:54:43Z",
+   "t_captura_utc": "2026-08-16T22:55:42Z",
+   "t_evaluacion_utc": "2026-08-16T22:55:42Z",
+   "t_generacion_utc": "2026-08-16T22:55:42Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -315,7 +315,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ New York City FC vs Philadelphia Union\n⏱ Minuto: 43'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: New York City FC acumula 65% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ New York City FC vs Philadelphia Union\n⏱ Minuto: 44'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: New York City FC acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: New York City FC, min 43\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "3df41d3756c592c4"
   },
@@ -325,7 +325,7 @@
    "match_id": "15235425",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 22,
+   "minuto": 23,
    "condicion": "Corinthians acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -347,9 +347,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T22:52:40Z",
-   "t_captura_utc": "2026-08-16T22:54:43Z",
-   "t_evaluacion_utc": "2026-08-16T22:54:44Z",
-   "t_generacion_utc": "2026-08-16T22:54:44Z",
+   "t_captura_utc": "2026-08-16T22:55:43Z",
+   "t_evaluacion_utc": "2026-08-16T22:55:43Z",
+   "t_generacion_utc": "2026-08-16T22:55:43Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -363,7 +363,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Corinthians vs Cruzeiro\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Corinthians acumula 83% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Corinthians vs Cruzeiro\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Corinthians acumula 83% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "9865de65ea1209a4"
   },
@@ -373,7 +373,7 @@
    "match_id": "15235443",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 62,
+   "minuto": 63,
    "condicion": "Vitória acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -395,9 +395,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T22:43:35Z",
-   "t_captura_utc": "2026-08-16T22:54:44Z",
-   "t_evaluacion_utc": "2026-08-16T22:54:45Z",
-   "t_generacion_utc": "2026-08-16T22:54:45Z",
+   "t_captura_utc": "2026-08-16T22:55:44Z",
+   "t_evaluacion_utc": "2026-08-16T22:55:44Z",
+   "t_generacion_utc": "2026-08-16T22:55:44Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -411,7 +411,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Vitória vs Botafogo\n⏱ Minuto: 62'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Vitória acumula 69% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Vitória, min 59\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Vitória vs Botafogo\n⏱ Minuto: 63'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Vitória acumula 69% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Vitória, min 59\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "ec3de5d968896ad0"
   },
@@ -421,7 +421,7 @@
    "match_id": "15353093",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 61,
+   "minuto": 62,
    "condicion": "Colo-Colo acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -430,9 +430,9 @@
    "extra": {
     "equipo_dominante": "Colo-Colo",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6538,
-    "touches_home": 17,
-    "touches_away": 9,
+    "ratio_presion_territorial": 0.6552,
+    "touches_home": 19,
+    "touches_away": 10,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -443,9 +443,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T22:44:39Z",
-   "t_captura_utc": "2026-08-16T22:54:45Z",
-   "t_evaluacion_utc": "2026-08-16T22:54:45Z",
-   "t_generacion_utc": "2026-08-16T22:54:45Z",
+   "t_captura_utc": "2026-08-16T22:55:45Z",
+   "t_evaluacion_utc": "2026-08-16T22:55:45Z",
+   "t_generacion_utc": "2026-08-16T22:55:45Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -459,7 +459,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Colo-Colo vs O'Higgins\n⏱ Minuto: 61'\n📊 Marcador: 1-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Colo-Colo acumula 65% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Colo-Colo vs O'Higgins\n⏱ Minuto: 62'\n📊 Marcador: 1-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Colo-Colo acumula 66% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "3126ca7912dc4625"
   },
@@ -469,7 +469,7 @@
    "match_id": "15526226",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 59,
+   "minuto": 60,
    "condicion": "Clube De Regatas Brasil acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -491,9 +491,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T22:45:40Z",
-   "t_captura_utc": "2026-08-16T22:54:46Z",
-   "t_evaluacion_utc": "2026-08-16T22:54:47Z",
-   "t_generacion_utc": "2026-08-16T22:54:47Z",
+   "t_captura_utc": "2026-08-16T22:55:46Z",
+   "t_evaluacion_utc": "2026-08-16T22:55:46Z",
+   "t_generacion_utc": "2026-08-16T22:55:46Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -507,7 +507,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Clube De Regatas Brasil vs Grêmio Novorizontino\n⏱ Minuto: 59'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Clube De Regatas Brasil acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Clube De Regatas Brasil, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Clube De Regatas Brasil vs Grêmio Novorizontino\n⏱ Minuto: 60'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Clube De Regatas Brasil acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Clube De Regatas Brasil, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "198fd5879a94010b"
   },
@@ -517,14 +517,14 @@
    "match_id": "15526220",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 63,
+   "minuto": 64,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
    "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "xg_combinado": 1.29,
+    "xg_combinado": 2.25,
     "tiros_combinados": 24,
     "sot_combinado": 5,
     "presion_reciente_10min": 5,
@@ -535,9 +535,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T22:54:50Z",
-   "t_captura_utc": "2026-08-16T22:54:50Z",
-   "t_evaluacion_utc": "2026-08-16T22:54:51Z",
-   "t_generacion_utc": "2026-08-16T22:54:51Z",
+   "t_captura_utc": "2026-08-16T22:55:49Z",
+   "t_evaluacion_utc": "2026-08-16T22:55:50Z",
+   "t_generacion_utc": "2026-08-16T22:55:50Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -551,7 +551,7 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ América Mineiro vs Athletic Club\n⏱ Minuto: 63'\n📊 Marcador: 0-2\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 1.29, 24 tiros totales (5 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ América Mineiro vs Athletic Club\n⏱ Minuto: 64'\n📊 Marcador: 0-2\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 2.25, 24 tiros totales (5 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "45eab61ced3231a3"
   }
