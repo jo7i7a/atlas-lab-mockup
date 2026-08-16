@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-16T12:57:30Z",
+ "generated_at_utc": "2026-08-16T12:58:20Z",
  "n_alerts": 12,
  "alerts": [
   {
@@ -359,51 +359,6 @@
    "alert_id": "de63b003d5d68a16"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Watford vs Southampton (Championship)",
-   "match_id": "16391143",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Watford domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Watford",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T12:51:53Z",
-   "t_captura_utc": "2026-08-16T12:51:53Z",
-   "t_evaluacion_utc": "2026-08-16T12:57:27Z",
-   "t_generacion_utc": "2026-08-16T12:57:27Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T12:52:30Z",
-     "latencia_envio_ms": 793.5581207275391,
-     "error": null,
-     "message_id": 1109,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 37.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Watford vs Southampton\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: Championship\n\n📝 Motivo: Watford — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "0aa6ad81732eca21"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Aalesunds FK vs Vålerenga IF (Eliteserien)",
    "match_id": "15260880",
@@ -546,6 +501,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Twente vs PEC Zwolle\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: FC Twente acumula 78% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "fa980cd42c2f0451"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Watford vs Southampton (Championship)",
+   "match_id": "16391143",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "Watford domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Watford",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T12:51:53Z",
+   "t_captura_utc": "2026-08-16T12:51:53Z",
+   "t_evaluacion_utc": "2026-08-16T12:58:20Z",
+   "t_generacion_utc": "2026-08-16T12:58:20Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T12:52:30Z",
+     "latencia_envio_ms": 793.5581207275391,
+     "error": null,
+     "message_id": 1109,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 37.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Watford vs Southampton\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: Championship\n\n📝 Motivo: Watford — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "0aa6ad81732eca21"
   }
  ]
 }
