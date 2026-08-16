@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-16T16:30:52Z",
+ "generated_at_utc": "2026-08-16T16:31:35Z",
  "n_alerts": 13,
  "alerts": [
   {
@@ -356,93 +356,6 @@
    "alert_id": "dcea6ade7c3a0f62"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Başakşehir FK vs Kocaelispor (Trendyol Süper Lig)",
-   "match_id": "16483707",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "4 córners totales antes del min 45 (3-1), Başakşehir FK presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Kocaelispor NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Başakşehir FK",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-16T16:12:02Z",
-   "t_captura_utc": "2026-08-16T16:12:02Z",
-   "t_evaluacion_utc": "2026-08-16T16:30:14Z",
-   "t_generacion_utc": "2026-08-16T16:30:14Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T16:12:18Z",
-     "latencia_envio_ms": 756.493330001831,
-     "error": null,
-     "message_id": 1204,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 16.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 30'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Başakşehir FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kocaelispor no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "3511605aa1cdd253"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Molde FK vs Tromsø IL (Eliteserien)",
-   "match_id": "15260878",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 68,
-   "condicion": "Molde FK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Molde FK",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7143,
-    "touches_home": 20,
-    "touches_away": 8,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 60,
-    "equipo_que_realizo_sustitucion": "Molde FK",
-    "marcador_en_el_momento": "2-1",
-    "t_primera_observacion_atlas": "2026-08-16T16:20:29Z",
-    "t_inicio_estimado_condicion": "2026-08-16T16:10:13Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T16:20:29Z",
-   "t_captura_utc": "2026-08-16T16:30:48Z",
-   "t_evaluacion_utc": "2026-08-16T16:30:49Z",
-   "t_generacion_utc": "2026-08-16T16:30:49Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T16:20:31Z",
-     "latencia_envio_ms": 833.4043025970459,
-     "error": null,
-     "message_id": 1209,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 2.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Molde FK vs Tromsø IL\n⏱ Minuto: 68'\n📊 Marcador: 2-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Molde FK acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Molde FK, min 60\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "f2bd419fd3cc8940"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Burnley vs West Ham United (Championship)",
    "match_id": "16391144",
@@ -491,12 +404,99 @@
    "alert_id": "35cc3b981f183941"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Başakşehir FK vs Kocaelispor (Trendyol Süper Lig)",
+   "match_id": "16483707",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 31,
+   "condicion": "4 córners totales antes del min 45 (3-1), Başakşehir FK presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Kocaelispor NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Başakşehir FK",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-16T16:12:02Z",
+   "t_captura_utc": "2026-08-16T16:12:02Z",
+   "t_evaluacion_utc": "2026-08-16T16:31:10Z",
+   "t_generacion_utc": "2026-08-16T16:31:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T16:12:18Z",
+     "latencia_envio_ms": 756.493330001831,
+     "error": null,
+     "message_id": 1204,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 16.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 31'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Başakşehir FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kocaelispor no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "3511605aa1cdd253"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Molde FK vs Tromsø IL (Eliteserien)",
+   "match_id": "15260878",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 69,
+   "condicion": "Molde FK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Molde FK",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.7143,
+    "touches_home": 20,
+    "touches_away": 8,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 60,
+    "equipo_que_realizo_sustitucion": "Molde FK",
+    "marcador_en_el_momento": "2-1",
+    "t_primera_observacion_atlas": "2026-08-16T16:20:29Z",
+    "t_inicio_estimado_condicion": "2026-08-16T16:10:13Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T16:20:29Z",
+   "t_captura_utc": "2026-08-16T16:31:32Z",
+   "t_evaluacion_utc": "2026-08-16T16:31:32Z",
+   "t_generacion_utc": "2026-08-16T16:31:32Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T16:20:31Z",
+     "latencia_envio_ms": 833.4043025970459,
+     "error": null,
+     "message_id": 1209,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 2.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Molde FK vs Tromsø IL\n⏱ Minuto: 69'\n📊 Marcador: 2-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Molde FK acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Molde FK, min 60\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "f2bd419fd3cc8940"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Başakşehir FK vs Kocaelispor (Trendyol Süper Lig)",
    "match_id": "16483707",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 30,
+   "minuto": 31,
    "condicion": "Başakşehir FK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -518,9 +518,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T16:20:32Z",
-   "t_captura_utc": "2026-08-16T16:30:50Z",
-   "t_evaluacion_utc": "2026-08-16T16:30:51Z",
-   "t_generacion_utc": "2026-08-16T16:30:51Z",
+   "t_captura_utc": "2026-08-16T16:31:33Z",
+   "t_evaluacion_utc": "2026-08-16T16:31:34Z",
+   "t_generacion_utc": "2026-08-16T16:31:34Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -534,7 +534,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 30'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Başakşehir FK acumula 69% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 31'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Başakşehir FK acumula 69% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "e7895eadeb5402a3"
   },
@@ -544,7 +544,7 @@
    "match_id": "15260875",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 67,
+   "minuto": 68,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -552,9 +552,9 @@
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
     "xg_combinado": 1.81,
-    "tiros_combinados": 22,
+    "tiros_combinados": 23,
     "sot_combinado": 7,
-    "presion_reciente_10min": 3,
+    "presion_reciente_10min": 4,
     "marcador_en_el_momento": "1-0",
     "t_primera_observacion_atlas": "2026-08-16T16:19:33Z",
     "t_inicio_estimado_condicion": "2026-08-16T16:19:05Z",
@@ -562,9 +562,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T16:19:33Z",
-   "t_captura_utc": "2026-08-16T16:30:52Z",
-   "t_evaluacion_utc": "2026-08-16T16:30:52Z",
-   "t_generacion_utc": "2026-08-16T16:30:52Z",
+   "t_captura_utc": "2026-08-16T16:31:35Z",
+   "t_evaluacion_utc": "2026-08-16T16:31:35Z",
+   "t_generacion_utc": "2026-08-16T16:31:35Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -578,7 +578,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ SK Brann vs HamKam\n⏱ Minuto: 67'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: presión combinada sostenida — xG 1.81, 22 tiros totales (7 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ SK Brann vs HamKam\n⏱ Minuto: 68'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: presión combinada sostenida — xG 1.81, 23 tiros totales (7 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "3d778e0970586f74"
   }
