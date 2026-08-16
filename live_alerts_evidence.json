@@ -4770,5 +4770,27 @@
    "cuota_real_betano": 2.62,
    "activo": true
   }
+ ],
+ "b18e70aef1d39caa": [
+  {
+   "alert_id": "b18e70aef1d39caa",
+   "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "Club Atlético Platense vs Boca Juniors (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16671563",
+   "minuto_alerta": 40,
+   "condicion": "0-0 con dominancia sostenida entre los minutos 32-42 (remates totales≥9, tiros a puerta≥4, córners≥5, todos combinados). Condición original de 'ataques peligrosos' NO evaluada -- dato no disponible en la fuente actual. Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T00:56:02Z",
+   "t_captura_utc": "2026-08-16T00:56:02Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T00:57:05Z",
+   "segundos_transcurridos": 38,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "1.5 @ 2.02",
+   "linea_real_betano": 1.5,
+   "cuota_real_betano": 2.02,
+   "mercado_variante": "PENDIENTE_CLASIFICACION_MERCADO",
+   "activo": true
+  }
  ]
 }
