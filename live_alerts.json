@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T01:24:55Z",
- "n_alerts": 17,
+ "generated_at_utc": "2026-08-16T01:25:41Z",
+ "n_alerts": 16,
  "alerts": [
   {
    "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
@@ -95,50 +95,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CF Montréal vs DC United\n⏱ Minuto: 61'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: CF Montréal acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "2b399d886cfe8128"
-  },
-  {
-   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Atlanta United vs New York Red Bulls (MLS)",
-   "match_id": "15171629",
-   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 60,
-   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_combinado": 3.65,
-    "tiros_combinados": 14,
-    "sot_combinado": 3,
-    "presion_reciente_10min": 3,
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-16T00:55:33Z",
-    "t_inicio_estimado_condicion": "2026-08-16T00:55:20Z",
-    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T00:55:33Z",
-   "t_captura_utc": "2026-08-16T01:00:37Z",
-   "t_evaluacion_utc": "2026-08-16T01:00:37Z",
-   "t_generacion_utc": "2026-08-16T01:00:37Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T00:55:34Z",
-     "latencia_envio_ms": 808.6719512939453,
-     "error": null,
-     "message_id": 999,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Atlanta United vs New York Red Bulls\n⏱ Minuto: 60'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: presión combinada sostenida — xG 3.65, 14 tiros totales (3 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
-   "evidencia": null,
-   "alert_id": "46381e1f7f5e71b7"
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -530,7 +486,7 @@
    "match_id": "15171641",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 42,
+   "minuto": 43,
    "condicion": "4 córners totales antes del min 45 (4-0), Nashville SC presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Inter Miami CF NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -544,8 +500,8 @@
    },
    "t_evento_real_utc": "2026-08-16T01:01:36Z",
    "t_captura_utc": "2026-08-16T01:01:36Z",
-   "t_evaluacion_utc": "2026-08-16T01:24:12Z",
-   "t_generacion_utc": "2026-08-16T01:24:12Z",
+   "t_evaluacion_utc": "2026-08-16T01:25:11Z",
+   "t_generacion_utc": "2026-08-16T01:25:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -559,7 +515,7 @@
    },
    "latencia_total_seg": 36.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Nashville SC vs Inter Miami CF\n⏱ Minuto: 42'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Nashville SC presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Inter Miami CF no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Nashville SC vs Inter Miami CF\n⏱ Minuto: 43'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Nashville SC presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Inter Miami CF no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "47d05f54efbb5f80"
   },
@@ -569,7 +525,7 @@
    "match_id": "15171644",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "4 córners totales antes del min 45 (1-3), LA Galaxy presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Houston Dynamo NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -583,8 +539,8 @@
    },
    "t_evento_real_utc": "2026-08-16T01:22:01Z",
    "t_captura_utc": "2026-08-16T01:22:01Z",
-   "t_evaluacion_utc": "2026-08-16T01:24:13Z",
-   "t_generacion_utc": "2026-08-16T01:24:13Z",
+   "t_evaluacion_utc": "2026-08-16T01:25:11Z",
+   "t_generacion_utc": "2026-08-16T01:25:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -598,7 +554,7 @@
    },
    "latencia_total_seg": 10.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Houston Dynamo vs LA Galaxy\n⏱ Minuto: 43'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: LA Galaxy presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Houston Dynamo no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Houston Dynamo vs LA Galaxy\n⏱ Minuto: 44'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: LA Galaxy presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Houston Dynamo no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "fbb7fcde665a7c7c"
   },
@@ -608,7 +564,7 @@
    "match_id": "15171638",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 80,
+   "minuto": 81,
    "condicion": "Columbus Crew acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -630,9 +586,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T00:56:31Z",
-   "t_captura_utc": "2026-08-16T01:24:51Z",
-   "t_evaluacion_utc": "2026-08-16T01:24:51Z",
-   "t_generacion_utc": "2026-08-16T01:24:51Z",
+   "t_captura_utc": "2026-08-16T01:25:38Z",
+   "t_evaluacion_utc": "2026-08-16T01:25:38Z",
+   "t_generacion_utc": "2026-08-16T01:25:38Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -646,7 +602,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Charlotte FC vs Columbus Crew\n⏱ Minuto: 80'\n📊 Marcador: 3-1\n🏆 Liga: MLS\n\n📝 Motivo: Columbus Crew acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Columbus Crew, min 71\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Charlotte FC vs Columbus Crew\n⏱ Minuto: 81'\n📊 Marcador: 3-1\n🏆 Liga: MLS\n\n📝 Motivo: Columbus Crew acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Columbus Crew, min 71\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "acdf6c43a954b211"
   },
@@ -656,7 +612,7 @@
    "match_id": "15171641",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "Nashville SC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -678,9 +634,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T01:01:37Z",
-   "t_captura_utc": "2026-08-16T01:24:53Z",
-   "t_evaluacion_utc": "2026-08-16T01:24:53Z",
-   "t_generacion_utc": "2026-08-16T01:24:53Z",
+   "t_captura_utc": "2026-08-16T01:25:40Z",
+   "t_evaluacion_utc": "2026-08-16T01:25:40Z",
+   "t_generacion_utc": "2026-08-16T01:25:40Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -694,7 +650,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Nashville SC vs Inter Miami CF\n⏱ Minuto: 43'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: Nashville SC acumula 91% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Nashville SC vs Inter Miami CF\n⏱ Minuto: 44'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: Nashville SC acumula 91% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "358fdf1f3576e8f9"
   },
@@ -704,7 +660,7 @@
    "match_id": "15171644",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "LA Galaxy acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -726,9 +682,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T01:01:38Z",
-   "t_captura_utc": "2026-08-16T01:24:54Z",
-   "t_evaluacion_utc": "2026-08-16T01:24:54Z",
-   "t_generacion_utc": "2026-08-16T01:24:54Z",
+   "t_captura_utc": "2026-08-16T01:25:40Z",
+   "t_evaluacion_utc": "2026-08-16T01:25:40Z",
+   "t_generacion_utc": "2026-08-16T01:25:40Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -742,7 +698,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Houston Dynamo vs LA Galaxy\n⏱ Minuto: 43'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: LA Galaxy acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Houston Dynamo vs LA Galaxy\n⏱ Minuto: 44'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: LA Galaxy acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "3fae25c4a41d7759"
   }
