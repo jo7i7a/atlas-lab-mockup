@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T21:25:16Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-08-16T21:26:15Z",
+ "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Famalicão vs CS Marítimo (Liga Portugal Betclic)",
-   "match_id": "16450751",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 74,
-   "condicion": "Famalicão acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Famalicão",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.625,
-    "touches_home": 15,
-    "touches_away": 9,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 50,
-    "equipo_que_realizo_sustitucion": "Famalicão",
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-08-16T20:55:18Z",
-    "t_inicio_estimado_condicion": "2026-08-16T20:54:53Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T20:55:18Z",
-   "t_captura_utc": "2026-08-16T21:03:19Z",
-   "t_evaluacion_utc": "2026-08-16T21:03:19Z",
-   "t_generacion_utc": "2026-08-16T21:03:19Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T20:55:19Z",
-     "latencia_envio_ms": 864.9582862854004,
-     "error": null,
-     "message_id": 1299,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Famalicão vs CS Marítimo\n⏱ Minuto: 74'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Famalicão acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Famalicão, min 50\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "392cb8a4ce508a78"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Famalicão vs CS Marítimo (Liga Portugal Betclic)",
@@ -104,7 +56,7 @@
    "match_id": "16667390",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "River Plate domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -124,8 +76,8 @@
    },
    "t_evento_real_utc": "2026-08-16T21:18:21Z",
    "t_captura_utc": "2026-08-16T21:18:21Z",
-   "t_evaluacion_utc": "2026-08-16T21:25:15Z",
-   "t_generacion_utc": "2026-08-16T21:25:15Z",
+   "t_evaluacion_utc": "2026-08-16T21:26:14Z",
+   "t_generacion_utc": "2026-08-16T21:26:14Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -139,7 +91,7 @@
    },
    "latencia_total_seg": 55.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ River Plate vs Argentinos Juniors\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: River Plate — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ River Plate vs Argentinos Juniors\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: River Plate — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "58ec373530b59b33"
   },
@@ -149,7 +101,7 @@
    "match_id": "16667390",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "River Plate acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -171,9 +123,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T21:22:16Z",
-   "t_captura_utc": "2026-08-16T21:25:16Z",
-   "t_evaluacion_utc": "2026-08-16T21:25:16Z",
-   "t_generacion_utc": "2026-08-16T21:25:16Z",
+   "t_captura_utc": "2026-08-16T21:26:15Z",
+   "t_evaluacion_utc": "2026-08-16T21:26:15Z",
+   "t_generacion_utc": "2026-08-16T21:26:15Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -187,7 +139,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ River Plate vs Argentinos Juniors\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: River Plate acumula 90% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ River Plate vs Argentinos Juniors\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: River Plate acumula 90% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "4f6bbc8c175b25a6"
   }
