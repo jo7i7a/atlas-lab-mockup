@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T23:14:35Z",
- "n_alerts": 10,
+ "generated_at_utc": "2026-08-16T23:15:34Z",
+ "n_alerts": 9,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -368,7 +368,7 @@
    "match_id": "15235425",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 42,
+   "minuto": 43,
    "condicion": "Corinthians acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -390,9 +390,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T23:11:28Z",
-   "t_captura_utc": "2026-08-16T23:14:33Z",
-   "t_evaluacion_utc": "2026-08-16T23:14:33Z",
-   "t_generacion_utc": "2026-08-16T23:14:33Z",
+   "t_captura_utc": "2026-08-16T23:15:30Z",
+   "t_evaluacion_utc": "2026-08-16T23:15:31Z",
+   "t_generacion_utc": "2026-08-16T23:15:31Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -406,57 +406,9 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Corinthians vs Cruzeiro\n⏱ Minuto: 42'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Corinthians acumula 63% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Corinthians vs Cruzeiro\n⏱ Minuto: 43'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Corinthians acumula 63% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "795708d7e89ccdab"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Colo-Colo vs O'Higgins (Liga de Primera)",
-   "match_id": "15353093",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 80,
-   "condicion": "Colo-Colo acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Colo-Colo",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6923,
-    "touches_home": 27,
-    "touches_away": 12,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 62,
-    "equipo_que_realizo_sustitucion": "Colo-Colo",
-    "marcador_en_el_momento": "2-1",
-    "t_primera_observacion_atlas": "2026-08-16T22:44:39Z",
-    "t_inicio_estimado_condicion": "2026-08-16T22:44:34Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T22:44:39Z",
-   "t_captura_utc": "2026-08-16T23:14:35Z",
-   "t_evaluacion_utc": "2026-08-16T23:14:35Z",
-   "t_generacion_utc": "2026-08-16T23:14:35Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T22:44:40Z",
-     "latencia_envio_ms": 864.2756938934326,
-     "error": null,
-     "message_id": 1332,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Colo-Colo vs O'Higgins\n⏱ Minuto: 80'\n📊 Marcador: 2-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Colo-Colo acumula 69% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Colo-Colo, min 62\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "3126ca7912dc4625"
   }
  ]
 }
