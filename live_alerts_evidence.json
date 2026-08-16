@@ -4792,5 +4792,26 @@
    "mercado_variante": "PENDIENTE_CLASIFICACION_MERCADO",
    "activo": true
   }
+ ],
+ "acdf6c43a954b211": [
+  {
+   "alert_id": "acdf6c43a954b211",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Charlotte FC vs Columbus Crew (MLS)",
+   "liga": "MLS",
+   "event_id": "15171638",
+   "minuto_alerta": 52,
+   "condicion": "Columbus Crew acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T00:56:31Z",
+   "t_captura_utc": "2026-08-16T00:56:31Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T00:57:56Z",
+   "segundos_transcurridos": 84,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "11.5 @ 1.85",
+   "linea_real_betano": 11.5,
+   "cuota_real_betano": 1.85,
+   "activo": true
+  }
  ]
 }
