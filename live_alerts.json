@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T19:47:42Z",
- "n_alerts": 11,
+ "generated_at_utc": "2026-08-16T19:48:39Z",
+ "n_alerts": 9,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Cobresal vs Deportes Concepción (Liga de Primera)",
-   "match_id": "15353092",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Cobresal domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Cobresal",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T19:18:21Z",
-   "t_captura_utc": "2026-08-16T19:18:21Z",
-   "t_evaluacion_utc": "2026-08-16T19:27:24Z",
-   "t_generacion_utc": "2026-08-16T19:27:24Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T19:19:27Z",
-     "latencia_envio_ms": 810.9264373779297,
-     "error": null,
-     "message_id": 1276,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 66.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Cobresal vs Deportes Concepción\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Cobresal — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "675d6a2b81ae4c5a"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Pumas UNAM vs Querétaro FC (Liga MX, Apertura)",
@@ -94,50 +49,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Pumas UNAM vs Querétaro FC\n⏱ Minuto: 73'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Pumas UNAM acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Pumas UNAM, min 70\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "49ca9b8450318368"
-  },
-  {
-   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Sarmiento vs Huracán (Liga Profesional de Fútbol)",
-   "match_id": "16667391",
-   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 69,
-   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_combinado": 1.54,
-    "tiros_combinados": 21,
-    "sot_combinado": 3,
-    "presion_reciente_10min": 3,
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-08-16T19:18:25Z",
-    "t_inicio_estimado_condicion": "2026-08-16T19:18:21Z",
-    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T19:18:25Z",
-   "t_captura_utc": "2026-08-16T19:32:29Z",
-   "t_evaluacion_utc": "2026-08-16T19:32:29Z",
-   "t_generacion_utc": "2026-08-16T19:32:29Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T19:18:27Z",
-     "latencia_envio_ms": 814.6758079528809,
-     "error": null,
-     "message_id": 1275,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 2.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Sarmiento vs Huracán\n⏱ Minuto: 69'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: presión combinada sostenida — xG 1.54, 21 tiros totales (3 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
-   "evidencia": null,
-   "alert_id": "6ce0cb82687457fb"
   },
   {
    "strategy_id": "L3",
@@ -299,7 +210,7 @@
    "match_id": "15235421",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 47,
+   "minuto": 48,
    "condicion": "Vasco da Gama acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -308,9 +219,9 @@
    "extra": {
     "equipo_dominante": "Vasco da Gama",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.8333,
+    "ratio_presion_territorial": 0.7895,
     "touches_home": 15,
-    "touches_away": 3,
+    "touches_away": 4,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 39,
     "equipo_que_realizo_sustitucion": "Vasco da Gama",
@@ -321,9 +232,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T19:20:27Z",
-   "t_captura_utc": "2026-08-16T19:47:38Z",
-   "t_evaluacion_utc": "2026-08-16T19:47:38Z",
-   "t_generacion_utc": "2026-08-16T19:47:38Z",
+   "t_captura_utc": "2026-08-16T19:48:35Z",
+   "t_evaluacion_utc": "2026-08-16T19:48:35Z",
+   "t_generacion_utc": "2026-08-16T19:48:35Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -337,7 +248,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Vasco da Gama vs Santos\n⏱ Minuto: 47'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Vasco da Gama acumula 83% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Vasco da Gama, min 39\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Vasco da Gama vs Santos\n⏱ Minuto: 48'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Vasco da Gama acumula 79% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Vasco da Gama, min 39\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "f66d9847c456979f"
   },
@@ -347,7 +258,7 @@
    "match_id": "15235431",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 47,
+   "minuto": 48,
    "condicion": "Atlético Mineiro acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -360,7 +271,7 @@
     "touches_home": 11,
     "touches_away": 0,
     "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 42,
+    "minuto_ultima_sustitucion": 45,
     "equipo_que_realizo_sustitucion": "Atlético Mineiro",
     "marcador_en_el_momento": "1-0",
     "t_primera_observacion_atlas": "2026-08-16T19:20:29Z",
@@ -369,9 +280,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T19:20:29Z",
-   "t_captura_utc": "2026-08-16T19:47:38Z",
-   "t_evaluacion_utc": "2026-08-16T19:47:39Z",
-   "t_generacion_utc": "2026-08-16T19:47:39Z",
+   "t_captura_utc": "2026-08-16T19:48:36Z",
+   "t_evaluacion_utc": "2026-08-16T19:48:36Z",
+   "t_generacion_utc": "2026-08-16T19:48:36Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -385,7 +296,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlético Mineiro vs Grêmio\n⏱ Minuto: 47'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Atlético Mineiro acumula 100% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Atlético Mineiro, min 42\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlético Mineiro vs Grêmio\n⏱ Minuto: 48'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Atlético Mineiro acumula 100% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Atlético Mineiro, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "9cbe2038744ec965"
   },
@@ -395,7 +306,7 @@
    "match_id": "15353092",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 46,
    "condicion": "Cobresal acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -417,9 +328,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T19:22:28Z",
-   "t_captura_utc": "2026-08-16T19:47:39Z",
-   "t_evaluacion_utc": "2026-08-16T19:47:39Z",
-   "t_generacion_utc": "2026-08-16T19:47:39Z",
+   "t_captura_utc": "2026-08-16T19:48:36Z",
+   "t_evaluacion_utc": "2026-08-16T19:48:37Z",
+   "t_generacion_utc": "2026-08-16T19:48:37Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -433,7 +344,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Cobresal vs Deportes Concepción\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Cobresal acumula 90% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Cobresal, min 39\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Cobresal vs Deportes Concepción\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Cobresal acumula 90% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Cobresal, min 39\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "a35b491453dba114"
   },
@@ -443,7 +354,7 @@
    "match_id": "16483634",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 60,
+   "minuto": 61,
    "condicion": "Amed Sportif Faaliyetler acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -465,9 +376,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T19:42:22Z",
-   "t_captura_utc": "2026-08-16T19:47:40Z",
-   "t_evaluacion_utc": "2026-08-16T19:47:41Z",
-   "t_generacion_utc": "2026-08-16T19:47:41Z",
+   "t_captura_utc": "2026-08-16T19:48:38Z",
+   "t_evaluacion_utc": "2026-08-16T19:48:38Z",
+   "t_generacion_utc": "2026-08-16T19:48:38Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -481,7 +392,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Amed Sportif Faaliyetler vs Erzurumspor FK\n⏱ Minuto: 60'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Amed Sportif Faaliyetler acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Amed Sportif Faaliyetler vs Erzurumspor FK\n⏱ Minuto: 61'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Amed Sportif Faaliyetler acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "c953d58e53711116"
   }
