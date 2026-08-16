@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T13:21:24Z",
- "n_alerts": 14,
+ "generated_at_utc": "2026-08-16T13:22:25Z",
+ "n_alerts": 13,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -97,51 +97,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Aalesunds FK vs Vålerenga IF\n⏱ Minuto: 27'\n📊 Marcador: 2-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Aalesunds FK acumula 63% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "6c42689ce07d3853"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Watford vs Southampton (Championship)",
-   "match_id": "16391143",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Watford domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Watford",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T12:51:53Z",
-   "t_captura_utc": "2026-08-16T12:51:53Z",
-   "t_evaluacion_utc": "2026-08-16T12:58:20Z",
-   "t_generacion_utc": "2026-08-16T12:58:20Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T12:52:30Z",
-     "latencia_envio_ms": 793.5581207275391,
-     "error": null,
-     "message_id": 1109,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 37.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Watford vs Southampton\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: Championship\n\n📝 Motivo: Watford — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "0aa6ad81732eca21"
   },
   {
    "strategy_id": "L1",
@@ -530,7 +485,7 @@
    "match_id": "15272494",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 63,
+   "minuto": 64,
    "condicion": "IF Brommapojkarna acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -552,9 +507,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T13:08:27Z",
-   "t_captura_utc": "2026-08-16T13:21:23Z",
-   "t_evaluacion_utc": "2026-08-16T13:21:23Z",
-   "t_generacion_utc": "2026-08-16T13:21:23Z",
+   "t_captura_utc": "2026-08-16T13:22:23Z",
+   "t_evaluacion_utc": "2026-08-16T13:22:24Z",
+   "t_generacion_utc": "2026-08-16T13:22:24Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -568,7 +523,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ IF Brommapojkarna vs Örgryte IS\n⏱ Minuto: 63'\n📊 Marcador: 2-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IF Brommapojkarna acumula 63% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ IF Brommapojkarna vs Örgryte IS\n⏱ Minuto: 64'\n📊 Marcador: 2-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IF Brommapojkarna acumula 63% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "42b6d808d7a6c062"
   },
@@ -578,7 +533,7 @@
    "match_id": "16391143",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 49,
+   "minuto": 50,
    "condicion": "Watford acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -600,9 +555,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T12:59:21Z",
-   "t_captura_utc": "2026-08-16T13:21:24Z",
-   "t_evaluacion_utc": "2026-08-16T13:21:24Z",
-   "t_generacion_utc": "2026-08-16T13:21:24Z",
+   "t_captura_utc": "2026-08-16T13:22:24Z",
+   "t_evaluacion_utc": "2026-08-16T13:22:25Z",
+   "t_generacion_utc": "2026-08-16T13:22:25Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -616,7 +571,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Watford vs Southampton\n⏱ Minuto: 49'\n📊 Marcador: 2-0\n🏆 Liga: Championship\n\n📝 Motivo: Watford acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Watford, min 43\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Watford vs Southampton\n⏱ Minuto: 50'\n📊 Marcador: 2-0\n🏆 Liga: Championship\n\n📝 Motivo: Watford acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Watford, min 43\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "622cad4440098fde"
   }
