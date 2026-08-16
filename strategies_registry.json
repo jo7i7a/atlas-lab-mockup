@@ -610,25 +610,24 @@
     ]
    },
    "casos_observados": 0,
-   "casos_verificados": 0,
+   "casos_verificados": 2,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest, no hay evidencia histórica y no se admite ninguna sustitución de minuto real por estadísticas del descanso. La muestra se construye desde cero.",
    "fecha_creacion_utc": "2026-08-09",
-   "ultima_actualizacion_utc": "2026-08-09T00:00:00Z",
+   "ultima_actualizacion_utc": "2026-08-16T03:08:03Z",
    "proximo_hito": "Acumular observaciones reales con verificación manual en Betano. Sin umbral de N fijado todavía -- se definirá cuando exista una primera muestra.",
    "metricas_fase4": {
-    "pct_coincide": null,
-    "pct_mejor": null,
-    "pct_suspendido": null,
-    "pct_inexistente": null,
-    "pct_operable": null,
+    "pct_operable": 100.0,
+    "n_operable": 2,
+    "n_no_operable": 0,
+    "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 0
+    "n_muestra": 2
    },
-   "alertas_live_historial": 0
+   "alertas_live_historial": 7
   },
   {
    "id": "A2",
