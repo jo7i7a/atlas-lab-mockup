@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T10:37:18Z",
+ "generated_at_utc": "2026-08-16T10:38:16Z",
  "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "ADO Den Haag vs FC Groningen (VriendenLoterij Eredivisie)",
-   "match_id": "16316788",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 21,
-   "condicion": "FC Groningen domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "FC Groningen",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 1,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T10:33:28Z",
-   "t_captura_utc": "2026-08-16T10:33:28Z",
-   "t_evaluacion_utc": "2026-08-16T10:37:16Z",
-   "t_generacion_utc": "2026-08-16T10:37:16Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T10:34:17Z",
-     "latencia_envio_ms": 905.1673412322998,
-     "error": null,
-     "message_id": 1079,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 49.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ ADO Den Haag vs FC Groningen\n⏱ Minuto: 21'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: FC Groningen — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "f36ed672871736c9"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "ADO Den Haag vs FC Groningen (VriendenLoterij Eredivisie)",
@@ -94,6 +49,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ ADO Den Haag vs FC Groningen\n⏱ Minuto: 21'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: FC Groningen acumula 70% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "3876fc2d56d4d825"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "ADO Den Haag vs FC Groningen (VriendenLoterij Eredivisie)",
+   "match_id": "16316788",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 22,
+   "condicion": "FC Groningen domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "FC Groningen",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 1,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T10:33:28Z",
+   "t_captura_utc": "2026-08-16T10:33:28Z",
+   "t_evaluacion_utc": "2026-08-16T10:38:16Z",
+   "t_generacion_utc": "2026-08-16T10:38:16Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T10:34:17Z",
+     "latencia_envio_ms": 905.1673412322998,
+     "error": null,
+     "message_id": 1079,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 49.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ ADO Den Haag vs FC Groningen\n⏱ Minuto: 22'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: FC Groningen — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "f36ed672871736c9"
   }
  ]
 }
