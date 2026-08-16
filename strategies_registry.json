@@ -119,24 +119,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 8,
+   "casos_verificados": 10,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "Ninguna todavía -- estrategia propia del Director, sin certificación estadística previa por decisión explícita (priorizar verificación real temprano, lección de E-LAB-001).",
    "fecha_creacion_utc": "2026-08-04",
-   "ultima_actualizacion_utc": "2026-08-16T00:12:03Z",
+   "ultima_actualizacion_utc": "2026-08-16T13:01:04Z",
    "proximo_hito": "Primeras verificaciones humanas reales contra Betano vía Telegram. Sin umbral de N fijado todavía -- a definir con el Director según los primeros resultados.",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 8,
+    "n_operable": 10,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 8
+    "n_muestra": 10
    },
-   "alertas_live_historial": 51,
+   "alertas_live_historial": 58,
    "defecto_historico": {
     "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
     "detectado_utc": "2026-08-08",
@@ -338,24 +338,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 51,
+   "casos_verificados": 53,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "Ninguna todavía -- prueba Shadow recién activada 2026-08-08, sin alertas propias aún.",
    "fecha_creacion_utc": "2026-08-08",
-   "ultima_actualizacion_utc": "2026-08-16T03:30:03Z",
-   "proximo_hito": "Umbral de 30 verificaciones alcanzado (N=51, 100.0% operable) -- cumple el criterio del Director (>=80-90%). Pasar a diseño de estrategia de stake y gestión de riesgo antes de avanzar a CERTIFICADA.",
+   "ultima_actualizacion_utc": "2026-08-16T13:01:03Z",
+   "proximo_hito": "Umbral de 30 verificaciones alcanzado (N=53, 100.0% operable) -- cumple el criterio del Director (>=80-90%). Pasar a diseño de estrategia de stake y gestión de riesgo antes de avanzar a CERTIFICADA.",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 51,
+    "n_operable": 53,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 51
+    "n_muestra": 53
    },
-   "alertas_live_historial": 99,
+   "alertas_live_historial": 103,
    "defecto_historico": {
     "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
     "detectado_utc": "2026-08-08",
