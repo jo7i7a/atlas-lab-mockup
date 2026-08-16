@@ -5105,5 +5105,26 @@
    "cuota_real_betano": 1.55,
    "activo": true
   }
+ ],
+ "fbe9334ca7e67e85": [
+  {
+   "alert_id": "fbe9334ca7e67e85",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Degerfors IF vs IFK Göteborg (Allsvenskan)",
+   "liga": "Allsvenskan",
+   "event_id": "15272496",
+   "minuto_alerta": 31,
+   "condicion": "Degerfors IF acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T12:32:21Z",
+   "t_captura_utc": "2026-08-16T12:32:21Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T12:35:40Z",
+   "segundos_transcurridos": 198,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "12.0 @ 1.92",
+   "linea_real_betano": 12.0,
+   "cuota_real_betano": 1.92,
+   "activo": true
+  }
  ]
 }
