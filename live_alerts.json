@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T21:14:18Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-16T21:19:16Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -97,6 +97,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Famalicão vs CS Marítimo\n⏱ Minuto: 85'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Famalicão acumula 63% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Famalicão, min 85\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "7e3842f656ae280c"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "River Plate vs Argentinos Juniors (Liga Profesional de Fútbol)",
+   "match_id": "16667390",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "River Plate domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "River Plate",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T21:18:21Z",
+   "t_captura_utc": "2026-08-16T21:18:21Z",
+   "t_evaluacion_utc": "2026-08-16T21:19:15Z",
+   "t_generacion_utc": "2026-08-16T21:19:15Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T21:19:16Z",
+     "latencia_envio_ms": 847.4884033203125,
+     "error": null,
+     "message_id": 1303,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 55.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ River Plate vs Argentinos Juniors\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: River Plate — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "58ec373530b59b33"
   }
  ]
 }
