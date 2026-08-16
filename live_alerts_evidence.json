@@ -4730,5 +4730,45 @@
    "cuota_real_betano": 1.62,
    "activo": true
   }
+ ],
+ "5362e18266711ce4": [
+  {
+   "alert_id": "5362e18266711ce4",
+   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "CF Montréal vs DC United (MLS)",
+   "liga": "MLS",
+   "event_id": "15171637",
+   "minuto_alerta": 56,
+   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T00:54:32Z",
+   "t_captura_utc": "2026-08-16T00:54:32Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T00:55:32Z",
+   "segundos_transcurridos": 59,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "1.5 @ 1.35\n2.5 @ 2.62",
+   "linea_real_betano": 1.5,
+   "cuota_real_betano": 1.35,
+   "activo": true
+  },
+  {
+   "alert_id": "5362e18266711ce4",
+   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "CF Montréal vs DC United (MLS)",
+   "liga": "MLS",
+   "event_id": "15171637",
+   "minuto_alerta": 56,
+   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T00:54:32Z",
+   "t_captura_utc": "2026-08-16T00:54:32Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T00:55:32Z",
+   "segundos_transcurridos": 59,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "1.5 @ 1.35\n2.5 @ 2.62",
+   "linea_real_betano": 2.5,
+   "cuota_real_betano": 2.62,
+   "activo": true
+  }
  ]
 }
