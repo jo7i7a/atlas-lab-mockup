@@ -4608,5 +4608,26 @@
    "cuota_real_betano": 1.83,
    "activo": true
   }
+ ],
+ "83605e65f90d0d33": [
+  {
+   "alert_id": "83605e65f90d0d33",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Everton de Viña del Mar vs Audax Italiano (Liga de Primera)",
+   "liga": "Liga de Primera",
+   "event_id": "15353091",
+   "minuto_alerta": 20,
+   "condicion": "Audax Italiano acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T00:20:31Z",
+   "t_captura_utc": "2026-08-16T00:20:31Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T00:24:17Z",
+   "segundos_transcurridos": 225,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.75",
+   "linea_real_betano": 7.5,
+   "cuota_real_betano": 1.75,
+   "activo": true
+  }
  ]
 }
