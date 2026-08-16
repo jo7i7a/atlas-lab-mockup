@@ -1,51 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T16:18:27Z",
+ "generated_at_utc": "2026-08-16T16:19:36Z",
  "n_alerts": 10,
  "alerts": [
-  {
-   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "CD Nacional vs Estoril Praia (Liga Portugal Betclic)",
-   "match_id": "16450752",
-   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 70,
-   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_combinado": 2.07,
-    "tiros_combinados": 23,
-    "sot_combinado": 6,
-    "presion_reciente_10min": 7,
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-08-16T15:48:39Z",
-    "t_inicio_estimado_condicion": "2026-08-16T15:48:35Z",
-    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T15:48:39Z",
-   "t_captura_utc": "2026-08-16T16:02:27Z",
-   "t_evaluacion_utc": "2026-08-16T16:02:28Z",
-   "t_generacion_utc": "2026-08-16T16:02:28Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T15:48:41Z",
-     "latencia_envio_ms": 792.2368049621582,
-     "error": null,
-     "message_id": 1197,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 2.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ CD Nacional vs Estoril Praia\n⏱ Minuto: 70'\n📊 Marcador: 1-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: presión combinada sostenida — xG 2.07, 23 tiros totales (6 a puerta), 7 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
-   "evidencia": null,
-   "alert_id": "95b70ea27599cb49"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Molde FK vs Tromsø IL (Eliteserien)",
@@ -234,7 +190,7 @@
    "match_id": "16483707",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 17,
+   "minuto": 19,
    "condicion": "4 córners totales antes del min 30 (3-1), Başakşehir FK presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Kocaelispor NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -247,8 +203,8 @@
    },
    "t_evento_real_utc": "2026-08-16T16:12:02Z",
    "t_captura_utc": "2026-08-16T16:12:02Z",
-   "t_evaluacion_utc": "2026-08-16T16:17:09Z",
-   "t_generacion_utc": "2026-08-16T16:17:09Z",
+   "t_evaluacion_utc": "2026-08-16T16:19:09Z",
+   "t_generacion_utc": "2026-08-16T16:19:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -262,7 +218,7 @@
    },
    "latencia_total_seg": 13.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 17'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Başakşehir FK presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kocaelispor no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 19'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Başakşehir FK presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kocaelispor no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "dcea6ade7c3a0f62"
   },
@@ -272,7 +228,7 @@
    "match_id": "16483707",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 17,
+   "minuto": 19,
    "condicion": "4 córners totales antes del min 45 (3-1), Başakşehir FK presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Kocaelispor NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -286,8 +242,8 @@
    },
    "t_evento_real_utc": "2026-08-16T16:12:02Z",
    "t_captura_utc": "2026-08-16T16:12:02Z",
-   "t_evaluacion_utc": "2026-08-16T16:17:10Z",
-   "t_generacion_utc": "2026-08-16T16:17:10Z",
+   "t_evaluacion_utc": "2026-08-16T16:19:10Z",
+   "t_generacion_utc": "2026-08-16T16:19:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -301,57 +257,9 @@
    },
    "latencia_total_seg": 16.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 17'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Başakşehir FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kocaelispor no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 19'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Başakşehir FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kocaelispor no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "3511605aa1cdd253"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Sarpsborg 08 vs Sandefjord Fotball (Eliteserien)",
-   "match_id": "15260881",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 56,
-   "condicion": "Sarpsborg 08 acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sarpsborg 08",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6136,
-    "touches_home": 27,
-    "touches_away": 17,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-08-16T16:14:32Z",
-    "t_inicio_estimado_condicion": "2026-08-16T15:22:00Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T16:14:32Z",
-   "t_captura_utc": "2026-08-16T16:17:30Z",
-   "t_evaluacion_utc": "2026-08-16T16:17:30Z",
-   "t_generacion_utc": "2026-08-16T16:17:30Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T16:14:33Z",
-     "latencia_envio_ms": 802.5286197662354,
-     "error": null,
-     "message_id": 1205,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sarpsborg 08 vs Sandefjord Fotball\n⏱ Minuto: 56'\n📊 Marcador: 1-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Sarpsborg 08 acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "26d068ed83ec3d91"
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -359,7 +267,7 @@
    "match_id": "16483707",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 18,
+   "minuto": 19,
    "condicion": "Başakşehir FK domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -379,8 +287,8 @@
    },
    "t_evento_real_utc": "2026-08-16T16:15:40Z",
    "t_captura_utc": "2026-08-16T16:15:40Z",
-   "t_evaluacion_utc": "2026-08-16T16:18:20Z",
-   "t_generacion_utc": "2026-08-16T16:18:20Z",
+   "t_evaluacion_utc": "2026-08-16T16:19:27Z",
+   "t_generacion_utc": "2026-08-16T16:19:27Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -394,9 +302,101 @@
    },
    "latencia_total_seg": 49.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 18'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Başakşehir FK — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 19'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Başakşehir FK — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "49cf004b0f9931bd"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Sarpsborg 08 vs Sandefjord Fotball (Eliteserien)",
+   "match_id": "15260881",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 58,
+   "condicion": "Sarpsborg 08 acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Sarpsborg 08",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6087,
+    "touches_home": 28,
+    "touches_away": 18,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "1-2",
+    "t_primera_observacion_atlas": "2026-08-16T16:14:32Z",
+    "t_inicio_estimado_condicion": "2026-08-16T15:22:00Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T16:14:32Z",
+   "t_captura_utc": "2026-08-16T16:19:30Z",
+   "t_evaluacion_utc": "2026-08-16T16:19:30Z",
+   "t_generacion_utc": "2026-08-16T16:19:30Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T16:14:33Z",
+     "latencia_envio_ms": 802.5286197662354,
+     "error": null,
+     "message_id": 1205,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sarpsborg 08 vs Sandefjord Fotball\n⏱ Minuto: 58'\n📊 Marcador: 1-2\n🏆 Liga: Eliteserien\n\n📝 Motivo: Sarpsborg 08 acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "26d068ed83ec3d91"
+  },
+  {
+   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "SK Brann vs HamKam (Eliteserien)",
+   "match_id": "15260875",
+   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 56,
+   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "xg_combinado": 1.68,
+    "tiros_combinados": 19,
+    "sot_combinado": 6,
+    "presion_reciente_10min": 5,
+    "marcador_en_el_momento": "1-0",
+    "t_primera_observacion_atlas": "2026-08-16T16:19:33Z",
+    "t_inicio_estimado_condicion": "2026-08-16T16:19:05Z",
+    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T16:19:33Z",
+   "t_captura_utc": "2026-08-16T16:19:33Z",
+   "t_evaluacion_utc": "2026-08-16T16:19:33Z",
+   "t_generacion_utc": "2026-08-16T16:19:33Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T16:19:34Z",
+     "latencia_envio_ms": 768.3801651000977,
+     "error": null,
+     "message_id": 1208,
+     "chat_id": -5415726375
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ SK Brann vs HamKam\n⏱ Minuto: 56'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: presión combinada sostenida — xG 1.68, 19 tiros totales (6 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "evidencia": null,
+   "alert_id": "3d778e0970586f74"
   },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -404,7 +404,7 @@
    "match_id": "16391144",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 58,
+   "minuto": 60,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -422,9 +422,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T16:18:26Z",
-   "t_captura_utc": "2026-08-16T16:18:26Z",
-   "t_evaluacion_utc": "2026-08-16T16:18:26Z",
-   "t_generacion_utc": "2026-08-16T16:18:26Z",
+   "t_captura_utc": "2026-08-16T16:19:35Z",
+   "t_evaluacion_utc": "2026-08-16T16:19:36Z",
+   "t_generacion_utc": "2026-08-16T16:19:36Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -438,7 +438,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Burnley vs West Ham United\n⏱ Minuto: 58'\n📊 Marcador: 0-1\n🏆 Liga: Championship\n\n📝 Motivo: presión combinada sostenida — xG 1.20, 17 tiros totales (3 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Burnley vs West Ham United\n⏱ Minuto: 60'\n📊 Marcador: 0-1\n🏆 Liga: Championship\n\n📝 Motivo: presión combinada sostenida — xG 1.20, 17 tiros totales (3 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "c2769eebab320a21"
   }
