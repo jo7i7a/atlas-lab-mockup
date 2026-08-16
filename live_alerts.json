@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T17:54:22Z",
- "n_alerts": 6,
+ "generated_at_utc": "2026-08-16T17:55:09Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -45,54 +45,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 67'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: presión combinada sostenida — xG 1.39, 16 tiros totales (7 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "e55aa17fe211f919"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Başakşehir FK vs Kocaelispor (Trendyol Süper Lig)",
-   "match_id": "16483707",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 85,
-   "condicion": "Başakşehir FK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Başakşehir FK",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7188,
-    "touches_home": 23,
-    "touches_away": 9,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 75,
-    "equipo_que_realizo_sustitucion": "Başakşehir FK",
-    "marcador_en_el_momento": "2-0",
-    "t_primera_observacion_atlas": "2026-08-16T17:24:32Z",
-    "t_inicio_estimado_condicion": "2026-08-16T16:20:53Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T17:24:32Z",
-   "t_captura_utc": "2026-08-16T17:45:23Z",
-   "t_evaluacion_utc": "2026-08-16T17:45:23Z",
-   "t_generacion_utc": "2026-08-16T17:45:23Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T17:24:33Z",
-     "latencia_envio_ms": 774.9993801116943,
-     "error": null,
-     "message_id": 1235,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 85'\n📊 Marcador: 2-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Başakşehir FK acumula 72% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Başakşehir FK, min 75\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "10646ffd0db2b1e6"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -187,7 +139,7 @@
    "match_id": "15260870",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 38,
+   "minuto": 39,
    "condicion": "4 córners totales antes del min 45 (0-4), Kristiansund BK presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Fredrikstad FK NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -201,8 +153,8 @@
    },
    "t_evento_real_utc": "2026-08-16T17:53:09Z",
    "t_captura_utc": "2026-08-16T17:53:09Z",
-   "t_evaluacion_utc": "2026-08-16T17:54:09Z",
-   "t_generacion_utc": "2026-08-16T17:54:09Z",
+   "t_evaluacion_utc": "2026-08-16T17:55:09Z",
+   "t_generacion_utc": "2026-08-16T17:55:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -216,57 +168,9 @@
    },
    "latencia_total_seg": 61.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Fredrikstad FK vs Kristiansund BK\n⏱ Minuto: 38'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Kristiansund BK presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Fredrikstad FK no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Fredrikstad FK vs Kristiansund BK\n⏱ Minuto: 39'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Kristiansund BK presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Fredrikstad FK no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "088e52b786e962e7"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Espanyol vs Levante UD (LaLiga)",
-   "match_id": "16421053",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 50,
-   "condicion": "Espanyol acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Espanyol",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7857,
-    "touches_home": 11,
-    "touches_away": 3,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 37,
-    "equipo_que_realizo_sustitucion": "Espanyol",
-    "marcador_en_el_momento": "2-0",
-    "t_primera_observacion_atlas": "2026-08-16T17:24:30Z",
-    "t_inicio_estimado_condicion": "2026-08-16T17:24:59Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T17:24:30Z",
-   "t_captura_utc": "2026-08-16T17:54:22Z",
-   "t_evaluacion_utc": "2026-08-16T17:54:22Z",
-   "t_generacion_utc": "2026-08-16T17:54:22Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T17:24:31Z",
-     "latencia_envio_ms": 841.6094779968262,
-     "error": null,
-     "message_id": 1234,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Espanyol vs Levante UD\n⏱ Minuto: 50'\n📊 Marcador: 2-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Espanyol acumula 79% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Espanyol, min 37\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "cc8c5411f6f7a376"
   }
  ]
 }
