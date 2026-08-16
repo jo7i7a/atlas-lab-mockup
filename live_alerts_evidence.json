@@ -5781,5 +5781,26 @@
    "cuota_real_betano": 1.83,
    "activo": true
   }
+ ],
+ "a0806fde26127b6d": [
+  {
+   "alert_id": "a0806fde26127b6d",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Fredrikstad FK vs Kristiansund BK (Eliteserien)",
+   "liga": "Eliteserien",
+   "event_id": "15260870",
+   "minuto_alerta": 81,
+   "condicion": "Kristiansund BK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T18:54:43Z",
+   "t_captura_utc": "2026-08-16T18:54:43Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T18:55:31Z",
+   "segundos_transcurridos": 46,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "11.5 @ 2.07",
+   "linea_real_betano": 11.5,
+   "cuota_real_betano": 2.07,
+   "activo": true
+  }
  ]
 }
