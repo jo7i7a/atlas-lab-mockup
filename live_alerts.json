@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T15:38:24Z",
- "n_alerts": 17,
+ "generated_at_utc": "2026-08-16T15:39:32Z",
+ "n_alerts": 18,
  "alerts": [
   {
    "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
@@ -491,122 +491,6 @@
    "alert_id": "da65b0ece4b48a8d"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Sarpsborg 08 vs Sandefjord Fotball (Eliteserien)",
-   "match_id": "15260881",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 36,
-   "condicion": "4 córners totales antes del min 45 (1-3), Sandefjord Fotball presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Sarpsborg 08 NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Sandefjord Fotball",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-16T15:20:32Z",
-   "t_captura_utc": "2026-08-16T15:20:32Z",
-   "t_evaluacion_utc": "2026-08-16T15:37:10Z",
-   "t_generacion_utc": "2026-08-16T15:37:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T15:21:14Z",
-     "latencia_envio_ms": 819.998025894165,
-     "error": null,
-     "message_id": 1181,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 42.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Sarpsborg 08 vs Sandefjord Fotball\n⏱ Minuto: 36'\n📊 Marcador: 1-1\n🏆 Liga: Eliteserien\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Sandefjord Fotball presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Sarpsborg 08 no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "064b05028d509666"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Real Racing Club vs Villarreal (LaLiga)",
-   "match_id": "16421061",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 35,
-   "condicion": "4 córners totales antes del min 45 (1-3), Villarreal presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Real Racing Club NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Villarreal",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-16T15:33:14Z",
-   "t_captura_utc": "2026-08-16T15:33:14Z",
-   "t_evaluacion_utc": "2026-08-16T15:37:11Z",
-   "t_generacion_utc": "2026-08-16T15:37:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T15:34:12Z",
-     "latencia_envio_ms": 831.3822746276855,
-     "error": null,
-     "message_id": 1189,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 58.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Real Racing Club vs Villarreal\n⏱ Minuto: 35'\n📊 Marcador: 2-0\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Villarreal presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Real Racing Club no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "430048aaca1c2781"
-  },
-  {
-   "strategy_id": "L3",
-   "match_label": "SK Brann vs HamKam (Eliteserien)",
-   "match_id": "15260875",
-   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
-   "cuota_detectada": null,
-   "minuto": 36,
-   "condicion": "Expulsión de HamKam (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_expulsado": "HamKam",
-    "marcador_al_detectar": "0-0",
-    "total_rojas_partido": 1
-   },
-   "t_evento_real_utc": "2026-08-16T15:35:04Z",
-   "t_captura_utc": "2026-08-16T15:36:10Z",
-   "t_evaluacion_utc": "2026-08-16T15:37:18Z",
-   "t_generacion_utc": "2026-08-16T15:37:18Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T15:35:21Z",
-     "latencia_envio_ms": 838.6406898498535,
-     "error": null,
-     "message_id": 1190,
-     "chat_id": -5219979824
-    }
-   },
-   "latencia_total_seg": 17.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ SK Brann vs HamKam\n⏱ Minuto: 36'\n📊 Marcador: 0-0\n🏆 Liga: Eliteserien\n\n🟥 Expulsado: HamKam\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
-   "evidencia": null,
-   "alert_id": "edf1ba1eb7652db6"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Chapecoense vs Bahia (Brasileirão Betano)",
    "match_id": "15235427",
@@ -655,12 +539,128 @@
    "alert_id": "2a7a4e61d9be0819"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Sarpsborg 08 vs Sandefjord Fotball (Eliteserien)",
+   "match_id": "15260881",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 38,
+   "condicion": "4 córners totales antes del min 45 (1-3), Sandefjord Fotball presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Sarpsborg 08 NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 1,
+    "corners_away": 3,
+    "equipo_presiona": "Sandefjord Fotball",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-16T15:20:32Z",
+   "t_captura_utc": "2026-08-16T15:20:32Z",
+   "t_evaluacion_utc": "2026-08-16T15:39:10Z",
+   "t_generacion_utc": "2026-08-16T15:39:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T15:21:14Z",
+     "latencia_envio_ms": 819.998025894165,
+     "error": null,
+     "message_id": 1181,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 42.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Sarpsborg 08 vs Sandefjord Fotball\n⏱ Minuto: 38'\n📊 Marcador: 1-1\n🏆 Liga: Eliteserien\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Sandefjord Fotball presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Sarpsborg 08 no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "064b05028d509666"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Real Racing Club vs Villarreal (LaLiga)",
+   "match_id": "16421061",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 37,
+   "condicion": "4 córners totales antes del min 45 (1-3), Villarreal presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Real Racing Club NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 1,
+    "corners_away": 3,
+    "equipo_presiona": "Villarreal",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-16T15:33:14Z",
+   "t_captura_utc": "2026-08-16T15:33:14Z",
+   "t_evaluacion_utc": "2026-08-16T15:39:11Z",
+   "t_generacion_utc": "2026-08-16T15:39:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T15:34:12Z",
+     "latencia_envio_ms": 831.3822746276855,
+     "error": null,
+     "message_id": 1189,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 58.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Real Racing Club vs Villarreal\n⏱ Minuto: 37'\n📊 Marcador: 2-0\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Villarreal presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Real Racing Club no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "430048aaca1c2781"
+  },
+  {
+   "strategy_id": "L3",
+   "match_label": "SK Brann vs HamKam (Eliteserien)",
+   "match_id": "15260875",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
+   "cuota_detectada": null,
+   "minuto": 38,
+   "condicion": "Expulsión de HamKam (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_expulsado": "HamKam",
+    "marcador_al_detectar": "0-0",
+    "total_rojas_partido": 1
+   },
+   "t_evento_real_utc": "2026-08-16T15:35:04Z",
+   "t_captura_utc": "2026-08-16T15:39:05Z",
+   "t_evaluacion_utc": "2026-08-16T15:39:19Z",
+   "t_generacion_utc": "2026-08-16T15:39:19Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T15:35:21Z",
+     "latencia_envio_ms": 838.6406898498535,
+     "error": null,
+     "message_id": 1190,
+     "chat_id": -5219979824
+    }
+   },
+   "latencia_total_seg": 17.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ SK Brann vs HamKam\n⏱ Minuto: 38'\n📊 Marcador: 0-0\n🏆 Liga: Eliteserien\n\n🟥 Expulsado: HamKam\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
+   "evidencia": null,
+   "alert_id": "edf1ba1eb7652db6"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "SK Brann vs HamKam (Eliteserien)",
    "match_id": "15260875",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 36,
+   "minuto": 38,
    "condicion": "SK Brann acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -669,8 +669,8 @@
    "extra": {
     "equipo_dominante": "SK Brann",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.8333,
-    "touches_home": 20,
+    "ratio_presion_territorial": 0.8462,
+    "touches_home": 22,
     "touches_away": 4,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
@@ -682,9 +682,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T15:21:45Z",
-   "t_captura_utc": "2026-08-16T15:37:27Z",
-   "t_evaluacion_utc": "2026-08-16T15:37:28Z",
-   "t_generacion_utc": "2026-08-16T15:37:28Z",
+   "t_captura_utc": "2026-08-16T15:39:29Z",
+   "t_evaluacion_utc": "2026-08-16T15:39:29Z",
+   "t_generacion_utc": "2026-08-16T15:39:29Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -698,7 +698,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SK Brann vs HamKam\n⏱ Minuto: 36'\n📊 Marcador: 0-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: SK Brann acumula 83% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SK Brann vs HamKam\n⏱ Minuto: 38'\n📊 Marcador: 0-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: SK Brann acumula 85% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "35ba7db00ebe695d"
   },
@@ -708,7 +708,7 @@
    "match_id": "15260878",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 36,
+   "minuto": 38,
    "condicion": "Tromsø IL acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -717,9 +717,9 @@
    "extra": {
     "equipo_dominante": "Tromsø IL",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.625,
+    "ratio_presion_territorial": 0.7,
     "touches_home": 3,
-    "touches_away": 5,
+    "touches_away": 7,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 31,
     "equipo_que_realizo_sustitucion": "Tromsø IL",
@@ -730,9 +730,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T15:20:39Z",
-   "t_captura_utc": "2026-08-16T15:37:28Z",
-   "t_evaluacion_utc": "2026-08-16T15:37:28Z",
-   "t_generacion_utc": "2026-08-16T15:37:28Z",
+   "t_captura_utc": "2026-08-16T15:39:29Z",
+   "t_evaluacion_utc": "2026-08-16T15:39:29Z",
+   "t_generacion_utc": "2026-08-16T15:39:29Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -746,9 +746,57 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Molde FK vs Tromsø IL\n⏱ Minuto: 36'\n📊 Marcador: 0-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: Tromsø IL acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Tromsø IL, min 31\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Molde FK vs Tromsø IL\n⏱ Minuto: 38'\n📊 Marcador: 0-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: Tromsø IL acumula 70% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Tromsø IL, min 31\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "1691876525d0040b"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Sarpsborg 08 vs Sandefjord Fotball (Eliteserien)",
+   "match_id": "15260881",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 39,
+   "condicion": "Sarpsborg 08 acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Sarpsborg 08",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6071,
+    "touches_home": 17,
+    "touches_away": 11,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "1-1",
+    "t_primera_observacion_atlas": "2026-08-16T15:39:30Z",
+    "t_inicio_estimado_condicion": "2026-08-16T15:22:00Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T15:39:30Z",
+   "t_captura_utc": "2026-08-16T15:39:30Z",
+   "t_evaluacion_utc": "2026-08-16T15:39:30Z",
+   "t_generacion_utc": "2026-08-16T15:39:30Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T15:39:31Z",
+     "latencia_envio_ms": 817.1744346618652,
+     "error": null,
+     "message_id": 1192,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sarpsborg 08 vs Sandefjord Fotball\n⏱ Minuto: 39'\n📊 Marcador: 1-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Sarpsborg 08 acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "84b248b701907890"
   }
  ]
 }
