@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-16T18:11:26Z",
+ "generated_at_utc": "2026-08-16T18:12:33Z",
  "n_alerts": 2,
  "alerts": [
   {
@@ -42,43 +42,42 @@
    "alert_id": "088e52b786e962e7"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "FC Arouca vs Moreirense (Liga Portugal Betclic)",
-   "match_id": "16450747",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "strategy_id": "A2",
+   "match_label": "Espanyol vs Levante UD (LaLiga)",
+   "match_id": "16421053",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (3-1), FC Arouca presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Moreirense NO está en bloque bajo?",
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
    "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "FC Arouca",
-    "variante": "shadow_ventana_45"
+    "corners_1t_home": 0,
+    "corners_1t_away": 1,
+    "corners_1t_total": 1
    },
-   "t_evento_real_utc": "2026-08-16T17:41:52Z",
-   "t_captura_utc": "2026-08-16T17:41:52Z",
-   "t_evaluacion_utc": "2026-08-16T18:08:11Z",
-   "t_generacion_utc": "2026-08-16T18:08:11Z",
+   "t_evento_real_utc": "2026-08-16T18:10:55Z",
+   "t_captura_utc": "2026-08-16T18:10:55Z",
+   "t_evaluacion_utc": "2026-08-16T18:12:18Z",
+   "t_generacion_utc": "2026-08-16T18:12:18Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
      "estado": "OK",
-     "t_envio_utc": "2026-08-16T17:42:14Z",
-     "latencia_envio_ms": 897.9713916778564,
+     "t_envio_utc": "2026-08-16T18:12:19Z",
+     "latencia_envio_ms": 812.4263286590576,
      "error": null,
-     "message_id": 1239,
+     "message_id": 1241,
      "chat_id": -5314130598
     }
    },
-   "latencia_total_seg": 22.0,
+   "latencia_total_seg": 84.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ FC Arouca vs Moreirense\n⏱ Minuto: 45'\n📊 Marcador: 3-0\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: FC Arouca presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Moreirense no está en bloque bajo?",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Espanyol vs Levante UD\n⏱ Minuto: 46'\n📊 Marcador: 2-0\n🏆 Liga: LaLiga\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
-   "alert_id": "01ebc8f8329150fe"
+   "alert_id": "b89499ed22c36e3e"
   }
  ]
 }
