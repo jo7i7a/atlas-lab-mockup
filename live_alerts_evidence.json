@@ -4958,5 +4958,26 @@
    "cuota_real_betano": 3.6,
    "activo": true
   }
+ ],
+ "0e44a91ac32cf33c": [
+  {
+   "alert_id": "0e44a91ac32cf33c",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Los Angeles FC vs San Diego FC (MLS)",
+   "liga": "MLS",
+   "event_id": "15171646",
+   "minuto_alerta": 27,
+   "condicion": "San Diego FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T03:08:24Z",
+   "t_captura_utc": "2026-08-16T03:08:24Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T03:09:15Z",
+   "segundos_transcurridos": 50,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.5 @ 1.80",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 1.8,
+   "activo": true
+  }
  ]
 }
