@@ -50,6 +50,7 @@ Write-Output ("=== Inicio run_daily.ps1 " + (Get-Date -Format "yyyy-MM-dd HH:mm:
 
 $steps = @(
     "01_rebuild_upcoming_matches.py",
+    "10_fetch_oddspapi_odds.py",
     "02_compute_historical_stats.py",
     "03_export_lean_js.py",
     "04_resplice_index_html.py",

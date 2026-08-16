@@ -20,6 +20,14 @@ with open(WORK + r"\historical_stats_results.json", encoding="utf-8") as f:
     hist = json.load(f)
 with open(WORK + r"\referees_by_league.json", encoding="utf-8") as f:
     referees = json.load(f)
+# 2026-08-16, integracion OddsPapi Edificio 5: oddspapi_lean.json es opcional
+# a proposito -- si 10_fetch_oddspapi_odds.py fallo o no corrio, esto NUNCA
+# debe abortar el resto del pipeline (la integracion es puramente aditiva).
+try:
+    with open(WORK + r"\oddspapi_lean.json", encoding="utf-8") as f:
+        oddspapi = json.load(f)
+except FileNotFoundError:
+    oddspapi = {}
 
 GOV_SHORT = {"CERTIFICADO": "CERT", "PROMOVIDO": "PROM", "BASELINE": "BASE", "EXPERIMENTAL": "EXP", "NO_DISPONIBLE": "ND"}
 
@@ -32,11 +40,20 @@ for match_id, entry in pocket.items():
     for mkt, data in entry["markets"].items():
         if "error" in data:
             continue
-        markets[mkt] = {
+        compact = {
             "p": {k: round(v, 4) for k, v in (data["probability"] or {}).items()},
             "g": GOV_SHORT.get(data["governance_status"], data["governance_status"]),
             "e": data["engine_id"],
         }
+        # 2026-08-16, integracion OddsPapi Edificio 5: la linea de Handicap
+        # (hl/al) no es fija como el resto de los mercados -- sin exponerla
+        # aqui, ni la UI ni el matching de OddsPapi pueden saber contra que
+        # linea comparar. market_context es None para mercados de linea fija.
+        ctx = data.get("market_context")
+        if mkt == "HANDICAP_FT" and ctx:
+            compact["hl"] = ctx.get("home_line")
+            compact["al"] = ctx.get("away_line")
+        markets[mkt] = compact
     lean_pocket[match_id] = markets
 
 lean_hist = {}
@@ -93,6 +110,14 @@ out.append("")
 out.append("/* Arbitros reales (tabla referees + match_referees), career stats -- NO se")
 out.append("   recalcula a diario (cambia con poca frecuencia), regenerado manualmente. */")
 out.append("const REFEREES_BY_LEAGUE = " + json.dumps(referees, ensure_ascii=False) + ";")
+out.append("")
+out.append("/* Cuotas automaticas reales de OddsPapi FREE (2026-08-16, ATLAS LAB Edificio 5")
+out.append("   exclusivamente -- NO relacionado con Odds-API.io/sistema LIVE). Solo 4")
+out.append("   mercados: 1X2_FT, OU25_GOALS_FT, HANDICAP_FT, BTTS. bk=bookmaker real,")
+out.append("   sel={seleccion: {p:cuota decimal, t:timestamp del proveedor, l:linea}}.")
+out.append("   Vacio o con huecos por partido/mercado es esperado y normal -- ver")
+out.append("   oddspapi_estado.json para el motivo exacto de cada hueco. */")
+out.append("const ODDSPAPI_DATA = " + json.dumps(oddspapi, ensure_ascii=False) + ";")
 
 frag = "\n".join(out)
 with open(WORK + r"\match_data_fragment.js", "w", encoding="utf-8") as f:

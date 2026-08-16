@@ -180,6 +180,13 @@ for i, sel in enumerate(selected):
                         "source_type": est.source_type.value, "engine_id": est.engine_id,
                         "governance_status": est.governance_status.value,
                         "probability": est.probability, "n_trained": est.data_coverage,
+                        # market_context (2026-08-16, integracion OddsPapi Edificio 5):
+                        # necesario para exponer la linea de Handicap (home_line/
+                        # away_line) que el motor SI calcula pero antes se
+                        # descartaba antes de llegar a POCKET_DATA -- sin esto no
+                        # hay forma de saber contra que linea buscar la cuota
+                        # automatica ni de mostrar la fila en el mockup.
+                        "market_context": getattr(est, "market_context", None),
                     }
                 except Exception as e:
                     markets[market] = {"error": str(e)}
@@ -213,6 +220,31 @@ with open(WORK + r"\match_list.json", "w", encoding="utf-8") as f:
     json.dump(match_list, f, ensure_ascii=False, indent=1)
 with open(WORK + r"\leagues_used.json", "w", encoding="utf-8") as f:
     json.dump(LEAGUES, f, ensure_ascii=False, indent=1)
+
+# match_event_ids.json (2026-08-16, integracion OddsPapi Edificio 5): mid ->
+# {event_id (SofaScore), league, country, home_name, away_name} para TODOS
+# los partidos resueltos (resolved=True en "selected", nunca los de
+# live_finished -- una cuota pre-partido no aplica a un partido en curso o ya
+# jugado). event_id ya vive en sel["event_id"] dentro del loop de arriba; se
+# vuelca aqui en vez de re-parsearlo del sufijo del slug con regex. `country`
+# viene de tournaments.country (real, YA existente en soccer_analytics.db,
+# resuelto via resolve_tournament()) -- es la unica forma segura de
+# desambiguar ligas con nombre corto/generico (ej. "MLS", "Liga de Ascenso",
+# "K League 1") contra el catalogo global de OddsPapi sin adivinar por texto
+# (hallazgo real 2026-08-16: sin esto, el matching por nombre resolvia
+# silenciosamente "Brasileirão Série C" contra la Serie C de Italia).
+match_event_ids = {}
+for sel in selected:
+    mid = slugify(sel["home_name"], sel["away_name"], sel["event_id"])
+    if results.get(mid, {}).get("resolved"):
+        tourn = league_tournament[sel["league"]]
+        match_event_ids[mid] = {
+            "event_id": sel["event_id"], "league": sel["league"],
+            "country": (tourn or {}).get("country") or None,
+            "home_name": sel["home_name"], "away_name": sel["away_name"],
+        }
+with open(WORK + r"\match_event_ids.json", "w", encoding="utf-8") as f:
+    json.dump(match_event_ids, f, ensure_ascii=False, indent=1)
 
 n_resolved = sum(1 for v in results.values() if v.get("resolved"))
 print(f"\nTotal resuelto: {n_resolved}/{len(selected)}")
