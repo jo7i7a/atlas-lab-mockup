@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T23:30:24Z",
- "n_alerts": 6,
+ "generated_at_utc": "2026-08-16T23:31:25Z",
+ "n_alerts": 7,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -139,7 +139,7 @@
    "match_id": "16317884",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 28,
+   "minuto": 29,
    "condicion": "4 córners totales antes del min 30 (3-1), Club América presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Atlético San Luis NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -152,8 +152,8 @@
    },
    "t_evento_real_utc": "2026-08-16T23:19:48Z",
    "t_captura_utc": "2026-08-16T23:19:48Z",
-   "t_evaluacion_utc": "2026-08-16T23:30:09Z",
-   "t_generacion_utc": "2026-08-16T23:30:09Z",
+   "t_evaluacion_utc": "2026-08-16T23:31:09Z",
+   "t_generacion_utc": "2026-08-16T23:31:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -167,7 +167,7 @@
    },
    "latencia_total_seg": 23.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Club América vs Atlético San Luis\n⏱ Minuto: 28'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Club América presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlético San Luis no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Club América vs Atlético San Luis\n⏱ Minuto: 29'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Club América presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlético San Luis no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "53fea824ca257078"
   },
@@ -177,7 +177,7 @@
    "match_id": "16317884",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 28,
+   "minuto": 29,
    "condicion": "4 córners totales antes del min 45 (3-1), Club América presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Atlético San Luis NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -191,8 +191,8 @@
    },
    "t_evento_real_utc": "2026-08-16T23:19:48Z",
    "t_captura_utc": "2026-08-16T23:19:48Z",
-   "t_evaluacion_utc": "2026-08-16T23:30:11Z",
-   "t_generacion_utc": "2026-08-16T23:30:11Z",
+   "t_evaluacion_utc": "2026-08-16T23:31:11Z",
+   "t_generacion_utc": "2026-08-16T23:31:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -206,9 +206,54 @@
    },
    "latencia_total_seg": 25.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Club América vs Atlético San Luis\n⏱ Minuto: 28'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Club América presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlético San Luis no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Club América vs Atlético San Luis\n⏱ Minuto: 29'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Club América presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlético San Luis no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "bff0b81fcd97041b"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Central Córdoba vs Instituto De Córdoba (Liga Profesional de Fútbol)",
+   "match_id": "16671567",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "Instituto De Córdoba domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Instituto De Córdoba",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 1,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T23:31:20Z",
+   "t_captura_utc": "2026-08-16T23:31:20Z",
+   "t_evaluacion_utc": "2026-08-16T23:31:22Z",
+   "t_generacion_utc": "2026-08-16T23:31:22Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T23:31:23Z",
+     "latencia_envio_ms": 832.74245262146,
+     "error": null,
+     "message_id": 1347,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 3.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Central Córdoba vs Instituto De Córdoba\n⏱ Minuto: 15'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Instituto De Córdoba — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "bca4a7c11f1d6003"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -216,7 +261,7 @@
    "match_id": "16317884",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 28,
+   "minuto": 29,
    "condicion": "Club América acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -225,9 +270,9 @@
    "extra": {
     "equipo_dominante": "Club América",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7857,
+    "ratio_presion_territorial": 0.6471,
     "touches_home": 11,
-    "touches_away": 3,
+    "touches_away": 6,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 21,
     "equipo_que_realizo_sustitucion": "Club América",
@@ -238,9 +283,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T23:21:34Z",
-   "t_captura_utc": "2026-08-16T23:30:23Z",
-   "t_evaluacion_utc": "2026-08-16T23:30:24Z",
-   "t_generacion_utc": "2026-08-16T23:30:24Z",
+   "t_captura_utc": "2026-08-16T23:31:25Z",
+   "t_evaluacion_utc": "2026-08-16T23:31:25Z",
+   "t_generacion_utc": "2026-08-16T23:31:25Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -254,7 +299,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club América vs Atlético San Luis\n⏱ Minuto: 28'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Club América acumula 79% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Club América, min 21\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club América vs Atlético San Luis\n⏱ Minuto: 29'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Club América acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Club América, min 21\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "0fd8b5c37d154ac6"
   }
