@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-16T01:59:34Z",
+ "generated_at_utc": "2026-08-16T02:00:42Z",
  "n_alerts": 6,
  "alerts": [
   {
@@ -148,7 +148,7 @@
    "match_id": "15171643",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 18,
+   "minuto": 19,
    "condicion": "Colorado Rapids domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -168,8 +168,8 @@
    },
    "t_evento_real_utc": "2026-08-16T01:58:22Z",
    "t_captura_utc": "2026-08-16T01:58:22Z",
-   "t_evaluacion_utc": "2026-08-16T01:59:25Z",
-   "t_generacion_utc": "2026-08-16T01:59:25Z",
+   "t_evaluacion_utc": "2026-08-16T02:00:31Z",
+   "t_generacion_utc": "2026-08-16T02:00:31Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -183,7 +183,7 @@
    },
    "latencia_total_seg": 64.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Colorado Rapids vs Sporting Kansas City\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Colorado Rapids — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Colorado Rapids vs Sporting Kansas City\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Colorado Rapids — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "a4054d414b7b57c0"
   },
@@ -193,7 +193,7 @@
    "match_id": "15171650",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 18,
+   "minuto": 19,
    "condicion": "Real Salt Lake domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -213,8 +213,8 @@
    },
    "t_evento_real_utc": "2026-08-16T01:59:03Z",
    "t_captura_utc": "2026-08-16T01:59:03Z",
-   "t_evaluacion_utc": "2026-08-16T01:59:28Z",
-   "t_generacion_utc": "2026-08-16T01:59:28Z",
+   "t_evaluacion_utc": "2026-08-16T02:00:33Z",
+   "t_generacion_utc": "2026-08-16T02:00:33Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -228,57 +228,57 @@
    },
    "latencia_total_seg": 25.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Real Salt Lake vs Minnesota United\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Real Salt Lake — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Real Salt Lake vs Minnesota United\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Real Salt Lake — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "45f27fd5cbd0d1f9"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "CF Monterrey vs FC Juárez (Liga MX, Apertura)",
-   "match_id": "16317953",
+   "match_label": "Real Salt Lake vs Minnesota United (MLS)",
+   "match_id": "15171650",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 49,
-   "condicion": "CF Monterrey acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "minuto": 20,
+   "condicion": "Real Salt Lake acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
    "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "equipo_dominante": "CF Monterrey",
+    "equipo_dominante": "Real Salt Lake",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.8438,
-    "touches_home": 27,
-    "touches_away": 5,
+    "ratio_presion_territorial": 0.75,
+    "touches_home": 3,
+    "touches_away": 1,
     "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 37,
-    "equipo_que_realizo_sustitucion": "CF Monterrey",
-    "marcador_en_el_momento": "4-1",
-    "t_primera_observacion_atlas": "2026-08-16T01:30:30Z",
-    "t_inicio_estimado_condicion": "2026-08-16T01:31:03Z",
+    "minuto_ultima_sustitucion": 15,
+    "equipo_que_realizo_sustitucion": "Real Salt Lake",
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-16T02:00:40Z",
+    "t_inicio_estimado_condicion": null,
     "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
-   "t_evento_real_utc": "2026-08-16T01:30:30Z",
-   "t_captura_utc": "2026-08-16T01:59:34Z",
-   "t_evaluacion_utc": "2026-08-16T01:59:34Z",
-   "t_generacion_utc": "2026-08-16T01:59:34Z",
+   "t_evento_real_utc": "2026-08-16T02:00:40Z",
+   "t_captura_utc": "2026-08-16T02:00:40Z",
+   "t_evaluacion_utc": "2026-08-16T02:00:41Z",
+   "t_generacion_utc": "2026-08-16T02:00:41Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
      "estado": "OK",
-     "t_envio_utc": "2026-08-16T01:30:31Z",
-     "latencia_envio_ms": 825.3099918365479,
+     "t_envio_utc": "2026-08-16T02:00:42Z",
+     "latencia_envio_ms": 873.3594417572021,
      "error": null,
-     "message_id": 1033,
+     "message_id": 1041,
      "chat_id": -5314130598
     }
    },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 49'\n📊 Marcador: 4-1\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CF Monterrey acumula 84% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CF Monterrey, min 37\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "latencia_total_seg": 2.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Real Salt Lake vs Minnesota United\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Real Salt Lake acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Real Salt Lake, min 15\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
-   "alert_id": "f23a44727a83bbf0"
+   "alert_id": "915feda0edba126c"
   }
  ]
 }
