@@ -5802,5 +5802,45 @@
    "cuota_real_betano": 2.07,
    "activo": true
   }
+ ],
+ "14dd8a10b17f566e": [
+  {
+   "alert_id": "14dd8a10b17f566e",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Beşiktaş JK vs Eyüpspor (Trendyol Süper Lig)",
+   "liga": "Trendyol Süper Lig",
+   "event_id": "16483640",
+   "minuto_alerta": 25,
+   "condicion": "Beşiktaş JK domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T18:55:57Z",
+   "t_captura_utc": "2026-08-16T18:55:57Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T18:57:21Z",
+   "segundos_transcurridos": 51,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "6.4 @ 1.42\n7.5 @ 1.85",
+   "linea_real_betano": 6.4,
+   "cuota_real_betano": 1.42,
+   "activo": true
+  },
+  {
+   "alert_id": "14dd8a10b17f566e",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Beşiktaş JK vs Eyüpspor (Trendyol Süper Lig)",
+   "liga": "Trendyol Süper Lig",
+   "event_id": "16483640",
+   "minuto_alerta": 25,
+   "condicion": "Beşiktaş JK domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T18:55:57Z",
+   "t_captura_utc": "2026-08-16T18:55:57Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T18:57:21Z",
+   "segundos_transcurridos": 51,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "6.4 @ 1.42\n7.5 @ 1.85",
+   "linea_real_betano": 7.5,
+   "cuota_real_betano": 1.85,
+   "activo": true
+  }
  ]
 }
