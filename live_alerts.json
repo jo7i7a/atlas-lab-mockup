@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T19:53:32Z",
+ "generated_at_utc": "2026-08-16T19:54:39Z",
  "n_alerts": 7,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Pumas UNAM vs Querétaro FC (Liga MX, Apertura)",
-   "match_id": "16317883",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 73,
-   "condicion": "Pumas UNAM acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Pumas UNAM",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6087,
-    "touches_home": 14,
-    "touches_away": 9,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 70,
-    "equipo_que_realizo_sustitucion": "Pumas UNAM",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-16T19:24:29Z",
-    "t_inicio_estimado_condicion": "2026-08-16T18:20:53Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T19:24:29Z",
-   "t_captura_utc": "2026-08-16T19:31:28Z",
-   "t_evaluacion_utc": "2026-08-16T19:31:28Z",
-   "t_generacion_utc": "2026-08-16T19:31:28Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T19:24:30Z",
-     "latencia_envio_ms": 823.5061168670654,
-     "error": null,
-     "message_id": 1282,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Pumas UNAM vs Querétaro FC\n⏱ Minuto: 73'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Pumas UNAM acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Pumas UNAM, min 70\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "49ca9b8450318368"
-  },
   {
    "strategy_id": "L3",
    "match_label": "Sarmiento vs Huracán (Liga Profesional de Fútbol)",
@@ -205,12 +157,57 @@
    "alert_id": "76639113f7d8b27f"
   },
   {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Famalicão vs CS Marítimo (Liga Portugal Betclic)",
+   "match_id": "16450751",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 24,
+   "condicion": "CS Marítimo domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "CS Marítimo",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T19:53:44Z",
+   "t_captura_utc": "2026-08-16T19:53:44Z",
+   "t_evaluacion_utc": "2026-08-16T19:54:35Z",
+   "t_generacion_utc": "2026-08-16T19:54:35Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T19:54:36Z",
+     "latencia_envio_ms": 886.3732814788818,
+     "error": null,
+     "message_id": 1293,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 52.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Famalicão vs CS Marítimo\n⏱ Minuto: 24'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: CS Marítimo — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "18eaf6798adc9a99"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Famalicão vs CS Marítimo (Liga Portugal Betclic)",
    "match_id": "16450751",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "CS Marítimo acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -219,9 +216,9 @@
    "extra": {
     "equipo_dominante": "CS Marítimo",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6667,
+    "ratio_presion_territorial": 0.7143,
     "touches_home": 2,
-    "touches_away": 4,
+    "touches_away": 5,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -232,9 +229,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T19:52:31Z",
-   "t_captura_utc": "2026-08-16T19:53:31Z",
-   "t_evaluacion_utc": "2026-08-16T19:53:31Z",
-   "t_generacion_utc": "2026-08-16T19:53:31Z",
+   "t_captura_utc": "2026-08-16T19:54:38Z",
+   "t_evaluacion_utc": "2026-08-16T19:54:38Z",
+   "t_generacion_utc": "2026-08-16T19:54:38Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -248,7 +245,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Famalicão vs CS Marítimo\n⏱ Minuto: 23'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: CS Marítimo acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Famalicão vs CS Marítimo\n⏱ Minuto: 24'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: CS Marítimo acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "92fcfd550a3d6ae0"
   },
@@ -258,7 +255,7 @@
    "match_id": "16483634",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 65,
+   "minuto": 67,
    "condicion": "Amed Sportif Faaliyetler acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -267,8 +264,8 @@
    "extra": {
     "equipo_dominante": "Amed Sportif Faaliyetler",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6923,
-    "touches_home": 9,
+    "ratio_presion_territorial": 0.7333,
+    "touches_home": 11,
     "touches_away": 4,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 64,
@@ -280,9 +277,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T19:42:22Z",
-   "t_captura_utc": "2026-08-16T19:53:32Z",
-   "t_evaluacion_utc": "2026-08-16T19:53:32Z",
-   "t_generacion_utc": "2026-08-16T19:53:32Z",
+   "t_captura_utc": "2026-08-16T19:54:38Z",
+   "t_evaluacion_utc": "2026-08-16T19:54:39Z",
+   "t_generacion_utc": "2026-08-16T19:54:39Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -296,7 +293,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Amed Sportif Faaliyetler vs Erzurumspor FK\n⏱ Minuto: 65'\n📊 Marcador: 2-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Amed Sportif Faaliyetler acumula 69% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Amed Sportif Faaliyetler, min 64\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Amed Sportif Faaliyetler vs Erzurumspor FK\n⏱ Minuto: 67'\n📊 Marcador: 2-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Amed Sportif Faaliyetler acumula 73% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Amed Sportif Faaliyetler, min 64\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "c953d58e53711116"
   }
