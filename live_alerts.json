@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T15:33:30Z",
- "n_alerts": 20,
+ "generated_at_utc": "2026-08-16T15:34:32Z",
+ "n_alerts": 19,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "CD Nacional vs Estoril Praia (Liga Portugal Betclic)",
-   "match_id": "16450752",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 37,
-   "condicion": "Estoril Praia acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Estoril Praia",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 2,
-    "touches_away": 4,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 32,
-    "equipo_que_realizo_sustitucion": "Estoril Praia",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-16T15:03:30Z",
-    "t_inicio_estimado_condicion": "2026-08-16T15:02:37Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T15:03:30Z",
-   "t_captura_utc": "2026-08-16T15:09:35Z",
-   "t_evaluacion_utc": "2026-08-16T15:09:35Z",
-   "t_generacion_utc": "2026-08-16T15:09:35Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T15:03:31Z",
-     "latencia_envio_ms": 738.9340400695801,
-     "error": null,
-     "message_id": 1167,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CD Nacional vs Estoril Praia\n⏱ Minuto: 37'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Estoril Praia acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Estoril Praia, min 32\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "a61bf69c139b79e9"
-  },
   {
    "strategy_id": "A2",
    "match_label": "Operário-PR vs Avaí (Brasileirão Série B)",
@@ -87,52 +39,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Operário-PR vs Avaí\n⏱ Minuto: 52'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 3\nVisita: 0\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "dea5d24779ee190e"
-  },
-  {
-   "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Kalmar FF vs Hammarby IF (Allsvenskan)",
-   "match_id": "15271350",
-   "market": "Over 1.5 Goles FT (o Over 0.5 2ª Mitad) -- verificar en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 41,
-   "condicion": "0-0 con dominancia sostenida entre los minutos 32-42 (remates totales≥9, tiros a puerta≥4, córners≥5, todos combinados). Condición original de 'ataques peligrosos' NO evaluada -- dato no disponible en la fuente actual. Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "remates_local": 0,
-    "remates_visita": 10,
-    "remates_total": 10,
-    "sot_local": 0,
-    "sot_visita": 5,
-    "sot_total": 5,
-    "cor_local": 1,
-    "cor_visita": 4,
-    "cor_total": 5,
-    "marcador": "0-0",
-    "condicion_original_no_evaluada": "ataques peligrosos a favor del dominante (dato no disponible)"
-   },
-   "t_evento_real_utc": "2026-08-16T15:04:04Z",
-   "t_captura_utc": "2026-08-16T15:12:08Z",
-   "t_evaluacion_utc": "2026-08-16T15:12:28Z",
-   "t_generacion_utc": "2026-08-16T15:12:28Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T15:04:22Z",
-     "latencia_envio_ms": 819.7963237762451,
-     "error": null,
-     "message_id": 1168,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 18.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B1_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Kalmar FF vs Hammarby IF\n⏱ Minuto: 41'\n📊 Marcador: 0-0\n\n🎯 Remates totales:\nLocal: 0\nVisita: 10\nTotal: 10\n\n🎯 Tiros a puerta:\nLocal: 0\nVisita: 5\nTotal: 5\n\n🚩 Córners:\nLocal: 1\nVisita: 4\nTotal: 5\n\n🏆 Liga: Allsvenskan\n\n⚠️ Versión SIN la condición de ataques peligrosos (dato no disponible)\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 goles FT (o Over 0.5 2ª mitad)",
-   "evidencia": null,
-   "alert_id": "00dc2c608a4599df"
   },
   {
    "strategy_id": "A2",
@@ -713,7 +619,7 @@
    "match_id": "15260875",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 31,
+   "minuto": 32,
    "condicion": "4 córners totales antes del min 45 (4-0), SK Brann presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿HamKam NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -727,8 +633,8 @@
    },
    "t_evento_real_utc": "2026-08-16T15:22:43Z",
    "t_captura_utc": "2026-08-16T15:22:43Z",
-   "t_evaluacion_utc": "2026-08-16T15:33:09Z",
-   "t_generacion_utc": "2026-08-16T15:33:09Z",
+   "t_evaluacion_utc": "2026-08-16T15:34:09Z",
+   "t_generacion_utc": "2026-08-16T15:34:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -742,7 +648,7 @@
    },
    "latencia_total_seg": 30.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ SK Brann vs HamKam\n⏱ Minuto: 31'\n📊 Marcador: 0-0\n🏆 Liga: Eliteserien\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: SK Brann presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿HamKam no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ SK Brann vs HamKam\n⏱ Minuto: 32'\n📊 Marcador: 0-0\n🏆 Liga: Eliteserien\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: SK Brann presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿HamKam no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "da65b0ece4b48a8d"
   },
@@ -752,7 +658,7 @@
    "match_id": "15260881",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 32,
+   "minuto": 33,
    "condicion": "4 córners totales antes del min 45 (1-3), Sandefjord Fotball presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Sarpsborg 08 NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -766,8 +672,8 @@
    },
    "t_evento_real_utc": "2026-08-16T15:20:32Z",
    "t_captura_utc": "2026-08-16T15:20:32Z",
-   "t_evaluacion_utc": "2026-08-16T15:33:10Z",
-   "t_generacion_utc": "2026-08-16T15:33:10Z",
+   "t_evaluacion_utc": "2026-08-16T15:34:10Z",
+   "t_generacion_utc": "2026-08-16T15:34:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -781,9 +687,48 @@
    },
    "latencia_total_seg": 42.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Sarpsborg 08 vs Sandefjord Fotball\n⏱ Minuto: 32'\n📊 Marcador: 0-1\n🏆 Liga: Eliteserien\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Sandefjord Fotball presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Sarpsborg 08 no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Sarpsborg 08 vs Sandefjord Fotball\n⏱ Minuto: 33'\n📊 Marcador: 0-1\n🏆 Liga: Eliteserien\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Sandefjord Fotball presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Sarpsborg 08 no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "064b05028d509666"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Real Racing Club vs Villarreal (LaLiga)",
+   "match_id": "16421061",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 32,
+   "condicion": "4 córners totales antes del min 45 (1-3), Villarreal presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Real Racing Club NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 1,
+    "corners_away": 3,
+    "equipo_presiona": "Villarreal",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-16T15:33:14Z",
+   "t_captura_utc": "2026-08-16T15:33:14Z",
+   "t_evaluacion_utc": "2026-08-16T15:34:11Z",
+   "t_generacion_utc": "2026-08-16T15:34:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T15:34:12Z",
+     "latencia_envio_ms": 831.3822746276855,
+     "error": null,
+     "message_id": 1189,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 58.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Real Racing Club vs Villarreal\n⏱ Minuto: 32'\n📊 Marcador: 1-0\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Villarreal presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Real Racing Club no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "430048aaca1c2781"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -791,7 +736,7 @@
    "match_id": "15260875",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 32,
+   "minuto": 33,
    "condicion": "SK Brann acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -800,9 +745,9 @@
    "extra": {
     "equipo_dominante": "SK Brann",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.8636,
+    "ratio_presion_territorial": 0.8261,
     "touches_home": 19,
-    "touches_away": 3,
+    "touches_away": 4,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -813,9 +758,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T15:21:45Z",
-   "t_captura_utc": "2026-08-16T15:33:28Z",
-   "t_evaluacion_utc": "2026-08-16T15:33:28Z",
-   "t_generacion_utc": "2026-08-16T15:33:28Z",
+   "t_captura_utc": "2026-08-16T15:34:29Z",
+   "t_evaluacion_utc": "2026-08-16T15:34:30Z",
+   "t_generacion_utc": "2026-08-16T15:34:30Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -829,7 +774,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SK Brann vs HamKam\n⏱ Minuto: 32'\n📊 Marcador: 0-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: SK Brann acumula 86% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SK Brann vs HamKam\n⏱ Minuto: 33'\n📊 Marcador: 0-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: SK Brann acumula 83% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "35ba7db00ebe695d"
   },
@@ -839,7 +784,7 @@
    "match_id": "15260878",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 32,
+   "minuto": 33,
    "condicion": "Tromsø IL acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -861,9 +806,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T15:20:39Z",
-   "t_captura_utc": "2026-08-16T15:33:28Z",
-   "t_evaluacion_utc": "2026-08-16T15:33:28Z",
-   "t_generacion_utc": "2026-08-16T15:33:28Z",
+   "t_captura_utc": "2026-08-16T15:34:30Z",
+   "t_evaluacion_utc": "2026-08-16T15:34:30Z",
+   "t_generacion_utc": "2026-08-16T15:34:30Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -877,7 +822,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Molde FK vs Tromsø IL\n⏱ Minuto: 32'\n📊 Marcador: 0-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: Tromsø IL acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Tromsø IL, min 31\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Molde FK vs Tromsø IL\n⏱ Minuto: 33'\n📊 Marcador: 0-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: Tromsø IL acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Tromsø IL, min 31\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "1691876525d0040b"
   }
