@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T00:08:25Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-16T00:09:26Z",
+ "n_alerts": 7,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Atlante FC vs CD Toluca (Liga MX, Apertura)",
-   "match_id": "16317954",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 39,
-   "condicion": "Atlante FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Atlante FC",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6111,
-    "touches_home": 11,
-    "touches_away": 7,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 29,
-    "equipo_que_realizo_sustitucion": "Atlante FC",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-15T23:39:18Z",
-    "t_inicio_estimado_condicion": "2026-08-15T23:20:50Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-15T23:39:18Z",
-   "t_captura_utc": "2026-08-15T23:39:18Z",
-   "t_evaluacion_utc": "2026-08-15T23:39:19Z",
-   "t_generacion_utc": "2026-08-15T23:39:19Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-15T23:39:19Z",
-     "latencia_envio_ms": 803.2536506652832,
-     "error": null,
-     "message_id": 948,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlante FC vs CD Toluca\n⏱ Minuto: 39'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Atlante FC acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Atlante FC, min 29\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "50929bf608333641"
-  },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Charlotte FC vs Columbus Crew (MLS)",
@@ -329,7 +281,7 @@
    "match_id": "15171639",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 27,
+   "minuto": 28,
    "condicion": "Orlando City SC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -341,9 +293,9 @@
     "ratio_presion_territorial": 0.7368,
     "touches_home": 14,
     "touches_away": 5,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 29,
+    "equipo_que_realizo_sustitucion": "Orlando City SC",
     "marcador_en_el_momento": "0-1",
     "t_primera_observacion_atlas": "2026-08-16T00:00:33Z",
     "t_inicio_estimado_condicion": "2026-08-16T00:00:50Z",
@@ -351,9 +303,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T00:00:33Z",
-   "t_captura_utc": "2026-08-16T00:08:25Z",
-   "t_evaluacion_utc": "2026-08-16T00:08:25Z",
-   "t_generacion_utc": "2026-08-16T00:08:25Z",
+   "t_captura_utc": "2026-08-16T00:09:25Z",
+   "t_evaluacion_utc": "2026-08-16T00:09:26Z",
+   "t_generacion_utc": "2026-08-16T00:09:26Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -367,7 +319,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Orlando City SC vs FC Cincinnati\n⏱ Minuto: 27'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: Orlando City SC acumula 74% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Orlando City SC vs FC Cincinnati\n⏱ Minuto: 28'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: Orlando City SC acumula 74% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Orlando City SC, min 29\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "d9198186b23a6de6"
   }
