@@ -1,62 +1,14 @@
 {
- "generated_at_utc": "2026-08-16T17:20:25Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-16T17:21:26Z",
+ "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Ñublense vs Unión La Calera (Liga de Primera)",
-   "match_id": "15353097",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 46,
-   "condicion": "Ñublense acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Ñublense",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7692,
-    "touches_home": 10,
-    "touches_away": 3,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "2-0",
-    "t_primera_observacion_atlas": "2026-08-16T16:51:18Z",
-    "t_inicio_estimado_condicion": "2026-08-16T16:51:11Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T16:51:18Z",
-   "t_captura_utc": "2026-08-16T17:17:23Z",
-   "t_evaluacion_utc": "2026-08-16T17:17:23Z",
-   "t_generacion_utc": "2026-08-16T17:17:23Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T16:51:19Z",
-     "latencia_envio_ms": 831.127405166626,
-     "error": null,
-     "message_id": 1225,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ñublense vs Unión La Calera\n⏱ Minuto: 46'\n📊 Marcador: 2-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Ñublense acumula 77% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "31b230d77d8301bb"
-  },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "FC Arouca vs Moreirense (Liga Portugal Betclic)",
    "match_id": "16450747",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 17,
+   "minuto": 18,
    "condicion": "FC Arouca domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -76,8 +28,8 @@
    },
    "t_evento_real_utc": "2026-08-16T17:19:46Z",
    "t_captura_utc": "2026-08-16T17:19:46Z",
-   "t_evaluacion_utc": "2026-08-16T17:20:21Z",
-   "t_generacion_utc": "2026-08-16T17:20:21Z",
+   "t_evaluacion_utc": "2026-08-16T17:21:22Z",
+   "t_generacion_utc": "2026-08-16T17:21:22Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -91,7 +43,7 @@
    },
    "latencia_total_seg": 36.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ FC Arouca vs Moreirense\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Arouca — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ FC Arouca vs Moreirense\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: FC Arouca — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "bcc8f6e5d9cf9f5b"
   },
@@ -101,7 +53,7 @@
    "match_id": "16483707",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 60,
+   "minuto": 61,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -119,9 +71,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T17:19:28Z",
-   "t_captura_utc": "2026-08-16T17:20:25Z",
-   "t_evaluacion_utc": "2026-08-16T17:20:25Z",
-   "t_generacion_utc": "2026-08-16T17:20:25Z",
+   "t_captura_utc": "2026-08-16T17:21:25Z",
+   "t_evaluacion_utc": "2026-08-16T17:21:26Z",
+   "t_generacion_utc": "2026-08-16T17:21:26Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -135,7 +87,7 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 60'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: presión combinada sostenida — xG 1.39, 15 tiros totales (7 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Başakşehir FK vs Kocaelispor\n⏱ Minuto: 61'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: presión combinada sostenida — xG 1.39, 15 tiros totales (7 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "55607e1771adb455"
   }
