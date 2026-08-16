@@ -2943,23 +2943,58 @@ function tabClasificacion(m, pocket, hist) {
      (feed.odds, ver atlas_lab_live_feed.py::_fetch_live_odds) -- nunca pide
      que se tipeen a mano cuotas de un partido en vivo. Comparte con la
      version pre-partido las funciones de tarjeta de pick / cálculo de EV. */
+/* 2026-08-16, fix Picks/OddsPapi: la cuota "disponible" para el gate y para
+   armar picks debe ser manual O automatica de OddsPapi, con la manual
+   siempre ganando -- misma prioridad que ya usan atlasUpdateEV()/
+   applyAutoOdds() en Goles/1X2. No se puede leer el DOM de Goles/1X2 aca
+   (renderCenter() arma las 5 pestañas como texto ANTES de insertarlas e
+   invocar restoreSavedOdds()/applyAutoOdds() -- ver comentario en
+   renderCenter), asi que se replica la misma lectura de ODDSPAPI_DATA que
+   usa tabGoles() para decidir el auto-relleno de cada fila, en vez de
+   depender del DOM. */
+function oddsPapiSelectionPrice(matchId, marketCode, selKey) {
+  const odds = (typeof ODDSPAPI_DATA !== "undefined" && ODDSPAPI_DATA[matchId]) || {};
+  const marketEntry = odds[marketCode];
+  const sel = marketEntry && marketEntry.sel && marketEntry.sel[selKey];
+  if (!sel || !(sel.p > 1)) return null;
+  return { price: sel.p, bookmaker: marketEntry.bk, timestamp: sel.t };
+}
+function effectiveOdds(matchId, mktKey, autoFn) {
+  const manual = readSavedOdds(matchId, mktKey);
+  if (manual != null) return { price: manual, source: "manual" };
+  if (autoFn) {
+    const auto = autoFn();
+    if (auto && auto.price > 1) return { price: auto.price, source: "oddspapi", bookmaker: auto.bookmaker, timestamp: auto.timestamp };
+  }
+  return null;
+}
 function liveTabRequiredKeys(m) {
   return [
-    { key: "m:Gana " + m.home, label: `1X2 — Gana ${m.home}` },
-    { key: "m:Empate", label: "1X2 — Empate" },
-    { key: "m:Gana " + m.away, label: `1X2 — Gana ${m.away}` },
-    { key: "m:BTTS (Ambos anotan) — dato histórico, no modelo", label: "BTTS (Ambos anotan)" },
-    { key: "p:total|goals|0|Goles", label: "Goles Total (Over/Under, por defecto 2.5)" },
-    { key: "p:total|cornerKicks|0|Corners", label: "Corners Total (Over/Under, por defecto 9.5)" },
+    // 1X2, BTTS y Goles (linea 2.5, la unica certificada -- ver isDefaultCert
+    // en pillMarketRowHtml) son los 4 mercados automatizados por OddsPapi:
+    // "auto" apunta a la MISMA seleccion que usa tabGoles() para el
+    // auto-relleno visual, asi que el gate se desbloquea solo apenas
+    // OddsPapi cubre estos mercados, sin pedir que el Director tipee nada.
+    //
+    // Corners NO esta en esta lista a proposito (2026-08-16, fix Picks/
+    // OddsPapi): sigue siendo 100% manual -- sin cobertura de OddsPapi, no
+    // se inventa ninguna fuente -- pero su ausencia YA NO bloquea el resto
+    // de la pestaña (antes exigia cuota manual de Corners para desbloquear
+    // TODO Picks, aunque Corners ni siquiera participa del pick que arma
+    // esta pestaña salvo que el Director la cargue). El pick de Corners en
+    // si sigue exigiendo cuota manual (ver tabPicksPre -- sin cambios ahi).
+    { key: "m:Gana " + m.home, label: `1X2 — Gana ${m.home}`, auto: () => oddsPapiSelectionPrice(m.id, "1X2_FT", "home") },
+    { key: "m:Empate", label: "1X2 — Empate", auto: () => oddsPapiSelectionPrice(m.id, "1X2_FT", "draw") },
+    { key: "m:Gana " + m.away, label: `1X2 — Gana ${m.away}`, auto: () => oddsPapiSelectionPrice(m.id, "1X2_FT", "away") },
+    { key: "m:BTTS (Ambos anotan) — dato histórico, no modelo", label: "BTTS (Ambos anotan)", auto: () => oddsPapiSelectionPrice(m.id, "BTTS", "yes") },
+    { key: "p:total|goals|0|Goles", label: "Goles Total (Over/Under, por defecto 2.5)", auto: () => oddsPapiSelectionPrice(m.id, "OU25_GOALS_FT", "over") },
   ];
 }
 function liveTabGateStatus(matchId, m) {
   const required = liveTabRequiredKeys(m);
   const missing = [];
   required.forEach(r => {
-    let saved = null;
-    try { saved = localStorage.getItem(atlasOddsKey(matchId, r.key)); } catch (e) { /* ignorar */ }
-    if (!saved) missing.push(r.label);
+    if (!effectiveOdds(matchId, r.key, r.auto)) missing.push(r.label);
   });
   return { ok: missing.length === 0, missing };
 }
@@ -2974,15 +3009,22 @@ function evPct(prob, cuota) {
   if (prob == null || cuota == null) return null;
   return (prob * cuota - 1) * 100;
 }
-function livePickCardHtml(nombre, prob, cuota, razon) {
+function livePickCardHtml(nombre, prob, cuota, razon, fuente) {
   const ev = evPct(prob, cuota);
   const evTxt = ev == null ? "sin cuota" : (ev >= 0 ? "+" : "") + ev.toFixed(1) + "% EV";
   const evClass = ev == null ? "" : (ev >= 0 ? "ev-pos" : "ev-neg");
+  // 2026-08-16, fix Picks/OddsPapi: cuando la cuota viene de OddsPapi (no
+  // tipeada a mano), se conserva bookmaker + hora en vez del "Cuota Betano"
+  // generico que asume cuota manual -- mismo formato que el badge de
+  // Goles/1X2 (oddsBadgeTime).
+  const cuotaLabel = (fuente && fuente.source === "oddspapi")
+    ? `Cuota OddsPapi · ${fuente.bookmaker}${fuente.timestamp ? " · " + oddsBadgeTime(fuente.timestamp) : ""}: ${cuota.toFixed(2)}`
+    : `Cuota Betano: ${cuota.toFixed(2)}`;
   return `
   <div class="live-pick-card">
     <div class="live-pick-head"><span class="live-pick-name">${nombre}</span><span class="mkt-ev ${evClass}">${evTxt}</span></div>
     <div class="live-pick-razon">${razon}</div>
-    <div class="live-pick-meta">Nuestra prob.: ${(prob * 100).toFixed(1)}% · Cuota Betano: ${cuota.toFixed(2)} · Fair: ${(1 / prob).toFixed(2)}</div>
+    <div class="live-pick-meta">Nuestra prob.: ${(prob * 100).toFixed(1)}% · ${cuotaLabel} · Fair: ${(1 / prob).toFixed(2)}</div>
   </div>`;
 }
 function picksVeredictoHtml(picks, disclaimer) {
@@ -3000,8 +3042,11 @@ function picksVeredictoHtml(picks, disclaimer) {
     </div>`;
 }
 
-/* ---- Picks Pre-Partido: cuotas cargadas A MANO (gate igual al que ya
-   existía), probabilidades de motores certificados + BTTS histórico. ---- */
+/* ---- Picks Pre-Partido: cuota manual O automatica de OddsPapi -- misma
+   prioridad que Goles/1X2 (2026-08-16, fix Picks/OddsPapi: el gate antes
+   solo miraba localStorage, por eso quedaba bloqueada aunque OddsPapi ya
+   hubiera resuelto los 4 mercados automatizados; ver liveTabGateStatus).
+   Probabilidades de motores certificados + BTTS histórico, sin cambios. ---- */
 function tabPicksPre(m, pocket, hist) {
   const fam = "var(--amber)";
   const gate = liveTabGateStatus(m.id, m);
@@ -3010,7 +3055,7 @@ function tabPicksPre(m, pocket, hist) {
     <div class="insight-card" style="--fam-color:${fam}">
       <div class="ic-head"><div class="ic-title">Picks — pestaña bloqueada</div></div>
       <div class="ic-body">
-        <p>Para activar los picks pre-partido hace falta cargar la cuota real (Betano u otra casa) de estos mercados en las pestañas <b>Goles/1X2</b> y <b>Córners/Tiros</b>:</p>
+        <p>Para activar los picks pre-partido hace falta cuota real (automática de OddsPapi, o cargada a mano en <b>Goles/1X2</b>) de estos mercados:</p>
         <ul class="diag-list">${gate.missing.map(x => `<li><span class="ic-emoji">☐</span><span>${x}</span></li>`).join("")}</ul>
         <p class="footer-note" style="text-align:left">Una vez cargadas (o tomando la línea por defecto ya seleccionada), esta pestaña arma el análisis solo.</p>
       </div>
@@ -3034,17 +3079,22 @@ function tabPicksPre(m, pocket, hist) {
   }
 
   const picks = [];
-  const bttsCuota = readSavedOdds(m.id, "m:BTTS (Ambos anotan) — dato histórico, no modelo");
-  if (bttsCuota && hist.btts_general_pct != null) {
+  // 2026-08-16, fix Picks/OddsPapi: BTTS y Goles ya aceptan cuota automatica
+  // de OddsPapi (effectiveOdds -- manual siempre gana si existe). Corners NO
+  // cambia: sigue exigiendo cuota manual, OddsPapi no cubre ese mercado.
+  const bttsEff = effectiveOdds(m.id, "m:BTTS (Ambos anotan) — dato histórico, no modelo",
+    () => oddsPapiSelectionPrice(m.id, "BTTS", "yes"));
+  if (bttsEff && hist.btts_general_pct != null) {
     const prob = hist.btts_general_pct / 100;
-    picks.push({ ev: evPct(prob, bttsCuota), nombre: "BTTS \"Sí\"",
-      html: livePickCardHtml("BTTS \"Sí\"", prob, bttsCuota, `Histórico ${hist.btts_general_pct}% en los últimos partidos local/visita de cada equipo.`) });
+    picks.push({ ev: evPct(prob, bttsEff.price), nombre: "BTTS \"Sí\"",
+      html: livePickCardHtml("BTTS \"Sí\"", prob, bttsEff.price, `Histórico ${hist.btts_general_pct}% en los últimos partidos local/visita de cada equipo.`, bttsEff) });
   }
-  const goalsCuota = readSavedOdds(m.id, "p:total|goals|0|Goles");
+  const goalsEff = effectiveOdds(m.id, "p:total|goals|0|Goles",
+    () => oddsPapiSelectionPrice(m.id, "OU25_GOALS_FT", "over"));
   const pGoals = mkt(pocket, "OU25_GOALS_FT");
-  if (goalsCuota && pGoals && pGoals.over != null) {
-    picks.push({ ev: evPct(pGoals.over, goalsCuota), nombre: "Goles Over 2.5",
-      html: livePickCardHtml("Goles Over 2.5", pGoals.over, goalsCuota, `Motor certificado Atlas Pocket: ${(pGoals.over * 100).toFixed(1)}% de probabilidad Over 2.5.`) });
+  if (goalsEff && pGoals && pGoals.over != null) {
+    picks.push({ ev: evPct(pGoals.over, goalsEff.price), nombre: "Goles Over 2.5",
+      html: livePickCardHtml("Goles Over 2.5", pGoals.over, goalsEff.price, `Motor certificado Atlas Pocket: ${(pGoals.over * 100).toFixed(1)}% de probabilidad Over 2.5.`, goalsEff) });
   }
   const cornersCuota = readSavedOdds(m.id, "p:total|cornerKicks|0|Corners");
   const pCorners = mkt(pocket, "OU9.5_CORNERS_FT");
@@ -3064,7 +3114,7 @@ function tabPicksPre(m, pocket, hist) {
       <ul class="diag-list">${contextBullets.map(b => `<li><span class="ic-emoji">🎯</span><span>${b}</span></li>`).join("")}</ul>
     </div>
     <div class="insight-card" style="--fam-color:${fam}">
-      <div class="ic-head"><div class="ic-title">Picks — por EV (con tu cuota cargada a mano)</div></div>
+      <div class="ic-head"><div class="ic-title">Picks — por EV (cuota manual o automática OddsPapi, ver detalle en cada pick)</div></div>
       <div class="ic-body">${picks.length ? picks.map(p => p.html).join("") : `<p class="footer-note" style="text-align:left">Sin picks armables todavía con los datos disponibles.</p>`}</div>
     </div>
     ${picksVeredictoHtml(picks, "Validá el precio antes de entrar y mantené el stake dentro de tu gestión habitual.")}
