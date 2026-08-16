@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-16T15:17:29Z",
+ "generated_at_utc": "2026-08-16T15:18:19Z",
  "n_alerts": 15,
  "alerts": [
   {
@@ -530,51 +530,6 @@
    "alert_id": "fd4c672502606d22"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Molde FK vs Tromsø IL (Eliteserien)",
-   "match_id": "15260878",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 16,
-   "condicion": "Tromsø IL domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Tromsø IL",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 2,
-    "remates_home": 0,
-    "remates_away": 3,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T15:16:09Z",
-   "t_captura_utc": "2026-08-16T15:16:09Z",
-   "t_evaluacion_utc": "2026-08-16T15:17:25Z",
-   "t_generacion_utc": "2026-08-16T15:17:25Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T15:16:27Z",
-     "latencia_envio_ms": 829.2498588562012,
-     "error": null,
-     "message_id": 1177,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 18.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Molde FK vs Tromsø IL\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: Tromsø IL — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "3aac677f25d63cb5"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Chapecoense vs Bahia (Brasileirão Betano)",
    "match_id": "15235427",
@@ -669,6 +624,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ AFC Ajax vs SC Heerenveen\n⏱ Minuto: 31'\n📊 Marcador: 1-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: AFC Ajax acumula 69% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "d14e98af505a738b"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Molde FK vs Tromsø IL (Eliteserien)",
+   "match_id": "15260878",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "Tromsø IL domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Tromsø IL",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 2,
+    "remates_home": 0,
+    "remates_away": 3,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T15:16:09Z",
+   "t_captura_utc": "2026-08-16T15:16:09Z",
+   "t_evaluacion_utc": "2026-08-16T15:18:19Z",
+   "t_generacion_utc": "2026-08-16T15:18:19Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T15:16:27Z",
+     "latencia_envio_ms": 829.2498588562012,
+     "error": null,
+     "message_id": 1177,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 18.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Molde FK vs Tromsø IL\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: Tromsø IL — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "3aac677f25d63cb5"
   }
  ]
 }
