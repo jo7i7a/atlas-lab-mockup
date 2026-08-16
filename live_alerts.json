@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T17:53:22Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-16T17:54:22Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -182,12 +182,51 @@
    "alert_id": "01ebc8f8329150fe"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Fredrikstad FK vs Kristiansund BK (Eliteserien)",
+   "match_id": "15260870",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 38,
+   "condicion": "4 córners totales antes del min 45 (0-4), Kristiansund BK presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Fredrikstad FK NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Kristiansund BK",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-16T17:53:09Z",
+   "t_captura_utc": "2026-08-16T17:53:09Z",
+   "t_evaluacion_utc": "2026-08-16T17:54:09Z",
+   "t_generacion_utc": "2026-08-16T17:54:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T17:54:10Z",
+     "latencia_envio_ms": 846.3571071624756,
+     "error": null,
+     "message_id": 1240,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 61.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Fredrikstad FK vs Kristiansund BK\n⏱ Minuto: 38'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Kristiansund BK presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Fredrikstad FK no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "088e52b786e962e7"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Espanyol vs Levante UD (LaLiga)",
    "match_id": "16421053",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 49,
+   "minuto": 50,
    "condicion": "Espanyol acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -209,9 +248,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T17:24:30Z",
-   "t_captura_utc": "2026-08-16T17:53:21Z",
-   "t_evaluacion_utc": "2026-08-16T17:53:22Z",
-   "t_generacion_utc": "2026-08-16T17:53:22Z",
+   "t_captura_utc": "2026-08-16T17:54:22Z",
+   "t_evaluacion_utc": "2026-08-16T17:54:22Z",
+   "t_generacion_utc": "2026-08-16T17:54:22Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -225,7 +264,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Espanyol vs Levante UD\n⏱ Minuto: 49'\n📊 Marcador: 2-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Espanyol acumula 79% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Espanyol, min 37\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Espanyol vs Levante UD\n⏱ Minuto: 50'\n📊 Marcador: 2-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Espanyol acumula 79% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Espanyol, min 37\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "cc8c5411f6f7a376"
   }
