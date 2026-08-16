@@ -144,6 +144,49 @@ def settle_picks(picks_history_path=None):
     return _settle_jsonl(picks_history_path or PICKS_HISTORY_PATH, _ESTADO_PICKS)
 
 
+def prune_settled_picks_from_estado(picks_estado_path=None, picks_history_path=None):
+    """2026-08-16, ciclo de settlement intraday (Objetivo: 'Picks activos'
+    debe reflejar solo lo que sigue PENDIENTE). Quita de
+    tipster_picks_estado.json (la lista "picks activos" que consume
+    index.html) cualquier pick_id que settle_picks() ya haya liquidado
+    (estado != PENDIENTE) en tipster_picks_history.jsonl -- NUNCA liquida
+    nada aqui, NUNCA reescribe el jsonl, NUNCA recalcula probabilidad/
+    cuota/EV. picks.py sigue siendo el UNICO que agrega picks nuevos a este
+    archivo; esta funcion solo depura lo que ya se resolvio, para no tener
+    que re-ejecutar picks.py (motores/OddsPapi) cada 30-60 min. Devuelve
+    cuantos picks se quitaron (0 si no habia nada que quitar -- estado.json
+    NO se reescribe en ese caso, para no generar un diff de git vacio)."""
+    from atlas_lab_mockup.tipster.picks import PICKS_HISTORY_PATH, PICKS_STATE_PATH
+    estado_path = picks_estado_path or PICKS_STATE_PATH
+    history_path = picks_history_path or PICKS_HISTORY_PATH
+    if not os.path.exists(estado_path) or not os.path.exists(history_path):
+        return 0
+
+    settled_ids = set()
+    with open(history_path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            rec = json.loads(line)
+            if rec.get("estado") != "PENDIENTE":
+                settled_ids.add(rec["pick_id"])
+    if not settled_ids:
+        return 0
+
+    with open(estado_path, encoding="utf-8") as f:
+        estado = json.load(f)
+    picks = estado.get("picks", [])
+    remaining = [p for p in picks if p["pick_id"] not in settled_ids]
+    removed = len(picks) - len(remaining)
+    if removed:
+        estado["picks"] = remaining
+        estado["picks_activos"] = len(remaining)
+        with open(estado_path, "w", encoding="utf-8") as f:
+            json.dump(estado, f, ensure_ascii=False, indent=1)
+    return removed
+
+
 def _breakdown(records, key):
     groups = {}
     for r in records:

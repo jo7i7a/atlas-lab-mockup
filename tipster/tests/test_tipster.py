@@ -347,6 +347,69 @@ def test_settle_jsonl_solo_completa_pendientes_sin_tocar_lo_demas(tmp_path):
 
 
 # ---------------------------------------------------------------------
+# settlement.py -- prune_settled_picks_from_estado (ciclo intraday 2026-08-16)
+# ---------------------------------------------------------------------
+
+def _write_estado(path, picks_list):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump({"generated_at_utc": "T", "candidatos_evaluados": 10, "value_detectado": 5,
+                    "picks_activos": len(picks_list), "picks": picks_list}, f)
+
+
+def _write_history(path, records):
+    with open(path, "w", encoding="utf-8") as f:
+        for r in records:
+            f.write(json.dumps(r) + "\n")
+
+
+def test_prune_quita_solo_los_pick_id_ya_liquidados(tmp_path):
+    estado_path = tmp_path / "picks_estado.json"
+    history_path = tmp_path / "picks_history.jsonl"
+    _write_estado(estado_path, [
+        {"pick_id": "1:1X2_FT:home", "ev_pct": 10.0},
+        {"pick_id": "2:BTTS:yes", "ev_pct": 5.0},
+        {"pick_id": "3:OU25_GOALS_FT:over", "ev_pct": 8.0},
+    ])
+    _write_history(history_path, [
+        {"pick_id": "1:1X2_FT:home", "estado": "GANADO", "probabilidad_atlas": 0.5, "cuota": 2.0},
+        {"pick_id": "2:BTTS:yes", "estado": "PENDIENTE", "probabilidad_atlas": 0.6, "cuota": 1.8},
+        {"pick_id": "3:OU25_GOALS_FT:over", "estado": "PERDIDO", "probabilidad_atlas": 0.55, "cuota": 1.9},
+    ])
+    removed = settlement.prune_settled_picks_from_estado(str(estado_path), str(history_path))
+    assert removed == 2
+    estado = json.load(open(estado_path, encoding="utf-8"))
+    assert [p["pick_id"] for p in estado["picks"]] == ["2:BTTS:yes"]
+    assert estado["picks_activos"] == 1
+
+
+def test_prune_no_reescribe_el_archivo_si_no_hay_nada_que_quitar(tmp_path):
+    estado_path = tmp_path / "picks_estado.json"
+    history_path = tmp_path / "picks_history.jsonl"
+    _write_estado(estado_path, [{"pick_id": "1:1X2_FT:home", "ev_pct": 10.0}])
+    _write_history(history_path, [{"pick_id": "1:1X2_FT:home", "estado": "PENDIENTE", "probabilidad_atlas": 0.5, "cuota": 2.0}])
+    before = estado_path.read_text(encoding="utf-8")
+    removed = settlement.prune_settled_picks_from_estado(str(estado_path), str(history_path))
+    assert removed == 0
+    assert estado_path.read_text(encoding="utf-8") == before  # byte-identico, ni se toco
+
+
+def test_prune_nunca_liquida_ni_toca_el_history_jsonl(tmp_path):
+    estado_path = tmp_path / "picks_estado.json"
+    history_path = tmp_path / "picks_history.jsonl"
+    _write_estado(estado_path, [{"pick_id": "1:1X2_FT:home", "ev_pct": 10.0}])
+    record = {"pick_id": "1:1X2_FT:home", "estado": "GANADO", "probabilidad_atlas": 0.5, "cuota": 2.0, "roi_pct": 100.0}
+    _write_history(history_path, [record])
+    before = history_path.read_text(encoding="utf-8")
+    settlement.prune_settled_picks_from_estado(str(estado_path), str(history_path))
+    assert history_path.read_text(encoding="utf-8") == before  # nunca se reescribe el jsonl aqui
+
+
+def test_prune_archivos_ausentes_no_rompe(tmp_path):
+    removed = settlement.prune_settled_picks_from_estado(str(tmp_path / "no_existe.json"), str(tmp_path / "no_existe.jsonl"))
+    assert removed == 0
+
+
+# ---------------------------------------------------------------------
 # picks.py -- candidato / value / pick, mercados automatizados, cuota real
 # ---------------------------------------------------------------------
 
