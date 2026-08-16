@@ -5514,5 +5514,26 @@
    "mercado_variante": "PENDIENTE_CLASIFICACION_MERCADO",
    "activo": true
   }
+ ],
+ "c13a0fcd303ce416": [
+  {
+   "alert_id": "c13a0fcd303ce416",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "GAIS vs Malmö FF (Allsvenskan)",
+   "liga": "Allsvenskan",
+   "event_id": "15272490",
+   "minuto_alerta": 56,
+   "condicion": "GAIS acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T15:44:37Z",
+   "t_captura_utc": "2026-08-16T15:44:37Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T15:46:36Z",
+   "segundos_transcurridos": 118,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.0 @ 1.83",
+   "linea_real_betano": 10.0,
+   "cuota_real_betano": 1.83,
+   "activo": true
+  }
  ]
 }
