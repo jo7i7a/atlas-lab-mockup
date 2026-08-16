@@ -1,142 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T21:48:28Z",
+ "generated_at_utc": "2026-08-16T21:49:25Z",
  "n_alerts": 4,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Mirassol vs Flamengo (Brasileirão Betano)",
-   "match_id": "15235426",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 17,
-   "condicion": "Flamengo domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Flamengo",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 1,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T21:46:31Z",
-   "t_captura_utc": "2026-08-16T21:46:31Z",
-   "t_evaluacion_utc": "2026-08-16T21:48:22Z",
-   "t_generacion_utc": "2026-08-16T21:48:22Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T21:47:21Z",
-     "latencia_envio_ms": 832.526445388794,
-     "error": null,
-     "message_id": 1310,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 50.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Mirassol vs Flamengo\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Flamengo — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "0988bf6e8ad49f80"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Vitória vs Botafogo (Brasileirão Betano)",
-   "match_id": "15235443",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 18,
-   "condicion": "Botafogo domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Botafogo",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 1,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T21:46:10Z",
-   "t_captura_utc": "2026-08-16T21:46:10Z",
-   "t_evaluacion_utc": "2026-08-16T21:48:23Z",
-   "t_generacion_utc": "2026-08-16T21:48:23Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T21:46:22Z",
-     "latencia_envio_ms": 820.4848766326904,
-     "error": null,
-     "message_id": 1309,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 12.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Vitória vs Botafogo\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Botafogo — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "d3d229a1398e8e60"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Clube De Regatas Brasil vs Grêmio Novorizontino (Brasileirão Série B)",
-   "match_id": "15526226",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 17,
-   "condicion": "Clube De Regatas Brasil domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Clube De Regatas Brasil",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T21:46:52Z",
-   "t_captura_utc": "2026-08-16T21:46:52Z",
-   "t_evaluacion_utc": "2026-08-16T21:48:26Z",
-   "t_generacion_utc": "2026-08-16T21:48:26Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T21:47:24Z",
-     "latencia_envio_ms": 1011.9504928588867,
-     "error": null,
-     "message_id": 1311,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 32.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Clube De Regatas Brasil vs Grêmio Novorizontino\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Clube De Regatas Brasil — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "8049bee29d688a16"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "River Plate vs Argentinos Juniors (Liga Profesional de Fútbol)",
@@ -184,6 +49,141 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ River Plate vs Argentinos Juniors\n⏱ Minuto: 46'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: River Plate acumula 93% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: River Plate, min 40\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "4f6bbc8c175b25a6"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Mirassol vs Flamengo (Brasileirão Betano)",
+   "match_id": "15235426",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Flamengo domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Flamengo",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 1,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T21:46:31Z",
+   "t_captura_utc": "2026-08-16T21:46:31Z",
+   "t_evaluacion_utc": "2026-08-16T21:49:20Z",
+   "t_generacion_utc": "2026-08-16T21:49:20Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T21:47:21Z",
+     "latencia_envio_ms": 832.526445388794,
+     "error": null,
+     "message_id": 1310,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 50.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Mirassol vs Flamengo\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Flamengo — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "0988bf6e8ad49f80"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Vitória vs Botafogo (Brasileirão Betano)",
+   "match_id": "15235443",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 19,
+   "condicion": "Botafogo domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Botafogo",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 1,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T21:46:10Z",
+   "t_captura_utc": "2026-08-16T21:46:10Z",
+   "t_evaluacion_utc": "2026-08-16T21:49:20Z",
+   "t_generacion_utc": "2026-08-16T21:49:20Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T21:46:22Z",
+     "latencia_envio_ms": 820.4848766326904,
+     "error": null,
+     "message_id": 1309,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 12.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Vitória vs Botafogo\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Botafogo — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "d3d229a1398e8e60"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Clube De Regatas Brasil vs Grêmio Novorizontino (Brasileirão Série B)",
+   "match_id": "15526226",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Clube De Regatas Brasil domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Clube De Regatas Brasil",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T21:46:52Z",
+   "t_captura_utc": "2026-08-16T21:46:52Z",
+   "t_evaluacion_utc": "2026-08-16T21:49:25Z",
+   "t_generacion_utc": "2026-08-16T21:49:25Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T21:47:24Z",
+     "latencia_envio_ms": 1011.9504928588867,
+     "error": null,
+     "message_id": 1311,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 32.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Clube De Regatas Brasil vs Grêmio Novorizontino\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Clube De Regatas Brasil — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "8049bee29d688a16"
   }
  ]
 }
