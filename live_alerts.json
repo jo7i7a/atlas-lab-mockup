@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-16T18:41:30Z",
+ "generated_at_utc": "2026-08-16T18:42:26Z",
  "n_alerts": 7,
  "alerts": [
   {
@@ -188,102 +188,6 @@
    "alert_id": "1c04c2083695923a"
   },
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Pumas UNAM vs Querétaro FC (Liga MX, Apertura)",
-   "match_id": "16317883",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 41,
-   "condicion": "Pumas UNAM acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Pumas UNAM",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 10,
-    "touches_away": 5,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-16T18:25:36Z",
-    "t_inicio_estimado_condicion": "2026-08-16T18:20:53Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T18:25:36Z",
-   "t_captura_utc": "2026-08-16T18:41:24Z",
-   "t_evaluacion_utc": "2026-08-16T18:41:24Z",
-   "t_generacion_utc": "2026-08-16T18:41:24Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T18:25:37Z",
-     "latencia_envio_ms": 826.308012008667,
-     "error": null,
-     "message_id": 1245,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Pumas UNAM vs Querétaro FC\n⏱ Minuto: 41'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Pumas UNAM acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "2232ddf2fb917085"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Sarmiento vs Huracán (Liga Profesional de Fútbol)",
-   "match_id": "16667391",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 40,
-   "condicion": "Sarmiento acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sarmiento",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 10,
-    "touches_away": 5,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-08-16T18:32:28Z",
-    "t_inicio_estimado_condicion": "2026-08-16T18:31:28Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T18:32:28Z",
-   "t_captura_utc": "2026-08-16T18:41:26Z",
-   "t_evaluacion_utc": "2026-08-16T18:41:26Z",
-   "t_generacion_utc": "2026-08-16T18:41:26Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T18:32:29Z",
-     "latencia_envio_ms": 855.884313583374,
-     "error": null,
-     "message_id": 1249,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sarmiento vs Huracán\n⏱ Minuto: 40'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Sarmiento acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "e5207d06e66ad8e7"
-  },
-  {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Fredrikstad FK vs Kristiansund BK (Eliteserien)",
    "match_id": "15260870",
@@ -326,6 +230,102 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Fredrikstad FK vs Kristiansund BK\n⏱ Minuto: 68'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: presión combinada sostenida — xG 1.83, 20 tiros totales (5 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "c5141c428884a5cc"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Pumas UNAM vs Querétaro FC (Liga MX, Apertura)",
+   "match_id": "16317883",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 42,
+   "condicion": "Pumas UNAM acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Pumas UNAM",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.625,
+    "touches_home": 10,
+    "touches_away": 6,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-16T18:25:36Z",
+    "t_inicio_estimado_condicion": "2026-08-16T18:20:53Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T18:25:36Z",
+   "t_captura_utc": "2026-08-16T18:42:24Z",
+   "t_evaluacion_utc": "2026-08-16T18:42:24Z",
+   "t_generacion_utc": "2026-08-16T18:42:24Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T18:25:37Z",
+     "latencia_envio_ms": 826.308012008667,
+     "error": null,
+     "message_id": 1245,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "EXPIRADA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Pumas UNAM vs Querétaro FC\n⏱ Minuto: 42'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Pumas UNAM acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "2232ddf2fb917085"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Sarmiento vs Huracán (Liga Profesional de Fútbol)",
+   "match_id": "16667391",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 41,
+   "condicion": "Sarmiento acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Sarmiento",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6667,
+    "touches_home": 10,
+    "touches_away": 5,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "1-0",
+    "t_primera_observacion_atlas": "2026-08-16T18:32:28Z",
+    "t_inicio_estimado_condicion": "2026-08-16T18:31:28Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T18:32:28Z",
+   "t_captura_utc": "2026-08-16T18:42:25Z",
+   "t_evaluacion_utc": "2026-08-16T18:42:26Z",
+   "t_generacion_utc": "2026-08-16T18:42:26Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T18:32:29Z",
+     "latencia_envio_ms": 855.884313583374,
+     "error": null,
+     "message_id": 1249,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sarmiento vs Huracán\n⏱ Minuto: 41'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Sarmiento acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "e5207d06e66ad8e7"
   }
  ]
 }
