@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T00:03:56Z",
- "n_alerts": 6,
+ "generated_at_utc": "2026-08-16T00:04:52Z",
+ "n_alerts": 7,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -56,7 +56,7 @@
    "match_id": "15171637",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 22,
+   "minuto": 23,
    "condicion": "CF Montréal domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -76,8 +76,8 @@
    },
    "t_evento_real_utc": "2026-08-16T00:02:57Z",
    "t_captura_utc": "2026-08-16T00:02:57Z",
-   "t_evaluacion_utc": "2026-08-16T00:03:38Z",
-   "t_generacion_utc": "2026-08-16T00:03:38Z",
+   "t_evaluacion_utc": "2026-08-16T00:04:34Z",
+   "t_generacion_utc": "2026-08-16T00:04:34Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -91,9 +91,54 @@
    },
    "latencia_total_seg": 42.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CF Montréal vs DC United\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: CF Montréal — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CF Montréal vs DC United\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: CF Montréal — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "1e0fb5c9ef50a4f6"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Charlotte FC vs Columbus Crew (MLS)",
+   "match_id": "15171638",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 24,
+   "condicion": "Columbus Crew domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Columbus Crew",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 1,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T00:03:40Z",
+   "t_captura_utc": "2026-08-16T00:03:40Z",
+   "t_evaluacion_utc": "2026-08-16T00:04:41Z",
+   "t_generacion_utc": "2026-08-16T00:04:41Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T00:04:42Z",
+     "latencia_envio_ms": 855.0562858581543,
+     "error": null,
+     "message_id": 962,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 62.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Charlotte FC vs Columbus Crew\n⏱ Minuto: 24'\n📊 Marcador: 2-0\n🏆 Liga: MLS\n\n📝 Motivo: Columbus Crew — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "b6fddfc7734e1ca6"
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -101,7 +146,7 @@
    "match_id": "15171639",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "Orlando City SC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -121,8 +166,8 @@
    },
    "t_evento_real_utc": "2026-08-15T23:56:07Z",
    "t_captura_utc": "2026-08-15T23:56:07Z",
-   "t_evaluacion_utc": "2026-08-16T00:03:46Z",
-   "t_generacion_utc": "2026-08-16T00:03:46Z",
+   "t_evaluacion_utc": "2026-08-16T00:04:43Z",
+   "t_generacion_utc": "2026-08-16T00:04:43Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -136,7 +181,7 @@
    },
    "latencia_total_seg": 13.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Orlando City SC vs FC Cincinnati\n⏱ Minuto: 23'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: Orlando City SC — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Orlando City SC vs FC Cincinnati\n⏱ Minuto: 24'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: Orlando City SC — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "1508f314642e2d93"
   },
@@ -146,7 +191,7 @@
    "match_id": "15171640",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "New England Revolution domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -166,8 +211,8 @@
    },
    "t_evento_real_utc": "2026-08-16T00:03:18Z",
    "t_captura_utc": "2026-08-16T00:03:18Z",
-   "t_evaluacion_utc": "2026-08-16T00:03:52Z",
-   "t_generacion_utc": "2026-08-16T00:03:52Z",
+   "t_evaluacion_utc": "2026-08-16T00:04:49Z",
+   "t_generacion_utc": "2026-08-16T00:04:49Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -181,7 +226,7 @@
    },
    "latencia_total_seg": 35.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Toronto FC vs New England Revolution\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: New England Revolution — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Toronto FC vs New England Revolution\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: New England Revolution — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "10409a59c9dc0a55"
   },
@@ -191,7 +236,7 @@
    "match_id": "15171629",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "New York Red Bulls acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -200,9 +245,9 @@
    "extra": {
     "equipo_dominante": "New York Red Bulls",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.7143,
+    "ratio_presion_territorial": 0.7333,
     "touches_home": 4,
-    "touches_away": 10,
+    "touches_away": 11,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -213,9 +258,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T00:01:38Z",
-   "t_captura_utc": "2026-08-16T00:03:54Z",
-   "t_evaluacion_utc": "2026-08-16T00:03:55Z",
-   "t_generacion_utc": "2026-08-16T00:03:55Z",
+   "t_captura_utc": "2026-08-16T00:04:51Z",
+   "t_evaluacion_utc": "2026-08-16T00:04:51Z",
+   "t_generacion_utc": "2026-08-16T00:04:51Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -229,7 +274,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlanta United vs New York Red Bulls\n⏱ Minuto: 23'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: New York Red Bulls acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlanta United vs New York Red Bulls\n⏱ Minuto: 24'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: New York Red Bulls acumula 73% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "bb759a102b347d9a"
   },
@@ -239,7 +284,7 @@
    "match_id": "15171639",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "Orlando City SC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -261,9 +306,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T00:00:33Z",
-   "t_captura_utc": "2026-08-16T00:03:56Z",
-   "t_evaluacion_utc": "2026-08-16T00:03:56Z",
-   "t_generacion_utc": "2026-08-16T00:03:56Z",
+   "t_captura_utc": "2026-08-16T00:04:52Z",
+   "t_evaluacion_utc": "2026-08-16T00:04:52Z",
+   "t_generacion_utc": "2026-08-16T00:04:52Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -277,7 +322,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Orlando City SC vs FC Cincinnati\n⏱ Minuto: 23'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: Orlando City SC acumula 78% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Orlando City SC vs FC Cincinnati\n⏱ Minuto: 24'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: Orlando City SC acumula 78% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "d9198186b23a6de6"
   }
