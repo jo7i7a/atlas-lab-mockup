@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T16:10:08Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-16T16:11:51Z",
+ "n_alerts": 8,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Real Racing Club vs Villarreal (LaLiga)",
-   "match_id": "16421061",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 51,
-   "condicion": "Villarreal acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Villarreal",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6047,
-    "touches_home": 17,
-    "touches_away": 26,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "2-2",
-    "t_primera_observacion_atlas": "2026-08-16T15:51:32Z",
-    "t_inicio_estimado_condicion": "2026-08-16T15:27:05Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T15:51:32Z",
-   "t_captura_utc": "2026-08-16T15:53:28Z",
-   "t_evaluacion_utc": "2026-08-16T15:53:29Z",
-   "t_generacion_utc": "2026-08-16T15:53:29Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T15:51:33Z",
-     "latencia_envio_ms": 886.1966133117676,
-     "error": null,
-     "message_id": 1198,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Real Racing Club vs Villarreal\n⏱ Minuto: 51'\n📊 Marcador: 2-2\n🏆 Liga: LaLiga\n\n📝 Motivo: Villarreal acumula 60% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "22cca508b880e4b0"
-  },
   {
    "strategy_id": "A2",
    "match_label": "AFC Ajax vs SC Heerenveen (VriendenLoterij Eredivisie)",
@@ -177,7 +129,7 @@
    "match_id": "15260878",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 47,
+   "minuto": 49,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -190,8 +142,8 @@
    },
    "t_evento_real_utc": "2026-08-16T16:06:14Z",
    "t_captura_utc": "2026-08-16T16:06:14Z",
-   "t_evaluacion_utc": "2026-08-16T16:09:47Z",
-   "t_generacion_utc": "2026-08-16T16:09:47Z",
+   "t_evaluacion_utc": "2026-08-16T16:11:29Z",
+   "t_generacion_utc": "2026-08-16T16:11:29Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -205,9 +157,57 @@
    },
    "latencia_total_seg": 132.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Molde FK vs Tromsø IL\n⏱ Minuto: 47'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Molde FK vs Tromsø IL\n⏱ Minuto: 49'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "c2572be8b963dd86"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Molde FK vs Tromsø IL (Eliteserien)",
+   "match_id": "15260878",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 49,
+   "condicion": "Molde FK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Molde FK",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6667,
+    "touches_home": 14,
+    "touches_away": 7,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 35,
+    "equipo_que_realizo_sustitucion": "Molde FK",
+    "marcador_en_el_momento": "1-0",
+    "t_primera_observacion_atlas": "2026-08-16T16:11:45Z",
+    "t_inicio_estimado_condicion": "2026-08-16T16:10:13Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T16:11:45Z",
+   "t_captura_utc": "2026-08-16T16:11:45Z",
+   "t_evaluacion_utc": "2026-08-16T16:11:45Z",
+   "t_generacion_utc": "2026-08-16T16:11:45Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T16:11:48Z",
+     "latencia_envio_ms": 2397.7677822113037,
+     "error": null,
+     "message_id": 1202,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 3.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Molde FK vs Tromsø IL\n⏱ Minuto: 49'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: Molde FK acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Molde FK, min 35\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "5b9dc8d74923dd91"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -215,7 +215,7 @@
    "match_id": "15272490",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 82,
+   "minuto": 84,
    "condicion": "GAIS acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -224,8 +224,8 @@
    "extra": {
     "equipo_dominante": "GAIS",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.675,
-    "touches_home": 27,
+    "ratio_presion_territorial": 0.6905,
+    "touches_home": 29,
     "touches_away": 13,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 81,
@@ -237,9 +237,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T15:44:37Z",
-   "t_captura_utc": "2026-08-16T16:10:05Z",
-   "t_evaluacion_utc": "2026-08-16T16:10:06Z",
-   "t_generacion_utc": "2026-08-16T16:10:06Z",
+   "t_captura_utc": "2026-08-16T16:11:49Z",
+   "t_evaluacion_utc": "2026-08-16T16:11:49Z",
+   "t_generacion_utc": "2026-08-16T16:11:49Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -253,9 +253,57 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ GAIS vs Malmö FF\n⏱ Minuto: 82'\n📊 Marcador: 0-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: GAIS acumula 68% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: GAIS, min 81\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ GAIS vs Malmö FF\n⏱ Minuto: 84'\n📊 Marcador: 0-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: GAIS acumula 69% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: GAIS, min 81\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "c13a0fcd303ce416"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Real Racing Club vs Villarreal (LaLiga)",
+   "match_id": "16421061",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Villarreal acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Villarreal",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.6136,
+    "touches_home": 17,
+    "touches_away": 27,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "2-2",
+    "t_primera_observacion_atlas": "2026-08-16T15:51:32Z",
+    "t_inicio_estimado_condicion": "2026-08-16T15:27:05Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T15:51:32Z",
+   "t_captura_utc": "2026-08-16T16:11:50Z",
+   "t_evaluacion_utc": "2026-08-16T16:11:51Z",
+   "t_generacion_utc": "2026-08-16T16:11:51Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T15:51:33Z",
+     "latencia_envio_ms": 886.1966133117676,
+     "error": null,
+     "message_id": 1198,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "EXPIRADA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Real Racing Club vs Villarreal\n⏱ Minuto: 46'\n📊 Marcador: 2-2\n🏆 Liga: LaLiga\n\n📝 Motivo: Villarreal acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "22cca508b880e4b0"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -263,7 +311,7 @@
    "match_id": "16450752",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 78,
+   "minuto": 79,
    "condicion": "CD Nacional acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -272,11 +320,11 @@
    "extra": {
     "equipo_dominante": "CD Nacional",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7391,
-    "touches_home": 17,
-    "touches_away": 6,
+    "ratio_presion_territorial": 0.72,
+    "touches_home": 18,
+    "touches_away": 7,
     "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 66,
+    "minuto_ultima_sustitucion": 79,
     "equipo_que_realizo_sustitucion": "CD Nacional",
     "marcador_en_el_momento": "2-0",
     "t_primera_observacion_atlas": "2026-08-16T15:59:25Z",
@@ -285,9 +333,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T15:59:25Z",
-   "t_captura_utc": "2026-08-16T16:10:08Z",
-   "t_evaluacion_utc": "2026-08-16T16:10:08Z",
-   "t_generacion_utc": "2026-08-16T16:10:08Z",
+   "t_captura_utc": "2026-08-16T16:11:51Z",
+   "t_evaluacion_utc": "2026-08-16T16:11:51Z",
+   "t_generacion_utc": "2026-08-16T16:11:51Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -301,7 +349,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CD Nacional vs Estoril Praia\n⏱ Minuto: 78'\n📊 Marcador: 2-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: CD Nacional acumula 74% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CD Nacional, min 66\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CD Nacional vs Estoril Praia\n⏱ Minuto: 79'\n📊 Marcador: 2-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: CD Nacional acumula 72% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CD Nacional, min 79\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "aced6b61ee51e909"
   }
