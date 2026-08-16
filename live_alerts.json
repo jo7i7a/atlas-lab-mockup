@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-16T01:46:48Z",
+ "generated_at_utc": "2026-08-16T01:47:22Z",
  "n_alerts": 9,
  "alerts": [
   {
@@ -270,7 +270,7 @@
    "match_id": "16317953",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 35,
+   "minuto": 36,
    "condicion": "4 córners totales antes del min 45 (4-0), CF Monterrey presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿FC Juárez NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -284,8 +284,8 @@
    },
    "t_evento_real_utc": "2026-08-16T01:25:26Z",
    "t_captura_utc": "2026-08-16T01:25:26Z",
-   "t_evaluacion_utc": "2026-08-16T01:46:20Z",
-   "t_generacion_utc": "2026-08-16T01:46:20Z",
+   "t_evaluacion_utc": "2026-08-16T01:47:12Z",
+   "t_generacion_utc": "2026-08-16T01:47:12Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -299,7 +299,7 @@
    },
    "latencia_total_seg": 48.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 35'\n📊 Marcador: 3-1\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: CF Monterrey presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Juárez no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 36'\n📊 Marcador: 3-1\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: CF Monterrey presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Juárez no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "49f2a617a9841892"
   },
@@ -309,7 +309,7 @@
    "match_id": "15353091",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 84,
+   "minuto": 85,
    "condicion": "Audax Italiano acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -318,9 +318,9 @@
    "extra": {
     "equipo_dominante": "Audax Italiano",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6154,
+    "ratio_presion_territorial": 0.6552,
     "touches_home": 10,
-    "touches_away": 16,
+    "touches_away": 19,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 76,
     "equipo_que_realizo_sustitucion": "Audax Italiano",
@@ -331,9 +331,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T01:44:36Z",
-   "t_captura_utc": "2026-08-16T01:46:47Z",
-   "t_evaluacion_utc": "2026-08-16T01:46:47Z",
-   "t_generacion_utc": "2026-08-16T01:46:47Z",
+   "t_captura_utc": "2026-08-16T01:47:21Z",
+   "t_evaluacion_utc": "2026-08-16T01:47:21Z",
+   "t_generacion_utc": "2026-08-16T01:47:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -347,7 +347,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Everton de Viña del Mar vs Audax Italiano\n⏱ Minuto: 84'\n📊 Marcador: 1-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Audax Italiano acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Audax Italiano, min 76\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Everton de Viña del Mar vs Audax Italiano\n⏱ Minuto: 85'\n📊 Marcador: 1-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Audax Italiano acumula 66% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Audax Italiano, min 76\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "6d73117259720858"
   },
@@ -366,9 +366,9 @@
    "extra": {
     "equipo_dominante": "CF Monterrey",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.8333,
+    "ratio_presion_territorial": 0.7895,
     "touches_home": 15,
-    "touches_away": 3,
+    "touches_away": 4,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -379,9 +379,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T01:30:30Z",
-   "t_captura_utc": "2026-08-16T01:46:48Z",
-   "t_evaluacion_utc": "2026-08-16T01:46:48Z",
-   "t_generacion_utc": "2026-08-16T01:46:48Z",
+   "t_captura_utc": "2026-08-16T01:47:21Z",
+   "t_evaluacion_utc": "2026-08-16T01:47:21Z",
+   "t_generacion_utc": "2026-08-16T01:47:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -395,7 +395,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 36'\n📊 Marcador: 3-1\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CF Monterrey acumula 83% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 36'\n📊 Marcador: 3-1\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CF Monterrey acumula 79% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "f23a44727a83bbf0"
   }
