@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T15:57:29Z",
+ "generated_at_utc": "2026-08-16T15:59:28Z",
  "n_alerts": 9,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Real Racing Club vs Villarreal (LaLiga)",
-   "match_id": "16421061",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "Villarreal acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Villarreal",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.7333,
-    "touches_home": 4,
-    "touches_away": 11,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-08-16T15:27:36Z",
-    "t_inicio_estimado_condicion": "2026-08-16T15:27:05Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T15:27:36Z",
-   "t_captura_utc": "2026-08-16T15:32:27Z",
-   "t_evaluacion_utc": "2026-08-16T15:32:28Z",
-   "t_generacion_utc": "2026-08-16T15:32:28Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T15:27:37Z",
-     "latencia_envio_ms": 862.7181053161621,
-     "error": null,
-     "message_id": 1188,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Real Racing Club vs Villarreal\n⏱ Minuto: 30'\n📊 Marcador: 1-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Villarreal acumula 73% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "87ae562949194987"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Chapecoense vs Bahia (Brasileirão Betano)",
@@ -315,7 +267,7 @@
    "match_id": "15272490",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 69,
+   "minuto": 71,
    "condicion": "GAIS acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -328,7 +280,7 @@
     "touches_home": 26,
     "touches_away": 13,
     "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 60,
+    "minuto_ultima_sustitucion": 70,
     "equipo_que_realizo_sustitucion": "GAIS",
     "marcador_en_el_momento": "0-1",
     "t_primera_observacion_atlas": "2026-08-16T15:44:37Z",
@@ -337,9 +289,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T15:44:37Z",
-   "t_captura_utc": "2026-08-16T15:57:24Z",
-   "t_evaluacion_utc": "2026-08-16T15:57:25Z",
-   "t_generacion_utc": "2026-08-16T15:57:25Z",
+   "t_captura_utc": "2026-08-16T15:59:23Z",
+   "t_evaluacion_utc": "2026-08-16T15:59:24Z",
+   "t_generacion_utc": "2026-08-16T15:59:24Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -353,9 +305,57 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ GAIS vs Malmö FF\n⏱ Minuto: 69'\n📊 Marcador: 0-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: GAIS acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: GAIS, min 60\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ GAIS vs Malmö FF\n⏱ Minuto: 71'\n📊 Marcador: 0-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: GAIS acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: GAIS, min 70\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "c13a0fcd303ce416"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "CD Nacional vs Estoril Praia (Liga Portugal Betclic)",
+   "match_id": "16450752",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 67,
+   "condicion": "CD Nacional acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "CD Nacional",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.7,
+    "touches_home": 14,
+    "touches_away": 6,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 67,
+    "equipo_que_realizo_sustitucion": "CD Nacional",
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-16T15:59:25Z",
+    "t_inicio_estimado_condicion": "2026-08-16T14:53:02Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T15:59:25Z",
+   "t_captura_utc": "2026-08-16T15:59:25Z",
+   "t_evaluacion_utc": "2026-08-16T15:59:25Z",
+   "t_generacion_utc": "2026-08-16T15:59:25Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T15:59:26Z",
+     "latencia_envio_ms": 844.7954654693604,
+     "error": null,
+     "message_id": 1199,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CD Nacional vs Estoril Praia\n⏱ Minuto: 67'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: CD Nacional acumula 70% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CD Nacional, min 67\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "aced6b61ee51e909"
   },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -363,17 +363,17 @@
    "match_id": "16450752",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 65,
+   "minuto": 67,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
    "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "xg_combinado": 1.34,
-    "tiros_combinados": 18,
+    "xg_combinado": 1.47,
+    "tiros_combinados": 21,
     "sot_combinado": 5,
-    "presion_reciente_10min": 4,
+    "presion_reciente_10min": 5,
     "marcador_en_el_momento": "0-0",
     "t_primera_observacion_atlas": "2026-08-16T15:48:39Z",
     "t_inicio_estimado_condicion": "2026-08-16T15:48:35Z",
@@ -381,9 +381,9 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T15:48:39Z",
-   "t_captura_utc": "2026-08-16T15:57:28Z",
-   "t_evaluacion_utc": "2026-08-16T15:57:29Z",
-   "t_generacion_utc": "2026-08-16T15:57:29Z",
+   "t_captura_utc": "2026-08-16T15:59:28Z",
+   "t_evaluacion_utc": "2026-08-16T15:59:28Z",
+   "t_generacion_utc": "2026-08-16T15:59:28Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -397,7 +397,7 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ CD Nacional vs Estoril Praia\n⏱ Minuto: 65'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: presión combinada sostenida — xG 1.34, 18 tiros totales (5 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ CD Nacional vs Estoril Praia\n⏱ Minuto: 67'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: presión combinada sostenida — xG 1.47, 21 tiros totales (5 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "95b70ea27599cb49"
   }
