@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T15:37:30Z",
- "n_alerts": 18,
+ "generated_at_utc": "2026-08-16T15:38:24Z",
+ "n_alerts": 17,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Chapecoense vs Bahia (Brasileirão Betano)",
-   "match_id": "15235427",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 1,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-16T15:07:46Z",
-   "t_captura_utc": "2026-08-16T15:07:46Z",
-   "t_evaluacion_utc": "2026-08-16T15:15:24Z",
-   "t_generacion_utc": "2026-08-16T15:15:24Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T15:09:26Z",
-     "latencia_envio_ms": 845.6943035125732,
-     "error": null,
-     "message_id": 1172,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 100.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Chapecoense vs Bahia\n⏱ Minuto: 52'\n📊 Marcador: 2-2\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "abcd8bcff4b1fc97"
-  },
   {
    "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "CD Nacional vs Estoril Praia (Liga Portugal Betclic)",
