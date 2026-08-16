@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-16T20:15:28Z",
+ "generated_at_utc": "2026-08-16T20:16:26Z",
  "n_alerts": 5,
  "alerts": [
   {
@@ -134,45 +134,6 @@
    "alert_id": "42c9a55d09970353"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Famalicão vs CS Marítimo (Liga Portugal Betclic)",
-   "match_id": "16450751",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 44,
-   "condicion": "4 córners totales antes del min 45 (3-1), Famalicão presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿CS Marítimo NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Famalicão",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-16T20:07:12Z",
-   "t_captura_utc": "2026-08-16T20:07:12Z",
-   "t_evaluacion_utc": "2026-08-16T20:15:09Z",
-   "t_generacion_utc": "2026-08-16T20:15:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T20:08:11Z",
-     "latencia_envio_ms": 786.9663238525391,
-     "error": null,
-     "message_id": 1295,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 59.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Famalicão vs CS Marítimo\n⏱ Minuto: 44'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Famalicão presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CS Marítimo no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "44bfc7e76fc04bbd"
-  },
-  {
    "strategy_id": "A2",
    "match_label": "Vasco da Gama vs Santos (Brasileirão Betano)",
    "match_id": "15235421",
@@ -209,6 +170,45 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Vasco da Gama vs Santos\n⏱ Minuto: 52'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "c208d0ffad038660"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Famalicão vs CS Marítimo (Liga Portugal Betclic)",
+   "match_id": "16450751",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "4 córners totales antes del min 45 (3-1), Famalicão presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿CS Marítimo NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Famalicão",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-16T20:07:12Z",
+   "t_captura_utc": "2026-08-16T20:07:12Z",
+   "t_evaluacion_utc": "2026-08-16T20:16:09Z",
+   "t_generacion_utc": "2026-08-16T20:16:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T20:08:11Z",
+     "latencia_envio_ms": 786.9663238525391,
+     "error": null,
+     "message_id": 1295,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 59.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Famalicão vs CS Marítimo\n⏱ Minuto: 45'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Famalicão presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CS Marítimo no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "44bfc7e76fc04bbd"
   }
  ]
 }
