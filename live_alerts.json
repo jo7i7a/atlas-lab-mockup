@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T20:22:47Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-16T20:23:56Z",
+ "n_alerts": 4,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Famalicão vs CS Marítimo (Liga Portugal Betclic)",
-   "match_id": "16450751",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "CS Marítimo domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "CS Marítimo",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T19:53:44Z",
-   "t_captura_utc": "2026-08-16T19:53:44Z",
-   "t_evaluacion_utc": "2026-08-16T19:56:30Z",
-   "t_generacion_utc": "2026-08-16T19:56:30Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T19:54:36Z",
-     "latencia_envio_ms": 886.3732814788818,
-     "error": null,
-     "message_id": 1293,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 52.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Famalicão vs CS Marítimo\n⏱ Minuto: 25'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: CS Marítimo — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "18eaf6798adc9a99"
-  },
   {
    "strategy_id": "L3",
    "match_label": "Beşiktaş JK vs Eyüpspor (Trendyol Süper Lig)",
