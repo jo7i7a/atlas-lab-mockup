@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-08-16T13:36:27Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-16T13:37:29Z",
+ "n_alerts": 8,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Djurgårdens IF vs AIK (Allsvenskan)",
-   "match_id": "15272489",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 0,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-08-16T13:07:17Z",
-   "t_captura_utc": "2026-08-16T13:07:17Z",
-   "t_evaluacion_utc": "2026-08-16T13:13:22Z",
-   "t_generacion_utc": "2026-08-16T13:13:22Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T13:07:23Z",
-     "latencia_envio_ms": 848.0238914489746,
-     "error": null,
-     "message_id": 1130,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 6.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Djurgårdens IF vs AIK\n⏱ Minuto: 52'\n📊 Marcador: 1-3\n🏆 Liga: Allsvenskan\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "2c060031f3fb1d73"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Aalesunds FK vs Vålerenga IF (Eliteserien)",
@@ -259,12 +221,95 @@
    "alert_id": "5a78201186f8f7c8"
   },
   {
+   "strategy_id": "L2",
+   "match_label": "Aalesunds FK vs Vålerenga IF (Eliteserien)",
+   "match_id": "15260880",
+   "market": "Hándicap Asiático -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 47,
+   "condicion": "Vålerenga IF domina por xG (2.03) y remates a puerta (5) sin ir ganando y sin roja del dominante — Vålerenga IF vs Aalesunds FK.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Vålerenga IF",
+    "xg_dominante": 2.03,
+    "sot_dominante": 5,
+    "marcador": "2-4"
+   },
+   "t_evento_real_utc": "2026-08-16T13:36:11Z",
+   "t_captura_utc": "2026-08-16T13:36:11Z",
+   "t_evaluacion_utc": "2026-08-16T13:37:10Z",
+   "t_generacion_utc": "2026-08-16T13:37:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T13:37:11Z",
+     "latencia_envio_ms": 793.0119037628174,
+     "error": null,
+     "message_id": 1141,
+     "chat_id": -5124383393
+    }
+   },
+   "latencia_total_seg": 60.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2\n\n⚽ Aalesunds FK vs Vålerenga IF\n⏱ Minuto: 47'\n📊 Marcador: 4-2\n🏆 Liga: Eliteserien\n\n📈 Domina: Vålerenga IF\nxG: 2.03 vs 1.45\nTiros a puerta: 5 vs 7\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Vålerenga IF — ¿línea y cuota disponibles?",
+   "evidencia": null,
+   "alert_id": "4c30299ba864ad43"
+  },
+  {
+   "strategy_id": "L2-SHADOW",
+   "match_label": "Aalesunds FK vs Vålerenga IF (Eliteserien)",
+   "match_id": "15260880",
+   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH +0.00 @ 1.825 [PROXY SofaScore, NO Betano]",
+   "cuota_detectada": 1.825,
+   "minuto": 47,
+   "condicion": "Vålerenga IF domina por xG (2.03) y remates a puerta (5) sin ir ganando y sin roja del dominante — Vålerenga IF vs Aalesunds FK. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Vålerenga IF",
+    "xg_dominante": 2.03,
+    "sot_dominante": 5,
+    "marcador": "2-4",
+    "variante": "shadow_ventana_80",
+    "ah_proxy_linea": 0.0,
+    "ah_proxy_cuota": 1.825,
+    "ah_proxy_suspendida": false,
+    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
+   },
+   "t_evento_real_utc": "2026-08-16T13:36:11Z",
+   "t_captura_utc": "2026-08-16T13:36:11Z",
+   "t_evaluacion_utc": "2026-08-16T13:37:14Z",
+   "t_generacion_utc": "2026-08-16T13:37:14Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T13:37:15Z",
+     "latencia_envio_ms": 756.4988136291504,
+     "error": null,
+     "message_id": 1142,
+     "chat_id": -5124383393
+    }
+   },
+   "latencia_total_seg": 64.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Aalesunds FK vs Vålerenga IF\n⏱ Minuto: 47'\n📊 Marcador: 4-2\n🏆 Liga: Eliteserien\n\n📈 Domina: Vålerenga IF\nxG: 2.03 vs 1.45\nTiros a puerta: 5 vs 7\n\nReferencia PROXY: AH +0.00 @ 1.825 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Vålerenga IF — ¿línea y cuota reales?",
+   "evidencia": null,
+   "alert_id": "22f541214fb78211"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "IF Brommapojkarna vs Örgryte IS (Allsvenskan)",
    "match_id": "15272494",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 78,
+   "minuto": 79,
    "condicion": "IF Brommapojkarna acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -277,7 +322,7 @@
     "touches_home": 37,
     "touches_away": 16,
     "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 68,
+    "minuto_ultima_sustitucion": 80,
     "equipo_que_realizo_sustitucion": "IF Brommapojkarna",
     "marcador_en_el_momento": "2-1",
     "t_primera_observacion_atlas": "2026-08-16T13:08:27Z",
@@ -286,9 +331,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T13:08:27Z",
-   "t_captura_utc": "2026-08-16T13:36:25Z",
-   "t_evaluacion_utc": "2026-08-16T13:36:25Z",
-   "t_generacion_utc": "2026-08-16T13:36:25Z",
+   "t_captura_utc": "2026-08-16T13:37:27Z",
+   "t_evaluacion_utc": "2026-08-16T13:37:28Z",
+   "t_generacion_utc": "2026-08-16T13:37:28Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -302,7 +347,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ IF Brommapojkarna vs Örgryte IS\n⏱ Minuto: 78'\n📊 Marcador: 2-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IF Brommapojkarna acumula 70% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: IF Brommapojkarna, min 68\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ IF Brommapojkarna vs Örgryte IS\n⏱ Minuto: 79'\n📊 Marcador: 2-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IF Brommapojkarna acumula 70% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: IF Brommapojkarna, min 80\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "42b6d808d7a6c062"
   }
