@@ -225,4 +225,89 @@ test("Chapecoense vs Bahia (partido real de las capturas) -- Picks desbloqueado"
   assert.strictEqual(gate.ok, true, "Chapecoense vs Bahia debe desbloquear Picks con la cobertura real de OddsPapi de hoy");
 });
 
+// ---------------------------------------------------------------------
+// Regresion 2026-08-16 -- bug real reportado (Colo-Colo vs O'Higgins):
+// la pestaña "Reporte" (la primera que se ve al abrir un partido) tiene
+// una tabla-resumen "Total del Partido" con SUS PROPIAS filas de 1X2 y
+// Goles Total ("1X2: Gana X", "1X2: Empate", "Over 2.5 Goles"), generadas
+// tambien con marketRowHtml() -- pero antes de este fix esas filas
+// guardaban la cuota bajo una clave DISTINTA ("m:1X2: Gana X") a la que
+// liveTabGateStatus() revisa ("m:Gana X", la de la pestaña Goles/1X2).
+// Un Director que tipeaba la cuota manual en la fila de Reporte (la
+// primera que ve) veia el EV% calcularse ahi mismo -- pero Picks seguia
+// diciendo "pestaña bloqueada", porque el gate miraba una clave que
+// nunca se llenaba. Fix: marketRowHtml(label, prob, quality, autoOdds,
+// mktKeyOverride) -- mktKeyOverride fuerza la MISMA clave que la fila
+// canonica sin cambiar el texto visible.
+// ---------------------------------------------------------------------
+
+function buildMarketRowSandbox() {
+  const sandbox = { console };
+  vm.createContext(sandbox);
+  const code = [
+    extractFunction("escAttr"),
+    extractFunction("marketRowHtml"),
+  ].join("\n\n");
+  vm.runInContext(code, sandbox);
+  return sandbox;
+}
+
+test("marketRowHtml sin override sigue usando 'm:' + label (comportamiento default sin cambios)", () => {
+  const sb = buildMarketRowSandbox();
+  const html = sb.marketRowHtml("Gana Local", 0.5, "");
+  assert.ok(html.includes('data-mkt-key="m:Gana Local"'));
+});
+
+test("marketRowHtml con mktKeyOverride usa la clave del override, no la del label (fix del bug real)", () => {
+  const sb = buildMarketRowSandbox();
+  // mismo caso real: texto visible "1X2: Gana Colo-Colo", clave
+  // compartida con la fila canonica "m:Gana Colo-Colo".
+  const html = sb.marketRowHtml("1X2: Gana Colo-Colo", 0.5, "", undefined, "m:Gana Colo-Colo");
+  assert.ok(html.includes('data-mkt-key="m:Gana Colo-Colo"'), "debe guardar bajo la clave canonica");
+  assert.ok(!html.includes('data-mkt-key="m:1X2: Gana Colo-Colo"'), "nunca debe crear una clave duplicada nueva");
+  assert.ok(html.includes(">1X2: Gana Colo-Colo<"), "el texto visible no cambia, solo la clave de guardado");
+});
+
+test("wiring: tabReporte usa las MISMAS claves literales que liveTabRequiredKeys() para 1X2 y Goles Total", () => {
+  // Guarda de regresion: si alguien vuelve a tocar tabReporte() o
+  // liveTabRequiredKeys() por separado, este test detecta que las claves
+  // se desincronizaron de nuevo, sin depender del DOM ni de datos reales.
+  const tabReporteSrc = extractFunction("tabReporte");
+  assert.ok(tabReporteSrc.includes('"m:Gana " + m.home'), "1X2 Gana Local debe compartir clave con Goles/1X2");
+  assert.ok(tabReporteSrc.includes('"m:Empate"'), "1X2 Empate debe compartir clave con Goles/1X2");
+  assert.ok(tabReporteSrc.includes('"m:Gana " + m.away'), "1X2 Gana Visita debe compartir clave con Goles/1X2");
+  assert.ok(tabReporteSrc.includes('"p:total|goals|0|Goles"'), "Goles Total debe compartir clave con Goles/1X2");
+});
+
+test("escenario real: cuota manual tipeada en la fila 'espejo' de Reporte desbloquea Picks", () => {
+  // Reproduce el bug de punta a punta usando el MISMO liveTabGateStatus()
+  // real -- simplemente escribe en localStorage bajo la clave que
+  // marketRowHtml() ahora genera para la fila de Reporte (con override),
+  // exactamente como haria atlasSaveOdds() al tipear ahi.
+  const sb = buildSandbox({});
+  const m = fakeMatch("colo-colo-ohiggins-15353093", "Colo-Colo", "O'Higgins");
+  sb.localStorage.setItem(sb.atlasOddsKey(m.id, "m:Gana " + m.home), "1.85");
+  sb.localStorage.setItem(sb.atlasOddsKey(m.id, "m:Empate"), "3.40");
+  sb.localStorage.setItem(sb.atlasOddsKey(m.id, "m:Gana " + m.away), "4.20");
+  sb.localStorage.setItem(sb.atlasOddsKey(m.id, "p:total|goals|0|Goles"), "1.95");
+  sb.localStorage.setItem(sb.atlasOddsKey(m.id, "m:BTTS (Ambos anotan) — dato histórico, no modelo"), "1.90");
+  const gate = sb.liveTabGateStatus(m.id, m);
+  assert.strictEqual(gate.ok, true, "las 5 cuotas manuales (tipeadas en cualquier pestaña) deben desbloquear Picks");
+  assert.strictEqual(gate.missing.length, 0);
+});
+
+test("escenario E: falta una sola cuota real -> Picks permanece bloqueada", () => {
+  const sb = buildSandbox({});
+  const m = fakeMatch("test-falta-una", "Local", "Visita");
+  sb.localStorage.setItem(sb.atlasOddsKey(m.id, "m:Gana " + m.home), "1.85");
+  sb.localStorage.setItem(sb.atlasOddsKey(m.id, "m:Empate"), "3.40");
+  sb.localStorage.setItem(sb.atlasOddsKey(m.id, "m:Gana " + m.away), "4.20");
+  sb.localStorage.setItem(sb.atlasOddsKey(m.id, "m:BTTS (Ambos anotan) — dato histórico, no modelo"), "1.90");
+  // falta Goles Total a proposito
+  const gate = sb.liveTabGateStatus(m.id, m);
+  assert.strictEqual(gate.ok, false);
+  assert.strictEqual(gate.missing.length, 1);
+  assert.strictEqual(gate.missing[0], "Goles Total (Over/Under, por defecto 2.5)");
+});
+
 console.log(`\n${passed} test(s) OK` + (process.exitCode ? " -- HAY FALLAS ARRIBA" : ""));

@@ -2306,10 +2306,18 @@ function originToggleHtml(certMeta, coverage) {
   return certBlock + poissonBlock;
 }
 
-function marketRowHtml(label, prob, quality, autoOdds) {
+function marketRowHtml(label, prob, quality, autoOdds, mktKeyOverride) {
   const pct = prob * 100;
   const fair = 1 / prob;
-  const mktKey = "m:" + label;
+  // 2026-08-16, fix Picks/cuota manual (bug real Colo-Colo vs O'Higgins):
+  // mktKeyOverride permite que una fila "espejo" (ej. el resumen de 1X2 en
+  // la pestaña Reporte) comparta la MISMA clave de localStorage que la fila
+  // canonica (Goles/1X2) del mismo mercado+seleccion, aunque el texto que
+  // se muestra sea distinto ("1X2: Gana X" vs "Gana X"). Sin esto, tipear
+  // la cuota en la fila "equivocada" la guardaba bajo una clave que
+  // liveTabGateStatus() nunca revisa -- Picks quedaba bloqueada pese a que
+  // el Director SI habia cargado la cuota, solo que en otra pestaña.
+  const mktKey = mktKeyOverride || ("m:" + label);
   // 2026-08-16, integracion OddsPapi (ATLAS LAB Edificio 5 exclusivamente):
   // autoOdds = {price, bookmaker, timestamp} | undefined. Solo se agregan
   // atributos data-auto-* -- el relleno real del input y el badge de fuente
@@ -2825,13 +2833,23 @@ function tabReporte(m, pocket, hist) {
   const q1x2 = originBlockHtml(pocket, "1X2_FT");
   const totalRows = [];
   if (p1x2) {
-    totalRows.push(marketRowHtml(`1X2: Gana ${m.home}`, p1x2.home, q1x2));
-    totalRows.push(marketRowHtml("1X2: Empate", p1x2.draw, q1x2));
-    totalRows.push(marketRowHtml(`1X2: Gana ${m.away}`, p1x2.away, q1x2));
+    // mktKeyOverride = misma clave EXACTA que las filas canonicas de
+    // Goles/1X2 (ver tabGoles, marketRowHtml(`Gana ${m.home}`, ...)) --
+    // el texto sigue diciendo "1X2: Gana X" aqui, pero comparte
+    // localStorage con la fila real (fix Picks/cuota manual 2026-08-16).
+    totalRows.push(marketRowHtml(`1X2: Gana ${m.home}`, p1x2.home, q1x2, undefined, "m:Gana " + m.home));
+    totalRows.push(marketRowHtml("1X2: Empate", p1x2.draw, q1x2, undefined, "m:Empate"));
+    totalRows.push(marketRowHtml(`1X2: Gana ${m.away}`, p1x2.away, q1x2, undefined, "m:Gana " + m.away));
   }
   ["OU25_GOALS_FT", "OU9.5_CORNERS_FT", "OU4.5_CARDS_FT", "FOULS_FT"].forEach(code => {
     const p = mkt(pocket, code);
-    if (p && p.over != null) totalRows.push(marketRowHtml(`Over ${MARKET_DEFS[code].line} ${MARKET_DEFS[code].label}`, p.over, originBlockHtml(pocket, code)));
+    // Goles Total (OU25_GOALS_FT) es uno de los 4 mercados automatizados y
+    // uno de los 5 requeridos por el gate de Picks -- misma clave EXACTA
+    // que la fila por defecto (linea 2.5 certificada) en Goles/1X2, ver
+    // pillMarketRowHtml(). Corners/Tarjetas/Faltas NO son requeridos por
+    // el gate, quedan sin override (sin cambios de comportamiento).
+    const override = code === "OU25_GOALS_FT" ? "p:total|goals|0|Goles" : undefined;
+    if (p && p.over != null) totalRows.push(marketRowHtml(`Over ${MARKET_DEFS[code].line} ${MARKET_DEFS[code].label}`, p.over, originBlockHtml(pocket, code), undefined, override));
   });
 
   return `
