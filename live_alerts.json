@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T21:03:19Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-08-16T21:12:18Z",
+ "n_alerts": 2,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -49,6 +49,54 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Famalicão vs CS Marítimo\n⏱ Minuto: 74'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Famalicão acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Famalicão, min 50\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "392cb8a4ce508a78"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Famalicão vs CS Marítimo (Liga Portugal Betclic)",
+   "match_id": "16450751",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 83,
+   "condicion": "Famalicão acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Famalicão",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6154,
+    "touches_home": 16,
+    "touches_away": 10,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 76,
+    "equipo_que_realizo_sustitucion": "Famalicão",
+    "marcador_en_el_momento": "1-1",
+    "t_primera_observacion_atlas": "2026-08-16T21:12:17Z",
+    "t_inicio_estimado_condicion": "2026-08-16T20:54:53Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-16T21:12:17Z",
+   "t_captura_utc": "2026-08-16T21:12:17Z",
+   "t_evaluacion_utc": "2026-08-16T21:12:17Z",
+   "t_generacion_utc": "2026-08-16T21:12:17Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-16T21:12:18Z",
+     "latencia_envio_ms": 810.8136653900146,
+     "error": null,
+     "message_id": 1302,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Famalicão vs CS Marítimo\n⏱ Minuto: 83'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Famalicão acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Famalicão, min 76\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "7e3842f656ae280c"
   }
  ]
 }
