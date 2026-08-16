@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T12:47:23Z",
- "n_alerts": 14,
+ "generated_at_utc": "2026-08-16T12:48:25Z",
+ "n_alerts": 12,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -286,44 +286,6 @@
   },
   {
    "strategy_id": "L1",
-   "match_label": "IF Brommapojkarna vs Örgryte IS (Allsvenskan)",
-   "match_id": "15272494",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "4 córners totales antes del min 30 (1-3), Örgryte IS presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿IF Brommapojkarna NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Örgryte IS"
-   },
-   "t_evento_real_utc": "2026-08-16T12:18:21Z",
-   "t_captura_utc": "2026-08-16T12:18:21Z",
-   "t_evaluacion_utc": "2026-08-16T12:31:10Z",
-   "t_generacion_utc": "2026-08-16T12:31:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T12:19:10Z",
-     "latencia_envio_ms": 764.9736404418945,
-     "error": null,
-     "message_id": 1085,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 49.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ IF Brommapojkarna vs Örgryte IS\n⏱ Minuto: 30'\n📊 Marcador: 1-0\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Örgryte IS presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿IF Brommapojkarna no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "9ed5fede5acc4498"
-  },
-  {
-   "strategy_id": "L1",
    "match_label": "Degerfors IF vs IFK Göteborg (Allsvenskan)",
    "match_id": "15272496",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
@@ -359,45 +321,6 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Degerfors IF vs IFK Göteborg\n⏱ Minuto: 30'\n📊 Marcador: 3-0\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: IFK Göteborg presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Degerfors IF no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "38666ee9f978ab16"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "IF Brommapojkarna vs Örgryte IS (Allsvenskan)",
-   "match_id": "15272494",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (1-3), Örgryte IS presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿IF Brommapojkarna NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Örgryte IS",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-16T12:18:21Z",
-   "t_captura_utc": "2026-08-16T12:18:21Z",
-   "t_evaluacion_utc": "2026-08-16T12:46:12Z",
-   "t_generacion_utc": "2026-08-16T12:46:12Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T12:19:13Z",
-     "latencia_envio_ms": 772.2563743591309,
-     "error": null,
-     "message_id": 1086,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 52.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ IF Brommapojkarna vs Örgryte IS\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Örgryte IS presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿IF Brommapojkarna no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "a5134d16cbab88c0"
   },
   {
    "strategy_id": "L1-SHADOW",
@@ -492,7 +415,7 @@
    "match_id": "15260880",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 16,
+   "minuto": 17,
    "condicion": "Vålerenga IF domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -512,8 +435,8 @@
    },
    "t_evento_real_utc": "2026-08-16T12:45:52Z",
    "t_captura_utc": "2026-08-16T12:45:52Z",
-   "t_evaluacion_utc": "2026-08-16T12:47:19Z",
-   "t_generacion_utc": "2026-08-16T12:47:19Z",
+   "t_evaluacion_utc": "2026-08-16T12:48:20Z",
+   "t_generacion_utc": "2026-08-16T12:48:20Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -527,7 +450,7 @@
    },
    "latencia_total_seg": 30.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Aalesunds FK vs Vålerenga IF\n⏱ Minuto: 16'\n📊 Marcador: 2-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Vålerenga IF — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Aalesunds FK vs Vålerenga IF\n⏱ Minuto: 17'\n📊 Marcador: 2-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Vålerenga IF — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "76a45eb61b93e35a"
   },
@@ -537,7 +460,7 @@
    "match_id": "16316768",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 17,
+   "minuto": 18,
    "condicion": "Feyenoord domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -557,8 +480,8 @@
    },
    "t_evento_real_utc": "2026-08-16T12:45:52Z",
    "t_captura_utc": "2026-08-16T12:45:52Z",
-   "t_evaluacion_utc": "2026-08-16T12:47:20Z",
-   "t_generacion_utc": "2026-08-16T12:47:20Z",
+   "t_evaluacion_utc": "2026-08-16T12:48:21Z",
+   "t_generacion_utc": "2026-08-16T12:48:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -572,7 +495,7 @@
    },
    "latencia_total_seg": 31.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Feyenoord vs Go Ahead Eagles\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Feyenoord — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Feyenoord vs Go Ahead Eagles\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Feyenoord — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "89189c286c56a822"
   },
@@ -582,7 +505,7 @@
    "match_id": "15272489",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 45,
    "condicion": "Djurgårdens IF acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -591,8 +514,8 @@
    "extra": {
     "equipo_dominante": "Djurgårdens IF",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6364,
-    "touches_home": 14,
+    "ratio_presion_territorial": 0.6522,
+    "touches_home": 15,
     "touches_away": 8,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 32,
@@ -604,9 +527,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T12:44:21Z",
-   "t_captura_utc": "2026-08-16T12:47:22Z",
-   "t_evaluacion_utc": "2026-08-16T12:47:23Z",
-   "t_generacion_utc": "2026-08-16T12:47:23Z",
+   "t_captura_utc": "2026-08-16T12:48:25Z",
+   "t_evaluacion_utc": "2026-08-16T12:48:25Z",
+   "t_generacion_utc": "2026-08-16T12:48:25Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -620,7 +543,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Djurgårdens IF vs AIK\n⏱ Minuto: 44'\n📊 Marcador: 0-3\n🏆 Liga: Allsvenskan\n\n📝 Motivo: Djurgårdens IF acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Djurgårdens IF, min 32\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Djurgårdens IF vs AIK\n⏱ Minuto: 45'\n📊 Marcador: 0-3\n🏆 Liga: Allsvenskan\n\n📝 Motivo: Djurgårdens IF acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Djurgårdens IF, min 32\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "d52d1bd6fee52c21"
   }
