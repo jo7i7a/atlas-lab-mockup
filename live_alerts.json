@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-16T01:55:29Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-16T01:56:40Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -45,51 +45,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Club Atlético Platense vs Boca Juniors\n⏱ Minuto: 63'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: presión combinada sostenida — xG 1.21, 16 tiros totales (8 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "cb7bca93df6b03b1"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "CF Monterrey vs FC Juárez (Liga MX, Apertura)",
-   "match_id": "16317953",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "CF Monterrey domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "CF Monterrey",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 3,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T01:26:10Z",
-   "t_captura_utc": "2026-08-16T01:26:10Z",
-   "t_evaluacion_utc": "2026-08-16T01:36:25Z",
-   "t_generacion_utc": "2026-08-16T01:36:25Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T01:26:30Z",
-     "latencia_envio_ms": 782.1652889251709,
-     "error": null,
-     "message_id": 1032,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 20.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 25'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CF Monterrey — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "b78c9fd2f95ba6fc"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -193,7 +148,7 @@
    "match_id": "16317953",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 46,
    "condicion": "CF Monterrey acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -215,9 +170,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-16T01:30:30Z",
-   "t_captura_utc": "2026-08-16T01:55:29Z",
-   "t_evaluacion_utc": "2026-08-16T01:55:29Z",
-   "t_generacion_utc": "2026-08-16T01:55:29Z",
+   "t_captura_utc": "2026-08-16T01:56:39Z",
+   "t_evaluacion_utc": "2026-08-16T01:56:40Z",
+   "t_generacion_utc": "2026-08-16T01:56:40Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -231,7 +186,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 45'\n📊 Marcador: 3-1\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CF Monterrey acumula 83% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CF Monterrey, min 37\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CF Monterrey vs FC Juárez\n⏱ Minuto: 46'\n📊 Marcador: 3-1\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CF Monterrey acumula 83% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CF Monterrey, min 37\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "f23a44727a83bbf0"
   }
