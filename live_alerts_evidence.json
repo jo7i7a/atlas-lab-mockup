@@ -5450,5 +5450,26 @@
    "cuota_real_betano": 1.87,
    "activo": true
   }
+ ],
+ "42b6d808d7a6c062": [
+  {
+   "alert_id": "42b6d808d7a6c062",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "IF Brommapojkarna vs Örgryte IS (Allsvenskan)",
+   "liga": "Allsvenskan",
+   "event_id": "15272494",
+   "minuto_alerta": 50,
+   "condicion": "IF Brommapojkarna acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-16T13:08:27Z",
+   "t_captura_utc": "2026-08-16T13:08:27Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-16T13:09:13Z",
+   "segundos_transcurridos": 45,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "14.5 @ 1.83",
+   "linea_real_betano": 14.5,
+   "cuota_real_betano": 1.83,
+   "activo": true
+  }
  ]
 }
