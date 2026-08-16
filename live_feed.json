@@ -1,83 +1,130 @@
 {
- "generated_at_utc": "2026-08-16T18:59:54Z",
- "n_live_target": 4,
+ "generated_at_utc": "2026-08-16T19:02:54Z",
+ "n_live_target": 9,
  "matches": {
-  "16421053": {
-   "event_id": 16421053,
-   "league": "LaLiga",
-   "home": "Espanyol",
-   "away": "Levante UD",
-   "home_score": 3,
+  "15235431": {
+   "event_id": 15235431,
+   "league": "Brasileirão Betano",
+   "home": "Atlético Mineiro",
+   "away": "Grêmio",
+   "home_score": 0,
    "away_score": 0,
    "status_type": "inprogress",
-   "status_description": "2nd half",
-   "minute": 94,
+   "status_description": "1st half",
+   "minute": 2,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 54,
-     "away": 46
-    },
-    "xg": {
-     "label": "Expected Goals (xG)",
-     "home": 1.55,
-     "away": 0.22
-    },
-    "big_chances": {
-     "label": "Ocasiones claras",
-     "home": 2,
-     "away": 0
-    },
-    "shots": {
-     "label": "Remates totales",
-     "home": 16,
-     "away": 3
-    },
-    "corners": {
-     "label": "Corners",
-     "home": 0,
-     "away": 1
+     "home": 71,
+     "away": 29
     },
     "passes": {
      "label": "Pases",
-     "home": 456,
-     "away": 390
+     "home": 12,
+     "away": 5
     },
-    "yellow_cards": {
-     "label": "Tarjetas amarillas",
-     "home": 3,
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
      "away": 0
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 6,
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
      "away": 0
     }
    },
    "odds": {
     "btts": {
-     "yes": 13.0,
-     "no": 1.04,
-     "captured_at_utc": "2026-08-16T18:59:44Z"
+     "yes": 1.909,
+     "no": 1.909,
+     "captured_at_utc": "2026-08-16T19:02:34Z"
     },
     "corners_over_95": {
-     "over": 2.1,
-     "under": 1.667,
-     "captured_at_utc": "2026-08-16T18:59:44Z"
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-08-16T19:02:12Z"
     },
     "1x2": {
-     "home": 1.008,
-     "draw": 26.0,
-     "away": 101.0,
-     "captured_at_utc": "2026-08-16T18:59:44Z"
+     "home": 1.727,
+     "draw": 3.5,
+     "away": 5.5,
+     "captured_at_utc": "2026-08-16T19:02:34Z"
     },
     "goals_over_25": {
-     "over": 2.375,
-     "under": 1.571,
-     "captured_at_utc": "2026-08-16T18:59:44Z"
+     "over": 2.0,
+     "under": 1.8,
+     "captured_at_utc": "2026-08-16T19:02:12Z"
     }
    },
-   "updated_at_utc": "2026-08-16T18:59:54Z"
+   "updated_at_utc": "2026-08-16T19:02:54Z"
+  },
+  "15235421": {
+   "event_id": 15235421,
+   "league": "Brasileirão Betano",
+   "home": "Vasco da Gama",
+   "away": "Santos",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 93,
+     "away": 7
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 26,
+     "away": 2
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.909,
+     "no": 1.909,
+     "captured_at_utc": "2026-08-16T19:02:12Z"
+    },
+    "corners_over_95": {
+     "over": 1.727,
+     "under": 2.0,
+     "captured_at_utc": "2026-08-16T19:02:34Z"
+    },
+    "1x2": {
+     "home": 1.909,
+     "draw": 3.5,
+     "away": 4.0,
+     "captured_at_utc": "2026-08-16T19:02:12Z"
+    },
+    "goals_over_25": {
+     "over": 2.0,
+     "under": 1.8,
+     "captured_at_utc": "2026-08-16T19:02:34Z"
+    }
+   },
+   "updated_at_utc": "2026-08-16T19:02:54Z"
   },
   "16317883": {
    "event_id": 16317883,
@@ -135,26 +182,88 @@
     "btts": {
      "yes": 3.5,
      "no": 1.286,
-     "captured_at_utc": "2026-08-16T18:59:44Z"
+     "captured_at_utc": "2026-08-16T19:02:34Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-08-16T18:59:44Z"
+     "captured_at_utc": "2026-08-16T19:02:34Z"
     },
     "1x2": {
      "home": 2.4,
      "draw": 2.5,
      "away": 4.0,
-     "captured_at_utc": "2026-08-16T18:59:44Z"
+     "captured_at_utc": "2026-08-16T19:02:34Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.5,
-     "captured_at_utc": "2026-08-16T18:59:44Z"
+     "captured_at_utc": "2026-08-16T19:02:34Z"
     }
    },
-   "updated_at_utc": "2026-08-16T18:59:54Z"
+   "updated_at_utc": "2026-08-16T19:02:54Z"
+  },
+  "15353092": {
+   "event_id": 15353092,
+   "league": "Liga de Primera",
+   "home": "Cobresal",
+   "away": "Deportes Concepción",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 0,
+     "away": 100
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 0,
+     "away": 1
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.727,
+     "no": 2.0,
+     "captured_at_utc": "2026-08-16T19:02:34Z"
+    },
+    "corners_over_95": {
+     "over": 1.8,
+     "under": 1.909,
+     "captured_at_utc": "2026-08-16T19:02:34Z"
+    },
+    "1x2": {
+     "home": 2.3,
+     "draw": 3.25,
+     "away": 3.0,
+     "captured_at_utc": "2026-08-16T19:02:34Z"
+    },
+    "goals_over_25": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-08-16T19:02:34Z"
+    }
+   },
+   "updated_at_utc": "2026-08-16T19:02:54Z"
   },
   "15260870": {
    "event_id": 15260870,
@@ -165,7 +274,7 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 87,
+   "minute": 90,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -194,8 +303,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 452,
-     "away": 522
+     "home": 461,
+     "away": 526
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -210,28 +319,28 @@
    },
    "odds": {
     "btts": {
-     "yes": 5.5,
-     "no": 1.143,
-     "captured_at_utc": "2026-08-16T18:59:44Z"
+     "yes": 8.0,
+     "no": 1.083,
+     "captured_at_utc": "2026-08-16T19:02:34Z"
     },
     "1x2": {
-     "home": 1.1,
-     "draw": 7.0,
-     "away": 81.0,
-     "captured_at_utc": "2026-08-16T18:59:44Z"
+     "home": 1.071,
+     "draw": 9.0,
+     "away": 151.0,
+     "captured_at_utc": "2026-08-16T19:02:34Z"
     },
     "goals_over_25": {
      "over": 2.75,
      "under": 1.4,
-     "captured_at_utc": "2026-08-16T18:59:44Z"
+     "captured_at_utc": "2026-08-16T19:02:34Z"
     },
     "corners_over_95": {
      "over": 1.833,
      "under": 1.833,
-     "captured_at_utc": "2026-08-16T18:59:44Z"
+     "captured_at_utc": "2026-08-16T19:02:34Z"
     }
    },
-   "updated_at_utc": "2026-08-16T18:59:54Z"
+   "updated_at_utc": "2026-08-16T19:02:54Z"
   },
   "16667391": {
    "event_id": 16667391,
@@ -289,26 +398,89 @@
     "btts": {
      "yes": 1.8,
      "no": 1.95,
-     "captured_at_utc": "2026-08-16T18:59:44Z"
+     "captured_at_utc": "2026-08-16T19:02:34Z"
     },
     "1x2": {
      "home": 1.5,
      "draw": 3.6,
      "away": 8.5,
-     "captured_at_utc": "2026-08-16T18:59:44Z"
+     "captured_at_utc": "2026-08-16T19:02:34Z"
     },
     "corners_over_95": {
      "over": 1.8,
      "under": 1.909,
-     "captured_at_utc": "2026-08-16T18:59:44Z"
+     "captured_at_utc": "2026-08-16T19:02:34Z"
     },
     "goals_over_25": {
      "over": 2.625,
      "under": 1.444,
-     "captured_at_utc": "2026-08-16T18:59:44Z"
+     "captured_at_utc": "2026-08-16T19:02:34Z"
     }
    },
-   "updated_at_utc": "2026-08-16T18:59:54Z"
+   "updated_at_utc": "2026-08-16T19:02:54Z"
+  },
+  "15617730": {
+   "event_id": 15617730,
+   "league": "Brasileirão Série C",
+   "home": "Caxias",
+   "away": "Figueirense",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {},
+   "odds": {
+    "1x2": {
+     "home": 1.833,
+     "draw": 3.2,
+     "away": 4.75,
+     "captured_at_utc": "2026-08-16T19:02:34Z"
+    }
+   },
+   "updated_at_utc": "2026-08-16T19:02:54Z"
+  },
+  "15617734": {
+   "event_id": 15617734,
+   "league": "Brasileirão Série C",
+   "home": "Floresta",
+   "away": "Anápolis FC",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {},
+   "odds": {
+    "1x2": {
+     "home": 2.25,
+     "draw": 2.625,
+     "away": 3.4,
+     "captured_at_utc": "2026-08-16T19:02:34Z"
+    }
+   },
+   "updated_at_utc": "2026-08-16T19:02:54Z"
+  },
+  "15416293": {
+   "event_id": 15416293,
+   "league": "Liga de Ascenso",
+   "home": "Unión San Felipe",
+   "away": "CD Cobreloa",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {},
+   "odds": {
+    "1x2": {
+     "home": 2.75,
+     "draw": 3.2,
+     "away": 2.3,
+     "captured_at_utc": "2026-08-16T19:02:34Z"
+    }
+   },
+   "updated_at_utc": "2026-08-16T19:02:54Z"
   }
  }
 }
