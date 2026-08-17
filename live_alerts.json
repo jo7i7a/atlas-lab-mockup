@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-17T23:47:24Z",
+ "generated_at_utc": "2026-08-17T23:48:20Z",
  "n_alerts": 4,
  "alerts": [
   {
@@ -90,54 +90,6 @@
    "alert_id": "25fef7ea1372545c"
   },
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Vélez Sarsfield vs Defensa y Justicia (Liga Profesional de Fútbol)",
-   "match_id": "16671564",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 70,
-   "condicion": "Defensa y Justicia acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Defensa y Justicia",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6154,
-    "touches_home": 10,
-    "touches_away": 16,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 69,
-    "equipo_que_realizo_sustitucion": "Defensa y Justicia",
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-08-17T23:45:21Z",
-    "t_inicio_estimado_condicion": "2026-08-17T23:44:58Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-17T23:45:21Z",
-   "t_captura_utc": "2026-08-17T23:47:22Z",
-   "t_evaluacion_utc": "2026-08-17T23:47:22Z",
-   "t_generacion_utc": "2026-08-17T23:47:22Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-17T23:45:22Z",
-     "latencia_envio_ms": 841.9899940490723,
-     "error": null,
-     "message_id": 1403,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Vélez Sarsfield vs Defensa y Justicia\n⏱ Minuto: 70'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Defensa y Justicia acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Defensa y Justicia, min 69\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "039e6bd974096c33"
-  },
-  {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Vélez Sarsfield vs Defensa y Justicia (Liga Profesional de Fútbol)",
    "match_id": "16671564",
@@ -180,6 +132,54 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Vélez Sarsfield vs Defensa y Justicia\n⏱ Minuto: 70'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: presión combinada sostenida — xG 1.27, 20 tiros totales (8 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "5a187758a81d28f9"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Vélez Sarsfield vs Defensa y Justicia (Liga Profesional de Fútbol)",
+   "match_id": "16671564",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 71,
+   "condicion": "Defensa y Justicia acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Defensa y Justicia",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.6154,
+    "touches_home": 10,
+    "touches_away": 16,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 69,
+    "equipo_que_realizo_sustitucion": "Defensa y Justicia",
+    "marcador_en_el_momento": "1-0",
+    "t_primera_observacion_atlas": "2026-08-17T23:45:21Z",
+    "t_inicio_estimado_condicion": "2026-08-17T23:44:58Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-17T23:45:21Z",
+   "t_captura_utc": "2026-08-17T23:48:20Z",
+   "t_evaluacion_utc": "2026-08-17T23:48:20Z",
+   "t_generacion_utc": "2026-08-17T23:48:20Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-17T23:45:22Z",
+     "latencia_envio_ms": 841.9899940490723,
+     "error": null,
+     "message_id": 1403,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Vélez Sarsfield vs Defensa y Justicia\n⏱ Minuto: 71'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Defensa y Justicia acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Defensa y Justicia, min 69\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "039e6bd974096c33"
   }
  ]
 }
