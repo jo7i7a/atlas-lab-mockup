@@ -1,47 +1,52 @@
 {
- "generated_at_utc": "2026-08-17T19:12:53Z",
- "n_live_target": 2,
+ "generated_at_utc": "2026-08-17T19:22:17Z",
+ "n_live_target": 3,
  "matches": {
   "16421050": {
    "event_id": 16421050,
    "league": "LaLiga",
    "home": "Deportivo de A Coruña",
    "away": "Elche",
-   "home_score": 0,
+   "home_score": 1,
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 11,
+   "minute": 20,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 27,
-     "away": 73
+     "home": 30,
+     "away": 70
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0,
-     "away": 0.06
+     "home": 0.05,
+     "away": 0.64
     },
-    "shots": {
-     "label": "Remates totales",
+    "big_chances": {
+     "label": "Ocasiones claras",
      "home": 0,
      "away": 1
     },
+    "shots": {
+     "label": "Remates totales",
+     "home": 2,
+     "away": 3
+    },
     "corners": {
      "label": "Corners",
-     "home": 0,
+     "home": 1,
      "away": 1
     },
     "passes": {
      "label": "Pases",
-     "home": 35,
-     "away": 96
+     "home": 74,
+     "away": 175
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 0,
-     "away": 0
+     "home": 1,
+     "away": 1
     }
    },
    "odds": {
@@ -62,7 +67,47 @@
      "captured_at_utc": "2026-08-17T19:05:09Z"
     }
    },
-   "updated_at_utc": "2026-08-17T19:12:53Z"
+   "updated_at_utc": "2026-08-17T19:22:17Z"
+  },
+  "16450750": {
+   "event_id": 16450750,
+   "league": "Liga Portugal Betclic",
+   "home": "Casa Pia",
+   "away": "Benfica",
+   "home_score": 0,
+   "away_score": 1,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 6,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 31,
+     "away": 69
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0.06
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 2
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 17,
+     "away": 42
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 2
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-08-17T19:22:17Z"
   },
   "16667392": {
    "event_id": 16667392,
@@ -73,37 +118,37 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 71,
+   "minute": 80,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 43,
-     "away": 57
+     "home": 44,
+     "away": 56
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.15,
+     "home": 0.25,
      "away": 0.26
     },
     "shots": {
      "label": "Remates totales",
-     "home": 7,
+     "home": 8,
      "away": 7
     },
     "corners": {
      "label": "Corners",
      "home": 3,
-     "away": 4
+     "away": 5
     },
     "passes": {
      "label": "Pases",
-     "home": 230,
-     "away": 309
+     "home": 266,
+     "away": 332
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
      "home": 1,
-     "away": 1
+     "away": 3
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -129,7 +174,7 @@
      "captured_at_utc": "2026-08-17T19:05:09Z"
     }
    },
-   "updated_at_utc": "2026-08-17T19:12:53Z"
+   "updated_at_utc": "2026-08-17T19:22:17Z"
   }
  }
 }
