@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-17T00:12:31Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-17T00:13:31Z",
+ "n_alerts": 7,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Corinthians vs Cruzeiro (Brasileirão Betano)",
-   "match_id": "15235425",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 51,
-   "condicion": "Corinthians acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Corinthians",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6071,
-    "touches_home": 17,
-    "touches_away": 11,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 46,
-    "equipo_que_realizo_sustitucion": "Corinthians",
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-16T23:43:25Z",
-    "t_inicio_estimado_condicion": "2026-08-16T22:52:15Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T23:43:25Z",
-   "t_captura_utc": "2026-08-16T23:43:25Z",
-   "t_evaluacion_utc": "2026-08-16T23:43:26Z",
-   "t_generacion_utc": "2026-08-16T23:43:26Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T23:43:27Z",
-     "latencia_envio_ms": 853.1429767608643,
-     "error": null,
-     "message_id": 1353,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 2.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Corinthians vs Cruzeiro\n⏱ Minuto: 51'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Corinthians acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Corinthians, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "3334beb3292dc9d1"
-  },
   {
    "strategy_id": "L1",
    "match_label": "Central Córdoba vs Instituto De Córdoba (Liga Profesional de Fútbol)",
@@ -263,7 +215,7 @@
    "match_id": "16317884",
    "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
    "cuota_detectada": null,
-   "minuto": 52,
+   "minuto": 53,
    "condicion": "Expulsión de Atlético San Luis (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
    "confianza": "Media",
    "link": "",
@@ -275,9 +227,9 @@
     "total_rojas_partido": 1
    },
    "t_evento_real_utc": "2026-08-17T00:08:03Z",
-   "t_captura_utc": "2026-08-17T00:12:12Z",
-   "t_evaluacion_utc": "2026-08-17T00:12:15Z",
-   "t_generacion_utc": "2026-08-17T00:12:15Z",
+   "t_captura_utc": "2026-08-17T00:12:54Z",
+   "t_evaluacion_utc": "2026-08-17T00:13:14Z",
+   "t_generacion_utc": "2026-08-17T00:13:14Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -291,7 +243,7 @@
    },
    "latencia_total_seg": 14.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Club América vs Atlético San Luis\n⏱ Minuto: 52'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n🟥 Expulsado: Atlético San Luis\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
+   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Club América vs Atlético San Luis\n⏱ Minuto: 53'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n🟥 Expulsado: Atlético San Luis\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
    "evidencia": null,
    "alert_id": "a75a21664c06ab6d"
   },
@@ -301,7 +253,7 @@
    "match_id": "16671566",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 22,
+   "minuto": 23,
    "condicion": "Barracas Central acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -323,9 +275,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-17T00:10:27Z",
-   "t_captura_utc": "2026-08-17T00:12:31Z",
-   "t_evaluacion_utc": "2026-08-17T00:12:31Z",
-   "t_generacion_utc": "2026-08-17T00:12:31Z",
+   "t_captura_utc": "2026-08-17T00:13:31Z",
+   "t_evaluacion_utc": "2026-08-17T00:13:31Z",
+   "t_generacion_utc": "2026-08-17T00:13:31Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -339,7 +291,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Barracas Central vs Rosario Central\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Barracas Central acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Barracas Central vs Rosario Central\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Barracas Central acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "18d1450b130d80bf"
   }
