@@ -1,84 +1,7 @@
 {
- "generated_at_utc": "2026-08-17T17:21:19Z",
+ "generated_at_utc": "2026-08-17T17:28:34Z",
  "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "L1",
-   "match_label": "BK Häcken vs Halmstads BK (Allsvenskan)",
-   "match_id": "15272492",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 20,
-   "condicion": "4 córners totales antes del min 30 (4-0), BK Häcken presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Halmstads BK NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "BK Häcken"
-   },
-   "t_evento_real_utc": "2026-08-17T17:20:44Z",
-   "t_captura_utc": "2026-08-17T17:20:44Z",
-   "t_evaluacion_utc": "2026-08-17T17:21:09Z",
-   "t_generacion_utc": "2026-08-17T17:21:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-17T17:21:12Z",
-     "latencia_envio_ms": 3241.2490844726562,
-     "error": null,
-     "message_id": 1379,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 28.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ BK Häcken vs Halmstads BK\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: BK Häcken presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Halmstads BK no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "f8bf06b524ab1aa9"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "BK Häcken vs Halmstads BK (Allsvenskan)",
-   "match_id": "15272492",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 20,
-   "condicion": "4 córners totales antes del min 45 (4-0), BK Häcken presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Halmstads BK NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "BK Häcken",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-17T17:20:44Z",
-   "t_captura_utc": "2026-08-17T17:20:44Z",
-   "t_evaluacion_utc": "2026-08-17T17:21:13Z",
-   "t_generacion_utc": "2026-08-17T17:21:13Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-17T17:21:15Z",
-     "latencia_envio_ms": 1644.4847583770752,
-     "error": null,
-     "message_id": 1380,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 31.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ BK Häcken vs Halmstads BK\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: BK Häcken presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Halmstads BK no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "31c7260f4f03f972"
-  },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "BK Häcken vs Halmstads BK (Allsvenskan)",
@@ -123,6 +46,83 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ BK Häcken vs Halmstads BK\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: Halmstads BK — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "8ad84998831b96ba"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "BK Häcken vs Halmstads BK (Allsvenskan)",
+   "match_id": "15272492",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 27,
+   "condicion": "4 córners totales antes del min 30 (4-0), BK Häcken presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Halmstads BK NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "BK Häcken"
+   },
+   "t_evento_real_utc": "2026-08-17T17:20:44Z",
+   "t_captura_utc": "2026-08-17T17:20:44Z",
+   "t_evaluacion_utc": "2026-08-17T17:28:31Z",
+   "t_generacion_utc": "2026-08-17T17:28:31Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-17T17:21:12Z",
+     "latencia_envio_ms": 3241.2490844726562,
+     "error": null,
+     "message_id": 1379,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 28.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ BK Häcken vs Halmstads BK\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: BK Häcken presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Halmstads BK no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "f8bf06b524ab1aa9"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "BK Häcken vs Halmstads BK (Allsvenskan)",
+   "match_id": "15272492",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 27,
+   "condicion": "4 córners totales antes del min 45 (4-0), BK Häcken presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Halmstads BK NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "BK Häcken",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-17T17:20:44Z",
+   "t_captura_utc": "2026-08-17T17:20:44Z",
+   "t_evaluacion_utc": "2026-08-17T17:28:34Z",
+   "t_generacion_utc": "2026-08-17T17:28:34Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-17T17:21:15Z",
+     "latencia_envio_ms": 1644.4847583770752,
+     "error": null,
+     "message_id": 1380,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 31.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ BK Häcken vs Halmstads BK\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: BK Häcken presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Halmstads BK no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "31c7260f4f03f972"
   }
  ]
 }
