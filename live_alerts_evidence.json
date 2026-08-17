@@ -6109,5 +6109,26 @@
    "cuota_real_betano": 1.65,
    "activo": true
   }
+ ],
+ "7908e3bbbe11e06d": [
+  {
+   "alert_id": "7908e3bbbe11e06d",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Austin FC vs FC Dallas (MLS)",
+   "liga": "MLS",
+   "event_id": "15171642",
+   "minuto_alerta": 46,
+   "condicion": "FC Dallas acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-17T01:49:35Z",
+   "t_captura_utc": "2026-08-17T01:49:35Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-17T01:56:21Z",
+   "segundos_transcurridos": 392,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.0 @ 1.95",
+   "linea_real_betano": 9.0,
+   "cuota_real_betano": 1.95,
+   "activo": true
+  }
  ]
 }
