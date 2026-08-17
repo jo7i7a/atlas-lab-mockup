@@ -6170,5 +6170,26 @@
    "cuota_real_betano": 1.9,
    "activo": true
   }
+ ],
+ "a9b3e8196f4b81c0": [
+  {
+   "alert_id": "a9b3e8196f4b81c0",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Vélez Sarsfield vs Defensa y Justicia (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16671564",
+   "minuto_alerta": 16,
+   "condicion": "Defensa y Justicia domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-17T22:31:17Z",
+   "t_captura_utc": "2026-08-17T22:31:17Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-17T22:34:53Z",
+   "segundos_transcurridos": 155,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.5 @ 1.70",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 1.7,
+   "activo": true
+  }
  ]
 }
