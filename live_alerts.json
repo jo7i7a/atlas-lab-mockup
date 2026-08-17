@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-17T00:05:21Z",
- "n_alerts": 9,
+ "generated_at_utc": "2026-08-17T00:06:21Z",
+ "n_alerts": 8,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "New York City FC vs Philadelphia Union (MLS)",
-   "match_id": "15171647",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 62,
-   "condicion": "New York City FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "New York City FC",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6061,
-    "touches_home": 20,
-    "touches_away": 13,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 60,
-    "equipo_que_realizo_sustitucion": "New York City FC",
-    "marcador_en_el_momento": "2-1",
-    "t_primera_observacion_atlas": "2026-08-16T23:35:26Z",
-    "t_inicio_estimado_condicion": "2026-08-16T22:31:52Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-16T23:35:26Z",
-   "t_captura_utc": "2026-08-16T23:37:24Z",
-   "t_evaluacion_utc": "2026-08-16T23:37:24Z",
-   "t_generacion_utc": "2026-08-16T23:37:24Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-16T23:35:27Z",
-     "latencia_envio_ms": 797.3582744598389,
-     "error": null,
-     "message_id": 1350,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ New York City FC vs Philadelphia Union\n⏱ Minuto: 62'\n📊 Marcador: 2-1\n🏆 Liga: MLS\n\n📝 Motivo: New York City FC acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: New York City FC, min 60\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "012da3977641c219"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Central Córdoba vs Instituto De Córdoba (Liga Profesional de Fútbol)",
