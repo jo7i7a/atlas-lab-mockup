@@ -1,84 +1,7 @@
 {
- "generated_at_utc": "2026-08-17T20:27:32Z",
+ "generated_at_utc": "2026-08-17T20:28:15Z",
  "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "L1",
-   "match_label": "CA Lanús vs CA Independiente (Liga Profesional de Fútbol)",
-   "match_id": "16671560",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "4 córners totales antes del min 30 (3-1), CA Lanús presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿CA Independiente NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "CA Lanús"
-   },
-   "t_evento_real_utc": "2026-08-17T20:25:32Z",
-   "t_captura_utc": "2026-08-17T20:25:32Z",
-   "t_evaluacion_utc": "2026-08-17T20:26:31Z",
-   "t_generacion_utc": "2026-08-17T20:26:31Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-17T20:26:32Z",
-     "latencia_envio_ms": 849.9984741210938,
-     "error": null,
-     "message_id": 1382,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 60.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ CA Lanús vs CA Independiente\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: CA Lanús presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CA Independiente no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "3e66f584291477b3"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "CA Lanús vs CA Independiente (Liga Profesional de Fútbol)",
-   "match_id": "16671560",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "4 córners totales antes del min 45 (3-1), CA Lanús presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿CA Independiente NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "CA Lanús",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-17T20:25:32Z",
-   "t_captura_utc": "2026-08-17T20:25:32Z",
-   "t_evaluacion_utc": "2026-08-17T20:26:33Z",
-   "t_generacion_utc": "2026-08-17T20:26:33Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-17T20:26:34Z",
-     "latencia_envio_ms": 778.3572673797607,
-     "error": null,
-     "message_id": 1383,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 62.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CA Lanús vs CA Independiente\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: CA Lanús presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CA Independiente no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "f9b3b4eb6fef77cf"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Deportivo de A Coruña vs Elche (LaLiga)",
@@ -266,6 +189,83 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Deportivo de A Coruña vs Elche\n⏱ Minuto: 67'\n📊 Marcador: 1-0\n🏆 Liga: LaLiga\n\n📝 Motivo: presión combinada sostenida — xG 1.48, 15 tiros totales (7 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "603d62cf3bff1804"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "CA Lanús vs CA Independiente (Liga Profesional de Fútbol)",
+   "match_id": "16671560",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 26,
+   "condicion": "4 córners totales antes del min 30 (3-1), CA Lanús presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿CA Independiente NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "CA Lanús"
+   },
+   "t_evento_real_utc": "2026-08-17T20:25:32Z",
+   "t_captura_utc": "2026-08-17T20:25:32Z",
+   "t_evaluacion_utc": "2026-08-17T20:28:12Z",
+   "t_generacion_utc": "2026-08-17T20:28:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-17T20:26:32Z",
+     "latencia_envio_ms": 849.9984741210938,
+     "error": null,
+     "message_id": 1382,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 60.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ CA Lanús vs CA Independiente\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: CA Lanús presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CA Independiente no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "3e66f584291477b3"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "CA Lanús vs CA Independiente (Liga Profesional de Fútbol)",
+   "match_id": "16671560",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 26,
+   "condicion": "4 córners totales antes del min 45 (3-1), CA Lanús presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿CA Independiente NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "CA Lanús",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-17T20:25:32Z",
+   "t_captura_utc": "2026-08-17T20:25:32Z",
+   "t_evaluacion_utc": "2026-08-17T20:28:15Z",
+   "t_generacion_utc": "2026-08-17T20:28:15Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-17T20:26:34Z",
+     "latencia_envio_ms": 778.3572673797607,
+     "error": null,
+     "message_id": 1383,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 62.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CA Lanús vs CA Independiente\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: CA Lanús presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CA Independiente no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "f9b3b4eb6fef77cf"
   }
  ]
 }
