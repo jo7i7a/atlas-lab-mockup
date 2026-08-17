@@ -1,7 +1,64 @@
 {
- "generated_at_utc": "2026-08-17T18:59:54Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-08-17T19:02:54Z",
+ "n_live_target": 2,
  "matches": {
+  "16421050": {
+   "event_id": 16421050,
+   "league": "LaLiga",
+   "home": "Deportivo de A Coruña",
+   "away": "Elche",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 0,
+     "away": 100
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 0,
+     "away": 1
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.0,
+     "no": 1.75,
+     "captured_at_utc": "2026-08-17T19:02:52Z"
+    },
+    "1x2": {
+     "home": 2.1,
+     "draw": 3.1,
+     "away": 3.75,
+     "captured_at_utc": "2026-08-17T19:02:52Z"
+    },
+    "goals_over_25": {
+     "over": 2.3,
+     "under": 1.615,
+     "captured_at_utc": "2026-08-17T19:02:52Z"
+    }
+   },
+   "updated_at_utc": "2026-08-17T19:02:54Z"
+  },
   "16667392": {
    "event_id": 16667392,
    "league": "Liga Profesional de Fútbol",
@@ -11,12 +68,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 58,
+   "minute": 61,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 42,
-     "away": 58
+     "home": 43,
+     "away": 57
     },
     "xg": {
      "label": "Expected Goals (xG)",
@@ -35,8 +92,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 191,
-     "away": 270
+     "home": 203,
+     "away": 276
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -51,23 +108,23 @@
    },
    "odds": {
     "btts": {
-     "yes": 10.0,
-     "no": 1.062,
-     "captured_at_utc": "2026-08-17T18:59:23Z"
+     "yes": 13.0,
+     "no": 1.04,
+     "captured_at_utc": "2026-08-17T19:02:52Z"
     },
     "1x2": {
      "home": 5.5,
-     "draw": 1.727,
-     "away": 3.4,
-     "captured_at_utc": "2026-08-17T18:59:23Z"
+     "draw": 1.667,
+     "away": 3.6,
+     "captured_at_utc": "2026-08-17T19:02:52Z"
     },
     "corners_over_95": {
-     "over": 1.909,
-     "under": 1.8,
-     "captured_at_utc": "2026-08-17T18:59:23Z"
+     "over": 2.2,
+     "under": 1.615,
+     "captured_at_utc": "2026-08-17T19:02:52Z"
     }
    },
-   "updated_at_utc": "2026-08-17T18:59:54Z"
+   "updated_at_utc": "2026-08-17T19:02:54Z"
   }
  }
 }
