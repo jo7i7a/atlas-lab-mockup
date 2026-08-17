@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-17T19:35:56Z",
- "n_live_target": 3,
+ "generated_at_utc": "2026-08-17T19:38:56Z",
+ "n_live_target": 2,
  "matches": {
   "16421050": {
    "event_id": 16421050,
@@ -11,7 +11,7 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 34,
+   "minute": 37,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -56,23 +56,28 @@
    },
    "odds": {
     "btts": {
-     "yes": 2.05,
-     "no": 1.7,
-     "captured_at_utc": "2026-08-17T19:05:09Z"
+     "yes": 1.909,
+     "no": 1.909,
+     "captured_at_utc": "2026-08-17T19:38:22Z"
     },
     "1x2": {
-     "home": 2.2,
-     "draw": 3.0,
-     "away": 3.75,
-     "captured_at_utc": "2026-08-17T19:05:09Z"
+     "home": 1.4,
+     "draw": 4.0,
+     "away": 11.0,
+     "captured_at_utc": "2026-08-17T19:38:22Z"
     },
     "goals_over_25": {
-     "over": 2.625,
-     "under": 1.5,
-     "captured_at_utc": "2026-08-17T19:05:09Z"
+     "over": 2.375,
+     "under": 1.571,
+     "captured_at_utc": "2026-08-17T19:38:22Z"
+    },
+    "corners_over_95": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-08-17T19:38:22Z"
     }
    },
-   "updated_at_utc": "2026-08-17T19:35:56Z"
+   "updated_at_utc": "2026-08-17T19:38:56Z"
   },
   "16450750": {
    "event_id": 16450750,
@@ -83,7 +88,7 @@
    "away_score": 2,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 20,
+   "minute": 23,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -112,94 +117,34 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 85,
-     "away": 123
+     "home": 91,
+     "away": 134
     },
     "shots_on_target": {
      "label": "Remates al arco",
      "home": 0,
-     "away": 3
-    }
-   },
-   "odds": {},
-   "updated_at_utc": "2026-08-17T19:35:56Z"
-  },
-  "16667392": {
-   "event_id": 16667392,
-   "league": "Liga Profesional de Fútbol",
-   "home": "Estudiantes de Río Cuarto",
-   "away": "Atlético Tucumán",
-   "home_score": 0,
-   "away_score": 1,
-   "status_type": "inprogress",
-   "status_description": "2nd half",
-   "minute": 94,
-   "stats": {
-    "possession": {
-     "label": "Posesión",
-     "home": 49,
-     "away": 51
-    },
-    "xg": {
-     "label": "Expected Goals (xG)",
-     "home": 0.31,
-     "away": 0.34
-    },
-    "big_chances": {
-     "label": "Ocasiones claras",
-     "home": 0,
-     "away": 1
-    },
-    "shots": {
-     "label": "Remates totales",
-     "home": 10,
-     "away": 9
-    },
-    "corners": {
-     "label": "Corners",
-     "home": 3,
-     "away": 6
-    },
-    "passes": {
-     "label": "Pases",
-     "home": 339,
-     "away": 348
-    },
-    "yellow_cards": {
-     "label": "Tarjetas amarillas",
-     "home": 1,
-     "away": 4
-    },
-    "red_cards": {
-     "label": "Tarjetas rojas",
-     "home": 0,
-     "away": 1
-    },
-    "shots_on_target": {
-     "label": "Remates al arco",
-     "home": 1,
      "away": 3
     }
    },
    "odds": {
     "btts": {
-     "yes": 15.0,
-     "no": 1.03,
-     "captured_at_utc": "2026-08-17T19:05:09Z"
-    },
-    "1x2": {
-     "home": 5.5,
-     "draw": 1.615,
-     "away": 3.6,
-     "captured_at_utc": "2026-08-17T19:05:09Z"
+     "yes": 1.95,
+     "no": 1.8,
+     "captured_at_utc": "2026-08-17T19:38:22Z"
     },
     "corners_over_95": {
-     "over": 1.571,
-     "under": 2.25,
-     "captured_at_utc": "2026-08-17T19:05:09Z"
+     "over": 2.0,
+     "under": 1.727,
+     "captured_at_utc": "2026-08-17T19:38:22Z"
+    },
+    "1x2": {
+     "home": 51.0,
+     "draw": 21.0,
+     "away": 1.015,
+     "captured_at_utc": "2026-08-17T19:38:22Z"
     }
    },
-   "updated_at_utc": "2026-08-17T19:35:56Z"
+   "updated_at_utc": "2026-08-17T19:38:56Z"
   }
  }
 }
