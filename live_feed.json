@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-17T03:23:54Z",
+ "generated_at_utc": "2026-08-17T03:26:54Z",
  "n_live_target": 2,
  "matches": {
   "16317887": {
@@ -11,12 +11,17 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 7,
+   "minute": 10,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 74,
-     "away": 26
+     "home": 63,
+     "away": 37
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0.04
     },
     "corners": {
      "label": "Corners",
@@ -25,8 +30,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 39,
-     "away": 15
+     "home": 54,
+     "away": 31
     },
     "shots": {
      "label": "Remates totales",
@@ -35,11 +40,6 @@
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 0,
-     "away": 0
-    },
-    "xg": {
-     "label": "Expected Goals (xG)",
      "home": 0,
      "away": 0
     }
@@ -67,7 +67,7 @@
      "captured_at_utc": "2026-08-17T03:23:20Z"
     }
    },
-   "updated_at_utc": "2026-08-17T03:23:54Z"
+   "updated_at_utc": "2026-08-17T03:26:54Z"
   },
   "15171648": {
    "event_id": 15171648,
@@ -78,7 +78,7 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 41,
+   "minute": 44,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -88,12 +88,12 @@
     "xg": {
      "label": "Expected Goals (xG)",
      "home": 0.1,
-     "away": 0.3
+     "away": 0.37
     },
     "shots": {
      "label": "Remates totales",
      "home": 2,
-     "away": 7
+     "away": 8
     },
     "corners": {
      "label": "Corners",
@@ -102,8 +102,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 194,
-     "away": 205
+     "home": 215,
+     "away": 230
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -134,7 +134,7 @@
      "captured_at_utc": "2026-08-17T03:23:20Z"
     }
    },
-   "updated_at_utc": "2026-08-17T03:23:54Z"
+   "updated_at_utc": "2026-08-17T03:26:54Z"
   }
  }
 }
