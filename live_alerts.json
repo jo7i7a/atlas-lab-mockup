@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-17T00:39:20Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-17T00:40:46Z",
+ "n_alerts": 1,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -45,54 +45,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Club América vs Atlético San Luis\n⏱ Minuto: 64'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: presión combinada sostenida — xG 2.06, 26 tiros totales (7 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "7e1866d4b2e3c8a5"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Barracas Central vs Rosario Central (Liga Profesional de Fútbol)",
-   "match_id": "16671566",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "Barracas Central acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Barracas Central",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.8182,
-    "touches_home": 9,
-    "touches_away": 2,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-17T00:10:27Z",
-    "t_inicio_estimado_condicion": "2026-08-17T00:10:49Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-17T00:10:27Z",
-   "t_captura_utc": "2026-08-17T00:36:20Z",
-   "t_evaluacion_utc": "2026-08-17T00:36:21Z",
-   "t_generacion_utc": "2026-08-17T00:36:21Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-17T00:10:28Z",
-     "latencia_envio_ms": 811.7682933807373,
-     "error": null,
-     "message_id": 1362,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Barracas Central vs Rosario Central\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Barracas Central acumula 82% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "18d1450b130d80bf"
   }
  ]
 }
