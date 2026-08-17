@@ -59,6 +59,20 @@ try:
     picks_performance = _settlement.performance_summary()
 except Exception:
     picks_performance = None
+# 2026-08-16, Tipster ATLAS -- Mejora de interfaz/analisis del Track Record
+# (Objetivo 8): el registro completo, SOLO LECTURA -- nunca se reescribe
+# aqui ni en ningun otro paso de este cambio. Le da a index.html el detalle
+# individual (partido/mercado/EV/estado/roi_pct por pick) que
+# performance_summary() no expone (esa funcion solo agrega, no lista).
+try:
+    picks_history = []
+    with open(ROOT + r"\tipster_picks_history.jsonl", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                picks_history.append(json.loads(line))
+except FileNotFoundError:
+    picks_history = []
 
 GOV_SHORT = {"CERTIFICADO": "CERT", "PROMOVIDO": "PROM", "BASELINE": "BASE", "EXPERIMENTAL": "EXP", "NO_DISPONIBLE": "ND"}
 
@@ -161,8 +175,11 @@ out.append("/* Picks ATLAS (2026-08-16, ATLAS LAB Edificio 5 exclusivamente) -- 
 out.append("   activos (candidato con Value que paso el filtro de gobernanza, ver")
 out.append("   atlas_lab_mockup/tipster/picks.py) + rentabilidad historica agregada sobre")
 out.append("   TODO el registro inmutable (tipster_picks_history.jsonl). null si el paso")
-out.append("   12 no corrio todavia. */")
-out.append("const PICKS_ATLAS_DATA = " + json.dumps({"estado": picks_estado, "performance": picks_performance}, ensure_ascii=False) + ";")
+out.append("   12 no corrio todavia. 'history' (agregado 2026-08-16, mejora de interfaz/")
+out.append("   analisis del Track Record) es el registro completo leido SOLO LECTURA --")
+out.append("   nunca se reescribe aqui, index.html lo usa para Resultados de hoy/")
+out.append("   Rentabilidad por mercado/Rentabilidad del filtro actual/Historial de Picks. */")
+out.append("const PICKS_ATLAS_DATA = " + json.dumps({"estado": picks_estado, "performance": picks_performance, "history": picks_history}, ensure_ascii=False) + ";")
 
 frag = "\n".join(out)
 with open(WORK + r"\match_data_fragment.js", "w", encoding="utf-8") as f:
