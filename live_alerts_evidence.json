@@ -6191,5 +6191,26 @@
    "cuota_real_betano": 1.7,
    "activo": true
   }
+ ],
+ "e0e4955e1655284e": [
+  {
+   "alert_id": "e0e4955e1655284e",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Vélez Sarsfield vs Defensa y Justicia (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16671564",
+   "minuto_alerta": 20,
+   "condicion": "Vélez Sarsfield acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-17T22:36:18Z",
+   "t_captura_utc": "2026-08-17T22:36:18Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-17T22:36:40Z",
+   "segundos_transcurridos": 20,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.5 @ 1.75",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 1.75,
+   "activo": true
+  }
  ]
 }
