@@ -1,5 +1,51 @@
 {
- "generated_at_utc": "2026-08-17T04:20:27Z",
- "n_alerts": 0,
- "alerts": []
+ "generated_at_utc": "2026-08-17T17:17:26Z",
+ "n_alerts": 1,
+ "alerts": [
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "BK Häcken vs Halmstads BK (Allsvenskan)",
+   "match_id": "15272492",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 16,
+   "condicion": "Halmstads BK domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Halmstads BK",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-17T17:16:15Z",
+   "t_captura_utc": "2026-08-17T17:16:15Z",
+   "t_evaluacion_utc": "2026-08-17T17:17:25Z",
+   "t_generacion_utc": "2026-08-17T17:17:25Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-17T17:17:26Z",
+     "latencia_envio_ms": 1225.935935974121,
+     "error": null,
+     "message_id": 1378,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 71.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ BK Häcken vs Halmstads BK\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: Halmstads BK — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "8ad84998831b96ba"
+  }
+ ]
 }
