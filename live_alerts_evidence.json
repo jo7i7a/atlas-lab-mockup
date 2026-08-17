@@ -6048,5 +6048,66 @@
    "cuota_real_betano": 1.87,
    "activo": true
   }
+ ],
+ "0838124d2096f95f": [
+  {
+   "alert_id": "0838124d2096f95f",
+   "strategy_id": "L1",
+   "match_label": "Santos Laguna vs CD Guadalajara (Liga MX, Apertura)",
+   "liga": "Liga MX, Apertura",
+   "event_id": "16317885",
+   "minuto_alerta": 29,
+   "condicion": "5 córners totales antes del min 30 (3-2), Santos Laguna presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿CD Guadalajara NO está en bloque bajo?",
+   "t_evento_real_utc": "2026-08-17T01:41:19Z",
+   "t_captura_utc": "2026-08-17T01:41:19Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-17T01:42:11Z",
+   "segundos_transcurridos": 2,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "12.0 @ 1.87",
+   "linea_real_betano": 12.0,
+   "cuota_real_betano": 1.87,
+   "activo": true
+  }
+ ],
+ "67d49cbe346ef74c": [
+  {
+   "alert_id": "67d49cbe346ef74c",
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Santos Laguna vs CD Guadalajara (Liga MX, Apertura)",
+   "liga": "Liga MX, Apertura",
+   "event_id": "16317885",
+   "minuto_alerta": 29,
+   "condicion": "5 córners totales antes del min 45 (3-2), Santos Laguna presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿CD Guadalajara NO está en bloque bajo?",
+   "t_evento_real_utc": "2026-08-17T01:41:19Z",
+   "t_captura_utc": "2026-08-17T01:41:19Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-17T01:42:38Z",
+   "segundos_transcurridos": 27,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.5 @ 1.33\n11.5 @ 1.65",
+   "linea_real_betano": 10.5,
+   "cuota_real_betano": 1.33,
+   "activo": true
+  },
+  {
+   "alert_id": "67d49cbe346ef74c",
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Santos Laguna vs CD Guadalajara (Liga MX, Apertura)",
+   "liga": "Liga MX, Apertura",
+   "event_id": "16317885",
+   "minuto_alerta": 29,
+   "condicion": "5 córners totales antes del min 45 (3-2), Santos Laguna presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿CD Guadalajara NO está en bloque bajo?",
+   "t_evento_real_utc": "2026-08-17T01:41:19Z",
+   "t_captura_utc": "2026-08-17T01:41:19Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-17T01:42:38Z",
+   "segundos_transcurridos": 27,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.5 @ 1.33\n11.5 @ 1.65",
+   "linea_real_betano": 11.5,
+   "cuota_real_betano": 1.65,
+   "activo": true
+  }
  ]
 }
