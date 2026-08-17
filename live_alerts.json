@@ -1,14 +1,91 @@
 {
- "generated_at_utc": "2026-08-17T01:41:18Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-08-17T01:45:49Z",
+ "n_alerts": 3,
  "alerts": [
+  {
+   "strategy_id": "L1",
+   "match_label": "Santos Laguna vs CD Guadalajara (Liga MX, Apertura)",
+   "match_id": "16317885",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 29,
+   "condicion": "5 córners totales antes del min 30 (3-2), Santos Laguna presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿CD Guadalajara NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "Santos Laguna"
+   },
+   "t_evento_real_utc": "2026-08-17T01:41:19Z",
+   "t_captura_utc": "2026-08-17T01:41:19Z",
+   "t_evaluacion_utc": "2026-08-17T01:42:09Z",
+   "t_generacion_utc": "2026-08-17T01:42:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-17T01:42:09Z",
+     "latencia_envio_ms": 815.8254623413086,
+     "error": null,
+     "message_id": 1365,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 50.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Santos Laguna vs CD Guadalajara\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Santos Laguna presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CD Guadalajara no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "0838124d2096f95f"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Santos Laguna vs CD Guadalajara (Liga MX, Apertura)",
+   "match_id": "16317885",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 29,
+   "condicion": "5 córners totales antes del min 45 (3-2), Santos Laguna presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿CD Guadalajara NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "Santos Laguna",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-17T01:41:19Z",
+   "t_captura_utc": "2026-08-17T01:41:19Z",
+   "t_evaluacion_utc": "2026-08-17T01:42:11Z",
+   "t_generacion_utc": "2026-08-17T01:42:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-17T01:42:11Z",
+     "latencia_envio_ms": 783.5583686828613,
+     "error": null,
+     "message_id": 1366,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 52.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Santos Laguna vs CD Guadalajara\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Santos Laguna presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CD Guadalajara no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "67d49cbe346ef74c"
+  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Santos Laguna vs CD Guadalajara (Liga MX, Apertura)",
    "match_id": "16317885",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 28,
+   "minuto": 33,
    "condicion": "CD Guadalajara acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -17,8 +94,8 @@
    "extra": {
     "equipo_dominante": "CD Guadalajara",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.8571,
-    "touches_home": 1,
+    "ratio_presion_territorial": 0.75,
+    "touches_home": 2,
     "touches_away": 6,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
@@ -30,9 +107,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-17T01:41:17Z",
-   "t_captura_utc": "2026-08-17T01:41:17Z",
-   "t_evaluacion_utc": "2026-08-17T01:41:17Z",
-   "t_generacion_utc": "2026-08-17T01:41:17Z",
+   "t_captura_utc": "2026-08-17T01:45:49Z",
+   "t_evaluacion_utc": "2026-08-17T01:45:49Z",
+   "t_generacion_utc": "2026-08-17T01:45:49Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -46,7 +123,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Santos Laguna vs CD Guadalajara\n⏱ Minuto: 28'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CD Guadalajara acumula 86% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Santos Laguna vs CD Guadalajara\n⏱ Minuto: 33'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CD Guadalajara acumula 75% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "f5650c04595abf93"
   }
