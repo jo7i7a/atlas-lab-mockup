@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-18T20:06:20Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-18T20:11:32Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -77,6 +77,45 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Fenerbahçe vs Olympique Lyonnais\n⏱ Minuto: 48'\n📊 Marcador: 1-1\n🏆 Liga: UEFA Champions League\n\n🚩 Córners 1er tiempo:\nLocal: 3\nVisita: 0\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "be7a14b3944438c9"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "GNK Dinamo Zagreb vs Viking FK (UEFA Champions League)",
+   "match_id": "16707702",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "4 córners totales antes del min 45 (3-1), GNK Dinamo Zagreb presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Viking FK NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "GNK Dinamo Zagreb",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-18T19:49:18Z",
+   "t_captura_utc": "2026-08-18T19:49:18Z",
+   "t_evaluacion_utc": "2026-08-18T20:07:10Z",
+   "t_generacion_utc": "2026-08-18T20:07:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-18T20:07:11Z",
+     "latencia_envio_ms": 835.3426456451416,
+     "error": null,
+     "message_id": 1449,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1073.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ GNK Dinamo Zagreb vs Viking FK\n⏱ Minuto: 45'\n📊 Marcador: 2-2\n🏆 Liga: UEFA Champions League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: GNK Dinamo Zagreb presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Viking FK no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "ea04ba6e2f97d6a4"
   }
  ]
 }
