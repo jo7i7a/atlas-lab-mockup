@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-18T01:33:21Z",
+ "generated_at_utc": "2026-08-18T01:34:22Z",
  "n_alerts": 8,
  "alerts": [
   {
@@ -183,45 +183,6 @@
   },
   {
    "strategy_id": "L1-SHADOW",
-   "match_label": "Club Necaxa vs Club León (Liga MX, Apertura)",
-   "match_id": "16317888",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 32,
-   "condicion": "5 córners totales antes del min 45 (3-2), Club Necaxa presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Club León NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 2,
-    "equipo_presiona": "Club Necaxa",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-18T01:23:53Z",
-   "t_captura_utc": "2026-08-18T01:23:53Z",
-   "t_evaluacion_utc": "2026-08-18T01:33:10Z",
-   "t_generacion_utc": "2026-08-18T01:33:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-18T01:24:12Z",
-     "latencia_envio_ms": 768.042802810669,
-     "error": null,
-     "message_id": 1421,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 19.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Club Necaxa vs Club León\n⏱ Minuto: 32'\n📊 Marcador: 0-1\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Club Necaxa presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Club León no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "55435d0a2ac6e245"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
    "match_label": "Gimnasia y Esgrima Mendoza vs CA Talleres (Liga Profesional de Fútbol)",
    "match_id": "16671561",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
@@ -260,12 +221,51 @@
    "alert_id": "1b7c193e8a42b50b"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Club Necaxa vs Club León (Liga MX, Apertura)",
+   "match_id": "16317888",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 33,
+   "condicion": "5 córners totales antes del min 45 (3-2), Club Necaxa presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Club León NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "Club Necaxa",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-18T01:23:53Z",
+   "t_captura_utc": "2026-08-18T01:23:53Z",
+   "t_evaluacion_utc": "2026-08-18T01:34:10Z",
+   "t_generacion_utc": "2026-08-18T01:34:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-18T01:24:12Z",
+     "latencia_envio_ms": 768.042802810669,
+     "error": null,
+     "message_id": 1421,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 19.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Club Necaxa vs Club León\n⏱ Minuto: 33'\n📊 Marcador: 0-1\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Club Necaxa presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Club León no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "55435d0a2ac6e245"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Club Necaxa vs Club León (Liga MX, Apertura)",
    "match_id": "16317888",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 32,
+   "minuto": 33,
    "condicion": "Club Necaxa acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -274,8 +274,8 @@
    "extra": {
     "equipo_dominante": "Club Necaxa",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.625,
-    "touches_home": 10,
+    "ratio_presion_territorial": 0.6471,
+    "touches_home": 11,
     "touches_away": 6,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
@@ -287,9 +287,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-18T01:33:19Z",
-   "t_captura_utc": "2026-08-18T01:33:19Z",
-   "t_evaluacion_utc": "2026-08-18T01:33:19Z",
-   "t_generacion_utc": "2026-08-18T01:33:19Z",
+   "t_captura_utc": "2026-08-18T01:34:21Z",
+   "t_evaluacion_utc": "2026-08-18T01:34:21Z",
+   "t_generacion_utc": "2026-08-18T01:34:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -303,7 +303,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Necaxa vs Club León\n⏱ Minuto: 32'\n📊 Marcador: 0-1\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Club Necaxa acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Necaxa vs Club León\n⏱ Minuto: 33'\n📊 Marcador: 0-1\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Club Necaxa acumula 65% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "2a2fc62f7573fee9"
   },
@@ -313,7 +313,7 @@
    "match_id": "16671561",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 46,
    "condicion": "CA Talleres acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -335,9 +335,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-18T01:16:22Z",
-   "t_captura_utc": "2026-08-18T01:33:21Z",
-   "t_evaluacion_utc": "2026-08-18T01:33:21Z",
-   "t_generacion_utc": "2026-08-18T01:33:21Z",
+   "t_captura_utc": "2026-08-18T01:34:21Z",
+   "t_evaluacion_utc": "2026-08-18T01:34:22Z",
+   "t_generacion_utc": "2026-08-18T01:34:22Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -351,7 +351,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Gimnasia y Esgrima Mendoza vs CA Talleres\n⏱ Minuto: 45'\n📊 Marcador: 2-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: CA Talleres acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CA Talleres, min -5\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Gimnasia y Esgrima Mendoza vs CA Talleres\n⏱ Minuto: 46'\n📊 Marcador: 2-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: CA Talleres acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CA Talleres, min -5\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "b0342725dead835c"
   }
