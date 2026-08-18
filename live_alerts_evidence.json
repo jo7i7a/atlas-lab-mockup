@@ -6359,5 +6359,26 @@
    "cuota_real_betano": 1.65,
    "activo": true
   }
+ ],
+ "7de454a5e5fc885f": [
+  {
+   "alert_id": "7de454a5e5fc885f",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Club Necaxa vs Club León (Liga MX, Apertura)",
+   "liga": "Liga MX, Apertura",
+   "event_id": "16317888",
+   "minuto_alerta": 27,
+   "condicion": "Club Necaxa acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-18T01:28:16Z",
+   "t_captura_utc": "2026-08-18T01:28:16Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-18T01:28:47Z",
+   "segundos_transcurridos": 30,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "14.5 @ 1.88",
+   "linea_real_betano": 14.5,
+   "cuota_real_betano": 1.88,
+   "activo": true
+  }
  ]
 }
