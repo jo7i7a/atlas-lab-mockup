@@ -6380,5 +6380,66 @@
    "cuota_real_betano": 1.88,
    "activo": true
   }
+ ],
+ "2a2fc62f7573fee9": [
+  {
+   "alert_id": "2a2fc62f7573fee9",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Club Necaxa vs Club León (Liga MX, Apertura)",
+   "liga": "Liga MX, Apertura",
+   "event_id": "16317888",
+   "minuto_alerta": 32,
+   "condicion": "Club Necaxa acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-18T01:33:19Z",
+   "t_captura_utc": "2026-08-18T01:33:19Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-18T01:35:00Z",
+   "segundos_transcurridos": 100,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "15.0 @ 1.80",
+   "linea_real_betano": 15.0,
+   "cuota_real_betano": 1.8,
+   "activo": true
+  }
+ ],
+ "1b7c193e8a42b50b": [
+  {
+   "alert_id": "1b7c193e8a42b50b",
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Gimnasia y Esgrima Mendoza vs CA Talleres (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16671561",
+   "minuto_alerta": 45,
+   "condicion": "4 córners totales antes del min 45 (4-0), Gimnasia y Esgrima Mendoza presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿CA Talleres NO está en bloque bajo?",
+   "t_evento_real_utc": "2026-08-18T01:18:22Z",
+   "t_captura_utc": "2026-08-18T01:18:22Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-18T01:35:49Z",
+   "segundos_transcurridos": 158,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "8.5 @ 1.50\n9.5 @ 2.10",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 1.5,
+   "activo": true
+  },
+  {
+   "alert_id": "1b7c193e8a42b50b",
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Gimnasia y Esgrima Mendoza vs CA Talleres (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16671561",
+   "minuto_alerta": 45,
+   "condicion": "4 córners totales antes del min 45 (4-0), Gimnasia y Esgrima Mendoza presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿CA Talleres NO está en bloque bajo?",
+   "t_evento_real_utc": "2026-08-18T01:18:22Z",
+   "t_captura_utc": "2026-08-18T01:18:22Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-18T01:35:49Z",
+   "segundos_transcurridos": 158,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "8.5 @ 1.50\n9.5 @ 2.10",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 2.1,
+   "activo": true
+  }
  ]
 }
