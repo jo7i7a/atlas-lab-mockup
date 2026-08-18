@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-08-18T02:24:14Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-18T02:25:14Z",
+ "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "L3",
-   "match_label": "Gimnasia y Esgrima Mendoza vs CA Talleres (Liga Profesional de Fútbol)",
-   "match_id": "16671561",
-   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
-   "cuota_detectada": null,
-   "minuto": 75,
-   "condicion": "Expulsión de Gimnasia y Esgrima Mendoza (roja #2 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_expulsado": "Gimnasia y Esgrima Mendoza",
-    "marcador_al_detectar": "3-0",
-    "total_rojas_partido": 2
-   },
-   "t_evento_real_utc": "2026-08-18T01:54:56Z",
-   "t_captura_utc": "2026-08-18T02:03:13Z",
-   "t_evaluacion_utc": "2026-08-18T02:03:15Z",
-   "t_generacion_utc": "2026-08-18T02:03:15Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-18T01:55:19Z",
-     "latencia_envio_ms": 1060.987949371338,
-     "error": null,
-     "message_id": 1432,
-     "chat_id": -5219979824
-    }
-   },
-   "latencia_total_seg": 23.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Gimnasia y Esgrima Mendoza vs CA Talleres\n⏱ Minuto: 75'\n📊 Marcador: 3-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🟥 Expulsado: Gimnasia y Esgrima Mendoza\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
-   "evidencia": null,
-   "alert_id": "787cc233a6b52d78"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Gimnasia y Esgrima Mendoza vs CA Talleres (Liga Profesional de Fútbol)",
@@ -94,7 +56,7 @@
    "match_id": "16317888",
    "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
    "cuota_detectada": null,
-   "minuto": 64,
+   "minuto": 65,
    "condicion": "Expulsión de Club León (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
    "confianza": "Media",
    "link": "",
@@ -102,13 +64,13 @@
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
     "equipo_expulsado": "Club León",
-    "marcador_al_detectar": "0-1",
+    "marcador_al_detectar": "1-1",
     "total_rojas_partido": 1
    },
    "t_evento_real_utc": "2026-08-18T02:20:25Z",
-   "t_captura_utc": "2026-08-18T02:24:12Z",
-   "t_evaluacion_utc": "2026-08-18T02:24:14Z",
-   "t_generacion_utc": "2026-08-18T02:24:14Z",
+   "t_captura_utc": "2026-08-18T02:24:53Z",
+   "t_evaluacion_utc": "2026-08-18T02:25:14Z",
+   "t_generacion_utc": "2026-08-18T02:25:14Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -122,7 +84,7 @@
    },
    "latencia_total_seg": 49.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Club Necaxa vs Club León\n⏱ Minuto: 64'\n📊 Marcador: 0-1\n🏆 Liga: Liga MX, Apertura\n\n🟥 Expulsado: Club León\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
+   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Club Necaxa vs Club León\n⏱ Minuto: 65'\n📊 Marcador: 1-1\n🏆 Liga: Liga MX, Apertura\n\n🟥 Expulsado: Club León\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
    "evidencia": null,
    "alert_id": "9eabf15fffef2e76"
   }
