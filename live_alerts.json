@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-18T01:03:20Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-18T01:04:31Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -53,7 +53,7 @@
    "match_id": "15353094",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 31,
+   "minuto": 32,
    "condicion": "Palestino acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -75,9 +75,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-18T00:52:27Z",
-   "t_captura_utc": "2026-08-18T01:03:19Z",
-   "t_evaluacion_utc": "2026-08-18T01:03:20Z",
-   "t_generacion_utc": "2026-08-18T01:03:20Z",
+   "t_captura_utc": "2026-08-18T01:04:22Z",
+   "t_evaluacion_utc": "2026-08-18T01:04:29Z",
+   "t_generacion_utc": "2026-08-18T01:04:29Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -91,9 +91,57 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Palestino vs Huachipato\n⏱ Minuto: 31'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Palestino acumula 93% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Palestino vs Huachipato\n⏱ Minuto: 32'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Palestino acumula 93% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "39f345798efa2717"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Gimnasia y Esgrima Mendoza vs CA Talleres (Liga Profesional de Fútbol)",
+   "match_id": "16671561",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 35,
+   "condicion": "CA Talleres acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "CA Talleres",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.625,
+    "touches_home": 3,
+    "touches_away": 5,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": -5,
+    "equipo_que_realizo_sustitucion": "CA Talleres",
+    "marcador_en_el_momento": "2-0",
+    "t_primera_observacion_atlas": "2026-08-18T01:04:30Z",
+    "t_inicio_estimado_condicion": "2026-08-18T01:03:28Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-18T01:04:30Z",
+   "t_captura_utc": "2026-08-18T01:04:30Z",
+   "t_evaluacion_utc": "2026-08-18T01:04:30Z",
+   "t_generacion_utc": "2026-08-18T01:04:30Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-18T01:04:31Z",
+     "latencia_envio_ms": 812.5884532928467,
+     "error": null,
+     "message_id": 1413,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Gimnasia y Esgrima Mendoza vs CA Talleres\n⏱ Minuto: 35'\n📊 Marcador: 2-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: CA Talleres acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CA Talleres, min -5\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "31a80a67e797aab1"
   }
  ]
 }
