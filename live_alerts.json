@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-18T23:15:23Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-18T23:16:22Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -96,51 +96,12 @@
    "alert_id": "8d76234c3bdd74e7"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Recoleta FC vs Boca Juniors (CONMEBOL Sudamericana)",
-   "match_id": "16253371",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "5 córners totales antes del min 45 (2-3), Boca Juniors presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Recoleta FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 2,
-    "corners_away": 3,
-    "equipo_presiona": "Boca Juniors",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-18T22:46:10Z",
-   "t_captura_utc": "2026-08-18T22:46:10Z",
-   "t_evaluacion_utc": "2026-08-18T23:04:11Z",
-   "t_generacion_utc": "2026-08-18T23:04:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-18T23:04:12Z",
-     "latencia_envio_ms": 868.5722351074219,
-     "error": null,
-     "message_id": 1460,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1082.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Recoleta FC vs Boca Juniors\n⏱ Minuto: 45'\n📊 Marcador: 0-2\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Boca Juniors presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Recoleta FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "b51bf2b544d4aedb"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Londrina vs Atlético Goianiense (Brasileirão Série B)",
    "match_id": "15526231",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 45,
    "condicion": "Atlético Goianiense acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -162,9 +123,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-18T23:15:20Z",
-   "t_captura_utc": "2026-08-18T23:15:20Z",
-   "t_evaluacion_utc": "2026-08-18T23:15:21Z",
-   "t_generacion_utc": "2026-08-18T23:15:21Z",
+   "t_captura_utc": "2026-08-18T23:16:20Z",
+   "t_evaluacion_utc": "2026-08-18T23:16:21Z",
+   "t_generacion_utc": "2026-08-18T23:16:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -178,7 +139,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Londrina vs Atlético Goianiense\n⏱ Minuto: 44'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Atlético Goianiense acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Londrina vs Atlético Goianiense\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Atlético Goianiense acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "2329aee54e418121"
   },
@@ -188,7 +149,7 @@
    "match_id": "16253371",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 57,
+   "minuto": 58,
    "condicion": "Boca Juniors acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -201,7 +162,7 @@
     "touches_home": 6,
     "touches_away": 10,
     "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 46,
+    "minuto_ultima_sustitucion": 57,
     "equipo_que_realizo_sustitucion": "Boca Juniors",
     "marcador_en_el_momento": "0-3",
     "t_primera_observacion_atlas": "2026-08-18T23:12:21Z",
@@ -210,9 +171,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-18T23:12:21Z",
-   "t_captura_utc": "2026-08-18T23:15:23Z",
-   "t_evaluacion_utc": "2026-08-18T23:15:23Z",
-   "t_generacion_utc": "2026-08-18T23:15:23Z",
+   "t_captura_utc": "2026-08-18T23:16:21Z",
+   "t_evaluacion_utc": "2026-08-18T23:16:22Z",
+   "t_generacion_utc": "2026-08-18T23:16:22Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -226,7 +187,7 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Recoleta FC vs Boca Juniors\n⏱ Minuto: 57'\n📊 Marcador: 0-3\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Boca Juniors acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Boca Juniors, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Recoleta FC vs Boca Juniors\n⏱ Minuto: 58'\n📊 Marcador: 0-3\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Boca Juniors acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Boca Juniors, min 57\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "42d32574b0b54ceb"
   }
