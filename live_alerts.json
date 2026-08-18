@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-18T01:54:22Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-18T01:55:26Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -135,6 +135,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Palestino vs Huachipato\n⏱ Minuto: 52'\n📊 Marcador: 3-1\n🏆 Liga: Liga de Primera\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "5370271aed41db53"
+  },
+  {
+   "strategy_id": "L3",
+   "match_label": "Gimnasia y Esgrima Mendoza vs CA Talleres (Liga Profesional de Fútbol)",
+   "match_id": "16671561",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
+   "cuota_detectada": null,
+   "minuto": 67,
+   "condicion": "Expulsión de Gimnasia y Esgrima Mendoza (roja #2 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_expulsado": "Gimnasia y Esgrima Mendoza",
+    "marcador_al_detectar": "3-0",
+    "total_rojas_partido": 2
+   },
+   "t_evento_real_utc": "2026-08-18T01:54:56Z",
+   "t_captura_utc": "2026-08-18T01:54:56Z",
+   "t_evaluacion_utc": "2026-08-18T01:55:18Z",
+   "t_generacion_utc": "2026-08-18T01:55:18Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-18T01:55:19Z",
+     "latencia_envio_ms": 1060.987949371338,
+     "error": null,
+     "message_id": 1432,
+     "chat_id": -5219979824
+    }
+   },
+   "latencia_total_seg": 23.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Gimnasia y Esgrima Mendoza vs CA Talleres\n⏱ Minuto: 67'\n📊 Marcador: 3-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🟥 Expulsado: Gimnasia y Esgrima Mendoza\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
+   "evidencia": null,
+   "alert_id": "787cc233a6b52d78"
   }
  ]
 }
