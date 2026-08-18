@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-18T00:29:54Z",
- "n_live_target": 4,
+ "generated_at_utc": "2026-08-18T00:32:54Z",
+ "n_live_target": 5,
  "matches": {
   "15235434": {
    "event_id": 15235434,
@@ -11,7 +11,7 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 70,
+   "minute": 73,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -20,7 +20,7 @@
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 1.34,
+     "home": 1.37,
      "away": 0.25
     },
     "big_chances": {
@@ -30,7 +30,7 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 9,
+     "home": 10,
      "away": 8
     },
     "corners": {
@@ -40,8 +40,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 286,
-     "away": 387
+     "home": 300,
+     "away": 399
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -56,40 +56,50 @@
    },
    "odds": {
     "btts": {
-     "yes": 3.75,
-     "no": 1.25,
-     "captured_at_utc": "2026-08-18T00:29:38Z"
+     "yes": 4.0,
+     "no": 1.222,
+     "captured_at_utc": "2026-08-18T00:32:44Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-08-18T00:29:38Z"
+     "captured_at_utc": "2026-08-18T00:32:44Z"
     },
     "1x2": {
      "home": 1.125,
      "draw": 6.5,
      "away": 41.0,
-     "captured_at_utc": "2026-08-18T00:29:38Z"
+     "captured_at_utc": "2026-08-18T00:32:44Z"
     },
     "goals_over_25": {
      "over": 3.0,
      "under": 1.4,
-     "captured_at_utc": "2026-08-18T00:29:38Z"
+     "captured_at_utc": "2026-08-18T00:32:44Z"
     }
    },
-   "updated_at_utc": "2026-08-18T00:29:54Z"
+   "updated_at_utc": "2026-08-18T00:32:54Z"
   },
-  "16671561": {
-   "event_id": 16671561,
-   "league": "Liga Profesional de Fútbol",
-   "home": "Gimnasia y Esgrima Mendoza",
-   "away": "CA Talleres",
+  "15353094": {
+   "event_id": 15353094,
+   "league": "Liga de Primera",
+   "home": "Palestino",
+   "away": "Huachipato",
    "home_score": 0,
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 0,
+   "minute": 1,
    "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 44,
+     "away": 56
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 7,
+     "away": 9
+    },
     "shots": {
      "label": "Remates totales",
      "home": 0,
@@ -106,8 +116,92 @@
      "away": 0
     }
    },
-   "odds": {},
-   "updated_at_utc": "2026-08-18T00:29:54Z"
+   "odds": {
+    "btts": {
+     "yes": 1.667,
+     "no": 2.1,
+     "captured_at_utc": "2026-08-18T00:32:44Z"
+    },
+    "corners_over_95": {
+     "over": 1.8,
+     "under": 1.909,
+     "captured_at_utc": "2026-08-18T00:32:44Z"
+    },
+    "1x2": {
+     "home": 1.615,
+     "draw": 3.75,
+     "away": 4.75,
+     "captured_at_utc": "2026-08-18T00:32:44Z"
+    },
+    "goals_over_25": {
+     "over": 1.615,
+     "under": 2.2,
+     "captured_at_utc": "2026-08-18T00:32:44Z"
+    }
+   },
+   "updated_at_utc": "2026-08-18T00:32:54Z"
+  },
+  "16671561": {
+   "event_id": 16671561,
+   "league": "Liga Profesional de Fútbol",
+   "home": "Gimnasia y Esgrima Mendoza",
+   "away": "CA Talleres",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 3,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 37,
+     "away": 63
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 14,
+     "away": 24
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.1,
+     "no": 1.667,
+     "captured_at_utc": "2026-08-18T00:32:44Z"
+    },
+    "corners_over_95": {
+     "over": 2.1,
+     "under": 1.667,
+     "captured_at_utc": "2026-08-18T00:32:44Z"
+    },
+    "1x2": {
+     "home": 3.1,
+     "draw": 2.875,
+     "away": 2.6,
+     "captured_at_utc": "2026-08-18T00:32:44Z"
+    },
+    "goals_over_25": {
+     "over": 2.375,
+     "under": 1.533,
+     "captured_at_utc": "2026-08-18T00:32:44Z"
+    }
+   },
+   "updated_at_utc": "2026-08-18T00:32:54Z"
   },
   "15617723": {
    "event_id": 15617723,
@@ -118,17 +212,17 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 68,
+   "minute": 71,
    "stats": {},
    "odds": {
     "1x2": {
      "home": 1.015,
      "draw": 21.0,
      "away": 41.0,
-     "captured_at_utc": "2026-08-18T00:29:38Z"
+     "captured_at_utc": "2026-08-18T00:32:44Z"
     }
    },
-   "updated_at_utc": "2026-08-18T00:29:54Z"
+   "updated_at_utc": "2026-08-18T00:32:54Z"
   },
   "15617726": {
    "event_id": 15617726,
@@ -136,20 +230,20 @@
    "home": "Guarani",
    "away": "Ypiranga FC",
    "home_score": 2,
-   "away_score": 1,
+   "away_score": 2,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 64,
+   "minute": 67,
    "stats": {},
    "odds": {
     "1x2": {
-     "home": 1.167,
-     "draw": 5.5,
-     "away": 17.0,
-     "captured_at_utc": "2026-08-18T00:29:38Z"
+     "home": 2.75,
+     "draw": 1.909,
+     "away": 6.0,
+     "captured_at_utc": "2026-08-18T00:32:44Z"
     }
    },
-   "updated_at_utc": "2026-08-18T00:29:54Z"
+   "updated_at_utc": "2026-08-18T00:32:54Z"
   }
  }
 }
