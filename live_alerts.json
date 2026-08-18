@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-18T23:13:22Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-18T23:14:22Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -140,55 +140,7 @@
    "match_id": "16253371",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 47,
-   "condicion": "Boca Juniors acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Boca Juniors",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6154,
-    "touches_home": 5,
-    "touches_away": 8,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 46,
-    "equipo_que_realizo_sustitucion": "Boca Juniors",
-    "marcador_en_el_momento": "0-2",
-    "t_primera_observacion_atlas": "2026-08-18T22:44:18Z",
-    "t_inicio_estimado_condicion": "2026-08-18T22:20:44Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-18T22:44:18Z",
-   "t_captura_utc": "2026-08-18T23:05:37Z",
-   "t_evaluacion_utc": "2026-08-18T23:05:38Z",
-   "t_generacion_utc": "2026-08-18T23:05:38Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-18T22:44:19Z",
-     "latencia_envio_ms": 841.8428897857666,
-     "error": null,
-     "message_id": 1457,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Recoleta FC vs Boca Juniors\n⏱ Minuto: 47'\n📊 Marcador: 0-2\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Boca Juniors acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Boca Juniors, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "257a0360b2b487ce"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Recoleta FC vs Boca Juniors (CONMEBOL Sudamericana)",
-   "match_id": "16253371",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 55,
+   "minuto": 56,
    "condicion": "Boca Juniors acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -210,9 +162,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-18T23:12:21Z",
-   "t_captura_utc": "2026-08-18T23:13:22Z",
-   "t_evaluacion_utc": "2026-08-18T23:13:22Z",
-   "t_generacion_utc": "2026-08-18T23:13:22Z",
+   "t_captura_utc": "2026-08-18T23:14:21Z",
+   "t_evaluacion_utc": "2026-08-18T23:14:22Z",
+   "t_generacion_utc": "2026-08-18T23:14:22Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -226,7 +178,7 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Recoleta FC vs Boca Juniors\n⏱ Minuto: 55'\n📊 Marcador: 0-3\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Boca Juniors acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Boca Juniors, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Recoleta FC vs Boca Juniors\n⏱ Minuto: 56'\n📊 Marcador: 0-3\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Boca Juniors acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Boca Juniors, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "42d32574b0b54ceb"
   }
