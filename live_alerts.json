@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-18T01:29:18Z",
+ "generated_at_utc": "2026-08-18T01:30:10Z",
  "n_alerts": 6,
  "alerts": [
   {
@@ -144,83 +144,6 @@
    "alert_id": "0a99e9ef944263e7"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "Club Necaxa vs Club León (Liga MX, Apertura)",
-   "match_id": "16317888",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 28,
-   "condicion": "5 córners totales antes del min 30 (3-2), Club Necaxa presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Club León NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 2,
-    "equipo_presiona": "Club Necaxa"
-   },
-   "t_evento_real_utc": "2026-08-18T01:23:53Z",
-   "t_captura_utc": "2026-08-18T01:23:53Z",
-   "t_evaluacion_utc": "2026-08-18T01:29:09Z",
-   "t_generacion_utc": "2026-08-18T01:29:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-18T01:24:10Z",
-     "latencia_envio_ms": 900.1023769378662,
-     "error": null,
-     "message_id": 1420,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 17.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Club Necaxa vs Club León\n⏱ Minuto: 28'\n📊 Marcador: 0-1\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Club Necaxa presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Club León no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "aa0c8bfe279b994e"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Club Necaxa vs Club León (Liga MX, Apertura)",
-   "match_id": "16317888",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 28,
-   "condicion": "5 córners totales antes del min 45 (3-2), Club Necaxa presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Club León NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 2,
-    "equipo_presiona": "Club Necaxa",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-18T01:23:53Z",
-   "t_captura_utc": "2026-08-18T01:23:53Z",
-   "t_evaluacion_utc": "2026-08-18T01:29:10Z",
-   "t_generacion_utc": "2026-08-18T01:29:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-18T01:24:12Z",
-     "latencia_envio_ms": 768.042802810669,
-     "error": null,
-     "message_id": 1421,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 19.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Club Necaxa vs Club León\n⏱ Minuto: 28'\n📊 Marcador: 0-1\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Club Necaxa presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Club León no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "55435d0a2ac6e245"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Club Necaxa vs Club León (Liga MX, Apertura)",
    "match_id": "16317888",
@@ -267,6 +190,83 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Necaxa vs Club León\n⏱ Minuto: 28'\n📊 Marcador: 0-1\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Club Necaxa acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "7de454a5e5fc885f"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "Club Necaxa vs Club León (Liga MX, Apertura)",
+   "match_id": "16317888",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 29,
+   "condicion": "5 córners totales antes del min 30 (3-2), Club Necaxa presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Club León NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "Club Necaxa"
+   },
+   "t_evento_real_utc": "2026-08-18T01:23:53Z",
+   "t_captura_utc": "2026-08-18T01:23:53Z",
+   "t_evaluacion_utc": "2026-08-18T01:30:09Z",
+   "t_generacion_utc": "2026-08-18T01:30:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-18T01:24:10Z",
+     "latencia_envio_ms": 900.1023769378662,
+     "error": null,
+     "message_id": 1420,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 17.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Club Necaxa vs Club León\n⏱ Minuto: 29'\n📊 Marcador: 0-1\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Club Necaxa presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Club León no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "aa0c8bfe279b994e"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Club Necaxa vs Club León (Liga MX, Apertura)",
+   "match_id": "16317888",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 29,
+   "condicion": "5 córners totales antes del min 45 (3-2), Club Necaxa presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Club León NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "Club Necaxa",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-18T01:23:53Z",
+   "t_captura_utc": "2026-08-18T01:23:53Z",
+   "t_evaluacion_utc": "2026-08-18T01:30:10Z",
+   "t_generacion_utc": "2026-08-18T01:30:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-18T01:24:12Z",
+     "latencia_envio_ms": 768.042802810669,
+     "error": null,
+     "message_id": 1421,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 19.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Club Necaxa vs Club León\n⏱ Minuto: 29'\n📊 Marcador: 0-1\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Club Necaxa presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Club León no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "55435d0a2ac6e245"
   }
  ]
 }
