@@ -6296,5 +6296,26 @@
    "cuota_real_betano": 1.52,
    "activo": true
   }
+ ],
+ "34dfe94c2d554ce8": [
+  {
+   "alert_id": "34dfe94c2d554ce8",
+   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "Internacional vs Remo (Brasileirão Betano)",
+   "liga": "Brasileirão Betano",
+   "event_id": "15235434",
+   "minuto_alerta": 69,
+   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-18T00:28:21Z",
+   "t_captura_utc": "2026-08-18T00:28:21Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-18T00:32:25Z",
+   "segundos_transcurridos": 242,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "1.5 @ 1.95",
+   "linea_real_betano": 1.5,
+   "cuota_real_betano": 1.95,
+   "activo": true
+  }
  ]
 }
