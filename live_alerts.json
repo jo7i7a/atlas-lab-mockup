@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-08-18T00:34:20Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-18T00:35:20Z",
+ "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Internacional vs Remo (Brasileirão Betano)",
-   "match_id": "15235434",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-18T00:04:30Z",
-   "t_captura_utc": "2026-08-18T00:04:30Z",
-   "t_evaluacion_utc": "2026-08-18T00:11:15Z",
-   "t_generacion_utc": "2026-08-18T00:11:15Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-18T00:05:15Z",
-     "latencia_envio_ms": 830.5773735046387,
-     "error": null,
-     "message_id": 1404,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 45.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Internacional vs Remo\n⏱ Minuto: 52'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "737b1bb9ba81cfcf"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Internacional vs Remo (Brasileirão Betano)",
