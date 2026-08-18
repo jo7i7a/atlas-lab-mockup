@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-18T00:44:19Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-18T00:46:20Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -89,6 +89,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Internacional vs Remo\n⏱ Minuto: 69'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: presión combinada sostenida — xG 1.63, 18 tiros totales (4 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "34dfe94c2d554ce8"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Gimnasia y Esgrima Mendoza vs CA Talleres (Liga Profesional de Fútbol)",
+   "match_id": "16671561",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "Gimnasia y Esgrima Mendoza domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Gimnasia y Esgrima Mendoza",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 1,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-18T00:45:58Z",
+   "t_captura_utc": "2026-08-18T00:45:58Z",
+   "t_evaluacion_utc": "2026-08-18T00:46:19Z",
+   "t_generacion_utc": "2026-08-18T00:46:19Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-18T00:46:20Z",
+     "latencia_envio_ms": 843.1358337402344,
+     "error": null,
+     "message_id": 1411,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 22.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Gimnasia y Esgrima Mendoza vs CA Talleres\n⏱ Minuto: 17'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Gimnasia y Esgrima Mendoza — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "1ca4ffefac4ea070"
   }
  ]
 }
