@@ -1,148 +1,7 @@
 {
- "generated_at_utc": "2026-08-18T22:46:01Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-18T22:50:48Z",
+ "n_alerts": 5,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Recoleta FC vs Boca Juniors (CONMEBOL Sudamericana)",
-   "match_id": "16253371",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Boca Juniors domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Boca Juniors",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 0,
-    "remates_home": 1,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-18T22:20:03Z",
-   "t_captura_utc": "2026-08-18T22:20:03Z",
-   "t_evaluacion_utc": "2026-08-18T22:25:31Z",
-   "t_generacion_utc": "2026-08-18T22:25:31Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-18T22:20:24Z",
-     "latencia_envio_ms": 849.8649597167969,
-     "error": null,
-     "message_id": 1451,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 21.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Recoleta FC vs Boca Juniors\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Boca Juniors — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "11cef6eefd1be838"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Independiente Rivadavia vs Fluminense (CONMEBOL Libertadores)",
-   "match_id": "16253163",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 26,
-   "condicion": "Fluminense acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Fluminense",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 1,
-    "touches_away": 2,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 12,
-    "equipo_que_realizo_sustitucion": "Fluminense",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-18T22:20:26Z",
-    "t_inicio_estimado_condicion": "2026-08-18T22:20:44Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-18T22:20:26Z",
-   "t_captura_utc": "2026-08-18T22:26:16Z",
-   "t_evaluacion_utc": "2026-08-18T22:26:17Z",
-   "t_generacion_utc": "2026-08-18T22:26:17Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-18T22:20:27Z",
-     "latencia_envio_ms": 847.3403453826904,
-     "error": null,
-     "message_id": 1452,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Independiente Rivadavia vs Fluminense\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Fluminense acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Fluminense, min 12\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "c49dd2641b9cd56d"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Recoleta FC vs Boca Juniors (CONMEBOL Sudamericana)",
-   "match_id": "16253371",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 26,
-   "condicion": "Boca Juniors acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Boca Juniors",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 2,
-    "touches_away": 4,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-18T22:20:27Z",
-    "t_inicio_estimado_condicion": "2026-08-18T22:20:44Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-18T22:20:27Z",
-   "t_captura_utc": "2026-08-18T22:26:17Z",
-   "t_evaluacion_utc": "2026-08-18T22:26:17Z",
-   "t_generacion_utc": "2026-08-18T22:26:17Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-18T22:20:29Z",
-     "latencia_envio_ms": 804.0709495544434,
-     "error": null,
-     "message_id": 1453,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 2.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Recoleta FC vs Boca Juniors\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Boca Juniors acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "e10b7718c84bc1e7"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Recoleta FC vs Boca Juniors (CONMEBOL Sudamericana)",
@@ -325,6 +184,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Recoleta FC vs Boca Juniors\n⏱ Minuto: 45'\n📊 Marcador: 0-2\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Boca Juniors acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "257a0360b2b487ce"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Londrina vs Atlético Goianiense (Brasileirão Série B)",
+   "match_id": "15526231",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 19,
+   "condicion": "Londrina domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Londrina",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 1,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-18T22:48:42Z",
+   "t_captura_utc": "2026-08-18T22:48:42Z",
+   "t_evaluacion_utc": "2026-08-18T22:50:47Z",
+   "t_generacion_utc": "2026-08-18T22:50:47Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-18T22:50:48Z",
+     "latencia_envio_ms": 844.9306488037109,
+     "error": null,
+     "message_id": 1458,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 126.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Londrina vs Atlético Goianiense\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Londrina — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "4f1ba9a6dc62c71d"
   }
  ]
 }
