@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-18T23:48:58Z",
+ "generated_at_utc": "2026-08-18T23:51:53Z",
  "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Londrina vs Atlético Goianiense (Brasileirão Série B)",
-   "match_id": "15526231",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 59,
-   "condicion": "Atlético Goianiense acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Atlético Goianiense",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6154,
-    "touches_home": 10,
-    "touches_away": 16,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 59,
-    "equipo_que_realizo_sustitucion": "Atlético Goianiense",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-18T23:48:53Z",
-    "t_inicio_estimado_condicion": "2026-08-18T22:52:03Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-18T23:48:53Z",
-   "t_captura_utc": "2026-08-18T23:48:53Z",
-   "t_evaluacion_utc": "2026-08-18T23:48:54Z",
-   "t_generacion_utc": "2026-08-18T23:48:54Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-18T23:48:55Z",
-     "latencia_envio_ms": 798.6857891082764,
-     "error": null,
-     "message_id": 1464,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 2.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Londrina vs Atlético Goianiense\n⏱ Minuto: 59'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Atlético Goianiense acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Atlético Goianiense, min 59\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "72a8bace4a85cae9"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Londrina vs Atlético Goianiense (Brasileirão Série B)",
@@ -93,6 +45,54 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Londrina vs Atlético Goianiense\n⏱ Minuto: 59'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 2.37, 24 tiros totales (5 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "56539ae5961b61dd"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Londrina vs Atlético Goianiense (Brasileirão Série B)",
+   "match_id": "15526231",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 62,
+   "condicion": "Atlético Goianiense acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Atlético Goianiense",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.6154,
+    "touches_home": 10,
+    "touches_away": 16,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 59,
+    "equipo_que_realizo_sustitucion": "Atlético Goianiense",
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-18T23:48:53Z",
+    "t_inicio_estimado_condicion": "2026-08-18T22:52:03Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-18T23:48:53Z",
+   "t_captura_utc": "2026-08-18T23:51:52Z",
+   "t_evaluacion_utc": "2026-08-18T23:51:53Z",
+   "t_generacion_utc": "2026-08-18T23:51:53Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-18T23:48:55Z",
+     "latencia_envio_ms": 798.6857891082764,
+     "error": null,
+     "message_id": 1464,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 2.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Londrina vs Atlético Goianiense\n⏱ Minuto: 62'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Atlético Goianiense acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Atlético Goianiense, min 59\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "72a8bace4a85cae9"
   }
  ]
 }
