@@ -1,44 +1,51 @@
 {
- "generated_at_utc": "2026-08-18T04:21:14Z",
+ "generated_at_utc": "2026-08-18T19:19:21Z",
  "n_alerts": 1,
  "alerts": [
   {
-   "strategy_id": "A2",
-   "match_label": "CF Pachuca vs Club Puebla (Liga MX, Apertura)",
-   "match_id": "16317889",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "GNK Dinamo Zagreb vs Viking FK (UEFA Champions League)",
+   "match_id": "16707702",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "minuto": 17,
+   "condicion": "Viking FK domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
    "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "corners_1t_home": 3,
-    "corners_1t_away": 0,
-    "corners_1t_total": 3
+    "equipo_dominante": "Viking FK",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 2,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
    },
-   "t_evento_real_utc": "2026-08-18T04:14:14Z",
-   "t_captura_utc": "2026-08-18T04:14:14Z",
-   "t_evaluacion_utc": "2026-08-18T04:21:14Z",
-   "t_generacion_utc": "2026-08-18T04:21:14Z",
+   "t_evento_real_utc": "2026-08-18T19:18:21Z",
+   "t_captura_utc": "2026-08-18T19:18:21Z",
+   "t_evaluacion_utc": "2026-08-18T19:19:20Z",
+   "t_generacion_utc": "2026-08-18T19:19:20Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
      "estado": "OK",
-     "t_envio_utc": "2026-08-18T04:15:54Z",
-     "latencia_envio_ms": 811.5711212158203,
+     "t_envio_utc": "2026-08-18T19:19:21Z",
+     "latencia_envio_ms": 822.2019672393799,
      "error": null,
-     "message_id": 1438,
+     "message_id": 1439,
      "chat_id": -5314130598
     }
    },
-   "latencia_total_seg": 100.0,
+   "latencia_total_seg": 60.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ CF Pachuca vs Club Puebla\n⏱ Minuto: 52'\n📊 Marcador: 1-2\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners 1er tiempo:\nLocal: 3\nVisita: 0\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ GNK Dinamo Zagreb vs Viking FK\n⏱ Minuto: 17'\n📊 Marcador: 2-0\n🏆 Liga: UEFA Champions League\n\n📝 Motivo: Viking FK — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
-   "alert_id": "db3b98d03622cac6"
+   "alert_id": "12d2497d68de2fe0"
   }
  ]
 }
