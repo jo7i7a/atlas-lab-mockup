@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-18T01:15:20Z",
+ "generated_at_utc": "2026-08-18T01:16:23Z",
  "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Gimnasia y Esgrima Mendoza vs CA Talleres (Liga Profesional de Fútbol)",
-   "match_id": "16671561",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Gimnasia y Esgrima Mendoza domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Gimnasia y Esgrima Mendoza",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 1,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-18T00:45:58Z",
-   "t_captura_utc": "2026-08-18T00:45:58Z",
-   "t_evaluacion_utc": "2026-08-18T00:54:28Z",
-   "t_generacion_utc": "2026-08-18T00:54:28Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-18T00:46:20Z",
-     "latencia_envio_ms": 843.1358337402344,
-     "error": null,
-     "message_id": 1411,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 22.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Gimnasia y Esgrima Mendoza vs CA Talleres\n⏱ Minuto: 25'\n📊 Marcador: 2-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Gimnasia y Esgrima Mendoza — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "1ca4ffefac4ea070"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Gimnasia y Esgrima Mendoza vs CA Talleres (Liga Profesional de Fútbol)",
@@ -101,7 +56,7 @@
    "match_id": "15353094",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "Palestino acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -123,9 +78,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-18T00:52:27Z",
-   "t_captura_utc": "2026-08-18T01:15:20Z",
-   "t_evaluacion_utc": "2026-08-18T01:15:20Z",
-   "t_generacion_utc": "2026-08-18T01:15:20Z",
+   "t_captura_utc": "2026-08-18T01:16:21Z",
+   "t_evaluacion_utc": "2026-08-18T01:16:21Z",
+   "t_generacion_utc": "2026-08-18T01:16:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -139,9 +94,57 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Palestino vs Huachipato\n⏱ Minuto: 43'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Palestino acumula 84% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Palestino, min 36\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Palestino vs Huachipato\n⏱ Minuto: 44'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Palestino acumula 84% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Palestino, min 36\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "39f345798efa2717"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Gimnasia y Esgrima Mendoza vs CA Talleres (Liga Profesional de Fútbol)",
+   "match_id": "16671561",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 47,
+   "condicion": "CA Talleres acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "CA Talleres",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.625,
+    "touches_home": 3,
+    "touches_away": 5,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": -5,
+    "equipo_que_realizo_sustitucion": "CA Talleres",
+    "marcador_en_el_momento": "2-0",
+    "t_primera_observacion_atlas": "2026-08-18T01:16:22Z",
+    "t_inicio_estimado_condicion": "2026-08-18T01:03:28Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-18T01:16:22Z",
+   "t_captura_utc": "2026-08-18T01:16:22Z",
+   "t_evaluacion_utc": "2026-08-18T01:16:22Z",
+   "t_generacion_utc": "2026-08-18T01:16:22Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-18T01:16:23Z",
+     "latencia_envio_ms": 859.0455055236816,
+     "error": null,
+     "message_id": 1414,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Gimnasia y Esgrima Mendoza vs CA Talleres\n⏱ Minuto: 47'\n📊 Marcador: 2-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: CA Talleres acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CA Talleres, min -5\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "b0342725dead835c"
   }
  ]
 }
