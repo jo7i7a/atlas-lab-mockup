@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-19T01:36:23Z",
+ "generated_at_utc": "2026-08-19T01:37:26Z",
  "n_alerts": 8,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Deportes Tolima vs Independiente del Valle (CONMEBOL Libertadores)",
-   "match_id": "16799741",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 51,
-   "condicion": "Deportes Tolima acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Deportes Tolima",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6429,
-    "touches_home": 9,
-    "touches_away": 5,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 34,
-    "equipo_que_realizo_sustitucion": "Deportes Tolima",
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-19T01:10:24Z",
-    "t_inicio_estimado_condicion": "2026-08-19T01:09:53Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-19T01:10:24Z",
-   "t_captura_utc": "2026-08-19T01:21:23Z",
-   "t_evaluacion_utc": "2026-08-19T01:21:24Z",
-   "t_generacion_utc": "2026-08-19T01:21:24Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T01:10:25Z",
-     "latencia_envio_ms": 849.6716022491455,
-     "error": null,
-     "message_id": 1479,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportes Tolima vs Independiente del Valle\n⏱ Minuto: 51'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Deportes Tolima acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Deportes Tolima, min 34\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "98f2ddf0fe3741ff"
-  },
   {
    "strategy_id": "L2-SHADOW",
    "match_label": "Náutico vs Ceará (Brasileirão Série B)",
@@ -275,7 +227,7 @@
    "match_id": "16253159",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 47,
+   "minuto": 48,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -288,8 +240,8 @@
    },
    "t_evento_real_utc": "2026-08-19T01:34:15Z",
    "t_captura_utc": "2026-08-19T01:34:15Z",
-   "t_evaluacion_utc": "2026-08-19T01:36:18Z",
-   "t_generacion_utc": "2026-08-19T01:36:18Z",
+   "t_evaluacion_utc": "2026-08-19T01:37:21Z",
+   "t_generacion_utc": "2026-08-19T01:37:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -303,7 +255,7 @@
    },
    "latencia_total_seg": 101.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Universidad Católica vs Estudiantes de La Plata\n⏱ Minuto: 47'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Universidad Católica vs Estudiantes de La Plata\n⏱ Minuto: 48'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "30e74aa485236e15"
   },
@@ -313,7 +265,7 @@
    "match_id": "16253387",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 46,
+   "minuto": 47,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -326,8 +278,8 @@
    },
    "t_evento_real_utc": "2026-08-19T01:36:10Z",
    "t_captura_utc": "2026-08-19T01:36:10Z",
-   "t_evaluacion_utc": "2026-08-19T01:36:18Z",
-   "t_generacion_utc": "2026-08-19T01:36:18Z",
+   "t_evaluacion_utc": "2026-08-19T01:37:21Z",
+   "t_generacion_utc": "2026-08-19T01:37:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -341,9 +293,57 @@
    },
    "latencia_total_seg": 9.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ São Paulo vs Bolívar\n⏱ Minuto: 46'\n📊 Marcador: 1-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ São Paulo vs Bolívar\n⏱ Minuto: 47'\n📊 Marcador: 1-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "fa8d1e629be3e760"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Deportes Tolima vs Independiente del Valle (CONMEBOL Libertadores)",
+   "match_id": "16799741",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "Deportes Tolima acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Deportes Tolima",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6429,
+    "touches_home": 9,
+    "touches_away": 5,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 46,
+    "equipo_que_realizo_sustitucion": "Deportes Tolima",
+    "marcador_en_el_momento": "0-1",
+    "t_primera_observacion_atlas": "2026-08-19T01:10:24Z",
+    "t_inicio_estimado_condicion": "2026-08-19T01:09:53Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-19T01:10:24Z",
+   "t_captura_utc": "2026-08-19T01:37:25Z",
+   "t_evaluacion_utc": "2026-08-19T01:37:26Z",
+   "t_generacion_utc": "2026-08-19T01:37:26Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-19T01:10:25Z",
+     "latencia_envio_ms": 849.6716022491455,
+     "error": null,
+     "message_id": 1479,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "EXPIRADA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportes Tolima vs Independiente del Valle\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Deportes Tolima acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Deportes Tolima, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "98f2ddf0fe3741ff"
   }
  ]
 }
