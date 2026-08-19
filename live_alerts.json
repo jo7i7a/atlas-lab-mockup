@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-19T01:40:27Z",
- "n_alerts": 6,
+ "generated_at_utc": "2026-08-19T01:41:29Z",
+ "n_alerts": 7,
  "alerts": [
   {
    "strategy_id": "L2-SHADOW",
@@ -175,11 +175,49 @@
   },
   {
    "strategy_id": "A2",
+   "match_label": "Goiás vs Juventude (Brasileirão Série B)",
+   "match_id": "15526233",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 0,
+    "corners_1t_away": 3,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-08-19T01:39:28Z",
+   "t_captura_utc": "2026-08-19T01:39:28Z",
+   "t_evaluacion_utc": "2026-08-19T01:41:23Z",
+   "t_generacion_utc": "2026-08-19T01:41:23Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-19T01:41:23Z",
+     "latencia_envio_ms": 827.5966644287109,
+     "error": null,
+     "message_id": 1486,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 115.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Goiás vs Juventude\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 3\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "66581666f9d28f38"
+  },
+  {
+   "strategy_id": "A2",
    "match_label": "Universidad Católica vs Estudiantes de La Plata (CONMEBOL Libertadores)",
    "match_id": "16253159",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 51,
+   "minuto": 52,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -192,8 +230,8 @@
    },
    "t_evento_real_utc": "2026-08-19T01:34:15Z",
    "t_captura_utc": "2026-08-19T01:34:15Z",
-   "t_evaluacion_utc": "2026-08-19T01:40:21Z",
-   "t_generacion_utc": "2026-08-19T01:40:21Z",
+   "t_evaluacion_utc": "2026-08-19T01:41:24Z",
+   "t_generacion_utc": "2026-08-19T01:41:24Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -207,7 +245,7 @@
    },
    "latencia_total_seg": 101.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Universidad Católica vs Estudiantes de La Plata\n⏱ Minuto: 51'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Universidad Católica vs Estudiantes de La Plata\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "30e74aa485236e15"
   },
@@ -217,7 +255,7 @@
    "match_id": "16253387",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 50,
+   "minuto": 51,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -230,8 +268,8 @@
    },
    "t_evento_real_utc": "2026-08-19T01:36:10Z",
    "t_captura_utc": "2026-08-19T01:36:10Z",
-   "t_evaluacion_utc": "2026-08-19T01:40:21Z",
-   "t_generacion_utc": "2026-08-19T01:40:21Z",
+   "t_evaluacion_utc": "2026-08-19T01:41:24Z",
+   "t_generacion_utc": "2026-08-19T01:41:24Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -245,7 +283,7 @@
    },
    "latencia_total_seg": 9.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ São Paulo vs Bolívar\n⏱ Minuto: 50'\n📊 Marcador: 1-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ São Paulo vs Bolívar\n⏱ Minuto: 51'\n📊 Marcador: 1-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "fa8d1e629be3e760"
   }
