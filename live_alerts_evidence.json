@@ -6610,5 +6610,48 @@
    "cuota_real_betano": 1.85,
    "activo": true
   }
+ ],
+ "d3869430c8884e06": [
+  {
+   "alert_id": "d3869430c8884e06",
+   "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "Atlético Mineiro vs Red Bull Bragantino (CONMEBOL Sudamericana)",
+   "liga": "CONMEBOL Sudamericana",
+   "event_id": "16253372",
+   "minuto_alerta": 42,
+   "condicion": "0-0 con dominancia sostenida entre los minutos 32-42 (remates totales≥9, tiros a puerta≥4, córners≥5, todos combinados). Condición original de 'ataques peligrosos' NO evaluada -- dato no disponible en la fuente actual. Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-19T22:42:19Z",
+   "t_captura_utc": "2026-08-19T22:43:00Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-19T22:50:40Z",
+   "segundos_transcurridos": 440,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "1.5 @ 2.42",
+   "linea_real_betano": 1.5,
+   "cuota_real_betano": 2.42,
+   "mercado_variante": "PENDIENTE_CLASIFICACION_MERCADO",
+   "activo": true
+  }
+ ],
+ "28d30c17f46d77e2": [
+  {
+   "alert_id": "28d30c17f46d77e2",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Avaí vs Sport Recife (Brasileirão Série B)",
+   "liga": "Brasileirão Série B",
+   "event_id": "15526234",
+   "minuto_alerta": 25,
+   "condicion": "Sport Recife acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-19T22:59:24Z",
+   "t_captura_utc": "2026-08-19T22:59:24Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-19T23:08:02Z",
+   "segundos_transcurridos": 517,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "12.0 @ 1.85",
+   "linea_real_betano": 12.0,
+   "cuota_real_betano": 1.85,
+   "activo": true
+  }
  ]
 }
