@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-19T19:53:17Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-19T19:54:16Z",
+ "n_alerts": 4,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "NEC Nijmegen vs Bodø/Glimt (UEFA Champions League)",
-   "match_id": "16707697",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 22,
-   "condicion": "Bodø/Glimt acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Bodø/Glimt",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 1.0,
-    "touches_home": 0,
-    "touches_away": 3,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-19T19:23:30Z",
-    "t_inicio_estimado_condicion": "2026-08-19T19:22:03Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-19T19:23:30Z",
-   "t_captura_utc": "2026-08-19T19:23:30Z",
-   "t_evaluacion_utc": "2026-08-19T19:23:30Z",
-   "t_generacion_utc": "2026-08-19T19:23:30Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T19:23:31Z",
-     "latencia_envio_ms": 912.5144481658936,
-     "error": null,
-     "message_id": 1504,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ NEC Nijmegen vs Bodø/Glimt\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: UEFA Champions League\n\n📝 Motivo: Bodø/Glimt acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "a71048d34f14fd8a"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "NEC Nijmegen vs Bodø/Glimt (UEFA Champions League)",
@@ -187,107 +139,11 @@
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Hapoel Be'er Sheva vs Sabah FK (UEFA Champions League)",
-   "match_id": "16707694",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "Hapoel Be'er Sheva acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Hapoel Be'er Sheva",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7895,
-    "touches_home": 15,
-    "touches_away": 4,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-08-19T19:23:28Z",
-    "t_inicio_estimado_condicion": "2026-08-19T19:22:03Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-19T19:23:28Z",
-   "t_captura_utc": "2026-08-19T19:46:21Z",
-   "t_evaluacion_utc": "2026-08-19T19:46:21Z",
-   "t_generacion_utc": "2026-08-19T19:46:21Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T19:23:29Z",
-     "latencia_envio_ms": 841.0599231719971,
-     "error": null,
-     "message_id": 1503,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Hapoel Be'er Sheva vs Sabah FK\n⏱ Minuto: 45'\n📊 Marcador: 1-1\n🏆 Liga: UEFA Champions League\n\n📝 Motivo: Hapoel Be'er Sheva acumula 79% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "ecdf2d6da05df446"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "ŠK Slovan Bratislava vs NK Celje (UEFA Champions League)",
-   "match_id": "16707699",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "ŠK Slovan Bratislava acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "ŠK Slovan Bratislava",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.8235,
-    "touches_home": 14,
-    "touches_away": 3,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 45,
-    "equipo_que_realizo_sustitucion": "ŠK Slovan Bratislava",
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-08-19T19:23:31Z",
-    "t_inicio_estimado_condicion": "2026-08-19T19:22:03Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-19T19:23:31Z",
-   "t_captura_utc": "2026-08-19T19:46:22Z",
-   "t_evaluacion_utc": "2026-08-19T19:46:22Z",
-   "t_generacion_utc": "2026-08-19T19:46:22Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T19:23:32Z",
-     "latencia_envio_ms": 794.0235137939453,
-     "error": null,
-     "message_id": 1505,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ ŠK Slovan Bratislava vs NK Celje\n⏱ Minuto: 45'\n📊 Marcador: 1-1\n🏆 Liga: UEFA Champions League\n\n📝 Motivo: ŠK Slovan Bratislava acumula 82% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: ŠK Slovan Bratislava, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "46731abfc8b02955"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Atlético Madrid vs Málaga CF (LaLiga)",
    "match_id": "16421055",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 45,
    "condicion": "Atlético Madrid acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -309,9 +165,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-19T19:50:17Z",
-   "t_captura_utc": "2026-08-19T19:53:16Z",
-   "t_evaluacion_utc": "2026-08-19T19:53:17Z",
-   "t_generacion_utc": "2026-08-19T19:53:17Z",
+   "t_captura_utc": "2026-08-19T19:54:16Z",
+   "t_evaluacion_utc": "2026-08-19T19:54:16Z",
+   "t_generacion_utc": "2026-08-19T19:54:16Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -325,7 +181,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlético Madrid vs Málaga CF\n⏱ Minuto: 44'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Atlético Madrid acumula 72% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Atlético Madrid, min 37\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlético Madrid vs Málaga CF\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Atlético Madrid acumula 72% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Atlético Madrid, min 37\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "06e9416e8b9672dc"
   }
