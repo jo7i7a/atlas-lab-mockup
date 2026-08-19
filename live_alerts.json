@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-19T22:43:24Z",
- "n_alerts": 12,
+ "generated_at_utc": "2026-08-19T22:44:22Z",
+ "n_alerts": 10,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -94,44 +94,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Cerro Porteño vs Palmeiras\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Cerro Porteño — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "cd447350baff6f85"
-  },
-  {
-   "strategy_id": "L1",
-   "match_label": "Atlético Mineiro vs Red Bull Bragantino (CONMEBOL Sudamericana)",
-   "match_id": "16253372",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "4 córners totales antes del min 30 (0-4), Red Bull Bragantino presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Atlético Mineiro NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "Red Bull Bragantino"
-   },
-   "t_evento_real_utc": "2026-08-19T22:13:25Z",
-   "t_captura_utc": "2026-08-19T22:13:25Z",
-   "t_evaluacion_utc": "2026-08-19T22:31:10Z",
-   "t_generacion_utc": "2026-08-19T22:31:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T22:19:14Z",
-     "latencia_envio_ms": 845.5398082733154,
-     "error": null,
-     "message_id": 1510,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 349.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Atlético Mineiro vs Red Bull Bragantino\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Red Bull Bragantino presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlético Mineiro no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "fd32724bc0b557c4"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -278,161 +240,6 @@
    "alert_id": "9eefdfdcfd6d1975"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "Fortaleza vs São Bernardo (Brasileirão Série B)",
-   "match_id": "15526232",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 12,
-   "condicion": "4 córners totales antes del min 30 (3-1), Fortaleza presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿São Bernardo NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Fortaleza"
-   },
-   "t_evento_real_utc": "2026-08-19T22:40:34Z",
-   "t_captura_utc": "2026-08-19T22:40:34Z",
-   "t_evaluacion_utc": "2026-08-19T22:43:09Z",
-   "t_generacion_utc": "2026-08-19T22:43:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T22:41:10Z",
-     "latencia_envio_ms": 834.3541622161865,
-     "error": null,
-     "message_id": 1519,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 36.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Fortaleza vs São Bernardo\n⏱ Minuto: 12'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Fortaleza presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿São Bernardo no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "efa5f0f64419b850"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Fortaleza vs São Bernardo (Brasileirão Série B)",
-   "match_id": "15526232",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 12,
-   "condicion": "4 córners totales antes del min 45 (3-1), Fortaleza presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿São Bernardo NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Fortaleza",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-19T22:40:34Z",
-   "t_captura_utc": "2026-08-19T22:40:34Z",
-   "t_evaluacion_utc": "2026-08-19T22:43:11Z",
-   "t_generacion_utc": "2026-08-19T22:43:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T22:41:12Z",
-     "latencia_envio_ms": 816.4243698120117,
-     "error": null,
-     "message_id": 1520,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 38.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Fortaleza vs São Bernardo\n⏱ Minuto: 12'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Fortaleza presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿São Bernardo no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "cff63ce307127e90"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Cerro Porteño vs Palmeiras (CONMEBOL Libertadores)",
-   "match_id": "16253171",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 43,
-   "condicion": "5 córners totales antes del min 45 (3-2), Cerro Porteño presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Palmeiras NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 2,
-    "equipo_presiona": "Cerro Porteño",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-19T22:40:55Z",
-   "t_captura_utc": "2026-08-19T22:40:55Z",
-   "t_evaluacion_utc": "2026-08-19T22:43:12Z",
-   "t_generacion_utc": "2026-08-19T22:43:12Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T22:41:15Z",
-     "latencia_envio_ms": 784.116268157959,
-     "error": null,
-     "message_id": 1521,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 20.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Cerro Porteño vs Palmeiras\n⏱ Minuto: 43'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Cerro Porteño presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Palmeiras no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "d33738af2435ac0a"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Atlético Mineiro vs Red Bull Bragantino (CONMEBOL Sudamericana)",
-   "match_id": "16253372",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 42,
-   "condicion": "4 córners totales antes del min 45 (0-4), Red Bull Bragantino presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Atlético Mineiro NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "Red Bull Bragantino",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-19T22:13:25Z",
-   "t_captura_utc": "2026-08-19T22:13:25Z",
-   "t_evaluacion_utc": "2026-08-19T22:43:13Z",
-   "t_generacion_utc": "2026-08-19T22:43:13Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T22:19:17Z",
-     "latencia_envio_ms": 793.1561470031738,
-     "error": null,
-     "message_id": 1511,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 352.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Atlético Mineiro vs Red Bull Bragantino\n⏱ Minuto: 42'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Red Bull Bragantino presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlético Mineiro no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "11d774d565b2a44a"
-  },
-  {
    "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Atlético Mineiro vs Red Bull Bragantino (CONMEBOL Sudamericana)",
    "match_id": "16253372",
@@ -479,12 +286,128 @@
    "alert_id": "d3869430c8884e06"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "Fortaleza vs São Bernardo (Brasileirão Série B)",
+   "match_id": "15526232",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 13,
+   "condicion": "4 córners totales antes del min 30 (3-1), Fortaleza presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿São Bernardo NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Fortaleza"
+   },
+   "t_evento_real_utc": "2026-08-19T22:40:34Z",
+   "t_captura_utc": "2026-08-19T22:40:34Z",
+   "t_evaluacion_utc": "2026-08-19T22:44:09Z",
+   "t_generacion_utc": "2026-08-19T22:44:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-19T22:41:10Z",
+     "latencia_envio_ms": 834.3541622161865,
+     "error": null,
+     "message_id": 1519,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 36.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Fortaleza vs São Bernardo\n⏱ Minuto: 13'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Fortaleza presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿São Bernardo no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "efa5f0f64419b850"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Fortaleza vs São Bernardo (Brasileirão Série B)",
+   "match_id": "15526232",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 13,
+   "condicion": "4 córners totales antes del min 45 (3-1), Fortaleza presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿São Bernardo NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Fortaleza",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-19T22:40:34Z",
+   "t_captura_utc": "2026-08-19T22:40:34Z",
+   "t_evaluacion_utc": "2026-08-19T22:44:11Z",
+   "t_generacion_utc": "2026-08-19T22:44:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-19T22:41:12Z",
+     "latencia_envio_ms": 816.4243698120117,
+     "error": null,
+     "message_id": 1520,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 38.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Fortaleza vs São Bernardo\n⏱ Minuto: 13'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Fortaleza presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿São Bernardo no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "cff63ce307127e90"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Cerro Porteño vs Palmeiras (CONMEBOL Libertadores)",
+   "match_id": "16253171",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 44,
+   "condicion": "5 córners totales antes del min 45 (3-2), Cerro Porteño presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Palmeiras NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "Cerro Porteño",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-19T22:40:55Z",
+   "t_captura_utc": "2026-08-19T22:40:55Z",
+   "t_evaluacion_utc": "2026-08-19T22:44:12Z",
+   "t_generacion_utc": "2026-08-19T22:44:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-19T22:41:15Z",
+     "latencia_envio_ms": 784.116268157959,
+     "error": null,
+     "message_id": 1521,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 20.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Cerro Porteño vs Palmeiras\n⏱ Minuto: 44'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Cerro Porteño presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Palmeiras no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "d33738af2435ac0a"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Atlético Mineiro vs Red Bull Bragantino (CONMEBOL Sudamericana)",
    "match_id": "16253372",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 42,
+   "minuto": 43,
    "condicion": "Red Bull Bragantino acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -506,9 +429,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-19T22:41:25Z",
-   "t_captura_utc": "2026-08-19T22:43:23Z",
-   "t_evaluacion_utc": "2026-08-19T22:43:24Z",
-   "t_generacion_utc": "2026-08-19T22:43:24Z",
+   "t_captura_utc": "2026-08-19T22:44:21Z",
+   "t_evaluacion_utc": "2026-08-19T22:44:22Z",
+   "t_generacion_utc": "2026-08-19T22:44:22Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -522,7 +445,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlético Mineiro vs Red Bull Bragantino\n⏱ Minuto: 42'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Red Bull Bragantino acumula 69% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlético Mineiro vs Red Bull Bragantino\n⏱ Minuto: 43'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Red Bull Bragantino acumula 69% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "21d089f6b081397a"
   }
