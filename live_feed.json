@@ -1,5 +1,234 @@
 {
- "generated_at_utc": "2026-08-19T00:29:54Z",
- "n_live_target": 0,
- "matches": {}
+ "generated_at_utc": "2026-08-19T00:32:53Z",
+ "n_live_target": 4,
+ "matches": {
+  "16799741": {
+   "event_id": 16799741,
+   "league": "CONMEBOL Libertadores",
+   "home": "Deportes Tolima",
+   "away": "Independiente del Valle",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 89,
+     "away": 11
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.02,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 1,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 23,
+     "away": 3
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.1,
+     "no": 1.667,
+     "captured_at_utc": "2026-08-19T00:32:52Z"
+    },
+    "1x2": {
+     "home": 3.0,
+     "draw": 3.1,
+     "away": 2.5,
+     "captured_at_utc": "2026-08-19T00:32:52Z"
+    },
+    "goals_over_25": {
+     "over": 2.5,
+     "under": 1.5,
+     "captured_at_utc": "2026-08-19T00:32:52Z"
+    },
+    "corners_over_95": {
+     "over": 2.0,
+     "under": 1.727,
+     "captured_at_utc": "2026-08-19T00:32:52Z"
+    }
+   },
+   "updated_at_utc": "2026-08-19T00:32:53Z"
+  },
+  "16253159": {
+   "event_id": 16253159,
+   "league": "CONMEBOL Libertadores",
+   "home": "Universidad Católica",
+   "away": "Estudiantes de La Plata",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 36,
+     "away": 64
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0.06
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 1
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 3,
+     "away": 7
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 1
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.2,
+     "no": 1.615,
+     "captured_at_utc": "2026-08-19T00:32:52Z"
+    },
+    "1x2": {
+     "home": 3.1,
+     "draw": 2.875,
+     "away": 2.5,
+     "captured_at_utc": "2026-08-19T00:32:52Z"
+    }
+   },
+   "updated_at_utc": "2026-08-19T00:32:53Z"
+  },
+  "16253387": {
+   "event_id": 16253387,
+   "league": "CONMEBOL Sudamericana",
+   "home": "São Paulo",
+   "away": "Bolívar",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 57,
+     "away": 43
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.03,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 1,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 11,
+     "away": 8
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 1,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.909,
+     "no": 1.8,
+     "captured_at_utc": "2026-08-19T00:32:52Z"
+    },
+    "1x2": {
+     "home": 1.444,
+     "draw": 4.333,
+     "away": 7.0,
+     "captured_at_utc": "2026-08-19T00:32:52Z"
+    },
+    "goals_over_25": {
+     "over": 1.727,
+     "under": 2.0,
+     "captured_at_utc": "2026-08-19T00:32:52Z"
+    }
+   },
+   "updated_at_utc": "2026-08-19T00:32:53Z"
+  },
+  "15526235": {
+   "event_id": 15526235,
+   "league": "Brasileirão Série B",
+   "home": "Náutico",
+   "away": "Ceará",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 100,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 9,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.0,
+     "no": 1.727,
+     "captured_at_utc": "2026-08-19T00:32:52Z"
+    },
+    "1x2": {
+     "home": 2.375,
+     "draw": 3.0,
+     "away": 3.4,
+     "captured_at_utc": "2026-08-19T00:32:52Z"
+    },
+    "goals_over_25": {
+     "over": 2.375,
+     "under": 1.533,
+     "captured_at_utc": "2026-08-19T00:32:52Z"
+    }
+   },
+   "updated_at_utc": "2026-08-19T00:32:53Z"
+  }
+ }
 }
