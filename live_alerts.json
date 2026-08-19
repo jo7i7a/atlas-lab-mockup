@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-19T19:46:22Z",
+ "generated_at_utc": "2026-08-19T19:50:18Z",
  "n_alerts": 7,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "ŠK Slovan Bratislava vs NK Celje (UEFA Champions League)",
-   "match_id": "16707699",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 22,
-   "condicion": "ŠK Slovan Bratislava domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "ŠK Slovan Bratislava",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 3,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-19T19:18:22Z",
-   "t_captura_utc": "2026-08-19T19:18:22Z",
-   "t_evaluacion_utc": "2026-08-19T19:23:27Z",
-   "t_generacion_utc": "2026-08-19T19:23:27Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T19:18:44Z",
-     "latencia_envio_ms": 861.9661331176758,
-     "error": null,
-     "message_id": 1502,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 22.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ ŠK Slovan Bratislava vs NK Celje\n⏱ Minuto: 22'\n📊 Marcador: 1-0\n🏆 Liga: UEFA Champions League\n\n📝 Motivo: ŠK Slovan Bratislava — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "89d8fb3fbca04d5b"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "NEC Nijmegen vs Bodø/Glimt (UEFA Champions League)",
@@ -325,6 +280,54 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ ŠK Slovan Bratislava vs NK Celje\n⏱ Minuto: 45'\n📊 Marcador: 1-1\n🏆 Liga: UEFA Champions League\n\n📝 Motivo: ŠK Slovan Bratislava acumula 82% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: ŠK Slovan Bratislava, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "46731abfc8b02955"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Atlético Madrid vs Málaga CF (LaLiga)",
+   "match_id": "16421055",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 41,
+   "condicion": "Atlético Madrid acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Atlético Madrid",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6818,
+    "touches_home": 15,
+    "touches_away": 7,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 37,
+    "equipo_que_realizo_sustitucion": "Atlético Madrid",
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-19T19:50:17Z",
+    "t_inicio_estimado_condicion": "2026-08-19T19:29:27Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-19T19:50:17Z",
+   "t_captura_utc": "2026-08-19T19:50:17Z",
+   "t_evaluacion_utc": "2026-08-19T19:50:17Z",
+   "t_generacion_utc": "2026-08-19T19:50:17Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-19T19:50:18Z",
+     "latencia_envio_ms": 818.4359073638916,
+     "error": null,
+     "message_id": 1509,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlético Madrid vs Málaga CF\n⏱ Minuto: 41'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Atlético Madrid acumula 68% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Atlético Madrid, min 37\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "06e9416e8b9672dc"
   }
  ]
 }
