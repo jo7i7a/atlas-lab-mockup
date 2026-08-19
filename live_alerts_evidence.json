@@ -6505,5 +6505,26 @@
    "cuota_real_betano": 1.75,
    "activo": true
   }
+ ],
+ "330d16aabbd5b56c": [
+  {
+   "alert_id": "330d16aabbd5b56c",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Universidad Católica vs Estudiantes de La Plata (CONMEBOL Libertadores)",
+   "liga": "CONMEBOL Libertadores",
+   "event_id": "16253159",
+   "minuto_alerta": 57,
+   "condicion": "Universidad Católica acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-19T01:46:30Z",
+   "t_captura_utc": "2026-08-19T01:46:30Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-19T01:47:17Z",
+   "segundos_transcurridos": 46,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "5.5 @ 1.82",
+   "linea_real_betano": 5.5,
+   "cuota_real_betano": 1.82,
+   "activo": true
+  }
  ]
 }
