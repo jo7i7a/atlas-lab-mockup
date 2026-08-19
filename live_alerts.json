@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-19T01:09:23Z",
- "n_alerts": 11,
+ "generated_at_utc": "2026-08-19T01:10:25Z",
+ "n_alerts": 12,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -273,58 +273,12 @@
    "alert_id": "6890edaa1021da9f"
   },
   {
-   "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Náutico vs Ceará (Brasileirão Série B)",
-   "match_id": "15526235",
-   "market": "Over 1.5 Goles FT (o Over 0.5 2ª Mitad) -- verificar en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 36,
-   "condicion": "0-0 con dominancia sostenida entre los minutos 32-42 (remates totales≥9, tiros a puerta≥4, córners≥5, todos combinados). Condición original de 'ataques peligrosos' NO evaluada -- dato no disponible en la fuente actual. Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "remates_local": 16,
-    "remates_visita": 6,
-    "remates_total": 22,
-    "sot_local": 6,
-    "sot_visita": 2,
-    "sot_total": 8,
-    "cor_local": 4,
-    "cor_visita": 2,
-    "cor_total": 6,
-    "marcador": "0-0",
-    "condicion_original_no_evaluada": "ataques peligrosos a favor del dominante (dato no disponible)"
-   },
-   "t_evento_real_utc": "2026-08-19T01:03:36Z",
-   "t_captura_utc": "2026-08-19T01:07:06Z",
-   "t_evaluacion_utc": "2026-08-19T01:07:19Z",
-   "t_generacion_utc": "2026-08-19T01:07:19Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T01:04:21Z",
-     "latencia_envio_ms": 871.7594146728516,
-     "error": null,
-     "message_id": 1475,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 45.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B1_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Náutico vs Ceará\n⏱ Minuto: 36'\n📊 Marcador: 0-0\n\n🎯 Remates totales:\nLocal: 16\nVisita: 6\nTotal: 22\n\n🎯 Tiros a puerta:\nLocal: 6\nVisita: 2\nTotal: 8\n\n🚩 Córners:\nLocal: 4\nVisita: 2\nTotal: 6\n\n🏆 Liga: Brasileirão Série B\n\n⚠️ Versión SIN la condición de ataques peligrosos (dato no disponible)\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 goles FT (o Over 0.5 2ª mitad)",
-   "evidencia": null,
-   "alert_id": "c4bdb9844a412aa2"
-  },
-  {
    "strategy_id": "L1-SHADOW",
    "match_label": "Náutico vs Ceará (Brasileirão Série B)",
    "match_id": "15526235",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 38,
+   "minuto": 39,
    "condicion": "5 córners totales antes del min 45 (3-2), Náutico presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Ceará NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -338,8 +292,8 @@
    },
    "t_evento_real_utc": "2026-08-19T00:58:21Z",
    "t_captura_utc": "2026-08-19T00:58:21Z",
-   "t_evaluacion_utc": "2026-08-19T01:09:10Z",
-   "t_generacion_utc": "2026-08-19T01:09:10Z",
+   "t_evaluacion_utc": "2026-08-19T01:10:10Z",
+   "t_generacion_utc": "2026-08-19T01:10:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -353,9 +307,55 @@
    },
    "latencia_total_seg": 54.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Náutico vs Ceará\n⏱ Minuto: 38'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Náutico presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Ceará no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Náutico vs Ceará\n⏱ Minuto: 39'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Náutico presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Ceará no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "251378615c837ba9"
+  },
+  {
+   "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "Náutico vs Ceará (Brasileirão Série B)",
+   "match_id": "15526235",
+   "market": "Over 1.5 Goles FT (o Over 0.5 2ª Mitad) -- verificar en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 39,
+   "condicion": "0-0 con dominancia sostenida entre los minutos 32-42 (remates totales≥9, tiros a puerta≥4, córners≥5, todos combinados). Condición original de 'ataques peligrosos' NO evaluada -- dato no disponible en la fuente actual. Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "remates_local": 19,
+    "remates_visita": 6,
+    "remates_total": 25,
+    "sot_local": 9,
+    "sot_visita": 2,
+    "sot_total": 11,
+    "cor_local": 4,
+    "cor_visita": 2,
+    "cor_total": 6,
+    "marcador": "0-0",
+    "condicion_original_no_evaluada": "ataques peligrosos a favor del dominante (dato no disponible)"
+   },
+   "t_evento_real_utc": "2026-08-19T01:03:36Z",
+   "t_captura_utc": "2026-08-19T01:10:14Z",
+   "t_evaluacion_utc": "2026-08-19T01:10:20Z",
+   "t_generacion_utc": "2026-08-19T01:10:20Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-19T01:04:21Z",
+     "latencia_envio_ms": 871.7594146728516,
+     "error": null,
+     "message_id": 1475,
+     "chat_id": -5415726375
+    }
+   },
+   "latencia_total_seg": 45.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B1_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Náutico vs Ceará\n⏱ Minuto: 39'\n📊 Marcador: 0-0\n\n🎯 Remates totales:\nLocal: 19\nVisita: 6\nTotal: 25\n\n🎯 Tiros a puerta:\nLocal: 9\nVisita: 2\nTotal: 11\n\n🚩 Córners:\nLocal: 4\nVisita: 2\nTotal: 6\n\n🏆 Liga: Brasileirão Série B\n\n⚠️ Versión SIN la condición de ataques peligrosos (dato no disponible)\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 goles FT (o Over 0.5 2ª mitad)",
+   "evidencia": null,
+   "alert_id": "c4bdb9844a412aa2"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -363,7 +363,7 @@
    "match_id": "15526233",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 33,
+   "minuto": 34,
    "condicion": "Juventude acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -372,9 +372,9 @@
    "extra": {
     "equipo_dominante": "Juventude",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.75,
+    "ratio_presion_territorial": 0.8,
     "touches_home": 1,
-    "touches_away": 3,
+    "touches_away": 4,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 13,
     "equipo_que_realizo_sustitucion": "Juventude",
@@ -385,9 +385,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-19T01:08:23Z",
-   "t_captura_utc": "2026-08-19T01:09:22Z",
-   "t_evaluacion_utc": "2026-08-19T01:09:22Z",
-   "t_generacion_utc": "2026-08-19T01:09:22Z",
+   "t_captura_utc": "2026-08-19T01:10:22Z",
+   "t_evaluacion_utc": "2026-08-19T01:10:22Z",
+   "t_generacion_utc": "2026-08-19T01:10:22Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -401,7 +401,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Goiás vs Juventude\n⏱ Minuto: 33'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Juventude acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Juventude, min 13\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Goiás vs Juventude\n⏱ Minuto: 34'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Juventude acumula 80% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Juventude, min 13\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "cb4a5597dc2db00e"
   },
@@ -411,7 +411,7 @@
    "match_id": "15526235",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 38,
+   "minuto": 39,
    "condicion": "Náutico acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -420,22 +420,22 @@
    "extra": {
     "equipo_dominante": "Náutico",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7143,
-    "touches_home": 20,
+    "ratio_presion_territorial": 0.7419,
+    "touches_home": 23,
     "touches_away": 8,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "1-0",
+    "marcador_en_el_momento": "0-0",
     "t_primera_observacion_atlas": "2026-08-19T00:51:54Z",
     "t_inicio_estimado_condicion": "2026-08-19T00:51:37Z",
     "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-19T00:51:54Z",
-   "t_captura_utc": "2026-08-19T01:09:22Z",
-   "t_evaluacion_utc": "2026-08-19T01:09:23Z",
-   "t_generacion_utc": "2026-08-19T01:09:23Z",
+   "t_captura_utc": "2026-08-19T01:10:23Z",
+   "t_evaluacion_utc": "2026-08-19T01:10:23Z",
+   "t_generacion_utc": "2026-08-19T01:10:23Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -449,7 +449,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Náutico vs Ceará\n⏱ Minuto: 38'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Náutico acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Náutico vs Ceará\n⏱ Minuto: 39'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Náutico acumula 74% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "a3310acb73d8f52e"
   },
@@ -459,7 +459,7 @@
    "match_id": "16253159",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 39,
+   "minuto": 40,
    "condicion": "Universidad Católica acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -481,9 +481,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-19T00:50:49Z",
-   "t_captura_utc": "2026-08-19T01:09:23Z",
-   "t_evaluacion_utc": "2026-08-19T01:09:23Z",
-   "t_generacion_utc": "2026-08-19T01:09:23Z",
+   "t_captura_utc": "2026-08-19T01:10:23Z",
+   "t_evaluacion_utc": "2026-08-19T01:10:24Z",
+   "t_generacion_utc": "2026-08-19T01:10:24Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -497,9 +497,57 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Universidad Católica vs Estudiantes de La Plata\n⏱ Minuto: 39'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Universidad Católica acumula 86% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Universidad Católica vs Estudiantes de La Plata\n⏱ Minuto: 40'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Universidad Católica acumula 86% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "9b2b296cc03731e8"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Deportes Tolima vs Independiente del Valle (CONMEBOL Libertadores)",
+   "match_id": "16799741",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 40,
+   "condicion": "Deportes Tolima acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Deportes Tolima",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6154,
+    "touches_home": 8,
+    "touches_away": 5,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 34,
+    "equipo_que_realizo_sustitucion": "Deportes Tolima",
+    "marcador_en_el_momento": "0-1",
+    "t_primera_observacion_atlas": "2026-08-19T01:10:24Z",
+    "t_inicio_estimado_condicion": "2026-08-19T01:09:53Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-19T01:10:24Z",
+   "t_captura_utc": "2026-08-19T01:10:24Z",
+   "t_evaluacion_utc": "2026-08-19T01:10:24Z",
+   "t_generacion_utc": "2026-08-19T01:10:24Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-19T01:10:25Z",
+     "latencia_envio_ms": 849.6716022491455,
+     "error": null,
+     "message_id": 1479,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportes Tolima vs Independiente del Valle\n⏱ Minuto: 40'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Deportes Tolima acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Deportes Tolima, min 34\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "98f2ddf0fe3741ff"
   }
  ]
 }
