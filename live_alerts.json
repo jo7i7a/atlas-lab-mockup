@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-19T23:13:35Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-19T23:16:38Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -225,7 +225,7 @@
    "match_id": "15526234",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 37,
+   "minuto": 40,
    "condicion": "4 córners totales antes del min 45 (3-1), Avaí presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Sport Recife NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -239,8 +239,8 @@
    },
    "t_evento_real_utc": "2026-08-19T22:50:08Z",
    "t_captura_utc": "2026-08-19T22:50:08Z",
-   "t_evaluacion_utc": "2026-08-19T23:11:10Z",
-   "t_generacion_utc": "2026-08-19T23:11:10Z",
+   "t_evaluacion_utc": "2026-08-19T23:14:10Z",
+   "t_generacion_utc": "2026-08-19T23:14:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -254,57 +254,9 @@
    },
    "latencia_total_seg": 21.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Avaí vs Sport Recife\n⏱ Minuto: 37'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Avaí presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Sport Recife no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Avaí vs Sport Recife\n⏱ Minuto: 40'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Avaí presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Sport Recife no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "e7510c7e16bc2387"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Coquimbo Unido vs Club Atlético Platense (CONMEBOL Libertadores)",
-   "match_id": "16253169",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 53,
-   "condicion": "Coquimbo Unido acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Coquimbo Unido",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.625,
-    "touches_home": 10,
-    "touches_away": 6,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 53,
-    "equipo_que_realizo_sustitucion": "Coquimbo Unido",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-19T22:46:13Z",
-    "t_inicio_estimado_condicion": "2026-08-19T22:35:45Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-19T22:46:13Z",
-   "t_captura_utc": "2026-08-19T23:13:34Z",
-   "t_evaluacion_utc": "2026-08-19T23:13:34Z",
-   "t_generacion_utc": "2026-08-19T23:13:34Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T22:46:15Z",
-     "latencia_envio_ms": 864.0599250793457,
-     "error": null,
-     "message_id": 1524,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 2.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Coquimbo Unido vs Club Atlético Platense\n⏱ Minuto: 53'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Coquimbo Unido acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Coquimbo Unido, min 53\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "7a721a4ed54ecae0"
   }
  ]
 }
