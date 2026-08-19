@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-19T23:05:21Z",
+ "generated_at_utc": "2026-08-19T23:10:28Z",
  "n_alerts": 12,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Coquimbo Unido vs Club Atlético Platense (CONMEBOL Libertadores)",
-   "match_id": "16253169",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 40,
-   "condicion": "Coquimbo Unido acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Coquimbo Unido",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 8,
-    "touches_away": 4,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 26,
-    "equipo_que_realizo_sustitucion": "Coquimbo Unido",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-19T22:36:21Z",
-    "t_inicio_estimado_condicion": "2026-08-19T22:35:45Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-19T22:36:21Z",
-   "t_captura_utc": "2026-08-19T22:41:24Z",
-   "t_evaluacion_utc": "2026-08-19T22:41:25Z",
-   "t_generacion_utc": "2026-08-19T22:41:25Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T22:36:23Z",
-     "latencia_envio_ms": 855.1490306854248,
-     "error": null,
-     "message_id": 1516,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 2.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Coquimbo Unido vs Club Atlético Platense\n⏱ Minuto: 40'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Coquimbo Unido acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Coquimbo Unido, min 26\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "9eefdfdcfd6d1975"
-  },
   {
    "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Atlético Mineiro vs Red Bull Bragantino (CONMEBOL Sudamericana)",
@@ -95,93 +47,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B1_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Atlético Mineiro vs Red Bull Bragantino\n⏱ Minuto: 42'\n📊 Marcador: 0-0\n\n🎯 Remates totales:\nLocal: 4\nVisita: 7\nTotal: 11\n\n🎯 Tiros a puerta:\nLocal: 1\nVisita: 3\nTotal: 4\n\n🚩 Córners:\nLocal: 0\nVisita: 6\nTotal: 6\n\n🏆 Liga: CONMEBOL Sudamericana\n\n⚠️ Versión SIN la condición de ataques peligrosos (dato no disponible)\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 goles FT (o Over 0.5 2ª mitad)",
    "evidencia": null,
    "alert_id": "d3869430c8884e06"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Cerro Porteño vs Palmeiras (CONMEBOL Libertadores)",
-   "match_id": "16253171",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "5 córners totales antes del min 45 (3-2), Cerro Porteño presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Palmeiras NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 2,
-    "equipo_presiona": "Cerro Porteño",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-19T22:40:55Z",
-   "t_captura_utc": "2026-08-19T22:40:55Z",
-   "t_evaluacion_utc": "2026-08-19T22:46:04Z",
-   "t_generacion_utc": "2026-08-19T22:46:04Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T22:41:15Z",
-     "latencia_envio_ms": 784.116268157959,
-     "error": null,
-     "message_id": 1521,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 20.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Cerro Porteño vs Palmeiras\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Cerro Porteño presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Palmeiras no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "d33738af2435ac0a"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Atlético Mineiro vs Red Bull Bragantino (CONMEBOL Sudamericana)",
-   "match_id": "16253372",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "Red Bull Bragantino acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Red Bull Bragantino",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6429,
-    "touches_home": 5,
-    "touches_away": 9,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 45,
-    "equipo_que_realizo_sustitucion": "Red Bull Bragantino",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-19T22:41:25Z",
-    "t_inicio_estimado_condicion": "2026-08-19T22:21:06Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-19T22:41:25Z",
-   "t_captura_utc": "2026-08-19T22:46:15Z",
-   "t_evaluacion_utc": "2026-08-19T22:46:16Z",
-   "t_generacion_utc": "2026-08-19T22:46:16Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T22:41:26Z",
-     "latencia_envio_ms": 775.6567001342773,
-     "error": null,
-     "message_id": 1522,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlético Mineiro vs Red Bull Bragantino\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Red Bull Bragantino acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Red Bull Bragantino, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "21d089f6b081397a"
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -353,84 +218,6 @@
    "alert_id": "d8700c852de64759"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Fortaleza vs São Bernardo (Brasileirão Série B)",
-   "match_id": "15526232",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 34,
-   "condicion": "4 córners totales antes del min 45 (3-1), Fortaleza presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿São Bernardo NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Fortaleza",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-19T22:40:34Z",
-   "t_captura_utc": "2026-08-19T22:40:34Z",
-   "t_evaluacion_utc": "2026-08-19T23:05:10Z",
-   "t_generacion_utc": "2026-08-19T23:05:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T22:41:12Z",
-     "latencia_envio_ms": 816.4243698120117,
-     "error": null,
-     "message_id": 1520,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 38.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Fortaleza vs São Bernardo\n⏱ Minuto: 34'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Fortaleza presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿São Bernardo no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "cff63ce307127e90"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Avaí vs Sport Recife (Brasileirão Série B)",
-   "match_id": "15526234",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 31,
-   "condicion": "4 córners totales antes del min 45 (3-1), Avaí presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Sport Recife NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Avaí",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-19T22:50:08Z",
-   "t_captura_utc": "2026-08-19T22:50:08Z",
-   "t_evaluacion_utc": "2026-08-19T23:05:10Z",
-   "t_generacion_utc": "2026-08-19T23:05:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T22:50:29Z",
-     "latencia_envio_ms": 833.9314460754395,
-     "error": null,
-     "message_id": 1526,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 21.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Avaí vs Sport Recife\n⏱ Minuto: 31'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Avaí presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Sport Recife no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "e7510c7e16bc2387"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Fortaleza vs São Bernardo (Brasileirão Série B)",
    "match_id": "15526232",
@@ -479,12 +266,167 @@
    "alert_id": "82b9167c2601aa6d"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Fortaleza vs São Bernardo (Brasileirão Série B)",
+   "match_id": "15526232",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 35,
+   "condicion": "4 córners totales antes del min 45 (3-1), Fortaleza presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿São Bernardo NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Fortaleza",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-19T22:40:34Z",
+   "t_captura_utc": "2026-08-19T22:40:34Z",
+   "t_evaluacion_utc": "2026-08-19T23:06:10Z",
+   "t_generacion_utc": "2026-08-19T23:06:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-19T22:41:12Z",
+     "latencia_envio_ms": 816.4243698120117,
+     "error": null,
+     "message_id": 1520,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 38.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Fortaleza vs São Bernardo\n⏱ Minuto: 35'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Fortaleza presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿São Bernardo no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "cff63ce307127e90"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Avaí vs Sport Recife (Brasileirão Série B)",
+   "match_id": "15526234",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 32,
+   "condicion": "4 córners totales antes del min 45 (3-1), Avaí presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Sport Recife NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Avaí",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-19T22:50:08Z",
+   "t_captura_utc": "2026-08-19T22:50:08Z",
+   "t_evaluacion_utc": "2026-08-19T23:06:10Z",
+   "t_generacion_utc": "2026-08-19T23:06:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-19T22:50:29Z",
+     "latencia_envio_ms": 833.9314460754395,
+     "error": null,
+     "message_id": 1526,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 21.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Avaí vs Sport Recife\n⏱ Minuto: 32'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Avaí presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Sport Recife no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "e7510c7e16bc2387"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Cerro Porteño vs Palmeiras (CONMEBOL Libertadores)",
+   "match_id": "16253171",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "5 córners totales antes del min 45 (3-2), Cerro Porteño presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Palmeiras NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "Cerro Porteño",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-19T22:40:55Z",
+   "t_captura_utc": "2026-08-19T22:40:55Z",
+   "t_evaluacion_utc": "2026-08-19T23:06:11Z",
+   "t_generacion_utc": "2026-08-19T23:06:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-19T22:41:15Z",
+     "latencia_envio_ms": 784.116268157959,
+     "error": null,
+     "message_id": 1521,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 20.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Cerro Porteño vs Palmeiras\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Cerro Porteño presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Palmeiras no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "d33738af2435ac0a"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Coquimbo Unido vs Club Atlético Platense (CONMEBOL Libertadores)",
+   "match_id": "16253169",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 50,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 0,
+    "corners_1t_total": 1
+   },
+   "t_evento_real_utc": "2026-08-19T23:05:18Z",
+   "t_captura_utc": "2026-08-19T23:05:18Z",
+   "t_evaluacion_utc": "2026-08-19T23:10:22Z",
+   "t_generacion_utc": "2026-08-19T23:10:22Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-19T23:10:22Z",
+     "latencia_envio_ms": 861.6297245025635,
+     "error": null,
+     "message_id": 1534,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 304.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Coquimbo Unido vs Club Atlético Platense\n⏱ Minuto: 50'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "7d80a17ce83b7e5d"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Coquimbo Unido vs Club Atlético Platense (CONMEBOL Libertadores)",
    "match_id": "16253169",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 50,
    "condicion": "Coquimbo Unido acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -506,9 +448,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-19T22:46:13Z",
-   "t_captura_utc": "2026-08-19T23:05:20Z",
-   "t_evaluacion_utc": "2026-08-19T23:05:21Z",
-   "t_generacion_utc": "2026-08-19T23:05:21Z",
+   "t_captura_utc": "2026-08-19T23:10:27Z",
+   "t_evaluacion_utc": "2026-08-19T23:10:27Z",
+   "t_generacion_utc": "2026-08-19T23:10:27Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -522,9 +464,57 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Coquimbo Unido vs Club Atlético Platense\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Coquimbo Unido acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Coquimbo Unido, min 26\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Coquimbo Unido vs Club Atlético Platense\n⏱ Minuto: 50'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Coquimbo Unido acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Coquimbo Unido, min 26\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "7a721a4ed54ecae0"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Atlético Mineiro vs Red Bull Bragantino (CONMEBOL Sudamericana)",
+   "match_id": "16253372",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "Red Bull Bragantino acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Red Bull Bragantino",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.7222,
+    "touches_home": 5,
+    "touches_away": 13,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 44,
+    "equipo_que_realizo_sustitucion": "Red Bull Bragantino",
+    "marcador_en_el_momento": "0-1",
+    "t_primera_observacion_atlas": "2026-08-19T22:41:25Z",
+    "t_inicio_estimado_condicion": "2026-08-19T22:21:06Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-19T22:41:25Z",
+   "t_captura_utc": "2026-08-19T23:10:28Z",
+   "t_evaluacion_utc": "2026-08-19T23:10:28Z",
+   "t_generacion_utc": "2026-08-19T23:10:28Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-19T22:41:26Z",
+     "latencia_envio_ms": 775.6567001342773,
+     "error": null,
+     "message_id": 1522,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "EXPIRADA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlético Mineiro vs Red Bull Bragantino\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Red Bull Bragantino acumula 72% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Red Bull Bragantino, min 44\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "21d089f6b081397a"
   }
  ]
 }
