@@ -6547,5 +6547,26 @@
    "cuota_real_betano": 1.32,
    "activo": true
   }
+ ],
+ "2417b09a9679f3c4": [
+  {
+   "alert_id": "2417b09a9679f3c4",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Deportes Tolima vs Independiente del Valle (CONMEBOL Libertadores)",
+   "liga": "CONMEBOL Libertadores",
+   "event_id": "16799741",
+   "minuto_alerta": 68,
+   "condicion": "Deportes Tolima acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-19T02:00:32Z",
+   "t_captura_utc": "2026-08-19T02:00:32Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-19T02:00:58Z",
+   "segundos_transcurridos": 25,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "8.5 @ 1.70",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 1.7,
+   "activo": true
+  }
  ]
 }
