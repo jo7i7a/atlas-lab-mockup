@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-19T01:37:26Z",
+ "generated_at_utc": "2026-08-19T01:38:16Z",
  "n_alerts": 8,
  "alerts": [
   {
@@ -222,82 +222,6 @@
    "alert_id": "52aed3ff955e8980"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "Universidad Católica vs Estudiantes de La Plata (CONMEBOL Libertadores)",
-   "match_id": "16253159",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 48,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 0,
-    "corners_1t_total": 1
-   },
-   "t_evento_real_utc": "2026-08-19T01:34:15Z",
-   "t_captura_utc": "2026-08-19T01:34:15Z",
-   "t_evaluacion_utc": "2026-08-19T01:37:21Z",
-   "t_generacion_utc": "2026-08-19T01:37:21Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T01:35:56Z",
-     "latencia_envio_ms": 894.1833972930908,
-     "error": null,
-     "message_id": 1484,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 101.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Universidad Católica vs Estudiantes de La Plata\n⏱ Minuto: 48'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "30e74aa485236e15"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "São Paulo vs Bolívar (CONMEBOL Sudamericana)",
-   "match_id": "16253387",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 47,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-19T01:36:10Z",
-   "t_captura_utc": "2026-08-19T01:36:10Z",
-   "t_evaluacion_utc": "2026-08-19T01:37:21Z",
-   "t_generacion_utc": "2026-08-19T01:37:21Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-19T01:36:19Z",
-     "latencia_envio_ms": 873.5508918762207,
-     "error": null,
-     "message_id": 1485,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 9.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ São Paulo vs Bolívar\n⏱ Minuto: 47'\n📊 Marcador: 1-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "fa8d1e629be3e760"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Deportes Tolima vs Independiente del Valle (CONMEBOL Libertadores)",
    "match_id": "16799741",
@@ -344,6 +268,82 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportes Tolima vs Independiente del Valle\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Deportes Tolima acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Deportes Tolima, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "98f2ddf0fe3741ff"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Universidad Católica vs Estudiantes de La Plata (CONMEBOL Libertadores)",
+   "match_id": "16253159",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 49,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 0,
+    "corners_1t_total": 1
+   },
+   "t_evento_real_utc": "2026-08-19T01:34:15Z",
+   "t_captura_utc": "2026-08-19T01:34:15Z",
+   "t_evaluacion_utc": "2026-08-19T01:38:16Z",
+   "t_generacion_utc": "2026-08-19T01:38:16Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-19T01:35:56Z",
+     "latencia_envio_ms": 894.1833972930908,
+     "error": null,
+     "message_id": 1484,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 101.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Universidad Católica vs Estudiantes de La Plata\n⏱ Minuto: 49'\n📊 Marcador: 0-1\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "30e74aa485236e15"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "São Paulo vs Bolívar (CONMEBOL Sudamericana)",
+   "match_id": "16253387",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 48,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 2,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-08-19T01:36:10Z",
+   "t_captura_utc": "2026-08-19T01:36:10Z",
+   "t_evaluacion_utc": "2026-08-19T01:38:16Z",
+   "t_generacion_utc": "2026-08-19T01:38:16Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-19T01:36:19Z",
+     "latencia_envio_ms": 873.5508918762207,
+     "error": null,
+     "message_id": 1485,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 9.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ São Paulo vs Bolívar\n⏱ Minuto: 48'\n📊 Marcador: 1-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "fa8d1e629be3e760"
   }
  ]
 }
