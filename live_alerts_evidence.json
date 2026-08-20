@@ -6674,5 +6674,26 @@
    "cuota_real_betano": 1.7,
    "activo": true
   }
+ ],
+ "d382c5d80df4d3b9": [
+  {
+   "alert_id": "d382c5d80df4d3b9",
+   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "New York Red Bulls vs Nashville SC (MLS)",
+   "liga": "MLS",
+   "event_id": "15171654",
+   "minuto_alerta": 61,
+   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-20T01:02:08Z",
+   "t_captura_utc": "2026-08-20T01:02:08Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-20T01:03:23Z",
+   "segundos_transcurridos": 74,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "1.5 @ 3.0",
+   "linea_real_betano": 1.5,
+   "cuota_real_betano": 3.0,
+   "activo": true
+  }
  ]
 }
