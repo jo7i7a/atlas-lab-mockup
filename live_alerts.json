@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-20T03:45:24Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-20T03:46:26Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "L3",
@@ -8,7 +8,7 @@
    "match_id": "15171661",
    "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
    "cuota_detectada": null,
-   "minuto": 46,
+   "minuto": 47,
    "condicion": "Expulsión de LA Galaxy (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
    "confianza": "Media",
    "link": "",
@@ -20,9 +20,9 @@
     "total_rojas_partido": 1
    },
    "t_evento_real_utc": "2026-08-20T03:26:28Z",
-   "t_captura_utc": "2026-08-20T03:45:14Z",
-   "t_evaluacion_utc": "2026-08-20T03:45:16Z",
-   "t_generacion_utc": "2026-08-20T03:45:16Z",
+   "t_captura_utc": "2026-08-20T03:45:55Z",
+   "t_evaluacion_utc": "2026-08-20T03:46:17Z",
+   "t_generacion_utc": "2026-08-20T03:46:17Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -36,7 +36,7 @@
    },
    "latencia_total_seg": 53.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ LA Galaxy vs San Jose Earthquakes\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🟥 Expulsado: LA Galaxy\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
+   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ LA Galaxy vs San Jose Earthquakes\n⏱ Minuto: 47'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🟥 Expulsado: LA Galaxy\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
    "evidencia": null,
    "alert_id": "e7f08a4f70f4171e"
   },
@@ -46,7 +46,7 @@
    "match_id": "15171661",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 46,
+   "minuto": 47,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -59,8 +59,8 @@
    },
    "t_evento_real_utc": "2026-08-20T03:44:12Z",
    "t_captura_utc": "2026-08-20T03:44:12Z",
-   "t_evaluacion_utc": "2026-08-20T03:45:19Z",
-   "t_generacion_utc": "2026-08-20T03:45:19Z",
+   "t_evaluacion_utc": "2026-08-20T03:46:20Z",
+   "t_generacion_utc": "2026-08-20T03:46:20Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -74,9 +74,47 @@
    },
    "latencia_total_seg": 67.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ LA Galaxy vs San Jose Earthquakes\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ LA Galaxy vs San Jose Earthquakes\n⏱ Minuto: 47'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "5e34d400982fc872"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Portland Timbers vs San Diego FC (MLS)",
+   "match_id": "15171664",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 0,
+    "corners_1t_away": 1,
+    "corners_1t_total": 1
+   },
+   "t_evento_real_utc": "2026-08-20T03:44:54Z",
+   "t_captura_utc": "2026-08-20T03:44:54Z",
+   "t_evaluacion_utc": "2026-08-20T03:46:20Z",
+   "t_generacion_utc": "2026-08-20T03:46:20Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-20T03:46:21Z",
+     "latencia_envio_ms": 835.1120948791504,
+     "error": null,
+     "message_id": 1602,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 87.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Portland Timbers vs San Diego FC\n⏱ Minuto: 46'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "704533d39aa623ad"
   }
  ]
 }
