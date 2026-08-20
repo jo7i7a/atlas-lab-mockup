@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-20T02:31:22Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-20T02:32:20Z",
+ "n_alerts": 5,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Real Salt Lake vs FC Dallas (MLS)",
-   "match_id": "15171660",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 24,
-   "condicion": "FC Dallas domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "FC Dallas",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 1,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-20T02:01:35Z",
-   "t_captura_utc": "2026-08-20T02:01:35Z",
-   "t_evaluacion_utc": "2026-08-20T02:05:47Z",
-   "t_generacion_utc": "2026-08-20T02:05:47Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-20T02:02:41Z",
-     "latencia_envio_ms": 864.5591735839844,
-     "error": null,
-     "message_id": 1583,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 66.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Real Salt Lake vs FC Dallas\n⏱ Minuto: 24'\n📊 Marcador: 0-2\n🏆 Liga: MLS\n\n📝 Motivo: FC Dallas — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "a5f1a090dd2ae7c5"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Independiente Santa Fe vs River Plate (CONMEBOL Sudamericana)",
@@ -144,54 +99,6 @@
    "alert_id": "6e1925fc98921bb6"
   },
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Real Salt Lake vs FC Dallas (MLS)",
-   "match_id": "15171660",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 36,
-   "condicion": "FC Dallas acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "FC Dallas",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 7,
-    "touches_away": 14,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-2",
-    "t_primera_observacion_atlas": "2026-08-20T02:01:48Z",
-    "t_inicio_estimado_condicion": "2026-08-20T02:01:35Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-20T02:01:48Z",
-   "t_captura_utc": "2026-08-20T02:17:32Z",
-   "t_evaluacion_utc": "2026-08-20T02:17:32Z",
-   "t_generacion_utc": "2026-08-20T02:17:32Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-20T02:01:49Z",
-     "latencia_envio_ms": 811.7036819458008,
-     "error": null,
-     "message_id": 1582,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Real Salt Lake vs FC Dallas\n⏱ Minuto: 36'\n📊 Marcador: 0-2\n🏆 Liga: MLS\n\n📝 Motivo: FC Dallas acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "be27b6b3b73ef21b"
-  },
-  {
    "strategy_id": "A2",
    "match_label": "Orlando City SC vs Chicago Fire (MLS)",
    "match_id": "15171656",
@@ -283,7 +190,7 @@
    "match_id": "15171656",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 58,
+   "minuto": 59,
    "condicion": "Orlando City SC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -305,9 +212,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-20T02:19:26Z",
-   "t_captura_utc": "2026-08-20T02:31:21Z",
-   "t_evaluacion_utc": "2026-08-20T02:31:22Z",
-   "t_generacion_utc": "2026-08-20T02:31:22Z",
+   "t_captura_utc": "2026-08-20T02:32:20Z",
+   "t_evaluacion_utc": "2026-08-20T02:32:20Z",
+   "t_generacion_utc": "2026-08-20T02:32:20Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -321,7 +228,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Orlando City SC vs Chicago Fire\n⏱ Minuto: 58'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📝 Motivo: Orlando City SC acumula 83% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Orlando City SC, min 57\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Orlando City SC vs Chicago Fire\n⏱ Minuto: 59'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📝 Motivo: Orlando City SC acumula 83% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Orlando City SC, min 57\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "bd0b28c33d162ab5"
   }
