@@ -1,267 +1,7 @@
 {
- "generated_at_utc": "2026-08-20T00:43:54Z",
+ "generated_at_utc": "2026-08-20T00:57:02Z",
  "n_alerts": 7,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Avaí vs Sport Recife (Brasileirão Série B)",
-   "match_id": "15526234",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 85,
-   "condicion": "Avaí acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Avaí",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6486,
-    "touches_home": 24,
-    "touches_away": 13,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 69,
-    "equipo_que_realizo_sustitucion": "Avaí",
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-08-20T00:22:27Z",
-    "t_inicio_estimado_condicion": "2026-08-19T23:47:17Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-20T00:22:27Z",
-   "t_captura_utc": "2026-08-20T00:22:27Z",
-   "t_evaluacion_utc": "2026-08-20T00:22:27Z",
-   "t_generacion_utc": "2026-08-20T00:22:27Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-20T00:22:28Z",
-     "latencia_envio_ms": 756.8590641021729,
-     "error": null,
-     "message_id": 1549,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Avaí vs Sport Recife\n⏱ Minuto: 85'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Avaí acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Avaí, min 69\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "55819827491579f7"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "FC Cincinnati vs New York City FC (MLS)",
-   "match_id": "15171651",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 43,
-   "condicion": "New York City FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "New York City FC",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.625,
-    "touches_home": 3,
-    "touches_away": 5,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 36,
-    "equipo_que_realizo_sustitucion": "New York City FC",
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-08-20T00:22:20Z",
-    "t_inicio_estimado_condicion": "2026-08-20T00:18:22Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-20T00:22:20Z",
-   "t_captura_utc": "2026-08-20T00:23:43Z",
-   "t_evaluacion_utc": "2026-08-20T00:23:43Z",
-   "t_generacion_utc": "2026-08-20T00:23:43Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-20T00:22:21Z",
-     "latencia_envio_ms": 824.1057395935059,
-     "error": null,
-     "message_id": 1547,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Cincinnati vs New York City FC\n⏱ Minuto: 43'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📝 Motivo: New York City FC acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: New York City FC, min 36\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "1135482636bf93b1"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "New York Red Bulls vs Nashville SC (MLS)",
-   "match_id": "15171654",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (3-1), New York Red Bulls presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Nashville SC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "New York Red Bulls",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-20T00:15:23Z",
-   "t_captura_utc": "2026-08-20T00:15:23Z",
-   "t_evaluacion_utc": "2026-08-20T00:26:11Z",
-   "t_generacion_utc": "2026-08-20T00:26:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-20T00:16:50Z",
-     "latencia_envio_ms": 957.0300579071045,
-     "error": null,
-     "message_id": 1546,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 87.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ New York Red Bulls vs Nashville SC\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: New York Red Bulls presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Nashville SC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "3810af0c43f79d11"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Columbus Crew vs CF Montréal (MLS)",
-   "match_id": "15171652",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "Columbus Crew acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Columbus Crew",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7143,
-    "touches_home": 10,
-    "touches_away": 4,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 34,
-    "equipo_que_realizo_sustitucion": "Columbus Crew",
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-08-20T00:22:21Z",
-    "t_inicio_estimado_condicion": "2026-08-20T00:09:39Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-20T00:22:21Z",
-   "t_captura_utc": "2026-08-20T00:26:26Z",
-   "t_evaluacion_utc": "2026-08-20T00:26:26Z",
-   "t_generacion_utc": "2026-08-20T00:26:26Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-20T00:22:23Z",
-     "latencia_envio_ms": 1813.7571811676025,
-     "error": null,
-     "message_id": 1548,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 2.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Columbus Crew vs CF Montréal\n⏱ Minuto: 45'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📝 Motivo: Columbus Crew acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Columbus Crew, min 34\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "0516d4facb2d5df6"
-  },
-  {
-   "strategy_id": "L1",
-   "match_label": "Sporting Kansas City vs St.Louis City (MLS)",
-   "match_id": "15171655",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 12,
-   "condicion": "4 córners totales antes del min 30 (4-0), Sporting Kansas City presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿St.Louis City NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Sporting Kansas City"
-   },
-   "t_evento_real_utc": "2026-08-20T00:38:24Z",
-   "t_captura_utc": "2026-08-20T00:38:24Z",
-   "t_evaluacion_utc": "2026-08-20T00:39:31Z",
-   "t_generacion_utc": "2026-08-20T00:39:31Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-20T00:39:32Z",
-     "latencia_envio_ms": 809.8940849304199,
-     "error": null,
-     "message_id": 1550,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 68.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Sporting Kansas City vs St.Louis City\n⏱ Minuto: 12'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Sporting Kansas City presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿St.Louis City no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "f3feb03a29966456"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Sporting Kansas City vs St.Louis City (MLS)",
-   "match_id": "15171655",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 12,
-   "condicion": "4 córners totales antes del min 45 (4-0), Sporting Kansas City presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿St.Louis City NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Sporting Kansas City",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-20T00:38:24Z",
-   "t_captura_utc": "2026-08-20T00:38:24Z",
-   "t_evaluacion_utc": "2026-08-20T00:39:37Z",
-   "t_generacion_utc": "2026-08-20T00:39:37Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-20T00:39:38Z",
-     "latencia_envio_ms": 761.7199420928955,
-     "error": null,
-     "message_id": 1551,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 74.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Sporting Kansas City vs St.Louis City\n⏱ Minuto: 12'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Sporting Kansas City presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿St.Louis City no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "821d6ba2443f4435"
-  },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Sporting Kansas City vs St.Louis City (MLS)",
@@ -306,6 +46,250 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Sporting Kansas City vs St.Louis City\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Sporting Kansas City — ≥2 remates en los últimos 5 min (home=4)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "8160675093c75d66"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "Sporting Kansas City vs St.Louis City (MLS)",
+   "match_id": "15171655",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 27,
+   "condicion": "4 córners totales antes del min 30 (4-0), Sporting Kansas City presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿St.Louis City NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Sporting Kansas City"
+   },
+   "t_evento_real_utc": "2026-08-20T00:38:24Z",
+   "t_captura_utc": "2026-08-20T00:38:24Z",
+   "t_evaluacion_utc": "2026-08-20T00:54:35Z",
+   "t_generacion_utc": "2026-08-20T00:54:35Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-20T00:39:32Z",
+     "latencia_envio_ms": 809.8940849304199,
+     "error": null,
+     "message_id": 1550,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 68.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Sporting Kansas City vs St.Louis City\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Sporting Kansas City presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿St.Louis City no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "f3feb03a29966456"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "Botafogo-SP vs Criciúma (Brasileirão Série B)",
+   "match_id": "15526228",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 23,
+   "condicion": "4 córners totales antes del min 30 (4-0), Botafogo-SP presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Criciúma NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Botafogo-SP"
+   },
+   "t_evento_real_utc": "2026-08-20T00:52:30Z",
+   "t_captura_utc": "2026-08-20T00:52:30Z",
+   "t_evaluacion_utc": "2026-08-20T00:54:36Z",
+   "t_generacion_utc": "2026-08-20T00:54:36Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-20T00:54:37Z",
+     "latencia_envio_ms": 867.7351474761963,
+     "error": null,
+     "message_id": 1553,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 127.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Botafogo-SP vs Criciúma\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Botafogo-SP presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Criciúma no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "9df2767c6b3406ce"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Sporting Kansas City vs St.Louis City (MLS)",
+   "match_id": "15171655",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 27,
+   "condicion": "4 córners totales antes del min 45 (4-0), Sporting Kansas City presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿St.Louis City NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Sporting Kansas City",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-20T00:38:24Z",
+   "t_captura_utc": "2026-08-20T00:38:24Z",
+   "t_evaluacion_utc": "2026-08-20T00:54:40Z",
+   "t_generacion_utc": "2026-08-20T00:54:40Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-20T00:39:38Z",
+     "latencia_envio_ms": 761.7199420928955,
+     "error": null,
+     "message_id": 1551,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 74.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Sporting Kansas City vs St.Louis City\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Sporting Kansas City presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿St.Louis City no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "821d6ba2443f4435"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Botafogo-SP vs Criciúma (Brasileirão Série B)",
+   "match_id": "15526228",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 24,
+   "condicion": "4 córners totales antes del min 45 (4-0), Botafogo-SP presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Criciúma NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Botafogo-SP",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-20T00:52:30Z",
+   "t_captura_utc": "2026-08-20T00:52:30Z",
+   "t_evaluacion_utc": "2026-08-20T00:54:41Z",
+   "t_generacion_utc": "2026-08-20T00:54:41Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-20T00:54:42Z",
+     "latencia_envio_ms": 782.8555107116699,
+     "error": null,
+     "message_id": 1554,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 132.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Botafogo-SP vs Criciúma\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Botafogo-SP presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Criciúma no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "ac11e5879a6a6384"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Flamengo vs Cruzeiro (CONMEBOL Libertadores)",
+   "match_id": "16253167",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "Flamengo domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Flamengo",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 6,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-20T00:47:47Z",
+   "t_captura_utc": "2026-08-20T00:47:47Z",
+   "t_evaluacion_utc": "2026-08-20T00:56:53Z",
+   "t_generacion_utc": "2026-08-20T00:56:53Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-20T00:56:54Z",
+     "latencia_envio_ms": 733.1404685974121,
+     "error": null,
+     "message_id": 1555,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 547.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Flamengo vs Cruzeiro\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: Flamengo — ≥2 remates en los últimos 5 min (home=6)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "b4fbe65e115eab87"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Independiente Santa Fe vs River Plate (CONMEBOL Sudamericana)",
+   "match_id": "16799740",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "Independiente Santa Fe domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Independiente Santa Fe",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-20T00:47:47Z",
+   "t_captura_utc": "2026-08-20T00:47:47Z",
+   "t_evaluacion_utc": "2026-08-20T00:57:01Z",
+   "t_generacion_utc": "2026-08-20T00:57:01Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-20T00:57:02Z",
+     "latencia_envio_ms": 811.5959167480469,
+     "error": null,
+     "message_id": 1556,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 555.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Independiente Santa Fe vs River Plate\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Independiente Santa Fe — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "85a90cd4323c5fc8"
   }
  ]
 }
