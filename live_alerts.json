@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-20T02:58:25Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-20T02:59:35Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -46,7 +46,7 @@
    "match_id": "15171661",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 17,
+   "minuto": 18,
    "condicion": "San Jose Earthquakes domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -66,8 +66,8 @@
    },
    "t_evento_real_utc": "2026-08-20T02:56:19Z",
    "t_captura_utc": "2026-08-20T02:56:19Z",
-   "t_evaluacion_utc": "2026-08-20T02:58:20Z",
-   "t_generacion_utc": "2026-08-20T02:58:20Z",
+   "t_evaluacion_utc": "2026-08-20T02:59:26Z",
+   "t_generacion_utc": "2026-08-20T02:59:26Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -81,9 +81,99 @@
    },
    "latencia_total_seg": 8.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ LA Galaxy vs San Jose Earthquakes\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: San Jose Earthquakes — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ LA Galaxy vs San Jose Earthquakes\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: San Jose Earthquakes — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "f68bf73aca1d59d1"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Portland Timbers vs San Diego FC (MLS)",
+   "match_id": "15171664",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "San Diego FC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "San Diego FC",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-20T02:58:21Z",
+   "t_captura_utc": "2026-08-20T02:58:21Z",
+   "t_evaluacion_utc": "2026-08-20T02:59:28Z",
+   "t_generacion_utc": "2026-08-20T02:59:28Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-20T02:59:29Z",
+     "latencia_envio_ms": 902.1341800689697,
+     "error": null,
+     "message_id": 1591,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 68.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Portland Timbers vs San Diego FC\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: San Diego FC — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "97bf86aec979432d"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Vancouver Whitecaps vs Houston Dynamo (MLS)",
+   "match_id": "15171665",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Houston Dynamo domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Houston Dynamo",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-20T02:59:24Z",
+   "t_captura_utc": "2026-08-20T02:59:24Z",
+   "t_evaluacion_utc": "2026-08-20T02:59:32Z",
+   "t_generacion_utc": "2026-08-20T02:59:32Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-20T02:59:33Z",
+     "latencia_envio_ms": 817.7721500396729,
+     "error": null,
+     "message_id": 1592,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 9.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Vancouver Whitecaps vs Houston Dynamo\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Houston Dynamo — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "625ddb83644be2ed"
   }
  ]
 }
