@@ -1,5 +1,51 @@
 {
- "generated_at_utc": "2026-08-20T20:47:16Z",
- "n_alerts": 0,
- "alerts": []
+ "generated_at_utc": "2026-08-20T22:16:21Z",
+ "n_alerts": 1,
+ "alerts": [
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Macará vs Santos (CONMEBOL Sudamericana)",
+   "match_id": "16253386",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 16,
+   "condicion": "Macará domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Macará",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 3,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-20T22:15:51Z",
+   "t_captura_utc": "2026-08-20T22:15:51Z",
+   "t_evaluacion_utc": "2026-08-20T22:16:20Z",
+   "t_generacion_utc": "2026-08-20T22:16:20Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-20T22:16:20Z",
+     "latencia_envio_ms": 814.4333362579346,
+     "error": null,
+     "message_id": 1618,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 29.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Macará vs Santos\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Macará — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "fcf6396fcb6cd1f0"
+  }
+ ]
 }
