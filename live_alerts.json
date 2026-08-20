@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-20T03:44:12Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-08-20T03:45:24Z",
+ "n_alerts": 2,
  "alerts": [
   {
    "strategy_id": "L3",
@@ -8,7 +8,7 @@
    "match_id": "15171661",
    "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 46,
    "condicion": "Expulsión de LA Galaxy (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
    "confianza": "Media",
    "link": "",
@@ -20,9 +20,9 @@
     "total_rojas_partido": 1
    },
    "t_evento_real_utc": "2026-08-20T03:26:28Z",
-   "t_captura_utc": "2026-08-20T03:43:52Z",
-   "t_evaluacion_utc": "2026-08-20T03:44:12Z",
-   "t_generacion_utc": "2026-08-20T03:44:12Z",
+   "t_captura_utc": "2026-08-20T03:45:14Z",
+   "t_evaluacion_utc": "2026-08-20T03:45:16Z",
+   "t_generacion_utc": "2026-08-20T03:45:16Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -36,9 +36,47 @@
    },
    "latencia_total_seg": 53.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ LA Galaxy vs San Jose Earthquakes\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🟥 Expulsado: LA Galaxy\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
+   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ LA Galaxy vs San Jose Earthquakes\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🟥 Expulsado: LA Galaxy\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
    "evidencia": null,
    "alert_id": "e7f08a4f70f4171e"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "LA Galaxy vs San Jose Earthquakes (MLS)",
+   "match_id": "15171661",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 1,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-08-20T03:44:12Z",
+   "t_captura_utc": "2026-08-20T03:44:12Z",
+   "t_evaluacion_utc": "2026-08-20T03:45:19Z",
+   "t_generacion_utc": "2026-08-20T03:45:19Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-20T03:45:19Z",
+     "latencia_envio_ms": 849.5099544525146,
+     "error": null,
+     "message_id": 1601,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 67.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ LA Galaxy vs San Jose Earthquakes\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "5e34d400982fc872"
   }
  ]
 }
