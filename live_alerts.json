@@ -1,5 +1,44 @@
 {
- "generated_at_utc": "2026-08-20T19:04:18Z",
- "n_alerts": 0,
- "alerts": []
+ "generated_at_utc": "2026-08-20T19:06:01Z",
+ "n_alerts": 1,
+ "alerts": [
+  {
+   "strategy_id": "A2",
+   "match_label": "Al-Fayha vs Al-Hilal (Saudi Pro League)",
+   "match_id": "16629420",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 47,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 0,
+    "corners_1t_away": 3,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-08-20T19:03:25Z",
+   "t_captura_utc": "2026-08-20T19:03:25Z",
+   "t_evaluacion_utc": "2026-08-20T19:05:57Z",
+   "t_generacion_utc": "2026-08-20T19:05:57Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-20T19:05:58Z",
+     "latencia_envio_ms": 1036.2024307250977,
+     "error": null,
+     "message_id": 1613,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 153.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Al-Fayha vs Al-Hilal\n⏱ Minuto: 47'\n📊 Marcador: 0-2\n🏆 Liga: Saudi Pro League\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 3\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "2bd265fa0c9d132d"
+  }
+ ]
 }
