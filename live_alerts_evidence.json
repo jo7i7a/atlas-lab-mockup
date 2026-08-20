@@ -6737,5 +6737,45 @@
    "cuota_real_betano": 1.75,
    "activo": true
   }
+ ],
+ "3c6aaa3bd21a7bf4": [
+  {
+   "alert_id": "3c6aaa3bd21a7bf4",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Olimpia vs Vasco da Gama (CONMEBOL Sudamericana)",
+   "liga": "CONMEBOL Sudamericana",
+   "event_id": "16253383",
+   "minuto_alerta": 22,
+   "condicion": "Olimpia domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-20T22:21:31Z",
+   "t_captura_utc": "2026-08-20T22:21:31Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-20T22:23:48Z",
+   "segundos_transcurridos": 77,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "8.5 @ 1.57\n9.5 @ 2.02",
+   "linea_real_betano": 8.5,
+   "cuota_real_betano": 1.57,
+   "activo": true
+  },
+  {
+   "alert_id": "3c6aaa3bd21a7bf4",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Olimpia vs Vasco da Gama (CONMEBOL Sudamericana)",
+   "liga": "CONMEBOL Sudamericana",
+   "event_id": "16253383",
+   "minuto_alerta": 22,
+   "condicion": "Olimpia domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-20T22:21:31Z",
+   "t_captura_utc": "2026-08-20T22:21:31Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-20T22:23:48Z",
+   "segundos_transcurridos": 77,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "8.5 @ 1.57\n9.5 @ 2.02",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 2.02,
+   "activo": true
+  }
  ]
 }
