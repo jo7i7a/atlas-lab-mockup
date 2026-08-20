@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-20T02:24:26Z",
+ "generated_at_utc": "2026-08-20T02:25:26Z",
  "n_alerts": 10,
  "alerts": [
   {
@@ -289,7 +289,7 @@
    "match_id": "15171656",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 51,
+   "minuto": 52,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -302,8 +302,8 @@
    },
    "t_evento_real_utc": "2026-08-20T02:11:43Z",
    "t_captura_utc": "2026-08-20T02:11:43Z",
-   "t_evaluacion_utc": "2026-08-20T02:24:20Z",
-   "t_generacion_utc": "2026-08-20T02:24:20Z",
+   "t_evaluacion_utc": "2026-08-20T02:25:20Z",
+   "t_generacion_utc": "2026-08-20T02:25:20Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -317,7 +317,7 @@
    },
    "latencia_total_seg": 458.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Orlando City SC vs Chicago Fire\n⏱ Minuto: 51'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Orlando City SC vs Chicago Fire\n⏱ Minuto: 52'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "08da6257f3ee6130"
   },
@@ -327,7 +327,7 @@
    "match_id": "15171656",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 51,
+   "minuto": 52,
    "condicion": "Orlando City SC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -336,22 +336,22 @@
    "extra": {
     "equipo_dominante": "Orlando City SC",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7857,
-    "touches_home": 22,
+    "ratio_presion_territorial": 0.7931,
+    "touches_home": 23,
     "touches_away": 6,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 43,
     "equipo_que_realizo_sustitucion": "Orlando City SC",
-    "marcador_en_el_momento": "0-1",
+    "marcador_en_el_momento": "1-1",
     "t_primera_observacion_atlas": "2026-08-20T02:19:26Z",
     "t_inicio_estimado_condicion": "2026-08-20T00:02:23Z",
     "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-20T02:19:26Z",
-   "t_captura_utc": "2026-08-20T02:24:24Z",
-   "t_evaluacion_utc": "2026-08-20T02:24:24Z",
-   "t_generacion_utc": "2026-08-20T02:24:24Z",
+   "t_captura_utc": "2026-08-20T02:25:24Z",
+   "t_evaluacion_utc": "2026-08-20T02:25:24Z",
+   "t_generacion_utc": "2026-08-20T02:25:24Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -365,7 +365,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Orlando City SC vs Chicago Fire\n⏱ Minuto: 51'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: Orlando City SC acumula 79% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Orlando City SC, min 43\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Orlando City SC vs Chicago Fire\n⏱ Minuto: 52'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📝 Motivo: Orlando City SC acumula 79% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Orlando City SC, min 43\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "bd0b28c33d162ab5"
   },
@@ -375,7 +375,7 @@
    "match_id": "15171658",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "Colorado Rapids acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -397,9 +397,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-20T02:00:44Z",
-   "t_captura_utc": "2026-08-20T02:24:24Z",
-   "t_evaluacion_utc": "2026-08-20T02:24:25Z",
-   "t_generacion_utc": "2026-08-20T02:24:25Z",
+   "t_captura_utc": "2026-08-20T02:25:24Z",
+   "t_evaluacion_utc": "2026-08-20T02:25:25Z",
+   "t_generacion_utc": "2026-08-20T02:25:25Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -413,7 +413,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Colorado Rapids vs Los Angeles FC\n⏱ Minuto: 43'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: Colorado Rapids acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Colorado Rapids, min 32\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Colorado Rapids vs Los Angeles FC\n⏱ Minuto: 44'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: Colorado Rapids acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Colorado Rapids, min 32\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "612ca2524136916b"
   },
@@ -423,7 +423,7 @@
    "match_id": "15171662",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "Austin FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -445,9 +445,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-20T02:02:53Z",
-   "t_captura_utc": "2026-08-20T02:24:26Z",
-   "t_evaluacion_utc": "2026-08-20T02:24:26Z",
-   "t_generacion_utc": "2026-08-20T02:24:26Z",
+   "t_captura_utc": "2026-08-20T02:25:25Z",
+   "t_evaluacion_utc": "2026-08-20T02:25:26Z",
+   "t_generacion_utc": "2026-08-20T02:25:26Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -461,7 +461,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Seattle Sounders FC vs Austin FC\n⏱ Minuto: 43'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Austin FC acumula 73% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Seattle Sounders FC vs Austin FC\n⏱ Minuto: 44'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Austin FC acumula 73% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "1610f1384ced5d8a"
   }
