@@ -6695,5 +6695,26 @@
    "cuota_real_betano": 3.0,
    "activo": true
   }
+ ],
+ "6da50fcde84e19e6": [
+  {
+   "alert_id": "6da50fcde84e19e6",
+   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "FC Cincinnati vs New York City FC (MLS)",
+   "liga": "MLS",
+   "event_id": "15171651",
+   "minuto_alerta": 66,
+   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-20T01:07:58Z",
+   "t_captura_utc": "2026-08-20T01:07:58Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-20T01:10:40Z",
+   "segundos_transcurridos": 160,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "2.5 @ 1.55",
+   "linea_real_betano": 2.5,
+   "cuota_real_betano": 1.55,
+   "activo": true
+  }
  ]
 }
