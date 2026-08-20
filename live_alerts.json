@@ -1,121 +1,7 @@
 {
- "generated_at_utc": "2026-08-20T03:50:25Z",
+ "generated_at_utc": "2026-08-20T03:51:26Z",
  "n_alerts": 4,
  "alerts": [
-  {
-   "strategy_id": "L3",
-   "match_label": "LA Galaxy vs San Jose Earthquakes (MLS)",
-   "match_id": "15171661",
-   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
-   "cuota_detectada": null,
-   "minuto": 51,
-   "condicion": "Expulsión de LA Galaxy (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_expulsado": "LA Galaxy",
-    "marcador_al_detectar": "0-0",
-    "total_rojas_partido": 1
-   },
-   "t_evento_real_utc": "2026-08-20T03:26:28Z",
-   "t_captura_utc": "2026-08-20T03:50:03Z",
-   "t_evaluacion_utc": "2026-08-20T03:50:17Z",
-   "t_generacion_utc": "2026-08-20T03:50:17Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-20T03:27:21Z",
-     "latencia_envio_ms": 864.4285202026367,
-     "error": null,
-     "message_id": 1600,
-     "chat_id": -5219979824
-    }
-   },
-   "latencia_total_seg": 53.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ LA Galaxy vs San Jose Earthquakes\n⏱ Minuto: 51'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🟥 Expulsado: LA Galaxy\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
-   "evidencia": null,
-   "alert_id": "e7f08a4f70f4171e"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "LA Galaxy vs San Jose Earthquakes (MLS)",
-   "match_id": "15171661",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 51,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 1,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-08-20T03:44:12Z",
-   "t_captura_utc": "2026-08-20T03:44:12Z",
-   "t_evaluacion_utc": "2026-08-20T03:50:20Z",
-   "t_generacion_utc": "2026-08-20T03:50:20Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-20T03:45:19Z",
-     "latencia_envio_ms": 849.5099544525146,
-     "error": null,
-     "message_id": 1601,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 67.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ LA Galaxy vs San Jose Earthquakes\n⏱ Minuto: 51'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "5e34d400982fc872"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Portland Timbers vs San Diego FC (MLS)",
-   "match_id": "15171664",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 50,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 1,
-    "corners_1t_total": 1
-   },
-   "t_evento_real_utc": "2026-08-20T03:44:54Z",
-   "t_captura_utc": "2026-08-20T03:44:54Z",
-   "t_evaluacion_utc": "2026-08-20T03:50:20Z",
-   "t_generacion_utc": "2026-08-20T03:50:20Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-20T03:46:21Z",
-     "latencia_envio_ms": 835.1120948791504,
-     "error": null,
-     "message_id": 1602,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 87.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Portland Timbers vs San Diego FC\n⏱ Minuto: 50'\n📊 Marcador: 2-1\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "704533d39aa623ad"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "LA Galaxy vs San Jose Earthquakes (MLS)",
@@ -163,6 +49,120 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ LA Galaxy vs San Jose Earthquakes\n⏱ Minuto: 51'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: San Jose Earthquakes acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: San Jose Earthquakes, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "55cd1520ead0dcc5"
+  },
+  {
+   "strategy_id": "L3",
+   "match_label": "LA Galaxy vs San Jose Earthquakes (MLS)",
+   "match_id": "15171661",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
+   "cuota_detectada": null,
+   "minuto": 52,
+   "condicion": "Expulsión de LA Galaxy (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_expulsado": "LA Galaxy",
+    "marcador_al_detectar": "0-0",
+    "total_rojas_partido": 1
+   },
+   "t_evento_real_utc": "2026-08-20T03:26:28Z",
+   "t_captura_utc": "2026-08-20T03:51:05Z",
+   "t_evaluacion_utc": "2026-08-20T03:51:18Z",
+   "t_generacion_utc": "2026-08-20T03:51:18Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-20T03:27:21Z",
+     "latencia_envio_ms": 864.4285202026367,
+     "error": null,
+     "message_id": 1600,
+     "chat_id": -5219979824
+    }
+   },
+   "latencia_total_seg": 53.0,
+   "estado_temporal": "EXPIRADA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ LA Galaxy vs San Jose Earthquakes\n⏱ Minuto: 52'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🟥 Expulsado: LA Galaxy\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
+   "evidencia": null,
+   "alert_id": "e7f08a4f70f4171e"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "LA Galaxy vs San Jose Earthquakes (MLS)",
+   "match_id": "15171661",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 52,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 1,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-08-20T03:44:12Z",
+   "t_captura_utc": "2026-08-20T03:44:12Z",
+   "t_evaluacion_utc": "2026-08-20T03:51:21Z",
+   "t_generacion_utc": "2026-08-20T03:51:21Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-20T03:45:19Z",
+     "latencia_envio_ms": 849.5099544525146,
+     "error": null,
+     "message_id": 1601,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 67.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ LA Galaxy vs San Jose Earthquakes\n⏱ Minuto: 52'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "5e34d400982fc872"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Portland Timbers vs San Diego FC (MLS)",
+   "match_id": "15171664",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 51,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 0,
+    "corners_1t_away": 1,
+    "corners_1t_total": 1
+   },
+   "t_evento_real_utc": "2026-08-20T03:44:54Z",
+   "t_captura_utc": "2026-08-20T03:44:54Z",
+   "t_evaluacion_utc": "2026-08-20T03:51:21Z",
+   "t_generacion_utc": "2026-08-20T03:51:21Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-20T03:46:21Z",
+     "latencia_envio_ms": 835.1120948791504,
+     "error": null,
+     "message_id": 1602,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 87.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Portland Timbers vs San Diego FC\n⏱ Minuto: 51'\n📊 Marcador: 2-1\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "704533d39aa623ad"
   }
  ]
 }
