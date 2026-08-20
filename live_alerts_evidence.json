@@ -6716,5 +6716,26 @@
    "cuota_real_betano": 1.55,
    "activo": true
   }
+ ],
+ "3991e28046026fea": [
+  {
+   "alert_id": "3991e28046026fea",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Macará vs Santos (CONMEBOL Sudamericana)",
+   "liga": "CONMEBOL Sudamericana",
+   "event_id": "16253386",
+   "minuto_alerta": 20,
+   "condicion": "Macará acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-20T22:20:27Z",
+   "t_captura_utc": "2026-08-20T22:20:27Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-20T22:23:06Z",
+   "segundos_transcurridos": 157,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "8.0 @ 1.75",
+   "linea_real_betano": 8.0,
+   "cuota_real_betano": 1.75,
+   "activo": true
+  }
  ]
 }
