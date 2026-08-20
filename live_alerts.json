@@ -1,52 +1,14 @@
 {
- "generated_at_utc": "2026-08-20T02:41:23Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-20T02:42:24Z",
+ "n_alerts": 1,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Orlando City SC vs Chicago Fire (MLS)",
-   "match_id": "15171656",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 0,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-08-20T02:11:43Z",
-   "t_captura_utc": "2026-08-20T02:11:43Z",
-   "t_evaluacion_utc": "2026-08-20T02:25:20Z",
-   "t_generacion_utc": "2026-08-20T02:25:20Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-20T02:19:21Z",
-     "latencia_envio_ms": 776.6780853271484,
-     "error": null,
-     "message_id": 1587,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 458.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Orlando City SC vs Chicago Fire\n⏱ Minuto: 52'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "08da6257f3ee6130"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Orlando City SC vs Chicago Fire (MLS)",
    "match_id": "15171656",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 68,
+   "minuto": 69,
    "condicion": "Orlando City SC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -55,9 +17,9 @@
    "extra": {
     "equipo_dominante": "Orlando City SC",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7838,
+    "ratio_presion_territorial": 0.7632,
     "touches_home": 29,
-    "touches_away": 8,
+    "touches_away": 9,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 67,
     "equipo_que_realizo_sustitucion": "Orlando City SC",
@@ -68,9 +30,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-20T02:19:26Z",
-   "t_captura_utc": "2026-08-20T02:41:23Z",
-   "t_evaluacion_utc": "2026-08-20T02:41:23Z",
-   "t_generacion_utc": "2026-08-20T02:41:23Z",
+   "t_captura_utc": "2026-08-20T02:42:24Z",
+   "t_evaluacion_utc": "2026-08-20T02:42:24Z",
+   "t_generacion_utc": "2026-08-20T02:42:24Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -84,7 +46,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Orlando City SC vs Chicago Fire\n⏱ Minuto: 68'\n📊 Marcador: 1-2\n🏆 Liga: MLS\n\n📝 Motivo: Orlando City SC acumula 78% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Orlando City SC, min 67\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Orlando City SC vs Chicago Fire\n⏱ Minuto: 69'\n📊 Marcador: 1-2\n🏆 Liga: MLS\n\n📝 Motivo: Orlando City SC acumula 76% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Orlando City SC, min 67\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "bd0b28c33d162ab5"
   }
