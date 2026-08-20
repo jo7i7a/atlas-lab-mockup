@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-08-20T19:32:15Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-20T19:34:30Z",
+ "n_alerts": 4,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Al-Fayha vs Al-Hilal (Saudi Pro League)",
-   "match_id": "16629420",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 51,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 3,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-20T19:03:25Z",
-   "t_captura_utc": "2026-08-20T19:03:25Z",
-   "t_evaluacion_utc": "2026-08-20T19:09:49Z",
-   "t_generacion_utc": "2026-08-20T19:09:49Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-20T19:05:58Z",
-     "latencia_envio_ms": 1036.2024307250977,
-     "error": null,
-     "message_id": 1613,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 153.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Al-Fayha vs Al-Hilal\n⏱ Minuto: 51'\n📊 Marcador: 0-2\n🏆 Liga: Saudi Pro League\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 3\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "2bd265fa0c9d132d"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Al-Fayha vs Al-Hilal (Saudi Pro League)",
@@ -90,7 +52,7 @@
    "match_id": "16416292",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 28,
+   "minuto": 30,
    "condicion": "4 córners totales antes del min 30 (3-1), Rayo Vallecano presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Deportivo Alavés NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -103,8 +65,8 @@
    },
    "t_evento_real_utc": "2026-08-20T19:15:12Z",
    "t_captura_utc": "2026-08-20T19:15:12Z",
-   "t_evaluacion_utc": "2026-08-20T19:31:09Z",
-   "t_generacion_utc": "2026-08-20T19:31:09Z",
+   "t_evaluacion_utc": "2026-08-20T19:33:09Z",
+   "t_generacion_utc": "2026-08-20T19:33:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -118,7 +80,7 @@
    },
    "latencia_total_seg": 58.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Rayo Vallecano vs Deportivo Alavés\n⏱ Minuto: 28'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Rayo Vallecano presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Deportivo Alavés no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Rayo Vallecano vs Deportivo Alavés\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Rayo Vallecano presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Deportivo Alavés no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "df571637f8d41ec0"
   },
@@ -128,7 +90,7 @@
    "match_id": "16416292",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 28,
+   "minuto": 30,
    "condicion": "4 córners totales antes del min 45 (3-1), Rayo Vallecano presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Deportivo Alavés NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -142,8 +104,8 @@
    },
    "t_evento_real_utc": "2026-08-20T19:15:12Z",
    "t_captura_utc": "2026-08-20T19:15:12Z",
-   "t_evaluacion_utc": "2026-08-20T19:31:10Z",
-   "t_generacion_utc": "2026-08-20T19:31:10Z",
+   "t_evaluacion_utc": "2026-08-20T19:33:10Z",
+   "t_generacion_utc": "2026-08-20T19:33:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -157,7 +119,7 @@
    },
    "latencia_total_seg": 60.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Rayo Vallecano vs Deportivo Alavés\n⏱ Minuto: 28'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Rayo Vallecano presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Deportivo Alavés no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Rayo Vallecano vs Deportivo Alavés\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Rayo Vallecano presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Deportivo Alavés no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "c8bb3bcfb80c6512"
   },
@@ -167,7 +129,7 @@
    "match_id": "16416292",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 29,
+   "minuto": 32,
    "condicion": "Deportivo Alavés acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -176,9 +138,9 @@
    "extra": {
     "equipo_dominante": "Deportivo Alavés",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6667,
+    "ratio_presion_territorial": 0.7333,
     "touches_home": 4,
-    "touches_away": 8,
+    "touches_away": 11,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -189,9 +151,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-20T19:28:42Z",
-   "t_captura_utc": "2026-08-20T19:32:14Z",
-   "t_evaluacion_utc": "2026-08-20T19:32:15Z",
-   "t_generacion_utc": "2026-08-20T19:32:15Z",
+   "t_captura_utc": "2026-08-20T19:34:29Z",
+   "t_evaluacion_utc": "2026-08-20T19:34:29Z",
+   "t_generacion_utc": "2026-08-20T19:34:29Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -205,7 +167,7 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rayo Vallecano vs Deportivo Alavés\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Deportivo Alavés acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rayo Vallecano vs Deportivo Alavés\n⏱ Minuto: 32'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Deportivo Alavés acumula 73% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "3d23100b4b0731af"
   }
