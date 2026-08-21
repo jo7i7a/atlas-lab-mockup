@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-21T17:29:54Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-08-21T17:32:54Z",
+ "n_live_target": 4,
  "matches": {
   "15272499": {
    "event_id": 15272499,
@@ -11,17 +11,17 @@
    "away_score": 1,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 28,
+   "minute": 31,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 37,
-     "away": 63
+     "home": 36,
+     "away": 64
     },
     "shots": {
      "label": "Remates totales",
      "home": 1,
-     "away": 3
+     "away": 5
     },
     "corners": {
      "label": "Corners",
@@ -30,8 +30,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 126,
-     "away": 212
+     "home": 141,
+     "away": 248
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -41,7 +41,7 @@
     "shots_on_target": {
      "label": "Remates al arco",
      "home": 0,
-     "away": 1
+     "away": 2
     },
     "xg": {
      "label": "Expected Goals (xG)",
@@ -51,23 +51,159 @@
    },
    "odds": {
     "btts": {
-     "yes": 1.286,
-     "no": 3.5,
-     "captured_at_utc": "2026-08-21T17:29:39Z"
+     "yes": 1.25,
+     "no": 3.75,
+     "captured_at_utc": "2026-08-21T17:32:46Z"
     },
     "1x2": {
-     "home": 4.5,
-     "draw": 4.0,
-     "away": 1.667,
-     "captured_at_utc": "2026-08-21T17:29:39Z"
+     "home": 3.75,
+     "draw": 3.75,
+     "away": 1.909,
+     "captured_at_utc": "2026-08-21T17:32:46Z"
     },
     "goals_over_25": {
      "over": 2.0,
      "under": 1.727,
-     "captured_at_utc": "2026-08-21T17:29:39Z"
+     "captured_at_utc": "2026-08-21T17:32:46Z"
     }
    },
-   "updated_at_utc": "2026-08-21T17:29:54Z"
+   "updated_at_utc": "2026-08-21T17:32:54Z"
+  },
+  "16671571": {
+   "event_id": 16671571,
+   "league": "Liga Profesional de Fútbol",
+   "home": "Aldosivi",
+   "away": "Club Atlético Unión de Santa Fe",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.05,
+     "no": 1.7,
+     "captured_at_utc": "2026-08-21T17:32:46Z"
+    },
+    "1x2": {
+     "home": 2.75,
+     "draw": 2.875,
+     "away": 3.0,
+     "captured_at_utc": "2026-08-21T17:32:46Z"
+    }
+   },
+   "updated_at_utc": "2026-08-21T17:32:54Z"
+  },
+  "16356973": {
+   "event_id": 16356973,
+   "league": "Challenge League",
+   "home": "Neuchâtel Xamax",
+   "away": "FC Stade-Lausanne-Ouchy",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 100,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 1,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "1x2": {
+     "home": 3.1,
+     "draw": 3.4,
+     "away": 2.2,
+     "captured_at_utc": "2026-08-21T17:32:46Z"
+    }
+   },
+   "updated_at_utc": "2026-08-21T17:32:54Z"
+  },
+  "16356967": {
+   "event_id": 16356967,
+   "league": "Challenge League",
+   "home": "Stade Nyonnais",
+   "away": "Étoile Carouge FC",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 14,
+     "away": 86
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 2,
+     "away": 12
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "1x2": {
+     "home": 4.0,
+     "draw": 4.1,
+     "away": 1.727,
+     "captured_at_utc": "2026-08-21T17:32:46Z"
+    }
+   },
+   "updated_at_utc": "2026-08-21T17:32:54Z"
   }
  }
 }
