@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-21T17:47:42Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-21T17:48:32Z",
+ "n_alerts": 4,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "IK Sirius vs BK Häcken (Allsvenskan)",
-   "match_id": "15272499",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "BK Häcken domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "BK Häcken",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 1,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-21T17:18:21Z",
-   "t_captura_utc": "2026-08-21T17:18:21Z",
-   "t_evaluacion_utc": "2026-08-21T17:26:08Z",
-   "t_generacion_utc": "2026-08-21T17:26:08Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-21T17:19:21Z",
-     "latencia_envio_ms": 871.981143951416,
-     "error": null,
-     "message_id": 1651,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 60.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ IK Sirius vs BK Häcken\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: BK Häcken — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "5c0377542cd20c91"
-  },
   {
    "strategy_id": "A2",
    "match_label": "Al-Hazem vs Al Diriyah (Saudi Pro League)",
@@ -178,7 +133,7 @@
    "match_id": "16671571",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 16,
+   "minuto": 17,
    "condicion": "Club Atlético Unión de Santa Fe domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -198,8 +153,8 @@
    },
    "t_evento_real_utc": "2026-08-21T17:46:29Z",
    "t_captura_utc": "2026-08-21T17:46:29Z",
-   "t_evaluacion_utc": "2026-08-21T17:47:29Z",
-   "t_generacion_utc": "2026-08-21T17:47:29Z",
+   "t_evaluacion_utc": "2026-08-21T17:48:28Z",
+   "t_generacion_utc": "2026-08-21T17:48:28Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -213,7 +168,7 @@
    },
    "latencia_total_seg": 60.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Aldosivi vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Unión de Santa Fe — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Aldosivi vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 17'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Unión de Santa Fe — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "132f08bf68e625a8"
   }
