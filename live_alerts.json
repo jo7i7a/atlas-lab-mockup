@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-21T18:15:14Z",
- "n_alerts": 10,
+ "generated_at_utc": "2026-08-21T18:17:11Z",
+ "n_alerts": 9,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -49,51 +49,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Stade Nyonnais vs Étoile Carouge FC\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Challenge League\n\n📝 Motivo: Stade Nyonnais acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "215e0dfd8b2ba1f3"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Aldosivi vs Club Atlético Unión de Santa Fe (Liga Profesional de Fútbol)",
-   "match_id": "16671571",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Club Atlético Unión de Santa Fe domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Club Atlético Unión de Santa Fe",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 1,
-    "remates_home": 1,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-21T17:46:29Z",
-   "t_captura_utc": "2026-08-21T17:46:29Z",
-   "t_evaluacion_utc": "2026-08-21T17:55:52Z",
-   "t_generacion_utc": "2026-08-21T17:55:52Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-21T17:47:29Z",
-     "latencia_envio_ms": 824.0265846252441,
-     "error": null,
-     "message_id": 1655,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 60.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Aldosivi vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Unión de Santa Fe — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "132f08bf68e625a8"
   },
   {
    "strategy_id": "L1",
@@ -346,45 +301,6 @@
   },
   {
    "strategy_id": "L1-SHADOW",
-   "match_label": "Neuchâtel Xamax vs FC Stade-Lausanne-Ouchy (Challenge League)",
-   "match_id": "16356973",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 43,
-   "condicion": "4 córners totales antes del min 45 (3-1), Neuchâtel Xamax presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿FC Stade-Lausanne-Ouchy NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Neuchâtel Xamax",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-21T18:07:06Z",
-   "t_captura_utc": "2026-08-21T18:07:06Z",
-   "t_evaluacion_utc": "2026-08-21T18:15:12Z",
-   "t_generacion_utc": "2026-08-21T18:15:12Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-21T18:09:12Z",
-     "latencia_envio_ms": 878.279447555542,
-     "error": null,
-     "message_id": 1664,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 126.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Neuchâtel Xamax vs FC Stade-Lausanne-Ouchy\n⏱ Minuto: 43'\n📊 Marcador: 0-2\n🏆 Liga: Challenge League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Neuchâtel Xamax presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Stade-Lausanne-Ouchy no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "377ef9833700cfc8"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
    "match_label": "Aldosivi vs Club Atlético Unión de Santa Fe (Liga Profesional de Fútbol)",
    "match_id": "16671571",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
@@ -421,6 +337,45 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Aldosivi vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 44'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Aldosivi presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Club Atlético Unión de Santa Fe no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "a6ecb4e1f4669ff0"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Neuchâtel Xamax vs FC Stade-Lausanne-Ouchy (Challenge League)",
+   "match_id": "16356973",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "4 córners totales antes del min 45 (3-1), Neuchâtel Xamax presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿FC Stade-Lausanne-Ouchy NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Neuchâtel Xamax",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-21T18:07:06Z",
+   "t_captura_utc": "2026-08-21T18:07:06Z",
+   "t_evaluacion_utc": "2026-08-21T18:17:11Z",
+   "t_generacion_utc": "2026-08-21T18:17:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-21T18:09:12Z",
+     "latencia_envio_ms": 878.279447555542,
+     "error": null,
+     "message_id": 1664,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 126.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Neuchâtel Xamax vs FC Stade-Lausanne-Ouchy\n⏱ Minuto: 45'\n📊 Marcador: 0-2\n🏆 Liga: Challenge League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Neuchâtel Xamax presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Stade-Lausanne-Ouchy no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "377ef9833700cfc8"
   }
  ]
 }
