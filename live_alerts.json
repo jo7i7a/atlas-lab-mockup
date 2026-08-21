@@ -1,84 +1,7 @@
 {
- "generated_at_utc": "2026-08-21T19:04:01Z",
+ "generated_at_utc": "2026-08-21T19:05:39Z",
  "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "L1",
-   "match_label": "Olympique de Marseille vs RC Strasbourg (Ligue 1)",
-   "match_id": "16310922",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 16,
-   "condicion": "4 córners totales antes del min 30 (0-4), RC Strasbourg presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Olympique de Marseille NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "RC Strasbourg"
-   },
-   "t_evento_real_utc": "2026-08-21T18:58:21Z",
-   "t_captura_utc": "2026-08-21T18:58:21Z",
-   "t_evaluacion_utc": "2026-08-21T19:02:09Z",
-   "t_generacion_utc": "2026-08-21T19:02:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-21T18:59:14Z",
-     "latencia_envio_ms": 841.0282135009766,
-     "error": null,
-     "message_id": 1669,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 53.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Olympique de Marseille vs RC Strasbourg\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Ligue 1\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: RC Strasbourg presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Olympique de Marseille no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "53723a2529ae33cb"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Olympique de Marseille vs RC Strasbourg (Ligue 1)",
-   "match_id": "16310922",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 16,
-   "condicion": "4 córners totales antes del min 45 (0-4), RC Strasbourg presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Olympique de Marseille NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "RC Strasbourg",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-21T18:58:21Z",
-   "t_captura_utc": "2026-08-21T18:58:21Z",
-   "t_evaluacion_utc": "2026-08-21T19:02:11Z",
-   "t_generacion_utc": "2026-08-21T19:02:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-21T18:59:17Z",
-     "latencia_envio_ms": 830.1799297332764,
-     "error": null,
-     "message_id": 1670,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 56.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Olympique de Marseille vs RC Strasbourg\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Ligue 1\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: RC Strasbourg presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Olympique de Marseille no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "7003ab180fc463f6"
-  },
   {
    "strategy_id": "L1-SHADOW",
    "match_label": "FC Rapperswil-Jona vs FC Winterthur (Challenge League)",
@@ -119,12 +42,89 @@
    "alert_id": "472dab787cbaf187"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "Olympique de Marseille vs RC Strasbourg (Ligue 1)",
+   "match_id": "16310922",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 19,
+   "condicion": "4 córners totales antes del min 30 (0-4), RC Strasbourg presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Olympique de Marseille NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "RC Strasbourg"
+   },
+   "t_evento_real_utc": "2026-08-21T18:58:21Z",
+   "t_captura_utc": "2026-08-21T18:58:21Z",
+   "t_evaluacion_utc": "2026-08-21T19:05:09Z",
+   "t_generacion_utc": "2026-08-21T19:05:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-21T18:59:14Z",
+     "latencia_envio_ms": 841.0282135009766,
+     "error": null,
+     "message_id": 1669,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 53.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Olympique de Marseille vs RC Strasbourg\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Ligue 1\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: RC Strasbourg presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Olympique de Marseille no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "53723a2529ae33cb"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Olympique de Marseille vs RC Strasbourg (Ligue 1)",
+   "match_id": "16310922",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 19,
+   "condicion": "4 córners totales antes del min 45 (0-4), RC Strasbourg presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Olympique de Marseille NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "RC Strasbourg",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-21T18:58:21Z",
+   "t_captura_utc": "2026-08-21T18:58:21Z",
+   "t_evaluacion_utc": "2026-08-21T19:05:12Z",
+   "t_generacion_utc": "2026-08-21T19:05:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-21T18:59:17Z",
+     "latencia_envio_ms": 830.1799297332764,
+     "error": null,
+     "message_id": 1670,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 56.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Olympique de Marseille vs RC Strasbourg\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Ligue 1\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: RC Strasbourg presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Olympique de Marseille no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "7003ab180fc463f6"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Stade Nyonnais vs Étoile Carouge FC (Challenge League)",
    "match_id": "16356967",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 71,
+   "minuto": 73,
    "condicion": "Étoile Carouge FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -146,9 +146,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-21T19:00:33Z",
-   "t_captura_utc": "2026-08-21T19:03:58Z",
-   "t_evaluacion_utc": "2026-08-21T19:03:58Z",
-   "t_generacion_utc": "2026-08-21T19:03:58Z",
+   "t_captura_utc": "2026-08-21T19:05:36Z",
+   "t_evaluacion_utc": "2026-08-21T19:05:36Z",
+   "t_generacion_utc": "2026-08-21T19:05:36Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -162,7 +162,7 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Stade Nyonnais vs Étoile Carouge FC\n⏱ Minuto: 71'\n📊 Marcador: 0-0\n🏆 Liga: Challenge League\n\n📝 Motivo: Étoile Carouge FC acumula 66% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Étoile Carouge FC, min 64\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Stade Nyonnais vs Étoile Carouge FC\n⏱ Minuto: 73'\n📊 Marcador: 0-0\n🏆 Liga: Challenge League\n\n📝 Motivo: Étoile Carouge FC acumula 66% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Étoile Carouge FC, min 64\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "15c69f8e1e0e69eb"
   },
@@ -172,7 +172,7 @@
    "match_id": "16483650",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 33,
+   "minuto": 35,
    "condicion": "Erzurumspor FK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -194,9 +194,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-21T19:03:59Z",
-   "t_captura_utc": "2026-08-21T19:03:59Z",
-   "t_evaluacion_utc": "2026-08-21T19:03:59Z",
-   "t_generacion_utc": "2026-08-21T19:03:59Z",
+   "t_captura_utc": "2026-08-21T19:05:37Z",
+   "t_evaluacion_utc": "2026-08-21T19:05:37Z",
+   "t_generacion_utc": "2026-08-21T19:05:37Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -210,7 +210,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Erzurumspor FK vs Galatasaray\n⏱ Minuto: 33'\n📊 Marcador: 0-2\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Erzurumspor FK acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Erzurumspor FK vs Galatasaray\n⏱ Minuto: 35'\n📊 Marcador: 0-2\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Erzurumspor FK acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "01ac935cd6e8deb4"
   },
@@ -220,7 +220,7 @@
    "match_id": "16671571",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 74,
+   "minuto": 75,
    "condicion": "Club Atlético Unión de Santa Fe acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -242,9 +242,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-21T19:00:36Z",
-   "t_captura_utc": "2026-08-21T19:04:01Z",
-   "t_evaluacion_utc": "2026-08-21T19:04:01Z",
-   "t_generacion_utc": "2026-08-21T19:04:01Z",
+   "t_captura_utc": "2026-08-21T19:05:38Z",
+   "t_evaluacion_utc": "2026-08-21T19:05:39Z",
+   "t_generacion_utc": "2026-08-21T19:05:39Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -258,7 +258,7 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Aldosivi vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 74'\n📊 Marcador: 1-3\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Unión de Santa Fe acumula 66% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Club Atlético Unión de Santa Fe, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Aldosivi vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 75'\n📊 Marcador: 1-3\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Unión de Santa Fe acumula 66% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Club Atlético Unión de Santa Fe, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "0e333eb8bd840a12"
   }
