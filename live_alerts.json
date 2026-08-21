@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-21T00:02:39Z",
+ "generated_at_utc": "2026-08-21T00:10:33Z",
  "n_alerts": 5,
  "alerts": [
   {
@@ -130,45 +130,6 @@
    "alert_id": "2b672767628fa271"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Grêmio Novorizontino vs América Mineiro (Brasileirão Série B)",
-   "match_id": "15526229",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 31,
-   "condicion": "4 córners totales antes del min 45 (4-0), Grêmio Novorizontino presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿América Mineiro NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Grêmio Novorizontino",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-20T23:42:43Z",
-   "t_captura_utc": "2026-08-20T23:42:43Z",
-   "t_evaluacion_utc": "2026-08-21T00:01:10Z",
-   "t_generacion_utc": "2026-08-21T00:01:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-20T23:43:47Z",
-     "latencia_envio_ms": 768.3656215667725,
-     "error": null,
-     "message_id": 1631,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 64.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Grêmio Novorizontino vs América Mineiro\n⏱ Minuto: 31'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Grêmio Novorizontino presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿América Mineiro no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "2be5209677a7bc05"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Grêmio Novorizontino vs América Mineiro (Brasileirão Série B)",
    "match_id": "15526229",
@@ -215,6 +176,45 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Grêmio Novorizontino vs América Mineiro\n⏱ Minuto: 32'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Grêmio Novorizontino acumula 73% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Grêmio Novorizontino, min 19\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "10673a457eef3350"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Grêmio Novorizontino vs América Mineiro (Brasileirão Série B)",
+   "match_id": "15526229",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 40,
+   "condicion": "4 córners totales antes del min 45 (4-0), Grêmio Novorizontino presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿América Mineiro NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Grêmio Novorizontino",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-20T23:42:43Z",
+   "t_captura_utc": "2026-08-20T23:42:43Z",
+   "t_evaluacion_utc": "2026-08-21T00:10:33Z",
+   "t_generacion_utc": "2026-08-21T00:10:33Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-20T23:43:47Z",
+     "latencia_envio_ms": 768.3656215667725,
+     "error": null,
+     "message_id": 1631,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 64.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Grêmio Novorizontino vs América Mineiro\n⏱ Minuto: 40'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Grêmio Novorizontino presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿América Mineiro no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "2be5209677a7bc05"
   }
  ]
 }
