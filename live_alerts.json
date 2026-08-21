@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-08-21T17:52:47Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-21T17:53:49Z",
+ "n_alerts": 7,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Al-Hazem vs Al Diriyah (Saudi Pro League)",
-   "match_id": "16629422",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 1,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-08-21T17:22:49Z",
-   "t_captura_utc": "2026-08-21T17:22:49Z",
-   "t_evaluacion_utc": "2026-08-21T17:29:23Z",
-   "t_generacion_utc": "2026-08-21T17:29:23Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-21T17:23:22Z",
-     "latencia_envio_ms": 786.2558364868164,
-     "error": null,
-     "message_id": 1652,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 33.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Al-Hazem vs Al Diriyah\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: Saudi Pro League\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "6da5cc7a98f2675a"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "IK Sirius vs BK Häcken (Allsvenskan)",
@@ -128,128 +90,6 @@
    "alert_id": "8cc469b30ecbc7e0"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "Aldosivi vs Club Atlético Unión de Santa Fe (Liga Profesional de Fútbol)",
-   "match_id": "16671571",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 21,
-   "condicion": "4 córners totales antes del min 30 (3-1), Aldosivi presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Club Atlético Unión de Santa Fe NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Aldosivi"
-   },
-   "t_evento_real_utc": "2026-08-21T17:49:17Z",
-   "t_captura_utc": "2026-08-21T17:49:17Z",
-   "t_evaluacion_utc": "2026-08-21T17:52:11Z",
-   "t_generacion_utc": "2026-08-21T17:52:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-21T17:50:11Z",
-     "latencia_envio_ms": 775.4721641540527,
-     "error": null,
-     "message_id": 1656,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 54.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Aldosivi vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 21'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Aldosivi presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Club Atlético Unión de Santa Fe no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "be53d706fc9f42fa"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Aldosivi vs Club Atlético Unión de Santa Fe (Liga Profesional de Fútbol)",
-   "match_id": "16671571",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 21,
-   "condicion": "4 córners totales antes del min 45 (3-1), Aldosivi presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Club Atlético Unión de Santa Fe NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Aldosivi",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-21T17:49:17Z",
-   "t_captura_utc": "2026-08-21T17:49:17Z",
-   "t_evaluacion_utc": "2026-08-21T17:52:14Z",
-   "t_generacion_utc": "2026-08-21T17:52:14Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-21T17:50:15Z",
-     "latencia_envio_ms": 781.96120262146,
-     "error": null,
-     "message_id": 1657,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 58.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Aldosivi vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 21'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Aldosivi presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Club Atlético Unión de Santa Fe no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "a6ecb4e1f4669ff0"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Aldosivi vs Club Atlético Unión de Santa Fe (Liga Profesional de Fútbol)",
-   "match_id": "16671571",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 22,
-   "condicion": "Club Atlético Unión de Santa Fe domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Club Atlético Unión de Santa Fe",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 1,
-    "remates_home": 1,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-21T17:46:29Z",
-   "t_captura_utc": "2026-08-21T17:46:29Z",
-   "t_evaluacion_utc": "2026-08-21T17:52:43Z",
-   "t_generacion_utc": "2026-08-21T17:52:43Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-21T17:47:29Z",
-     "latencia_envio_ms": 824.0265846252441,
-     "error": null,
-     "message_id": 1655,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 60.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Aldosivi vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 22'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Unión de Santa Fe — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "132f08bf68e625a8"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Stade Nyonnais vs Étoile Carouge FC (Challenge League)",
    "match_id": "16356967",
@@ -298,12 +138,134 @@
    "alert_id": "215e0dfd8b2ba1f3"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "Aldosivi vs Club Atlético Unión de Santa Fe (Liga Profesional de Fútbol)",
+   "match_id": "16671571",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 22,
+   "condicion": "4 córners totales antes del min 30 (3-1), Aldosivi presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Club Atlético Unión de Santa Fe NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Aldosivi"
+   },
+   "t_evento_real_utc": "2026-08-21T17:49:17Z",
+   "t_captura_utc": "2026-08-21T17:49:17Z",
+   "t_evaluacion_utc": "2026-08-21T17:53:11Z",
+   "t_generacion_utc": "2026-08-21T17:53:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-21T17:50:11Z",
+     "latencia_envio_ms": 775.4721641540527,
+     "error": null,
+     "message_id": 1656,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 54.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Aldosivi vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 22'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Aldosivi presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Club Atlético Unión de Santa Fe no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "be53d706fc9f42fa"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Aldosivi vs Club Atlético Unión de Santa Fe (Liga Profesional de Fútbol)",
+   "match_id": "16671571",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 22,
+   "condicion": "4 córners totales antes del min 45 (3-1), Aldosivi presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Club Atlético Unión de Santa Fe NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Aldosivi",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-21T17:49:17Z",
+   "t_captura_utc": "2026-08-21T17:49:17Z",
+   "t_evaluacion_utc": "2026-08-21T17:53:14Z",
+   "t_generacion_utc": "2026-08-21T17:53:14Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-21T17:50:15Z",
+     "latencia_envio_ms": 781.96120262146,
+     "error": null,
+     "message_id": 1657,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 58.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Aldosivi vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 22'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Aldosivi presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Club Atlético Unión de Santa Fe no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "a6ecb4e1f4669ff0"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Aldosivi vs Club Atlético Unión de Santa Fe (Liga Profesional de Fútbol)",
+   "match_id": "16671571",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 23,
+   "condicion": "Club Atlético Unión de Santa Fe domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Club Atlético Unión de Santa Fe",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 1,
+    "remates_home": 1,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-21T17:46:29Z",
+   "t_captura_utc": "2026-08-21T17:46:29Z",
+   "t_evaluacion_utc": "2026-08-21T17:53:46Z",
+   "t_generacion_utc": "2026-08-21T17:53:46Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-21T17:47:29Z",
+     "latencia_envio_ms": 824.0265846252441,
+     "error": null,
+     "message_id": 1655,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 60.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Aldosivi vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 23'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Unión de Santa Fe — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "132f08bf68e625a8"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Neuchâtel Xamax vs FC Stade-Lausanne-Ouchy (Challenge League)",
    "match_id": "16356973",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 20,
+   "minuto": 21,
    "condicion": "FC Stade-Lausanne-Ouchy acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -312,9 +274,9 @@
    "extra": {
     "equipo_dominante": "FC Stade-Lausanne-Ouchy",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6667,
+    "ratio_presion_territorial": 0.75,
     "touches_home": 2,
-    "touches_away": 4,
+    "touches_away": 6,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 12,
     "equipo_que_realizo_sustitucion": "FC Stade-Lausanne-Ouchy",
@@ -325,9 +287,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-21T17:52:45Z",
-   "t_captura_utc": "2026-08-21T17:52:45Z",
-   "t_evaluacion_utc": "2026-08-21T17:52:46Z",
-   "t_generacion_utc": "2026-08-21T17:52:46Z",
+   "t_captura_utc": "2026-08-21T17:53:49Z",
+   "t_evaluacion_utc": "2026-08-21T17:53:49Z",
+   "t_generacion_utc": "2026-08-21T17:53:49Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -341,7 +303,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Neuchâtel Xamax vs FC Stade-Lausanne-Ouchy\n⏱ Minuto: 20'\n📊 Marcador: 0-1\n🏆 Liga: Challenge League\n\n📝 Motivo: FC Stade-Lausanne-Ouchy acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: FC Stade-Lausanne-Ouchy, min 12\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Neuchâtel Xamax vs FC Stade-Lausanne-Ouchy\n⏱ Minuto: 21'\n📊 Marcador: 0-1\n🏆 Liga: Challenge League\n\n📝 Motivo: FC Stade-Lausanne-Ouchy acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: FC Stade-Lausanne-Ouchy, min 12\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "5d336162658ae53b"
   }
