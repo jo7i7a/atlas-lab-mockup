@@ -1,44 +1,44 @@
 {
- "generated_at_utc": "2026-08-21T01:53:03Z",
+ "generated_at_utc": "2026-08-21T10:25:20Z",
  "n_alerts": 1,
  "alerts": [
   {
-   "strategy_id": "L3",
-   "match_label": "Corinthians vs Rosario Central (CONMEBOL Libertadores)",
-   "match_id": "16253173",
-   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
+   "strategy_id": "L1",
+   "match_label": "Kashiwa Reysol vs V-Varen Nagasaki (J1 League)",
+   "match_id": "16348533",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 65,
-   "condicion": "Expulsión de Corinthians (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "minuto": 19,
+   "condicion": "4 córners totales antes del min 30 (4-0), Kashiwa Reysol presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿V-Varen Nagasaki NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
-   "priority": "ALTA",
+   "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "equipo_expulsado": "Corinthians",
-    "marcador_al_detectar": "0-0",
-    "total_rojas_partido": 1
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Kashiwa Reysol"
    },
-   "t_evento_real_utc": "2026-08-21T01:47:13Z",
-   "t_captura_utc": "2026-08-21T01:51:58Z",
-   "t_evaluacion_utc": "2026-08-21T01:53:02Z",
-   "t_generacion_utc": "2026-08-21T01:53:02Z",
+   "t_evento_real_utc": "2026-08-21T10:19:45Z",
+   "t_captura_utc": "2026-08-21T10:19:45Z",
+   "t_evaluacion_utc": "2026-08-21T10:25:19Z",
+   "t_generacion_utc": "2026-08-21T10:25:19Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
      "estado": "OK",
-     "t_envio_utc": "2026-08-21T01:53:03Z",
-     "latencia_envio_ms": 848.4163284301758,
+     "t_envio_utc": "2026-08-21T10:25:20Z",
+     "latencia_envio_ms": 830.3325176239014,
      "error": null,
-     "message_id": 1644,
-     "chat_id": -5219979824
+     "message_id": 1645,
+     "chat_id": -5314130598
     }
    },
-   "latencia_total_seg": 350.0,
+   "latencia_total_seg": 335.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Corinthians vs Rosario Central\n⏱ Minuto: 65'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n🟥 Expulsado: Corinthians\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Kashiwa Reysol vs V-Varen Nagasaki\n⏱ Minuto: 19'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Kashiwa Reysol presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿V-Varen Nagasaki no está en bloque bajo?",
    "evidencia": null,
-   "alert_id": "d5aad3bcdb59f45a"
+   "alert_id": "d18396d9f985d978"
   }
  ]
 }
