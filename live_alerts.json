@@ -1,54 +1,5 @@
 {
- "generated_at_utc": "2026-08-21T17:10:21Z",
- "n_alerts": 1,
- "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Al-Hazem vs Al Diriyah (Saudi Pro League)",
-   "match_id": "16629422",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 48,
-   "condicion": "Al-Hazem acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Al-Hazem",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7368,
-    "touches_home": 14,
-    "touches_away": 5,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 31,
-    "equipo_que_realizo_sustitucion": "Al-Hazem",
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-21T16:40:29Z",
-    "t_inicio_estimado_condicion": "2026-08-21T16:39:45Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-21T16:40:29Z",
-   "t_captura_utc": "2026-08-21T17:04:20Z",
-   "t_evaluacion_utc": "2026-08-21T17:04:21Z",
-   "t_generacion_utc": "2026-08-21T17:04:21Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-21T16:40:30Z",
-     "latencia_envio_ms": 731.8236827850342,
-     "error": null,
-     "message_id": 1650,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Hazem vs Al Diriyah\n⏱ Minuto: 48'\n📊 Marcador: 0-1\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Hazem acumula 74% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Al-Hazem, min 31\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "3886ffbe2930e123"
-  }
- ]
+ "generated_at_utc": "2026-08-21T17:11:22Z",
+ "n_alerts": 0,
+ "alerts": []
 }
