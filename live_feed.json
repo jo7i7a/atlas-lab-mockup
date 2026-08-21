@@ -1,26 +1,26 @@
 {
- "generated_at_utc": "2026-08-21T20:05:57Z",
- "n_live_target": 3,
+ "generated_at_utc": "2026-08-21T20:11:55Z",
+ "n_live_target": 2,
  "matches": {
   "16363633": {
    "event_id": 16363633,
    "league": "Premier League",
    "home": "Arsenal",
    "away": "Coventry City",
-   "home_score": 2,
+   "home_score": 3,
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 48,
+   "minute": 54,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 68,
-     "away": 32
+     "home": 67,
+     "away": 33
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 1.29,
+     "home": 1.46,
      "away": 0.04
     },
     "big_chances": {
@@ -30,18 +30,18 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 10,
+     "home": 12,
      "away": 2
     },
     "corners": {
      "label": "Corners",
-     "home": 5,
+     "home": 6,
      "away": 1
     },
     "passes": {
      "label": "Pases",
-     "home": 329,
-     "away": 156
+     "home": 353,
+     "away": 175
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -50,34 +50,34 @@
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 3,
+     "home": 5,
      "away": 0
     }
    },
    "odds": {
     "btts": {
-     "yes": 3.25,
-     "no": 1.333,
-     "captured_at_utc": "2026-08-21T20:05:22Z"
+     "yes": 3.5,
+     "no": 1.286,
+     "captured_at_utc": "2026-08-21T20:11:27Z"
     },
     "corners_over_95": {
-     "over": 1.615,
-     "under": 2.2,
-     "captured_at_utc": "2026-08-21T20:05:22Z"
+     "over": 1.667,
+     "under": 2.1,
+     "captured_at_utc": "2026-08-21T20:11:27Z"
     },
     "1x2": {
      "home": 1.007,
-     "draw": 29.0,
-     "away": 81.0,
-     "captured_at_utc": "2026-08-21T20:05:22Z"
+     "draw": 41.0,
+     "away": 126.0,
+     "captured_at_utc": "2026-08-21T20:11:27Z"
     },
     "goals_over_25": {
      "over": 1.8,
      "under": 2.0,
-     "captured_at_utc": "2026-08-21T20:05:22Z"
+     "captured_at_utc": "2026-08-21T20:11:27Z"
     }
    },
-   "updated_at_utc": "2026-08-21T20:05:57Z"
+   "updated_at_utc": "2026-08-21T20:11:55Z"
   },
   "16416293": {
    "event_id": 16416293,
@@ -87,8 +87,8 @@
    "home_score": 0,
    "away_score": 0,
    "status_type": "inprogress",
-   "status_description": "Halftime",
-   "minute": null,
+   "status_description": "2nd half",
+   "minute": 51,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -97,7 +97,7 @@
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.18,
+     "home": 0.21,
      "away": 0.35
     },
     "big_chances": {
@@ -107,7 +107,7 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 3,
+     "home": 5,
      "away": 2
     },
     "corners": {
@@ -117,8 +117,13 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 298,
-     "away": 253
+     "home": 323,
+     "away": 271
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 0,
+     "away": 2
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -130,88 +135,26 @@
     "btts": {
      "yes": 3.5,
      "no": 1.286,
-     "captured_at_utc": "2026-08-21T20:05:22Z"
+     "captured_at_utc": "2026-08-21T20:11:27Z"
     },
     "corners_over_95": {
      "over": 2.2,
      "under": 1.615,
-     "captured_at_utc": "2026-08-21T20:05:22Z"
+     "captured_at_utc": "2026-08-21T20:11:27Z"
     },
     "1x2": {
-     "home": 2.5,
-     "draw": 2.5,
-     "away": 4.0,
-     "captured_at_utc": "2026-08-21T20:05:22Z"
+     "home": 2.375,
+     "draw": 2.4,
+     "away": 4.5,
+     "captured_at_utc": "2026-08-21T20:11:27Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.533,
-     "captured_at_utc": "2026-08-21T20:05:22Z"
+     "captured_at_utc": "2026-08-21T20:11:27Z"
     }
    },
-   "updated_at_utc": "2026-08-21T20:05:57Z"
-  },
-  "16357032": {
-   "event_id": 16357032,
-   "league": "Challenge League",
-   "home": "FC Rapperswil-Jona",
-   "away": "FC Winterthur",
-   "home_score": 0,
-   "away_score": 2,
-   "status_type": "inprogress",
-   "status_description": "2nd half",
-   "minute": 91,
-   "stats": {
-    "possession": {
-     "label": "Posesión",
-     "home": 55,
-     "away": 45
-    },
-    "big_chances": {
-     "label": "Ocasiones claras",
-     "home": 3,
-     "away": 4
-    },
-    "shots": {
-     "label": "Remates totales",
-     "home": 18,
-     "away": 17
-    },
-    "corners": {
-     "label": "Corners",
-     "home": 2,
-     "away": 7
-    },
-    "passes": {
-     "label": "Pases",
-     "home": 417,
-     "away": 342
-    },
-    "yellow_cards": {
-     "label": "Tarjetas amarillas",
-     "home": 2,
-     "away": 2
-    },
-    "shots_on_target": {
-     "label": "Remates al arco",
-     "home": 2,
-     "away": 5
-    },
-    "xg": {
-     "label": "Expected Goals (xG)",
-     "home": 0,
-     "away": 0
-    }
-   },
-   "odds": {
-    "1x2": {
-     "home": 126.0,
-     "draw": 51.0,
-     "away": 1.002,
-     "captured_at_utc": "2026-08-21T20:05:22Z"
-    }
-   },
-   "updated_at_utc": "2026-08-21T20:05:57Z"
+   "updated_at_utc": "2026-08-21T20:11:55Z"
   }
  }
 }
