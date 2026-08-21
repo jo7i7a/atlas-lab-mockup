@@ -6798,5 +6798,26 @@
    "cuota_real_betano": 1.82,
    "activo": true
   }
+ ],
+ "d8b8e28c2b425488": [
+  {
+   "alert_id": "d8b8e28c2b425488",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Corinthians vs Rosario Central (CONMEBOL Libertadores)",
+   "liga": "CONMEBOL Libertadores",
+   "event_id": "16253173",
+   "minuto_alerta": 32,
+   "condicion": "Corinthians acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-21T01:02:41Z",
+   "t_captura_utc": "2026-08-21T01:02:41Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-21T01:04:11Z",
+   "segundos_transcurridos": 75,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "11.5 @ 1.90",
+   "linea_real_betano": 11.5,
+   "cuota_real_betano": 1.9,
+   "activo": true
+  }
  ]
 }
