@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-21T17:09:21Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-21T17:10:21Z",
+ "n_alerts": 1,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Al-Hazem vs Al Diriyah (Saudi Pro League)",
-   "match_id": "16629422",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Al-Hazem domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Al-Hazem",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 1,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-21T16:39:45Z",
-   "t_captura_utc": "2026-08-21T16:39:45Z",
-   "t_evaluacion_utc": "2026-08-21T16:41:26Z",
-   "t_generacion_utc": "2026-08-21T16:41:26Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-21T16:40:26Z",
-     "latencia_envio_ms": 844.0041542053223,
-     "error": null,
-     "message_id": 1649,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 41.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Al-Hazem vs Al Diriyah\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Hazem — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "2bc8d3b862436ab3"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Al-Hazem vs Al Diriyah (Saudi Pro League)",
