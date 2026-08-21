@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-21T18:21:49Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-21T18:23:12Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "L1",
@@ -87,54 +87,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Stade Nyonnais vs Étoile Carouge FC\n⏱ Minuto: 33'\n📊 Marcador: 0-0\n🏆 Liga: Challenge League\n\n📝 Motivo: Étoile Carouge FC acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Étoile Carouge FC, min 8\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "460b42b53dfc0dbf"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Neuchâtel Xamax vs FC Stade-Lausanne-Ouchy (Challenge League)",
-   "match_id": "16356973",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 32,
-   "condicion": "FC Stade-Lausanne-Ouchy acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "FC Stade-Lausanne-Ouchy",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6154,
-    "touches_home": 5,
-    "touches_away": 8,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 12,
-    "equipo_que_realizo_sustitucion": "FC Stade-Lausanne-Ouchy",
-    "marcador_en_el_momento": "0-2",
-    "t_primera_observacion_atlas": "2026-08-21T17:52:45Z",
-    "t_inicio_estimado_condicion": "2026-08-21T17:52:27Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-21T17:52:45Z",
-   "t_captura_utc": "2026-08-21T18:04:28Z",
-   "t_evaluacion_utc": "2026-08-21T18:04:28Z",
-   "t_generacion_utc": "2026-08-21T18:04:28Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-21T17:52:46Z",
-     "latencia_envio_ms": 839.8542404174805,
-     "error": null,
-     "message_id": 1659,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Neuchâtel Xamax vs FC Stade-Lausanne-Ouchy\n⏱ Minuto: 32'\n📊 Marcador: 0-2\n🏆 Liga: Challenge League\n\n📝 Motivo: FC Stade-Lausanne-Ouchy acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: FC Stade-Lausanne-Ouchy, min 12\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "5d336162658ae53b"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -258,7 +210,7 @@
    "match_id": "16629425",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 21,
+   "minuto": 22,
    "condicion": "Al-Qadsiah acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -267,22 +219,22 @@
    "extra": {
     "equipo_dominante": "Al-Qadsiah",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.9,
-    "touches_home": 9,
+    "ratio_presion_territorial": 0.9167,
+    "touches_home": 11,
     "touches_away": 1,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
     "marcador_en_el_momento": "0-0",
     "t_primera_observacion_atlas": "2026-08-21T18:21:47Z",
-    "t_inicio_estimado_condicion": null,
+    "t_inicio_estimado_condicion": "2026-08-21T18:21:50Z",
     "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-21T18:21:47Z",
-   "t_captura_utc": "2026-08-21T18:21:47Z",
-   "t_evaluacion_utc": "2026-08-21T18:21:48Z",
-   "t_generacion_utc": "2026-08-21T18:21:48Z",
+   "t_captura_utc": "2026-08-21T18:23:12Z",
+   "t_evaluacion_utc": "2026-08-21T18:23:12Z",
+   "t_generacion_utc": "2026-08-21T18:23:12Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -296,7 +248,7 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Qadsiah vs Al-Ittihad\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Qadsiah acumula 90% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Qadsiah vs Al-Ittihad\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Qadsiah acumula 92% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "6d142f6adc8b006a"
   }
