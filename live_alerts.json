@@ -1,14 +1,52 @@
 {
- "generated_at_utc": "2026-08-21T16:28:37Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-21T16:29:19Z",
+ "n_alerts": 3,
  "alerts": [
+  {
+   "strategy_id": "L1",
+   "match_label": "Al-Riyadh vs Al-Nassr (Saudi Pro League)",
+   "match_id": "16629421",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 28,
+   "condicion": "4 córners totales antes del min 30 (0-4), Al-Nassr presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Al-Riyadh NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Al-Nassr"
+   },
+   "t_evento_real_utc": "2026-08-21T16:24:45Z",
+   "t_captura_utc": "2026-08-21T16:24:45Z",
+   "t_evaluacion_utc": "2026-08-21T16:29:09Z",
+   "t_generacion_utc": "2026-08-21T16:29:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-21T16:29:09Z",
+     "latencia_envio_ms": 830.9388160705566,
+     "error": null,
+     "message_id": 1648,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 264.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Al-Riyadh vs Al-Nassr\n⏱ Minuto: 28'\n📊 Marcador: 0-1\n🏆 Liga: Saudi Pro League\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Al-Nassr presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Al-Riyadh no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "ff55e37841deee6c"
+  },
   {
    "strategy_id": "L1-SHADOW",
    "match_label": "Al-Riyadh vs Al-Nassr (Saudi Pro League)",
    "match_id": "16629421",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 27,
+   "minuto": 28,
    "condicion": "4 córners totales antes del min 45 (0-4), Al-Nassr presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Al-Riyadh NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -22,8 +60,8 @@
    },
    "t_evento_real_utc": "2026-08-21T16:24:45Z",
    "t_captura_utc": "2026-08-21T16:24:45Z",
-   "t_evaluacion_utc": "2026-08-21T16:28:28Z",
-   "t_generacion_utc": "2026-08-21T16:28:28Z",
+   "t_evaluacion_utc": "2026-08-21T16:29:12Z",
+   "t_generacion_utc": "2026-08-21T16:29:12Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -37,7 +75,7 @@
    },
    "latencia_total_seg": 223.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Al-Riyadh vs Al-Nassr\n⏱ Minuto: 27'\n📊 Marcador: 0-1\n🏆 Liga: Saudi Pro League\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Al-Nassr presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Al-Riyadh no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Al-Riyadh vs Al-Nassr\n⏱ Minuto: 28'\n📊 Marcador: 0-1\n🏆 Liga: Saudi Pro League\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Al-Nassr presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Al-Riyadh no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "72eef2c250aaaa5f"
   },
@@ -47,7 +85,7 @@
    "match_id": "16629421",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 27,
+   "minuto": 28,
    "condicion": "Al-Nassr acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -69,9 +107,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-21T16:28:35Z",
-   "t_captura_utc": "2026-08-21T16:28:35Z",
-   "t_evaluacion_utc": "2026-08-21T16:28:36Z",
-   "t_generacion_utc": "2026-08-21T16:28:36Z",
+   "t_captura_utc": "2026-08-21T16:29:19Z",
+   "t_evaluacion_utc": "2026-08-21T16:29:19Z",
+   "t_generacion_utc": "2026-08-21T16:29:19Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -85,7 +123,7 @@
    },
    "latencia_total_seg": 2.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Riyadh vs Al-Nassr\n⏱ Minuto: 27'\n📊 Marcador: 0-1\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Nassr acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Riyadh vs Al-Nassr\n⏱ Minuto: 28'\n📊 Marcador: 0-1\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Nassr acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "e3ca1a9f002367a4"
   }
