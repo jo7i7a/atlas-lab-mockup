@@ -6840,5 +6840,26 @@
    "cuota_real_betano": 1.7,
    "activo": true
   }
+ ],
+ "7154c4d121253b8b": [
+  {
+   "alert_id": "7154c4d121253b8b",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Estudiantes de Río Cuarto vs San Lorenzo (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16671570",
+   "minuto_alerta": 30,
+   "condicion": "Estudiantes de Río Cuarto acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-21T23:30:17Z",
+   "t_captura_utc": "2026-08-21T23:30:17Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-21T23:30:35Z",
+   "segundos_transcurridos": 16,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "5.5 @ 1.75",
+   "linea_real_betano": 5.5,
+   "cuota_real_betano": 1.75,
+   "activo": true
+  }
  ]
 }
