@@ -6819,5 +6819,26 @@
    "cuota_real_betano": 1.9,
    "activo": true
   }
+ ],
+ "8d7f646a2bd491cf": [
+  {
+   "alert_id": "8d7f646a2bd491cf",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Estudiantes de Río Cuarto vs San Lorenzo (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16671570",
+   "minuto_alerta": 16,
+   "condicion": "San Lorenzo domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-21T23:15:56Z",
+   "t_captura_utc": "2026-08-21T23:15:56Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-21T23:17:50Z",
+   "segundos_transcurridos": 93,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "6.5 @ 1.70",
+   "linea_real_betano": 6.5,
+   "cuota_real_betano": 1.7,
+   "activo": true
+  }
  ]
 }
