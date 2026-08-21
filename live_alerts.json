@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-21T19:38:25Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-21T19:39:32Z",
+ "n_alerts": 9,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -264,12 +264,51 @@
    "alert_id": "e2b24aed727ea371"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Arsenal vs Coventry City (Premier League)",
+   "match_id": "16363633",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 38,
+   "condicion": "4 córners totales antes del min 45 (3-1), Arsenal presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Coventry City NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Arsenal",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-21T19:38:21Z",
+   "t_captura_utc": "2026-08-21T19:38:21Z",
+   "t_evaluacion_utc": "2026-08-21T19:39:10Z",
+   "t_generacion_utc": "2026-08-21T19:39:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-21T19:39:11Z",
+     "latencia_envio_ms": 844.1867828369141,
+     "error": null,
+     "message_id": 1683,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 50.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Arsenal vs Coventry City\n⏱ Minuto: 38'\n📊 Marcador: 2-0\n🏆 Liga: Premier League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Arsenal presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Coventry City no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "13c4d9b0cc95d6fa"
+  },
+  {
    "strategy_id": "A2",
    "match_label": "Erzurumspor FK vs Galatasaray (Trendyol Süper Lig)",
    "match_id": "16483650",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 50,
+   "minuto": 51,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -282,8 +321,8 @@
    },
    "t_evento_real_utc": "2026-08-21T19:33:31Z",
    "t_captura_utc": "2026-08-21T19:33:31Z",
-   "t_evaluacion_utc": "2026-08-21T19:38:19Z",
-   "t_generacion_utc": "2026-08-21T19:38:19Z",
+   "t_evaluacion_utc": "2026-08-21T19:39:25Z",
+   "t_generacion_utc": "2026-08-21T19:39:25Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -297,7 +336,7 @@
    },
    "latencia_total_seg": 56.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Erzurumspor FK vs Galatasaray\n⏱ Minuto: 50'\n📊 Marcador: 0-3\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Erzurumspor FK vs Galatasaray\n⏱ Minuto: 51'\n📊 Marcador: 0-3\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "881b2ccb803286bd"
   },
@@ -307,7 +346,7 @@
    "match_id": "16363633",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 38,
+   "minuto": 39,
    "condicion": "Arsenal acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -317,7 +356,7 @@
     "equipo_dominante": "Arsenal",
     "lado_dominante": "home",
     "ratio_presion_territorial": 1.0,
-    "touches_home": 21,
+    "touches_home": 22,
     "touches_away": 0,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 34,
@@ -329,9 +368,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-21T19:20:36Z",
-   "t_captura_utc": "2026-08-21T19:38:23Z",
-   "t_evaluacion_utc": "2026-08-21T19:38:23Z",
-   "t_generacion_utc": "2026-08-21T19:38:23Z",
+   "t_captura_utc": "2026-08-21T19:39:30Z",
+   "t_evaluacion_utc": "2026-08-21T19:39:30Z",
+   "t_generacion_utc": "2026-08-21T19:39:30Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -345,7 +384,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Arsenal vs Coventry City\n⏱ Minuto: 38'\n📊 Marcador: 2-0\n🏆 Liga: Premier League\n\n📝 Motivo: Arsenal acumula 100% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Arsenal, min 34\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Arsenal vs Coventry City\n⏱ Minuto: 39'\n📊 Marcador: 2-0\n🏆 Liga: Premier League\n\n📝 Motivo: Arsenal acumula 100% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Arsenal, min 34\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "92cc6045edfa79b3"
   }
