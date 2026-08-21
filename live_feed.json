@@ -1,5 +1,63 @@
 {
- "generated_at_utc": "2026-08-21T22:59:54Z",
- "n_live_target": 0,
- "matches": {}
+ "generated_at_utc": "2026-08-21T23:02:54Z",
+ "n_live_target": 1,
+ "matches": {
+  "16671570": {
+   "event_id": 16671570,
+   "league": "Liga Profesional de Fútbol",
+   "home": "Estudiantes de Río Cuarto",
+   "away": "San Lorenzo",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 31,
+     "away": 69
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.03,
+     "away": 0.02
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 1,
+     "away": 1
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 3,
+     "away": 8
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 1,
+     "away": 1
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.75,
+     "no": 1.4,
+     "captured_at_utc": "2026-08-21T23:02:46Z"
+    },
+    "1x2": {
+     "home": 3.75,
+     "draw": 2.6,
+     "away": 2.4,
+     "captured_at_utc": "2026-08-21T23:02:46Z"
+    },
+    "corners_over_95": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-08-21T23:02:46Z"
+    }
+   },
+   "updated_at_utc": "2026-08-21T23:02:54Z"
+  }
+ }
 }
