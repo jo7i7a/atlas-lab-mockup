@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-22T22:16:31Z",
- "n_alerts": 15,
+ "generated_at_utc": "2026-08-22T22:17:33Z",
+ "n_alerts": 13,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -77,51 +77,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CA Independiente vs Independiente Rivadavia\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: CA Independiente acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "091cb4ccc4fa8e1c"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Huachipato vs Deportes Limache (Liga de Primera)",
-   "match_id": "15353107",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Deportes Limache domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Deportes Limache",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 2,
-    "centros_away": 0,
-    "remates_home": 1,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-22T21:47:29Z",
-   "t_captura_utc": "2026-08-22T21:47:29Z",
-   "t_evaluacion_utc": "2026-08-22T21:55:25Z",
-   "t_generacion_utc": "2026-08-22T21:55:25Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-22T21:48:29Z",
-     "latencia_envio_ms": 865.077018737793,
-     "error": null,
-     "message_id": 1999,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 60.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Huachipato vs Deportes Limache\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Deportes Limache — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "9531bdce176650ba"
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -357,44 +312,6 @@
    "alert_id": "ca40a13853dc2f39"
   },
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Ceará vs Londrina (Brasileirão Série B)",
-   "match_id": "15526242",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 49,
-   "condicion": "Ceará acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Ceará",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 6,
-    "touches_away": 3,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 46,
-    "equipo_que_realizo_sustitucion": "Ceará",
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-08-22T21:47:24Z",
-    "t_inicio_estimado_condicion": "2026-08-22T21:46:17Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-22T21:47:24Z",
-   "t_captura_utc": "2026-08-22T22:10:32Z",
-   "t_evaluacion_utc": "2026-08-22T22:10:32Z",
-   "t_generacion_utc": "2026-08-22T22:10:32Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ceará vs Londrina\n⏱ Minuto: 49'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Ceará acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Ceará, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "8f213feb124608dc"
-  },
-  {
    "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "CA Independiente vs Independiente Rivadavia (Liga Profesional de Fútbol)",
    "match_id": "16671569",
@@ -559,7 +476,7 @@
    "match_id": "15526242",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 55,
+   "minuto": 56,
    "condicion": "Ceará acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -581,13 +498,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-22T22:13:31Z",
-   "t_captura_utc": "2026-08-22T22:16:31Z",
-   "t_evaluacion_utc": "2026-08-22T22:16:31Z",
-   "t_generacion_utc": "2026-08-22T22:16:31Z",
+   "t_captura_utc": "2026-08-22T22:17:33Z",
+   "t_evaluacion_utc": "2026-08-22T22:17:33Z",
+   "t_generacion_utc": "2026-08-22T22:17:33Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ceará vs Londrina\n⏱ Minuto: 55'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Ceará acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Ceará, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ceará vs Londrina\n⏱ Minuto: 56'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Ceará acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Ceará, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "b78543df09895e71"
   }
