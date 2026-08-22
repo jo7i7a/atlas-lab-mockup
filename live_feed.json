@@ -1,17 +1,17 @@
 {
- "generated_at_utc": "2026-08-22T09:32:54Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-08-22T09:35:54Z",
+ "n_live_target": 2,
  "matches": {
   "16348531": {
    "event_id": 16348531,
    "league": "J1 League",
    "home": "Kashima Antlers",
    "away": "Avispa Fukuoka",
-   "home_score": 0,
+   "home_score": 1,
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 29,
+   "minute": 32,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -25,7 +25,7 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 2,
+     "home": 3,
      "away": 9
     },
     "corners": {
@@ -35,12 +35,12 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 193,
-     "away": 107
+     "home": 195,
+     "away": 108
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 0,
+     "home": 1,
      "away": 1
     },
     "xg": {
@@ -51,9 +51,9 @@
    },
    "odds": {
     "btts": {
-     "yes": 2.5,
-     "no": 1.5,
-     "captured_at_utc": "2026-08-22T09:32:40Z"
+     "yes": 1.571,
+     "no": 2.25,
+     "captured_at_utc": "2026-08-22T09:35:46Z"
     },
     "corners_over_95": {
      "over": 1.727,
@@ -61,18 +61,80 @@
      "captured_at_utc": "2026-08-22T09:19:23Z"
     },
     "1x2": {
-     "home": 2.5,
-     "draw": 2.875,
-     "away": 3.25,
-     "captured_at_utc": "2026-08-22T09:32:40Z"
+     "home": 1.444,
+     "draw": 4.0,
+     "away": 8.0,
+     "captured_at_utc": "2026-08-22T09:35:46Z"
+    },
+    "goals_over_25": {
+     "over": 1.727,
+     "under": 2.0,
+     "captured_at_utc": "2026-08-22T09:35:46Z"
+    }
+   },
+   "updated_at_utc": "2026-08-22T09:35:54Z"
+  },
+  "16348536": {
+   "event_id": 16348536,
+   "league": "J1 League",
+   "home": "Fagiano Okayama",
+   "away": "Tokyo Verdy",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 67,
+     "away": 33
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 1
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 4,
+     "away": 1
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.2,
+     "no": 1.615,
+     "captured_at_utc": "2026-08-22T09:35:46Z"
+    },
+    "corners_over_95": {
+     "over": 1.909,
+     "under": 1.8,
+     "captured_at_utc": "2026-08-22T09:35:46Z"
+    },
+    "1x2": {
+     "home": 1.833,
+     "draw": 3.2,
+     "away": 5.0,
+     "captured_at_utc": "2026-08-22T09:35:46Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.5,
-     "captured_at_utc": "2026-08-22T09:32:40Z"
+     "captured_at_utc": "2026-08-22T09:35:46Z"
     }
    },
-   "updated_at_utc": "2026-08-22T09:32:54Z"
+   "updated_at_utc": "2026-08-22T09:35:54Z"
   }
  }
 }
