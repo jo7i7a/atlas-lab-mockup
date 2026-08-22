@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-22T22:15:31Z",
- "n_alerts": 19,
+ "generated_at_utc": "2026-08-22T22:16:31Z",
+ "n_alerts": 15,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -77,96 +77,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CA Independiente vs Independiente Rivadavia\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: CA Independiente acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "091cb4ccc4fa8e1c"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "CA Independiente vs Independiente Rivadavia (Liga Profesional de Fútbol)",
-   "match_id": "16671569",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "CA Independiente domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "CA Independiente",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-22T21:46:17Z",
-   "t_captura_utc": "2026-08-22T21:46:17Z",
-   "t_evaluacion_utc": "2026-08-22T21:54:30Z",
-   "t_generacion_utc": "2026-08-22T21:54:30Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-22T21:47:21Z",
-     "latencia_envio_ms": 828.4211158752441,
-     "error": null,
-     "message_id": 1998,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 64.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CA Independiente vs Independiente Rivadavia\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: CA Independiente — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "09d95cb12b1a4fc6"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Internacional vs Atlético Mineiro (Brasileirão Betano)",
-   "match_id": "15235446",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Internacional domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Internacional",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-22T21:45:34Z",
-   "t_captura_utc": "2026-08-22T21:45:34Z",
-   "t_evaluacion_utc": "2026-08-22T21:55:24Z",
-   "t_generacion_utc": "2026-08-22T21:55:24Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-22T21:47:17Z",
-     "latencia_envio_ms": 891.6707038879395,
-     "error": null,
-     "message_id": 1997,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 103.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Internacional vs Atlético Mineiro\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Internacional — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "6140ae76a4fdef1a"
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -323,34 +233,6 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Internacional vs Atlético Mineiro\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Internacional presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlético Mineiro no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "4f55f900cdf11e88"
-  },
-  {
-   "strategy_id": "L1",
-   "match_label": "Huachipato vs Deportes Limache (Liga de Primera)",
-   "match_id": "15353107",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "4 córners totales antes del min 30 (1-3), Deportes Limache presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Huachipato NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Deportes Limache"
-   },
-   "t_evento_real_utc": "2026-08-22T21:46:17Z",
-   "t_captura_utc": "2026-08-22T21:46:17Z",
-   "t_evaluacion_utc": "2026-08-22T22:01:09Z",
-   "t_generacion_utc": "2026-08-22T22:01:09Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Huachipato vs Deportes Limache\n⏱ Minuto: 30'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Deportes Limache presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Huachipato no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "9da6fe7fcab29545"
   },
   {
    "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
@@ -672,41 +554,12 @@
    "alert_id": "5cd65f7918d7b64c"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Huachipato vs Deportes Limache (Liga de Primera)",
-   "match_id": "15353107",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 44,
-   "condicion": "4 córners totales antes del min 45 (1-3), Deportes Limache presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Huachipato NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Deportes Limache",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-22T21:46:17Z",
-   "t_captura_utc": "2026-08-22T21:46:17Z",
-   "t_evaluacion_utc": "2026-08-22T22:15:11Z",
-   "t_generacion_utc": "2026-08-22T22:15:11Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Huachipato vs Deportes Limache\n⏱ Minuto: 44'\n📊 Marcador: 0-3\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Deportes Limache presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Huachipato no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "545070347d322ebd"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Ceará vs Londrina (Brasileirão Série B)",
    "match_id": "15526242",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 54,
+   "minuto": 55,
    "condicion": "Ceará acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -715,8 +568,8 @@
    "extra": {
     "equipo_dominante": "Ceará",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6364,
-    "touches_home": 7,
+    "ratio_presion_territorial": 0.6667,
+    "touches_home": 8,
     "touches_away": 4,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 46,
@@ -728,13 +581,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-22T22:13:31Z",
-   "t_captura_utc": "2026-08-22T22:15:30Z",
-   "t_evaluacion_utc": "2026-08-22T22:15:31Z",
-   "t_generacion_utc": "2026-08-22T22:15:31Z",
+   "t_captura_utc": "2026-08-22T22:16:31Z",
+   "t_evaluacion_utc": "2026-08-22T22:16:31Z",
+   "t_generacion_utc": "2026-08-22T22:16:31Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ceará vs Londrina\n⏱ Minuto: 54'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Ceará acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Ceará, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ceará vs Londrina\n⏱ Minuto: 55'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Ceará acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Ceará, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "b78543df09895e71"
   }
