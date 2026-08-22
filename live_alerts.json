@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-21T23:46:19Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-22T00:03:17Z",
+ "n_alerts": 1,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -8,7 +8,7 @@
    "match_id": "16671570",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 37,
+   "minuto": 45,
    "condicion": "Estudiantes de Río Cuarto acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -18,55 +18,7 @@
     "equipo_dominante": "Estudiantes de Río Cuarto",
     "lado_dominante": "home",
     "ratio_presion_territorial": 0.6667,
-    "touches_home": 6,
-    "touches_away": 3,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 30,
-    "equipo_que_realizo_sustitucion": "Estudiantes de Río Cuarto",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-21T23:30:17Z",
-    "t_inicio_estimado_condicion": "2026-08-21T23:29:37Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-21T23:30:17Z",
-   "t_captura_utc": "2026-08-21T23:37:17Z",
-   "t_evaluacion_utc": "2026-08-21T23:37:17Z",
-   "t_generacion_utc": "2026-08-21T23:37:17Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-21T23:30:19Z",
-     "latencia_envio_ms": 1839.2674922943115,
-     "error": null,
-     "message_id": 1689,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 2.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Estudiantes de Río Cuarto vs San Lorenzo\n⏱ Minuto: 37'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de Río Cuarto acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Estudiantes de Río Cuarto, min 30\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "7154c4d121253b8b"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Estudiantes de Río Cuarto vs San Lorenzo (Liga Profesional de Fútbol)",
-   "match_id": "16671570",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 46,
-   "condicion": "Estudiantes de Río Cuarto acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Estudiantes de Río Cuarto",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6364,
-    "touches_home": 7,
+    "touches_home": 8,
     "touches_away": 4,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 30,
@@ -78,9 +30,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-21T23:42:16Z",
-   "t_captura_utc": "2026-08-21T23:46:19Z",
-   "t_evaluacion_utc": "2026-08-21T23:46:19Z",
-   "t_generacion_utc": "2026-08-21T23:46:19Z",
+   "t_captura_utc": "2026-08-22T00:03:16Z",
+   "t_evaluacion_utc": "2026-08-22T00:03:17Z",
+   "t_generacion_utc": "2026-08-22T00:03:17Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -93,8 +45,8 @@
     }
    },
    "latencia_total_seg": 2.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Estudiantes de Río Cuarto vs San Lorenzo\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de Río Cuarto acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Estudiantes de Río Cuarto, min 30\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "estado_temporal": "EXPIRADA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Estudiantes de Río Cuarto vs San Lorenzo\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de Río Cuarto acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Estudiantes de Río Cuarto, min 30\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "cd694c30a579b405"
   }
