@@ -1,14 +1,136 @@
 {
- "generated_at_utc": "2026-08-22T03:34:31Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-22T03:35:35Z",
+ "n_alerts": 5,
  "alerts": [
+  {
+   "strategy_id": "L1",
+   "match_label": "FC Juárez vs Club América (Liga MX, Apertura)",
+   "match_id": "16317891",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 22,
+   "condicion": "5 córners totales antes del min 30 (1-4), Club América presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿FC Juárez NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 1,
+    "corners_away": 4,
+    "equipo_presiona": "Club América"
+   },
+   "t_evento_real_utc": "2026-08-22T03:34:42Z",
+   "t_captura_utc": "2026-08-22T03:34:42Z",
+   "t_evaluacion_utc": "2026-08-22T03:35:09Z",
+   "t_generacion_utc": "2026-08-22T03:35:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-22T03:35:10Z",
+     "latencia_envio_ms": 850.3680229187012,
+     "error": null,
+     "message_id": 1730,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 28.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ FC Juárez vs Club América\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 1\nVisita: 4\nTotal: 5\n\n📝 Motivo: Club América presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Juárez no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "43044d59a7b072dd"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "FC Juárez vs Club América (Liga MX, Apertura)",
+   "match_id": "16317891",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 22,
+   "condicion": "5 córners totales antes del min 45 (1-4), Club América presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿FC Juárez NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 1,
+    "corners_away": 4,
+    "equipo_presiona": "Club América",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-22T03:34:42Z",
+   "t_captura_utc": "2026-08-22T03:34:42Z",
+   "t_evaluacion_utc": "2026-08-22T03:35:12Z",
+   "t_generacion_utc": "2026-08-22T03:35:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-22T03:35:13Z",
+     "latencia_envio_ms": 807.0876598358154,
+     "error": null,
+     "message_id": 1731,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 31.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ FC Juárez vs Club América\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 1\nVisita: 4\nTotal: 5\n\n📝 Motivo: Club América presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Juárez no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "817c3a95a8d7194d"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "FC Juárez vs Club América (Liga MX, Apertura)",
+   "match_id": "16317891",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 22,
+   "condicion": "Club América domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Club América",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 1,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-22T03:34:42Z",
+   "t_captura_utc": "2026-08-22T03:34:42Z",
+   "t_evaluacion_utc": "2026-08-22T03:35:31Z",
+   "t_generacion_utc": "2026-08-22T03:35:31Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-22T03:35:32Z",
+     "latencia_envio_ms": 788.942813873291,
+     "error": null,
+     "message_id": 1732,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 50.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ FC Juárez vs Club América\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Club América — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "998c2b8cbf345c4a"
+  },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Querétaro FC vs CD Toluca (Liga MX, Apertura)",
    "match_id": "16317896",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "Querétaro FC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -28,8 +150,8 @@
    },
    "t_evento_real_utc": "2026-08-22T03:27:12Z",
    "t_captura_utc": "2026-08-22T03:27:12Z",
-   "t_evaluacion_utc": "2026-08-22T03:34:29Z",
-   "t_generacion_utc": "2026-08-22T03:34:29Z",
+   "t_evaluacion_utc": "2026-08-22T03:35:33Z",
+   "t_generacion_utc": "2026-08-22T03:35:33Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -43,7 +165,7 @@
    },
    "latencia_total_seg": 7.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Querétaro FC vs CD Toluca\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Querétaro FC — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Querétaro FC vs CD Toluca\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Querétaro FC — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "f44bd82179a3fe7e"
   },
@@ -53,7 +175,7 @@
    "match_id": "16317891",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 21,
+   "minuto": 22,
    "condicion": "Club América acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -62,9 +184,9 @@
    "extra": {
     "equipo_dominante": "Club América",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.8,
+    "ratio_presion_territorial": 0.8182,
     "touches_home": 2,
-    "touches_away": 8,
+    "touches_away": 9,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -75,9 +197,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-22T03:33:29Z",
-   "t_captura_utc": "2026-08-22T03:34:30Z",
-   "t_evaluacion_utc": "2026-08-22T03:34:31Z",
-   "t_generacion_utc": "2026-08-22T03:34:31Z",
+   "t_captura_utc": "2026-08-22T03:35:34Z",
+   "t_evaluacion_utc": "2026-08-22T03:35:35Z",
+   "t_generacion_utc": "2026-08-22T03:35:35Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -91,7 +213,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Juárez vs Club América\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Club América acumula 80% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Juárez vs Club América\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Club América acumula 82% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "c6a35c6884baa42d"
   }
