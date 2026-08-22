@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-22T22:17:33Z",
- "n_alerts": 13,
+ "generated_at_utc": "2026-08-22T22:18:25Z",
+ "n_alerts": 12,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -77,51 +77,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CA Independiente vs Independiente Rivadavia\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: CA Independiente acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "091cb4ccc4fa8e1c"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Cuiabá vs Goiás (Brasileirão Série B)",
-   "match_id": "15526246",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Cuiabá domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Cuiabá",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 2,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 1,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-22T21:47:51Z",
-   "t_captura_utc": "2026-08-22T21:47:51Z",
-   "t_evaluacion_utc": "2026-08-22T21:55:28Z",
-   "t_generacion_utc": "2026-08-22T21:55:28Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-22T21:48:32Z",
-     "latencia_envio_ms": 833.660364151001,
-     "error": null,
-     "message_id": 2000,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 41.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Cuiabá vs Goiás\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Cuiabá — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "1419da9f39df98c5"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -498,9 +453,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-22T22:13:31Z",
-   "t_captura_utc": "2026-08-22T22:17:33Z",
-   "t_evaluacion_utc": "2026-08-22T22:17:33Z",
-   "t_generacion_utc": "2026-08-22T22:17:33Z",
+   "t_captura_utc": "2026-08-22T22:18:24Z",
+   "t_evaluacion_utc": "2026-08-22T22:18:25Z",
+   "t_generacion_utc": "2026-08-22T22:18:25Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
