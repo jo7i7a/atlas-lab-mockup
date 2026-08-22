@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-22T09:39:19Z",
+ "generated_at_utc": "2026-08-22T09:40:11Z",
  "n_alerts": 4,
  "alerts": [
   {
@@ -86,45 +86,6 @@
    "alert_id": "1529fcad7620db85"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Kashima Antlers vs Avispa Fukuoka (J1 League)",
-   "match_id": "16348531",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 35,
-   "condicion": "4 córners totales antes del min 45 (0-4), Avispa Fukuoka presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Kashima Antlers NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "Avispa Fukuoka",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-22T09:22:06Z",
-   "t_captura_utc": "2026-08-22T09:22:06Z",
-   "t_evaluacion_utc": "2026-08-22T09:39:11Z",
-   "t_generacion_utc": "2026-08-22T09:39:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-22T09:22:12Z",
-     "latencia_envio_ms": 753.4661293029785,
-     "error": null,
-     "message_id": 1740,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 6.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Kashima Antlers vs Avispa Fukuoka\n⏱ Minuto: 35'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Avispa Fukuoka presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kashima Antlers no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "ccb1b0406fd320dd"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Kashima Antlers vs Avispa Fukuoka (J1 League)",
    "match_id": "16348531",
@@ -171,6 +132,45 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Kashima Antlers vs Avispa Fukuoka\n⏱ Minuto: 35'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n📝 Motivo: Avispa Fukuoka acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "9a60295d58cdf2f5"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Kashima Antlers vs Avispa Fukuoka (J1 League)",
+   "match_id": "16348531",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 36,
+   "condicion": "4 córners totales antes del min 45 (0-4), Avispa Fukuoka presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Kashima Antlers NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Avispa Fukuoka",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-22T09:22:06Z",
+   "t_captura_utc": "2026-08-22T09:22:06Z",
+   "t_evaluacion_utc": "2026-08-22T09:40:11Z",
+   "t_generacion_utc": "2026-08-22T09:40:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-22T09:22:12Z",
+     "latencia_envio_ms": 753.4661293029785,
+     "error": null,
+     "message_id": 1740,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 6.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Kashima Antlers vs Avispa Fukuoka\n⏱ Minuto: 36'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Avispa Fukuoka presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kashima Antlers no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "ccb1b0406fd320dd"
   }
  ]
 }
