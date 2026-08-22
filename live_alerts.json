@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-22T23:58:31Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-22T23:59:39Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -48,12 +48,69 @@
    "alert_id": "e3d888418d7fb315"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "CF Montréal vs LA Galaxy (MLS)",
+   "match_id": "15171668",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "5 córners totales antes del min 30 (3-2), CF Montréal presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿LA Galaxy NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "CF Montréal"
+   },
+   "t_evento_real_utc": "2026-08-22T23:58:21Z",
+   "t_captura_utc": "2026-08-22T23:58:21Z",
+   "t_evaluacion_utc": "2026-08-22T23:59:10Z",
+   "t_generacion_utc": "2026-08-22T23:59:10Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ CF Montréal vs LA Galaxy\n⏱ Minuto: 18'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: CF Montréal presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿LA Galaxy no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "30fb42af21d53d79"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "CF Montréal vs LA Galaxy (MLS)",
+   "match_id": "15171668",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "5 córners totales antes del min 45 (3-2), CF Montréal presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿LA Galaxy NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "CF Montréal",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-22T23:58:21Z",
+   "t_captura_utc": "2026-08-22T23:58:21Z",
+   "t_evaluacion_utc": "2026-08-22T23:59:16Z",
+   "t_generacion_utc": "2026-08-22T23:59:16Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CF Montréal vs LA Galaxy\n⏱ Minuto: 18'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: CF Montréal presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿LA Galaxy no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "60ce460c3079218c"
+  },
+  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "CF Montréal vs LA Galaxy (MLS)",
    "match_id": "15171668",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 17,
+   "minuto": 18,
    "condicion": "CF Montréal domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -73,8 +130,8 @@
    },
    "t_evento_real_utc": "2026-08-22T23:58:21Z",
    "t_captura_utc": "2026-08-22T23:58:21Z",
-   "t_evaluacion_utc": "2026-08-22T23:58:27Z",
-   "t_generacion_utc": "2026-08-22T23:58:27Z",
+   "t_evaluacion_utc": "2026-08-22T23:59:35Z",
+   "t_generacion_utc": "2026-08-22T23:59:35Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -88,7 +145,7 @@
    },
    "latencia_total_seg": 7.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CF Montréal vs LA Galaxy\n⏱ Minuto: 17'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: CF Montréal — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CF Montréal vs LA Galaxy\n⏱ Minuto: 18'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📝 Motivo: CF Montréal — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "186d410a76d230fb"
   },
@@ -98,7 +155,7 @@
    "match_id": "15171670",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 17,
+   "minuto": 19,
    "condicion": "Chicago Fire domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -118,8 +175,8 @@
    },
    "t_evento_real_utc": "2026-08-22T23:58:21Z",
    "t_captura_utc": "2026-08-22T23:58:21Z",
-   "t_evaluacion_utc": "2026-08-22T23:58:30Z",
-   "t_generacion_utc": "2026-08-22T23:58:30Z",
+   "t_evaluacion_utc": "2026-08-22T23:59:39Z",
+   "t_generacion_utc": "2026-08-22T23:59:39Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -133,7 +190,7 @@
    },
    "latencia_total_seg": 10.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ New York Red Bulls vs Chicago Fire\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Chicago Fire — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ New York Red Bulls vs Chicago Fire\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Chicago Fire — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "c16433da64989059"
   }
