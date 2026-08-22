@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-22T11:39:42Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-22T11:40:42Z",
+ "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Fagiano Okayama vs Tokyo Verdy (J1 League)",
-   "match_id": "16348536",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 85,
-   "condicion": "Fagiano Okayama acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Fagiano Okayama",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6522,
-    "touches_home": 15,
-    "touches_away": 8,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 77,
-    "equipo_que_realizo_sustitucion": "Fagiano Okayama",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-22T11:10:39Z",
-    "t_inicio_estimado_condicion": "2026-08-22T10:20:10Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-22T11:10:39Z",
-   "t_captura_utc": "2026-08-22T11:15:33Z",
-   "t_evaluacion_utc": "2026-08-22T11:15:34Z",
-   "t_generacion_utc": "2026-08-22T11:15:34Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-22T11:10:40Z",
-     "latencia_envio_ms": 829.0410041809082,
-     "error": null,
-     "message_id": 1761,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 1.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Fagiano Okayama vs Tokyo Verdy\n⏱ Minuto: 85'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n📝 Motivo: Fagiano Okayama acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Fagiano Okayama, min 77\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "735283381df78d59"
-  },
   {
    "strategy_id": "A2",
    "match_label": "Sanfrecce Hiroshima vs Kawasaki Frontale (J1 League)",
@@ -94,7 +46,7 @@
    "match_id": "16348545",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 47,
+   "minuto": 48,
    "condicion": "Yokohama F. Marinos acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -107,7 +59,7 @@
     "touches_home": 5,
     "touches_away": 3,
     "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 40,
+    "minuto_ultima_sustitucion": 48,
     "equipo_que_realizo_sustitucion": "Yokohama F. Marinos",
     "marcador_en_el_momento": "1-0",
     "t_primera_observacion_atlas": "2026-08-22T11:14:40Z",
@@ -116,9 +68,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-22T11:14:40Z",
-   "t_captura_utc": "2026-08-22T11:39:42Z",
-   "t_evaluacion_utc": "2026-08-22T11:39:42Z",
-   "t_generacion_utc": "2026-08-22T11:39:42Z",
+   "t_captura_utc": "2026-08-22T11:40:41Z",
+   "t_evaluacion_utc": "2026-08-22T11:40:42Z",
+   "t_generacion_utc": "2026-08-22T11:40:42Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -132,7 +84,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Yokohama F. Marinos vs Vissel Kobe\n⏱ Minuto: 47'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n📝 Motivo: Yokohama F. Marinos acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Yokohama F. Marinos, min 40\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Yokohama F. Marinos vs Vissel Kobe\n⏱ Minuto: 48'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n📝 Motivo: Yokohama F. Marinos acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Yokohama F. Marinos, min 48\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "2eb5b1a9ff0c874d"
   }
