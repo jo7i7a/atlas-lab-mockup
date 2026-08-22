@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-22T01:26:35Z",
+ "generated_at_utc": "2026-08-22T01:27:19Z",
  "n_alerts": 6,
  "alerts": [
   {
@@ -90,128 +90,6 @@
    "alert_id": "6a7681a8adf347e0"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "Tigres UANL vs Atlante FC (Liga MX, Apertura)",
-   "match_id": "16317899",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 23,
-   "condicion": "4 córners totales antes del min 30 (3-1), Tigres UANL presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Atlante FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Tigres UANL"
-   },
-   "t_evento_real_utc": "2026-08-22T01:24:53Z",
-   "t_captura_utc": "2026-08-22T01:24:53Z",
-   "t_evaluacion_utc": "2026-08-22T01:26:10Z",
-   "t_generacion_utc": "2026-08-22T01:26:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-22T01:25:11Z",
-     "latencia_envio_ms": 853.5361289978027,
-     "error": null,
-     "message_id": 1705,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 18.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Tigres UANL vs Atlante FC\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Tigres UANL presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlante FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "63b922969fc64a15"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Tigres UANL vs Atlante FC (Liga MX, Apertura)",
-   "match_id": "16317899",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 23,
-   "condicion": "4 córners totales antes del min 45 (3-1), Tigres UANL presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Atlante FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Tigres UANL",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-22T01:24:53Z",
-   "t_captura_utc": "2026-08-22T01:24:53Z",
-   "t_evaluacion_utc": "2026-08-22T01:26:12Z",
-   "t_generacion_utc": "2026-08-22T01:26:12Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-22T01:25:13Z",
-     "latencia_envio_ms": 753.5231113433838,
-     "error": null,
-     "message_id": 1706,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 20.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Tigres UANL vs Atlante FC\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Tigres UANL presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlante FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "8c1cd064b562a8fa"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Tigres UANL vs Atlante FC (Liga MX, Apertura)",
-   "match_id": "16317899",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 23,
-   "condicion": "Tigres UANL domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Tigres UANL",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 2,
-    "centros_away": 0,
-    "remates_home": 3,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-22T01:18:22Z",
-   "t_captura_utc": "2026-08-22T01:18:22Z",
-   "t_evaluacion_utc": "2026-08-22T01:26:33Z",
-   "t_generacion_utc": "2026-08-22T01:26:33Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-22T01:19:22Z",
-     "latencia_envio_ms": 962.0656967163086,
-     "error": null,
-     "message_id": 1702,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 60.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Tigres UANL vs Atlante FC\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Tigres UANL — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "197d975787870187"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Club León vs CF Monterrey (Liga MX, Apertura)",
    "match_id": "16317897",
@@ -258,6 +136,128 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club León vs CF Monterrey\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Club León acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "6811e98cf89bd86e"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "Tigres UANL vs Atlante FC (Liga MX, Apertura)",
+   "match_id": "16317899",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 24,
+   "condicion": "4 córners totales antes del min 30 (3-1), Tigres UANL presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Atlante FC NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Tigres UANL"
+   },
+   "t_evento_real_utc": "2026-08-22T01:24:53Z",
+   "t_captura_utc": "2026-08-22T01:24:53Z",
+   "t_evaluacion_utc": "2026-08-22T01:27:10Z",
+   "t_generacion_utc": "2026-08-22T01:27:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-22T01:25:11Z",
+     "latencia_envio_ms": 853.5361289978027,
+     "error": null,
+     "message_id": 1705,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 18.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Tigres UANL vs Atlante FC\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Tigres UANL presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlante FC no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "63b922969fc64a15"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Tigres UANL vs Atlante FC (Liga MX, Apertura)",
+   "match_id": "16317899",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 24,
+   "condicion": "4 córners totales antes del min 45 (3-1), Tigres UANL presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Atlante FC NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Tigres UANL",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-22T01:24:53Z",
+   "t_captura_utc": "2026-08-22T01:24:53Z",
+   "t_evaluacion_utc": "2026-08-22T01:27:12Z",
+   "t_generacion_utc": "2026-08-22T01:27:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-22T01:25:13Z",
+     "latencia_envio_ms": 753.5231113433838,
+     "error": null,
+     "message_id": 1706,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 20.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Tigres UANL vs Atlante FC\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Tigres UANL presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlante FC no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "8c1cd064b562a8fa"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Tigres UANL vs Atlante FC (Liga MX, Apertura)",
+   "match_id": "16317899",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 24,
+   "condicion": "Tigres UANL domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Tigres UANL",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 2,
+    "centros_away": 0,
+    "remates_home": 3,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-22T01:18:22Z",
+   "t_captura_utc": "2026-08-22T01:18:22Z",
+   "t_evaluacion_utc": "2026-08-22T01:27:19Z",
+   "t_generacion_utc": "2026-08-22T01:27:19Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-22T01:19:22Z",
+     "latencia_envio_ms": 962.0656967163086,
+     "error": null,
+     "message_id": 1702,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 60.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Tigres UANL vs Atlante FC\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Tigres UANL — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "197d975787870187"
   }
  ]
 }
