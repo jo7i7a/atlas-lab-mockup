@@ -7090,5 +7090,26 @@
    "cuota_real_betano": 1.8,
    "activo": true
   }
+ ],
+ "735283381df78d59": [
+  {
+   "alert_id": "735283381df78d59",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Fagiano Okayama vs Tokyo Verdy (J1 League)",
+   "liga": "J1 League",
+   "event_id": "16348536",
+   "minuto_alerta": 80,
+   "condicion": "Fagiano Okayama acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-22T11:10:39Z",
+   "t_captura_utc": "2026-08-22T11:10:39Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-22T11:12:09Z",
+   "segundos_transcurridos": 89,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "7.5 @ 1.93",
+   "linea_real_betano": 7.5,
+   "cuota_real_betano": 1.93,
+   "activo": true
+  }
  ]
 }

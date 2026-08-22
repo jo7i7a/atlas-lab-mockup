@@ -942,7 +942,7 @@
   {
    "id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "nombre": "Ataque por Bandas vs. Bloque Bajo -- proxy de PRESIÓN TERRITORIAL ACUMULADA (registro prospectivo LIVE)",
-   "mercado": "Hándicap Asiático de Córners, equipo vs equipo -- a verificar manualmente en Betano en el momento de la alerta. ATLAS no fija línea ni cuota, y no existe cuota PROXY automática para este mercado (no capturado por IP001/SofaScore).",
+   "mercado": "Hándicap Asiático TOTAL de Córners del partido completo (Over/Under) -- CORRECCIÓN 2026-08-22 (aclaración definitiva del Director, \"CARRIL B -- A4_V1\"): NUNCA fue equipo vs equipo, esa era una interpretación documental incorrecta (ver INVESTIGACION_MERCADO_REAL_A4_V1_HANDICAP_TOTAL_CORNERS_2026-08-21.md). ATLAS no fija línea ni cuota. Captura automática AGREGADA 2026-08-22 en ambas capas (PROXY IP001/SofaScore 'Corners 2-Way' y REAL Bet365/Odds-API.io 'Corners Totals'), mismo patrón que L1/A1_V1/A3_V1 -- ninguna de las dos rejillas nativas replica exactamente la rejilla de Betano (que incluye líneas de cuarto ocasionales), por diseño no se intenta reproducirla artificialmente.",
    "tipo": "LIVE",
    "hipotesis": "Prospectiva, sin evidencia previa: si un equipo acumula más del 60% de los toques en el área rival desde el minuto 20, podría existir una oportunidad en el hándicap de córners a su favor que el mercado no esté descontando del todo. NO se afirma que exista edge -- eso es lo que esta línea va a medir desde cero.",
    "origen": "Hipótesis 3 de manual_estrategias_avanzadas_live.pdf ('Ataque por Bandas vs. Bloque Bajo'), identificada en ANALISIS_BIBLIOTECAS_LIVE_2026-08-09.md (familia A -- Córners LIVE), auditada en AUDITORIA_A4_2026-08-10.md y diseñada en DISENO_A4_V1_PRESION_TERRITORIAL_2026-08-10.md. APROBADA e IMPLEMENTADA por el Director (2026-08-10) tras cerrar 3 decisiones de diseño.",
@@ -981,7 +981,7 @@
     "No aplica antes del minuto 20 ni después del minuto 85."
    ],
    "criterios_no_automatizables": [
-    "Cuota real de Betano (Hándicap Asiático de Córners): verificación 100% manual del Director, SIN cuota proxy de referencia (mercado no capturado por IP001/SofaScore).",
+    "Rejilla EXACTA de Betano (incluidas sus líneas de cuarto ocasionales): sigue sin fuente automática (ni Bet365 ni IP001/SofaScore la replican 1:1) -- la verificación manual del Director contra Betano sigue siendo la única evidencia de esa rejilla específica. Desde 2026-08-22 existe, en paralelo y sin sustituir esto, una capa automática independiente (PROXY + REAL) sobre las rejillas nativas de cada proveedor.",
     "Decisión de entrada: la alerta NO es una recomendación de apuesta.",
     "'Choque de estilos' (perfil táctico prematch) de la hipótesis original: NO_EVALUABLE_CON_DATOS_ACTUALES."
    ],
@@ -990,7 +990,7 @@
     "criterio": "N=30 verificaciones reales contra Betano. Abandono si operabilidad real <80% O ROI real acumulado <0% -- mismo patrón ya usado en L1-SHADOW/L2-SHADOW/A2/B1_V1/A1_V1/A3_V1. Adicional: si el ratio no correlaciona de forma sensata con córners reales ganados, se declara NO_MEDIBLE_CON_DATOS_ACTUALES y se cierra la línea, independientemente del gate financiero."
    },
    "estado_liquidacion": "IMPLEMENTADA",
-   "nota_liquidacion": "Mercado = Hándicap Asiático de Córners equipo vs equipo -- reutiliza EXACTAMENTE la misma infraestructura que L2/L2-SHADOW (hándicap de goles): _fetch_corners_final() (ya devuelve home/away por separado) + liquidar_handicap_asiatico() (ya soporta líneas de cuarto, WIN/HALF_WIN/PUSH/HALF_LOSS/LOSS). Ninguna función nueva -- solo una rama nueva en _calcular_resultado() de betano_liquidacion.py.",
+   "nota_liquidacion": "CORREGIDO 2026-08-22 (aclaración definitiva del Director, \"CARRIL B -- A4_V1\"): mercado = Córners TOTALES del partido, NUNCA hándicap equipo vs equipo. Liquidación manual (betano_liquidacion.py) corregida de liquidar_handicap_asiatico() a liquidar_totales() -- misma rama que L1/A1_V1/A3_V1_DOMINANTE_NO_GANA. Corrección no retroactiva: la rama anterior nunca liquidó ningún caso real (0 liquidaciones). Cierre de flujo automático agregado en la misma fecha: capa PROXY (a4_v1_pl_proxy.py, sobre captura IP001/SofaScore) + capa REAL (odds_api_io_settlement_a4_v1.py, sobre captura Bet365/Odds-API.io), poblaciones dinámicas A4_V1_LINE_<línea>, mismo patrón que A3_V1_DOMINANTE_NO_GANA.",
    "estado_actual": "OBSERVACION",
    "estado_declarado": "OBSERVACIÓN PROSPECTIVA / EVIDENCIA FINANCIERA: NINGUNA / RENTABILIDAD: DESCONOCIDA / CERTIFICACIÓN: NINGUNA / LÓGICA: A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "historial_estados": [
@@ -1013,27 +1013,32 @@
      "estado": "OBSERVACION",
      "fecha_utc": "2026-08-10",
      "nota": "Implementada exactamente según el diseño aprobado (a4_v1_presion_territorial_acumulada.py), sin rediseñar nada durante la implementación. No usa live_snapshot_deltas.py (no lo necesita). Liquidación reutiliza 100% la infraestructura de L2. Gate de evaluación/abandono aplicado. No modifica L1, L1-SHADOW, L2, L2-SHADOW, L3, L4, A1_V1_SOLO_TRIGGER_LIVE, A2, A3_V1_DOMINANTE_NO_GANA, B1_V1_SIN_ATAQUES_PELIGROSOS, ni live_snapshot_deltas.py."
+    },
+    {
+     "estado": "OBSERVACION",
+     "fecha_utc": "2026-08-22",
+     "nota": "CORRECCIÓN DE MERCADO Y CIERRE DE FLUJO AUTOMÁTICO (aclaración definitiva del Director, \"CARRIL B -- A4_V1\", tras AUDITORIA_INTEGRAL_A4_V1_2026-08-21.md e INVESTIGACION_MERCADO_REAL_A4_V1_HANDICAP_TOTAL_CORNERS_2026-08-21.md): el mercado operativo real siempre fue Hándicap Asiático TOTAL de Córners (Over/Under), no equipo vs equipo -- corrección documental de 'mercado'/'nota_liquidacion' arriba, no retroactiva (0 liquidaciones reales existían bajo la interpretación anterior). Settlement manual corregido de liquidar_handicap_asiatico() a liquidar_totales(). Cierre de flujo automático agregado: capa PROXY (a4_v1_pl_proxy.py) + capa REAL (odds_api_io_settlement_a4_v1.py), poblaciones dinámicas A4_V1_LINE_<línea>, ambas vía Task Scheduler (ATLAS_Lab_A4V1PlProxy, ATLAS_Lab_OddsApiIoSettlementA4V1, cadencia 8 min), mismo patrón exacto que A3_V1_DOMINANTE_NO_GANA. Salió de la lista de estrategias con registro_manual_requerido en notify_strategies.json (mismo estándar que A3_V1/L4). No modifica el trigger, reglas_entrada/reglas_salida, gate_evaluacion_abandono, ni ninguna otra estrategia."
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 114,
+   "casos_verificados": 115,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
    "fecha_creacion_utc": "2026-08-09",
-   "ultima_actualizacion_utc": "2026-08-22T03:35:04Z",
-   "proximo_hito": "Umbral de 30 verificaciones alcanzado (N=114, 100.0% operable) -- cumple el criterio del Director (>=80-90%). Pasar a diseño de estrategia de stake y gestión de riesgo antes de avanzar a CERTIFICADA.",
+   "ultima_actualizacion_utc": "2026-08-22T11:13:03Z",
+   "proximo_hito": "Umbral de 30 verificaciones alcanzado (N=115, 100.0% operable) -- cumple el criterio del Director (>=80-90%). Pasar a diseño de estrategia de stake y gestión de riesgo antes de avanzar a CERTIFICADA.",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 114,
+    "n_operable": 115,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 114
+    "n_muestra": 115
    },
-   "alertas_live_historial": 411
+   "alertas_live_historial": 424
   },
   {
    "id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
