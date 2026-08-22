@@ -181,6 +181,11 @@
      "estado": "HIPOTESIS",
      "fecha_utc": "2026-08-08",
      "nota": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes. SofaScore omite la clave 'redCards' cuando el partido no tiene expulsiones (90,1% de las capturas medidas). El detector hacía `if red_cards is None: continue` y descartaba el partido, cuando la ausencia significa CERO expulsiones -- exactamente lo que la condición exige. Consecuencia: esta estrategia NUNCA pudo emitir una alerta desde su creación. Corregido y certificado el 2026-08-08 23:42:56 UTC (solo semántica del parser; ningún umbral, ventana ni condición experimental fue modificado). GOBERNANZA: la evidencia acumulada ANTES de esa hora NO es válida -- el período efectivo de observación prospectiva de esta estrategia comienza en esa fecha/hora."
+    },
+    {
+     "estado": "OBSERVACION",
+     "fecha_utc": "2026-08-22",
+     "nota": "CORRECCIÓN DOCUMENTAL DE CONTADOR (autorización del Director, \"CARRIL B -- AUTORIZACIÓN CONTROLADA PARA CIERRE DE L2\", Decisión 3): 'alertas_live_historial' corregido de 0 a 15 -- la ficha nunca se actualizó desde 2026-08-04, pese a que ambos defectos (parser redCards 2026-08-08, ancla TTL 2026-08-10) fueron corregidos y hay 15 alertas reales acumuladas desde entonces (ver AUDITORIA_INTEGRAL_L2_2026-08-22.md). 'casos_verificados' permanece en 0 -- valor real, el Director nunca usó el registro manual para L2. Adicionalmente, en la misma fecha se cerró el flujo financiero automático de L2 (Decisión 1, OPCIÓN B, poblaciones dinámicas L2_LINE_<línea> vía capa PROXY nueva l2_pl_proxy.py y capa REAL nueva odds_api_io_settlement_l2.py), tras comprobación exhaustiva de solo lectura de los 42 resultados matemáticos ya terminales (0 discrepancias, ver COMPROBACION_EXHAUSTIVA_L2_42_TERMINALES_2026-08-22.md). El registro manual (registro_manual_requerido) NO fue removido -- queda condicionado a la Decisión 2 (Scheduler→Captura→Settlement→P/L→reejecución idempotente ya demostrados; pendiente de autorización explícita de remoción)."
     }
    ],
    "casos_observados": 0,
@@ -191,8 +196,8 @@
    "clv": null,
    "nivel_evidencia": "Ninguna todavía -- estrategia propia del Director, sin certificación estadística previa por decisión explícita (priorizar verificación real temprano, lección de E-LAB-001).",
    "fecha_creacion_utc": "2026-08-04",
-   "ultima_actualizacion_utc": "2026-08-04T02:45:00Z",
-   "proximo_hito": "Primeras verificaciones humanas reales contra Betano vía Telegram. Sin umbral de N fijado todavía.",
+   "ultima_actualizacion_utc": "2026-08-22T00:00:00Z",
+   "proximo_hito": "Primeras verificaciones humanas reales contra Betano vía Telegram. Sin umbral de N fijado todavía. Flujo financiero automático (proxy+real) ya cerrado 2026-08-22 -- ver historial_estados.",
    "metricas_fase4": {
     "pct_coincide": null,
     "pct_mejor": null,
@@ -202,7 +207,7 @@
     "tiempo_medio_disponible_seg": null,
     "n_muestra": 0
    },
-   "alertas_live_historial": 0,
+   "alertas_live_historial": 15,
    "defectos_historicos": [
     {
      "tipo": "FALLO DE PARSER -- ausencia de redCards interpretada incorrectamente como datos faltantes",
@@ -680,24 +685,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 21,
+   "casos_verificados": 27,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
    "fecha_creacion_utc": "2026-08-09",
-   "ultima_actualizacion_utc": "2026-08-19T23:11:03Z",
+   "ultima_actualizacion_utc": "2026-08-22T20:43:03Z",
    "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate de abandono ya definido).",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 21,
+    "n_operable": 27,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 21
+    "n_muestra": 27
    },
-   "alertas_live_historial": 56
+   "alertas_live_historial": 84
   },
   {
    "id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
@@ -756,24 +761,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 5,
+   "casos_verificados": 6,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
    "fecha_creacion_utc": "2026-08-09",
-   "ultima_actualizacion_utc": "2026-08-19T22:51:03Z",
+   "ultima_actualizacion_utc": "2026-08-22T22:04:03Z",
    "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate de abandono ya definido).",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 5,
+    "n_operable": 6,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 5
+    "n_muestra": 6
    },
-   "alertas_live_historial": 12
+   "alertas_live_historial": 15
   },
   {
    "id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -1021,24 +1026,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 116,
+   "casos_verificados": 124,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
    "fecha_creacion_utc": "2026-08-09",
-   "ultima_actualizacion_utc": "2026-08-22T11:17:03Z",
-   "proximo_hito": "Umbral de 30 verificaciones alcanzado (N=116, 100.0% operable) -- cumple el criterio del Director (>=80-90%). Pasar a diseño de estrategia de stake y gestión de riesgo antes de avanzar a CERTIFICADA.",
+   "ultima_actualizacion_utc": "2026-08-22T16:53:03Z",
+   "proximo_hito": "Umbral de 30 verificaciones alcanzado (N=124, 100.0% operable) -- cumple el criterio del Director (>=80-90%). Pasar a diseño de estrategia de stake y gestión de riesgo antes de avanzar a CERTIFICADA.",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 116,
+    "n_operable": 124,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 116
+    "n_muestra": 124
    },
-   "alertas_live_historial": 425
+   "alertas_live_historial": 475
   },
   {
    "id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -1110,24 +1115,24 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 37,
+   "casos_verificados": 38,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
    "fecha_creacion_utc": "2026-08-09",
-   "ultima_actualizacion_utc": "2026-08-20T01:11:03Z",
-   "proximo_hito": "Umbral de 30 verificaciones alcanzado (N=37, 100.0% operable) -- cumple el criterio del Director (>=80-90%). Pasar a diseño de estrategia de stake y gestión de riesgo antes de avanzar a CERTIFICADA.",
+   "ultima_actualizacion_utc": "2026-08-22T12:48:03Z",
+   "proximo_hito": "Umbral de 30 verificaciones alcanzado (N=38, 100.0% operable) -- cumple el criterio del Director (>=80-90%). Pasar a diseño de estrategia de stake y gestión de riesgo antes de avanzar a CERTIFICADA.",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 37,
+    "n_operable": 38,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 37
+    "n_muestra": 38
    },
-   "alertas_live_historial": 79
+   "alertas_live_historial": 94
   },
   {
    "id": "B3_V1_PRESION_TARDIA_ESCENARIOS_NECESIDAD",
