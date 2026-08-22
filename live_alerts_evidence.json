@@ -7153,5 +7153,45 @@
    "cuota_real_betano": 1.91,
    "activo": true
   }
+ ],
+ "1bfe100950ff93e3": [
+  {
+   "alert_id": "1bfe100950ff93e3",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Millwall vs Norwich City (Championship)",
+   "liga": "Championship",
+   "event_id": "16391151",
+   "minuto_alerta": 18,
+   "condicion": "Millwall domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-22T11:48:29Z",
+   "t_captura_utc": "2026-08-22T11:48:29Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-22T11:50:29Z",
+   "segundos_transcurridos": 102,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.5 @ 1.60\n10.5 @ 2.02",
+   "linea_real_betano": 9.5,
+   "cuota_real_betano": 1.6,
+   "activo": true
+  },
+  {
+   "alert_id": "1bfe100950ff93e3",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Millwall vs Norwich City (Championship)",
+   "liga": "Championship",
+   "event_id": "16391151",
+   "minuto_alerta": 18,
+   "condicion": "Millwall domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-22T11:48:29Z",
+   "t_captura_utc": "2026-08-22T11:48:29Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-22T11:50:29Z",
+   "segundos_transcurridos": 102,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "9.5 @ 1.60\n10.5 @ 2.02",
+   "linea_real_betano": 10.5,
+   "cuota_real_betano": 2.02,
+   "activo": true
+  }
  ]
 }
