@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-22T11:04:31Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-22T11:05:29Z",
+ "n_alerts": 7,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -134,45 +134,6 @@
    "alert_id": "2bd48af7d17eccce"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Kyoto Sanga FC vs Mito Hollyhock (J1 League)",
-   "match_id": "16348532",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (0-4), Mito Hollyhock presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Kyoto Sanga FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "Mito Hollyhock",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-22T10:34:40Z",
-   "t_captura_utc": "2026-08-22T10:34:40Z",
-   "t_evaluacion_utc": "2026-08-22T10:49:14Z",
-   "t_generacion_utc": "2026-08-22T10:49:14Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-22T10:35:14Z",
-     "latencia_envio_ms": 849.0502834320068,
-     "error": null,
-     "message_id": 1752,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 34.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Kyoto Sanga FC vs Mito Hollyhock\n⏱ Minuto: 45'\n📊 Marcador: 0-2\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Mito Hollyhock presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kyoto Sanga FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "43cbf3f5a3171040"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Yokohama F. Marinos vs Vissel Kobe (J1 League)",
    "match_id": "16348545",
@@ -264,7 +225,7 @@
    "match_id": "16348545",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 30,
+   "minuto": 31,
    "condicion": "4 córners totales antes del min 45 (3-1), Yokohama F. Marinos presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Vissel Kobe NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -278,8 +239,8 @@
    },
    "t_evento_real_utc": "2026-08-22T10:59:29Z",
    "t_captura_utc": "2026-08-22T10:59:29Z",
-   "t_evaluacion_utc": "2026-08-22T11:04:12Z",
-   "t_generacion_utc": "2026-08-22T11:04:12Z",
+   "t_evaluacion_utc": "2026-08-22T11:05:11Z",
+   "t_generacion_utc": "2026-08-22T11:05:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -293,7 +254,7 @@
    },
    "latencia_total_seg": 46.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Yokohama F. Marinos vs Vissel Kobe\n⏱ Minuto: 30'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Yokohama F. Marinos presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Vissel Kobe no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Yokohama F. Marinos vs Vissel Kobe\n⏱ Minuto: 31'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Yokohama F. Marinos presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Vissel Kobe no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "5c70ede8ae05e488"
   },
@@ -303,7 +264,7 @@
    "match_id": "16348557",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "Kawasaki Frontale acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -325,9 +286,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-22T11:03:31Z",
-   "t_captura_utc": "2026-08-22T11:04:31Z",
-   "t_evaluacion_utc": "2026-08-22T11:04:31Z",
-   "t_generacion_utc": "2026-08-22T11:04:31Z",
+   "t_captura_utc": "2026-08-22T11:05:29Z",
+   "t_evaluacion_utc": "2026-08-22T11:05:29Z",
+   "t_generacion_utc": "2026-08-22T11:05:29Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -341,7 +302,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sanfrecce Hiroshima vs Kawasaki Frontale\n⏱ Minuto: 43'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n📝 Motivo: Kawasaki Frontale acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sanfrecce Hiroshima vs Kawasaki Frontale\n⏱ Minuto: 44'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n📝 Motivo: Kawasaki Frontale acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "e29e443907966d52"
   }
