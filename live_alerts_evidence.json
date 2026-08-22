@@ -6924,5 +6924,45 @@
    "cuota_real_betano": 1.52,
    "activo": true
   }
+ ],
+ "197d975787870187": [
+  {
+   "alert_id": "197d975787870187",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Tigres UANL vs Atlante FC (Liga MX, Apertura)",
+   "liga": "Liga MX, Apertura",
+   "event_id": "16317899",
+   "minuto_alerta": 16,
+   "condicion": "Tigres UANL domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-22T01:18:22Z",
+   "t_captura_utc": "2026-08-22T01:18:22Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-22T01:20:08Z",
+   "segundos_transcurridos": 46,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.5 @ 1.57\n11.5 @ 2.00",
+   "linea_real_betano": 10.5,
+   "cuota_real_betano": 1.57,
+   "activo": true
+  },
+  {
+   "alert_id": "197d975787870187",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Tigres UANL vs Atlante FC (Liga MX, Apertura)",
+   "liga": "Liga MX, Apertura",
+   "event_id": "16317899",
+   "minuto_alerta": 16,
+   "condicion": "Tigres UANL domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-22T01:18:22Z",
+   "t_captura_utc": "2026-08-22T01:18:22Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-22T01:20:08Z",
+   "segundos_transcurridos": 46,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.5 @ 1.57\n11.5 @ 2.00",
+   "linea_real_betano": 11.5,
+   "cuota_real_betano": 2.0,
+   "activo": true
+  }
  ]
 }
