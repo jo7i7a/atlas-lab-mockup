@@ -1,53 +1,7 @@
 {
- "generated_at_utc": "2026-08-22T22:38:28Z",
+ "generated_at_utc": "2026-08-22T22:39:38Z",
  "n_alerts": 4,
  "alerts": [
-  {
-   "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Internacional vs Atlético Mineiro (Brasileirão Betano)",
-   "match_id": "15235446",
-   "market": "Over 1.5 Goles FT (o Over 0.5 2ª Mitad) -- verificar en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 42,
-   "condicion": "0-0 con dominancia sostenida entre los minutos 32-42 (remates totales≥9, tiros a puerta≥4, córners≥5, todos combinados). Condición original de 'ataques peligrosos' NO evaluada -- dato no disponible en la fuente actual. Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "remates_local": 9,
-    "remates_visita": 4,
-    "remates_total": 13,
-    "sot_local": 1,
-    "sot_visita": 3,
-    "sot_total": 4,
-    "cor_local": 4,
-    "cor_visita": 3,
-    "cor_total": 7,
-    "marcador": "0-0",
-    "condicion_original_no_evaluada": "ataques peligrosos a favor del dominante (dato no disponible)"
-   },
-   "t_evento_real_utc": "2026-08-22T22:09:17Z",
-   "t_captura_utc": "2026-08-22T22:12:04Z",
-   "t_evaluacion_utc": "2026-08-22T22:12:26Z",
-   "t_generacion_utc": "2026-08-22T22:12:26Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-22T22:09:27Z",
-     "latencia_envio_ms": 844.707727432251,
-     "error": null,
-     "message_id": 2006,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 10.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B1_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Internacional vs Atlético Mineiro\n⏱ Minuto: 42'\n📊 Marcador: 0-0\n\n🎯 Remates totales:\nLocal: 9\nVisita: 4\nTotal: 13\n\n🎯 Tiros a puerta:\nLocal: 1\nVisita: 3\nTotal: 4\n\n🚩 Córners:\nLocal: 4\nVisita: 3\nTotal: 7\n\n🏆 Liga: Brasileirão Betano\n\n⚠️ Versión SIN la condición de ataques peligrosos (dato no disponible)\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 goles FT (o Over 0.5 2ª mitad)\n\n⚠️ RESPONDE CON EL TAG (obligatorio para B1):\n'FT LÍNEA @ CUOTA' o '2T LÍNEA @ CUOTA'",
-   "evidencia": null,
-   "alert_id": "78bd0f8a2bf6e16b"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Ceará vs Londrina (Brasileirão Série B)",
@@ -83,12 +37,50 @@
    "alert_id": "a8cb9456cbf04136"
   },
   {
+   "strategy_id": "A2",
+   "match_label": "Cuiabá vs Goiás (Brasileirão Série B)",
+   "match_id": "15526246",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 0,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-08-22T22:38:21Z",
+   "t_captura_utc": "2026-08-22T22:38:21Z",
+   "t_evaluacion_utc": "2026-08-22T22:39:30Z",
+   "t_generacion_utc": "2026-08-22T22:39:30Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-22T22:39:31Z",
+     "latencia_envio_ms": 876.2896060943604,
+     "error": null,
+     "message_id": 2007,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 70.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Cuiabá vs Goiás\n⏱ Minuto: 46'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "bfeac91d35b1e8df"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Ceará vs Londrina (Brasileirão Série B)",
    "match_id": "15526242",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 76,
+   "minuto": 78,
    "condicion": "Ceará acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -97,9 +89,9 @@
    "extra": {
     "equipo_dominante": "Ceará",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7059,
+    "ratio_presion_territorial": 0.6667,
     "touches_home": 12,
-    "touches_away": 5,
+    "touches_away": 6,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 67,
     "equipo_que_realizo_sustitucion": "Ceará",
@@ -110,13 +102,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-22T22:13:31Z",
-   "t_captura_utc": "2026-08-22T22:38:27Z",
-   "t_evaluacion_utc": "2026-08-22T22:38:27Z",
-   "t_generacion_utc": "2026-08-22T22:38:27Z",
+   "t_captura_utc": "2026-08-22T22:39:36Z",
+   "t_evaluacion_utc": "2026-08-22T22:39:36Z",
+   "t_generacion_utc": "2026-08-22T22:39:36Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ceará vs Londrina\n⏱ Minuto: 76'\n📊 Marcador: 2-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Ceará acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Ceará, min 67\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ceará vs Londrina\n⏱ Minuto: 78'\n📊 Marcador: 2-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Ceará acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Ceará, min 67\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "b78543df09895e71"
   },
@@ -126,7 +118,7 @@
    "match_id": "15526246",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 46,
    "condicion": "Cuiabá acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -148,13 +140,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-22T22:38:28Z",
-   "t_captura_utc": "2026-08-22T22:38:28Z",
-   "t_evaluacion_utc": "2026-08-22T22:38:28Z",
-   "t_generacion_utc": "2026-08-22T22:38:28Z",
+   "t_captura_utc": "2026-08-22T22:39:37Z",
+   "t_evaluacion_utc": "2026-08-22T22:39:37Z",
+   "t_generacion_utc": "2026-08-22T22:39:37Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Cuiabá vs Goiás\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Cuiabá acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Cuiabá, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Cuiabá vs Goiás\n⏱ Minuto: 46'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Cuiabá acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Cuiabá, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "b9c7599639ae534e"
   }
