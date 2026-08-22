@@ -523,6 +523,12 @@
   .tr-prob { font-family: var(--mono); font-size: 13px; font-weight: 700; color: var(--green); text-align: right; }
   .tr-cuota { font-family: var(--mono); font-size: 10px; color: var(--text-faint); text-align: right; white-space: nowrap; }
   .tr-cuota-val { color: var(--text); font-weight: 700; }
+  /* ---- Ver más / Ocultar restantes por ranking (2026-08-22) ---- */
+  .tr-extra { max-height: 0; overflow: hidden; opacity: 0; transition: max-height .28s ease, opacity .2s ease; }
+  .tr-extra.expanded { max-height: 640px; opacity: 1; }
+  .tr-toggle { display: flex; align-items: center; justify-content: center; gap: 5px; width: 100%; margin-top: 4px; padding: 8px 0 2px; background: none; border: none; color: var(--text-faint); font-family: var(--mono); font-size: 10.5px; font-weight: 700; letter-spacing: .02em; text-transform: uppercase; cursor: pointer; }
+  .tr-toggle:hover, .tr-toggle:active { color: var(--text-dim); }
+  .tr-toggle .tr-toggle-arrow { font-size: 11px; }
 
   /* ---- Picks ATLAS -- rentabilidad histórica (2026-08-16) ---- */
   .perf-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px 6px; text-align: center; }
@@ -1938,6 +1944,14 @@ const RANKING_MARKET_LABELS = {
   OVER25: "Over 2.5 Goles", UNDER25: "Under 2.5 Goles", BTTS: "BTTS \"Sí\"", CORNERS_OVER105: "Over 10.5 Córners",
 };
 let tipsterRankingsScope = "daily"; // "daily" | "weekly"
+/* ---- Ver más / Ocultar restantes (2026-08-22, mandato del Director: reducir
+   el largo de Inicio) -- Top 3 visible por defecto, resto plegado detras de
+   un boton compacto. Estado independiente por ranking (clave = marketKey),
+   igual que lbExpanded ya hace para los rankings de equipo. No cambia orden,
+   calculos ni fuente de datos -- solo presentacion; TODAS las filas del
+   Top 10 real ya vienen en el DOM, "Ver restantes" solo despliega con CSS. */
+const TR_VISIBLE_ALWAYS = 3;
+let tipsterRankExpanded = {};
 
 function tipsterRankingRowHtml(entry, pos) {
   const cuotaTxt = entry.cuota
@@ -1960,10 +1974,20 @@ function tipsterRankingCardHtml(marketKey, entries) {
       <div class="ic-body"><p class="footer-note" style="text-align:left">Sin partidos con probabilidad válida ahora mismo -- nunca se rellena artificialmente.</p></div>
     </div>`;
   }
+  const head = entries.slice(0, TR_VISIBLE_ALWAYS);
+  const rest = entries.slice(TR_VISIBLE_ALWAYS);
+  const expanded = !!tipsterRankExpanded[marketKey];
+  const headRows = head.map((e, i) => tipsterRankingRowHtml(e, i + 1)).join("");
+  const restRows = rest.map((e, i) => tipsterRankingRowHtml(e, i + 1 + TR_VISIBLE_ALWAYS)).join("");
+  const toggleBtn = rest.length ? `
+    <button class="tr-toggle" type="button" data-tr-toggle="${marketKey}" data-tr-remaining="${rest.length}">
+      <span class="tr-toggle-label">${expanded ? "Ocultar restantes" : `Ver ${rest.length} restantes`}</span>
+      <span class="tr-toggle-arrow">${expanded ? "↑" : "↓"}</span>
+    </button>` : "";
   return `
   <div class="insight-card" style="--fam-color:var(--amber)">
     <div class="ic-head"><div class="ic-title">${label}</div><div class="ic-n">TOP ${entries.length}</div></div>
-    <div class="ic-body">${entries.map((e, i) => tipsterRankingRowHtml(e, i + 1)).join("")}</div>
+    <div class="ic-body">${headRows}<div class="tr-extra${expanded ? " expanded" : ""}" data-tr-extra="${marketKey}">${restRows}</div>${toggleBtn}</div>
   </div>`;
 }
 function renderRankingsScopeRow() {
@@ -1989,6 +2013,20 @@ function renderTipsterRankings() {
   el.innerHTML = Object.keys(RANKING_MARKET_LABELS).map(mkt => tipsterRankingCardHtml(mkt, rankings[mkt])).join("");
   el.querySelectorAll(".tr-row").forEach(row => {
     row.addEventListener("click", () => goTo("center", { id: row.dataset.matchId }));
+  });
+  // Toggle in-place (sin re-render completo) para que la transicion CSS de
+  // .tr-extra se vea -- cada boton solo afecta su propio ranking (marketKey).
+  el.querySelectorAll(".tr-toggle").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const key = btn.dataset.trToggle;
+      const remaining = btn.dataset.trRemaining;
+      const expanded = !tipsterRankExpanded[key];
+      tipsterRankExpanded[key] = expanded;
+      const extra = el.querySelector(`.tr-extra[data-tr-extra="${key}"]`);
+      if (extra) extra.classList.toggle("expanded", expanded);
+      btn.querySelector(".tr-toggle-label").textContent = expanded ? "Ocultar restantes" : `Ver ${remaining} restantes`;
+      btn.querySelector(".tr-toggle-arrow").textContent = expanded ? "↑" : "↓";
+    });
   });
 }
 
