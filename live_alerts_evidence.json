@@ -6882,5 +6882,26 @@
    "cuota_real_betano": 1.8,
    "activo": true
   }
+ ],
+ "1cdc3c9355b9c20d": [
+  {
+   "alert_id": "1cdc3c9355b9c20d",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Audax Italiano vs Unión La Calera (Liga de Primera)",
+   "liga": "Liga de Primera",
+   "event_id": "15353104",
+   "minuto_alerta": 32,
+   "condicion": "Unión La Calera acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-22T01:02:20Z",
+   "t_captura_utc": "2026-08-22T01:02:20Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-22T01:03:04Z",
+   "segundos_transcurridos": 43,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.5 @ 1.95",
+   "linea_real_betano": 10.5,
+   "cuota_real_betano": 1.95,
+   "activo": true
+  }
  ]
 }
