@@ -7132,5 +7132,26 @@
    "cuota_real_betano": 1.9,
    "activo": true
   }
+ ],
+ "9314e701ec059588": [
+  {
+   "alert_id": "9314e701ec059588",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Hull City vs Manchester United (Premier League)",
+   "liga": "Premier League",
+   "event_id": "16363634",
+   "minuto_alerta": 17,
+   "condicion": "Manchester United domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-22T11:45:48Z",
+   "t_captura_utc": "2026-08-22T11:45:48Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-22T11:49:33Z",
+   "segundos_transcurridos": 118,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.0 @ 1.91",
+   "linea_real_betano": 10.0,
+   "cuota_real_betano": 1.91,
+   "activo": true
+  }
  ]
 }
