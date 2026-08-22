@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-08-22T01:21:25Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-08-22T01:22:25Z",
+ "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Audax Italiano vs Unión La Calera (Liga de Primera)",
-   "match_id": "15353104",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "Unión La Calera acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Unión La Calera",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 2,
-    "touches_away": 4,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 26,
-    "equipo_que_realizo_sustitucion": "Unión La Calera",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-22T00:52:16Z",
-    "t_inicio_estimado_condicion": "2026-08-22T00:50:40Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-22T00:52:16Z",
-   "t_captura_utc": "2026-08-22T01:00:19Z",
-   "t_evaluacion_utc": "2026-08-22T01:00:19Z",
-   "t_generacion_utc": "2026-08-22T01:00:19Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-22T00:52:18Z",
-     "latencia_envio_ms": 870.5620765686035,
-     "error": null,
-     "message_id": 1695,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 2.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Audax Italiano vs Unión La Calera\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Unión La Calera acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Unión La Calera, min 26\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "29d0d933070660a4"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Audax Italiano vs Unión La Calera (Liga de Primera)",
@@ -143,7 +95,7 @@
    "match_id": "16317899",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 18,
+   "minuto": 19,
    "condicion": "Tigres UANL domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -163,8 +115,8 @@
    },
    "t_evento_real_utc": "2026-08-22T01:18:22Z",
    "t_captura_utc": "2026-08-22T01:18:22Z",
-   "t_evaluacion_utc": "2026-08-22T01:21:25Z",
-   "t_generacion_utc": "2026-08-22T01:21:25Z",
+   "t_evaluacion_utc": "2026-08-22T01:22:25Z",
+   "t_generacion_utc": "2026-08-22T01:22:25Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -178,7 +130,7 @@
    },
    "latencia_total_seg": 60.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Tigres UANL vs Atlante FC\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Tigres UANL — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Tigres UANL vs Atlante FC\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Tigres UANL — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "197d975787870187"
   }
