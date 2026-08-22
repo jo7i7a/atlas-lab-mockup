@@ -1,54 +1,54 @@
 {
- "generated_at_utc": "2026-08-22T00:04:18Z",
+ "generated_at_utc": "2026-08-22T00:52:18Z",
  "n_alerts": 1,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Estudiantes de Río Cuarto vs San Lorenzo (Liga Profesional de Fútbol)",
-   "match_id": "16671570",
+   "match_label": "Audax Italiano vs Unión La Calera (Liga de Primera)",
+   "match_id": "15353104",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 46,
-   "condicion": "Estudiantes de Río Cuarto acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "minuto": 22,
+   "condicion": "Unión La Calera acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
    "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "equipo_dominante": "Estudiantes de Río Cuarto",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 8,
+    "equipo_dominante": "Unión La Calera",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.8,
+    "touches_home": 1,
     "touches_away": 4,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 30,
-    "equipo_que_realizo_sustitucion": "Estudiantes de Río Cuarto",
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
     "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-21T23:42:16Z",
-    "t_inicio_estimado_condicion": "2026-08-21T23:29:37Z",
+    "t_primera_observacion_atlas": "2026-08-22T00:52:16Z",
+    "t_inicio_estimado_condicion": "2026-08-22T00:50:40Z",
     "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
-   "t_evento_real_utc": "2026-08-21T23:42:16Z",
-   "t_captura_utc": "2026-08-22T00:04:18Z",
-   "t_evaluacion_utc": "2026-08-22T00:04:18Z",
-   "t_generacion_utc": "2026-08-22T00:04:18Z",
+   "t_evento_real_utc": "2026-08-22T00:52:16Z",
+   "t_captura_utc": "2026-08-22T00:52:16Z",
+   "t_evaluacion_utc": "2026-08-22T00:52:17Z",
+   "t_generacion_utc": "2026-08-22T00:52:17Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
      "estado": "OK",
-     "t_envio_utc": "2026-08-21T23:42:18Z",
-     "latencia_envio_ms": 858.9513301849365,
+     "t_envio_utc": "2026-08-22T00:52:18Z",
+     "latencia_envio_ms": 870.5620765686035,
      "error": null,
-     "message_id": 1692,
+     "message_id": 1695,
      "chat_id": -5314130598
     }
    },
    "latencia_total_seg": 2.0,
-   "estado_temporal": "EXPIRADA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Estudiantes de Río Cuarto vs San Lorenzo\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de Río Cuarto acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Estudiantes de Río Cuarto, min 30\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Audax Italiano vs Unión La Calera\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Unión La Calera acumula 80% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
-   "alert_id": "cd694c30a579b405"
+   "alert_id": "29d0d933070660a4"
   }
  ]
 }
