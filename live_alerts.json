@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-22T23:02:48Z",
+ "generated_at_utc": "2026-08-22T23:03:32Z",
  "n_alerts": 5,
  "alerts": [
   {
@@ -76,44 +76,6 @@
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Cuiabá vs Goiás (Brasileirão Série B)",
-   "match_id": "15526246",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 69,
-   "condicion": "Cuiabá acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Cuiabá",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.75,
-    "touches_home": 15,
-    "touches_away": 5,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 63,
-    "equipo_que_realizo_sustitucion": "Cuiabá",
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-22T22:38:28Z",
-    "t_inicio_estimado_condicion": "2026-08-22T21:52:12Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-22T22:38:28Z",
-   "t_captura_utc": "2026-08-22T23:02:34Z",
-   "t_evaluacion_utc": "2026-08-22T23:02:35Z",
-   "t_generacion_utc": "2026-08-22T23:02:35Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Cuiabá vs Goiás\n⏱ Minuto: 69'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Cuiabá acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Cuiabá, min 63\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "b9c7599639ae534e"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "CA Independiente vs Independiente Rivadavia (Liga Profesional de Fútbol)",
    "match_id": "16671569",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
@@ -183,6 +145,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Cuiabá vs Goiás\n⏱ Minuto: 69'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 1.50, 22 tiros totales (7 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "2f1d2defc0b745df"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Cuiabá vs Goiás (Brasileirão Série B)",
+   "match_id": "15526246",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 70,
+   "condicion": "Cuiabá acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Cuiabá",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.75,
+    "touches_home": 15,
+    "touches_away": 5,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 63,
+    "equipo_que_realizo_sustitucion": "Cuiabá",
+    "marcador_en_el_momento": "0-1",
+    "t_primera_observacion_atlas": "2026-08-22T22:38:28Z",
+    "t_inicio_estimado_condicion": "2026-08-22T21:52:12Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-22T22:38:28Z",
+   "t_captura_utc": "2026-08-22T23:03:31Z",
+   "t_evaluacion_utc": "2026-08-22T23:03:32Z",
+   "t_generacion_utc": "2026-08-22T23:03:32Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Cuiabá vs Goiás\n⏱ Minuto: 70'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Cuiabá acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Cuiabá, min 63\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "b9c7599639ae534e"
   }
  ]
 }
