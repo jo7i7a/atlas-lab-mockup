@@ -6964,5 +6964,26 @@
    "cuota_real_betano": 2.0,
    "activo": true
   }
+ ],
+ "6811e98cf89bd86e": [
+  {
+   "alert_id": "6811e98cf89bd86e",
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Club León vs CF Monterrey (Liga MX, Apertura)",
+   "liga": "Liga MX, Apertura",
+   "event_id": "16317897",
+   "minuto_alerta": 24,
+   "condicion": "Club León acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-22T01:25:34Z",
+   "t_captura_utc": "2026-08-22T01:25:34Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-22T01:26:18Z",
+   "segundos_transcurridos": 42,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "10.0 @ 1.78",
+   "linea_real_betano": 10.0,
+   "cuota_real_betano": 1.78,
+   "activo": true
+  }
  ]
 }
