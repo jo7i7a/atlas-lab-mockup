@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-22T11:30:30Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-08-22T11:31:38Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -183,6 +183,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Yokohama F. Marinos vs Vissel Kobe\n⏱ Minuto: 47'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n📝 Motivo: Yokohama F. Marinos acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Yokohama F. Marinos, min 40\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "2eb5b1a9ff0c874d"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Sanfrecce Hiroshima vs Kawasaki Frontale (J1 League)",
+   "match_id": "16348557",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 0,
+    "corners_1t_away": 1,
+    "corners_1t_total": 1
+   },
+   "t_evento_real_utc": "2026-08-22T11:28:54Z",
+   "t_captura_utc": "2026-08-22T11:28:54Z",
+   "t_evaluacion_utc": "2026-08-22T11:31:31Z",
+   "t_generacion_utc": "2026-08-22T11:31:31Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-22T11:31:32Z",
+     "latencia_envio_ms": 853.0356884002686,
+     "error": null,
+     "message_id": 1767,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 158.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Sanfrecce Hiroshima vs Kawasaki Frontale\n⏱ Minuto: 46'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "f4d669acf5c1c4c7"
   }
  ]
 }
