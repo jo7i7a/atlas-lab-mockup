@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-22T11:46:03Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-22T11:47:40Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -46,7 +46,7 @@
    "match_id": "16391150",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 15,
+   "minuto": 17,
    "condicion": "4 córners totales antes del min 30 (3-1), Lincoln City presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Portsmouth NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -59,8 +59,8 @@
    },
    "t_evento_real_utc": "2026-08-22T11:43:04Z",
    "t_captura_utc": "2026-08-22T11:43:04Z",
-   "t_evaluacion_utc": "2026-08-22T11:45:11Z",
-   "t_generacion_utc": "2026-08-22T11:45:11Z",
+   "t_evaluacion_utc": "2026-08-22T11:47:11Z",
+   "t_generacion_utc": "2026-08-22T11:47:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -74,7 +74,7 @@
    },
    "latencia_total_seg": 8.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Lincoln City vs Portsmouth\n⏱ Minuto: 15'\n📊 Marcador: 0-1\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Lincoln City presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Portsmouth no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Lincoln City vs Portsmouth\n⏱ Minuto: 17'\n📊 Marcador: 0-2\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Lincoln City presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Portsmouth no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "f8347274fe0cca80"
   },
@@ -84,7 +84,7 @@
    "match_id": "16391150",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 15,
+   "minuto": 17,
    "condicion": "4 córners totales antes del min 45 (3-1), Lincoln City presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Portsmouth NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -98,8 +98,8 @@
    },
    "t_evento_real_utc": "2026-08-22T11:43:04Z",
    "t_captura_utc": "2026-08-22T11:43:04Z",
-   "t_evaluacion_utc": "2026-08-22T11:45:15Z",
-   "t_generacion_utc": "2026-08-22T11:45:15Z",
+   "t_evaluacion_utc": "2026-08-22T11:47:14Z",
+   "t_generacion_utc": "2026-08-22T11:47:14Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -113,9 +113,99 @@
    },
    "latencia_total_seg": 13.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Lincoln City vs Portsmouth\n⏱ Minuto: 15'\n📊 Marcador: 0-1\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Lincoln City presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Portsmouth no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Lincoln City vs Portsmouth\n⏱ Minuto: 17'\n📊 Marcador: 0-2\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Lincoln City presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Portsmouth no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "2f08a4b9439143a0"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Hull City vs Manchester United (Premier League)",
+   "match_id": "16363634",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "Manchester United domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Manchester United",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 1,
+    "remates_home": 1,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-22T11:45:48Z",
+   "t_captura_utc": "2026-08-22T11:45:48Z",
+   "t_evaluacion_utc": "2026-08-22T11:47:34Z",
+   "t_generacion_utc": "2026-08-22T11:47:34Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-22T11:47:35Z",
+     "latencia_envio_ms": 888.02170753479,
+     "error": null,
+     "message_id": 1770,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 107.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Hull City vs Manchester United\n⏱ Minuto: 17'\n📊 Marcador: 1-0\n🏆 Liga: Premier League\n\n📝 Motivo: Manchester United — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "9314e701ec059588"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Lincoln City vs Portsmouth (Championship)",
+   "match_id": "16391150",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "Portsmouth domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Portsmouth",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 1,
+    "remates_home": 0,
+    "remates_away": 3,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-22T11:45:48Z",
+   "t_captura_utc": "2026-08-22T11:45:48Z",
+   "t_evaluacion_utc": "2026-08-22T11:47:40Z",
+   "t_generacion_utc": "2026-08-22T11:47:40Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-22T11:47:40Z",
+     "latencia_envio_ms": 774.0259170532227,
+     "error": null,
+     "message_id": 1771,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 112.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Lincoln City vs Portsmouth\n⏱ Minuto: 17'\n📊 Marcador: 0-2\n🏆 Liga: Championship\n\n📝 Motivo: Portsmouth — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "fdc132e9fc447976"
   }
  ]
 }
