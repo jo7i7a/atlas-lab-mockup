@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-08-22T11:07:37Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-22T11:08:39Z",
+ "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Fagiano Okayama vs Tokyo Verdy (J1 League)",
-   "match_id": "16348536",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 3,
-    "corners_1t_away": 0,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-22T10:38:21Z",
-   "t_captura_utc": "2026-08-22T10:38:21Z",
-   "t_evaluacion_utc": "2026-08-22T10:42:28Z",
-   "t_generacion_utc": "2026-08-22T10:42:28Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-22T10:39:28Z",
-     "latencia_envio_ms": 849.437952041626,
-     "error": null,
-     "message_id": 1753,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 67.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Fagiano Okayama vs Tokyo Verdy\n⏱ Minuto: 52'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n🚩 Córners 1er tiempo:\nLocal: 3\nVisita: 0\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "a120eabe85f59928"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Sanfrecce Hiroshima vs Kawasaki Frontale (J1 League)",
@@ -87,51 +49,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sanfrecce Hiroshima vs Kawasaki Frontale\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n📝 Motivo: Sanfrecce Hiroshima acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Sanfrecce Hiroshima, min 15\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "848dd5b97e9c06e7"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Sanfrecce Hiroshima vs Kawasaki Frontale (J1 League)",
-   "match_id": "16348557",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Kawasaki Frontale domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Kawasaki Frontale",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-22T10:38:21Z",
-   "t_captura_utc": "2026-08-22T10:38:21Z",
-   "t_evaluacion_utc": "2026-08-22T10:46:31Z",
-   "t_generacion_utc": "2026-08-22T10:46:31Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-22T10:39:33Z",
-     "latencia_envio_ms": 771.514892578125,
-     "error": null,
-     "message_id": 1754,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 72.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Sanfrecce Hiroshima vs Kawasaki Frontale\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n📝 Motivo: Kawasaki Frontale — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "2bd48af7d17eccce"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -225,7 +142,7 @@
    "match_id": "16348545",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 33,
+   "minuto": 34,
    "condicion": "4 córners totales antes del min 45 (3-1), Yokohama F. Marinos presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Vissel Kobe NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -239,8 +156,8 @@
    },
    "t_evento_real_utc": "2026-08-22T10:59:29Z",
    "t_captura_utc": "2026-08-22T10:59:29Z",
-   "t_evaluacion_utc": "2026-08-22T11:07:11Z",
-   "t_generacion_utc": "2026-08-22T11:07:11Z",
+   "t_evaluacion_utc": "2026-08-22T11:08:12Z",
+   "t_generacion_utc": "2026-08-22T11:08:12Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -254,7 +171,7 @@
    },
    "latencia_total_seg": 46.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Yokohama F. Marinos vs Vissel Kobe\n⏱ Minuto: 33'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Yokohama F. Marinos presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Vissel Kobe no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Yokohama F. Marinos vs Vissel Kobe\n⏱ Minuto: 34'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Yokohama F. Marinos presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Vissel Kobe no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "5c70ede8ae05e488"
   },
@@ -264,7 +181,7 @@
    "match_id": "16348537",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 46,
+   "minuto": 47,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -277,8 +194,8 @@
    },
    "t_evento_real_utc": "2026-08-22T11:06:16Z",
    "t_captura_utc": "2026-08-22T11:06:16Z",
-   "t_evaluacion_utc": "2026-08-22T11:07:28Z",
-   "t_generacion_utc": "2026-08-22T11:07:28Z",
+   "t_evaluacion_utc": "2026-08-22T11:08:31Z",
+   "t_generacion_utc": "2026-08-22T11:08:31Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -292,7 +209,7 @@
    },
    "latencia_total_seg": 73.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Nagoya Grampus vs Gamba Osaka\n⏱ Minuto: 46'\n📊 Marcador: 1-1\n🏆 Liga: J1 League\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Nagoya Grampus vs Gamba Osaka\n⏱ Minuto: 47'\n📊 Marcador: 1-1\n🏆 Liga: J1 League\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "aa85bba019529a73"
   },
@@ -302,7 +219,7 @@
    "match_id": "16348557",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 47,
+   "minuto": 48,
    "condicion": "Kawasaki Frontale acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -311,8 +228,8 @@
    "extra": {
     "equipo_dominante": "Kawasaki Frontale",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.64,
-    "touches_home": 9,
+    "ratio_presion_territorial": 0.6154,
+    "touches_home": 10,
     "touches_away": 16,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
@@ -324,9 +241,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-22T11:03:31Z",
-   "t_captura_utc": "2026-08-22T11:07:37Z",
-   "t_evaluacion_utc": "2026-08-22T11:07:37Z",
-   "t_generacion_utc": "2026-08-22T11:07:37Z",
+   "t_captura_utc": "2026-08-22T11:08:39Z",
+   "t_evaluacion_utc": "2026-08-22T11:08:39Z",
+   "t_generacion_utc": "2026-08-22T11:08:39Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -340,7 +257,7 @@
    },
    "latencia_total_seg": 1.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sanfrecce Hiroshima vs Kawasaki Frontale\n⏱ Minuto: 47'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n📝 Motivo: Kawasaki Frontale acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sanfrecce Hiroshima vs Kawasaki Frontale\n⏱ Minuto: 48'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n📝 Motivo: Kawasaki Frontale acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "e29e443907966d52"
   }
