@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-22T23:38:54Z",
- "n_live_target": 3,
+ "generated_at_utc": "2026-08-22T23:41:54Z",
+ "n_live_target": 8,
  "matches": {
   "15235438": {
    "event_id": 15235438,
@@ -11,12 +11,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 8,
+   "minute": 11,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 37,
-     "away": 63
+     "home": 48,
+     "away": 52
     },
     "xg": {
      "label": "Expected Goals (xG)",
@@ -30,13 +30,13 @@
     },
     "corners": {
      "label": "Corners",
-     "home": 0,
+     "home": 1,
      "away": 1
     },
     "passes": {
      "label": "Pases",
-     "home": 34,
-     "away": 58
+     "home": 53,
+     "away": 60
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -46,28 +46,298 @@
    },
    "odds": {
     "btts": {
-     "yes": 1.909,
-     "no": 1.909,
-     "captured_at_utc": "2026-08-22T23:38:42Z"
+     "yes": 1.95,
+     "no": 1.8,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
     },
     "corners_over_95": {
-     "over": 2.1,
-     "under": 1.667,
-     "captured_at_utc": "2026-08-22T23:38:42Z"
+     "over": 1.727,
+     "under": 2.0,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
     },
     "1x2": {
-     "home": 4.0,
-     "draw": 3.4,
-     "away": 1.952,
-     "captured_at_utc": "2026-08-22T23:38:42Z"
+     "home": 3.75,
+     "draw": 3.25,
+     "away": 2.05,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
     },
     "goals_over_25": {
      "over": 2.1,
      "under": 1.727,
-     "captured_at_utc": "2026-08-22T23:38:42Z"
+     "captured_at_utc": "2026-08-22T23:41:48Z"
     }
    },
-   "updated_at_utc": "2026-08-22T23:38:54Z"
+   "updated_at_utc": "2026-08-22T23:41:54Z"
+  },
+  "15171668": {
+   "event_id": 15171668,
+   "league": "MLS",
+   "home": "CF Montréal",
+   "away": "LA Galaxy",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.533,
+     "no": 2.375,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
+    },
+    "corners_over_95": {
+     "over": 1.727,
+     "under": 2.0,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
+    },
+    "1x2": {
+     "home": 1.9,
+     "draw": 3.75,
+     "away": 4.0,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
+    },
+    "goals_over_25": {
+     "over": 1.571,
+     "under": 2.25,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
+    }
+   },
+   "updated_at_utc": "2026-08-22T23:41:54Z"
+  },
+  "15171666": {
+   "event_id": 15171666,
+   "league": "MLS",
+   "home": "Charlotte FC",
+   "away": "DC United",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 100,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 14,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.533,
+     "no": 2.375,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
+    },
+    "corners_over_95": {
+     "over": 1.8,
+     "under": 1.909,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
+    },
+    "1x2": {
+     "home": 1.8,
+     "draw": 3.75,
+     "away": 4.333,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
+    },
+    "goals_over_25": {
+     "over": 1.533,
+     "under": 2.375,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
+    }
+   },
+   "updated_at_utc": "2026-08-22T23:41:54Z"
+  },
+  "15171671": {
+   "event_id": 15171671,
+   "league": "MLS",
+   "home": "FC Cincinnati",
+   "away": "Seattle Sounders FC",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.444,
+     "no": 2.625,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
+    },
+    "corners_over_95": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
+    },
+    "1x2": {
+     "home": 1.571,
+     "draw": 4.5,
+     "away": 5.0,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
+    }
+   },
+   "updated_at_utc": "2026-08-22T23:41:54Z"
+  },
+  "15171670": {
+   "event_id": 15171670,
+   "league": "MLS",
+   "home": "New York Red Bulls",
+   "away": "Chicago Fire",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 0,
+     "away": 100
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 0,
+     "away": 1
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.333,
+     "no": 3.25,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
+    },
+    "corners_over_95": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
+    },
+    "1x2": {
+     "home": 2.4,
+     "draw": 3.5,
+     "away": 2.75,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
+    }
+   },
+   "updated_at_utc": "2026-08-22T23:41:54Z"
+  },
+  "15171669": {
+   "event_id": 15171669,
+   "league": "MLS",
+   "home": "Orlando City SC",
+   "away": "Real Salt Lake",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 100,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 1,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.4,
+     "no": 2.75,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
+    },
+    "1x2": {
+     "home": 1.727,
+     "draw": 4.333,
+     "away": 4.0,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
+    }
+   },
+   "updated_at_utc": "2026-08-22T23:41:54Z"
   },
   "15617739": {
    "event_id": 15617739,
@@ -82,13 +352,13 @@
    "stats": {},
    "odds": {
     "1x2": {
-     "home": 2.625,
+     "home": 2.75,
      "draw": 2.3,
      "away": 3.75,
-     "captured_at_utc": "2026-08-22T23:38:42Z"
+     "captured_at_utc": "2026-08-22T23:41:48Z"
     }
    },
-   "updated_at_utc": "2026-08-22T23:38:54Z"
+   "updated_at_utc": "2026-08-22T23:41:54Z"
   },
   "15617741": {
    "event_id": 15617741,
@@ -98,18 +368,18 @@
    "home_score": 1,
    "away_score": 0,
    "status_type": "inprogress",
-   "status_description": "Halftime",
-   "minute": null,
+   "status_description": "2nd half",
+   "minute": 113,
    "stats": {},
    "odds": {
     "1x2": {
-     "home": 1.1,
+     "home": 1.083,
      "draw": 7.5,
-     "away": 21.0,
-     "captured_at_utc": "2026-08-22T23:38:42Z"
+     "away": 23.0,
+     "captured_at_utc": "2026-08-22T23:41:48Z"
     }
    },
-   "updated_at_utc": "2026-08-22T23:38:54Z"
+   "updated_at_utc": "2026-08-22T23:41:54Z"
   }
  }
 }
