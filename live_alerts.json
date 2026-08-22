@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-22T01:00:19Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-08-22T01:02:21Z",
+ "n_alerts": 2,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -49,6 +49,54 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Audax Italiano vs Unión La Calera\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Unión La Calera acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Unión La Calera, min 26\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "29d0d933070660a4"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Audax Italiano vs Unión La Calera (Liga de Primera)",
+   "match_id": "15353104",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 32,
+   "condicion": "Unión La Calera acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Unión La Calera",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.625,
+    "touches_home": 3,
+    "touches_away": 5,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 26,
+    "equipo_que_realizo_sustitucion": "Unión La Calera",
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-22T01:02:20Z",
+    "t_inicio_estimado_condicion": "2026-08-22T00:50:40Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-22T01:02:20Z",
+   "t_captura_utc": "2026-08-22T01:02:20Z",
+   "t_evaluacion_utc": "2026-08-22T01:02:20Z",
+   "t_generacion_utc": "2026-08-22T01:02:20Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-22T01:02:21Z",
+     "latencia_envio_ms": 876.0645389556885,
+     "error": null,
+     "message_id": 1696,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 1.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Audax Italiano vs Unión La Calera\n⏱ Minuto: 32'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Unión La Calera acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Unión La Calera, min 26\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "1cdc3c9355b9c20d"
   }
  ]
 }
