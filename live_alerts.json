@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-23T21:38:32Z",
+ "generated_at_utc": "2026-08-23T21:39:37Z",
  "n_alerts": 10,
  "alerts": [
   {
@@ -29,44 +29,6 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ New England Revolution vs New York City FC\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: New England Revolution presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿New York City FC no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "57d3c72eac50e45f"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "New England Revolution vs New York City FC (MLS)",
-   "match_id": "15171676",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 32,
-   "condicion": "New England Revolution acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "New England Revolution",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 6,
-    "touches_away": 3,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-23T21:09:33Z",
-    "t_inicio_estimado_condicion": "2026-08-23T21:01:59Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-23T21:09:33Z",
-   "t_captura_utc": "2026-08-23T21:13:33Z",
-   "t_evaluacion_utc": "2026-08-23T21:13:33Z",
-   "t_generacion_utc": "2026-08-23T21:13:33Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ New England Revolution vs New York City FC\n⏱ Minuto: 32'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: New England Revolution acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "a4842098716e6f3a"
   },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -414,6 +376,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Operário-PR vs Vila Nova FC\n⏱ Minuto: 34'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Operário-PR acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Operário-PR, min 10\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "e889e8132e194142"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Operário-PR vs Vila Nova FC (Brasileirão Série B)",
+   "match_id": "15526241",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 36,
+   "condicion": "Operário-PR acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Operário-PR",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6667,
+    "touches_home": 6,
+    "touches_away": 3,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 10,
+    "equipo_que_realizo_sustitucion": "Operário-PR",
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-23T21:39:35Z",
+    "t_inicio_estimado_condicion": "2026-08-23T21:24:21Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-23T21:39:35Z",
+   "t_captura_utc": "2026-08-23T21:39:35Z",
+   "t_evaluacion_utc": "2026-08-23T21:39:36Z",
+   "t_generacion_utc": "2026-08-23T21:39:36Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Operário-PR vs Vila Nova FC\n⏱ Minuto: 36'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Operário-PR acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Operário-PR, min 10\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "3dfdfbb81a41692a"
   }
  ]
 }
