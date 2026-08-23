@@ -1,65 +1,7 @@
 {
- "generated_at_utc": "2026-08-23T14:13:39Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-23T14:14:37Z",
+ "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Angers vs Lille (Ligue 1)",
-   "match_id": "16310918",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "5 córners totales antes del min 45 (3-2), Angers presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Lille NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 2,
-    "equipo_presiona": "Angers",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-23T13:44:29Z",
-   "t_captura_utc": "2026-08-23T13:44:29Z",
-   "t_evaluacion_utc": "2026-08-23T13:46:10Z",
-   "t_generacion_utc": "2026-08-23T13:46:10Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Angers vs Lille\n⏱ Minuto: 45'\n📊 Marcador: 0-2\n🏆 Liga: Ligue 1\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Angers presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Lille no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "cdc3c6fd57befde4"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Manchester City vs Bournemouth (Premier League)",
-   "match_id": "16363243",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (3-1), Manchester City presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Bournemouth NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Manchester City",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-23T13:44:29Z",
-   "t_captura_utc": "2026-08-23T13:44:29Z",
-   "t_evaluacion_utc": "2026-08-23T13:49:10Z",
-   "t_generacion_utc": "2026-08-23T13:49:10Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Manchester City vs Bournemouth\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Premier League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Manchester City presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Bournemouth no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "703bd4fb3f3f021b"
-  },
   {
    "strategy_id": "A2",
    "match_label": "Brighton & Hove Albion vs Aston Villa (Premier League)",
@@ -97,6 +39,40 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Brighton & Hove Albion vs Aston Villa\n⏱ Minuto: 51'\n📊 Marcador: 4-0\n🏆 Liga: Premier League\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "e2f9e651040ab362"
+  },
+  {
+   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "Angers vs Lille (Ligue 1)",
+   "match_id": "16310918",
+   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 56,
+   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "xg_combinado": 1.43,
+    "tiros_combinados": 17,
+    "sot_combinado": 6,
+    "presion_reciente_10min": 3,
+    "marcador_en_el_momento": "0-2",
+    "t_primera_observacion_atlas": "2026-08-23T14:14:35Z",
+    "t_inicio_estimado_condicion": "2026-08-23T14:14:23Z",
+    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-23T14:14:35Z",
+   "t_captura_utc": "2026-08-23T14:14:35Z",
+   "t_evaluacion_utc": "2026-08-23T14:14:36Z",
+   "t_generacion_utc": "2026-08-23T14:14:36Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Angers vs Lille\n⏱ Minuto: 56'\n📊 Marcador: 0-2\n🏆 Liga: Ligue 1\n\n📝 Motivo: presión combinada sostenida — xG 1.43, 17 tiros totales (6 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "evidencia": null,
+   "alert_id": "8ac6ccd5211e9d5c"
   }
  ]
 }
