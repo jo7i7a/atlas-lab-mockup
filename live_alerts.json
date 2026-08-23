@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-23T01:35:36Z",
- "n_alerts": 13,
+ "generated_at_utc": "2026-08-23T01:36:34Z",
+ "n_alerts": 12,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -35,44 +35,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Inter Miami CF vs Toronto FC\n⏱ Minuto: 68'\n📊 Marcador: 0-2\n🏆 Liga: MLS\n\n📝 Motivo: presión combinada sostenida — xG 1.65, 13 tiros totales (3 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "b5cc4a07153a7fd8"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Universidad Católica vs Ñublense (Liga de Primera)",
-   "match_id": "15353096",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 2,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-08-23T01:05:45Z",
-   "t_captura_utc": "2026-08-23T01:05:45Z",
-   "t_evaluacion_utc": "2026-08-23T01:12:45Z",
-   "t_generacion_utc": "2026-08-23T01:12:45Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-23T01:06:46Z",
-     "latencia_envio_ms": 876.6124248504639,
-     "error": null,
-     "message_id": 2023,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 61.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Universidad Católica vs Ñublense\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "1b568d333a4cac22"
   },
   {
    "strategy_id": "L3",
@@ -331,7 +293,7 @@
    "match_id": "15171672",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 24,
+   "minuto": 25,
    "condicion": "4 córners totales antes del min 30 (1-3), Philadelphia Union presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Austin FC NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -344,12 +306,12 @@
    },
    "t_evento_real_utc": "2026-08-23T01:28:44Z",
    "t_captura_utc": "2026-08-23T01:28:44Z",
-   "t_evaluacion_utc": "2026-08-23T01:35:09Z",
-   "t_generacion_utc": "2026-08-23T01:35:09Z",
+   "t_evaluacion_utc": "2026-08-23T01:36:09Z",
+   "t_generacion_utc": "2026-08-23T01:36:09Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Austin FC vs Philadelphia Union\n⏱ Minuto: 24'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Philadelphia Union presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Austin FC no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Austin FC vs Philadelphia Union\n⏱ Minuto: 25'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Philadelphia Union presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Austin FC no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "74f6166adaa3c804"
   },
@@ -359,7 +321,7 @@
    "match_id": "15171672",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 24,
+   "minuto": 25,
    "condicion": "4 córners totales antes del min 45 (1-3), Philadelphia Union presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Austin FC NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -373,12 +335,12 @@
    },
    "t_evento_real_utc": "2026-08-23T01:28:44Z",
    "t_captura_utc": "2026-08-23T01:28:44Z",
-   "t_evaluacion_utc": "2026-08-23T01:35:12Z",
-   "t_generacion_utc": "2026-08-23T01:35:12Z",
+   "t_evaluacion_utc": "2026-08-23T01:36:12Z",
+   "t_generacion_utc": "2026-08-23T01:36:12Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Austin FC vs Philadelphia Union\n⏱ Minuto: 24'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Philadelphia Union presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Austin FC no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Austin FC vs Philadelphia Union\n⏱ Minuto: 25'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Philadelphia Union presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Austin FC no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "b7a112594e61d0e6"
   },
@@ -388,7 +350,7 @@
    "match_id": "15171672",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 24,
+   "minuto": 25,
    "condicion": "Austin FC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -408,8 +370,8 @@
    },
    "t_evento_real_utc": "2026-08-23T01:27:47Z",
    "t_captura_utc": "2026-08-23T01:27:47Z",
-   "t_evaluacion_utc": "2026-08-23T01:35:31Z",
-   "t_generacion_utc": "2026-08-23T01:35:31Z",
+   "t_evaluacion_utc": "2026-08-23T01:36:30Z",
+   "t_generacion_utc": "2026-08-23T01:36:30Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -423,7 +385,7 @@
    },
    "latencia_total_seg": 6.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Austin FC vs Philadelphia Union\n⏱ Minuto: 24'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📝 Motivo: Austin FC — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Austin FC vs Philadelphia Union\n⏱ Minuto: 25'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📝 Motivo: Austin FC — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "57ca3c721632f18f"
   },
@@ -433,7 +395,7 @@
    "match_id": "16317890",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 34,
+   "minuto": 35,
    "condicion": "Santos Laguna acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -455,13 +417,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-23T01:22:04Z",
-   "t_captura_utc": "2026-08-23T01:35:35Z",
-   "t_evaluacion_utc": "2026-08-23T01:35:36Z",
-   "t_generacion_utc": "2026-08-23T01:35:36Z",
+   "t_captura_utc": "2026-08-23T01:36:34Z",
+   "t_evaluacion_utc": "2026-08-23T01:36:34Z",
+   "t_generacion_utc": "2026-08-23T01:36:34Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Puebla vs Santos Laguna\n⏱ Minuto: 34'\n📊 Marcador: 1-1\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Santos Laguna acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Puebla vs Santos Laguna\n⏱ Minuto: 35'\n📊 Marcador: 1-1\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Santos Laguna acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "0e6e8842a8ba0723"
   }
