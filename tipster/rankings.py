@@ -50,6 +50,30 @@ sys.path.insert(0, str(_ROOT_PATH))
 from atlas_lab_mockup.tipster.common import (  # noqa: E402
     ROOT, WORK, chile_date_of, chile_today, load_json, oddspapi_selection_is_valid, save_json, utc_now_iso,
 )
+from atlas_lab_mockup.tipster.pick_governance import matching_hypothesis  # noqa: E402
+
+# Mapeo mercado-de-ranking -> mercado/motor real esperado por una hipotesis
+# congelada (2026-08-22, PICK GOVERNANCE) -- BTTS/CORNERS_OVER105 nunca tienen
+# "engine_id" real (son formula/dato historico, ver build_candidates), asi
+# que nunca podran coincidir con una hipotesis -- comportamiento correcto,
+# no un defecto: ningun estado de gobernanza de pick existe todavia para
+# ellos porque nunca pasaron por Gate (ver AUDITORIA_PICK_GOVERNANCE_2026-08-22.md).
+_HYPOTHESIS_MARKET = {"OVER25": "OU25_GOALS_FT", "UNDER25": "OU25_GOALS_FT", "BTTS": "BTTS", "CORNERS_OVER105": "OU10.5_CORNERS_FT"}
+_HYPOTHESIS_SELECTION = {"OVER25": "over", "UNDER25": "under", "BTTS": "yes", "CORNERS_OVER105": "over"}
+
+
+def _hypothesis_estado_for(ranking_key: str, candidate: dict) -> str:
+    """Anota, sin cambiar el orden ni el contenido del Top 10 (aditivo puro),
+    el estado de gobernanza de la hipotesis que cubriria esta señal, si
+    existe una. 'SIN_EVALUAR' si ningun hypothesis_id congelado cubre
+    todavia este mercado/seleccion -- nunca se inventa un estado."""
+    mercado = _HYPOTHESIS_MARKET.get(ranking_key)
+    seleccion = _HYPOTHESIS_SELECTION.get(ranking_key)
+    motor = candidate.get("engine_id")
+    if mercado is None or motor is None:
+        return "SIN_EVALUAR"
+    hyp = matching_hypothesis(mercado, seleccion, candidate.get("probability"), motor)
+    return hyp.estado.value if hyp else "SIN_EVALUAR"
 
 DAILY_STATE_PATH = ROOT + r"\tipster_rankings_daily_estado.json"
 WEEKLY_STATE_PATH = ROOT + r"\tipster_rankings_weekly_estado.json"
@@ -234,7 +258,8 @@ def run(finished_event_ids_fn=None):
         "generated_at_utc": utc_now_iso(), "ranking_date": daily_window_key,
         "rankings": {mkt: [{"match_id": c["match_id"], "home": c["home"], "away": c["away"], "league": c["league"],
                              "kickoff_utc": c["kickoff_utc"], "probabilidad_atlas": round(c["probability"], 4),
-                             "cuota": c.get("price"), "bookmaker": c.get("bookmaker")} for c in ranked]
+                             "cuota": c.get("price"), "bookmaker": c.get("bookmaker"),
+                             "hypothesis_estado": _hypothesis_estado_for(mkt, c)} for c in ranked]
                     for mkt, ranked in daily_ranked.items()},
     })
 
@@ -266,7 +291,8 @@ def run(finished_event_ids_fn=None):
             "rankings": {mkt: [{"match_id": c["match_id"], "event_id": (match_event_ids.get(c["match_id"], {}) or {}).get("event_id"),
                                  "home": c["home"], "away": c["away"], "league": c["league"],
                                  "kickoff_utc": c["kickoff_utc"], "probabilidad_atlas": round(c["probability"], 4),
-                                 "cuota": c.get("price"), "bookmaker": c.get("bookmaker")} for c in ranked]
+                                 "cuota": c.get("price"), "bookmaker": c.get("bookmaker"),
+                                 "hypothesis_estado": _hypothesis_estado_for(mkt, c)} for c in ranked]
                         for mkt, ranked in weekly_ranked.items()},
         }
         save_json(WEEKLY_STATE_PATH, weekly_out)

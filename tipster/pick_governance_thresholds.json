@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "comment": "PICK GOVERNANCE (2026-08-22, mandato del Director tras AUDITORIA_PICK_GOVERNANCE_2026-08-22.md). Tabla de hipotesis congeladas -- unica fuente de verdad de que puede llegar a ser Pick ATLAS. Regla de inmutabilidad: una vez creada una fila, su umbral_prob/mercado/seleccion/motor_esperado NUNCA se editan -- cualquier cambio de condicion crea una fila NUEVA con un hypothesis_id nuevo (sufijo _V2, _V3, ...) y la fila anterior se marca retirada=true (permanece en el archivo para trazabilidad, nunca se borra). Ninguna fila aqui empieza en estado CERTIFICADO -- ese estado solo se alcanza pasando el protocolo Gate/FVP-1 completo de Carril B sobre evidencia forward genuina.",
+  "hypotheses": [
+    {
+      "hypothesis_id": "AWAY_1X2_P50_V1",
+      "mercado": "1X2_FT",
+      "seleccion": "away",
+      "motor_esperado": "form_calculator",
+      "umbral_prob": 0.50,
+      "estado": "EN_OBSERVACION",
+      "retirada": false,
+      "congelada_en_utc": "2026-08-22T00:00:00Z",
+      "evidencia_origen": "AUDITORIA_PICK_GOVERNANCE_2026-08-22.md, secciones 3.2 y 10 -- N=518 backtest historico (ROI+5.2%, no significativo p=0.25, concentrado en 3 ligas/5 equipos, degradado de CANDIDATO a EN_OBSERVACION por mandato del Director",
+      "criterios_promocion": {
+        "en_observacion_a_candidato": "N>=200 resuelto POSTERIOR al congelamiento (nunca la muestra de descubrimiento) + ROI agregado positivo + p<0.05 + ninguna liga/equipo aporta >50% del profit ni >20% de la N + evidencia en >=3 ligas",
+        "candidato_a_certificado": "protocolo Gate/FVP-1 completo ya existente en Carril B (bootstrap, meta-analisis DerSimonian-Laird, Dim A-D), sin atajos"
+      },
+      "criterios_degradacion": "ROI acumulado en ventana movil (ultimos 100 resultados forward) cae por debajo de cero, o concentracion excesiva detectada post-promocion, o el motor subyacente cambia de version sin nueva validacion"
+    }
+  ]
+}

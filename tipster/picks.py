@@ -146,21 +146,36 @@ def build_candidates(pocket, hist, match_list, match_event_ids, oddspapi_lean):
 
 def classify(candidate):
     """(es_value, es_pick) -- ver docstring del modulo para la distincion
-    candidato/value/pick."""
+    candidato/value/pick. Gate de Pick ATLAS (2026-08-22, PICK GOVERNANCE):
+    unica autoridad es governance.passes_governance_gate(mercado, seleccion,
+    probabilidad, motor) -- exige una hipotesis congelada en estado
+    CERTIFICADO (tipster/pick_governance.py). EV%>0 sigue siendo la condicion
+    de "value", pero YA NO autopromueve a pick por si sola (causa raiz
+    corregida de AUDITORIA_PICK_GOVERNANCE_2026-08-22.md)."""
     es_value = candidate["ev_pct"] > 0
-    es_pick = es_value and governance.passes_governance_gate(candidate["governance_status"])
+    es_pick = es_value and governance.passes_governance_gate(
+        candidate["market"], candidate["selection"], candidate["probability"], candidate["engine_id"],
+    )
     return es_value, es_pick
 
 
+def _hypothesis_id_for(candidate):
+    from atlas_lab_mockup.tipster.pick_governance import matching_hypothesis
+    hyp = matching_hypothesis(candidate["market"], candidate["selection"], candidate["probability"], candidate["engine_id"])
+    return hyp.hypothesis_id if hyp else None
+
+
 def _razon(candidate, es_value, es_pick):
-    gov = candidate["governance_status"] or "sin gobernanza (dato histórico)"
     base = (f"EV%={candidate['ev_pct']:+.1f} = (prob ATLAS {candidate['probability']*100:.1f}% × cuota "
             f"{candidate['price']:.2f} {candidate['bookmaker'] or 'OddsPapi'} − 1) × 100")
     if not es_value:
-        return base + f"; sin value (EV%<=0), no se evalúa gobernanza."
+        return base + f"; sin value (EV%<=0), no se evalúa gobernanza de hipótesis."
+    hyp_id = _hypothesis_id_for(candidate)
     if not es_pick:
-        return base + f"; value detectado pero gobernanza '{gov}' no alcanza el umbral (CERTIFICADO/PROMOVIDO/BASELINE)."
-    return base + f"; gobernanza '{gov}' pasa el filtro -> PICK ATLAS."
+        if hyp_id is None:
+            return base + "; value detectado pero ninguna hipótesis congelada cubre este mercado/selección/umbral -- no es Pick (PICK GOVERNANCE, 2026-08-22)."
+        return base + f"; value detectado, hipótesis '{hyp_id}' coincide pero su estado aún no es CERTIFICADO -- no es Pick."
+    return base + f"; hipótesis '{hyp_id}' CERTIFICADA -> PICK ATLAS."
 
 
 def _load_history_keys(path):
@@ -175,6 +190,36 @@ def _load_history_keys(path):
             rec = _json.loads(line)
             seen.add((rec["event_id"], rec["market"], rec["selection"]))
     return seen
+
+
+def _apply_1x2_mutual_exclusion(eligible):
+    """Regla de exclusion mutua obligatoria para 1X2 (mandato del Director,
+    2026-08-22): nunca puede existir mas de un Pick 1X2 accionable para el
+    mismo partido. Determinista y auditable -- agrupa por (event_id, market),
+    y para el mercado 1X2_FT con mas de una seleccion elegible, conserva SOLO
+    la de mayor EV% (desempate por nombre de seleccion, alfabetico, para que
+    el resultado sea 100% reproducible incluso ante un empate exacto de EV%
+    -- mismo criterio de ev_pct descendente que index.html ya usa en otras
+    listas, ver sección 7.3 del informe). Las NO dominantes NUNCA se
+    descartan -- se devuelven aparte para quedar registradas igual en el
+    historico inmutable, con su propia razon de exclusion (Condicion 5 del
+    mandato: "conservar internamente todas las evaluaciones... conservar la
+    razon de exclusion de las demas")."""
+    by_match_market = {}
+    for c in eligible:
+        key = (c["event_id"], c["market"])
+        by_match_market.setdefault(key, []).append(c)
+
+    dominant, excluded = [], []
+    for (_event_id, market), group in by_match_market.items():
+        if market == "1X2_FT" and len(group) > 1:
+            group_sorted = sorted(group, key=lambda c: (-c["ev_pct"], c["selection"]))
+            dominant.append(group_sorted[0])
+            for loser in group_sorted[1:]:
+                excluded.append((loser, group_sorted[0]["selection"]))
+        else:
+            dominant.extend(group)
+    return dominant, excluded
 
 
 def run():
@@ -194,12 +239,19 @@ def run():
     new_lines = []
     estado_picks = []
 
+    eligible = []
+    razon_by_key = {}
     for c in candidates:
         es_value, es_pick = classify(c)
         if es_value:
             n_value += 1
-        if not es_pick:
-            continue
+        razon_by_key[(c["event_id"], c["market"], c["selection"])] = _razon(c, es_value, es_pick)
+        if es_pick:
+            eligible.append(c)
+
+    dominant, excluded = _apply_1x2_mutual_exclusion(eligible)
+
+    for c in dominant:
         key = (c["event_id"], c["market"], c["selection"])
         pick_id = f"{c['event_id']}:{c['market']}:{c['selection']}"
         estado_picks.append({
@@ -219,10 +271,35 @@ def run():
             "probabilidad_atlas": round(c["probability"], 4), "cuota": c["price"], "bookmaker": c["bookmaker"],
             "ev_pct": c["ev_pct"], "implied_probability": c["implied_probability"],
             "engine_id": c["engine_id"], "governance_status": c["governance_status"],
+            "hypothesis_id": _hypothesis_id_for(c),
             "detected_at_utc": now_iso, "cuota_captured_at_utc": c["cuota_timestamp"],
-            "razon": _razon(c, es_value, es_pick),
+            "razon": razon_by_key[key],
             "market_context_json": _json.dumps(c["market_context"]) if c["market_context"] else None,
             "estado": "PENDIENTE", "resultado_real": None, "acierto": None, "roi_pct": None,
+        })
+
+    # Elegibles NO dominantes (exclusion mutua 1X2): se conservan integras en
+    # el historico inmutable -- nunca se pierden, nunca se muestran como Pick
+    # activo (no entran a estado_picks). Mismo mecanismo de deduplicacion por
+    # key que el resto (nunca se re-registra ni se reescribe si ya existia).
+    for c, dominant_selection in excluded:
+        key = (c["event_id"], c["market"], c["selection"])
+        if key in seen:
+            continue
+        seen.add(key)
+        pick_id = f"{c['event_id']}:{c['market']}:{c['selection']}"
+        new_lines.append({
+            "pick_id": pick_id, "event_id": c["event_id"], "match_id": c["match_id"],
+            "partido": f"{c['home']} vs {c['away']}", "liga": c["league"], "kickoff_utc": c["kickoff_utc"],
+            "market": c["market"], "line": c["line"], "selection": c["selection"],
+            "probabilidad_atlas": round(c["probability"], 4), "cuota": c["price"], "bookmaker": c["bookmaker"],
+            "ev_pct": c["ev_pct"], "implied_probability": c["implied_probability"],
+            "engine_id": c["engine_id"], "governance_status": c["governance_status"],
+            "hypothesis_id": _hypothesis_id_for(c),
+            "detected_at_utc": now_iso, "cuota_captured_at_utc": c["cuota_timestamp"],
+            "razon": razon_by_key[key] + f" Excluido por regla de exclusión mutua 1X2 (selección dominante del mismo partido: '{dominant_selection}', mayor EV%).",
+            "market_context_json": _json.dumps(c["market_context"]) if c["market_context"] else None,
+            "estado": "ELEGIBLE_NO_DOMINANTE", "resultado_real": None, "acierto": None, "roi_pct": None,
         })
 
     if new_lines:

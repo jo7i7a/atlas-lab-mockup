@@ -6,31 +6,131 @@ que consultan soccer_analytics.db (finished_event_ids/settle_*) se
 inyectan/monkeypatchean, nunca se golpea la base real en un test."""
 import datetime
 import json
+import os
+from pathlib import Path
 
 import pytest
 
-from atlas_lab_mockup.tipster import common, governance, picks, rankings, settlement
+from atlas_lab_mockup.tipster import common, governance, hypothesis_shadow, picks, pick_governance, rankings, settlement
+
+
+def _hyp(hypothesis_id="AWAY_1X2_P50_V1", mercado="1X2_FT", seleccion="away",
+         motor_esperado="form_calculator", umbral_prob=0.50,
+         estado=pick_governance.HypothesisStatus.CERTIFICADO, retirada=False):
+    return pick_governance.Hypothesis(
+        hypothesis_id=hypothesis_id, mercado=mercado, seleccion=seleccion,
+        motor_esperado=motor_esperado, umbral_prob=umbral_prob, estado=estado, retirada=retirada,
+    )
 
 
 # ---------------------------------------------------------------------
-# governance.py
+# pick_governance.py (2026-08-22, PICK GOVERNANCE -- REEMPLAZA el criterio
+# "EV%>0 + familia con gobernanza fuerte" que quedo RECHAZADO por el
+# Director tras AUDITORIA_PICK_GOVERNANCE_2026-08-22.md)
+# ---------------------------------------------------------------------
+
+def test_matching_hypothesis_encuentra_coincidencia_exacta():
+    h = _hyp()
+    found = pick_governance.matching_hypothesis("1X2_FT", "away", 0.55, "form_calculator", hypotheses=[h])
+    assert found is h
+
+
+def test_matching_hypothesis_prob_bajo_umbral_no_coincide():
+    h = _hyp(umbral_prob=0.50)
+    found = pick_governance.matching_hypothesis("1X2_FT", "away", 0.45, "form_calculator", hypotheses=[h])
+    assert found is None
+
+
+def test_matching_hypothesis_motor_distinto_no_coincide():
+    h = _hyp(motor_esperado="form_calculator")
+    found = pick_governance.matching_hypothesis("1X2_FT", "away", 0.60, "otro_motor", hypotheses=[h])
+    assert found is None
+
+
+def test_matching_hypothesis_mercado_o_seleccion_distinta_no_coincide():
+    h = _hyp(mercado="1X2_FT", seleccion="away")
+    assert pick_governance.matching_hypothesis("1X2_FT", "home", 0.60, "form_calculator", hypotheses=[h]) is None
+    assert pick_governance.matching_hypothesis("OU25_GOALS_FT", "away", 0.60, "form_calculator", hypotheses=[h]) is None
+
+
+def test_matching_hypothesis_ignora_hipotesis_retirada():
+    h = _hyp(retirada=True)
+    found = pick_governance.matching_hypothesis("1X2_FT", "away", 0.60, "form_calculator", hypotheses=[h])
+    assert found is None
+
+
+def test_matching_hypothesis_sin_prob_ni_motor_no_coincide():
+    h = _hyp()
+    assert pick_governance.matching_hypothesis("1X2_FT", "away", None, "form_calculator", hypotheses=[h]) is None
+    assert pick_governance.matching_hypothesis("1X2_FT", "away", 0.60, None, hypotheses=[h]) is None
+
+
+def test_passes_pick_gate_solo_certificado_pasa():
+    assert pick_governance.passes_pick_gate(_hyp(estado=pick_governance.HypothesisStatus.CERTIFICADO)) is True
+    assert pick_governance.passes_pick_gate(_hyp(estado=pick_governance.HypothesisStatus.CANDIDATO)) is False
+    assert pick_governance.passes_pick_gate(_hyp(estado=pick_governance.HypothesisStatus.EN_OBSERVACION)) is False
+    assert pick_governance.passes_pick_gate(_hyp(estado=pick_governance.HypothesisStatus.SUSPENDIDO)) is False
+    assert pick_governance.passes_pick_gate(_hyp(estado=pick_governance.HypothesisStatus.NO_BACKTESTEABLE)) is False
+    assert pick_governance.passes_pick_gate(None) is False
+
+
+def test_load_hypotheses_archivo_ausente_devuelve_vacio(tmp_path):
+    # Comportamiento seguro por defecto: sin config, ninguna senal puede
+    # convertirse en Pick (nunca "falla abierto").
+    assert pick_governance.load_hypotheses(str(tmp_path / "no_existe.json")) == []
+
+
+def test_load_hypotheses_lee_el_archivo_real_de_produccion():
+    # El archivo real debe tener, como minimo, la hipotesis piloto congelada
+    # por el Director (2026-08-22): 1X2 Visita >=50%, EN_OBSERVACION, nunca
+    # CERTIFICADO todavia -- si esto falla, algo modifico el archivo de forma
+    # que rompe la garantia de "ningun pick sin certificacion".
+    hyps = pick_governance.load_hypotheses()
+    pilot = next(h for h in hyps if h.hypothesis_id == "AWAY_1X2_P50_V1")
+    assert pilot.mercado == "1X2_FT" and pilot.seleccion == "away"
+    assert pilot.motor_esperado == "form_calculator"
+    assert pilot.umbral_prob == pytest.approx(0.50)
+    assert pilot.estado == pick_governance.HypothesisStatus.EN_OBSERVACION
+    assert pilot.retirada is False
+    assert not any(h.estado == pick_governance.HypothesisStatus.CERTIFICADO for h in hyps)  # ninguna certificada todavia
+
+
+# ---------------------------------------------------------------------
+# governance.py -- ahora delega 100% en pick_governance.py
 # ---------------------------------------------------------------------
 
 def test_strong_governance_son_los_3_valores_reales():
+    # Se preserva solo por compatibilidad de lectura/documentacion -- ya NO
+    # decide si algo es Pick (ver test_gate_* abajo).
     assert governance.STRONG_GOVERNANCE == ("CERTIFICADO", "PROMOVIDO", "BASELINE")
 
 
-def test_gate_pasa_baseline_y_rechaza_experimental():
-    assert governance.passes_governance_gate("BASELINE") is True
-    assert governance.passes_governance_gate("CERTIFICADO") is True
-    assert governance.passes_governance_gate("EXPERIMENTAL") is False
-    assert governance.passes_governance_gate("NO_DISPONIBLE") is False
+def test_gate_sin_hipotesis_congelada_nunca_pasa(monkeypatch):
+    monkeypatch.setattr(pick_governance, "load_hypotheses", lambda path=None: [])
+    assert governance.passes_governance_gate("1X2_FT", "away", 0.90, "form_calculator") is False
 
 
-def test_gate_sin_gobernanza_pasa_por_defecto_btts():
-    # Decision explicita del Director 2026-08-16: BTTS no tiene motor
-    # gobernado, pero puede llegar a ser PICK igual que los demas.
-    assert governance.passes_governance_gate(None) is True
+def test_gate_hipotesis_en_observacion_nunca_pasa(monkeypatch):
+    # Decision explicita del Director 2026-08-22: rechaza por completo el
+    # criterio anterior (EV>0+gobernanza de familia autopromueve). Una
+    # hipotesis EN_OBSERVACION, aunque coincida exacto, NUNCA es Pick.
+    monkeypatch.setattr(pick_governance, "load_hypotheses", lambda path=None: [_hyp(estado=pick_governance.HypothesisStatus.EN_OBSERVACION)])
+    assert governance.passes_governance_gate("1X2_FT", "away", 0.90, "form_calculator") is False
+
+
+def test_gate_hipotesis_certificada_pasa(monkeypatch):
+    monkeypatch.setattr(pick_governance, "load_hypotheses", lambda path=None: [_hyp(estado=pick_governance.HypothesisStatus.CERTIFICADO)])
+    assert governance.passes_governance_gate("1X2_FT", "away", 0.90, "form_calculator") is True
+
+
+def test_gate_btts_sin_hipotesis_ya_no_pasa_por_defecto(monkeypatch):
+    # REVERSION explicita de la decision de 2026-08-16 ("BTTS puede ser pick
+    # sin gobernanza"): tras el backtest de AUDITORIA_PICK_GOVERNANCE_2026-
+    # 08-22.md (ROI negativo en las 8 bandas de probabilidad, N=29447), el
+    # Director rechazo ese criterio. BTTS, como cualquier otro mercado, solo
+    # puede ser pick con una hipotesis CERTIFICADA -- hoy no existe ninguna.
+    monkeypatch.setattr(pick_governance, "load_hypotheses", lambda path=None: [])
+    assert governance.passes_governance_gate("BTTS", "yes", 0.65, "btts_historico") is False
 
 
 # ---------------------------------------------------------------------
@@ -570,28 +670,96 @@ def test_handicap_mapea_seleccion_y_linea_correctas():
     assert home["market_context"] == {"home_line": -0.5, "away_line": 0.5}
 
 
-def test_btts_sin_gobernancia_puede_ser_pick_decision_del_director():
-    c = {"ev_pct": 12.0, "governance_status": None}
+def _cand(market="1X2_FT", selection="away", prob=0.55, ev=8.0, engine_id="form_calculator"):
+    return {"market": market, "selection": selection, "probability": prob, "ev_pct": ev, "engine_id": engine_id}
+
+
+def test_btts_sin_hipotesis_certificada_nunca_es_pick(monkeypatch):
+    # REVERSION de la decision de 2026-08-16 -- ver test_gate_btts_* arriba.
+    monkeypatch.setattr(pick_governance, "load_hypotheses", lambda path=None: [])
+    c = _cand(market="BTTS", selection="yes", prob=0.65, ev=12.0, engine_id="btts_historico")
     es_value, es_pick = picks.classify(c)
-    assert es_value is True and es_pick is True  # decision explicita 2026-08-16
+    assert es_value is True and es_pick is False
 
 
 def test_ev_negativo_no_es_value_ni_pick():
-    c = {"ev_pct": -5.0, "governance_status": "BASELINE"}
+    c = _cand(ev=-5.0)
     es_value, es_pick = picks.classify(c)
     assert es_value is False and es_pick is False
 
 
-def test_ev_positivo_pero_governance_experimental_es_value_no_pick():
-    c = {"ev_pct": 8.0, "governance_status": "EXPERIMENTAL"}
+def test_ev_positivo_sin_hipotesis_congelada_es_value_no_pick(monkeypatch):
+    # PICK GOVERNANCE (2026-08-22): sin una hipotesis congelada que cubra
+    # exactamente este mercado/seleccion/motor, ningun EV% autopromueve.
+    monkeypatch.setattr(pick_governance, "load_hypotheses", lambda path=None: [])
+    c = _cand(market="OU25_GOALS_FT", selection="over", prob=0.60, ev=8.0, engine_id="goals_predictor")
     es_value, es_pick = picks.classify(c)
-    assert es_value is True and es_pick is False  # gate de gobernanza -- no autopromueve
+    assert es_value is True and es_pick is False
 
 
-def test_ev_positivo_governance_baseline_es_pick():
-    c = {"ev_pct": 8.0, "governance_status": "BASELINE"}
+def test_ev_positivo_hipotesis_en_observacion_es_value_no_pick(monkeypatch):
+    monkeypatch.setattr(pick_governance, "load_hypotheses", lambda path=None: [_hyp(estado=pick_governance.HypothesisStatus.EN_OBSERVACION)])
+    c = _cand(prob=0.55, ev=8.0)
+    es_value, es_pick = picks.classify(c)
+    assert es_value is True and es_pick is False
+
+
+def test_ev_positivo_hipotesis_certificada_es_pick(monkeypatch):
+    monkeypatch.setattr(pick_governance, "load_hypotheses", lambda path=None: [_hyp(estado=pick_governance.HypothesisStatus.CERTIFICADO)])
+    c = _cand(prob=0.55, ev=8.0)
     es_value, es_pick = picks.classify(c)
     assert es_value is True and es_pick is True
+
+
+def test_prob_bajo_umbral_de_hipotesis_certificada_no_es_pick(monkeypatch):
+    monkeypatch.setattr(pick_governance, "load_hypotheses", lambda path=None: [_hyp(estado=pick_governance.HypothesisStatus.CERTIFICADO, umbral_prob=0.50)])
+    c = _cand(prob=0.45, ev=8.0)  # bajo el umbral de la hipotesis
+    es_value, es_pick = picks.classify(c)
+    assert es_value is True and es_pick is False
+
+
+# ---------------------------------------------------------------------
+# picks.py -- exclusion mutua 1X2 (Condicion 5 del mandato, 2026-08-22):
+# conservar TODAS las evaluaciones, elegir solo una para la ruta de senal,
+# conservar la razon de exclusion, nunca mas de una seleccion 1X2 accionable
+# para el mismo partido. Determinista (mayor EV%, desempate alfabetico).
+# ---------------------------------------------------------------------
+
+def test_exclusion_mutua_1x2_conserva_solo_la_de_mayor_ev():
+    home = {**_cand(selection="home", prob=0.55, ev=5.0), "event_id": 1}
+    away = {**_cand(selection="away", prob=0.52, ev=9.0), "event_id": 1}
+    dominant, excluded = picks._apply_1x2_mutual_exclusion([home, away])
+    assert len(dominant) == 1 and dominant[0]["selection"] == "away"
+    assert len(excluded) == 1 and excluded[0][0]["selection"] == "home" and excluded[0][1] == "away"
+
+
+def test_exclusion_mutua_1x2_desempate_alfabetico_deterministico():
+    # EV% exactamente empatado -- debe ser 100% reproducible, nunca aleatorio.
+    a = {**_cand(selection="home", prob=0.55, ev=7.0), "event_id": 1}
+    b = {**_cand(selection="away", prob=0.55, ev=7.0), "event_id": 1}
+    dominant, excluded = picks._apply_1x2_mutual_exclusion([a, b])
+    assert dominant[0]["selection"] == "away"  # "away" < "home" alfabeticamente
+    assert excluded[0][0]["selection"] == "home"
+
+
+def test_exclusion_mutua_no_afecta_mercados_distintos_del_mismo_partido():
+    home_1x2 = {**_cand(market="1X2_FT", selection="home", prob=0.55, ev=5.0), "event_id": 1}
+    over_ou25 = {**_cand(market="OU25_GOALS_FT", selection="over", prob=0.60, ev=6.0), "event_id": 1}
+    dominant, excluded = picks._apply_1x2_mutual_exclusion([home_1x2, over_ou25])
+    assert len(dominant) == 2 and len(excluded) == 0  # mercados distintos -- ambos sobreviven, sin exclusion cruzada
+
+
+def test_exclusion_mutua_no_afecta_1x2_de_partidos_distintos():
+    home_p1 = {**_cand(selection="home", prob=0.55, ev=5.0), "event_id": 1}
+    away_p2 = {**_cand(selection="away", prob=0.55, ev=5.0), "event_id": 2}
+    dominant, excluded = picks._apply_1x2_mutual_exclusion([home_p1, away_p2])
+    assert len(dominant) == 2 and len(excluded) == 0
+
+
+def test_exclusion_mutua_una_sola_seleccion_elegible_no_se_excluye():
+    home = {**_cand(selection="home", prob=0.55, ev=5.0), "event_id": 1}
+    dominant, excluded = picks._apply_1x2_mutual_exclusion([home])
+    assert dominant == [home] and excluded == []
 
 
 @pytest.fixture
@@ -609,7 +777,13 @@ def _wj(path, data):
         json.dump(data, f)
 
 
-def test_run_registra_pick_y_no_registra_candidato_experimental(_picks_env):
+def test_run_sin_hipotesis_certificada_nunca_genera_pick(_picks_env, monkeypatch):
+    # PICK GOVERNANCE (2026-08-22): reemplaza el viejo comportamiento
+    # (BASELINE se promovia, EXPERIMENTAL no) -- HOY, sin ninguna hipotesis
+    # CERTIFICADA, NINGUNO de los dos se promueve, sin importar la
+    # gobernanza de familia del motor. "Hoy no hay picks certificados" debe
+    # ser el resultado honesto, no una excepcion.
+    monkeypatch.setattr(pick_governance, "load_hypotheses", lambda path=None: [])
     work = _picks_env
     match_list = [
         {"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": _picks_kickoff(0)},
@@ -635,20 +809,80 @@ def test_run_registra_pick_y_no_registra_candidato_experimental(_picks_env):
 
     resumen = picks.run()
     assert resumen["candidatos_evaluados"] == 2
-    assert resumen["value_detectado"] == 2  # ambos EV>0
-    assert resumen["picks_nuevos"] == 1  # solo el BASELINE se promueve a pick
+    assert resumen["value_detectado"] == 2  # ambos EV>0 -- "value" sigue siendo solo EV
+    assert resumen["picks_nuevos"] == 0  # CAMBIO CENTRAL: ninguno se promueve sin certificacion
 
     estado = json.load(open(picks.PICKS_STATE_PATH, encoding="utf-8"))
-    assert estado["picks_activos"] == 1
-    assert estado["picks"][0]["event_id"] == 1
+    assert estado["picks_activos"] == 0
+    assert not os.path.exists(picks.PICKS_HISTORY_PATH)  # nada elegible -> nunca se crea el archivo
 
+
+def test_run_hipotesis_certificada_si_genera_pick(_picks_env, monkeypatch):
+    # Camino positivo: con una hipotesis CERTIFICADA que coincide exacto
+    # (mercado+seleccion+motor+umbral), el pick SI se genera -- prueba que
+    # el nuevo gate no esta simplemente siempre cerrado.
+    monkeypatch.setattr(pick_governance, "load_hypotheses", lambda path=None: [
+        _hyp(hypothesis_id="OVER25_TEST_V1", mercado="OU25_GOALS_FT", seleccion="over",
+             motor_esperado="e", umbral_prob=0.50, estado=pick_governance.HypothesisStatus.CERTIFICADO)
+    ])
+    work = _picks_env
+    match_list = _base_match_list()
+    pocket = {"a-b-1": {"resolved": True, "markets": {
+        "OU25_GOALS_FT": {"probability": {"over": 0.60, "under": 0.40}, "governance_status": "BASELINE", "engine_id": "e"},
+    }}}
+    lean = {"a-b-1": {"OU25_GOALS_FT": {"bk": "Pinnacle", "sel": {"over": {"p": 1.90, "t": "T"}}}}}
+    _wj(work / "match_list.json", match_list)
+    _wj(work / "pocket_engine_results.json", pocket)
+    _wj(work / "historical_stats_results.json", {})
+    _wj(work / "match_event_ids.json", {"a-b-1": {"event_id": 1}})
+    _wj(work / "oddspapi_lean.json", lean)
+
+    resumen = picks.run()
+    assert resumen["picks_nuevos"] == 1
+    estado = json.load(open(picks.PICKS_STATE_PATH, encoding="utf-8"))
+    assert estado["picks_activos"] == 1
     lines = [json.loads(l) for l in open(picks.PICKS_HISTORY_PATH, encoding="utf-8").read().strip().split("\n")]
-    assert len(lines) == 1
-    assert lines[0]["pick_id"] == "1:OU25_GOALS_FT:over"
+    assert lines[0]["hypothesis_id"] == "OVER25_TEST_V1"
     assert lines[0]["estado"] == "PENDIENTE"
 
 
-def test_run_no_reregistra_pick_ya_registrado_aunque_cambien_los_numeros(_picks_env):
+def test_run_exclusion_mutua_1x2_end_to_end(_picks_env, monkeypatch):
+    # Dos selecciones de 1X2 del MISMO partido, ambas bajo una hipotesis
+    # certificada (umbral bajo a proposito para forzar el caso) -- solo la
+    # de mayor EV% debe quedar como Pick activo; la otra se conserva en el
+    # historico con estado ELEGIBLE_NO_DOMINANTE, nunca como pick simultaneo.
+    monkeypatch.setattr(pick_governance, "load_hypotheses", lambda path=None: [
+        _hyp(hypothesis_id="HOME_1X2_TEST_V1", mercado="1X2_FT", seleccion="home",
+             motor_esperado="form_calculator", umbral_prob=0.10, estado=pick_governance.HypothesisStatus.CERTIFICADO),
+        _hyp(hypothesis_id="AWAY_1X2_TEST_V1", mercado="1X2_FT", seleccion="away",
+             motor_esperado="form_calculator", umbral_prob=0.10, estado=pick_governance.HypothesisStatus.CERTIFICADO),
+    ])
+    work = _picks_env
+    match_list = _base_match_list()
+    pocket = {"a-b-1": {"resolved": True, "markets": {
+        "1X2_FT": {"probability": {"home": 0.40, "draw": 0.20, "away": 0.40}, "governance_status": "BASELINE", "engine_id": "form_calculator"},
+    }}}
+    lean = {"a-b-1": {"1X2_FT": {"bk": "Pinnacle", "bookmakerIsActive": True, "sel": {
+        "home": {"p": 2.00, "t": "T", "active": True, "marketActive": True},   # EV = 0.40*2.00-1 = -0.20 (no es value)
+        "away": {"p": 3.00, "t": "T", "active": True, "marketActive": True},   # EV = 0.40*3.00-1 = +0.20 (si es value)
+    }}}}
+    _wj(work / "match_list.json", match_list)
+    _wj(work / "pocket_engine_results.json", pocket)
+    _wj(work / "historical_stats_results.json", {})
+    _wj(work / "match_event_ids.json", {"a-b-1": {"event_id": 1}})
+    _wj(work / "oddspapi_lean.json", lean)
+
+    picks.run()
+    estado = json.load(open(picks.PICKS_STATE_PATH, encoding="utf-8"))
+    assert estado["picks_activos"] == 1
+    assert estado["picks"][0]["selection"] == "away"  # unica con EV>0, "home" ni siquiera es "value"
+
+
+def test_run_no_reregistra_pick_ya_registrado_aunque_cambien_los_numeros(_picks_env, monkeypatch):
+    monkeypatch.setattr(pick_governance, "load_hypotheses", lambda path=None: [
+        _hyp(hypothesis_id="OVER25_TEST_V1", mercado="OU25_GOALS_FT", seleccion="over",
+             motor_esperado="e", umbral_prob=0.50, estado=pick_governance.HypothesisStatus.CERTIFICADO)
+    ])
     work = _picks_env
     match_list = _base_match_list()
     pocket = {"a-b-1": {"resolved": True, "markets": {
@@ -709,3 +943,297 @@ def test_performance_summary_vacio_no_rompe(tmp_path):
     resumen = settlement.performance_summary(str(tmp_path / "no_existe.jsonl"))
     assert resumen["total"] == 0
     assert resumen["win_rate_pct"] is None
+
+
+# ---------------------------------------------------------------------
+# hypothesis_shadow.py -- Señales en Observación (2026-08-22, PICK
+# GOVERNANCE). Aislamiento total del ledger real -- misma tecnica que
+# atlas_engine/tests/unit/test_shadow_trackrecord_scoping.py (monkeypatch de
+# TRACKRECORD_DB en store.py Y db_safety.py, nunca toca la base real).
+# ---------------------------------------------------------------------
+
+import atlas_pocket.trackrecord.store as trackrecord_store
+import atlas_pocket.trackrecord.db_safety as trackrecord_db_safety
+import atlas_pocket.trackrecord.resolution as trackrecord_resolution
+from atlas_pocket.engines import shadow as pocket_shadow
+
+
+@pytest.fixture
+def _isolated_trackrecord_db(tmp_path, monkeypatch):
+    db_path = tmp_path / "test_trackrecord.db"
+    monkeypatch.setattr(trackrecord_store, "TRACKRECORD_DB", str(db_path))
+    monkeypatch.setattr(trackrecord_db_safety, "TRACKRECORD_DB", str(db_path))
+    return db_path
+
+
+def _hyp_json(tmp_path, *hyps):
+    path = tmp_path / "thresholds.json"
+    path.write_text(json.dumps({"version": "test", "hypotheses": list(hyps)}), encoding="utf-8")
+    return str(path)
+
+
+def _hyp_dict(hypothesis_id="AWAY_1X2_P50_V1", mercado="1X2_FT", seleccion="away",
+              motor_esperado="form_calculator", umbral_prob=0.50, estado="EN_OBSERVACION", retirada=False):
+    return {"hypothesis_id": hypothesis_id, "mercado": mercado, "seleccion": seleccion,
+            "motor_esperado": motor_esperado, "umbral_prob": umbral_prob, "estado": estado, "retirada": retirada}
+
+
+def test_log_hypothesis_candidates_registra_con_namespace_pickgov(_isolated_trackrecord_db, monkeypatch, tmp_path):
+    hyp_path = _hyp_json(tmp_path, _hyp_dict())
+    monkeypatch.setattr(pick_governance, "THRESHOLDS_PATH", hyp_path)
+
+    match_list = [{"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": "2026-09-01T18:00:00Z"}]
+    pocket = {"a-b-1": {"resolved": True, "markets": {
+        "1X2_FT": {"probability": {"home": 0.30, "draw": 0.20, "away": 0.55}, "governance_status": "BASELINE", "engine_id": "form_calculator"},
+    }}}
+    lean = {"a-b-1": {"1X2_FT": {"bk": "Pinnacle", "sel": {"away": {"p": 2.10, "t": "T"}}}}}
+    match_event_ids = {"a-b-1": {"event_id": 555}}
+
+    result = hypothesis_shadow.log_hypothesis_candidates(pocket=pocket, oddspapi_lean=lean, match_list=match_list, match_event_ids=match_event_ids)
+    assert result["registrados"] == 1
+
+    conn = trackrecord_store._connect()
+    try:
+        row = conn.execute("SELECT * FROM predictions WHERE event_id=555").fetchone()
+    finally:
+        conn.close()
+    assert row["motor"] == "form_calculator+pickgov"  # namespace obligatorio -- nunca "form_calculator" puro
+    assert row["hypothesis_id"] == "AWAY_1X2_P50_V1"
+    assert row["cuota_mercado"] == 2.10  # cuota REAL capturada (a diferencia de shadow.py, que la deja en None)
+    assert row["prob_atlas"] == 0.55
+
+
+def test_log_hypothesis_candidates_idempotente(_isolated_trackrecord_db, monkeypatch, tmp_path):
+    hyp_path = _hyp_json(tmp_path, _hyp_dict())
+    monkeypatch.setattr(pick_governance, "THRESHOLDS_PATH", hyp_path)
+    match_list = [{"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": "2026-09-01T18:00:00Z"}]
+    pocket = {"a-b-1": {"resolved": True, "markets": {
+        "1X2_FT": {"probability": {"home": 0.30, "draw": 0.20, "away": 0.55}, "governance_status": "BASELINE", "engine_id": "form_calculator"},
+    }}}
+    lean = {"a-b-1": {"1X2_FT": {"bk": "Pinnacle", "sel": {"away": {"p": 2.10, "t": "T"}}}}}
+    match_event_ids = {"a-b-1": {"event_id": 555}}
+
+    r1 = hypothesis_shadow.log_hypothesis_candidates(pocket=pocket, oddspapi_lean=lean, match_list=match_list, match_event_ids=match_event_ids)
+    r2 = hypothesis_shadow.log_hypothesis_candidates(pocket=pocket, oddspapi_lean=lean, match_list=match_list, match_event_ids=match_event_ids)
+    assert r1["registrados"] == 1
+    assert r2["registrados"] == 0 and r2["ya_registrados"] == 1  # nunca duplica
+
+
+def test_log_hypothesis_candidates_prob_bajo_umbral_no_registra(_isolated_trackrecord_db, monkeypatch, tmp_path):
+    hyp_path = _hyp_json(tmp_path, _hyp_dict(umbral_prob=0.60))
+    monkeypatch.setattr(pick_governance, "THRESHOLDS_PATH", hyp_path)
+    match_list = [{"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": "2026-09-01T18:00:00Z"}]
+    pocket = {"a-b-1": {"resolved": True, "markets": {
+        "1X2_FT": {"probability": {"home": 0.30, "draw": 0.20, "away": 0.55}, "governance_status": "BASELINE", "engine_id": "form_calculator"},
+    }}}
+    lean = {"a-b-1": {"1X2_FT": {"bk": "Pinnacle", "sel": {"away": {"p": 2.10, "t": "T"}}}}}
+    result = hypothesis_shadow.log_hypothesis_candidates(pocket=pocket, oddspapi_lean=lean, match_list=match_list, match_event_ids={"a-b-1": {"event_id": 555}})
+    assert result["registrados"] == 0  # 0.55 < 0.60 -- no cumple ESTA hipotesis
+
+
+def test_log_hypothesis_candidates_motor_distinto_no_registra(_isolated_trackrecord_db, monkeypatch, tmp_path):
+    # La hipotesis congelo "form_calculator" -- si el pipeline reporta un
+    # motor distinto para ese mercado/seleccion, nunca se evalua con el motor
+    # equivocado (inmutabilidad de la hipotesis: motor es parte de lo congelado).
+    hyp_path = _hyp_json(tmp_path, _hyp_dict(motor_esperado="form_calculator"))
+    monkeypatch.setattr(pick_governance, "THRESHOLDS_PATH", hyp_path)
+    match_list = [{"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": "2026-09-01T18:00:00Z"}]
+    pocket = {"a-b-1": {"resolved": True, "markets": {
+        "1X2_FT": {"probability": {"home": 0.30, "draw": 0.20, "away": 0.55}, "governance_status": "BASELINE", "engine_id": "form_calculator_lineup_challenger"},
+    }}}
+    lean = {"a-b-1": {"1X2_FT": {"bk": "Pinnacle", "sel": {"away": {"p": 2.10, "t": "T"}}}}}
+    result = hypothesis_shadow.log_hypothesis_candidates(pocket=pocket, oddspapi_lean=lean, match_list=match_list, match_event_ids={"a-b-1": {"event_id": 555}})
+    assert result["registrados"] == 0
+
+
+def test_log_hypothesis_candidates_sin_cuota_real_no_registra(_isolated_trackrecord_db, monkeypatch, tmp_path):
+    hyp_path = _hyp_json(tmp_path, _hyp_dict())
+    monkeypatch.setattr(pick_governance, "THRESHOLDS_PATH", hyp_path)
+    match_list = [{"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": "2026-09-01T18:00:00Z"}]
+    pocket = {"a-b-1": {"resolved": True, "markets": {
+        "1X2_FT": {"probability": {"home": 0.30, "draw": 0.20, "away": 0.55}, "governance_status": "BASELINE", "engine_id": "form_calculator"},
+    }}}
+    result = hypothesis_shadow.log_hypothesis_candidates(pocket=pocket, oddspapi_lean={}, match_list=match_list, match_event_ids={"a-b-1": {"event_id": 555}})
+    assert result["registrados"] == 0 and result["sin_cuota"] == 1  # nunca se inventa una cuota
+
+
+def test_log_hypothesis_candidates_hipotesis_retirada_nunca_acumula(_isolated_trackrecord_db, monkeypatch, tmp_path):
+    hyp_path = _hyp_json(tmp_path, _hyp_dict(retirada=True))
+    monkeypatch.setattr(pick_governance, "THRESHOLDS_PATH", hyp_path)
+    match_list = [{"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": "2026-09-01T18:00:00Z"}]
+    pocket = {"a-b-1": {"resolved": True, "markets": {
+        "1X2_FT": {"probability": {"home": 0.30, "draw": 0.20, "away": 0.55}, "governance_status": "BASELINE", "engine_id": "form_calculator"},
+    }}}
+    lean = {"a-b-1": {"1X2_FT": {"bk": "Pinnacle", "sel": {"away": {"p": 2.10, "t": "T"}}}}}
+    result = hypothesis_shadow.log_hypothesis_candidates(pocket=pocket, oddspapi_lean=lean, match_list=match_list, match_event_ids={"a-b-1": {"event_id": 555}})
+    assert result["registrados"] == 0
+
+
+def test_migracion_no_toca_filas_existentes_ni_asigna_hypothesis_id_retroactivo(_isolated_trackrecord_db):
+    # Simula una fila "antigua" (pre-hypothesis_id) escrita ANTES de que este
+    # mecanismo existiera -- debe seguir con hypothesis_id=NULL para siempre,
+    # nunca se le asigna uno retroactivamente.
+    old_pid = trackrecord_store.log_prediction(trackrecord_store.PredictionRecord(
+        event_id=1001, fecha_partido="2026-07-01", partido="Old vs Match",
+        mercado="1X2_FT", seleccion="home", prob_atlas=0.5,
+        cuota_justa=2.0, cuota_mercado=None, prob_implicita=None, diferencia=None,
+        motor="form_calculator", version="1.0.0", governance_status="BASELINE",
+    ))
+    conn = trackrecord_store._connect()
+    try:
+        row = conn.execute("SELECT hypothesis_id FROM predictions WHERE prediction_id=?", (old_pid,)).fetchone()
+    finally:
+        conn.close()
+    assert row["hypothesis_id"] is None
+
+
+def test_resolucion_automatica_procesa_filas_pickgov(_isolated_trackrecord_db, monkeypatch, tmp_path):
+    # Condicion D del mandato: la resolucion automatica de store.py (via
+    # resolution.resolve_track_record(), corre sola en cada conexion) SI
+    # debe procesar las filas con namespace "+pickgov" -- a diferencia de las
+    # de Shadow Mode puro, que quedan reservadas y excluidas a proposito.
+    pid = trackrecord_store.log_prediction(trackrecord_store.PredictionRecord(
+        event_id=2002, fecha_partido="2026-07-01", partido="Home vs Away",
+        mercado="1X2_FT", seleccion="away", prob_atlas=0.55,
+        cuota_justa=1.8, cuota_mercado=2.10, prob_implicita=0.48, diferencia=0.07,
+        motor="form_calculator+pickgov", version="AWAY_1X2_P50_V1", governance_status="BASELINE",
+        hypothesis_id="AWAY_1X2_P50_V1",
+    ))
+
+    class _Res:
+        score_home, score_away, corner_total, sot_total, cards_total, shots_total = 0, 2, None, None, None, None
+
+    monkeypatch.setattr(trackrecord_resolution, "_load_finished_match_results", lambda ids: {2002: _Res()} if 2002 in ids else {})
+    result = trackrecord_resolution.resolve_track_record()
+    assert result["resolved"] == 1
+
+    conn = trackrecord_store._connect()
+    try:
+        row = conn.execute("SELECT acierto, resultado_real FROM resolutions WHERE prediction_id=?", (pid,)).fetchone()
+    finally:
+        conn.close()
+    assert row["acierto"] == "acierto" and row["resultado_real"] == "away"
+
+
+def test_pickgov_nunca_contamina_la_comparacion_baseline_vs_challenger(_isolated_trackrecord_db, monkeypatch):
+    # Condicion E del mandato -- la MAS critica. HALLAZGO REAL durante la
+    # implementacion (no anticipado en el diseno de la seccion 17.D): la
+    # SELECT de compute_shadow_evidence() filtra SOLO por `mercado = ?`
+    # (1X2_FT), sin filtrar por motor -- a diferencia de resolve_track_
+    # record()/ranking.py, que SI excluyen por SHADOW_MODE_ENGINE_IDS. Esto
+    # significa que el agregado top-level `n_resolved_events` SI puede
+    # incluir eventos que tambien tienen una fila "+pickgov" para el mismo
+    # mercado (comportamiento YA EXISTENTE de shadow.py, no introducido por
+    # este cambio -- hoy no se manifiesta en produccion porque ningun otro
+    # motor usaba mercado="1X2_FT" hasta ahora). Corregirlo requeriria tocar
+    # shadow.py, prohibido explicitamente por el mandato ("no debe alterar la
+    # logica de negocio actual") -- se documenta como limitacion residual,
+    # NO se oculta. Lo que SI esta garantizado y se prueba aqui es lo
+    # realmente critico: la comparacion CIENTIFICA por motor (Brier/LogLoss/
+    # ECE/N de form_calculator vs. form_calculator_lineup_challenger) queda
+    # EXACTA e inalterada -- el namespace "+pickgov" nunca aparece como
+    # entrada propia salvo bajo su propia clave, separada.
+    pid_shadow = trackrecord_store.log_prediction(trackrecord_store.PredictionRecord(
+        event_id=3003, fecha_partido="2026-07-01", partido="Shadow vs Match",
+        mercado="1X2_FT", seleccion="home", prob_atlas=0.5,
+        cuota_justa=2.0, cuota_mercado=None, prob_implicita=None, diferencia=None,
+        motor="form_calculator", version="1.0.0", governance_status="BASELINE",
+    ))
+    trackrecord_store.add_resolution(pid_shadow, "home", "acierto")
+
+    evidence_before = pocket_shadow.compute_shadow_evidence()
+
+    pid_pickgov = trackrecord_store.log_prediction(trackrecord_store.PredictionRecord(
+        event_id=4004, fecha_partido="2026-07-01", partido="PickGov vs Match",
+        mercado="1X2_FT", seleccion="away", prob_atlas=0.55,
+        cuota_justa=1.8, cuota_mercado=2.10, prob_implicita=0.48, diferencia=0.07,
+        motor="form_calculator+pickgov", version="AWAY_1X2_P50_V1", governance_status="BASELINE",
+        hypothesis_id="AWAY_1X2_P50_V1",
+    ))
+    trackrecord_store.add_resolution(pid_pickgov, "away", "acierto")
+
+    evidence_after = pocket_shadow.compute_shadow_evidence()
+
+    # GARANTIA CRITICA (verificada, no asumida): los numeros cientificos por
+    # motor de la comparacion real (form_calculator / lineup_challenger) son
+    # BIT A BIT IDENTICOS antes y despues de que exista una fila pickgov.
+    assert evidence_after["by_motor"]["form_calculator"] == evidence_before["by_motor"]["form_calculator"]
+    assert "form_calculator_lineup_challenger" not in evidence_after["by_motor"] or \
+        evidence_after["by_motor"]["form_calculator_lineup_challenger"] == evidence_before["by_motor"].get("form_calculator_lineup_challenger")
+    # La fila pickgov aparece bajo SU PROPIA clave separada -- nunca se
+    # mezcla dentro de "form_calculator".
+    assert evidence_after["by_motor"]["form_calculator"]["n_events"] == 1
+    assert evidence_after["by_motor"]["form_calculator+pickgov"]["n_events"] == 1
+    # LIMITACION RESIDUAL DOCUMENTADA (no oculta): el agregado top-level SI
+    # crece, porque cuenta distinct event_id sin filtrar motor -- ver
+    # docstring de este test y AUDITORIA_PICK_GOVERNANCE_2026-08-22.md.
+    assert evidence_before["n_resolved_events"] == 1
+    assert evidence_after["n_resolved_events"] == 2
+
+
+def test_hipotesis_v1_y_v2_nunca_mezclan_evidencia(_isolated_trackrecord_db):
+    # Condicion 3/G del mandato: cambiar el umbral crea una hipotesis NUEVA
+    # (hypothesis_id distinto) -- compute_hypothesis_evidence() de cada una
+    # debe ser completamente independiente, aunque compartan mercado/motor.
+    pid_v1 = trackrecord_store.log_prediction(trackrecord_store.PredictionRecord(
+        event_id=5001, fecha_partido="2026-07-01", partido="V1 Match",
+        mercado="1X2_FT", seleccion="away", prob_atlas=0.51,
+        cuota_justa=1.9, cuota_mercado=2.20, prob_implicita=0.45, diferencia=0.06,
+        motor="form_calculator+pickgov", version="AWAY_1X2_P50_V1", governance_status="BASELINE",
+        hypothesis_id="AWAY_1X2_P50_V1",
+    ))
+    trackrecord_store.add_resolution(pid_v1, "away", "acierto")
+
+    pid_v2 = trackrecord_store.log_prediction(trackrecord_store.PredictionRecord(
+        event_id=5002, fecha_partido="2026-07-01", partido="V2 Match",
+        mercado="1X2_FT", seleccion="away", prob_atlas=0.58,
+        cuota_justa=1.7, cuota_mercado=1.60, prob_implicita=0.63, diferencia=-0.05,
+        motor="form_calculator+pickgov", version="AWAY_1X2_P55_V2", governance_status="BASELINE",
+        hypothesis_id="AWAY_1X2_P55_V2",
+    ))
+    trackrecord_store.add_resolution(pid_v2, "home", "fallo")
+
+    ev_v1 = hypothesis_shadow.compute_hypothesis_evidence("AWAY_1X2_P50_V1")
+    ev_v2 = hypothesis_shadow.compute_hypothesis_evidence("AWAY_1X2_P55_V2")
+    assert ev_v1["n_resolved"] == 1 and ev_v1["win_rate"] == 1.0
+    assert ev_v2["n_resolved"] == 1 and ev_v2["win_rate"] == 0.0
+    assert ev_v1["hypothesis_id"] != ev_v2["hypothesis_id"]
+
+
+def test_compute_hypothesis_evidence_sin_evidencia_devuelve_insuficiente(_isolated_trackrecord_db):
+    result = hypothesis_shadow.compute_hypothesis_evidence("NO_EXISTE_TODAVIA")
+    assert result["n_resolved"] == 0
+    assert result["verdict"] == "insufficient_evidence"
+
+
+def test_backup_diario_protege_tambien_las_filas_de_pickgov(_isolated_trackrecord_db, tmp_path, monkeypatch):
+    # Condicion I del mandato: el backup existente (db_safety.py) no
+    # distingue por tipo de fila -- protege la base entera, incluidas las
+    # filas de hypothesis_shadow, sin ningun cambio en db_safety.py. Se
+    # redirige DEFAULT_TRACKRECORD_DB (no solo TRACKRECORD_DB) para que
+    # is_production_db() -- que compara ambos -- de True de forma honesta,
+    # en vez de forzar su resultado.
+    db_path = _isolated_trackrecord_db
+    trackrecord_store.log_prediction(trackrecord_store.PredictionRecord(
+        event_id=6006, fecha_partido="2026-07-01", partido="Backup Match",
+        mercado="1X2_FT", seleccion="away", prob_atlas=0.55,
+        cuota_justa=1.8, cuota_mercado=2.10, prob_implicita=0.48, diferencia=0.07,
+        motor="form_calculator+pickgov", version="AWAY_1X2_P50_V1", governance_status="BASELINE",
+        hypothesis_id="AWAY_1X2_P50_V1",
+    ))
+    backup_dir = tmp_path / "backups"
+    monkeypatch.setattr(trackrecord_db_safety, "DEFAULT_TRACKRECORD_DB", str(db_path))
+    monkeypatch.setattr(trackrecord_db_safety, "_backups_dir", lambda: backup_dir)
+
+    result_path = trackrecord_db_safety.ensure_backup_if_production()
+    assert result_path is not None and Path(result_path).exists()
+
+    # El backup debe contener la fila de pickgov -- verificacion real, no solo
+    # "se creo un archivo".
+    import sqlite3 as _sqlite3
+    bconn = _sqlite3.connect(str(result_path))
+    try:
+        row = bconn.execute("SELECT hypothesis_id FROM predictions WHERE event_id=6006").fetchone()
+    finally:
+        bconn.close()
+    assert row is not None and row[0] == "AWAY_1X2_P50_V1"
