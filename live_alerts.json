@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-23T16:36:52Z",
+ "generated_at_utc": "2026-08-23T16:37:12Z",
  "n_alerts": 15,
  "alerts": [
   {
@@ -454,35 +454,6 @@
    "alert_id": "14684d992ae33ca8"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Deportes La Serena vs Cobresal (Liga de Primera)",
-   "match_id": "15353106",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 36,
-   "condicion": "4 córners totales antes del min 45 (3-1), Deportes La Serena presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Cobresal NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Deportes La Serena",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-23T16:32:13Z",
-   "t_captura_utc": "2026-08-23T16:32:13Z",
-   "t_evaluacion_utc": "2026-08-23T16:36:13Z",
-   "t_generacion_utc": "2026-08-23T16:36:13Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Deportes La Serena vs Cobresal\n⏱ Minuto: 36'\n📊 Marcador: 1-1\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Deportes La Serena presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Cobresal no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "1cc3b605386c7d71"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Deportes La Serena vs Cobresal (Liga de Primera)",
    "match_id": "15353106",
@@ -553,6 +524,35 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Le Havre vs AS Monaco\n⏱ Minuto: 60'\n📊 Marcador: 0-1\n🏆 Liga: Ligue 1\n\n📝 Motivo: presión combinada sostenida — xG 1.59, 21 tiros totales (7 a puerta), 6 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "b78b65ca32ee3012"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Deportes La Serena vs Cobresal (Liga de Primera)",
+   "match_id": "15353106",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 37,
+   "condicion": "4 córners totales antes del min 45 (3-1), Deportes La Serena presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Cobresal NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Deportes La Serena",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-23T16:32:13Z",
+   "t_captura_utc": "2026-08-23T16:32:13Z",
+   "t_evaluacion_utc": "2026-08-23T16:37:12Z",
+   "t_generacion_utc": "2026-08-23T16:37:12Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Deportes La Serena vs Cobresal\n⏱ Minuto: 37'\n📊 Marcador: 1-1\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Deportes La Serena presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Cobresal no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "1cc3b605386c7d71"
   }
  ]
 }
