@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-08-23T12:11:31Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-23T12:12:30Z",
+ "n_alerts": 1,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Machida Zelvia vs Urawa Red Diamonds (J1 League)",
-   "match_id": "16348549",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 3,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-23T11:42:15Z",
-   "t_captura_utc": "2026-08-23T11:42:15Z",
-   "t_evaluacion_utc": "2026-08-23T11:48:22Z",
-   "t_generacion_utc": "2026-08-23T11:48:22Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-23T11:42:25Z",
-     "latencia_envio_ms": 841.9106006622314,
-     "error": null,
-     "message_id": 2043,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 10.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Machida Zelvia vs Urawa Red Diamonds\n⏱ Minuto: 52'\n📊 Marcador: 1-1\n🏆 Liga: J1 League\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 3\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "15fd57548deb1ef2"
-  },
   {
    "strategy_id": "A2",
    "match_label": "West Bromwich Albion vs Burnley (Championship)",
