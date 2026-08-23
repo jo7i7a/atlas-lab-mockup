@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-23T18:25:30Z",
+ "generated_at_utc": "2026-08-23T18:26:26Z",
  "n_alerts": 17,
  "alerts": [
   {
@@ -568,44 +568,6 @@
    "alert_id": "395042d699f7336c"
   },
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Sarmiento vs Estudiantes de La Plata (Liga Profesional de Fútbol)",
-   "match_id": "16667398",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 40,
-   "condicion": "Estudiantes de La Plata acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Estudiantes de La Plata",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.8182,
-    "touches_home": 2,
-    "touches_away": 9,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 6,
-    "equipo_que_realizo_sustitucion": "Estudiantes de La Plata",
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-08-23T18:05:51Z",
-    "t_inicio_estimado_condicion": "2026-08-23T18:06:06Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-23T18:05:51Z",
-   "t_captura_utc": "2026-08-23T18:25:27Z",
-   "t_evaluacion_utc": "2026-08-23T18:25:27Z",
-   "t_generacion_utc": "2026-08-23T18:25:27Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sarmiento vs Estudiantes de La Plata\n⏱ Minuto: 40'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de La Plata acumula 82% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Estudiantes de La Plata, min 6\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "d00bafbbcdf52fa9"
-  },
-  {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Santa Clara vs Famalicão (Liga Portugal Betclic)",
    "match_id": "16450764",
@@ -638,6 +600,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Santa Clara vs Famalicão\n⏱ Minuto: 67'\n📊 Marcador: 1-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: presión combinada sostenida — xG 2.26, 16 tiros totales (3 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "139c1b44a9bd82de"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Sarmiento vs Estudiantes de La Plata (Liga Profesional de Fútbol)",
+   "match_id": "16667398",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 41,
+   "condicion": "Estudiantes de La Plata acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Estudiantes de La Plata",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.8182,
+    "touches_home": 2,
+    "touches_away": 9,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 6,
+    "equipo_que_realizo_sustitucion": "Estudiantes de La Plata",
+    "marcador_en_el_momento": "1-0",
+    "t_primera_observacion_atlas": "2026-08-23T18:05:51Z",
+    "t_inicio_estimado_condicion": "2026-08-23T18:06:06Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-23T18:05:51Z",
+   "t_captura_utc": "2026-08-23T18:26:26Z",
+   "t_evaluacion_utc": "2026-08-23T18:26:26Z",
+   "t_generacion_utc": "2026-08-23T18:26:26Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sarmiento vs Estudiantes de La Plata\n⏱ Minuto: 41'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de La Plata acumula 82% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Estudiantes de La Plata, min 6\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "d00bafbbcdf52fa9"
   }
  ]
 }
