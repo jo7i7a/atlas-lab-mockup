@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-23T18:30:27Z",
- "n_alerts": 15,
+ "generated_at_utc": "2026-08-23T18:31:29Z",
+ "n_alerts": 14,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -35,40 +35,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Venezia vs Lecce\n⏱ Minuto: 68'\n📊 Marcador: 0-1\n🏆 Liga: Serie A\n\n📝 Motivo: presión combinada sostenida — xG 1.52, 18 tiros totales (4 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "0689f8f23e5ec750"
-  },
-  {
-   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Frosinone vs Juventus (Serie A)",
-   "match_id": "16283048",
-   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 68,
-   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_combinado": 2.14,
-    "tiros_combinados": 23,
-    "sot_combinado": 7,
-    "presion_reciente_10min": 3,
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-23T18:00:40Z",
-    "t_inicio_estimado_condicion": "2026-08-23T17:49:11Z",
-    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-23T18:00:40Z",
-   "t_captura_utc": "2026-08-23T18:01:43Z",
-   "t_evaluacion_utc": "2026-08-23T18:01:44Z",
-   "t_generacion_utc": "2026-08-23T18:01:44Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Frosinone vs Juventus\n⏱ Minuto: 68'\n📊 Marcador: 0-1\n🏆 Liga: Serie A\n\n📝 Motivo: presión combinada sostenida — xG 2.14, 23 tiros totales (7 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
-   "evidencia": null,
-   "alert_id": "80ce96c06d670582"
   },
   {
    "strategy_id": "L2-SHADOW",
@@ -475,7 +441,7 @@
    "match_id": "16450764",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 72,
+   "minuto": 73,
    "condicion": "Santa Clara acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -497,13 +463,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-23T18:29:25Z",
-   "t_captura_utc": "2026-08-23T18:30:25Z",
-   "t_evaluacion_utc": "2026-08-23T18:30:26Z",
-   "t_generacion_utc": "2026-08-23T18:30:26Z",
+   "t_captura_utc": "2026-08-23T18:31:28Z",
+   "t_evaluacion_utc": "2026-08-23T18:31:28Z",
+   "t_generacion_utc": "2026-08-23T18:31:28Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Santa Clara vs Famalicão\n⏱ Minuto: 72'\n📊 Marcador: 1-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Santa Clara acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Santa Clara, min 62\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Santa Clara vs Famalicão\n⏱ Minuto: 73'\n📊 Marcador: 1-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Santa Clara acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Santa Clara, min 62\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "fc0683e11da4a941"
   },
@@ -513,7 +479,7 @@
    "match_id": "16667398",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 46,
    "condicion": "Estudiantes de La Plata acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -535,13 +501,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-23T18:05:51Z",
-   "t_captura_utc": "2026-08-23T18:30:26Z",
-   "t_evaluacion_utc": "2026-08-23T18:30:27Z",
-   "t_generacion_utc": "2026-08-23T18:30:27Z",
+   "t_captura_utc": "2026-08-23T18:31:29Z",
+   "t_evaluacion_utc": "2026-08-23T18:31:29Z",
+   "t_generacion_utc": "2026-08-23T18:31:29Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sarmiento vs Estudiantes de La Plata\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de La Plata acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Estudiantes de La Plata, min 40\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sarmiento vs Estudiantes de La Plata\n⏱ Minuto: 46'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de La Plata acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Estudiantes de La Plata, min 40\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "d00bafbbcdf52fa9"
   }
