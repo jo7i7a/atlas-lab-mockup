@@ -1,41 +1,7 @@
 {
- "generated_at_utc": "2026-08-23T20:56:33Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-23T20:57:34Z",
+ "n_alerts": 4,
  "alerts": [
-  {
-   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Vitória vs Bahia (Brasileirão Betano)",
-   "match_id": "15235444",
-   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 69,
-   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_combinado": 2.75,
-    "tiros_combinados": 30,
-    "sot_combinado": 8,
-    "presion_reciente_10min": 5,
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-08-23T20:27:18Z",
-    "t_inicio_estimado_condicion": "2026-08-23T20:18:22Z",
-    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-23T20:27:18Z",
-   "t_captura_utc": "2026-08-23T20:30:56Z",
-   "t_evaluacion_utc": "2026-08-23T20:30:57Z",
-   "t_generacion_utc": "2026-08-23T20:30:57Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Vitória vs Bahia\n⏱ Minuto: 69'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: presión combinada sostenida — xG 2.75, 30 tiros totales (8 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
-   "evidencia": null,
-   "alert_id": "817135b1b6b7a57e"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "São Bernardo vs Náutico (Brasileirão Série B)",
