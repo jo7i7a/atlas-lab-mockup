@@ -1,90 +1,7 @@
 {
- "generated_at_utc": "2026-08-23T23:48:18Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-23T23:49:40Z",
+ "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "O'Higgins vs Palestino (Liga de Primera)",
-   "match_id": "15353105",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Palestino domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Palestino",
-    "lado_dominante": "away",
-    "trigger_disparado": "centros",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 3,
-    "remates_home": 0,
-    "remates_away": 1,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-23T23:18:22Z",
-   "t_captura_utc": "2026-08-23T23:18:22Z",
-   "t_evaluacion_utc": "2026-08-23T23:25:32Z",
-   "t_generacion_utc": "2026-08-23T23:25:32Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-23T23:19:32Z",
-     "latencia_envio_ms": 860.142707824707,
-     "error": null,
-     "message_id": 2125,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 70.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ O'Higgins vs Palestino\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Palestino — ≥3 centros al área en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "032b4cfced61ad38"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "River Plate vs Vélez Sarsfield (Liga Profesional de Fútbol)",
-   "match_id": "16667397",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-23T23:19:27Z",
-   "t_captura_utc": "2026-08-23T23:19:27Z",
-   "t_evaluacion_utc": "2026-08-23T23:26:26Z",
-   "t_generacion_utc": "2026-08-23T23:26:26Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-23T23:20:29Z",
-     "latencia_envio_ms": 854.8872470855713,
-     "error": null,
-     "message_id": 2126,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 62.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ River Plate vs Vélez Sarsfield\n⏱ Minuto: 52'\n📊 Marcador: 2-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "d1d242c9cd55253e"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "O'Higgins vs Palestino (Liga de Primera)",
@@ -250,7 +167,7 @@
    "match_id": "16317901",
    "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 46,
    "condicion": "Expulsión de CF Pachuca (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
    "confianza": "Media",
    "link": "",
@@ -262,9 +179,9 @@
     "total_rojas_partido": 1
    },
    "t_evento_real_utc": "2026-08-23T23:38:22Z",
-   "t_captura_utc": "2026-08-23T23:47:31Z",
-   "t_evaluacion_utc": "2026-08-23T23:47:42Z",
-   "t_generacion_utc": "2026-08-23T23:47:42Z",
+   "t_captura_utc": "2026-08-23T23:49:07Z",
+   "t_evaluacion_utc": "2026-08-23T23:49:29Z",
+   "t_generacion_utc": "2026-08-23T23:49:29Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -278,7 +195,7 @@
    },
    "latencia_total_seg": 61.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Atlético San Luis vs CF Pachuca\n⏱ Minuto: 44'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🟥 Expulsado: CF Pachuca\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
+   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Atlético San Luis vs CF Pachuca\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🟥 Expulsado: CF Pachuca\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
    "evidencia": null,
    "alert_id": "6e3fa0a369bf4f66"
   },
@@ -288,7 +205,7 @@
    "match_id": "15171679",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 35,
+   "minuto": 37,
    "condicion": "Atlanta United acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -310,13 +227,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-23T23:32:41Z",
-   "t_captura_utc": "2026-08-23T23:48:14Z",
-   "t_evaluacion_utc": "2026-08-23T23:48:15Z",
-   "t_generacion_utc": "2026-08-23T23:48:15Z",
+   "t_captura_utc": "2026-08-23T23:49:37Z",
+   "t_evaluacion_utc": "2026-08-23T23:49:38Z",
+   "t_generacion_utc": "2026-08-23T23:49:38Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlanta United vs Sporting Kansas City\n⏱ Minuto: 35'\n📊 Marcador: 2-0\n🏆 Liga: MLS\n\n📝 Motivo: Atlanta United acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlanta United vs Sporting Kansas City\n⏱ Minuto: 37'\n📊 Marcador: 2-0\n🏆 Liga: MLS\n\n📝 Motivo: Atlanta United acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "183fde8065d644f1"
   }
