@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-23T21:48:44Z",
+ "generated_at_utc": "2026-08-23T21:49:46Z",
  "n_alerts": 6,
  "alerts": [
   {
@@ -167,7 +167,7 @@
    "match_id": "15235451",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 16,
+   "minuto": 17,
    "condicion": "São Paulo domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -187,8 +187,8 @@
    },
    "t_evento_real_utc": "2026-08-23T21:47:41Z",
    "t_captura_utc": "2026-08-23T21:47:41Z",
-   "t_evaluacion_utc": "2026-08-23T21:48:33Z",
-   "t_generacion_utc": "2026-08-23T21:48:33Z",
+   "t_evaluacion_utc": "2026-08-23T21:49:37Z",
+   "t_generacion_utc": "2026-08-23T21:49:37Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -202,7 +202,7 @@
    },
    "latencia_total_seg": 53.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Chapecoense vs São Paulo\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: São Paulo — ≥3 centros al área en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Chapecoense vs São Paulo\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: São Paulo — ≥3 centros al área en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "a5b0dd5d1363b74d"
   },
@@ -212,7 +212,7 @@
    "match_id": "15373067",
    "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "cuota_detectada": null,
-   "minuto": 15,
+   "minuto": 16,
    "condicion": "0-0 en minuto 15 con touchesInOppBox_tot15>=4.0 y |diff home-away|/total<=0.33 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -230,8 +230,8 @@
    },
    "t_evento_real_utc": "2026-08-23T21:48:24Z",
    "t_captura_utc": "2026-08-23T21:48:24Z",
-   "t_evaluacion_utc": "2026-08-23T21:48:43Z",
-   "t_generacion_utc": "2026-08-23T21:48:43Z",
+   "t_evaluacion_utc": "2026-08-23T21:49:46Z",
+   "t_generacion_utc": "2026-08-23T21:49:46Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -245,7 +245,7 @@
    },
    "latencia_total_seg": 20.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Jeju SK vs Gimcheon Sangmu FC\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 3-2 (total 5)\nRatio de diferencia home-away: 0.20 (umbral <= 0.33)\n\n🏆 Liga: K League 1\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Jeju SK vs Gimcheon Sangmu FC\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 3-2 (total 5)\nRatio de diferencia home-away: 0.20 (umbral <= 0.33)\n\n🏆 Liga: K League 1\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "a22c1fcaa47d6f51"
   }
