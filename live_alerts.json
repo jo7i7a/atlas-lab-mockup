@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-23T02:46:30Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-23T02:47:30Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "L1-SHADOW",
@@ -64,44 +64,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A3_V1_DOMINANTE_NO_GANA\n\n⚽ Nashville SC vs Columbus Crew\n⏱ Minuto: 84'\n📊 Marcador: 1-2\n🏆 Liga: MLS\n\n📝 Motivo: Nashville SC — 2 córners y 16 entradas al tercio final en los últimos 10 min, sin ir ganando (marcador 1-2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over/Under",
    "evidencia": null,
    "alert_id": "675d22777d8f8f47"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Nashville SC vs Columbus Crew (MLS)",
-   "match_id": "15171685",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 85,
-   "condicion": "Nashville SC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Nashville SC",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6538,
-    "touches_home": 17,
-    "touches_away": 9,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 62,
-    "equipo_que_realizo_sustitucion": "Nashville SC",
-    "marcador_en_el_momento": "1-2",
-    "t_primera_observacion_atlas": "2026-08-23T02:16:30Z",
-    "t_inicio_estimado_condicion": "2026-08-23T01:29:06Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-23T02:16:30Z",
-   "t_captura_utc": "2026-08-23T02:28:29Z",
-   "t_evaluacion_utc": "2026-08-23T02:28:30Z",
-   "t_generacion_utc": "2026-08-23T02:28:30Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Nashville SC vs Columbus Crew\n⏱ Minuto: 85'\n📊 Marcador: 1-2\n🏆 Liga: MLS\n\n📝 Motivo: Nashville SC acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Nashville SC, min 62\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "902661ff1661de3a"
   },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
