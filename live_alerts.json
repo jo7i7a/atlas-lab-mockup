@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-23T12:53:23Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-23T12:54:24Z",
+ "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Västerås SK vs Kalmar FF (Allsvenskan)",
-   "match_id": "15272500",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Kalmar FF domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Kalmar FF",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-23T12:23:53Z",
-   "t_captura_utc": "2026-08-23T12:23:53Z",
-   "t_evaluacion_utc": "2026-08-23T12:26:36Z",
-   "t_generacion_utc": "2026-08-23T12:26:36Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-23T12:24:45Z",
-     "latencia_envio_ms": 874.2690086364746,
-     "error": null,
-     "message_id": 2046,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 52.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Västerås SK vs Kalmar FF\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: Kalmar FF — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "1dad7ce315f75bd4"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "IFK Göteborg vs IF Elfsborg (Allsvenskan)",
@@ -195,7 +150,7 @@
    "match_id": "16316774",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 22,
+   "minuto": 23,
    "condicion": "PSV Eindhoven domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -215,8 +170,8 @@
    },
    "t_evento_real_utc": "2026-08-23T12:47:53Z",
    "t_captura_utc": "2026-08-23T12:47:53Z",
-   "t_evaluacion_utc": "2026-08-23T12:53:21Z",
-   "t_generacion_utc": "2026-08-23T12:53:21Z",
+   "t_evaluacion_utc": "2026-08-23T12:54:21Z",
+   "t_generacion_utc": "2026-08-23T12:54:21Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -230,7 +185,7 @@
    },
    "latencia_total_seg": 34.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ PSV Eindhoven vs FC Groningen\n⏱ Minuto: 22'\n📊 Marcador: 1-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: PSV Eindhoven — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ PSV Eindhoven vs FC Groningen\n⏱ Minuto: 23'\n📊 Marcador: 1-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: PSV Eindhoven — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "e6efddcff484744c"
   },
@@ -240,7 +195,7 @@
    "match_id": "16316774",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 22,
+   "minuto": 23,
    "condicion": "PSV Eindhoven acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -262,13 +217,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-23T12:51:23Z",
-   "t_captura_utc": "2026-08-23T12:53:23Z",
-   "t_evaluacion_utc": "2026-08-23T12:53:23Z",
-   "t_generacion_utc": "2026-08-23T12:53:23Z",
+   "t_captura_utc": "2026-08-23T12:54:23Z",
+   "t_evaluacion_utc": "2026-08-23T12:54:24Z",
+   "t_generacion_utc": "2026-08-23T12:54:24Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ PSV Eindhoven vs FC Groningen\n⏱ Minuto: 22'\n📊 Marcador: 1-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: PSV Eindhoven acumula 80% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: PSV Eindhoven, min 21\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ PSV Eindhoven vs FC Groningen\n⏱ Minuto: 23'\n📊 Marcador: 1-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: PSV Eindhoven acumula 80% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: PSV Eindhoven, min 21\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "f90fcba08507dbbe"
   }
