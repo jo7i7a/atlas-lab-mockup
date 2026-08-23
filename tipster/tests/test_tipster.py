@@ -277,6 +277,7 @@ def _rankings_env(tmp_path, monkeypatch):
     work = tmp_path / "_work"
     work.mkdir()
     monkeypatch.setattr(rankings, "WORK", str(work))
+    monkeypatch.setattr(rankings, "TOMORROW_STATE_PATH", str(tmp_path / "tomorrow.json"))
     monkeypatch.setattr(rankings, "DAILY_STATE_PATH", str(tmp_path / "daily.json"))
     monkeypatch.setattr(rankings, "WEEKLY_STATE_PATH", str(tmp_path / "weekly.json"))
     monkeypatch.setattr(rankings, "HISTORY_PATH", str(tmp_path / "history.jsonl"))
@@ -380,6 +381,73 @@ def test_history_probabilidad_y_cuota_no_cambian_retroactivamente(_rankings_env)
     over25_weekly = [l for l in lines if l["market"] == "OU25_GOALS_FT" and l["selection"] == "over" and l["ranking_type"] == "weekly"]
     assert len(over25_weekly) == 1
     assert over25_weekly[0]["probabilidad_atlas"] == 0.6  # nunca 0.9 -- inmutable
+
+
+# ---------------------------------------------------------------------
+# rankings.py -- ventana "Mañana" (2026-08-22, mandato del Director):
+# misma formula/mercados/orden que Diario, solo cambia la ventana temporal.
+# ---------------------------------------------------------------------
+
+def test_run_genera_manana_junto_con_diario_y_semanal(_rankings_env):
+    work = _rankings_env
+    match_list = [{"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": _kickoff(1)}]
+    pocket = {"a-b-1": {"resolved": True, "markets": {"OU25_GOALS_FT": {"probability": {"over": 0.6, "under": 0.4}, "engine_id": "e", "governance_status": "BASELINE"}}}}
+    hist = {"a-b-1": {"btts_general_pct": 55.0}}
+    _write_json(work / "match_list.json", match_list)
+    _write_json(work / "pocket_engine_results.json", pocket)
+    _write_json(work / "historical_stats_results.json", hist)
+    _write_json(work / "match_event_ids.json", {"a-b-1": {"event_id": 999}})
+    _write_json(work / "oddspapi_lean.json", {})
+
+    resumen = rankings.run(finished_event_ids_fn=lambda ids: set())
+    assert resumen["tomorrow_new_entries"] >= 1
+
+    tomorrow = json.load(open(rankings.TOMORROW_STATE_PATH, encoding="utf-8"))
+    assert len(tomorrow["rankings"]["OVER25"]) == 1
+    assert tomorrow["rankings"]["OVER25"][0]["probabilidad_atlas"] == 0.6
+
+    # Un partido de mañana NUNCA debe aparecer en el ranking Diario (misma
+    # separacion de ventanas que ya existe entre Diario y Semanal).
+    daily = json.load(open(rankings.DAILY_STATE_PATH, encoding="utf-8"))
+    assert daily["rankings"]["OVER25"] == []
+
+
+def test_manana_no_incluye_partido_de_hoy(_rankings_env):
+    work = _rankings_env
+    match_list = [{"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": _kickoff(0)}]
+    pocket = {"a-b-1": {"resolved": True, "markets": {"OU25_GOALS_FT": {"probability": {"over": 0.6, "under": 0.4}, "engine_id": "e", "governance_status": "BASELINE"}}}}
+    hist = {"a-b-1": {"btts_general_pct": 55.0}}
+    _write_json(work / "match_list.json", match_list)
+    _write_json(work / "pocket_engine_results.json", pocket)
+    _write_json(work / "historical_stats_results.json", hist)
+    _write_json(work / "match_event_ids.json", {"a-b-1": {"event_id": 999}})
+    _write_json(work / "oddspapi_lean.json", {})
+
+    resumen = rankings.run(finished_event_ids_fn=lambda ids: set())
+    assert resumen["tomorrow_new_entries"] == 0
+    tomorrow = json.load(open(rankings.TOMORROW_STATE_PATH, encoding="utf-8"))
+    assert tomorrow["rankings"]["OVER25"] == []  # un partido de HOY no es "Mañana"
+
+
+def test_history_diferencia_ranking_type_manana_de_diario_y_semanal(_rankings_env):
+    work = _rankings_env
+    match_list = [{"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": _kickoff(1)}]
+    pocket = {"a-b-1": {"resolved": True, "markets": {"OU25_GOALS_FT": {"probability": {"over": 0.6, "under": 0.4}, "engine_id": "e", "governance_status": "BASELINE"}}}}
+    hist = {"a-b-1": {"btts_general_pct": 55.0}}
+    _write_json(work / "match_list.json", match_list)
+    _write_json(work / "pocket_engine_results.json", pocket)
+    _write_json(work / "historical_stats_results.json", hist)
+    _write_json(work / "match_event_ids.json", {"a-b-1": {"event_id": 999}})
+    _write_json(work / "oddspapi_lean.json", {})
+
+    rankings.run(finished_event_ids_fn=lambda ids: set())
+    rankings.run(finished_event_ids_fn=lambda ids: set())  # segunda corrida el mismo dia
+
+    lines = [json.loads(l) for l in open(rankings.HISTORY_PATH, encoding="utf-8").read().strip().split("\n")]
+    over25_lines = [l for l in lines if l["market"] == "OU25_GOALS_FT" and l["selection"] == "over"]
+    by_type = {l["ranking_type"] for l in over25_lines}
+    assert by_type == {"tomorrow", "weekly"}  # cae en la ventana de mañana Y en la semanal, nunca en "daily"
+    assert len(over25_lines) == 2  # 1 tomorrow + 1 weekly, nunca duplicado por la segunda corrida
 
 
 # ---------------------------------------------------------------------

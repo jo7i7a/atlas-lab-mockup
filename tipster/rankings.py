@@ -20,6 +20,12 @@ modelo nuevo, ninguna cuota/partido/cobertura inventada.
                       MISMA linea que el Director veria si abriera
                       Corners/Tiros de ese partido, no un modelo nuevo).
 
+Mañana (2026-08-22, mandato del Director): partidos cuyo kickoff cae en el
+dia calendario siguiente a "Hoy" en hora Chile -- misma formula/mercados/
+orden que Diario y Semanal, unico cambio es la ventana temporal (reutiliza
+_filter_window con start=end=mañana, sin duplicar logica). Se regenera en
+cada corrida, igual que Diario (no se congela como Semanal).
+
 Diario: partidos cuyo kickoff cae "Hoy" en hora Chile (mismo criterio que
 matchWhen()/chileDateLabel() en index.html) -- se regenera en cada corrida
 (una vez al dia).
@@ -75,6 +81,7 @@ def _hypothesis_estado_for(ranking_key: str, candidate: dict) -> str:
     hyp = matching_hypothesis(mercado, seleccion, candidate.get("probability"), motor)
     return hyp.estado.value if hyp else "SIN_EVALUAR"
 
+TOMORROW_STATE_PATH = ROOT + r"\tipster_rankings_tomorrow_estado.json"
 DAILY_STATE_PATH = ROOT + r"\tipster_rankings_daily_estado.json"
 WEEKLY_STATE_PATH = ROOT + r"\tipster_rankings_weekly_estado.json"
 HISTORY_PATH = ROOT + r"\tipster_rankings_history.jsonl"
@@ -263,6 +270,24 @@ def run(finished_event_ids_fn=None):
                     for mkt, ranked in daily_ranked.items()},
     })
 
+    # ---- Mañana (2026-08-22, mandato del Director): se regenera SIEMPRE,
+    # igual que Diario -- misma formula/mercados/orden, solo cambia la
+    # ventana a start=end=mañana. Reutiliza _filter_window (usada tambien
+    # por Semanal) en vez de duplicar la logica de _filter_daily. ----
+    tomorrow = today + _dt.timedelta(days=1)
+    tomorrow_candidates = _filter_window(candidates_by_market, tomorrow, tomorrow)
+    tomorrow_ranked = {mkt: _top10(cands) for mkt, cands in tomorrow_candidates.items()}
+    tomorrow_window_key = tomorrow.isoformat()
+    all_new_lines += _append_history("tomorrow", tomorrow_window_key, tomorrow_ranked, match_event_ids, seen_keys)
+    save_json(TOMORROW_STATE_PATH, {
+        "generated_at_utc": utc_now_iso(), "ranking_date": tomorrow_window_key,
+        "rankings": {mkt: [{"match_id": c["match_id"], "home": c["home"], "away": c["away"], "league": c["league"],
+                             "kickoff_utc": c["kickoff_utc"], "probabilidad_atlas": round(c["probability"], 4),
+                             "cuota": c.get("price"), "bookmaker": c.get("bookmaker"),
+                             "hypothesis_estado": _hypothesis_estado_for(mkt, c)} for c in ranked]
+                    for mkt, ranked in tomorrow_ranked.items()},
+    })
+
     # ---- Semanal: se congela hasta que termine el ultimo partido de la
     # ventana vigente (ver docstring) ----
     weekly_state = load_json(WEEKLY_STATE_PATH)
@@ -305,6 +330,7 @@ def run(finished_event_ids_fn=None):
                 f.write(_json.dumps(rec, ensure_ascii=False) + "\n")
 
     return {"daily_new_entries": len([l for l in all_new_lines if l["ranking_type"] == "daily"]),
+            "tomorrow_new_entries": len([l for l in all_new_lines if l["ranking_type"] == "tomorrow"]),
             "weekly_regenerated": regenerate,
             "weekly_new_entries": len([l for l in all_new_lines if l["ranking_type"] == "weekly"])}
 

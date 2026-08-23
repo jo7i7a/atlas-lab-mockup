@@ -33,6 +33,11 @@ except FileNotFoundError:
 # estado.json son opcionales por el mismo motivo -- si 11_build_rankings.py
 # fallo o no corrio todavia, esto NUNCA debe abortar el resto del pipeline.
 try:
+    with open(ROOT + r"\tipster_rankings_tomorrow_estado.json", encoding="utf-8") as f:
+        rankings_tomorrow = json.load(f)
+except FileNotFoundError:
+    rankings_tomorrow = None
+try:
     with open(ROOT + r"\tipster_rankings_daily_estado.json", encoding="utf-8") as f:
         rankings_daily = json.load(f)
 except FileNotFoundError:
@@ -165,11 +170,13 @@ out.append("   oddspapi_estado.json para el motivo exacto de cada hueco. */")
 out.append("const ODDSPAPI_DATA = " + json.dumps(oddspapi, ensure_ascii=False) + ";")
 out.append("")
 out.append("/* Rankings Tipster ATLAS (2026-08-16, ATLAS LAB Edificio 5 exclusivamente) --")
-out.append("   4 mercados (OVER25/UNDER25/BTTS/CORNERS_OVER105) x (daily/weekly), TOP 10")
-out.append("   real sin relleno artificial. daily se regenera a diario; weekly permanece")
-out.append("   congelado hasta que termine el ultimo partido de su ventana vigente -- ver")
+out.append("   4 mercados (OVER25/UNDER25/BTTS/CORNERS_OVER105) x (tomorrow/daily/weekly),")
+out.append("   TOP 10 real sin relleno artificial. tomorrow y daily se regeneran a diario")
+out.append("   (2026-08-22, mandato del Director: misma formula/mercados/orden que daily,")
+out.append("   solo cambia la ventana a 'mañana'); weekly permanece congelado hasta que")
+out.append("   termine el ultimo partido de su ventana vigente -- ver")
 out.append("   atlas_lab_mockup/tipster/rankings.py. null si el paso 11 no corrio todavia. */")
-out.append("const RANKINGS_DATA = " + json.dumps({"daily": rankings_daily, "weekly": rankings_weekly}, ensure_ascii=False) + ";")
+out.append("const RANKINGS_DATA = " + json.dumps({"tomorrow": rankings_tomorrow, "daily": rankings_daily, "weekly": rankings_weekly}, ensure_ascii=False) + ";")
 out.append("")
 out.append("/* Picks ATLAS (2026-08-16, ATLAS LAB Edificio 5 exclusivamente) -- picks")
 out.append("   activos (candidato con Value que paso el filtro de gobernanza, ver")
