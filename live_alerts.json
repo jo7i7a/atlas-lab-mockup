@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-23T15:56:48Z",
+ "generated_at_utc": "2026-08-23T15:57:38Z",
  "n_alerts": 10,
  "alerts": [
   {
@@ -219,51 +219,6 @@
    "alert_id": "b6a406a772262a61"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Newcastle United vs Liverpool FC (Premier League)",
-   "match_id": "16363246",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 24,
-   "condicion": "Liverpool FC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Liverpool FC",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 2,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-23T15:50:40Z",
-   "t_captura_utc": "2026-08-23T15:50:40Z",
-   "t_evaluacion_utc": "2026-08-23T15:56:37Z",
-   "t_generacion_utc": "2026-08-23T15:56:37Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-23T15:51:43Z",
-     "latencia_envio_ms": 816.6186809539795,
-     "error": null,
-     "message_id": 2059,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 63.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Newcastle United vs Liverpool FC\n⏱ Minuto: 24'\n📊 Marcador: 1-0\n🏆 Liga: Premier League\n\n📝 Motivo: Liverpool FC — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "2afc2bc7ecd353d3"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Le Havre vs AS Monaco (Ligue 1)",
    "match_id": "16310919",
@@ -372,6 +327,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Vitória SC vs CD Nacional\n⏱ Minuto: 62'\n📊 Marcador: 1-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: presión combinada sostenida — xG 3.26, 22 tiros totales (5 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "f0ced5bb2af31398"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Newcastle United vs Liverpool FC (Premier League)",
+   "match_id": "16363246",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "Liverpool FC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Liverpool FC",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 2,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-23T15:50:40Z",
+   "t_captura_utc": "2026-08-23T15:50:40Z",
+   "t_evaluacion_utc": "2026-08-23T15:57:38Z",
+   "t_generacion_utc": "2026-08-23T15:57:38Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-23T15:51:43Z",
+     "latencia_envio_ms": 816.6186809539795,
+     "error": null,
+     "message_id": 2059,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 63.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Newcastle United vs Liverpool FC\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: Premier League\n\n📝 Motivo: Liverpool FC — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "2afc2bc7ecd353d3"
   }
  ]
 }
