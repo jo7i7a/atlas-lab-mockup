@@ -1,41 +1,7 @@
 {
- "generated_at_utc": "2026-08-23T02:54:35Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-23T02:55:38Z",
+ "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "A3_V1_DOMINANTE_NO_GANA",
-   "match_label": "Nashville SC vs Columbus Crew (MLS)",
-   "match_id": "15171685",
-   "market": "Total de Córners (Over/Under) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 84,
-   "condicion": "Nashville SC domina en córners y entradas al tercio final en los últimos 10 min (≥2 córners Y >15 entradas) sin ir ganando, ventana 80'-84'. Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Nashville SC",
-    "lado_dominante": "home",
-    "corners_10min_home": 2,
-    "corners_10min_away": 0,
-    "entradas_10min_home": 16,
-    "entradas_10min_away": 3,
-    "marcador_en_el_momento": "1-2",
-    "reinterpretacion": "dominante_no_gana -- NO es la condición 'favorito perdiendo o empatando' del PDF original, ver ficha A3_V1_DOMINANTE_NO_GANA",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >6.5/>5.0, perfil táctico, ligas ideales, cuota favorito) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-23T02:24:44Z",
-   "t_captura_utc": "2026-08-23T02:24:44Z",
-   "t_evaluacion_utc": "2026-08-23T02:27:30Z",
-   "t_generacion_utc": "2026-08-23T02:27:30Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A3_V1_DOMINANTE_NO_GANA\n\n⚽ Nashville SC vs Columbus Crew\n⏱ Minuto: 84'\n📊 Marcador: 1-2\n🏆 Liga: MLS\n\n📝 Motivo: Nashville SC — 2 córners y 16 entradas al tercio final en los últimos 10 min, sin ir ganando (marcador 1-2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over/Under",
-   "evidencia": null,
-   "alert_id": "675d22777d8f8f47"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Austin FC vs Philadelphia Union (MLS)",
