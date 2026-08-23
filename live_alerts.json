@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-23T23:21:47Z",
- "n_alerts": 13,
+ "generated_at_utc": "2026-08-23T23:22:44Z",
+ "n_alerts": 12,
  "alerts": [
   {
    "strategy_id": "L1",
@@ -63,44 +63,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Chapecoense vs São Paulo\n⏱ Minuto: 70'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: presión combinada sostenida — xG 1.49, 28 tiros totales (8 a puerta), 6 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "9469dd4b38d2015e"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Coritiba vs Corinthians (Brasileirão Betano)",
-   "match_id": "15235437",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 35,
-   "condicion": "Corinthians acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Corinthians",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.625,
-    "touches_home": 3,
-    "touches_away": 5,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-23T22:51:59Z",
-    "t_inicio_estimado_condicion": "2026-08-23T22:51:11Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-23T22:51:59Z",
-   "t_captura_utc": "2026-08-23T23:05:37Z",
-   "t_evaluacion_utc": "2026-08-23T23:05:38Z",
-   "t_generacion_utc": "2026-08-23T23:05:38Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Coritiba vs Corinthians\n⏱ Minuto: 35'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Corinthians acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "ea2453e15970551a"
   },
   {
    "strategy_id": "L3",
@@ -331,89 +293,6 @@
    "alert_id": "cc6f11b3f7ba804d"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "River Plate vs Vélez Sarsfield (Liga Profesional de Fútbol)",
-   "match_id": "16667397",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 47,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-23T23:19:27Z",
-   "t_captura_utc": "2026-08-23T23:19:27Z",
-   "t_evaluacion_utc": "2026-08-23T23:21:29Z",
-   "t_generacion_utc": "2026-08-23T23:21:29Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-23T23:20:29Z",
-     "latencia_envio_ms": 854.8872470855713,
-     "error": null,
-     "message_id": 2126,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 62.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ River Plate vs Vélez Sarsfield\n⏱ Minuto: 47'\n📊 Marcador: 2-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "d1d242c9cd55253e"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "O'Higgins vs Palestino (Liga de Primera)",
-   "match_id": "15353105",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 21,
-   "condicion": "Palestino domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Palestino",
-    "lado_dominante": "away",
-    "trigger_disparado": "centros",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 3,
-    "remates_home": 0,
-    "remates_away": 1,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-23T23:18:22Z",
-   "t_captura_utc": "2026-08-23T23:18:22Z",
-   "t_evaluacion_utc": "2026-08-23T23:21:34Z",
-   "t_generacion_utc": "2026-08-23T23:21:34Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-23T23:19:32Z",
-     "latencia_envio_ms": 860.142707824707,
-     "error": null,
-     "message_id": 2125,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 70.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ O'Higgins vs Palestino\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Palestino — ≥3 centros al área en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "032b4cfced61ad38"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Coritiba vs Corinthians (Brasileirão Betano)",
    "match_id": "15235437",
@@ -452,12 +331,95 @@
    "alert_id": "c0a152b2fc8ee65b"
   },
   {
+   "strategy_id": "A2",
+   "match_label": "River Plate vs Vélez Sarsfield (Liga Profesional de Fútbol)",
+   "match_id": "16667397",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 48,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 2,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-08-23T23:19:27Z",
+   "t_captura_utc": "2026-08-23T23:19:27Z",
+   "t_evaluacion_utc": "2026-08-23T23:22:24Z",
+   "t_generacion_utc": "2026-08-23T23:22:24Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-23T23:20:29Z",
+     "latencia_envio_ms": 854.8872470855713,
+     "error": null,
+     "message_id": 2126,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 62.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ River Plate vs Vélez Sarsfield\n⏱ Minuto: 48'\n📊 Marcador: 2-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "d1d242c9cd55253e"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "O'Higgins vs Palestino (Liga de Primera)",
+   "match_id": "15353105",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 22,
+   "condicion": "Palestino domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Palestino",
+    "lado_dominante": "away",
+    "trigger_disparado": "centros",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 3,
+    "remates_home": 0,
+    "remates_away": 1,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-23T23:18:22Z",
+   "t_captura_utc": "2026-08-23T23:18:22Z",
+   "t_evaluacion_utc": "2026-08-23T23:22:30Z",
+   "t_generacion_utc": "2026-08-23T23:22:30Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-23T23:19:32Z",
+     "latencia_envio_ms": 860.142707824707,
+     "error": null,
+     "message_id": 2125,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 70.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ O'Higgins vs Palestino\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Palestino — ≥3 centros al área en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "032b4cfced61ad38"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "O'Higgins vs Palestino (Liga de Primera)",
    "match_id": "15353105",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 21,
+   "minuto": 22,
    "condicion": "Palestino acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -479,13 +441,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-23T23:20:52Z",
-   "t_captura_utc": "2026-08-23T23:21:46Z",
-   "t_evaluacion_utc": "2026-08-23T23:21:46Z",
-   "t_generacion_utc": "2026-08-23T23:21:46Z",
+   "t_captura_utc": "2026-08-23T23:22:42Z",
+   "t_evaluacion_utc": "2026-08-23T23:22:43Z",
+   "t_generacion_utc": "2026-08-23T23:22:43Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ O'Higgins vs Palestino\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Palestino acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ O'Higgins vs Palestino\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Palestino acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "8d7ffbcbc9c59e5a"
   }
