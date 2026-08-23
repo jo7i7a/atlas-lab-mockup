@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-23T21:27:54Z",
+ "generated_at_utc": "2026-08-23T21:28:53Z",
  "n_alerts": 12,
  "alerts": [
   {
@@ -35,44 +35,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ FC Porto vs FC Arouca\n⏱ Minuto: 68'\n📊 Marcador: 1-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: presión combinada sostenida — xG 1.34, 19 tiros totales (6 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "3b33d4a9b1454c39"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Elche vs FC Barcelona (LaLiga)",
-   "match_id": "16416311",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 66,
-   "condicion": "FC Barcelona acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "FC Barcelona",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6087,
-    "touches_home": 9,
-    "touches_away": 14,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 65,
-    "equipo_que_realizo_sustitucion": "FC Barcelona",
-    "marcador_en_el_momento": "0-2",
-    "t_primera_observacion_atlas": "2026-08-23T20:58:26Z",
-    "t_inicio_estimado_condicion": "2026-08-23T20:58:22Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-23T20:58:26Z",
-   "t_captura_utc": "2026-08-23T21:00:34Z",
-   "t_evaluacion_utc": "2026-08-23T21:00:35Z",
-   "t_generacion_utc": "2026-08-23T21:00:35Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Elche vs FC Barcelona\n⏱ Minuto: 66'\n📊 Marcador: 0-2\n🏆 Liga: LaLiga\n\n📝 Motivo: FC Barcelona acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: FC Barcelona, min 65\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "d125cd11393dc21f"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -448,7 +410,7 @@
    "match_id": "15526241",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 24,
+   "minuto": 25,
    "condicion": "Vila Nova FC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -468,8 +430,8 @@
    },
    "t_evento_real_utc": "2026-08-23T21:26:50Z",
    "t_captura_utc": "2026-08-23T21:26:50Z",
-   "t_evaluacion_utc": "2026-08-23T21:27:48Z",
-   "t_generacion_utc": "2026-08-23T21:27:48Z",
+   "t_evaluacion_utc": "2026-08-23T21:28:48Z",
+   "t_generacion_utc": "2026-08-23T21:28:48Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -483,9 +445,47 @@
    },
    "latencia_total_seg": 59.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Operário-PR vs Vila Nova FC\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Vila Nova FC — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Operário-PR vs Vila Nova FC\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Vila Nova FC — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "78bf2206b620f84b"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Operário-PR vs Vila Nova FC (Brasileirão Série B)",
+   "match_id": "15526241",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "Operário-PR acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Operário-PR",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.625,
+    "touches_home": 5,
+    "touches_away": 3,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 10,
+    "equipo_que_realizo_sustitucion": "Operário-PR",
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-23T21:28:51Z",
+    "t_inicio_estimado_condicion": "2026-08-23T21:24:21Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-23T21:28:51Z",
+   "t_captura_utc": "2026-08-23T21:28:51Z",
+   "t_evaluacion_utc": "2026-08-23T21:28:52Z",
+   "t_generacion_utc": "2026-08-23T21:28:52Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Operário-PR vs Vila Nova FC\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Operário-PR acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Operário-PR, min 10\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "e889e8132e194142"
   }
  ]
 }
