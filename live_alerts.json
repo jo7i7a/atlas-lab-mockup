@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-23T10:59:25Z",
+ "generated_at_utc": "2026-08-23T11:00:25Z",
  "n_alerts": 3,
  "alerts": [
   {
@@ -46,7 +46,7 @@
    "match_id": "16348549",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "Urawa Red Diamonds domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -66,8 +66,8 @@
    },
    "t_evento_real_utc": "2026-08-23T10:53:29Z",
    "t_captura_utc": "2026-08-23T10:53:29Z",
-   "t_evaluacion_utc": "2026-08-23T10:59:22Z",
-   "t_generacion_utc": "2026-08-23T10:59:22Z",
+   "t_evaluacion_utc": "2026-08-23T11:00:22Z",
+   "t_generacion_utc": "2026-08-23T11:00:22Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -81,7 +81,7 @@
    },
    "latencia_total_seg": 54.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Machida Zelvia vs Urawa Red Diamonds\n⏱ Minuto: 23'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n📝 Motivo: Urawa Red Diamonds — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Machida Zelvia vs Urawa Red Diamonds\n⏱ Minuto: 24'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n📝 Motivo: Urawa Red Diamonds — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "9de536e83bcfecde"
   },
@@ -91,7 +91,7 @@
    "match_id": "16316780",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 45,
    "condicion": "Go Ahead Eagles acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -103,9 +103,9 @@
     "ratio_presion_territorial": 0.7391,
     "touches_home": 17,
     "touches_away": 6,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 44,
+    "equipo_que_realizo_sustitucion": "Go Ahead Eagles",
     "marcador_en_el_momento": "1-0",
     "t_primera_observacion_atlas": "2026-08-23T10:35:31Z",
     "t_inicio_estimado_condicion": "2026-08-23T10:35:39Z",
@@ -113,13 +113,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-23T10:35:31Z",
-   "t_captura_utc": "2026-08-23T10:59:25Z",
-   "t_evaluacion_utc": "2026-08-23T10:59:25Z",
-   "t_generacion_utc": "2026-08-23T10:59:25Z",
+   "t_captura_utc": "2026-08-23T11:00:25Z",
+   "t_evaluacion_utc": "2026-08-23T11:00:25Z",
+   "t_generacion_utc": "2026-08-23T11:00:25Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Go Ahead Eagles vs ADO Den Haag\n⏱ Minuto: 44'\n📊 Marcador: 1-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Go Ahead Eagles acumula 74% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Go Ahead Eagles vs ADO Den Haag\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Go Ahead Eagles acumula 74% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Go Ahead Eagles, min 44\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "19879d358a07c466"
   }
