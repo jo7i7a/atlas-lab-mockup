@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-23T18:48:45Z",
+ "generated_at_utc": "2026-08-23T18:49:30Z",
  "n_alerts": 6,
  "alerts": [
   {
@@ -142,51 +142,6 @@
    "alert_id": "fc0683e11da4a941"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Göztepe vs Gençlerbirliği (Trendyol Süper Lig)",
-   "match_id": "16483645",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 16,
-   "condicion": "Gençlerbirliği domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Gençlerbirliği",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 1,
-    "remates_home": 1,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-23T18:47:38Z",
-   "t_captura_utc": "2026-08-23T18:47:38Z",
-   "t_evaluacion_utc": "2026-08-23T18:48:30Z",
-   "t_generacion_utc": "2026-08-23T18:48:30Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-23T18:48:31Z",
-     "latencia_envio_ms": 823.9178657531738,
-     "error": null,
-     "message_id": 2081,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 53.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Göztepe vs Gençlerbirliği\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Gençlerbirliği — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "1ae19dfad2fe3533"
-  },
-  {
    "strategy_id": "H3_PERSISTENCIA_TIROS_INVESTIGACION",
    "match_label": "Göztepe vs Gençlerbirliği (Trendyol Süper Lig)",
    "match_id": "16483645",
@@ -227,6 +182,51 @@
    "mensaje_custom": "🟣 H3 — INVESTIGACIÓN LIVE (Persistencia de tiros)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Göztepe vs Gençlerbirliği\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nTiros a puerta (ambos equipos) por tramo:\n  min 1-5: 3\n  min 6-10: 1\n  min 11-15: 4\n\n🏆 Liga: Trendyol Süper Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "9bb8874a65d63d58"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Göztepe vs Gençlerbirliği (Trendyol Süper Lig)",
+   "match_id": "16483645",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "Gençlerbirliği domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Gençlerbirliği",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 1,
+    "remates_home": 1,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-23T18:47:38Z",
+   "t_captura_utc": "2026-08-23T18:47:38Z",
+   "t_evaluacion_utc": "2026-08-23T18:49:30Z",
+   "t_generacion_utc": "2026-08-23T18:49:30Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-23T18:48:31Z",
+     "latencia_envio_ms": 823.9178657531738,
+     "error": null,
+     "message_id": 2081,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 53.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Göztepe vs Gençlerbirliği\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Gençlerbirliği — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "1ae19dfad2fe3533"
   }
  ]
 }
