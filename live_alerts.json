@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-23T18:43:28Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-08-23T18:47:42Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -140,6 +140,48 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Santa Clara vs Famalicão\n⏱ Minuto: 85'\n📊 Marcador: 1-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Santa Clara acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Santa Clara, min 74\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "fc0683e11da4a941"
+  },
+  {
+   "strategy_id": "H3_PERSISTENCIA_TIROS_INVESTIGACION",
+   "match_label": "Göztepe vs Gençlerbirliği (Trendyol Süper Lig)",
+   "match_id": "16483645",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 16,
+   "condicion": "0-0 en minuto 15 con tiros a puerta combinados>0 en cada tramo 1-5/6-10/11-15 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "shots_on_goal_tramo1_1_5": 3.0,
+    "shots_on_goal_tramo2_6_10": 1.0,
+    "shots_on_goal_tramo3_11_15": 4.0,
+    "shots_on_goal_total15": 8.0,
+    "marcador_min15": "0-0",
+    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
+    "hipotesis": "H3_PERSISTENCIA_TIROS -- INVESTIGACION, NO estrategia certificada"
+   },
+   "t_evento_real_utc": "2026-08-23T18:46:34Z",
+   "t_captura_utc": "2026-08-23T18:46:34Z",
+   "t_evaluacion_utc": "2026-08-23T18:47:41Z",
+   "t_generacion_utc": "2026-08-23T18:47:41Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-23T18:47:42Z",
+     "latencia_envio_ms": 896.8830108642578,
+     "error": null,
+     "message_id": 2080,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 68.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟣 H3 — INVESTIGACIÓN LIVE (Persistencia de tiros)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Göztepe vs Gençlerbirliği\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nTiros a puerta (ambos equipos) por tramo:\n  min 1-5: 3\n  min 6-10: 1\n  min 11-15: 4\n\n🏆 Liga: Trendyol Süper Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "9bb8874a65d63d58"
   }
  ]
 }
