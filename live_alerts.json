@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-23T14:06:35Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-08-23T14:07:37Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -104,7 +104,7 @@
    "match_id": "16363236",
    "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 46,
    "condicion": "Expulsión de Aston Villa (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
    "confianza": "Media",
    "link": "",
@@ -116,15 +116,53 @@
     "total_rojas_partido": 1
    },
    "t_evento_real_utc": "2026-08-23T13:40:52Z",
-   "t_captura_utc": "2026-08-23T14:05:59Z",
-   "t_evaluacion_utc": "2026-08-23T14:06:21Z",
-   "t_generacion_utc": "2026-08-23T14:06:21Z",
+   "t_captura_utc": "2026-08-23T14:07:03Z",
+   "t_evaluacion_utc": "2026-08-23T14:07:24Z",
+   "t_generacion_utc": "2026-08-23T14:07:24Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Brighton & Hove Albion vs Aston Villa\n⏱ Minuto: 45'\n📊 Marcador: 4-0\n🏆 Liga: Premier League\n\n🟥 Expulsado: Aston Villa\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
+   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Brighton & Hove Albion vs Aston Villa\n⏱ Minuto: 46'\n📊 Marcador: 4-0\n🏆 Liga: Premier League\n\n🟥 Expulsado: Aston Villa\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
    "evidencia": null,
    "alert_id": "9d2b767b270c1df6"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Brighton & Hove Albion vs Aston Villa (Premier League)",
+   "match_id": "16363236",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 47,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 1,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-08-23T14:05:59Z",
+   "t_captura_utc": "2026-08-23T14:05:59Z",
+   "t_evaluacion_utc": "2026-08-23T14:07:29Z",
+   "t_generacion_utc": "2026-08-23T14:07:29Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-23T14:07:30Z",
+     "latencia_envio_ms": 822.9961395263672,
+     "error": null,
+     "message_id": 2053,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 91.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Brighton & Hove Albion vs Aston Villa\n⏱ Minuto: 47'\n📊 Marcador: 4-0\n🏆 Liga: Premier League\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "e2f9e651040ab362"
   }
  ]
 }
