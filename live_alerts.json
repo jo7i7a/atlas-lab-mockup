@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-23T03:51:34Z",
+ "generated_at_utc": "2026-08-23T03:52:32Z",
  "n_alerts": 6,
  "alerts": [
   {
@@ -117,82 +117,6 @@
    "alert_id": "8b8627a8ba7f288a"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "San Diego FC vs Colorado Rapids (MLS)",
-   "match_id": "15171674",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 50,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 0,
-    "corners_1t_total": 1
-   },
-   "t_evento_real_utc": "2026-08-23T03:45:59Z",
-   "t_captura_utc": "2026-08-23T03:45:59Z",
-   "t_evaluacion_utc": "2026-08-23T03:51:26Z",
-   "t_generacion_utc": "2026-08-23T03:51:26Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-23T03:48:01Z",
-     "latencia_envio_ms": 845.9916114807129,
-     "error": null,
-     "message_id": 2039,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 122.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ San Diego FC vs Colorado Rapids\n⏱ Minuto: 50'\n📊 Marcador: 2-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "f29d915a933cab53"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "San Jose Earthquakes vs Minnesota United (MLS)",
-   "match_id": "15171675",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 50,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-23T03:47:01Z",
-   "t_captura_utc": "2026-08-23T03:47:01Z",
-   "t_evaluacion_utc": "2026-08-23T03:51:27Z",
-   "t_generacion_utc": "2026-08-23T03:51:27Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-23T03:48:02Z",
-     "latencia_envio_ms": 820.6477165222168,
-     "error": null,
-     "message_id": 2040,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 61.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ San Jose Earthquakes vs Minnesota United\n⏱ Minuto: 50'\n📊 Marcador: 1-3\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "95d7a76c99548d01"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Cruz Azul vs Atlas FC (Liga MX, Apertura)",
    "match_id": "16317898",
@@ -229,6 +153,82 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Cruz Azul vs Atlas FC\n⏱ Minuto: 49'\n📊 Marcador: 0-2\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Atlas FC acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "67efc4d5a2765e23"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "San Diego FC vs Colorado Rapids (MLS)",
+   "match_id": "15171674",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 51,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 0,
+    "corners_1t_total": 1
+   },
+   "t_evento_real_utc": "2026-08-23T03:45:59Z",
+   "t_captura_utc": "2026-08-23T03:45:59Z",
+   "t_evaluacion_utc": "2026-08-23T03:52:25Z",
+   "t_generacion_utc": "2026-08-23T03:52:25Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-23T03:48:01Z",
+     "latencia_envio_ms": 845.9916114807129,
+     "error": null,
+     "message_id": 2039,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 122.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ San Diego FC vs Colorado Rapids\n⏱ Minuto: 51'\n📊 Marcador: 2-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "f29d915a933cab53"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "San Jose Earthquakes vs Minnesota United (MLS)",
+   "match_id": "15171675",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 51,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 2,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-08-23T03:47:01Z",
+   "t_captura_utc": "2026-08-23T03:47:01Z",
+   "t_evaluacion_utc": "2026-08-23T03:52:25Z",
+   "t_generacion_utc": "2026-08-23T03:52:25Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-23T03:48:02Z",
+     "latencia_envio_ms": 820.6477165222168,
+     "error": null,
+     "message_id": 2040,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 61.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ San Jose Earthquakes vs Minnesota United\n⏱ Minuto: 51'\n📊 Marcador: 1-3\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "95d7a76c99548d01"
   }
  ]
 }
