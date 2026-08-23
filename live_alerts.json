@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-23T23:25:54Z",
+ "generated_at_utc": "2026-08-23T23:27:57Z",
  "n_alerts": 11,
  "alerts": [
   {
@@ -297,44 +297,6 @@
    "alert_id": "c0a152b2fc8ee65b"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "River Plate vs Vélez Sarsfield (Liga Profesional de Fútbol)",
-   "match_id": "16667397",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 51,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-23T23:19:27Z",
-   "t_captura_utc": "2026-08-23T23:19:27Z",
-   "t_evaluacion_utc": "2026-08-23T23:25:27Z",
-   "t_generacion_utc": "2026-08-23T23:25:27Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-23T23:20:29Z",
-     "latencia_envio_ms": 854.8872470855713,
-     "error": null,
-     "message_id": 2126,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 62.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ River Plate vs Vélez Sarsfield\n⏱ Minuto: 51'\n📊 Marcador: 2-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "d1d242c9cd55253e"
-  },
-  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "O'Higgins vs Palestino (Liga de Primera)",
    "match_id": "15353105",
@@ -380,12 +342,50 @@
    "alert_id": "032b4cfced61ad38"
   },
   {
+   "strategy_id": "A2",
+   "match_label": "River Plate vs Vélez Sarsfield (Liga Profesional de Fútbol)",
+   "match_id": "16667397",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 52,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 2,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-08-23T23:19:27Z",
+   "t_captura_utc": "2026-08-23T23:19:27Z",
+   "t_evaluacion_utc": "2026-08-23T23:26:26Z",
+   "t_generacion_utc": "2026-08-23T23:26:26Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-23T23:20:29Z",
+     "latencia_envio_ms": 854.8872470855713,
+     "error": null,
+     "message_id": 2126,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 62.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ River Plate vs Vélez Sarsfield\n⏱ Minuto: 52'\n📊 Marcador: 2-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "d1d242c9cd55253e"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "O'Higgins vs Palestino (Liga de Primera)",
    "match_id": "15353105",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 25,
+   "minuto": 28,
    "condicion": "Palestino acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -407,13 +407,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-23T23:20:52Z",
-   "t_captura_utc": "2026-08-23T23:25:52Z",
-   "t_evaluacion_utc": "2026-08-23T23:25:52Z",
-   "t_generacion_utc": "2026-08-23T23:25:52Z",
+   "t_captura_utc": "2026-08-23T23:27:55Z",
+   "t_evaluacion_utc": "2026-08-23T23:27:56Z",
+   "t_generacion_utc": "2026-08-23T23:27:56Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ O'Higgins vs Palestino\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Palestino acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ O'Higgins vs Palestino\n⏱ Minuto: 28'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Palestino acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "8d7ffbcbc9c59e5a"
   }
