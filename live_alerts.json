@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-23T11:42:32Z",
+ "generated_at_utc": "2026-08-23T11:43:33Z",
  "n_alerts": 5,
  "alerts": [
   {
@@ -118,7 +118,7 @@
    "match_id": "16348549",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 46,
+   "minuto": 47,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -131,8 +131,8 @@
    },
    "t_evento_real_utc": "2026-08-23T11:42:15Z",
    "t_captura_utc": "2026-08-23T11:42:15Z",
-   "t_evaluacion_utc": "2026-08-23T11:42:25Z",
-   "t_generacion_utc": "2026-08-23T11:42:25Z",
+   "t_evaluacion_utc": "2026-08-23T11:43:26Z",
+   "t_generacion_utc": "2026-08-23T11:43:26Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -146,7 +146,7 @@
    },
    "latencia_total_seg": 10.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Machida Zelvia vs Urawa Red Diamonds\n⏱ Minuto: 46'\n📊 Marcador: 1-1\n🏆 Liga: J1 League\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 3\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Machida Zelvia vs Urawa Red Diamonds\n⏱ Minuto: 47'\n📊 Marcador: 1-1\n🏆 Liga: J1 League\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 3\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "15fd57548deb1ef2"
   },
@@ -156,7 +156,7 @@
    "match_id": "16391156",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 42,
+   "minuto": 43,
    "condicion": "West Bromwich Albion acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -165,9 +165,9 @@
    "extra": {
     "equipo_dominante": "West Bromwich Albion",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 6,
-    "touches_away": 3,
+    "ratio_presion_territorial": 0.6364,
+    "touches_home": 7,
+    "touches_away": 4,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 33,
     "equipo_que_realizo_sustitucion": "West Bromwich Albion",
@@ -178,13 +178,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-23T11:33:24Z",
-   "t_captura_utc": "2026-08-23T11:42:32Z",
-   "t_evaluacion_utc": "2026-08-23T11:42:32Z",
-   "t_generacion_utc": "2026-08-23T11:42:32Z",
+   "t_captura_utc": "2026-08-23T11:43:33Z",
+   "t_evaluacion_utc": "2026-08-23T11:43:33Z",
+   "t_generacion_utc": "2026-08-23T11:43:33Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ West Bromwich Albion vs Burnley\n⏱ Minuto: 42'\n📊 Marcador: 1-1\n🏆 Liga: Championship\n\n📝 Motivo: West Bromwich Albion acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: West Bromwich Albion, min 33\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ West Bromwich Albion vs Burnley\n⏱ Minuto: 43'\n📊 Marcador: 1-1\n🏆 Liga: Championship\n\n📝 Motivo: West Bromwich Albion acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: West Bromwich Albion, min 33\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "94415d032ad841df"
   }
