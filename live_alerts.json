@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-23T11:41:30Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-08-23T11:42:32Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -113,12 +113,50 @@
    "alert_id": "2686b03f48253f71"
   },
   {
+   "strategy_id": "A2",
+   "match_label": "Machida Zelvia vs Urawa Red Diamonds (J1 League)",
+   "match_id": "16348549",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 0,
+    "corners_1t_away": 3,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-08-23T11:42:15Z",
+   "t_captura_utc": "2026-08-23T11:42:15Z",
+   "t_evaluacion_utc": "2026-08-23T11:42:25Z",
+   "t_generacion_utc": "2026-08-23T11:42:25Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-23T11:42:25Z",
+     "latencia_envio_ms": 841.9106006622314,
+     "error": null,
+     "message_id": 2043,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 10.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Machida Zelvia vs Urawa Red Diamonds\n⏱ Minuto: 46'\n📊 Marcador: 1-1\n🏆 Liga: J1 League\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 3\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "15fd57548deb1ef2"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "West Bromwich Albion vs Burnley (Championship)",
    "match_id": "16391156",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 41,
+   "minuto": 42,
    "condicion": "West Bromwich Albion acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -140,13 +178,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-23T11:33:24Z",
-   "t_captura_utc": "2026-08-23T11:41:30Z",
-   "t_evaluacion_utc": "2026-08-23T11:41:30Z",
-   "t_generacion_utc": "2026-08-23T11:41:30Z",
+   "t_captura_utc": "2026-08-23T11:42:32Z",
+   "t_evaluacion_utc": "2026-08-23T11:42:32Z",
+   "t_generacion_utc": "2026-08-23T11:42:32Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ West Bromwich Albion vs Burnley\n⏱ Minuto: 41'\n📊 Marcador: 1-1\n🏆 Liga: Championship\n\n📝 Motivo: West Bromwich Albion acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: West Bromwich Albion, min 33\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ West Bromwich Albion vs Burnley\n⏱ Minuto: 42'\n📊 Marcador: 1-1\n🏆 Liga: Championship\n\n📝 Motivo: West Bromwich Albion acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: West Bromwich Albion, min 33\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "94415d032ad841df"
   }
