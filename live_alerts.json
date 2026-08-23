@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-23T16:50:57Z",
+ "generated_at_utc": "2026-08-23T16:51:38Z",
  "n_alerts": 18,
  "alerts": [
   {
@@ -580,51 +580,6 @@
    "alert_id": "cd7450a9b566aae5"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Venezia vs Lecce (Serie A)",
-   "match_id": "16283047",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 17,
-   "condicion": "Venezia domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Venezia",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-23T16:49:27Z",
-   "t_captura_utc": "2026-08-23T16:49:27Z",
-   "t_evaluacion_utc": "2026-08-23T16:50:40Z",
-   "t_generacion_utc": "2026-08-23T16:50:40Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-23T16:50:41Z",
-     "latencia_envio_ms": 843.944787979126,
-     "error": null,
-     "message_id": 2069,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 74.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Venezia vs Lecce\n⏱ Minuto: 17'\n📊 Marcador: 1-0\n🏆 Liga: Serie A\n\n📝 Motivo: Venezia — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "05de90546712ea92"
-  },
-  {
    "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
    "match_label": "Venezia vs Lecce (Serie A)",
    "match_id": "16283047",
@@ -666,6 +621,51 @@
    "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Venezia vs Lecce\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 5-3 (total 8)\nRatio de diferencia home-away: 0.25 (umbral <= 0.33)\n\n🏆 Liga: Serie A\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "6c05dae6ad94f36e"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Venezia vs Lecce (Serie A)",
+   "match_id": "16283047",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "Venezia domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Venezia",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-23T16:49:27Z",
+   "t_captura_utc": "2026-08-23T16:49:27Z",
+   "t_evaluacion_utc": "2026-08-23T16:51:28Z",
+   "t_generacion_utc": "2026-08-23T16:51:28Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-23T16:50:41Z",
+     "latencia_envio_ms": 843.944787979126,
+     "error": null,
+     "message_id": 2069,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 74.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Venezia vs Lecce\n⏱ Minuto: 17'\n📊 Marcador: 1-0\n🏆 Liga: Serie A\n\n📝 Motivo: Venezia — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "05de90546712ea92"
   }
  ]
 }
