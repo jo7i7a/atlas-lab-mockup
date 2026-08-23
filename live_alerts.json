@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-23T20:36:46Z",
+ "generated_at_utc": "2026-08-23T20:37:43Z",
  "n_alerts": 14,
  "alerts": [
   {
@@ -433,35 +433,6 @@
    "alert_id": "e8050e086da3a35a"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Club Atlético Belgrano vs Defensa y Justicia (Liga Profesional de Fútbol)",
-   "match_id": "16667395",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 36,
-   "condicion": "4 córners totales antes del min 45 (4-0), Club Atlético Belgrano presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Defensa y Justicia NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Club Atlético Belgrano",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-23T20:30:38Z",
-   "t_captura_utc": "2026-08-23T20:30:38Z",
-   "t_evaluacion_utc": "2026-08-23T20:36:12Z",
-   "t_generacion_utc": "2026-08-23T20:36:12Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Club Atlético Belgrano vs Defensa y Justicia\n⏱ Minuto: 36'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Club Atlético Belgrano presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Defensa y Justicia no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "0955693159391a73"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Club Atlético Belgrano vs Defensa y Justicia (Liga Profesional de Fútbol)",
    "match_id": "16667395",
@@ -498,6 +469,35 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Atlético Belgrano vs Defensa y Justicia\n⏱ Minuto: 37'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Belgrano acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Club Atlético Belgrano, min 34\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "25753f7027a3ca0e"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Club Atlético Belgrano vs Defensa y Justicia (Liga Profesional de Fútbol)",
+   "match_id": "16667395",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 37,
+   "condicion": "4 córners totales antes del min 45 (4-0), Club Atlético Belgrano presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Defensa y Justicia NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Club Atlético Belgrano",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-23T20:30:38Z",
+   "t_captura_utc": "2026-08-23T20:30:38Z",
+   "t_evaluacion_utc": "2026-08-23T20:37:11Z",
+   "t_generacion_utc": "2026-08-23T20:37:11Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Club Atlético Belgrano vs Defensa y Justicia\n⏱ Minuto: 37'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Club Atlético Belgrano presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Defensa y Justicia no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "0955693159391a73"
   }
  ]
 }
