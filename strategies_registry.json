@@ -685,22 +685,22 @@
     }
    ],
    "casos_observados": 0,
-   "casos_verificados": 29,
+   "casos_verificados": 30,
    "aciertos": 0,
    "fallos": 0,
    "roi": null,
    "clv": null,
    "nivel_evidencia": "NINGUNA. Línea prospectiva pura: no hay backtest ni evidencia histórica -- la muestra se construye desde cero.",
    "fecha_creacion_utc": "2026-08-09",
-   "ultima_actualizacion_utc": "2026-08-23T01:08:03Z",
-   "proximo_hito": "Acumular hasta N=30 verificaciones reales contra Betano (gate de abandono ya definido).",
+   "ultima_actualizacion_utc": "2026-08-23T01:09:03Z",
+   "proximo_hito": "Umbral de 30 verificaciones alcanzado (N=30, 100.0% operable) -- cumple el criterio del Director (>=80-90%). Pasar a diseño de estrategia de stake y gestión de riesgo antes de avanzar a CERTIFICADA.",
    "metricas_fase4": {
     "pct_operable": 100.0,
-    "n_operable": 29,
+    "n_operable": 30,
     "n_no_operable": 0,
     "clv_promedio": null,
     "tiempo_medio_disponible_seg": null,
-    "n_muestra": 29
+    "n_muestra": 30
    },
    "alertas_live_historial": 92
   },
