@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-23T18:50:45Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-23T18:51:53Z",
+ "n_alerts": 7,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -146,12 +146,50 @@
    "alert_id": "cda3120108321a49"
   },
   {
+   "strategy_id": "A2",
+   "match_label": "Sarmiento vs Estudiantes de La Plata (Liga Profesional de Fútbol)",
+   "match_id": "16667398",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 1,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-08-23T18:50:30Z",
+   "t_captura_utc": "2026-08-23T18:50:30Z",
+   "t_evaluacion_utc": "2026-08-23T18:51:33Z",
+   "t_generacion_utc": "2026-08-23T18:51:33Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-23T18:51:33Z",
+     "latencia_envio_ms": 838.693380355835,
+     "error": null,
+     "message_id": 2085,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 63.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Sarmiento vs Estudiantes de La Plata\n⏱ Minuto: 46'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "f629837285d019a0"
+  },
+  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Göztepe vs Gençlerbirliği (Trendyol Süper Lig)",
    "match_id": "16483645",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 18,
+   "minuto": 19,
    "condicion": "Gençlerbirliği domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -171,8 +209,8 @@
    },
    "t_evento_real_utc": "2026-08-23T18:47:38Z",
    "t_captura_utc": "2026-08-23T18:47:38Z",
-   "t_evaluacion_utc": "2026-08-23T18:50:33Z",
-   "t_generacion_utc": "2026-08-23T18:50:33Z",
+   "t_evaluacion_utc": "2026-08-23T18:51:37Z",
+   "t_generacion_utc": "2026-08-23T18:51:37Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -186,9 +224,47 @@
    },
    "latencia_total_seg": 53.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Göztepe vs Gençlerbirliği\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Gençlerbirliği — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Göztepe vs Gençlerbirliği\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Gençlerbirliği — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "1ae19dfad2fe3533"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Göztepe vs Gençlerbirliği (Trendyol Süper Lig)",
+   "match_id": "16483645",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 20,
+   "condicion": "Göztepe acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Göztepe",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6667,
+    "touches_home": 6,
+    "touches_away": 3,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-23T18:51:51Z",
+    "t_inicio_estimado_condicion": null,
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-23T18:51:51Z",
+   "t_captura_utc": "2026-08-23T18:51:51Z",
+   "t_evaluacion_utc": "2026-08-23T18:51:51Z",
+   "t_generacion_utc": "2026-08-23T18:51:51Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Göztepe vs Gençlerbirliği\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Göztepe acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "daab2e31b06c2a92"
   }
  ]
 }
