@@ -1,90 +1,7 @@
 {
- "generated_at_utc": "2026-08-23T16:46:59Z",
+ "generated_at_utc": "2026-08-23T16:49:41Z",
  "n_alerts": 18,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "SC Cambuur vs Feyenoord (VriendenLoterij Eredivisie)",
-   "match_id": "16316773",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 51,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-23T16:19:27Z",
-   "t_captura_utc": "2026-08-23T16:19:27Z",
-   "t_evaluacion_utc": "2026-08-23T16:25:32Z",
-   "t_generacion_utc": "2026-08-23T16:25:32Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-23T16:20:27Z",
-     "latencia_envio_ms": 807.7166080474854,
-     "error": null,
-     "message_id": 2062,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 60.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ SC Cambuur vs Feyenoord\n⏱ Minuto: 51'\n📊 Marcador: 0-4\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "e6a6b2246d73a7cd"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Eyüpspor vs Gaziantep FK (Trendyol Süper Lig)",
-   "match_id": "16483643",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 24,
-   "condicion": "Gaziantep FK domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Gaziantep FK",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 1,
-    "remates_home": 0,
-    "remates_away": 3,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-23T16:19:27Z",
-   "t_captura_utc": "2026-08-23T16:19:27Z",
-   "t_evaluacion_utc": "2026-08-23T16:25:54Z",
-   "t_generacion_utc": "2026-08-23T16:25:54Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-23T16:19:39Z",
-     "latencia_envio_ms": 837.8806114196777,
-     "error": null,
-     "message_id": 2061,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 12.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Eyüpspor vs Gaziantep FK\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Gaziantep FK — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "7d932cd96d83a1d8"
-  },
   {
    "strategy_id": "A2",
    "match_label": "Le Havre vs AS Monaco (Ligue 1)",
@@ -583,7 +500,7 @@
    "match_id": "15353102",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 48,
    "condicion": "Deportes Concepción acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -592,8 +509,8 @@
    "extra": {
     "equipo_dominante": "Deportes Concepción",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6111,
-    "touches_home": 11,
+    "ratio_presion_territorial": 0.6316,
+    "touches_home": 12,
     "touches_away": 7,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
@@ -605,13 +522,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-23T16:43:42Z",
-   "t_captura_utc": "2026-08-23T16:46:52Z",
-   "t_evaluacion_utc": "2026-08-23T16:46:52Z",
-   "t_generacion_utc": "2026-08-23T16:46:52Z",
+   "t_captura_utc": "2026-08-23T16:49:23Z",
+   "t_evaluacion_utc": "2026-08-23T16:49:24Z",
+   "t_generacion_utc": "2026-08-23T16:49:24Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportes Concepción vs Coquimbo Unido\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Deportes Concepción acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportes Concepción vs Coquimbo Unido\n⏱ Minuto: 48'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Deportes Concepción acumula 63% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "54e5294251392a68"
   },
@@ -621,7 +538,7 @@
    "match_id": "15353106",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 47,
+   "minuto": 49,
    "condicion": "Deportes La Serena acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -643,15 +560,101 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-23T16:46:53Z",
-   "t_captura_utc": "2026-08-23T16:46:53Z",
-   "t_evaluacion_utc": "2026-08-23T16:46:54Z",
-   "t_generacion_utc": "2026-08-23T16:46:54Z",
+   "t_captura_utc": "2026-08-23T16:49:25Z",
+   "t_evaluacion_utc": "2026-08-23T16:49:26Z",
+   "t_generacion_utc": "2026-08-23T16:49:26Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportes La Serena vs Cobresal\n⏱ Minuto: 47'\n📊 Marcador: 1-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Deportes La Serena acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportes La Serena vs Cobresal\n⏱ Minuto: 49'\n📊 Marcador: 1-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Deportes La Serena acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "af20ace13820c30f"
+  },
+  {
+   "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
+   "match_label": "Venezia vs Lecce (Serie A)",
+   "match_id": "16283047",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 16,
+   "condicion": "0-0 en minuto 15 con touchesInOppBox_tot15>=4.0 y |diff home-away|/total<=0.33 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "touches_home": 5.0,
+    "touches_away": 3.0,
+    "touches_total": 8.0,
+    "ratio_diff_home_away": 0.25,
+    "minuto_captura_usada": 14.77,
+    "marcador_min15": "0-0",
+    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
+    "hipotesis": "H2_PRESION_BILATERAL -- INVESTIGACION, NO estrategia certificada"
+   },
+   "t_evento_real_utc": "2026-08-23T16:48:17Z",
+   "t_captura_utc": "2026-08-23T16:48:17Z",
+   "t_evaluacion_utc": "2026-08-23T16:49:38Z",
+   "t_generacion_utc": "2026-08-23T16:49:38Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-23T16:49:39Z",
+     "latencia_envio_ms": 847.130537033081,
+     "error": null,
+     "message_id": 2067,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 82.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Venezia vs Lecce\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 5-3 (total 8)\nRatio de diferencia home-away: 0.25 (umbral <= 0.33)\n\n🏆 Liga: Serie A\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "6c05dae6ad94f36e"
+  },
+  {
+   "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
+   "match_label": "Frosinone vs Juventus (Serie A)",
+   "match_id": "16283048",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "0-0 en minuto 15 con touchesInOppBox_tot15>=4.0 y |diff home-away|/total<=0.33 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "touches_home": 4.0,
+    "touches_away": 6.0,
+    "touches_total": 10.0,
+    "ratio_diff_home_away": 0.2,
+    "minuto_captura_usada": 14.88,
+    "marcador_min15": "0-0",
+    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
+    "hipotesis": "H2_PRESION_BILATERAL -- INVESTIGACION, NO estrategia certificada"
+   },
+   "t_evento_real_utc": "2026-08-23T16:47:32Z",
+   "t_captura_utc": "2026-08-23T16:47:32Z",
+   "t_evaluacion_utc": "2026-08-23T16:49:40Z",
+   "t_generacion_utc": "2026-08-23T16:49:40Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-23T16:49:41Z",
+     "latencia_envio_ms": 787.6176834106445,
+     "error": null,
+     "message_id": 2068,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 129.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Frosinone vs Juventus\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 4-6 (total 10)\nRatio de diferencia home-away: 0.20 (umbral <= 0.33)\n\n🏆 Liga: Serie A\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "cd7450a9b566aae5"
   }
  ]
 }
