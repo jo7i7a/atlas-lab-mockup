@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-23T17:38:27Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-23T17:39:39Z",
+ "n_alerts": 7,
  "alerts": [
   {
    "strategy_id": "L1-SHADOW",
@@ -143,34 +143,6 @@
    "alert_id": "48aab7e6f00b427f"
   },
   {
-   "strategy_id": "L3",
-   "match_label": "Deportes Concepción vs Coquimbo Unido (Liga de Primera)",
-   "match_id": "15353102",
-   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
-   "cuota_detectada": null,
-   "minuto": 75,
-   "condicion": "Expulsión de Coquimbo Unido (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_expulsado": "Coquimbo Unido",
-    "marcador_al_detectar": "1-1",
-    "total_rojas_partido": 1
-   },
-   "t_evento_real_utc": "2026-08-23T17:09:03Z",
-   "t_captura_utc": "2026-08-23T17:35:08Z",
-   "t_evaluacion_utc": "2026-08-23T17:35:23Z",
-   "t_generacion_utc": "2026-08-23T17:35:23Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Deportes Concepción vs Coquimbo Unido\n⏱ Minuto: 75'\n📊 Marcador: 1-1\n🏆 Liga: Liga de Primera\n\n🟥 Expulsado: Coquimbo Unido\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
-   "evidencia": null,
-   "alert_id": "242018bfa5b6c5bb"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Santa Clara vs Famalicão (Liga Portugal Betclic)",
    "match_id": "16450764",
@@ -214,7 +186,7 @@
    "match_id": "15353102",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 78,
+   "minuto": 79,
    "condicion": "Deportes Concepción acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -223,9 +195,9 @@
    "extra": {
     "equipo_dominante": "Deportes Concepción",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6667,
+    "ratio_presion_territorial": 0.625,
     "touches_home": 20,
-    "touches_away": 10,
+    "touches_away": 12,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 75,
     "equipo_que_realizo_sustitucion": "Deportes Concepción",
@@ -236,13 +208,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-23T17:32:31Z",
-   "t_captura_utc": "2026-08-23T17:38:24Z",
-   "t_evaluacion_utc": "2026-08-23T17:38:25Z",
-   "t_generacion_utc": "2026-08-23T17:38:25Z",
+   "t_captura_utc": "2026-08-23T17:39:35Z",
+   "t_evaluacion_utc": "2026-08-23T17:39:36Z",
+   "t_generacion_utc": "2026-08-23T17:39:36Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportes Concepción vs Coquimbo Unido\n⏱ Minuto: 78'\n📊 Marcador: 1-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Deportes Concepción acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Deportes Concepción, min 75\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportes Concepción vs Coquimbo Unido\n⏱ Minuto: 79'\n📊 Marcador: 1-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Deportes Concepción acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Deportes Concepción, min 75\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "285a14cb85206ac2"
   },
@@ -252,7 +224,7 @@
    "match_id": "16483648",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 76,
+   "minuto": 77,
    "condicion": "Trabzonspor acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -274,13 +246,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-23T17:18:31Z",
-   "t_captura_utc": "2026-08-23T17:38:26Z",
-   "t_evaluacion_utc": "2026-08-23T17:38:27Z",
-   "t_generacion_utc": "2026-08-23T17:38:27Z",
+   "t_captura_utc": "2026-08-23T17:39:39Z",
+   "t_evaluacion_utc": "2026-08-23T17:39:39Z",
+   "t_generacion_utc": "2026-08-23T17:39:39Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Trabzonspor vs Başakşehir FK\n⏱ Minuto: 76'\n📊 Marcador: 2-1\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Trabzonspor acumula 77% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Trabzonspor, min 70\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Trabzonspor vs Başakşehir FK\n⏱ Minuto: 77'\n📊 Marcador: 2-1\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Trabzonspor acumula 77% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Trabzonspor, min 70\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "356df2ed0b1ad983"
   }
