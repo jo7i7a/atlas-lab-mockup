@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-23T12:19:42Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-08-23T12:20:44Z",
+ "n_alerts": 2,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -39,6 +39,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ West Bromwich Albion vs Burnley\n⏱ Minuto: 52'\n📊 Marcador: 2-1\n🏆 Liga: Championship\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "5415b1b3dbe14078"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "IFK Göteborg vs IF Elfsborg (Allsvenskan)",
+   "match_id": "15271353",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 20,
+   "condicion": "IFK Göteborg domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "IFK Göteborg",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 1,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-23T12:19:50Z",
+   "t_captura_utc": "2026-08-23T12:19:50Z",
+   "t_evaluacion_utc": "2026-08-23T12:20:30Z",
+   "t_generacion_utc": "2026-08-23T12:20:30Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-23T12:20:31Z",
+     "latencia_envio_ms": 849.0734100341797,
+     "error": null,
+     "message_id": 2045,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 41.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ IFK Göteborg vs IF Elfsborg\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IFK Göteborg — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "79e46c38a37718d4"
   }
  ]
 }
