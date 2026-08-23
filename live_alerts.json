@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-23T12:47:30Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-23T12:48:30Z",
+ "n_alerts": 9,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -283,12 +283,57 @@
    "alert_id": "4361c283ea00f2ba"
   },
   {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "PSV Eindhoven vs FC Groningen (VriendenLoterij Eredivisie)",
+   "match_id": "16316774",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "PSV Eindhoven domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "PSV Eindhoven",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 1,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-23T12:47:53Z",
+   "t_captura_utc": "2026-08-23T12:47:53Z",
+   "t_evaluacion_utc": "2026-08-23T12:48:26Z",
+   "t_generacion_utc": "2026-08-23T12:48:26Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-23T12:48:27Z",
+     "latencia_envio_ms": 835.3416919708252,
+     "error": null,
+     "message_id": 2047,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 34.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ PSV Eindhoven vs FC Groningen\n⏱ Minuto: 17'\n📊 Marcador: 1-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: PSV Eindhoven — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "e6efddcff484744c"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Yverdon-Sport FC vs FC Aarau (Challenge League)",
    "match_id": "16356971",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
+   "minuto": 46,
    "condicion": "Yverdon-Sport FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -310,13 +355,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-23T12:21:47Z",
-   "t_captura_utc": "2026-08-23T12:47:29Z",
-   "t_evaluacion_utc": "2026-08-23T12:47:30Z",
-   "t_generacion_utc": "2026-08-23T12:47:30Z",
+   "t_captura_utc": "2026-08-23T12:48:29Z",
+   "t_evaluacion_utc": "2026-08-23T12:48:30Z",
+   "t_generacion_utc": "2026-08-23T12:48:30Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Yverdon-Sport FC vs FC Aarau\n⏱ Minuto: 45'\n📊 Marcador: 2-0\n🏆 Liga: Challenge League\n\n📝 Motivo: Yverdon-Sport FC acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Yverdon-Sport FC, min 5\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Yverdon-Sport FC vs FC Aarau\n⏱ Minuto: 46'\n📊 Marcador: 2-0\n🏆 Liga: Challenge League\n\n📝 Motivo: Yverdon-Sport FC acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Yverdon-Sport FC, min 5\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "3f4dc4a7cd7e98c6"
   }
