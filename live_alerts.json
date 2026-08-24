@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-24T01:44:06Z",
+ "generated_at_utc": "2026-08-24T01:45:10Z",
  "n_alerts": 5,
  "alerts": [
   {
@@ -128,35 +128,6 @@
    "alert_id": "7133452c8c9adb52"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Pumas UNAM vs Club Necaxa (Liga MX, Apertura)",
-   "match_id": "16317906",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 40,
-   "condicion": "4 córners totales antes del min 45 (3-1), Pumas UNAM presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Club Necaxa NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Pumas UNAM",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-24T01:38:43Z",
-   "t_captura_utc": "2026-08-24T01:38:43Z",
-   "t_evaluacion_utc": "2026-08-24T01:42:10Z",
-   "t_generacion_utc": "2026-08-24T01:42:10Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Pumas UNAM vs Club Necaxa\n⏱ Minuto: 40'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Pumas UNAM presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Club Necaxa no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "1de77e38bec27589"
-  },
-  {
    "strategy_id": "A2",
    "match_label": "Racing Club vs Boca Juniors (Liga Profesional de Fútbol)",
    "match_id": "16667399",
@@ -193,6 +164,35 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Racing Club vs Boca Juniors\n⏱ Minuto: 51'\n📊 Marcador: 1-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "3d9ba10ac7099e9e"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Pumas UNAM vs Club Necaxa (Liga MX, Apertura)",
+   "match_id": "16317906",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 43,
+   "condicion": "4 córners totales antes del min 45 (3-1), Pumas UNAM presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Club Necaxa NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Pumas UNAM",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-24T01:38:43Z",
+   "t_captura_utc": "2026-08-24T01:38:43Z",
+   "t_evaluacion_utc": "2026-08-24T01:45:10Z",
+   "t_generacion_utc": "2026-08-24T01:45:10Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Pumas UNAM vs Club Necaxa\n⏱ Minuto: 43'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Pumas UNAM presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Club Necaxa no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "1de77e38bec27589"
   }
  ]
 }
