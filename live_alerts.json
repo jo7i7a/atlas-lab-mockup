@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-08-24T00:34:36Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-24T00:35:32Z",
+ "n_alerts": 4,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "O'Higgins vs Palestino (Liga de Primera)",
-   "match_id": "15353105",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 2,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-08-24T00:05:04Z",
-   "t_captura_utc": "2026-08-24T00:05:04Z",
-   "t_evaluacion_utc": "2026-08-24T00:12:24Z",
-   "t_generacion_utc": "2026-08-24T00:12:24Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-24T00:06:27Z",
-     "latencia_envio_ms": 831.8066596984863,
-     "error": null,
-     "message_id": 2130,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 83.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ O'Higgins vs Palestino\n⏱ Minuto: 52'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "3091ab11da14147b"
-  },
   {
    "strategy_id": "A2",
    "match_label": "Atlético San Luis vs CF Pachuca (Liga MX, Apertura)",
@@ -117,44 +79,6 @@
    "alert_id": "a91b023ae93bd9cc"
   },
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "O'Higgins vs Palestino (Liga de Primera)",
-   "match_id": "15353105",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 74,
-   "condicion": "Palestino acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Palestino",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.7059,
-    "touches_home": 10,
-    "touches_away": 24,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 73,
-    "equipo_que_realizo_sustitucion": "Palestino",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-24T00:19:29Z",
-    "t_inicio_estimado_condicion": "2026-08-23T23:20:30Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-24T00:19:29Z",
-   "t_captura_utc": "2026-08-24T00:34:31Z",
-   "t_evaluacion_utc": "2026-08-24T00:34:31Z",
-   "t_generacion_utc": "2026-08-24T00:34:31Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ O'Higgins vs Palestino\n⏱ Minuto: 74'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Palestino acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Palestino, min 73\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "c4462b916b4064b5"
-  },
-  {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Atlético San Luis vs CF Pachuca (Liga MX, Apertura)",
    "match_id": "16317901",
@@ -187,6 +111,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Atlético San Luis vs CF Pachuca\n⏱ Minuto: 70'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: presión combinada sostenida — xG 2.23, 18 tiros totales (4 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "d028cd1057d4310d"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "O'Higgins vs Palestino (Liga de Primera)",
+   "match_id": "15353105",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 75,
+   "condicion": "Palestino acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Palestino",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.7143,
+    "touches_home": 10,
+    "touches_away": 25,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 73,
+    "equipo_que_realizo_sustitucion": "Palestino",
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-24T00:19:29Z",
+    "t_inicio_estimado_condicion": "2026-08-23T23:20:30Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-24T00:19:29Z",
+   "t_captura_utc": "2026-08-24T00:35:30Z",
+   "t_evaluacion_utc": "2026-08-24T00:35:31Z",
+   "t_generacion_utc": "2026-08-24T00:35:31Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ O'Higgins vs Palestino\n⏱ Minuto: 75'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Palestino acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Palestino, min 73\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "c4462b916b4064b5"
   }
  ]
 }
