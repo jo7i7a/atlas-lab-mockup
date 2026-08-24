@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-24T00:38:26Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-08-24T00:39:32Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -113,12 +113,46 @@
    "alert_id": "d028cd1057d4310d"
   },
   {
+   "strategy_id": "L2-SHADOW",
+   "match_label": "Atlético San Luis vs CF Pachuca (Liga MX, Apertura)",
+   "match_id": "16317901",
+   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80'] -- AH +0.25 @ 1.7 [PROXY SofaScore, NO Betano]",
+   "cuota_detectada": 1.7,
+   "minuto": 74,
+   "condicion": "Atlético San Luis domina por xG (2.02) y remates a puerta (5) sin ir ganando y sin roja del dominante — Atlético San Luis vs CF Pachuca. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Atlético San Luis",
+    "xg_dominante": 2.02,
+    "sot_dominante": 5,
+    "marcador": "0-0",
+    "variante": "shadow_ventana_80",
+    "ah_proxy_linea": 0.25,
+    "ah_proxy_cuota": 1.7,
+    "ah_proxy_suspendida": false,
+    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
+   },
+   "t_evento_real_utc": "2026-08-24T00:38:22Z",
+   "t_captura_utc": "2026-08-24T00:39:04Z",
+   "t_evaluacion_utc": "2026-08-24T00:39:19Z",
+   "t_generacion_utc": "2026-08-24T00:39:19Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Atlético San Luis vs CF Pachuca\n⏱ Minuto: 74'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📈 Domina: Atlético San Luis\nxG: 2.02 vs 0.33\nTiros a puerta: 5 vs 0\n\nReferencia PROXY: AH +0.25 @ 1.7 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Atlético San Luis — ¿línea y cuota reales?",
+   "evidencia": null,
+   "alert_id": "4f1910fdc30fd252"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "O'Higgins vs Palestino (Liga de Primera)",
    "match_id": "15353105",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 78,
+   "minuto": 79,
    "condicion": "Palestino acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -140,13 +174,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-24T00:19:29Z",
-   "t_captura_utc": "2026-08-24T00:38:24Z",
-   "t_evaluacion_utc": "2026-08-24T00:38:25Z",
-   "t_generacion_utc": "2026-08-24T00:38:25Z",
+   "t_captura_utc": "2026-08-24T00:39:30Z",
+   "t_evaluacion_utc": "2026-08-24T00:39:30Z",
+   "t_generacion_utc": "2026-08-24T00:39:30Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ O'Higgins vs Palestino\n⏱ Minuto: 78'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Palestino acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Palestino, min 78\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ O'Higgins vs Palestino\n⏱ Minuto: 79'\n📊 Marcador: 0-0\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Palestino acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Palestino, min 78\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "c4462b916b4064b5"
   }
