@@ -1,44 +1,51 @@
 {
- "generated_at_utc": "2026-08-24T21:13:14Z",
+ "generated_at_utc": "2026-08-24T22:22:17Z",
  "n_alerts": 1,
  "alerts": [
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Málaga CF vs Deportivo de A Coruña (LaLiga)",
-   "match_id": "16416307",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Tigre vs Central Córdoba (Liga Profesional de Fútbol)",
+   "match_id": "16671573",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 83,
-   "condicion": "Málaga CF acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "minuto": 21,
+   "condicion": "Tigre domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
    "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "equipo_dominante": "Málaga CF",
+    "equipo_dominante": "Tigre",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.8333,
-    "touches_home": 20,
-    "touches_away": 4,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 73,
-    "equipo_que_realizo_sustitucion": "Málaga CF",
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-08-24T21:13:14Z",
-    "t_inicio_estimado_condicion": "2026-08-24T20:07:07Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
    },
-   "t_evento_real_utc": "2026-08-24T21:13:14Z",
-   "t_captura_utc": "2026-08-24T21:13:14Z",
-   "t_evaluacion_utc": "2026-08-24T21:13:14Z",
-   "t_generacion_utc": "2026-08-24T21:13:14Z",
-   "envios": {},
-   "latencia_total_seg": null,
+   "t_evento_real_utc": "2026-08-24T22:19:37Z",
+   "t_captura_utc": "2026-08-24T22:19:37Z",
+   "t_evaluacion_utc": "2026-08-24T22:22:16Z",
+   "t_generacion_utc": "2026-08-24T22:22:16Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-24T22:22:17Z",
+     "latencia_envio_ms": 952.0165920257568,
+     "error": null,
+     "message_id": 2137,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 160.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Málaga CF vs Deportivo de A Coruña\n⏱ Minuto: 83'\n📊 Marcador: 1-1\n🏆 Liga: LaLiga\n\n📝 Motivo: Málaga CF acumula 83% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Málaga CF, min 73\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Tigre vs Central Córdoba\n⏱ Minuto: 21'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Tigre — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
-   "alert_id": "3eb12b836e684c70"
+   "alert_id": "3d5fd49604e1f9cf"
   }
  ]
 }
