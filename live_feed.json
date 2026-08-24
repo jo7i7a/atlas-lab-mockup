@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-24T16:56:56Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-08-24T17:05:57Z",
+ "n_live_target": 2,
  "matches": {
   "16283049": {
    "event_id": 16283049,
@@ -11,12 +11,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 24,
+   "minute": 33,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 47,
-     "away": 53
+     "home": 48,
+     "away": 52
     },
     "xg": {
      "label": "Expected Goals (xG)",
@@ -35,8 +35,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 99,
-     "away": 112
+     "home": 136,
+     "away": 150
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -51,23 +51,85 @@
    },
    "odds": {
     "btts": {
-     "yes": 2.375,
-     "no": 1.533,
-     "captured_at_utc": "2026-08-24T16:54:32Z"
+     "yes": 2.75,
+     "no": 1.4,
+     "captured_at_utc": "2026-08-24T17:04:39Z"
     },
     "1x2": {
-     "home": 2.875,
-     "draw": 2.75,
+     "home": 3.0,
+     "draw": 2.625,
      "away": 2.875,
-     "captured_at_utc": "2026-08-24T16:54:32Z"
+     "captured_at_utc": "2026-08-24T17:04:39Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.533,
-     "captured_at_utc": "2026-08-24T16:54:32Z"
+     "captured_at_utc": "2026-08-24T17:04:39Z"
     }
    },
-   "updated_at_utc": "2026-08-24T16:56:56Z"
+   "updated_at_utc": "2026-08-24T17:05:57Z"
+  },
+  "15272497": {
+   "event_id": 15272497,
+   "league": "Allsvenskan",
+   "home": "Malmö FF",
+   "away": "Djurgårdens IF",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 5,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 76,
+     "away": 24
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 1
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 27,
+     "away": 8
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.571,
+     "no": 2.25,
+     "captured_at_utc": "2026-08-24T17:04:39Z"
+    },
+    "1x2": {
+     "home": 2.6,
+     "draw": 3.5,
+     "away": 2.6,
+     "captured_at_utc": "2026-08-24T17:04:39Z"
+    },
+    "goals_over_25": {
+     "over": 1.727,
+     "under": 2.0,
+     "captured_at_utc": "2026-08-24T17:04:39Z"
+    }
+   },
+   "updated_at_utc": "2026-08-24T17:05:57Z"
   }
  }
 }
