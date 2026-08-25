@@ -188,6 +188,8 @@ def test_build_candidates_excluye_partido_sin_probabilidad_valida():
     assert out["UNDER25"] == []
     assert out["BTTS"] == []
     assert out["CORNERS_OVER105"] == []
+    assert out["GOL_1T"] == []
+    assert out["EMPATE"] == []
 
 
 def test_build_candidates_goles_btts_corners_reales():
@@ -217,6 +219,102 @@ def test_corners_sin_lambda_no_genera_candidato():
     hist = {"a-b-1": {"home_home_lambda": {}, "away_away_lambda": {"cornerKicks": 4.1}}}  # falta el lado home
     out = rankings.build_candidates(pocket, hist, match_list, {})
     assert out["CORNERS_OVER105"] == []
+
+
+# ---------------------------------------------------------------------
+# rankings.py -- GOL_1T y EMPATE (2026-08-24, mandato del Director:
+# reutilizar exclusivamente lambda HT existente y probabilidad nativa de
+# FormCalculator, cero modelo nuevo)
+# ---------------------------------------------------------------------
+
+def test_build_candidates_gol_1t_y_empate_reales():
+    match_list = [{"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": _kickoff(0)}]
+    pocket = {"a-b-1": {"resolved": True, "markets": {
+        "1X2_FT": {"probability": {"home": 0.45, "draw": 0.27, "away": 0.28}, "engine_id": "form_calculator", "governance_status": "BASELINE"},
+    }}}
+    hist = {"a-b-1": {
+        "home_home_lambda_ht": {"goals": 0.7}, "away_away_lambda_ht": {"goals": 0.6},
+    }}
+    out = rankings.build_candidates(pocket, hist, match_list, {})
+    # GOL_1T: misma funcion Poisson ya usada por Corners, lambda_total_ht = 0.7+0.6 = 1.3
+    expected_gol1t = rankings._poisson_over_prob(1.3, 0.5)
+    assert out["GOL_1T"][0]["probability"] == pytest.approx(expected_gol1t)
+    assert out["GOL_1T"][0]["market"] == "GOL_PRIMER_TIEMPO"
+    assert out["GOL_1T"][0]["selection"] == "over"
+    assert out["GOL_1T"][0]["price"] is None and out["GOL_1T"][0]["bookmaker"] is None  # nunca cuota
+    # EMPATE: probabilidad nativa del softmax, sin ningun calculo propio
+    assert out["EMPATE"][0]["probability"] == pytest.approx(0.27)
+    assert out["EMPATE"][0]["market"] == "1X2_FT"
+    assert out["EMPATE"][0]["selection"] == "draw"
+    assert out["EMPATE"][0]["engine_id"] == "form_calculator"
+    assert out["EMPATE"][0]["governance_status"] == "BASELINE"
+
+
+def test_gol_1t_sin_lambda_ht_no_genera_candidato():
+    match_list = [{"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": _kickoff(0)}]
+    pocket = {"a-b-1": {"resolved": True, "markets": {}}}
+    hist = {"a-b-1": {"home_home_lambda_ht": {}, "away_away_lambda_ht": {"goals": 0.6}}}  # falta el lado home
+    out = rankings.build_candidates(pocket, hist, match_list, {})
+    assert out["GOL_1T"] == []
+
+
+def test_empate_sin_probabilidad_1x2_no_genera_candidato():
+    match_list = [{"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": _kickoff(0)}]
+    pocket = {"a-b-1": {"resolved": True, "markets": {"1X2_FT": {"error": "motor no disponible"}}}}
+    hist = {"a-b-1": {}}
+    out = rankings.build_candidates(pocket, hist, match_list, {})
+    assert out["EMPATE"] == []
+
+
+def test_empate_reutiliza_cuota_oddspapi_ya_capturada_para_1x2():
+    lean = {"a-b-1": {"1X2_FT": {"bk": "Pinnacle", "sel": {"draw": {"p": 3.25, "t": "T"}}}}}
+    price, bk = rankings._oddspapi_price(lean, "a-b-1", "EMPATE")
+    assert price == 3.25 and bk == "Pinnacle"
+
+
+def test_gol_1t_nunca_tiene_cuota_oddspapi():
+    lean = {"a-b-1": {"GOL_PRIMER_TIEMPO": {"bk": "Pinnacle", "sel": {"over": {"p": 1.50, "t": "T"}}}}}
+    price, bk = rankings._oddspapi_price(lean, "a-b-1", "GOL_1T")
+    assert price is None and bk is None  # _ODDSPAPI_LOOKUP["GOL_1T"] = None, nunca se inventa cobertura
+
+
+def test_gol_1t_y_empate_excluidos_de_pick_governance_siempre():
+    # Mandato explicito del Director: EMPATE/GOL_1T nunca deben anotar un
+    # estado de gobernanza real, pase lo que pase con hipotesis futuras
+    # sobre 1X2_FT/draw -- se logra por OMISION deliberada de estas 2 claves
+    # en _HYPOTHESIS_MARKET/_HYPOTHESIS_SELECTION, no por una excepcion.
+    assert "GOL_1T" not in rankings._HYPOTHESIS_MARKET
+    assert "EMPATE" not in rankings._HYPOTHESIS_MARKET
+    candidate = {"engine_id": "form_calculator", "probability": 0.99}
+    assert rankings._hypothesis_estado_for("EMPATE", candidate) == "SIN_EVALUAR"
+    assert rankings._hypothesis_estado_for("GOL_1T", candidate) == "SIN_EVALUAR"
+
+
+def test_mercados_existentes_producen_resultados_identicos_con_los_2_nuevos_presentes():
+    """Regresion critica pedida por el Director: agregar GOL_1T/EMPATE no
+    debe cambiar en NADA la salida de OVER25/UNDER25/BTTS/CORNERS_OVER105
+    para el mismo partido -- mismo escenario de datos que
+    test_build_candidates_goles_btts_corners_reales, con datos adicionales
+    de 1X2_FT y lambda_ht presentes."""
+    match_list = [{"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": _kickoff(0)}]
+    pocket = {"a-b-1": {"resolved": True, "markets": {
+        "OU25_GOALS_FT": {"probability": {"over": 0.62, "under": 0.38}, "engine_id": "poisson_goals", "governance_status": "BASELINE"},
+        "1X2_FT": {"probability": {"home": 0.45, "draw": 0.27, "away": 0.28}, "engine_id": "form_calculator", "governance_status": "BASELINE"},
+    }}}
+    hist = {"a-b-1": {
+        "btts_general_pct": 58.0,
+        "home_home_lambda": {"cornerKicks": 5.2}, "away_away_lambda": {"cornerKicks": 4.1},
+        "home_home_lambda_ht": {"goals": 0.7}, "away_away_lambda_ht": {"goals": 0.6},
+    }}
+    out = rankings.build_candidates(pocket, hist, match_list, {})
+    assert out["OVER25"][0]["probability"] == 0.62
+    assert out["UNDER25"][0]["probability"] == 0.38
+    assert out["BTTS"][0]["probability"] == pytest.approx(0.58)
+    expected_corners = rankings._poisson_over_prob(9.3, 10.5)
+    assert out["CORNERS_OVER105"][0]["probability"] == pytest.approx(expected_corners)
+    # y los 2 nuevos tambien se calculan, sin interferir entre si
+    assert len(out["GOL_1T"]) == 1
+    assert len(out["EMPATE"]) == 1
 
 
 def test_oddspapi_price_solo_para_mercados_cubiertos():
@@ -451,14 +549,107 @@ def test_history_diferencia_ranking_type_manana_de_diario_y_semanal(_rankings_en
 
 
 # ---------------------------------------------------------------------
+# rankings.py + settlement.py -- ciclo completo end-to-end para GOL_1T y
+# EMPATE (2026-08-24): captura -> tomorrow/daily/weekly -> historia ->
+# pendiente -> resolucion, sin mezclar ranking_type ni mercados existentes.
+# ---------------------------------------------------------------------
+
+def test_run_incluye_gol_1t_y_empate_en_las_3_ventanas(_rankings_env):
+    work = _rankings_env
+    match_list = [
+        {"id": "hoy-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": _kickoff(0)},
+        {"id": "manana-1", "home": "C", "away": "D", "league": "L", "kickoffUTC": _kickoff(1)},
+    ]
+    pocket = {
+        "hoy-1": {"resolved": True, "markets": {"1X2_FT": {"probability": {"home": 0.4, "draw": 0.3, "away": 0.3}, "engine_id": "form_calculator", "governance_status": "BASELINE"}}},
+        "manana-1": {"resolved": True, "markets": {"1X2_FT": {"probability": {"home": 0.5, "draw": 0.25, "away": 0.25}, "engine_id": "form_calculator", "governance_status": "BASELINE"}}},
+    }
+    hist = {
+        "hoy-1": {"home_home_lambda_ht": {"goals": 0.8}, "away_away_lambda_ht": {"goals": 0.5}},
+        "manana-1": {"home_home_lambda_ht": {"goals": 0.6}, "away_away_lambda_ht": {"goals": 0.4}},
+    }
+    _write_json(work / "match_list.json", match_list)
+    _write_json(work / "pocket_engine_results.json", pocket)
+    _write_json(work / "historical_stats_results.json", hist)
+    _write_json(work / "match_event_ids.json", {"hoy-1": {"event_id": 1001}, "manana-1": {"event_id": 1002}})
+    _write_json(work / "oddspapi_lean.json", {})
+
+    resumen = rankings.run(finished_event_ids_fn=lambda ids: set())
+    assert resumen["daily_new_entries"] >= 1
+    assert resumen["tomorrow_new_entries"] >= 1
+
+    daily = json.load(open(rankings.DAILY_STATE_PATH, encoding="utf-8"))
+    tomorrow = json.load(open(rankings.TOMORROW_STATE_PATH, encoding="utf-8"))
+    weekly = json.load(open(rankings.WEEKLY_STATE_PATH, encoding="utf-8"))
+    assert len(daily["rankings"]["GOL_1T"]) == 1 and len(daily["rankings"]["EMPATE"]) == 1
+    assert len(tomorrow["rankings"]["GOL_1T"]) == 1 and len(tomorrow["rankings"]["EMPATE"]) == 1
+    assert len(weekly["rankings"]["GOL_1T"]) == 2 and len(weekly["rankings"]["EMPATE"]) == 2  # semanal ve ambos partidos
+
+    lines = [json.loads(l) for l in open(rankings.HISTORY_PATH, encoding="utf-8").read().strip().split("\n")]
+    gol1t_lines = [l for l in lines if l["market"] == "GOL_PRIMER_TIEMPO"]
+    empate_lines = [l for l in lines if l["market"] == "1X2_FT" and l["selection"] == "draw"]
+    assert {l["ranking_type"] for l in gol1t_lines} == {"daily", "tomorrow", "weekly"}
+    assert {l["ranking_type"] for l in empate_lines} == {"daily", "tomorrow", "weekly"}
+    # separacion estricta: ninguna fila de GOL_1T/EMPATE contamina OVER25/UNDER25/BTTS/CORNERS_OVER105
+    assert all(l["market"] not in ("OU25_GOALS_FT", "BTTS", "OU10.5_CORNERS_FT") for l in gol1t_lines + empate_lines)
+
+
+def test_ciclo_completo_gol_1t_pendiente_a_resuelto(_rankings_env, tmp_path, monkeypatch):
+    """Prueba end-to-end pedida explicitamente (punto F.5): captura de
+    GOL_PRIMER_TIEMPO en estado PENDIENTE, luego settlement.settle_history()
+    con una base sqlite aislada real (nunca la produccion) lo resuelve a
+    FINALIZADO/acierto -- sin tocar ninguna otra fila."""
+    work = _rankings_env
+    match_list = [{"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": _kickoff(0)}]
+    pocket = {"a-b-1": {"resolved": True, "markets": {}}}
+    hist = {"a-b-1": {"home_home_lambda_ht": {"goals": 0.8}, "away_away_lambda_ht": {"goals": 0.5}}}
+    _write_json(work / "match_list.json", match_list)
+    _write_json(work / "pocket_engine_results.json", pocket)
+    _write_json(work / "historical_stats_results.json", hist)
+    _write_json(work / "match_event_ids.json", {"a-b-1": {"event_id": 2001}})
+    _write_json(work / "oddspapi_lean.json", {})
+
+    rankings.run(finished_event_ids_fn=lambda ids: set())
+    lines = [json.loads(l) for l in open(rankings.HISTORY_PATH, encoding="utf-8").read().strip().split("\n")]
+    gol1t_rows = [l for l in lines if l["market"] == "GOL_PRIMER_TIEMPO"]
+    # el unico partido cae en Diario Y en la ventana Semanal -- 2 filas
+    # PENDIENTE independientes, mismo comportamiento ya establecido para
+    # OVER25/UNDER25/BTTS/Corners (ver test_run_no_duplica_history_en_corridas_repetidas).
+    assert {l["ranking_type"] for l in gol1t_rows} == {"daily", "weekly"}
+    assert all(l["estado"] == "PENDIENTE" for l in gol1t_rows)
+    gol1t = next(l for l in gol1t_rows if l["ranking_type"] == "daily")
+
+    db_path = _make_isolated_soccer_db(tmp_path, [(555, 1, 1)])  # match_id interno 555, 1 gol real en HT
+    monkeypatch.setattr(settlement, "SOCCER_DB_PATH", db_path)
+
+    class _Res:
+        match_id, score_home, score_away, corner_total = 555, 2, 1, None
+
+    monkeypatch.setattr(settlement, "_load_finished_match_results", lambda ids: {2001: _Res()})
+    resumen = settlement.settle_history(history_path=rankings.HISTORY_PATH)
+    assert resumen["settled"] == 2  # ambas filas (daily + weekly) del mismo partido se resuelven
+
+    lines_after = [json.loads(l) for l in open(rankings.HISTORY_PATH, encoding="utf-8").read().strip().split("\n")]
+    gol1t_after_rows = [l for l in lines_after if l["market"] == "GOL_PRIMER_TIEMPO"]
+    assert all(l["estado"] == "FINALIZADO" for l in gol1t_after_rows)
+    assert all(l["resultado_real"] == "over" for l in gol1t_after_rows)
+    assert all(l["acierto"] == "acierto" for l in gol1t_after_rows)
+    gol1t_after = next(l for l in gol1t_after_rows if l["ranking_type"] == "daily")
+    # inmutabilidad: probabilidad/posicion no cambiaron
+    assert gol1t_after["probabilidad_atlas"] == gol1t["probabilidad_atlas"]
+    assert gol1t_after["posicion"] == gol1t["posicion"]
+
+
+# ---------------------------------------------------------------------
 # settlement.py -- resolutores propios (BTTS / Corners 10.5), sin DB real
 # ---------------------------------------------------------------------
 
 class _FakeResult:
-    def __init__(self, score_home, score_away, corner_total=None):
+    def __init__(self, score_home, score_away, corner_total=None, match_id=None):
         self.score_home = score_home
         self.score_away = score_away
         self.corner_total = corner_total
+        self.match_id = match_id
 
 
 def test_resolve_btts_si_y_no():
@@ -478,6 +669,92 @@ def test_resolve_corners_over105_umbral_11():
 def test_resolve_corners_over105_sin_dato_queda_pendiente():
     acierto, actual = settlement._resolve_corners_over105("over", _FakeResult(1, 0, corner_total=None))
     assert (acierto, actual) == (None, None)
+
+
+# ---------------------------------------------------------------------
+# settlement.py -- GOL_PRIMER_TIEMPO (2026-08-24): resolucion AISLADA
+# propia, con su propia base sqlite de prueba -- NUNCA usa
+# atlas_pocket/trackrecord/resolution.py ni monkeypatchea nada compartido.
+# ---------------------------------------------------------------------
+
+import sqlite3 as _sqlite3
+
+
+def _make_isolated_soccer_db(tmp_path, rows):
+    """rows: lista de (match_id, has_incidents, n_goles_ht) -- crea una base
+    sqlite minima con el esquema real (matches.has_incidents,
+    match_incidents.time_min/incident_type/rescinded/is_home) suficiente
+    para _ht_goals_for_match()."""
+    db_path = tmp_path / "soccer_analytics_test.db"
+    conn = _sqlite3.connect(str(db_path))
+    conn.execute("CREATE TABLE matches (id INTEGER PRIMARY KEY, has_incidents INTEGER)")
+    conn.execute("CREATE TABLE match_incidents (match_id INTEGER, incident_type TEXT, rescinded INTEGER, time_min INTEGER, is_home INTEGER)")
+    for match_id, has_incidents, n_goles_ht in rows:
+        conn.execute("INSERT INTO matches (id, has_incidents) VALUES (?, ?)", (match_id, has_incidents))
+        for i in range(n_goles_ht):
+            conn.execute(
+                "INSERT INTO match_incidents (match_id, incident_type, rescinded, time_min, is_home) VALUES (?, 'goal', 0, ?, 1)",
+                (match_id, 10 + i),
+            )
+        # un gol en el 2T -- nunca debe contar para HT (time_min>45)
+        conn.execute(
+            "INSERT INTO match_incidents (match_id, incident_type, rescinded, time_min, is_home) VALUES (?, 'goal', 0, 70, 1)",
+            (match_id,),
+        )
+        # un gol anulado (rescinded=1) en el 1T -- nunca debe contar
+        conn.execute(
+            "INSERT INTO match_incidents (match_id, incident_type, rescinded, time_min, is_home) VALUES (?, 'goal', 1, 20, 0)",
+            (match_id,),
+        )
+    conn.commit()
+    conn.close()
+    return str(db_path)
+
+
+def test_ht_goals_for_match_cuenta_solo_1t_no_anulados(tmp_path, monkeypatch):
+    db_path = _make_isolated_soccer_db(tmp_path, [(1, 1, 2), (2, 1, 0)])
+    monkeypatch.setattr(settlement, "SOCCER_DB_PATH", db_path)
+    assert settlement._ht_goals_for_match(1) == 2  # los goles de 2T y el anulado NO cuentan
+    assert settlement._ht_goals_for_match(2) == 0  # 0 real, distinto de "sin dato"
+
+
+def test_ht_goals_for_match_sin_incidentes_es_pendiente_honesto(tmp_path, monkeypatch):
+    db_path = _make_isolated_soccer_db(tmp_path, [(3, 0, 0)])  # has_incidents=0
+    monkeypatch.setattr(settlement, "SOCCER_DB_PATH", db_path)
+    assert settlement._ht_goals_for_match(3) is None  # nunca se inventa un 0
+    assert settlement._ht_goals_for_match(9999) is None  # match_id inexistente tampoco se inventa
+
+
+def test_resolve_gol_1t_acierto_y_fallo(tmp_path, monkeypatch):
+    db_path = _make_isolated_soccer_db(tmp_path, [(1, 1, 1), (2, 1, 0)])
+    monkeypatch.setattr(settlement, "SOCCER_DB_PATH", db_path)
+    acierto, actual = settlement._resolve_gol_1t("over", _FakeResult(1, 0, match_id=1))
+    assert (acierto, actual) == ("acierto", "over")
+    acierto, actual = settlement._resolve_gol_1t("over", _FakeResult(0, 0, match_id=2))
+    assert (acierto, actual) == ("fallo", "under")
+
+
+def test_resolve_gol_1t_sin_datos_de_incidentes_queda_pendiente(tmp_path, monkeypatch):
+    db_path = _make_isolated_soccer_db(tmp_path, [(3, 0, 0)])
+    monkeypatch.setattr(settlement, "SOCCER_DB_PATH", db_path)
+    acierto, actual = settlement._resolve_gol_1t("over", _FakeResult(1, 0, match_id=3))
+    assert (acierto, actual) == (None, None)
+
+
+def test_resolve_entry_dispatch_gol_primer_tiempo(tmp_path, monkeypatch):
+    db_path = _make_isolated_soccer_db(tmp_path, [(1, 1, 1)])
+    monkeypatch.setattr(settlement, "SOCCER_DB_PATH", db_path)
+    acierto, actual = settlement.resolve_entry("GOL_PRIMER_TIEMPO", "over", None, _FakeResult(1, 0, match_id=1))
+    assert (acierto, actual) == ("acierto", "over")
+
+
+def test_resolve_entry_dispatch_empate_via_delegado_1x2():
+    # "1X2_FT"/"draw" -- MISMO camino delegado ya usado hoy por OVER25/UNDER25
+    # via "OU25_GOALS_FT", cero codigo nuevo en resolution.py.
+    acierto, actual = settlement.resolve_entry("1X2_FT", "draw", None, _FakeResult(1, 1))
+    assert (acierto, actual) == ("acierto", "draw")
+    acierto, actual = settlement.resolve_entry("1X2_FT", "draw", None, _FakeResult(2, 0))
+    assert (acierto, actual) == ("fallo", "home")
 
 
 def test_settle_jsonl_solo_completa_pendientes_sin_tocar_lo_demas(tmp_path):

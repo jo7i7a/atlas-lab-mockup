@@ -5,7 +5,7 @@ motores de atlas_pocket (pocket_engine_results.json) y por el estimador de
 lambda de mercado ya existente (historical_stats_results.json) -- ningun
 modelo nuevo, ninguna cuota/partido/cobertura inventada.
 
-4 rankings independientes, TOP 10 cada uno, JAMAS relleno artificial:
+6 rankings independientes, TOP 10 cada uno, JAMAS relleno artificial:
   OVER25          -> OU25_GOALS_FT.probability.over  (motor real BASELINE)
   UNDER25         -> OU25_GOALS_FT.probability.under (motor real BASELINE)
   BTTS            -> hist.btts_general_pct / 100      (dato historico, sin
@@ -19,6 +19,29 @@ modelo nuevo, ninguna cuota/partido/cobertura inventada.
                       index.html:2158-2198 (replicada aqui en Python, la
                       MISMA linea que el Director veria si abriera
                       Corners/Tiros de ese partido, no un modelo nuevo).
+  GOL_1T          -> (2026-08-24, mandato del Director, ver AUDITORIA_
+                      FACTIBILIDAD_RANKINGS_GOL1T_EMPATE_2026-08-24.md)
+                      Poisson(lambda_total_ht, 0.5), lambda_total_ht =
+                      hist.home_home_lambda_ht.goals + hist.away_away_
+                      lambda_ht.goals -- MISMA funcion _poisson_over_prob()
+                      ya usada por CORNERS_OVER105, mismo lambda ya calculado
+                      por 02_compute_historical_stats.py para el periodo HT
+                      (sin cambios a ese script). Sin cuota nunca -- no
+                      existe mercado Over 0.5 HT ni en odds_history.db ni en
+                      OddsPapi (verificado en la auditoria de factibilidad).
+                      Mercado interno de settlement: "GOL_PRIMER_TIEMPO"
+                      (ver settlement.py, resolucion AISLADA propia).
+  EMPATE          -> (2026-08-24, mandato del Director) 1X2_FT.probability.
+                      draw -- motor real BASELINE (FormCalculator), MISMA
+                      probabilidad nativa del softmax multinomial, sin
+                      ningun calculo ni correccion propia. Cuota: SI puede
+                      traer cuota Pinnacle real -- OddsPapi ya captura
+                      1X2_FT/draw para Picks ATLAS, se reutiliza sin ninguna
+                      llamada nueva a la API. Deliberadamente EXCLUIDO de
+                      _HYPOTHESIS_MARKET/_HYPOTHESIS_SELECTION (mandato:
+                      nunca debe entrar en Pick Governance) -- siempre
+                      "SIN_EVALUAR", pase lo que pase con hipotesis futuras
+                      sobre 1X2_FT/draw.
 
 Mañana (2026-08-22, mandato del Director): partidos cuyo kickoff cae en el
 dia calendario siguiente a "Hoy" en hora Chile -- misma formula/mercados/
@@ -89,13 +112,15 @@ HISTORY_PATH = ROOT + r"\tipster_rankings_history.jsonl"
 TOP_N = 10
 WEEKLY_WINDOW_DAYS = 7
 
-MARKETS = ("OVER25", "UNDER25", "BTTS", "CORNERS_OVER105")
+MARKETS = ("OVER25", "UNDER25", "BTTS", "CORNERS_OVER105", "GOL_1T", "EMPATE")
 
 _ODDSPAPI_LOOKUP = {
     "OVER25": ("OU25_GOALS_FT", "over"),
     "UNDER25": ("OU25_GOALS_FT", "under"),
     "BTTS": ("BTTS", "yes"),
     "CORNERS_OVER105": None,  # OddsPapi FREE no cubre Corners -- nunca se inventa
+    "GOL_1T": None,  # OddsPapi FREE no cubre 1st half goals -- nunca se inventa (ver auditoria)
+    "EMPATE": ("1X2_FT", "draw"),  # ya capturado por OddsPapi para Picks ATLAS, cero llamadas nuevas
 }
 
 
@@ -176,6 +201,36 @@ def build_candidates(pocket, hist, match_list, oddspapi_lean):
                     out["CORNERS_OVER105"].append({**base, "market": "OU10.5_CORNERS_FT", "line": 10.5, "selection": "over",
                                                      "probability": prob, "engine_id": "market_lambda_poisson",
                                                      "governance_status": None, "price": None, "bookmaker": None})
+
+            # GOL_1T (2026-08-24, mandato del Director) -- MISMO patron exacto
+            # que CORNERS_OVER105 arriba, unico cambio: lambda de HT en vez de
+            # FT (ya calculado por 02_compute_historical_stats.py, sin tocar
+            # ese script) y linea 0.5 en vez de 10.5. Nunca cuota (ver
+            # _ODDSPAPI_LOOKUP["GOL_1T"] = None).
+            hh_ht = (h.get("home_home_lambda_ht") or {}).get("goals")
+            aa_ht = (h.get("away_away_lambda_ht") or {}).get("goals")
+            if hh_ht is not None and aa_ht is not None:
+                lam_total_ht = hh_ht + aa_ht
+                prob_ht = _poisson_over_prob(lam_total_ht, 0.5)
+                if prob_ht is not None:
+                    out["GOL_1T"].append({**base, "market": "GOL_PRIMER_TIEMPO", "line": 0.5, "selection": "over",
+                                           "probability": prob_ht, "engine_id": "market_lambda_poisson_ht",
+                                           "governance_status": None, "price": None, "bookmaker": None})
+
+        # EMPATE (2026-08-24, mandato del Director) -- MISMA probabilidad
+        # nativa del motor 1X2_FT ya calculada arriba para OVER25/UNDER25
+        # (motor real BASELINE, FormCalculator), solo que leyendo la
+        # seleccion "draw" del propio mercado 1X2_FT en vez de OU25_GOALS_FT.
+        # Cero calculo nuevo, cero correccion propia.
+        x1x2 = (entry.get("markets", {}) or {}).get("1X2_FT")
+        if x1x2 and "error" not in x1x2 and x1x2.get("probability"):
+            prob_draw = x1x2["probability"].get("draw")
+            if prob_draw is not None:
+                price, bk = _oddspapi_price(oddspapi_lean, mid, "EMPATE")
+                out["EMPATE"].append({**base, "market": "1X2_FT", "line": None, "selection": "draw",
+                                       "probability": prob_draw, "engine_id": x1x2.get("engine_id"),
+                                       "governance_status": x1x2.get("governance_status"),
+                                       "price": price, "bookmaker": bk})
     return out
 
 

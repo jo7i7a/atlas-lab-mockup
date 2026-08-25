@@ -8,12 +8,28 @@ join por sofascore_event_id que ya usa
 atlas_lab_mockup/pipeline/01_rebuild_upcoming_matches.py para finalScore) y
 `resolve_prediction()` (para 1X2_FT/HANDICAP_FT/OU25_GOALS_FT, mismos
 umbrales `_OU_THRESHOLDS` congelados contra el target real de entrenamiento).
+EMPATE (2026-08-24) reutiliza este mismo camino con mercado="1X2_FT"/
+seleccion="draw" -- exactamente el mismo patron que OVER25/UNDER25 ya usan
+hoy en produccion con mercado="OU25_GOALS_FT" (tambien delegado); no es un
+camino nuevo, es el mismo ya probado con otra seleccion.
 
-Solo 2 mercados no vienen de ahi porque atlas_pocket no los loguea en su
+Otros mercados no vienen de ahi porque atlas_pocket no los loguea en su
 Track Record propio (ver docstring de resolution.py): BTTS y la linea NO
 certificada Over 10.5 Corners (la certificada, 9.5, si esta en
 _OU_THRESHOLDS pero con umbral 10 -- Over 10.5 usa umbral 11, calculado
 aqui mismo sobre el MISMO `corner_total` que ya expone MatchResult).
+
+GOL_PRIMER_TIEMPO (2026-08-24, mandato del Director: resolucion AISLADA,
+sin tocar el resolver compartido de Track Record): `MatchResult` no expone
+goles de 1er tiempo -- en vez de extender esa dataclass compartida (usada
+tambien por Picks/Track Record de atlas_pocket), este modulo abre su PROPIA
+conexion de solo lectura a soccer_analytics.db y cuenta goles de
+`match_incidents` (incident_type='goal', rescinded=0, time_min<=45), el
+MISMO criterio exacto que ya usa
+atlas_lab_mockup/pipeline/02_compute_historical_stats.py::team_goal_values()
+para el lambda HT -- gateado por `matches.has_incidents=1` (si no hay datos
+de incidentes para ese partido, se retorna pendiente honesto, nunca se
+inventa un 0). Cero cambios a resolution.py/MatchResult/_DELEGATED_MARKETS.
 
 Principio de inmutabilidad (Objetivo 2/5): settle_history()/settle_picks()
 SOLO completan los campos estado/resultado_real/acierto de una linea
@@ -24,6 +40,7 @@ from __future__ import annotations
 
 import json
 import os
+import sqlite3
 import sys
 from pathlib import Path
 
@@ -33,7 +50,9 @@ sys.path.insert(0, str(_ROOT_PATH))
 from atlas_pocket.trackrecord.resolution import _load_finished_match_results, resolve_prediction  # noqa: E402
 
 # Mercados que atlas_pocket/trackrecord/resolution.py YA sabe resolver --
-# se delega directo, sin reimplementar la logica.
+# se delega directo, sin reimplementar la logica. "1X2_FT" cubre tanto
+# home/away (ya en uso) como draw/EMPATE (2026-08-24, nuevo consumidor,
+# misma funcion _resolve_1x2 sin ningun cambio).
 _DELEGATED_MARKETS = {"1X2_FT", "DC_FT", "DNB_FT", "HANDICAP_FT", "OU25_GOALS_FT",
                        "OU9.5_CORNERS_FT", "OU24.5_SHOTS_FT", "OU8.5_SOT_FT", "OU4.5_CARDS_FT"}
 
@@ -42,6 +61,12 @@ _DELEGATED_MARKETS = {"1X2_FT", "DC_FT", "DNB_FT", "HANDICAP_FT", "OU25_GOALS_FT
 # coincidir EXACTO con el target de entrenamiento del motor, ver comentario
 # ahi). corner_total >= 11 <=> Over 10.5 (>=10 seria Over 9.5, la certificada).
 _CORNERS_OVER105_THRESHOLD = 11
+
+# Ruta propia de solo lectura para GOL_PRIMER_TIEMPO -- variable de modulo
+# (no una constante inline) a proposito, para que los tests puedan
+# monkeypatchearla hacia una base aislada, mismo patron que WORK/HISTORY_PATH
+# en rankings.py.
+SOCCER_DB_PATH = r"C:\SoccerAnalyticsExtractor\soccer_analytics.db"
 
 
 def finished_event_ids(event_ids):
@@ -64,6 +89,39 @@ def _resolve_corners_over105(seleccion, result):
     return ("acierto" if seleccion == actual else "fallo"), actual
 
 
+def _ht_goals_for_match(match_id):
+    """Goles totales (ambos equipos) del primer tiempo para un match_id
+    interno de soccer_analytics.db -- consulta AISLADA de solo lectura,
+    propia de este modulo (NUNCA toca atlas_pocket/trackrecord/resolution.py
+    ni MatchResult, mandato del Director 2026-08-24). Mismo criterio EXACTO
+    que atlas_lab_mockup/pipeline/02_compute_historical_stats.py::
+    team_goal_values(period='1ST'): incident_type='goal', rescinded=0,
+    time_min<=45. Gateado por matches.has_incidents=1 -- si no hay datos de
+    incidentes para ese partido, retorna None (pendiente honesto, un 0 real
+    y un 0 "sin dato" nunca deben confundirse)."""
+    conn = sqlite3.connect(SOCCER_DB_PATH)
+    try:
+        row = conn.execute("SELECT has_incidents FROM matches WHERE id=?", (match_id,)).fetchone()
+        if not row or not row[0]:
+            return None
+        n = conn.execute(
+            "SELECT COUNT(*) FROM match_incidents "
+            "WHERE match_id=? AND incident_type='goal' AND rescinded=0 AND time_min<=45",
+            (match_id,),
+        ).fetchone()[0]
+        return n
+    finally:
+        conn.close()
+
+
+def _resolve_gol_1t(seleccion, result):
+    ht_goals = _ht_goals_for_match(result.match_id)
+    if ht_goals is None:
+        return None, None  # sin datos de incidentes -- pendiente honesto, nunca se inventa
+    actual = "over" if ht_goals >= 1 else "under"
+    return ("acierto" if seleccion == actual else "fallo"), actual
+
+
 def resolve_entry(market, seleccion, market_context_json, result):
     """Devuelve (acierto, resultado_real) en {'acierto','fallo','push'}, o
     (None, None) si no se puede resolver todavia (dato faltante) -- nunca
@@ -74,6 +132,8 @@ def resolve_entry(market, seleccion, market_context_json, result):
         return _resolve_btts(seleccion, result)
     if market == "OU10.5_CORNERS_FT":
         return _resolve_corners_over105(seleccion, result)
+    if market == "GOL_PRIMER_TIEMPO":
+        return _resolve_gol_1t(seleccion, result)
     return None, None
 
 
