@@ -7843,5 +7843,28 @@
    "cuota_real_betano": 1.72,
    "activo": true
   }
+ ],
+ "437fbd626350260c": [
+  {
+   "alert_id": "437fbd626350260c",
+   "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "Juventude vs Clube De Regatas Brasil (Brasileirão Série B)",
+   "liga": "Brasileirão Série B",
+   "event_id": "15526247",
+   "minuto_alerta": 35,
+   "condicion": "0-0 con dominancia sostenida entre los minutos 32-42 (remates totales≥9, tiros a puerta≥4, córners≥5, todos combinados). Condición original de 'ataques peligrosos' NO evaluada -- dato no disponible en la fuente actual. Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-08-25T23:07:25Z",
+   "t_captura_utc": "2026-08-25T23:08:05Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-08-25T23:10:39Z",
+   "segundos_transcurridos": 139,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "Ft 1.5 @ 1.85",
+   "respuesta_message_id": 2158,
+   "linea_real_betano": 1.5,
+   "cuota_real_betano": 1.85,
+   "mercado_variante": "FT",
+   "activo": true
+  }
  ]
 }
