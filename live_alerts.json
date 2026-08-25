@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-25T17:37:30Z",
+ "generated_at_utc": "2026-08-25T17:39:46Z",
  "n_alerts": 4,
  "alerts": [
   {
@@ -70,44 +70,6 @@
    "alert_id": "fc546a66403b0a33"
   },
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Abha vs Al-Khaleej (Saudi Pro League)",
-   "match_id": "16629432",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 72,
-   "condicion": "Abha acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Abha",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.65,
-    "touches_home": 13,
-    "touches_away": 7,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 60,
-    "equipo_que_realizo_sustitucion": "Abha",
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-08-25T17:19:29Z",
-    "t_inicio_estimado_condicion": "2026-08-25T16:58:22Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-25T17:19:29Z",
-   "t_captura_utc": "2026-08-25T17:37:26Z",
-   "t_evaluacion_utc": "2026-08-25T17:37:26Z",
-   "t_generacion_utc": "2026-08-25T17:37:26Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Abha vs Al-Khaleej\n⏱ Minuto: 72'\n📊 Marcador: 1-1\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Abha acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Abha, min 60\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "60190903277eac18"
-  },
-  {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Al-Taawoun vs Al-Fayha (Saudi Pro League)",
    "match_id": "16629433",
@@ -140,6 +102,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Al-Taawoun vs Al-Fayha\n⏱ Minuto: 69'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: presión combinada sostenida — xG 2.37, 25 tiros totales (7 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "cf2c97d1936cd334"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Abha vs Al-Khaleej (Saudi Pro League)",
+   "match_id": "16629432",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 74,
+   "condicion": "Abha acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Abha",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6667,
+    "touches_home": 14,
+    "touches_away": 7,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 60,
+    "equipo_que_realizo_sustitucion": "Abha",
+    "marcador_en_el_momento": "1-1",
+    "t_primera_observacion_atlas": "2026-08-25T17:19:29Z",
+    "t_inicio_estimado_condicion": "2026-08-25T16:58:22Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-25T17:19:29Z",
+   "t_captura_utc": "2026-08-25T17:39:44Z",
+   "t_evaluacion_utc": "2026-08-25T17:39:45Z",
+   "t_generacion_utc": "2026-08-25T17:39:45Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Abha vs Al-Khaleej\n⏱ Minuto: 74'\n📊 Marcador: 1-1\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Abha acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Abha, min 60\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "60190903277eac18"
   }
  ]
 }
