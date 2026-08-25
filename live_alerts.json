@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-25T18:43:27Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-25T18:44:22Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "H3_PERSISTENCIA_TIROS_INVESTIGACION",
@@ -126,7 +126,7 @@
    "match_id": "16629435",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 42,
+   "minuto": 43,
    "condicion": "4 córners totales antes del min 45 (3-1), Al-Shabab presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Al-Riyadh NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -140,52 +140,14 @@
    },
    "t_evento_real_utc": "2026-08-25T18:29:47Z",
    "t_captura_utc": "2026-08-25T18:29:47Z",
-   "t_evaluacion_utc": "2026-08-25T18:43:13Z",
-   "t_generacion_utc": "2026-08-25T18:43:13Z",
+   "t_evaluacion_utc": "2026-08-25T18:44:10Z",
+   "t_generacion_utc": "2026-08-25T18:44:10Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Al-Shabab vs Al-Riyadh\n⏱ Minuto: 42'\n📊 Marcador: 1-2\n🏆 Liga: Saudi Pro League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Al-Shabab presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Al-Riyadh no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Al-Shabab vs Al-Riyadh\n⏱ Minuto: 43'\n📊 Marcador: 1-2\n🏆 Liga: Saudi Pro League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Al-Shabab presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Al-Riyadh no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "f4770d84805d31e2"
-  },
-  {
-   "strategy_id": "L3",
-   "match_label": "Al-Ettifaq vs Al-Nassr (Saudi Pro League)",
-   "match_id": "16629434",
-   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
-   "cuota_detectada": null,
-   "minuto": 43,
-   "condicion": "Expulsión de Al-Nassr (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_expulsado": "Al-Nassr",
-    "marcador_al_detectar": "1-0",
-    "total_rojas_partido": 1
-   },
-   "t_evento_real_utc": "2026-08-25T18:13:31Z",
-   "t_captura_utc": "2026-08-25T18:43:04Z",
-   "t_evaluacion_utc": "2026-08-25T18:43:18Z",
-   "t_generacion_utc": "2026-08-25T18:43:18Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-25T18:32:39Z",
-     "latencia_envio_ms": 990.6449317932129,
-     "error": null,
-     "message_id": 2145,
-     "chat_id": -5219979824
-    }
-   },
-   "latencia_total_seg": 1148.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L3\n\n⚽ Al-Ettifaq vs Al-Nassr\n⏱ Minuto: 43'\n📊 Marcador: 1-0\n🏆 Liga: Saudi Pro League\n\n🟥 Expulsado: Al-Nassr\n\n👉 REVISAR AHORA EN BETANO:\nOver Goles — confirmá que la cuota siga sin ajustar antes de entrar",
-   "evidencia": null,
-   "alert_id": "c33669c87f8b6e4d"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -193,7 +155,7 @@
    "match_id": "16629434",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "Al-Nassr acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -215,13 +177,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-25T18:41:22Z",
-   "t_captura_utc": "2026-08-25T18:43:26Z",
-   "t_evaluacion_utc": "2026-08-25T18:43:26Z",
-   "t_generacion_utc": "2026-08-25T18:43:26Z",
+   "t_captura_utc": "2026-08-25T18:44:21Z",
+   "t_evaluacion_utc": "2026-08-25T18:44:21Z",
+   "t_generacion_utc": "2026-08-25T18:44:21Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Ettifaq vs Al-Nassr\n⏱ Minuto: 43'\n📊 Marcador: 1-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Nassr acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Al-Nassr, min 16\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Ettifaq vs Al-Nassr\n⏱ Minuto: 44'\n📊 Marcador: 1-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Nassr acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Al-Nassr, min 16\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "ef8f906e378e2f67"
   },
@@ -231,7 +193,7 @@
    "match_id": "16629435",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "Al-Shabab acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -253,13 +215,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-25T18:20:25Z",
-   "t_captura_utc": "2026-08-25T18:43:27Z",
-   "t_evaluacion_utc": "2026-08-25T18:43:27Z",
-   "t_generacion_utc": "2026-08-25T18:43:27Z",
+   "t_captura_utc": "2026-08-25T18:44:22Z",
+   "t_evaluacion_utc": "2026-08-25T18:44:22Z",
+   "t_generacion_utc": "2026-08-25T18:44:22Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Shabab vs Al-Riyadh\n⏱ Minuto: 43'\n📊 Marcador: 1-2\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Shabab acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Shabab vs Al-Riyadh\n⏱ Minuto: 44'\n📊 Marcador: 1-2\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Shabab acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "516ef8c9bd574392"
   }
