@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-25T22:57:25Z",
+ "generated_at_utc": "2026-08-25T22:58:19Z",
  "n_alerts": 4,
  "alerts": [
   {
@@ -46,51 +46,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Atlético Goianiense vs Botafogo-SP\n⏱ Minuto: 25'\n📊 Marcador: 2-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Atlético Goianiense — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "79a84058bf21934e"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Juventude vs Clube De Regatas Brasil (Brasileirão Série B)",
-   "match_id": "15526247",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 24,
-   "condicion": "Clube De Regatas Brasil domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Clube De Regatas Brasil",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 1,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-25T22:49:08Z",
-   "t_captura_utc": "2026-08-25T22:49:08Z",
-   "t_evaluacion_utc": "2026-08-25T22:57:21Z",
-   "t_generacion_utc": "2026-08-25T22:57:21Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-25T22:50:26Z",
-     "latencia_envio_ms": 878.2577514648438,
-     "error": null,
-     "message_id": 2155,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 78.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Juventude vs Clube De Regatas Brasil\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Clube De Regatas Brasil — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "42b0a30af3a7435c"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -167,6 +122,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Juventude vs Clube De Regatas Brasil\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Clube De Regatas Brasil acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "d3b8bf28e47be448"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Juventude vs Clube De Regatas Brasil (Brasileirão Série B)",
+   "match_id": "15526247",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "Clube De Regatas Brasil domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Clube De Regatas Brasil",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 1,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-25T22:49:08Z",
+   "t_captura_utc": "2026-08-25T22:49:08Z",
+   "t_evaluacion_utc": "2026-08-25T22:58:19Z",
+   "t_generacion_utc": "2026-08-25T22:58:19Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-25T22:50:26Z",
+     "latencia_envio_ms": 878.2577514648438,
+     "error": null,
+     "message_id": 2155,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 78.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Juventude vs Clube De Regatas Brasil\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Clube De Regatas Brasil — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "42b0a30af3a7435c"
   }
  ]
 }
