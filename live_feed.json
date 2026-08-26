@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-26T00:38:54Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-08-26T00:41:54Z",
+ "n_live_target": 2,
  "matches": {
   "16799776": {
    "event_id": 16799776,
@@ -11,12 +11,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 8,
+   "minute": 11,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 58,
-     "away": 42
+     "home": 50,
+     "away": 50
     },
     "xg": {
      "label": "Expected Goals (xG)",
@@ -30,8 +30,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 45,
-     "away": 34
+     "home": 60,
+     "away": 63
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -41,28 +41,80 @@
    },
    "odds": {
     "btts": {
-     "yes": 2.05,
-     "no": 1.7,
-     "captured_at_utc": "2026-08-26T00:38:46Z"
+     "yes": 2.0,
+     "no": 1.75,
+     "captured_at_utc": "2026-08-26T00:41:41Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-08-26T00:38:46Z"
+     "captured_at_utc": "2026-08-26T00:41:41Z"
     },
     "1x2": {
      "home": 1.533,
-     "draw": 4.0,
+     "draw": 4.333,
      "away": 6.0,
-     "captured_at_utc": "2026-08-26T00:38:46Z"
+     "captured_at_utc": "2026-08-26T00:41:41Z"
     },
     "goals_over_25": {
-     "over": 1.909,
-     "under": 1.8,
-     "captured_at_utc": "2026-08-26T00:38:46Z"
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-08-26T00:41:41Z"
     }
    },
-   "updated_at_utc": "2026-08-26T00:38:54Z"
+   "updated_at_utc": "2026-08-26T00:41:54Z"
+  },
+  "16835067": {
+   "event_id": 16835067,
+   "league": "Leagues Cup",
+   "home": "CF Monterrey",
+   "away": "Chicago Fire",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 0,
+   "stats": {
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.5,
+     "no": 2.5,
+     "captured_at_utc": "2026-08-26T00:41:41Z"
+    },
+    "corners_over_95": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-08-26T00:41:41Z"
+    },
+    "1x2": {
+     "home": 2.75,
+     "draw": 3.6,
+     "away": 2.4,
+     "captured_at_utc": "2026-08-26T00:41:41Z"
+    },
+    "goals_over_25": {
+     "over": 1.571,
+     "under": 2.25,
+     "captured_at_utc": "2026-08-26T00:41:41Z"
+    }
+   },
+   "updated_at_utc": "2026-08-26T00:41:54Z"
   }
  }
 }
