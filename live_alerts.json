@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-26T01:49:33Z",
+ "generated_at_utc": "2026-08-26T01:54:27Z",
  "n_alerts": 4,
  "alerts": [
   {
@@ -70,44 +70,6 @@
    "alert_id": "abdd40c3984dda35"
   },
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "CF Monterrey vs Chicago Fire (Leagues Cup)",
-   "match_id": "16835067",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 46,
-   "condicion": "CF Monterrey acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "CF Monterrey",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6875,
-    "touches_home": 11,
-    "touches_away": 5,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 29,
-    "equipo_que_realizo_sustitucion": "CF Monterrey",
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-08-26T01:49:29Z",
-    "t_inicio_estimado_condicion": "2026-08-26T01:31:14Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-26T01:49:29Z",
-   "t_captura_utc": "2026-08-26T01:49:29Z",
-   "t_evaluacion_utc": "2026-08-26T01:49:30Z",
-   "t_generacion_utc": "2026-08-26T01:49:30Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CF Monterrey vs Chicago Fire\n⏱ Minuto: 46'\n📊 Marcador: 1-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: CF Monterrey acumula 69% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CF Monterrey, min 29\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "ea1e8b467496eb76"
-  },
-  {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Independiente del Valle vs Deportes Tolima (CONMEBOL Libertadores)",
    "match_id": "16799776",
@@ -140,6 +102,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Independiente del Valle vs Deportes Tolima\n⏱ Minuto: 61'\n📊 Marcador: 1-0\n🏆 Liga: CONMEBOL Libertadores\n\n📝 Motivo: presión combinada sostenida — xG 1.32, 15 tiros totales (3 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "407ab1bef8628fa4"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "CF Monterrey vs Chicago Fire (Leagues Cup)",
+   "match_id": "16835067",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 51,
+   "condicion": "CF Monterrey acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "CF Monterrey",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6875,
+    "touches_home": 11,
+    "touches_away": 5,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 29,
+    "equipo_que_realizo_sustitucion": "CF Monterrey",
+    "marcador_en_el_momento": "1-0",
+    "t_primera_observacion_atlas": "2026-08-26T01:49:29Z",
+    "t_inicio_estimado_condicion": "2026-08-26T01:31:14Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-26T01:49:29Z",
+   "t_captura_utc": "2026-08-26T01:54:27Z",
+   "t_evaluacion_utc": "2026-08-26T01:54:27Z",
+   "t_generacion_utc": "2026-08-26T01:54:27Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CF Monterrey vs Chicago Fire\n⏱ Minuto: 51'\n📊 Marcador: 1-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: CF Monterrey acumula 69% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CF Monterrey, min 29\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "ea1e8b467496eb76"
   }
  ]
 }
