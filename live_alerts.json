@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-26T01:34:21Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-08-26T01:35:25Z",
+ "n_alerts": 2,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -46,6 +46,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CF Monterrey vs Chicago Fire\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: CF Monterrey — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "ef80fb1c552b36de"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Independiente del Valle vs Deportes Tolima (CONMEBOL Libertadores)",
+   "match_id": "16799776",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 1,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-08-26T01:33:55Z",
+   "t_captura_utc": "2026-08-26T01:33:55Z",
+   "t_evaluacion_utc": "2026-08-26T01:35:19Z",
+   "t_generacion_utc": "2026-08-26T01:35:19Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-26T01:35:20Z",
+     "latencia_envio_ms": 1024.911642074585,
+     "error": null,
+     "message_id": 2162,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 85.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Independiente del Valle vs Deportes Tolima\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "4176936ff13a98c2"
   }
  ]
 }
