@@ -1,59 +1,14 @@
 {
- "generated_at_utc": "2026-08-26T01:35:25Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-26T01:36:24Z",
+ "n_alerts": 1,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "CF Monterrey vs Chicago Fire (Leagues Cup)",
-   "match_id": "16835067",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "CF Monterrey domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "CF Monterrey",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-26T01:05:53Z",
-   "t_captura_utc": "2026-08-26T01:05:53Z",
-   "t_evaluacion_utc": "2026-08-26T01:06:40Z",
-   "t_generacion_utc": "2026-08-26T01:06:40Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-26T01:06:41Z",
-     "latencia_envio_ms": 830.5094242095947,
-     "error": null,
-     "message_id": 2161,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 48.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CF Monterrey vs Chicago Fire\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: CF Monterrey — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "ef80fb1c552b36de"
-  },
   {
    "strategy_id": "A2",
    "match_label": "Independiente del Valle vs Deportes Tolima (CONMEBOL Libertadores)",
    "match_id": "16799776",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 46,
+   "minuto": 47,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -66,8 +21,8 @@
    },
    "t_evento_real_utc": "2026-08-26T01:33:55Z",
    "t_captura_utc": "2026-08-26T01:33:55Z",
-   "t_evaluacion_utc": "2026-08-26T01:35:19Z",
-   "t_generacion_utc": "2026-08-26T01:35:19Z",
+   "t_evaluacion_utc": "2026-08-26T01:36:19Z",
+   "t_generacion_utc": "2026-08-26T01:36:19Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -81,7 +36,7 @@
    },
    "latencia_total_seg": 85.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Independiente del Valle vs Deportes Tolima\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Independiente del Valle vs Deportes Tolima\n⏱ Minuto: 47'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Libertadores\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "4176936ff13a98c2"
   }
