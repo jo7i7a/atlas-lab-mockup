@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-28T19:06:01Z",
- "n_alerts": 6,
+ "generated_at_utc": "2026-08-28T19:07:06Z",
+ "n_alerts": 7,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -46,7 +46,7 @@
    "match_id": "16483652",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 35,
+   "minuto": 36,
    "condicion": "4 córners totales antes del min 45 (1-3), Erzurumspor FK presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Gençlerbirliği NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -60,12 +60,12 @@
    },
    "t_evento_real_utc": "2026-08-28T18:52:28Z",
    "t_captura_utc": "2026-08-28T18:52:28Z",
-   "t_evaluacion_utc": "2026-08-28T19:05:20Z",
-   "t_generacion_utc": "2026-08-28T19:05:20Z",
+   "t_evaluacion_utc": "2026-08-28T19:06:19Z",
+   "t_generacion_utc": "2026-08-28T19:06:19Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Gençlerbirliği vs Erzurumspor FK\n⏱ Minuto: 35'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Erzurumspor FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Gençlerbirliği no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Gençlerbirliği vs Erzurumspor FK\n⏱ Minuto: 36'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Erzurumspor FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Gençlerbirliği no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "ab8a9d35e4ef7337"
   },
@@ -75,7 +75,7 @@
    "match_id": "16316771",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 46,
+   "minuto": 47,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -88,8 +88,8 @@
    },
    "t_evento_real_utc": "2026-08-28T19:04:53Z",
    "t_captura_utc": "2026-08-28T19:04:53Z",
-   "t_evaluacion_utc": "2026-08-28T19:05:38Z",
-   "t_generacion_utc": "2026-08-28T19:05:38Z",
+   "t_evaluacion_utc": "2026-08-28T19:06:41Z",
+   "t_generacion_utc": "2026-08-28T19:06:41Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -103,9 +103,47 @@
    },
    "latencia_total_seg": 46.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ FC Groningen vs Fortuna Sittard\n⏱ Minuto: 46'\n📊 Marcador: 1-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ FC Groningen vs Fortuna Sittard\n⏱ Minuto: 47'\n📊 Marcador: 1-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "2c88f3a5432e475c"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Al-Khaleej vs Al-Hilal (Saudi Pro League)",
+   "match_id": "16629463",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 1,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-08-28T19:05:16Z",
+   "t_captura_utc": "2026-08-28T19:05:16Z",
+   "t_evaluacion_utc": "2026-08-28T19:06:42Z",
+   "t_generacion_utc": "2026-08-28T19:06:42Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-28T19:06:43Z",
+     "latencia_envio_ms": 844.125509262085,
+     "error": null,
+     "message_id": 2173,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 87.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Al-Khaleej vs Al-Hilal\n⏱ Minuto: 46'\n📊 Marcador: 1-5\n🏆 Liga: Saudi Pro League\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "e99c6753b3cdbbca"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -113,7 +151,7 @@
    "match_id": "16316771",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 46,
+   "minuto": 47,
    "condicion": "FC Groningen acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -135,13 +173,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-28T19:04:34Z",
-   "t_captura_utc": "2026-08-28T19:05:47Z",
-   "t_evaluacion_utc": "2026-08-28T19:05:47Z",
-   "t_generacion_utc": "2026-08-28T19:05:47Z",
+   "t_captura_utc": "2026-08-28T19:06:52Z",
+   "t_evaluacion_utc": "2026-08-28T19:06:53Z",
+   "t_generacion_utc": "2026-08-28T19:06:53Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Groningen vs Fortuna Sittard\n⏱ Minuto: 46'\n📊 Marcador: 1-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: FC Groningen acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Groningen vs Fortuna Sittard\n⏱ Minuto: 47'\n📊 Marcador: 1-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: FC Groningen acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "8f2ea17bc2671aab"
   },
@@ -151,7 +189,7 @@
    "match_id": "16483652",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 36,
+   "minuto": 37,
    "condicion": "Gençlerbirliği acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -173,13 +211,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-28T19:04:39Z",
-   "t_captura_utc": "2026-08-28T19:05:51Z",
-   "t_evaluacion_utc": "2026-08-28T19:05:52Z",
-   "t_generacion_utc": "2026-08-28T19:05:52Z",
+   "t_captura_utc": "2026-08-28T19:06:57Z",
+   "t_evaluacion_utc": "2026-08-28T19:06:58Z",
+   "t_generacion_utc": "2026-08-28T19:06:58Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Gençlerbirliği vs Erzurumspor FK\n⏱ Minuto: 36'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Gençlerbirliği acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Gençlerbirliği vs Erzurumspor FK\n⏱ Minuto: 37'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Gençlerbirliği acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "7139487c67292c55"
   },
@@ -189,7 +227,7 @@
    "match_id": "16284980",
    "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "cuota_detectada": null,
-   "minuto": 16,
+   "minuto": 17,
    "condicion": "0-0 en minuto 15 con tiros a puerta combinados>0 en cada tramo 1-5/6-10/11-15 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -206,8 +244,8 @@
    },
    "t_evento_real_utc": "2026-08-28T19:04:29Z",
    "t_captura_utc": "2026-08-28T19:04:29Z",
-   "t_evaluacion_utc": "2026-08-28T19:06:00Z",
-   "t_generacion_utc": "2026-08-28T19:06:00Z",
+   "t_evaluacion_utc": "2026-08-28T19:07:06Z",
+   "t_generacion_utc": "2026-08-28T19:07:06Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -221,7 +259,7 @@
    },
    "latencia_total_seg": 91.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟣 H3 — INVESTIGACIÓN LIVE (Persistencia de tiros)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ AC Milan vs Venezia\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nTiros a puerta (ambos equipos) por tramo:\n  min 1-5: 1\n  min 6-10: 1\n  min 11-15: 1\n\n🏆 Liga: Serie A\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "mensaje_custom": "🟣 H3 — INVESTIGACIÓN LIVE (Persistencia de tiros)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ AC Milan vs Venezia\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nTiros a puerta (ambos equipos) por tramo:\n  min 1-5: 1\n  min 6-10: 1\n  min 11-15: 1\n\n🏆 Liga: Serie A\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "1503662c7ea1d12d"
   }
