@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-28T22:46:28Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-08-28T22:49:37Z",
+ "n_alerts": 2,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -39,6 +39,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Unión vs Sarmiento\n⏱ Minuto: 44'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional Clausura\n\n📝 Motivo: Unión acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Unión, min 23\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "a39bf1d291051035"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Cobresal vs Palestino (Chile Primera)",
+   "match_id": "1000013214",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 19,
+   "condicion": "Cobresal domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Cobresal",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-28T22:48:29Z",
+   "t_captura_utc": "2026-08-28T22:48:29Z",
+   "t_evaluacion_utc": "2026-08-28T22:49:36Z",
+   "t_generacion_utc": "2026-08-28T22:49:36Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-28T22:49:37Z",
+     "latencia_envio_ms": 809.0958595275879,
+     "error": null,
+     "message_id": 2175,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 68.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Cobresal vs Palestino\n⏱ Minuto: 19'\n📊 Marcador: 1-0\n🏆 Liga: Chile Primera\n\n📝 Motivo: Cobresal — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "f704fb269f7778ae"
   }
  ]
 }
