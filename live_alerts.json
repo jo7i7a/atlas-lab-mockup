@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-28T21:02:19Z",
+ "generated_at_utc": "2026-08-28T21:03:36Z",
  "n_alerts": 3,
  "alerts": [
   {
@@ -42,44 +42,6 @@
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Deportivo Alavés vs Villarreal (LaLiga)",
-   "match_id": "16416290",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 75,
-   "condicion": "Villarreal acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Villarreal",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.8085,
-    "touches_home": 9,
-    "touches_away": 38,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 70,
-    "equipo_que_realizo_sustitucion": "Villarreal",
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-08-28T20:36:38Z",
-    "t_inicio_estimado_condicion": "2026-08-28T19:52:39Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-28T20:36:38Z",
-   "t_captura_utc": "2026-08-28T21:02:18Z",
-   "t_evaluacion_utc": "2026-08-28T21:02:18Z",
-   "t_generacion_utc": "2026-08-28T21:02:18Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportivo Alavés vs Villarreal\n⏱ Minuto: 75'\n📊 Marcador: 1-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Villarreal acumula 81% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Villarreal, min 70\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "344f380ac3b2bf15"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Rio Ave vs Sporting CP (Liga Portugal Betclic)",
    "match_id": "16450848",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
@@ -115,6 +77,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rio Ave vs Sporting CP\n⏱ Minuto: 85'\n📊 Marcador: 0-4\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Sporting CP acumula 69% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Sporting CP, min 81\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "a1bdffbac2e6824e"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Deportivo Alavés vs Villarreal (LaLiga)",
+   "match_id": "16416290",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 77,
+   "condicion": "Villarreal acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Villarreal",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.8085,
+    "touches_home": 9,
+    "touches_away": 38,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 70,
+    "equipo_que_realizo_sustitucion": "Villarreal",
+    "marcador_en_el_momento": "1-0",
+    "t_primera_observacion_atlas": "2026-08-28T20:36:38Z",
+    "t_inicio_estimado_condicion": "2026-08-28T19:52:39Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-28T20:36:38Z",
+   "t_captura_utc": "2026-08-28T21:03:36Z",
+   "t_evaluacion_utc": "2026-08-28T21:03:36Z",
+   "t_generacion_utc": "2026-08-28T21:03:36Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportivo Alavés vs Villarreal\n⏱ Minuto: 77'\n📊 Marcador: 1-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Villarreal acumula 81% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Villarreal, min 70\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "344f380ac3b2bf15"
   }
  ]
 }
