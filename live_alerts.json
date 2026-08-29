@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-08-29T17:06:06Z",
- "n_alerts": 23,
+ "generated_at_utc": "2026-08-29T17:07:25Z",
+ "n_alerts": 22,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Levante vs Real Betis (LaLiga)",
-   "match_id": "5868035",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 70,
-   "condicion": "Real Betis acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Real Betis",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6066,
-    "touches_home": 24,
-    "touches_away": 37,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 69,
-    "equipo_que_realizo_sustitucion": "Real Betis",
-    "marcador_en_el_momento": "3-2",
-    "t_primera_observacion_atlas": "2026-08-29T16:36:27Z",
-    "t_inicio_estimado_condicion": "2026-08-29T15:40:50Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-29T16:36:27Z",
-   "t_captura_utc": "2026-08-29T16:38:12Z",
-   "t_evaluacion_utc": "2026-08-29T16:38:12Z",
-   "t_generacion_utc": "2026-08-29T16:38:12Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Levante vs Real Betis\n⏱ Minuto: 70'\n📊 Marcador: 3-2\n🏆 Liga: LaLiga\n\n📝 Motivo: Real Betis acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Real Betis, min 69\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "7018470719d7706f"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Strasbourg vs Lens (Ligue 1)",
@@ -812,35 +774,6 @@
    "alert_id": "ef3363b9fb5df8ec"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Tottenham Hotspur vs Newcastle United (Premier League)",
-   "match_id": "5795434",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 34,
-   "condicion": "5 córners totales antes del min 45 (2-3), Newcastle United presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Tottenham Hotspur NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 2,
-    "corners_away": 3,
-    "equipo_presiona": "Newcastle United",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-29T16:57:57Z",
-   "t_captura_utc": "2026-08-29T16:57:57Z",
-   "t_evaluacion_utc": "2026-08-29T17:05:19Z",
-   "t_generacion_utc": "2026-08-29T17:05:19Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Tottenham Hotspur vs Newcastle United\n⏱ Minuto: 34'\n📊 Marcador: 0-0\n🏆 Liga: Premier League\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Newcastle United presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Tottenham Hotspur no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "88faf105f3b17df5"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Sassuolo vs Torino (Serie A)",
    "match_id": "5749659",
@@ -953,6 +886,35 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Borussia Dortmund vs Hamburger SV\n⏱ Minuto: 34'\n📊 Marcador: 1-0\n🏆 Liga: Bundesliga\n\n📝 Motivo: Borussia Dortmund acumula 90% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "fa56b4e7f56b2e39"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Tottenham Hotspur vs Newcastle United (Premier League)",
+   "match_id": "5795434",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 36,
+   "condicion": "5 córners totales antes del min 45 (2-3), Newcastle United presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Tottenham Hotspur NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 2,
+    "corners_away": 3,
+    "equipo_presiona": "Newcastle United",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-29T16:57:57Z",
+   "t_captura_utc": "2026-08-29T16:57:57Z",
+   "t_evaluacion_utc": "2026-08-29T17:07:25Z",
+   "t_generacion_utc": "2026-08-29T17:07:25Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Tottenham Hotspur vs Newcastle United\n⏱ Minuto: 36'\n📊 Marcador: 0-0\n🏆 Liga: Premier League\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Newcastle United presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Tottenham Hotspur no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "88faf105f3b17df5"
   }
  ]
 }
