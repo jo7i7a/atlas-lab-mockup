@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-29T20:24:02Z",
+ "generated_at_utc": "2026-08-29T20:25:30Z",
  "n_alerts": 9,
  "alerts": [
   {
@@ -181,63 +181,6 @@
    "alert_id": "e78eb6310595b859"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "Rosario Central vs Gimnasia LP (Liga Profesional Clausura)",
-   "match_id": "5115974",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 19,
-   "condicion": "4 córners totales antes del min 30 (4-0), Rosario Central presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Gimnasia LP NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Rosario Central"
-   },
-   "t_evento_real_utc": "2026-08-29T20:10:21Z",
-   "t_captura_utc": "2026-08-29T20:10:21Z",
-   "t_evaluacion_utc": "2026-08-29T20:20:10Z",
-   "t_generacion_utc": "2026-08-29T20:20:10Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Rosario Central vs Gimnasia LP\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional Clausura\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Rosario Central presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Gimnasia LP no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "54fe186810539cfe"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Rosario Central vs Gimnasia LP (Liga Profesional Clausura)",
-   "match_id": "5115974",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 19,
-   "condicion": "4 córners totales antes del min 45 (4-0), Rosario Central presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Gimnasia LP NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Rosario Central",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-29T20:10:21Z",
-   "t_captura_utc": "2026-08-29T20:10:21Z",
-   "t_evaluacion_utc": "2026-08-29T20:20:28Z",
-   "t_generacion_utc": "2026-08-29T20:20:28Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Rosario Central vs Gimnasia LP\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional Clausura\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Rosario Central presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Gimnasia LP no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "73fb4e40f91efd86"
-  },
-  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Rosario Central vs Gimnasia LP (Liga Profesional Clausura)",
    "match_id": "5115974",
@@ -319,6 +262,63 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rosario Central vs Gimnasia LP\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional Clausura\n\n📝 Motivo: Gimnasia LP acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "b33ea929632f72cf"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "Rosario Central vs Gimnasia LP (Liga Profesional Clausura)",
+   "match_id": "5115974",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 24,
+   "condicion": "4 córners totales antes del min 30 (4-0), Rosario Central presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Gimnasia LP NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Rosario Central"
+   },
+   "t_evento_real_utc": "2026-08-29T20:10:21Z",
+   "t_captura_utc": "2026-08-29T20:10:21Z",
+   "t_evaluacion_utc": "2026-08-29T20:25:10Z",
+   "t_generacion_utc": "2026-08-29T20:25:10Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Rosario Central vs Gimnasia LP\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional Clausura\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Rosario Central presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Gimnasia LP no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "54fe186810539cfe"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Rosario Central vs Gimnasia LP (Liga Profesional Clausura)",
+   "match_id": "5115974",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 24,
+   "condicion": "4 córners totales antes del min 45 (4-0), Rosario Central presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Gimnasia LP NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Rosario Central",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-29T20:10:21Z",
+   "t_captura_utc": "2026-08-29T20:10:21Z",
+   "t_evaluacion_utc": "2026-08-29T20:25:30Z",
+   "t_generacion_utc": "2026-08-29T20:25:30Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Rosario Central vs Gimnasia LP\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional Clausura\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Rosario Central presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Gimnasia LP no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "73fb4e40f91efd86"
   }
  ]
 }
