@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-29T18:19:30Z",
+ "generated_at_utc": "2026-08-29T18:21:09Z",
  "n_alerts": 10,
  "alerts": [
   {
@@ -233,125 +233,6 @@
    "alert_id": "08b14fac4ddf449d"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Deportivo Riestra vs Vélez Sarsfield (Liga Profesional Clausura)",
-   "match_id": "5115968",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 32,
-   "condicion": "5 córners totales antes del min 45 (2-3), Vélez Sarsfield presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Deportivo Riestra NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 2,
-    "corners_away": 3,
-    "equipo_presiona": "Vélez Sarsfield",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-29T18:14:57Z",
-   "t_captura_utc": "2026-08-29T18:14:57Z",
-   "t_evaluacion_utc": "2026-08-29T18:18:23Z",
-   "t_generacion_utc": "2026-08-29T18:18:23Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Deportivo Riestra vs Vélez Sarsfield\n⏱ Minuto: 32'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional Clausura\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Vélez Sarsfield presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Deportivo Riestra no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "aec214c2bb6f2009"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Al-Ettifaq vs Al Diriyah (Saudi Pro League)",
-   "match_id": "5970112",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 16,
-   "condicion": "Al-Ettifaq domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Al-Ettifaq",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-29T18:17:46Z",
-   "t_captura_utc": "2026-08-29T18:17:46Z",
-   "t_evaluacion_utc": "2026-08-29T18:19:05Z",
-   "t_generacion_utc": "2026-08-29T18:19:05Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-29T18:19:06Z",
-     "latencia_envio_ms": 811.7501735687256,
-     "error": null,
-     "message_id": 2261,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 80.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Al-Ettifaq vs Al Diriyah\n⏱ Minuto: 16'\n📊 Marcador: 0-1\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Ettifaq — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "9a0d4461028db74f"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Al Fateh FC vs Al Ittihad (Saudi Pro League)",
-   "match_id": "5970113",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 16,
-   "condicion": "Al Ittihad domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Al Ittihad",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 0,
-    "remates_away": 4,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-29T18:17:46Z",
-   "t_captura_utc": "2026-08-29T18:17:46Z",
-   "t_evaluacion_utc": "2026-08-29T18:19:08Z",
-   "t_generacion_utc": "2026-08-29T18:19:08Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-29T18:19:08Z",
-     "latencia_envio_ms": 811.6917610168457,
-     "error": null,
-     "message_id": 2262,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 82.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Al Fateh FC vs Al Ittihad\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al Ittihad — ≥2 remates en los últimos 5 min (away=4)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "bc733d674c6bcd39"
-  },
-  {
    "strategy_id": "H3_PERSISTENCIA_TIROS_INVESTIGACION",
    "match_label": "Al Fateh FC vs Al Ittihad (Saudi Pro League)",
    "match_id": "5970113",
@@ -392,6 +273,125 @@
    "mensaje_custom": "🟣 H3 — INVESTIGACIÓN LIVE (Persistencia de tiros)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Al Fateh FC vs Al Ittihad\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nTiros a puerta (ambos equipos) por tramo:\n  min 1-5: 1\n  min 6-10: 3\n  min 11-15: 2\n\n🏆 Liga: Saudi Pro League\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "b5fb695647028dd6"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Deportivo Riestra vs Vélez Sarsfield (Liga Profesional Clausura)",
+   "match_id": "5115968",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 34,
+   "condicion": "5 córners totales antes del min 45 (2-3), Vélez Sarsfield presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Deportivo Riestra NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 2,
+    "corners_away": 3,
+    "equipo_presiona": "Vélez Sarsfield",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-29T18:14:57Z",
+   "t_captura_utc": "2026-08-29T18:14:57Z",
+   "t_evaluacion_utc": "2026-08-29T18:20:22Z",
+   "t_generacion_utc": "2026-08-29T18:20:22Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Deportivo Riestra vs Vélez Sarsfield\n⏱ Minuto: 34'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional Clausura\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Vélez Sarsfield presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Deportivo Riestra no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "aec214c2bb6f2009"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Al-Ettifaq vs Al Diriyah (Saudi Pro League)",
+   "match_id": "5970112",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Al-Ettifaq domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Al-Ettifaq",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-29T18:17:46Z",
+   "t_captura_utc": "2026-08-29T18:17:46Z",
+   "t_evaluacion_utc": "2026-08-29T18:21:00Z",
+   "t_generacion_utc": "2026-08-29T18:21:00Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-29T18:19:06Z",
+     "latencia_envio_ms": 811.7501735687256,
+     "error": null,
+     "message_id": 2261,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 80.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Al-Ettifaq vs Al Diriyah\n⏱ Minuto: 18'\n📊 Marcador: 0-1\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Ettifaq — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "9a0d4461028db74f"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Al Fateh FC vs Al Ittihad (Saudi Pro League)",
+   "match_id": "5970113",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Al Ittihad domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Al Ittihad",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 0,
+    "remates_away": 4,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-29T18:17:46Z",
+   "t_captura_utc": "2026-08-29T18:17:46Z",
+   "t_evaluacion_utc": "2026-08-29T18:21:02Z",
+   "t_generacion_utc": "2026-08-29T18:21:02Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-29T18:19:08Z",
+     "latencia_envio_ms": 811.6917610168457,
+     "error": null,
+     "message_id": 2262,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 82.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Al Fateh FC vs Al Ittihad\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al Ittihad — ≥2 remates en los últimos 5 min (away=4)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "bc733d674c6bcd39"
   }
  ]
 }
