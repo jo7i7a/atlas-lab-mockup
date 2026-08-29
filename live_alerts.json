@@ -1,52 +1,7 @@
 {
- "generated_at_utc": "2026-08-29T09:27:51Z",
+ "generated_at_utc": "2026-08-29T09:28:49Z",
  "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Gamba Osaka vs Sanfrecce Hiroshima (J. League)",
-   "match_id": "5803548",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 22,
-   "condicion": "Sanfrecce Hiroshima domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sanfrecce Hiroshima",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-29T09:21:35Z",
-   "t_captura_utc": "2026-08-29T09:21:35Z",
-   "t_evaluacion_utc": "2026-08-29T09:27:27Z",
-   "t_generacion_utc": "2026-08-29T09:27:27Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-29T09:22:28Z",
-     "latencia_envio_ms": 784.8203182220459,
-     "error": null,
-     "message_id": 2178,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 53.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Gamba Osaka vs Sanfrecce Hiroshima\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: J. League\n\n📝 Motivo: Sanfrecce Hiroshima — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "e815edc4f0a69f91"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Gamba Osaka vs Sanfrecce Hiroshima (J. League)",
@@ -86,12 +41,57 @@
    "alert_id": "aff704620ace6edd"
   },
   {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Gamba Osaka vs Sanfrecce Hiroshima (J. League)",
+   "match_id": "5803548",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 23,
+   "condicion": "Sanfrecce Hiroshima domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Sanfrecce Hiroshima",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-29T09:21:35Z",
+   "t_captura_utc": "2026-08-29T09:21:35Z",
+   "t_evaluacion_utc": "2026-08-29T09:28:25Z",
+   "t_generacion_utc": "2026-08-29T09:28:25Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-29T09:22:28Z",
+     "latencia_envio_ms": 784.8203182220459,
+     "error": null,
+     "message_id": 2178,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 53.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Gamba Osaka vs Sanfrecce Hiroshima\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: J. League\n\n📝 Motivo: Sanfrecce Hiroshima — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "e815edc4f0a69f91"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Mito Hollyhock vs Machida Zelvia (J. League)",
    "match_id": "5803551",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "Mito Hollyhock acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -113,13 +113,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-29T09:25:45Z",
-   "t_captura_utc": "2026-08-29T09:27:50Z",
-   "t_evaluacion_utc": "2026-08-29T09:27:51Z",
-   "t_generacion_utc": "2026-08-29T09:27:51Z",
+   "t_captura_utc": "2026-08-29T09:28:49Z",
+   "t_evaluacion_utc": "2026-08-29T09:28:49Z",
+   "t_generacion_utc": "2026-08-29T09:28:49Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Mito Hollyhock vs Machida Zelvia\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: J. League\n\n📝 Motivo: Mito Hollyhock acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Mito Hollyhock vs Machida Zelvia\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: J. League\n\n📝 Motivo: Mito Hollyhock acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "319b9e79e6fd63f3"
   }
