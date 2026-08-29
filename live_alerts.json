@@ -1,41 +1,7 @@
 {
- "generated_at_utc": "2026-08-29T18:15:34Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-29T18:17:13Z",
+ "n_alerts": 8,
  "alerts": [
-  {
-   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Borussia Dortmund vs Hamburger SV (Bundesliga)",
-   "match_id": "5881145",
-   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 59,
-   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_combinado": 1.33,
-    "tiros_combinados": 20,
-    "sot_combinado": 7,
-    "presion_reciente_10min": 5,
-    "marcador_en_el_momento": "2-0",
-    "t_primera_observacion_atlas": "2026-08-29T17:45:38Z",
-    "t_inicio_estimado_condicion": null,
-    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-29T17:45:38Z",
-   "t_captura_utc": "2026-08-29T17:49:21Z",
-   "t_evaluacion_utc": "2026-08-29T17:49:21Z",
-   "t_generacion_utc": "2026-08-29T17:49:21Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Borussia Dortmund vs Hamburger SV\n⏱ Minuto: 59'\n📊 Marcador: 2-0\n🏆 Liga: Bundesliga\n\n📝 Motivo: presión combinada sostenida — xG 1.33, 20 tiros totales (7 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
-   "evidencia": null,
-   "alert_id": "d8fc7a2049a6faa3"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Fiorentina vs Frosinone (Serie A)",
@@ -271,6 +237,63 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Deportivo Riestra vs Vélez Sarsfield\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional Clausura\n\n📝 Motivo: Deportivo Riestra — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "cf1cda5b53c51337"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "Deportivo Riestra vs Vélez Sarsfield (Liga Profesional Clausura)",
+   "match_id": "5115968",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 30,
+   "condicion": "5 córners totales antes del min 30 (2-3), Vélez Sarsfield presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Deportivo Riestra NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 2,
+    "corners_away": 3,
+    "equipo_presiona": "Vélez Sarsfield"
+   },
+   "t_evento_real_utc": "2026-08-29T18:14:57Z",
+   "t_captura_utc": "2026-08-29T18:14:57Z",
+   "t_evaluacion_utc": "2026-08-29T18:16:10Z",
+   "t_generacion_utc": "2026-08-29T18:16:10Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Deportivo Riestra vs Vélez Sarsfield\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional Clausura\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Vélez Sarsfield presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Deportivo Riestra no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "08b14fac4ddf449d"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Deportivo Riestra vs Vélez Sarsfield (Liga Profesional Clausura)",
+   "match_id": "5115968",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 30,
+   "condicion": "5 córners totales antes del min 45 (2-3), Vélez Sarsfield presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Deportivo Riestra NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 2,
+    "corners_away": 3,
+    "equipo_presiona": "Vélez Sarsfield",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-29T18:14:57Z",
+   "t_captura_utc": "2026-08-29T18:14:57Z",
+   "t_evaluacion_utc": "2026-08-29T18:16:21Z",
+   "t_generacion_utc": "2026-08-29T18:16:21Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Deportivo Riestra vs Vélez Sarsfield\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional Clausura\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Vélez Sarsfield presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Deportivo Riestra no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "aec214c2bb6f2009"
   }
  ]
 }
