@@ -11,7 +11,7 @@ from pathlib import Path
 
 import pytest
 
-from atlas_lab_mockup.tipster import common, governance, hypothesis_shadow, picks, pick_governance, rankings, settlement
+from atlas_lab_mockup.tipster import btts_report, common, governance, hypothesis_shadow, picks, pick_governance, rankings, settlement
 
 
 def _hyp(hypothesis_id="AWAY_1X2_P50_V1", mercado="1X2_FT", seleccion="away",
@@ -431,6 +431,61 @@ def test_run_no_regenera_semanal_si_quedan_partidos_pendientes(_rankings_env):
     # Tercera corrida -- ahora SI termino -> se regenera
     resumen3 = rankings.run(finished_event_ids_fn=lambda ids: set(ids))
     assert resumen3["weekly_regenerated"] is True
+
+
+def test_run_regenera_semanal_si_la_ventana_ya_vencio_aunque_queden_pendientes(_rankings_env):
+    """Fallback de staleness (2026-08-28): un Semanal cuya ventana venció hace
+    más de WEEKLY_STALE_GRACE_DAYS días se regenera aunque queden partidos sin
+    resultado (ligas sin cobertura en soccer_analytics.db lo congelaban para
+    siempre)."""
+    work = _rankings_env
+    match_list = [{"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": _kickoff(0)}]
+    pocket = {"a-b-1": {"resolved": True, "markets": {"OU25_GOALS_FT": {"probability": {"over": 0.6, "under": 0.4}, "engine_id": "e", "governance_status": "BASELINE"}}}}
+    _write_json(work / "match_list.json", match_list)
+    _write_json(work / "pocket_engine_results.json", pocket)
+    _write_json(work / "historical_stats_results.json", {"a-b-1": {"btts_general_pct": 55.0}})
+    _write_json(work / "match_event_ids.json", {"a-b-1": {"event_id": 999}})
+    _write_json(work / "oddspapi_lean.json", {})
+
+    stale_end = (rankings.chile_today() - datetime.timedelta(days=5)).isoformat()
+    _write_json(rankings.WEEKLY_STATE_PATH, {
+        "generated_at_utc": "2026-01-01T00:00:00Z",
+        "window_start": (rankings.chile_today() - datetime.timedelta(days=11)).isoformat(),
+        "window_end": stale_end,
+        "rankings": {"OVER25": [{"match_id": "x", "event_id": 555, "home": "X", "away": "Y",
+                                  "league": "L", "kickoff_utc": stale_end + "T18:00:00Z",
+                                  "probabilidad_atlas": 0.6, "cuota": None, "bookmaker": None}]},
+    })
+
+    # 555 nunca termina; sin el fallback esto quedaría congelado para siempre
+    resumen = rankings.run(finished_event_ids_fn=lambda ids: set())
+    assert resumen["weekly_regenerated"] is True
+    weekly = json.load(open(rankings.WEEKLY_STATE_PATH, encoding="utf-8"))
+    assert weekly["window_end"] != stale_end  # ventana nueva, ya no la vencida
+
+
+def test_run_no_regenera_semanal_si_ventana_vigente_y_quedan_pendientes(_rankings_env):
+    """Contra-prueba del fallback: si la ventana NO venció, un partido pendiente
+    sigue congelando el Semanal (comportamiento original intacto)."""
+    work = _rankings_env
+    match_list = [{"id": "a-b-1", "home": "A", "away": "B", "league": "L", "kickoffUTC": _kickoff(0)}]
+    pocket = {"a-b-1": {"resolved": True, "markets": {"OU25_GOALS_FT": {"probability": {"over": 0.6, "under": 0.4}, "engine_id": "e", "governance_status": "BASELINE"}}}}
+    _write_json(work / "match_list.json", match_list)
+    _write_json(work / "pocket_engine_results.json", pocket)
+    _write_json(work / "historical_stats_results.json", {"a-b-1": {"btts_general_pct": 55.0}})
+    _write_json(work / "match_event_ids.json", {"a-b-1": {"event_id": 999}})
+    _write_json(work / "oddspapi_lean.json", {})
+
+    fresh_end = (rankings.chile_today() + datetime.timedelta(days=3)).isoformat()
+    _write_json(rankings.WEEKLY_STATE_PATH, {
+        "generated_at_utc": "2026-01-01T00:00:00Z",
+        "window_start": rankings.chile_today().isoformat(), "window_end": fresh_end,
+        "rankings": {"OVER25": [{"match_id": "x", "event_id": 555, "home": "X", "away": "Y",
+                                  "league": "L", "kickoff_utc": fresh_end + "T18:00:00Z",
+                                  "probabilidad_atlas": 0.6, "cuota": None, "bookmaker": None}]},
+    })
+    resumen = rankings.run(finished_event_ids_fn=lambda ids: set())
+    assert resumen["weekly_regenerated"] is False
 
 
 def test_run_no_duplica_history_en_corridas_repetidas(_rankings_env):
@@ -1288,6 +1343,90 @@ def test_performance_summary_vacio_no_rompe(tmp_path):
     resumen = settlement.performance_summary(str(tmp_path / "no_existe.jsonl"))
     assert resumen["total"] == 0
     assert resumen["win_rate_pct"] is None
+
+
+# ---------------------------------------------------------------------
+# btts_report.py (2026-08-29) -- reporte read-only de precisión del
+# Ranking BTTS diario sobre tipster_rankings_history.jsonl
+# ---------------------------------------------------------------------
+
+def _btts_row(wk, pat, pos, partido="X vs Y", liga="L", estado="FINALIZADO", acierto="acierto",
+              resultado_real="yes", market="BTTS", ranking_type="daily"):
+    return {
+        "ranking_type": ranking_type, "market": market, "selection": "yes",
+        "event_id": hash((wk, pos)) % 100000, "match_id": f"{wk}-{pos}", "partido": partido,
+        "liga": liga, "kickoff_utc": wk + "T18:00:00Z", "predicted_at_utc": pat,
+        "window_key": wk, "probabilidad_atlas": 0.7, "posicion": pos, "cuota": None,
+        "bookmaker": None, "ev_pct": None, "estado": estado,
+        "resultado_real": resultado_real, "acierto": acierto,
+    }
+
+
+def _write_jsonl(path, rows):
+    with open(path, "w", encoding="utf-8") as f:
+        for r in rows:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+
+
+def test_btts_report_solo_toma_btts_daily(tmp_path):
+    path = tmp_path / "h.jsonl"
+    _write_jsonl(path, [
+        _btts_row("2026-08-16", "T1", 1),
+        _btts_row("2026-08-16", "T1", 2, market="OU25_GOALS_FT"),   # otro mercado -> ignorado
+        _btts_row("2026-08-16", "T1", 3, ranking_type="weekly"),     # otra ventana -> ignorado
+    ])
+    rows = btts_report.load_btts_rows(str(path))
+    assert len(rows) == 1 and rows[0]["posicion"] == 1
+
+
+def test_btts_report_no_mezcla_snapshots_en_topn(tmp_path):
+    """Dos snapshots del MISMO día no se combinan: cada uno aporta su propio
+    Top-N. Snapshot A: pos 1 acierto. Snapshot B: pos 1 fallo. Top1 global =
+    1 acierto / 2 finalizadas."""
+    path = tmp_path / "h.jsonl"
+    _write_jsonl(path, [
+        _btts_row("2026-08-22", "A", 1, acierto="acierto"),
+        _btts_row("2026-08-22", "A", 2, acierto="fallo"),
+        _btts_row("2026-08-22", "B", 1, acierto="fallo"),
+        _btts_row("2026-08-22", "B", 2, acierto="acierto"),
+    ])
+    rep = btts_report.build_report(str(path))
+    top1 = rep["A_acumulado_por_topn"][1]
+    assert top1["n_finalizado"] == 2 and top1["aciertos"] == 1 and top1["pct_acierto"] == 50.0
+    # y hay 2 snapshots distintos
+    assert len(rep["B_por_snapshot"]) == 2
+
+
+def test_btts_report_snapshot_completo_vs_parcial(tmp_path):
+    path = tmp_path / "h.jsonl"
+    _write_jsonl(path, [
+        _btts_row("2026-08-20", "S1", 1, estado="FINALIZADO", acierto="acierto"),
+        _btts_row("2026-08-20", "S1", 2, estado="PENDIENTE", acierto=None, resultado_real=None),
+    ])
+    rep = btts_report.build_report(str(path))
+    s = rep["B_por_snapshot"][0]
+    assert s["completo"] is False and s["pendientes"] == 1 and s["n_finalizado"] == 1
+
+
+def test_btts_report_vacio_no_rompe(tmp_path):
+    rep = btts_report.build_report(str(tmp_path / "nope.jsonl"))
+    assert rep["D_estado"] == {"vacio": True}
+    txt = btts_report.render_text(rep)
+    assert isinstance(txt, str) and "sin filas BTTS" in txt
+
+
+def test_btts_report_nunca_escribe_nada(tmp_path):
+    path = tmp_path / "h.jsonl"
+    _write_jsonl(path, [_btts_row("2026-08-16", "T1", 1)])
+    before = set(os.listdir(tmp_path))
+    btts_report.render_text(btts_report.build_report(str(path)))
+    assert set(os.listdir(tmp_path)) == before  # cero archivos nuevos
+
+
+def test_btts_report_nota_10_de_10_es_la_redaccion_exacta_del_director():
+    assert "compuesta a partir de dos snapshots" in btts_report.NOTA_10_DE_10
+    assert "NO representa un Top-10 único" in btts_report.NOTA_10_DE_10
+    assert "No se usa como evidencia de rendimiento del algoritmo" in btts_report.NOTA_10_DE_10
 
 
 # ---------------------------------------------------------------------

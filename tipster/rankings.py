@@ -112,6 +112,17 @@ HISTORY_PATH = ROOT + r"\tipster_rankings_history.jsonl"
 TOP_N = 10
 WEEKLY_WINDOW_DAYS = 7
 
+# Fallback de staleness del ranking Semanal (2026-08-28). El Semanal se
+# congela hasta que TODOS los partidos de su Top-10 (los 6 mercados) figuren
+# como status='finished' en soccer_analytics.db. Ligas sin cobertura en esa
+# base (J1 League, UEFA Champions, Liga Portugal, CONMEBOL Sudamericana) o
+# fixtures nunca sincronizados a 'finished' dejaban `still_pending` > 0 para
+# siempre -> el Semanal quedo congelado desde 2026-08-16. Si la ventana
+# vigente ya vencio hace mas de estos dias, se regenera igual: los partidos
+# ya jugados de la ventana vieja se siguen liquidando en
+# tipster_rankings_history.jsonl via settlement.py (no se pierde nada).
+WEEKLY_STALE_GRACE_DAYS = 2
+
 MARKETS = ("OVER25", "UNDER25", "BTTS", "CORNERS_OVER105", "GOL_1T", "EMPATE")
 
 _ODDSPAPI_LOOKUP = {
@@ -358,6 +369,18 @@ def run(finished_event_ids_fn=None):
         finished = finished_event_ids_fn(pending_event_ids) if pending_event_ids else set()
         still_pending = [eid for eid in pending_event_ids if eid not in finished]
         regenerate = (len(still_pending) == 0)
+
+        # Fallback de staleness (2026-08-28, ver constante WEEKLY_STALE_GRACE_DAYS):
+        # si la ventana vigente ya vencio hace mas de la gracia, regenerar
+        # aunque queden partidos sin resultado (ligas sin cobertura en
+        # soccer_analytics.db bloqueaban el Semanal indefinidamente).
+        if not regenerate:
+            try:
+                _we = _dt.date.fromisoformat(weekly_state.get("window_end"))
+                if today > _we + _dt.timedelta(days=WEEKLY_STALE_GRACE_DAYS):
+                    regenerate = True
+            except (TypeError, ValueError):
+                pass
 
     if regenerate:
         window_start = today
