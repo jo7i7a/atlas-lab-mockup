@@ -1,94 +1,7 @@
 {
- "generated_at_utc": "2026-08-29T13:57:22Z",
- "n_alerts": 13,
+ "generated_at_utc": "2026-08-29T13:58:42Z",
+ "n_alerts": 12,
  "alerts": [
-  {
-   "strategy_id": "L5_V2_OVER05HT_PRESION_PERSISTENTE",
-   "match_label": "Häcken vs Västerås SK (Allsvenskan)",
-   "match_id": "5107585",
-   "market": "Over 0.5 Goles -- Primer Tiempo",
-   "cuota_detectada": null,
-   "minuto": 32,
-   "condicion": "0-0 en ventana 24-34 con peligro acumulado (xG>=0.90, remates>=7, SoT>=2, corners>=2, todos combinados) Y presión reciente activa en los últimos 10 minutos (shots>=3, SoT>=1, via delta_ventana()). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_local": 0.97,
-    "xg_visita": 0.34,
-    "xg_total": 1.31,
-    "remates_local": 8,
-    "remates_visita": 5,
-    "remates_total": 13,
-    "sot_local": 3,
-    "sot_visita": 2,
-    "sot_total": 5,
-    "cor_local": 2,
-    "cor_visita": 2,
-    "cor_total": 4,
-    "marcador": "0-0",
-    "presion_reciente_shots": {
-     "campo": "totalShotsOnGoal",
-     "minutos_ventana_pedidos": 10,
-     "t0_captured_at_utc": "2026-08-29T13:34:38Z",
-     "t1_captured_at_utc": "2026-08-29T13:24:20Z",
-     "valor_t0": [
-      8,
-      5
-     ],
-     "valor_t1": [
-      6,
-      4
-     ],
-     "delta_home": 2,
-     "delta_away": 1,
-     "delta_total": 3,
-     "valido": true,
-     "motivo": null
-    },
-    "presion_reciente_sot": {
-     "campo": "shotsOnGoal",
-     "minutos_ventana_pedidos": 10,
-     "t0_captured_at_utc": "2026-08-29T13:34:38Z",
-     "t1_captured_at_utc": "2026-08-29T13:24:20Z",
-     "valor_t0": [
-      3,
-      2
-     ],
-     "valor_t1": [
-      1,
-      1
-     ],
-     "delta_home": 2,
-     "delta_away": 1,
-     "delta_total": 3,
-     "valido": true,
-     "motivo": null
-    },
-    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo"
-   },
-   "t_evento_real_utc": "2026-08-29T13:28:28Z",
-   "t_captura_utc": "2026-08-29T13:34:38Z",
-   "t_evaluacion_utc": "2026-08-29T13:34:50Z",
-   "t_generacion_utc": "2026-08-29T13:34:50Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-29T13:29:35Z",
-     "latencia_envio_ms": 789.6544933319092,
-     "error": null,
-     "message_id": 2199,
-     "chat_id": 5530307309
-    }
-   },
-   "latencia_total_seg": 67.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🔵 L5_V2 — L5_V2_OVER05HT_PRESION_PERSISTENTE\n\n⚽ Häcken vs Västerås SK\n⏱ Minuto: 32'\n📊 Marcador: 0-0\n\nxG combinado: 1.31\nRemates totales: 8-5 (total 13)\nTiros a puerta: 3-2 (total 5)\nCórners: 2-2 (total 4)\n\nPresión reciente (últimos 10 min):\n  Shots: 3 (T0=2026-08-29T13:34:38Z, T1=2026-08-29T13:24:20Z)\n  SoT: 3 (T0=2026-08-29T13:34:38Z, T1=2026-08-29T13:24:20Z)\n\n🏆 Liga: Allsvenskan\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo",
-   "evidencia": null,
-   "alert_id": "4a95f9e9aa906134"
-  },
   {
    "strategy_id": "L3",
    "match_label": "Häcken vs Västerås SK (Allsvenskan)",
@@ -297,73 +210,6 @@
    "alert_id": "bd76755bb186e22d"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "Elversberg vs Bayer Leverkusen (Bundesliga)",
-   "match_id": "5881146",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "4 córners totales antes del min 30 (3-1), Elversberg presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Bayer Leverkusen NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Elversberg"
-   },
-   "t_evento_real_utc": "2026-08-29T13:50:17Z",
-   "t_captura_utc": "2026-08-29T13:50:17Z",
-   "t_evaluacion_utc": "2026-08-29T13:56:12Z",
-   "t_generacion_utc": "2026-08-29T13:56:12Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Elversberg vs Bayer Leverkusen\n⏱ Minuto: 25'\n📊 Marcador: 2-0\n🏆 Liga: Bundesliga\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Elversberg presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Bayer Leverkusen no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "e97b72223660ed25"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Elversberg vs Bayer Leverkusen (Bundesliga)",
-   "match_id": "5881146",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "4 córners totales antes del min 45 (3-1), Elversberg presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Bayer Leverkusen NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Elversberg",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-29T13:50:17Z",
-   "t_captura_utc": "2026-08-29T13:50:17Z",
-   "t_evaluacion_utc": "2026-08-29T13:56:18Z",
-   "t_generacion_utc": "2026-08-29T13:56:18Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-29T13:50:21Z",
-     "latencia_envio_ms": 824.681282043457,
-     "error": null,
-     "message_id": 2205,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 4.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Elversberg vs Bayer Leverkusen\n⏱ Minuto: 25'\n📊 Marcador: 2-0\n🏆 Liga: Bundesliga\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Elversberg presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Bayer Leverkusen no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "8d7675e05bad9a7f"
-  },
-  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Elversberg vs Bayer Leverkusen (Bundesliga)",
    "match_id": "5881146",
@@ -407,51 +253,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Elversberg vs Bayer Leverkusen\n⏱ Minuto: 25'\n📊 Marcador: 2-0\n🏆 Liga: Bundesliga\n\n📝 Motivo: Elversberg — ≥2 remates en los últimos 5 min (home=4)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "c8b6c49a1cd22d61"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "1. FC Köln vs Hoffenheim (Bundesliga)",
-   "match_id": "5881147",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 22,
-   "condicion": "Hoffenheim domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Hoffenheim",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-29T13:49:36Z",
-   "t_captura_utc": "2026-08-29T13:49:36Z",
-   "t_evaluacion_utc": "2026-08-29T13:56:36Z",
-   "t_generacion_utc": "2026-08-29T13:56:36Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-29T13:50:39Z",
-     "latencia_envio_ms": 806.0300350189209,
-     "error": null,
-     "message_id": 2206,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 63.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ 1. FC Köln vs Hoffenheim\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Bundesliga\n\n📝 Motivo: Hoffenheim — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "b62e5fa481ad4e26"
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -499,12 +300,124 @@
    "alert_id": "789d29d676984269"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "Elversberg vs Bayer Leverkusen (Bundesliga)",
+   "match_id": "5881146",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 27,
+   "condicion": "4 córners totales antes del min 30 (3-1), Elversberg presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Bayer Leverkusen NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Elversberg"
+   },
+   "t_evento_real_utc": "2026-08-29T13:50:17Z",
+   "t_captura_utc": "2026-08-29T13:50:17Z",
+   "t_evaluacion_utc": "2026-08-29T13:58:10Z",
+   "t_generacion_utc": "2026-08-29T13:58:10Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Elversberg vs Bayer Leverkusen\n⏱ Minuto: 27'\n📊 Marcador: 2-0\n🏆 Liga: Bundesliga\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Elversberg presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Bayer Leverkusen no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "e97b72223660ed25"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Elversberg vs Bayer Leverkusen (Bundesliga)",
+   "match_id": "5881146",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 27,
+   "condicion": "4 córners totales antes del min 45 (3-1), Elversberg presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Bayer Leverkusen NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Elversberg",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-29T13:50:17Z",
+   "t_captura_utc": "2026-08-29T13:50:17Z",
+   "t_evaluacion_utc": "2026-08-29T13:58:17Z",
+   "t_generacion_utc": "2026-08-29T13:58:17Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-29T13:50:21Z",
+     "latencia_envio_ms": 824.681282043457,
+     "error": null,
+     "message_id": 2205,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 4.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Elversberg vs Bayer Leverkusen\n⏱ Minuto: 27'\n📊 Marcador: 2-0\n🏆 Liga: Bundesliga\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Elversberg presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Bayer Leverkusen no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "8d7675e05bad9a7f"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "1. FC Köln vs Hoffenheim (Bundesliga)",
+   "match_id": "5881147",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 24,
+   "condicion": "Hoffenheim domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Hoffenheim",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-29T13:49:36Z",
+   "t_captura_utc": "2026-08-29T13:49:36Z",
+   "t_evaluacion_utc": "2026-08-29T13:58:32Z",
+   "t_generacion_utc": "2026-08-29T13:58:32Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-29T13:50:39Z",
+     "latencia_envio_ms": 806.0300350189209,
+     "error": null,
+     "message_id": 2206,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 63.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ 1. FC Köln vs Hoffenheim\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Bundesliga\n\n📝 Motivo: Hoffenheim — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "b62e5fa481ad4e26"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Elversberg vs Bayer Leverkusen (Bundesliga)",
    "match_id": "5881146",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 26,
+   "minuto": 28,
    "condicion": "Elversberg acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -513,8 +426,8 @@
    "extra": {
     "equipo_dominante": "Elversberg",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7059,
-    "touches_home": 12,
+    "ratio_presion_territorial": 0.7222,
+    "touches_home": 13,
     "touches_away": 5,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
@@ -526,13 +439,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-29T13:50:59Z",
-   "t_captura_utc": "2026-08-29T13:57:20Z",
-   "t_evaluacion_utc": "2026-08-29T13:57:20Z",
-   "t_generacion_utc": "2026-08-29T13:57:20Z",
+   "t_captura_utc": "2026-08-29T13:58:39Z",
+   "t_evaluacion_utc": "2026-08-29T13:58:39Z",
+   "t_generacion_utc": "2026-08-29T13:58:39Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Elversberg vs Bayer Leverkusen\n⏱ Minuto: 26'\n📊 Marcador: 2-0\n🏆 Liga: Bundesliga\n\n📝 Motivo: Elversberg acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Elversberg vs Bayer Leverkusen\n⏱ Minuto: 28'\n📊 Marcador: 2-0\n🏆 Liga: Bundesliga\n\n📝 Motivo: Elversberg acumula 72% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "89d6f472d51fcdd8"
   },
@@ -542,7 +455,7 @@
    "match_id": "5881151",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 25,
+   "minuto": 27,
    "condicion": "Eintracht Frankfurt acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -564,13 +477,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-29T13:53:10Z",
-   "t_captura_utc": "2026-08-29T13:57:22Z",
-   "t_evaluacion_utc": "2026-08-29T13:57:22Z",
-   "t_generacion_utc": "2026-08-29T13:57:22Z",
+   "t_captura_utc": "2026-08-29T13:58:41Z",
+   "t_evaluacion_utc": "2026-08-29T13:58:42Z",
+   "t_generacion_utc": "2026-08-29T13:58:42Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Union Berlin vs Eintracht Frankfurt\n⏱ Minuto: 25'\n📊 Marcador: 1-2\n🏆 Liga: Bundesliga\n\n📝 Motivo: Eintracht Frankfurt acumula 82% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Eintracht Frankfurt, min 14\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Union Berlin vs Eintracht Frankfurt\n⏱ Minuto: 27'\n📊 Marcador: 1-2\n🏆 Liga: Bundesliga\n\n📝 Motivo: Eintracht Frankfurt acumula 82% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Eintracht Frankfurt, min 14\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "dc3a4c15ed8cff68"
   }
