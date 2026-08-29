@@ -1,45 +1,5 @@
 {
- "generated_at_utc": "2026-08-29T12:37:41Z",
- "n_alerts": 1,
- "alerts": [
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Middlesbrough vs West Bromwich Albion (Championship)",
-   "match_id": "5836784",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "5 córners totales antes del min 45 (2-3), West Bromwich Albion presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Middlesbrough NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 2,
-    "corners_away": 3,
-    "equipo_presiona": "West Bromwich Albion",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-29T12:09:11Z",
-   "t_captura_utc": "2026-08-29T12:09:11Z",
-   "t_evaluacion_utc": "2026-08-29T12:33:21Z",
-   "t_generacion_utc": "2026-08-29T12:33:21Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-29T12:09:19Z",
-     "latencia_envio_ms": 765.357255935669,
-     "error": null,
-     "message_id": 2194,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 8.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Middlesbrough vs West Bromwich Albion\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: West Bromwich Albion presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Middlesbrough no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "10e83cadc131d688"
-  }
- ]
+ "generated_at_utc": "2026-08-29T12:42:42Z",
+ "n_alerts": 0,
+ "alerts": []
 }
