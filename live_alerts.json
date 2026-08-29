@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-29T18:02:18Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-29T18:04:26Z",
+ "n_alerts": 9,
  "alerts": [
   {
    "strategy_id": "L1-SHADOW",
@@ -102,44 +102,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Borussia Dortmund vs Hamburger SV\n⏱ Minuto: 59'\n📊 Marcador: 2-0\n🏆 Liga: Bundesliga\n\n📝 Motivo: presión combinada sostenida — xG 1.33, 20 tiros totales (7 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "d8fc7a2049a6faa3"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Monza vs Udinese (Serie A)",
-   "match_id": "5749657",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 68,
-   "condicion": "Udinese acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Udinese",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6129,
-    "touches_home": 12,
-    "touches_away": 19,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 68,
-    "equipo_que_realizo_sustitucion": "Udinese",
-    "marcador_en_el_momento": "2-3",
-    "t_primera_observacion_atlas": "2026-08-29T17:51:24Z",
-    "t_inicio_estimado_condicion": "2026-08-29T17:49:39Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-29T17:51:24Z",
-   "t_captura_utc": "2026-08-29T18:01:35Z",
-   "t_evaluacion_utc": "2026-08-29T18:01:36Z",
-   "t_generacion_utc": "2026-08-29T18:01:36Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Monza vs Udinese\n⏱ Minuto: 68'\n📊 Marcador: 2-3\n🏆 Liga: Serie A\n\n📝 Motivo: Udinese acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Udinese, min 68\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "e7ad8362ae53f679"
   },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -293,6 +255,89 @@
    "mensaje_custom": "🟣 H3 — INVESTIGACIÓN LIVE (Persistencia de tiros)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Deportivo Riestra vs Vélez Sarsfield\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nTiros a puerta (ambos equipos) por tramo:\n  min 1-5: 1\n  min 6-10: 1\n  min 11-15: 2\n\n🏆 Liga: Liga Profesional Clausura\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "8f502d841cbb0691"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Deportivo Riestra vs Vélez Sarsfield (Liga Profesional Clausura)",
+   "match_id": "5115968",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "Deportivo Riestra domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Deportivo Riestra",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 2,
+    "remates_away": 1,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-29T18:03:39Z",
+   "t_captura_utc": "2026-08-29T18:03:39Z",
+   "t_evaluacion_utc": "2026-08-29T18:04:07Z",
+   "t_generacion_utc": "2026-08-29T18:04:07Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-29T18:04:08Z",
+     "latencia_envio_ms": 825.8821964263916,
+     "error": null,
+     "message_id": 2260,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 29.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Deportivo Riestra vs Vélez Sarsfield\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional Clausura\n\n📝 Motivo: Deportivo Riestra — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "cf1cda5b53c51337"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Monza vs Udinese (Serie A)",
+   "match_id": "5749657",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 71,
+   "condicion": "Udinese acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Udinese",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.6176,
+    "touches_home": 13,
+    "touches_away": 21,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 68,
+    "equipo_que_realizo_sustitucion": "Udinese",
+    "marcador_en_el_momento": "2-3",
+    "t_primera_observacion_atlas": "2026-08-29T17:51:24Z",
+    "t_inicio_estimado_condicion": "2026-08-29T17:49:39Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-29T17:51:24Z",
+   "t_captura_utc": "2026-08-29T18:04:22Z",
+   "t_evaluacion_utc": "2026-08-29T18:04:22Z",
+   "t_generacion_utc": "2026-08-29T18:04:22Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Monza vs Udinese\n⏱ Minuto: 71'\n📊 Marcador: 2-3\n🏆 Liga: Serie A\n\n📝 Motivo: Udinese acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Udinese, min 68\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "e7ad8362ae53f679"
   }
  ]
 }
