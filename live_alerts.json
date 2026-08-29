@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-29T13:19:36Z",
+ "generated_at_utc": "2026-08-29T13:20:27Z",
  "n_alerts": 4,
  "alerts": [
   {
@@ -84,51 +84,6 @@
    "alert_id": "54c6230ddaa15816"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Häcken vs Västerås SK (Allsvenskan)",
-   "match_id": "5107585",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 17,
-   "condicion": "Häcken domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Häcken",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 2,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-29T13:17:58Z",
-   "t_captura_utc": "2026-08-29T13:17:58Z",
-   "t_evaluacion_utc": "2026-08-29T13:19:27Z",
-   "t_generacion_utc": "2026-08-29T13:19:27Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-29T13:18:29Z",
-     "latencia_envio_ms": 780.5626392364502,
-     "error": null,
-     "message_id": 2196,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 31.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Häcken vs Västerås SK\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: Häcken — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "26485f58b7d13060"
-  },
-  {
    "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
    "match_label": "Häcken vs Västerås SK (Allsvenskan)",
    "match_id": "5107585",
@@ -170,6 +125,51 @@
    "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Häcken vs Västerås SK\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 3-5 (total 8)\nRatio de diferencia home-away: 0.25 (umbral <= 0.33)\n\n🏆 Liga: Allsvenskan\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "13fa3bc48b3800ed"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Häcken vs Västerås SK (Allsvenskan)",
+   "match_id": "5107585",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Häcken domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Häcken",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 2,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-29T13:17:58Z",
+   "t_captura_utc": "2026-08-29T13:17:58Z",
+   "t_evaluacion_utc": "2026-08-29T13:20:27Z",
+   "t_generacion_utc": "2026-08-29T13:20:27Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-29T13:18:29Z",
+     "latencia_envio_ms": 780.5626392364502,
+     "error": null,
+     "message_id": 2196,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 31.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Häcken vs Västerås SK\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: Häcken — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "26485f58b7d13060"
   }
  ]
 }
