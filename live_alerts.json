@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-29T13:30:32Z",
+ "generated_at_utc": "2026-08-29T13:31:33Z",
  "n_alerts": 7,
  "alerts": [
   {
@@ -215,7 +215,7 @@
    "match_id": "5107586",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 27,
+   "minuto": 28,
    "condicion": "Elfsborg acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -237,13 +237,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-29T13:23:45Z",
-   "t_captura_utc": "2026-08-29T13:30:27Z",
-   "t_evaluacion_utc": "2026-08-29T13:30:28Z",
-   "t_generacion_utc": "2026-08-29T13:30:28Z",
+   "t_captura_utc": "2026-08-29T13:31:28Z",
+   "t_evaluacion_utc": "2026-08-29T13:31:29Z",
+   "t_generacion_utc": "2026-08-29T13:31:29Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Elfsborg vs Degerfors\n⏱ Minuto: 27'\n📊 Marcador: 1-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: Elfsborg acumula 87% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Elfsborg vs Degerfors\n⏱ Minuto: 28'\n📊 Marcador: 1-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: Elfsborg acumula 87% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "9430d8407bae8a75"
   },
@@ -253,7 +253,7 @@
    "match_id": "5107585",
    "market": "Over 0.5 Goles -- Primer Tiempo",
    "cuota_detectada": null,
-   "minuto": 28,
+   "minuto": 29,
    "condicion": "0-0 en ventana 24-34 con peligro acumulado (xG>=0.90, remates>=7, SoT>=2, corners>=2, todos combinados) Y presión reciente activa en los últimos 10 minutos (shots>=3, SoT>=1, via delta_ventana()). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -276,27 +276,27 @@
     "presion_reciente_shots": {
      "campo": "totalShotsOnGoal",
      "minutos_ventana_pedidos": 10,
-     "t0_captured_at_utc": "2026-08-29T13:30:15Z",
-     "t1_captured_at_utc": "2026-08-29T13:20:11Z",
+     "t0_captured_at_utc": "2026-08-29T13:31:17Z",
+     "t1_captured_at_utc": "2026-08-29T13:20:57Z",
      "valor_t0": [
       8,
       5
      ],
      "valor_t1": [
       5,
-      3
+      4
      ],
      "delta_home": 3,
-     "delta_away": 2,
-     "delta_total": 5,
+     "delta_away": 1,
+     "delta_total": 4,
      "valido": true,
      "motivo": null
     },
     "presion_reciente_sot": {
      "campo": "shotsOnGoal",
      "minutos_ventana_pedidos": 10,
-     "t0_captured_at_utc": "2026-08-29T13:30:15Z",
-     "t1_captured_at_utc": "2026-08-29T13:20:11Z",
+     "t0_captured_at_utc": "2026-08-29T13:31:17Z",
+     "t1_captured_at_utc": "2026-08-29T13:20:57Z",
      "valor_t0": [
       3,
       2
@@ -314,9 +314,9 @@
     "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo"
    },
    "t_evento_real_utc": "2026-08-29T13:28:28Z",
-   "t_captura_utc": "2026-08-29T13:30:15Z",
-   "t_evaluacion_utc": "2026-08-29T13:30:32Z",
-   "t_generacion_utc": "2026-08-29T13:30:32Z",
+   "t_captura_utc": "2026-08-29T13:31:17Z",
+   "t_evaluacion_utc": "2026-08-29T13:31:33Z",
+   "t_generacion_utc": "2026-08-29T13:31:33Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -330,7 +330,7 @@
    },
    "latencia_total_seg": 67.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🔵 L5_V2 — L5_V2_OVER05HT_PRESION_PERSISTENTE\n\n⚽ Häcken vs Västerås SK\n⏱ Minuto: 28'\n📊 Marcador: 0-0\n\nxG combinado: 1.31\nRemates totales: 8-5 (total 13)\nTiros a puerta: 3-2 (total 5)\nCórners: 2-1 (total 3)\n\nPresión reciente (últimos 10 min):\n  Shots: 5 (T0=2026-08-29T13:30:15Z, T1=2026-08-29T13:20:11Z)\n  SoT: 3 (T0=2026-08-29T13:30:15Z, T1=2026-08-29T13:20:11Z)\n\n🏆 Liga: Allsvenskan\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo",
+   "mensaje_custom": "🔵 L5_V2 — L5_V2_OVER05HT_PRESION_PERSISTENTE\n\n⚽ Häcken vs Västerås SK\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n\nxG combinado: 1.31\nRemates totales: 8-5 (total 13)\nTiros a puerta: 3-2 (total 5)\nCórners: 2-1 (total 3)\n\nPresión reciente (últimos 10 min):\n  Shots: 4 (T0=2026-08-29T13:31:17Z, T1=2026-08-29T13:20:57Z)\n  SoT: 3 (T0=2026-08-29T13:31:17Z, T1=2026-08-29T13:20:57Z)\n\n🏆 Liga: Allsvenskan\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo",
    "evidencia": null,
    "alert_id": "4a95f9e9aa906134"
   }
