@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-29T11:01:09Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-29T11:02:43Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "L1-SHADOW",
@@ -182,6 +182,45 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Bucheon FC 1995 vs FC Anyang\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: K-League 1\n\n📝 Motivo: FC Anyang — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "38752b50e2df8c1e"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Ulsan HD FC vs Gimcheon Sangmu (K-League 1)",
+   "match_id": "5140013",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 31,
+   "condicion": "4 córners totales antes del min 45 (0-4), Gimcheon Sangmu presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Ulsan HD FC NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Gimcheon Sangmu",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-29T11:00:20Z",
+   "t_captura_utc": "2026-08-29T11:00:20Z",
+   "t_evaluacion_utc": "2026-08-29T11:02:14Z",
+   "t_generacion_utc": "2026-08-29T11:02:14Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-29T11:02:15Z",
+     "latencia_envio_ms": 788.0096435546875,
+     "error": null,
+     "message_id": 2192,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 115.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Ulsan HD FC vs Gimcheon Sangmu\n⏱ Minuto: 31'\n📊 Marcador: 0-1\n🏆 Liga: K-League 1\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Gimcheon Sangmu presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Ulsan HD FC no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "b250607adf1685df"
   }
  ]
 }
