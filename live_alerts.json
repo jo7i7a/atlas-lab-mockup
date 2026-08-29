@@ -1,93 +1,7 @@
 {
- "generated_at_utc": "2026-08-29T13:46:47Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-08-29T13:47:46Z",
+ "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
-   "match_label": "Häcken vs Västerås SK (Allsvenskan)",
-   "match_id": "5107585",
-   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
-   "cuota_detectada": null,
-   "minuto": 16,
-   "condicion": "0-0 en minuto 15 con touchesInOppBox_tot15>=4.0 y |diff home-away|/total<=0.33 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "touches_home": 5.0,
-    "touches_away": 5.0,
-    "touches_total": 10.0,
-    "ratio_diff_home_away": 0.0,
-    "minuto_captura_usada": 15.0,
-    "marcador_min15": "0-0",
-    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
-    "hipotesis": "H2_PRESION_BILATERAL -- INVESTIGACION, NO estrategia certificada"
-   },
-   "t_evento_real_utc": "2026-08-29T13:17:36Z",
-   "t_captura_utc": "2026-08-29T13:17:36Z",
-   "t_evaluacion_utc": "2026-08-29T13:18:37Z",
-   "t_generacion_utc": "2026-08-29T13:18:37Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-29T13:18:38Z",
-     "latencia_envio_ms": 794.8777675628662,
-     "error": null,
-     "message_id": 2197,
-     "chat_id": 5530307309
-    }
-   },
-   "latencia_total_seg": 62.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Häcken vs Västerås SK\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 5-5 (total 10)\nRatio de diferencia home-away: 0.00 (umbral <= 0.33)\n\n🏆 Liga: Allsvenskan\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
-   "evidencia": null,
-   "alert_id": "54c6230ddaa15816"
-  },
-  {
-   "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
-   "match_label": "Häcken vs Västerås SK (Allsvenskan)",
-   "match_id": "5107585",
-   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
-   "cuota_detectada": null,
-   "minuto": 17,
-   "condicion": "0-0 en minuto 15 con touchesInOppBox_tot15>=4.0 y |diff home-away|/total<=0.33 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "touches_home": 3.0,
-    "touches_away": 5.0,
-    "touches_total": 8.0,
-    "ratio_diff_home_away": 0.25,
-    "minuto_captura_usada": 14.68,
-    "marcador_min15": "0-0",
-    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
-    "hipotesis": "H2_PRESION_BILATERAL -- INVESTIGACION, NO estrategia certificada"
-   },
-   "t_evento_real_utc": "2026-08-29T13:17:16Z",
-   "t_captura_utc": "2026-08-29T13:17:16Z",
-   "t_evaluacion_utc": "2026-08-29T13:19:36Z",
-   "t_generacion_utc": "2026-08-29T13:19:36Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-29T13:17:33Z",
-     "latencia_envio_ms": 819.0572261810303,
-     "error": null,
-     "message_id": 2195,
-     "chat_id": 5530307309
-    }
-   },
-   "latencia_total_seg": 17.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Häcken vs Västerås SK\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 3-5 (total 8)\nRatio de diferencia home-away: 0.25 (umbral <= 0.33)\n\n🏆 Liga: Allsvenskan\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
-   "evidencia": null,
-   "alert_id": "13fa3bc48b3800ed"
-  },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Häcken vs Västerås SK (Allsvenskan)",
@@ -340,7 +254,7 @@
    "match_id": "5881150",
    "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "cuota_detectada": null,
-   "minuto": 15,
+   "minuto": 16,
    "condicion": "0-0 en minuto 15 con touchesInOppBox_tot15>=4.0 y |diff home-away|/total<=0.33 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -358,8 +272,8 @@
    },
    "t_evento_real_utc": "2026-08-29T13:46:02Z",
    "t_captura_utc": "2026-08-29T13:46:02Z",
-   "t_evaluacion_utc": "2026-08-29T13:46:46Z",
-   "t_generacion_utc": "2026-08-29T13:46:46Z",
+   "t_evaluacion_utc": "2026-08-29T13:47:46Z",
+   "t_generacion_utc": "2026-08-29T13:47:46Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -373,7 +287,7 @@
    },
    "latencia_total_seg": 45.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ RB Leipzig vs Borussia Mönchengladbach\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 3-3 (total 6)\nRatio de diferencia home-away: 0.00 (umbral <= 0.33)\n\n🏆 Liga: Bundesliga\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ RB Leipzig vs Borussia Mönchengladbach\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 3-3 (total 6)\nRatio de diferencia home-away: 0.00 (umbral <= 0.33)\n\n🏆 Liga: Bundesliga\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "021bbb355da4d048"
   }
