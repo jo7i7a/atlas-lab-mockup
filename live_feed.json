@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-29T16:32:54Z",
- "n_live_target": 7,
+ "generated_at_utc": "2026-08-29T16:35:54Z",
+ "n_live_target": 9,
  "matches": {
   "5795434": {
    "event_id": 5795434,
@@ -11,16 +11,152 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 2,
-   "stats": {},
+   "minute": 5,
+   "stats": {
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 1
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
    "odds": {},
-   "updated_at_utc": "2026-08-29T16:32:54Z"
+   "updated_at_utc": "2026-08-29T16:35:54Z"
   },
   "5881145": {
    "event_id": 5881145,
    "league": "Bundesliga",
    "home": "Dortmund",
    "away": "Hamburger SV",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 4,
+   "stats": {
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-08-29T16:35:54Z"
+  },
+  "5868035": {
+   "event_id": 5868035,
+   "league": "LaLiga",
+   "home": "Levante",
+   "away": "Real Betis",
+   "home_score": 3,
+   "away_score": 2,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 67,
+   "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 1.41,
+     "away": 1.83
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 13,
+     "away": 17
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 6,
+     "away": 6
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 5,
+     "away": 7
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-08-29T16:35:54Z"
+  },
+  "5802917": {
+   "event_id": 5802917,
+   "league": "Ligue 1",
+   "home": "Strasbourg",
+   "away": "Lens",
+   "home_score": 1,
+   "away_score": 1,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 59,
+   "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 1.33,
+     "away": 2.41
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 11,
+     "away": 8
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 4,
+     "away": 4
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 1,
+     "away": 2
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-08-29T16:35:54Z"
+  },
+  "5749653": {
+   "event_id": 5749653,
+   "league": "Serie A",
+   "home": "Fiorentina",
+   "away": "Frosinone",
    "home_score": 0,
    "away_score": 0,
    "status_type": null,
@@ -49,38 +185,33 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-08-29T16:32:54Z"
+   "updated_at_utc": "2026-08-29T16:35:54Z"
   },
-  "5868035": {
-   "event_id": 5868035,
-   "league": "LaLiga",
-   "home": "Levante",
-   "away": "Real Betis",
-   "home_score": 3,
-   "away_score": 2,
+  "5749657": {
+   "event_id": 5749657,
+   "league": "Serie A",
+   "home": "Monza",
+   "away": "Udinese",
+   "home_score": 0,
+   "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 64,
+   "minute": 2,
    "stats": {
-    "xg": {
-     "label": "Expected Goals (xG)",
-     "home": 1.41,
-     "away": 1.81
-    },
     "shots": {
      "label": "Remates totales",
-     "home": 13,
-     "away": 16
+     "home": 0,
+     "away": 0
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 6,
-     "away": 6
+     "home": 0,
+     "away": 0
     },
     "corners": {
      "label": "Corners",
-     "home": 5,
-     "away": 7
+     "home": 0,
+     "away": 0
     },
     "red_cards": {
      "label": "Tarjetas rojas",
@@ -89,47 +220,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-08-29T16:32:54Z"
-  },
-  "5802917": {
-   "event_id": 5802917,
-   "league": "Ligue 1",
-   "home": "Strasbourg",
-   "away": "Lens",
-   "home_score": 2,
-   "away_score": 1,
-   "status_type": null,
-   "status_description": "live",
-   "minute": 56,
-   "stats": {
-    "xg": {
-     "label": "Expected Goals (xG)",
-     "home": 1.01,
-     "away": 2.41
-    },
-    "shots": {
-     "label": "Remates totales",
-     "home": 12,
-     "away": 8
-    },
-    "shots_on_target": {
-     "label": "Remates al arco",
-     "home": 5,
-     "away": 4
-    },
-    "corners": {
-     "label": "Corners",
-     "home": 1,
-     "away": 2
-    },
-    "red_cards": {
-     "label": "Tarjetas rojas",
-     "home": 0,
-     "away": 0
-    }
-   },
-   "odds": {},
-   "updated_at_utc": "2026-08-29T16:32:54Z"
+   "updated_at_utc": "2026-08-29T16:35:54Z"
   },
   "5749659": {
    "event_id": 5749659,
@@ -140,10 +231,36 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 0,
-   "stats": {},
+   "minute": 3,
+   "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.04,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 1,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
    "odds": {},
-   "updated_at_utc": "2026-08-29T16:32:54Z"
+   "updated_at_utc": "2026-08-29T16:35:54Z"
   },
   "5107588": {
    "event_id": 5107588,
@@ -154,12 +271,12 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": null,
+   "minute": 46,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.22,
-     "away": 0.38
+     "home": 0.21,
+     "away": 0.35
     },
     "shots": {
      "label": "Remates totales",
@@ -183,7 +300,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-08-29T16:32:54Z"
+   "updated_at_utc": "2026-08-29T16:35:54Z"
   },
   "1000007296": {
    "event_id": 1000007296,
@@ -194,10 +311,10 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 1,
+   "minute": 4,
    "stats": {},
    "odds": {},
-   "updated_at_utc": "2026-08-29T16:32:54Z"
+   "updated_at_utc": "2026-08-29T16:35:54Z"
   }
  }
 }
