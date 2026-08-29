@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-29T13:48:39Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-29T13:49:56Z",
+ "n_alerts": 8,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -245,6 +245,139 @@
    "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ RB Leipzig vs Borussia Mönchengladbach\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 3-3 (total 6)\nRatio de diferencia home-away: 0.00 (umbral <= 0.33)\n\n🏆 Liga: Bundesliga\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "021bbb355da4d048"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Elversberg vs Bayer Leverkusen (Bundesliga)",
+   "match_id": "5881146",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Elversberg domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Elversberg",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 4,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-29T13:48:28Z",
+   "t_captura_utc": "2026-08-29T13:48:28Z",
+   "t_evaluacion_utc": "2026-08-29T13:49:35Z",
+   "t_generacion_utc": "2026-08-29T13:49:35Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-29T13:49:36Z",
+     "latencia_envio_ms": 756.7734718322754,
+     "error": null,
+     "message_id": 2202,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 68.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Elversberg vs Bayer Leverkusen\n⏱ Minuto: 18'\n📊 Marcador: 2-0\n🏆 Liga: Bundesliga\n\n📝 Motivo: Elversberg — ≥2 remates en los últimos 5 min (home=4)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "c8b6c49a1cd22d61"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "RB Leipzig vs Borussia Mönchengladbach (Bundesliga)",
+   "match_id": "5881150",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 19,
+   "condicion": "RB Leipzig domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "RB Leipzig",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-29T13:48:28Z",
+   "t_captura_utc": "2026-08-29T13:48:28Z",
+   "t_evaluacion_utc": "2026-08-29T13:49:43Z",
+   "t_generacion_utc": "2026-08-29T13:49:43Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-29T13:49:44Z",
+     "latencia_envio_ms": 805.0401210784912,
+     "error": null,
+     "message_id": 2203,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 76.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ RB Leipzig vs Borussia Mönchengladbach\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Bundesliga\n\n📝 Motivo: RB Leipzig — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "fe7bda0d60a1f94c"
+  },
+  {
+   "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
+   "match_label": "1. FC Köln vs Hoffenheim (Bundesliga)",
+   "match_id": "5881147",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 16,
+   "condicion": "0-0 en minuto 15 con touchesInOppBox_tot15>=4.0 y |diff home-away|/total<=0.33 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "touches_home": 3.0,
+    "touches_away": 3.0,
+    "touches_total": 6.0,
+    "ratio_diff_home_away": 0.0,
+    "minuto_captura_usada": 14.93,
+    "marcador_min15": "0-0",
+    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
+    "hipotesis": "H2_PRESION_BILATERAL -- INVESTIGACION, NO estrategia certificada"
+   },
+   "t_evento_real_utc": "2026-08-29T13:48:51Z",
+   "t_captura_utc": "2026-08-29T13:48:51Z",
+   "t_evaluacion_utc": "2026-08-29T13:49:55Z",
+   "t_generacion_utc": "2026-08-29T13:49:55Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-29T13:49:56Z",
+     "latencia_envio_ms": 804.2223453521729,
+     "error": null,
+     "message_id": 2204,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 65.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ 1. FC Köln vs Hoffenheim\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 3-3 (total 6)\nRatio de diferencia home-away: 0.00 (umbral <= 0.33)\n\n🏆 Liga: Bundesliga\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "a2364f0c7cc8d2f9"
   }
  ]
 }
