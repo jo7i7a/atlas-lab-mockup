@@ -1,49 +1,7 @@
 {
- "generated_at_utc": "2026-08-29T18:46:50Z",
- "n_alerts": 12,
+ "generated_at_utc": "2026-08-29T18:48:46Z",
+ "n_alerts": 9,
  "alerts": [
-  {
-   "strategy_id": "H3_PERSISTENCIA_TIROS_INVESTIGACION",
-   "match_label": "Al Fateh FC vs Al Ittihad (Saudi Pro League)",
-   "match_id": "5970113",
-   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
-   "cuota_detectada": null,
-   "minuto": 16,
-   "condicion": "0-0 en minuto 15 con tiros a puerta combinados>0 en cada tramo 1-5/6-10/11-15 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "shots_on_goal_tramo1_1_5": 1.0,
-    "shots_on_goal_tramo2_6_10": 3.0,
-    "shots_on_goal_tramo3_11_15": 2.0,
-    "shots_on_goal_total15": 6.0,
-    "marcador_min15": "0-0",
-    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
-    "hipotesis": "H3_PERSISTENCIA_TIROS -- INVESTIGACION, NO estrategia certificada"
-   },
-   "t_evento_real_utc": "2026-08-29T18:18:15Z",
-   "t_captura_utc": "2026-08-29T18:18:15Z",
-   "t_evaluacion_utc": "2026-08-29T18:19:29Z",
-   "t_generacion_utc": "2026-08-29T18:19:29Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-29T18:19:30Z",
-     "latencia_envio_ms": 780.5452346801758,
-     "error": null,
-     "message_id": 2263,
-     "chat_id": 5530307309
-    }
-   },
-   "latencia_total_seg": 75.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟣 H3 — INVESTIGACIÓN LIVE (Persistencia de tiros)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Al Fateh FC vs Al Ittihad\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nTiros a puerta (ambos equipos) por tramo:\n  min 1-5: 1\n  min 6-10: 3\n  min 11-15: 2\n\n🏆 Liga: Saudi Pro League\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
-   "evidencia": null,
-   "alert_id": "b5fb695647028dd6"
-  },
   {
    "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Deportivo Riestra vs Vélez Sarsfield (Liga Profesional Clausura)",
@@ -127,96 +85,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportivo Riestra vs Vélez Sarsfield\n⏱ Minuto: 39'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional Clausura\n\n📝 Motivo: Vélez Sarsfield acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Vélez Sarsfield, min 37\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "a6c9307f5881fb91"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Al-Ettifaq vs Al Diriyah (Saudi Pro League)",
-   "match_id": "5970112",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Al-Ettifaq domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Al-Ettifaq",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-29T18:17:46Z",
-   "t_captura_utc": "2026-08-29T18:17:46Z",
-   "t_evaluacion_utc": "2026-08-29T18:27:45Z",
-   "t_generacion_utc": "2026-08-29T18:27:45Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-29T18:19:06Z",
-     "latencia_envio_ms": 811.7501735687256,
-     "error": null,
-     "message_id": 2261,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 80.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Al-Ettifaq vs Al Diriyah\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Ettifaq — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "9a0d4461028db74f"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Al Fateh FC vs Al Ittihad (Saudi Pro League)",
-   "match_id": "5970113",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Al Ittihad domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Al Ittihad",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 0,
-    "remates_away": 4,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-29T18:17:46Z",
-   "t_captura_utc": "2026-08-29T18:17:46Z",
-   "t_evaluacion_utc": "2026-08-29T18:27:47Z",
-   "t_generacion_utc": "2026-08-29T18:27:47Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-29T18:19:08Z",
-     "latencia_envio_ms": 811.6917610168457,
-     "error": null,
-     "message_id": 2262,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 82.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Al Fateh FC vs Al Ittihad\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al Ittihad — ≥2 remates en los últimos 5 min (away=4)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "bc733d674c6bcd39"
   },
   {
    "strategy_id": "L1",
@@ -443,7 +311,7 @@
    "match_id": "5970112",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 46,
    "condicion": "Al-Ettifaq acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -465,13 +333,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-29T18:22:52Z",
-   "t_captura_utc": "2026-08-29T18:46:49Z",
-   "t_evaluacion_utc": "2026-08-29T18:46:49Z",
-   "t_generacion_utc": "2026-08-29T18:46:49Z",
+   "t_captura_utc": "2026-08-29T18:48:44Z",
+   "t_evaluacion_utc": "2026-08-29T18:48:45Z",
+   "t_generacion_utc": "2026-08-29T18:48:45Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Ettifaq vs Al Diriyah\n⏱ Minuto: 44'\n📊 Marcador: 0-1\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Ettifaq acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Al-Ettifaq, min 27\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Ettifaq vs Al Diriyah\n⏱ Minuto: 46'\n📊 Marcador: 0-1\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Ettifaq acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Al-Ettifaq, min 27\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "d5b3f0cedc6035ee"
   },
@@ -481,7 +349,7 @@
    "match_id": "5970113",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 46,
    "condicion": "Al Ittihad acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -503,13 +371,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-29T18:22:53Z",
-   "t_captura_utc": "2026-08-29T18:46:50Z",
-   "t_evaluacion_utc": "2026-08-29T18:46:50Z",
-   "t_generacion_utc": "2026-08-29T18:46:50Z",
+   "t_captura_utc": "2026-08-29T18:48:45Z",
+   "t_evaluacion_utc": "2026-08-29T18:48:46Z",
+   "t_generacion_utc": "2026-08-29T18:48:46Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al Fateh FC vs Al Ittihad\n⏱ Minuto: 44'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al Ittihad acumula 83% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al Fateh FC vs Al Ittihad\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al Ittihad acumula 83% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "2e7502937f644ba6"
   }
