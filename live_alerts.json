@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-29T11:15:44Z",
+ "generated_at_utc": "2026-08-29T11:17:42Z",
  "n_alerts": 5,
  "alerts": [
   {
@@ -82,45 +82,6 @@
    "alert_id": "38752b50e2df8c1e"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Ulsan HD FC vs Gimcheon Sangmu (K-League 1)",
-   "match_id": "5140013",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 43,
-   "condicion": "4 córners totales antes del min 45 (0-4), Gimcheon Sangmu presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Ulsan HD FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "Gimcheon Sangmu",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-29T11:00:20Z",
-   "t_captura_utc": "2026-08-29T11:00:20Z",
-   "t_evaluacion_utc": "2026-08-29T11:14:16Z",
-   "t_generacion_utc": "2026-08-29T11:14:16Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-29T11:02:15Z",
-     "latencia_envio_ms": 788.0096435546875,
-     "error": null,
-     "message_id": 2192,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 115.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Ulsan HD FC vs Gimcheon Sangmu\n⏱ Minuto: 43'\n📊 Marcador: 0-1\n🏆 Liga: K-League 1\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Gimcheon Sangmu presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Ulsan HD FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "b250607adf1685df"
-  },
-  {
    "strategy_id": "L2",
    "match_label": "Urawa Red Diamonds vs Yokohama F.Marinos (J. League)",
    "match_id": "5803554",
@@ -150,12 +111,51 @@
    "alert_id": "ae4853cfaa96d0df"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Ulsan HD FC vs Gimcheon Sangmu (K-League 1)",
+   "match_id": "5140013",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "4 córners totales antes del min 45 (0-4), Gimcheon Sangmu presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Ulsan HD FC NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Gimcheon Sangmu",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-29T11:00:20Z",
+   "t_captura_utc": "2026-08-29T11:00:20Z",
+   "t_evaluacion_utc": "2026-08-29T11:16:16Z",
+   "t_generacion_utc": "2026-08-29T11:16:16Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-29T11:02:15Z",
+     "latencia_envio_ms": 788.0096435546875,
+     "error": null,
+     "message_id": 2192,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 115.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Ulsan HD FC vs Gimcheon Sangmu\n⏱ Minuto: 45'\n📊 Marcador: 1-1\n🏆 Liga: K-League 1\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Gimcheon Sangmu presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Ulsan HD FC no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "b250607adf1685df"
+  },
+  {
    "strategy_id": "L2-SHADOW",
    "match_label": "Urawa Red Diamonds vs Yokohama F.Marinos (J. League)",
    "match_id": "5803554",
    "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80']",
    "cuota_detectada": null,
-   "minuto": 48,
+   "minuto": 50,
    "condicion": "Urawa Red Diamonds domina por xG (1.96) y remates a puerta (5) sin ir ganando y sin roja del dominante — Urawa Red Diamonds vs Yokohama F.Marinos. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
    "confianza": "Media",
    "link": "",
@@ -173,13 +173,13 @@
     "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
    },
    "t_evento_real_utc": "2026-08-29T10:52:36Z",
-   "t_captura_utc": "2026-08-29T11:14:31Z",
-   "t_evaluacion_utc": "2026-08-29T11:14:51Z",
-   "t_generacion_utc": "2026-08-29T11:14:51Z",
+   "t_captura_utc": "2026-08-29T11:16:34Z",
+   "t_evaluacion_utc": "2026-08-29T11:16:58Z",
+   "t_generacion_utc": "2026-08-29T11:16:58Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Urawa Red Diamonds vs Yokohama F.Marinos\n⏱ Minuto: 48'\n📊 Marcador: 1-1\n🏆 Liga: J. League\n\n📈 Domina: Urawa Red Diamonds\nxG: 1.96 vs 0.97\nTiros a puerta: 5 vs 4\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Urawa Red Diamonds — ¿línea y cuota reales?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Urawa Red Diamonds vs Yokohama F.Marinos\n⏱ Minuto: 50'\n📊 Marcador: 1-1\n🏆 Liga: J. League\n\n📈 Domina: Urawa Red Diamonds\nxG: 1.96 vs 0.97\nTiros a puerta: 5 vs 4\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Urawa Red Diamonds — ¿línea y cuota reales?",
    "evidencia": null,
    "alert_id": "0d13b483b469ba6e"
   }
