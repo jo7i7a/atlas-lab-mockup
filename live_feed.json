@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-30T02:41:57Z",
+ "generated_at_utc": "2026-08-30T02:45:15Z",
  "n_live_target": 4,
  "matches": {
   "5071313": {
@@ -11,7 +11,7 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": null,
+   "minute": 47,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
@@ -40,7 +40,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-08-30T02:41:57Z"
+   "updated_at_utc": "2026-08-30T02:45:15Z"
   },
   "5071318": {
    "event_id": 5071318,
@@ -51,10 +51,36 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 1,
-   "stats": {},
+   "minute": 4,
+   "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0.01
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 1
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 1
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
    "odds": {},
-   "updated_at_utc": "2026-08-30T02:41:57Z"
+   "updated_at_utc": "2026-08-30T02:45:15Z"
   },
   "5071319": {
    "event_id": 5071319,
@@ -65,16 +91,21 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 1,
+   "minute": 4,
    "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.1,
+     "away": 0
+    },
     "shots": {
      "label": "Remates totales",
-     "home": 0,
+     "home": 1,
      "away": 0
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 0,
+     "home": 1,
      "away": 0
     },
     "corners": {
@@ -89,7 +120,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-08-30T02:41:57Z"
+   "updated_at_utc": "2026-08-30T02:45:15Z"
   },
   "1000014549": {
    "event_id": 1000014549,
@@ -100,27 +131,27 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 78,
+   "minute": 81,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.59,
-     "away": 0.6
+     "home": 0.78,
+     "away": 0.77
     },
     "shots": {
      "label": "Remates totales",
-     "home": 17,
-     "away": 18
+     "home": 18,
+     "away": 20
     },
     "shots_on_target": {
      "label": "Remates al arco",
      "home": 6,
-     "away": 4
+     "away": 5
     },
     "corners": {
      "label": "Corners",
      "home": 2,
-     "away": 6
+     "away": 8
     },
     "red_cards": {
      "label": "Tarjetas rojas",
@@ -129,7 +160,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-08-30T02:41:57Z"
+   "updated_at_utc": "2026-08-30T02:45:15Z"
   }
  }
 }
