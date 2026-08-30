@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-30T14:53:55Z",
- "n_alerts": 6,
+ "generated_at_utc": "2026-08-30T14:54:53Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -35,34 +35,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Paris FC vs Nice\n⏱ Minuto: 70'\n📊 Marcador: 2-0\n🏆 Liga: Ligue 1\n\n📝 Motivo: presión combinada sostenida — xG 1.66, 18 tiros totales (6 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "944247f209aa3eb2"
-  },
-  {
-   "strategy_id": "L1",
-   "match_label": "St. Mirren vs Motherwell (Scottish Premiership)",
-   "match_id": "16362001",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "4 córners totales antes del min 30 (1-3), Motherwell presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿St. Mirren NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Motherwell"
-   },
-   "t_evento_real_utc": "2026-08-30T14:24:42Z",
-   "t_captura_utc": "2026-08-30T14:24:42Z",
-   "t_evaluacion_utc": "2026-08-30T14:30:11Z",
-   "t_generacion_utc": "2026-08-30T14:30:11Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ St. Mirren vs Motherwell\n⏱ Minuto: 30'\n📊 Marcador: 0-2\n🏆 Liga: Scottish Premiership\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Motherwell presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿St. Mirren no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "9a4d91d379e760df"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -101,35 +73,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sunderland vs Fulham\n⏱ Minuto: 81'\n📊 Marcador: 1-0\n🏆 Liga: Premier League\n\n📝 Motivo: Sunderland acumula 70% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Sunderland, min 65\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "7ee4447f367121ad"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "St. Mirren vs Motherwell (Scottish Premiership)",
-   "match_id": "16362001",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 44,
-   "condicion": "4 córners totales antes del min 45 (1-3), Motherwell presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿St. Mirren NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Motherwell",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-30T14:24:42Z",
-   "t_captura_utc": "2026-08-30T14:24:42Z",
-   "t_evaluacion_utc": "2026-08-30T14:44:15Z",
-   "t_generacion_utc": "2026-08-30T14:44:15Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ St. Mirren vs Motherwell\n⏱ Minuto: 44'\n📊 Marcador: 2-2\n🏆 Liga: Scottish Premiership\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Motherwell presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿St. Mirren no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "581b336212902fac"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -175,7 +118,7 @@
    "match_id": "15272504",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 22,
+   "minuto": 23,
    "condicion": "IFK Göteborg domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -195,8 +138,8 @@
    },
    "t_evento_real_utc": "2026-08-30T14:51:02Z",
    "t_captura_utc": "2026-08-30T14:51:02Z",
-   "t_evaluacion_utc": "2026-08-30T14:53:40Z",
-   "t_generacion_utc": "2026-08-30T14:53:40Z",
+   "t_evaluacion_utc": "2026-08-30T14:54:36Z",
+   "t_generacion_utc": "2026-08-30T14:54:36Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -210,7 +153,7 @@
    },
    "latencia_total_seg": 38.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ IFK Göteborg vs Örgryte IS\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IFK Göteborg — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ IFK Göteborg vs Örgryte IS\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IFK Göteborg — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "9a09153d12483cc7"
   }
