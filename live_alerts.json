@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-30T23:20:36Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-30T23:21:37Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -107,6 +107,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Bahia vs Internacional\n⏱ Minuto: 49'\n📊 Marcador: 3-1\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Bahia acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Bahia, min 39\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "8494bada93829434"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "CA Independiente vs Gimnasia y Esgrima Mendoza (Liga Profesional de Fútbol)",
+   "match_id": "16671582",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 0,
+    "corners_1t_away": 1,
+    "corners_1t_total": 1
+   },
+   "t_evento_real_utc": "2026-08-30T23:20:25Z",
+   "t_captura_utc": "2026-08-30T23:20:25Z",
+   "t_evaluacion_utc": "2026-08-30T23:21:23Z",
+   "t_generacion_utc": "2026-08-30T23:21:23Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-30T23:21:24Z",
+     "latencia_envio_ms": 803.626298904419,
+     "error": null,
+     "message_id": 2387,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 59.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ CA Independiente vs Gimnasia y Esgrima Mendoza\n⏱ Minuto: 46'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "98082264c7dec287"
   }
  ]
 }
