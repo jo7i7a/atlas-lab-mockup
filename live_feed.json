@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-30T10:59:54Z",
- "n_live_target": 5,
+ "generated_at_utc": "2026-08-30T11:02:54Z",
+ "n_live_target": 6,
  "matches": {
   "16316795": {
    "event_id": 16316795,
@@ -8,10 +8,10 @@
    "home": "FC Utrecht",
    "away": "PSV Eindhoven",
    "home_score": 1,
-   "away_score": 1,
+   "away_score": 2,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 42,
+   "minute": 45,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -21,7 +21,7 @@
     "xg": {
      "label": "Expected Goals (xG)",
      "home": 0.3,
-     "away": 0.85
+     "away": 0.87
     },
     "big_chances": {
      "label": "Ocasiones claras",
@@ -31,7 +31,7 @@
     "shots": {
      "label": "Remates totales",
      "home": 1,
-     "away": 12
+     "away": 14
     },
     "corners": {
      "label": "Corners",
@@ -40,8 +40,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 131,
-     "away": 257
+     "home": 140,
+     "away": 279
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -51,7 +51,7 @@
     "shots_on_target": {
      "label": "Remates al arco",
      "home": 1,
-     "away": 3
+     "away": 4
     }
    },
    "odds": {
@@ -61,18 +61,75 @@
      "captured_at_utc": "2026-08-30T10:26:18Z"
     },
     "1x2": {
-     "home": 6.0,
-     "draw": 3.75,
-     "away": 1.571,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "home": 17.0,
+     "draw": 6.5,
+     "away": 1.182,
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     },
     "corners_over_95": {
      "over": 1.833,
      "under": 1.833,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     }
    },
-   "updated_at_utc": "2026-08-30T10:59:54Z"
+   "updated_at_utc": "2026-08-30T11:02:54Z"
+  },
+  "16362140": {
+   "event_id": 16362140,
+   "league": "Scottish Premiership",
+   "home": "Aberdeen",
+   "away": "Rangers",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 100,
+     "away": 0
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.06,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 1,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 2,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.667,
+     "no": 2.1,
+     "captured_at_utc": "2026-08-30T11:02:52Z"
+    },
+    "1x2": {
+     "home": 4.0,
+     "draw": 3.75,
+     "away": 1.8,
+     "captured_at_utc": "2026-08-30T11:02:52Z"
+    },
+    "goals_over_25": {
+     "over": 1.727,
+     "under": 2.1,
+     "captured_at_utc": "2026-08-30T11:02:52Z"
+    }
+   },
+   "updated_at_utc": "2026-08-30T11:02:54Z"
   },
   "16933021": {
    "event_id": 16933021,
@@ -83,32 +140,32 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 29,
+   "minute": 32,
    "stats": {},
    "odds": {
     "btts": {
-     "yes": 3.0,
-     "no": 1.364,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "yes": 3.25,
+     "no": 1.333,
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     },
     "1x2": {
      "home": 2.375,
-     "draw": 2.625,
-     "away": 3.75,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "draw": 2.6,
+     "away": 4.0,
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.5,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     }
    },
-   "updated_at_utc": "2026-08-30T10:59:54Z"
+   "updated_at_utc": "2026-08-30T11:02:54Z"
   },
   "15373077": {
    "event_id": 15373077,
@@ -119,32 +176,32 @@
    "away_score": 2,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 29,
+   "minute": 32,
    "stats": {},
    "odds": {
     "btts": {
-     "yes": 1.8,
-     "no": 1.95,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "yes": 1.909,
+     "no": 1.909,
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     },
     "1x2": {
      "home": 41.0,
      "draw": 19.0,
      "away": 1.03,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     },
     "goals_over_25": {
      "over": 1.727,
      "under": 2.0,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     },
     "corners_over_95": {
      "over": 1.909,
      "under": 1.8,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     }
    },
-   "updated_at_utc": "2026-08-30T10:59:54Z"
+   "updated_at_utc": "2026-08-30T11:02:54Z"
   },
   "15373081": {
    "event_id": 15373081,
@@ -155,63 +212,63 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 28,
+   "minute": 31,
    "stats": {},
    "odds": {
     "btts": {
-     "yes": 2.75,
-     "no": 1.4,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "yes": 3.0,
+     "no": 1.364,
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     },
     "1x2": {
-     "home": 3.25,
-     "draw": 2.625,
-     "away": 2.625,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "home": 3.2,
+     "draw": 2.6,
+     "away": 2.75,
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.5,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     }
    },
-   "updated_at_utc": "2026-08-30T10:59:54Z"
+   "updated_at_utc": "2026-08-30T11:02:54Z"
   },
   "15373080": {
    "event_id": 15373080,
    "league": "K League 1",
    "home": "Jeju SK",
    "away": "Daejeon Hana Citizen",
-   "home_score": 0,
+   "home_score": 1,
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 28,
+   "minute": 31,
    "stats": {},
    "odds": {
     "btts": {
-     "yes": 2.2,
-     "no": 1.615,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "yes": 1.286,
+     "no": 3.5,
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     },
     "1x2": {
-     "home": 3.75,
-     "draw": 3.2,
-     "away": 2.05,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "home": 1.909,
+     "draw": 3.5,
+     "away": 4.0,
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     },
     "goals_over_25": {
-     "over": 2.5,
-     "under": 1.5,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "over": 1.5,
+     "under": 2.5,
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     },
     "corners_over_95": {
      "over": 1.727,
      "under": 2.0,
-     "captured_at_utc": "2026-08-30T10:59:40Z"
+     "captured_at_utc": "2026-08-30T11:02:52Z"
     }
    },
-   "updated_at_utc": "2026-08-30T10:59:54Z"
+   "updated_at_utc": "2026-08-30T11:02:54Z"
   }
  }
 }
