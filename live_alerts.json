@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-30T18:47:03Z",
+ "generated_at_utc": "2026-08-30T18:48:35Z",
  "n_alerts": 6,
  "alerts": [
   {
@@ -77,51 +77,6 @@
    "alert_id": "13fd484cf4ee9a15"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Başakşehir FK vs Kasımpaşa (Trendyol Süper Lig)",
-   "match_id": "16483654",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 17,
-   "condicion": "Başakşehir FK domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Başakşehir FK",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-30T18:45:45Z",
-   "t_captura_utc": "2026-08-30T18:45:45Z",
-   "t_evaluacion_utc": "2026-08-30T18:46:55Z",
-   "t_generacion_utc": "2026-08-30T18:46:55Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-30T18:46:56Z",
-     "latencia_envio_ms": 848.9518165588379,
-     "error": null,
-     "message_id": 2351,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 71.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Başakşehir FK vs Kasımpaşa\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Başakşehir FK — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "2b767cebf31be534"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "SC Cambuur vs FC Twente (VriendenLoterij Eredivisie)",
    "match_id": "16316800",
@@ -161,44 +116,6 @@
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Al-Qadsiah vs Al Faisaly (Saudi Pro League)",
-   "match_id": "16629469",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 46,
-   "condicion": "Al-Qadsiah acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Al-Qadsiah",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6522,
-    "touches_home": 15,
-    "touches_away": 8,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "2-1",
-    "t_primera_observacion_atlas": "2026-08-30T18:36:40Z",
-    "t_inicio_estimado_condicion": "2026-08-30T18:35:52Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-30T18:36:40Z",
-   "t_captura_utc": "2026-08-30T18:47:01Z",
-   "t_evaluacion_utc": "2026-08-30T18:47:02Z",
-   "t_generacion_utc": "2026-08-30T18:47:02Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Qadsiah vs Al Faisaly\n⏱ Minuto: 46'\n📊 Marcador: 2-1\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Qadsiah acumula 65% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "7a8002f39b975785"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Banfield vs River Plate (Liga Profesional de Fútbol)",
    "match_id": "16671588",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
@@ -234,6 +151,89 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Banfield vs River Plate\n⏱ Minuto: 47'\n📊 Marcador: 0-2\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: River Plate acumula 68% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "18a9ed13a9fde609"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Başakşehir FK vs Kasımpaşa (Trendyol Süper Lig)",
+   "match_id": "16483654",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Başakşehir FK domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Başakşehir FK",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-30T18:45:45Z",
+   "t_captura_utc": "2026-08-30T18:45:45Z",
+   "t_evaluacion_utc": "2026-08-30T18:48:31Z",
+   "t_generacion_utc": "2026-08-30T18:48:31Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-30T18:46:56Z",
+     "latencia_envio_ms": 848.9518165588379,
+     "error": null,
+     "message_id": 2351,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 71.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Başakşehir FK vs Kasımpaşa\n⏱ Minuto: 18'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Başakşehir FK — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "2b767cebf31be534"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Al-Qadsiah vs Al Faisaly (Saudi Pro League)",
+   "match_id": "16629469",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 48,
+   "condicion": "Al-Qadsiah acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Al-Qadsiah",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.68,
+    "touches_home": 17,
+    "touches_away": 8,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "2-1",
+    "t_primera_observacion_atlas": "2026-08-30T18:36:40Z",
+    "t_inicio_estimado_condicion": "2026-08-30T18:35:52Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-30T18:36:40Z",
+   "t_captura_utc": "2026-08-30T18:48:35Z",
+   "t_evaluacion_utc": "2026-08-30T18:48:35Z",
+   "t_generacion_utc": "2026-08-30T18:48:35Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Qadsiah vs Al Faisaly\n⏱ Minuto: 48'\n📊 Marcador: 2-1\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Qadsiah acumula 68% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "7a8002f39b975785"
   }
  ]
 }
