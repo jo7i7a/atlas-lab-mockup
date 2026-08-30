@@ -1,90 +1,7 @@
 {
- "generated_at_utc": "2026-08-30T21:00:46Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-08-30T21:01:40Z",
+ "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Famalicão vs Gil Vicente (Liga Portugal Betclic)",
-   "match_id": "16450846",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 3,
-    "corners_1t_away": 0,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-30T20:31:01Z",
-   "t_captura_utc": "2026-08-30T20:31:01Z",
-   "t_evaluacion_utc": "2026-08-30T20:38:39Z",
-   "t_generacion_utc": "2026-08-30T20:38:39Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-30T20:33:44Z",
-     "latencia_envio_ms": 828.4809589385986,
-     "error": null,
-     "message_id": 2373,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 163.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Famalicão vs Gil Vicente\n⏱ Minuto: 52'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners 1er tiempo:\nLocal: 3\nVisita: 0\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "a71aa999b9ace21c"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Columbus Crew vs New England Revolution (MLS)",
-   "match_id": "15168347",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 19,
-   "condicion": "New England Revolution domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "New England Revolution",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-30T20:59:13Z",
-   "t_captura_utc": "2026-08-30T20:59:13Z",
-   "t_evaluacion_utc": "2026-08-30T21:00:36Z",
-   "t_generacion_utc": "2026-08-30T21:00:36Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-30T20:59:38Z",
-     "latencia_envio_ms": 853.6722660064697,
-     "error": null,
-     "message_id": 2374,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 25.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Columbus Crew vs New England Revolution\n⏱ Minuto: 19'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: New England Revolution — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "6091170f548f4141"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Celta Vigo vs Athletic Club (LaLiga)",
@@ -118,6 +35,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Celta Vigo vs Athletic Club\n⏱ Minuto: 70'\n📊 Marcador: 0-2\n🏆 Liga: LaLiga\n\n📝 Motivo: presión combinada sostenida — xG 2.89, 21 tiros totales (9 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "0819b8eb7cff4ab0"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Columbus Crew vs New England Revolution (MLS)",
+   "match_id": "15168347",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 20,
+   "condicion": "New England Revolution domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "New England Revolution",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-30T20:59:13Z",
+   "t_captura_utc": "2026-08-30T20:59:13Z",
+   "t_evaluacion_utc": "2026-08-30T21:01:35Z",
+   "t_generacion_utc": "2026-08-30T21:01:35Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-30T20:59:38Z",
+     "latencia_envio_ms": 853.6722660064697,
+     "error": null,
+     "message_id": 2374,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 25.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Columbus Crew vs New England Revolution\n⏱ Minuto: 20'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: New England Revolution — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "6091170f548f4141"
   }
  ]
 }
