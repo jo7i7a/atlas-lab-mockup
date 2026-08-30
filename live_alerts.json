@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-30T22:12:44Z",
+ "generated_at_utc": "2026-08-30T22:13:41Z",
  "n_alerts": 12,
  "alerts": [
   {
@@ -325,102 +325,6 @@
    "alert_id": "3a4d379af6a8164e"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Grêmio vs Chapecoense (Brasileirão Betano)",
-   "match_id": "15235445",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 39,
-   "condicion": "5 córners totales antes del min 45 (3-2), Grêmio presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Chapecoense NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 2,
-    "equipo_presiona": "Grêmio",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-30T22:00:41Z",
-   "t_captura_utc": "2026-08-30T22:00:41Z",
-   "t_evaluacion_utc": "2026-08-30T22:12:12Z",
-   "t_generacion_utc": "2026-08-30T22:12:12Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Grêmio vs Chapecoense\n⏱ Minuto: 39'\n📊 Marcador: 2-1\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Grêmio presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Chapecoense no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "4707b6d913f65e53"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Vila Nova FC vs Ceará (Brasileirão Série B)",
-   "match_id": "15526257",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 42,
-   "condicion": "4 córners totales antes del min 45 (3-1), Vila Nova FC presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Ceará NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Vila Nova FC",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-30T21:59:17Z",
-   "t_captura_utc": "2026-08-30T21:59:17Z",
-   "t_evaluacion_utc": "2026-08-30T22:12:14Z",
-   "t_generacion_utc": "2026-08-30T22:12:14Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Vila Nova FC vs Ceará\n⏱ Minuto: 42'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Vila Nova FC presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Ceará no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "150ea5b2bc8175f9"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Clube De Regatas Brasil vs Criciúma (Brasileirão Série B)",
-   "match_id": "15526256",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 48,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 1,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-08-30T22:09:52Z",
-   "t_captura_utc": "2026-08-30T22:09:52Z",
-   "t_evaluacion_utc": "2026-08-30T22:12:32Z",
-   "t_generacion_utc": "2026-08-30T22:12:32Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-30T22:10:35Z",
-     "latencia_envio_ms": 931.0266971588135,
-     "error": null,
-     "message_id": 2381,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 43.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Clube De Regatas Brasil vs Criciúma\n⏱ Minuto: 48'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "145bcfd3b0f215ae"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Vila Nova FC vs Ceará (Brasileirão Série B)",
    "match_id": "15526257",
@@ -457,6 +361,102 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Vila Nova FC vs Ceará\n⏱ Minuto: 42'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Vila Nova FC acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "ef49beb5855aefd4"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Grêmio vs Chapecoense (Brasileirão Betano)",
+   "match_id": "15235445",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 40,
+   "condicion": "5 córners totales antes del min 45 (3-2), Grêmio presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Chapecoense NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "Grêmio",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-30T22:00:41Z",
+   "t_captura_utc": "2026-08-30T22:00:41Z",
+   "t_evaluacion_utc": "2026-08-30T22:13:12Z",
+   "t_generacion_utc": "2026-08-30T22:13:12Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Grêmio vs Chapecoense\n⏱ Minuto: 40'\n📊 Marcador: 2-1\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Grêmio presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Chapecoense no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "4707b6d913f65e53"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Vila Nova FC vs Ceará (Brasileirão Série B)",
+   "match_id": "15526257",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 43,
+   "condicion": "4 córners totales antes del min 45 (3-1), Vila Nova FC presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Ceará NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Vila Nova FC",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-30T21:59:17Z",
+   "t_captura_utc": "2026-08-30T21:59:17Z",
+   "t_evaluacion_utc": "2026-08-30T22:13:14Z",
+   "t_generacion_utc": "2026-08-30T22:13:14Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Vila Nova FC vs Ceará\n⏱ Minuto: 43'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Vila Nova FC presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Ceará no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "150ea5b2bc8175f9"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Clube De Regatas Brasil vs Criciúma (Brasileirão Série B)",
+   "match_id": "15526256",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 49,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 1,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-08-30T22:09:52Z",
+   "t_captura_utc": "2026-08-30T22:09:52Z",
+   "t_evaluacion_utc": "2026-08-30T22:13:32Z",
+   "t_generacion_utc": "2026-08-30T22:13:32Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-30T22:10:35Z",
+     "latencia_envio_ms": 931.0266971588135,
+     "error": null,
+     "message_id": 2381,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 43.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Clube De Regatas Brasil vs Criciúma\n⏱ Minuto: 49'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "145bcfd3b0f215ae"
   }
  ]
 }
