@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-30T14:54:53Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-08-30T14:55:56Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -35,44 +35,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Paris FC vs Nice\n⏱ Minuto: 70'\n📊 Marcador: 2-0\n🏆 Liga: Ligue 1\n\n📝 Motivo: presión combinada sostenida — xG 1.66, 18 tiros totales (6 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "944247f209aa3eb2"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Sunderland vs Fulham (Premier League)",
-   "match_id": "16363255",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 81,
-   "condicion": "Sunderland acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sunderland",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7037,
-    "touches_home": 19,
-    "touches_away": 8,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 65,
-    "equipo_que_realizo_sustitucion": "Sunderland",
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-08-30T14:25:19Z",
-    "t_inicio_estimado_condicion": "2026-08-30T13:21:09Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-30T14:25:19Z",
-   "t_captura_utc": "2026-08-30T14:37:47Z",
-   "t_evaluacion_utc": "2026-08-30T14:37:47Z",
-   "t_generacion_utc": "2026-08-30T14:37:47Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sunderland vs Fulham\n⏱ Minuto: 81'\n📊 Marcador: 1-0\n🏆 Liga: Premier League\n\n📝 Motivo: Sunderland acumula 70% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Sunderland, min 65\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "7ee4447f367121ad"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -118,7 +80,7 @@
    "match_id": "15272504",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "IFK Göteborg domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -138,8 +100,8 @@
    },
    "t_evento_real_utc": "2026-08-30T14:51:02Z",
    "t_captura_utc": "2026-08-30T14:51:02Z",
-   "t_evaluacion_utc": "2026-08-30T14:54:36Z",
-   "t_generacion_utc": "2026-08-30T14:54:36Z",
+   "t_evaluacion_utc": "2026-08-30T14:55:36Z",
+   "t_generacion_utc": "2026-08-30T14:55:36Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -153,7 +115,7 @@
    },
    "latencia_total_seg": 38.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ IFK Göteborg vs Örgryte IS\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IFK Göteborg — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ IFK Göteborg vs Örgryte IS\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IFK Göteborg — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "9a09153d12483cc7"
   }
