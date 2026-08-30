@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-30T23:38:54Z",
+ "generated_at_utc": "2026-08-30T23:39:42Z",
  "n_alerts": 4,
  "alerts": [
   {
@@ -39,44 +39,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ CA Independiente vs Gimnasia y Esgrima Mendoza\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "98082264c7dec287"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Bahia vs Internacional (Brasileirão Betano)",
-   "match_id": "15235458",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 46,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-08-30T23:37:23Z",
-   "t_captura_utc": "2026-08-30T23:37:23Z",
-   "t_evaluacion_utc": "2026-08-30T23:38:26Z",
-   "t_generacion_utc": "2026-08-30T23:38:26Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-30T23:38:27Z",
-     "latencia_envio_ms": 831.3617706298828,
-     "error": null,
-     "message_id": 2389,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 64.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Bahia vs Internacional\n⏱ Minuto: 46'\n📊 Marcador: 3-1\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "6562149b478c2289"
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -124,6 +86,44 @@
    "alert_id": "7f4d4519b293002b"
   },
   {
+   "strategy_id": "A2",
+   "match_label": "Bahia vs Internacional (Brasileirão Betano)",
+   "match_id": "15235458",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 47,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 2,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-08-30T23:37:23Z",
+   "t_captura_utc": "2026-08-30T23:37:23Z",
+   "t_evaluacion_utc": "2026-08-30T23:39:33Z",
+   "t_generacion_utc": "2026-08-30T23:39:33Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-30T23:38:27Z",
+     "latencia_envio_ms": 831.3617706298828,
+     "error": null,
+     "message_id": 2389,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 64.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Bahia vs Internacional\n⏱ Minuto: 47'\n📊 Marcador: 3-1\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "6562149b478c2289"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "St.Louis City vs FC Dallas (MLS)",
    "match_id": "15168343",
@@ -138,9 +138,9 @@
    "extra": {
     "equipo_dominante": "St.Louis City",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7273,
+    "ratio_presion_territorial": 0.6154,
     "touches_home": 8,
-    "touches_away": 3,
+    "touches_away": 5,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -151,13 +151,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-30T23:33:52Z",
-   "t_captura_utc": "2026-08-30T23:38:51Z",
-   "t_evaluacion_utc": "2026-08-30T23:38:52Z",
-   "t_generacion_utc": "2026-08-30T23:38:52Z",
+   "t_captura_utc": "2026-08-30T23:39:39Z",
+   "t_evaluacion_utc": "2026-08-30T23:39:39Z",
+   "t_generacion_utc": "2026-08-30T23:39:39Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ St.Louis City vs FC Dallas\n⏱ Minuto: 26'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📝 Motivo: St.Louis City acumula 73% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ St.Louis City vs FC Dallas\n⏱ Minuto: 26'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📝 Motivo: St.Louis City acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "1cad6254bb4e42d2"
   }
