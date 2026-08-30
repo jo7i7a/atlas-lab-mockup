@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-30T19:54:06Z",
- "n_alerts": 18,
+ "generated_at_utc": "2026-08-30T19:56:01Z",
+ "n_alerts": 17,
  "alerts": [
   {
    "strategy_id": "L1",
@@ -57,44 +57,6 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Universidad de Concepción vs Universidad de Chile\n⏱ Minuto: 29'\n📊 Marcador: 2-0\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 0\nVisita: 5\nTotal: 5\n\n📝 Motivo: Universidad de Chile presiona con 5 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Universidad de Concepción no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "e1f3665d6c23fd36"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Avaí vs Atlético Goianiense (Brasileirão Série B)",
-   "match_id": "15526254",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "Atlético Goianiense acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Atlético Goianiense",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.7273,
-    "touches_home": 3,
-    "touches_away": 8,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-08-30T19:25:01Z",
-    "t_inicio_estimado_condicion": "2026-08-30T19:24:45Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-30T19:25:01Z",
-   "t_captura_utc": "2026-08-30T19:34:02Z",
-   "t_evaluacion_utc": "2026-08-30T19:34:03Z",
-   "t_generacion_utc": "2026-08-30T19:34:03Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Avaí vs Atlético Goianiense\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Atlético Goianiense acumula 73% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "35589d1459240d3c"
   },
   {
    "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
@@ -387,7 +349,7 @@
    "match_id": "16284971",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 47,
+   "minuto": 49,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -400,8 +362,8 @@
    },
    "t_evento_real_utc": "2026-08-30T19:52:09Z",
    "t_captura_utc": "2026-08-30T19:52:09Z",
-   "t_evaluacion_utc": "2026-08-30T19:53:44Z",
-   "t_generacion_utc": "2026-08-30T19:53:44Z",
+   "t_evaluacion_utc": "2026-08-30T19:55:41Z",
+   "t_generacion_utc": "2026-08-30T19:55:41Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -415,7 +377,7 @@
    },
    "latencia_total_seg": 96.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Lazio vs Genoa\n⏱ Minuto: 47'\n📊 Marcador: 1-0\n🏆 Liga: Serie A\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Lazio vs Genoa\n⏱ Minuto: 49'\n📊 Marcador: 1-0\n🏆 Liga: Serie A\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "5b71a4662934569f"
   },
@@ -425,7 +387,7 @@
    "match_id": "16284972",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 50,
+   "minuto": 52,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -438,8 +400,8 @@
    },
    "t_evento_real_utc": "2026-08-30T19:49:12Z",
    "t_captura_utc": "2026-08-30T19:49:12Z",
-   "t_evaluacion_utc": "2026-08-30T19:53:45Z",
-   "t_generacion_utc": "2026-08-30T19:53:45Z",
+   "t_evaluacion_utc": "2026-08-30T19:55:41Z",
+   "t_generacion_utc": "2026-08-30T19:55:41Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -453,7 +415,7 @@
    },
    "latencia_total_seg": 38.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Cagliari vs Inter\n⏱ Minuto: 50'\n📊 Marcador: 0-1\n🏆 Liga: Serie A\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 3\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Cagliari vs Inter\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: Serie A\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 3\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "7acbfc69ba60046b"
   },
@@ -463,7 +425,7 @@
    "match_id": "16310933",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 47,
+   "minuto": 49,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -476,8 +438,8 @@
    },
    "t_evento_real_utc": "2026-08-30T19:50:40Z",
    "t_captura_utc": "2026-08-30T19:50:40Z",
-   "t_evaluacion_utc": "2026-08-30T19:53:46Z",
-   "t_generacion_utc": "2026-08-30T19:53:46Z",
+   "t_evaluacion_utc": "2026-08-30T19:55:42Z",
+   "t_generacion_utc": "2026-08-30T19:55:42Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -491,7 +453,7 @@
    },
    "latencia_total_seg": 187.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ AS Monaco vs Olympique de Marseille\n⏱ Minuto: 47'\n📊 Marcador: 1-0\n🏆 Liga: Ligue 1\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ AS Monaco vs Olympique de Marseille\n⏱ Minuto: 49'\n📊 Marcador: 1-0\n🏆 Liga: Ligue 1\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "eaa702101a76f7b5"
   },
@@ -501,7 +463,7 @@
    "match_id": "16416308",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 22,
+   "minuto": 24,
    "condicion": "Athletic Club domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -521,8 +483,8 @@
    },
    "t_evento_real_utc": "2026-08-30T19:49:34Z",
    "t_captura_utc": "2026-08-30T19:49:34Z",
-   "t_evaluacion_utc": "2026-08-30T19:53:54Z",
-   "t_generacion_utc": "2026-08-30T19:53:54Z",
+   "t_evaluacion_utc": "2026-08-30T19:55:50Z",
+   "t_generacion_utc": "2026-08-30T19:55:50Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -536,7 +498,7 @@
    },
    "latencia_total_seg": 24.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Celta Vigo vs Athletic Club\n⏱ Minuto: 22'\n📊 Marcador: 0-2\n🏆 Liga: LaLiga\n\n📝 Motivo: Athletic Club — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Celta Vigo vs Athletic Club\n⏱ Minuto: 24'\n📊 Marcador: 0-2\n🏆 Liga: LaLiga\n\n📝 Motivo: Athletic Club — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "47d2adf6b3bcff70"
   },
@@ -546,7 +508,7 @@
    "match_id": "16450846",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 25,
    "condicion": "Famalicão domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -566,8 +528,8 @@
    },
    "t_evento_real_utc": "2026-08-30T19:46:12Z",
    "t_captura_utc": "2026-08-30T19:46:12Z",
-   "t_evaluacion_utc": "2026-08-30T19:53:56Z",
-   "t_generacion_utc": "2026-08-30T19:53:56Z",
+   "t_evaluacion_utc": "2026-08-30T19:55:51Z",
+   "t_generacion_utc": "2026-08-30T19:55:51Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -581,7 +543,7 @@
    },
    "latencia_total_seg": 101.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Famalicão vs Gil Vicente\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Famalicão — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Famalicão vs Gil Vicente\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Famalicão — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "d6612f3ad1ff991f"
   },
@@ -591,7 +553,7 @@
    "match_id": "16416308",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 22,
+   "minuto": 24,
    "condicion": "Athletic Club acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -613,13 +575,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-30T19:51:58Z",
-   "t_captura_utc": "2026-08-30T19:54:02Z",
-   "t_evaluacion_utc": "2026-08-30T19:54:03Z",
-   "t_generacion_utc": "2026-08-30T19:54:03Z",
+   "t_captura_utc": "2026-08-30T19:55:57Z",
+   "t_evaluacion_utc": "2026-08-30T19:55:58Z",
+   "t_generacion_utc": "2026-08-30T19:55:58Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Celta Vigo vs Athletic Club\n⏱ Minuto: 22'\n📊 Marcador: 0-2\n🏆 Liga: LaLiga\n\n📝 Motivo: Athletic Club acumula 80% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Celta Vigo vs Athletic Club\n⏱ Minuto: 24'\n📊 Marcador: 0-2\n🏆 Liga: LaLiga\n\n📝 Motivo: Athletic Club acumula 80% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "30c24ff71942fca8"
   },
@@ -629,7 +591,7 @@
    "match_id": "16450846",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 25,
    "condicion": "Famalicão acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -651,13 +613,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-08-30T19:51:59Z",
-   "t_captura_utc": "2026-08-30T19:54:03Z",
-   "t_evaluacion_utc": "2026-08-30T19:54:04Z",
-   "t_generacion_utc": "2026-08-30T19:54:04Z",
+   "t_captura_utc": "2026-08-30T19:55:58Z",
+   "t_evaluacion_utc": "2026-08-30T19:55:59Z",
+   "t_generacion_utc": "2026-08-30T19:55:59Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Famalicão vs Gil Vicente\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Famalicão acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Famalicão vs Gil Vicente\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Famalicão acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "8d3ce0989b70ab87"
   }
