@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-30T22:17:46Z",
- "n_alerts": 13,
+ "generated_at_utc": "2026-08-30T22:18:48Z",
+ "n_alerts": 11,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -46,96 +46,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Mirassol vs Palmeiras\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Palmeiras — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "bd038b1fb3c1c226"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Vila Nova FC vs Ceará (Brasileirão Série B)",
-   "match_id": "15526257",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Vila Nova FC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Vila Nova FC",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-30T21:48:28Z",
-   "t_captura_utc": "2026-08-30T21:48:28Z",
-   "t_evaluacion_utc": "2026-08-30T21:56:01Z",
-   "t_generacion_utc": "2026-08-30T21:56:01Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-30T21:49:51Z",
-     "latencia_envio_ms": 813.9824867248535,
-     "error": null,
-     "message_id": 2377,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 83.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Vila Nova FC vs Ceará\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Vila Nova FC — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "c8a3feb5a5d1e6ee"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Grêmio vs Chapecoense (Brasileirão Betano)",
-   "match_id": "15235445",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Chapecoense domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Chapecoense",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 2,
-    "remates_home": 1,
-    "remates_away": 4,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-30T21:48:28Z",
-   "t_captura_utc": "2026-08-30T21:48:28Z",
-   "t_evaluacion_utc": "2026-08-30T21:57:38Z",
-   "t_generacion_utc": "2026-08-30T21:57:38Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-30T21:49:47Z",
-     "latencia_envio_ms": 823.8699436187744,
-     "error": null,
-     "message_id": 2376,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 79.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Grêmio vs Chapecoense\n⏱ Minuto: 25'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Chapecoense — ≥2 remates en los últimos 5 min (away=4)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "29d02fc0600ceef2"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -464,7 +374,7 @@
    "match_id": "15235445",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 45,
    "condicion": "5 córners totales antes del min 45 (3-2), Grêmio presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Chapecoense NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -478,12 +388,12 @@
    },
    "t_evento_real_utc": "2026-08-30T22:00:41Z",
    "t_captura_utc": "2026-08-30T22:00:41Z",
-   "t_evaluacion_utc": "2026-08-30T22:17:12Z",
-   "t_generacion_utc": "2026-08-30T22:17:12Z",
+   "t_evaluacion_utc": "2026-08-30T22:18:12Z",
+   "t_generacion_utc": "2026-08-30T22:18:12Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Grêmio vs Chapecoense\n⏱ Minuto: 44'\n📊 Marcador: 2-1\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Grêmio presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Chapecoense no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Grêmio vs Chapecoense\n⏱ Minuto: 45'\n📊 Marcador: 2-1\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Grêmio presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Chapecoense no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "4707b6d913f65e53"
   }
