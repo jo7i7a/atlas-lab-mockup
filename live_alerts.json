@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-29T23:57:59Z",
+ "generated_at_utc": "2026-08-29T23:59:35Z",
  "n_alerts": 6,
  "alerts": [
   {
@@ -146,51 +146,6 @@
    "alert_id": "72954db6607c36fd"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Atlanta United vs Charlotte FC (Major League Soccer)",
-   "match_id": "5071306",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 16,
-   "condicion": "Charlotte FC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Charlotte FC",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-29T23:56:36Z",
-   "t_captura_utc": "2026-08-29T23:56:36Z",
-   "t_evaluacion_utc": "2026-08-29T23:57:31Z",
-   "t_generacion_utc": "2026-08-29T23:57:31Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-29T23:57:04Z",
-     "latencia_envio_ms": 803.1637668609619,
-     "error": null,
-     "message_id": 2288,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 28.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Atlanta United vs Charlotte FC\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Major League Soccer\n\n📝 Motivo: Charlotte FC — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "a5f0e23ba28423ad"
-  },
-  {
    "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
    "match_label": "Red Bull New York vs Philadelphia Union (Major League Soccer)",
    "match_id": "5071310",
@@ -232,6 +187,51 @@
    "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Red Bull New York vs Philadelphia Union\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 2-2 (total 4)\nRatio de diferencia home-away: 0.00 (umbral <= 0.33)\n\n🏆 Liga: Major League Soccer\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "4e6dbf2115573015"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Atlanta United vs Charlotte FC (Major League Soccer)",
+   "match_id": "5071306",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Charlotte FC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Charlotte FC",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-29T23:56:36Z",
+   "t_captura_utc": "2026-08-29T23:56:36Z",
+   "t_evaluacion_utc": "2026-08-29T23:59:35Z",
+   "t_generacion_utc": "2026-08-29T23:59:35Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-29T23:57:04Z",
+     "latencia_envio_ms": 803.1637668609619,
+     "error": null,
+     "message_id": 2288,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 28.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Atlanta United vs Charlotte FC\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: Major League Soccer\n\n📝 Motivo: Charlotte FC — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "a5f0e23ba28423ad"
   }
  ]
 }
