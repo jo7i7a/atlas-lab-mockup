@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-30T18:08:32Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-08-30T18:09:41Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "L1",
@@ -136,12 +136,41 @@
    "alert_id": "0ffd9a5ebfa28fcb"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Deportivo de A Coruña vs Valencia (LaLiga)",
+   "match_id": "16416291",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 36,
+   "condicion": "4 córners totales antes del min 45 (4-0), Deportivo de A Coruña presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Valencia NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Deportivo de A Coruña",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-30T18:08:50Z",
+   "t_captura_utc": "2026-08-30T18:08:50Z",
+   "t_evaluacion_utc": "2026-08-30T18:09:14Z",
+   "t_generacion_utc": "2026-08-30T18:09:14Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Deportivo de A Coruña vs Valencia\n⏱ Minuto: 36'\n📊 Marcador: 2-1\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Deportivo de A Coruña presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Valencia no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "743fe634a3e8029f"
+  },
+  {
    "strategy_id": "A2",
    "match_label": "Casa Pia vs Moreirense (Liga Portugal Betclic)",
    "match_id": "16450845",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 49,
+   "minuto": 50,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -154,12 +183,12 @@
    },
    "t_evento_real_utc": "2026-08-30T18:03:54Z",
    "t_captura_utc": "2026-08-30T18:03:54Z",
-   "t_evaluacion_utc": "2026-08-30T18:08:24Z",
-   "t_generacion_utc": "2026-08-30T18:08:24Z",
+   "t_evaluacion_utc": "2026-08-30T18:09:33Z",
+   "t_generacion_utc": "2026-08-30T18:09:33Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Casa Pia vs Moreirense\n⏱ Minuto: 49'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Casa Pia vs Moreirense\n⏱ Minuto: 50'\n📊 Marcador: 0-1\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "270b63d58efc7238"
   }
