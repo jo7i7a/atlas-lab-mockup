@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-30T12:24:25Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-30T12:25:29Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -42,7 +42,7 @@
    "match_id": "15272502",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "Hammarby IF domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -62,8 +62,8 @@
    },
    "t_evento_real_utc": "2026-08-30T12:16:59Z",
    "t_captura_utc": "2026-08-30T12:16:59Z",
-   "t_evaluacion_utc": "2026-08-30T12:24:25Z",
-   "t_generacion_utc": "2026-08-30T12:24:25Z",
+   "t_evaluacion_utc": "2026-08-30T12:25:25Z",
+   "t_generacion_utc": "2026-08-30T12:25:25Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -77,9 +77,47 @@
    },
    "latencia_total_seg": 26.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ AIK vs Hammarby IF\n⏱ Minuto: 23'\n📊 Marcador: 1-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: Hammarby IF — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ AIK vs Hammarby IF\n⏱ Minuto: 24'\n📊 Marcador: 1-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: Hammarby IF — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "2c1ef5a033c4b294"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Aberdeen vs Rangers (Scottish Premiership)",
+   "match_id": "16362140",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 68,
+   "condicion": "Rangers acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Rangers",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.6053,
+    "touches_home": 15,
+    "touches_away": 23,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 65,
+    "equipo_que_realizo_sustitucion": "Rangers",
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-30T12:25:28Z",
+    "t_inicio_estimado_condicion": "2026-08-30T11:22:14Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-30T12:25:28Z",
+   "t_captura_utc": "2026-08-30T12:25:28Z",
+   "t_evaluacion_utc": "2026-08-30T12:25:28Z",
+   "t_generacion_utc": "2026-08-30T12:25:28Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Aberdeen vs Rangers\n⏱ Minuto: 68'\n📊 Marcador: 0-0\n🏆 Liga: Scottish Premiership\n\n📝 Motivo: Rangers acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Rangers, min 65\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "cf895929afef1679"
   }
  ]
 }
