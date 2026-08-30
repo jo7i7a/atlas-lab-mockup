@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-30T23:32:07Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-08-30T23:33:54Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -73,6 +73,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ CA Independiente vs Gimnasia y Esgrima Mendoza\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "98082264c7dec287"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "St.Louis City vs FC Dallas (MLS)",
+   "match_id": "15168343",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 21,
+   "condicion": "St.Louis City acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "St.Louis City",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.8,
+    "touches_home": 8,
+    "touches_away": 2,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "1-1",
+    "t_primera_observacion_atlas": "2026-08-30T23:33:52Z",
+    "t_inicio_estimado_condicion": "2026-08-30T23:33:38Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-30T23:33:52Z",
+   "t_captura_utc": "2026-08-30T23:33:52Z",
+   "t_evaluacion_utc": "2026-08-30T23:33:52Z",
+   "t_generacion_utc": "2026-08-30T23:33:52Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ St.Louis City vs FC Dallas\n⏱ Minuto: 21'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📝 Motivo: St.Louis City acumula 80% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "1cad6254bb4e42d2"
   }
  ]
 }
