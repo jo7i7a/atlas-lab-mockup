@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-30T10:23:54Z",
+ "generated_at_utc": "2026-08-30T10:26:57Z",
  "n_live_target": 1,
  "matches": {
   "16316795": {
@@ -11,7 +11,7 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 6,
+   "minute": 9,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -20,7 +20,12 @@
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.1,
+     "home": 0.3,
+     "away": 0
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 1,
      "away": 0
     },
     "shots": {
@@ -28,10 +33,15 @@
      "home": 1,
      "away": 0
     },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 1
+    },
     "passes": {
      "label": "Pases",
-     "home": 24,
-     "away": 49
+     "home": 29,
+     "away": 55
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -41,23 +51,23 @@
    },
    "odds": {
     "btts": {
-     "yes": 1.5,
-     "no": 2.5,
-     "captured_at_utc": "2026-08-30T10:23:15Z"
+     "yes": 1.05,
+     "no": 11.0,
+     "captured_at_utc": "2026-08-30T10:26:18Z"
     },
     "1x2": {
-     "home": 2.875,
-     "draw": 4.0,
-     "away": 2.1,
-     "captured_at_utc": "2026-08-30T10:23:15Z"
+     "home": 3.4,
+     "draw": 4.333,
+     "away": 1.909,
+     "captured_at_utc": "2026-08-30T10:26:18Z"
     },
     "corners_over_95": {
      "over": 1.667,
      "under": 2.1,
-     "captured_at_utc": "2026-08-30T10:23:36Z"
+     "captured_at_utc": "2026-08-30T10:26:18Z"
     }
    },
-   "updated_at_utc": "2026-08-30T10:23:54Z"
+   "updated_at_utc": "2026-08-30T10:26:57Z"
   }
  }
 }
