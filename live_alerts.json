@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-30T20:26:21Z",
+ "generated_at_utc": "2026-08-30T20:27:12Z",
  "n_alerts": 15,
  "alerts": [
   {
@@ -271,63 +271,6 @@
    "alert_id": "68678eaa155dec3e"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "Argentinos Juniors vs Aldosivi (Liga Profesional de Fútbol)",
-   "match_id": "16671591",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 24,
-   "condicion": "4 córners totales antes del min 30 (4-0), Argentinos Juniors presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Aldosivi NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Argentinos Juniors"
-   },
-   "t_evento_real_utc": "2026-08-30T20:21:59Z",
-   "t_captura_utc": "2026-08-30T20:21:59Z",
-   "t_evaluacion_utc": "2026-08-30T20:25:10Z",
-   "t_generacion_utc": "2026-08-30T20:25:10Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Argentinos Juniors vs Aldosivi\n⏱ Minuto: 24'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Argentinos Juniors presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Aldosivi no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "4b716e1686111fb6"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Argentinos Juniors vs Aldosivi (Liga Profesional de Fútbol)",
-   "match_id": "16671591",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 24,
-   "condicion": "4 córners totales antes del min 45 (4-0), Argentinos Juniors presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Aldosivi NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Argentinos Juniors",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-30T20:21:59Z",
-   "t_captura_utc": "2026-08-30T20:21:59Z",
-   "t_evaluacion_utc": "2026-08-30T20:25:12Z",
-   "t_generacion_utc": "2026-08-30T20:25:12Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Argentinos Juniors vs Aldosivi\n⏱ Minuto: 24'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Argentinos Juniors presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Aldosivi no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "81c876ad1b040b1d"
-  },
-  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Argentinos Juniors vs Aldosivi (Liga Profesional de Fútbol)",
    "match_id": "16671591",
@@ -515,6 +458,63 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ América Mineiro vs Ponte Preta\n⏱ Minuto: 61'\n📊 Marcador: 2-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 2.70, 30 tiros totales (10 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "33c0f3e191a0026a"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "Argentinos Juniors vs Aldosivi (Liga Profesional de Fútbol)",
+   "match_id": "16671591",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 26,
+   "condicion": "4 córners totales antes del min 30 (4-0), Argentinos Juniors presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Aldosivi NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Argentinos Juniors"
+   },
+   "t_evento_real_utc": "2026-08-30T20:21:59Z",
+   "t_captura_utc": "2026-08-30T20:21:59Z",
+   "t_evaluacion_utc": "2026-08-30T20:27:10Z",
+   "t_generacion_utc": "2026-08-30T20:27:10Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Argentinos Juniors vs Aldosivi\n⏱ Minuto: 26'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Argentinos Juniors presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Aldosivi no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "4b716e1686111fb6"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Argentinos Juniors vs Aldosivi (Liga Profesional de Fútbol)",
+   "match_id": "16671591",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 26,
+   "condicion": "4 córners totales antes del min 45 (4-0), Argentinos Juniors presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Aldosivi NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Argentinos Juniors",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-30T20:21:59Z",
+   "t_captura_utc": "2026-08-30T20:21:59Z",
+   "t_evaluacion_utc": "2026-08-30T20:27:12Z",
+   "t_generacion_utc": "2026-08-30T20:27:12Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Argentinos Juniors vs Aldosivi\n⏱ Minuto: 26'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Argentinos Juniors presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Aldosivi no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "81c876ad1b040b1d"
   }
  ]
 }
