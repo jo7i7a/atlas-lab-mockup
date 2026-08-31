@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-31T19:05:05Z",
+ "generated_at_utc": "2026-08-31T19:08:17Z",
  "n_alerts": 8,
  "alerts": [
   {
@@ -152,80 +152,6 @@
    "alert_id": "b6b268a5c2dc5757"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Beşiktaş JK vs Çorum FK (Trendyol Süper Lig)",
-   "match_id": "16483663",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 32,
-   "condicion": "4 córners totales antes del min 45 (3-1), Beşiktaş JK presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Çorum FK NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Beşiktaş JK",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-31T18:48:28Z",
-   "t_captura_utc": "2026-08-31T18:48:28Z",
-   "t_evaluacion_utc": "2026-08-31T19:02:16Z",
-   "t_generacion_utc": "2026-08-31T19:02:16Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Beşiktaş JK vs Çorum FK\n⏱ Minuto: 32'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Beşiktaş JK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Çorum FK no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "2be0455177f9a0e0"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Atalanta vs Bologna (Serie A)",
-   "match_id": "16284970",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 19,
-   "condicion": "Bologna domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Bologna",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-08-31T19:03:23Z",
-   "t_captura_utc": "2026-08-31T19:03:23Z",
-   "t_evaluacion_utc": "2026-08-31T19:04:58Z",
-   "t_generacion_utc": "2026-08-31T19:04:58Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-31T19:04:59Z",
-     "latencia_envio_ms": 827.5566101074219,
-     "error": null,
-     "message_id": 2404,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 96.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Atalanta vs Bologna\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Serie A\n\n📝 Motivo: Bologna — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "ea57511ab82d7a5f"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Amed Sportif Faaliyetler vs Trabzonspor (Trendyol Süper Lig)",
    "match_id": "16483657",
@@ -300,6 +226,80 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Beşiktaş JK vs Çorum FK\n⏱ Minuto: 34'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Beşiktaş JK acumula 78% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Beşiktaş JK, min 15\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "d5472bdd59ef56cf"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Beşiktaş JK vs Çorum FK (Trendyol Süper Lig)",
+   "match_id": "16483663",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 36,
+   "condicion": "4 córners totales antes del min 45 (3-1), Beşiktaş JK presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Çorum FK NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Beşiktaş JK",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-31T18:48:28Z",
+   "t_captura_utc": "2026-08-31T18:48:28Z",
+   "t_evaluacion_utc": "2026-08-31T19:06:16Z",
+   "t_generacion_utc": "2026-08-31T19:06:16Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Beşiktaş JK vs Çorum FK\n⏱ Minuto: 36'\n📊 Marcador: 1-0\n🏆 Liga: Trendyol Süper Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Beşiktaş JK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Çorum FK no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "2be0455177f9a0e0"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Atalanta vs Bologna (Serie A)",
+   "match_id": "16284970",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 22,
+   "condicion": "Bologna domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Bologna",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-08-31T19:03:23Z",
+   "t_captura_utc": "2026-08-31T19:03:23Z",
+   "t_evaluacion_utc": "2026-08-31T19:08:17Z",
+   "t_generacion_utc": "2026-08-31T19:08:17Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-31T19:04:59Z",
+     "latencia_envio_ms": 827.5566101074219,
+     "error": null,
+     "message_id": 2404,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 96.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Atalanta vs Bologna\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Serie A\n\n📝 Motivo: Bologna — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "ea57511ab82d7a5f"
   }
  ]
 }
