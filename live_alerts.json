@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-08-31T17:45:42Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-31T17:48:21Z",
+ "n_alerts": 8,
  "alerts": [
   {
    "strategy_id": "L1",
@@ -67,102 +67,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ IK Sirius vs Malmö FF\n⏱ Minuto: 38'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IK Sirius acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: IK Sirius, min 21\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "19bca91a715e4a8e"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "GAIS vs IF Brommapojkarna (Allsvenskan)",
-   "match_id": "15272503",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 43,
-   "condicion": "5 córners totales antes del min 45 (4-1), GAIS presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿IF Brommapojkarna NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 1,
-    "equipo_presiona": "GAIS",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-31T17:30:12Z",
-   "t_captura_utc": "2026-08-31T17:30:12Z",
-   "t_evaluacion_utc": "2026-08-31T17:44:13Z",
-   "t_generacion_utc": "2026-08-31T17:44:13Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ GAIS vs IF Brommapojkarna\n⏱ Minuto: 43'\n📊 Marcador: 2-0\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 4\nVisita: 1\nTotal: 5\n\n📝 Motivo: GAIS presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿IF Brommapojkarna no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "2a9261047bbfbd46"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "IK Sirius vs Malmö FF (Allsvenskan)",
-   "match_id": "15272507",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 43,
-   "condicion": "4 córners totales antes del min 45 (1-3), Malmö FF presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿IK Sirius NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Malmö FF",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-31T17:39:28Z",
-   "t_captura_utc": "2026-08-31T17:39:28Z",
-   "t_evaluacion_utc": "2026-08-31T17:44:14Z",
-   "t_generacion_utc": "2026-08-31T17:44:14Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ IK Sirius vs Malmö FF\n⏱ Minuto: 43'\n📊 Marcador: 0-1\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Malmö FF presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿IK Sirius no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "5a75fed57356cb09"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Lecce vs AS Roma (Serie A)",
-   "match_id": "16284976",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 48,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 1,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-08-31T17:42:35Z",
-   "t_captura_utc": "2026-08-31T17:42:35Z",
-   "t_evaluacion_utc": "2026-08-31T17:45:33Z",
-   "t_generacion_utc": "2026-08-31T17:45:33Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-08-31T17:45:34Z",
-     "latencia_envio_ms": 850.5852222442627,
-     "error": null,
-     "message_id": 2399,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 179.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Lecce vs AS Roma\n⏱ Minuto: 48'\n📊 Marcador: 0-3\n🏆 Liga: Serie A\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "6b372021df28244f"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -239,6 +143,144 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ GAIS vs IF Brommapojkarna\n⏱ Minuto: 44'\n📊 Marcador: 2-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: GAIS acumula 95% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "735153ea20cdbbff"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "GAIS vs IF Brommapojkarna (Allsvenskan)",
+   "match_id": "15272503",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "5 córners totales antes del min 45 (4-1), GAIS presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿IF Brommapojkarna NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 1,
+    "equipo_presiona": "GAIS",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-31T17:30:12Z",
+   "t_captura_utc": "2026-08-31T17:30:12Z",
+   "t_evaluacion_utc": "2026-08-31T17:46:13Z",
+   "t_generacion_utc": "2026-08-31T17:46:13Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ GAIS vs IF Brommapojkarna\n⏱ Minuto: 45'\n📊 Marcador: 2-0\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 4\nVisita: 1\nTotal: 5\n\n📝 Motivo: GAIS presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿IF Brommapojkarna no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "2a9261047bbfbd46"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "IK Sirius vs Malmö FF (Allsvenskan)",
+   "match_id": "15272507",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "4 córners totales antes del min 45 (1-3), Malmö FF presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿IK Sirius NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 1,
+    "corners_away": 3,
+    "equipo_presiona": "Malmö FF",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-08-31T17:39:28Z",
+   "t_captura_utc": "2026-08-31T17:39:28Z",
+   "t_evaluacion_utc": "2026-08-31T17:46:14Z",
+   "t_generacion_utc": "2026-08-31T17:46:14Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ IK Sirius vs Malmö FF\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Malmö FF presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿IK Sirius no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "5a75fed57356cb09"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Lecce vs AS Roma (Serie A)",
+   "match_id": "16284976",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 50,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 1,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-08-31T17:42:35Z",
+   "t_captura_utc": "2026-08-31T17:42:35Z",
+   "t_evaluacion_utc": "2026-08-31T17:48:07Z",
+   "t_generacion_utc": "2026-08-31T17:48:07Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-31T17:45:34Z",
+     "latencia_envio_ms": 850.5852222442627,
+     "error": null,
+     "message_id": 2399,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 179.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Lecce vs AS Roma\n⏱ Minuto: 50'\n📊 Marcador: 0-3\n🏆 Liga: Serie A\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "6b372021df28244f"
+  },
+  {
+   "strategy_id": "H3_PERSISTENCIA_TIROS_INVESTIGACION",
+   "match_label": "Osasuna vs Getafe (LaLiga)",
+   "match_id": "16416314",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "0-0 en minuto 15 con tiros a puerta combinados>0 en cada tramo 1-5/6-10/11-15 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "shots_on_goal_tramo1_1_5": 1.0,
+    "shots_on_goal_tramo2_6_10": 2.0,
+    "shots_on_goal_tramo3_11_15": 1.0,
+    "shots_on_goal_total15": 4.0,
+    "marcador_min15": "0-0",
+    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
+    "hipotesis": "H3_PERSISTENCIA_TIROS -- INVESTIGACION, NO estrategia certificada"
+   },
+   "t_evento_real_utc": "2026-08-31T17:46:25Z",
+   "t_captura_utc": "2026-08-31T17:46:25Z",
+   "t_evaluacion_utc": "2026-08-31T17:48:20Z",
+   "t_generacion_utc": "2026-08-31T17:48:20Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-08-31T17:48:21Z",
+     "latencia_envio_ms": 849.7319221496582,
+     "error": null,
+     "message_id": 2400,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 116.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟣 H3 — INVESTIGACIÓN LIVE (Persistencia de tiros)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Osasuna vs Getafe\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nTiros a puerta (ambos equipos) por tramo:\n  min 1-5: 1\n  min 6-10: 2\n  min 11-15: 1\n\n🏆 Liga: LaLiga\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "d6e56e352803a3ae"
   }
  ]
 }
