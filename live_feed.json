@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-31T16:38:54Z",
+ "generated_at_utc": "2026-08-31T16:41:54Z",
  "n_live_target": 1,
  "matches": {
   "16284976": {
@@ -8,61 +8,66 @@
    "home": "Lecce",
    "away": "AS Roma",
    "home_score": 0,
-   "away_score": 0,
+   "away_score": 1,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 2,
+   "minute": 5,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 25,
-     "away": 75
-    },
-    "passes": {
-     "label": "Pases",
-     "home": 4,
-     "away": 12
-    },
-    "shots": {
-     "label": "Remates totales",
-     "home": 0,
-     "away": 0
-    },
-    "shots_on_target": {
-     "label": "Remates al arco",
-     "home": 0,
-     "away": 0
+     "home": 41,
+     "away": 59
     },
     "xg": {
      "label": "Expected Goals (xG)",
      "home": 0,
-     "away": 0
+     "away": 0.11
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 0,
+     "away": 1
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 1
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 12,
+     "away": 17
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 1
     }
    },
    "odds": {
     "btts": {
-     "yes": 2.0,
-     "no": 1.75,
-     "captured_at_utc": "2026-08-31T16:38:30Z"
+     "yes": 1.667,
+     "no": 2.1,
+     "captured_at_utc": "2026-08-31T16:41:52Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-08-31T16:38:50Z"
+     "captured_at_utc": "2026-08-31T16:41:52Z"
     },
     "1x2": {
-     "home": 7.0,
-     "draw": 4.333,
-     "away": 1.444,
-     "captured_at_utc": "2026-08-31T16:38:30Z"
+     "home": 15.0,
+     "draw": 7.0,
+     "away": 1.182,
+     "captured_at_utc": "2026-08-31T16:41:52Z"
     },
     "goals_over_25": {
      "over": 1.909,
      "under": 1.909,
-     "captured_at_utc": "2026-08-31T16:38:30Z"
+     "captured_at_utc": "2026-08-31T16:41:52Z"
     }
    },
-   "updated_at_utc": "2026-08-31T16:38:54Z"
+   "updated_at_utc": "2026-08-31T16:41:54Z"
   }
  }
 }
