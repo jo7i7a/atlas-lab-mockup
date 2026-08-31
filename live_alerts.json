@@ -1,35 +1,7 @@
 {
- "generated_at_utc": "2026-08-31T17:57:13Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-08-31T18:02:30Z",
+ "n_alerts": 5,
  "alerts": [
-  {
-   "strategy_id": "L1",
-   "match_label": "GAIS vs IF Brommapojkarna (Allsvenskan)",
-   "match_id": "15272503",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "5 córners totales antes del min 30 (4-1), GAIS presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿IF Brommapojkarna NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 1,
-    "equipo_presiona": "GAIS"
-   },
-   "t_evento_real_utc": "2026-08-31T17:30:12Z",
-   "t_captura_utc": "2026-08-31T17:30:12Z",
-   "t_evaluacion_utc": "2026-08-31T17:31:20Z",
-   "t_generacion_utc": "2026-08-31T17:31:20Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ GAIS vs IF Brommapojkarna\n⏱ Minuto: 30'\n📊 Marcador: 1-0\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 4\nVisita: 1\nTotal: 5\n\n📝 Motivo: GAIS presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿IF Brommapojkarna no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "e032580533ef6da6"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "IK Sirius vs Malmö FF (Allsvenskan)",
@@ -67,35 +39,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ IK Sirius vs Malmö FF\n⏱ Minuto: 38'\n📊 Marcador: 0-0\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IK Sirius acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: IK Sirius, min 21\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "19bca91a715e4a8e"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "GAIS vs IF Brommapojkarna (Allsvenskan)",
-   "match_id": "15272503",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "5 córners totales antes del min 45 (4-1), GAIS presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿IF Brommapojkarna NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 1,
-    "equipo_presiona": "GAIS",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-08-31T17:30:12Z",
-   "t_captura_utc": "2026-08-31T17:30:12Z",
-   "t_evaluacion_utc": "2026-08-31T17:46:13Z",
-   "t_generacion_utc": "2026-08-31T17:46:13Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ GAIS vs IF Brommapojkarna\n⏱ Minuto: 45'\n📊 Marcador: 2-0\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 4\nVisita: 1\nTotal: 5\n\n📝 Motivo: GAIS presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿IF Brommapojkarna no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "2a9261047bbfbd46"
   },
   {
    "strategy_id": "L1-SHADOW",
