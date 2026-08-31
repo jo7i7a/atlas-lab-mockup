@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-08-31T23:40:35Z",
+ "generated_at_utc": "2026-08-31T23:41:42Z",
  "n_alerts": 7,
  "alerts": [
   {
@@ -231,41 +231,41 @@
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Fortaleza vs Operário-PR (Brasileirão Série B)",
-   "match_id": "15526252",
+   "match_label": "Remo vs Coritiba (Brasileirão Betano)",
+   "match_id": "15235461",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "Fortaleza acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "minuto": 40,
+   "condicion": "Remo acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
    "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "equipo_dominante": "Fortaleza",
+    "equipo_dominante": "Remo",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.9231,
-    "touches_home": 12,
-    "touches_away": 1,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 10,
-    "equipo_que_realizo_sustitucion": "Fortaleza",
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-08-31T23:10:41Z",
-    "t_inicio_estimado_condicion": "2026-08-31T23:08:29Z",
+    "ratio_presion_territorial": 0.6667,
+    "touches_home": 8,
+    "touches_away": 4,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-08-31T23:41:37Z",
+    "t_inicio_estimado_condicion": "2026-08-31T23:28:49Z",
     "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
-   "t_evento_real_utc": "2026-08-31T23:10:41Z",
-   "t_captura_utc": "2026-08-31T23:40:33Z",
-   "t_evaluacion_utc": "2026-08-31T23:40:34Z",
-   "t_generacion_utc": "2026-08-31T23:40:34Z",
+   "t_evento_real_utc": "2026-08-31T23:41:37Z",
+   "t_captura_utc": "2026-08-31T23:41:37Z",
+   "t_evaluacion_utc": "2026-08-31T23:41:38Z",
+   "t_generacion_utc": "2026-08-31T23:41:38Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Fortaleza vs Operário-PR\n⏱ Minuto: 45'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Fortaleza acumula 92% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Fortaleza, min 10\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Remo vs Coritiba\n⏱ Minuto: 40'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Remo acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
-   "alert_id": "bdadb2503fb90055"
+   "alert_id": "c84c0c2d499600c9"
   }
  ]
 }
