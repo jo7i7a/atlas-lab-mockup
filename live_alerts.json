@@ -1,35 +1,7 @@
 {
- "generated_at_utc": "2026-09-01T18:25:38Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-09-01T18:26:45Z",
+ "n_alerts": 5,
  "alerts": [
-  {
-   "strategy_id": "L1",
-   "match_label": "FC Rapperswil-Jona vs SC Kriens (Challenge League)",
-   "match_id": "16356980",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 24,
-   "condicion": "5 córners totales antes del min 30 (3-2), FC Rapperswil-Jona presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿SC Kriens NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 2,
-    "equipo_presiona": "FC Rapperswil-Jona"
-   },
-   "t_evento_real_utc": "2026-09-01T17:55:53Z",
-   "t_captura_utc": "2026-09-01T17:55:53Z",
-   "t_evaluacion_utc": "2026-09-01T17:55:58Z",
-   "t_generacion_utc": "2026-09-01T17:55:58Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ FC Rapperswil-Jona vs SC Kriens\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Challenge League\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: FC Rapperswil-Jona presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿SC Kriens no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "1f7deb42e49e8d3b"
-  },
   {
    "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "FC Rapperswil-Jona vs SC Kriens (Challenge League)",
@@ -123,35 +95,6 @@
    "alert_id": "9db09b5ce7adaa9f"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "FC Rapperswil-Jona vs SC Kriens (Challenge League)",
-   "match_id": "16356980",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "5 córners totales antes del min 45 (3-2), FC Rapperswil-Jona presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿SC Kriens NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 2,
-    "equipo_presiona": "FC Rapperswil-Jona",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-01T17:55:53Z",
-   "t_captura_utc": "2026-09-01T17:55:53Z",
-   "t_evaluacion_utc": "2026-09-01T18:16:13Z",
-   "t_generacion_utc": "2026-09-01T18:16:13Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ FC Rapperswil-Jona vs SC Kriens\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Challenge League\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: FC Rapperswil-Jona presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿SC Kriens no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "239947a5060fedd9"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "FC Rapperswil-Jona vs SC Kriens (Challenge League)",
    "match_id": "16356980",
@@ -195,7 +138,7 @@
    "match_id": "16629470",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 24,
+   "minuto": 25,
    "condicion": "Al-Ahli domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -215,8 +158,8 @@
    },
    "t_evento_real_utc": "2026-09-01T18:21:13Z",
    "t_captura_utc": "2026-09-01T18:21:13Z",
-   "t_evaluacion_utc": "2026-09-01T18:25:34Z",
-   "t_generacion_utc": "2026-09-01T18:25:34Z",
+   "t_evaluacion_utc": "2026-09-01T18:26:41Z",
+   "t_generacion_utc": "2026-09-01T18:26:41Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -230,7 +173,7 @@
    },
    "latencia_total_seg": 156.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Al-Hilal vs Al-Ahli\n⏱ Minuto: 24'\n📊 Marcador: 2-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Ahli — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Al-Hilal vs Al-Ahli\n⏱ Minuto: 25'\n📊 Marcador: 2-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Ahli — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "32b9f22d05ad11bb"
   },
@@ -240,7 +183,7 @@
    "match_id": "16629470",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 24,
+   "minuto": 25,
    "condicion": "Al-Ahli acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -262,13 +205,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-01T18:23:52Z",
-   "t_captura_utc": "2026-09-01T18:25:38Z",
-   "t_evaluacion_utc": "2026-09-01T18:25:38Z",
-   "t_generacion_utc": "2026-09-01T18:25:38Z",
+   "t_captura_utc": "2026-09-01T18:26:44Z",
+   "t_evaluacion_utc": "2026-09-01T18:26:45Z",
+   "t_generacion_utc": "2026-09-01T18:26:45Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Hilal vs Al-Ahli\n⏱ Minuto: 24'\n📊 Marcador: 2-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Ahli acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Al-Ahli, min 11\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Hilal vs Al-Ahli\n⏱ Minuto: 25'\n📊 Marcador: 2-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Ahli acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Al-Ahli, min 11\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "8e38ecc803268197"
   }
