@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-01T17:32:54Z",
+ "generated_at_utc": "2026-09-01T17:35:54Z",
  "n_live_target": 4,
  "matches": {
   "16356980": {
@@ -11,17 +11,27 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 1,
+   "minute": 4,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 80,
-     "away": 20
+     "home": 52,
+     "away": 48
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 1
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 1
     },
     "passes": {
      "label": "Pases",
-     "home": 4,
-     "away": 1
+     "home": 13,
+     "away": 11
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -31,13 +41,13 @@
    },
    "odds": {
     "1x2": {
-     "home": 2.35,
-     "draw": 3.9,
-     "away": 2.55,
-     "captured_at_utc": "2026-09-01T17:32:34Z"
+     "home": 2.5,
+     "draw": 4.0,
+     "away": 2.5,
+     "captured_at_utc": "2026-09-01T17:35:45Z"
     }
    },
-   "updated_at_utc": "2026-09-01T17:32:54Z"
+   "updated_at_utc": "2026-09-01T17:35:54Z"
   },
   "16356981": {
    "event_id": 16356981,
@@ -48,15 +58,25 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 0,
+   "minute": 3,
    "stats": {
     "possession": {
      "label": "Posesión",
+     "home": 50,
+     "away": 50
+    },
+    "shots": {
+     "label": "Remates totales",
      "home": 0,
-     "away": 100
+     "away": 1
     },
     "passes": {
      "label": "Pases",
+     "home": 19,
+     "away": 19
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
      "home": 0,
      "away": 1
     }
@@ -64,12 +84,12 @@
    "odds": {
     "1x2": {
      "home": 1.571,
-     "draw": 4.1,
-     "away": 5.0,
-     "captured_at_utc": "2026-09-01T17:32:34Z"
+     "draw": 3.6,
+     "away": 4.333,
+     "captured_at_utc": "2026-09-01T17:35:45Z"
     }
    },
-   "updated_at_utc": "2026-09-01T17:32:54Z"
+   "updated_at_utc": "2026-09-01T17:35:54Z"
   },
   "16356991": {
    "event_id": 16356991,
@@ -77,31 +97,46 @@
    "home": "Neuchâtel Xamax",
    "away": "Yverdon-Sport FC",
    "home_score": 0,
-   "away_score": 0,
+   "away_score": 1,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 1,
+   "minute": 4,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 6,
-     "away": 94
+     "home": 27,
+     "away": 73
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 0,
+     "away": 1
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 2
     },
     "passes": {
      "label": "Pases",
-     "home": 1,
-     "away": 15
+     "home": 8,
+     "away": 22
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 1
     }
    },
    "odds": {
     "1x2": {
-     "home": 2.8,
-     "draw": 3.7,
-     "away": 2.25,
-     "captured_at_utc": "2026-09-01T17:32:34Z"
+     "home": 5.0,
+     "draw": 4.333,
+     "away": 1.571,
+     "captured_at_utc": "2026-09-01T17:35:45Z"
     }
    },
-   "updated_at_utc": "2026-09-01T17:32:54Z"
+   "updated_at_utc": "2026-09-01T17:35:54Z"
   },
   "16356982": {
    "event_id": 16356982,
@@ -109,20 +144,46 @@
    "home": "Stade Nyonnais",
    "away": "FC Winterthur",
    "home_score": 0,
-   "away_score": 0,
+   "away_score": 1,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 2,
-   "stats": {},
-   "odds": {
-    "1x2": {
-     "home": 4.2,
-     "draw": 4.0,
-     "away": 1.667,
-     "captured_at_utc": "2026-09-01T17:32:34Z"
+   "minute": 5,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 67,
+     "away": 33
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 0,
+     "away": 1
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 2
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 34,
+     "away": 16
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 1
     }
    },
-   "updated_at_utc": "2026-09-01T17:32:54Z"
+   "odds": {
+    "1x2": {
+     "home": 9.0,
+     "draw": 6.0,
+     "away": 1.25,
+     "captured_at_utc": "2026-09-01T17:35:45Z"
+    }
+   },
+   "updated_at_utc": "2026-09-01T17:35:54Z"
   }
  }
 }
