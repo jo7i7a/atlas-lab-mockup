@@ -1,217 +1,46 @@
 {
- "generated_at_utc": "2026-09-02T18:56:54Z",
- "n_live_target": 4,
+ "generated_at_utc": "2026-09-02T19:05:54Z",
+ "n_live_target": 5,
  "matches": {
   "16362003": {
    "event_id": 16362003,
    "league": "Scottish Premiership",
    "home": "Celtic",
    "away": "Aberdeen",
-   "home_score": 0,
+   "home_score": 1,
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 10,
+   "minute": 19,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 77,
-     "away": 23
+     "home": 82,
+     "away": 18
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.02,
+     "home": 0.61,
      "away": 0
     },
-    "shots": {
-     "label": "Remates totales",
-     "home": 2,
-     "away": 0
-    },
-    "corners": {
-     "label": "Corners",
-     "home": 2,
-     "away": 0
-    },
-    "passes": {
-     "label": "Pases",
-     "home": 86,
-     "away": 28
-    }
-   },
-   "odds": {
-    "btts": {
-     "yes": 2.0,
-     "no": 1.75,
-     "captured_at_utc": "2026-09-02T18:56:52Z"
-    },
-    "1x2": {
-     "home": 1.25,
-     "draw": 5.5,
-     "away": 12.0,
-     "captured_at_utc": "2026-09-02T18:56:52Z"
-    }
-   },
-   "updated_at_utc": "2026-09-02T18:56:54Z"
-  },
-  "16361996": {
-   "event_id": 16361996,
-   "league": "Scottish Premiership",
-   "home": "Dundee FC",
-   "away": "St. Johnstone",
-   "home_score": 0,
-   "away_score": 0,
-   "status_type": "inprogress",
-   "status_description": "1st half",
-   "minute": 11,
-   "stats": {
-    "possession": {
-     "label": "Posesión",
-     "home": 47,
-     "away": 53
-    },
-    "xg": {
-     "label": "Expected Goals (xG)",
-     "home": 0,
-     "away": 0.15
-    },
-    "shots": {
-     "label": "Remates totales",
-     "home": 0,
-     "away": 1
-    },
-    "corners": {
-     "label": "Corners",
-     "home": 0,
-     "away": 1
-    },
-    "passes": {
-     "label": "Pases",
-     "home": 65,
-     "away": 73
-    },
-    "shots_on_target": {
-     "label": "Remates al arco",
-     "home": 0,
-     "away": 1
-    }
-   },
-   "odds": {
-    "btts": {
-     "yes": 1.909,
-     "no": 1.909,
-     "captured_at_utc": "2026-09-02T18:56:52Z"
-    },
-    "corners_over_95": {
-     "over": 1.833,
-     "under": 1.833,
-     "captured_at_utc": "2026-09-02T18:56:52Z"
-    },
-    "1x2": {
-     "home": 2.75,
-     "draw": 3.25,
-     "away": 2.5,
-     "captured_at_utc": "2026-09-02T18:56:52Z"
-    },
-    "goals_over_25": {
-     "over": 2.1,
-     "under": 1.727,
-     "captured_at_utc": "2026-09-02T18:56:52Z"
-    }
-   },
-   "updated_at_utc": "2026-09-02T18:56:54Z"
-  },
-  "16362006": {
-   "event_id": 16362006,
-   "league": "Scottish Premiership",
-   "home": "Kilmarnock",
-   "away": "St. Mirren",
-   "home_score": 0,
-   "away_score": 1,
-   "status_type": "inprogress",
-   "status_description": "1st half",
-   "minute": 12,
-   "stats": {
-    "possession": {
-     "label": "Posesión",
-     "home": 68,
-     "away": 32
-    },
-    "xg": {
-     "label": "Expected Goals (xG)",
-     "home": 0.01,
-     "away": 0.1
-    },
-    "shots": {
-     "label": "Remates totales",
-     "home": 1,
-     "away": 1
-    },
-    "corners": {
-     "label": "Corners",
+    "big_chances": {
+     "label": "Ocasiones claras",
      "home": 1,
      "away": 0
     },
-    "passes": {
-     "label": "Pases",
-     "home": 85,
-     "away": 38
-    },
-    "shots_on_target": {
-     "label": "Remates al arco",
-     "home": 0,
-     "away": 1
-    }
-   },
-   "odds": {
-    "btts": {
-     "yes": 1.222,
-     "no": 4.0,
-     "captured_at_utc": "2026-09-02T18:56:52Z"
-    },
-    "1x2": {
-     "home": 4.333,
-     "draw": 4.0,
-     "away": 1.727,
-     "captured_at_utc": "2026-09-02T18:56:52Z"
-    },
-    "goals_over_25": {
-     "over": 1.615,
-     "under": 2.3,
-     "captured_at_utc": "2026-09-02T18:56:52Z"
-    }
-   },
-   "updated_at_utc": "2026-09-02T18:56:54Z"
-  },
-  "16362005": {
-   "event_id": 16362005,
-   "league": "Scottish Premiership",
-   "home": "Motherwell",
-   "away": "Dundee United",
-   "home_score": 0,
-   "away_score": 0,
-   "status_type": "inprogress",
-   "status_description": "1st half",
-   "minute": 11,
-   "stats": {
-    "possession": {
-     "label": "Posesión",
-     "home": 57,
-     "away": 43
-    },
-    "xg": {
-     "label": "Expected Goals (xG)",
-     "home": 0.26,
-     "away": 0
-    },
     "shots": {
      "label": "Remates totales",
-     "home": 3,
+     "home": 5,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 4,
      "away": 0
     },
     "passes": {
      "label": "Pases",
-     "home": 64,
+     "home": 192,
      "away": 46
     },
     "shots_on_target": {
@@ -222,28 +51,281 @@
    },
    "odds": {
     "btts": {
-     "yes": 1.7,
-     "no": 2.05,
-     "captured_at_utc": "2026-09-02T18:56:52Z"
-    },
-    "corners_over_95": {
-     "over": 2.1,
-     "under": 1.667,
-     "captured_at_utc": "2026-09-02T18:56:52Z"
+     "yes": 1.95,
+     "no": 1.8,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
     },
     "1x2": {
-     "home": 2.5,
-     "draw": 3.4,
-     "away": 2.75,
-     "captured_at_utc": "2026-09-02T18:56:52Z"
+     "home": 1.071,
+     "draw": 11.0,
+     "away": 29.0,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
     },
     "goals_over_25": {
-     "over": 1.909,
-     "under": 1.909,
-     "captured_at_utc": "2026-09-02T18:56:52Z"
+     "over": 1.667,
+     "under": 2.2,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
     }
    },
-   "updated_at_utc": "2026-09-02T18:56:54Z"
+   "updated_at_utc": "2026-09-02T19:05:54Z"
+  },
+  "16361996": {
+   "event_id": 16361996,
+   "league": "Scottish Premiership",
+   "home": "Dundee FC",
+   "away": "St. Johnstone",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 20,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 53,
+     "away": 47
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.07,
+     "away": 0.15
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 1,
+     "away": 1
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 1,
+     "away": 1
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 132,
+     "away": 119
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 1
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.05,
+     "no": 1.7,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
+    },
+    "corners_over_95": {
+     "over": 1.8,
+     "under": 1.909,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
+    },
+    "1x2": {
+     "home": 2.75,
+     "draw": 3.1,
+     "away": 2.75,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
+    },
+    "goals_over_25": {
+     "over": 2.625,
+     "under": 1.5,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
+    }
+   },
+   "updated_at_utc": "2026-09-02T19:05:54Z"
+  },
+  "16362006": {
+   "event_id": 16362006,
+   "league": "Scottish Premiership",
+   "home": "Kilmarnock",
+   "away": "St. Mirren",
+   "home_score": 0,
+   "away_score": 1,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 21,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 51,
+     "away": 49
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.01,
+     "away": 0.21
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 1,
+     "away": 2
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 1,
+     "away": 1
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 102,
+     "away": 96
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 1
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.286,
+     "no": 3.5,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
+    },
+    "1x2": {
+     "home": 5.0,
+     "draw": 4.0,
+     "away": 1.667,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
+    },
+    "goals_over_25": {
+     "over": 1.615,
+     "under": 2.3,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
+    }
+   },
+   "updated_at_utc": "2026-09-02T19:05:54Z"
+  },
+  "16362005": {
+   "event_id": 16362005,
+   "league": "Scottish Premiership",
+   "home": "Motherwell",
+   "away": "Dundee United",
+   "home_score": 1,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 20,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 68,
+     "away": 32
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.63,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 8,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 1,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 144,
+     "away": 67
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 1
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 4,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.909,
+     "no": 1.909,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
+    },
+    "corners_over_95": {
+     "over": 2.0,
+     "under": 1.727,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
+    },
+    "1x2": {
+     "home": 1.083,
+     "draw": 9.5,
+     "away": 26.0,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
+    },
+    "goals_over_25": {
+     "over": 2.0,
+     "under": 1.8,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
+    }
+   },
+   "updated_at_utc": "2026-09-02T19:05:54Z"
+  },
+  "16362008": {
+   "event_id": 16362008,
+   "league": "Scottish Premiership",
+   "home": "Falkirk FC",
+   "away": "Rangers",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 4,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 40,
+     "away": 60
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.02,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 1,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 19,
+     "away": 27
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.8,
+     "no": 1.95,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
+    },
+    "corners_over_95": {
+     "over": 1.909,
+     "under": 1.8,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
+    },
+    "1x2": {
+     "home": 6.0,
+     "draw": 4.333,
+     "away": 1.533,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
+    },
+    "goals_over_25": {
+     "over": 1.727,
+     "under": 2.1,
+     "captured_at_utc": "2026-09-02T19:05:39Z"
+    }
+   },
+   "updated_at_utc": "2026-09-02T19:05:54Z"
   }
  }
 }
