@@ -1,81 +1,150 @@
 {
- "generated_at_utc": "2026-09-02T23:44:56Z",
+ "generated_at_utc": "2026-09-02T23:47:57Z",
  "n_live_target": 2,
  "matches": {
-  "1000013175": {
-   "event_id": 1000013175,
+  "16890992": {
+   "event_id": 16890992,
+   "league": "Brasileirão Betano",
+   "home": "Flamengo",
+   "away": "Mirassol",
+   "home_score": 2,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "2nd half",
+   "minute": 56,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 59,
+     "away": 41
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 1.75,
+     "away": 0.15
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 5,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 14,
+     "away": 2
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 8,
+     "away": 2
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 392,
+     "away": 274
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 4,
+     "away": 1
+    }
+   },
+   "odds": {
+    "corners_over_95": {
+     "over": 1.667,
+     "under": 2.1,
+     "captured_at_utc": "2026-09-02T23:46:12Z"
+    },
+    "btts": {
+     "yes": 3.25,
+     "no": 1.333,
+     "captured_at_utc": "2026-09-02T23:46:12Z"
+    },
+    "1x2": {
+     "home": 1.01,
+     "draw": 26.0,
+     "away": 67.0,
+     "captured_at_utc": "2026-09-02T23:46:12Z"
+    },
+    "goals_over_25": {
+     "over": 1.727,
+     "under": 2.1,
+     "captured_at_utc": "2026-09-02T23:46:12Z"
+    }
+   },
+   "updated_at_utc": "2026-09-02T23:47:57Z"
+  },
+  "16862539": {
+   "event_id": 16862539,
    "league": "Liga de Primera",
    "home": "Coquimbo Unido",
    "away": "Universidad de Concepción",
    "home_score": 0,
    "away_score": 0,
-   "status_type": null,
-   "status_description": "live",
-   "minute": 81,
+   "status_type": "inprogress",
+   "status_description": "2nd half",
+   "minute": 84,
    "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 61,
+     "away": 39
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 0,
+     "away": 1
+    },
     "shots": {
      "label": "Remates totales",
      "home": 15,
      "away": 7
-    },
-    "shots_on_target": {
-     "label": "Remates al arco",
-     "home": 4,
-     "away": 3
     },
     "corners": {
      "label": "Corners",
      "home": 10,
      "away": 4
     },
-    "red_cards": {
-     "label": "Tarjetas rojas",
-     "home": 0,
-     "away": 0
-    }
-   },
-   "odds": {},
-   "updated_at_utc": "2026-09-02T23:44:56Z"
-  },
-  "5103394": {
-   "event_id": 5103394,
-   "league": "Brasileirão Betano",
-   "home": "Flamengo",
-   "away": "Mirassol",
-   "home_score": 2,
-   "away_score": 0,
-   "status_type": null,
-   "status_description": "live",
-   "minute": 53,
-   "stats": {
-    "xg": {
-     "label": "Expected Goals (xG)",
-     "home": 1.68,
-     "away": 0.12
+    "passes": {
+     "label": "Pases",
+     "home": 453,
+     "away": 302
     },
-    "shots": {
-     "label": "Remates totales",
-     "home": 13,
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 1,
      "away": 1
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 3,
-     "away": 0
-    },
-    "corners": {
-     "label": "Corners",
-     "home": 6,
-     "away": 2
-    },
-    "red_cards": {
-     "label": "Tarjetas rojas",
-     "home": 0,
-     "away": 0
+     "home": 4,
+     "away": 3
     }
    },
-   "odds": {},
-   "updated_at_utc": "2026-09-02T23:44:56Z"
+   "odds": {
+    "corners_over_95": {
+     "over": 1.909,
+     "under": 1.8,
+     "captured_at_utc": "2026-09-02T23:46:12Z"
+    },
+    "goals_over_25": {
+     "over": 2.5,
+     "under": 1.5,
+     "captured_at_utc": "2026-09-02T23:46:12Z"
+    },
+    "btts": {
+     "yes": 26.0,
+     "no": 1.01,
+     "captured_at_utc": "2026-09-02T23:46:12Z"
+    },
+    "1x2": {
+     "home": 3.4,
+     "draw": 1.444,
+     "away": 11.0,
+     "captured_at_utc": "2026-09-02T23:46:12Z"
+    }
+   },
+   "updated_at_utc": "2026-09-02T23:47:57Z"
   }
  }
 }
