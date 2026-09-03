@@ -1,36 +1,7 @@
 {
- "generated_at_utc": "2026-09-03T01:46:30Z",
+ "generated_at_utc": "2026-09-03T01:52:50Z",
  "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "CD Toluca vs Club León (Leagues Cup)",
-   "match_id": "16941232",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 33,
-   "condicion": "4 córners totales antes del min 45 (0-4), Club León presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿CD Toluca NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "Club León",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-03T01:45:41Z",
-   "t_captura_utc": "2026-09-03T01:45:41Z",
-   "t_evaluacion_utc": "2026-09-03T01:45:53Z",
-   "t_generacion_utc": "2026-09-03T01:45:53Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CD Toluca vs Club León\n⏱ Minuto: 33'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Club León presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CD Toluca no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "001c7629f312603c"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "CD Toluca vs Club León (Leagues Cup)",
@@ -68,6 +39,35 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CD Toluca vs Club León\n⏱ Minuto: 34'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: Club León acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Club León, min -5\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "072c06ffef6da6a7"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "CD Toluca vs Club León (Leagues Cup)",
+   "match_id": "16941232",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 39,
+   "condicion": "4 córners totales antes del min 45 (0-4), Club León presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿CD Toluca NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Club León",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-09-03T01:45:41Z",
+   "t_captura_utc": "2026-09-03T01:45:41Z",
+   "t_evaluacion_utc": "2026-09-03T01:52:15Z",
+   "t_generacion_utc": "2026-09-03T01:52:15Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CD Toluca vs Club León\n⏱ Minuto: 39'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Club León presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿CD Toluca no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "001c7629f312603c"
   }
  ]
 }
