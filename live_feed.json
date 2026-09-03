@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-03T01:11:55Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-09-03T01:14:54Z",
+ "n_live_target": 2,
  "matches": {
   "16862540": {
    "event_id": 16862540,
@@ -11,7 +11,7 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 40,
+   "minute": 43,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -25,18 +25,18 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 7,
+     "home": 8,
      "away": 4
     },
     "corners": {
      "label": "Corners",
      "home": 4,
-     "away": 0
+     "away": 1
     },
     "passes": {
      "label": "Pases",
-     "home": 182,
-     "away": 144
+     "home": 183,
+     "away": 145
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -53,26 +53,73 @@
     "btts": {
      "yes": 2.625,
      "no": 1.444,
-     "captured_at_utc": "2026-09-03T01:11:50Z"
+     "captured_at_utc": "2026-09-03T01:12:10Z"
     },
     "corners_over_95": {
      "over": 1.8,
      "under": 1.909,
-     "captured_at_utc": "2026-09-03T01:11:50Z"
+     "captured_at_utc": "2026-09-03T01:14:52Z"
     },
     "1x2": {
      "home": 2.5,
      "draw": 2.75,
      "away": 3.4,
-     "captured_at_utc": "2026-09-03T01:11:50Z"
+     "captured_at_utc": "2026-09-03T01:12:10Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.5,
-     "captured_at_utc": "2026-09-03T01:11:50Z"
+     "captured_at_utc": "2026-09-03T01:14:52Z"
     }
    },
-   "updated_at_utc": "2026-09-03T01:11:55Z"
+   "updated_at_utc": "2026-09-03T01:14:54Z"
+  },
+  "16941232": {
+   "event_id": 16941232,
+   "league": "Leagues Cup",
+   "home": "CD Toluca",
+   "away": "Club León",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 53,
+     "away": 47
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 10,
+     "away": 9
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.615,
+     "no": 2.2,
+     "captured_at_utc": "2026-09-03T01:14:52Z"
+    },
+    "corners_over_95": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-09-03T01:14:52Z"
+    },
+    "1x2": {
+     "home": 1.727,
+     "draw": 3.6,
+     "away": 4.5,
+     "captured_at_utc": "2026-09-03T01:14:52Z"
+    },
+    "goals_over_25": {
+     "over": 1.667,
+     "under": 2.1,
+     "captured_at_utc": "2026-09-03T01:14:52Z"
+    }
+   },
+   "updated_at_utc": "2026-09-03T01:14:54Z"
   }
  }
 }
