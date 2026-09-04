@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-04T22:21:50Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-09-04T22:22:54Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "H3_PERSISTENCIA_TIROS_INVESTIGACION",
@@ -50,7 +50,7 @@
    "match_id": "16671606",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 19,
+   "minuto": 20,
    "condicion": "Club Atlético Belgrano domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -70,8 +70,8 @@
    },
    "t_evento_real_utc": "2026-09-04T22:18:17Z",
    "t_captura_utc": "2026-09-04T22:18:17Z",
-   "t_evaluacion_utc": "2026-09-04T22:21:40Z",
-   "t_generacion_utc": "2026-09-04T22:21:40Z",
+   "t_evaluacion_utc": "2026-09-04T22:22:42Z",
+   "t_generacion_utc": "2026-09-04T22:22:42Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -85,7 +85,7 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Club Atlético Belgrano vs Huracán\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Belgrano — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Club Atlético Belgrano vs Huracán\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Belgrano — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "5ec2372adc7002e8"
   },
@@ -95,7 +95,7 @@
    "match_id": "16671595",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 21,
+   "minuto": 22,
    "condicion": "Deportivo Riestra acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -117,15 +117,53 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-04T22:20:49Z",
-   "t_captura_utc": "2026-09-04T22:21:50Z",
-   "t_evaluacion_utc": "2026-09-04T22:21:50Z",
-   "t_generacion_utc": "2026-09-04T22:21:50Z",
+   "t_captura_utc": "2026-09-04T22:22:52Z",
+   "t_evaluacion_utc": "2026-09-04T22:22:53Z",
+   "t_generacion_utc": "2026-09-04T22:22:53Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Atlético Platense vs Deportivo Riestra\n⏱ Minuto: 21'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Deportivo Riestra acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Deportivo Riestra, min 21\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Atlético Platense vs Deportivo Riestra\n⏱ Minuto: 22'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Deportivo Riestra acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Deportivo Riestra, min 21\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "4f167c3ce2e96b09"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Club Atlético Belgrano vs Huracán (Liga Profesional de Fútbol)",
+   "match_id": "16671606",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 20,
+   "condicion": "Club Atlético Belgrano acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Club Atlético Belgrano",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.9091,
+    "touches_home": 10,
+    "touches_away": 1,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-09-04T22:22:54Z",
+    "t_inicio_estimado_condicion": null,
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-04T22:22:54Z",
+   "t_captura_utc": "2026-09-04T22:22:54Z",
+   "t_evaluacion_utc": "2026-09-04T22:22:54Z",
+   "t_generacion_utc": "2026-09-04T22:22:54Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Atlético Belgrano vs Huracán\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Club Atlético Belgrano acumula 91% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "b2b60919888e1b22"
   }
  ]
 }
