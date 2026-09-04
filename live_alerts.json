@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-04T17:55:52Z",
- "n_alerts": 13,
+ "generated_at_utc": "2026-09-04T17:56:52Z",
+ "n_alerts": 14,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -413,11 +413,56 @@
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "SC Kriens vs FC Stade-Lausanne-Ouchy (Challenge League)",
+   "match_id": "16356990",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 24,
+   "condicion": "SC Kriens domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "SC Kriens",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 1,
+    "remates_home": 2,
+    "remates_away": 1,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-04T17:55:31Z",
+   "t_captura_utc": "2026-09-04T17:55:31Z",
+   "t_evaluacion_utc": "2026-09-04T17:56:41Z",
+   "t_generacion_utc": "2026-09-04T17:56:41Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_NO_AUTORIZADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "Estrategia 'A1_V1_SOLO_TRIGGER_LIVE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ SC Kriens vs FC Stade-Lausanne-Ouchy\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Challenge League\n\n📝 Motivo: SC Kriens — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "d18f40ada05f8ed9"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "FC Aarau vs FC Rapperswil-Jona (Challenge League)",
    "match_id": "16356998",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 21,
+   "minuto": 22,
    "condicion": "FC Aarau domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -437,8 +482,8 @@
    },
    "t_evento_real_utc": "2026-09-04T17:49:09Z",
    "t_captura_utc": "2026-09-04T17:49:09Z",
-   "t_evaluacion_utc": "2026-09-04T17:55:41Z",
-   "t_generacion_utc": "2026-09-04T17:55:41Z",
+   "t_evaluacion_utc": "2026-09-04T17:56:42Z",
+   "t_generacion_utc": "2026-09-04T17:56:42Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -452,7 +497,7 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ FC Aarau vs FC Rapperswil-Jona\n⏱ Minuto: 21'\n📊 Marcador: 0-1\n🏆 Liga: Challenge League\n\n📝 Motivo: FC Aarau — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ FC Aarau vs FC Rapperswil-Jona\n⏱ Minuto: 22'\n📊 Marcador: 0-1\n🏆 Liga: Challenge League\n\n📝 Motivo: FC Aarau — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "2d9fb80d28c3804c"
   },
@@ -462,7 +507,7 @@
    "match_id": "16356990",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 24,
+   "minuto": 25,
    "condicion": "FC Stade-Lausanne-Ouchy acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -477,20 +522,20 @@
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-0",
+    "marcador_en_el_momento": "0-1",
     "t_primera_observacion_atlas": "2026-09-04T17:52:02Z",
     "t_inicio_estimado_condicion": "2026-09-04T17:54:07Z",
     "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-04T17:52:02Z",
-   "t_captura_utc": "2026-09-04T17:55:51Z",
-   "t_evaluacion_utc": "2026-09-04T17:55:52Z",
-   "t_generacion_utc": "2026-09-04T17:55:52Z",
+   "t_captura_utc": "2026-09-04T17:56:51Z",
+   "t_evaluacion_utc": "2026-09-04T17:56:52Z",
+   "t_generacion_utc": "2026-09-04T17:56:52Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Kriens vs FC Stade-Lausanne-Ouchy\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Challenge League\n\n📝 Motivo: FC Stade-Lausanne-Ouchy acumula 80% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Kriens vs FC Stade-Lausanne-Ouchy\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: Challenge League\n\n📝 Motivo: FC Stade-Lausanne-Ouchy acumula 80% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "cc155d2120b8c1d6"
   }
