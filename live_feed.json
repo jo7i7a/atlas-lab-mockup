@@ -1,17 +1,17 @@
 {
- "generated_at_utc": "2026-09-04T17:29:54Z",
- "n_live_target": 3,
+ "generated_at_utc": "2026-09-04T17:32:54Z",
+ "n_live_target": 4,
  "matches": {
   "16310940": {
    "event_id": 16310940,
    "league": "Ligue 1",
    "home": "Olympique Lyonnais",
    "away": "Auxerre",
-   "home_score": 1,
+   "home_score": 2,
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 29,
+   "minute": 32,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -20,7 +20,7 @@
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 1.07,
+     "home": 1.23,
      "away": 0.03
     },
     "big_chances": {
@@ -30,7 +30,7 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 5,
+     "home": 7,
      "away": 1
     },
     "corners": {
@@ -40,8 +40,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 113,
-     "away": 69
+     "home": 128,
+     "away": 78
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -50,29 +50,29 @@
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 1,
+     "home": 2,
      "away": 0
     }
    },
    "odds": {
     "btts": {
-     "yes": 1.571,
-     "no": 2.25,
-     "captured_at_utc": "2026-09-04T17:29:51Z"
+     "yes": 1.615,
+     "no": 2.2,
+     "captured_at_utc": "2026-09-04T17:32:37Z"
     },
     "1x2": {
-     "home": 1.2,
-     "draw": 6.5,
-     "away": 13.0,
-     "captured_at_utc": "2026-09-04T17:29:51Z"
+     "home": 1.04,
+     "draw": 15.0,
+     "away": 34.0,
+     "captured_at_utc": "2026-09-04T17:32:37Z"
     },
     "goals_over_25": {
      "over": 1.8,
      "under": 2.0,
-     "captured_at_utc": "2026-09-04T17:29:51Z"
+     "captured_at_utc": "2026-09-04T17:32:37Z"
     }
    },
-   "updated_at_utc": "2026-09-04T17:29:54Z"
+   "updated_at_utc": "2026-09-04T17:32:54Z"
   },
   "15260897": {
    "event_id": 15260897,
@@ -83,17 +83,17 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 27,
+   "minute": 30,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 49,
-     "away": 51
+     "home": 48,
+     "away": 52
     },
     "xg": {
      "label": "Expected Goals (xG)",
      "home": 0.8,
-     "away": 0.57
+     "away": 0.75
     },
     "big_chances": {
      "label": "Ocasiones claras",
@@ -103,7 +103,7 @@
     "shots": {
      "label": "Remates totales",
      "home": 7,
-     "away": 8
+     "away": 10
     },
     "corners": {
      "label": "Corners",
@@ -112,12 +112,12 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 122,
-     "away": 126
+     "home": 133,
+     "away": 144
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
-     "home": 1,
+     "home": 2,
      "away": 0
     },
     "shots_on_target": {
@@ -130,13 +130,13 @@
     "btts": {
      "yes": 1.333,
      "no": 3.25,
-     "captured_at_utc": "2026-09-04T17:29:51Z"
+     "captured_at_utc": "2026-09-04T17:32:37Z"
     },
     "1x2": {
      "home": 1.143,
      "draw": 8.0,
      "away": 15.0,
-     "captured_at_utc": "2026-09-04T17:29:51Z"
+     "captured_at_utc": "2026-09-04T17:32:37Z"
     },
     "goals_over_25": {
      "over": 1.833,
@@ -146,10 +146,10 @@
     "corners_over_95": {
      "over": 1.667,
      "under": 2.1,
-     "captured_at_utc": "2026-09-04T17:29:51Z"
+     "captured_at_utc": "2026-09-04T17:32:37Z"
     }
    },
-   "updated_at_utc": "2026-09-04T17:29:54Z"
+   "updated_at_utc": "2026-09-04T17:32:54Z"
   },
   "15260893": {
    "event_id": 15260893,
@@ -160,22 +160,27 @@
    "away_score": 1,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 29,
+   "minute": 32,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 43,
-     "away": 57
+     "home": 45,
+     "away": 55
     },
     "xg": {
      "label": "Expected Goals (xG)",
      "home": 0.09,
-     "away": 0.59
+     "away": 0.73
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 0,
+     "away": 1
     },
     "shots": {
      "label": "Remates totales",
      "home": 2,
-     "away": 5
+     "away": 6
     },
     "corners": {
      "label": "Corners",
@@ -184,39 +189,60 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 162,
+     "home": 179,
      "away": 214
     },
     "shots_on_target": {
      "label": "Remates al arco",
      "home": 1,
-     "away": 0
+     "away": 1
     }
    },
    "odds": {
     "btts": {
-     "yes": 2.25,
-     "no": 1.571,
-     "captured_at_utc": "2026-09-04T17:29:09Z"
+     "yes": 1.909,
+     "no": 1.909,
+     "captured_at_utc": "2026-09-04T17:32:37Z"
     },
     "1x2": {
      "home": 17.0,
-     "draw": 8.0,
+     "draw": 7.5,
      "away": 1.143,
-     "captured_at_utc": "2026-09-04T17:29:09Z"
+     "captured_at_utc": "2026-09-04T17:32:37Z"
     },
     "goals_over_25": {
      "over": 2.0,
      "under": 1.727,
-     "captured_at_utc": "2026-09-04T17:29:51Z"
+     "captured_at_utc": "2026-09-04T17:32:37Z"
     },
     "corners_over_95": {
      "over": 1.667,
      "under": 2.1,
-     "captured_at_utc": "2026-09-04T17:29:51Z"
+     "captured_at_utc": "2026-09-04T17:32:37Z"
     }
    },
-   "updated_at_utc": "2026-09-04T17:29:54Z"
+   "updated_at_utc": "2026-09-04T17:32:54Z"
+  },
+  "16356990": {
+   "event_id": 16356990,
+   "league": "Challenge League",
+   "home": "SC Kriens",
+   "away": "FC Stade-Lausanne-Ouchy",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {},
+   "odds": {
+    "1x2": {
+     "home": 3.5,
+     "draw": 3.7,
+     "away": 2.1,
+     "captured_at_utc": "2026-09-04T17:32:37Z"
+    }
+   },
+   "updated_at_utc": "2026-09-04T17:32:54Z"
   }
  }
 }
