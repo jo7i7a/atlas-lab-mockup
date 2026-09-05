@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-05T10:22:25Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-09-05T10:23:39Z",
+ "n_alerts": 2,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -8,7 +8,7 @@
    "match_id": "16348580",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 18,
+   "minuto": 19,
    "condicion": "Avispa Fukuoka domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -28,8 +28,8 @@
    },
    "t_evento_real_utc": "2026-09-05T10:18:58Z",
    "t_captura_utc": "2026-09-05T10:18:58Z",
-   "t_evaluacion_utc": "2026-09-05T10:22:25Z",
-   "t_generacion_utc": "2026-09-05T10:22:25Z",
+   "t_evaluacion_utc": "2026-09-05T10:23:25Z",
+   "t_generacion_utc": "2026-09-05T10:23:25Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -43,9 +43,47 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Avispa Fukuoka vs Mito Hollyhock\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n📝 Motivo: Avispa Fukuoka — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Avispa Fukuoka vs Mito Hollyhock\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n📝 Motivo: Avispa Fukuoka — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "92f8cb3905d0f6e4"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Avispa Fukuoka vs Mito Hollyhock (J1 League)",
+   "match_id": "16348580",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 20,
+   "condicion": "Avispa Fukuoka acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Avispa Fukuoka",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 1.0,
+    "touches_home": 8,
+    "touches_away": 0,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-09-05T10:23:38Z",
+    "t_inicio_estimado_condicion": null,
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-05T10:23:38Z",
+   "t_captura_utc": "2026-09-05T10:23:38Z",
+   "t_evaluacion_utc": "2026-09-05T10:23:39Z",
+   "t_generacion_utc": "2026-09-05T10:23:39Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Avispa Fukuoka vs Mito Hollyhock\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n📝 Motivo: Avispa Fukuoka acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "129ef793b3a421f1"
   }
  ]
 }
