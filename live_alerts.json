@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-05T02:05:33Z",
+ "generated_at_utc": "2026-09-05T02:06:35Z",
  "n_alerts": 2,
  "alerts": [
   {
@@ -37,42 +37,42 @@
    "alert_id": "e0e792ff2c65e8ce"
   },
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "strategy_id": "L3",
    "match_label": "Deportes Concepción vs Audax Italiano (Liga de Primera)",
    "match_id": "15353124",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
    "cuota_detectada": null,
-   "minuto": 74,
-   "condicion": "Deportes Concepción acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "minuto": 75,
+   "condicion": "Expulsión de Deportes Concepción (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
    "confianza": "Media",
    "link": "",
-   "priority": "MEDIA",
+   "priority": "ALTA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "equipo_dominante": "Deportes Concepción",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.72,
-    "touches_home": 18,
-    "touches_away": 7,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 69,
-    "equipo_que_realizo_sustitucion": "Deportes Concepción",
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-09-05T01:36:28Z",
-    "t_inicio_estimado_condicion": "2026-09-05T01:18:43Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+    "equipo_expulsado": "Deportes Concepción",
+    "marcador_al_detectar": "0-1",
+    "total_rojas_partido": 1
    },
-   "t_evento_real_utc": "2026-09-05T01:36:28Z",
-   "t_captura_utc": "2026-09-05T02:05:31Z",
-   "t_evaluacion_utc": "2026-09-05T02:05:32Z",
-   "t_generacion_utc": "2026-09-05T02:05:32Z",
-   "envios": {},
-   "latencia_total_seg": null,
+   "t_evento_real_utc": "2026-09-05T02:06:09Z",
+   "t_captura_utc": "2026-09-05T02:06:09Z",
+   "t_evaluacion_utc": "2026-09-05T02:06:27Z",
+   "t_generacion_utc": "2026-09-05T02:06:27Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-05T02:06:28Z",
+     "latencia_envio_ms": 918.8046455383301,
+     "error": null,
+     "message_id": 2481,
+     "chat_id": -5219979824
+    }
+   },
+   "latencia_total_seg": 19.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportes Concepción vs Audax Italiano\n⏱ Minuto: 74'\n📊 Marcador: 0-1\n🏆 Liga: Liga de Primera\n\n📝 Motivo: Deportes Concepción acumula 72% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Deportes Concepción, min 69\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 L3 | Deportes Concepción vs Audax Italiano | Roja Deportes Concepción | Min 75' | 0-1",
    "evidencia": null,
-   "alert_id": "e28f903e2c1b70cf"
+   "alert_id": "a7a3a1f68a5e9157"
   }
  ]
 }
