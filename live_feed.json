@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-05T00:32:54Z",
- "n_live_target": 4,
+ "generated_at_utc": "2026-09-05T00:35:54Z",
+ "n_live_target": 5,
  "matches": {
   "15168351": {
    "event_id": 15168351,
@@ -56,28 +56,28 @@
    },
    "odds": {
     "btts": {
-     "yes": 3.25,
-     "no": 1.333,
-     "captured_at_utc": "2026-09-05T00:32:52Z"
+     "yes": 3.0,
+     "no": 1.364,
+     "captured_at_utc": "2026-09-05T00:35:39Z"
     },
     "corners_over_95": {
      "over": 2.0,
      "under": 1.727,
-     "captured_at_utc": "2026-09-05T00:32:52Z"
+     "captured_at_utc": "2026-09-05T00:35:39Z"
     },
     "1x2": {
      "home": 3.6,
      "draw": 2.625,
      "away": 2.5,
-     "captured_at_utc": "2026-09-05T00:32:52Z"
+     "captured_at_utc": "2026-09-05T00:35:39Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.5,
-     "captured_at_utc": "2026-09-05T00:32:52Z"
+     "captured_at_utc": "2026-09-05T00:35:39Z"
     }
    },
-   "updated_at_utc": "2026-09-05T00:32:54Z"
+   "updated_at_utc": "2026-09-05T00:35:54Z"
   },
   "15526260": {
    "event_id": 15526260,
@@ -133,28 +133,28 @@
    },
    "odds": {
     "btts": {
-     "yes": 1.8,
-     "no": 1.909,
-     "captured_at_utc": "2026-09-05T00:32:52Z"
+     "yes": 1.727,
+     "no": 2.0,
+     "captured_at_utc": "2026-09-05T00:35:39Z"
     },
     "corners_over_95": {
      "over": 2.2,
      "under": 1.615,
-     "captured_at_utc": "2026-09-05T00:32:52Z"
+     "captured_at_utc": "2026-09-05T00:35:39Z"
     },
     "1x2": {
      "home": 1.015,
      "draw": 23.0,
      "away": 51.0,
-     "captured_at_utc": "2026-09-05T00:32:52Z"
+     "captured_at_utc": "2026-09-05T00:35:39Z"
     },
     "goals_over_25": {
      "over": 2.2,
      "under": 1.615,
-     "captured_at_utc": "2026-09-05T00:32:52Z"
+     "captured_at_utc": "2026-09-05T00:35:39Z"
     }
    },
-   "updated_at_utc": "2026-09-05T00:32:54Z"
+   "updated_at_utc": "2026-09-05T00:35:54Z"
   },
   "15526266": {
    "event_id": 15526266,
@@ -165,38 +165,53 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 2,
+   "minute": 5,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 63,
-     "away": 37
+     "home": 48,
+     "away": 52
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0.02
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 1
     },
     "passes": {
      "label": "Pases",
-     "home": 19,
-     "away": 11
+     "home": 24,
+     "away": 27
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 1
     }
    },
    "odds": {
     "btts": {
-     "yes": 1.667,
-     "no": 2.1,
-     "captured_at_utc": "2026-09-05T00:32:52Z"
+     "yes": 1.727,
+     "no": 2.0,
+     "captured_at_utc": "2026-09-05T00:35:39Z"
     },
     "1x2": {
      "home": 1.615,
      "draw": 4.0,
      "away": 5.0,
-     "captured_at_utc": "2026-09-05T00:32:52Z"
+     "captured_at_utc": "2026-09-05T00:35:39Z"
     },
     "goals_over_25": {
      "over": 1.667,
      "under": 2.1,
-     "captured_at_utc": "2026-09-05T00:32:52Z"
+     "captured_at_utc": "2026-09-05T00:35:39Z"
     }
    },
-   "updated_at_utc": "2026-09-05T00:32:54Z"
+   "updated_at_utc": "2026-09-05T00:35:54Z"
   },
   "15353124": {
    "event_id": 15353124,
@@ -207,32 +222,64 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 1,
-   "stats": {},
-   "odds": {
-    "btts": {
-     "yes": 1.909,
-     "no": 1.8,
-     "captured_at_utc": "2026-09-05T00:32:52Z"
+   "minute": 4,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 60,
+     "away": 40
     },
-    "corners_over_95": {
-     "over": 2.0,
-     "under": 1.727,
-     "captured_at_utc": "2026-09-05T00:32:52Z"
-    },
-    "1x2": {
-     "home": 2.25,
-     "draw": 3.1,
-     "away": 3.1,
-     "captured_at_utc": "2026-09-05T00:32:52Z"
-    },
-    "goals_over_25": {
-     "over": 2.2,
-     "under": 1.615,
-     "captured_at_utc": "2026-09-05T00:32:52Z"
+    "passes": {
+     "label": "Pases",
+     "home": 12,
+     "away": 8
     }
    },
-   "updated_at_utc": "2026-09-05T00:32:54Z"
+   "odds": {
+    "btts": {
+     "yes": 2.0,
+     "no": 1.727,
+     "captured_at_utc": "2026-09-05T00:35:39Z"
+    },
+    "corners_over_95": {
+     "over": 2.1,
+     "under": 1.667,
+     "captured_at_utc": "2026-09-05T00:35:39Z"
+    },
+    "1x2": {
+     "home": 2.3,
+     "draw": 3.1,
+     "away": 3.1,
+     "captured_at_utc": "2026-09-05T00:35:39Z"
+    },
+    "goals_over_25": {
+     "over": 2.25,
+     "under": 1.571,
+     "captured_at_utc": "2026-09-05T00:35:39Z"
+    }
+   },
+   "updated_at_utc": "2026-09-05T00:35:54Z"
+  },
+  "15416313": {
+   "event_id": 15416313,
+   "league": "Liga de Ascenso",
+   "home": "Deportes Puerto Montt",
+   "away": "Curicó Unido",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 3,
+   "stats": {},
+   "odds": {
+    "1x2": {
+     "home": 2.2,
+     "draw": 3.2,
+     "away": 3.1,
+     "captured_at_utc": "2026-09-05T00:35:39Z"
+    }
+   },
+   "updated_at_utc": "2026-09-05T00:35:54Z"
   }
  }
 }
