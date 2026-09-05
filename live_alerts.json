@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-05T01:17:35Z",
+ "generated_at_utc": "2026-09-05T01:24:05Z",
  "n_alerts": 4,
  "alerts": [
   {
@@ -30,44 +30,6 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Clube De Regatas Brasil vs América Mineiro\n⏱ Minuto: 38'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Clube De Regatas Brasil presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿América Mineiro no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "370b5c871e6b0ee5"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "New York City FC vs Nashville SC (MLS)",
-   "match_id": "15168351",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 79,
-   "condicion": "Nashville SC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Nashville SC",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.617,
-    "touches_home": 18,
-    "touches_away": 29,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 66,
-    "equipo_que_realizo_sustitucion": "Nashville SC",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-09-05T01:17:31Z",
-    "t_inicio_estimado_condicion": "2026-09-05T00:08:28Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-05T01:17:31Z",
-   "t_captura_utc": "2026-09-05T01:17:31Z",
-   "t_evaluacion_utc": "2026-09-05T01:17:32Z",
-   "t_generacion_utc": "2026-09-05T01:17:32Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ New York City FC vs Nashville SC\n⏱ Minuto: 79'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Nashville SC acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Nashville SC, min 66\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "f02b12ee499eb1ad"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -144,6 +106,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Clube De Regatas Brasil vs América Mineiro\n⏱ Minuto: 47'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Clube De Regatas Brasil acumula 72% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "2f375d95bf5098f9"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "New York City FC vs Nashville SC (MLS)",
+   "match_id": "15168351",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 85,
+   "condicion": "Nashville SC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Nashville SC",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.62,
+    "touches_home": 19,
+    "touches_away": 31,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 81,
+    "equipo_que_realizo_sustitucion": "Nashville SC",
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-09-05T01:17:31Z",
+    "t_inicio_estimado_condicion": "2026-09-05T00:08:28Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-05T01:17:31Z",
+   "t_captura_utc": "2026-09-05T01:24:04Z",
+   "t_evaluacion_utc": "2026-09-05T01:24:05Z",
+   "t_generacion_utc": "2026-09-05T01:24:05Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ New York City FC vs Nashville SC\n⏱ Minuto: 85'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Nashville SC acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Nashville SC, min 81\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "f02b12ee499eb1ad"
   }
  ]
 }
