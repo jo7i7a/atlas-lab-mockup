@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-05T11:48:24Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-09-05T11:49:32Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
@@ -89,7 +89,7 @@
    "match_id": "16363637",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 18,
+   "minuto": 19,
    "condicion": "Bournemouth domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -109,8 +109,8 @@
    },
    "t_evento_real_utc": "2026-09-05T11:46:25Z",
    "t_captura_utc": "2026-09-05T11:46:25Z",
-   "t_evaluacion_utc": "2026-09-05T11:48:22Z",
-   "t_generacion_utc": "2026-09-05T11:48:22Z",
+   "t_evaluacion_utc": "2026-09-05T11:49:24Z",
+   "t_generacion_utc": "2026-09-05T11:49:24Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -124,7 +124,7 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Newcastle United vs Bournemouth\n⏱ Minuto: 18'\n📊 Marcador: 0-1\n🏆 Liga: Premier League\n\n📝 Motivo: Bournemouth — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Newcastle United vs Bournemouth\n⏱ Minuto: 19'\n📊 Marcador: 0-1\n🏆 Liga: Premier League\n\n📝 Motivo: Bournemouth — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "0c5a0ca5b3d2f311"
   },
@@ -134,7 +134,7 @@
    "match_id": "16391647",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 18,
+   "minuto": 19,
    "condicion": "Southampton domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -154,8 +154,8 @@
    },
    "t_evento_real_utc": "2026-09-05T11:45:41Z",
    "t_captura_utc": "2026-09-05T11:45:41Z",
-   "t_evaluacion_utc": "2026-09-05T11:48:24Z",
-   "t_generacion_utc": "2026-09-05T11:48:24Z",
+   "t_evaluacion_utc": "2026-09-05T11:49:26Z",
+   "t_generacion_utc": "2026-09-05T11:49:26Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -169,9 +169,54 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Lincoln City vs Southampton\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Southampton — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Lincoln City vs Southampton\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Southampton — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "34c9ca6a88aca254"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Stoke City vs Charlton Athletic (Championship)",
+   "match_id": "16391653",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Stoke City domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Stoke City",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 3,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-05T11:48:28Z",
+   "t_captura_utc": "2026-09-05T11:48:28Z",
+   "t_evaluacion_utc": "2026-09-05T11:49:32Z",
+   "t_generacion_utc": "2026-09-05T11:49:32Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_NO_AUTORIZADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "Estrategia 'A1_V1_SOLO_TRIGGER_LIVE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Stoke City vs Charlton Athletic\n⏱ Minuto: 18'\n📊 Marcador: 1-0\n🏆 Liga: Championship\n\n📝 Motivo: Stoke City — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "95dbbe07336af30c"
   }
  ]
 }
