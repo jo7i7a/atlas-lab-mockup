@@ -1,14 +1,59 @@
 {
- "generated_at_utc": "2026-09-05T11:45:53Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-09-05T11:46:54Z",
+ "n_alerts": 3,
  "alerts": [
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Lincoln City vs Southampton (Championship)",
+   "match_id": "16391647",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 16,
+   "condicion": "Southampton domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Southampton",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 1,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-05T11:45:41Z",
+   "t_captura_utc": "2026-09-05T11:45:41Z",
+   "t_evaluacion_utc": "2026-09-05T11:46:24Z",
+   "t_generacion_utc": "2026-09-05T11:46:24Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_NO_AUTORIZADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "Estrategia 'A1_V1_SOLO_TRIGGER_LIVE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Lincoln City vs Southampton\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Southampton — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "34c9ca6a88aca254"
+  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Avispa Fukuoka vs Mito Hollyhock (J1 League)",
    "match_id": "16348580",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 83,
+   "minuto": 84,
    "condicion": "Avispa Fukuoka acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -30,13 +75,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-05T11:40:42Z",
-   "t_captura_utc": "2026-09-05T11:45:44Z",
-   "t_evaluacion_utc": "2026-09-05T11:45:45Z",
-   "t_generacion_utc": "2026-09-05T11:45:45Z",
+   "t_captura_utc": "2026-09-05T11:46:48Z",
+   "t_evaluacion_utc": "2026-09-05T11:46:49Z",
+   "t_generacion_utc": "2026-09-05T11:46:49Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Avispa Fukuoka vs Mito Hollyhock\n⏱ Minuto: 83'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n📝 Motivo: Avispa Fukuoka acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Avispa Fukuoka, min 77\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Avispa Fukuoka vs Mito Hollyhock\n⏱ Minuto: 84'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n📝 Motivo: Avispa Fukuoka acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Avispa Fukuoka, min 77\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "e0efcbeaafb8f477"
   },
@@ -46,7 +91,7 @@
    "match_id": "16391647",
    "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "cuota_detectada": null,
-   "minuto": 15,
+   "minuto": 17,
    "condicion": "0-0 en minuto 15 con touchesInOppBox_tot15>=4.0 y |diff home-away|/total<=0.33 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -64,8 +109,8 @@
    },
    "t_evento_real_utc": "2026-09-05T11:44:33Z",
    "t_captura_utc": "2026-09-05T11:44:33Z",
-   "t_evaluacion_utc": "2026-09-05T11:45:51Z",
-   "t_generacion_utc": "2026-09-05T11:45:51Z",
+   "t_evaluacion_utc": "2026-09-05T11:46:54Z",
+   "t_generacion_utc": "2026-09-05T11:46:54Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -79,7 +124,7 @@
    },
    "latencia_total_seg": 79.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Lincoln City vs Southampton\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 3-2 (total 5)\nRatio de diferencia home-away: 0.20 (umbral <= 0.33)\n\n🏆 Liga: Championship\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Lincoln City vs Southampton\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 3-2 (total 5)\nRatio de diferencia home-away: 0.20 (umbral <= 0.33)\n\n🏆 Liga: Championship\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "faaae39dc42b8535"
   }
