@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-06T22:32:10Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-09-06T22:33:09Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
@@ -164,7 +164,7 @@
    "match_id": "16671602",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 16,
+   "minuto": 17,
    "condicion": "River Plate domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -184,8 +184,8 @@
    },
    "t_evento_real_utc": "2026-09-06T22:31:14Z",
    "t_captura_utc": "2026-09-06T22:31:14Z",
-   "t_evaluacion_utc": "2026-09-06T22:32:10Z",
-   "t_generacion_utc": "2026-09-06T22:32:10Z",
+   "t_evaluacion_utc": "2026-09-06T22:33:09Z",
+   "t_generacion_utc": "2026-09-06T22:33:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -199,9 +199,47 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ River Plate vs Independiente Rivadavia\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: River Plate — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ River Plate vs Independiente Rivadavia\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: River Plate — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "88a1c325e0eeac6a"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Club León vs Club América (Leagues Cup)",
+   "match_id": "16989950",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 20,
+   "condicion": "Club León acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Club León",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.7143,
+    "touches_home": 5,
+    "touches_away": 2,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-09-06T22:33:09Z",
+    "t_inicio_estimado_condicion": "2026-09-06T22:32:58Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-06T22:33:09Z",
+   "t_captura_utc": "2026-09-06T22:33:09Z",
+   "t_evaluacion_utc": "2026-09-06T22:33:09Z",
+   "t_generacion_utc": "2026-09-06T22:33:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club León vs Club América\n⏱ Minuto: 20'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: Club León acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "f05ae0152db343cb"
   }
  ]
 }
