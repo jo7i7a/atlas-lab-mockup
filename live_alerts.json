@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-06T23:27:18Z",
+ "generated_at_utc": "2026-09-06T23:28:12Z",
  "n_alerts": 5,
  "alerts": [
   {
@@ -79,44 +79,6 @@
    "alert_id": "4dde22167e319ca6"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "River Plate vs Independiente Rivadavia (Liga Profesional de Fútbol)",
-   "match_id": "16671602",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 51,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 0,
-    "corners_1t_total": 0
-   },
-   "t_evento_real_utc": "2026-09-06T23:26:02Z",
-   "t_captura_utc": "2026-09-06T23:26:02Z",
-   "t_evaluacion_utc": "2026-09-06T23:27:17Z",
-   "t_generacion_utc": "2026-09-06T23:27:17Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-06T23:26:16Z",
-     "latencia_envio_ms": 822.1249580383301,
-     "error": null,
-     "message_id": 2630,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 14.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ River Plate vs Independiente Rivadavia\n⏱ Minuto: 51'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 0\nTotal: 0\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "b6201a7e2f0383cf"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Cruz Azul vs Santos Laguna (Liga MX, Apertura)",
    "match_id": "16317928",
@@ -191,6 +153,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club León vs Club América\n⏱ Minuto: 54'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: Club América acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Club América, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "b935e415e8b2c5ad"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "River Plate vs Independiente Rivadavia (Liga Profesional de Fútbol)",
+   "match_id": "16671602",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 52,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 0,
+    "corners_1t_away": 0,
+    "corners_1t_total": 0
+   },
+   "t_evento_real_utc": "2026-09-06T23:26:02Z",
+   "t_captura_utc": "2026-09-06T23:26:02Z",
+   "t_evaluacion_utc": "2026-09-06T23:28:12Z",
+   "t_generacion_utc": "2026-09-06T23:28:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-06T23:26:16Z",
+     "latencia_envio_ms": 822.1249580383301,
+     "error": null,
+     "message_id": 2630,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 14.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ River Plate vs Independiente Rivadavia\n⏱ Minuto: 52'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 0\nTotal: 0\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "b6201a7e2f0383cf"
   }
  ]
 }
