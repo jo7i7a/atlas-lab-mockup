@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-09-06T14:04:13Z",
- "n_alerts": 9,
+ "generated_at_utc": "2026-09-06T14:05:13Z",
+ "n_alerts": 8,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "SC Telstar vs SC Cambuur (VriendenLoterij Eredivisie)",
-   "match_id": "16316809",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 50,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 1,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-09-06T13:35:12Z",
-   "t_captura_utc": "2026-09-06T13:35:12Z",
-   "t_evaluacion_utc": "2026-09-06T13:42:47Z",
-   "t_generacion_utc": "2026-09-06T13:42:47Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-06T13:42:47Z",
-     "latencia_envio_ms": 892.357349395752,
-     "error": null,
-     "message_id": 2547,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 455.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ SC Telstar vs SC Cambuur\n⏱ Minuto: 50'\n📊 Marcador: 0-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "650e12f26b2064e0"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Troyes vs RC Strasbourg (Ligue 1)",
@@ -285,7 +247,7 @@
    "match_id": "16316807",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 76,
+   "minuto": 77,
    "condicion": "AZ Alkmaar acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -307,13 +269,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-06T13:42:52Z",
-   "t_captura_utc": "2026-09-06T14:04:13Z",
-   "t_evaluacion_utc": "2026-09-06T14:04:13Z",
-   "t_generacion_utc": "2026-09-06T14:04:13Z",
+   "t_captura_utc": "2026-09-06T14:05:13Z",
+   "t_evaluacion_utc": "2026-09-06T14:05:13Z",
+   "t_generacion_utc": "2026-09-06T14:05:13Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Heerenveen vs AZ Alkmaar\n⏱ Minuto: 76'\n📊 Marcador: 2-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: AZ Alkmaar acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: AZ Alkmaar, min 68\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Heerenveen vs AZ Alkmaar\n⏱ Minuto: 77'\n📊 Marcador: 2-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: AZ Alkmaar acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: AZ Alkmaar, min 68\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "825ff5715d48b9de"
   },
@@ -323,7 +285,7 @@
    "match_id": "16434030",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 33,
+   "minuto": 34,
    "condicion": "1. FSV Mainz 05 acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -345,13 +307,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-06T13:51:15Z",
-   "t_captura_utc": "2026-09-06T14:04:13Z",
-   "t_evaluacion_utc": "2026-09-06T14:04:13Z",
-   "t_generacion_utc": "2026-09-06T14:04:13Z",
+   "t_captura_utc": "2026-09-06T14:05:13Z",
+   "t_evaluacion_utc": "2026-09-06T14:05:13Z",
+   "t_generacion_utc": "2026-09-06T14:05:13Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Hamburger SV vs 1. FSV Mainz 05\n⏱ Minuto: 33'\n📊 Marcador: 0-1\n🏆 Liga: Bundesliga\n\n📝 Motivo: 1. FSV Mainz 05 acumula 93% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: 1. FSV Mainz 05, min 31\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Hamburger SV vs 1. FSV Mainz 05\n⏱ Minuto: 34'\n📊 Marcador: 0-1\n🏆 Liga: Bundesliga\n\n📝 Motivo: 1. FSV Mainz 05 acumula 93% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: 1. FSV Mainz 05, min 31\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "c7b6247090cca6d1"
   }
