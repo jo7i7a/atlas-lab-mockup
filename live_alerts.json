@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-06T11:02:11Z",
+ "generated_at_utc": "2026-09-06T11:03:11Z",
  "n_alerts": 8,
  "alerts": [
   {
@@ -124,34 +124,6 @@
    "alert_id": "1a7cca4dd13b3d62"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "FC Tokyo vs Kyoto Sanga FC (J1 League)",
-   "match_id": "16348574",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 28,
-   "condicion": "4 córners totales antes del min 30 (3-1), FC Tokyo presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Kyoto Sanga FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "FC Tokyo"
-   },
-   "t_evento_real_utc": "2026-09-06T10:58:22Z",
-   "t_captura_utc": "2026-09-06T10:58:22Z",
-   "t_evaluacion_utc": "2026-09-06T11:02:10Z",
-   "t_generacion_utc": "2026-09-06T11:02:10Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ FC Tokyo vs Kyoto Sanga FC\n⏱ Minuto: 28'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: FC Tokyo presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kyoto Sanga FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "78bebea206777578"
-  },
-  {
    "strategy_id": "L1-SHADOW",
    "match_label": "FC Groningen vs FC Twente (VriendenLoterij Eredivisie)",
    "match_id": "16316805",
@@ -179,35 +151,6 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ FC Groningen vs FC Twente\n⏱ Minuto: 45'\n📊 Marcador: 2-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners:\nLocal: 4\nVisita: 1\nTotal: 5\n\n📝 Motivo: FC Groningen presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Twente no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "55b5334b5155bfc4"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "FC Tokyo vs Kyoto Sanga FC (J1 League)",
-   "match_id": "16348574",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 28,
-   "condicion": "4 córners totales antes del min 45 (3-1), FC Tokyo presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Kyoto Sanga FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "FC Tokyo",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-06T10:58:22Z",
-   "t_captura_utc": "2026-09-06T10:58:22Z",
-   "t_evaluacion_utc": "2026-09-06T11:02:10Z",
-   "t_generacion_utc": "2026-09-06T11:02:10Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ FC Tokyo vs Kyoto Sanga FC\n⏱ Minuto: 28'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: FC Tokyo presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kyoto Sanga FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "bbb848e2822aa02f"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -248,12 +191,69 @@
    "alert_id": "973bf3ced23f6ff0"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "FC Tokyo vs Kyoto Sanga FC (J1 League)",
+   "match_id": "16348574",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 29,
+   "condicion": "4 córners totales antes del min 30 (3-1), FC Tokyo presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Kyoto Sanga FC NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "FC Tokyo"
+   },
+   "t_evento_real_utc": "2026-09-06T10:58:22Z",
+   "t_captura_utc": "2026-09-06T10:58:22Z",
+   "t_evaluacion_utc": "2026-09-06T11:03:10Z",
+   "t_generacion_utc": "2026-09-06T11:03:10Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ FC Tokyo vs Kyoto Sanga FC\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: FC Tokyo presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kyoto Sanga FC no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "78bebea206777578"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "FC Tokyo vs Kyoto Sanga FC (J1 League)",
+   "match_id": "16348574",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 29,
+   "condicion": "4 córners totales antes del min 45 (3-1), FC Tokyo presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Kyoto Sanga FC NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "FC Tokyo",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-09-06T10:58:22Z",
+   "t_captura_utc": "2026-09-06T10:58:22Z",
+   "t_evaluacion_utc": "2026-09-06T11:03:11Z",
+   "t_generacion_utc": "2026-09-06T11:03:11Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ FC Tokyo vs Kyoto Sanga FC\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: FC Tokyo presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Kyoto Sanga FC no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "bbb848e2822aa02f"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "FC Tokyo vs Kyoto Sanga FC (J1 League)",
    "match_id": "16348574",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 28,
+   "minuto": 29,
    "condicion": "FC Tokyo acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -275,13 +275,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-06T10:57:10Z",
-   "t_captura_utc": "2026-09-06T11:02:11Z",
-   "t_evaluacion_utc": "2026-09-06T11:02:11Z",
-   "t_generacion_utc": "2026-09-06T11:02:11Z",
+   "t_captura_utc": "2026-09-06T11:03:11Z",
+   "t_evaluacion_utc": "2026-09-06T11:03:11Z",
+   "t_generacion_utc": "2026-09-06T11:03:11Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Tokyo vs Kyoto Sanga FC\n⏱ Minuto: 28'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n📝 Motivo: FC Tokyo acumula 83% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Tokyo vs Kyoto Sanga FC\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: J1 League\n\n📝 Motivo: FC Tokyo acumula 83% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "1a0a35656d7ca422"
   }
