@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-06T12:51:50Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-09-06T12:52:10Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -115,6 +115,89 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Birmingham City vs Wolverhampton\n⏱ Minuto: 83'\n📊 Marcador: 2-2\n🏆 Liga: Championship\n\n📝 Motivo: Birmingham City acumula 60% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Birmingham City, min 81\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "ec3cc4cdd26114f4"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "SC Heerenveen vs AZ Alkmaar (VriendenLoterij Eredivisie)",
+   "match_id": "16316807",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 21,
+   "condicion": "SC Heerenveen domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "SC Heerenveen",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 2,
+    "centros_away": 0,
+    "remates_home": 3,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-06T12:51:18Z",
+   "t_captura_utc": "2026-09-06T12:51:18Z",
+   "t_evaluacion_utc": "2026-09-06T12:52:09Z",
+   "t_generacion_utc": "2026-09-06T12:52:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_NO_AUTORIZADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "Estrategia 'A1_V1_SOLO_TRIGGER_LIVE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ SC Heerenveen vs AZ Alkmaar\n⏱ Minuto: 21'\n📊 Marcador: 1-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: SC Heerenveen — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "72e6cf11fb733139"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "SC Heerenveen vs AZ Alkmaar (VriendenLoterij Eredivisie)",
+   "match_id": "16316807",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 21,
+   "condicion": "SC Heerenveen acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "SC Heerenveen",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.75,
+    "touches_home": 6,
+    "touches_away": 2,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "1-1",
+    "t_primera_observacion_atlas": "2026-09-06T12:52:10Z",
+    "t_inicio_estimado_condicion": null,
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-06T12:52:10Z",
+   "t_captura_utc": "2026-09-06T12:52:10Z",
+   "t_evaluacion_utc": "2026-09-06T12:52:10Z",
+   "t_generacion_utc": "2026-09-06T12:52:10Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Heerenveen vs AZ Alkmaar\n⏱ Minuto: 21'\n📊 Marcador: 1-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: SC Heerenveen acumula 75% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "a6c6a288cca57c4e"
   }
  ]
 }
