@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-06T18:57:39Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-09-06T18:58:15Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -97,8 +97,8 @@
    },
    "t_evento_real_utc": "2026-09-06T18:50:34Z",
    "t_captura_utc": "2026-09-06T18:50:34Z",
-   "t_evaluacion_utc": "2026-09-06T18:57:33Z",
-   "t_generacion_utc": "2026-09-06T18:57:33Z",
+   "t_evaluacion_utc": "2026-09-06T18:58:13Z",
+   "t_generacion_utc": "2026-09-06T18:58:13Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -115,6 +115,40 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ O'Higgins vs Unión La Calera\n⏱ Minuto: 52'\n📊 Marcador: 2-0\n🏆 Liga: Liga de Primera\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "180a871343d20883"
+  },
+  {
+   "strategy_id": "A3_V1_DOMINANTE_NO_GANA",
+   "match_label": "Kristiansund BK vs Tromsø IL (Eliteserien)",
+   "match_id": "15260895",
+   "market": "Total de Córners (Over/Under) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 80,
+   "condicion": "Tromsø IL domina en córners y entradas al tercio final en los últimos 10 min (≥2 córners Y >15 entradas) sin ir ganando, ventana 80'-84'. Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Tromsø IL",
+    "lado_dominante": "away",
+    "corners_10min_home": 1,
+    "corners_10min_away": 4,
+    "entradas_10min_home": 16,
+    "entradas_10min_away": 27,
+    "marcador_en_el_momento": "2-0",
+    "reinterpretacion": "dominante_no_gana -- NO es la condición 'favorito perdiendo o empatando' del PDF original, ver ficha A3_V1_DOMINANTE_NO_GANA",
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >6.5/>5.0, perfil táctico, ligas ideales, cuota favorito) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-06T18:57:37Z",
+   "t_captura_utc": "2026-09-06T18:57:37Z",
+   "t_evaluacion_utc": "2026-09-06T18:58:14Z",
+   "t_generacion_utc": "2026-09-06T18:58:14Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A3_V1_DOMINANTE_NO_GANA\n\n⚽ Kristiansund BK vs Tromsø IL\n⏱ Minuto: 80'\n📊 Marcador: 2-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: Tromsø IL — 4 córners y 27 entradas al tercio final en los últimos 10 min, sin ir ganando (marcador 0-2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over/Under",
+   "evidencia": null,
+   "alert_id": "29e3d28da4970d42"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -144,9 +178,9 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-06T18:57:39Z",
-   "t_captura_utc": "2026-09-06T18:57:39Z",
-   "t_evaluacion_utc": "2026-09-06T18:57:39Z",
-   "t_generacion_utc": "2026-09-06T18:57:39Z",
+   "t_captura_utc": "2026-09-06T18:58:15Z",
+   "t_evaluacion_utc": "2026-09-06T18:58:15Z",
+   "t_generacion_utc": "2026-09-06T18:58:15Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
@@ -160,7 +194,7 @@
    "match_id": "16671590",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 49,
+   "minuto": 50,
    "condicion": "Rosario Central acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -182,13 +216,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-06T18:57:39Z",
-   "t_captura_utc": "2026-09-06T18:57:39Z",
-   "t_evaluacion_utc": "2026-09-06T18:57:39Z",
-   "t_generacion_utc": "2026-09-06T18:57:39Z",
+   "t_captura_utc": "2026-09-06T18:58:15Z",
+   "t_evaluacion_utc": "2026-09-06T18:58:15Z",
+   "t_generacion_utc": "2026-09-06T18:58:15Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rosario Central vs Newell's Old Boys\n⏱ Minuto: 49'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Rosario Central acumula 87% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Rosario Central, min 2\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rosario Central vs Newell's Old Boys\n⏱ Minuto: 50'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Rosario Central acumula 87% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Rosario Central, min 2\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "ba3ed22be7beeb63"
   }
