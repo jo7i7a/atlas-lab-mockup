@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-06T14:07:21Z",
+ "generated_at_utc": "2026-09-06T14:08:11Z",
  "n_alerts": 10,
  "alerts": [
   {
@@ -242,82 +242,6 @@
    "alert_id": "560e56ed159460ba"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "Parma vs Monza (Serie A)",
-   "match_id": "16285008",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 46,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 1,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-09-06T14:05:33Z",
-   "t_captura_utc": "2026-09-06T14:05:33Z",
-   "t_evaluacion_utc": "2026-09-06T14:07:17Z",
-   "t_generacion_utc": "2026-09-06T14:07:17Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-06T14:07:18Z",
-     "latencia_envio_ms": 894.1025733947754,
-     "error": null,
-     "message_id": 2551,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 105.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Parma vs Monza\n⏱ Minuto: 46'\n📊 Marcador: 0-1\n🏆 Liga: Serie A\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "300ce05ee3c3ea09"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Everton vs Manchester United (Premier League)",
-   "match_id": "16363259",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 47,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 2,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-09-06T14:05:12Z",
-   "t_captura_utc": "2026-09-06T14:05:12Z",
-   "t_evaluacion_utc": "2026-09-06T14:07:18Z",
-   "t_generacion_utc": "2026-09-06T14:07:18Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-06T14:06:15Z",
-     "latencia_envio_ms": 789.8814678192139,
-     "error": null,
-     "message_id": 2550,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 63.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Everton vs Manchester United\n⏱ Minuto: 47'\n📊 Marcador: 0-1\n🏆 Liga: Premier League\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "bdef052c7877cb6a"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "SC Heerenveen vs AZ Alkmaar (VriendenLoterij Eredivisie)",
    "match_id": "16316807",
@@ -392,6 +316,82 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Hamburger SV vs 1. FSV Mainz 05\n⏱ Minuto: 36'\n📊 Marcador: 0-1\n🏆 Liga: Bundesliga\n\n📝 Motivo: 1. FSV Mainz 05 acumula 93% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: 1. FSV Mainz 05, min 31\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "c7b6247090cca6d1"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Parma vs Monza (Serie A)",
+   "match_id": "16285008",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 47,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 1,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-09-06T14:05:33Z",
+   "t_captura_utc": "2026-09-06T14:05:33Z",
+   "t_evaluacion_utc": "2026-09-06T14:08:11Z",
+   "t_generacion_utc": "2026-09-06T14:08:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-06T14:07:18Z",
+     "latencia_envio_ms": 894.1025733947754,
+     "error": null,
+     "message_id": 2551,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 105.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Parma vs Monza\n⏱ Minuto: 47'\n📊 Marcador: 0-1\n🏆 Liga: Serie A\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "300ce05ee3c3ea09"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Everton vs Manchester United (Premier League)",
+   "match_id": "16363259",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 48,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 0,
+    "corners_1t_away": 2,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-09-06T14:05:12Z",
+   "t_captura_utc": "2026-09-06T14:05:12Z",
+   "t_evaluacion_utc": "2026-09-06T14:08:11Z",
+   "t_generacion_utc": "2026-09-06T14:08:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-06T14:06:15Z",
+     "latencia_envio_ms": 789.8814678192139,
+     "error": null,
+     "message_id": 2550,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 63.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Everton vs Manchester United\n⏱ Minuto: 48'\n📊 Marcador: 0-1\n🏆 Liga: Premier League\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "bdef052c7877cb6a"
   }
  ]
 }
