@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-06T21:58:12Z",
+ "generated_at_utc": "2026-09-06T21:59:12Z",
  "n_alerts": 7,
  "alerts": [
   {
@@ -126,34 +126,6 @@
    "alert_id": "398214baf21d4d32"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "Ponte Preta vs São Bernardo (Brasileirão Série B)",
-   "match_id": "15526258",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "4 córners totales antes del min 30 (0-4), São Bernardo presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Ponte Preta NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 0,
-    "corners_away": 4,
-    "equipo_presiona": "São Bernardo"
-   },
-   "t_evento_real_utc": "2026-09-06T21:55:12Z",
-   "t_captura_utc": "2026-09-06T21:55:12Z",
-   "t_evaluacion_utc": "2026-09-06T21:58:11Z",
-   "t_generacion_utc": "2026-09-06T21:58:11Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Ponte Preta vs São Bernardo\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: São Bernardo presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Ponte Preta no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "abd211f65274b5c8"
-  },
-  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Ponte Preta vs São Bernardo (Brasileirão Série B)",
    "match_id": "15526258",
@@ -199,12 +171,40 @@
    "alert_id": "680770a5a31ee104"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "Ponte Preta vs São Bernardo (Brasileirão Série B)",
+   "match_id": "15526258",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 26,
+   "condicion": "4 córners totales antes del min 30 (0-4), São Bernardo presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Ponte Preta NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "São Bernardo"
+   },
+   "t_evento_real_utc": "2026-09-06T21:55:12Z",
+   "t_captura_utc": "2026-09-06T21:55:12Z",
+   "t_evaluacion_utc": "2026-09-06T21:59:11Z",
+   "t_generacion_utc": "2026-09-06T21:59:11Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Ponte Preta vs São Bernardo\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: São Bernardo presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Ponte Preta no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "abd211f65274b5c8"
+  },
+  {
    "strategy_id": "L1-SHADOW",
    "match_label": "Ponte Preta vs São Bernardo (Brasileirão Série B)",
    "match_id": "15526258",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 25,
+   "minuto": 26,
    "condicion": "4 córners totales antes del min 45 (0-4), São Bernardo presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Ponte Preta NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -218,12 +218,12 @@
    },
    "t_evento_real_utc": "2026-09-06T21:55:12Z",
    "t_captura_utc": "2026-09-06T21:55:12Z",
-   "t_evaluacion_utc": "2026-09-06T21:58:12Z",
-   "t_generacion_utc": "2026-09-06T21:58:12Z",
+   "t_evaluacion_utc": "2026-09-06T21:59:12Z",
+   "t_generacion_utc": "2026-09-06T21:59:12Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Ponte Preta vs São Bernardo\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: São Bernardo presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Ponte Preta no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Ponte Preta vs São Bernardo\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: São Bernardo presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Ponte Preta no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "5b9f6d2241814683"
   },
@@ -233,7 +233,7 @@
    "match_id": "15526258",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 25,
+   "minuto": 26,
    "condicion": "São Bernardo acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -255,13 +255,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-06T21:53:10Z",
-   "t_captura_utc": "2026-09-06T21:58:12Z",
-   "t_evaluacion_utc": "2026-09-06T21:58:12Z",
-   "t_generacion_utc": "2026-09-06T21:58:12Z",
+   "t_captura_utc": "2026-09-06T21:59:12Z",
+   "t_evaluacion_utc": "2026-09-06T21:59:12Z",
+   "t_generacion_utc": "2026-09-06T21:59:12Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ponte Preta vs São Bernardo\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: São Bernardo acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Ponte Preta vs São Bernardo\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: São Bernardo acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "71f1295299cc9615"
   }
