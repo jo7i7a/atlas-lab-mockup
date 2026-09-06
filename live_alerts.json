@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-06T14:16:17Z",
+ "generated_at_utc": "2026-09-06T14:17:20Z",
  "n_alerts": 7,
  "alerts": [
   {
@@ -162,44 +162,6 @@
    "alert_id": "300ce05ee3c3ea09"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "Frosinone vs Venezia (Serie A)",
-   "match_id": "16285000",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 51,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 1,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-09-06T14:09:36Z",
-   "t_captura_utc": "2026-09-06T14:09:36Z",
-   "t_evaluacion_utc": "2026-09-06T14:16:14Z",
-   "t_generacion_utc": "2026-09-06T14:16:14Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-06T14:11:19Z",
-     "latencia_envio_ms": 837.1930122375488,
-     "error": null,
-     "message_id": 2552,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 103.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Frosinone vs Venezia\n⏱ Minuto: 51'\n📊 Marcador: 2-0\n🏆 Liga: Serie A\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "e8d079ad39ece3ad"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Hamburger SV vs 1. FSV Mainz 05 (Bundesliga)",
    "match_id": "16434030",
@@ -238,12 +200,50 @@
    "alert_id": "c7b6247090cca6d1"
   },
   {
+   "strategy_id": "A2",
+   "match_label": "Frosinone vs Venezia (Serie A)",
+   "match_id": "16285000",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 52,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 1,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-09-06T14:09:36Z",
+   "t_captura_utc": "2026-09-06T14:09:36Z",
+   "t_evaluacion_utc": "2026-09-06T14:17:18Z",
+   "t_generacion_utc": "2026-09-06T14:17:18Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-06T14:11:19Z",
+     "latencia_envio_ms": 837.1930122375488,
+     "error": null,
+     "message_id": 2552,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 103.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Frosinone vs Venezia\n⏱ Minuto: 52'\n📊 Marcador: 2-0\n🏆 Liga: Serie A\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "e8d079ad39ece3ad"
+  },
+  {
    "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
    "match_label": "Kasımpaşa vs Amed Sportif Faaliyetler (Trendyol Süper Lig)",
    "match_id": "16483639",
    "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "cuota_detectada": null,
-   "minuto": 15,
+   "minuto": 16,
    "condicion": "0-0 en minuto 15 con touchesInOppBox_tot15>=4.0 y |diff home-away|/total<=0.33 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -261,8 +261,8 @@
    },
    "t_evento_real_utc": "2026-09-06T14:15:06Z",
    "t_captura_utc": "2026-09-06T14:15:06Z",
-   "t_evaluacion_utc": "2026-09-06T14:16:16Z",
-   "t_generacion_utc": "2026-09-06T14:16:16Z",
+   "t_evaluacion_utc": "2026-09-06T14:17:20Z",
+   "t_generacion_utc": "2026-09-06T14:17:20Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -276,7 +276,7 @@
    },
    "latencia_total_seg": 71.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Kasımpaşa vs Amed Sportif Faaliyetler\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 3-2 (total 5)\nRatio de diferencia home-away: 0.20 (umbral <= 0.33)\n\n🏆 Liga: Trendyol Süper Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Kasımpaşa vs Amed Sportif Faaliyetler\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 3-2 (total 5)\nRatio de diferencia home-away: 0.20 (umbral <= 0.33)\n\n🏆 Liga: Trendyol Süper Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "70a4c1f7e1af69e7"
   }
