@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-06T23:51:20Z",
+ "generated_at_utc": "2026-09-06T23:52:14Z",
  "n_alerts": 9,
  "alerts": [
   {
@@ -77,44 +77,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ River Plate vs Independiente Rivadavia\n⏱ Minuto: 52'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 0\nTotal: 0\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "b6201a7e2f0383cf"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Club León vs Club América (Leagues Cup)",
-   "match_id": "16989950",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 57,
-   "condicion": "Club América acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Club América",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.625,
-    "touches_home": 6,
-    "touches_away": 10,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 46,
-    "equipo_que_realizo_sustitucion": "Club América",
-    "marcador_en_el_momento": "0-0",
-    "t_primera_observacion_atlas": "2026-09-06T23:22:13Z",
-    "t_inicio_estimado_condicion": "2026-09-06T23:00:17Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-06T23:22:13Z",
-   "t_captura_utc": "2026-09-06T23:30:18Z",
-   "t_evaluacion_utc": "2026-09-06T23:30:18Z",
-   "t_generacion_utc": "2026-09-06T23:30:18Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club León vs Club América\n⏱ Minuto: 57'\n📊 Marcador: 0-0\n🏆 Liga: Leagues Cup\n\n📝 Motivo: Club América acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Club América, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "b935e415e8b2c5ad"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -339,6 +301,40 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Cruz Azul vs Santos Laguna\n⏱ Minuto: 47'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Cruz Azul acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "6f3502658bb9097d"
+  },
+  {
+   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "Corinthians vs Chapecoense (Brasileirão Betano)",
+   "match_id": "15235457",
+   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 57,
+   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "xg_combinado": 1.29,
+    "tiros_combinados": 11,
+    "sot_combinado": 6,
+    "presion_reciente_10min": 3,
+    "marcador_en_el_momento": "1-1",
+    "t_primera_observacion_atlas": "2026-09-06T23:52:13Z",
+    "t_inicio_estimado_condicion": "2026-09-06T23:51:33Z",
+    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-06T23:52:13Z",
+   "t_captura_utc": "2026-09-06T23:52:13Z",
+   "t_evaluacion_utc": "2026-09-06T23:52:13Z",
+   "t_generacion_utc": "2026-09-06T23:52:13Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Corinthians vs Chapecoense\n⏱ Minuto: 57'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: presión combinada sostenida — xG 1.29, 11 tiros totales (6 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "evidencia": null,
+   "alert_id": "2b4250891f1cd63a"
   }
  ]
 }
