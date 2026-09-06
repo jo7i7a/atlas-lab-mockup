@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-06T13:53:12Z",
+ "generated_at_utc": "2026-09-06T13:54:15Z",
  "n_alerts": 10,
  "alerts": [
   {
@@ -269,7 +269,7 @@
    "match_id": "16434030",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 22,
+   "minuto": 23,
    "condicion": "1. FSV Mainz 05 domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -289,8 +289,8 @@
    },
    "t_evento_real_utc": "2026-09-06T13:48:29Z",
    "t_captura_utc": "2026-09-06T13:48:29Z",
-   "t_evaluacion_utc": "2026-09-06T13:53:11Z",
-   "t_generacion_utc": "2026-09-06T13:53:11Z",
+   "t_evaluacion_utc": "2026-09-06T13:54:14Z",
+   "t_generacion_utc": "2026-09-06T13:54:14Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -304,7 +304,7 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Hamburger SV vs 1. FSV Mainz 05\n⏱ Minuto: 22'\n📊 Marcador: 0-1\n🏆 Liga: Bundesliga\n\n📝 Motivo: 1. FSV Mainz 05 — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Hamburger SV vs 1. FSV Mainz 05\n⏱ Minuto: 23'\n📊 Marcador: 0-1\n🏆 Liga: Bundesliga\n\n📝 Motivo: 1. FSV Mainz 05 — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "560e56ed159460ba"
   },
@@ -314,7 +314,7 @@
    "match_id": "16316807",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 65,
+   "minuto": 66,
    "condicion": "AZ Alkmaar acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -323,8 +323,8 @@
    "extra": {
     "equipo_dominante": "AZ Alkmaar",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6596,
-    "touches_home": 16,
+    "ratio_presion_territorial": 0.6458,
+    "touches_home": 17,
     "touches_away": 31,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 64,
@@ -336,13 +336,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-06T13:42:52Z",
-   "t_captura_utc": "2026-09-06T13:53:12Z",
-   "t_evaluacion_utc": "2026-09-06T13:53:12Z",
-   "t_generacion_utc": "2026-09-06T13:53:12Z",
+   "t_captura_utc": "2026-09-06T13:54:15Z",
+   "t_evaluacion_utc": "2026-09-06T13:54:15Z",
+   "t_generacion_utc": "2026-09-06T13:54:15Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Heerenveen vs AZ Alkmaar\n⏱ Minuto: 65'\n📊 Marcador: 2-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: AZ Alkmaar acumula 66% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: AZ Alkmaar, min 64\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Heerenveen vs AZ Alkmaar\n⏱ Minuto: 66'\n📊 Marcador: 2-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: AZ Alkmaar acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: AZ Alkmaar, min 64\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "825ff5715d48b9de"
   },
@@ -352,7 +352,7 @@
    "match_id": "16434030",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 22,
+   "minuto": 23,
    "condicion": "1. FSV Mainz 05 acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -361,8 +361,8 @@
    "extra": {
     "equipo_dominante": "1. FSV Mainz 05",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 1.0,
-    "touches_home": 0,
+    "ratio_presion_territorial": 0.9167,
+    "touches_home": 1,
     "touches_away": 11,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
@@ -374,13 +374,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-06T13:51:15Z",
-   "t_captura_utc": "2026-09-06T13:53:12Z",
-   "t_evaluacion_utc": "2026-09-06T13:53:12Z",
-   "t_generacion_utc": "2026-09-06T13:53:12Z",
+   "t_captura_utc": "2026-09-06T13:54:15Z",
+   "t_evaluacion_utc": "2026-09-06T13:54:15Z",
+   "t_generacion_utc": "2026-09-06T13:54:15Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Hamburger SV vs 1. FSV Mainz 05\n⏱ Minuto: 22'\n📊 Marcador: 0-1\n🏆 Liga: Bundesliga\n\n📝 Motivo: 1. FSV Mainz 05 acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Hamburger SV vs 1. FSV Mainz 05\n⏱ Minuto: 23'\n📊 Marcador: 0-1\n🏆 Liga: Bundesliga\n\n📝 Motivo: 1. FSV Mainz 05 acumula 92% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "c7b6247090cca6d1"
   }
