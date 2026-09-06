@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-06T14:17:20Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-09-06T14:18:22Z",
+ "n_alerts": 8,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -238,12 +238,57 @@
    "alert_id": "e8d079ad39ece3ad"
   },
   {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Londrina vs Operário-PR (Brasileirão Série B)",
+   "match_id": "15526261",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "Londrina domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Londrina",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 2,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-06T14:18:04Z",
+   "t_captura_utc": "2026-09-06T14:18:04Z",
+   "t_evaluacion_utc": "2026-09-06T14:18:20Z",
+   "t_generacion_utc": "2026-09-06T14:18:20Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_NO_AUTORIZADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "Estrategia 'A1_V1_SOLO_TRIGGER_LIVE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Londrina vs Operário-PR\n⏱ Minuto: 17'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Londrina — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "41eafe08f8514d53"
+  },
+  {
    "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
    "match_label": "Kasımpaşa vs Amed Sportif Faaliyetler (Trendyol Süper Lig)",
    "match_id": "16483639",
    "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "cuota_detectada": null,
-   "minuto": 16,
+   "minuto": 17,
    "condicion": "0-0 en minuto 15 con touchesInOppBox_tot15>=4.0 y |diff home-away|/total<=0.33 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -261,8 +306,8 @@
    },
    "t_evento_real_utc": "2026-09-06T14:15:06Z",
    "t_captura_utc": "2026-09-06T14:15:06Z",
-   "t_evaluacion_utc": "2026-09-06T14:17:20Z",
-   "t_generacion_utc": "2026-09-06T14:17:20Z",
+   "t_evaluacion_utc": "2026-09-06T14:18:22Z",
+   "t_generacion_utc": "2026-09-06T14:18:22Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -276,7 +321,7 @@
    },
    "latencia_total_seg": 71.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Kasımpaşa vs Amed Sportif Faaliyetler\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 3-2 (total 5)\nRatio de diferencia home-away: 0.20 (umbral <= 0.33)\n\n🏆 Liga: Trendyol Süper Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Kasımpaşa vs Amed Sportif Faaliyetler\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 3-2 (total 5)\nRatio de diferencia home-away: 0.20 (umbral <= 0.33)\n\n🏆 Liga: Trendyol Süper Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "70a4c1f7e1af69e7"
   }
