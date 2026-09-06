@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-06T11:46:37Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-09-06T11:52:23Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "L1-SHADOW",
@@ -144,6 +144,74 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Birmingham City vs Wolverhampton\n⏱ Minuto: 43'\n📊 Marcador: 2-2\n🏆 Liga: Championship\n\n📝 Motivo: Wolverhampton acumula 65% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "0b60edd886ff8b35"
+  },
+  {
+   "strategy_id": "L2-SHADOW",
+   "match_label": "FC Groningen vs FC Twente (VriendenLoterij Eredivisie)",
+   "match_id": "16316805",
+   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80']",
+   "cuota_detectada": 2.35,
+   "minuto": 72,
+   "condicion": "FC Twente domina por xG (1.77) y remates a puerta (5) sin ir ganando y sin roja del dominante — FC Twente vs FC Groningen. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "FC Twente",
+    "xg_dominante": 1.77,
+    "sot_dominante": 5,
+    "marcador": "2-2",
+    "variante": "shadow_ventana_80",
+    "ah_proxy_linea": -0.25,
+    "ah_proxy_cuota": 2.35,
+    "ah_proxy_suspendida": false,
+    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
+   },
+   "t_evento_real_utc": "2026-09-06T11:49:38Z",
+   "t_captura_utc": "2026-09-06T11:50:00Z",
+   "t_evaluacion_utc": "2026-09-06T11:52:01Z",
+   "t_generacion_utc": "2026-09-06T11:52:01Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ FC Groningen vs FC Twente\n⏱ Minuto: 72'\n📊 Marcador: 2-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📈 Domina: FC Twente\nxG: 1.77 vs 1.24\nTiros a puerta: 5 vs 3\n\nReferencia PROXY: AH -0.25 @ 2.35 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de FC Twente — ¿línea y cuota reales?",
+   "evidencia": null,
+   "alert_id": "ad67ccea14b84dcc"
+  },
+  {
+   "strategy_id": "L2-SHADOW",
+   "match_label": "FC Groningen vs FC Twente (VriendenLoterij Eredivisie)",
+   "match_id": "16316805",
+   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80']",
+   "cuota_detectada": 2.25,
+   "minuto": 77,
+   "condicion": "FC Twente domina por xG (2.09) y remates a puerta (5) sin ir ganando y sin roja del dominante — FC Twente vs FC Groningen. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "FC Twente",
+    "xg_dominante": 2.09,
+    "sot_dominante": 5,
+    "marcador": "2-2",
+    "variante": "shadow_ventana_80",
+    "ah_proxy_linea": -0.25,
+    "ah_proxy_cuota": 2.25,
+    "ah_proxy_suspendida": false,
+    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
+   },
+   "t_evento_real_utc": "2026-09-06T11:51:28Z",
+   "t_captura_utc": "2026-09-06T11:52:11Z",
+   "t_evaluacion_utc": "2026-09-06T11:52:21Z",
+   "t_generacion_utc": "2026-09-06T11:52:21Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ FC Groningen vs FC Twente\n⏱ Minuto: 77'\n📊 Marcador: 2-2\n🏆 Liga: VriendenLoterij Eredivisie\n\n📈 Domina: FC Twente\nxG: 2.09 vs 1.24\nTiros a puerta: 5 vs 3\n\nReferencia PROXY: AH -0.25 @ 2.25 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de FC Twente — ¿línea y cuota reales?",
+   "evidencia": null,
+   "alert_id": "e457258fc411457f"
   }
  ]
 }
