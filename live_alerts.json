@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-06T16:43:19Z",
- "n_alerts": 13,
+ "generated_at_utc": "2026-09-06T16:44:21Z",
+ "n_alerts": 12,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -205,44 +205,6 @@
    "alert_id": "d5d1a69b9cc1bd59"
   },
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Sarpsborg 08 vs Vålerenga IF (Eliteserien)",
-   "match_id": "15260899",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 73,
-   "condicion": "Sarpsborg 08 acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sarpsborg 08",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6154,
-    "touches_home": 24,
-    "touches_away": 15,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 70,
-    "equipo_que_realizo_sustitucion": "Sarpsborg 08",
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-09-06T16:13:19Z",
-    "t_inicio_estimado_condicion": "2026-09-06T15:36:09Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-06T16:13:19Z",
-   "t_captura_utc": "2026-09-06T16:32:16Z",
-   "t_evaluacion_utc": "2026-09-06T16:32:16Z",
-   "t_generacion_utc": "2026-09-06T16:32:16Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sarpsborg 08 vs Vålerenga IF\n⏱ Minuto: 73'\n📊 Marcador: 1-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: Sarpsborg 08 acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Sarpsborg 08, min 70\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "a278964976aab1eb"
-  },
-  {
    "strategy_id": "L3",
    "match_label": "Molde FK vs KFUM Oslo (Eliteserien)",
    "match_id": "15260892",
@@ -347,44 +309,6 @@
    "alert_id": "96db47d5bad6df6a"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "Arsenal vs Chelsea (Premier League)",
-   "match_id": "16363257",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 50,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 0,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-09-06T16:38:03Z",
-   "t_captura_utc": "2026-09-06T16:38:03Z",
-   "t_evaluacion_utc": "2026-09-06T16:43:15Z",
-   "t_generacion_utc": "2026-09-06T16:43:15Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-06T16:39:29Z",
-     "latencia_envio_ms": 890.2101516723633,
-     "error": null,
-     "message_id": 2586,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 86.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Arsenal vs Chelsea\n⏱ Minuto: 50'\n📊 Marcador: 2-1\n🏆 Liga: Premier League\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "86a91c32de4f94e9"
-  },
-  {
    "strategy_id": "A3_V1_DOMINANTE_NO_GANA",
    "match_label": "Sarpsborg 08 vs Vålerenga IF (Eliteserien)",
    "match_id": "15260899",
@@ -419,12 +343,50 @@
    "alert_id": "38b0fbf560bc9323"
   },
   {
+   "strategy_id": "A2",
+   "match_label": "Arsenal vs Chelsea (Premier League)",
+   "match_id": "16363257",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 51,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 0,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-09-06T16:38:03Z",
+   "t_captura_utc": "2026-09-06T16:38:03Z",
+   "t_evaluacion_utc": "2026-09-06T16:44:19Z",
+   "t_generacion_utc": "2026-09-06T16:44:19Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-06T16:39:29Z",
+     "latencia_envio_ms": 890.2101516723633,
+     "error": null,
+     "message_id": 2586,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 86.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Arsenal vs Chelsea\n⏱ Minuto: 51'\n📊 Marcador: 2-1\n🏆 Liga: Premier League\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "86a91c32de4f94e9"
+  },
+  {
    "strategy_id": "L1-SHADOW",
    "match_label": "Bologna vs Sassuolo (Serie A)",
    "match_id": "16284978",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 42,
+   "minuto": 43,
    "condicion": "4 córners totales antes del min 45 (3-1), Bologna presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Sassuolo NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -438,12 +400,12 @@
    },
    "t_evento_real_utc": "2026-09-06T16:38:03Z",
    "t_captura_utc": "2026-09-06T16:38:03Z",
-   "t_evaluacion_utc": "2026-09-06T16:43:18Z",
-   "t_generacion_utc": "2026-09-06T16:43:18Z",
+   "t_evaluacion_utc": "2026-09-06T16:44:19Z",
+   "t_generacion_utc": "2026-09-06T16:44:19Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Bologna vs Sassuolo\n⏱ Minuto: 42'\n📊 Marcador: 0-1\n🏆 Liga: Serie A\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Bologna presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Sassuolo no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Bologna vs Sassuolo\n⏱ Minuto: 43'\n📊 Marcador: 0-1\n🏆 Liga: Serie A\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Bologna presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Sassuolo no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "6394bae5873b0d22"
   },
@@ -453,7 +415,7 @@
    "match_id": "16310937",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 67,
+   "minuto": 68,
    "condicion": "Stade Rennais acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -466,7 +428,7 @@
     "touches_home": 18,
     "touches_away": 32,
     "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 58,
+    "minuto_ultima_sustitucion": 68,
     "equipo_que_realizo_sustitucion": "Stade Rennais",
     "marcador_en_el_momento": "1-2",
     "t_primera_observacion_atlas": "2026-09-06T16:26:21Z",
@@ -475,13 +437,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-06T16:26:21Z",
-   "t_captura_utc": "2026-09-06T16:43:19Z",
-   "t_evaluacion_utc": "2026-09-06T16:43:19Z",
-   "t_generacion_utc": "2026-09-06T16:43:19Z",
+   "t_captura_utc": "2026-09-06T16:44:20Z",
+   "t_evaluacion_utc": "2026-09-06T16:44:21Z",
+   "t_generacion_utc": "2026-09-06T16:44:21Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Angers vs Stade Rennais\n⏱ Minuto: 67'\n📊 Marcador: 1-2\n🏆 Liga: Ligue 1\n\n📝 Motivo: Stade Rennais acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Stade Rennais, min 58\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Angers vs Stade Rennais\n⏱ Minuto: 68'\n📊 Marcador: 1-2\n🏆 Liga: Ligue 1\n\n📝 Motivo: Stade Rennais acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Stade Rennais, min 68\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "8fb7195b933402a7"
   }
