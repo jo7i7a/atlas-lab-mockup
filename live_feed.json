@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-07T19:14:54Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-09-07T19:17:57Z",
+ "n_live_target": 2,
  "matches": {
   "16285006": {
    "event_id": 16285006,
@@ -11,12 +11,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 28,
+   "minute": 31,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 47,
-     "away": 53
+     "home": 46,
+     "away": 54
     },
     "xg": {
      "label": "Expected Goals (xG)",
@@ -30,13 +30,13 @@
     },
     "corners": {
      "label": "Corners",
-     "home": 0,
+     "home": 1,
      "away": 1
     },
     "passes": {
      "label": "Pases",
-     "home": 123,
-     "away": 143
+     "home": 144,
+     "away": 171
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -51,28 +51,75 @@
    },
    "odds": {
     "btts": {
-     "yes": 2.375,
-     "no": 1.533,
-     "captured_at_utc": "2026-09-07T19:14:53Z"
+     "yes": 2.5,
+     "no": 1.5,
+     "captured_at_utc": "2026-09-07T19:17:55Z"
     },
     "1x2": {
      "home": 3.0,
      "draw": 2.75,
-     "away": 2.625,
-     "captured_at_utc": "2026-09-07T19:14:53Z"
+     "away": 2.75,
+     "captured_at_utc": "2026-09-07T19:17:55Z"
     },
     "goals_over_25": {
      "over": 2.625,
      "under": 1.5,
-     "captured_at_utc": "2026-09-07T19:14:53Z"
+     "captured_at_utc": "2026-09-07T19:17:55Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-09-07T19:14:53Z"
+     "captured_at_utc": "2026-09-07T19:17:55Z"
     }
    },
-   "updated_at_utc": "2026-09-07T19:14:54Z"
+   "updated_at_utc": "2026-09-07T19:17:57Z"
+  },
+  "16450882": {
+   "event_id": 16450882,
+   "league": "Liga Portugal Betclic",
+   "home": "Estoril Praia",
+   "away": "FC Arouca",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 0,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 100,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 4,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.667,
+     "no": 2.1,
+     "captured_at_utc": "2026-09-07T19:17:55Z"
+    },
+    "corners_over_95": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-09-07T19:17:55Z"
+    },
+    "1x2": {
+     "home": 2.4,
+     "draw": 3.4,
+     "away": 2.75,
+     "captured_at_utc": "2026-09-07T19:17:55Z"
+    },
+    "goals_over_25": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-09-07T19:17:55Z"
+    }
+   },
+   "updated_at_utc": "2026-09-07T19:17:57Z"
   }
  }
 }
