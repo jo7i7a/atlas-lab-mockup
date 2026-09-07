@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-07T18:33:14Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-09-07T18:34:31Z",
+ "n_alerts": 9,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -163,7 +163,7 @@
    "match_id": "16416348",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 67,
+   "minuto": 68,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -181,15 +181,53 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-07T18:32:23Z",
-   "t_captura_utc": "2026-09-07T18:33:13Z",
-   "t_evaluacion_utc": "2026-09-07T18:33:13Z",
-   "t_generacion_utc": "2026-09-07T18:33:13Z",
+   "t_captura_utc": "2026-09-07T18:34:29Z",
+   "t_evaluacion_utc": "2026-09-07T18:34:29Z",
+   "t_generacion_utc": "2026-09-07T18:34:29Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Getafe vs Celta Vigo\n⏱ Minuto: 67'\n📊 Marcador: 1-1\n🏆 Liga: LaLiga\n\n📝 Motivo: presión combinada sostenida — xG 1.21, 21 tiros totales (4 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Getafe vs Celta Vigo\n⏱ Minuto: 68'\n📊 Marcador: 1-1\n🏆 Liga: LaLiga\n\n📝 Motivo: presión combinada sostenida — xG 1.21, 21 tiros totales (4 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "daba0765f390a837"
+  },
+  {
+   "strategy_id": "L3",
+   "match_label": "Getafe vs Celta Vigo (LaLiga)",
+   "match_id": "16416348",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
+   "cuota_detectada": null,
+   "minuto": 68,
+   "condicion": "Expulsión de Getafe (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_expulsado": "Getafe",
+    "marcador_al_detectar": "1-1",
+    "total_rojas_partido": 1
+   },
+   "t_evento_real_utc": "2026-09-07T18:33:45Z",
+   "t_captura_utc": "2026-09-07T18:34:26Z",
+   "t_evaluacion_utc": "2026-09-07T18:34:29Z",
+   "t_generacion_utc": "2026-09-07T18:34:29Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-07T18:34:30Z",
+     "latencia_envio_ms": 792.6120758056641,
+     "error": null,
+     "message_id": 2644,
+     "chat_id": -5219979824
+    }
+   },
+   "latencia_total_seg": 45.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 L3 | Getafe vs Celta Vigo | Roja Getafe | Min 68' | 1-1",
+   "evidencia": null,
+   "alert_id": "d6b7f5d80d418e8a"
   },
   {
    "strategy_id": "L3",
@@ -197,7 +235,7 @@
    "match_id": "16483658",
    "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
    "cuota_detectada": null,
-   "minuto": 74,
+   "minuto": 75,
    "condicion": "Expulsión de Göztepe (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
    "confianza": "Media",
    "link": "",
@@ -209,9 +247,9 @@
     "total_rojas_partido": 1
    },
    "t_evento_real_utc": "2026-09-07T18:32:21Z",
-   "t_captura_utc": "2026-09-07T18:33:03Z",
-   "t_evaluacion_utc": "2026-09-07T18:33:14Z",
-   "t_generacion_utc": "2026-09-07T18:33:14Z",
+   "t_captura_utc": "2026-09-07T18:34:26Z",
+   "t_evaluacion_utc": "2026-09-07T18:34:30Z",
+   "t_generacion_utc": "2026-09-07T18:34:30Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -225,7 +263,7 @@
    },
    "latencia_total_seg": 4.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 L3 | Göztepe vs Gaziantep FK | Roja Göztepe | Min 74' | 1-4",
+   "mensaje_custom": "🚨 L3 | Göztepe vs Gaziantep FK | Roja Göztepe | Min 75' | 1-4",
    "evidencia": null,
    "alert_id": "8f8686829f09fc96"
   },
@@ -235,7 +273,7 @@
    "match_id": "16483658",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 74,
+   "minuto": 75,
    "condicion": "Göztepe acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -244,8 +282,8 @@
    "extra": {
     "equipo_dominante": "Göztepe",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7143,
-    "touches_home": 25,
+    "ratio_presion_territorial": 0.7222,
+    "touches_home": 26,
     "touches_away": 10,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 72,
@@ -257,13 +295,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-07T18:10:20Z",
-   "t_captura_utc": "2026-09-07T18:33:14Z",
-   "t_evaluacion_utc": "2026-09-07T18:33:14Z",
-   "t_generacion_utc": "2026-09-07T18:33:14Z",
+   "t_captura_utc": "2026-09-07T18:34:31Z",
+   "t_evaluacion_utc": "2026-09-07T18:34:31Z",
+   "t_generacion_utc": "2026-09-07T18:34:31Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Göztepe vs Gaziantep FK\n⏱ Minuto: 74'\n📊 Marcador: 1-4\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Göztepe acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Göztepe, min 72\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Göztepe vs Gaziantep FK\n⏱ Minuto: 75'\n📊 Marcador: 1-4\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Göztepe acumula 72% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Göztepe, min 72\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "9d48e74dbf999649"
   },
@@ -273,7 +311,7 @@
    "match_id": "16629481",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 31,
+   "minuto": 32,
    "condicion": "Neom SC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -295,13 +333,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-07T18:32:25Z",
-   "t_captura_utc": "2026-09-07T18:33:14Z",
-   "t_evaluacion_utc": "2026-09-07T18:33:14Z",
-   "t_generacion_utc": "2026-09-07T18:33:14Z",
+   "t_captura_utc": "2026-09-07T18:34:31Z",
+   "t_evaluacion_utc": "2026-09-07T18:34:31Z",
+   "t_generacion_utc": "2026-09-07T18:34:31Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Hilal vs Neom SC\n⏱ Minuto: 31'\n📊 Marcador: 0-1\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Neom SC acumula 80% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Hilal vs Neom SC\n⏱ Minuto: 32'\n📊 Marcador: 0-1\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Neom SC acumula 80% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "4529bf250bfbfdcd"
   }
