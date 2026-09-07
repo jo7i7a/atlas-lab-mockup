@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-07T16:45:11Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-09-07T16:46:12Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "L1-SHADOW",
@@ -37,7 +37,7 @@
    "match_id": "16629480",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 54,
+   "minuto": 55,
    "condicion": "Al-Khaleej acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -59,15 +59,57 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-07T16:43:10Z",
-   "t_captura_utc": "2026-09-07T16:45:11Z",
-   "t_evaluacion_utc": "2026-09-07T16:45:11Z",
-   "t_generacion_utc": "2026-09-07T16:45:11Z",
+   "t_captura_utc": "2026-09-07T16:46:10Z",
+   "t_evaluacion_utc": "2026-09-07T16:46:10Z",
+   "t_generacion_utc": "2026-09-07T16:46:10Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Khaleej vs Al-Riyadh\n⏱ Minuto: 54'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Khaleej acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Khaleej vs Al-Riyadh\n⏱ Minuto: 55'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Khaleej acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "946da2db9ba753f7"
+  },
+  {
+   "strategy_id": "H3_PERSISTENCIA_TIROS_INVESTIGACION",
+   "match_label": "Cagliari vs Lecce (Serie A)",
+   "match_id": "16284997",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "0-0 en minuto 15 con tiros a puerta combinados>0 en cada tramo 1-5/6-10/11-15 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "shots_on_goal_tramo1_1_5": 1.0,
+    "shots_on_goal_tramo2_6_10": 1.0,
+    "shots_on_goal_tramo3_11_15": 1.0,
+    "shots_on_goal_total15": 3.0,
+    "marcador_min15": "0-0",
+    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
+    "hipotesis": "H3_PERSISTENCIA_TIROS -- INVESTIGACION, NO estrategia certificada"
+   },
+   "t_evento_real_utc": "2026-09-07T16:45:31Z",
+   "t_captura_utc": "2026-09-07T16:45:31Z",
+   "t_evaluacion_utc": "2026-09-07T16:46:11Z",
+   "t_generacion_utc": "2026-09-07T16:46:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-07T16:46:12Z",
+     "latencia_envio_ms": 916.0771369934082,
+     "error": null,
+     "message_id": 2633,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 41.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟣 H3 — INVESTIGACIÓN LIVE (Persistencia de tiros)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Cagliari vs Lecce\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nTiros a puerta (ambos equipos) por tramo:\n  min 1-5: 1\n  min 6-10: 1\n  min 11-15: 1\n\n🏆 Liga: Serie A\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "7c829d44a3908a59"
   }
  ]
 }
