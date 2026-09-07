@@ -7934,5 +7934,27 @@
    "cuota_real_betano": 1.7,
    "activo": true
   }
+ ],
+ "855918d71afbefbc": [
+  {
+   "alert_id": "855918d71afbefbc",
+   "strategy_id": "A2",
+   "match_label": "Barracas Central vs Argentinos Juniors (Liga Profesional de Fútbol)",
+   "liga": "Liga Profesional de Fútbol",
+   "event_id": "16671601",
+   "minuto_alerta": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-09-07T23:03:02Z",
+   "t_captura_utc": "2026-09-07T23:03:02Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-09-07T23:07:35Z",
+   "segundos_transcurridos": 123,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "Over Corners total 7.0 @ 1.85",
+   "respuesta_message_id": 2656,
+   "linea_real_betano": 7.0,
+   "cuota_real_betano": 1.85,
+   "activo": true
+  }
  ]
 }
