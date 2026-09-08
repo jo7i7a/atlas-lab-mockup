@@ -1,7 +1,84 @@
 {
- "generated_at_utc": "2026-09-08T11:59:53Z",
- "n_live_target": 2,
+ "generated_at_utc": "2026-09-08T12:02:54Z",
+ "n_live_target": 3,
  "matches": {
+  "16316799": {
+   "event_id": 16316799,
+   "league": "VriendenLoterij Eredivisie",
+   "home": "FC Utrecht",
+   "away": "Go Ahead Eagles",
+   "home_score": 1,
+   "away_score": 3,
+   "status_type": "inprogress",
+   "status_description": "2nd half",
+   "minute": 65,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 52,
+     "away": 48
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 1.61,
+     "away": 1.6
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 3,
+     "away": 3
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 16,
+     "away": 11
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 5,
+     "away": 3
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 334,
+     "away": 319
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 2,
+     "away": 1
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 4,
+     "away": 6
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.75,
+     "no": 2.0,
+     "captured_at_utc": "2026-09-05T18:28:49Z"
+    },
+    "1x2": {
+     "home": 21.0,
+     "draw": 7.5,
+     "away": 1.143,
+     "captured_at_utc": "2026-09-08T12:02:45Z"
+    },
+    "goals_over_25": {
+     "over": 1.727,
+     "under": 2.0,
+     "captured_at_utc": "2026-09-08T12:02:45Z"
+    },
+    "corners_over_95": {
+     "over": 2.2,
+     "under": 1.615,
+     "captured_at_utc": "2026-09-08T12:02:45Z"
+    }
+   },
+   "updated_at_utc": "2026-09-08T12:02:54Z"
+  },
   "15373085": {
    "event_id": 15373085,
    "league": "K League 1",
@@ -11,7 +88,7 @@
    "away_score": 1,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 71,
+   "minute": 74,
    "stats": {},
    "odds": {
     "btts": {
@@ -20,23 +97,23 @@
      "captured_at_utc": "2026-09-08T11:12:54Z"
     },
     "1x2": {
-     "home": 1.182,
+     "home": 1.167,
      "draw": 5.5,
-     "away": 34.0,
-     "captured_at_utc": "2026-09-08T11:59:41Z"
+     "away": 41.0,
+     "captured_at_utc": "2026-09-08T12:02:45Z"
     },
     "goals_over_25": {
      "over": 1.8,
      "under": 1.909,
-     "captured_at_utc": "2026-09-08T11:59:41Z"
+     "captured_at_utc": "2026-09-08T12:02:45Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-09-08T11:59:41Z"
+     "captured_at_utc": "2026-09-08T12:02:45Z"
     }
    },
-   "updated_at_utc": "2026-09-08T11:59:53Z"
+   "updated_at_utc": "2026-09-08T12:02:54Z"
   },
   "15373088": {
    "event_id": 15373088,
@@ -47,32 +124,32 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 71,
+   "minute": 74,
    "stats": {},
    "odds": {
     "btts": {
-     "yes": 10.0,
-     "no": 1.062,
-     "captured_at_utc": "2026-09-08T11:59:41Z"
+     "yes": 11.0,
+     "no": 1.05,
+     "captured_at_utc": "2026-09-08T12:02:45Z"
     },
     "corners_over_95": {
      "over": 2.375,
      "under": 1.533,
-     "captured_at_utc": "2026-09-08T11:59:41Z"
+     "captured_at_utc": "2026-09-08T12:02:45Z"
     },
     "1x2": {
-     "home": 4.5,
-     "draw": 1.8,
-     "away": 3.6,
-     "captured_at_utc": "2026-09-08T11:59:41Z"
+     "home": 4.75,
+     "draw": 1.667,
+     "away": 3.75,
+     "captured_at_utc": "2026-09-08T12:02:45Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.5,
-     "captured_at_utc": "2026-09-08T11:59:41Z"
+     "captured_at_utc": "2026-09-08T12:02:45Z"
     }
    },
-   "updated_at_utc": "2026-09-08T11:59:53Z"
+   "updated_at_utc": "2026-09-08T12:02:54Z"
   }
  }
 }
