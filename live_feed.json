@@ -1,7 +1,101 @@
 {
- "generated_at_utc": "2026-09-08T21:59:55Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-09-08T22:04:27Z",
+ "n_live_target": 3,
  "matches": {
+  "16872384": {
+   "event_id": 16872384,
+   "league": "CONMEBOL Libertadores",
+   "home": "Fluminense",
+   "away": "Club Atlético Platense",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 4,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 78,
+     "away": 22
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 38,
+     "away": 11
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.75,
+     "no": 1.4,
+     "captured_at_utc": "2026-09-08T22:04:14Z"
+    },
+    "corners_over_95": {
+     "over": 2.1,
+     "under": 1.667,
+     "captured_at_utc": "2026-09-08T22:04:14Z"
+    },
+    "1x2": {
+     "home": 1.667,
+     "draw": 3.2,
+     "away": 7.0,
+     "captured_at_utc": "2026-09-08T22:04:14Z"
+    }
+   },
+   "updated_at_utc": "2026-09-08T22:04:27Z"
+  },
+  "16932219": {
+   "event_id": 16932219,
+   "league": "CONMEBOL Sudamericana",
+   "home": "Independiente Santa Fe",
+   "away": "Vasco da Gama",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 4,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 33,
+     "away": 67
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0.03
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 1
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 9,
+     "away": 16
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.5,
+     "no": 1.5,
+     "captured_at_utc": "2026-09-08T22:04:14Z"
+    },
+    "corners_over_95": {
+     "over": 2.1,
+     "under": 1.667,
+     "captured_at_utc": "2026-09-08T22:04:14Z"
+    },
+    "1x2": {
+     "home": 2.3,
+     "draw": 2.75,
+     "away": 3.6,
+     "captured_at_utc": "2026-09-08T22:04:14Z"
+    }
+   },
+   "updated_at_utc": "2026-09-08T22:04:27Z"
+  },
   "16585929": {
    "event_id": 16585929,
    "league": "Liga de Ascenso",
@@ -18,10 +112,10 @@
      "home": 5.5,
      "draw": 3.4,
      "away": 1.667,
-     "captured_at_utc": "2026-09-08T21:59:35Z"
+     "captured_at_utc": "2026-09-08T22:04:14Z"
     }
    },
-   "updated_at_utc": "2026-09-08T21:59:55Z"
+   "updated_at_utc": "2026-09-08T22:04:27Z"
   }
  }
 }
