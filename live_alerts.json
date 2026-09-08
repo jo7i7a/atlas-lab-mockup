@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-08T23:32:11Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-09-08T23:33:11Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -145,6 +145,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Independiente Santa Fe vs Vasco da Gama\n⏱ Minuto: 69'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: presión combinada sostenida — xG 1.65, 20 tiros totales (4 a puerta), 5 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "018eeced34fb9218"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Independiente Santa Fe vs Vasco da Gama (CONMEBOL Sudamericana)",
+   "match_id": "16932219",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 73,
+   "condicion": "Independiente Santa Fe acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Independiente Santa Fe",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6154,
+    "touches_home": 16,
+    "touches_away": 10,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 56,
+    "equipo_que_realizo_sustitucion": "Independiente Santa Fe",
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-09-08T23:33:10Z",
+    "t_inicio_estimado_condicion": "2026-09-08T23:32:33Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-08T23:33:10Z",
+   "t_captura_utc": "2026-09-08T23:33:10Z",
+   "t_evaluacion_utc": "2026-09-08T23:33:10Z",
+   "t_generacion_utc": "2026-09-08T23:33:10Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Independiente Santa Fe vs Vasco da Gama\n⏱ Minuto: 73'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Independiente Santa Fe acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Independiente Santa Fe, min 56\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "c5c57552353d47b8"
   }
  ]
 }
