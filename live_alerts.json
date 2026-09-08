@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-08T22:37:12Z",
+ "generated_at_utc": "2026-09-08T22:38:11Z",
  "n_alerts": 5,
  "alerts": [
   {
@@ -129,35 +129,6 @@
    "alert_id": "ff380b98e8dded11"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Independiente Santa Fe vs Vasco da Gama (CONMEBOL Sudamericana)",
-   "match_id": "16932219",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 36,
-   "condicion": "4 córners totales antes del min 45 (1-3), Vasco da Gama presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Independiente Santa Fe NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Vasco da Gama",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-08T22:31:26Z",
-   "t_captura_utc": "2026-09-08T22:31:26Z",
-   "t_evaluacion_utc": "2026-09-08T22:37:11Z",
-   "t_generacion_utc": "2026-09-08T22:37:11Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Independiente Santa Fe vs Vasco da Gama\n⏱ Minuto: 36'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Vasco da Gama presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Independiente Santa Fe no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "8c60a5edbc3d94e3"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Independiente Santa Fe vs Vasco da Gama (CONMEBOL Sudamericana)",
    "match_id": "16932219",
@@ -194,6 +165,35 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Independiente Santa Fe vs Vasco da Gama\n⏱ Minuto: 36'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n📝 Motivo: Vasco da Gama acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Vasco da Gama, min 28\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "fa799f2b8bcb5e4f"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Independiente Santa Fe vs Vasco da Gama (CONMEBOL Sudamericana)",
+   "match_id": "16932219",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 37,
+   "condicion": "4 córners totales antes del min 45 (1-3), Vasco da Gama presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Independiente Santa Fe NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 1,
+    "corners_away": 3,
+    "equipo_presiona": "Vasco da Gama",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-09-08T22:31:26Z",
+   "t_captura_utc": "2026-09-08T22:31:26Z",
+   "t_evaluacion_utc": "2026-09-08T22:38:11Z",
+   "t_generacion_utc": "2026-09-08T22:38:11Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Independiente Santa Fe vs Vasco da Gama\n⏱ Minuto: 37'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Vasco da Gama presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Independiente Santa Fe no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "8c60a5edbc3d94e3"
   }
  ]
 }
