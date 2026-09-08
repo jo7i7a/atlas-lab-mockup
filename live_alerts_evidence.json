@@ -8000,5 +8000,27 @@
    "cuota_real_betano": 1.6,
    "activo": true
   }
+ ],
+ "02d617b1f4b120e8": [
+  {
+   "alert_id": "02d617b1f4b120e8",
+   "strategy_id": "H3_PERSISTENCIA_TIROS_INVESTIGACION",
+   "match_label": "AEK Athens vs LASK (UEFA Champions League)",
+   "liga": "UEFA Champions League",
+   "event_id": "16939050",
+   "minuto_alerta": 16,
+   "condicion": "0-0 en minuto 15 con tiros a puerta combinados>0 en cada tramo 1-5/6-10/11-15 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-09-08T17:01:36Z",
+   "t_captura_utc": "2026-09-08T17:01:36Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-09-08T17:06:55Z",
+   "segundos_transcurridos": 81,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "0.5 @ 1.65",
+   "respuesta_message_id": 2671,
+   "linea_real_betano": 0.5,
+   "cuota_real_betano": 1.65,
+   "activo": true
+  }
  ]
 }
