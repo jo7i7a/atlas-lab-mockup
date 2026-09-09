@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-09T23:05:10Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-09-09T23:14:41Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -115,64 +115,6 @@
   },
   {
    "strategy_id": "L1-SHADOW",
-   "match_label": "Botafogo-SP vs Grêmio Novorizontino (Brasileirão Série B)",
-   "match_id": "15526268",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 34,
-   "condicion": "5 córners totales antes del min 45 (2-3), Grêmio Novorizontino presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Botafogo-SP NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 2,
-    "corners_away": 3,
-    "equipo_presiona": "Grêmio Novorizontino",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-09T22:55:46Z",
-   "t_captura_utc": "2026-09-09T22:55:46Z",
-   "t_evaluacion_utc": "2026-09-09T23:05:08Z",
-   "t_generacion_utc": "2026-09-09T23:05:08Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Botafogo-SP vs Grêmio Novorizontino\n⏱ Minuto: 34'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Grêmio Novorizontino presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Botafogo-SP no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "ec874c492af430e4"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Santos vs Atlético Mineiro (CONMEBOL Sudamericana)",
-   "match_id": "16881448",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (3-1), Santos presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Atlético Mineiro NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Santos",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-09T22:42:39Z",
-   "t_captura_utc": "2026-09-09T22:42:39Z",
-   "t_evaluacion_utc": "2026-09-09T23:05:09Z",
-   "t_generacion_utc": "2026-09-09T23:05:09Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Santos vs Atlético Mineiro\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Santos presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Atlético Mineiro no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "7c677cfbb9467adb"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
    "match_label": "Palmeiras vs LDU (CONMEBOL Libertadores)",
    "match_id": "16881449",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
@@ -237,6 +179,35 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Fortaleza vs Avaí\n⏱ Minuto: 34'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Fortaleza acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "0fa68cf0854c34cc"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Botafogo-SP vs Grêmio Novorizontino (Brasileirão Série B)",
+   "match_id": "15526268",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 40,
+   "condicion": "5 córners totales antes del min 45 (2-3), Grêmio Novorizontino presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Botafogo-SP NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 2,
+    "corners_away": 3,
+    "equipo_presiona": "Grêmio Novorizontino",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-09-09T22:55:46Z",
+   "t_captura_utc": "2026-09-09T22:55:46Z",
+   "t_evaluacion_utc": "2026-09-09T23:11:11Z",
+   "t_generacion_utc": "2026-09-09T23:11:11Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Botafogo-SP vs Grêmio Novorizontino\n⏱ Minuto: 40'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Grêmio Novorizontino presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Botafogo-SP no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "ec874c492af430e4"
   }
  ]
 }
