@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-09T00:37:12Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-09-09T00:38:12Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -48,12 +48,41 @@
    "alert_id": "8dc38dd54818637f"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Criciúma vs Juventude (Brasileirão Série B)",
+   "match_id": "15526274",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 35,
+   "condicion": "5 córners totales antes del min 45 (5-0), Criciúma presiona (5 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Juventude NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 5,
+    "corners_away": 0,
+    "equipo_presiona": "Criciúma",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-09-09T00:37:43Z",
+   "t_captura_utc": "2026-09-09T00:37:43Z",
+   "t_evaluacion_utc": "2026-09-09T00:38:10Z",
+   "t_generacion_utc": "2026-09-09T00:38:10Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Criciúma vs Juventude\n⏱ Minuto: 35'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 5\nVisita: 0\nTotal: 5\n\n📝 Motivo: Criciúma presiona con 5 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Juventude no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "74d99bac75c264b9"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Criciúma vs Juventude (Brasileirão Série B)",
    "match_id": "15526274",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 34,
+   "minuto": 35,
    "condicion": "Criciúma acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -75,13 +104,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-09T00:24:11Z",
-   "t_captura_utc": "2026-09-09T00:37:12Z",
-   "t_evaluacion_utc": "2026-09-09T00:37:12Z",
-   "t_generacion_utc": "2026-09-09T00:37:12Z",
+   "t_captura_utc": "2026-09-09T00:38:12Z",
+   "t_evaluacion_utc": "2026-09-09T00:38:12Z",
+   "t_generacion_utc": "2026-09-09T00:38:12Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Criciúma vs Juventude\n⏱ Minuto: 34'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Criciúma acumula 89% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Criciúma vs Juventude\n⏱ Minuto: 35'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Criciúma acumula 89% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "552c3ace59ecb01f"
   }
