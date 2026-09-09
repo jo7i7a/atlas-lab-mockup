@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-09T01:59:55Z",
- "n_live_target": 2,
+ "generated_at_utc": "2026-09-09T02:02:54Z",
+ "n_live_target": 1,
  "matches": {
   "16872336": {
    "event_id": 16872336,
@@ -11,7 +11,7 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 68,
+   "minute": 71,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -43,6 +43,11 @@
      "home": 367,
      "away": 334
     },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 0,
+     "away": 1
+    },
     "shots_on_target": {
      "label": "Remates al arco",
      "home": 2,
@@ -51,100 +56,23 @@
    },
    "odds": {
     "btts": {
-     "yes": 4.333,
-     "no": 1.2,
-     "captured_at_utc": "2026-09-09T01:59:38Z"
+     "yes": 4.5,
+     "no": 1.182,
+     "captured_at_utc": "2026-09-09T02:02:39Z"
     },
     "corners_over_95": {
      "over": 2.0,
      "under": 1.727,
-     "captured_at_utc": "2026-09-09T01:59:38Z"
+     "captured_at_utc": "2026-09-09T02:02:39Z"
     },
     "1x2": {
      "home": 1.111,
      "draw": 6.5,
-     "away": 41.0,
-     "captured_at_utc": "2026-09-09T01:59:38Z"
+     "away": 51.0,
+     "captured_at_utc": "2026-09-09T02:02:39Z"
     }
    },
-   "updated_at_utc": "2026-09-09T01:59:55Z"
-  },
-  "15526274": {
-   "event_id": 15526274,
-   "league": "Brasileirão Série B",
-   "home": "Criciúma",
-   "away": "Juventude",
-   "home_score": 0,
-   "away_score": 2,
-   "status_type": "inprogress",
-   "status_description": "2nd half",
-   "minute": 96,
-   "stats": {
-    "possession": {
-     "label": "Posesión",
-     "home": 70,
-     "away": 30
-    },
-    "xg": {
-     "label": "Expected Goals (xG)",
-     "home": 1.1,
-     "away": 0.55
-    },
-    "big_chances": {
-     "label": "Ocasiones claras",
-     "home": 0,
-     "away": 1
-    },
-    "shots": {
-     "label": "Remates totales",
-     "home": 13,
-     "away": 8
-    },
-    "corners": {
-     "label": "Corners",
-     "home": 9,
-     "away": 2
-    },
-    "passes": {
-     "label": "Pases",
-     "home": 553,
-     "away": 248
-    },
-    "yellow_cards": {
-     "label": "Tarjetas amarillas",
-     "home": 3,
-     "away": 4
-    },
-    "shots_on_target": {
-     "label": "Remates al arco",
-     "home": 4,
-     "away": 2
-    }
-   },
-   "odds": {
-    "btts": {
-     "yes": 11.0,
-     "no": 1.05,
-     "captured_at_utc": "2026-09-09T01:59:38Z"
-    },
-    "1x2": {
-     "home": 501.0,
-     "draw": 51.0,
-     "away": 1.002,
-     "captured_at_utc": "2026-09-09T01:59:38Z"
-    },
-    "corners_over_95": {
-     "over": 1.909,
-     "under": 1.8,
-     "captured_at_utc": "2026-09-09T01:59:38Z"
-    },
-    "goals_over_25": {
-     "over": 11.0,
-     "under": 1.05,
-     "captured_at_utc": "2026-09-09T01:59:38Z"
-    }
-   },
-   "updated_at_utc": "2026-09-09T01:59:55Z"
+   "updated_at_utc": "2026-09-09T02:02:54Z"
   }
  }
 }
