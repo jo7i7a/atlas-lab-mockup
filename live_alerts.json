@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-09T20:38:14Z",
- "n_alerts": 11,
+ "generated_at_utc": "2026-09-09T20:39:19Z",
+ "n_alerts": 8,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -35,44 +35,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Rangers vs St. Mirren\n⏱ Minuto: 70'\n📊 Marcador: 0-0\n🏆 Liga: Scottish Premiership\n\n📝 Motivo: presión combinada sostenida — xG 2.55, 25 tiros totales (7 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "76f03a3a79fa84d7"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Sporting CP vs Galatasaray (UEFA Champions League)",
-   "match_id": "16938888",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 2,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-09-09T20:08:28Z",
-   "t_captura_utc": "2026-09-09T20:08:28Z",
-   "t_evaluacion_utc": "2026-09-09T20:15:18Z",
-   "t_generacion_utc": "2026-09-09T20:15:18Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-09T20:12:21Z",
-     "latencia_envio_ms": 824.517011642456,
-     "error": null,
-     "message_id": 2725,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 233.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Sporting CP vs Galatasaray\n⏱ Minuto: 52'\n📊 Marcador: 1-1\n🏆 Liga: UEFA Champions League\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "08846940ed536519"
   },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -141,34 +103,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ St. Johnstone vs Celtic\n⏱ Minuto: 59'\n📊 Marcador: 0-1\n🏆 Liga: Scottish Premiership\n\n📝 Motivo: presión combinada sostenida — xG 1.75, 12 tiros totales (4 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "0faa0346f3628252"
-  },
-  {
-   "strategy_id": "L1",
-   "match_label": "Moreirense vs Benfica (Liga Portugal Betclic)",
-   "match_id": "16450761",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "4 córners totales antes del min 30 (1-3), Benfica presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Moreirense NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Benfica"
-   },
-   "t_evento_real_utc": "2026-09-09T20:08:49Z",
-   "t_captura_utc": "2026-09-09T20:08:49Z",
-   "t_evaluacion_utc": "2026-09-09T20:16:08Z",
-   "t_generacion_utc": "2026-09-09T20:16:08Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Moreirense vs Benfica\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Benfica presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Moreirense no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "01716cfba53b9780"
   },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -273,35 +207,6 @@
    "alert_id": "ce1364c6ab128411"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Moreirense vs Benfica (Liga Portugal Betclic)",
-   "match_id": "16450761",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (1-3), Benfica presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Moreirense NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Benfica",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-09T20:08:49Z",
-   "t_captura_utc": "2026-09-09T20:08:49Z",
-   "t_evaluacion_utc": "2026-09-09T20:31:09Z",
-   "t_generacion_utc": "2026-09-09T20:31:09Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Moreirense vs Benfica\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Benfica presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Moreirense no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "9b152bda49ed116d"
-  },
-  {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "SSC Napoli vs Arsenal (UEFA Champions League)",
    "match_id": "16938985",
@@ -341,7 +246,7 @@
    "match_id": "16391666",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 78,
+   "minuto": 79,
    "condicion": "Queens Park Rangers acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -350,11 +255,11 @@
    "extra": {
     "equipo_dominante": "Queens Park Rangers",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 13,
+    "ratio_presion_territorial": 0.65,
+    "touches_home": 14,
     "touches_away": 26,
     "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 76,
+    "minuto_ultima_sustitucion": 79,
     "equipo_que_realizo_sustitucion": "Queens Park Rangers",
     "marcador_en_el_momento": "0-0",
     "t_primera_observacion_atlas": "2026-09-09T20:21:19Z",
@@ -363,13 +268,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-09T20:21:19Z",
-   "t_captura_utc": "2026-09-09T20:38:14Z",
-   "t_evaluacion_utc": "2026-09-09T20:38:14Z",
-   "t_generacion_utc": "2026-09-09T20:38:14Z",
+   "t_captura_utc": "2026-09-09T20:39:19Z",
+   "t_evaluacion_utc": "2026-09-09T20:39:19Z",
+   "t_generacion_utc": "2026-09-09T20:39:19Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Charlton Athletic vs Queens Park Rangers\n⏱ Minuto: 78'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Queens Park Rangers acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Queens Park Rangers, min 76\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Charlton Athletic vs Queens Park Rangers\n⏱ Minuto: 79'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Queens Park Rangers acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Queens Park Rangers, min 79\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "487ae53506af0f34"
   }
