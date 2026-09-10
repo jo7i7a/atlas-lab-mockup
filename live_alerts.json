@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-09-10T20:36:13Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-09-10T20:37:13Z",
+ "n_alerts": 7,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Como vs RB Leipzig (UEFA Champions League)",
-   "match_id": "16939034",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 1,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-09-10T20:06:22Z",
-   "t_captura_utc": "2026-09-10T20:06:22Z",
-   "t_evaluacion_utc": "2026-09-10T20:14:13Z",
-   "t_generacion_utc": "2026-09-10T20:14:13Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-10T20:08:09Z",
-     "latencia_envio_ms": 866.6205406188965,
-     "error": null,
-     "message_id": 2764,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 107.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Como vs RB Leipzig\n⏱ Minuto: 52'\n📊 Marcador: 2-0\n🏆 Liga: UEFA Champions League\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "cd9c27eebad85b2b"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "SK Slavia Praha vs RC Lens (UEFA Champions League)",
