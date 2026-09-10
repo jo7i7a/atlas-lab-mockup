@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-10T23:47:54Z",
- "n_live_target": 2,
+ "generated_at_utc": "2026-09-10T23:50:53Z",
+ "n_live_target": 3,
  "matches": {
   "15526277": {
    "event_id": 15526277,
@@ -11,12 +11,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 51,
+   "minute": 54,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 35,
-     "away": 65
+     "home": 34,
+     "away": 66
     },
     "xg": {
      "label": "Expected Goals (xG)",
@@ -26,7 +26,7 @@
     "shots": {
      "label": "Remates totales",
      "home": 10,
-     "away": 5
+     "away": 6
     },
     "corners": {
      "label": "Corners",
@@ -35,8 +35,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 146,
-     "away": 285
+     "home": 151,
+     "away": 300
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -51,23 +51,54 @@
    },
    "odds": {
     "btts": {
-     "yes": 6.0,
-     "no": 1.125,
-     "captured_at_utc": "2026-09-10T23:46:24Z"
+     "yes": 6.5,
+     "no": 1.111,
+     "captured_at_utc": "2026-09-10T23:50:52Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-09-10T23:46:24Z"
+     "captured_at_utc": "2026-09-10T23:50:52Z"
     },
     "1x2": {
-     "home": 3.1,
-     "draw": 1.952,
+     "home": 3.2,
+     "draw": 1.909,
      "away": 4.333,
-     "captured_at_utc": "2026-09-10T23:46:24Z"
+     "captured_at_utc": "2026-09-10T23:50:52Z"
     }
    },
-   "updated_at_utc": "2026-09-10T23:47:54Z"
+   "updated_at_utc": "2026-09-10T23:50:53Z"
+  },
+  "15526269": {
+   "event_id": 15526269,
+   "league": "Brasileirão Série B",
+   "home": "São Bernardo",
+   "away": "Londrina",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 0,
+   "stats": {},
+   "odds": {
+    "btts": {
+     "yes": 2.1,
+     "no": 1.667,
+     "captured_at_utc": "2026-09-10T23:50:52Z"
+    },
+    "1x2": {
+     "home": 1.56,
+     "draw": 3.75,
+     "away": 6.0,
+     "captured_at_utc": "2026-09-10T23:50:52Z"
+    },
+    "goals_over_25": {
+     "over": 2.1,
+     "under": 1.667,
+     "captured_at_utc": "2026-09-10T23:50:52Z"
+    }
+   },
+   "updated_at_utc": "2026-09-10T23:50:53Z"
   },
   "16585928": {
    "event_id": 16585928,
@@ -77,18 +108,18 @@
    "home_score": 0,
    "away_score": 0,
    "status_type": "inprogress",
-   "status_description": "1st half",
-   "minute": 46,
+   "status_description": "Halftime",
+   "minute": null,
    "stats": {},
    "odds": {
     "1x2": {
-     "home": 2.6,
-     "draw": 2.2,
-     "away": 4.0,
-     "captured_at_utc": "2026-09-10T23:46:24Z"
+     "home": 2.5,
+     "draw": 2.1,
+     "away": 4.75,
+     "captured_at_utc": "2026-09-10T23:50:52Z"
     }
    },
-   "updated_at_utc": "2026-09-10T23:47:54Z"
+   "updated_at_utc": "2026-09-10T23:50:53Z"
   }
  }
 }
