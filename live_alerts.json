@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-10T00:38:11Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-09-10T00:39:11Z",
+ "n_alerts": 7,
  "alerts": [
   {
    "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
@@ -73,35 +73,6 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CF Montréal vs Charlotte FC\n⏱ Minuto: 45'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: CF Montréal presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Charlotte FC no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "3aa0e0f9c20e5c21"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Toronto FC vs Nashville SC (MLS)",
-   "match_id": "15168372",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (3-1), Toronto FC presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Nashville SC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Toronto FC",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-10T00:08:28Z",
-   "t_captura_utc": "2026-09-10T00:08:28Z",
-   "t_evaluacion_utc": "2026-09-10T00:26:08Z",
-   "t_generacion_utc": "2026-09-10T00:26:08Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Toronto FC vs Nashville SC\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Toronto FC presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Nashville SC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "f102736fcf7cb578"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -180,82 +151,6 @@
    "alert_id": "73b3519492ec4db4"
   },
   {
-   "strategy_id": "L3",
-   "match_label": "Philadelphia Union vs FC Cincinnati (MLS)",
-   "match_id": "15168370",
-   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
-   "cuota_detectada": null,
-   "minuto": 42,
-   "condicion": "Expulsión de FC Cincinnati (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_expulsado": "FC Cincinnati",
-    "marcador_al_detectar": "1-0",
-    "total_rojas_partido": 1
-   },
-   "t_evento_real_utc": "2026-09-10T00:12:43Z",
-   "t_captura_utc": "2026-09-10T00:38:05Z",
-   "t_evaluacion_utc": "2026-09-10T00:38:11Z",
-   "t_generacion_utc": "2026-09-10T00:38:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-10T00:26:11Z",
-     "latencia_envio_ms": 869.025707244873,
-     "error": null,
-     "message_id": 2746,
-     "chat_id": -5219979824
-    }
-   },
-   "latencia_total_seg": 808.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 L3 | Philadelphia Union vs FC Cincinnati | Roja FC Cincinnati | Min 42' | 1-0",
-   "evidencia": null,
-   "alert_id": "9216738b00d4377d"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "New York City FC vs New England Revolution (MLS)",
-   "match_id": "15168371",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 26,
-   "condicion": "New York City FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "New York City FC",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.8,
-    "touches_home": 4,
-    "touches_away": 1,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-09-10T00:32:10Z",
-    "t_inicio_estimado_condicion": "2026-09-10T00:32:01Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-10T00:32:10Z",
-   "t_captura_utc": "2026-09-10T00:38:11Z",
-   "t_evaluacion_utc": "2026-09-10T00:38:11Z",
-   "t_generacion_utc": "2026-09-10T00:38:11Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ New York City FC vs New England Revolution\n⏱ Minuto: 26'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: New York City FC acumula 80% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "8d1d16f36ad69685"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "América Mineiro vs Náutico (Brasileirão Série B)",
    "match_id": "15526270",
@@ -292,6 +187,82 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ América Mineiro vs Náutico\n⏱ Minuto: 47'\n📊 Marcador: 2-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: América Mineiro acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "f23749fd787f0ea2"
+  },
+  {
+   "strategy_id": "L3",
+   "match_label": "Philadelphia Union vs FC Cincinnati (MLS)",
+   "match_id": "15168370",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
+   "cuota_detectada": null,
+   "minuto": 43,
+   "condicion": "Expulsión de FC Cincinnati (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_expulsado": "FC Cincinnati",
+    "marcador_al_detectar": "1-0",
+    "total_rojas_partido": 1
+   },
+   "t_evento_real_utc": "2026-09-10T00:12:43Z",
+   "t_captura_utc": "2026-09-10T00:38:48Z",
+   "t_evaluacion_utc": "2026-09-10T00:39:11Z",
+   "t_generacion_utc": "2026-09-10T00:39:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-10T00:26:11Z",
+     "latencia_envio_ms": 869.025707244873,
+     "error": null,
+     "message_id": 2746,
+     "chat_id": -5219979824
+    }
+   },
+   "latencia_total_seg": 808.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 L3 | Philadelphia Union vs FC Cincinnati | Roja FC Cincinnati | Min 43' | 1-0",
+   "evidencia": null,
+   "alert_id": "9216738b00d4377d"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "New York City FC vs New England Revolution (MLS)",
+   "match_id": "15168371",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 27,
+   "condicion": "New York City FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "New York City FC",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.8,
+    "touches_home": 4,
+    "touches_away": 1,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "0-1",
+    "t_primera_observacion_atlas": "2026-09-10T00:32:10Z",
+    "t_inicio_estimado_condicion": "2026-09-10T00:32:01Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-10T00:32:10Z",
+   "t_captura_utc": "2026-09-10T00:39:11Z",
+   "t_evaluacion_utc": "2026-09-10T00:39:11Z",
+   "t_generacion_utc": "2026-09-10T00:39:11Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ New York City FC vs New England Revolution\n⏱ Minuto: 27'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: New York City FC acumula 80% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "8d1d16f36ad69685"
   }
  ]
 }
