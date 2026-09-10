@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-10T03:01:10Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-09-10T03:02:10Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
@@ -47,11 +47,56 @@
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Los Angeles FC vs New York Red Bulls (MLS)",
+   "match_id": "15168374",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 21,
+   "condicion": "Los Angeles FC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Los Angeles FC",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-10T03:01:28Z",
+   "t_captura_utc": "2026-09-10T03:01:28Z",
+   "t_evaluacion_utc": "2026-09-10T03:02:09Z",
+   "t_generacion_utc": "2026-09-10T03:02:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_NO_AUTORIZADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "Estrategia 'A1_V1_SOLO_TRIGGER_LIVE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Los Angeles FC vs New York Red Bulls\n⏱ Minuto: 21'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: Los Angeles FC — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "caadb13dac7b320a"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Portland Timbers vs St.Louis City (MLS)",
    "match_id": "15168376",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 20,
+   "minuto": 21,
    "condicion": "St.Louis City domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -71,8 +116,8 @@
    },
    "t_evento_real_utc": "2026-09-10T02:56:00Z",
    "t_captura_utc": "2026-09-10T02:56:00Z",
-   "t_evaluacion_utc": "2026-09-10T03:01:09Z",
-   "t_generacion_utc": "2026-09-10T03:01:09Z",
+   "t_evaluacion_utc": "2026-09-10T03:02:09Z",
+   "t_generacion_utc": "2026-09-10T03:02:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -86,7 +131,7 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Portland Timbers vs St.Louis City\n⏱ Minuto: 20'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: St.Louis City — ≥2 remates en los últimos 5 min (away=4)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Portland Timbers vs St.Louis City\n⏱ Minuto: 21'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: St.Louis City — ≥2 remates en los últimos 5 min (away=4)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "32d334a98478d7ca"
   },
@@ -96,7 +141,7 @@
    "match_id": "15168381",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 20,
+   "minuto": 21,
    "condicion": "Vancouver Whitecaps domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -116,8 +161,8 @@
    },
    "t_evento_real_utc": "2026-09-10T02:57:42Z",
    "t_captura_utc": "2026-09-10T02:57:42Z",
-   "t_evaluacion_utc": "2026-09-10T03:01:09Z",
-   "t_generacion_utc": "2026-09-10T03:01:09Z",
+   "t_evaluacion_utc": "2026-09-10T03:02:09Z",
+   "t_generacion_utc": "2026-09-10T03:02:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -131,7 +176,7 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Vancouver Whitecaps vs LA Galaxy\n⏱ Minuto: 20'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: Vancouver Whitecaps — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Vancouver Whitecaps vs LA Galaxy\n⏱ Minuto: 21'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: Vancouver Whitecaps — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "5c390cd9d8d02131"
   },
@@ -141,7 +186,7 @@
    "match_id": "15168376",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 20,
+   "minuto": 21,
    "condicion": "St.Louis City acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -163,13 +208,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-10T03:01:09Z",
-   "t_captura_utc": "2026-09-10T03:01:09Z",
-   "t_evaluacion_utc": "2026-09-10T03:01:09Z",
-   "t_generacion_utc": "2026-09-10T03:01:09Z",
+   "t_captura_utc": "2026-09-10T03:02:10Z",
+   "t_evaluacion_utc": "2026-09-10T03:02:10Z",
+   "t_generacion_utc": "2026-09-10T03:02:10Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Portland Timbers vs St.Louis City\n⏱ Minuto: 20'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: St.Louis City acumula 86% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Portland Timbers vs St.Louis City\n⏱ Minuto: 21'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n📝 Motivo: St.Louis City acumula 86% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "6f28c421802da83b"
   },
@@ -179,7 +224,7 @@
    "match_id": "15168377",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 20,
+   "minuto": 21,
    "condicion": "San Jose Earthquakes acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -201,13 +246,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-10T03:01:09Z",
-   "t_captura_utc": "2026-09-10T03:01:09Z",
-   "t_evaluacion_utc": "2026-09-10T03:01:09Z",
-   "t_generacion_utc": "2026-09-10T03:01:09Z",
+   "t_captura_utc": "2026-09-10T03:02:10Z",
+   "t_evaluacion_utc": "2026-09-10T03:02:10Z",
+   "t_generacion_utc": "2026-09-10T03:02:10Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ San Diego FC vs San Jose Earthquakes\n⏱ Minuto: 20'\n📊 Marcador: 0-2\n🏆 Liga: MLS\n\n📝 Motivo: San Jose Earthquakes acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: San Jose Earthquakes, min 13\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ San Diego FC vs San Jose Earthquakes\n⏱ Minuto: 21'\n📊 Marcador: 0-2\n🏆 Liga: MLS\n\n📝 Motivo: San Jose Earthquakes acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: San Jose Earthquakes, min 13\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "cfe751a128211bb5"
   }
