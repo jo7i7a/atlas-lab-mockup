@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-09-10T04:16:24Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-09-10T04:19:21Z",
+ "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Los Angeles FC vs New York Red Bulls (MLS)",
-   "match_id": "15168374",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 1,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-09-10T03:48:28Z",
-   "t_captura_utc": "2026-09-10T03:48:28Z",
-   "t_evaluacion_utc": "2026-09-10T03:54:33Z",
-   "t_generacion_utc": "2026-09-10T03:54:33Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-10T03:50:22Z",
-     "latencia_envio_ms": 837.8720283508301,
-     "error": null,
-     "message_id": 2760,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 114.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Los Angeles FC vs New York Red Bulls\n⏱ Minuto: 52'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "43e8a6387623dd3c"
-  },
   {
    "strategy_id": "A2",
    "match_label": "San Diego FC vs San Jose Earthquakes (MLS)",
