@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-10T03:52:14Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-09-10T03:53:16Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "L1-SHADOW",
@@ -75,7 +75,7 @@
    "match_id": "15168374",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 50,
+   "minuto": 51,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -88,8 +88,8 @@
    },
    "t_evento_real_utc": "2026-09-10T03:48:28Z",
    "t_captura_utc": "2026-09-10T03:48:28Z",
-   "t_evaluacion_utc": "2026-09-10T03:52:13Z",
-   "t_generacion_utc": "2026-09-10T03:52:13Z",
+   "t_evaluacion_utc": "2026-09-10T03:53:14Z",
+   "t_generacion_utc": "2026-09-10T03:53:14Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -103,9 +103,47 @@
    },
    "latencia_total_seg": 114.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Los Angeles FC vs New York Red Bulls\n⏱ Minuto: 50'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Los Angeles FC vs New York Red Bulls\n⏱ Minuto: 51'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "43e8a6387623dd3c"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "San Diego FC vs San Jose Earthquakes (MLS)",
+   "match_id": "15168377",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 0,
+    "corners_1t_away": 3,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-09-10T03:51:53Z",
+   "t_captura_utc": "2026-09-10T03:51:53Z",
+   "t_evaluacion_utc": "2026-09-10T03:53:14Z",
+   "t_generacion_utc": "2026-09-10T03:53:14Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-10T03:53:15Z",
+     "latencia_envio_ms": 830.6357860565186,
+     "error": null,
+     "message_id": 2761,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 82.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ San Diego FC vs San Jose Earthquakes\n⏱ Minuto: 46'\n📊 Marcador: 1-3\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 3\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "47f14822e37b1511"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -113,7 +151,7 @@
    "match_id": "15168381",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 52,
+   "minuto": 53,
    "condicion": "Vancouver Whitecaps acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -122,8 +160,8 @@
    "extra": {
     "equipo_dominante": "Vancouver Whitecaps",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7097,
-    "touches_home": 22,
+    "ratio_presion_territorial": 0.7188,
+    "touches_home": 23,
     "touches_away": 9,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 27,
@@ -135,13 +173,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-10T03:24:09Z",
-   "t_captura_utc": "2026-09-10T03:52:14Z",
-   "t_evaluacion_utc": "2026-09-10T03:52:14Z",
-   "t_generacion_utc": "2026-09-10T03:52:14Z",
+   "t_captura_utc": "2026-09-10T03:53:15Z",
+   "t_evaluacion_utc": "2026-09-10T03:53:16Z",
+   "t_generacion_utc": "2026-09-10T03:53:16Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Vancouver Whitecaps vs LA Galaxy\n⏱ Minuto: 52'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: Vancouver Whitecaps acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Vancouver Whitecaps, min 27\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Vancouver Whitecaps vs LA Galaxy\n⏱ Minuto: 53'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: Vancouver Whitecaps acumula 72% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Vancouver Whitecaps, min 27\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "a50c58ec2d632f63"
   }
