@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-11T20:41:11Z",
- "n_alerts": 6,
+ "generated_at_utc": "2026-09-11T20:42:12Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -39,44 +39,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ 1. FC Union Berlin vs FC Schalke 04\n⏱ Minuto: 85'\n📊 Marcador: 0-2\n🏆 Liga: Bundesliga\n\n📝 Motivo: 1. FC Union Berlin acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: 1. FC Union Berlin, min 85\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "196cc237dcfba167"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Sevilla vs Valencia (LaLiga)",
-   "match_id": "16416330",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-09-11T20:11:38Z",
-   "t_captura_utc": "2026-09-11T20:11:38Z",
-   "t_evaluacion_utc": "2026-09-11T20:19:14Z",
-   "t_generacion_utc": "2026-09-11T20:19:14Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-11T20:16:52Z",
-     "latencia_envio_ms": 790.5805110931396,
-     "error": null,
-     "message_id": 2815,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 314.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Sevilla vs Valencia\n⏱ Minuto: 52'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "360af9d90f63add7"
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -205,7 +167,7 @@
    "match_id": "16391682",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 81,
+   "minuto": 82,
    "condicion": "West Ham United acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -214,8 +176,8 @@
    "extra": {
     "equipo_dominante": "West Ham United",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 22,
+    "ratio_presion_territorial": 0.6765,
+    "touches_home": 23,
     "touches_away": 11,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 81,
@@ -227,13 +189,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-11T20:16:53Z",
-   "t_captura_utc": "2026-09-11T20:41:11Z",
-   "t_evaluacion_utc": "2026-09-11T20:41:11Z",
-   "t_generacion_utc": "2026-09-11T20:41:11Z",
+   "t_captura_utc": "2026-09-11T20:42:12Z",
+   "t_evaluacion_utc": "2026-09-11T20:42:12Z",
+   "t_generacion_utc": "2026-09-11T20:42:12Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ West Ham United vs Wrexham\n⏱ Minuto: 81'\n📊 Marcador: 6-0\n🏆 Liga: Championship\n\n📝 Motivo: West Ham United acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: West Ham United, min 81\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ West Ham United vs Wrexham\n⏱ Minuto: 82'\n📊 Marcador: 6-0\n🏆 Liga: Championship\n\n📝 Motivo: West Ham United acumula 68% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: West Ham United, min 81\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "734e988116a6222b"
   }
