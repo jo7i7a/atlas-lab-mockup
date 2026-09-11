@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-11T19:23:14Z",
- "n_alerts": 12,
+ "generated_at_utc": "2026-09-11T19:24:15Z",
+ "n_alerts": 11,
  "alerts": [
   {
    "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
@@ -212,35 +212,6 @@
    "alert_id": "9855d8c15544578a"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Étoile Carouge FC vs FC Winterthur (Challenge League)",
-   "match_id": "16356995",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (1-3), FC Winterthur presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Étoile Carouge FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "FC Winterthur",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-11T18:53:32Z",
-   "t_captura_utc": "2026-09-11T18:53:32Z",
-   "t_evaluacion_utc": "2026-09-11T19:19:08Z",
-   "t_generacion_utc": "2026-09-11T19:19:08Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Étoile Carouge FC vs FC Winterthur\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Challenge League\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: FC Winterthur presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Étoile Carouge FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "073793bb506e24e1"
-  },
-  {
    "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
    "match_label": "West Ham United vs Wrexham (Championship)",
    "match_id": "16391682",
@@ -361,7 +332,7 @@
    "match_id": "16391682",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 21,
+   "minuto": 22,
    "condicion": "West Ham United domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -381,8 +352,8 @@
    },
    "t_evento_real_utc": "2026-09-11T19:17:31Z",
    "t_captura_utc": "2026-09-11T19:17:31Z",
-   "t_evaluacion_utc": "2026-09-11T19:23:13Z",
-   "t_generacion_utc": "2026-09-11T19:23:13Z",
+   "t_evaluacion_utc": "2026-09-11T19:24:14Z",
+   "t_generacion_utc": "2026-09-11T19:24:14Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -396,7 +367,7 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ West Ham United vs Wrexham\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: West Ham United — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ West Ham United vs Wrexham\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: West Ham United — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "01ff37882a5e452f"
   },
@@ -406,7 +377,7 @@
    "match_id": "16285024",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 36,
+   "minuto": 37,
    "condicion": "Fiorentina acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -428,13 +399,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-11T19:07:15Z",
-   "t_captura_utc": "2026-09-11T19:23:14Z",
-   "t_evaluacion_utc": "2026-09-11T19:23:14Z",
-   "t_generacion_utc": "2026-09-11T19:23:14Z",
+   "t_captura_utc": "2026-09-11T19:24:15Z",
+   "t_evaluacion_utc": "2026-09-11T19:24:15Z",
+   "t_generacion_utc": "2026-09-11T19:24:15Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Venezia vs Fiorentina\n⏱ Minuto: 36'\n📊 Marcador: 1-2\n🏆 Liga: Serie A\n\n📝 Motivo: Fiorentina acumula 84% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Venezia vs Fiorentina\n⏱ Minuto: 37'\n📊 Marcador: 1-2\n🏆 Liga: Serie A\n\n📝 Motivo: Fiorentina acumula 84% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "b22ae48ff41138ca"
   },
@@ -444,7 +415,7 @@
    "match_id": "16316810",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 65,
+   "minuto": 66,
    "condicion": "AZ Alkmaar acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -466,13 +437,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-11T19:03:14Z",
-   "t_captura_utc": "2026-09-11T19:23:14Z",
-   "t_evaluacion_utc": "2026-09-11T19:23:14Z",
-   "t_generacion_utc": "2026-09-11T19:23:14Z",
+   "t_captura_utc": "2026-09-11T19:24:15Z",
+   "t_evaluacion_utc": "2026-09-11T19:24:15Z",
+   "t_generacion_utc": "2026-09-11T19:24:15Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ AZ Alkmaar vs Willem II Tilburg\n⏱ Minuto: 65'\n📊 Marcador: 1-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: AZ Alkmaar acumula 79% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: AZ Alkmaar, min 64\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ AZ Alkmaar vs Willem II Tilburg\n⏱ Minuto: 66'\n📊 Marcador: 1-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: AZ Alkmaar acumula 79% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: AZ Alkmaar, min 64\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "5c13a2429dc603a8"
   }
