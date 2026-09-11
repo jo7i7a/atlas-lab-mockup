@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-11T03:53:54Z",
+ "generated_at_utc": "2026-09-11T03:56:54Z",
  "n_live_target": 1,
  "matches": {
   "16997436": {
@@ -10,8 +10,8 @@
    "home_score": 1,
    "away_score": 0,
    "status_type": "inprogress",
-   "status_description": "1st half",
-   "minute": 48,
+   "status_description": "Halftime",
+   "minute": null,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -21,12 +21,17 @@
     "xg": {
      "label": "Expected Goals (xG)",
      "home": 0.34,
-     "away": 0.34
+     "away": 0.59
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 0,
+     "away": 1
     },
     "shots": {
      "label": "Remates totales",
      "home": 6,
-     "away": 7
+     "away": 8
     },
     "corners": {
      "label": "Corners",
@@ -35,8 +40,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 186,
-     "away": 227
+     "home": 189,
+     "away": 230
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -46,33 +51,33 @@
     "shots_on_target": {
      "label": "Remates al arco",
      "home": 2,
-     "away": 2
+     "away": 3
     }
    },
    "odds": {
     "btts": {
      "yes": 1.75,
      "no": 2.0,
-     "captured_at_utc": "2026-09-11T03:53:52Z"
+     "captured_at_utc": "2026-09-11T03:56:54Z"
     },
     "1x2": {
-     "home": 1.364,
-     "draw": 4.333,
+     "home": 1.4,
+     "draw": 4.0,
      "away": 9.5,
-     "captured_at_utc": "2026-09-11T03:53:52Z"
+     "captured_at_utc": "2026-09-11T03:56:54Z"
     },
     "goals_over_25": {
-     "over": 1.833,
-     "under": 1.833,
-     "captured_at_utc": "2026-09-11T03:53:52Z"
+     "over": 1.909,
+     "under": 1.8,
+     "captured_at_utc": "2026-09-11T03:56:54Z"
     },
     "corners_over_95": {
      "over": 1.833,
      "under": 1.833,
-     "captured_at_utc": "2026-09-11T03:53:52Z"
+     "captured_at_utc": "2026-09-11T03:56:54Z"
     }
    },
-   "updated_at_utc": "2026-09-11T03:53:54Z"
+   "updated_at_utc": "2026-09-11T03:56:54Z"
   }
  }
 }
