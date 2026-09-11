@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-11T21:16:11Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-09-11T21:17:11Z",
+ "n_alerts": 1,
  "alerts": [
   {
    "strategy_id": "L1-SHADOW",
@@ -30,44 +30,6 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Newell's Old Boys vs Vélez Sarsfield\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Newell's Old Boys presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Vélez Sarsfield no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "fc905bec23c061db"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Newell's Old Boys vs Vélez Sarsfield (Liga Profesional de Fútbol)",
-   "match_id": "16667183",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 54,
-   "condicion": "Newell's Old Boys acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Newell's Old Boys",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7143,
-    "touches_home": 15,
-    "touches_away": 6,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "0-1",
-    "t_primera_observacion_atlas": "2026-09-11T20:46:47Z",
-    "t_inicio_estimado_condicion": "2026-09-11T20:21:21Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-11T20:46:47Z",
-   "t_captura_utc": "2026-09-11T21:16:11Z",
-   "t_evaluacion_utc": "2026-09-11T21:16:11Z",
-   "t_generacion_utc": "2026-09-11T21:16:11Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Newell's Old Boys vs Vélez Sarsfield\n⏱ Minuto: 54'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Newell's Old Boys acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "f730ff5d35ea0ae5"
   }
  ]
 }
