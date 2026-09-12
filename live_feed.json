@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-12T03:11:54Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-09-12T03:14:55Z",
+ "n_live_target": 2,
  "matches": {
   "16317938": {
    "event_id": 16317938,
@@ -8,25 +8,25 @@
    "home": "Atlante FC",
    "away": "CF Pachuca",
    "home_score": 0,
-   "away_score": 0,
+   "away_score": 1,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 10,
+   "minute": 13,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 55,
-     "away": 45
+     "home": 48,
+     "away": 52
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.02,
-     "away": 0.14
+     "home": 0.01,
+     "away": 0.18
     },
     "shots": {
      "label": "Remates totales",
      "home": 1,
-     "away": 3
+     "away": 4
     },
     "corners": {
      "label": "Corners",
@@ -35,34 +35,91 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 54,
-     "away": 47
+     "home": 55,
+     "away": 63
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 1,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 1
     }
    },
    "odds": {
     "btts": {
-     "yes": 1.909,
-     "no": 1.909,
-     "captured_at_utc": "2026-09-12T03:11:51Z"
+     "yes": 1.8,
+     "no": 1.95,
+     "captured_at_utc": "2026-09-12T03:13:52Z"
     },
     "1x2": {
-     "home": 3.1,
-     "draw": 3.2,
-     "away": 2.3,
-     "captured_at_utc": "2026-09-12T03:11:51Z"
+     "home": 7.5,
+     "draw": 4.333,
+     "away": 1.4,
+     "captured_at_utc": "2026-09-12T03:13:52Z"
     },
     "goals_over_25": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-09-12T03:11:51Z"
+     "captured_at_utc": "2026-09-12T03:14:53Z"
     },
     "corners_over_95": {
      "over": 1.833,
      "under": 1.833,
-     "captured_at_utc": "2026-09-12T03:11:51Z"
+     "captured_at_utc": "2026-09-12T03:14:53Z"
     }
    },
-   "updated_at_utc": "2026-09-12T03:11:54Z"
+   "updated_at_utc": "2026-09-12T03:14:55Z"
+  },
+  "16317939": {
+   "event_id": 16317939,
+   "league": "Liga MX, Apertura",
+   "home": "Club Tijuana",
+   "away": "Querétaro FC",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 3,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 83,
+     "away": 17
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 15,
+     "away": 3
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 1.75,
+     "no": 2.0,
+     "captured_at_utc": "2026-09-12T03:14:53Z"
+    },
+    "corners_over_95": {
+     "over": 1.667,
+     "under": 2.1,
+     "captured_at_utc": "2026-09-12T03:13:52Z"
+    },
+    "1x2": {
+     "home": 1.909,
+     "draw": 3.4,
+     "away": 4.0,
+     "captured_at_utc": "2026-09-12T03:14:53Z"
+    },
+    "goals_over_25": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-09-12T03:12:52Z"
+    }
+   },
+   "updated_at_utc": "2026-09-12T03:14:55Z"
   }
  }
 }
