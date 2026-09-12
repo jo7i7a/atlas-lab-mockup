@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-12T00:51:10Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-09-12T00:52:10Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -48,12 +48,41 @@
    "alert_id": "c6bb8187cc35e1ff"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Coritiba vs Athletico (Brasileirão Betano)",
+   "match_id": "15235476",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 43,
+   "condicion": "4 córners totales antes del min 45 (3-1), Coritiba presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Athletico NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Coritiba",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-09-12T00:51:10Z",
+   "t_captura_utc": "2026-09-12T00:51:10Z",
+   "t_evaluacion_utc": "2026-09-12T00:52:08Z",
+   "t_generacion_utc": "2026-09-12T00:52:08Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Coritiba vs Athletico\n⏱ Minuto: 43'\n📊 Marcador: 0-2\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Coritiba presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Athletico no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "3d076ea90178dd1b"
+  },
+  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Boca Juniors vs Central Córdoba (Liga Profesional de Fútbol)",
    "match_id": "16671611",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 22,
+   "minuto": 23,
    "condicion": "Boca Juniors domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -73,8 +102,8 @@
    },
    "t_evento_real_utc": "2026-09-12T00:45:05Z",
    "t_captura_utc": "2026-09-12T00:45:05Z",
-   "t_evaluacion_utc": "2026-09-12T00:51:09Z",
-   "t_generacion_utc": "2026-09-12T00:51:09Z",
+   "t_evaluacion_utc": "2026-09-12T00:52:09Z",
+   "t_generacion_utc": "2026-09-12T00:52:09Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -88,7 +117,7 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Boca Juniors vs Central Córdoba\n⏱ Minuto: 22'\n📊 Marcador: 2-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Boca Juniors — ≥2 remates en los últimos 5 min (home=4)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Boca Juniors vs Central Córdoba\n⏱ Minuto: 23'\n📊 Marcador: 2-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Boca Juniors — ≥2 remates en los últimos 5 min (home=4)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "b19732e7e95cef64"
   },
@@ -98,7 +127,7 @@
    "match_id": "15235476",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 42,
+   "minuto": 43,
    "condicion": "Athletico acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -120,13 +149,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-12T00:29:09Z",
-   "t_captura_utc": "2026-09-12T00:51:10Z",
-   "t_evaluacion_utc": "2026-09-12T00:51:10Z",
-   "t_generacion_utc": "2026-09-12T00:51:10Z",
+   "t_captura_utc": "2026-09-12T00:52:10Z",
+   "t_evaluacion_utc": "2026-09-12T00:52:10Z",
+   "t_generacion_utc": "2026-09-12T00:52:10Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Coritiba vs Athletico\n⏱ Minuto: 42'\n📊 Marcador: 0-2\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Athletico acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Athletico, min 34\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Coritiba vs Athletico\n⏱ Minuto: 43'\n📊 Marcador: 0-2\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Athletico acumula 71% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Athletico, min 34\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "9d9fc913da8a77d4"
   },
@@ -136,7 +165,7 @@
    "match_id": "16671611",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 22,
+   "minuto": 23,
    "condicion": "Boca Juniors acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -158,13 +187,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-12T00:49:09Z",
-   "t_captura_utc": "2026-09-12T00:51:10Z",
-   "t_evaluacion_utc": "2026-09-12T00:51:10Z",
-   "t_generacion_utc": "2026-09-12T00:51:10Z",
+   "t_captura_utc": "2026-09-12T00:52:10Z",
+   "t_evaluacion_utc": "2026-09-12T00:52:10Z",
+   "t_generacion_utc": "2026-09-12T00:52:10Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Boca Juniors vs Central Córdoba\n⏱ Minuto: 22'\n📊 Marcador: 2-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Boca Juniors acumula 91% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Boca Juniors, min 17\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Boca Juniors vs Central Córdoba\n⏱ Minuto: 23'\n📊 Marcador: 2-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Boca Juniors acumula 91% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Boca Juniors, min 17\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "8013a92502acc880"
   }
