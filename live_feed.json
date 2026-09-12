@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-12T09:59:54Z",
- "n_live_target": 2,
+ "generated_at_utc": "2026-09-12T10:02:54Z",
+ "n_live_target": 3,
  "matches": {
   "16348582": {
    "event_id": 16348582,
@@ -46,28 +46,28 @@
    },
    "odds": {
     "btts": {
-     "yes": 3.0,
-     "no": 1.364,
-     "captured_at_utc": "2026-09-12T09:59:49Z"
+     "yes": 2.75,
+     "no": 1.4,
+     "captured_at_utc": "2026-09-12T10:02:36Z"
     },
     "corners_over_95": {
      "over": 2.2,
      "under": 1.615,
-     "captured_at_utc": "2026-09-12T09:59:49Z"
+     "captured_at_utc": "2026-09-12T10:02:36Z"
     },
     "1x2": {
      "home": 4.0,
      "draw": 2.75,
      "away": 2.2,
-     "captured_at_utc": "2026-09-12T09:59:49Z"
+     "captured_at_utc": "2026-09-12T10:02:36Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.5,
-     "captured_at_utc": "2026-09-12T09:59:49Z"
+     "captured_at_utc": "2026-09-12T10:02:36Z"
     }
    },
-   "updated_at_utc": "2026-09-12T09:59:54Z"
+   "updated_at_utc": "2026-09-12T10:02:54Z"
   },
   "16348583": {
    "event_id": 16348583,
@@ -78,12 +78,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 25,
+   "minute": 28,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 77,
-     "away": 23
+     "home": 74,
+     "away": 26
     },
     "shots": {
      "label": "Remates totales",
@@ -97,8 +97,13 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 156,
-     "away": 46
+     "home": 163,
+     "away": 58
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 0,
+     "away": 1
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -110,21 +115,52 @@
     "btts": {
      "yes": 2.75,
      "no": 1.4,
-     "captured_at_utc": "2026-09-12T09:59:49Z"
+     "captured_at_utc": "2026-09-12T10:02:36Z"
     },
     "corners_over_95": {
      "over": 2.0,
      "under": 1.727,
-     "captured_at_utc": "2026-09-12T09:59:49Z"
+     "captured_at_utc": "2026-09-12T10:02:36Z"
     },
     "1x2": {
      "home": 2.75,
-     "draw": 2.75,
-     "away": 2.875,
-     "captured_at_utc": "2026-09-12T09:59:49Z"
+     "draw": 2.625,
+     "away": 3.0,
+     "captured_at_utc": "2026-09-12T10:02:36Z"
     }
    },
-   "updated_at_utc": "2026-09-12T09:59:54Z"
+   "updated_at_utc": "2026-09-12T10:02:54Z"
+  },
+  "15373100": {
+   "event_id": 15373100,
+   "league": "K League 1",
+   "home": "Daejeon Hana Citizen",
+   "away": "Pohang Steelers",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {},
+   "odds": {
+    "btts": {
+     "yes": 1.75,
+     "no": 2.0,
+     "captured_at_utc": "2026-09-12T10:02:36Z"
+    },
+    "1x2": {
+     "home": 2.0,
+     "draw": 3.4,
+     "away": 3.5,
+     "captured_at_utc": "2026-09-12T10:02:36Z"
+    },
+    "goals_over_25": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-09-12T10:02:36Z"
+    }
+   },
+   "updated_at_utc": "2026-09-12T10:02:54Z"
   }
  }
 }
