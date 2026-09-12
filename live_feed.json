@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-12T13:02:55Z",
+ "generated_at_utc": "2026-09-12T13:05:54Z",
  "n_live_target": 2,
  "matches": {
   "16416328": {
@@ -10,8 +10,8 @@
    "home_score": 1,
    "away_score": 1,
    "status_type": "inprogress",
-   "status_description": "Halftime",
-   "minute": null,
+   "status_description": "2nd half",
+   "minute": 47,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -21,7 +21,7 @@
     "xg": {
      "label": "Expected Goals (xG)",
      "home": 0.69,
-     "away": 1.45
+     "away": 1.57
     },
     "big_chances": {
      "label": "Ocasiones claras",
@@ -40,8 +40,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 229,
-     "away": 125
+     "home": 236,
+     "away": 128
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -61,10 +61,10 @@
      "captured_at_utc": "2026-09-12T12:39:08Z"
     },
     "1x2": {
-     "home": 2.875,
+     "home": 2.75,
      "draw": 2.625,
-     "away": 2.875,
-     "captured_at_utc": "2026-09-12T13:02:36Z"
+     "away": 3.1,
+     "captured_at_utc": "2026-09-12T13:05:42Z"
     },
     "goals_over_25": {
      "over": 1.571,
@@ -72,7 +72,7 @@
      "captured_at_utc": "2026-09-12T12:38:06Z"
     }
    },
-   "updated_at_utc": "2026-09-12T13:02:55Z"
+   "updated_at_utc": "2026-09-12T13:05:54Z"
   },
   "15272515": {
    "event_id": 15272515,
@@ -83,17 +83,28 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 2,
-   "stats": {},
-   "odds": {
-    "1x2": {
-     "home": 1.8,
-     "draw": 3.8,
-     "away": 4.5,
-     "captured_at_utc": "2026-09-12T13:02:36Z"
+   "minute": 5,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 93,
+     "away": 7
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 64,
+     "away": 5
     }
    },
-   "updated_at_utc": "2026-09-12T13:02:55Z"
+   "odds": {
+    "1x2": {
+     "home": 1.909,
+     "draw": 3.5,
+     "away": 4.0,
+     "captured_at_utc": "2026-09-12T13:05:42Z"
+    }
+   },
+   "updated_at_utc": "2026-09-12T13:05:54Z"
   }
  }
 }
