@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-12T23:12:36Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-09-12T23:14:30Z",
+ "n_alerts": 1,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -35,44 +35,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Palmeiras vs São Paulo\n⏱ Minuto: 70'\n📊 Marcador: 2-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: presión combinada sostenida — xG 3.21, 22 tiros totales (7 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "b15b8022f6917fb3"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Palmeiras vs São Paulo (Brasileirão Betano)",
-   "match_id": "15235472",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 79,
-   "condicion": "Palmeiras acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Palmeiras",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 20,
-    "touches_away": 10,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 77,
-    "equipo_que_realizo_sustitucion": "Palmeiras",
-    "marcador_en_el_momento": "2-0",
-    "t_primera_observacion_atlas": "2026-09-12T22:43:49Z",
-    "t_inicio_estimado_condicion": "2026-09-12T22:42:42Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-12T22:43:49Z",
-   "t_captura_utc": "2026-09-12T23:12:36Z",
-   "t_evaluacion_utc": "2026-09-12T23:12:36Z",
-   "t_generacion_utc": "2026-09-12T23:12:36Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Palmeiras vs São Paulo\n⏱ Minuto: 79'\n📊 Marcador: 2-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Palmeiras acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Palmeiras, min 77\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "4fabc63975d2d1bf"
   }
  ]
 }
