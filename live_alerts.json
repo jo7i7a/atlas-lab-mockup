@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-12T13:18:47Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-09-12T13:21:41Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -111,6 +111,40 @@
    "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ AIK vs Västerås SK\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 2-2 (total 4)\nRatio de diferencia home-away: 0.00 (umbral <= 0.33)\n\n🏆 Liga: Allsvenskan\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "33be3e85d445a76f"
+  },
+  {
+   "strategy_id": "L2-SHADOW",
+   "match_label": "Real Racing Club vs Deportivo Alavés (LaLiga)",
+   "match_id": "16416328",
+   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80']",
+   "cuota_detectada": 1.8,
+   "minuto": 60,
+   "condicion": "Deportivo Alavés domina por xG (1.69) y remates a puerta (7) sin ir ganando y sin roja del dominante — Deportivo Alavés vs Real Racing Club. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Deportivo Alavés",
+    "xg_dominante": 1.69,
+    "sot_dominante": 7,
+    "marcador": "1-2",
+    "variante": "shadow_ventana_80",
+    "ah_proxy_linea": 0.25,
+    "ah_proxy_cuota": 1.8,
+    "ah_proxy_suspendida": false,
+    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
+   },
+   "t_evento_real_utc": "2026-09-12T13:20:20Z",
+   "t_captura_utc": "2026-09-12T13:20:20Z",
+   "t_evaluacion_utc": "2026-09-12T13:21:41Z",
+   "t_generacion_utc": "2026-09-12T13:21:41Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Real Racing Club vs Deportivo Alavés\n⏱ Minuto: 60'\n📊 Marcador: 2-1\n🏆 Liga: LaLiga\n\n📈 Domina: Deportivo Alavés\nxG: 1.69 vs 1.66\nTiros a puerta: 7 vs 5\n\nReferencia PROXY: AH +0.25 @ 1.8 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Deportivo Alavés — ¿línea y cuota reales?",
+   "evidencia": null,
+   "alert_id": "2c5ef63d663e00e2"
   }
  ]
 }
