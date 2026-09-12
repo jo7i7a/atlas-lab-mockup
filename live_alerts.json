@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-12T12:26:09Z",
+ "generated_at_utc": "2026-09-12T12:27:08Z",
  "n_alerts": 5,
  "alerts": [
   {
@@ -95,63 +95,6 @@
    "alert_id": "b27b250b3b8de808"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "Real Racing Club vs Deportivo Alavés (LaLiga)",
-   "match_id": "16416328",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "5 córners totales antes del min 30 (2-3), Deportivo Alavés presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Real Racing Club NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 2,
-    "corners_away": 3,
-    "equipo_presiona": "Deportivo Alavés"
-   },
-   "t_evento_real_utc": "2026-09-12T12:23:16Z",
-   "t_captura_utc": "2026-09-12T12:23:16Z",
-   "t_evaluacion_utc": "2026-09-12T12:26:08Z",
-   "t_generacion_utc": "2026-09-12T12:26:08Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Real Racing Club vs Deportivo Alavés\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Deportivo Alavés presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Real Racing Club no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "4168b0b2f6ca51ca"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Real Racing Club vs Deportivo Alavés (LaLiga)",
-   "match_id": "16416328",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "5 córners totales antes del min 45 (2-3), Deportivo Alavés presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Real Racing Club NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 2,
-    "corners_away": 3,
-    "equipo_presiona": "Deportivo Alavés",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-12T12:23:16Z",
-   "t_captura_utc": "2026-09-12T12:23:16Z",
-   "t_evaluacion_utc": "2026-09-12T12:26:08Z",
-   "t_generacion_utc": "2026-09-12T12:26:08Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Real Racing Club vs Deportivo Alavés\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Deportivo Alavés presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Real Racing Club no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "ca1f1f97ff8c345d"
-  },
-  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Real Racing Club vs Deportivo Alavés (LaLiga)",
    "match_id": "16416328",
@@ -195,6 +138,63 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Real Racing Club vs Deportivo Alavés\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: LaLiga\n\n📝 Motivo: Deportivo Alavés — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "5feb5d795d5d23d7"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "Real Racing Club vs Deportivo Alavés (LaLiga)",
+   "match_id": "16416328",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 26,
+   "condicion": "5 córners totales antes del min 30 (2-3), Deportivo Alavés presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Real Racing Club NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 2,
+    "corners_away": 3,
+    "equipo_presiona": "Deportivo Alavés"
+   },
+   "t_evento_real_utc": "2026-09-12T12:23:16Z",
+   "t_captura_utc": "2026-09-12T12:23:16Z",
+   "t_evaluacion_utc": "2026-09-12T12:27:08Z",
+   "t_generacion_utc": "2026-09-12T12:27:08Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Real Racing Club vs Deportivo Alavés\n⏱ Minuto: 26'\n📊 Marcador: 0-1\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Deportivo Alavés presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Real Racing Club no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "4168b0b2f6ca51ca"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Real Racing Club vs Deportivo Alavés (LaLiga)",
+   "match_id": "16416328",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 26,
+   "condicion": "5 córners totales antes del min 45 (2-3), Deportivo Alavés presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Real Racing Club NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 2,
+    "corners_away": 3,
+    "equipo_presiona": "Deportivo Alavés",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-09-12T12:23:16Z",
+   "t_captura_utc": "2026-09-12T12:23:16Z",
+   "t_evaluacion_utc": "2026-09-12T12:27:08Z",
+   "t_generacion_utc": "2026-09-12T12:27:08Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Real Racing Club vs Deportivo Alavés\n⏱ Minuto: 26'\n📊 Marcador: 0-1\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Deportivo Alavés presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Real Racing Club no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "ca1f1f97ff8c345d"
   }
  ]
 }
