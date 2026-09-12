@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-12T23:27:13Z",
+ "generated_at_utc": "2026-09-12T23:28:12Z",
  "n_alerts": 12,
  "alerts": [
   {
@@ -364,51 +364,6 @@
    "alert_id": "b15e2f4109ce57dc"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "CD Toluca vs Atlas FC (Liga MX, Apertura)",
-   "match_id": "16317957",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 20,
-   "condicion": "CD Toluca domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "CD Toluca",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 1,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-12T23:22:38Z",
-   "t_captura_utc": "2026-09-12T23:22:38Z",
-   "t_evaluacion_utc": "2026-09-12T23:27:12Z",
-   "t_generacion_utc": "2026-09-12T23:27:12Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "SUPRIMIDA_NO_AUTORIZADA",
-     "t_envio_utc": null,
-     "latencia_envio_ms": null,
-     "error": "Estrategia 'A1_V1_SOLO_TRIGGER_LIVE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
-     "message_id": null,
-     "chat_id": null
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CD Toluca vs Atlas FC\n⏱ Minuto: 20'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CD Toluca — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "8f2dc78a03da28fb"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "CA Talleres vs Club Atlético Unión de Santa Fe (Liga Profesional de Fútbol)",
    "match_id": "16671609",
@@ -445,6 +400,51 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CA Talleres vs Club Atlético Unión de Santa Fe\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: CA Talleres acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "f2cfd50a4cb73ee4"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "CD Toluca vs Atlas FC (Liga MX, Apertura)",
+   "match_id": "16317957",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 21,
+   "condicion": "CD Toluca domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "CD Toluca",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 1,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-12T23:22:38Z",
+   "t_captura_utc": "2026-09-12T23:22:38Z",
+   "t_evaluacion_utc": "2026-09-12T23:28:12Z",
+   "t_generacion_utc": "2026-09-12T23:28:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_NO_AUTORIZADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "Estrategia 'A1_V1_SOLO_TRIGGER_LIVE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CD Toluca vs Atlas FC\n⏱ Minuto: 21'\n📊 Marcador: 2-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CD Toluca — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "8f2dc78a03da28fb"
   }
  ]
 }
