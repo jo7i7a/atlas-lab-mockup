@@ -1,53 +1,7 @@
 {
- "generated_at_utc": "2026-09-12T12:32:08Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-09-12T12:33:08Z",
+ "n_alerts": 4,
  "alerts": [
-  {
-   "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Bolton Wanderers vs Cardiff City (Championship)",
-   "match_id": "16391671",
-   "market": "Over 1.5 Goles FT (o Over 0.5 2ª Mitad) -- verificar en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 32,
-   "condicion": "0-0 con dominancia sostenida entre los minutos 32-42 (remates totales≥9, tiros a puerta≥4, córners≥5, todos combinados). Condición original de 'ataques peligrosos' NO evaluada -- dato no disponible en la fuente actual. Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "remates_local": 4,
-    "remates_visita": 8,
-    "remates_total": 12,
-    "sot_local": 3,
-    "sot_visita": 5,
-    "sot_total": 8,
-    "cor_local": 1,
-    "cor_visita": 4,
-    "cor_total": 5,
-    "marcador": "0-0",
-    "condicion_original_no_evaluada": "ataques peligrosos a favor del dominante (dato no disponible)"
-   },
-   "t_evento_real_utc": "2026-09-12T12:03:04Z",
-   "t_captura_utc": "2026-09-12T12:03:04Z",
-   "t_evaluacion_utc": "2026-09-12T12:03:10Z",
-   "t_generacion_utc": "2026-09-12T12:03:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-12T12:03:11Z",
-     "latencia_envio_ms": 876.4903545379639,
-     "error": null,
-     "message_id": 2838,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 7.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B1_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Bolton Wanderers vs Cardiff City\n⏱ Minuto: 32'\n📊 Marcador: 0-0\n\n🎯 Remates totales:\nLocal: 4\nVisita: 8\nTotal: 12\n\n🎯 Tiros a puerta:\nLocal: 3\nVisita: 5\nTotal: 8\n\n🚩 Córners:\nLocal: 1\nVisita: 4\nTotal: 5\n\n🏆 Liga: Championship\n\n⚠️ Versión SIN la condición de ataques peligrosos (dato no disponible)\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 goles FT (o Over 0.5 2ª mitad)\n\n⚠️ RESPONDE CON EL TAG (obligatorio para B1):\n'FT LÍNEA @ CUOTA' o '2T LÍNEA @ CUOTA'",
-   "evidencia": null,
-   "alert_id": "df10b1629f7a6105"
-  },
   {
    "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Bolton Wanderers vs Cardiff City (Championship)",
@@ -173,7 +127,7 @@
    "match_id": "16416328",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 31,
+   "minuto": 32,
    "condicion": "5 córners totales antes del min 45 (2-3), Deportivo Alavés presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Real Racing Club NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -187,12 +141,12 @@
    },
    "t_evento_real_utc": "2026-09-12T12:23:16Z",
    "t_captura_utc": "2026-09-12T12:23:16Z",
-   "t_evaluacion_utc": "2026-09-12T12:32:08Z",
-   "t_generacion_utc": "2026-09-12T12:32:08Z",
+   "t_evaluacion_utc": "2026-09-12T12:33:08Z",
+   "t_generacion_utc": "2026-09-12T12:33:08Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Real Racing Club vs Deportivo Alavés\n⏱ Minuto: 31'\n📊 Marcador: 0-1\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Deportivo Alavés presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Real Racing Club no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Real Racing Club vs Deportivo Alavés\n⏱ Minuto: 32'\n📊 Marcador: 0-1\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Deportivo Alavés presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Real Racing Club no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "ca1f1f97ff8c345d"
   }
