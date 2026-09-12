@@ -1,7 +1,38 @@
 {
- "generated_at_utc": "2026-09-12T23:29:54Z",
- "n_live_target": 4,
+ "generated_at_utc": "2026-09-12T23:32:55Z",
+ "n_live_target": 5,
  "matches": {
+  "15235470": {
+   "event_id": 15235470,
+   "league": "Brasileirão Betano",
+   "home": "Botafogo",
+   "away": "Red Bull Bragantino",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 0,
+   "stats": {},
+   "odds": {
+    "btts": {
+     "yes": 1.615,
+     "no": 2.2,
+     "captured_at_utc": "2026-09-12T23:32:14Z"
+    },
+    "1x2": {
+     "home": 2.6,
+     "draw": 3.25,
+     "away": 2.75,
+     "captured_at_utc": "2026-09-12T23:32:14Z"
+    },
+    "goals_over_25": {
+     "over": 1.8,
+     "under": 2.0,
+     "captured_at_utc": "2026-09-12T23:32:14Z"
+    }
+   },
+   "updated_at_utc": "2026-09-12T23:32:55Z"
+  },
   "16317957": {
    "event_id": 16317957,
    "league": "Liga MX, Apertura",
@@ -11,16 +42,16 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 23,
+   "minute": 26,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 46,
-     "away": 54
+     "home": 48,
+     "away": 52
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 1.13,
+     "home": 1.18,
      "away": 0.32
     },
     "big_chances": {
@@ -40,8 +71,13 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 72,
-     "away": 86
+     "home": 87,
+     "away": 94
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 0,
+     "away": 1
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -51,15 +87,15 @@
    },
    "odds": {
     "btts": {
-     "yes": 1.667,
-     "no": 2.1,
-     "captured_at_utc": "2026-09-12T23:29:51Z"
+     "yes": 1.7,
+     "no": 2.05,
+     "captured_at_utc": "2026-09-12T23:31:12Z"
     },
     "1x2": {
      "home": 1.036,
      "draw": 17.0,
      "away": 34.0,
-     "captured_at_utc": "2026-09-12T23:29:51Z"
+     "captured_at_utc": "2026-09-12T23:31:12Z"
     },
     "goals_over_25": {
      "over": 1.727,
@@ -67,18 +103,18 @@
      "captured_at_utc": "2026-09-12T23:22:59Z"
     }
    },
-   "updated_at_utc": "2026-09-12T23:29:54Z"
+   "updated_at_utc": "2026-09-12T23:32:55Z"
   },
   "15353134": {
    "event_id": 15353134,
    "league": "Liga de Primera",
    "home": "Palestino",
    "away": "Universidad Católica",
-   "home_score": 0,
+   "home_score": 1,
    "away_score": 2,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 28,
+   "minute": 31,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -87,27 +123,27 @@
     },
     "big_chances": {
      "label": "Ocasiones claras",
-     "home": 0,
+     "home": 1,
      "away": 2
     },
     "shots": {
      "label": "Remates totales",
-     "home": 4,
-     "away": 5
+     "home": 6,
+     "away": 6
     },
     "corners": {
      "label": "Corners",
-     "home": 2,
-     "away": 0
+     "home": 3,
+     "away": 1
     },
     "passes": {
      "label": "Pases",
-     "home": 133,
-     "away": 124
+     "home": 143,
+     "away": 138
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 2,
+     "home": 4,
      "away": 2
     }
    },
@@ -115,26 +151,26 @@
     "btts": {
      "yes": 1.364,
      "no": 3.0,
-     "captured_at_utc": "2026-09-12T23:29:51Z"
+     "captured_at_utc": "2026-09-12T23:30:52Z"
     },
     "1x2": {
-     "home": 17.0,
-     "draw": 7.5,
-     "away": 1.143,
-     "captured_at_utc": "2026-09-12T23:29:51Z"
+     "home": 7.0,
+     "draw": 4.0,
+     "away": 1.444,
+     "captured_at_utc": "2026-09-12T23:32:35Z"
     },
     "goals_over_25": {
      "over": 1.727,
      "under": 2.0,
-     "captured_at_utc": "2026-09-12T23:29:51Z"
+     "captured_at_utc": "2026-09-12T23:32:35Z"
     },
     "corners_over_95": {
-     "over": 2.1,
-     "under": 1.667,
-     "captured_at_utc": "2026-09-12T23:29:51Z"
+     "over": 1.909,
+     "under": 1.8,
+     "captured_at_utc": "2026-09-12T23:32:35Z"
     }
    },
-   "updated_at_utc": "2026-09-12T23:29:54Z"
+   "updated_at_utc": "2026-09-12T23:32:55Z"
   },
   "16671609": {
    "event_id": 16671609,
@@ -145,16 +181,16 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 30,
+   "minute": 33,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 74,
-     "away": 26
+     "home": 76,
+     "away": 24
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.71,
+     "home": 0.76,
      "away": 0.06
     },
     "big_chances": {
@@ -164,18 +200,18 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 9,
+     "home": 10,
      "away": 3
     },
     "corners": {
      "label": "Corners",
-     "home": 6,
+     "home": 7,
      "away": 0
     },
     "passes": {
      "label": "Pases",
-     "home": 181,
-     "away": 66
+     "home": 211,
+     "away": 68
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -190,9 +226,9 @@
    },
    "odds": {
     "btts": {
-     "yes": 2.75,
-     "no": 1.4,
-     "captured_at_utc": "2026-09-12T23:29:51Z"
+     "yes": 3.25,
+     "no": 1.333,
+     "captured_at_utc": "2026-09-12T23:32:35Z"
     },
     "corners_over_95": {
      "over": 1.833,
@@ -201,9 +237,9 @@
     },
     "1x2": {
      "home": 2.1,
-     "draw": 2.625,
-     "away": 4.5,
-     "captured_at_utc": "2026-09-12T23:29:51Z"
+     "draw": 2.6,
+     "away": 5.0,
+     "captured_at_utc": "2026-09-12T23:32:35Z"
     },
     "goals_over_25": {
      "over": 2.5,
@@ -211,7 +247,7 @@
      "captured_at_utc": "2026-09-12T23:00:19Z"
     }
    },
-   "updated_at_utc": "2026-09-12T23:29:54Z"
+   "updated_at_utc": "2026-09-12T23:32:55Z"
   },
   "16969953": {
    "event_id": 16969953,
@@ -226,13 +262,13 @@
    "stats": {},
    "odds": {
     "1x2": {
-     "home": 2.05,
+     "home": 2.0,
      "draw": 2.4,
-     "away": 6.0,
-     "captured_at_utc": "2026-09-12T23:29:51Z"
+     "away": 6.5,
+     "captured_at_utc": "2026-09-12T23:32:35Z"
     }
    },
-   "updated_at_utc": "2026-09-12T23:29:54Z"
+   "updated_at_utc": "2026-09-12T23:32:55Z"
   }
  }
 }
