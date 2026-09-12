@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-12T11:57:10Z",
+ "generated_at_utc": "2026-09-12T11:58:10Z",
  "n_alerts": 10,
  "alerts": [
   {
@@ -217,7 +217,7 @@
    "match_id": "16391671",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 26,
+   "minuto": 27,
    "condicion": "4 córners totales antes del min 30 (0-4), Cardiff City presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Bolton Wanderers NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -230,12 +230,12 @@
    },
    "t_evento_real_utc": "2026-09-12T11:46:22Z",
    "t_captura_utc": "2026-09-12T11:46:22Z",
-   "t_evaluacion_utc": "2026-09-12T11:57:09Z",
-   "t_generacion_utc": "2026-09-12T11:57:09Z",
+   "t_evaluacion_utc": "2026-09-12T11:58:09Z",
+   "t_generacion_utc": "2026-09-12T11:58:09Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Bolton Wanderers vs Cardiff City\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Cardiff City presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Bolton Wanderers no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Bolton Wanderers vs Cardiff City\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Cardiff City presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Bolton Wanderers no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "d59911b25a754935"
   },
@@ -245,7 +245,7 @@
    "match_id": "16391671",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 26,
+   "minuto": 27,
    "condicion": "4 córners totales antes del min 45 (0-4), Cardiff City presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Bolton Wanderers NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -259,12 +259,12 @@
    },
    "t_evento_real_utc": "2026-09-12T11:46:22Z",
    "t_captura_utc": "2026-09-12T11:46:22Z",
-   "t_evaluacion_utc": "2026-09-12T11:57:09Z",
-   "t_generacion_utc": "2026-09-12T11:57:09Z",
+   "t_evaluacion_utc": "2026-09-12T11:58:09Z",
+   "t_generacion_utc": "2026-09-12T11:58:09Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Bolton Wanderers vs Cardiff City\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Cardiff City presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Bolton Wanderers no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Bolton Wanderers vs Cardiff City\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Cardiff City presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Bolton Wanderers no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "39d3f4c9bedefa6b"
   },
@@ -274,7 +274,7 @@
    "match_id": "16391671",
    "market": "Over 0.5 Goles -- Primer Tiempo",
    "cuota_detectada": null,
-   "minuto": 26,
+   "minuto": 27,
    "condicion": "0-0 en ventana 24-34 con peligro acumulado (xG>=0.90, remates>=7, SoT>=2, corners>=2, todos combinados) Y presión reciente activa en los últimos 10 minutos (shots>=3, SoT>=1, via delta_ventana()). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -297,7 +297,7 @@
     "presion_reciente_shots": {
      "campo": "totalShotsOnGoal",
      "minutos_ventana_pedidos": 10,
-     "t0_captured_at_utc": "2026-09-12T11:57:03Z",
+     "t0_captured_at_utc": "2026-09-12T11:58:06Z",
      "t1_captured_at_utc": "2026-09-12T11:46:22Z",
      "valor_t0": [
       2,
@@ -316,7 +316,7 @@
     "presion_reciente_sot": {
      "campo": "shotsOnGoal",
      "minutos_ventana_pedidos": 10,
-     "t0_captured_at_utc": "2026-09-12T11:57:03Z",
+     "t0_captured_at_utc": "2026-09-12T11:58:06Z",
      "t1_captured_at_utc": "2026-09-12T11:46:22Z",
      "valor_t0": [
       1,
@@ -335,9 +335,9 @@
     "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo"
    },
    "t_evento_real_utc": "2026-09-12T11:55:16Z",
-   "t_captura_utc": "2026-09-12T11:57:03Z",
-   "t_evaluacion_utc": "2026-09-12T11:57:10Z",
-   "t_generacion_utc": "2026-09-12T11:57:10Z",
+   "t_captura_utc": "2026-09-12T11:58:06Z",
+   "t_evaluacion_utc": "2026-09-12T11:58:10Z",
+   "t_generacion_utc": "2026-09-12T11:58:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -351,7 +351,7 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🔵 L5_V2 — L5_V2_OVER05HT_PRESION_PERSISTENTE\n\n⚽ Bolton Wanderers vs Cardiff City\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n\nxG combinado: 1.13\nRemates totales: 2-8 (total 10)\nTiros a puerta: 1-5 (total 6)\nCórners: 0-4 (total 4)\n\nPresión reciente (últimos 10 min):\n  Shots: 3 (T0=2026-09-12T11:57:03Z, T1=2026-09-12T11:46:22Z)\n  SoT: 2 (T0=2026-09-12T11:57:03Z, T1=2026-09-12T11:46:22Z)\n\n🏆 Liga: Championship\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo",
+   "mensaje_custom": "🔵 L5_V2 — L5_V2_OVER05HT_PRESION_PERSISTENTE\n\n⚽ Bolton Wanderers vs Cardiff City\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n\nxG combinado: 1.13\nRemates totales: 2-8 (total 10)\nTiros a puerta: 1-5 (total 6)\nCórners: 0-4 (total 4)\n\nPresión reciente (últimos 10 min):\n  Shots: 3 (T0=2026-09-12T11:58:06Z, T1=2026-09-12T11:46:22Z)\n  SoT: 2 (T0=2026-09-12T11:58:06Z, T1=2026-09-12T11:46:22Z)\n\n🏆 Liga: Championship\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo",
    "evidencia": null,
    "alert_id": "363b11e87f013df6"
   },
@@ -361,7 +361,7 @@
    "match_id": "16391671",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 26,
+   "minuto": 27,
    "condicion": "Cardiff City acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -383,13 +383,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-12T11:55:27Z",
-   "t_captura_utc": "2026-09-12T11:57:10Z",
-   "t_evaluacion_utc": "2026-09-12T11:57:10Z",
-   "t_generacion_utc": "2026-09-12T11:57:10Z",
+   "t_captura_utc": "2026-09-12T11:58:10Z",
+   "t_evaluacion_utc": "2026-09-12T11:58:10Z",
+   "t_generacion_utc": "2026-09-12T11:58:10Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Bolton Wanderers vs Cardiff City\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Cardiff City acumula 88% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Bolton Wanderers vs Cardiff City\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Cardiff City acumula 88% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "9341dfbfba92d19a"
   },
@@ -399,7 +399,7 @@
    "match_id": "16391681",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 26,
+   "minuto": 27,
    "condicion": "West Bromwich Albion acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -421,13 +421,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-12T11:55:28Z",
-   "t_captura_utc": "2026-09-12T11:57:10Z",
-   "t_evaluacion_utc": "2026-09-12T11:57:10Z",
-   "t_generacion_utc": "2026-09-12T11:57:10Z",
+   "t_captura_utc": "2026-09-12T11:58:10Z",
+   "t_evaluacion_utc": "2026-09-12T11:58:10Z",
+   "t_generacion_utc": "2026-09-12T11:58:10Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ West Bromwich Albion vs Queens Park Rangers\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: West Bromwich Albion acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ West Bromwich Albion vs Queens Park Rangers\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: West Bromwich Albion acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "05b45ba147ecaddf"
   }
