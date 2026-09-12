@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-12T19:07:44Z",
- "n_alerts": 11,
+ "generated_at_utc": "2026-09-12T19:08:11Z",
+ "n_alerts": 10,
  "alerts": [
   {
    "strategy_id": "A3_V1_DOMINANTE_NO_GANA",
@@ -111,35 +111,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Al-Khaleej vs Al-Nassr\n⏱ Minuto: 39'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n📝 Motivo: Al-Nassr acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "8d8e7abb4538137f"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Cobresal vs Coquimbo Unido (Liga de Primera)",
-   "match_id": "15353126",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 43,
-   "condicion": "4 córners totales antes del min 45 (4-0), Cobresal presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Coquimbo Unido NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Cobresal",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-12T18:37:46Z",
-   "t_captura_utc": "2026-09-12T18:37:46Z",
-   "t_evaluacion_utc": "2026-09-12T18:45:09Z",
-   "t_generacion_utc": "2026-09-12T18:45:09Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Cobresal vs Coquimbo Unido\n⏱ Minuto: 43'\n📊 Marcador: 1-0\n🏆 Liga: Liga de Primera\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Cobresal presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Coquimbo Unido no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "0fbb4b27fbae77c8"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -261,7 +232,7 @@
    "match_id": "16653094",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 46,
+   "minuto": 49,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -274,8 +245,8 @@
    },
    "t_evento_real_utc": "2026-09-12T19:03:58Z",
    "t_captura_utc": "2026-09-12T19:03:58Z",
-   "t_evaluacion_utc": "2026-09-12T19:07:42Z",
-   "t_generacion_utc": "2026-09-12T19:07:42Z",
+   "t_evaluacion_utc": "2026-09-12T19:08:10Z",
+   "t_generacion_utc": "2026-09-12T19:08:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -289,7 +260,7 @@
    },
    "latencia_total_seg": 225.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Al-Shabab vs Al-Fayha\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Al-Shabab vs Al-Fayha\n⏱ Minuto: 49'\n📊 Marcador: 0-0\n🏆 Liga: Saudi Pro League\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "674a1c35dedea456"
   },
@@ -299,7 +270,7 @@
    "match_id": "16285010",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 19,
+   "minuto": 22,
    "condicion": "Cagliari domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -319,8 +290,8 @@
    },
    "t_evento_real_utc": "2026-09-12T19:04:42Z",
    "t_captura_utc": "2026-09-12T19:04:42Z",
-   "t_evaluacion_utc": "2026-09-12T19:07:44Z",
-   "t_generacion_utc": "2026-09-12T19:07:44Z",
+   "t_evaluacion_utc": "2026-09-12T19:08:10Z",
+   "t_generacion_utc": "2026-09-12T19:08:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -334,7 +305,7 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Atalanta vs Cagliari\n⏱ Minuto: 19'\n📊 Marcador: 0-1\n🏆 Liga: Serie A\n\n📝 Motivo: Cagliari — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Atalanta vs Cagliari\n⏱ Minuto: 22'\n📊 Marcador: 0-1\n🏆 Liga: Serie A\n\n📝 Motivo: Cagliari — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "60f612036dcb8451"
   },
@@ -344,7 +315,7 @@
    "match_id": "16310947",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 19,
+   "minuto": 22,
    "condicion": "Auxerre domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -364,8 +335,8 @@
    },
    "t_evento_real_utc": "2026-09-12T19:02:32Z",
    "t_captura_utc": "2026-09-12T19:02:32Z",
-   "t_evaluacion_utc": "2026-09-12T19:07:44Z",
-   "t_generacion_utc": "2026-09-12T19:07:44Z",
+   "t_evaluacion_utc": "2026-09-12T19:08:10Z",
+   "t_generacion_utc": "2026-09-12T19:08:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -379,7 +350,7 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Auxerre vs Nice\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Ligue 1\n\n📝 Motivo: Auxerre — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Auxerre vs Nice\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Ligue 1\n\n📝 Motivo: Auxerre — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "931d4d0cac142aa7"
   },
@@ -389,7 +360,7 @@
    "match_id": "16310952",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 19,
+   "minuto": 22,
    "condicion": "Toulouse domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -409,8 +380,8 @@
    },
    "t_evento_real_utc": "2026-09-12T19:00:44Z",
    "t_captura_utc": "2026-09-12T19:00:44Z",
-   "t_evaluacion_utc": "2026-09-12T19:07:44Z",
-   "t_generacion_utc": "2026-09-12T19:07:44Z",
+   "t_evaluacion_utc": "2026-09-12T19:08:11Z",
+   "t_generacion_utc": "2026-09-12T19:08:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -424,7 +395,7 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Lorient vs Toulouse\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Ligue 1\n\n📝 Motivo: Toulouse — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Lorient vs Toulouse\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Ligue 1\n\n📝 Motivo: Toulouse — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "4c1f9ba97514150d"
   }
