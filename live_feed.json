@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-12T09:32:54Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-09-12T09:35:54Z",
+ "n_live_target": 2,
  "matches": {
   "16348582": {
    "event_id": 16348582,
@@ -11,7 +11,7 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 28,
+   "minute": 31,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -21,7 +21,7 @@
     "shots": {
      "label": "Remates totales",
      "home": 0,
-     "away": 3
+     "away": 4
     },
     "corners": {
      "label": "Corners",
@@ -30,8 +30,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 141,
-     "away": 172
+     "home": 163,
+     "away": 198
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -41,28 +41,59 @@
    },
    "odds": {
     "btts": {
-     "yes": 2.1,
-     "no": 1.667,
-     "captured_at_utc": "2026-09-12T09:32:53Z"
+     "yes": 2.25,
+     "no": 1.571,
+     "captured_at_utc": "2026-09-12T09:35:37Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-09-12T09:32:53Z"
+     "captured_at_utc": "2026-09-12T09:35:37Z"
     },
     "1x2": {
-     "home": 3.6,
-     "draw": 3.1,
+     "home": 3.75,
+     "draw": 3.0,
      "away": 2.1,
-     "captured_at_utc": "2026-09-12T09:32:53Z"
+     "captured_at_utc": "2026-09-12T09:35:37Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.5,
-     "captured_at_utc": "2026-09-12T09:32:53Z"
+     "captured_at_utc": "2026-09-12T09:35:37Z"
     }
    },
-   "updated_at_utc": "2026-09-12T09:32:54Z"
+   "updated_at_utc": "2026-09-12T09:35:54Z"
+  },
+  "16348583": {
+   "event_id": 16348583,
+   "league": "J1 League",
+   "home": "Shimizu S-Pulse",
+   "away": "Avispa Fukuoka",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {},
+   "odds": {
+    "btts": {
+     "yes": 2.2,
+     "no": 1.615,
+     "captured_at_utc": "2026-09-12T09:35:37Z"
+    },
+    "corners_over_95": {
+     "over": 2.0,
+     "under": 1.727,
+     "captured_at_utc": "2026-09-12T09:35:37Z"
+    },
+    "1x2": {
+     "home": 2.75,
+     "draw": 3.1,
+     "away": 2.625,
+     "captured_at_utc": "2026-09-12T09:35:37Z"
+    }
+   },
+   "updated_at_utc": "2026-09-12T09:35:54Z"
   }
  }
 }
