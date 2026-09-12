@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-12T22:09:38Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-09-12T22:12:28Z",
+ "n_alerts": 2,
  "alerts": [
   {
    "strategy_id": "L1-SHADOW",
@@ -8,7 +8,7 @@
    "match_id": "15235472",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 36,
+   "minuto": 39,
    "condicion": "4 córners totales antes del min 45 (3-1), Palmeiras presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿São Paulo NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -22,14 +22,52 @@
    },
    "t_evento_real_utc": "2026-09-12T22:03:53Z",
    "t_captura_utc": "2026-09-12T22:03:53Z",
-   "t_evaluacion_utc": "2026-09-12T22:07:12Z",
-   "t_generacion_utc": "2026-09-12T22:07:12Z",
+   "t_evaluacion_utc": "2026-09-12T22:10:11Z",
+   "t_generacion_utc": "2026-09-12T22:10:11Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Palmeiras vs São Paulo\n⏱ Minuto: 36'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Palmeiras presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿São Paulo no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Palmeiras vs São Paulo\n⏱ Minuto: 39'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Palmeiras presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿São Paulo no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "97633725635d48b2"
+  },
+  {
+   "strategy_id": "L3",
+   "match_label": "Palmeiras vs São Paulo (Brasileirão Betano)",
+   "match_id": "15235472",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
+   "cuota_detectada": null,
+   "minuto": 39,
+   "condicion": "Expulsión de São Paulo (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_expulsado": "São Paulo",
+    "marcador_al_detectar": "0-0",
+    "total_rojas_partido": 1
+   },
+   "t_evento_real_utc": "2026-09-12T22:10:10Z",
+   "t_captura_utc": "2026-09-12T22:12:12Z",
+   "t_evaluacion_utc": "2026-09-12T22:12:26Z",
+   "t_generacion_utc": "2026-09-12T22:12:26Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-12T22:12:27Z",
+     "latencia_envio_ms": 821.6092586517334,
+     "error": null,
+     "message_id": 2928,
+     "chat_id": -5219979824
+    }
+   },
+   "latencia_total_seg": 137.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 L3 | Palmeiras vs São Paulo | Roja São Paulo | Min 39' | 0-0",
+   "evidencia": null,
+   "alert_id": "064106c52cd224ef"
   }
  ]
 }
