@@ -1,5 +1,35 @@
 {
- "generated_at_utc": "2026-09-12T22:03:32Z",
- "n_alerts": 0,
- "alerts": []
+ "generated_at_utc": "2026-09-12T22:06:33Z",
+ "n_alerts": 1,
+ "alerts": [
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Palmeiras vs São Paulo (Brasileirão Betano)",
+   "match_id": "15235472",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 33,
+   "condicion": "4 córners totales antes del min 45 (3-1), Palmeiras presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿São Paulo NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Palmeiras",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-09-12T22:03:53Z",
+   "t_captura_utc": "2026-09-12T22:03:53Z",
+   "t_evaluacion_utc": "2026-09-12T22:04:09Z",
+   "t_generacion_utc": "2026-09-12T22:04:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Palmeiras vs São Paulo\n⏱ Minuto: 33'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Palmeiras presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿São Paulo no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "97633725635d48b2"
+  }
+ ]
 }
