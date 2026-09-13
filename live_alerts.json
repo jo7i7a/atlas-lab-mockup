@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-13T03:47:05Z",
+ "generated_at_utc": "2026-09-13T03:48:09Z",
  "n_alerts": 7,
  "alerts": [
   {
@@ -201,44 +201,6 @@
    "alert_id": "e79591a65a315f1f"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "San Jose Earthquakes vs Houston Dynamo (MLS)",
-   "match_id": "15168392",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 46,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 0,
-    "corners_1t_total": 1
-   },
-   "t_evento_real_utc": "2026-09-13T03:44:15Z",
-   "t_captura_utc": "2026-09-13T03:44:15Z",
-   "t_evaluacion_utc": "2026-09-13T03:47:02Z",
-   "t_generacion_utc": "2026-09-13T03:47:02Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-13T03:47:03Z",
-     "latencia_envio_ms": 887.2618675231934,
-     "error": null,
-     "message_id": 2958,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 168.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ San Jose Earthquakes vs Houston Dynamo\n⏱ Minuto: 46'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "88a2d48a2b4eb320"
-  },
-  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Cruz Azul vs Club América (Liga MX, Apertura)",
    "match_id": "16317951",
@@ -282,6 +244,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Cruz Azul vs Club América\n⏱ Minuto: 24'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Club América — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "fc9e390682d912a5"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "San Jose Earthquakes vs Houston Dynamo (MLS)",
+   "match_id": "15168392",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 49,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 0,
+    "corners_1t_total": 1
+   },
+   "t_evento_real_utc": "2026-09-13T03:44:15Z",
+   "t_captura_utc": "2026-09-13T03:44:15Z",
+   "t_evaluacion_utc": "2026-09-13T03:48:09Z",
+   "t_generacion_utc": "2026-09-13T03:48:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-13T03:47:03Z",
+     "latencia_envio_ms": 887.2618675231934,
+     "error": null,
+     "message_id": 2958,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 168.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ San Jose Earthquakes vs Houston Dynamo\n⏱ Minuto: 49'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "88a2d48a2b4eb320"
   }
  ]
 }
