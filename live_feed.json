@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-13T11:50:56Z",
- "n_live_target": 2,
+ "generated_at_utc": "2026-09-13T11:53:57Z",
+ "n_live_target": 1,
  "matches": {
   "16316817": {
    "event_id": 16316817,
@@ -11,7 +11,7 @@
    "away_score": 1,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 77,
+   "minute": 80,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -20,32 +20,37 @@
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.29,
+     "home": 0.4,
      "away": 1.32
     },
     "big_chances": {
      "label": "Ocasiones claras",
-     "home": 0,
+     "home": 1,
      "away": 3
     },
     "shots": {
      "label": "Remates totales",
-     "home": 5,
+     "home": 8,
      "away": 11
     },
     "corners": {
      "label": "Corners",
-     "home": 3,
+     "home": 4,
      "away": 2
     },
     "passes": {
      "label": "Pases",
-     "home": 429,
-     "away": 376
+     "home": 450,
+     "away": 383
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 1,
+     "away": 0
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 2,
+     "home": 4,
      "away": 5
     }
    },
@@ -53,57 +58,26 @@
     "btts": {
      "yes": 3.0,
      "no": 1.364,
-     "captured_at_utc": "2026-09-13T11:50:54Z"
+     "captured_at_utc": "2026-09-13T11:51:14Z"
     },
     "corners_over_95": {
      "over": 2.0,
      "under": 1.727,
-     "captured_at_utc": "2026-09-13T11:50:54Z"
+     "captured_at_utc": "2026-09-13T11:53:36Z"
     },
     "1x2": {
-     "home": 3.75,
-     "draw": 1.727,
-     "away": 4.5,
-     "captured_at_utc": "2026-09-13T11:50:54Z"
+     "home": 4.333,
+     "draw": 1.615,
+     "away": 4.75,
+     "captured_at_utc": "2026-09-13T11:53:36Z"
     },
     "goals_over_25": {
-     "over": 2.75,
-     "under": 1.4,
-     "captured_at_utc": "2026-09-13T11:50:54Z"
+     "over": 2.0,
+     "under": 1.727,
+     "captured_at_utc": "2026-09-13T11:53:36Z"
     }
    },
-   "updated_at_utc": "2026-09-13T11:50:56Z"
-  },
-  "15373098": {
-   "event_id": 15373098,
-   "league": "K League 1",
-   "home": "Gwangju FC",
-   "away": "FC Anyang",
-   "home_score": 1,
-   "away_score": 1,
-   "status_type": "inprogress",
-   "status_description": "2nd half",
-   "minute": 92,
-   "stats": {},
-   "odds": {
-    "btts": {
-     "yes": 1.333,
-     "no": 3.25,
-     "captured_at_utc": "2026-09-13T10:26:10Z"
-    },
-    "1x2": {
-     "home": 23.0,
-     "draw": 1.025,
-     "away": 17.0,
-     "captured_at_utc": "2026-09-13T11:50:54Z"
-    },
-    "goals_over_25": {
-     "over": 4.0,
-     "under": 1.222,
-     "captured_at_utc": "2026-09-13T11:50:54Z"
-    }
-   },
-   "updated_at_utc": "2026-09-13T11:50:56Z"
+   "updated_at_utc": "2026-09-13T11:53:57Z"
   }
  }
 }
