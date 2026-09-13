@@ -1,42 +1,84 @@
 {
- "generated_at_utc": "2026-09-13T09:02:53Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-09-13T09:05:53Z",
+ "n_live_target": 2,
  "matches": {
+  "16348584": {
+   "event_id": 16348584,
+   "league": "J1 League",
+   "home": "Tokyo Verdy",
+   "away": "JEF United Chiba",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 100,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 1,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.0,
+     "no": 1.75,
+     "captured_at_utc": "2026-09-13T09:05:45Z"
+    },
+    "1x2": {
+     "home": 2.25,
+     "draw": 3.25,
+     "away": 3.2,
+     "captured_at_utc": "2026-09-13T09:05:45Z"
+    },
+    "goals_over_25": {
+     "over": 2.2,
+     "under": 1.615,
+     "captured_at_utc": "2026-09-13T09:05:45Z"
+    }
+   },
+   "updated_at_utc": "2026-09-13T09:05:53Z"
+  },
   "15373097": {
    "event_id": 15373097,
    "league": "K League 1",
    "home": "Gimcheon Sangmu FC",
    "away": "Gangwon FC",
    "home_score": 2,
-   "away_score": 0,
+   "away_score": 1,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 72,
+   "minute": 75,
    "stats": {},
    "odds": {
     "btts": {
-     "yes": 2.5,
-     "no": 1.5,
-     "captured_at_utc": "2026-09-13T09:02:41Z"
+     "yes": 2.625,
+     "no": 1.444,
+     "captured_at_utc": "2026-09-13T09:04:02Z"
     },
     "1x2": {
-     "home": 1.036,
-     "draw": 15.0,
-     "away": 51.0,
-     "captured_at_utc": "2026-09-13T09:02:41Z"
+     "home": 1.25,
+     "draw": 4.333,
+     "away": 23.0,
+     "captured_at_utc": "2026-09-13T09:05:45Z"
     },
     "goals_over_25": {
      "over": 1.727,
      "under": 2.0,
-     "captured_at_utc": "2026-09-13T09:02:41Z"
+     "captured_at_utc": "2026-09-13T09:05:45Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-09-13T09:02:41Z"
+     "captured_at_utc": "2026-09-13T09:05:45Z"
     }
    },
-   "updated_at_utc": "2026-09-13T09:02:53Z"
+   "updated_at_utc": "2026-09-13T09:05:53Z"
   }
  }
 }
