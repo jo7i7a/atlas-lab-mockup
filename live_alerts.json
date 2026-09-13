@@ -1,90 +1,7 @@
 {
- "generated_at_utc": "2026-09-13T11:46:05Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-09-13T11:52:01Z",
+ "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Excelsior vs FC Utrecht (VriendenLoterij Eredivisie)",
-   "match_id": "16316817",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 49,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 1,
-    "corners_1t_total": 1
-   },
-   "t_evento_real_utc": "2026-09-13T11:19:13Z",
-   "t_captura_utc": "2026-09-13T11:19:13Z",
-   "t_evaluacion_utc": "2026-09-13T11:25:59Z",
-   "t_generacion_utc": "2026-09-13T11:25:59Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-13T11:22:07Z",
-     "latencia_envio_ms": 872.283935546875,
-     "error": null,
-     "message_id": 2963,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 174.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Excelsior vs FC Utrecht\n⏱ Minuto: 49'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "0c34ca4ba87ef9bf"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Sheffield United vs Wolverhampton (Championship)",
-   "match_id": "16391676",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 22,
-   "condicion": "Wolverhampton domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Wolverhampton",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 1,
-    "remates_home": 1,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-13T11:19:34Z",
-   "t_captura_utc": "2026-09-13T11:19:34Z",
-   "t_evaluacion_utc": "2026-09-13T11:26:00Z",
-   "t_generacion_utc": "2026-09-13T11:26:00Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "SUPRIMIDA_NO_AUTORIZADA",
-     "t_envio_utc": null,
-     "latencia_envio_ms": null,
-     "error": "Estrategia 'A1_V1_SOLO_TRIGGER_LIVE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
-     "message_id": null,
-     "chat_id": null
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Sheffield United vs Wolverhampton\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Wolverhampton — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "19ed82c60ce8894a"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Excelsior vs FC Utrecht (VriendenLoterij Eredivisie)",
@@ -154,7 +71,7 @@
    "match_id": "16391676",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 48,
    "condicion": "Wolverhampton acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -163,9 +80,9 @@
    "extra": {
     "equipo_dominante": "Wolverhampton",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.8333,
+    "ratio_presion_territorial": 0.8462,
     "touches_home": 2,
-    "touches_away": 10,
+    "touches_away": 11,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 17,
     "equipo_que_realizo_sustitucion": "Wolverhampton",
@@ -176,13 +93,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-13T11:26:01Z",
-   "t_captura_utc": "2026-09-13T11:46:05Z",
-   "t_evaluacion_utc": "2026-09-13T11:46:05Z",
-   "t_generacion_utc": "2026-09-13T11:46:05Z",
+   "t_captura_utc": "2026-09-13T11:52:01Z",
+   "t_evaluacion_utc": "2026-09-13T11:52:01Z",
+   "t_generacion_utc": "2026-09-13T11:52:01Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sheffield United vs Wolverhampton\n⏱ Minuto: 44'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Wolverhampton acumula 83% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Wolverhampton, min 17\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sheffield United vs Wolverhampton\n⏱ Minuto: 48'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Wolverhampton acumula 85% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Wolverhampton, min 17\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "2487c560b8c0a522"
   }
