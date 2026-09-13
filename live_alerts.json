@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-13T21:47:29Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-09-13T21:48:12Z",
+ "n_alerts": 7,
  "alerts": [
   {
    "strategy_id": "L2",
@@ -178,6 +178,90 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Argentinos Juniors vs Gimnasia y Esgrima\n⏱ Minuto: 85'\n📊 Marcador: 1-1\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Argentinos Juniors acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Argentinos Juniors, min 79\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "106f046d2cfcce44"
+  },
+  {
+   "strategy_id": "H3_PERSISTENCIA_TIROS_INVESTIGACION",
+   "match_label": "Grêmio Novorizontino vs Cuiabá (Brasileirão Série B)",
+   "match_id": "15526279",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "0-0 en minuto 15 con tiros a puerta combinados>0 en cada tramo 1-5/6-10/11-15 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "shots_on_goal_tramo1_1_5": 1.0,
+    "shots_on_goal_tramo2_6_10": 2.0,
+    "shots_on_goal_tramo3_11_15": 1.0,
+    "shots_on_goal_total15": 4.0,
+    "marcador_min15": "0-0",
+    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
+    "hipotesis": "H3_PERSISTENCIA_TIROS -- INVESTIGACION, NO estrategia certificada"
+   },
+   "t_evento_real_utc": "2026-09-13T21:45:13Z",
+   "t_captura_utc": "2026-09-13T21:45:13Z",
+   "t_evaluacion_utc": "2026-09-13T21:48:11Z",
+   "t_generacion_utc": "2026-09-13T21:48:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-13T21:48:11Z",
+     "latencia_envio_ms": 857.7241897583008,
+     "error": null,
+     "message_id": 3049,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 178.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟣 H3 — INVESTIGACIÓN LIVE (Persistencia de tiros)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Grêmio Novorizontino vs Cuiabá\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nTiros a puerta (ambos equipos) por tramo:\n  min 1-5: 1\n  min 6-10: 2\n  min 11-15: 1\n\n🏆 Liga: Brasileirão Série B\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "36a6b63af9fbb6cf"
+  },
+  {
+   "strategy_id": "H3_PERSISTENCIA_TIROS_INVESTIGACION",
+   "match_label": "Fortaleza vs Ceará (Brasileirão Série B)",
+   "match_id": "15526282",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "0-0 en minuto 15 con tiros a puerta combinados>0 en cada tramo 1-5/6-10/11-15 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "shots_on_goal_tramo1_1_5": 1.0,
+    "shots_on_goal_tramo2_6_10": 1.0,
+    "shots_on_goal_tramo3_11_15": 1.0,
+    "shots_on_goal_total15": 3.0,
+    "marcador_min15": "0-0",
+    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
+    "hipotesis": "H3_PERSISTENCIA_TIROS -- INVESTIGACION, NO estrategia certificada"
+   },
+   "t_evento_real_utc": "2026-09-13T21:46:16Z",
+   "t_captura_utc": "2026-09-13T21:46:16Z",
+   "t_evaluacion_utc": "2026-09-13T21:48:12Z",
+   "t_generacion_utc": "2026-09-13T21:48:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-13T21:48:12Z",
+     "latencia_envio_ms": 815.1652812957764,
+     "error": null,
+     "message_id": 3050,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 116.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟣 H3 — INVESTIGACIÓN LIVE (Persistencia de tiros)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Fortaleza vs Ceará\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nTiros a puerta (ambos equipos) por tramo:\n  min 1-5: 1\n  min 6-10: 1\n  min 11-15: 1\n\n🏆 Liga: Brasileirão Série B\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "e49f9e620b69c3b3"
   }
  ]
 }
