@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-12T23:59:12Z",
- "n_alerts": 11,
+ "generated_at_utc": "2026-09-13T00:00:11Z",
+ "n_alerts": 13,
  "alerts": [
   {
    "strategy_id": "L1-SHADOW",
@@ -281,12 +281,69 @@
    "alert_id": "621b9fcef728d627"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "Orlando City SC vs Toronto FC (MLS)",
+   "match_id": "15168387",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 19,
+   "condicion": "4 córners totales antes del min 30 (3-1), Orlando City SC presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Toronto FC NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Orlando City SC"
+   },
+   "t_evento_real_utc": "2026-09-12T23:59:44Z",
+   "t_captura_utc": "2026-09-12T23:59:44Z",
+   "t_evaluacion_utc": "2026-09-13T00:00:09Z",
+   "t_generacion_utc": "2026-09-13T00:00:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Orlando City SC vs Toronto FC\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Orlando City SC presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Toronto FC no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "9450bb3cd142855f"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Orlando City SC vs Toronto FC (MLS)",
+   "match_id": "15168387",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 19,
+   "condicion": "4 córners totales antes del min 45 (3-1), Orlando City SC presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Toronto FC NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Orlando City SC",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-09-12T23:59:44Z",
+   "t_captura_utc": "2026-09-12T23:59:44Z",
+   "t_evaluacion_utc": "2026-09-13T00:00:09Z",
+   "t_generacion_utc": "2026-09-13T00:00:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Orlando City SC vs Toronto FC\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Orlando City SC presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Toronto FC no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "540ed300385db922"
+  },
+  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "FC Cincinnati vs Charlotte FC (MLS)",
    "match_id": "15168382",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 18,
+   "minuto": 19,
    "condicion": "FC Cincinnati domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -306,8 +363,8 @@
    },
    "t_evento_real_utc": "2026-09-12T23:56:14Z",
    "t_captura_utc": "2026-09-12T23:56:14Z",
-   "t_evaluacion_utc": "2026-09-12T23:59:11Z",
-   "t_generacion_utc": "2026-09-12T23:59:11Z",
+   "t_evaluacion_utc": "2026-09-13T00:00:10Z",
+   "t_generacion_utc": "2026-09-13T00:00:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -321,7 +378,7 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ FC Cincinnati vs Charlotte FC\n⏱ Minuto: 18'\n📊 Marcador: 1-2\n🏆 Liga: MLS\n\n📝 Motivo: FC Cincinnati — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ FC Cincinnati vs Charlotte FC\n⏱ Minuto: 19'\n📊 Marcador: 1-2\n🏆 Liga: MLS\n\n📝 Motivo: FC Cincinnati — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "0642b6302d3b84ed"
   },
@@ -331,7 +388,7 @@
    "match_id": "15168383",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 18,
+   "minuto": 19,
    "condicion": "Atlanta United domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -351,8 +408,8 @@
    },
    "t_evento_real_utc": "2026-09-12T23:55:53Z",
    "t_captura_utc": "2026-09-12T23:55:53Z",
-   "t_evaluacion_utc": "2026-09-12T23:59:11Z",
-   "t_generacion_utc": "2026-09-12T23:59:11Z",
+   "t_evaluacion_utc": "2026-09-13T00:00:10Z",
+   "t_generacion_utc": "2026-09-13T00:00:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -366,7 +423,7 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ DC United vs Atlanta United\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Atlanta United — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ DC United vs Atlanta United\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Atlanta United — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "288e9e568d6b55d0"
   },
@@ -376,7 +433,7 @@
    "match_id": "15168387",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 18,
+   "minuto": 19,
    "condicion": "Orlando City SC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -396,8 +453,8 @@
    },
    "t_evento_real_utc": "2026-09-12T23:57:17Z",
    "t_captura_utc": "2026-09-12T23:57:17Z",
-   "t_evaluacion_utc": "2026-09-12T23:59:11Z",
-   "t_generacion_utc": "2026-09-12T23:59:11Z",
+   "t_evaluacion_utc": "2026-09-13T00:00:10Z",
+   "t_generacion_utc": "2026-09-13T00:00:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -411,7 +468,7 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Orlando City SC vs Toronto FC\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Orlando City SC — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Orlando City SC vs Toronto FC\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n📝 Motivo: Orlando City SC — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "3c7fb3a656cf1aa1"
   },
@@ -421,7 +478,7 @@
    "match_id": "15235470",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 28,
+   "minuto": 29,
    "condicion": "Red Bull Bragantino acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -443,13 +500,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-12T23:52:10Z",
-   "t_captura_utc": "2026-09-12T23:59:11Z",
-   "t_evaluacion_utc": "2026-09-12T23:59:12Z",
-   "t_generacion_utc": "2026-09-12T23:59:12Z",
+   "t_captura_utc": "2026-09-13T00:00:11Z",
+   "t_evaluacion_utc": "2026-09-13T00:00:11Z",
+   "t_generacion_utc": "2026-09-13T00:00:11Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Botafogo vs Red Bull Bragantino\n⏱ Minuto: 28'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Red Bull Bragantino acumula 86% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Botafogo vs Red Bull Bragantino\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Red Bull Bragantino acumula 86% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "527becc6f3afdcc2"
   }
