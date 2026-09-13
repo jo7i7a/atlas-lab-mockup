@@ -1,53 +1,7 @@
 {
- "generated_at_utc": "2026-09-13T18:58:14Z",
- "n_alerts": 35,
+ "generated_at_utc": "2026-09-13T18:59:15Z",
+ "n_alerts": 34,
  "alerts": [
-  {
-   "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Tigre vs Rosario Central (Liga Profesional de Fútbol)",
-   "match_id": "16671619",
-   "market": "Over 1.5 Goles FT (o Over 0.5 2ª Mitad) -- verificar en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 42,
-   "condicion": "0-0 con dominancia sostenida entre los minutos 32-42 (remates totales≥9, tiros a puerta≥4, córners≥5, todos combinados). Condición original de 'ataques peligrosos' NO evaluada -- dato no disponible en la fuente actual. Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "remates_local": 6,
-    "remates_visita": 4,
-    "remates_total": 10,
-    "sot_local": 2,
-    "sot_visita": 3,
-    "sot_total": 5,
-    "cor_local": 3,
-    "cor_visita": 2,
-    "cor_total": 5,
-    "marcador": "0-0",
-    "condicion_original_no_evaluada": "ataques peligrosos a favor del dominante (dato no disponible)"
-   },
-   "t_evento_real_utc": "2026-09-13T18:28:28Z",
-   "t_captura_utc": "2026-09-13T18:30:18Z",
-   "t_evaluacion_utc": "2026-09-13T18:30:38Z",
-   "t_generacion_utc": "2026-09-13T18:30:38Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-13T18:30:39Z",
-     "latencia_envio_ms": 894.1676616668701,
-     "error": null,
-     "message_id": 3028,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 131.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B1_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Tigre vs Rosario Central\n⏱ Minuto: 42'\n📊 Marcador: 0-0\n\n🎯 Remates totales:\nLocal: 6\nVisita: 4\nTotal: 10\n\n🎯 Tiros a puerta:\nLocal: 2\nVisita: 3\nTotal: 5\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n🏆 Liga: Liga Profesional de Fútbol\n\n⚠️ Versión SIN la condición de ataques peligrosos (dato no disponible)\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 goles FT (o Over 0.5 2ª mitad)\n\n⚠️ RESPONDE CON EL TAG (obligatorio para B1):\n'FT LÍNEA @ CUOTA' o '2T LÍNEA @ CUOTA'",
-   "evidencia": null,
-   "alert_id": "c731acd5649bf0ff"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Galatasaray vs Kocaelispor (Trendyol Süper Lig)",
