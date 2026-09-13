@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-13T16:25:17Z",
+ "generated_at_utc": "2026-09-13T16:26:17Z",
  "n_alerts": 10,
  "alerts": [
   {
@@ -269,51 +269,6 @@
    "alert_id": "d2cf47f0d2365453"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "SSC Napoli vs Bologna (Serie A)",
-   "match_id": "16285015",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 24,
-   "condicion": "SSC Napoli domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "SSC Napoli",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 2,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-13T16:19:11Z",
-   "t_captura_utc": "2026-09-13T16:19:11Z",
-   "t_evaluacion_utc": "2026-09-13T16:25:15Z",
-   "t_generacion_utc": "2026-09-13T16:25:15Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "SUPRIMIDA_NO_AUTORIZADA",
-     "t_envio_utc": null,
-     "latencia_envio_ms": null,
-     "error": "Estrategia 'A1_V1_SOLO_TRIGGER_LIVE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
-     "message_id": null,
-     "chat_id": null
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ SSC Napoli vs Bologna\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Serie A\n\n📝 Motivo: SSC Napoli — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "86d3fde336bfe6b3"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "HamKam vs Molde FK (Eliteserien)",
    "match_id": "15260901",
@@ -352,12 +307,57 @@
    "alert_id": "b8c25ae81e21b289"
   },
   {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "SSC Napoli vs Bologna (Serie A)",
+   "match_id": "16285015",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "SSC Napoli domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "SSC Napoli",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 2,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-13T16:19:11Z",
+   "t_captura_utc": "2026-09-13T16:19:11Z",
+   "t_evaluacion_utc": "2026-09-13T16:26:15Z",
+   "t_generacion_utc": "2026-09-13T16:26:15Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_NO_AUTORIZADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "Estrategia 'A1_V1_SOLO_TRIGGER_LIVE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ SSC Napoli vs Bologna\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Serie A\n\n📝 Motivo: SSC Napoli — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "86d3fde336bfe6b3"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "SSC Napoli vs Bologna (Serie A)",
    "match_id": "16285015",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 24,
+   "minuto": 25,
    "condicion": "SSC Napoli acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -379,13 +379,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-13T16:21:16Z",
-   "t_captura_utc": "2026-09-13T16:25:17Z",
-   "t_evaluacion_utc": "2026-09-13T16:25:17Z",
-   "t_generacion_utc": "2026-09-13T16:25:17Z",
+   "t_captura_utc": "2026-09-13T16:26:17Z",
+   "t_evaluacion_utc": "2026-09-13T16:26:17Z",
+   "t_generacion_utc": "2026-09-13T16:26:17Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SSC Napoli vs Bologna\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Serie A\n\n📝 Motivo: SSC Napoli acumula 88% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SSC Napoli vs Bologna\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Serie A\n\n📝 Motivo: SSC Napoli acumula 88% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "6520ff68d818c4c9"
   }
