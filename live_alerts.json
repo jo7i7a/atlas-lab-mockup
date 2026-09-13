@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-13T03:21:11Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-09-13T03:23:10Z",
+ "n_alerts": 9,
  "alerts": [
   {
    "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
@@ -204,35 +204,6 @@
    "alert_id": "07cc10384b759984"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "LA Galaxy vs Seattle Sounders FC (MLS)",
-   "match_id": "15168398",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 40,
-   "condicion": "4 córners totales antes del min 45 (3-1), LA Galaxy presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Seattle Sounders FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "LA Galaxy",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-13T03:20:14Z",
-   "t_captura_utc": "2026-09-13T03:20:14Z",
-   "t_evaluacion_utc": "2026-09-13T03:21:08Z",
-   "t_generacion_utc": "2026-09-13T03:21:08Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ LA Galaxy vs Seattle Sounders FC\n⏱ Minuto: 40'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: LA Galaxy presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Seattle Sounders FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "e79591a65a315f1f"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Colorado Rapids vs CF Montréal (MLS)",
    "match_id": "15168388",
@@ -307,6 +278,81 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ San Jose Earthquakes vs Houston Dynamo\n⏱ Minuto: 40'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: San Jose Earthquakes acumula 93% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: San Jose Earthquakes, min 19\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "d639739c3885cc06"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "LA Galaxy vs Seattle Sounders FC (MLS)",
+   "match_id": "15168398",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 42,
+   "condicion": "4 córners totales antes del min 45 (3-1), LA Galaxy presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Seattle Sounders FC NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "LA Galaxy",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-09-13T03:20:14Z",
+   "t_captura_utc": "2026-09-13T03:20:14Z",
+   "t_evaluacion_utc": "2026-09-13T03:23:08Z",
+   "t_generacion_utc": "2026-09-13T03:23:08Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ LA Galaxy vs Seattle Sounders FC\n⏱ Minuto: 42'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: LA Galaxy presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Seattle Sounders FC no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "e79591a65a315f1f"
+  },
+  {
+   "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "LA Galaxy vs Seattle Sounders FC (MLS)",
+   "match_id": "15168398",
+   "market": "Over 1.5 Goles FT (o Over 0.5 2ª Mitad) -- verificar en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 42,
+   "condicion": "0-0 con dominancia sostenida entre los minutos 32-42 (remates totales≥9, tiros a puerta≥4, córners≥5, todos combinados). Condición original de 'ataques peligrosos' NO evaluada -- dato no disponible en la fuente actual. Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "remates_local": 9,
+    "remates_visita": 6,
+    "remates_total": 15,
+    "sot_local": 3,
+    "sot_visita": 3,
+    "sot_total": 6,
+    "cor_local": 4,
+    "cor_visita": 1,
+    "cor_total": 5,
+    "marcador": "0-0",
+    "condicion_original_no_evaluada": "ataques peligrosos a favor del dominante (dato no disponible)"
+   },
+   "t_evento_real_utc": "2026-09-13T03:21:57Z",
+   "t_captura_utc": "2026-09-13T03:23:04Z",
+   "t_evaluacion_utc": "2026-09-13T03:23:09Z",
+   "t_generacion_utc": "2026-09-13T03:23:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-13T03:23:10Z",
+     "latencia_envio_ms": 778.8515090942383,
+     "error": null,
+     "message_id": 2955,
+     "chat_id": -5415726375
+    }
+   },
+   "latencia_total_seg": 73.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B1_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ LA Galaxy vs Seattle Sounders FC\n⏱ Minuto: 42'\n📊 Marcador: 0-0\n\n🎯 Remates totales:\nLocal: 9\nVisita: 6\nTotal: 15\n\n🎯 Tiros a puerta:\nLocal: 3\nVisita: 3\nTotal: 6\n\n🚩 Córners:\nLocal: 4\nVisita: 1\nTotal: 5\n\n🏆 Liga: MLS\n\n⚠️ Versión SIN la condición de ataques peligrosos (dato no disponible)\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 goles FT (o Over 0.5 2ª mitad)\n\n⚠️ RESPONDE CON EL TAG (obligatorio para B1):\n'FT LÍNEA @ CUOTA' o '2T LÍNEA @ CUOTA'",
+   "evidencia": null,
+   "alert_id": "a4fd739f4e1ca2bc"
   }
  ]
 }
