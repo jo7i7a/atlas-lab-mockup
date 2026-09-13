@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-13T11:03:11Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-09-13T11:05:06Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -77,51 +77,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Urawa Red Diamonds vs Fagiano Okayama\n⏱ Minuto: 51'\n📊 Marcador: 1-1\n🏆 Liga: J1 League\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "979c3a7152c690c5"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Excelsior vs FC Utrecht (VriendenLoterij Eredivisie)",
-   "match_id": "16316817",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "FC Utrecht domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "FC Utrecht",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 1,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-13T10:33:21Z",
-   "t_captura_utc": "2026-09-13T10:33:21Z",
-   "t_evaluacion_utc": "2026-09-13T10:44:00Z",
-   "t_generacion_utc": "2026-09-13T10:44:00Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "SUPRIMIDA_NO_AUTORIZADA",
-     "t_envio_utc": null,
-     "latencia_envio_ms": null,
-     "error": "Estrategia 'A1_V1_SOLO_TRIGGER_LIVE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
-     "message_id": null,
-     "chat_id": null
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Excelsior vs FC Utrecht\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: FC Utrecht — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "44fc58d282590db9"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -243,7 +198,7 @@
    "match_id": "16348585",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 71,
+   "minuto": 73,
    "condicion": "Fagiano Okayama acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -252,9 +207,9 @@
    "extra": {
     "equipo_dominante": "Fagiano Okayama",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.619,
+    "ratio_presion_territorial": 0.6364,
     "touches_home": 8,
-    "touches_away": 13,
+    "touches_away": 14,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 64,
     "equipo_que_realizo_sustitucion": "Fagiano Okayama",
@@ -265,13 +220,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-13T11:03:11Z",
-   "t_captura_utc": "2026-09-13T11:03:11Z",
-   "t_evaluacion_utc": "2026-09-13T11:03:11Z",
-   "t_generacion_utc": "2026-09-13T11:03:11Z",
+   "t_captura_utc": "2026-09-13T11:05:06Z",
+   "t_evaluacion_utc": "2026-09-13T11:05:06Z",
+   "t_generacion_utc": "2026-09-13T11:05:06Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Urawa Red Diamonds vs Fagiano Okayama\n⏱ Minuto: 71'\n📊 Marcador: 1-1\n🏆 Liga: J1 League\n\n📝 Motivo: Fagiano Okayama acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Fagiano Okayama, min 64\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Urawa Red Diamonds vs Fagiano Okayama\n⏱ Minuto: 73'\n📊 Marcador: 1-1\n🏆 Liga: J1 League\n\n📝 Motivo: Fagiano Okayama acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Fagiano Okayama, min 64\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "201d8d951eb96e92"
   }
