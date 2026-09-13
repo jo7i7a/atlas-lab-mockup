@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-13T20:47:40Z",
+ "generated_at_utc": "2026-09-13T20:48:21Z",
  "n_alerts": 5,
  "alerts": [
   {
@@ -79,40 +79,6 @@
    "alert_id": "995886846c9507c6"
   },
   {
-   "strategy_id": "A3_V1_DOMINANTE_NO_GANA",
-   "match_label": "Mirassol vs Vitória (Brasileirão Betano)",
-   "match_id": "15235485",
-   "market": "Total de Córners (Over/Under) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 81,
-   "condicion": "Mirassol domina en córners y entradas al tercio final en los últimos 10 min (≥2 córners Y >15 entradas) sin ir ganando, ventana 80'-84'. Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Mirassol",
-    "lado_dominante": "home",
-    "corners_10min_home": 2,
-    "corners_10min_away": 0,
-    "entradas_10min_home": 18,
-    "entradas_10min_away": 3,
-    "marcador_en_el_momento": "1-2",
-    "reinterpretacion": "dominante_no_gana -- NO es la condición 'favorito perdiendo o empatando' del PDF original, ver ficha A3_V1_DOMINANTE_NO_GANA",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >6.5/>5.0, perfil táctico, ligas ideales, cuota favorito) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-13T20:46:04Z",
-   "t_captura_utc": "2026-09-13T20:46:04Z",
-   "t_evaluacion_utc": "2026-09-13T20:47:38Z",
-   "t_generacion_utc": "2026-09-13T20:47:38Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A3_V1_DOMINANTE_NO_GANA\n\n⚽ Mirassol vs Vitória\n⏱ Minuto: 81'\n📊 Marcador: 1-2\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Mirassol — 2 córners y 18 entradas al tercio final en los últimos 10 min, sin ir ganando (marcador 1-2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over/Under",
-   "evidencia": null,
-   "alert_id": "c4f32142dd9fc8c4"
-  },
-  {
    "strategy_id": "L3",
    "match_label": "Argentinos Juniors vs Gimnasia y Esgrima (Liga Profesional de Fútbol)",
    "match_id": "16671618",
@@ -187,6 +153,40 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Famalicão vs Sporting CP\n⏱ Minuto: 53'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: Sporting CP acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "cb31e7ab586324cd"
+  },
+  {
+   "strategy_id": "A3_V1_DOMINANTE_NO_GANA",
+   "match_label": "Mirassol vs Vitória (Brasileirão Betano)",
+   "match_id": "15235485",
+   "market": "Total de Córners (Over/Under) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 82,
+   "condicion": "Mirassol domina en córners y entradas al tercio final en los últimos 10 min (≥2 córners Y >15 entradas) sin ir ganando, ventana 80'-84'. Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Mirassol",
+    "lado_dominante": "home",
+    "corners_10min_home": 2,
+    "corners_10min_away": 0,
+    "entradas_10min_home": 18,
+    "entradas_10min_away": 3,
+    "marcador_en_el_momento": "1-2",
+    "reinterpretacion": "dominante_no_gana -- NO es la condición 'favorito perdiendo o empatando' del PDF original, ver ficha A3_V1_DOMINANTE_NO_GANA",
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >6.5/>5.0, perfil táctico, ligas ideales, cuota favorito) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-13T20:46:04Z",
+   "t_captura_utc": "2026-09-13T20:46:04Z",
+   "t_evaluacion_utc": "2026-09-13T20:48:21Z",
+   "t_generacion_utc": "2026-09-13T20:48:21Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A3_V1_DOMINANTE_NO_GANA\n\n⚽ Mirassol vs Vitória\n⏱ Minuto: 82'\n📊 Marcador: 1-2\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Mirassol — 2 córners y 18 entradas al tercio final en los últimos 10 min, sin ir ganando (marcador 1-2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over/Under",
+   "evidencia": null,
+   "alert_id": "c4f32142dd9fc8c4"
   }
  ]
 }
