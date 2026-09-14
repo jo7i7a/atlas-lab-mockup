@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-14T23:07:23Z",
+ "generated_at_utc": "2026-09-14T23:08:10Z",
  "n_alerts": 8,
  "alerts": [
   {
@@ -198,82 +198,6 @@
    "alert_id": "6b752b1b2cc9e2fb"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "Deportivo Riestra vs CA Lanús (Liga Profesional de Fútbol)",
-   "match_id": "16671612",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 49,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-09-14T23:02:41Z",
-   "t_captura_utc": "2026-09-14T23:02:41Z",
-   "t_evaluacion_utc": "2026-09-14T23:07:20Z",
-   "t_generacion_utc": "2026-09-14T23:07:20Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-14T23:05:35Z",
-     "latencia_envio_ms": 871.248722076416,
-     "error": null,
-     "message_id": 3090,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 174.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Deportivo Riestra vs CA Lanús\n⏱ Minuto: 49'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "6986c7b1f260cd8b"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Banfield vs Barracas Central (Liga Profesional de Fútbol)",
-   "match_id": "16671615",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 46,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 2,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-09-14T23:05:47Z",
-   "t_captura_utc": "2026-09-14T23:05:47Z",
-   "t_evaluacion_utc": "2026-09-14T23:07:20Z",
-   "t_generacion_utc": "2026-09-14T23:07:20Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-14T23:07:21Z",
-     "latencia_envio_ms": 800.243616104126,
-     "error": null,
-     "message_id": 3092,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 94.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Banfield vs Barracas Central\n⏱ Minuto: 46'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "5d5e2869a2b4d5db"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "América Mineiro vs São Bernardo (Brasileirão Série B)",
    "match_id": "15526280",
@@ -310,6 +234,82 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ América Mineiro vs São Bernardo\n⏱ Minuto: 35'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: América Mineiro acumula 71% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "99490e49f8c1cfec"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Deportivo Riestra vs CA Lanús (Liga Profesional de Fútbol)",
+   "match_id": "16671612",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 50,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 2,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-09-14T23:02:41Z",
+   "t_captura_utc": "2026-09-14T23:02:41Z",
+   "t_evaluacion_utc": "2026-09-14T23:08:10Z",
+   "t_generacion_utc": "2026-09-14T23:08:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-14T23:05:35Z",
+     "latencia_envio_ms": 871.248722076416,
+     "error": null,
+     "message_id": 3090,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 174.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Deportivo Riestra vs CA Lanús\n⏱ Minuto: 50'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "6986c7b1f260cd8b"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Banfield vs Barracas Central (Liga Profesional de Fútbol)",
+   "match_id": "16671615",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 47,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 0,
+    "corners_1t_away": 2,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-09-14T23:05:47Z",
+   "t_captura_utc": "2026-09-14T23:05:47Z",
+   "t_evaluacion_utc": "2026-09-14T23:08:10Z",
+   "t_generacion_utc": "2026-09-14T23:08:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-14T23:07:21Z",
+     "latencia_envio_ms": 800.243616104126,
+     "error": null,
+     "message_id": 3092,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 94.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Banfield vs Barracas Central\n⏱ Minuto: 47'\n📊 Marcador: 1-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "5d5e2869a2b4d5db"
   }
  ]
 }
