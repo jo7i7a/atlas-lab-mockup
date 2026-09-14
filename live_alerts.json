@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-14T02:18:11Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-09-14T02:19:13Z",
+ "n_alerts": 1,
  "alerts": [
   {
    "strategy_id": "L3",
@@ -39,35 +39,6 @@
    "mensaje_custom": "🚨 L3 | San Diego FC vs Philadelphia Union | Roja San Diego FC | Min 45' | 0-0",
    "evidencia": null,
    "alert_id": "1b220e0f7d36fa9f"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "CD Guadalajara vs Pumas UNAM (Liga MX, Apertura)",
-   "match_id": "16317950",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (3-1), CD Guadalajara presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Pumas UNAM NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "CD Guadalajara",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-14T01:48:29Z",
-   "t_captura_utc": "2026-09-14T01:48:29Z",
-   "t_evaluacion_utc": "2026-09-14T02:18:09Z",
-   "t_generacion_utc": "2026-09-14T02:18:09Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CD Guadalajara vs Pumas UNAM\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: CD Guadalajara presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Pumas UNAM no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "0bc3e736919e8edd"
   }
  ]
 }
