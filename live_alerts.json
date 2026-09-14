@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-14T01:45:02Z",
- "n_alerts": 13,
+ "generated_at_utc": "2026-09-14T01:45:09Z",
+ "n_alerts": 14,
  "alerts": [
   {
    "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
@@ -412,35 +412,6 @@
    "alert_id": "44c4fbd5960cc382"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Santos Laguna vs FC Juárez (Liga MX, Apertura)",
-   "match_id": "16317956",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 39,
-   "condicion": "5 córners totales antes del min 45 (4-1), Santos Laguna presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿FC Juárez NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 1,
-    "equipo_presiona": "Santos Laguna",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-14T01:15:15Z",
-   "t_captura_utc": "2026-09-14T01:15:15Z",
-   "t_evaluacion_utc": "2026-09-14T01:42:09Z",
-   "t_generacion_utc": "2026-09-14T01:42:09Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Santos Laguna vs FC Juárez\n⏱ Minuto: 39'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 4\nVisita: 1\nTotal: 5\n\n📝 Motivo: Santos Laguna presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Juárez no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "87a1ecb067831c12"
-  },
-  {
    "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Santos Laguna vs FC Juárez (Liga MX, Apertura)",
    "match_id": "16317956",
@@ -557,6 +528,64 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CD Guadalajara vs Pumas UNAM\n⏱ Minuto: 29'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CD Guadalajara acumula 88% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "19ccbb06f58cf3c0"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "San Diego FC vs Philadelphia Union (MLS)",
+   "match_id": "15168391",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 32,
+   "condicion": "4 córners totales antes del min 45 (3-1), San Diego FC presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Philadelphia Union NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "San Diego FC",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-09-14T01:44:10Z",
+   "t_captura_utc": "2026-09-14T01:44:10Z",
+   "t_evaluacion_utc": "2026-09-14T01:45:08Z",
+   "t_generacion_utc": "2026-09-14T01:45:08Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ San Diego FC vs Philadelphia Union\n⏱ Minuto: 32'\n📊 Marcador: 0-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: San Diego FC presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Philadelphia Union no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "e6b6d6166ec2cc09"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Santos Laguna vs FC Juárez (Liga MX, Apertura)",
+   "match_id": "16317956",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 42,
+   "condicion": "5 córners totales antes del min 45 (4-1), Santos Laguna presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿FC Juárez NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 1,
+    "equipo_presiona": "Santos Laguna",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-09-14T01:15:15Z",
+   "t_captura_utc": "2026-09-14T01:15:15Z",
+   "t_evaluacion_utc": "2026-09-14T01:45:09Z",
+   "t_generacion_utc": "2026-09-14T01:45:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Santos Laguna vs FC Juárez\n⏱ Minuto: 42'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 4\nVisita: 1\nTotal: 5\n\n📝 Motivo: Santos Laguna presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Juárez no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "87a1ecb067831c12"
   }
  ]
 }
