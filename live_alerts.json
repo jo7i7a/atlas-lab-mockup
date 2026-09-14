@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-14T23:15:08Z",
+ "generated_at_utc": "2026-09-14T23:18:43Z",
  "n_alerts": 7,
  "alerts": [
   {
@@ -46,51 +46,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Botafogo-SP vs Goiás\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Botafogo-SP — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "75632aa3a6ce7b2b"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "América Mineiro vs São Bernardo (Brasileirão Série B)",
-   "match_id": "15526280",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "São Bernardo domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "São Bernardo",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-14T22:48:30Z",
-   "t_captura_utc": "2026-09-14T22:48:30Z",
-   "t_evaluacion_utc": "2026-09-14T22:57:10Z",
-   "t_generacion_utc": "2026-09-14T22:57:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "SUPRIMIDA_NO_AUTORIZADA",
-     "t_envio_utc": null,
-     "latencia_envio_ms": null,
-     "error": "Estrategia 'A1_V1_SOLO_TRIGGER_LIVE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
-     "message_id": null,
-     "chat_id": null
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ América Mineiro vs São Bernardo\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: São Bernardo — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "44c9d3e320f94a49"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -272,6 +227,49 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Botafogo-SP vs Goiás\n⏱ Minuto: 45'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Goiás presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Botafogo-SP no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "6b752b1b2cc9e2fb"
+  },
+  {
+   "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
+   "match_label": "Bahia vs Remo (Brazilian Serie A)",
+   "match_id": "5103632",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "0-0 en minuto 15 con touchesInOppBox_tot15>=4.0 y |diff home-away|/total<=0.33 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "touches_home": 3.0,
+    "touches_away": 3.0,
+    "touches_total": 6.0,
+    "ratio_diff_home_away": 0.0,
+    "minuto_captura_usada": 14.67,
+    "marcador_min15": "0-0",
+    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
+    "hipotesis": "H2_PRESION_BILATERAL -- INVESTIGACION, NO estrategia certificada"
+   },
+   "t_evento_real_utc": "2026-09-14T23:16:48Z",
+   "t_captura_utc": "2026-09-14T23:16:48Z",
+   "t_evaluacion_utc": "2026-09-14T23:18:42Z",
+   "t_generacion_utc": "2026-09-14T23:18:42Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-14T23:18:43Z",
+     "latencia_envio_ms": 856.4004898071289,
+     "error": null,
+     "message_id": 3093,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 115.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Bahia vs Remo\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 3-3 (total 6)\nRatio de diferencia home-away: 0.00 (umbral <= 0.33)\n\n🏆 Liga: Brazilian Serie A\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "c33ee0e0c35ab944"
   }
  ]
 }
