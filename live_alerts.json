@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-14T19:11:08Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-09-14T19:20:40Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -86,12 +86,57 @@
    "alert_id": "d45b5d149b5baa37"
   },
   {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Villarreal vs Real Betis (LaLiga)",
+   "match_id": "16416333",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Villarreal domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Villarreal",
+    "lado_dominante": "home",
+    "trigger_disparado": "centros",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 3,
+    "centros_away": 1,
+    "remates_home": 2,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-14T19:17:04Z",
+   "t_captura_utc": "2026-09-14T19:17:04Z",
+   "t_evaluacion_utc": "2026-09-14T19:20:39Z",
+   "t_generacion_utc": "2026-09-14T19:20:39Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_NO_AUTORIZADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "Estrategia 'A1_V1_SOLO_TRIGGER_LIVE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Villarreal vs Real Betis\n⏱ Minuto: 18'\n📊 Marcador: 1-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Villarreal — ≥3 centros al área en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "6912ecae408db1a4"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Rio Ave vs CF Estrela Amadora (Liga Portugal Betclic)",
    "match_id": "16432062",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 60,
+   "minuto": 71,
    "condicion": "CF Estrela Amadora acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -100,26 +145,26 @@
    "extra": {
     "equipo_dominante": "CF Estrela Amadora",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.76,
-    "touches_home": 6,
-    "touches_away": 19,
+    "ratio_presion_territorial": 0.75,
+    "touches_home": 7,
+    "touches_away": 21,
     "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 58,
+    "minuto_ultima_sustitucion": 71,
     "equipo_que_realizo_sustitucion": "CF Estrela Amadora",
-    "marcador_en_el_momento": "2-2",
+    "marcador_en_el_momento": "2-3",
     "t_primera_observacion_atlas": "2026-09-14T19:07:30Z",
     "t_inicio_estimado_condicion": "2026-09-14T18:08:29Z",
     "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-14T19:07:30Z",
-   "t_captura_utc": "2026-09-14T19:11:08Z",
-   "t_evaluacion_utc": "2026-09-14T19:11:08Z",
-   "t_generacion_utc": "2026-09-14T19:11:08Z",
+   "t_captura_utc": "2026-09-14T19:20:40Z",
+   "t_evaluacion_utc": "2026-09-14T19:20:40Z",
+   "t_generacion_utc": "2026-09-14T19:20:40Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rio Ave vs CF Estrela Amadora\n⏱ Minuto: 60'\n📊 Marcador: 2-2\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: CF Estrela Amadora acumula 76% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CF Estrela Amadora, min 58\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rio Ave vs CF Estrela Amadora\n⏱ Minuto: 71'\n📊 Marcador: 2-3\n🏆 Liga: Liga Portugal Betclic\n\n📝 Motivo: CF Estrela Amadora acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: CF Estrela Amadora, min 71\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "77f5c1a25ca369ef"
   }
