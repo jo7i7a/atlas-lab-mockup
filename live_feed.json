@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-15T18:02:54Z",
- "n_live_target": 2,
+ "generated_at_utc": "2026-09-15T18:05:54Z",
+ "n_live_target": 3,
  "matches": {
   "16416345": {
    "event_id": 16416345,
@@ -58,26 +58,73 @@
     "btts": {
      "yes": 1.8,
      "no": 1.95,
-     "captured_at_utc": "2026-09-15T18:02:42Z"
+     "captured_at_utc": "2026-09-15T18:05:45Z"
     },
     "corners_over_95": {
      "over": 2.0,
      "under": 1.727,
-     "captured_at_utc": "2026-09-15T18:02:42Z"
+     "captured_at_utc": "2026-09-15T18:05:45Z"
     },
     "1x2": {
-     "home": 1.056,
+     "home": 1.062,
      "draw": 11.0,
-     "away": 34.0,
-     "captured_at_utc": "2026-09-15T18:02:42Z"
+     "away": 29.0,
+     "captured_at_utc": "2026-09-15T18:05:45Z"
     },
     "goals_over_25": {
      "over": 1.667,
      "under": 2.2,
-     "captured_at_utc": "2026-09-15T18:02:42Z"
+     "captured_at_utc": "2026-09-15T18:05:45Z"
     }
    },
-   "updated_at_utc": "2026-09-15T18:02:54Z"
+   "updated_at_utc": "2026-09-15T18:05:54Z"
+  },
+  "16416334": {
+   "event_id": 16416334,
+   "league": "LaLiga",
+   "home": "Deportivo Alavés",
+   "away": "Valencia",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 3,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 39,
+     "away": 61
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 5,
+     "away": 8
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.0,
+     "no": 1.75,
+     "captured_at_utc": "2026-09-15T18:05:45Z"
+    },
+    "corners_over_95": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-09-15T18:05:45Z"
+    },
+    "1x2": {
+     "home": 1.727,
+     "draw": 3.4,
+     "away": 5.0,
+     "captured_at_utc": "2026-09-15T18:05:45Z"
+    },
+    "goals_over_25": {
+     "over": 2.2,
+     "under": 1.667,
+     "captured_at_utc": "2026-09-15T18:05:45Z"
+    }
+   },
+   "updated_at_utc": "2026-09-15T18:05:54Z"
   },
   "16316775": {
    "event_id": 16316775,
@@ -88,33 +135,43 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 2,
+   "minute": 5,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 48,
-     "away": 52
+     "home": 61,
+     "away": 39
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.05,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 1,
+     "away": 0
     },
     "passes": {
      "label": "Pases",
-     "home": 12,
-     "away": 14
+     "home": 37,
+     "away": 26
     }
    },
    "odds": {
     "btts": {
-     "yes": 1.909,
-     "no": 1.909,
-     "captured_at_utc": "2026-09-15T18:02:42Z"
+     "yes": 1.95,
+     "no": 1.8,
+     "captured_at_utc": "2026-09-15T18:05:45Z"
     },
     "1x2": {
      "home": 1.111,
      "draw": 9.0,
      "away": 19.0,
-     "captured_at_utc": "2026-09-15T18:02:42Z"
+     "captured_at_utc": "2026-09-15T18:05:45Z"
     }
    },
-   "updated_at_utc": "2026-09-15T18:02:54Z"
+   "updated_at_utc": "2026-09-15T18:05:54Z"
   }
  }
 }
