@@ -1,63 +1,78 @@
 {
- "generated_at_utc": "2026-09-15T22:17:53Z",
- "n_live_target": 3,
+ "generated_at_utc": "2026-09-15T22:32:54Z",
+ "n_live_target": 5,
  "matches": {
   "16872385": {
    "event_id": 16872385,
    "league": "CONMEBOL Libertadores",
    "home": "Club Atlético Platense",
    "away": "Fluminense",
-   "home_score": 0,
+   "home_score": 1,
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 17,
+   "minute": 32,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 63,
-     "away": 37
+     "home": 61,
+     "away": 39
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.07,
-     "away": 0
+     "home": 0.22,
+     "away": 0.07
     },
     "shots": {
      "label": "Remates totales",
-     "home": 1,
+     "home": 6,
+     "away": 1
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 2,
      "away": 0
     },
     "passes": {
      "label": "Pases",
-     "home": 91,
-     "away": 60
+     "home": 160,
+     "away": 112
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
      "home": 1,
      "away": 1
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 3,
+     "away": 0
     }
    },
    "odds": {
     "btts": {
-     "yes": 2.625,
-     "no": 1.444,
-     "captured_at_utc": "2026-09-15T22:17:39Z"
+     "yes": 1.667,
+     "no": 2.1,
+     "captured_at_utc": "2026-09-15T22:32:38Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-09-15T22:17:39Z"
+     "captured_at_utc": "2026-09-15T22:25:55Z"
     },
     "1x2": {
-     "home": 3.0,
-     "draw": 2.75,
-     "away": 2.875,
-     "captured_at_utc": "2026-09-15T22:17:39Z"
+     "home": 1.444,
+     "draw": 4.0,
+     "away": 8.5,
+     "captured_at_utc": "2026-09-15T22:32:38Z"
+    },
+    "goals_over_25": {
+     "over": 1.833,
+     "under": 1.833,
+     "captured_at_utc": "2026-09-15T22:32:38Z"
     }
    },
-   "updated_at_utc": "2026-09-15T22:17:53Z"
+   "updated_at_utc": "2026-09-15T22:32:54Z"
   },
   "16932220": {
    "event_id": 16932220,
@@ -68,22 +83,27 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 17,
+   "minute": 32,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 66,
-     "away": 34
+     "home": 59,
+     "away": 41
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.08,
-     "away": 0.02
+     "home": 0.11,
+     "away": 0.32
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 0,
+     "away": 1
     },
     "shots": {
      "label": "Remates totales",
-     "home": 2,
-     "away": 1
+     "home": 3,
+     "away": 3
     },
     "corners": {
      "label": "Corners",
@@ -92,39 +112,106 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 71,
-     "away": 37
+     "home": 126,
+     "away": 91
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
+     "home": 0,
+     "away": 1
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
      "home": 0,
      "away": 1
     }
    },
    "odds": {
     "btts": {
-     "yes": 2.75,
-     "no": 1.4,
-     "captured_at_utc": "2026-09-15T22:17:39Z"
+     "yes": 3.25,
+     "no": 1.333,
+     "captured_at_utc": "2026-09-15T22:32:38Z"
     },
     "corners_over_95": {
-     "over": 1.667,
-     "under": 2.1,
-     "captured_at_utc": "2026-09-15T22:17:39Z"
+     "over": 2.1,
+     "under": 1.667,
+     "captured_at_utc": "2026-09-15T22:32:38Z"
     },
     "1x2": {
-     "home": 1.444,
-     "draw": 3.75,
-     "away": 8.5,
-     "captured_at_utc": "2026-09-15T22:17:39Z"
+     "home": 1.571,
+     "draw": 3.25,
+     "away": 8.0,
+     "captured_at_utc": "2026-09-15T22:32:38Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.5,
-     "captured_at_utc": "2026-09-15T22:17:39Z"
+     "captured_at_utc": "2026-09-15T22:32:38Z"
     }
    },
-   "updated_at_utc": "2026-09-15T22:17:53Z"
+   "updated_at_utc": "2026-09-15T22:32:54Z"
+  },
+  "15526281": {
+   "event_id": 15526281,
+   "league": "Brasileirão Série B",
+   "home": "Londrina",
+   "away": "Ponte Preta",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 35,
+     "away": 65
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 6,
+     "away": 11
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.0,
+     "no": 1.727,
+     "captured_at_utc": "2026-09-15T22:32:38Z"
+    },
+    "1x2": {
+     "home": 1.333,
+     "draw": 4.5,
+     "away": 10.0,
+     "captured_at_utc": "2026-09-15T22:32:38Z"
+    },
+    "goals_over_25": {
+     "over": 1.727,
+     "under": 2.0,
+     "captured_at_utc": "2026-09-15T22:32:38Z"
+    }
+   },
+   "updated_at_utc": "2026-09-15T22:32:54Z"
+  },
+  "15526285": {
+   "event_id": 15526285,
+   "league": "Brasileirão Série B",
+   "home": "Náutico",
+   "away": "Operário-PR",
+   "home_score": 1,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 0,
+   "stats": {},
+   "odds": {
+    "btts": {
+     "yes": 1.833,
+     "no": 1.833,
+     "captured_at_utc": "2026-09-15T22:32:38Z"
+    }
+   },
+   "updated_at_utc": "2026-09-15T22:32:54Z"
   },
   "15416332": {
    "event_id": 15416332,
@@ -132,20 +219,20 @@
    "home": "San Luis de Quillota",
    "away": "Club Deportes Antofagasta",
    "home_score": 2,
-   "away_score": 0,
+   "away_score": 1,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 55,
+   "minute": 70,
    "stats": {},
    "odds": {
     "1x2": {
-     "home": 1.05,
-     "draw": 11.0,
-     "away": 21.0,
-     "captured_at_utc": "2026-09-15T22:17:39Z"
+     "home": 1.25,
+     "draw": 4.333,
+     "away": 11.0,
+     "captured_at_utc": "2026-09-15T22:32:38Z"
     }
    },
-   "updated_at_utc": "2026-09-15T22:17:53Z"
+   "updated_at_utc": "2026-09-15T22:32:54Z"
   }
  }
 }
