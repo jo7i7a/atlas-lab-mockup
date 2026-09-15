@@ -1,104 +1,60 @@
 {
- "generated_at_utc": "2026-09-15T21:02:54Z",
+ "generated_at_utc": "2026-09-15T21:08:35Z",
  "n_live_target": 2,
  "matches": {
-  "16416342": {
-   "event_id": 16416342,
+  "5868065": {
+   "event_id": 5868065,
    "league": "LaLiga",
    "home": "Elche",
    "away": "Real Madrid",
    "home_score": 1,
    "away_score": 2,
-   "status_type": "inprogress",
-   "status_description": "2nd half",
-   "minute": 70,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 76,
    "stats": {
-    "possession": {
-     "label": "Posesión",
-     "home": 57,
-     "away": 43
-    },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.54,
+     "home": 0.76,
      "away": 2.28
-    },
-    "big_chances": {
-     "label": "Ocasiones claras",
-     "home": 0,
-     "away": 4
     },
     "shots": {
      "label": "Remates totales",
      "home": 10,
      "away": 13
     },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 2,
+     "away": 3
+    },
     "corners": {
      "label": "Corners",
      "home": 2,
      "away": 5
     },
-    "passes": {
-     "label": "Pases",
-     "home": 439,
-     "away": 327
-    },
-    "yellow_cards": {
-     "label": "Tarjetas amarillas",
-     "home": 1,
-     "away": 1
-    },
-    "shots_on_target": {
-     "label": "Remates al arco",
-     "home": 2,
-     "away": 3
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
     }
    },
-   "odds": {
-    "btts": {
-     "yes": 3.5,
-     "no": 1.286,
-     "captured_at_utc": "2026-09-15T21:02:38Z"
-    },
-    "1x2": {
-     "home": 41.0,
-     "draw": 9.0,
-     "away": 1.071,
-     "captured_at_utc": "2026-09-15T21:02:38Z"
-    },
-    "corners_over_95": {
-     "over": 1.909,
-     "under": 1.8,
-     "captured_at_utc": "2026-09-15T21:02:38Z"
-    },
-    "goals_over_25": {
-     "over": 1.4,
-     "under": 3.0,
-     "captured_at_utc": "2026-09-15T21:02:38Z"
-    }
-   },
-   "updated_at_utc": "2026-09-15T21:02:54Z"
+   "odds": {},
+   "updated_at_utc": "2026-09-15T21:08:35Z"
   },
-  "15416332": {
-   "event_id": 15416332,
+  "1000007316": {
+   "event_id": 1000007316,
    "league": "Liga de Ascenso",
-   "home": "San Luis de Quillota",
-   "away": "Club Deportes Antofagasta",
+   "home": "San Luis",
+   "away": "Antofagasta",
    "home_score": 0,
    "away_score": 0,
-   "status_type": "inprogress",
-   "status_description": "1st half",
-   "minute": 0,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 5,
    "stats": {},
-   "odds": {
-    "1x2": {
-     "home": 2.45,
-     "draw": 3.3,
-     "away": 2.45,
-     "captured_at_utc": "2026-09-15T21:02:38Z"
-    }
-   },
-   "updated_at_utc": "2026-09-15T21:02:54Z"
+   "odds": {},
+   "updated_at_utc": "2026-09-15T21:08:35Z"
   }
  }
 }
