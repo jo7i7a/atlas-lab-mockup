@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-09-15T23:35:12Z",
- "n_alerts": 6,
+ "generated_at_utc": "2026-09-15T23:36:12Z",
+ "n_alerts": 5,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Vasco da Gama vs Independiente Santa Fe (CONMEBOL Sudamericana)",
-   "match_id": "16932220",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 51,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 1,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-09-15T23:05:12Z",
-   "t_captura_utc": "2026-09-15T23:05:12Z",
-   "t_evaluacion_utc": "2026-09-15T23:11:10Z",
-   "t_generacion_utc": "2026-09-15T23:11:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-15T23:06:24Z",
-     "latencia_envio_ms": 854.5279502868652,
-     "error": null,
-     "message_id": 3128,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 72.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Vasco da Gama vs Independiente Santa Fe\n⏱ Minuto: 51'\n📊 Marcador: 1-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "edc1000e6f442c33"
-  },
   {
    "strategy_id": "L1-SHADOW",
    "match_label": "Náutico vs Operário-PR (Brasileirão Série B)",
@@ -185,7 +147,7 @@
    "match_id": "15526281",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 47,
+   "minuto": 48,
    "condicion": "Londrina acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -207,13 +169,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-15T23:06:25Z",
-   "t_captura_utc": "2026-09-15T23:35:12Z",
-   "t_evaluacion_utc": "2026-09-15T23:35:12Z",
-   "t_generacion_utc": "2026-09-15T23:35:12Z",
+   "t_captura_utc": "2026-09-15T23:36:12Z",
+   "t_evaluacion_utc": "2026-09-15T23:36:12Z",
+   "t_generacion_utc": "2026-09-15T23:36:12Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Londrina vs Ponte Preta\n⏱ Minuto: 47'\n📊 Marcador: 3-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Londrina acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Londrina, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Londrina vs Ponte Preta\n⏱ Minuto: 48'\n📊 Marcador: 3-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Londrina acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Londrina, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "d74acb962619cca3"
   }
