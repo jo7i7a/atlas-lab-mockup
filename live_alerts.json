@@ -1,36 +1,7 @@
 {
- "generated_at_utc": "2026-09-15T23:43:14Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-09-15T23:44:14Z",
+ "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Náutico vs Operário-PR (Brasileirão Série B)",
-   "match_id": "15526285",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (3-1), Náutico presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Operário-PR NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Náutico",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-15T23:13:36Z",
-   "t_captura_utc": "2026-09-15T23:13:36Z",
-   "t_evaluacion_utc": "2026-09-15T23:18:09Z",
-   "t_generacion_utc": "2026-09-15T23:18:09Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Náutico vs Operário-PR\n⏱ Minuto: 45'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Náutico presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Operário-PR no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "0b524747e32dde23"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Vasco da Gama vs Independiente Santa Fe (CONMEBOL Sudamericana)",
