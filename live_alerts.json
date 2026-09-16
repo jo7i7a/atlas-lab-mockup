@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-16T01:41:12Z",
+ "generated_at_utc": "2026-09-16T01:46:58Z",
  "n_alerts": 3,
  "alerts": [
   {
@@ -35,44 +35,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Clube De Regatas Brasil vs Sport Recife\n⏱ Minuto: 70'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: presión combinada sostenida — xG 1.52, 22 tiros totales (8 a puerta), 6 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "ed26ed6167695237"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "São Paulo vs Boca Juniors (CONMEBOL Sudamericana)",
-   "match_id": "16872361",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 48,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 0,
-    "corners_1t_total": 1
-   },
-   "t_evento_real_utc": "2026-09-16T01:38:46Z",
-   "t_captura_utc": "2026-09-16T01:38:46Z",
-   "t_evaluacion_utc": "2026-09-16T01:41:11Z",
-   "t_generacion_utc": "2026-09-16T01:41:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-16T01:39:11Z",
-     "latencia_envio_ms": 871.3839054107666,
-     "error": null,
-     "message_id": 3130,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 25.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ São Paulo vs Boca Juniors\n⏱ Minuto: 48'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "518969a9bf307dd5"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -111,6 +73,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Puebla vs CD Toluca\n⏱ Minuto: 39'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: CD Toluca acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "571cc94dffb7c358"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "São Paulo vs Boca Juniors (CONMEBOL Sudamericana)",
+   "match_id": "16872361",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 49,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 0,
+    "corners_1t_total": 1
+   },
+   "t_evento_real_utc": "2026-09-16T01:38:46Z",
+   "t_captura_utc": "2026-09-16T01:38:46Z",
+   "t_evaluacion_utc": "2026-09-16T01:46:58Z",
+   "t_generacion_utc": "2026-09-16T01:46:58Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-16T01:39:11Z",
+     "latencia_envio_ms": 871.3839054107666,
+     "error": null,
+     "message_id": 3130,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 25.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ São Paulo vs Boca Juniors\n⏱ Minuto: 49'\n📊 Marcador: 0-0\n🏆 Liga: CONMEBOL Sudamericana\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "518969a9bf307dd5"
   }
  ]
 }
