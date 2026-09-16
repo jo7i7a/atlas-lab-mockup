@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-16T18:18:12Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-09-16T18:19:13Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "A2",
@@ -77,6 +77,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Atlético Madrid vs Osasuna\n⏱ Minuto: 52'\n📊 Marcador: 1-0\n🏆 Liga: LaLiga\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "47997a72eeaef789"
+  },
+  {
+   "strategy_id": "L3",
+   "match_label": "Deportivo de A Coruña vs Sevilla (LaLiga)",
+   "match_id": "16416343",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
+   "cuota_detectada": null,
+   "minuto": 59,
+   "condicion": "Expulsión de Deportivo de A Coruña (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_expulsado": "Deportivo de A Coruña",
+    "marcador_al_detectar": "0-1",
+    "total_rojas_partido": 1
+   },
+   "t_evento_real_utc": "2026-09-16T18:19:02Z",
+   "t_captura_utc": "2026-09-16T18:19:02Z",
+   "t_evaluacion_utc": "2026-09-16T18:19:12Z",
+   "t_generacion_utc": "2026-09-16T18:19:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-16T18:19:13Z",
+     "latencia_envio_ms": 821.605920791626,
+     "error": null,
+     "message_id": 3139,
+     "chat_id": -5219979824
+    }
+   },
+   "latencia_total_seg": 11.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 L3 | Deportivo de A Coruña vs Sevilla | Roja Deportivo de A Coruña | Min 59' | 0-1",
+   "evidencia": null,
+   "alert_id": "4a3732895c9ebf12"
   }
  ]
 }
