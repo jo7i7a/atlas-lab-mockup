@@ -1,114 +1,217 @@
 {
- "generated_at_utc": "2026-09-16T01:21:51Z",
- "n_live_target": 4,
+ "generated_at_utc": "2026-09-16T01:23:54Z",
+ "n_live_target": 3,
  "matches": {
-  "1000014553": {
-   "event_id": 1000014553,
-   "league": "Liga MX, Apertura",
-   "home": "Puebla",
-   "away": "Toluca",
+  "16872361": {
+   "event_id": 16872361,
+   "league": "CONMEBOL Sudamericana",
+   "home": "São Paulo",
+   "away": "Boca Juniors",
    "home_score": 0,
    "away_score": 0,
-   "status_type": null,
-   "status_description": "live",
-   "minute": 19,
+   "status_type": "inprogress",
+   "status_description": "Halftime",
+   "minute": null,
    "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 54,
+     "away": 46
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.22,
+     "away": 0.12
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 1,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 2,
+     "away": 3
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 1,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 269,
+     "away": 237
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 1,
+     "away": 0
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 6.0,
+     "no": 1.125,
+     "captured_at_utc": "2026-09-16T01:23:34Z"
+    },
+    "corners_over_95": {
+     "over": 2.0,
+     "under": 1.727,
+     "captured_at_utc": "2026-09-16T01:23:34Z"
+    },
+    "1x2": {
+     "home": 2.75,
+     "draw": 2.05,
+     "away": 4.5,
+     "captured_at_utc": "2026-09-16T01:23:34Z"
+    }
+   },
+   "updated_at_utc": "2026-09-16T01:23:54Z"
+  },
+  "17011738": {
+   "event_id": 17011738,
+   "league": "Liga MX, Apertura",
+   "home": "Club Puebla",
+   "away": "CD Toluca",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 21,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 28,
+     "away": 72
+    },
     "xg": {
      "label": "Expected Goals (xG)",
      "home": 0.02,
      "away": 0.42
     },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 0,
+     "away": 1
+    },
     "shots": {
      "label": "Remates totales",
      "home": 1,
      "away": 1
     },
-    "shots_on_target": {
-     "label": "Remates al arco",
-     "home": 0,
-     "away": 0
-    },
     "corners": {
      "label": "Corners",
      "home": 1,
-     "away": 0
+     "away": 1
     },
-    "red_cards": {
-     "label": "Tarjetas rojas",
-     "home": 0,
-     "away": 0
+    "passes": {
+     "label": "Pases",
+     "home": 63,
+     "away": 163
     }
    },
-   "odds": {},
-   "updated_at_utc": "2026-09-16T01:21:51Z"
+   "odds": {
+    "btts": {
+     "yes": 2.1,
+     "no": 1.667,
+     "captured_at_utc": "2026-09-16T01:23:34Z"
+    },
+    "1x2": {
+     "home": 6.5,
+     "draw": 4.0,
+     "away": 1.5,
+     "captured_at_utc": "2026-09-16T01:23:34Z"
+    },
+    "goals_over_25": {
+     "over": 2.0,
+     "under": 1.727,
+     "captured_at_utc": "2026-09-16T01:23:34Z"
+    },
+    "corners_over_95": {
+     "over": 1.667,
+     "under": 2.1,
+     "captured_at_utc": "2026-09-16T01:23:34Z"
+    }
+   },
+   "updated_at_utc": "2026-09-16T01:23:54Z"
   },
-  "1000007321": {
-   "event_id": 1000007321,
-   "league": "Liga de Ascenso",
-   "home": "Unión Española",
-   "away": "Deportes Temuco",
-   "home_score": 1,
-   "away_score": 1,
-   "status_type": null,
-   "status_description": "live",
-   "minute": 94,
-   "stats": {},
-   "odds": {},
-   "updated_at_utc": "2026-09-16T01:21:51Z"
-  },
-  "1000013215": {
-   "event_id": 1000013215,
-   "league": "Liga de Primera",
-   "home": "Coquimbo Unido",
-   "away": "Huachipato",
-   "home_score": 0,
-   "away_score": 1,
-   "status_type": null,
-   "status_description": "live",
-   "minute": null,
-   "stats": {},
-   "odds": {},
-   "updated_at_utc": "2026-09-16T01:21:51Z"
-  },
-  "5190717": {
-   "event_id": 5190717,
+  "15526286": {
+   "event_id": 15526286,
    "league": "Brasileirão Série B",
-   "home": "CRB",
+   "home": "Clube De Regatas Brasil",
    "away": "Sport Recife",
    "home_score": 1,
    "away_score": 0,
-   "status_type": null,
-   "status_description": "live",
-   "minute": 56,
+   "status_type": "inprogress",
+   "status_description": "2nd half",
+   "minute": 58,
    "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 44,
+     "away": 56
+    },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.48,
-     "away": 0.11
+     "home": 0.73,
+     "away": 0.14
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 1,
+     "away": 0
     },
     "shots": {
      "label": "Remates totales",
-     "home": 9,
+     "home": 11,
      "away": 5
-    },
-    "shots_on_target": {
-     "label": "Remates al arco",
-     "home": 3,
-     "away": 1
     },
     "corners": {
      "label": "Corners",
-     "home": 3,
+     "home": 4,
      "away": 2
     },
-    "red_cards": {
-     "label": "Tarjetas rojas",
-     "home": 0,
-     "away": 0
+    "passes": {
+     "label": "Pases",
+     "home": 236,
+     "away": 316
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 3,
+     "away": 1
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 5,
+     "away": 1
     }
    },
-   "odds": {},
-   "updated_at_utc": "2026-09-16T01:21:51Z"
+   "odds": {
+    "btts": {
+     "yes": 2.2,
+     "no": 1.615,
+     "captured_at_utc": "2026-09-16T01:23:34Z"
+    },
+    "1x2": {
+     "home": 1.25,
+     "draw": 4.75,
+     "away": 15.0,
+     "captured_at_utc": "2026-09-16T01:23:34Z"
+    },
+    "goals_over_25": {
+     "over": 2.625,
+     "under": 1.444,
+     "captured_at_utc": "2026-09-16T01:23:34Z"
+    },
+    "corners_over_95": {
+     "over": 1.909,
+     "under": 1.8,
+     "captured_at_utc": "2026-09-16T01:23:34Z"
+    }
+   },
+   "updated_at_utc": "2026-09-16T01:23:54Z"
   }
  }
 }
