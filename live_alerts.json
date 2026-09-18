@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-18T18:07:12Z",
+ "generated_at_utc": "2026-09-18T18:08:10Z",
  "n_alerts": 9,
  "alerts": [
   {
@@ -197,44 +197,6 @@
    "alert_id": "69b93fd32b5034fb"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "Sarpsborg 08 vs KFUM Oslo (Eliteserien)",
-   "match_id": "15260913",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 48,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 0,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-09-18T18:04:00Z",
-   "t_captura_utc": "2026-09-18T18:04:00Z",
-   "t_evaluacion_utc": "2026-09-18T18:07:11Z",
-   "t_generacion_utc": "2026-09-18T18:07:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-18T18:05:12Z",
-     "latencia_envio_ms": 831.7203521728516,
-     "error": null,
-     "message_id": 3164,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 72.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Sarpsborg 08 vs KFUM Oslo\n⏱ Minuto: 48'\n📊 Marcador: 1-2\n🏆 Liga: Eliteserien\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "49da3b88c0e46ea3"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "FC Wil 1900 vs Stade Nyonnais (Challenge League)",
    "match_id": "16357003",
@@ -347,6 +309,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Kriens vs Étoile Carouge FC\n⏱ Minuto: 36'\n📊 Marcador: 2-1\n🏆 Liga: Challenge League\n\n📝 Motivo: SC Kriens acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: SC Kriens, min 23\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "0e01fd8cc3636295"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Sarpsborg 08 vs KFUM Oslo (Eliteserien)",
+   "match_id": "15260913",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 49,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 0,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-09-18T18:04:00Z",
+   "t_captura_utc": "2026-09-18T18:04:00Z",
+   "t_evaluacion_utc": "2026-09-18T18:08:10Z",
+   "t_generacion_utc": "2026-09-18T18:08:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-18T18:05:12Z",
+     "latencia_envio_ms": 831.7203521728516,
+     "error": null,
+     "message_id": 3164,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 72.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Sarpsborg 08 vs KFUM Oslo\n⏱ Minuto: 49'\n📊 Marcador: 1-2\n🏆 Liga: Eliteserien\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "49da3b88c0e46ea3"
   }
  ]
 }
