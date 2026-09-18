@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-18T18:17:13Z",
- "n_alerts": 16,
+ "generated_at_utc": "2026-09-18T18:18:12Z",
+ "n_alerts": 17,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -570,12 +570,50 @@
    "alert_id": "91f42fd65a0a1b3b"
   },
   {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Kasımpaşa vs Konyaspor (Trendyol Süper Lig)",
+   "match_id": "16483674",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 60,
+   "condicion": "Kasımpaşa acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Kasımpaşa",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6207,
+    "touches_home": 18,
+    "touches_away": 11,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 30,
+    "equipo_que_realizo_sustitucion": "Kasımpaşa",
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-09-18T18:18:12Z",
+    "t_inicio_estimado_condicion": "2026-09-18T18:08:29Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-18T18:18:12Z",
+   "t_captura_utc": "2026-09-18T18:18:12Z",
+   "t_evaluacion_utc": "2026-09-18T18:18:12Z",
+   "t_generacion_utc": "2026-09-18T18:18:12Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Kasımpaşa vs Konyaspor\n⏱ Minuto: 60'\n📊 Marcador: 0-0\n🏆 Liga: Trendyol Süper Lig\n\n📝 Motivo: Kasımpaşa acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Kasımpaşa, min 30\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "201b2d0c7fd5bc98"
+  },
+  {
    "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
    "match_label": "FC Groningen vs PEC Zwolle (VriendenLoterij Eredivisie)",
    "match_id": "16316824",
    "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "cuota_detectada": null,
-   "minuto": 16,
+   "minuto": 17,
    "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
    "confianza": "Alta",
    "link": "https://www.sofascore.com/event/16316824",
@@ -587,15 +625,15 @@
     "touchesInOppBox_tot15": 6.0,
     "umbral_tot15": 6.0,
     "minuto_decision": 15,
-    "minuto_deteccion": 16,
+    "minuto_deteccion": 17,
     "marcador_min15": "0-0",
     "anchor_captured_at_utc": "2026-09-18T18:15:58Z",
-    "anchor_minute": 14.742088810602825
+    "anchor_minute": 14.755602590243022
    },
    "t_evento_real_utc": "2026-09-18T18:15:58Z",
    "t_captura_utc": null,
-   "t_evaluacion_utc": "2026-09-18T18:17:13Z",
-   "t_generacion_utc": "2026-09-18T18:17:13Z",
+   "t_evaluacion_utc": "2026-09-18T18:18:12Z",
+   "t_generacion_utc": "2026-09-18T18:18:12Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -609,7 +647,7 @@
    },
    "latencia_total_seg": 15.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ FC Groningen vs PEC Zwolle\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 5-1 (total 6 >= 6.0)\n\n🏆 Liga: VriendenLoterij Eredivisie\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ FC Groningen vs PEC Zwolle\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 5-1 (total 6 >= 6.0)\n\n🏆 Liga: VriendenLoterij Eredivisie\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "49324f8f0250386a"
   }
