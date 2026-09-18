@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-09-18T22:11:10Z",
+ "generated_at_utc": "2026-09-18T22:12:09Z",
  "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Central Córdoba vs Defensa y Justicia (Liga Profesional de Fútbol)",
-   "match_id": "16667329",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 50,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 3,
-    "corners_1t_away": 0,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-09-18T22:05:18Z",
-   "t_captura_utc": "2026-09-18T22:05:18Z",
-   "t_evaluacion_utc": "2026-09-18T22:11:09Z",
-   "t_generacion_utc": "2026-09-18T22:11:09Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-18T22:07:10Z",
-     "latencia_envio_ms": 846.1861610412598,
-     "error": null,
-     "message_id": 3185,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 112.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Central Córdoba vs Defensa y Justicia\n⏱ Minuto: 50'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 3\nVisita: 0\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "2afaba511643a92d"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Central Córdoba vs Defensa y Justicia (Liga Profesional de Fútbol)",
@@ -77,6 +39,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Central Córdoba vs Defensa y Justicia\n⏱ Minuto: 50'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Defensa y Justicia acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "035709cf7c5ba5cc"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Central Córdoba vs Defensa y Justicia (Liga Profesional de Fútbol)",
+   "match_id": "16667329",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 51,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 3,
+    "corners_1t_away": 0,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-09-18T22:05:18Z",
+   "t_captura_utc": "2026-09-18T22:05:18Z",
+   "t_evaluacion_utc": "2026-09-18T22:12:09Z",
+   "t_generacion_utc": "2026-09-18T22:12:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-18T22:07:10Z",
+     "latencia_envio_ms": 846.1861610412598,
+     "error": null,
+     "message_id": 3185,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 112.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Central Córdoba vs Defensa y Justicia\n⏱ Minuto: 51'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 3\nVisita: 0\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "2afaba511643a92d"
   }
  ]
 }
