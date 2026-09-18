@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-18T17:29:54Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-09-18T17:32:54Z",
+ "n_live_target": 4,
  "matches": {
   "15260913": {
    "event_id": 15260913,
@@ -11,22 +11,22 @@
    "away_score": 1,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 29,
+   "minute": 32,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 47,
-     "away": 53
+     "home": 49,
+     "away": 51
     },
     "xg": {
      "label": "Expected Goals (xG)",
      "home": 0.14,
-     "away": 0.1
+     "away": 0.13
     },
     "shots": {
      "label": "Remates totales",
      "home": 1,
-     "away": 4
+     "away": 3
     },
     "corners": {
      "label": "Corners",
@@ -35,39 +35,158 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 167,
-     "away": 190
+     "home": 191,
+     "away": 206
     },
     "shots_on_target": {
      "label": "Remates al arco",
      "home": 1,
-     "away": 2
+     "away": 1
     }
    },
    "odds": {
     "btts": {
-     "yes": 1.222,
-     "no": 4.0,
-     "captured_at_utc": "2026-09-18T17:29:50Z"
+     "yes": 1.25,
+     "no": 3.75,
+     "captured_at_utc": "2026-09-18T17:32:37Z"
     },
     "1x2": {
      "home": 3.25,
-     "draw": 3.4,
+     "draw": 3.25,
      "away": 2.2,
-     "captured_at_utc": "2026-09-18T17:29:50Z"
+     "captured_at_utc": "2026-09-18T17:32:37Z"
     },
     "goals_over_25": {
      "over": 2.2,
      "under": 1.615,
-     "captured_at_utc": "2026-09-18T17:29:50Z"
+     "captured_at_utc": "2026-09-18T17:32:37Z"
     },
     "corners_over_95": {
      "over": 2.0,
      "under": 1.727,
-     "captured_at_utc": "2026-09-18T17:29:50Z"
+     "captured_at_utc": "2026-09-18T17:32:37Z"
     }
    },
-   "updated_at_utc": "2026-09-18T17:29:54Z"
+   "updated_at_utc": "2026-09-18T17:32:54Z"
+  },
+  "16357003": {
+   "event_id": 16357003,
+   "league": "Challenge League",
+   "home": "FC Wil 1900",
+   "away": "Stade Nyonnais",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 24,
+     "away": 76
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 2
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 2
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 5,
+     "away": 14
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 1
+    }
+   },
+   "odds": {
+    "1x2": {
+     "home": 1.444,
+     "draw": 4.75,
+     "away": 5.75,
+     "captured_at_utc": "2026-09-18T17:32:37Z"
+    }
+   },
+   "updated_at_utc": "2026-09-18T17:32:54Z"
+  },
+  "16357004": {
+   "event_id": 16357004,
+   "league": "Challenge League",
+   "home": "Neuchâtel Xamax",
+   "away": "FC Rapperswil-Jona",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 0,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 0,
+     "away": 100
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 0,
+     "away": 1
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-09-18T17:32:54Z"
+  },
+  "16357005": {
+   "event_id": 16357005,
+   "league": "Challenge League",
+   "home": "SC Kriens",
+   "away": "Étoile Carouge FC",
+   "home_score": 1,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 70,
+     "away": 30
+    },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 1,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 1,
+     "away": 0
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 14,
+     "away": 6
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 1,
+     "away": 0
+    }
+   },
+   "odds": {
+    "1x2": {
+     "home": 1.615,
+     "draw": 4.333,
+     "away": 4.5,
+     "captured_at_utc": "2026-09-18T17:32:37Z"
+    }
+   },
+   "updated_at_utc": "2026-09-18T17:32:54Z"
   }
  }
 }
