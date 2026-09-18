@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-18T20:00:12Z",
+ "generated_at_utc": "2026-09-18T20:01:12Z",
  "n_alerts": 8,
  "alerts": [
   {
@@ -205,44 +205,6 @@
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Monza vs Sassuolo (Serie A)",
-   "match_id": "16285020",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 54,
-   "condicion": "Sassuolo acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sassuolo",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6154,
-    "touches_home": 10,
-    "touches_away": 16,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-09-18T19:51:12Z",
-    "t_inicio_estimado_condicion": "2026-09-18T19:16:10Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-18T19:51:12Z",
-   "t_captura_utc": "2026-09-18T20:00:12Z",
-   "t_evaluacion_utc": "2026-09-18T20:00:12Z",
-   "t_generacion_utc": "2026-09-18T20:00:12Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Monza vs Sassuolo\n⏱ Minuto: 54'\n📊 Marcador: 1-0\n🏆 Liga: Serie A\n\n📝 Motivo: Sassuolo acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "f16bc860ced410db"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "FC Winterthur vs FC Aarau (Challenge League)",
    "match_id": "16357006",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
@@ -278,6 +240,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ FC Winterthur vs FC Aarau\n⏱ Minuto: 85'\n📊 Marcador: 2-1\n🏆 Liga: Challenge League\n\n📝 Motivo: FC Winterthur acumula 70% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: FC Winterthur, min 85\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "b282a180714572ca"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Monza vs Sassuolo (Serie A)",
+   "match_id": "16285020",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 55,
+   "condicion": "Sassuolo acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Sassuolo",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.6154,
+    "touches_home": 10,
+    "touches_away": 16,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "1-0",
+    "t_primera_observacion_atlas": "2026-09-18T19:51:12Z",
+    "t_inicio_estimado_condicion": "2026-09-18T19:16:10Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-18T19:51:12Z",
+   "t_captura_utc": "2026-09-18T20:01:12Z",
+   "t_evaluacion_utc": "2026-09-18T20:01:12Z",
+   "t_generacion_utc": "2026-09-18T20:01:12Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Monza vs Sassuolo\n⏱ Minuto: 55'\n📊 Marcador: 1-0\n🏆 Liga: Serie A\n\n📝 Motivo: Sassuolo acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "f16bc860ced410db"
   }
  ]
 }
