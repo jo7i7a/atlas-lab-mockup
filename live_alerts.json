@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-18T17:15:11Z",
+ "generated_at_utc": "2026-09-18T17:16:10Z",
  "n_alerts": 1,
  "alerts": [
   {
@@ -8,7 +8,7 @@
    "match_id": "16483674",
    "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "cuota_detectada": null,
-   "minuto": 15,
+   "minuto": 16,
    "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
    "confianza": "Alta",
    "link": "https://www.sofascore.com/event/16483674",
@@ -20,15 +20,15 @@
     "touchesInOppBox_tot15": 12.0,
     "umbral_tot15": 6.0,
     "minuto_decision": 15,
-    "minuto_deteccion": 15,
+    "minuto_deteccion": 16,
     "marcador_min15": "0-0",
     "anchor_captured_at_utc": "2026-09-18T17:14:58Z",
-    "anchor_minute": 14.790444680054982
+    "anchor_minute": 14.791365853945415
    },
    "t_evento_real_utc": "2026-09-18T17:14:58Z",
    "t_captura_utc": null,
-   "t_evaluacion_utc": "2026-09-18T17:15:10Z",
-   "t_generacion_utc": "2026-09-18T17:15:10Z",
+   "t_evaluacion_utc": "2026-09-18T17:16:10Z",
+   "t_generacion_utc": "2026-09-18T17:16:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -42,7 +42,7 @@
    },
    "latencia_total_seg": 13.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Kasımpaşa vs Konyaspor\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 2-10 (total 12 >= 6.0)\n\n🏆 Liga: Trendyol Süper Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Kasımpaşa vs Konyaspor\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 2-10 (total 12 >= 6.0)\n\n🏆 Liga: Trendyol Süper Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "47c4a44812878498"
   }
