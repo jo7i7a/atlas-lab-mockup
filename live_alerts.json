@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-19T20:41:15Z",
- "n_alerts": 11,
+ "generated_at_utc": "2026-09-19T20:42:17Z",
+ "n_alerts": 12,
  "alerts": [
   {
    "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
@@ -319,12 +319,50 @@
    "alert_id": "938259f1344f9ac6"
   },
   {
+   "strategy_id": "A2",
+   "match_label": "Sport Recife vs Juventude (Brasileirão Série B)",
+   "match_id": "15526295",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 0,
+    "corners_1t_total": 1
+   },
+   "t_evento_real_utc": "2026-09-19T20:41:09Z",
+   "t_captura_utc": "2026-09-19T20:41:09Z",
+   "t_evaluacion_utc": "2026-09-19T20:42:13Z",
+   "t_generacion_utc": "2026-09-19T20:42:13Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-19T20:42:14Z",
+     "latencia_envio_ms": 864.4022941589355,
+     "error": null,
+     "message_id": 3326,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 65.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Sport Recife vs Juventude\n⏱ Minuto: 46'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "ffcb670767bfa327"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Willem II Tilburg vs Fortuna Sittard (VriendenLoterij Eredivisie)",
    "match_id": "16316836",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 78,
+   "minuto": 79,
    "condicion": "Willem II Tilburg acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -333,26 +371,26 @@
    "extra": {
     "equipo_dominante": "Willem II Tilburg",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7027,
+    "ratio_presion_territorial": 0.6667,
     "touches_home": 26,
-    "touches_away": 11,
+    "touches_away": 13,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 72,
     "equipo_que_realizo_sustitucion": "Willem II Tilburg",
-    "marcador_en_el_momento": "0-0",
+    "marcador_en_el_momento": "0-1",
     "t_primera_observacion_atlas": "2026-09-19T20:25:18Z",
     "t_inicio_estimado_condicion": "2026-09-19T20:24:58Z",
     "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-19T20:25:18Z",
-   "t_captura_utc": "2026-09-19T20:41:15Z",
-   "t_evaluacion_utc": "2026-09-19T20:41:15Z",
-   "t_generacion_utc": "2026-09-19T20:41:15Z",
+   "t_captura_utc": "2026-09-19T20:42:17Z",
+   "t_evaluacion_utc": "2026-09-19T20:42:17Z",
+   "t_generacion_utc": "2026-09-19T20:42:17Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Willem II Tilburg vs Fortuna Sittard\n⏱ Minuto: 78'\n📊 Marcador: 0-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Willem II Tilburg acumula 70% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Willem II Tilburg, min 72\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Willem II Tilburg vs Fortuna Sittard\n⏱ Minuto: 79'\n📊 Marcador: 0-1\n🏆 Liga: VriendenLoterij Eredivisie\n\n📝 Motivo: Willem II Tilburg acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Willem II Tilburg, min 72\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "4aa645a8185a64ac"
   },
@@ -362,7 +400,7 @@
    "match_id": "16416349",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 78,
+   "minuto": 79,
    "condicion": "FC Barcelona acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -371,9 +409,9 @@
    "extra": {
     "equipo_dominante": "FC Barcelona",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6757,
+    "ratio_presion_territorial": 0.6842,
     "touches_home": 12,
-    "touches_away": 25,
+    "touches_away": 26,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 77,
     "equipo_que_realizo_sustitucion": "FC Barcelona",
@@ -384,13 +422,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-19T20:26:17Z",
-   "t_captura_utc": "2026-09-19T20:41:15Z",
-   "t_evaluacion_utc": "2026-09-19T20:41:15Z",
-   "t_generacion_utc": "2026-09-19T20:41:15Z",
+   "t_captura_utc": "2026-09-19T20:42:17Z",
+   "t_evaluacion_utc": "2026-09-19T20:42:17Z",
+   "t_generacion_utc": "2026-09-19T20:42:17Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sevilla vs FC Barcelona\n⏱ Minuto: 78'\n📊 Marcador: 1-3\n🏆 Liga: LaLiga\n\n📝 Motivo: FC Barcelona acumula 68% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: FC Barcelona, min 77\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Sevilla vs FC Barcelona\n⏱ Minuto: 79'\n📊 Marcador: 1-3\n🏆 Liga: LaLiga\n\n📝 Motivo: FC Barcelona acumula 68% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: FC Barcelona, min 77\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "35e09485ee46da8d"
   }
