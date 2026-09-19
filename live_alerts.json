@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-19T16:45:13Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-09-19T16:46:15Z",
+ "n_alerts": 9,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -192,7 +192,7 @@
    "match_id": "15260908",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 43,
+   "minuto": 44,
    "condicion": "4 córners totales antes del min 45 (1-3), Aalesunds FK presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Molde FK NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -206,12 +206,12 @@
    },
    "t_evento_real_utc": "2026-09-19T16:38:13Z",
    "t_captura_utc": "2026-09-19T16:38:13Z",
-   "t_evaluacion_utc": "2026-09-19T16:45:09Z",
-   "t_generacion_utc": "2026-09-19T16:45:09Z",
+   "t_evaluacion_utc": "2026-09-19T16:46:10Z",
+   "t_generacion_utc": "2026-09-19T16:46:10Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Molde FK vs Aalesunds FK\n⏱ Minuto: 43'\n📊 Marcador: 0-2\n🏆 Liga: Eliteserien\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Aalesunds FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Molde FK no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Molde FK vs Aalesunds FK\n⏱ Minuto: 44'\n📊 Marcador: 0-2\n🏆 Liga: Eliteserien\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Aalesunds FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Molde FK no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "a2a0c5bbe41b94b4"
   },
@@ -221,7 +221,7 @@
    "match_id": "16285021",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 42,
+   "minuto": 43,
    "condicion": "AS Roma acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -243,15 +243,102 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-19T16:40:12Z",
-   "t_captura_utc": "2026-09-19T16:45:13Z",
-   "t_evaluacion_utc": "2026-09-19T16:45:13Z",
-   "t_generacion_utc": "2026-09-19T16:45:13Z",
+   "t_captura_utc": "2026-09-19T16:46:13Z",
+   "t_evaluacion_utc": "2026-09-19T16:46:13Z",
+   "t_generacion_utc": "2026-09-19T16:46:13Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ AS Roma vs Inter\n⏱ Minuto: 42'\n📊 Marcador: 2-0\n🏆 Liga: Serie A\n\n📝 Motivo: AS Roma acumula 65% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ AS Roma vs Inter\n⏱ Minuto: 43'\n📊 Marcador: 2-0\n🏆 Liga: Serie A\n\n📝 Motivo: AS Roma acumula 65% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "b09b3d0e3f885b86"
+  },
+  {
+   "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
+   "match_label": "Nottingham Forest vs Coventry City (Premier League)",
+   "match_id": "16363869",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
+   "confianza": "Alta",
+   "link": "https://www.sofascore.com/event/16363869",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "touchesInOppBox_home": 4.0,
+    "touchesInOppBox_away": 4.0,
+    "touchesInOppBox_tot15": 8.0,
+    "umbral_tot15": 6.0,
+    "minuto_decision": 15,
+    "minuto_deteccion": 15,
+    "marcador_min15": "0-0",
+    "anchor_captured_at_utc": "2026-09-19T16:45:54Z",
+    "anchor_minute": 14.678913191954296
+   },
+   "t_evento_real_utc": "2026-09-19T16:45:54Z",
+   "t_captura_utc": null,
+   "t_evaluacion_utc": "2026-09-19T16:46:13Z",
+   "t_generacion_utc": "2026-09-19T16:46:13Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-19T16:46:14Z",
+     "latencia_envio_ms": 896.3110446929932,
+     "error": null,
+     "message_id": 3289,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 20.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Nottingham Forest vs Coventry City\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 4-4 (total 8 >= 6.0)\n\n🏆 Liga: Premier League\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "932845eae68e8571"
+  },
+  {
+   "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
+   "match_label": "Nottingham Forest vs Coventry City (Premier League)",
+   "match_id": "16363869",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "0-0 en minuto 15 con touchesInOppBox_tot15>=4.0 y |diff home-away|/total<=0.33 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "touches_home": 4.0,
+    "touches_away": 3.0,
+    "touches_total": 7.0,
+    "ratio_diff_home_away": 0.1429,
+    "minuto_captura_usada": 14.68,
+    "marcador_min15": "0-0",
+    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
+    "hipotesis": "H2_PRESION_BILATERAL -- INVESTIGACION, NO estrategia certificada"
+   },
+   "t_evento_real_utc": "2026-09-19T16:44:51Z",
+   "t_captura_utc": "2026-09-19T16:44:51Z",
+   "t_evaluacion_utc": "2026-09-19T16:46:14Z",
+   "t_generacion_utc": "2026-09-19T16:46:14Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-19T16:46:15Z",
+     "latencia_envio_ms": 809.5395565032959,
+     "error": null,
+     "message_id": 3290,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 84.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Nottingham Forest vs Coventry City\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 4-3 (total 7)\nRatio de diferencia home-away: 0.14 (umbral <= 0.33)\n\n🏆 Liga: Premier League\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "31ce5233de7e37e0"
   }
  ]
 }
