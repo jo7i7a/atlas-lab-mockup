@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-19T14:07:16Z",
+ "generated_at_utc": "2026-09-19T14:08:11Z",
  "n_alerts": 14,
  "alerts": [
   {
@@ -293,44 +293,6 @@
    "alert_id": "ab4d2174b7d39d37"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "Bologna vs Torino (Serie A)",
-   "match_id": "16285017",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 46,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 2,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-09-19T14:05:55Z",
-   "t_captura_utc": "2026-09-19T14:05:55Z",
-   "t_evaluacion_utc": "2026-09-19T14:07:14Z",
-   "t_generacion_utc": "2026-09-19T14:07:14Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-19T14:07:15Z",
-     "latencia_envio_ms": 881.0656070709229,
-     "error": null,
-     "message_id": 3240,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 80.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Bologna vs Torino\n⏱ Minuto: 46'\n📊 Marcador: 1-0\n🏆 Liga: Serie A\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "d9f9aa2bb513a9c6"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Bologna vs Torino (Serie A)",
    "match_id": "16285017",
@@ -481,6 +443,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SV Werder Bremen vs FC Augsburg\n⏱ Minuto: 36'\n📊 Marcador: 0-1\n🏆 Liga: Bundesliga\n\n📝 Motivo: SV Werder Bremen acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: SV Werder Bremen, min 27\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "9eb14e1d5d067faf"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Bologna vs Torino (Serie A)",
+   "match_id": "16285017",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 47,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 0,
+    "corners_1t_away": 2,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-09-19T14:05:55Z",
+   "t_captura_utc": "2026-09-19T14:05:55Z",
+   "t_evaluacion_utc": "2026-09-19T14:08:11Z",
+   "t_generacion_utc": "2026-09-19T14:08:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-19T14:07:15Z",
+     "latencia_envio_ms": 881.0656070709229,
+     "error": null,
+     "message_id": 3240,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 80.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Bologna vs Torino\n⏱ Minuto: 47'\n📊 Marcador: 1-0\n🏆 Liga: Serie A\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "d9f9aa2bb513a9c6"
   }
  ]
 }
