@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-19T13:19:12Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-09-19T13:20:11Z",
+ "n_alerts": 8,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -234,12 +234,47 @@
    "alert_id": "c15d5cabcbc08d5d"
   },
   {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Udinese vs Cagliari (Serie A)",
+   "match_id": "16285027",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "Udinese domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Udinese",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-19T13:19:36Z",
+   "t_captura_utc": "2026-09-19T13:19:36Z",
+   "t_evaluacion_utc": "2026-09-19T13:20:10Z",
+   "t_generacion_utc": "2026-09-19T13:20:10Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Udinese vs Cagliari\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Serie A\n\n📝 Motivo: Udinese — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "31ffe6ef09bd6594"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Tottenham Hotspur vs Aston Villa (Premier League)",
    "match_id": "16363870",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 84,
+   "minuto": 85,
    "condicion": "Tottenham Hotspur acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -261,13 +296,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-19T13:16:12Z",
-   "t_captura_utc": "2026-09-19T13:19:12Z",
-   "t_evaluacion_utc": "2026-09-19T13:19:12Z",
-   "t_generacion_utc": "2026-09-19T13:19:12Z",
+   "t_captura_utc": "2026-09-19T13:20:11Z",
+   "t_evaluacion_utc": "2026-09-19T13:20:11Z",
+   "t_generacion_utc": "2026-09-19T13:20:11Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Tottenham Hotspur vs Aston Villa\n⏱ Minuto: 84'\n📊 Marcador: 0-3\n🏆 Liga: Premier League\n\n📝 Motivo: Tottenham Hotspur acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Tottenham Hotspur, min 84\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Tottenham Hotspur vs Aston Villa\n⏱ Minuto: 85'\n📊 Marcador: 0-3\n🏆 Liga: Premier League\n\n📝 Motivo: Tottenham Hotspur acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Tottenham Hotspur, min 84\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "88c536534efe6f3c"
   }
