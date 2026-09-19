@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-19T12:41:14Z",
+ "generated_at_utc": "2026-09-19T12:42:14Z",
  "n_alerts": 6,
  "alerts": [
   {
@@ -36,73 +36,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Osasuna vs Rayo Vallecano\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Osasuna — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "b6cf6f2105938e90"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Osasuna vs Rayo Vallecano (LaLiga)",
-   "match_id": "16416305",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 40,
-   "condicion": "5 córners totales antes del min 45 (2-3), Rayo Vallecano presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Osasuna NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 2,
-    "corners_away": 3,
-    "equipo_presiona": "Rayo Vallecano",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-19T12:38:29Z",
-   "t_captura_utc": "2026-09-19T12:38:29Z",
-   "t_evaluacion_utc": "2026-09-19T12:41:09Z",
-   "t_generacion_utc": "2026-09-19T12:41:09Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Osasuna vs Rayo Vallecano\n⏱ Minuto: 40'\n📊 Marcador: 1-0\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Rayo Vallecano presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Osasuna no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "534da4d701cf70e1"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Cardiff City vs Charlton Athletic (Championship)",
-   "match_id": "16391686",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 49,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 1,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-09-19T12:36:44Z",
-   "t_captura_utc": "2026-09-19T12:36:44Z",
-   "t_evaluacion_utc": "2026-09-19T12:41:12Z",
-   "t_generacion_utc": "2026-09-19T12:41:12Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-19T12:38:13Z",
-     "latencia_envio_ms": 838.5632038116455,
-     "error": null,
-     "message_id": 3229,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 89.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Cardiff City vs Charlton Athletic\n⏱ Minuto: 49'\n📊 Marcador: 2-1\n🏆 Liga: Championship\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "edaf47e776f4cc50"
   },
   {
    "strategy_id": "A2",
@@ -143,12 +76,79 @@
    "alert_id": "d4fceacd4faccc04"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Osasuna vs Rayo Vallecano (LaLiga)",
+   "match_id": "16416305",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 41,
+   "condicion": "5 córners totales antes del min 45 (2-3), Rayo Vallecano presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Osasuna NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 2,
+    "corners_away": 3,
+    "equipo_presiona": "Rayo Vallecano",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-09-19T12:38:29Z",
+   "t_captura_utc": "2026-09-19T12:38:29Z",
+   "t_evaluacion_utc": "2026-09-19T12:42:09Z",
+   "t_generacion_utc": "2026-09-19T12:42:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Osasuna vs Rayo Vallecano\n⏱ Minuto: 41'\n📊 Marcador: 1-0\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Rayo Vallecano presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Osasuna no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "534da4d701cf70e1"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Cardiff City vs Charlton Athletic (Championship)",
+   "match_id": "16391686",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 50,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 1,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-09-19T12:36:44Z",
+   "t_captura_utc": "2026-09-19T12:36:44Z",
+   "t_evaluacion_utc": "2026-09-19T12:42:13Z",
+   "t_generacion_utc": "2026-09-19T12:42:13Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-19T12:38:13Z",
+     "latencia_envio_ms": 838.5632038116455,
+     "error": null,
+     "message_id": 3229,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 89.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Cardiff City vs Charlton Athletic\n⏱ Minuto: 50'\n📊 Marcador: 2-1\n🏆 Liga: Championship\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "edaf47e776f4cc50"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Cardiff City vs Charlton Athletic (Championship)",
    "match_id": "16391686",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 49,
+   "minuto": 50,
    "condicion": "Cardiff City acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -170,13 +170,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-19T12:14:12Z",
-   "t_captura_utc": "2026-09-19T12:41:13Z",
-   "t_evaluacion_utc": "2026-09-19T12:41:13Z",
-   "t_generacion_utc": "2026-09-19T12:41:13Z",
+   "t_captura_utc": "2026-09-19T12:42:14Z",
+   "t_evaluacion_utc": "2026-09-19T12:42:14Z",
+   "t_generacion_utc": "2026-09-19T12:42:14Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Cardiff City vs Charlton Athletic\n⏱ Minuto: 49'\n📊 Marcador: 2-1\n🏆 Liga: Championship\n\n📝 Motivo: Cardiff City acumula 72% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Cardiff City, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Cardiff City vs Charlton Athletic\n⏱ Minuto: 50'\n📊 Marcador: 2-1\n🏆 Liga: Championship\n\n📝 Motivo: Cardiff City acumula 72% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Cardiff City, min 45\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "ce2037d9c75d8ebd"
   },
@@ -186,7 +186,7 @@
    "match_id": "16416305",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 40,
+   "minuto": 41,
    "condicion": "Osasuna acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -208,13 +208,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-19T12:21:11Z",
-   "t_captura_utc": "2026-09-19T12:41:14Z",
-   "t_evaluacion_utc": "2026-09-19T12:41:14Z",
-   "t_generacion_utc": "2026-09-19T12:41:14Z",
+   "t_captura_utc": "2026-09-19T12:42:14Z",
+   "t_evaluacion_utc": "2026-09-19T12:42:14Z",
+   "t_generacion_utc": "2026-09-19T12:42:14Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Osasuna vs Rayo Vallecano\n⏱ Minuto: 40'\n📊 Marcador: 1-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Osasuna acumula 92% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Osasuna, min 21\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Osasuna vs Rayo Vallecano\n⏱ Minuto: 41'\n📊 Marcador: 1-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Osasuna acumula 92% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Osasuna, min 21\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "a4e71df6e8b4d5c2"
   }
