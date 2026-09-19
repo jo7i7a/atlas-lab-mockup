@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-19T20:57:12Z",
- "n_alerts": 6,
+ "generated_at_utc": "2026-09-19T20:58:14Z",
+ "n_alerts": 7,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -181,12 +181,50 @@
    "alert_id": "cdfd875f304a98d0"
   },
   {
+   "strategy_id": "A2",
+   "match_label": "Club Atlético Unión de Santa Fe vs CA Independiente (Liga Profesional de Fútbol)",
+   "match_id": "16667325",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 0,
+    "corners_1t_total": 1
+   },
+   "t_evento_real_utc": "2026-09-19T20:57:17Z",
+   "t_captura_utc": "2026-09-19T20:57:17Z",
+   "t_evaluacion_utc": "2026-09-19T20:58:12Z",
+   "t_generacion_utc": "2026-09-19T20:58:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-19T20:58:13Z",
+     "latencia_envio_ms": 831.3741683959961,
+     "error": null,
+     "message_id": 3327,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 56.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Club Atlético Unión de Santa Fe vs CA Independiente\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "40d68a109e959f14"
+  },
+  {
    "strategy_id": "L3",
    "match_label": "Sporting CP vs FC Arouca (Liga Portugal Betclic)",
    "match_id": "16432047",
    "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
    "cuota_detectada": null,
-   "minuto": 64,
+   "minuto": 65,
    "condicion": "Expulsión de Sporting CP (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
    "confianza": "Media",
    "link": "",
@@ -199,13 +237,13 @@
     "codigo_periodo_atlas": 7
    },
    "t_evento_real_utc": "2026-09-19T20:48:28Z",
-   "t_captura_utc": "2026-09-19T20:56:56Z",
-   "t_evaluacion_utc": "2026-09-19T20:57:12Z",
-   "t_generacion_utc": "2026-09-19T20:57:12Z",
+   "t_captura_utc": "2026-09-19T20:57:58Z",
+   "t_evaluacion_utc": "2026-09-19T20:58:14Z",
+   "t_generacion_utc": "2026-09-19T20:58:14Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 L3 | Sporting CP vs FC Arouca | Roja Sporting CP | Min 64' | 2-0",
+   "mensaje_custom": "🚨 L3 | Sporting CP vs FC Arouca | Roja Sporting CP | Min 65' | 2-0",
    "evidencia": null,
    "alert_id": "fb3d847976ac776a"
   }
