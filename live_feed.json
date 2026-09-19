@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-19T09:20:54Z",
- "n_live_target": 3,
+ "generated_at_utc": "2026-09-19T09:23:54Z",
+ "n_live_target": 2,
  "matches": {
   "16348600": {
    "event_id": 16348600,
@@ -11,7 +11,7 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 17,
+   "minute": 20,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -36,53 +36,58 @@
     "yellow_cards": {
      "label": "Tarjetas amarillas",
      "home": 1,
-     "away": 0
+     "away": 1
     }
    },
    "odds": {
     "btts": {
-     "yes": 2.1,
-     "no": 1.667,
-     "captured_at_utc": "2026-09-19T09:20:41Z"
+     "yes": 2.2,
+     "no": 1.615,
+     "captured_at_utc": "2026-09-19T09:23:48Z"
     },
     "1x2": {
      "home": 4.5,
-     "draw": 3.25,
-     "away": 1.833,
-     "captured_at_utc": "2026-09-19T09:20:41Z"
+     "draw": 3.2,
+     "away": 1.909,
+     "captured_at_utc": "2026-09-19T09:23:48Z"
     },
     "goals_over_25": {
-     "over": 2.375,
-     "under": 1.533,
-     "captured_at_utc": "2026-09-19T09:19:59Z"
+     "over": 2.5,
+     "under": 1.5,
+     "captured_at_utc": "2026-09-19T09:23:48Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-09-19T09:20:41Z"
+     "captured_at_utc": "2026-09-19T09:23:48Z"
     }
    },
-   "updated_at_utc": "2026-09-19T09:20:54Z"
+   "updated_at_utc": "2026-09-19T09:23:54Z"
   },
   "16348592": {
    "event_id": 16348592,
    "league": "J1 League",
    "home": "Kawasaki Frontale",
    "away": "Kashima Antlers",
-   "home_score": 0,
+   "home_score": 1,
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 17,
+   "minute": 20,
    "stats": {
     "possession": {
      "label": "Posesión",
      "home": 64,
      "away": 36
     },
+    "big_chances": {
+     "label": "Ocasiones claras",
+     "home": 1,
+     "away": 0
+    },
     "shots": {
      "label": "Remates totales",
-     "home": 2,
+     "home": 4,
      "away": 1
     },
     "corners": {
@@ -94,68 +99,37 @@
      "label": "Pases",
      "home": 120,
      "away": 64
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 1,
+     "away": 0
     }
    },
    "odds": {
     "btts": {
-     "yes": 1.8,
-     "no": 1.95,
-     "captured_at_utc": "2026-09-19T09:20:41Z"
+     "yes": 1.364,
+     "no": 3.0,
+     "captured_at_utc": "2026-09-19T09:23:06Z"
     },
     "1x2": {
-     "home": 2.4,
-     "draw": 3.4,
-     "away": 2.75,
-     "captured_at_utc": "2026-09-19T09:20:41Z"
+     "home": 1.444,
+     "draw": 4.333,
+     "away": 6.5,
+     "captured_at_utc": "2026-09-19T09:23:06Z"
     },
     "goals_over_25": {
      "over": 1.909,
      "under": 1.8,
-     "captured_at_utc": "2026-09-19T09:20:41Z"
+     "captured_at_utc": "2026-09-19T09:23:48Z"
     },
     "corners_over_95": {
      "over": 2.0,
      "under": 1.727,
-     "captured_at_utc": "2026-09-19T09:20:41Z"
+     "captured_at_utc": "2026-09-19T09:23:48Z"
     }
    },
-   "updated_at_utc": "2026-09-19T09:20:54Z"
-  },
-  "15373099": {
-   "event_id": 15373099,
-   "league": "K League 1",
-   "home": "Bucheon FC 1995",
-   "away": "Gimcheon Sangmu FC",
-   "home_score": 0,
-   "away_score": 2,
-   "status_type": "inprogress",
-   "status_description": "2nd half",
-   "minute": 93,
-   "stats": {},
-   "odds": {
-    "btts": {
-     "yes": 11.0,
-     "no": 1.05,
-     "captured_at_utc": "2026-09-19T09:20:41Z"
-    },
-    "1x2": {
-     "home": 451.0,
-     "draw": 51.0,
-     "away": 1.002,
-     "captured_at_utc": "2026-09-19T09:20:41Z"
-    },
-    "goals_over_25": {
-     "over": 7.0,
-     "under": 1.1,
-     "captured_at_utc": "2026-09-19T09:20:41Z"
-    },
-    "corners_over_95": {
-     "over": 1.615,
-     "under": 2.2,
-     "captured_at_utc": "2026-09-19T09:20:41Z"
-    }
-   },
-   "updated_at_utc": "2026-09-19T09:20:54Z"
+   "updated_at_utc": "2026-09-19T09:23:54Z"
   }
  }
 }
