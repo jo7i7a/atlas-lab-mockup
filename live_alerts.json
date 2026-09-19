@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-19T23:45:11Z",
+ "generated_at_utc": "2026-09-19T23:46:11Z",
  "n_alerts": 7,
  "alerts": [
   {
@@ -39,50 +39,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Remo vs Santos\n⏱ Minuto: 85'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Remo acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Remo, min 85\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "f6d2a190e1fcb23b"
-  },
-  {
-   "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
-   "match_label": "Atlas FC vs Pumas UNAM (Liga MX, Apertura)",
-   "match_id": "16317961",
-   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
-   "cuota_detectada": null,
-   "minuto": 17,
-   "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
-   "confianza": "Alta",
-   "link": "https://www.sofascore.com/event/16317961",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "touchesInOppBox_home": 6.0,
-    "touchesInOppBox_away": 2.0,
-    "touchesInOppBox_tot15": 8.0,
-    "umbral_tot15": 6.0,
-    "minuto_decision": 15,
-    "minuto_deteccion": 17,
-    "marcador_min15": "0-0",
-    "anchor_captured_at_utc": "2026-09-19T23:16:02Z",
-    "anchor_minute": 14.840055704116821
-   },
-   "t_evento_real_utc": "2026-09-19T23:16:02Z",
-   "t_captura_utc": null,
-   "t_evaluacion_utc": "2026-09-19T23:18:11Z",
-   "t_generacion_utc": "2026-09-19T23:18:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-19T23:16:13Z",
-     "latencia_envio_ms": 803.3630847930908,
-     "error": null,
-     "message_id": 3331,
-     "chat_id": 5530307309
-    }
-   },
-   "latencia_total_seg": 11.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Atlas FC vs Pumas UNAM\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 6-2 (total 8 >= 6.0)\n\n🏆 Liga: Liga MX, Apertura\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
-   "evidencia": null,
-   "alert_id": "3034c62609a05cf5"
   },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -232,7 +188,7 @@
    "match_id": "16317961",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 45,
    "condicion": "Atlas FC acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -241,8 +197,8 @@
    "extra": {
     "equipo_dominante": "Atlas FC",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.68,
-    "touches_home": 17,
+    "ratio_presion_territorial": 0.6923,
+    "touches_home": 18,
     "touches_away": 8,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 44,
@@ -254,15 +210,59 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-19T23:21:11Z",
-   "t_captura_utc": "2026-09-19T23:45:10Z",
-   "t_evaluacion_utc": "2026-09-19T23:45:11Z",
-   "t_generacion_utc": "2026-09-19T23:45:11Z",
+   "t_captura_utc": "2026-09-19T23:46:10Z",
+   "t_evaluacion_utc": "2026-09-19T23:46:10Z",
+   "t_generacion_utc": "2026-09-19T23:46:10Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlas FC vs Pumas UNAM\n⏱ Minuto: 44'\n📊 Marcador: 0-1\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Atlas FC acumula 68% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Atlas FC, min 44\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlas FC vs Pumas UNAM\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Atlas FC acumula 69% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Atlas FC, min 44\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "1d7bd614cd46a69e"
+  },
+  {
+   "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
+   "match_label": "Vasco da Gama vs Coritiba (Brasileirão Betano)",
+   "match_id": "15235477",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
+   "confianza": "Alta",
+   "link": "https://www.sofascore.com/event/15235477",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "touchesInOppBox_home": 7.0,
+    "touchesInOppBox_away": 1.0,
+    "touchesInOppBox_tot15": 8.0,
+    "umbral_tot15": 6.0,
+    "minuto_decision": 15,
+    "minuto_deteccion": 15,
+    "marcador_min15": "0-0",
+    "anchor_captured_at_utc": "2026-09-19T23:46:06Z",
+    "anchor_minute": 14.914809823036194
+   },
+   "t_evento_real_utc": "2026-09-19T23:46:06Z",
+   "t_captura_utc": null,
+   "t_evaluacion_utc": "2026-09-19T23:46:11Z",
+   "t_generacion_utc": "2026-09-19T23:46:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-19T23:46:11Z",
+     "latencia_envio_ms": 849.0605354309082,
+     "error": null,
+     "message_id": 3332,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 5.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Vasco da Gama vs Coritiba\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 7-1 (total 8 >= 6.0)\n\n🏆 Liga: Brasileirão Betano\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "3a4a3af3c8648043"
   }
  ]
 }
