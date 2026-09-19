@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-09-19T21:27:12Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-09-19T21:29:12Z",
+ "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Club Atlético Unión de Santa Fe vs CA Independiente (Liga Profesional de Fútbol)",
-   "match_id": "16667325",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 0,
-    "corners_1t_total": 1
-   },
-   "t_evento_real_utc": "2026-09-19T20:57:17Z",
-   "t_captura_utc": "2026-09-19T20:57:17Z",
-   "t_evaluacion_utc": "2026-09-19T21:04:11Z",
-   "t_generacion_utc": "2026-09-19T21:04:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-19T20:58:13Z",
-     "latencia_envio_ms": 831.3741683959961,
-     "error": null,
-     "message_id": 3327,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 56.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Club Atlético Unión de Santa Fe vs CA Independiente\n⏱ Minuto: 52'\n📊 Marcador: 1-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 0\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "40d68a109e959f14"
-  },
   {
    "strategy_id": "A2",
    "match_label": "Mirassol vs Botafogo (Brasileirão Betano)",
