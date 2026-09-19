@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-19T23:47:12Z",
+ "generated_at_utc": "2026-09-19T23:48:11Z",
  "n_alerts": 7,
  "alerts": [
   {
@@ -145,41 +145,6 @@
    "alert_id": "bd55762670d9d128"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Vasco da Gama vs Coritiba (Brasileirão Betano)",
-   "match_id": "15235477",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 16,
-   "condicion": "Vasco da Gama domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Vasco da Gama",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-19T23:46:27Z",
-   "t_captura_utc": "2026-09-19T23:46:27Z",
-   "t_evaluacion_utc": "2026-09-19T23:47:11Z",
-   "t_generacion_utc": "2026-09-19T23:47:11Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Vasco da Gama vs Coritiba\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Vasco da Gama — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "cd28a60f543ff4a8"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Atlas FC vs Pumas UNAM (Liga MX, Apertura)",
    "match_id": "16317961",
@@ -218,12 +183,47 @@
    "alert_id": "1d7bd614cd46a69e"
   },
   {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Vasco da Gama vs Coritiba (Brasileirão Betano)",
+   "match_id": "15235477",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "Vasco da Gama domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Vasco da Gama",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-19T23:46:27Z",
+   "t_captura_utc": "2026-09-19T23:46:27Z",
+   "t_evaluacion_utc": "2026-09-19T23:48:09Z",
+   "t_generacion_utc": "2026-09-19T23:48:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Vasco da Gama vs Coritiba\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Vasco da Gama — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "cd28a60f543ff4a8"
+  },
+  {
    "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
    "match_label": "Vasco da Gama vs Coritiba (Brasileirão Betano)",
    "match_id": "15235477",
    "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "cuota_detectada": null,
-   "minuto": 16,
+   "minuto": 17,
    "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
    "confianza": "Alta",
    "link": "https://www.sofascore.com/event/15235477",
@@ -235,15 +235,15 @@
     "touchesInOppBox_tot15": 8.0,
     "umbral_tot15": 6.0,
     "minuto_decision": 15,
-    "minuto_deteccion": 16,
+    "minuto_deteccion": 17,
     "marcador_min15": "0-0",
     "anchor_captured_at_utc": "2026-09-19T23:46:06Z",
-    "anchor_minute": 14.885470406214397
+    "anchor_minute": 14.913538793722788
    },
    "t_evento_real_utc": "2026-09-19T23:46:06Z",
    "t_captura_utc": null,
-   "t_evaluacion_utc": "2026-09-19T23:47:12Z",
-   "t_generacion_utc": "2026-09-19T23:47:12Z",
+   "t_evaluacion_utc": "2026-09-19T23:48:11Z",
+   "t_generacion_utc": "2026-09-19T23:48:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -257,7 +257,7 @@
    },
    "latencia_total_seg": 5.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Vasco da Gama vs Coritiba\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 7-1 (total 8 >= 6.0)\n\n🏆 Liga: Brasileirão Betano\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Vasco da Gama vs Coritiba\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 7-1 (total 8 >= 6.0)\n\n🏆 Liga: Brasileirão Betano\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "3a4a3af3c8648043"
   }
