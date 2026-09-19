@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-19T16:32:36Z",
+ "generated_at_utc": "2026-09-19T16:33:24Z",
  "n_alerts": 8,
  "alerts": [
   {
@@ -39,35 +39,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Örgryte IS vs IK Sirius\n⏱ Minuto: 41'\n📊 Marcador: 0-1\n🏆 Liga: Allsvenskan\n\n📝 Motivo: IK Sirius acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "db8dd3d12bd01492"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Örgryte IS vs IK Sirius (Allsvenskan)",
-   "match_id": "15272525",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 42,
-   "condicion": "4 córners totales antes del min 45 (1-3), IK Sirius presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Örgryte IS NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "IK Sirius",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-19T16:03:36Z",
-   "t_captura_utc": "2026-09-19T16:03:36Z",
-   "t_evaluacion_utc": "2026-09-19T16:14:10Z",
-   "t_generacion_utc": "2026-09-19T16:14:10Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Örgryte IS vs IK Sirius\n⏱ Minuto: 42'\n📊 Marcador: 0-1\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: IK Sirius presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Örgryte IS no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "5496c29f4613ce83"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -254,12 +225,41 @@
    "alert_id": "02d68e5d0a670e52"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Örgryte IS vs IK Sirius (Allsvenskan)",
+   "match_id": "15272525",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "4 córners totales antes del min 45 (1-3), IK Sirius presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Örgryte IS NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 1,
+    "corners_away": 3,
+    "equipo_presiona": "IK Sirius",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-09-19T16:03:36Z",
+   "t_captura_utc": "2026-09-19T16:03:36Z",
+   "t_evaluacion_utc": "2026-09-19T16:33:10Z",
+   "t_generacion_utc": "2026-09-19T16:33:10Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Örgryte IS vs IK Sirius\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: Allsvenskan\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: IK Sirius presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Örgryte IS no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "5496c29f4613ce83"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "AS Roma vs Inter (Serie A)",
    "match_id": "16285021",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 29,
+   "minuto": 30,
    "condicion": "AS Roma acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -268,9 +268,9 @@
    "extra": {
     "equipo_dominante": "AS Roma",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7,
+    "ratio_presion_territorial": 0.6087,
     "touches_home": 14,
-    "touches_away": 6,
+    "touches_away": 9,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -281,13 +281,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-19T16:23:18Z",
-   "t_captura_utc": "2026-09-19T16:32:36Z",
-   "t_evaluacion_utc": "2026-09-19T16:32:36Z",
-   "t_generacion_utc": "2026-09-19T16:32:36Z",
+   "t_captura_utc": "2026-09-19T16:33:24Z",
+   "t_evaluacion_utc": "2026-09-19T16:33:24Z",
+   "t_generacion_utc": "2026-09-19T16:33:24Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ AS Roma vs Inter\n⏱ Minuto: 29'\n📊 Marcador: 1-0\n🏆 Liga: Serie A\n\n📝 Motivo: AS Roma acumula 70% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ AS Roma vs Inter\n⏱ Minuto: 30'\n📊 Marcador: 1-0\n🏆 Liga: Serie A\n\n📝 Motivo: AS Roma acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "04e84b800c3a94b9"
   }
