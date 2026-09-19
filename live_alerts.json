@@ -1,53 +1,7 @@
 {
- "generated_at_utc": "2026-09-19T12:34:11Z",
- "n_alerts": 7,
+ "generated_at_utc": "2026-09-19T12:35:12Z",
+ "n_alerts": 6,
  "alerts": [
-  {
-   "strategy_id": "B1_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Tottenham Hotspur vs Aston Villa (Premier League)",
-   "match_id": "16363870",
-   "market": "Over 1.5 Goles FT (o Over 0.5 2ª Mitad) -- verificar en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 42,
-   "condicion": "0-0 con dominancia sostenida entre los minutos 32-42 (remates totales≥9, tiros a puerta≥4, córners≥5, todos combinados). Condición original de 'ataques peligrosos' NO evaluada -- dato no disponible en la fuente actual. Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "remates_local": 9,
-    "remates_visita": 4,
-    "remates_total": 13,
-    "sot_local": 4,
-    "sot_visita": 2,
-    "sot_total": 6,
-    "cor_local": 7,
-    "cor_visita": 0,
-    "cor_total": 7,
-    "marcador": "0-0",
-    "condicion_original_no_evaluada": "ataques peligrosos a favor del dominante (dato no disponible)"
-   },
-   "t_evento_real_utc": "2026-09-19T12:04:16Z",
-   "t_captura_utc": "2026-09-19T12:13:02Z",
-   "t_evaluacion_utc": "2026-09-19T12:13:10Z",
-   "t_generacion_utc": "2026-09-19T12:13:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-19T12:05:11Z",
-     "latencia_envio_ms": 827.9221057891846,
-     "error": null,
-     "message_id": 3225,
-     "chat_id": -5415726375
-    }
-   },
-   "latencia_total_seg": 55.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B1_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Tottenham Hotspur vs Aston Villa\n⏱ Minuto: 42'\n📊 Marcador: 0-0\n\n🎯 Remates totales:\nLocal: 9\nVisita: 4\nTotal: 13\n\n🎯 Tiros a puerta:\nLocal: 4\nVisita: 2\nTotal: 6\n\n🚩 Córners:\nLocal: 7\nVisita: 0\nTotal: 7\n\n🏆 Liga: Premier League\n\n⚠️ Versión SIN la condición de ataques peligrosos (dato no disponible)\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 goles FT (o Over 0.5 2ª mitad)\n\n⚠️ RESPONDE CON EL TAG (obligatorio para B1):\n'FT LÍNEA @ CUOTA' o '2T LÍNEA @ CUOTA'",
-   "evidencia": null,
-   "alert_id": "c799a107f15f1bf2"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Stoke City vs Sheffield United (Championship)",
@@ -125,35 +79,6 @@
    "alert_id": "6cbc6f1c3f4a00e8"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Tottenham Hotspur vs Aston Villa (Premier League)",
-   "match_id": "16363870",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "5 córners totales antes del min 45 (5-0), Tottenham Hotspur presiona (5 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Aston Villa NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 5,
-    "corners_away": 0,
-    "equipo_presiona": "Tottenham Hotspur",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-19T12:04:16Z",
-   "t_captura_utc": "2026-09-19T12:04:16Z",
-   "t_evaluacion_utc": "2026-09-19T12:16:09Z",
-   "t_generacion_utc": "2026-09-19T12:16:09Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Tottenham Hotspur vs Aston Villa\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Premier League\n\n🚩 Córners:\nLocal: 5\nVisita: 0\nTotal: 5\n\n📝 Motivo: Tottenham Hotspur presiona con 5 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Aston Villa no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "8021148aab9891ba"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Cardiff City vs Charlton Athletic (Championship)",
    "match_id": "16391686",
@@ -227,12 +152,50 @@
    "alert_id": "b6cf6f2105938e90"
   },
   {
+   "strategy_id": "A2",
+   "match_label": "Millwall vs West Ham United (Championship)",
+   "match_id": "16391688",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 46,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 0,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-09-19T12:33:17Z",
+   "t_captura_utc": "2026-09-19T12:33:17Z",
+   "t_evaluacion_utc": "2026-09-19T12:35:11Z",
+   "t_generacion_utc": "2026-09-19T12:35:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-19T12:35:12Z",
+     "latencia_envio_ms": 810.7645511627197,
+     "error": null,
+     "message_id": 3228,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 115.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Millwall vs West Ham United\n⏱ Minuto: 46'\n📊 Marcador: 2-0\n🏆 Liga: Championship\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "d4fceacd4faccc04"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Osasuna vs Rayo Vallecano (LaLiga)",
    "match_id": "16416305",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 33,
+   "minuto": 34,
    "condicion": "Osasuna acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -254,13 +217,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-19T12:21:11Z",
-   "t_captura_utc": "2026-09-19T12:34:11Z",
-   "t_evaluacion_utc": "2026-09-19T12:34:11Z",
-   "t_generacion_utc": "2026-09-19T12:34:11Z",
+   "t_captura_utc": "2026-09-19T12:35:12Z",
+   "t_evaluacion_utc": "2026-09-19T12:35:12Z",
+   "t_generacion_utc": "2026-09-19T12:35:12Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Osasuna vs Rayo Vallecano\n⏱ Minuto: 33'\n📊 Marcador: 1-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Osasuna acumula 91% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Osasuna, min 21\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Osasuna vs Rayo Vallecano\n⏱ Minuto: 34'\n📊 Marcador: 1-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Osasuna acumula 91% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Osasuna, min 21\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "a4e71df6e8b4d5c2"
   }
