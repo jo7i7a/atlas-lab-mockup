@@ -1,41 +1,35 @@
 {
- "generated_at_utc": "2026-09-19T11:19:12Z",
+ "generated_at_utc": "2026-09-19T11:20:13Z",
  "n_alerts": 1,
  "alerts": [
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Yokohama F. Marinos vs Mito Hollyhock (J1 League)",
-   "match_id": "16348599",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "strategy_id": "L3",
+   "match_label": "Fagiano Okayama vs Kyoto Sanga FC (J1 League)",
+   "match_id": "16348594",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
    "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Yokohama F. Marinos domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "minuto": 59,
+   "condicion": "Expulsión de Fagiano Okayama (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
    "confianza": "Media",
    "link": "",
-   "priority": "MEDIA",
+   "priority": "ALTA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "equipo_dominante": "Yokohama F. Marinos",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 2,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+    "equipo_expulsado": "Fagiano Okayama",
+    "marcador_al_detectar": "1-1",
+    "total_rojas_partido": 1,
+    "codigo_periodo_atlas": 7
    },
-   "t_evento_real_utc": "2026-09-19T10:49:59Z",
-   "t_captura_utc": "2026-09-19T10:49:59Z",
-   "t_evaluacion_utc": "2026-09-19T10:59:12Z",
-   "t_generacion_utc": "2026-09-19T10:59:12Z",
+   "t_evento_real_utc": "2026-09-19T11:19:27Z",
+   "t_captura_utc": "2026-09-19T11:20:11Z",
+   "t_evaluacion_utc": "2026-09-19T11:20:13Z",
+   "t_generacion_utc": "2026-09-19T11:20:13Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Yokohama F. Marinos vs Mito Hollyhock\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n📝 Motivo: Yokohama F. Marinos — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 L3 | Fagiano Okayama vs Kyoto Sanga FC | Roja Fagiano Okayama | Min 59' | 1-1",
    "evidencia": null,
-   "alert_id": "407de0448ff6b02a"
+   "alert_id": "bc7f82ce8d534b01"
   }
  ]
 }
