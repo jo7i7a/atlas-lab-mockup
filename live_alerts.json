@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-19T13:47:10Z",
+ "generated_at_utc": "2026-09-19T13:48:10Z",
  "n_alerts": 13,
  "alerts": [
   {
@@ -340,41 +340,6 @@
    "alert_id": "a18ac7d409779c05"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Borussia M'gladbach vs 1. FSV Mainz 05 (Bundesliga)",
-   "match_id": "16434047",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 16,
-   "condicion": "Borussia M'gladbach domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Borussia M'gladbach",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 1,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-19T13:45:36Z",
-   "t_captura_utc": "2026-09-19T13:45:36Z",
-   "t_evaluacion_utc": "2026-09-19T13:47:10Z",
-   "t_generacion_utc": "2026-09-19T13:47:10Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Borussia M'gladbach vs 1. FSV Mainz 05\n⏱ Minuto: 16'\n📊 Marcador: 1-0\n🏆 Liga: Bundesliga\n\n📝 Motivo: Borussia M'gladbach — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "ff50214464f8ebc2"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Bologna vs Torino (Serie A)",
    "match_id": "16285017",
@@ -449,6 +414,41 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Udinese vs Cagliari\n⏱ Minuto: 44'\n📊 Marcador: 0-0\n🏆 Liga: Serie A\n\n📝 Motivo: Udinese acumula 90% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Udinese, min 37\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "312ad1bcef8766d6"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Borussia M'gladbach vs 1. FSV Mainz 05 (Bundesliga)",
+   "match_id": "16434047",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 17,
+   "condicion": "Borussia M'gladbach domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Borussia M'gladbach",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 2,
+    "remates_away": 1,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-19T13:45:36Z",
+   "t_captura_utc": "2026-09-19T13:45:36Z",
+   "t_evaluacion_utc": "2026-09-19T13:48:10Z",
+   "t_generacion_utc": "2026-09-19T13:48:10Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Borussia M'gladbach vs 1. FSV Mainz 05\n⏱ Minuto: 17'\n📊 Marcador: 1-1\n🏆 Liga: Bundesliga\n\n📝 Motivo: Borussia M'gladbach — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "ff50214464f8ebc2"
   }
  ]
 }
