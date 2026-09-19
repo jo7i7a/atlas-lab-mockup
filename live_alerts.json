@@ -1,36 +1,7 @@
 {
- "generated_at_utc": "2026-09-19T17:04:12Z",
+ "generated_at_utc": "2026-09-19T17:05:09Z",
  "n_alerts": 13,
  "alerts": [
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Molde FK vs Aalesunds FK (Eliteserien)",
-   "match_id": "15260908",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (1-3), Aalesunds FK presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Molde FK NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 1,
-    "corners_away": 3,
-    "equipo_presiona": "Aalesunds FK",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-19T16:38:13Z",
-   "t_captura_utc": "2026-09-19T16:38:13Z",
-   "t_evaluacion_utc": "2026-09-19T16:47:09Z",
-   "t_generacion_utc": "2026-09-19T16:47:09Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Molde FK vs Aalesunds FK\n⏱ Minuto: 45'\n📊 Marcador: 0-2\n🏆 Liga: Eliteserien\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Aalesunds FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Molde FK no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "a2a0c5bbe41b94b4"
-  },
   {
    "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
    "match_label": "Nottingham Forest vs Coventry City (Premier League)",
@@ -506,6 +477,35 @@
    "mensaje_custom": "🟣 H3 — INVESTIGACIÓN LIVE (Persistencia de tiros)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Sparta Rotterdam vs SC Heerenveen\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nTiros a puerta (ambos equipos) por tramo:\n  min 1-5: 2\n  min 6-10: 3\n  min 11-15: 2\n\n🏆 Liga: VriendenLoterij Eredivisie\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "eab54ecefdd79880"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Molde FK vs Aalesunds FK (Eliteserien)",
+   "match_id": "15260908",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "4 córners totales antes del min 45 (1-3), Aalesunds FK presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Molde FK NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 1,
+    "corners_away": 3,
+    "equipo_presiona": "Aalesunds FK",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-09-19T16:38:13Z",
+   "t_captura_utc": "2026-09-19T16:38:13Z",
+   "t_evaluacion_utc": "2026-09-19T17:05:09Z",
+   "t_generacion_utc": "2026-09-19T17:05:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Molde FK vs Aalesunds FK\n⏱ Minuto: 45'\n📊 Marcador: 0-2\n🏆 Liga: Eliteserien\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Aalesunds FK presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Molde FK no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "a2a0c5bbe41b94b4"
   }
  ]
 }
