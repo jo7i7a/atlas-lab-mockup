@@ -1,5 +1,63 @@
 {
- "generated_at_utc": "2026-09-19T02:46:09Z",
- "n_alerts": 0,
- "alerts": []
+ "generated_at_utc": "2026-09-19T03:20:09Z",
+ "n_alerts": 2,
+ "alerts": [
+  {
+   "strategy_id": "L1",
+   "match_label": "FC Juárez vs Tigres UANL (Liga MX, Apertura)",
+   "match_id": "16317959",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 14,
+   "condicion": "4 córners totales antes del min 30 (0-4), Tigres UANL presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿FC Juárez NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Tigres UANL"
+   },
+   "t_evento_real_utc": "2026-09-19T03:19:55Z",
+   "t_captura_utc": "2026-09-19T03:19:55Z",
+   "t_evaluacion_utc": "2026-09-19T03:20:08Z",
+   "t_generacion_utc": "2026-09-19T03:20:08Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ FC Juárez vs Tigres UANL\n⏱ Minuto: 14'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Tigres UANL presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Juárez no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "c36f9ea249f9870d"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "FC Juárez vs Tigres UANL (Liga MX, Apertura)",
+   "match_id": "16317959",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 14,
+   "condicion": "4 córners totales antes del min 45 (0-4), Tigres UANL presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿FC Juárez NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Tigres UANL",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-09-19T03:19:55Z",
+   "t_captura_utc": "2026-09-19T03:19:55Z",
+   "t_evaluacion_utc": "2026-09-19T03:20:09Z",
+   "t_generacion_utc": "2026-09-19T03:20:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ FC Juárez vs Tigres UANL\n⏱ Minuto: 14'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Tigres UANL presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Juárez no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "5bc17ec6dfa3bad8"
+  }
+ ]
 }
