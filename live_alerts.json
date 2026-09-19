@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-19T16:27:52Z",
+ "generated_at_utc": "2026-09-19T16:29:53Z",
  "n_alerts": 9,
  "alerts": [
   {
@@ -180,82 +180,6 @@
    "alert_id": "be532b89df923a7e"
   },
   {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "AS Roma vs Inter (Serie A)",
-   "match_id": "16285021",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 23,
-   "condicion": "AS Roma acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "AS Roma",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.8333,
-    "touches_home": 10,
-    "touches_away": 2,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-09-19T16:23:18Z",
-    "t_inicio_estimado_condicion": "2026-09-19T16:24:01Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-19T16:23:18Z",
-   "t_captura_utc": "2026-09-19T16:26:19Z",
-   "t_evaluacion_utc": "2026-09-19T16:26:19Z",
-   "t_generacion_utc": "2026-09-19T16:26:19Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ AS Roma vs Inter\n⏱ Minuto: 23'\n📊 Marcador: 1-0\n🏆 Liga: Serie A\n\n📝 Motivo: AS Roma acumula 83% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "04e84b800c3a94b9"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Paris FC vs RC Strasbourg (Ligue 1)",
-   "match_id": "16310964",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 50,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 0,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-09-19T16:21:33Z",
-   "t_captura_utc": "2026-09-19T16:21:33Z",
-   "t_evaluacion_utc": "2026-09-19T16:27:52Z",
-   "t_generacion_utc": "2026-09-19T16:27:52Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-19T16:23:17Z",
-     "latencia_envio_ms": 838.529109954834,
-     "error": null,
-     "message_id": 3285,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 104.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Paris FC vs RC Strasbourg\n⏱ Minuto: 50'\n📊 Marcador: 1-0\n🏆 Liga: Ligue 1\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "02d68e5d0a670e52"
-  },
-  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Molde FK vs Aalesunds FK (Eliteserien)",
    "match_id": "15260908",
@@ -324,6 +248,82 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ AS Roma vs Inter\n⏱ Minuto: 24'\n📊 Marcador: 1-0\n🏆 Liga: Serie A\n\n📝 Motivo: AS Roma — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "a30530df0c5db3a6"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Paris FC vs RC Strasbourg (Ligue 1)",
+   "match_id": "16310964",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 52,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 0,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-09-19T16:21:33Z",
+   "t_captura_utc": "2026-09-19T16:21:33Z",
+   "t_evaluacion_utc": "2026-09-19T16:29:52Z",
+   "t_generacion_utc": "2026-09-19T16:29:52Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-19T16:23:17Z",
+     "latencia_envio_ms": 838.529109954834,
+     "error": null,
+     "message_id": 3285,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 104.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Paris FC vs RC Strasbourg\n⏱ Minuto: 52'\n📊 Marcador: 1-0\n🏆 Liga: Ligue 1\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "02d68e5d0a670e52"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "AS Roma vs Inter (Serie A)",
+   "match_id": "16285021",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 26,
+   "condicion": "AS Roma acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "AS Roma",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.7778,
+    "touches_home": 14,
+    "touches_away": 4,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "1-0",
+    "t_primera_observacion_atlas": "2026-09-19T16:23:18Z",
+    "t_inicio_estimado_condicion": "2026-09-19T16:24:01Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-19T16:23:18Z",
+   "t_captura_utc": "2026-09-19T16:29:53Z",
+   "t_evaluacion_utc": "2026-09-19T16:29:53Z",
+   "t_generacion_utc": "2026-09-19T16:29:53Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ AS Roma vs Inter\n⏱ Minuto: 26'\n📊 Marcador: 1-0\n🏆 Liga: Serie A\n\n📝 Motivo: AS Roma acumula 78% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "04e84b800c3a94b9"
   }
  ]
 }
