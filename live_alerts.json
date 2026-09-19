@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-19T23:15:12Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-09-19T23:16:13Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -42,7 +42,7 @@
    "match_id": "16667327",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 51,
+   "minuto": 52,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -55,8 +55,8 @@
    },
    "t_evento_real_utc": "2026-09-19T23:09:30Z",
    "t_captura_utc": "2026-09-19T23:09:30Z",
-   "t_evaluacion_utc": "2026-09-19T23:15:10Z",
-   "t_generacion_utc": "2026-09-19T23:15:10Z",
+   "t_evaluacion_utc": "2026-09-19T23:16:10Z",
+   "t_generacion_utc": "2026-09-19T23:16:10Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -70,9 +70,91 @@
    },
    "latencia_total_seg": 41.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ River Plate vs Huracán\n⏱ Minuto: 51'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 3\nVisita: 0\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ River Plate vs Huracán\n⏱ Minuto: 52'\n📊 Marcador: 1-1\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 3\nVisita: 0\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "58bb03ad02ef8a74"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Remo vs Santos (Brasileirão Betano)",
+   "match_id": "15237989",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 83,
+   "condicion": "Remo acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Remo",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6364,
+    "touches_home": 14,
+    "touches_away": 8,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 80,
+    "equipo_que_realizo_sustitucion": "Remo",
+    "marcador_en_el_momento": "1-1",
+    "t_primera_observacion_atlas": "2026-09-19T23:16:12Z",
+    "t_inicio_estimado_condicion": "2026-09-19T21:52:58Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-19T23:16:12Z",
+   "t_captura_utc": "2026-09-19T23:16:12Z",
+   "t_evaluacion_utc": "2026-09-19T23:16:12Z",
+   "t_generacion_utc": "2026-09-19T23:16:12Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Remo vs Santos\n⏱ Minuto: 83'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: Remo acumula 64% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Remo, min 80\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "f6d2a190e1fcb23b"
+  },
+  {
+   "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
+   "match_label": "Atlas FC vs Pumas UNAM (Liga MX, Apertura)",
+   "match_id": "16317961",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
+   "confianza": "Alta",
+   "link": "https://www.sofascore.com/event/16317961",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "touchesInOppBox_home": 6.0,
+    "touchesInOppBox_away": 2.0,
+    "touchesInOppBox_tot15": 8.0,
+    "umbral_tot15": 6.0,
+    "minuto_decision": 15,
+    "minuto_deteccion": 15,
+    "marcador_min15": "0-0",
+    "anchor_captured_at_utc": "2026-09-19T23:16:02Z",
+    "anchor_minute": 14.820615025361379
+   },
+   "t_evento_real_utc": "2026-09-19T23:16:02Z",
+   "t_captura_utc": null,
+   "t_evaluacion_utc": "2026-09-19T23:16:12Z",
+   "t_generacion_utc": "2026-09-19T23:16:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-19T23:16:13Z",
+     "latencia_envio_ms": 803.3630847930908,
+     "error": null,
+     "message_id": 3331,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 11.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Atlas FC vs Pumas UNAM\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 6-2 (total 8 >= 6.0)\n\n🏆 Liga: Liga MX, Apertura\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "3034c62609a05cf5"
   }
  ]
 }
