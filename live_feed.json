@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-19T21:59:54Z",
- "n_live_target": 3,
+ "generated_at_utc": "2026-09-19T22:02:54Z",
+ "n_live_target": 4,
  "matches": {
   "15237989": {
    "event_id": 15237989,
@@ -11,16 +11,16 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 27,
+   "minute": 30,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 54,
-     "away": 46
+     "home": 49,
+     "away": 51
     },
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.13,
+     "home": 0.14,
      "away": 0
     },
     "shots": {
@@ -35,8 +35,8 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 158,
-     "away": 139
+     "home": 164,
+     "away": 172
     },
     "yellow_cards": {
      "label": "Tarjetas amarillas",
@@ -51,28 +51,28 @@
    },
    "odds": {
     "btts": {
-     "yes": 2.25,
-     "no": 1.571,
-     "captured_at_utc": "2026-09-19T21:59:50Z"
+     "yes": 2.375,
+     "no": 1.533,
+     "captured_at_utc": "2026-09-19T22:02:34Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-09-19T21:59:50Z"
+     "captured_at_utc": "2026-09-19T22:02:34Z"
     },
     "1x2": {
      "home": 3.1,
      "draw": 2.75,
      "away": 2.6,
-     "captured_at_utc": "2026-09-19T21:59:50Z"
+     "captured_at_utc": "2026-09-19T22:02:34Z"
     },
     "goals_over_25": {
      "over": 2.5,
      "under": 1.533,
-     "captured_at_utc": "2026-09-19T21:59:50Z"
+     "captured_at_utc": "2026-09-19T22:02:34Z"
     }
    },
-   "updated_at_utc": "2026-09-19T21:59:54Z"
+   "updated_at_utc": "2026-09-19T22:02:54Z"
   },
   "15526290": {
    "event_id": 15526290,
@@ -83,7 +83,7 @@
    "away_score": 1,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 29,
+   "minute": 32,
    "stats": {
     "possession": {
      "label": "Posesión",
@@ -102,7 +102,7 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 4,
+     "home": 5,
      "away": 2
     },
     "corners": {
@@ -112,8 +112,13 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 168,
-     "away": 133
+     "home": 187,
+     "away": 153
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 0,
+     "away": 1
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -129,22 +134,53 @@
     },
     "1x2": {
      "home": 2.6,
-     "draw": 2.6,
-     "away": 3.4,
-     "captured_at_utc": "2026-09-19T21:59:50Z"
+     "draw": 2.5,
+     "away": 3.6,
+     "captured_at_utc": "2026-09-19T22:02:34Z"
     },
     "goals_over_25": {
      "over": 1.8,
      "under": 1.909,
-     "captured_at_utc": "2026-09-19T21:59:50Z"
+     "captured_at_utc": "2026-09-19T22:02:34Z"
     },
     "corners_over_95": {
      "over": 2.1,
      "under": 1.667,
-     "captured_at_utc": "2026-09-19T21:59:50Z"
+     "captured_at_utc": "2026-09-19T22:02:34Z"
     }
    },
-   "updated_at_utc": "2026-09-19T21:59:54Z"
+   "updated_at_utc": "2026-09-19T22:02:54Z"
+  },
+  "16667327": {
+   "event_id": 16667327,
+   "league": "Liga Profesional de Fútbol",
+   "home": "River Plate",
+   "away": "Huracán",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 1,
+   "stats": {},
+   "odds": {
+    "btts": {
+     "yes": 2.5,
+     "no": 1.5,
+     "captured_at_utc": "2026-09-19T22:02:34Z"
+    },
+    "1x2": {
+     "home": 1.533,
+     "draw": 3.5,
+     "away": 8.0,
+     "captured_at_utc": "2026-09-19T22:02:34Z"
+    },
+    "goals_over_25": {
+     "over": 2.375,
+     "under": 1.533,
+     "captured_at_utc": "2026-09-19T22:02:34Z"
+    }
+   },
+   "updated_at_utc": "2026-09-19T22:02:54Z"
   },
   "16969955": {
    "event_id": 16969955,
@@ -155,17 +191,17 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "2nd half",
-   "minute": 93,
+   "minute": 96,
    "stats": {},
    "odds": {
     "1x2": {
      "home": 1.002,
      "draw": 51.0,
      "away": 126.0,
-     "captured_at_utc": "2026-09-19T21:59:50Z"
+     "captured_at_utc": "2026-09-19T22:02:34Z"
     }
    },
-   "updated_at_utc": "2026-09-19T21:59:54Z"
+   "updated_at_utc": "2026-09-19T22:02:54Z"
   }
  }
 }
