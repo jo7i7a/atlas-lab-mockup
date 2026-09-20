@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-20T17:00:11Z",
+ "generated_at_utc": "2026-09-20T17:01:11Z",
  "n_alerts": 9,
  "alerts": [
   {
@@ -187,7 +187,7 @@
    "match_id": "16416294",
    "market": "Over 0.5 Goles -- Primer Tiempo",
    "cuota_detectada": null,
-   "minuto": 29,
+   "minuto": 30,
    "condicion": "0-0 en ventana 24-34 con peligro acumulado (xG>=0.90, remates>=7, SoT>=2, corners>=2, todos combinados) Y presión reciente activa en los últimos 10 minutos (shots>=3, SoT>=1, via delta_ventana()). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -210,8 +210,8 @@
     "presion_reciente_shots": {
      "campo": "totalShotsOnGoal",
      "minutos_ventana_pedidos": 10,
-     "t0_captured_at_utc": "2026-09-20T17:00:06Z",
-     "t1_captured_at_utc": "2026-09-20T16:49:56Z",
+     "t0_captured_at_utc": "2026-09-20T17:01:09Z",
+     "t1_captured_at_utc": "2026-09-20T16:51:01Z",
      "valor_t0": [
       7,
       1
@@ -229,8 +229,8 @@
     "presion_reciente_sot": {
      "campo": "shotsOnGoal",
      "minutos_ventana_pedidos": 10,
-     "t0_captured_at_utc": "2026-09-20T17:00:06Z",
-     "t1_captured_at_utc": "2026-09-20T16:49:56Z",
+     "t0_captured_at_utc": "2026-09-20T17:01:09Z",
+     "t1_captured_at_utc": "2026-09-20T16:51:01Z",
      "valor_t0": [
       2,
       0
@@ -248,9 +248,9 @@
     "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo"
    },
    "t_evento_real_utc": "2026-09-20T16:55:16Z",
-   "t_captura_utc": "2026-09-20T17:00:06Z",
-   "t_evaluacion_utc": "2026-09-20T17:00:11Z",
-   "t_generacion_utc": "2026-09-20T17:00:11Z",
+   "t_captura_utc": "2026-09-20T17:01:09Z",
+   "t_evaluacion_utc": "2026-09-20T17:01:11Z",
+   "t_generacion_utc": "2026-09-20T17:01:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -264,7 +264,7 @@
    },
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🔵 L5_V2 — L5_V2_OVER05HT_PRESION_PERSISTENTE\n\n⚽ Villarreal vs Levante UD\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n\nxG combinado: 1.36\nRemates totales: 7-1 (total 8)\nTiros a puerta: 2-0 (total 2)\nCórners: 3-0 (total 3)\n\nPresión reciente (últimos 10 min):\n  Shots: 3 (T0=2026-09-20T17:00:06Z, T1=2026-09-20T16:49:56Z)\n  SoT: 1 (T0=2026-09-20T17:00:06Z, T1=2026-09-20T16:49:56Z)\n\n🏆 Liga: LaLiga\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo",
+   "mensaje_custom": "🔵 L5_V2 — L5_V2_OVER05HT_PRESION_PERSISTENTE\n\n⚽ Villarreal vs Levante UD\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n\nxG combinado: 1.36\nRemates totales: 7-1 (total 8)\nTiros a puerta: 2-0 (total 2)\nCórners: 3-0 (total 3)\n\nPresión reciente (últimos 10 min):\n  Shots: 3 (T0=2026-09-20T17:01:09Z, T1=2026-09-20T16:51:01Z)\n  SoT: 1 (T0=2026-09-20T17:01:09Z, T1=2026-09-20T16:51:01Z)\n\n🏆 Liga: LaLiga\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo",
    "evidencia": null,
    "alert_id": "d23d0010e860b1c5"
   },
@@ -274,7 +274,7 @@
    "match_id": "16363652",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 74,
+   "minuto": 75,
    "condicion": "Manchester United acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -283,9 +283,9 @@
    "extra": {
     "equipo_dominante": "Manchester United",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6471,
+    "ratio_presion_territorial": 0.6538,
     "touches_home": 18,
-    "touches_away": 33,
+    "touches_away": 34,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -296,13 +296,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-20T16:54:13Z",
-   "t_captura_utc": "2026-09-20T17:00:11Z",
-   "t_evaluacion_utc": "2026-09-20T17:00:11Z",
-   "t_generacion_utc": "2026-09-20T17:00:11Z",
+   "t_captura_utc": "2026-09-20T17:01:11Z",
+   "t_evaluacion_utc": "2026-09-20T17:01:11Z",
+   "t_generacion_utc": "2026-09-20T17:01:11Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Fulham vs Manchester United\n⏱ Minuto: 74'\n📊 Marcador: 1-0\n🏆 Liga: Premier League\n\n📝 Motivo: Manchester United acumula 65% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Fulham vs Manchester United\n⏱ Minuto: 75'\n📊 Marcador: 1-0\n🏆 Liga: Premier League\n\n📝 Motivo: Manchester United acumula 65% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "57ce05bdbd1bdf40"
   },
@@ -312,7 +312,7 @@
    "match_id": "16416294",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 29,
+   "minuto": 30,
    "condicion": "Villarreal acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -321,9 +321,9 @@
    "extra": {
     "equipo_dominante": "Villarreal",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.8571,
+    "ratio_presion_territorial": 0.8182,
     "touches_home": 18,
-    "touches_away": 3,
+    "touches_away": 4,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -334,13 +334,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-20T16:51:14Z",
-   "t_captura_utc": "2026-09-20T17:00:11Z",
-   "t_evaluacion_utc": "2026-09-20T17:00:11Z",
-   "t_generacion_utc": "2026-09-20T17:00:11Z",
+   "t_captura_utc": "2026-09-20T17:01:11Z",
+   "t_evaluacion_utc": "2026-09-20T17:01:11Z",
+   "t_generacion_utc": "2026-09-20T17:01:11Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Villarreal vs Levante UD\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Villarreal acumula 86% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Villarreal vs Levante UD\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Villarreal acumula 82% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "ee32f2d995a71f69"
   },
@@ -350,7 +350,7 @@
    "match_id": "16416313",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 28,
+   "minuto": 29,
    "condicion": "Real Betis acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -372,13 +372,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-20T16:52:12Z",
-   "t_captura_utc": "2026-09-20T17:00:11Z",
-   "t_evaluacion_utc": "2026-09-20T17:00:11Z",
-   "t_generacion_utc": "2026-09-20T17:00:11Z",
+   "t_captura_utc": "2026-09-20T17:01:11Z",
+   "t_evaluacion_utc": "2026-09-20T17:01:11Z",
+   "t_generacion_utc": "2026-09-20T17:01:11Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportivo de A Coruña vs Real Betis\n⏱ Minuto: 28'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Real Betis acumula 100% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Real Betis, min 12\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportivo de A Coruña vs Real Betis\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Real Betis acumula 100% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Real Betis, min 12\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "75495eded1c30607"
   }
