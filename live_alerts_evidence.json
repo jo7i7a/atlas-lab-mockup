@@ -8110,5 +8110,27 @@
    "cuota_real_betano": 1.65,
    "activo": true
   }
+ ],
+ "e4edcb96a740932a": [
+  {
+   "alert_id": "e4edcb96a740932a",
+   "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
+   "match_label": "Parma vs Genoa (Serie A)",
+   "liga": "Serie A",
+   "event_id": "16285025",
+   "minuto_alerta": 16,
+   "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
+   "t_evento_real_utc": "2026-09-20T13:18:15Z",
+   "t_captura_utc": null,
+   "operable": true,
+   "t_respuesta_utc": "2026-09-20T13:20:46Z",
+   "segundos_transcurridos": 88,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "0.5 @ 2.12",
+   "respuesta_message_id": 3367,
+   "linea_real_betano": 0.5,
+   "cuota_real_betano": 2.12,
+   "activo": true
+  }
  ]
 }
