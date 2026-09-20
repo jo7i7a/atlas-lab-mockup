@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-20T01:50:19Z",
- "n_alerts": 9,
+ "generated_at_utc": "2026-09-20T01:51:17Z",
+ "n_alerts": 8,
  "alerts": [
   {
    "strategy_id": "L1-SHADOW",
@@ -30,35 +30,6 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Houston Dynamo vs FC Cincinnati\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Houston Dynamo presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿FC Cincinnati no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "96f6a82333c4da3b"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "St.Louis City vs Toronto FC (MLS)",
-   "match_id": "15168406",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (4-0), St.Louis City presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Toronto FC NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "St.Louis City",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-20T01:20:58Z",
-   "t_captura_utc": "2026-09-20T01:20:58Z",
-   "t_evaluacion_utc": "2026-09-20T01:26:11Z",
-   "t_generacion_utc": "2026-09-20T01:26:11Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ St.Louis City vs Toronto FC\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: St.Louis City presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Toronto FC no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "e3b4e778bd93b3aa"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -205,7 +176,7 @@
    "match_id": "16317962",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 35,
+   "minuto": 36,
    "condicion": "5 córners totales antes del min 45 (3-2), CF Monterrey presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Cruz Azul NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -219,12 +190,12 @@
    },
    "t_evento_real_utc": "2026-09-20T01:28:29Z",
    "t_captura_utc": "2026-09-20T01:28:29Z",
-   "t_evaluacion_utc": "2026-09-20T01:50:09Z",
-   "t_generacion_utc": "2026-09-20T01:50:09Z",
+   "t_evaluacion_utc": "2026-09-20T01:51:09Z",
+   "t_generacion_utc": "2026-09-20T01:51:09Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CF Monterrey vs Cruz Azul\n⏱ Minuto: 35'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: CF Monterrey presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Cruz Azul no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CF Monterrey vs Cruz Azul\n⏱ Minuto: 36'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: CF Monterrey presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Cruz Azul no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "05e5ad954b1d1de7"
   },
@@ -234,7 +205,7 @@
    "match_id": "15168409",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 46,
+   "minuto": 47,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -247,8 +218,8 @@
    },
    "t_evento_real_utc": "2026-09-20T01:48:50Z",
    "t_captura_utc": "2026-09-20T01:48:50Z",
-   "t_evaluacion_utc": "2026-09-20T01:50:16Z",
-   "t_generacion_utc": "2026-09-20T01:50:16Z",
+   "t_evaluacion_utc": "2026-09-20T01:51:15Z",
+   "t_generacion_utc": "2026-09-20T01:51:15Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -262,7 +233,7 @@
    },
    "latencia_total_seg": 87.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Minnesota United vs LA Galaxy\n⏱ Minuto: 46'\n📊 Marcador: 2-1\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Minnesota United vs LA Galaxy\n⏱ Minuto: 47'\n📊 Marcador: 2-1\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "7f4fc1106faec493"
   },
@@ -272,7 +243,7 @@
    "match_id": "16317962",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 35,
+   "minuto": 36,
    "condicion": "Cruz Azul acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -281,9 +252,9 @@
    "extra": {
     "equipo_dominante": "Cruz Azul",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6429,
+    "ratio_presion_territorial": 0.6667,
     "touches_home": 5,
-    "touches_away": 9,
+    "touches_away": 10,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
     "equipo_que_realizo_sustitucion": null,
@@ -294,13 +265,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-20T01:50:18Z",
-   "t_captura_utc": "2026-09-20T01:50:18Z",
-   "t_evaluacion_utc": "2026-09-20T01:50:18Z",
-   "t_generacion_utc": "2026-09-20T01:50:18Z",
+   "t_captura_utc": "2026-09-20T01:51:16Z",
+   "t_evaluacion_utc": "2026-09-20T01:51:16Z",
+   "t_generacion_utc": "2026-09-20T01:51:16Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CF Monterrey vs Cruz Azul\n⏱ Minuto: 35'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Cruz Azul acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ CF Monterrey vs Cruz Azul\n⏱ Minuto: 36'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Cruz Azul acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "7c8b9ce4403540a8"
   }
