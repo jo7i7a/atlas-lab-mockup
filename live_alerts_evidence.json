@@ -8154,5 +8154,49 @@
    "cuota_real_betano": 1.65,
    "activo": true
   }
+ ],
+ "69c9960ea72bde89": [
+  {
+   "alert_id": "69c9960ea72bde89",
+   "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
+   "match_label": "Grêmio vs Palmeiras (Brasileirão Betano)",
+   "liga": "Brasileirão Betano",
+   "event_id": "15235483",
+   "minuto_alerta": 15,
+   "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
+   "t_evento_real_utc": "2026-09-20T14:19:56Z",
+   "t_captura_utc": null,
+   "operable": true,
+   "t_respuesta_utc": "2026-09-20T14:21:28Z",
+   "segundos_transcurridos": 69,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "0.5 @ 1.70",
+   "respuesta_message_id": 3379,
+   "linea_real_betano": 0.5,
+   "cuota_real_betano": 1.7,
+   "activo": true
+  }
+ ],
+ "42e3bbeee10a0f0e": [
+  {
+   "alert_id": "42e3bbeee10a0f0e",
+   "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
+   "match_label": "Grêmio vs Palmeiras (Brasileirão Betano)",
+   "liga": "Brasileirão Betano",
+   "event_id": "15235483",
+   "minuto_alerta": 16,
+   "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
+   "t_evento_real_utc": "2026-09-20T14:20:18Z",
+   "t_captura_utc": null,
+   "operable": true,
+   "t_respuesta_utc": "2026-09-20T14:21:42Z",
+   "segundos_transcurridos": 23,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "0.5 @ 1.70",
+   "respuesta_message_id": 3380,
+   "linea_real_betano": 0.5,
+   "cuota_real_betano": 1.7,
+   "activo": true
+  }
  ]
 }
