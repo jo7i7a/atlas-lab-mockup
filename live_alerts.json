@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-20T11:46:13Z",
- "n_alerts": 13,
+ "generated_at_utc": "2026-09-20T11:47:12Z",
+ "n_alerts": 12,
  "alerts": [
   {
    "strategy_id": "L5_V2_OVER05HT_PRESION_PERSISTENTE",
@@ -88,41 +88,6 @@
    "mensaje_custom": "🔵 L5_V2 — L5_V2_OVER05HT_PRESION_PERSISTENTE\n\n⚽ Wolverhampton vs West Bromwich Albion\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n\nxG combinado: 0.97\nRemates totales: 6-1 (total 7)\nTiros a puerta: 3-1 (total 4)\nCórners: 3-0 (total 3)\n\nPresión reciente (últimos 10 min):\n  Shots: 5 (T0=2026-09-20T11:23:52Z, T1=2026-09-20T11:13:43Z)\n  SoT: 3 (T0=2026-09-20T11:23:52Z, T1=2026-09-20T11:13:43Z)\n\n🏆 Liga: Championship\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo",
    "evidencia": null,
    "alert_id": "e0b18c4da72da266"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Wolverhampton vs West Bromwich Albion (Championship)",
-   "match_id": "16391693",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Wolverhampton domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Wolverhampton",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 0,
-    "remates_home": 3,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-20T11:16:51Z",
-   "t_captura_utc": "2026-09-20T11:16:51Z",
-   "t_evaluacion_utc": "2026-09-20T11:25:11Z",
-   "t_generacion_utc": "2026-09-20T11:25:11Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Wolverhampton vs West Bromwich Albion\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Wolverhampton — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "e099f76c6b494d85"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -529,7 +494,7 @@
    "match_id": "16391693",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 46,
+   "minuto": 47,
    "condicion": "Wolverhampton acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -551,13 +516,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-20T11:20:10Z",
-   "t_captura_utc": "2026-09-20T11:46:13Z",
-   "t_evaluacion_utc": "2026-09-20T11:46:13Z",
-   "t_generacion_utc": "2026-09-20T11:46:13Z",
+   "t_captura_utc": "2026-09-20T11:47:12Z",
+   "t_evaluacion_utc": "2026-09-20T11:47:12Z",
+   "t_generacion_utc": "2026-09-20T11:47:12Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Wolverhampton vs West Bromwich Albion\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Wolverhampton acumula 88% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Wolverhampton vs West Bromwich Albion\n⏱ Minuto: 47'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Wolverhampton acumula 88% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "a6773eebae3870e3"
   }
