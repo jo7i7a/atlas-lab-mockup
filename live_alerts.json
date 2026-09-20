@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-20T20:50:12Z",
- "n_alerts": 6,
+ "generated_at_utc": "2026-09-20T20:51:12Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -36,69 +36,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Rosario Central vs Argentinos Juniors\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Argentinos Juniors — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "499da47e7fa47db0"
-  },
-  {
-   "strategy_id": "L2",
-   "match_label": "Goiás vs Avaí (Brasileirão Série B)",
-   "match_id": "15526293",
-   "market": "Hándicap Asiático -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 66,
-   "condicion": "Goiás domina por xG (1.62) y remates a puerta (6) sin ir ganando y sin roja del dominante — Goiás vs Avaí.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Goiás",
-    "xg_dominante": 1.62,
-    "sot_dominante": 6,
-    "marcador": "1-1"
-   },
-   "t_evento_real_utc": "2026-09-20T20:20:53Z",
-   "t_captura_utc": "2026-09-20T20:29:53Z",
-   "t_evaluacion_utc": "2026-09-20T20:30:11Z",
-   "t_generacion_utc": "2026-09-20T20:30:11Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2\n\n⚽ Goiás vs Avaí\n⏱ Minuto: 66'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n📈 Domina: Goiás\nxG: 1.62 vs 0.51\nTiros a puerta: 6 vs 2\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Goiás — ¿línea y cuota disponibles?",
-   "evidencia": null,
-   "alert_id": "3a02b6eb32ac39d2"
-  },
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Goiás vs Avaí (Brasileirão Série B)",
-   "match_id": "15526293",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80']",
-   "cuota_detectada": 1.8,
-   "minuto": 66,
-   "condicion": "Goiás domina por xG (1.62) y remates a puerta (6) sin ir ganando y sin roja del dominante — Goiás vs Avaí. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Goiás",
-    "xg_dominante": 1.62,
-    "sot_dominante": 6,
-    "marcador": "1-1",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": -0.25,
-    "ah_proxy_cuota": 1.8,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-09-20T20:20:53Z",
-   "t_captura_utc": "2026-09-20T20:29:53Z",
-   "t_evaluacion_utc": "2026-09-20T20:30:13Z",
-   "t_generacion_utc": "2026-09-20T20:30:13Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Goiás vs Avaí\n⏱ Minuto: 66'\n📊 Marcador: 1-1\n🏆 Liga: Brasileirão Série B\n\n📈 Domina: Goiás\nxG: 1.62 vs 0.51\nTiros a puerta: 6 vs 2\n\nReferencia PROXY: AH -0.25 @ 1.8 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Goiás — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "7e44e93555dbe6ec"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
