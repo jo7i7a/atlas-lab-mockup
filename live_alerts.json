@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-20T03:47:13Z",
+ "generated_at_utc": "2026-09-20T03:48:09Z",
  "n_alerts": 3,
  "alerts": [
   {
@@ -41,44 +41,6 @@
    "alert_id": "b96f67e91dcfb184"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "Portland Timbers vs Atlanta United (MLS)",
-   "match_id": "15168408",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 46,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-09-20T03:46:13Z",
-   "t_captura_utc": "2026-09-20T03:46:13Z",
-   "t_evaluacion_utc": "2026-09-20T03:47:11Z",
-   "t_generacion_utc": "2026-09-20T03:47:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-20T03:47:12Z",
-     "latencia_envio_ms": 867.2308921813965,
-     "error": null,
-     "message_id": 3347,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 59.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Portland Timbers vs Atlanta United\n⏱ Minuto: 46'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "836e9d876daec1f4"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Club América vs CD Guadalajara (Liga MX, Apertura)",
    "match_id": "16317963",
@@ -115,6 +77,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club América vs CD Guadalajara\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Club América acumula 75% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "fe7637068000508e"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Portland Timbers vs Atlanta United (MLS)",
+   "match_id": "15168408",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 47,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 2,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-09-20T03:46:13Z",
+   "t_captura_utc": "2026-09-20T03:46:13Z",
+   "t_evaluacion_utc": "2026-09-20T03:48:09Z",
+   "t_generacion_utc": "2026-09-20T03:48:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-20T03:47:12Z",
+     "latencia_envio_ms": 867.2308921813965,
+     "error": null,
+     "message_id": 3347,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 59.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Portland Timbers vs Atlanta United\n⏱ Minuto: 47'\n📊 Marcador: 0-1\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "836e9d876daec1f4"
   }
  ]
 }
