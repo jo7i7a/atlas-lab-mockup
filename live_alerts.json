@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-20T14:03:22Z",
- "n_alerts": 12,
+ "generated_at_utc": "2026-09-20T14:04:17Z",
+ "n_alerts": 10,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -39,44 +39,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Manchester City vs Sunderland\n⏱ Minuto: 27'\n📊 Marcador: 1-1\n🏆 Liga: Premier League\n\n📝 Motivo: Manchester City acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "ad0de7afc9a30e21"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "AZ Alkmaar vs SC Telstar (VriendenLoterij Eredivisie)",
-   "match_id": "16316826",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 1,
-    "corners_1t_total": 1
-   },
-   "t_evento_real_utc": "2026-09-20T13:33:24Z",
-   "t_captura_utc": "2026-09-20T13:33:24Z",
-   "t_evaluacion_utc": "2026-09-20T13:41:17Z",
-   "t_generacion_utc": "2026-09-20T13:41:17Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-20T13:37:17Z",
-     "latencia_envio_ms": 810.8351230621338,
-     "error": null,
-     "message_id": 3370,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 233.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ AZ Alkmaar vs SC Telstar\n⏱ Minuto: 52'\n📊 Marcador: 1-0\n🏆 Liga: VriendenLoterij Eredivisie\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "bc02fdb97ab6544d"
   },
   {
    "strategy_id": "A2",
@@ -153,35 +115,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Frosinone vs Como\n⏱ Minuto: 39'\n📊 Marcador: 1-0\n🏆 Liga: Serie A\n\n📝 Motivo: Como acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Como, min 34\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "3112ad55b3625ef3"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Leeds United vs Crystal Palace (Premier League)",
-   "match_id": "16363866",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (3-1), Leeds United presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Crystal Palace NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Leeds United",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-09-20T13:33:24Z",
-   "t_captura_utc": "2026-09-20T13:33:24Z",
-   "t_evaluacion_utc": "2026-09-20T13:46:11Z",
-   "t_generacion_utc": "2026-09-20T13:46:11Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Leeds United vs Crystal Palace\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: Premier League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Leeds United presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Crystal Palace no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "d541a3272428b8bf"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -371,7 +304,7 @@
    "match_id": "16363648",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 46,
+   "minuto": 47,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -384,8 +317,8 @@
    },
    "t_evento_real_utc": "2026-09-20T14:01:26Z",
    "t_captura_utc": "2026-09-20T14:01:26Z",
-   "t_evaluacion_utc": "2026-09-20T14:03:20Z",
-   "t_generacion_utc": "2026-09-20T14:03:20Z",
+   "t_evaluacion_utc": "2026-09-20T14:04:15Z",
+   "t_generacion_utc": "2026-09-20T14:04:15Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -399,7 +332,7 @@
    },
    "latencia_total_seg": 115.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Bournemouth vs Liverpool FC\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: Premier League\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Bournemouth vs Liverpool FC\n⏱ Minuto: 47'\n📊 Marcador: 0-0\n🏆 Liga: Premier League\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "eba76a40916a1ab3"
   },
@@ -409,7 +342,7 @@
    "match_id": "15260916",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 74,
+   "minuto": 75,
    "condicion": "Fredrikstad FK acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -418,8 +351,8 @@
    "extra": {
     "equipo_dominante": "Fredrikstad FK",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6667,
-    "touches_home": 9,
+    "ratio_presion_territorial": 0.6207,
+    "touches_home": 11,
     "touches_away": 18,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 69,
@@ -431,13 +364,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-20T13:35:31Z",
-   "t_captura_utc": "2026-09-20T14:03:22Z",
-   "t_evaluacion_utc": "2026-09-20T14:03:22Z",
-   "t_generacion_utc": "2026-09-20T14:03:22Z",
+   "t_captura_utc": "2026-09-20T14:04:17Z",
+   "t_evaluacion_utc": "2026-09-20T14:04:17Z",
+   "t_generacion_utc": "2026-09-20T14:04:17Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Vålerenga IF vs Fredrikstad FK\n⏱ Minuto: 74'\n📊 Marcador: 0-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Fredrikstad FK acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Fredrikstad FK, min 69\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Vålerenga IF vs Fredrikstad FK\n⏱ Minuto: 75'\n📊 Marcador: 0-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Fredrikstad FK acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Fredrikstad FK, min 69\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "5863fbab86fa22ee"
   }
