@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-20T01:38:12Z",
- "n_alerts": 13,
+ "generated_at_utc": "2026-09-20T01:39:12Z",
+ "n_alerts": 12,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -39,44 +39,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ São Paulo vs Internacional\n⏱ Minuto: 48'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: São Paulo acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: São Paulo, min 39\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "f08afbeffe9ce9b3"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "São Paulo vs Internacional (Brasileirão Betano)",
-   "match_id": "15235482",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 0,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-09-20T01:08:29Z",
-   "t_captura_utc": "2026-09-20T01:08:29Z",
-   "t_evaluacion_utc": "2026-09-20T01:15:13Z",
-   "t_generacion_utc": "2026-09-20T01:15:13Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-20T01:09:17Z",
-     "latencia_envio_ms": 908.2026481628418,
-     "error": null,
-     "message_id": 3339,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 48.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ São Paulo vs Internacional\n⏱ Minuto: 52'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "a5b60803af7a963e"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -361,7 +323,7 @@
    "match_id": "16317962",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "5 córners totales antes del min 30 (3-2), CF Monterrey presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Cruz Azul NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -374,12 +336,12 @@
    },
    "t_evento_real_utc": "2026-09-20T01:28:29Z",
    "t_captura_utc": "2026-09-20T01:28:29Z",
-   "t_evaluacion_utc": "2026-09-20T01:38:09Z",
-   "t_generacion_utc": "2026-09-20T01:38:09Z",
+   "t_evaluacion_utc": "2026-09-20T01:39:08Z",
+   "t_generacion_utc": "2026-09-20T01:39:08Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ CF Monterrey vs Cruz Azul\n⏱ Minuto: 23'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: CF Monterrey presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Cruz Azul no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ CF Monterrey vs Cruz Azul\n⏱ Minuto: 24'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: CF Monterrey presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Cruz Azul no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "5aa4cb0668510964"
   },
@@ -389,7 +351,7 @@
    "match_id": "16317962",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "5 córners totales antes del min 45 (3-2), CF Monterrey presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Cruz Azul NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -403,12 +365,12 @@
    },
    "t_evento_real_utc": "2026-09-20T01:28:29Z",
    "t_captura_utc": "2026-09-20T01:28:29Z",
-   "t_evaluacion_utc": "2026-09-20T01:38:09Z",
-   "t_generacion_utc": "2026-09-20T01:38:09Z",
+   "t_evaluacion_utc": "2026-09-20T01:39:09Z",
+   "t_generacion_utc": "2026-09-20T01:39:09Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CF Monterrey vs Cruz Azul\n⏱ Minuto: 23'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: CF Monterrey presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Cruz Azul no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ CF Monterrey vs Cruz Azul\n⏱ Minuto: 24'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: CF Monterrey presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Cruz Azul no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "05e5ad954b1d1de7"
   },
@@ -418,7 +380,7 @@
    "match_id": "16317962",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 23,
+   "minuto": 24,
    "condicion": "Cruz Azul domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -438,12 +400,12 @@
    },
    "t_evento_real_utc": "2026-09-20T01:29:55Z",
    "t_captura_utc": "2026-09-20T01:29:55Z",
-   "t_evaluacion_utc": "2026-09-20T01:38:12Z",
-   "t_generacion_utc": "2026-09-20T01:38:12Z",
+   "t_evaluacion_utc": "2026-09-20T01:39:11Z",
+   "t_generacion_utc": "2026-09-20T01:39:11Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CF Monterrey vs Cruz Azul\n⏱ Minuto: 23'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Cruz Azul — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ CF Monterrey vs Cruz Azul\n⏱ Minuto: 24'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Cruz Azul — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "4c684b9433b76209"
   }
