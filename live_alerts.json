@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-20T00:29:43Z",
- "n_alerts": 15,
+ "generated_at_utc": "2026-09-20T00:30:20Z",
+ "n_alerts": 16,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -543,6 +543,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ São Paulo vs Internacional\n⏱ Minuto: 29'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Betano\n\n📝 Motivo: São Paulo acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: São Paulo, min 19\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "0a95c3b844d1046a"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Atlético San Luis vs Club Necaxa (Liga MX, Apertura)",
+   "match_id": "16317960",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 71,
+   "condicion": "Atlético San Luis acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Atlético San Luis",
+    "lado_dominante": "home",
+    "ratio_presion_territorial": 0.6061,
+    "touches_home": 20,
+    "touches_away": 13,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "2-1",
+    "t_primera_observacion_atlas": "2026-09-20T00:30:20Z",
+    "t_inicio_estimado_condicion": "2026-09-19T23:48:28Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-20T00:30:20Z",
+   "t_captura_utc": "2026-09-20T00:30:20Z",
+   "t_evaluacion_utc": "2026-09-20T00:30:20Z",
+   "t_generacion_utc": "2026-09-20T00:30:20Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlético San Luis vs Club Necaxa\n⏱ Minuto: 71'\n📊 Marcador: 2-1\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Atlético San Luis acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "834841d98a1988b3"
   }
  ]
 }
