@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-20T19:27:11Z",
+ "generated_at_utc": "2026-09-20T19:28:09Z",
  "n_alerts": 18,
  "alerts": [
   {
@@ -573,41 +573,6 @@
    "alert_id": "8401b30b6c17b879"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Valencia vs Real Sociedad (LaLiga)",
-   "match_id": "16416297",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 24,
-   "condicion": "Real Sociedad domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Real Sociedad",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 0,
-    "centros_away": 1,
-    "remates_home": 0,
-    "remates_away": 3,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-20T19:19:06Z",
-   "t_captura_utc": "2026-09-20T19:19:06Z",
-   "t_evaluacion_utc": "2026-09-20T19:27:10Z",
-   "t_generacion_utc": "2026-09-20T19:27:10Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Valencia vs Real Sociedad\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Real Sociedad — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "3b0c88c278b884d1"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Corinthians vs Fluminense (Brasileirão Betano)",
    "match_id": "15235484",
@@ -682,6 +647,41 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Goiás vs Avaí\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n📝 Motivo: Goiás acumula 100% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "f43545d337ec465c"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Valencia vs Real Sociedad (LaLiga)",
+   "match_id": "16416297",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "Real Sociedad domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Real Sociedad",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 1,
+    "remates_home": 0,
+    "remates_away": 3,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-20T19:19:06Z",
+   "t_captura_utc": "2026-09-20T19:19:06Z",
+   "t_evaluacion_utc": "2026-09-20T19:28:09Z",
+   "t_generacion_utc": "2026-09-20T19:28:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Valencia vs Real Sociedad\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Real Sociedad — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "3b0c88c278b884d1"
   }
  ]
 }
