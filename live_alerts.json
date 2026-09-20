@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-09-20T03:13:16Z",
- "n_alerts": 8,
+ "generated_at_utc": "2026-09-20T03:14:21Z",
+ "n_alerts": 7,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Nashville SC vs Chicago Fire (MLS)",
-   "match_id": "15168404",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 0,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-09-20T02:44:12Z",
-   "t_captura_utc": "2026-09-20T02:44:12Z",
-   "t_evaluacion_utc": "2026-09-20T02:51:26Z",
-   "t_generacion_utc": "2026-09-20T02:51:26Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-20T02:45:26Z",
-     "latencia_envio_ms": 857.4137687683105,
-     "error": null,
-     "message_id": 3344,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 74.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Nashville SC vs Chicago Fire\n⏱ Minuto: 52'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "8d70173ce028ff5f"
-  },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Colorado Rapids vs Seattle Sounders FC (MLS)",
@@ -265,7 +227,7 @@
    "match_id": "15168405",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 42,
+   "minuto": 43,
    "condicion": "Colorado Rapids acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -287,13 +249,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-20T02:58:27Z",
-   "t_captura_utc": "2026-09-20T03:13:16Z",
-   "t_evaluacion_utc": "2026-09-20T03:13:16Z",
-   "t_generacion_utc": "2026-09-20T03:13:16Z",
+   "t_captura_utc": "2026-09-20T03:14:21Z",
+   "t_evaluacion_utc": "2026-09-20T03:14:21Z",
+   "t_generacion_utc": "2026-09-20T03:14:21Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Colorado Rapids vs Seattle Sounders FC\n⏱ Minuto: 42'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: Colorado Rapids acumula 69% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Colorado Rapids vs Seattle Sounders FC\n⏱ Minuto: 43'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: Colorado Rapids acumula 69% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "fc0063a983110732"
   }
