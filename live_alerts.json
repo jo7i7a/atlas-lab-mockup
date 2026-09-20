@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-20T22:42:13Z",
+ "generated_at_utc": "2026-09-20T22:43:13Z",
  "n_alerts": 5,
  "alerts": [
   {
@@ -81,62 +81,6 @@
    "alert_id": "587fe81a64193fce"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "Flamengo vs Red Bull Bragantino (Brasileirão Betano)",
-   "match_id": "15235478",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 49,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 1,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-09-20T22:37:04Z",
-   "t_captura_utc": "2026-09-20T22:37:04Z",
-   "t_evaluacion_utc": "2026-09-20T22:42:12Z",
-   "t_generacion_utc": "2026-09-20T22:42:12Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Flamengo vs Red Bull Bragantino\n⏱ Minuto: 49'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "f5c2c91c00d6e931"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Londrina vs Fortaleza (Brasileirão Série B)",
-   "match_id": "15526291",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 51,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 2,
-    "corners_1t_total": 2
-   },
-   "t_evento_real_utc": "2026-09-20T22:36:23Z",
-   "t_captura_utc": "2026-09-20T22:36:23Z",
-   "t_evaluacion_utc": "2026-09-20T22:42:12Z",
-   "t_generacion_utc": "2026-09-20T22:42:12Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Londrina vs Fortaleza\n⏱ Minuto: 51'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "1b39044b72e2e764"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Club Atlético Belgrano vs Estudiantes de Río Cuarto (Liga Profesional de Fútbol)",
    "match_id": "16667326",
@@ -173,6 +117,62 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Atlético Belgrano vs Estudiantes de Río Cuarto\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de Río Cuarto acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "d8bdad61f912c31a"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Flamengo vs Red Bull Bragantino (Brasileirão Betano)",
+   "match_id": "15235478",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 50,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 1,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-09-20T22:37:04Z",
+   "t_captura_utc": "2026-09-20T22:37:04Z",
+   "t_evaluacion_utc": "2026-09-20T22:43:12Z",
+   "t_generacion_utc": "2026-09-20T22:43:12Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Flamengo vs Red Bull Bragantino\n⏱ Minuto: 50'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "f5c2c91c00d6e931"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Londrina vs Fortaleza (Brasileirão Série B)",
+   "match_id": "15526291",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 52,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 0,
+    "corners_1t_away": 2,
+    "corners_1t_total": 2
+   },
+   "t_evento_real_utc": "2026-09-20T22:36:23Z",
+   "t_captura_utc": "2026-09-20T22:36:23Z",
+   "t_evaluacion_utc": "2026-09-20T22:43:12Z",
+   "t_generacion_utc": "2026-09-20T22:43:12Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Londrina vs Fortaleza\n⏱ Minuto: 52'\n📊 Marcador: 0-1\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 2\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "1b39044b72e2e764"
   }
  ]
 }
