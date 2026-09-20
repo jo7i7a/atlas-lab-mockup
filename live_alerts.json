@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-20T00:33:13Z",
- "n_alerts": 13,
+ "generated_at_utc": "2026-09-20T00:34:20Z",
+ "n_alerts": 11,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -36,44 +36,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ New England Revolution vs Orlando City SC\n⏱ Minuto: 25'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n📝 Motivo: New England Revolution — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "19ffd74ed16d8e59"
-  },
-  {
-   "strategy_id": "A2",
-   "match_label": "Atlético San Luis vs Club Necaxa (Liga MX, Apertura)",
-   "match_id": "16317960",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 1,
-    "corners_1t_total": 1
-   },
-   "t_evento_real_utc": "2026-09-20T00:03:54Z",
-   "t_captura_utc": "2026-09-20T00:03:54Z",
-   "t_evaluacion_utc": "2026-09-20T00:11:10Z",
-   "t_generacion_utc": "2026-09-20T00:11:10Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-20T00:05:11Z",
-     "latencia_envio_ms": 814.2397403717041,
-     "error": null,
-     "message_id": 3333,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 77.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Atlético San Luis vs Club Necaxa\n⏱ Minuto: 52'\n📊 Marcador: 1-1\n🏆 Liga: Liga MX, Apertura\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "c9dadf016487052f"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -283,44 +245,6 @@
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Atlético San Luis vs Club Necaxa (Liga MX, Apertura)",
-   "match_id": "16317960",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 68,
-   "condicion": "Atlético San Luis acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Atlético San Luis",
-    "lado_dominante": "home",
-    "ratio_presion_territorial": 0.6552,
-    "touches_home": 19,
-    "touches_away": 10,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "2-1",
-    "t_primera_observacion_atlas": "2026-09-20T00:04:11Z",
-    "t_inicio_estimado_condicion": "2026-09-19T23:48:28Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-20T00:04:11Z",
-   "t_captura_utc": "2026-09-20T00:27:20Z",
-   "t_evaluacion_utc": "2026-09-20T00:27:20Z",
-   "t_generacion_utc": "2026-09-20T00:27:20Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Atlético San Luis vs Club Necaxa\n⏱ Minuto: 68'\n📊 Marcador: 2-1\n🏆 Liga: Liga MX, Apertura\n\n📝 Motivo: Atlético San Luis acumula 66% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "6b240b4c6f222358"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "São Paulo vs Internacional (Brasileirão Betano)",
    "match_id": "15235482",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
@@ -439,7 +363,7 @@
    "match_id": "16667333",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 17,
+   "minuto": 18,
    "condicion": "Instituto De Córdoba domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -459,12 +383,12 @@
    },
    "t_evento_real_utc": "2026-09-20T00:30:57Z",
    "t_captura_utc": "2026-09-20T00:30:57Z",
-   "t_evaluacion_utc": "2026-09-20T00:33:12Z",
-   "t_generacion_utc": "2026-09-20T00:33:12Z",
+   "t_evaluacion_utc": "2026-09-20T00:34:19Z",
+   "t_generacion_utc": "2026-09-20T00:34:19Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Instituto De Córdoba vs CA Talleres\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Instituto De Córdoba — ≥3 centros al área en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Instituto De Córdoba vs CA Talleres\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Instituto De Córdoba — ≥3 centros al área en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "600eec5f2ea33136"
   }
