@@ -1,41 +1,7 @@
 {
- "generated_at_utc": "2026-09-20T02:45:28Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-09-20T02:46:28Z",
+ "n_alerts": 4,
  "alerts": [
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Houston Dynamo vs FC Cincinnati (MLS)",
-   "match_id": "15168399",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80']",
-   "cuota_detectada": 1.775,
-   "minuto": 80,
-   "condicion": "FC Cincinnati domina por xG (1.59) y remates a puerta (7) sin ir ganando y sin roja del dominante — FC Cincinnati vs Houston Dynamo. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "FC Cincinnati",
-    "xg_dominante": 1.59,
-    "sot_dominante": 7,
-    "marcador": "1-2",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": 0.25,
-    "ah_proxy_cuota": 1.775,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-09-20T02:16:12Z",
-   "t_captura_utc": "2026-09-20T02:22:51Z",
-   "t_evaluacion_utc": "2026-09-20T02:23:22Z",
-   "t_generacion_utc": "2026-09-20T02:23:22Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Houston Dynamo vs FC Cincinnati\n⏱ Minuto: 80'\n📊 Marcador: 2-1\n🏆 Liga: MLS\n\n📈 Domina: FC Cincinnati\nxG: 1.59 vs 1.16\nTiros a puerta: 7 vs 2\n\nReferencia PROXY: AH +0.25 @ 1.775 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de FC Cincinnati — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "fd13ab711386a0e3"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "CF Monterrey vs Cruz Azul (Liga MX, Apertura)",
@@ -143,7 +109,7 @@
    "match_id": "15168404",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 46,
+   "minuto": 47,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -156,8 +122,8 @@
    },
    "t_evento_real_utc": "2026-09-20T02:44:12Z",
    "t_captura_utc": "2026-09-20T02:44:12Z",
-   "t_evaluacion_utc": "2026-09-20T02:45:25Z",
-   "t_generacion_utc": "2026-09-20T02:45:25Z",
+   "t_evaluacion_utc": "2026-09-20T02:46:27Z",
+   "t_generacion_utc": "2026-09-20T02:46:27Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -171,7 +137,7 @@
    },
    "latencia_total_seg": 74.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Nashville SC vs Chicago Fire\n⏱ Minuto: 46'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Nashville SC vs Chicago Fire\n⏱ Minuto: 47'\n📊 Marcador: 1-0\n🏆 Liga: MLS\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "8d70173ce028ff5f"
   }
