@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-09-20T09:34:11Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-09-20T09:35:11Z",
+ "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Machida Zelvia vs Kashiwa Reysol (J1 League)",
-   "match_id": "16348601",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 3,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-09-20T09:04:47Z",
-   "t_captura_utc": "2026-09-20T09:04:47Z",
-   "t_evaluacion_utc": "2026-09-20T09:13:11Z",
-   "t_generacion_utc": "2026-09-20T09:13:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-20T09:07:11Z",
-     "latencia_envio_ms": 853.1942367553711,
-     "error": null,
-     "message_id": 3352,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 144.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Machida Zelvia vs Kashiwa Reysol\n⏱ Minuto: 52'\n📊 Marcador: 1-0\n🏆 Liga: J1 League\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 3\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "d3e76cc165dc57ff"
-  },
   {
    "strategy_id": "A2",
    "match_label": "Gamba Osaka vs Vissel Kobe (J1 League)",
@@ -84,7 +46,7 @@
    "match_id": "16348601",
    "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
    "cuota_detectada": null,
-   "minuto": 73,
+   "minuto": 74,
    "condicion": "Expulsión de Machida Zelvia (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
    "confianza": "Media",
    "link": "",
@@ -97,13 +59,13 @@
     "codigo_periodo_atlas": 7
    },
    "t_evento_real_utc": "2026-09-20T09:23:37Z",
-   "t_captura_utc": "2026-09-20T09:34:00Z",
-   "t_evaluacion_utc": "2026-09-20T09:34:11Z",
-   "t_generacion_utc": "2026-09-20T09:34:11Z",
+   "t_captura_utc": "2026-09-20T09:35:02Z",
+   "t_evaluacion_utc": "2026-09-20T09:35:11Z",
+   "t_generacion_utc": "2026-09-20T09:35:11Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 L3 | Machida Zelvia vs Kashiwa Reysol | Roja Machida Zelvia | Min 73' | 1-3",
+   "mensaje_custom": "🚨 L3 | Machida Zelvia vs Kashiwa Reysol | Roja Machida Zelvia | Min 74' | 1-3",
    "evidencia": null,
    "alert_id": "3cf8c81c98260299"
   },
@@ -113,7 +75,7 @@
    "match_id": "16348601",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 73,
+   "minuto": 74,
    "condicion": "Kashiwa Reysol acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -135,13 +97,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-20T09:16:12Z",
-   "t_captura_utc": "2026-09-20T09:34:11Z",
-   "t_evaluacion_utc": "2026-09-20T09:34:11Z",
-   "t_generacion_utc": "2026-09-20T09:34:11Z",
+   "t_captura_utc": "2026-09-20T09:35:11Z",
+   "t_evaluacion_utc": "2026-09-20T09:35:11Z",
+   "t_generacion_utc": "2026-09-20T09:35:11Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Machida Zelvia vs Kashiwa Reysol\n⏱ Minuto: 73'\n📊 Marcador: 1-3\n🏆 Liga: J1 League\n\n📝 Motivo: Kashiwa Reysol acumula 72% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Kashiwa Reysol, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Machida Zelvia vs Kashiwa Reysol\n⏱ Minuto: 74'\n📊 Marcador: 1-3\n🏆 Liga: J1 League\n\n📝 Motivo: Kashiwa Reysol acumula 72% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Kashiwa Reysol, min 46\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "bd3a3398e70be306"
   }
