@@ -1,41 +1,7 @@
 {
- "generated_at_utc": "2026-09-20T20:47:15Z",
- "n_alerts": 12,
+ "generated_at_utc": "2026-09-20T20:49:13Z",
+ "n_alerts": 11,
  "alerts": [
-  {
-   "strategy_id": "L2-SHADOW",
-   "match_label": "Olympique de Marseille vs Paris Saint-Germain (Ligue 1)",
-   "match_id": "16310960",
-   "market": "Hándicap Asiático -- objetivo línea +0.25 a favor del dominante [SHADOW: ventana extendida a 80']",
-   "cuota_detectada": 2.0,
-   "minuto": 73,
-   "condicion": "Paris Saint-Germain domina por xG (2.59) y remates a puerta (6) sin ir ganando y sin roja del dominante — Paris Saint-Germain vs Olympique de Marseille. [L2-SHADOW: ventana extendida 70'→80', pre-registrada 2026-08-08] Verificar en Betano: línea AH +0.25 (o la más cercana), cuota real, si está abierta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Paris Saint-Germain",
-    "xg_dominante": 2.59,
-    "sot_dominante": 6,
-    "marcador": "1-1",
-    "variante": "shadow_ventana_80",
-    "ah_proxy_linea": -0.5,
-    "ah_proxy_cuota": 2.0,
-    "ah_proxy_suspendida": false,
-    "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
-   },
-   "t_evento_real_utc": "2026-09-20T20:18:03Z",
-   "t_captura_utc": "2026-09-20T20:20:11Z",
-   "t_evaluacion_utc": "2026-09-20T20:20:16Z",
-   "t_generacion_utc": "2026-09-20T20:20:16Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L2-SHADOW\n\n⚽ Olympique de Marseille vs Paris Saint-Germain\n⏱ Minuto: 73'\n📊 Marcador: 1-1\n🏆 Liga: Ligue 1\n\n📈 Domina: Paris Saint-Germain\nxG: 2.59 vs 0.61\nTiros a puerta: 6 vs 2\n\nReferencia PROXY: AH -0.50 @ 2.0 (SofaScore, no es Betano)\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático a favor de Paris Saint-Germain — ¿línea y cuota reales?",
-   "evidencia": null,
-   "alert_id": "4773c4d67a37fd01"
-  },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Club Atlético Platense vs Newell's Old Boys (Liga Profesional de Fútbol)",
