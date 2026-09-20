@@ -8132,5 +8132,27 @@
    "cuota_real_betano": 2.12,
    "activo": true
   }
+ ],
+ "d70e1936bc733e15": [
+  {
+   "alert_id": "d70e1936bc733e15",
+   "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
+   "match_label": "Ponte Preta vs Clube De Regatas Brasil (Brasileirão Série B)",
+   "liga": "Brasileirão Série B",
+   "event_id": "15526288",
+   "minuto_alerta": 15,
+   "condicion": "0-0 en minuto 15 con touchesInOppBox_tot15>=4.0 y |diff home-away|/total<=0.33 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
+   "t_evento_real_utc": "2026-09-20T14:15:20Z",
+   "t_captura_utc": "2026-09-20T14:15:20Z",
+   "operable": true,
+   "t_respuesta_utc": "2026-09-20T14:17:22Z",
+   "segundos_transcurridos": 60,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "0.5 @ 1.65",
+   "respuesta_message_id": 3374,
+   "linea_real_betano": 0.5,
+   "cuota_real_betano": 1.65,
+   "activo": true
+  }
  ]
 }
