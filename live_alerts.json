@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-20T14:07:20Z",
+ "generated_at_utc": "2026-09-20T14:08:11Z",
  "n_alerts": 9,
  "alerts": [
   {
@@ -223,44 +223,6 @@
    "alert_id": "c17132aaa3641143"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "Bournemouth vs Liverpool FC (Premier League)",
-   "match_id": "16363648",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 50,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 1,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-09-20T14:01:26Z",
-   "t_captura_utc": "2026-09-20T14:01:26Z",
-   "t_evaluacion_utc": "2026-09-20T14:07:19Z",
-   "t_generacion_utc": "2026-09-20T14:07:19Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-20T14:03:21Z",
-     "latencia_envio_ms": 913.6576652526855,
-     "error": null,
-     "message_id": 3372,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 115.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Bournemouth vs Liverpool FC\n⏱ Minuto: 50'\n📊 Marcador: 0-0\n🏆 Liga: Premier League\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "eba76a40916a1ab3"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Vålerenga IF vs Fredrikstad FK (Eliteserien)",
    "match_id": "15260916",
@@ -335,6 +297,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Bayer 04 Leverkusen vs RB Leipzig\n⏱ Minuto: 36'\n📊 Marcador: 0-0\n🏆 Liga: Bundesliga\n\n📝 Motivo: RB Leipzig acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: RB Leipzig, min 26\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "13b1bc1d880c63e9"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Bournemouth vs Liverpool FC (Premier League)",
+   "match_id": "16363648",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 51,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 1,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-09-20T14:01:26Z",
+   "t_captura_utc": "2026-09-20T14:01:26Z",
+   "t_evaluacion_utc": "2026-09-20T14:08:11Z",
+   "t_generacion_utc": "2026-09-20T14:08:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-20T14:03:21Z",
+     "latencia_envio_ms": 913.6576652526855,
+     "error": null,
+     "message_id": 3372,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 115.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Bournemouth vs Liverpool FC\n⏱ Minuto: 51'\n📊 Marcador: 0-0\n🏆 Liga: Premier League\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 1\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "eba76a40916a1ab3"
   }
  ]
 }
