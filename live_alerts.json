@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-20T22:44:13Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-09-20T22:45:23Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
@@ -152,7 +152,7 @@
    "match_id": "15235478",
    "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 51,
+   "minuto": 52,
    "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -165,14 +165,52 @@
    },
    "t_evento_real_utc": "2026-09-20T22:37:04Z",
    "t_captura_utc": "2026-09-20T22:37:04Z",
-   "t_evaluacion_utc": "2026-09-20T22:44:12Z",
-   "t_generacion_utc": "2026-09-20T22:44:12Z",
+   "t_evaluacion_utc": "2026-09-20T22:45:22Z",
+   "t_generacion_utc": "2026-09-20T22:45:22Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Flamengo vs Red Bull Bragantino\n⏱ Minuto: 51'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Flamengo vs Red Bull Bragantino\n⏱ Minuto: 52'\n📊 Marcador: 1-0\n🏆 Liga: Brasileirão Betano\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "f5c2c91c00d6e931"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "Club Atlético Belgrano vs Estudiantes de Río Cuarto (Liga Profesional de Fútbol)",
+   "match_id": "16667326",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 29,
+   "condicion": "Estudiantes de Río Cuarto acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Estudiantes de Río Cuarto",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.6364,
+    "touches_home": 4,
+    "touches_away": 7,
+    "acelerador_proxy_detectado": false,
+    "minuto_ultima_sustitucion": null,
+    "equipo_que_realizo_sustitucion": null,
+    "marcador_en_el_momento": "0-0",
+    "t_primera_observacion_atlas": "2026-09-20T22:45:23Z",
+    "t_inicio_estimado_condicion": "2026-09-20T22:40:30Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-20T22:45:23Z",
+   "t_captura_utc": "2026-09-20T22:45:23Z",
+   "t_evaluacion_utc": "2026-09-20T22:45:23Z",
+   "t_generacion_utc": "2026-09-20T22:45:23Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Club Atlético Belgrano vs Estudiantes de Río Cuarto\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Estudiantes de Río Cuarto acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "3c67494b3739c239"
   }
  ]
 }
