@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-20T11:29:11Z",
+ "generated_at_utc": "2026-09-20T11:30:11Z",
  "n_alerts": 12,
  "alerts": [
   {
@@ -249,93 +249,6 @@
    "alert_id": "401be3f88290a8a3"
   },
   {
-   "strategy_id": "L5_V2_OVER05HT_PRESION_PERSISTENTE",
-   "match_label": "Wolverhampton vs West Bromwich Albion (Championship)",
-   "match_id": "16391693",
-   "market": "Over 0.5 Goles -- Primer Tiempo",
-   "cuota_detectada": null,
-   "minuto": 26,
-   "condicion": "0-0 en ventana 24-34 con peligro acumulado (xG>=0.90, remates>=7, SoT>=2, corners>=2, todos combinados) Y presión reciente activa en los últimos 10 minutos (shots>=3, SoT>=1, via delta_ventana()). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_local": 0.94,
-    "xg_visita": 0.03,
-    "xg_total": 0.97,
-    "remates_local": 6,
-    "remates_visita": 1,
-    "remates_total": 7,
-    "sot_local": 3,
-    "sot_visita": 1,
-    "sot_total": 4,
-    "cor_local": 3,
-    "cor_visita": 1,
-    "cor_total": 4,
-    "marcador": "0-0",
-    "presion_reciente_shots": {
-     "campo": "totalShotsOnGoal",
-     "minutos_ventana_pedidos": 10,
-     "t0_captured_at_utc": "2026-09-20T11:25:59Z",
-     "t1_captured_at_utc": "2026-09-20T11:15:49Z",
-     "valor_t0": [
-      6,
-      1
-     ],
-     "valor_t1": [
-      4,
-      0
-     ],
-     "delta_home": 2,
-     "delta_away": 1,
-     "delta_total": 3,
-     "valido": true,
-     "motivo": null
-    },
-    "presion_reciente_sot": {
-     "campo": "shotsOnGoal",
-     "minutos_ventana_pedidos": 10,
-     "t0_captured_at_utc": "2026-09-20T11:25:59Z",
-     "t1_captured_at_utc": "2026-09-20T11:15:49Z",
-     "valor_t0": [
-      3,
-      1
-     ],
-     "valor_t1": [
-      2,
-      0
-     ],
-     "delta_home": 1,
-     "delta_away": 1,
-     "delta_total": 2,
-     "valido": true,
-     "motivo": null
-    },
-    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo"
-   },
-   "t_evento_real_utc": "2026-09-20T11:24:13Z",
-   "t_captura_utc": "2026-09-20T11:25:59Z",
-   "t_evaluacion_utc": "2026-09-20T11:26:11Z",
-   "t_generacion_utc": "2026-09-20T11:26:11Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "SUPRIMIDA_NO_AUTORIZADA",
-     "t_envio_utc": null,
-     "latencia_envio_ms": null,
-     "error": "Estrategia 'L5_V2_OVER05HT_PRESION_PERSISTENTE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
-     "message_id": null,
-     "chat_id": null
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🔵 L5_V2 — L5_V2_OVER05HT_PRESION_PERSISTENTE\n\n⚽ Wolverhampton vs West Bromwich Albion\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n\nxG combinado: 0.97\nRemates totales: 6-1 (total 7)\nTiros a puerta: 3-1 (total 4)\nCórners: 3-1 (total 4)\n\nPresión reciente (últimos 10 min):\n  Shots: 3 (T0=2026-09-20T11:25:59Z, T1=2026-09-20T11:15:49Z)\n  SoT: 2 (T0=2026-09-20T11:25:59Z, T1=2026-09-20T11:15:49Z)\n\n🏆 Liga: Championship\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo",
-   "evidencia": null,
-   "alert_id": "ebfd4339367d56d6"
-  },
-  {
    "strategy_id": "A2",
    "match_label": "Feyenoord vs FC Utrecht (VriendenLoterij Eredivisie)",
    "match_id": "16316825",
@@ -379,7 +292,7 @@
    "match_id": "16362020",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 28,
+   "minuto": 29,
    "condicion": "4 córners totales antes del min 30 (4-0), Celtic presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Rangers NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -392,12 +305,12 @@
    },
    "t_evento_real_utc": "2026-09-20T11:19:40Z",
    "t_captura_utc": "2026-09-20T11:19:40Z",
-   "t_evaluacion_utc": "2026-09-20T11:29:09Z",
-   "t_generacion_utc": "2026-09-20T11:29:09Z",
+   "t_evaluacion_utc": "2026-09-20T11:30:09Z",
+   "t_generacion_utc": "2026-09-20T11:30:09Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Celtic vs Rangers\n⏱ Minuto: 28'\n📊 Marcador: 0-0\n🏆 Liga: Scottish Premiership\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Celtic presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Rangers no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Celtic vs Rangers\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: Scottish Premiership\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Celtic presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Rangers no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "555abb91e4c5b927"
   },
@@ -407,7 +320,7 @@
    "match_id": "16391693",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 29,
+   "minuto": 30,
    "condicion": "4 córners totales antes del min 30 (3-1), Wolverhampton presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿West Bromwich Albion NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -420,12 +333,12 @@
    },
    "t_evento_real_utc": "2026-09-20T11:25:17Z",
    "t_captura_utc": "2026-09-20T11:25:17Z",
-   "t_evaluacion_utc": "2026-09-20T11:29:09Z",
-   "t_generacion_utc": "2026-09-20T11:29:09Z",
+   "t_evaluacion_utc": "2026-09-20T11:30:09Z",
+   "t_generacion_utc": "2026-09-20T11:30:09Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Wolverhampton vs West Bromwich Albion\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Wolverhampton presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿West Bromwich Albion no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Wolverhampton vs West Bromwich Albion\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Wolverhampton presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿West Bromwich Albion no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "f67fe4951f152858"
   },
@@ -435,7 +348,7 @@
    "match_id": "16362020",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 28,
+   "minuto": 29,
    "condicion": "4 córners totales antes del min 45 (4-0), Celtic presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Rangers NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -449,12 +362,12 @@
    },
    "t_evento_real_utc": "2026-09-20T11:19:40Z",
    "t_captura_utc": "2026-09-20T11:19:40Z",
-   "t_evaluacion_utc": "2026-09-20T11:29:09Z",
-   "t_generacion_utc": "2026-09-20T11:29:09Z",
+   "t_evaluacion_utc": "2026-09-20T11:30:09Z",
+   "t_generacion_utc": "2026-09-20T11:30:09Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Celtic vs Rangers\n⏱ Minuto: 28'\n📊 Marcador: 0-0\n🏆 Liga: Scottish Premiership\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Celtic presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Rangers no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Celtic vs Rangers\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: Scottish Premiership\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Celtic presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Rangers no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "9a38c6667f66a864"
   },
@@ -464,7 +377,7 @@
    "match_id": "16391693",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 29,
+   "minuto": 30,
    "condicion": "4 córners totales antes del min 45 (3-1), Wolverhampton presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿West Bromwich Albion NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -478,14 +391,101 @@
    },
    "t_evento_real_utc": "2026-09-20T11:25:17Z",
    "t_captura_utc": "2026-09-20T11:25:17Z",
-   "t_evaluacion_utc": "2026-09-20T11:29:09Z",
-   "t_generacion_utc": "2026-09-20T11:29:09Z",
+   "t_evaluacion_utc": "2026-09-20T11:30:09Z",
+   "t_generacion_utc": "2026-09-20T11:30:09Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Wolverhampton vs West Bromwich Albion\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Wolverhampton presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿West Bromwich Albion no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Wolverhampton vs West Bromwich Albion\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Wolverhampton presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿West Bromwich Albion no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "7288af80b971a2b7"
+  },
+  {
+   "strategy_id": "L5_V2_OVER05HT_PRESION_PERSISTENTE",
+   "match_label": "Wolverhampton vs West Bromwich Albion (Championship)",
+   "match_id": "16391693",
+   "market": "Over 0.5 Goles -- Primer Tiempo",
+   "cuota_detectada": null,
+   "minuto": 30,
+   "condicion": "0-0 en ventana 24-34 con peligro acumulado (xG>=0.90, remates>=7, SoT>=2, corners>=2, todos combinados) Y presión reciente activa en los últimos 10 minutos (shots>=3, SoT>=1, via delta_ventana()). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "xg_local": 1.04,
+    "xg_visita": 0.03,
+    "xg_total": 1.07,
+    "remates_local": 8,
+    "remates_visita": 1,
+    "remates_total": 9,
+    "sot_local": 4,
+    "sot_visita": 1,
+    "sot_total": 5,
+    "cor_local": 3,
+    "cor_visita": 1,
+    "cor_total": 4,
+    "marcador": "0-0",
+    "presion_reciente_shots": {
+     "campo": "totalShotsOnGoal",
+     "minutos_ventana_pedidos": 10,
+     "t0_captured_at_utc": "2026-09-20T11:29:53Z",
+     "t1_captured_at_utc": "2026-09-20T11:19:40Z",
+     "valor_t0": [
+      8,
+      1
+     ],
+     "valor_t1": [
+      6,
+      0
+     ],
+     "delta_home": 2,
+     "delta_away": 1,
+     "delta_total": 3,
+     "valido": true,
+     "motivo": null
+    },
+    "presion_reciente_sot": {
+     "campo": "shotsOnGoal",
+     "minutos_ventana_pedidos": 10,
+     "t0_captured_at_utc": "2026-09-20T11:29:53Z",
+     "t1_captured_at_utc": "2026-09-20T11:19:40Z",
+     "valor_t0": [
+      4,
+      1
+     ],
+     "valor_t1": [
+      3,
+      0
+     ],
+     "delta_home": 1,
+     "delta_away": 1,
+     "delta_total": 2,
+     "valido": true,
+     "motivo": null
+    },
+    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo"
+   },
+   "t_evento_real_utc": "2026-09-20T11:24:13Z",
+   "t_captura_utc": "2026-09-20T11:29:53Z",
+   "t_evaluacion_utc": "2026-09-20T11:30:11Z",
+   "t_generacion_utc": "2026-09-20T11:30:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "SUPRIMIDA_NO_AUTORIZADA",
+     "t_envio_utc": null,
+     "latencia_envio_ms": null,
+     "error": "Estrategia 'L5_V2_OVER05HT_PRESION_PERSISTENTE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
+     "message_id": null,
+     "chat_id": null
+    }
+   },
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🔵 L5_V2 — L5_V2_OVER05HT_PRESION_PERSISTENTE\n\n⚽ Wolverhampton vs West Bromwich Albion\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n\nxG combinado: 1.07\nRemates totales: 8-1 (total 9)\nTiros a puerta: 4-1 (total 5)\nCórners: 3-1 (total 4)\n\nPresión reciente (últimos 10 min):\n  Shots: 3 (T0=2026-09-20T11:29:53Z, T1=2026-09-20T11:19:40Z)\n  SoT: 2 (T0=2026-09-20T11:29:53Z, T1=2026-09-20T11:19:40Z)\n\n🏆 Liga: Championship\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo",
+   "evidencia": null,
+   "alert_id": "ebfd4339367d56d6"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -493,7 +493,7 @@
    "match_id": "16391693",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 29,
+   "minuto": 30,
    "condicion": "Wolverhampton acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -502,8 +502,8 @@
    "extra": {
     "equipo_dominante": "Wolverhampton",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.7692,
-    "touches_home": 10,
+    "ratio_presion_territorial": 0.8,
+    "touches_home": 12,
     "touches_away": 3,
     "acelerador_proxy_detectado": false,
     "minuto_ultima_sustitucion": null,
@@ -515,13 +515,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-09-20T11:20:10Z",
-   "t_captura_utc": "2026-09-20T11:29:11Z",
-   "t_evaluacion_utc": "2026-09-20T11:29:11Z",
-   "t_generacion_utc": "2026-09-20T11:29:11Z",
+   "t_captura_utc": "2026-09-20T11:30:11Z",
+   "t_evaluacion_utc": "2026-09-20T11:30:11Z",
+   "t_generacion_utc": "2026-09-20T11:30:11Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Wolverhampton vs West Bromwich Albion\n⏱ Minuto: 29'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Wolverhampton acumula 77% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Wolverhampton vs West Bromwich Albion\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Championship\n\n📝 Motivo: Wolverhampton acumula 80% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "a6773eebae3870e3"
   }
