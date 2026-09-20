@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-20T01:26:29Z",
- "n_alerts": 18,
+ "generated_at_utc": "2026-09-20T01:28:19Z",
+ "n_alerts": 16,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -35,85 +35,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ CF Montréal vs Columbus Crew\n⏱ Minuto: 61'\n📊 Marcador: 1-1\n🏆 Liga: MLS\n\n📝 Motivo: presión combinada sostenida — xG 1.25, 15 tiros totales (3 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "0755370a4ed9f5c9"
-  },
-  {
-   "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
-   "match_label": "St.Louis City vs Toronto FC (MLS)",
-   "match_id": "15168406",
-   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
-   "cuota_detectada": null,
-   "minuto": 17,
-   "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
-   "confianza": "Alta",
-   "link": "https://www.sofascore.com/event/15168406",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "touchesInOppBox_home": 5.0,
-    "touchesInOppBox_away": 1.0,
-    "touchesInOppBox_tot15": 6.0,
-    "umbral_tot15": 6.0,
-    "minuto_decision": 15,
-    "minuto_deteccion": 17,
-    "marcador_min15": "0-0",
-    "anchor_captured_at_utc": "2026-09-20T00:56:31Z",
-    "anchor_minute": 14.990515665213268
-   },
-   "t_evento_real_utc": "2026-09-20T00:56:31Z",
-   "t_captura_utc": null,
-   "t_evaluacion_utc": "2026-09-20T00:58:31Z",
-   "t_generacion_utc": "2026-09-20T00:58:31Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-20T00:58:32Z",
-     "latencia_envio_ms": 836.3475799560547,
-     "error": null,
-     "message_id": 3338,
-     "chat_id": 5530307309
-    }
-   },
-   "latencia_total_seg": 121.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ St.Louis City vs Toronto FC\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 5-1 (total 6 >= 6.0)\n\n🏆 Liga: MLS\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
-   "evidencia": null,
-   "alert_id": "69d2e0305e8a6944"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Sporting Kansas City vs Philadelphia Union (MLS)",
-   "match_id": "15168407",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Sporting Kansas City domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Sporting Kansas City",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": 1,
-    "centros_away": 0,
-    "remates_home": 2,
-    "remates_away": 1,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-09-20T00:57:14Z",
-   "t_captura_utc": "2026-09-20T00:57:14Z",
-   "t_evaluacion_utc": "2026-09-20T01:06:17Z",
-   "t_generacion_utc": "2026-09-20T01:06:17Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Sporting Kansas City vs Philadelphia Union\n⏱ Minuto: 25'\n📊 Marcador: 3-0\n🏆 Liga: MLS\n\n📝 Motivo: Sporting Kansas City — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "dd6d880715977bec"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -393,44 +314,6 @@
    "alert_id": "e3b4e778bd93b3aa"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "Instituto De Córdoba vs CA Talleres (Liga Profesional de Fútbol)",
-   "match_id": "16667333",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 46,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-09-20T01:24:55Z",
-   "t_captura_utc": "2026-09-20T01:24:55Z",
-   "t_evaluacion_utc": "2026-09-20T01:26:26Z",
-   "t_generacion_utc": "2026-09-20T01:26:26Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-09-20T01:26:27Z",
-     "latencia_envio_ms": 904.9651622772217,
-     "error": null,
-     "message_id": 3340,
-     "chat_id": -5314130598
-    }
-   },
-   "latencia_total_seg": 92.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Instituto De Córdoba vs CA Talleres\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "26eff837440f7efa"
-  },
-  {
    "strategy_id": "L3",
    "match_label": "Instituto De Córdoba vs CA Talleres (Liga Profesional de Fútbol)",
    "match_id": "16667333",
@@ -648,6 +531,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Minnesota United vs LA Galaxy\n⏱ Minuto: 45'\n📊 Marcador: 2-1\n🏆 Liga: MLS\n\n📝 Motivo: Minnesota United acumula 65% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "e5e6574475dd7c62"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Instituto De Córdoba vs CA Talleres (Liga Profesional de Fútbol)",
+   "match_id": "16667333",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 47,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 2,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-09-20T01:24:55Z",
+   "t_captura_utc": "2026-09-20T01:24:55Z",
+   "t_evaluacion_utc": "2026-09-20T01:28:19Z",
+   "t_generacion_utc": "2026-09-20T01:28:19Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-09-20T01:26:27Z",
+     "latencia_envio_ms": 904.9651622772217,
+     "error": null,
+     "message_id": 3340,
+     "chat_id": -5314130598
+    }
+   },
+   "latencia_total_seg": 92.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Instituto De Córdoba vs CA Talleres\n⏱ Minuto: 47'\n📊 Marcador: 0-0\n🏆 Liga: Liga Profesional de Fútbol\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "26eff837440f7efa"
   }
  ]
 }
