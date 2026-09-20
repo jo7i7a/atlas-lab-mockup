@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-09-20T17:07:13Z",
+ "generated_at_utc": "2026-09-20T17:08:09Z",
  "n_alerts": 9,
  "alerts": [
   {
@@ -235,34 +235,6 @@
    "alert_id": "eeb4126bb920f94f"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "Juventus vs Atalanta (Serie A)",
-   "match_id": "16285022",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 47,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 2,
-    "corners_1t_total": 3
-   },
-   "t_evento_real_utc": "2026-09-20T17:04:41Z",
-   "t_captura_utc": "2026-09-20T17:04:41Z",
-   "t_evaluacion_utc": "2026-09-20T17:07:12Z",
-   "t_generacion_utc": "2026-09-20T17:07:12Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Juventus vs Atalanta\n⏱ Minuto: 47'\n📊 Marcador: 1-0\n🏆 Liga: Serie A\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "b8f7279ad8a5b5ee"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Fulham vs Manchester United (Premier League)",
    "match_id": "16363652",
@@ -375,6 +347,34 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Deportivo de A Coruña vs Real Betis\n⏱ Minuto: 35'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Real Betis acumula 100% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Real Betis, min 12\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "75495eded1c30607"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Juventus vs Atalanta (Serie A)",
+   "match_id": "16285022",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 48,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 2,
+    "corners_1t_total": 3
+   },
+   "t_evento_real_utc": "2026-09-20T17:04:41Z",
+   "t_captura_utc": "2026-09-20T17:04:41Z",
+   "t_evaluacion_utc": "2026-09-20T17:08:09Z",
+   "t_generacion_utc": "2026-09-20T17:08:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Juventus vs Atalanta\n⏱ Minuto: 48'\n📊 Marcador: 1-0\n🏆 Liga: Serie A\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 2\nTotal: 3\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "b8f7279ad8a5b5ee"
   }
  ]
 }
