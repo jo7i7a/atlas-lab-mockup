@@ -1,5 +1,41 @@
 {
- "generated_at_utc": "2026-09-21T19:16:10Z",
- "n_alerts": 0,
- "alerts": []
+ "generated_at_utc": "2026-09-21T22:17:08Z",
+ "n_alerts": 1,
+ "alerts": [
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Barracas Central vs Independiente Rivadavia (Liga Profesional de Fútbol)",
+   "match_id": "16667331",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 16,
+   "condicion": "Independiente Rivadavia domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Independiente Rivadavia",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 0,
+    "centros_away": 2,
+    "remates_home": 0,
+    "remates_away": 3,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-21T22:16:53Z",
+   "t_captura_utc": "2026-09-21T22:16:53Z",
+   "t_evaluacion_utc": "2026-09-21T22:17:08Z",
+   "t_generacion_utc": "2026-09-21T22:17:08Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Barracas Central vs Independiente Rivadavia\n⏱ Minuto: 16'\n📊 Marcador: 0-1\n🏆 Liga: Liga Profesional de Fútbol\n\n📝 Motivo: Independiente Rivadavia — ≥2 remates en los últimos 5 min (away=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "ae72214dbb28c7d9"
+  }
+ ]
 }
