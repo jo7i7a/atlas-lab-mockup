@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-22T22:50:10Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-09-22T22:52:08Z",
+ "n_alerts": 2,
  "alerts": [
   {
    "strategy_id": "H3_PERSISTENCIA_TIROS_INVESTIGACION",
@@ -43,6 +43,34 @@
    "mensaje_custom": "🟣 H3 — INVESTIGACIÓN LIVE (Persistencia de tiros)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Criciúma vs Operário-PR\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nTiros a puerta (ambos equipos) por tramo:\n  min 1-5: 2\n  min 6-10: 1\n  min 11-15: 2\n\n🏆 Liga: Brasileirão Série B\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "2996628ff68d5467"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "Criciúma vs Operário-PR (Brasileirão Série B)",
+   "match_id": "15526294",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 19,
+   "condicion": "4 córners totales antes del min 30 (4-0), Criciúma presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Operário-PR NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 4,
+    "corners_away": 0,
+    "equipo_presiona": "Criciúma"
+   },
+   "t_evento_real_utc": "2026-09-22T22:51:31Z",
+   "t_captura_utc": "2026-09-22T22:51:31Z",
+   "t_evaluacion_utc": "2026-09-22T22:52:08Z",
+   "t_generacion_utc": "2026-09-22T22:52:08Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Criciúma vs Operário-PR\n⏱ Minuto: 19'\n📊 Marcador: 0-0\n🏆 Liga: Brasileirão Série B\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Criciúma presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Operário-PR no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "ec49f5449ac532c7"
   }
  ]
 }
