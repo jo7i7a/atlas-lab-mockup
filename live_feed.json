@@ -1,5 +1,53 @@
 {
- "generated_at_utc": "2026-09-22T00:14:54Z",
- "n_live_target": 0,
- "matches": {}
+ "generated_at_utc": "2026-09-22T00:17:54Z",
+ "n_live_target": 1,
+ "matches": {
+  "16667337": {
+   "event_id": 16667337,
+   "league": "Liga Profesional de Fútbol",
+   "home": "CA Lanús",
+   "away": "Estudiantes de La Plata",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": "inprogress",
+   "status_description": "1st half",
+   "minute": 2,
+   "stats": {
+    "possession": {
+     "label": "Posesión",
+     "home": 40,
+     "away": 60
+    },
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0.01
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 1
+    },
+    "passes": {
+     "label": "Pases",
+     "home": 8,
+     "away": 12
+    }
+   },
+   "odds": {
+    "btts": {
+     "yes": 2.375,
+     "no": 1.533,
+     "captured_at_utc": "2026-09-22T00:17:51Z"
+    },
+    "1x2": {
+     "home": 2.3,
+     "draw": 2.875,
+     "away": 3.6,
+     "captured_at_utc": "2026-09-22T00:17:51Z"
+    }
+   },
+   "updated_at_utc": "2026-09-22T00:17:54Z"
+  }
+ }
 }
