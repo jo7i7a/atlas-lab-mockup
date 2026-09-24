@@ -1,9 +1,9 @@
 {
- "generated_at_utc": "2026-09-24T01:50:55Z",
- "n_live_target": 2,
+ "generated_at_utc": "2026-09-24T01:53:54Z",
+ "n_live_target": 1,
  "matches": {
-  "15171460": {
-   "event_id": 15171460,
+  "15956784": {
+   "event_id": 15956784,
    "league": "MLS",
    "home": "Seattle Sounders FC",
    "away": "Real Salt Lake",
@@ -11,17 +11,12 @@
    "away_score": 0,
    "status_type": "inprogress",
    "status_description": "1st half",
-   "minute": 10,
+   "minute": 13,
    "stats": {
     "possession": {
      "label": "Posesión",
-     "home": 55,
-     "away": 45
-    },
-    "xg": {
-     "label": "Expected Goals (xG)",
-     "home": 0.06,
-     "away": 0
+     "home": 56,
+     "away": 44
     },
     "shots": {
      "label": "Remates totales",
@@ -35,43 +30,34 @@
     },
     "passes": {
      "label": "Pases",
-     "home": 68,
-     "away": 60
+     "home": 75,
+     "away": 63
+    },
+    "yellow_cards": {
+     "label": "Tarjetas amarillas",
+     "home": 1,
+     "away": 0
     }
    },
-   "odds": {},
-   "updated_at_utc": "2026-09-24T01:50:55Z"
-  },
-  "15956784": {
-   "event_id": 15956784,
-   "league": "MLS",
-   "home": "Seattle Sounders FC",
-   "away": "Real Salt Lake",
-   "home_score": 0,
-   "away_score": 0,
-   "status_type": "inprogress",
-   "status_description": "1st half",
-   "minute": 10,
-   "stats": {},
    "odds": {
     "btts": {
-     "yes": 1.667,
-     "no": 2.1,
-     "captured_at_utc": "2026-09-24T01:50:51Z"
+     "yes": 1.75,
+     "no": 2.0,
+     "captured_at_utc": "2026-09-24T01:53:53Z"
     },
     "1x2": {
-     "home": 1.8,
-     "draw": 3.6,
+     "home": 1.833,
+     "draw": 3.5,
      "away": 4.333,
-     "captured_at_utc": "2026-09-24T01:50:51Z"
+     "captured_at_utc": "2026-09-24T01:53:53Z"
     },
     "goals_over_25": {
-     "over": 1.727,
-     "under": 2.0,
-     "captured_at_utc": "2026-09-24T01:50:51Z"
+     "over": 1.8,
+     "under": 1.909,
+     "captured_at_utc": "2026-09-24T01:53:53Z"
     }
    },
-   "updated_at_utc": "2026-09-24T01:50:55Z"
+   "updated_at_utc": "2026-09-24T01:53:54Z"
   }
  }
 }
