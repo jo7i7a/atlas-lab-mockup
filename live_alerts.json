@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-09-24T21:38:08Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-09-24T21:39:09Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -93,6 +93,35 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ O'Higgins vs Deportes Santa Cruz\n⏱ Minuto: 36'\n📊 Marcador: 1-0\n🏆 Liga: Copa Chile\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: O'Higgins presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Deportes Santa Cruz no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "c2a08003c495dd23"
+  },
+  {
+   "strategy_id": "L3",
+   "match_label": "O'Higgins vs Deportes Santa Cruz (Copa Chile)",
+   "match_id": "16997891",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
+   "cuota_detectada": null,
+   "minuto": 37,
+   "condicion": "Expulsión de O'Higgins (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_expulsado": "O'Higgins",
+    "marcador_al_detectar": "1-0",
+    "total_rojas_partido": 1,
+    "codigo_periodo_atlas": 6
+   },
+   "t_evento_real_utc": "2026-09-24T21:38:13Z",
+   "t_captura_utc": "2026-09-24T21:38:54Z",
+   "t_evaluacion_utc": "2026-09-24T21:39:09Z",
+   "t_generacion_utc": "2026-09-24T21:39:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 L3 | O'Higgins vs Deportes Santa Cruz | Roja O'Higgins | Min 37' | 1-0",
+   "evidencia": null,
+   "alert_id": "d1bb104ad2747eed"
   }
  ]
 }
