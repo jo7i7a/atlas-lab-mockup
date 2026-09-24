@@ -1,5 +1,41 @@
 {
- "generated_at_utc": "2026-09-24T22:37:10Z",
- "n_alerts": 0,
- "alerts": []
+ "generated_at_utc": "2026-09-24T23:53:09Z",
+ "n_alerts": 1,
+ "alerts": [
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Everton de Viña del Mar vs Universidad de Chile (Copa Chile)",
+   "match_id": "16997888",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 21,
+   "condicion": "Universidad de Chile domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Universidad de Chile",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": 1,
+    "centros_away": 0,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-09-24T23:52:30Z",
+   "t_captura_utc": "2026-09-24T23:52:30Z",
+   "t_evaluacion_utc": "2026-09-24T23:53:09Z",
+   "t_generacion_utc": "2026-09-24T23:53:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Everton de Viña del Mar vs Universidad de Chile\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Copa Chile\n\n📝 Motivo: Universidad de Chile — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "3160e1e0e87c47c4"
+  }
+ ]
 }
