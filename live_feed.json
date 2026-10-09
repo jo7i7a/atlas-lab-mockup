@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-09T17:44:53Z",
- "n_live_target": 1,
+ "generated_at_utc": "2026-10-09T17:47:53Z",
+ "n_live_target": 2,
  "matches": {
   "5105018": {
    "event_id": 5105018,
@@ -11,11 +11,11 @@
    "away_score": 2,
    "status_type": null,
    "status_description": "live",
-   "minute": 42,
+   "minute": 45,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.39,
+     "home": 0.65,
      "away": 0.96
     },
     "shots": {
@@ -40,7 +40,42 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-09T17:44:53Z"
+   "updated_at_utc": "2026-10-09T17:47:53Z"
+  },
+  "5887651": {
+   "event_id": 5887651,
+   "league": "Liga Portugal Betclic",
+   "home": "Moreirense",
+   "away": "Gil Vicente",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 1,
+   "stats": {
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-10-09T17:47:53Z"
   }
  }
 }
