@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-10T13:32:54Z",
+ "generated_at_utc": "2026-10-10T13:35:54Z",
  "n_live_target": 6,
  "matches": {
   "5881179": {
@@ -11,10 +11,36 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 2,
-   "stats": {},
+   "minute": 5,
+   "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.87,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 3,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 1,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
    "odds": {},
-   "updated_at_utc": "2026-10-10T13:32:54Z"
+   "updated_at_utc": "2026-10-10T13:35:54Z"
   },
   "5881183": {
    "event_id": 5881183,
@@ -25,12 +51,52 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 2,
+   "minute": 5,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.02,
-     "away": 0.06
+     "home": 0.11,
+     "away": 0.22
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 2,
+     "away": 2
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 1,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-10-10T13:35:54Z"
+  },
+  "5881184": {
+   "event_id": 5881184,
+   "league": "Bundesliga",
+   "home": "Mainz 05",
+   "away": "Bayer Leverkusen",
+   "home_score": 0,
+   "away_score": 1,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 5,
+   "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.11,
+     "away": 0.05
     },
     "shots": {
      "label": "Remates totales",
@@ -40,7 +106,7 @@
     "shots_on_target": {
      "label": "Remates al arco",
      "home": 1,
-     "away": 0
+     "away": 1
     },
     "corners": {
      "label": "Corners",
@@ -54,47 +120,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T13:32:54Z"
-  },
-  "5881184": {
-   "event_id": 5881184,
-   "league": "Bundesliga",
-   "home": "Mainz 05",
-   "away": "Bayer Leverkusen",
-   "home_score": 0,
-   "away_score": 0,
-   "status_type": null,
-   "status_description": "live",
-   "minute": 2,
-   "stats": {
-    "xg": {
-     "label": "Expected Goals (xG)",
-     "home": 0.06,
-     "away": 0
-    },
-    "shots": {
-     "label": "Remates totales",
-     "home": 1,
-     "away": 0
-    },
-    "shots_on_target": {
-     "label": "Remates al arco",
-     "home": 1,
-     "away": 0
-    },
-    "corners": {
-     "label": "Corners",
-     "home": 0,
-     "away": 0
-    },
-    "red_cards": {
-     "label": "Tarjetas rojas",
-     "home": 0,
-     "away": 0
-    }
-   },
-   "odds": {},
-   "updated_at_utc": "2026-10-10T13:32:54Z"
+   "updated_at_utc": "2026-10-10T13:35:54Z"
   },
   "5881185": {
    "event_id": 5881185,
@@ -105,22 +131,27 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 2,
+   "minute": 5,
    "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0.03
+    },
     "shots": {
      "label": "Remates totales",
      "home": 0,
-     "away": 0
+     "away": 2
     },
     "shots_on_target": {
      "label": "Remates al arco",
      "home": 0,
-     "away": 0
+     "away": 1
     },
     "corners": {
      "label": "Corners",
      "home": 0,
-     "away": 0
+     "away": 1
     },
     "red_cards": {
      "label": "Tarjetas rojas",
@@ -129,7 +160,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T13:32:54Z"
+   "updated_at_utc": "2026-10-10T13:35:54Z"
   },
   "5881187": {
    "event_id": 5881187,
@@ -140,11 +171,11 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 1,
+   "minute": 4,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.1,
+     "home": 0.05,
      "away": 0
     },
     "shots": {
@@ -169,7 +200,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T13:32:54Z"
+   "updated_at_utc": "2026-10-10T13:35:54Z"
   },
   "5749693": {
    "event_id": 5749693,
@@ -180,17 +211,17 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 30,
+   "minute": 33,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 1.29,
-     "away": 0.09
+     "home": 1.35,
+     "away": 0.11
     },
     "shots": {
      "label": "Remates totales",
-     "home": 8,
-     "away": 2
+     "home": 9,
+     "away": 3
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -209,7 +240,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T13:32:54Z"
+   "updated_at_utc": "2026-10-10T13:35:54Z"
   }
  }
 }
