@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-10T07:34:11Z",
- "n_alerts": 1,
+ "generated_at_utc": "2026-10-10T07:54:09Z",
+ "n_alerts": 2,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -35,6 +35,41 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ FC Tokyo vs Urawa Red Diamonds\n⏱ Minuto: 70'\n📊 Marcador: 2-0\n🏆 Liga: J. League\n\n📝 Motivo: presión combinada sostenida — xG 1.91, 21 tiros totales (6 a puerta), 3 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "f8fc4e9e6b15ba9c"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Gimcheon Sangmu vs FC Anyang (K-League 1)",
+   "match_id": "5140046",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 23,
+   "condicion": "Gimcheon Sangmu domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Gimcheon Sangmu",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 2,
+    "remates_away": 3,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-10-10T07:53:21Z",
+   "t_captura_utc": "2026-10-10T07:53:21Z",
+   "t_evaluacion_utc": "2026-10-10T07:54:09Z",
+   "t_generacion_utc": "2026-10-10T07:54:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Gimcheon Sangmu vs FC Anyang\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: K-League 1\n\n📝 Motivo: Gimcheon Sangmu — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "d8e7442c8258ffd3"
   }
  ]
 }
