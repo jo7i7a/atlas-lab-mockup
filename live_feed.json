@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-10T07:29:54Z",
- "n_live_target": 2,
+ "generated_at_utc": "2026-10-10T07:32:54Z",
+ "n_live_target": 3,
  "matches": {
   "5803598": {
    "event_id": 5803598,
@@ -11,7 +11,7 @@
    "away_score": 1,
    "status_type": null,
    "status_description": "live",
-   "minute": 66,
+   "minute": 69,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
@@ -40,32 +40,32 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T07:29:54Z"
+   "updated_at_utc": "2026-10-10T07:32:54Z"
   },
   "5803601": {
    "event_id": 5803601,
    "league": "J1 League",
    "home": "FC Tokyo",
    "away": "Urawa Red Diamonds",
-   "home_score": 1,
+   "home_score": 2,
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 66,
+   "minute": 69,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.52,
+     "home": 1.13,
      "away": 0.78
     },
     "shots": {
      "label": "Remates totales",
-     "home": 9,
-     "away": 10
+     "home": 10,
+     "away": 11
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 3,
+     "home": 4,
      "away": 2
     },
     "corners": {
@@ -80,7 +80,37 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T07:29:54Z"
+   "updated_at_utc": "2026-10-10T07:32:54Z"
+  },
+  "5140046": {
+   "event_id": 5140046,
+   "league": "K League 1",
+   "home": "Gimcheon Sangmu",
+   "away": "FC Anyang",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 2,
+   "stats": {
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-10-10T07:32:54Z"
   }
  }
 }
