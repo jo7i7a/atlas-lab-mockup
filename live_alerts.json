@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-10T19:01:16Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-10-10T19:02:11Z",
+ "n_alerts": 6,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -85,7 +85,7 @@
    "match_id": "5802949",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 15,
+   "minuto": 16,
    "condicion": "Paris FC domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -105,14 +105,49 @@
    },
    "t_evento_real_utc": "2026-10-10T19:00:47Z",
    "t_captura_utc": "2026-10-10T19:00:47Z",
-   "t_evaluacion_utc": "2026-10-10T19:01:14Z",
-   "t_generacion_utc": "2026-10-10T19:01:14Z",
+   "t_evaluacion_utc": "2026-10-10T19:02:11Z",
+   "t_generacion_utc": "2026-10-10T19:02:11Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Lorient vs Paris FC\n⏱ Minuto: 15'\n📊 Marcador: 0-0\n🏆 Liga: Ligue 1\n\n📝 Motivo: Paris FC — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Lorient vs Paris FC\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Ligue 1\n\n📝 Motivo: Paris FC — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "cc21f25daecbb898"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Paris Saint-Germain vs Le Mans (Ligue 1)",
+   "match_id": "5802952",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 16,
+   "condicion": "Paris Saint-Germain domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Paris Saint-Germain",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 3,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-10-10T19:01:32Z",
+   "t_captura_utc": "2026-10-10T19:01:32Z",
+   "t_evaluacion_utc": "2026-10-10T19:02:11Z",
+   "t_generacion_utc": "2026-10-10T19:02:11Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Paris Saint-Germain vs Le Mans\n⏱ Minuto: 16'\n📊 Marcador: 0-0\n🏆 Liga: Ligue 1\n\n📝 Motivo: Paris Saint-Germain — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "d1a6eb72a27596c3"
   },
   {
    "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
@@ -120,7 +155,7 @@
    "match_id": "5749697",
    "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "cuota_detectada": null,
-   "minuto": 15,
+   "minuto": 16,
    "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
    "confianza": "Alta",
    "link": "https://www.sofascore.com/event/5749697",
@@ -132,15 +167,15 @@
     "touchesInOppBox_tot15": 11.0,
     "umbral_tot15": 6.0,
     "minuto_decision": 15,
-    "minuto_deteccion": 15,
+    "minuto_deteccion": 16,
     "marcador_min15": "0-0",
     "anchor_captured_at_utc": "2026-10-10T19:01:10Z",
-    "anchor_minute": 14.913580298423767
+    "anchor_minute": 14.968635177612304
    },
    "t_evento_real_utc": "2026-10-10T19:01:10Z",
    "t_captura_utc": null,
-   "t_evaluacion_utc": "2026-10-10T19:01:15Z",
-   "t_generacion_utc": "2026-10-10T19:01:15Z",
+   "t_evaluacion_utc": "2026-10-10T19:02:11Z",
+   "t_generacion_utc": "2026-10-10T19:02:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -154,7 +189,7 @@
    },
    "latencia_total_seg": 6.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Napoli vs Frosinone\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 8-3 (total 11 >= 6.0)\n\n🏆 Liga: Serie A\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Napoli vs Frosinone\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 8-3 (total 11 >= 6.0)\n\n🏆 Liga: Serie A\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "61d35f11ec9f4511"
   },
@@ -164,7 +199,7 @@
    "match_id": "5802952",
    "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "cuota_detectada": null,
-   "minuto": 15,
+   "minuto": 16,
    "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
    "confianza": "Alta",
    "link": "https://www.sofascore.com/event/5802952",
@@ -176,15 +211,15 @@
     "touchesInOppBox_tot15": 12.0,
     "umbral_tot15": 6.0,
     "minuto_decision": 15,
-    "minuto_deteccion": 15,
+    "minuto_deteccion": 16,
     "marcador_min15": "0-0",
     "anchor_captured_at_utc": "2026-10-10T19:01:10Z",
-    "anchor_minute": 14.89948943456014
+    "anchor_minute": 14.968446187178294
    },
    "t_evento_real_utc": "2026-10-10T19:01:10Z",
    "t_captura_utc": null,
-   "t_evaluacion_utc": "2026-10-10T19:01:16Z",
-   "t_generacion_utc": "2026-10-10T19:01:16Z",
+   "t_evaluacion_utc": "2026-10-10T19:02:11Z",
+   "t_generacion_utc": "2026-10-10T19:02:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -198,7 +233,7 @@
    },
    "latencia_total_seg": 6.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Paris Saint-Germain vs Le Mans\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 10-2 (total 12 >= 6.0)\n\n🏆 Liga: Ligue 1\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Paris Saint-Germain vs Le Mans\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 10-2 (total 12 >= 6.0)\n\n🏆 Liga: Ligue 1\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "c681fd39c159889d"
   }
