@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-10T17:07:16Z",
+ "generated_at_utc": "2026-10-10T17:08:14Z",
  "n_alerts": 11,
  "alerts": [
   {
@@ -295,41 +295,6 @@
    "alert_id": "a318e61d44faec54"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Feyenoord vs AZ Alkmaar (Eredivisie)",
-   "match_id": "5781759",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 19,
-   "condicion": "Feyenoord domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Feyenoord",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 3,
-    "remates_away": 1,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-10-10T17:03:31Z",
-   "t_captura_utc": "2026-10-10T17:03:31Z",
-   "t_evaluacion_utc": "2026-10-10T17:07:16Z",
-   "t_generacion_utc": "2026-10-10T17:07:16Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Feyenoord vs AZ Alkmaar\n⏱ Minuto: 19'\n📊 Marcador: 1-0\n🏆 Liga: Eredivisie\n\n📝 Motivo: Feyenoord — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "a7ef7b9a5fa6016f"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Manchester United vs Tottenham Hotspur (Premier League)",
    "match_id": "5795473",
@@ -404,6 +369,41 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Barcelona vs Getafe\n⏱ Minuto: 32'\n📊 Marcador: 2-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Barcelona acumula 92% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "2a433b07ca0a41f1"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Feyenoord vs AZ Alkmaar (Eredivisie)",
+   "match_id": "5781759",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 20,
+   "condicion": "Feyenoord domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Feyenoord",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 3,
+    "remates_away": 1,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-10-10T17:03:31Z",
+   "t_captura_utc": "2026-10-10T17:03:31Z",
+   "t_evaluacion_utc": "2026-10-10T17:08:14Z",
+   "t_generacion_utc": "2026-10-10T17:08:14Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Feyenoord vs AZ Alkmaar\n⏱ Minuto: 20'\n📊 Marcador: 1-0\n🏆 Liga: Eredivisie\n\n📝 Motivo: Feyenoord — ≥2 remates en los últimos 5 min (home=3)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "a7ef7b9a5fa6016f"
   }
  ]
 }
