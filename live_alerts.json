@@ -1,41 +1,7 @@
 {
- "generated_at_utc": "2026-10-10T13:15:13Z",
- "n_alerts": 6,
+ "generated_at_utc": "2026-10-10T13:16:13Z",
+ "n_alerts": 9,
  "alerts": [
-  {
-   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
-   "match_label": "Arsenal vs Leeds United (Premier League)",
-   "match_id": "5795465",
-   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 62,
-   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_combinado": 1.21,
-    "tiros_combinados": 17,
-    "sot_combinado": 8,
-    "presion_reciente_10min": 4,
-    "marcador_en_el_momento": "1-1",
-    "t_primera_observacion_atlas": "2026-10-10T12:46:11Z",
-    "t_inicio_estimado_condicion": null,
-    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-10-10T12:46:11Z",
-   "t_captura_utc": "2026-10-10T12:52:11Z",
-   "t_evaluacion_utc": "2026-10-10T12:52:11Z",
-   "t_generacion_utc": "2026-10-10T12:52:11Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Arsenal vs Leeds United\n⏱ Minuto: 62'\n📊 Marcador: 1-1\n🏆 Liga: Premier League\n\n📝 Motivo: presión combinada sostenida — xG 1.21, 17 tiros totales (8 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
-   "evidencia": null,
-   "alert_id": "0b218da4932760c6"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Arsenal vs Leeds United (Premier League)",
@@ -236,6 +202,177 @@
    "mensaje_custom": "🟣 H3 — INVESTIGACIÓN LIVE (Persistencia de tiros)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Alanyaspor vs Erzurumspor FK\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nTiros a puerta (ambos equipos) por tramo:\n  min 1-5: 4\n  min 6-10: 2\n  min 11-15: 1\n\n🏆 Liga: Super Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "7d77e400745d672e"
+  },
+  {
+   "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
+   "match_label": "Alanyaspor vs Erzurumspor FK (Super Lig)",
+   "match_id": "5904760",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
+   "confianza": "Alta",
+   "link": "https://www.sofascore.com/event/5904760",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "touchesInOppBox_home": 4.0,
+    "touchesInOppBox_away": 4.0,
+    "touchesInOppBox_tot15": 8.0,
+    "umbral_tot15": 6.0,
+    "minuto_decision": 15,
+    "minuto_deteccion": 15,
+    "marcador_min15": "0-0",
+    "anchor_captured_at_utc": "2026-10-10T13:15:57Z",
+    "anchor_minute": 14.778974982102712
+   },
+   "t_evento_real_utc": "2026-10-10T13:15:57Z",
+   "t_captura_utc": null,
+   "t_evaluacion_utc": "2026-10-10T13:16:10Z",
+   "t_generacion_utc": "2026-10-10T13:16:10Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-10-10T13:16:11Z",
+     "latencia_envio_ms": 795.2601909637451,
+     "error": null,
+     "message_id": 3515,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 14.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Alanyaspor vs Erzurumspor FK\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 4-4 (total 8 >= 6.0)\n\n🏆 Liga: Super Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "95e1e27405e10a8d"
+  },
+  {
+   "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
+   "match_label": "Alanyaspor vs Erzurumspor FK (Super Lig)",
+   "match_id": "5904760",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "0-0 en minuto 15 con touchesInOppBox_tot15>=4.0 y |diff home-away|/total<=0.33 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "touches_home": 4.0,
+    "touches_away": 4.0,
+    "touches_total": 8.0,
+    "ratio_diff_home_away": 0.0,
+    "minuto_captura_usada": 14.82,
+    "marcador_min15": "0-0",
+    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
+    "hipotesis": "H2_PRESION_BILATERAL -- INVESTIGACION, NO estrategia certificada"
+   },
+   "t_evento_real_utc": "2026-10-10T13:15:57Z",
+   "t_captura_utc": "2026-10-10T13:15:57Z",
+   "t_evaluacion_utc": "2026-10-10T13:16:11Z",
+   "t_generacion_utc": "2026-10-10T13:16:11Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-10-10T13:16:12Z",
+     "latencia_envio_ms": 806.6504001617432,
+     "error": null,
+     "message_id": 3516,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 15.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Alanyaspor vs Erzurumspor FK\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 4-4 (total 8)\nRatio de diferencia home-away: 0.00 (umbral <= 0.33)\n\n🏆 Liga: Super Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "a672fd2455f06039"
+  },
+  {
+   "strategy_id": "H3_PERSISTENCIA_TIROS_INVESTIGACION",
+   "match_label": "Alanyaspor vs Erzurumspor FK (Super Lig)",
+   "match_id": "5904760",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "0-0 en minuto 15 con tiros a puerta combinados>0 en cada tramo 1-5/6-10/11-15 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "shots_on_goal_tramo1_1_5": 4.0,
+    "shots_on_goal_tramo2_6_10": 2.0,
+    "shots_on_goal_tramo3_11_15": 1.0,
+    "shots_on_goal_total15": 7.0,
+    "marcador_min15": "0-0",
+    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
+    "hipotesis": "H3_PERSISTENCIA_TIROS -- INVESTIGACION, NO estrategia certificada"
+   },
+   "t_evento_real_utc": "2026-10-10T13:15:57Z",
+   "t_captura_utc": "2026-10-10T13:15:57Z",
+   "t_evaluacion_utc": "2026-10-10T13:16:12Z",
+   "t_generacion_utc": "2026-10-10T13:16:12Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-10-10T13:16:12Z",
+     "latencia_envio_ms": 825.1385688781738,
+     "error": null,
+     "message_id": 3517,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 15.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟣 H3 — INVESTIGACIÓN LIVE (Persistencia de tiros)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Alanyaspor vs Erzurumspor FK\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nTiros a puerta (ambos equipos) por tramo:\n  min 1-5: 4\n  min 6-10: 2\n  min 11-15: 1\n\n🏆 Liga: Super Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "aca0fa29acab42cf"
+  },
+  {
+   "strategy_id": "H3_PERSISTENCIA_TIROS_INVESTIGACION",
+   "match_label": "Samsunspor vs Trabzonspor (Super Lig)",
+   "match_id": "5904766",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "0-0 en minuto 15 con tiros a puerta combinados>0 en cada tramo 1-5/6-10/11-15 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "shots_on_goal_tramo1_1_5": 1.0,
+    "shots_on_goal_tramo2_6_10": 2.0,
+    "shots_on_goal_tramo3_11_15": 2.0,
+    "shots_on_goal_total15": 5.0,
+    "marcador_min15": "0-0",
+    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
+    "hipotesis": "H3_PERSISTENCIA_TIROS -- INVESTIGACION, NO estrategia certificada"
+   },
+   "t_evento_real_utc": "2026-10-10T13:15:57Z",
+   "t_captura_utc": "2026-10-10T13:15:57Z",
+   "t_evaluacion_utc": "2026-10-10T13:16:13Z",
+   "t_generacion_utc": "2026-10-10T13:16:13Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-10-10T13:16:13Z",
+     "latencia_envio_ms": 840.2895927429199,
+     "error": null,
+     "message_id": 3518,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 16.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟣 H3 — INVESTIGACIÓN LIVE (Persistencia de tiros)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Samsunspor vs Trabzonspor\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nTiros a puerta (ambos equipos) por tramo:\n  min 1-5: 1\n  min 6-10: 2\n  min 11-15: 2\n\n🏆 Liga: Super Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "66f294d461a46d99"
   }
  ]
 }
