@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-10T23:41:54Z",
+ "generated_at_utc": "2026-10-10T23:44:54Z",
  "n_live_target": 7,
  "matches": {
   "5071396": {
@@ -11,10 +11,31 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 1,
-   "stats": {},
+   "minute": 4,
+   "stats": {
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
    "odds": {},
-   "updated_at_utc": "2026-10-10T23:41:54Z"
+   "updated_at_utc": "2026-10-10T23:44:54Z"
   },
   "5071397": {
    "event_id": 5071397,
@@ -25,21 +46,7 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 0,
-   "stats": {},
-   "odds": {},
-   "updated_at_utc": "2026-10-10T23:41:54Z"
-  },
-  "5071399": {
-   "event_id": 5071399,
-   "league": "MLS",
-   "home": "Inter Miami CF",
-   "away": "DC United",
-   "home_score": 0,
-   "away_score": 0,
-   "status_type": null,
-   "status_description": "live",
-   "minute": 1,
+   "minute": 3,
    "stats": {
     "shots": {
      "label": "Remates totales",
@@ -63,7 +70,47 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T23:41:54Z"
+   "updated_at_utc": "2026-10-10T23:44:54Z"
+  },
+  "5071399": {
+   "event_id": 5071399,
+   "league": "MLS",
+   "home": "Inter Miami CF",
+   "away": "DC United",
+   "home_score": 1,
+   "away_score": 0,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 4,
+   "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.4,
+     "away": 0.02
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 2,
+     "away": 1
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 1,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-10-10T23:44:54Z"
   },
   "5071400": {
    "event_id": 5071400,
@@ -74,10 +121,31 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 0,
-   "stats": {},
+   "minute": 3,
+   "stats": {
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
    "odds": {},
-   "updated_at_utc": "2026-10-10T23:41:54Z"
+   "updated_at_utc": "2026-10-10T23:44:54Z"
   },
   "5071402": {
    "event_id": 5071402,
@@ -88,16 +156,21 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 1,
+   "minute": 4,
    "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.07,
+     "away": 0
+    },
     "shots": {
      "label": "Remates totales",
-     "home": 0,
+     "home": 2,
      "away": 0
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 0,
+     "home": 1,
      "away": 0
     },
     "corners": {
@@ -112,7 +185,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T23:41:54Z"
+   "updated_at_utc": "2026-10-10T23:44:54Z"
   },
   "5071403": {
    "event_id": 5071403,
@@ -123,22 +196,13 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 1,
-   "stats": {},
-   "odds": {},
-   "updated_at_utc": "2026-10-10T23:41:54Z"
-  },
-  "5071401": {
-   "event_id": 5071401,
-   "league": "MLS",
-   "home": "Red Bull New York",
-   "away": "San Diego FC",
-   "home_score": 0,
-   "away_score": 0,
-   "status_type": null,
-   "status_description": "live",
-   "minute": 1,
+   "minute": 4,
    "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0.03
+    },
     "shots": {
      "label": "Remates totales",
      "home": 0,
@@ -161,7 +225,47 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T23:41:54Z"
+   "updated_at_utc": "2026-10-10T23:44:54Z"
+  },
+  "5071401": {
+   "event_id": 5071401,
+   "league": "MLS",
+   "home": "Red Bull New York",
+   "away": "San Diego FC",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 4,
+   "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0.03
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 1
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 1
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-10-10T23:44:54Z"
   }
  }
 }
