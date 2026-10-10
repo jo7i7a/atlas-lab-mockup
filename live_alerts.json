@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-10T15:09:32Z",
+ "generated_at_utc": "2026-10-10T15:10:26Z",
  "n_alerts": 10,
  "alerts": [
   {
@@ -296,35 +296,6 @@
    "alert_id": "251aa187338c19b3"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Go Ahead Eagles vs Sparta Rotterdam (Eredivisie)",
-   "match_id": "5781765",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 36,
-   "condicion": "5 córners totales antes del min 45 (3-2), Go Ahead Eagles presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Sparta Rotterdam NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 2,
-    "equipo_presiona": "Go Ahead Eagles",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-10-10T15:03:29Z",
-   "t_captura_utc": "2026-10-10T15:03:29Z",
-   "t_evaluacion_utc": "2026-10-10T15:09:20Z",
-   "t_generacion_utc": "2026-10-10T15:09:20Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Go Ahead Eagles vs Sparta Rotterdam\n⏱ Minuto: 36'\n📊 Marcador: 0-1\n🏆 Liga: Eredivisie\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Go Ahead Eagles presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Sparta Rotterdam no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "c779ebe7ea1c41d5"
-  },
-  {
    "strategy_id": "L3",
    "match_label": "Hoffenheim vs Hamburger SV (Bundesliga)",
    "match_id": "5881183",
@@ -352,6 +323,35 @@
    "mensaje_custom": "🚨 L3 | Hoffenheim vs Hamburger SV | Roja Hoffenheim | Min 75' | 2-1",
    "evidencia": null,
    "alert_id": "60e0a94c815300e1"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Go Ahead Eagles vs Sparta Rotterdam (Eredivisie)",
+   "match_id": "5781765",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 37,
+   "condicion": "5 córners totales antes del min 45 (3-2), Go Ahead Eagles presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Sparta Rotterdam NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "Go Ahead Eagles",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-10-10T15:03:29Z",
+   "t_captura_utc": "2026-10-10T15:03:29Z",
+   "t_evaluacion_utc": "2026-10-10T15:10:14Z",
+   "t_generacion_utc": "2026-10-10T15:10:14Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Go Ahead Eagles vs Sparta Rotterdam\n⏱ Minuto: 37'\n📊 Marcador: 0-1\n🏆 Liga: Eredivisie\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Go Ahead Eagles presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Sparta Rotterdam no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "c779ebe7ea1c41d5"
   }
  ]
 }
