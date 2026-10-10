@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-10T14:02:54Z",
- "n_live_target": 12,
+ "generated_at_utc": "2026-10-10T14:05:54Z",
+ "n_live_target": 15,
  "matches": {
   "5795466": {
    "event_id": 5795466,
@@ -11,12 +11,17 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 2,
+   "minute": 5,
    "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0,
+     "away": 0.13
+    },
     "shots": {
      "label": "Remates totales",
      "home": 0,
-     "away": 0
+     "away": 1
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -35,32 +40,32 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T14:02:54Z"
+   "updated_at_utc": "2026-10-10T14:05:54Z"
   },
   "5795467": {
    "event_id": 5795467,
    "league": "Premier League",
    "home": "Chelsea",
    "away": "AFC Bournemouth",
-   "home_score": 1,
+   "home_score": 2,
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 2,
+   "minute": 5,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.05,
+     "home": 0.2,
      "away": 0
     },
     "shots": {
      "label": "Remates totales",
-     "home": 1,
+     "home": 2,
      "away": 0
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 1,
+     "home": 2,
      "away": 0
     },
     "corners": {
@@ -75,7 +80,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T14:02:54Z"
+   "updated_at_utc": "2026-10-10T14:05:54Z"
   },
   "5795471": {
    "event_id": 5795471,
@@ -86,10 +91,31 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 2,
-   "stats": {},
+   "minute": 5,
+   "stats": {
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
    "odds": {},
-   "updated_at_utc": "2026-10-10T14:02:54Z"
+   "updated_at_utc": "2026-10-10T14:05:54Z"
   },
   "5795474": {
    "event_id": 5795474,
@@ -100,10 +126,31 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 2,
-   "stats": {},
+   "minute": 5,
+   "stats": {
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
    "odds": {},
-   "updated_at_utc": "2026-10-10T14:02:54Z"
+   "updated_at_utc": "2026-10-10T14:05:54Z"
   },
   "5881179": {
    "event_id": 5881179,
@@ -114,17 +161,17 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 32,
+   "minute": 35,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
      "home": 0.89,
-     "away": 0.65
+     "away": 1.09
     },
     "shots": {
      "label": "Remates totales",
-     "home": 4,
-     "away": 7
+     "home": 5,
+     "away": 8
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -133,7 +180,7 @@
     },
     "corners": {
      "label": "Corners",
-     "home": 1,
+     "home": 3,
      "away": 4
     },
     "red_cards": {
@@ -143,7 +190,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T14:02:54Z"
+   "updated_at_utc": "2026-10-10T14:05:54Z"
   },
   "5881183": {
    "event_id": 5881183,
@@ -154,7 +201,7 @@
    "away_score": 1,
    "status_type": null,
    "status_description": "live",
-   "minute": 32,
+   "minute": 35,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
@@ -183,37 +230,37 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T14:02:54Z"
+   "updated_at_utc": "2026-10-10T14:05:54Z"
   },
   "5881184": {
    "event_id": 5881184,
    "league": "Bundesliga",
    "home": "Mainz 05",
    "away": "Bayer Leverkusen",
-   "home_score": 0,
+   "home_score": 1,
    "away_score": 2,
    "status_type": null,
    "status_description": "live",
-   "minute": 32,
+   "minute": 35,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.48,
+     "home": 1.21,
      "away": 0.46
     },
     "shots": {
      "label": "Remates totales",
-     "home": 6,
+     "home": 8,
      "away": 4
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 1,
+     "home": 3,
      "away": 3
     },
     "corners": {
      "label": "Corners",
-     "home": 1,
+     "home": 3,
      "away": 0
     },
     "red_cards": {
@@ -223,7 +270,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T14:02:54Z"
+   "updated_at_utc": "2026-10-10T14:05:54Z"
   },
   "5881185": {
    "event_id": 5881185,
@@ -234,21 +281,21 @@
    "away_score": 1,
    "status_type": null,
    "status_description": "live",
-   "minute": 32,
+   "minute": 35,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
-     "home": 0.07,
+     "home": 0.16,
      "away": 1.49
     },
     "shots": {
      "label": "Remates totales",
-     "home": 3,
+     "home": 5,
      "away": 10
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 0,
+     "home": 1,
      "away": 4
     },
     "corners": {
@@ -263,7 +310,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T14:02:54Z"
+   "updated_at_utc": "2026-10-10T14:05:54Z"
   },
   "5881187": {
    "event_id": 5881187,
@@ -274,7 +321,7 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 31,
+   "minute": 34,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
@@ -303,7 +350,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T14:02:54Z"
+   "updated_at_utc": "2026-10-10T14:05:54Z"
   },
   "5749693": {
    "event_id": 5749693,
@@ -343,7 +390,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T14:02:54Z"
+   "updated_at_utc": "2026-10-10T14:05:54Z"
   },
   "5105017": {
    "event_id": 5105017,
@@ -354,10 +401,71 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 2,
-   "stats": {},
+   "minute": 5,
+   "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.12,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 1,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
    "odds": {},
-   "updated_at_utc": "2026-10-10T14:02:54Z"
+   "updated_at_utc": "2026-10-10T14:05:54Z"
+  },
+  "5793941": {
+   "event_id": 5793941,
+   "league": "Scottish Premiership",
+   "home": "Dundee United",
+   "away": "Hibernian",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 3,
+   "stats": {
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-10-10T14:05:54Z"
   },
   "5793942": {
    "event_id": 5793942,
@@ -368,17 +476,92 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 1,
+   "minute": 4,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
+     "home": 0.03,
+     "away": 0.25
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 1,
+     "away": 2
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
      "home": 0,
-     "away": 0.04
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 1,
+     "away": 1
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-10-10T14:05:54Z"
+  },
+  "5793943": {
+   "event_id": 5793943,
+   "league": "Scottish Premiership",
+   "home": "Heart of Midlothian",
+   "away": "St. Mirren",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 2,
+   "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.08,
+     "away": 0
     },
     "shots": {
      "label": "Remates totales",
      "home": 0,
-     "away": 1
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-10-10T14:05:54Z"
+  },
+  "5793945": {
+   "event_id": 5793945,
+   "league": "Scottish Premiership",
+   "home": "Rangers",
+   "away": "Kilmarnock",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 2,
+   "stats": {
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
     },
     "shots_on_target": {
      "label": "Remates al arco",
@@ -397,7 +580,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-10T14:02:54Z"
+   "updated_at_utc": "2026-10-10T14:05:54Z"
   }
  }
 }
