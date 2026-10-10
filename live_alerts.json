@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-10T10:47:14Z",
+ "generated_at_utc": "2026-10-10T10:48:11Z",
  "n_alerts": 7,
  "alerts": [
   {
@@ -210,7 +210,7 @@
    "match_id": "5904762",
    "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "cuota_detectada": null,
-   "minuto": 15,
+   "minuto": 16,
    "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
    "confianza": "Alta",
    "link": "https://www.sofascore.com/event/5904762",
@@ -222,15 +222,15 @@
     "touchesInOppBox_tot15": 8.0,
     "umbral_tot15": 6.0,
     "minuto_decision": 15,
-    "minuto_deteccion": 15,
+    "minuto_deteccion": 16,
     "marcador_min15": "0-0",
     "anchor_captured_at_utc": "2026-10-10T10:46:09Z",
-    "anchor_minute": 13.945256106058757
+    "anchor_minute": 13.962830837567648
    },
    "t_evento_real_utc": "2026-10-10T10:46:09Z",
    "t_captura_utc": null,
-   "t_evaluacion_utc": "2026-10-10T10:47:12Z",
-   "t_generacion_utc": "2026-10-10T10:47:12Z",
+   "t_evaluacion_utc": "2026-10-10T10:48:11Z",
+   "t_generacion_utc": "2026-10-10T10:48:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -244,7 +244,7 @@
    },
    "latencia_total_seg": 64.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Gençlerbirliği vs Amed Sportif\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 4-4 (total 8 >= 6.0)\n\n🏆 Liga: Super Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Gençlerbirliği vs Amed Sportif\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 4-4 (total 8 >= 6.0)\n\n🏆 Liga: Super Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "b3fefe8d4c9321ff"
   },
@@ -254,7 +254,7 @@
    "match_id": "5904762",
    "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "cuota_detectada": null,
-   "minuto": 15,
+   "minuto": 16,
    "condicion": "0-0 en minuto 15 con touchesInOppBox_tot15>=4.0 y |diff home-away|/total<=0.33 (definicion congelada Fase 4, INVESTIGACION_GOL_15_HT_FASE4_2026-08-23.md). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -265,15 +265,15 @@
     "touches_away": 4.0,
     "touches_total": 8.0,
     "ratio_diff_home_away": 0.0,
-    "minuto_captura_usada": 13.98,
+    "minuto_captura_usada": 14.0,
     "marcador_min15": "0-0",
     "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo",
     "hipotesis": "H2_PRESION_BILATERAL -- INVESTIGACION, NO estrategia certificada"
    },
    "t_evento_real_utc": "2026-10-10T10:46:09Z",
    "t_captura_utc": "2026-10-10T10:46:09Z",
-   "t_evaluacion_utc": "2026-10-10T10:47:13Z",
-   "t_generacion_utc": "2026-10-10T10:47:13Z",
+   "t_evaluacion_utc": "2026-10-10T10:48:11Z",
+   "t_generacion_utc": "2026-10-10T10:48:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -287,7 +287,7 @@
    },
    "latencia_total_seg": 65.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Gençlerbirliği vs Amed Sportif\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 4-4 (total 8)\nRatio de diferencia home-away: 0.00 (umbral <= 0.33)\n\n🏆 Liga: Super Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Gençlerbirliği vs Amed Sportif\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 4-4 (total 8)\nRatio de diferencia home-away: 0.00 (umbral <= 0.33)\n\n🏆 Liga: Super Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "b0464f0847deb322"
   }
