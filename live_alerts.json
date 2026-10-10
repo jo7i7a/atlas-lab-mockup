@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-10T18:27:12Z",
+ "generated_at_utc": "2026-10-10T18:28:11Z",
  "n_alerts": 8,
  "alerts": [
   {
@@ -166,41 +166,6 @@
    "alert_id": "d77d16d902f97bb1"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Fortuna Sittard vs FC Twente (Eredivisie)",
-   "match_id": "5781767",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 22,
-   "condicion": "FC Twente domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "FC Twente",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-10-10T18:20:52Z",
-   "t_captura_utc": "2026-10-10T18:20:52Z",
-   "t_evaluacion_utc": "2026-10-10T18:27:12Z",
-   "t_generacion_utc": "2026-10-10T18:27:12Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Fortuna Sittard vs FC Twente\n⏱ Minuto: 22'\n📊 Marcador: 1-0\n🏆 Liga: Eredivisie\n\n📝 Motivo: FC Twente — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "3d8ebf0811f3391f"
-  },
-  {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Marítimo vs FC Porto (Liga Portugal)",
    "match_id": "5887650",
@@ -271,6 +236,41 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Fortuna Sittard vs FC Twente\n⏱ Minuto: 22'\n📊 Marcador: 1-0\n🏆 Liga: Eredivisie\n\n📝 Motivo: FC Twente acumula 70% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "0c40c5b0a8ffd1eb"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Fortuna Sittard vs FC Twente (Eredivisie)",
+   "match_id": "5781767",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 23,
+   "condicion": "FC Twente domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "FC Twente",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 0,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-10-10T18:20:52Z",
+   "t_captura_utc": "2026-10-10T18:20:52Z",
+   "t_evaluacion_utc": "2026-10-10T18:28:11Z",
+   "t_generacion_utc": "2026-10-10T18:28:11Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Fortuna Sittard vs FC Twente\n⏱ Minuto: 23'\n📊 Marcador: 1-0\n🏆 Liga: Eredivisie\n\n📝 Motivo: FC Twente — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "3d8ebf0811f3391f"
   }
  ]
 }
