@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-10T19:38:11Z",
- "n_alerts": 17,
+ "generated_at_utc": "2026-10-10T19:39:13Z",
+ "n_alerts": 15,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -39,34 +39,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Lorient vs Paris FC\n⏱ Minuto: 23'\n📊 Marcador: 0-0\n🏆 Liga: Ligue 1\n\n📝 Motivo: Lorient acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "bca3d76e836f1a33"
-  },
-  {
-   "strategy_id": "L1",
-   "match_label": "Brest vs Angers (Ligue 1)",
-   "match_id": "5802946",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "5 córners totales antes del min 30 (2-3), Angers presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Brest NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 2,
-    "corners_away": 3,
-    "equipo_presiona": "Angers"
-   },
-   "t_evento_real_utc": "2026-10-10T19:08:29Z",
-   "t_captura_utc": "2026-10-10T19:08:29Z",
-   "t_evaluacion_utc": "2026-10-10T19:16:10Z",
-   "t_generacion_utc": "2026-10-10T19:16:10Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Brest vs Angers\n⏱ Minuto: 30'\n📊 Marcador: 3-0\n🏆 Liga: Ligue 1\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Angers presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Brest no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "c03f078b24060020"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -384,35 +356,6 @@
   },
   {
    "strategy_id": "L1-SHADOW",
-   "match_label": "Brest vs Angers (Ligue 1)",
-   "match_id": "5802946",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "5 córners totales antes del min 45 (2-3), Angers presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Brest NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 2,
-    "corners_away": 3,
-    "equipo_presiona": "Angers",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-10-10T19:08:29Z",
-   "t_captura_utc": "2026-10-10T19:08:29Z",
-   "t_evaluacion_utc": "2026-10-10T19:31:08Z",
-   "t_generacion_utc": "2026-10-10T19:31:08Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Brest vs Angers\n⏱ Minuto: 45'\n📊 Marcador: 4-0\n🏆 Liga: Ligue 1\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Angers presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Brest no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "98686983e8618155"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
    "match_label": "Paris Saint-Germain vs Le Mans (Ligue 1)",
    "match_id": "5802952",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
@@ -560,7 +503,7 @@
    "match_id": "5868089",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 34,
+   "minuto": 35,
    "condicion": "Real Madrid acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -582,13 +525,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-10-10T19:24:13Z",
-   "t_captura_utc": "2026-10-10T19:38:11Z",
-   "t_evaluacion_utc": "2026-10-10T19:38:11Z",
-   "t_generacion_utc": "2026-10-10T19:38:11Z",
+   "t_captura_utc": "2026-10-10T19:39:13Z",
+   "t_evaluacion_utc": "2026-10-10T19:39:13Z",
+   "t_generacion_utc": "2026-10-10T19:39:13Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Real Madrid vs Villarreal\n⏱ Minuto: 34'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Real Madrid acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Real Madrid, min 19\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Real Madrid vs Villarreal\n⏱ Minuto: 35'\n📊 Marcador: 0-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Real Madrid acumula 75% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Real Madrid, min 19\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "5d2476f59aaeceb3"
   }
