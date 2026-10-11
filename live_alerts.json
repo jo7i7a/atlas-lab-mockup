@@ -1,35 +1,7 @@
 {
- "generated_at_utc": "2026-10-11T19:58:14Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-10-11T19:59:14Z",
+ "n_alerts": 3,
  "alerts": [
-  {
-   "strategy_id": "L1",
-   "match_label": "Racing Santander vs Valencia (LaLiga)",
-   "match_id": "5868087",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "4 córners totales antes del min 30 (4-0), Racing Santander presiona (4 córners) — sin expulsiones. Verificar en vivo: ¿Valencia NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 4,
-    "corners_away": 0,
-    "equipo_presiona": "Racing Santander"
-   },
-   "t_evento_real_utc": "2026-10-11T19:28:29Z",
-   "t_captura_utc": "2026-10-11T19:28:29Z",
-   "t_evaluacion_utc": "2026-10-11T19:31:08Z",
-   "t_generacion_utc": "2026-10-11T19:31:08Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Racing Santander vs Valencia\n⏱ Minuto: 30'\n📊 Marcador: 0-1\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 4\nVisita: 0\nTotal: 4\n\n📝 Motivo: Racing Santander presiona con 4 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Valencia no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "2f46bfaea0ddd646"
-  },
   {
    "strategy_id": "L1-SHADOW",
    "match_label": "Troyes vs Marseille (Ligue 1)",
