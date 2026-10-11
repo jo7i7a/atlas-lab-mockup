@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-11T00:45:12Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-10-11T00:46:14Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "L1-SHADOW",
@@ -61,6 +61,35 @@
    "alert_id": "e9b9d76eb0d41682"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Orlando City vs Columbus Crew (Major League Soccer)",
+   "match_id": "5071402",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "4 córners totales antes del min 45 (0-4), Columbus Crew presiona (4 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Orlando City NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 0,
+    "corners_away": 4,
+    "equipo_presiona": "Columbus Crew",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-10-11T00:28:51Z",
+   "t_captura_utc": "2026-10-11T00:28:51Z",
+   "t_evaluacion_utc": "2026-10-11T00:46:09Z",
+   "t_generacion_utc": "2026-10-11T00:46:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Orlando City vs Columbus Crew\n⏱ Minuto: 45'\n📊 Marcador: 2-1\n🏆 Liga: Major League Soccer\n\n🚩 Córners:\nLocal: 0\nVisita: 4\nTotal: 4\n\n📝 Motivo: Columbus Crew presiona con 4 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Orlando City no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "b4392ce62e869854"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Orlando City vs Columbus Crew (Major League Soccer)",
    "match_id": "5071402",
@@ -75,9 +104,9 @@
    "extra": {
     "equipo_dominante": "Columbus Crew",
     "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6286,
-    "touches_home": 13,
-    "touches_away": 22,
+    "ratio_presion_territorial": 0.6923,
+    "touches_home": 12,
+    "touches_away": 27,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 36,
     "equipo_que_realizo_sustitucion": "Columbus Crew",
@@ -88,13 +117,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-10-11T00:18:13Z",
-   "t_captura_utc": "2026-10-11T00:26:12Z",
-   "t_evaluacion_utc": "2026-10-11T00:26:12Z",
-   "t_generacion_utc": "2026-10-11T00:26:12Z",
+   "t_captura_utc": "2026-10-11T00:46:14Z",
+   "t_evaluacion_utc": "2026-10-11T00:46:14Z",
+   "t_generacion_utc": "2026-10-11T00:46:14Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Orlando City vs Columbus Crew\n⏱ Minuto: 45'\n📊 Marcador: 2-1\n🏆 Liga: Major League Soccer\n\n📝 Motivo: Columbus Crew acumula 63% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Columbus Crew, min 36\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Orlando City vs Columbus Crew\n⏱ Minuto: 45'\n📊 Marcador: 2-1\n🏆 Liga: Major League Soccer\n\n📝 Motivo: Columbus Crew acumula 69% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Columbus Crew, min 36\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "84b46127797dd00c"
   }
