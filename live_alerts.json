@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-11T19:07:10Z",
+ "generated_at_utc": "2026-10-11T19:08:10Z",
  "n_alerts": 5,
  "alerts": [
   {
@@ -91,41 +91,6 @@
    "alert_id": "a5cfbece5f72d0b7"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Troyes vs Marseille (Ligue 1)",
-   "match_id": "5802954",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 21,
-   "condicion": "Troyes domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Troyes",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-10-11T19:02:08Z",
-   "t_captura_utc": "2026-10-11T19:02:08Z",
-   "t_evaluacion_utc": "2026-10-11T19:07:10Z",
-   "t_generacion_utc": "2026-10-11T19:07:10Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Troyes vs Marseille\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Ligue 1\n\n📝 Motivo: Troyes — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "2c9631585839f6dc"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Cagliari vs Juventus (Serie A)",
    "match_id": "5749691",
@@ -200,6 +165,41 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Troyes vs Marseille\n⏱ Minuto: 21'\n📊 Marcador: 0-0\n🏆 Liga: Ligue 1\n\n📝 Motivo: Troyes acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "f1a119d28129e0b4"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Troyes vs Marseille (Ligue 1)",
+   "match_id": "5802954",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 22,
+   "condicion": "Troyes domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Troyes",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-10-11T19:02:08Z",
+   "t_captura_utc": "2026-10-11T19:02:08Z",
+   "t_evaluacion_utc": "2026-10-11T19:08:10Z",
+   "t_generacion_utc": "2026-10-11T19:08:10Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Troyes vs Marseille\n⏱ Minuto: 22'\n📊 Marcador: 0-0\n🏆 Liga: Ligue 1\n\n📝 Motivo: Troyes — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "2c9631585839f6dc"
   }
  ]
 }
