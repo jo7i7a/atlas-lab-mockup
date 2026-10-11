@@ -1,17 +1,17 @@
 {
- "generated_at_utc": "2026-10-11T19:29:55Z",
- "n_live_target": 3,
+ "generated_at_utc": "2026-10-11T19:32:54Z",
+ "n_live_target": 4,
  "matches": {
   "5868087": {
    "event_id": 5868087,
    "league": "LaLiga",
    "home": "Racing Santander",
    "away": "Valencia",
-   "home_score": 0,
+   "home_score": 1,
    "away_score": 1,
    "status_type": null,
    "status_description": "live",
-   "minute": 29,
+   "minute": 32,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
@@ -20,12 +20,12 @@
     },
     "shots": {
      "label": "Remates totales",
-     "home": 4,
+     "home": 5,
      "away": 2
     },
     "shots_on_target": {
      "label": "Remates al arco",
-     "home": 1,
+     "home": 2,
      "away": 1
     },
     "corners": {
@@ -40,7 +40,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-11T19:29:55Z"
+   "updated_at_utc": "2026-10-11T19:32:54Z"
   },
   "5802954": {
    "event_id": 5802954,
@@ -51,7 +51,7 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 43,
+   "minute": null,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
@@ -71,7 +71,7 @@
     "corners": {
      "label": "Corners",
      "home": 2,
-     "away": 2
+     "away": 3
     },
     "red_cards": {
      "label": "Tarjetas rojas",
@@ -80,7 +80,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-11T19:29:55Z"
+   "updated_at_utc": "2026-10-11T19:32:54Z"
   },
   "5749691": {
    "event_id": 5749691,
@@ -91,12 +91,12 @@
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 43,
+   "minute": 46,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
      "home": 0.49,
-     "away": 0.19
+     "away": 0.22
     },
     "shots": {
      "label": "Remates totales",
@@ -120,7 +120,42 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-11T19:29:55Z"
+   "updated_at_utc": "2026-10-11T19:32:54Z"
+  },
+  "5887646": {
+   "event_id": 5887646,
+   "league": "Liga Portugal Betclic",
+   "home": "Arouca",
+   "away": "Estrela da Amadora",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 1,
+   "stats": {
+    "shots": {
+     "label": "Remates totales",
+     "home": 0,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 0,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-10-11T19:32:54Z"
   }
  }
 }
