@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-11T00:50:22Z",
- "n_alerts": 5,
+ "generated_at_utc": "2026-10-11T00:51:16Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "L1-SHADOW",
@@ -61,35 +61,6 @@
    "alert_id": "73ead68fe1783aab"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Red Bull New York vs San Diego FC (Major League Soccer)",
-   "match_id": "5071401",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "5 córners totales antes del min 45 (2-3), San Diego FC presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Red Bull New York NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 2,
-    "corners_away": 3,
-    "equipo_presiona": "San Diego FC",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-10-11T00:20:31Z",
-   "t_captura_utc": "2026-10-11T00:20:31Z",
-   "t_evaluacion_utc": "2026-10-11T00:49:12Z",
-   "t_generacion_utc": "2026-10-11T00:49:12Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Red Bull New York vs San Diego FC\n⏱ Minuto: 45'\n📊 Marcador: 3-0\n🏆 Liga: Major League Soccer\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: San Diego FC presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Red Bull New York no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "e9b9d76eb0d41682"
-  },
-  {
    "strategy_id": "L2",
    "match_label": "Orlando City vs Columbus Crew (Major League Soccer)",
    "match_id": "5071402",
@@ -108,9 +79,9 @@
     "marcador": "1-2"
    },
    "t_evento_real_utc": "2026-10-11T00:28:28Z",
-   "t_captura_utc": "2026-10-11T00:50:14Z",
-   "t_evaluacion_utc": "2026-10-11T00:50:17Z",
-   "t_generacion_utc": "2026-10-11T00:50:17Z",
+   "t_captura_utc": "2026-10-11T00:51:02Z",
+   "t_evaluacion_utc": "2026-10-11T00:51:12Z",
+   "t_generacion_utc": "2026-10-11T00:51:12Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
@@ -142,9 +113,9 @@
     "ah_proxy_fuente": "SofaScore/IP001 -- NUNCA Betano"
    },
    "t_evento_real_utc": "2026-10-11T00:28:28Z",
-   "t_captura_utc": "2026-10-11T00:50:14Z",
-   "t_evaluacion_utc": "2026-10-11T00:50:20Z",
-   "t_generacion_utc": "2026-10-11T00:50:20Z",
+   "t_captura_utc": "2026-10-11T00:51:02Z",
+   "t_evaluacion_utc": "2026-10-11T00:51:15Z",
+   "t_generacion_utc": "2026-10-11T00:51:15Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
