@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-11T15:01:44Z",
+ "generated_at_utc": "2026-10-11T15:02:11Z",
  "n_alerts": 10,
  "alerts": [
   {
@@ -274,63 +274,6 @@
    "alert_id": "7bd64344912029c5"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "Rio Ave vs Nacional (Liga Portugal)",
-   "match_id": "5887652",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 26,
-   "condicion": "4 córners totales antes del min 30 (3-1), Rio Ave presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Nacional NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Rio Ave"
-   },
-   "t_evento_real_utc": "2026-10-11T14:57:21Z",
-   "t_captura_utc": "2026-10-11T14:57:21Z",
-   "t_evaluacion_utc": "2026-10-11T15:01:10Z",
-   "t_generacion_utc": "2026-10-11T15:01:10Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Rio Ave vs Nacional\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Rio Ave presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Nacional no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "229f8c8a30d6b0d9"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Rio Ave vs Nacional (Liga Portugal)",
-   "match_id": "5887652",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 26,
-   "condicion": "4 córners totales antes del min 45 (3-1), Rio Ave presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Nacional NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Rio Ave",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-10-11T14:57:21Z",
-   "t_captura_utc": "2026-10-11T14:57:21Z",
-   "t_evaluacion_utc": "2026-10-11T15:01:10Z",
-   "t_generacion_utc": "2026-10-11T15:01:10Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Rio Ave vs Nacional\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Rio Ave presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Nacional no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "32322b7fec8ce2d5"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Rio Ave vs Nacional (Liga Portugal)",
    "match_id": "5887652",
@@ -367,6 +310,63 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Rio Ave vs Nacional\n⏱ Minuto: 26'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal\n\n📝 Motivo: Rio Ave acumula 70% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "0ddc8f4714f30992"
+  },
+  {
+   "strategy_id": "L1",
+   "match_label": "Rio Ave vs Nacional (Liga Portugal)",
+   "match_id": "5887652",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 27,
+   "condicion": "4 córners totales antes del min 30 (3-1), Rio Ave presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Nacional NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Rio Ave"
+   },
+   "t_evento_real_utc": "2026-10-11T14:57:21Z",
+   "t_captura_utc": "2026-10-11T14:57:21Z",
+   "t_evaluacion_utc": "2026-10-11T15:02:11Z",
+   "t_generacion_utc": "2026-10-11T15:02:11Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Rio Ave vs Nacional\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Rio Ave presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Nacional no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "229f8c8a30d6b0d9"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Rio Ave vs Nacional (Liga Portugal)",
+   "match_id": "5887652",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 27,
+   "condicion": "4 córners totales antes del min 45 (3-1), Rio Ave presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Nacional NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Rio Ave",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-10-11T14:57:21Z",
+   "t_captura_utc": "2026-10-11T14:57:21Z",
+   "t_evaluacion_utc": "2026-10-11T15:02:11Z",
+   "t_generacion_utc": "2026-10-11T15:02:11Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Rio Ave vs Nacional\n⏱ Minuto: 27'\n📊 Marcador: 0-0\n🏆 Liga: Liga Portugal\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Rio Ave presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Nacional no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "32322b7fec8ce2d5"
   }
  ]
 }
