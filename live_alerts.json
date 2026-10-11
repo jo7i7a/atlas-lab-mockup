@@ -1,45 +1,7 @@
 {
- "generated_at_utc": "2026-10-11T20:42:14Z",
+ "generated_at_utc": "2026-10-11T20:43:11Z",
  "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Arouca vs Estrela da Amadora (Liga Portugal)",
-   "match_id": "5887646",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 46,
-   "condicion": "Estrela da Amadora acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Estrela da Amadora",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6111,
-    "touches_home": 7,
-    "touches_away": 11,
-    "acelerador_proxy_detectado": false,
-    "minuto_ultima_sustitucion": null,
-    "equipo_que_realizo_sustitucion": null,
-    "marcador_en_el_momento": "1-0",
-    "t_primera_observacion_atlas": "2026-10-11T20:12:14Z",
-    "t_inicio_estimado_condicion": "2026-10-11T20:11:51Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-10-11T20:12:14Z",
-   "t_captura_utc": "2026-10-11T20:17:47Z",
-   "t_evaluacion_utc": "2026-10-11T20:17:47Z",
-   "t_generacion_utc": "2026-10-11T20:17:47Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Arouca vs Estrela da Amadora\n⏱ Minuto: 46'\n📊 Marcador: 1-0\n🏆 Liga: Liga Portugal\n\n📝 Motivo: Estrela da Amadora acumula 61% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "86575f9eb0a1e455"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Arouca vs Estrela da Amadora (Liga Portugal)",
@@ -77,6 +39,35 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Arouca vs Estrela da Amadora\n⏱ Minuto: 50'\n📊 Marcador: 1-0\n🏆 Liga: Liga Portugal\n\n📝 Motivo: Estrela da Amadora acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "182d7ab60d003590"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Arouca vs Estrela da Amadora (Liga Portugal)",
+   "match_id": "5887646",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 45,
+   "condicion": "4 córners totales antes del min 45 (1-3), Estrela da Amadora presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Arouca NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 1,
+    "corners_away": 3,
+    "equipo_presiona": "Estrela da Amadora",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-10-11T20:18:08Z",
+   "t_captura_utc": "2026-10-11T20:18:08Z",
+   "t_evaluacion_utc": "2026-10-11T20:43:09Z",
+   "t_generacion_utc": "2026-10-11T20:43:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Arouca vs Estrela da Amadora\n⏱ Minuto: 45'\n📊 Marcador: 1-0\n🏆 Liga: Liga Portugal\n\n🚩 Córners:\nLocal: 1\nVisita: 3\nTotal: 4\n\n📝 Motivo: Estrela da Amadora presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Arouca no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "1c1eba3c7bbc2084"
   }
  ]
 }
