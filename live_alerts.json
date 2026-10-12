@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-12T17:47:14Z",
- "n_alerts": 6,
+ "generated_at_utc": "2026-10-12T17:49:14Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
@@ -36,41 +36,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ KFUM vs Vålerenga\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Eliteserien\n\n📝 Motivo: Vålerenga — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "d267d0c220af7657"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Eyüpspor vs Göztepe (Super Lig)",
-   "match_id": "5904759",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 25,
-   "condicion": "Göztepe domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Göztepe",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 0,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-10-12T17:18:11Z",
-   "t_captura_utc": "2026-10-12T17:18:11Z",
-   "t_evaluacion_utc": "2026-10-12T17:28:11Z",
-   "t_generacion_utc": "2026-10-12T17:28:11Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Eyüpspor vs Göztepe\n⏱ Minuto: 25'\n📊 Marcador: 0-1\n🏆 Liga: Super Lig\n\n📝 Motivo: Göztepe — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "de63644ffd67fee6"
   },
   {
    "strategy_id": "L1",
@@ -173,7 +138,7 @@
    "match_id": "5904759",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 46,
    "condicion": "Göztepe acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -195,13 +160,13 @@
     "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
    },
    "t_evento_real_utc": "2026-10-12T17:23:10Z",
-   "t_captura_utc": "2026-10-12T17:47:14Z",
-   "t_evaluacion_utc": "2026-10-12T17:47:14Z",
-   "t_generacion_utc": "2026-10-12T17:47:14Z",
+   "t_captura_utc": "2026-10-12T17:49:14Z",
+   "t_evaluacion_utc": "2026-10-12T17:49:14Z",
+   "t_generacion_utc": "2026-10-12T17:49:14Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Eyüpspor vs Göztepe\n⏱ Minuto: 44'\n📊 Marcador: 0-1\n🏆 Liga: Super Lig\n\n📝 Motivo: Göztepe acumula 68% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Göztepe, min 41\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Eyüpspor vs Göztepe\n⏱ Minuto: 46'\n📊 Marcador: 0-1\n🏆 Liga: Super Lig\n\n📝 Motivo: Göztepe acumula 68% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Göztepe, min 41\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "9f809461e35645da"
   }
