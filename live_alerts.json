@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-12T18:27:12Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-10-12T18:29:13Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -73,6 +73,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ KFUM vs Vålerenga\n⏱ Minuto: 63'\n📊 Marcador: 2-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Vålerenga acumula 60% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Vålerenga, min 62\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "0acb1ed1015cc8a3"
+  },
+  {
+   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
+   "match_label": "KFUM vs Vålerenga (Eliteserien)",
+   "match_id": "5105024",
+   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 69,
+   "condicion": "Vålerenga acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Vålerenga",
+    "lado_dominante": "away",
+    "ratio_presion_territorial": 0.6042,
+    "touches_home": 19,
+    "touches_away": 29,
+    "acelerador_proxy_detectado": true,
+    "minuto_ultima_sustitucion": 62,
+    "equipo_que_realizo_sustitucion": "Vålerenga",
+    "marcador_en_el_momento": "2-1",
+    "t_primera_observacion_atlas": "2026-10-12T18:29:13Z",
+    "t_inicio_estimado_condicion": "2026-10-12T17:25:53Z",
+    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
+    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-10-12T18:29:13Z",
+   "t_captura_utc": "2026-10-12T18:29:13Z",
+   "t_evaluacion_utc": "2026-10-12T18:29:13Z",
+   "t_generacion_utc": "2026-10-12T18:29:13Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ KFUM vs Vålerenga\n⏱ Minuto: 69'\n📊 Marcador: 2-1\n🏆 Liga: Eliteserien\n\n📝 Motivo: Vålerenga acumula 60% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Vålerenga, min 62\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "evidencia": null,
+   "alert_id": "3d8476bff7f82b06"
   }
  ]
 }
