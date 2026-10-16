@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-16T18:46:10Z",
+ "generated_at_utc": "2026-10-16T18:47:11Z",
  "n_alerts": 3,
  "alerts": [
   {
@@ -84,7 +84,7 @@
    "match_id": "5881191",
    "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "cuota_detectada": null,
-   "minuto": 15,
+   "minuto": 16,
    "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
    "confianza": "Alta",
    "link": "https://www.sofascore.com/event/5881191",
@@ -96,15 +96,15 @@
     "touchesInOppBox_tot15": 7.0,
     "umbral_tot15": 6.0,
     "minuto_decision": 15,
-    "minuto_deteccion": 15,
+    "minuto_deteccion": 16,
     "marcador_min15": "0-0",
     "anchor_captured_at_utc": "2026-10-16T18:45:59Z",
-    "anchor_minute": 14.825250494480134
+    "anchor_minute": 14.796709561347962
    },
    "t_evento_real_utc": "2026-10-16T18:45:59Z",
    "t_captura_utc": null,
-   "t_evaluacion_utc": "2026-10-16T18:46:09Z",
-   "t_generacion_utc": "2026-10-16T18:46:09Z",
+   "t_evaluacion_utc": "2026-10-16T18:47:11Z",
+   "t_generacion_utc": "2026-10-16T18:47:11Z",
    "envios": {
     "telegram": {
      "channel": "telegram",
@@ -118,7 +118,7 @@
    },
    "latencia_total_seg": 11.0,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Eintracht Frankfurt vs 1. FC Köln\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 5-2 (total 7 >= 6.0)\n\n🏆 Liga: Bundesliga\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Eintracht Frankfurt vs 1. FC Köln\n⏱ Minuto de decisión: 15' (detectado en el minuto 16')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 5-2 (total 7 >= 6.0)\n\n🏆 Liga: Bundesliga\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "2cc2d6aa3bba2f5b"
   }
