@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-16T18:38:16Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-10-16T18:46:10Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -77,6 +77,50 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ SC Heerenveen vs Excelsior\n⏱ Minuto: 36'\n📊 Marcador: 1-0\n🏆 Liga: Eredivisie\n\n📝 Motivo: SC Heerenveen acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "0f6981987d566203"
+  },
+  {
+   "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
+   "match_label": "Eintracht Frankfurt vs 1. FC Köln (Bundesliga)",
+   "match_id": "5881191",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
+   "confianza": "Alta",
+   "link": "https://www.sofascore.com/event/5881191",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "touchesInOppBox_home": 5.0,
+    "touchesInOppBox_away": 2.0,
+    "touchesInOppBox_tot15": 7.0,
+    "umbral_tot15": 6.0,
+    "minuto_decision": 15,
+    "minuto_deteccion": 15,
+    "marcador_min15": "0-0",
+    "anchor_captured_at_utc": "2026-10-16T18:45:59Z",
+    "anchor_minute": 14.825250494480134
+   },
+   "t_evento_real_utc": "2026-10-16T18:45:59Z",
+   "t_captura_utc": null,
+   "t_evaluacion_utc": "2026-10-16T18:46:09Z",
+   "t_generacion_utc": "2026-10-16T18:46:09Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-10-16T18:46:10Z",
+     "latencia_envio_ms": 799.689531326294,
+     "error": null,
+     "message_id": 3715,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 11.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Eintracht Frankfurt vs 1. FC Köln\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 5-2 (total 7 >= 6.0)\n\n🏆 Liga: Bundesliga\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "2cc2d6aa3bba2f5b"
   }
  ]
 }
