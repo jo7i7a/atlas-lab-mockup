@@ -1,17 +1,17 @@
 {
- "generated_at_utc": "2026-10-17T18:44:54Z",
- "n_live_target": 2,
+ "generated_at_utc": "2026-10-17T18:47:54Z",
+ "n_live_target": 5,
  "matches": {
-  "5071432": {
-   "event_id": 5071432,
-   "league": "MLS",
-   "home": "Philadelphia Union",
-   "away": "Charlotte FC",
+  "5802958": {
+   "event_id": 5802958,
+   "league": "Ligue 1",
+   "home": "Lille",
+   "away": "Brest",
    "home_score": 0,
    "away_score": 0,
    "status_type": null,
    "status_description": "live",
-   "minute": 4,
+   "minute": 2,
    "stats": {
     "shots": {
      "label": "Remates totales",
@@ -35,7 +35,101 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-17T18:44:54Z"
+   "updated_at_utc": "2026-10-17T18:47:54Z"
+  },
+  "5802963": {
+   "event_id": 5802963,
+   "league": "Ligue 1",
+   "home": "Troyes",
+   "away": "Lens",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 2,
+   "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.05,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 2,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 1,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-10-17T18:47:54Z"
+  },
+  "5071432": {
+   "event_id": 5071432,
+   "league": "MLS",
+   "home": "Philadelphia Union",
+   "away": "Charlotte FC",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 7,
+   "stats": {
+    "xg": {
+     "label": "Expected Goals (xG)",
+     "home": 0.04,
+     "away": 0
+    },
+    "shots": {
+     "label": "Remates totales",
+     "home": 2,
+     "away": 0
+    },
+    "shots_on_target": {
+     "label": "Remates al arco",
+     "home": 0,
+     "away": 0
+    },
+    "corners": {
+     "label": "Corners",
+     "home": 1,
+     "away": 0
+    },
+    "red_cards": {
+     "label": "Tarjetas rojas",
+     "home": 0,
+     "away": 0
+    }
+   },
+   "odds": {},
+   "updated_at_utc": "2026-10-17T18:47:54Z"
+  },
+  "5749701": {
+   "event_id": 5749701,
+   "league": "Serie A",
+   "home": "Roma",
+   "away": "Genoa",
+   "home_score": 0,
+   "away_score": 0,
+   "status_type": null,
+   "status_description": "live",
+   "minute": 2,
+   "stats": {},
+   "odds": {},
+   "updated_at_utc": "2026-10-17T18:47:54Z"
   },
   "5781774": {
    "event_id": 5781774,
@@ -46,27 +140,27 @@
    "away_score": 3,
    "status_type": null,
    "status_description": "live",
-   "minute": 43,
+   "minute": null,
    "stats": {
     "xg": {
      "label": "Expected Goals (xG)",
      "home": 0.72,
-     "away": 2.58
+     "away": 2.6
     },
     "shots": {
      "label": "Remates totales",
      "home": 12,
-     "away": 11
+     "away": 12
     },
     "shots_on_target": {
      "label": "Remates al arco",
      "home": 6,
-     "away": 8
+     "away": 9
     },
     "corners": {
      "label": "Corners",
      "home": 2,
-     "away": 3
+     "away": 4
     },
     "red_cards": {
      "label": "Tarjetas rojas",
@@ -75,7 +169,7 @@
     }
    },
    "odds": {},
-   "updated_at_utc": "2026-10-17T18:44:54Z"
+   "updated_at_utc": "2026-10-17T18:47:54Z"
   }
  }
 }
