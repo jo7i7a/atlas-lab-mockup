@@ -1,42 +1,7 @@
 {
- "generated_at_utc": "2026-10-17T06:27:13Z",
+ "generated_at_utc": "2026-10-17T06:28:12Z",
  "n_alerts": 4,
  "alerts": [
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Kashima Antlers vs V-Varen Nagasaki (J. League)",
-   "match_id": "5803610",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 21,
-   "condicion": "V-Varen Nagasaki domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "V-Varen Nagasaki",
-    "lado_dominante": "away",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 1,
-    "remates_away": 2,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-10-17T06:25:52Z",
-   "t_captura_utc": "2026-10-17T06:25:52Z",
-   "t_evaluacion_utc": "2026-10-17T06:27:12Z",
-   "t_generacion_utc": "2026-10-17T06:27:12Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Kashima Antlers vs V-Varen Nagasaki\n⏱ Minuto: 21'\n📊 Marcador: 2-0\n🏆 Liga: J. League\n\n📝 Motivo: V-Varen Nagasaki — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "1ee61a5169542eda"
-  },
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Sanfrecce Hiroshima vs Kyoto Sanga FC (J. League)",
@@ -146,6 +111,41 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Kashima Antlers vs V-Varen Nagasaki\n⏱ Minuto: 21'\n📊 Marcador: 2-0\n🏆 Liga: J. League\n\n📝 Motivo: Kashima Antlers acumula 62% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "95f02eedd11862cb"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Kashima Antlers vs V-Varen Nagasaki (J. League)",
+   "match_id": "5803610",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 22,
+   "condicion": "V-Varen Nagasaki domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "V-Varen Nagasaki",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 1,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-10-17T06:25:52Z",
+   "t_captura_utc": "2026-10-17T06:25:52Z",
+   "t_evaluacion_utc": "2026-10-17T06:28:12Z",
+   "t_generacion_utc": "2026-10-17T06:28:12Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Kashima Antlers vs V-Varen Nagasaki\n⏱ Minuto: 22'\n📊 Marcador: 2-0\n🏆 Liga: J. League\n\n📝 Motivo: V-Varen Nagasaki — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "1ee61a5169542eda"
   }
  ]
 }
