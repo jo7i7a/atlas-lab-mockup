@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-17T18:17:13Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-10-17T18:18:11Z",
+ "n_alerts": 3,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -64,6 +64,41 @@
    "mensaje_custom": "🚨 L3 | Real Betis vs Barcelona | Roja Real Betis | Min 74' | 2-4",
    "evidencia": null,
    "alert_id": "038d984247ff9830"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Telstar vs Feyenoord (Eredivisie)",
+   "match_id": "5781774",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 16,
+   "condicion": "Feyenoord domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Feyenoord",
+    "lado_dominante": "away",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 1,
+    "remates_away": 2,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-10-17T18:17:37Z",
+   "t_captura_utc": "2026-10-17T18:17:37Z",
+   "t_evaluacion_utc": "2026-10-17T18:18:11Z",
+   "t_generacion_utc": "2026-10-17T18:18:11Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Telstar vs Feyenoord\n⏱ Minuto: 16'\n📊 Marcador: 0-1\n🏆 Liga: Eredivisie\n\n📝 Motivo: Feyenoord — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "7345d5cb9379b3ac"
   }
  ]
 }
