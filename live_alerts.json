@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-17T13:27:14Z",
+ "generated_at_utc": "2026-10-17T13:28:12Z",
  "n_alerts": 14,
  "alerts": [
   {
@@ -382,41 +382,6 @@
    "alert_id": "6a1822616218bd69"
   },
   {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Gençlerbirliği vs Galatasaray (Super Lig)",
-   "match_id": "5904771",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 24,
-   "condicion": "Gençlerbirliği domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Gençlerbirliği",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 2,
-    "remates_away": 0,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-10-17T13:19:59Z",
-   "t_captura_utc": "2026-10-17T13:19:59Z",
-   "t_evaluacion_utc": "2026-10-17T13:27:13Z",
-   "t_generacion_utc": "2026-10-17T13:27:13Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Gençlerbirliği vs Galatasaray\n⏱ Minuto: 24'\n📊 Marcador: 0-0\n🏆 Liga: Super Lig\n\n📝 Motivo: Gençlerbirliği — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "90ac93db8dee135a"
-  },
-  {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Hamarkameratene vs Bodø/Glimt (Eliteserien)",
    "match_id": "5105025",
@@ -525,6 +490,41 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Amed Sportif vs Konyaspor\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Super Lig\n\n📝 Motivo: Amed Sportif acumula 86% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "bd0080fee72c6d91"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Gençlerbirliği vs Galatasaray (Super Lig)",
+   "match_id": "5904771",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 25,
+   "condicion": "Gençlerbirliği domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Gençlerbirliği",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 2,
+    "remates_away": 0,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-10-17T13:19:59Z",
+   "t_captura_utc": "2026-10-17T13:19:59Z",
+   "t_evaluacion_utc": "2026-10-17T13:28:12Z",
+   "t_generacion_utc": "2026-10-17T13:28:12Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Gençlerbirliği vs Galatasaray\n⏱ Minuto: 25'\n📊 Marcador: 0-0\n🏆 Liga: Super Lig\n\n📝 Motivo: Gençlerbirliği — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "90ac93db8dee135a"
   }
  ]
 }
