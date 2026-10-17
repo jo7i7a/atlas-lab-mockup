@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-17T13:16:10Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-10-17T13:17:14Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -42,7 +42,7 @@
    "match_id": "5904771",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 13,
+   "minuto": 14,
    "condicion": "4 córners totales antes del min 30 (3-1), Gençlerbirliği presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Galatasaray NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -55,12 +55,12 @@
    },
    "t_evento_real_utc": "2026-10-17T13:10:18Z",
    "t_captura_utc": "2026-10-17T13:10:18Z",
-   "t_evaluacion_utc": "2026-10-17T13:16:09Z",
-   "t_generacion_utc": "2026-10-17T13:16:09Z",
+   "t_evaluacion_utc": "2026-10-17T13:17:12Z",
+   "t_generacion_utc": "2026-10-17T13:17:12Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Gençlerbirliği vs Galatasaray\n⏱ Minuto: 13'\n📊 Marcador: 0-0\n🏆 Liga: Super Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Gençlerbirliği presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Galatasaray no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Gençlerbirliği vs Galatasaray\n⏱ Minuto: 14'\n📊 Marcador: 0-0\n🏆 Liga: Super Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Gençlerbirliği presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Galatasaray no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "1f6959965839201f"
   },
@@ -70,7 +70,7 @@
    "match_id": "5904771",
    "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
    "cuota_detectada": null,
-   "minuto": 13,
+   "minuto": 14,
    "condicion": "4 córners totales antes del min 45 (3-1), Gençlerbirliği presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Galatasaray NO está en bloque bajo?",
    "confianza": "Media",
    "link": "",
@@ -84,14 +84,58 @@
    },
    "t_evento_real_utc": "2026-10-17T13:10:18Z",
    "t_captura_utc": "2026-10-17T13:10:18Z",
-   "t_evaluacion_utc": "2026-10-17T13:16:09Z",
-   "t_generacion_utc": "2026-10-17T13:16:09Z",
+   "t_evaluacion_utc": "2026-10-17T13:17:12Z",
+   "t_generacion_utc": "2026-10-17T13:17:12Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Gençlerbirliği vs Galatasaray\n⏱ Minuto: 13'\n📊 Marcador: 0-0\n🏆 Liga: Super Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Gençlerbirliği presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Galatasaray no está en bloque bajo?",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Gençlerbirliği vs Galatasaray\n⏱ Minuto: 14'\n📊 Marcador: 0-0\n🏆 Liga: Super Lig\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Gençlerbirliği presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Galatasaray no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "e28985fc095bd438"
+  },
+  {
+   "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
+   "match_label": "Amed Sportif vs Konyaspor (Super Lig)",
+   "match_id": "5904770",
+   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "cuota_detectada": null,
+   "minuto": 15,
+   "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
+   "confianza": "Alta",
+   "link": "https://www.sofascore.com/event/5904770",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "touchesInOppBox_home": 6.0,
+    "touchesInOppBox_away": 0.0,
+    "touchesInOppBox_tot15": 6.0,
+    "umbral_tot15": 6.0,
+    "minuto_decision": 15,
+    "minuto_deteccion": 15,
+    "marcador_min15": "0-0",
+    "anchor_captured_at_utc": "2026-10-17T13:16:52Z",
+    "anchor_minute": 14.638702170054119
+   },
+   "t_evento_real_utc": "2026-10-17T13:16:52Z",
+   "t_captura_utc": null,
+   "t_evaluacion_utc": "2026-10-17T13:17:13Z",
+   "t_generacion_utc": "2026-10-17T13:17:13Z",
+   "envios": {
+    "telegram": {
+     "channel": "telegram",
+     "estado": "OK",
+     "t_envio_utc": "2026-10-17T13:17:14Z",
+     "latencia_envio_ms": 848.9828109741211,
+     "error": null,
+     "message_id": 3726,
+     "chat_id": 5530307309
+    }
+   },
+   "latencia_total_seg": 22.0,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Amed Sportif vs Konyaspor\n⏱ Minuto de decisión: 15' (detectado en el minuto 15')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 6-0 (total 6 >= 6.0)\n\n🏆 Liga: Super Lig\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
+   "evidencia": null,
+   "alert_id": "ab9c63b7815404ec"
   }
  ]
 }
