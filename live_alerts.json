@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-17T18:58:11Z",
+ "generated_at_utc": "2026-10-17T18:59:11Z",
  "n_alerts": 3,
  "alerts": [
   {
@@ -30,41 +30,6 @@
    "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Telstar vs Feyenoord\n⏱ Minuto: 45'\n📊 Marcador: 2-3\n🏆 Liga: Eredivisie\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Feyenoord presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Telstar no está en bloque bajo?",
    "evidencia": null,
    "alert_id": "151822e0c3b07e5b"
-  },
-  {
-   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
-   "match_label": "Philadelphia Union vs Charlotte FC (Major League Soccer)",
-   "match_id": "5071432",
-   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 17,
-   "condicion": "Philadelphia Union domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Philadelphia Union",
-    "lado_dominante": "home",
-    "trigger_disparado": "remates",
-    "remates_metric": "totalShotsOnGoal",
-    "ventana_min": 5,
-    "centros_home": null,
-    "centros_away": null,
-    "remates_home": 2,
-    "remates_away": 1,
-    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
-   },
-   "t_evento_real_utc": "2026-10-17T18:57:14Z",
-   "t_captura_utc": "2026-10-17T18:57:14Z",
-   "t_evaluacion_utc": "2026-10-17T18:58:10Z",
-   "t_generacion_utc": "2026-10-17T18:58:10Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Philadelphia Union vs Charlotte FC\n⏱ Minuto: 17'\n📊 Marcador: 0-0\n🏆 Liga: Major League Soccer\n\n📝 Motivo: Philadelphia Union — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
-   "evidencia": null,
-   "alert_id": "f8c6b17da1bf51d7"
   },
   {
    "strategy_id": "H2_PRESION_BILATERAL_INVESTIGACION",
@@ -108,6 +73,41 @@
    "mensaje_custom": "🟢 H2 — INVESTIGACIÓN LIVE (Presión bilateral)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — NO es estrategia certificada ni pick de apuesta.\n\n⚽ Philadelphia Union vs Charlotte FC\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 3-2 (total 5)\nRatio de diferencia home-away: 0.20 (umbral <= 0.33)\n\n🏆 Liga: Major League Soccer\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
    "evidencia": null,
    "alert_id": "b9f487ec7c2d0f53"
+  },
+  {
+   "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
+   "match_label": "Philadelphia Union vs Charlotte FC (Major League Soccer)",
+   "match_id": "5071432",
+   "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 18,
+   "condicion": "Philadelphia Union domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_dominante": "Philadelphia Union",
+    "lado_dominante": "home",
+    "trigger_disparado": "remates",
+    "remates_metric": "totalShotsOnGoal",
+    "ventana_min": 5,
+    "centros_home": null,
+    "centros_away": null,
+    "remates_home": 2,
+    "remates_away": 1,
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (córners >5.5/>4.5, favorito-vs-defensivo, ligas ideales) NO evaluados -- ver ficha"
+   },
+   "t_evento_real_utc": "2026-10-17T18:57:14Z",
+   "t_captura_utc": "2026-10-17T18:57:14Z",
+   "t_evaluacion_utc": "2026-10-17T18:59:11Z",
+   "t_generacion_utc": "2026-10-17T18:59:11Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Philadelphia Union vs Charlotte FC\n⏱ Minuto: 18'\n📊 Marcador: 0-0\n🏆 Liga: Major League Soccer\n\n📝 Motivo: Philadelphia Union — ≥2 remates en los últimos 5 min (home=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "evidencia": null,
+   "alert_id": "f8c6b17da1bf51d7"
   }
  ]
 }
