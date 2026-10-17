@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-17T12:12:11Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-10-17T12:13:10Z",
+ "n_alerts": 4,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -111,6 +111,35 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Everton vs Chelsea\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Premier League\n\n📝 Motivo: Chelsea acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Chelsea, min 27\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "30049269bb940120"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Everton vs Chelsea (Premier League)",
+   "match_id": "5795478",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 40,
+   "condicion": "4 córners totales antes del min 45 (3-1), Everton presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Chelsea NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Everton",
+    "variante": "shadow_ventana_45"
+   },
+   "t_evento_real_utc": "2026-10-17T12:13:03Z",
+   "t_captura_utc": "2026-10-17T12:13:03Z",
+   "t_evaluacion_utc": "2026-10-17T12:13:09Z",
+   "t_generacion_utc": "2026-10-17T12:13:09Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Everton vs Chelsea\n⏱ Minuto: 40'\n📊 Marcador: 0-0\n🏆 Liga: Premier League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Everton presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Chelsea no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "208a4eec9fc99b04"
   }
  ]
 }
