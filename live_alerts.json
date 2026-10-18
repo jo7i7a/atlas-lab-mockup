@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-18T14:34:17Z",
- "n_alerts": 6,
+ "generated_at_utc": "2026-10-18T14:35:11Z",
+ "n_alerts": 7,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -234,6 +234,39 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ AFC Bournemouth vs Sunderland\n⏱ Minuto: 70'\n📊 Marcador: 2-0\n🏆 Liga: Premier League\n\n📝 Motivo: presión combinada sostenida — xG 3.87, 24 tiros totales (6 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "e03906d2199c725b"
+  },
+  {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Celtic vs Heart of Midlothian (Premiership)",
+   "match_id": "5793947",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 34,
+   "condicion": "5 córners totales antes del min 45 (3-2), Celtic presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Heart of Midlothian NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "Celtic",
+    "variante": "shadow_ventana_45",
+    "stats_provider_mode": "EMERGENCY",
+    "stats_provider": "router(fotmob>espn>apifootball)",
+    "provider_validation": "EVIDENCIA_POBLACIONAL_SIN_DIFERENCIAS",
+    "provider_validation_epoch": "POST_CORTE"
+   },
+   "t_evento_real_utc": "2026-10-18T14:34:36Z",
+   "t_captura_utc": "2026-10-18T14:34:36Z",
+   "t_evaluacion_utc": "2026-10-18T14:35:10Z",
+   "t_generacion_utc": "2026-10-18T14:35:10Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Celtic vs Heart of Midlothian\n⏱ Minuto: 34'\n📊 Marcador: 2-0\n🏆 Liga: Premiership\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Celtic presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Heart of Midlothian no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "a4527c393f269da9"
   }
  ]
 }
