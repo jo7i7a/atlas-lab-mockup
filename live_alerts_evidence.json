@@ -8198,5 +8198,49 @@
    "cuota_real_betano": 1.7,
    "activo": true
   }
+ ],
+ "3b8301dec54139ba": [
+  {
+   "alert_id": "3b8301dec54139ba",
+   "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
+   "match_label": "Fiorentina vs Como (Serie A)",
+   "liga": "Serie A",
+   "event_id": "5749703",
+   "minuto_alerta": 17,
+   "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
+   "t_evento_real_utc": "2026-10-18T13:18:02Z",
+   "t_captura_utc": null,
+   "operable": true,
+   "t_respuesta_utc": "2026-10-18T13:21:03Z",
+   "segundos_transcurridos": 53,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "0.5 @ 1.67",
+   "respuesta_message_id": 3760,
+   "linea_real_betano": 0.5,
+   "cuota_real_betano": 1.67,
+   "activo": true
+  }
+ ],
+ "7fe5275bd8f9a58a": [
+  {
+   "alert_id": "7fe5275bd8f9a58a",
+   "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
+   "match_label": "Fiorentina vs Como (Serie A)",
+   "liga": "Serie A",
+   "event_id": "5749703",
+   "minuto_alerta": 16,
+   "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
+   "t_evento_real_utc": "2026-10-18T13:17:27Z",
+   "t_captura_utc": null,
+   "operable": true,
+   "t_respuesta_utc": "2026-10-18T13:21:17Z",
+   "segundos_transcurridos": 166,
+   "origen": "BETANO_MANUAL",
+   "texto_respuesta_original": "0.5 @ 1.67",
+   "respuesta_message_id": 3761,
+   "linea_real_betano": 0.5,
+   "cuota_real_betano": 1.67,
+   "activo": true
+  }
  ]
 }
