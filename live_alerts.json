@@ -1,35 +1,7 @@
 {
- "generated_at_utc": "2026-10-18T13:58:17Z",
- "n_alerts": 15,
+ "generated_at_utc": "2026-10-18T13:59:15Z",
+ "n_alerts": 12,
  "alerts": [
-  {
-   "strategy_id": "L1",
-   "match_label": "Fiorentina vs Como (Serie A)",
-   "match_id": "5749703",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 30,
-   "condicion": "5 córners totales antes del min 30 (2-3), Como presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Fiorentina NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 2,
-    "corners_away": 3,
-    "equipo_presiona": "Como"
-   },
-   "t_evento_real_utc": "2026-10-18T13:28:28Z",
-   "t_captura_utc": "2026-10-18T13:28:28Z",
-   "t_evaluacion_utc": "2026-10-18T13:33:08Z",
-   "t_generacion_utc": "2026-10-18T13:33:08Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Fiorentina vs Como\n⏱ Minuto: 30'\n📊 Marcador: 0-0\n🏆 Liga: Serie A\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Como presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Fiorentina no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "25dffb0ba770777b"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Leeds United vs Manchester United (Premier League)",
@@ -67,93 +39,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Leeds United vs Manchester United\n⏱ Minuto: 32'\n📊 Marcador: 0-0\n🏆 Liga: Premier League\n\n📝 Motivo: Leeds United acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Leeds United, min 19\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "34df091f86e01d89"
-  },
-  {
-   "strategy_id": "L5_V2_OVER05HT_PRESION_PERSISTENTE",
-   "match_label": "Fiorentina vs Como (Serie A)",
-   "match_id": "5749703",
-   "market": "Over 0.5 Goles -- Primer Tiempo",
-   "cuota_detectada": null,
-   "minuto": 31,
-   "condicion": "0-0 en ventana 24-34 con peligro acumulado (xG>=0.90, remates>=7, SoT>=2, corners>=2, todos combinados) Y presión reciente activa en los últimos 10 minutos (shots>=3, SoT>=1, via delta_ventana()). Valores exactos del momento en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "xg_local": 0.53,
-    "xg_visita": 0.84,
-    "xg_total": 1.37,
-    "remates_local": 6,
-    "remates_visita": 7,
-    "remates_total": 13,
-    "sot_local": 2,
-    "sot_visita": 3,
-    "sot_total": 5,
-    "cor_local": 2,
-    "cor_visita": 3,
-    "cor_total": 5,
-    "marcador": "0-0",
-    "presion_reciente_shots": {
-     "campo": "totalShotsOnGoal",
-     "minutos_ventana_pedidos": 10,
-     "t0_captured_at_utc": "2026-10-18T13:33:48Z",
-     "t1_captured_at_utc": "2026-10-18T13:23:22Z",
-     "valor_t0": [
-      6,
-      7
-     ],
-     "valor_t1": [
-      5,
-      4
-     ],
-     "delta_home": 1,
-     "delta_away": 3,
-     "delta_total": 4,
-     "valido": true,
-     "motivo": null
-    },
-    "presion_reciente_sot": {
-     "campo": "shotsOnGoal",
-     "minutos_ventana_pedidos": 10,
-     "t0_captured_at_utc": "2026-10-18T13:33:48Z",
-     "t1_captured_at_utc": "2026-10-18T13:23:22Z",
-     "valor_t0": [
-      2,
-      3
-     ],
-     "valor_t1": [
-      1,
-      2
-     ],
-     "delta_home": 1,
-     "delta_away": 1,
-     "delta_total": 2,
-     "valido": true,
-     "motivo": null
-    },
-    "mercado_objetivo": "Over 0.5 Goles -- Primer Tiempo"
-   },
-   "t_evento_real_utc": "2026-10-18T13:28:28Z",
-   "t_captura_utc": "2026-10-18T13:33:48Z",
-   "t_evaluacion_utc": "2026-10-18T13:34:17Z",
-   "t_generacion_utc": "2026-10-18T13:34:17Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "SUPRIMIDA_NO_AUTORIZADA",
-     "t_envio_utc": null,
-     "latencia_envio_ms": null,
-     "error": "Estrategia 'L5_V2_OVER05HT_PRESION_PERSISTENTE' no autorizada en TELEGRAM_ALLOWLIST (bloqueo fail-closed)",
-     "message_id": null,
-     "chat_id": null
-    }
-   },
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🔵 L5_V2 — L5_V2_OVER05HT_PRESION_PERSISTENTE\n\n⚽ Fiorentina vs Como\n⏱ Minuto: 31'\n📊 Marcador: 0-0\n\nxG combinado: 1.37\nRemates totales: 6-7 (total 13)\nTiros a puerta: 2-3 (total 5)\nCórners: 2-3 (total 5)\n\nPresión reciente (últimos 10 min):\n  Shots: 4 (T0=2026-10-18T13:33:48Z, T1=2026-10-18T13:23:22Z)\n  SoT: 2 (T0=2026-10-18T13:33:48Z, T1=2026-10-18T13:23:22Z)\n\n🏆 Liga: Serie A\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo",
-   "evidencia": null,
-   "alert_id": "8ca63f1430dac4cc"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -288,35 +173,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Angers vs Marseille\n⏱ Minuto: 45'\n📊 Marcador: 1-2\n🏆 Liga: Ligue 1\n\n📝 Motivo: Marseille acumula 64% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "d129828631eb3387"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Fiorentina vs Como (Serie A)",
-   "match_id": "5749703",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "5 córners totales antes del min 45 (2-3), Como presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Fiorentina NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 2,
-    "corners_away": 3,
-    "equipo_presiona": "Como",
-    "variante": "shadow_ventana_45"
-   },
-   "t_evento_real_utc": "2026-10-18T13:28:28Z",
-   "t_captura_utc": "2026-10-18T13:28:28Z",
-   "t_evaluacion_utc": "2026-10-18T13:47:13Z",
-   "t_generacion_utc": "2026-10-18T13:47:13Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Fiorentina vs Como\n⏱ Minuto: 45'\n📊 Marcador: 1-2\n🏆 Liga: Serie A\n\n🚩 Córners:\nLocal: 2\nVisita: 3\nTotal: 5\n\n📝 Motivo: Como presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Fiorentina no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "725adb642edbd552"
   },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -492,35 +348,6 @@
    "alert_id": "6cd21a299bb06875"
   },
   {
-   "strategy_id": "L3",
-   "match_label": "Cambuur vs AZ Alkmaar (Eredivisie)",
-   "match_id": "5781771",
-   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
-   "cuota_detectada": null,
-   "minuto": 66,
-   "condicion": "Expulsión de Cambuur (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "ALTA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_expulsado": "Cambuur",
-    "marcador_al_detectar": "2-1",
-    "total_rojas_partido": 1,
-    "codigo_periodo_atlas": 7
-   },
-   "t_evento_real_utc": "2026-10-18T13:45:39Z",
-   "t_captura_utc": "2026-10-18T13:57:56Z",
-   "t_evaluacion_utc": "2026-10-18T13:58:17Z",
-   "t_generacion_utc": "2026-10-18T13:58:17Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 L3 | Cambuur vs AZ Alkmaar | Roja Cambuur | Min 66' | 2-1",
-   "evidencia": null,
-   "alert_id": "93f6dd856a284ffe"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Cambuur vs AZ Alkmaar (Eredivisie)",
    "match_id": "5781771",
@@ -557,6 +384,35 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Cambuur vs AZ Alkmaar\n⏱ Minuto: 66'\n📊 Marcador: 2-1\n🏆 Liga: Eredivisie\n\n📝 Motivo: Cambuur acumula 61% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Cambuur, min 57\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "5c6aafd07cdf9e69"
+  },
+  {
+   "strategy_id": "L3",
+   "match_label": "Cambuur vs AZ Alkmaar (Eredivisie)",
+   "match_id": "5781771",
+   "market": "Over Goles -- verificar línea y cuota en Betano AHORA, antes de que la casa ajuste",
+   "cuota_detectada": null,
+   "minuto": 67,
+   "condicion": "Expulsión de Cambuur (roja #1 del partido) -- verificá vos mismo que la cuota de Over siga sin ajustar antes de entrar.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "ALTA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "equipo_expulsado": "Cambuur",
+    "marcador_al_detectar": "2-1",
+    "total_rojas_partido": 1,
+    "codigo_periodo_atlas": 7
+   },
+   "t_evento_real_utc": "2026-10-18T13:45:39Z",
+   "t_captura_utc": "2026-10-18T13:59:05Z",
+   "t_evaluacion_utc": "2026-10-18T13:59:15Z",
+   "t_generacion_utc": "2026-10-18T13:59:15Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 L3 | Cambuur vs AZ Alkmaar | Roja Cambuur | Min 67' | 2-1",
+   "evidencia": null,
+   "alert_id": "93f6dd856a284ffe"
   }
  ]
 }
