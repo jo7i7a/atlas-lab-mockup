@@ -1,55 +1,7 @@
 {
- "generated_at_utc": "2026-10-18T19:49:12Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-10-18T19:50:09Z",
+ "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "H1_VOLUMEN_TERRITORIAL_INVESTIGACION",
-   "match_label": "Real Madrid vs Sevilla (LaLiga)",
-   "match_id": "5868098",
-   "market": "Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
-   "cuota_detectada": null,
-   "minuto": 17,
-   "condicion": "touchesInOppBox_tot15 >= 6.0 en 0-0@15 (top cuartil territorial)",
-   "confianza": "Alta",
-   "link": "https://www.sofascore.com/event/5868098",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "touchesInOppBox_home": 4.0,
-    "touchesInOppBox_away": 2.0,
-    "touchesInOppBox_tot15": 6.0,
-    "umbral_tot15": 6.0,
-    "minuto_decision": 15,
-    "minuto_deteccion": 17,
-    "marcador_min15": "0-0",
-    "anchor_captured_at_utc": "2026-10-18T19:19:54Z",
-    "anchor_minute": 14.671044647693634,
-    "stats_provider_mode": "EMERGENCY",
-    "stats_provider": "router(fotmob>espn>apifootball)",
-    "provider_validation": "NO_VALIDADA_CROSS_PROVIDER",
-    "provider_validation_epoch": "POST_CORTE"
-   },
-   "t_evento_real_utc": "2026-10-18T19:19:54Z",
-   "t_captura_utc": null,
-   "t_evaluacion_utc": "2026-10-18T19:22:13Z",
-   "t_generacion_utc": "2026-10-18T19:22:13Z",
-   "envios": {
-    "telegram": {
-     "channel": "telegram",
-     "estado": "OK",
-     "t_envio_utc": "2026-10-18T19:20:12Z",
-     "latencia_envio_ms": 861.182689666748,
-     "error": null,
-     "message_id": 3777,
-     "chat_id": 5530307309
-    }
-   },
-   "latencia_total_seg": 18.0,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🟢 H1 — INVESTIGACIÓN LIVE (Volumen territorial alto)\n⚠️ HIPÓTESIS EN INVESTIGACIÓN — Registro manual requerido.\n\n⚽ Real Madrid vs Sevilla\n⏱ Minuto de decisión: 15' (detectado en el minuto 17')\n📊 Marcador en minuto 15: 0-0\n\nToques en área rival (ambos equipos, hasta min15): 4-2 (total 6 >= 6.0)\n\n🏆 Liga: LaLiga\n\nMercado objetivo: Over 0.5 Goles -- Primer Tiempo (gol entre minuto 15 y descanso)",
-   "evidencia": null,
-   "alert_id": "d9047d416eb829bf"
-  },
   {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Real Madrid vs Sevilla (LaLiga)",
@@ -95,7 +47,7 @@
    "match_id": "5868098",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 44,
+   "minuto": 45,
    "condicion": "Real Madrid acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -121,13 +73,13 @@
     "provider_validation_epoch": "POST_CORTE"
    },
    "t_evento_real_utc": "2026-10-18T19:25:13Z",
-   "t_captura_utc": "2026-10-18T19:49:12Z",
-   "t_evaluacion_utc": "2026-10-18T19:49:12Z",
-   "t_generacion_utc": "2026-10-18T19:49:12Z",
+   "t_captura_utc": "2026-10-18T19:50:09Z",
+   "t_evaluacion_utc": "2026-10-18T19:50:09Z",
+   "t_generacion_utc": "2026-10-18T19:50:09Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Real Madrid vs Sevilla\n⏱ Minuto: 44'\n📊 Marcador: 2-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Real Madrid acumula 69% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Real Madrid, min 23\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Real Madrid vs Sevilla\n⏱ Minuto: 45'\n📊 Marcador: 2-0\n🏆 Liga: LaLiga\n\n📝 Motivo: Real Madrid acumula 69% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Real Madrid, min 23\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "62a85f27ee6e7e4e"
   }
