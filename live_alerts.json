@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-18T00:59:16Z",
+ "generated_at_utc": "2026-10-18T01:00:22Z",
  "n_alerts": 2,
  "alerts": [
   {
@@ -8,7 +8,7 @@
    "match_id": "5071435",
    "market": "Total de Córners (Over) -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 17,
+   "minuto": 18,
    "condicion": "Real Salt Lake domina con centros al área o remates recientes en la ventana 15'-25' (≥3 centros O ≥2 remates en los últimos 5 min, remates_metric=totalShotsOnGoal). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -28,12 +28,12 @@
    },
    "t_evento_real_utc": "2026-10-18T00:57:07Z",
    "t_captura_utc": "2026-10-18T00:57:07Z",
-   "t_evaluacion_utc": "2026-10-18T00:59:16Z",
-   "t_generacion_utc": "2026-10-18T00:59:16Z",
+   "t_evaluacion_utc": "2026-10-18T01:00:21Z",
+   "t_generacion_utc": "2026-10-18T01:00:21Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Sporting Kansas City vs Real Salt Lake\n⏱ Minuto: 17'\n📊 Marcador: 0-2\n🏆 Liga: Major League Soccer\n\n📝 Motivo: Real Salt Lake — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A1_V1_SOLO_TRIGGER_LIVE\n\n⚽ Sporting Kansas City vs Real Salt Lake\n⏱ Minuto: 18'\n📊 Marcador: 0-2\n🏆 Liga: Major League Soccer\n\n📝 Motivo: Real Salt Lake — ≥2 remates en los últimos 5 min (away=2)\n\n👉 REVISAR AHORA EN BETANO:\nTotal de Córners — Over",
    "evidencia": null,
    "alert_id": "8179a9edff167a4e"
   },
@@ -43,14 +43,14 @@
    "match_id": "5071426",
    "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 56,
+   "minuto": 57,
    "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
    "priority": "MEDIA",
    "estado_validacion": "EXPERIMENTAL",
    "extra": {
-    "xg_combinado": 2.07,
+    "xg_combinado": 2.23,
     "tiros_combinados": 15,
     "sot_combinado": 5,
     "presion_reciente_10min": 8,
@@ -61,13 +61,13 @@
     "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha"
    },
    "t_evento_real_utc": "2026-10-18T00:58:10Z",
-   "t_captura_utc": "2026-10-18T00:59:16Z",
-   "t_evaluacion_utc": "2026-10-18T00:59:16Z",
-   "t_generacion_utc": "2026-10-18T00:59:16Z",
+   "t_captura_utc": "2026-10-18T01:00:21Z",
+   "t_evaluacion_utc": "2026-10-18T01:00:21Z",
+   "t_generacion_utc": "2026-10-18T01:00:21Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Atlanta United vs Inter Miami CF\n⏱ Minuto: 56'\n📊 Marcador: 0-2\n🏆 Liga: Major League Soccer\n\n📝 Motivo: presión combinada sostenida — xG 2.07, 15 tiros totales (5 a puerta), 8 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Atlanta United vs Inter Miami CF\n⏱ Minuto: 57'\n📊 Marcador: 0-2\n🏆 Liga: Major League Soccer\n\n📝 Motivo: presión combinada sostenida — xG 2.23, 15 tiros totales (5 a puerta), 8 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "10b103ac48097212"
   }
