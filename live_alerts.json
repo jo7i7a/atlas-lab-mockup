@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-18T14:43:13Z",
+ "generated_at_utc": "2026-10-18T14:44:15Z",
  "n_alerts": 9,
  "alerts": [
   {
@@ -236,39 +236,6 @@
    "alert_id": "e03906d2199c725b"
   },
   {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Celtic vs Heart of Midlothian (Premiership)",
-   "match_id": "5793947",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 42,
-   "condicion": "5 córners totales antes del min 45 (3-2), Celtic presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Heart of Midlothian NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 2,
-    "equipo_presiona": "Celtic",
-    "variante": "shadow_ventana_45",
-    "stats_provider_mode": "EMERGENCY",
-    "stats_provider": "router(fotmob>espn>apifootball)",
-    "provider_validation": "EVIDENCIA_POBLACIONAL_SIN_DIFERENCIAS",
-    "provider_validation_epoch": "POST_CORTE"
-   },
-   "t_evento_real_utc": "2026-10-18T14:34:36Z",
-   "t_captura_utc": "2026-10-18T14:34:36Z",
-   "t_evaluacion_utc": "2026-10-18T14:43:12Z",
-   "t_generacion_utc": "2026-10-18T14:43:12Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Celtic vs Heart of Midlothian\n⏱ Minuto: 42'\n📊 Marcador: 4-1\n🏆 Liga: Premiership\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Celtic presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Heart of Midlothian no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "a4527c393f269da9"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Celta Vigo vs Deportivo Alavés (LaLiga)",
    "match_id": "5868092",
@@ -311,12 +278,45 @@
    "alert_id": "c552cd1128c73942"
   },
   {
+   "strategy_id": "L1-SHADOW",
+   "match_label": "Celtic vs Heart of Midlothian (Premiership)",
+   "match_id": "5793947",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
+   "cuota_detectada": null,
+   "minuto": 43,
+   "condicion": "5 córners totales antes del min 45 (3-2), Celtic presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Heart of Midlothian NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 2,
+    "equipo_presiona": "Celtic",
+    "variante": "shadow_ventana_45",
+    "stats_provider_mode": "EMERGENCY",
+    "stats_provider": "router(fotmob>espn>apifootball)",
+    "provider_validation": "EVIDENCIA_POBLACIONAL_SIN_DIFERENCIAS",
+    "provider_validation_epoch": "POST_CORTE"
+   },
+   "t_evento_real_utc": "2026-10-18T14:34:36Z",
+   "t_captura_utc": "2026-10-18T14:34:36Z",
+   "t_evaluacion_utc": "2026-10-18T14:44:14Z",
+   "t_generacion_utc": "2026-10-18T14:44:14Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Celtic vs Heart of Midlothian\n⏱ Minuto: 43'\n📊 Marcador: 4-1\n🏆 Liga: Premiership\n\n🚩 Córners:\nLocal: 3\nVisita: 2\nTotal: 5\n\n📝 Motivo: Celtic presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Heart of Midlothian no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "a4527c393f269da9"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Kocaelispor vs Göztepe (Super Lig)",
    "match_id": "5904774",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 82,
+   "minuto": 83,
    "condicion": "Kocaelispor acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -342,13 +342,13 @@
     "provider_validation_epoch": "POST_CORTE"
    },
    "t_evento_real_utc": "2026-10-18T14:40:12Z",
-   "t_captura_utc": "2026-10-18T14:43:13Z",
-   "t_evaluacion_utc": "2026-10-18T14:43:13Z",
-   "t_generacion_utc": "2026-10-18T14:43:13Z",
+   "t_captura_utc": "2026-10-18T14:44:15Z",
+   "t_evaluacion_utc": "2026-10-18T14:44:15Z",
+   "t_generacion_utc": "2026-10-18T14:44:15Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Kocaelispor vs Göztepe\n⏱ Minuto: 82'\n📊 Marcador: 1-2\n🏆 Liga: Super Lig\n\n📝 Motivo: Kocaelispor acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Kocaelispor, min 74\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Kocaelispor vs Göztepe\n⏱ Minuto: 83'\n📊 Marcador: 1-2\n🏆 Liga: Super Lig\n\n📝 Motivo: Kocaelispor acumula 65% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Kocaelispor, min 74\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "322aec1de0a3f2e1"
   }
