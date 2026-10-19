@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-19T20:35:13Z",
- "n_alerts": 4,
+ "generated_at_utc": "2026-10-19T20:36:14Z",
+ "n_alerts": 5,
  "alerts": [
   {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
@@ -151,6 +151,44 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Braga vs Gil Vicente\n⏱ Minuto: 52'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
    "evidencia": null,
    "alert_id": "cfb057ca3e250545"
+  },
+  {
+   "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
+   "match_label": "Braga vs Gil Vicente (Liga Portugal)",
+   "match_id": "5887594",
+   "market": "Over 1.5 Goles FT -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 56,
+   "condicion": "Presión combinada sostenida entre los minutos 55-70 con marcador ≤2 goles (xG combinado≥1.2, tiros combinados≥8, SOT combinado≥3, ≥3 tiros combinados en los últimos 10 min). Valores exactos del momento en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "xg_combinado": 1.89,
+    "tiros_combinados": 12,
+    "sot_combinado": 5,
+    "presion_reciente_10min": 4,
+    "marcador_en_el_momento": "1-1",
+    "t_primera_observacion_atlas": "2026-10-19T20:36:14Z",
+    "t_inicio_estimado_condicion": "2026-10-19T20:35:54Z",
+    "gap_ataques_peligrosos": "rama de ataques peligrosos EXCLUIDA -- dangerousAttacks no disponible, ver ficha B2_V1_SIN_ATAQUES_PELIGROSOS",
+    "gap_prematch_no_evaluado": "filtros prematch de la hipótesis original (xG combinado histórico, probabilidad Over1.5, cuota prematch) NO evaluados -- ver ficha",
+    "stats_provider_mode": "EMERGENCY",
+    "stats_provider": "router(fotmob>espn>apifootball)",
+    "provider_validation": "NO_VALIDADA_CROSS_PROVIDER",
+    "provider_validation_epoch": "POST_CORTE"
+   },
+   "t_evento_real_utc": "2026-10-19T20:36:14Z",
+   "t_captura_utc": "2026-10-19T20:36:14Z",
+   "t_evaluacion_utc": "2026-10-19T20:36:14Z",
+   "t_generacion_utc": "2026-10-19T20:36:14Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Braga vs Gil Vicente\n⏱ Minuto: 56'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal\n\n📝 Motivo: presión combinada sostenida — xG 1.89, 12 tiros totales (5 a puerta), 4 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
+   "evidencia": null,
+   "alert_id": "4fbd4c98b3633fa7"
   }
  ]
 }
