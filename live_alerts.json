@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-19T19:27:14Z",
+ "generated_at_utc": "2026-10-19T19:29:13Z",
  "n_alerts": 5,
  "alerts": [
   {
@@ -84,38 +84,6 @@
    "alert_id": "e1436e28cfd0b2be"
   },
   {
-   "strategy_id": "L1",
-   "match_label": "Getafe vs Rayo Vallecano (LaLiga)",
-   "match_id": "5868095",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 26,
-   "condicion": "4 córners totales antes del min 30 (3-1), Getafe presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Rayo Vallecano NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Getafe",
-    "stats_provider_mode": "EMERGENCY",
-    "stats_provider": "router(fotmob>espn>apifootball)",
-    "provider_validation": "EVIDENCIA_POBLACIONAL_SIN_DIFERENCIAS",
-    "provider_validation_epoch": "POST_CORTE"
-   },
-   "t_evento_real_utc": "2026-10-19T19:25:41Z",
-   "t_captura_utc": "2026-10-19T19:25:41Z",
-   "t_evaluacion_utc": "2026-10-19T19:27:11Z",
-   "t_generacion_utc": "2026-10-19T19:27:11Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Getafe vs Rayo Vallecano\n⏱ Minuto: 26'\n📊 Marcador: 0-1\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Getafe presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Rayo Vallecano no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "0f03fa92ceb0e0f0"
-  },
-  {
    "strategy_id": "A1_V1_SOLO_TRIGGER_LIVE",
    "match_label": "Tottenham Hotspur vs Coventry City (Premier League)",
    "match_id": "5795484",
@@ -155,12 +123,44 @@
    "alert_id": "f2a45b04a062ba7f"
   },
   {
+   "strategy_id": "L1",
+   "match_label": "Getafe vs Rayo Vallecano (LaLiga)",
+   "match_id": "5868095",
+   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 28,
+   "condicion": "4 córners totales antes del min 30 (3-1), Getafe presiona (3 córners) — sin expulsiones. Verificar en vivo: ¿Rayo Vallecano NO está en bloque bajo?",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_home": 3,
+    "corners_away": 1,
+    "equipo_presiona": "Getafe",
+    "stats_provider_mode": "EMERGENCY",
+    "stats_provider": "router(fotmob>espn>apifootball)",
+    "provider_validation": "EVIDENCIA_POBLACIONAL_SIN_DIFERENCIAS",
+    "provider_validation_epoch": "POST_CORTE"
+   },
+   "t_evento_real_utc": "2026-10-19T19:25:41Z",
+   "t_captura_utc": "2026-10-19T19:25:41Z",
+   "t_evaluacion_utc": "2026-10-19T19:29:11Z",
+   "t_generacion_utc": "2026-10-19T19:29:11Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 ALERTA LIVE — L1\n\n⚽ Getafe vs Rayo Vallecano\n⏱ Minuto: 28'\n📊 Marcador: 0-1\n🏆 Liga: LaLiga\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Getafe presiona con 3 córners (3+ de un mismo equipo) antes del minuto 30\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Rayo Vallecano no está en bloque bajo?",
+   "evidencia": null,
+   "alert_id": "0f03fa92ceb0e0f0"
+  },
+  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Getafe vs Rayo Vallecano (LaLiga)",
    "match_id": "5868095",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 26,
+   "minuto": 28,
    "condicion": "Getafe acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -169,8 +169,8 @@
    "extra": {
     "equipo_dominante": "Getafe",
     "lado_dominante": "home",
-    "ratio_presion_territorial": 0.625,
-    "touches_home": 5,
+    "ratio_presion_territorial": 0.6667,
+    "touches_home": 6,
     "touches_away": 3,
     "acelerador_proxy_detectado": true,
     "minuto_ultima_sustitucion": 17,
@@ -186,13 +186,13 @@
     "provider_validation_epoch": "POST_CORTE"
    },
    "t_evento_real_utc": "2026-10-19T19:24:14Z",
-   "t_captura_utc": "2026-10-19T19:27:14Z",
-   "t_evaluacion_utc": "2026-10-19T19:27:14Z",
-   "t_generacion_utc": "2026-10-19T19:27:14Z",
+   "t_captura_utc": "2026-10-19T19:29:13Z",
+   "t_evaluacion_utc": "2026-10-19T19:29:13Z",
+   "t_generacion_utc": "2026-10-19T19:29:13Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Getafe vs Rayo Vallecano\n⏱ Minuto: 26'\n📊 Marcador: 0-1\n🏆 Liga: LaLiga\n\n📝 Motivo: Getafe acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Getafe, min 17\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Getafe vs Rayo Vallecano\n⏱ Minuto: 28'\n📊 Marcador: 0-1\n🏆 Liga: LaLiga\n\n📝 Motivo: Getafe acumula 67% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Getafe, min 17\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "85e57752f19f6321"
   }
