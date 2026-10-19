@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-19T20:31:10Z",
+ "generated_at_utc": "2026-10-19T20:32:15Z",
  "n_alerts": 4,
  "alerts": [
   {
@@ -83,38 +83,6 @@
    "alert_id": "4ebabacbf992cfdf"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "Braga vs Gil Vicente (Liga Portugal)",
-   "match_id": "5887594",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 51,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 1,
-    "corners_1t_away": 1,
-    "corners_1t_total": 2,
-    "stats_provider_mode": "EMERGENCY",
-    "stats_provider": "router(fotmob>espn>apifootball)",
-    "provider_validation": "EVIDENCIA_POBLACIONAL_SIN_DIFERENCIAS",
-    "provider_validation_epoch": "POST_CORTE"
-   },
-   "t_evento_real_utc": "2026-10-19T20:25:45Z",
-   "t_captura_utc": "2026-10-19T20:25:45Z",
-   "t_evaluacion_utc": "2026-10-19T20:31:10Z",
-   "t_generacion_utc": "2026-10-19T20:31:10Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Braga vs Gil Vicente\n⏱ Minuto: 51'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "cfb057ca3e250545"
-  },
-  {
    "strategy_id": "B2_V1_SIN_ATAQUES_PELIGROSOS",
    "match_label": "Getafe vs Rayo Vallecano (LaLiga)",
    "match_id": "5868095",
@@ -151,6 +119,38 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — B2_V1_SIN_ATAQUES_PELIGROSOS\n\n⚽ Getafe vs Rayo Vallecano\n⏱ Minuto: 70'\n📊 Marcador: 1-1\n🏆 Liga: LaLiga\n\n📝 Motivo: presión combinada sostenida — xG 2.33, 23 tiros totales (7 a puerta), 9 tiros en los últimos 10 min\n\n👉 REVISAR AHORA EN BETANO:\nOver 1.5 Goles FT",
    "evidencia": null,
    "alert_id": "d64c67df8e3a4e05"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "Braga vs Gil Vicente (Liga Portugal)",
+   "match_id": "5887594",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 52,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 1,
+    "corners_1t_away": 1,
+    "corners_1t_total": 2,
+    "stats_provider_mode": "EMERGENCY",
+    "stats_provider": "router(fotmob>espn>apifootball)",
+    "provider_validation": "EVIDENCIA_POBLACIONAL_SIN_DIFERENCIAS",
+    "provider_validation_epoch": "POST_CORTE"
+   },
+   "t_evento_real_utc": "2026-10-19T20:25:45Z",
+   "t_captura_utc": "2026-10-19T20:25:45Z",
+   "t_evaluacion_utc": "2026-10-19T20:32:14Z",
+   "t_generacion_utc": "2026-10-19T20:32:14Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Braga vs Gil Vicente\n⏱ Minuto: 52'\n📊 Marcador: 1-1\n🏆 Liga: Liga Portugal\n\n🚩 Córners 1er tiempo:\nLocal: 1\nVisita: 1\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "cfb057ca3e250545"
   }
  ]
 }
