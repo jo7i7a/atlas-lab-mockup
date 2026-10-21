@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-10-21T11:07:18Z",
+ "generated_at_utc": "2026-10-21T11:08:16Z",
  "n_alerts": 9,
  "alerts": [
   {
@@ -288,38 +288,6 @@
    "alert_id": "0dbeee0c18284995"
   },
   {
-   "strategy_id": "A2",
-   "match_label": "FC Tokyo vs Kashiwa Reysol (J. League)",
-   "match_id": "5803619",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 46,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 2,
-    "corners_1t_away": 0,
-    "corners_1t_total": 2,
-    "stats_provider_mode": "EMERGENCY",
-    "stats_provider": "router(fotmob>espn>apifootball)",
-    "provider_validation": "EVIDENCIA_POBLACIONAL_SIN_DIFERENCIAS",
-    "provider_validation_epoch": "POST_CORTE"
-   },
-   "t_evento_real_utc": "2026-10-21T11:06:22Z",
-   "t_captura_utc": "2026-10-21T11:06:22Z",
-   "t_evaluacion_utc": "2026-10-21T11:07:17Z",
-   "t_generacion_utc": "2026-10-21T11:07:17Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ FC Tokyo vs Kashiwa Reysol\n⏱ Minuto: 46'\n📊 Marcador: 0-0\n🏆 Liga: J. League\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "4a31923e0fe24377"
-  },
-  {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Shimizu S-Pulse vs Machida Zelvia (J. League)",
    "match_id": "5803624",
@@ -360,6 +328,38 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Shimizu S-Pulse vs Machida Zelvia\n⏱ Minuto: 45'\n📊 Marcador: 0-1\n🏆 Liga: J. League\n\n📝 Motivo: Machida Zelvia acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "ce983aa68c7a4b75"
+  },
+  {
+   "strategy_id": "A2",
+   "match_label": "FC Tokyo vs Kashiwa Reysol (J. League)",
+   "match_id": "5803619",
+   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
+   "cuota_detectada": null,
+   "minuto": 47,
+   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
+   "confianza": "Media",
+   "link": "",
+   "priority": "MEDIA",
+   "estado_validacion": "EXPERIMENTAL",
+   "extra": {
+    "corners_1t_home": 2,
+    "corners_1t_away": 0,
+    "corners_1t_total": 2,
+    "stats_provider_mode": "EMERGENCY",
+    "stats_provider": "router(fotmob>espn>apifootball)",
+    "provider_validation": "EVIDENCIA_POBLACIONAL_SIN_DIFERENCIAS",
+    "provider_validation_epoch": "POST_CORTE"
+   },
+   "t_evento_real_utc": "2026-10-21T11:06:22Z",
+   "t_captura_utc": "2026-10-21T11:06:22Z",
+   "t_evaluacion_utc": "2026-10-21T11:08:16Z",
+   "t_generacion_utc": "2026-10-21T11:08:16Z",
+   "envios": {},
+   "latencia_total_seg": null,
+   "estado_temporal": "ACTIVA",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ FC Tokyo vs Kashiwa Reysol\n⏱ Minuto: 47'\n📊 Marcador: 0-0\n🏆 Liga: J. League\n\n🚩 Córners 1er tiempo:\nLocal: 2\nVisita: 0\nTotal: 2\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
+   "evidencia": null,
+   "alert_id": "4a31923e0fe24377"
   }
  ]
 }
