@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-21T11:05:10Z",
- "n_alerts": 9,
+ "generated_at_utc": "2026-10-21T11:06:18Z",
+ "n_alerts": 8,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -328,39 +328,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Urawa Red Diamonds vs JEF United Chiba\n⏱ Minuto: 27'\n📊 Marcador: 1-0\n🏆 Liga: J. League\n\n📝 Motivo: Urawa Red Diamonds acumula 67% de los toques en área rival desde el minuto 20\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "8bd6520e0976c171"
-  },
-  {
-   "strategy_id": "L1-SHADOW",
-   "match_label": "Fagiano Okayama FC vs Mito Hollyhock (J. League)",
-   "match_id": "5803623",
-   "market": "Corners Totales (Over) -- verificar línea y cuota en Betano ahora [SHADOW: ventana extendida a 45']",
-   "cuota_detectada": null,
-   "minuto": 45,
-   "condicion": "4 córners totales antes del min 45 (3-1), Fagiano Okayama FC presiona (3 córners) — sin expulsiones. [L1-SHADOW: ventana extendida 30'→45', pre-registrada 2026-08-08] Verificar en vivo: ¿Mito Hollyhock NO está en bloque bajo?",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_home": 3,
-    "corners_away": 1,
-    "equipo_presiona": "Fagiano Okayama FC",
-    "variante": "shadow_ventana_45",
-    "stats_provider_mode": "EMERGENCY",
-    "stats_provider": "router(fotmob>espn>apifootball)",
-    "provider_validation": "EVIDENCIA_POBLACIONAL_SIN_DIFERENCIAS",
-    "provider_validation_epoch": "POST_CORTE"
-   },
-   "t_evento_real_utc": "2026-10-21T10:35:27Z",
-   "t_captura_utc": "2026-10-21T10:35:27Z",
-   "t_evaluacion_utc": "2026-10-21T11:04:13Z",
-   "t_generacion_utc": "2026-10-21T11:04:13Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 ALERTA LIVE — L1-SHADOW\n\n⚽ Fagiano Okayama FC vs Mito Hollyhock\n⏱ Minuto: 45'\n📊 Marcador: 0-0\n🏆 Liga: J. League\n\n🚩 Córners:\nLocal: 3\nVisita: 1\nTotal: 4\n\n📝 Motivo: Fagiano Okayama FC presiona con 3 córners (ventana extendida a 45')\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — ¿Mito Hollyhock no está en bloque bajo?",
-   "evidencia": null,
-   "alert_id": "3c3113c5228db041"
   }
  ]
 }
