@@ -1,6 +1,6 @@
 {
- "generated_at_utc": "2026-10-22T04:56:09Z",
- "n_alerts": 2,
+ "generated_at_utc": "2026-10-22T04:57:09Z",
+ "n_alerts": 1,
  "alerts": [
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
@@ -43,48 +43,6 @@
    "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Santos Laguna vs Pumas\n⏱ Minuto: 65'\n📊 Marcador: 1-0\n🏆 Liga: Liga MX\n\n📝 Motivo: Santos Laguna acumula 62% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Santos Laguna, min 66\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "cb1957d364915b51"
-  },
-  {
-   "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
-   "match_label": "Pachuca vs Cruz Azul (Liga MX)",
-   "match_id": "1000014614",
-   "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 82,
-   "condicion": "Cruz Azul acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "equipo_dominante": "Cruz Azul",
-    "lado_dominante": "away",
-    "ratio_presion_territorial": 0.6897,
-    "touches_home": 9,
-    "touches_away": 20,
-    "acelerador_proxy_detectado": true,
-    "minuto_ultima_sustitucion": 70,
-    "equipo_que_realizo_sustitucion": "Cruz Azul",
-    "marcador_en_el_momento": "1-2",
-    "t_primera_observacion_atlas": "2026-10-22T04:26:10Z",
-    "t_inicio_estimado_condicion": "2026-10-22T04:25:37Z",
-    "aproximacion": "ratio_presion_territorial vía touchesInOppBox -- NO es 'posesión en tercio ofensivo>60%' del PDF original, ver ficha",
-    "gap_prematch_no_evaluado": "choque de estilos (perfil táctico) NO evaluado -- ver ficha",
-    "stats_provider_mode": "EMERGENCY",
-    "stats_provider": "router(fotmob>espn>apifootball)",
-    "provider_validation": "NO_VALIDADA_CROSS_PROVIDER",
-    "provider_validation_epoch": "POST_CORTE"
-   },
-   "t_evento_real_utc": "2026-10-22T04:26:10Z",
-   "t_captura_utc": "2026-10-22T04:56:09Z",
-   "t_evaluacion_utc": "2026-10-22T04:56:09Z",
-   "t_generacion_utc": "2026-10-22T04:56:09Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Pachuca vs Cruz Azul\n⏱ Minuto: 82'\n📊 Marcador: 1-2\n🏆 Liga: Liga MX\n\n📝 Motivo: Cruz Azul acumula 69% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Cruz Azul, min 70\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
-   "evidencia": null,
-   "alert_id": "6b99c0d13865c4ac"
   }
  ]
 }
