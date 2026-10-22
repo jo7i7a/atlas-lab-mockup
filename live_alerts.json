@@ -1,39 +1,7 @@
 {
- "generated_at_utc": "2026-10-22T04:50:11Z",
- "n_alerts": 3,
+ "generated_at_utc": "2026-10-22T04:51:09Z",
+ "n_alerts": 2,
  "alerts": [
-  {
-   "strategy_id": "A2",
-   "match_label": "Pachuca vs Cruz Azul (Liga MX)",
-   "match_id": "1000014614",
-   "market": "Total de Córners 2ª Mitad (Over) -- verificar línea y cuota en Betano ahora",
-   "cuota_detectada": null,
-   "minuto": 52,
-   "condicion": "Inicio de 2ª mitad con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad. Valores exactos del 1T en el detalle de la alerta.",
-   "confianza": "Media",
-   "link": "",
-   "priority": "MEDIA",
-   "estado_validacion": "EXPERIMENTAL",
-   "extra": {
-    "corners_1t_home": 0,
-    "corners_1t_away": 1,
-    "corners_1t_total": 1,
-    "stats_provider_mode": "EMERGENCY",
-    "stats_provider": "router(fotmob>espn>apifootball)",
-    "provider_validation": "EVIDENCIA_POBLACIONAL_SIN_DIFERENCIAS",
-    "provider_validation_epoch": "POST_CORTE"
-   },
-   "t_evento_real_utc": "2026-10-22T04:20:38Z",
-   "t_captura_utc": "2026-10-22T04:20:38Z",
-   "t_evaluacion_utc": "2026-10-22T04:26:09Z",
-   "t_generacion_utc": "2026-10-22T04:26:09Z",
-   "envios": {},
-   "latencia_total_seg": null,
-   "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A2\n\n⚽ Pachuca vs Cruz Azul\n⏱ Minuto: 52'\n📊 Marcador: 1-1\n🏆 Liga: Liga MX\n\n🚩 Córners 1er tiempo:\nLocal: 0\nVisita: 1\nTotal: 1\n\n📝 Motivo: arranca el 2º tiempo con menos de 4 córners totales en el 1er tiempo — posible reversión hacia más córners en la 2ª mitad.\n\n👉 REVISAR AHORA EN BETANO:\nOver córners totales — 2ª mitad",
-   "evidencia": null,
-   "alert_id": "827f10460febcc8e"
-  },
   {
    "strategy_id": "A4_V1_PRESION_TERRITORIAL_ACUMULADA",
    "match_label": "Santos Laguna vs Pumas (Liga MX)",
@@ -82,7 +50,7 @@
    "match_id": "1000014614",
    "market": "Hándicap Asiático de Córners -- verificar línea, equipo y cuota en Betano ahora",
    "cuota_detectada": null,
-   "minuto": 76,
+   "minuto": 77,
    "condicion": "Cruz Azul acumula más del 60% de los toques en área rival desde el minuto 20, ventana 20'-85'. Valor exacto del ratio en el detalle de la alerta.",
    "confianza": "Media",
    "link": "",
@@ -108,13 +76,13 @@
     "provider_validation_epoch": "POST_CORTE"
    },
    "t_evento_real_utc": "2026-10-22T04:26:10Z",
-   "t_captura_utc": "2026-10-22T04:50:11Z",
-   "t_evaluacion_utc": "2026-10-22T04:50:11Z",
-   "t_generacion_utc": "2026-10-22T04:50:11Z",
+   "t_captura_utc": "2026-10-22T04:51:09Z",
+   "t_evaluacion_utc": "2026-10-22T04:51:09Z",
+   "t_generacion_utc": "2026-10-22T04:51:09Z",
    "envios": {},
    "latencia_total_seg": null,
    "estado_temporal": "ACTIVA",
-   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Pachuca vs Cruz Azul\n⏱ Minuto: 76'\n📊 Marcador: 1-1\n🏆 Liga: Liga MX\n\n📝 Motivo: Cruz Azul acumula 70% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Cruz Azul, min 70\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
+   "mensaje_custom": "🚨 NUEVA ALERTA LIVE — A4_V1_PRESION_TERRITORIAL_ACUMULADA\n\n⚽ Pachuca vs Cruz Azul\n⏱ Minuto: 77'\n📊 Marcador: 1-1\n🏆 Liga: Liga MX\n\n📝 Motivo: Cruz Azul acumula 70% de los toques en área rival desde el minuto 20\n\n⚡ Acelerador detectado: Cruz Azul, min 70\n\n👉 REVISAR AHORA EN BETANO:\nHándicap Asiático de Córners",
    "evidencia": null,
    "alert_id": "6b99c0d13865c4ac"
   }
